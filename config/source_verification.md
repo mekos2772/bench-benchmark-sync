@@ -8,13 +8,23 @@ The official SWE-bench site repository publishes [`data/leaderboards.json`](http
 
 The source does not provide a rank field for every result. Rank therefore remains `null`; this repository does not sort or invent ranks.
 
-## LiveBench — manual review
+## LiveBench — enabled dated assets
 
-The [official LiveBench repository](https://github.com/LiveBench/LiveBench) documents the public leaderboard at [livebench.ai](https://livebench.ai/) and links to Hugging Face datasets for questions, `model_answer`, and `model_judgment`. Those artifact classes are not interchangeable. A stable, official structured file containing leaderboard model scores was not confirmed during this implementation, so the collector is a no-network manual-review stub.
+The [official LiveBench web repository](https://github.com/LiveBench/livebench.github.io) publishes dated public assets under `public/`, including paired `table_YYYY_MM_DD.csv` and `categories_YYYY_MM_DD.json` files. The collector reads the official GitHub Contents directory to discover the greatest date for which both files exist, then fetches the matching raw files. The currently verified fallback release is `2026-06-25`; it is used only when the directory API returns an anonymous rate-limit response, never to guess a future release.
 
-## Artificial Analysis — manual review
+The eight enabled sources are `livebench_overall`, `livebench_coding`, `livebench_math`, `livebench_reasoning`, `livebench_data_analysis`, `livebench_language`, `livebench_instruction_following`, and `livebench_agentic_coding`. Category selectors map to the taxonomy names `Coding`, `Mathematics`, `Reasoning`, `Data Analysis`, `Language`, `IF`, and `Agentic Coding`. Category scores are the arithmetic mean of available task scores. Overall is the arithmetic mean of available category means. Missing task values remain absent/`null`, and rank is not inferred because the dated CSV does not provide an official rank field.
 
-The public [Intelligence Index page](https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index) and [methodology page](https://artificialanalysis.ai/methodology/intelligence-benchmarking) are official provenance pages. No stable public official API, JSON, CSV, or raw result file was confirmed. HTML/screenshot parsing is intentionally not implemented.
+The envelope records both raw URLs, the directory URL, the release, the discovery mode, and a content hash. The GitHub Contents API currently returned HTTP 403 with zero anonymous remaining quota during verification; this is treated as transport rate limiting, not as evidence that the official raw assets are invalid. If both fallback raw files cannot be fetched, the run fails and the prior successful snapshot is retained.
+
+LiveBench `model_answer`, `model_judgment`, and question datasets remain separate artifact/metadata sources. They are never normalized as leaderboard scores.
+
+## Artificial Analysis — enabled public Dataset JSON-LD pages
+
+Artificial Analysis evaluation pages were verified to expose public schema.org `Dataset` JSON-LD documents. The page collector reads only `application/ld+json` documents whose `@type` is `Dataset`, selects the configured exact `jsonld_name`, and normalizes its `data[]`. It does not parse screenshots, hidden application state, guessed internal APIs, or Download controls. The JSON-LD page is a public page contract, not an independent API; if the contract or exact Dataset name changes, the collector fails closed. No API key is required for these page sources.
+
+The currently enabled page sources are the Intelligence Index v4.3, Terminal-Bench v4.0, Humanity's Last Exam, GPQA Diamond, SciCode, AA Long Context Reasoning v1.1, AA Omniscience Index, CritPt, GDPval-AA Elo, Terminal-Bench Hard, Terminal-Bench v2.1, IFBench, MMMU-Pro, Artificial Analysis Openness Index, and MLCR-AA. Each remains a separate benchmark/release/metric/comparison key. AA self-measured results are not merged with the original benchmark's own leaderboard or with other evaluation pages. GDPval-AA publishes Elo as `PropertyValue[]`; the collector uses the official `mid` value as the scalar score and preserves `lower`/`upper` in `extra.score_interval`.
+
+The following remain `manual_review`: the AA family/display nodes, AA Coding, AA Agents, AA Reasoning, AA Knowledge, Omniscience Accuracy, Omniscience Non-Hallucination Rate, GDPval normalized score, τ² Telecom, τ-Banking, and the multilingual index. They lack an independently verified public Dataset JSON-LD source with an exact, semantically matching result field. In particular, LiveCodeBench is not substituted for an AA Coding composite, and GDPval-AA is not substituted for an AA Agents composite. No Reasoning/Knowledge/Meta Score is synthesized from component evaluations.
 
 ## LMArena — manual review
 
@@ -24,17 +34,13 @@ The official entry point is [lmarena.ai](https://lmarena.ai/). Overall Arena, Vi
 
 The official project is maintained under the [Harbor organization](https://github.com/harbor-framework/terminal-bench). The repository establishes project provenance, but a stable official Terminal-Bench 4.0 leaderboard result file was not confirmed. Documentation alone is not treated as data.
 
-## Artificial Analysis — manual review hierarchy
+## Artificial Analysis — hierarchy and source boundaries
 
-The official pages confirm the requested hierarchy: Intelligence Index v4.3, Coding, Agents/Agentic, Reasoning, Knowledge-related evaluation views, Individual/AI Model Evaluations, Terminal-Bench v4.0, Humanity's Last Exam, GPQA Diamond, and SciCode. The official page routes are recorded in `config/sources.yaml`.
+The official pages confirm the requested hierarchy: Intelligence Index v4.3, Coding, Agents/Agentic, Reasoning, Knowledge-related evaluation views, Individual/AI Model Evaluations, and the individual evaluation pages. The registry keeps family/display nodes separate from enabled page datasets. Individual evaluations never become an inferred composite.
 
-No stable public official JSON, CSV, raw result file, or documented API endpoint was confirmed for these pages. The registry therefore keeps every Artificial Analysis node at `manual_review`; no HTML, screenshot, embedded page state, or Download data control is treated as a structured source.
+## LiveBench — hierarchy and artifact boundaries
 
-## LiveBench — manual review hierarchy
-
-The official LiveBench repository defines the categories `coding`, `data_analysis`, `instruction_following`, `math`, `reasoning`, and `language`, plus an all-question evaluation route. The registry exposes these as independent overall/category nodes. A verifiable stable aggregate leaderboard score file was not confirmed, so every LiveBench leaderboard node remains `manual_review`.
-
-The repository's `model_answer`, `model_judgment`, and question datasets remain separate artifact nodes. They are never merged into leaderboard scores.
+The official dated assets provide the leaderboard table and taxonomy used by the enabled overall/category sources above. The hierarchy exposes each category independently, including the current `Agentic Coding` taxonomy. The parent `livebench` node remains a family/manual-review node rather than a second aggregate source.
 
 ## DeepSWE — enabled v1.1 source
 
@@ -42,9 +48,6 @@ The official DeepSWE v1.1 data page is [deepswe.datacurve.ai/data/v1.1](https://
 
 `deepswe_v1_1` is enabled because the aggregate JSON is public and re-fetchable. Rows are kept separate by `config`, `harness`, `model`, `provider`, and `reasoning_effort`; the collector preserves missing ranks as `null` and does not calculate a local rank. `deepswe_v1_1_tasks` is metadata only and does not produce ModelScore rows. `software_engineering_agent` is a display-family node, not a separate verified benchmark.
 
+## Disabled and candidate sources
 
-No stable, public, verifiable official result source was confirmed. The registry is disabled rather than pointing at a third-party page or inventing an endpoint.
-
-## Candidate registry
-
-MMLU, MMLU-Pro, and GPQA are present only as `manual_review` registry entries. They have no active collectors and cannot generate records.
+WebDev Arena is disabled because no stable, public, verifiable official result source was confirmed. MMLU, MMLU-Pro, and GPQA candidate entries remain `manual_review`; they have no active collectors and cannot generate records.

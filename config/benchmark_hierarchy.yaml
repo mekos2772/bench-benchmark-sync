@@ -1,235 +1,388 @@
 benchmarks:
-  - benchmark_id: artificial_analysis_intelligence
-    display_name: Artificial Analysis Intelligence
-    official_name: Artificial Analysis Intelligence
-    parent_benchmark_id: null
-    level: family
-    status: manual_review
-    is_leaderboard: false
-    comparison_key: artificial_analysis
-    source_registry_id: artificial_analysis
-  - benchmark_id: artificial_analysis_intelligence_index_v4_3
-    display_name: Artificial Analysis Intelligence Index v4.3
-    official_name: Artificial Analysis Intelligence Index v4.3
-    parent_benchmark_id: artificial_analysis_intelligence
-    level: overall
-    status: manual_review
-    is_leaderboard: true
-    comparison_key: intelligence_index_v4_3
-    source_registry_id: artificial_analysis_intelligence_index_v4_3
-  - benchmark_id: artificial_analysis_coding
-    display_name: Artificial Analysis Coding
-    official_name: Coding
-    parent_benchmark_id: artificial_analysis_intelligence
-    level: category
-    status: manual_review
-    is_leaderboard: true
-    comparison_key: coding
-    source_registry_id: artificial_analysis_coding
-  - benchmark_id: artificial_analysis_agents
-    display_name: Artificial Analysis Agents
-    official_name: Agents
-    parent_benchmark_id: artificial_analysis_intelligence
-    level: category
-    status: manual_review
-    is_leaderboard: true
-    comparison_key: agents
-    source_registry_id: artificial_analysis_agents
-  - benchmark_id: artificial_analysis_reasoning
-    display_name: Artificial Analysis Reasoning
-    official_name: Reasoning
-    parent_benchmark_id: artificial_analysis_intelligence
-    level: category
-    status: manual_review
-    is_leaderboard: true
-    comparison_key: reasoning
-    source_registry_id: artificial_analysis_reasoning
-  - benchmark_id: artificial_analysis_knowledge
-    display_name: Artificial Analysis Knowledge
-    official_name: Knowledge
-    parent_benchmark_id: artificial_analysis_intelligence
-    level: category
-    status: manual_review
-    is_leaderboard: true
-    comparison_key: knowledge
-    source_registry_id: artificial_analysis_knowledge
-  - benchmark_id: artificial_analysis_individual_evaluations
-    display_name: Artificial Analysis Individual Evaluations
-    official_name: AI Model Evaluations
-    parent_benchmark_id: artificial_analysis_intelligence
-    level: evaluation
-    status: manual_review
-    is_leaderboard: false
-    comparison_key: individual_evaluations
-    source_registry_id: artificial_analysis_individual_evaluations
-  - benchmark_id: terminal_bench_v4_0
-    display_name: Terminal-Bench 4.0
-    official_name: Terminal-Bench v4.0 Benchmark Leaderboard
-    parent_benchmark_id: artificial_analysis_individual_evaluations
-    level: evaluation
-    status: manual_review
-    is_leaderboard: true
-    comparison_key: terminal_bench_v4_0
-    source_registry_id: terminal_bench_v4_0
-  - benchmark_id: humanitys_last_exam
-    display_name: Humanity's Last Exam
-    official_name: Humanity's Last Exam Benchmark Leaderboard
-    parent_benchmark_id: artificial_analysis_individual_evaluations
-    level: evaluation
-    status: manual_review
-    is_leaderboard: true
-    comparison_key: humanitys_last_exam
-    source_registry_id: humanitys_last_exam
-  - benchmark_id: gpqa_diamond
-    display_name: GPQA Diamond
-    official_name: GPQA Diamond Benchmark Leaderboard
-    parent_benchmark_id: artificial_analysis_individual_evaluations
-    level: evaluation
-    status: manual_review
-    is_leaderboard: true
-    comparison_key: gpqa_diamond
-    source_registry_id: gpqa_diamond
-  - benchmark_id: scicode
-    display_name: SciCode
-    official_name: SciCode Benchmark Leaderboard
-    parent_benchmark_id: artificial_analysis_individual_evaluations
-    level: evaluation
-    status: manual_review
-    is_leaderboard: true
-    comparison_key: scicode
-    source_registry_id: scicode
-  - benchmark_id: livebench
-    display_name: LiveBench
-    official_name: LiveBench Leaderboard
-    parent_benchmark_id: null
-    level: family
-    status: manual_review
-    is_leaderboard: false
-    comparison_key: livebench
-    source_registry_id: livebench
-  - benchmark_id: livebench_overall
-    display_name: LiveBench Overall
-    official_name: LiveBench
-    parent_benchmark_id: livebench
-    level: overall
-    status: manual_review
-    is_leaderboard: true
-    comparison_key: live_bench
-    source_registry_id: livebench_overall
-  - benchmark_id: livebench_coding
-    display_name: LiveBench Coding
-    official_name: coding
-    parent_benchmark_id: livebench
-    level: category
-    status: manual_review
-    is_leaderboard: true
-    comparison_key: coding
-    source_registry_id: livebench_coding
-  - benchmark_id: livebench_math
-    display_name: LiveBench Math
-    official_name: math
-    parent_benchmark_id: livebench
-    level: category
-    status: manual_review
-    is_leaderboard: true
-    comparison_key: math
-    source_registry_id: livebench_math
-  - benchmark_id: livebench_reasoning
-    display_name: LiveBench Reasoning
-    official_name: reasoning
-    parent_benchmark_id: livebench
-    level: category
-    status: manual_review
-    is_leaderboard: true
-    comparison_key: reasoning
-    source_registry_id: livebench_reasoning
-  - benchmark_id: livebench_data_analysis
-    display_name: LiveBench Data Analysis
-    official_name: data_analysis
-    parent_benchmark_id: livebench
-    level: category
-    status: manual_review
-    is_leaderboard: true
-    comparison_key: data_analysis
-    source_registry_id: livebench_data_analysis
-  - benchmark_id: livebench_language
-    display_name: LiveBench Language
-    official_name: language
-    parent_benchmark_id: livebench
-    level: category
-    status: manual_review
-    is_leaderboard: true
-    comparison_key: language
-    source_registry_id: livebench_language
-  - benchmark_id: livebench_instruction_following
-    display_name: LiveBench Instruction Following
-    official_name: instruction_following
-    parent_benchmark_id: livebench
-    level: category
-    status: manual_review
-    is_leaderboard: true
-    comparison_key: instruction_following
-    source_registry_id: livebench_instruction_following
-  - benchmark_id: deepswe
-    display_name: DeepSWE
-    official_name: DeepSWE
-    parent_benchmark_id: null
-    level: family
-    status: manual_review
-    is_leaderboard: false
-    comparison_key: deepswe
-    source_registry_id: deepswe
-  - benchmark_id: deepswe_v1_1
-    display_name: DeepSWE v1.1
-    official_name: DeepSWE v1.1
-    parent_benchmark_id: deepswe
-    level: overall
-    status: enabled
-    is_leaderboard: true
-    comparison_key: v1.1
-    source_registry_id: deepswe_v1_1
-  - benchmark_id: deepswe_v1_1_tasks
-    display_name: DeepSWE v1.1 Tasks
-    official_name: DeepSWE v1.1 Task Catalog
-    parent_benchmark_id: deepswe_v1_1
-    level: artifact
-    status: manual_review
-    is_leaderboard: false
-    comparison_key: v1.1_tasks
-    source_registry_id: deepswe_v1_1_tasks
-  - benchmark_id: software_engineering_agent
-    display_name: Software Engineering Agent
-    official_name: Software Engineering Agent
-    parent_benchmark_id: deepswe
-    level: category
-    status: manual_review
-    is_leaderboard: false
-    comparison_key: software_engineering_agent
-    source_registry_id: software_engineering_agent
-  - benchmark_id: swebench
-    display_name: SWE-bench Test
-    official_name: Test
-    parent_benchmark_id: null
-    level: overall
-    status: enabled
-    is_leaderboard: true
-    comparison_key: Test
-    source_registry_id: swebench
-  - benchmark_id: swebench_verified
-    display_name: SWE-bench Verified
-    official_name: Verified
-    parent_benchmark_id: null
-    level: overall
-    status: enabled
-    is_leaderboard: true
-    comparison_key: Verified
-    source_registry_id: swebench_verified
-  - benchmark_id: webdev_arena
-    display_name: WebDev Arena
-    official_name: WebDev Arena
-    parent_benchmark_id: null
-    level: family
-    status: disabled
-    is_leaderboard: true
-    comparison_key: webdev_arena
-    source_registry_id: webdev_arena
+- benchmark_id: artificial_analysis_intelligence
+  display_name: Artificial Analysis Intelligence
+  official_name: Artificial Analysis Intelligence
+  parent_benchmark_id: null
+  level: family
+  status: manual_review
+  is_leaderboard: false
+  comparison_key: artificial_analysis
+  source_registry_id: artificial_analysis
+- benchmark_id: artificial_analysis_intelligence_index_v4_3
+  display_name: Artificial Analysis Intelligence Index v4.3
+  official_name: Artificial Analysis Intelligence Index v4.3
+  parent_benchmark_id: artificial_analysis_intelligence
+  level: overall
+  status: enabled
+  is_leaderboard: true
+  comparison_key: intelligence_index_v4_3
+  source_registry_id: artificial_analysis_intelligence_index_v4_3
+- benchmark_id: artificial_analysis_coding
+  display_name: Artificial Analysis Coding
+  official_name: Coding
+  parent_benchmark_id: artificial_analysis_intelligence
+  level: category
+  status: manual_review
+  is_leaderboard: true
+  comparison_key: coding
+  source_registry_id: artificial_analysis_coding
+- benchmark_id: artificial_analysis_agents
+  display_name: Artificial Analysis Agents
+  official_name: Agents
+  parent_benchmark_id: artificial_analysis_intelligence
+  level: category
+  status: manual_review
+  is_leaderboard: true
+  comparison_key: agents
+  source_registry_id: artificial_analysis_agents
+- benchmark_id: artificial_analysis_reasoning
+  display_name: Artificial Analysis Reasoning
+  official_name: Reasoning
+  parent_benchmark_id: artificial_analysis_intelligence
+  level: category
+  status: manual_review
+  is_leaderboard: true
+  comparison_key: reasoning
+  source_registry_id: artificial_analysis_reasoning
+- benchmark_id: artificial_analysis_knowledge
+  display_name: Artificial Analysis Knowledge
+  official_name: Knowledge
+  parent_benchmark_id: artificial_analysis_intelligence
+  level: category
+  status: manual_review
+  is_leaderboard: true
+  comparison_key: knowledge
+  source_registry_id: artificial_analysis_knowledge
+- benchmark_id: artificial_analysis_individual_evaluations
+  display_name: Artificial Analysis Individual Evaluations
+  official_name: AI Model Evaluations
+  parent_benchmark_id: artificial_analysis_intelligence
+  level: evaluation
+  status: manual_review
+  is_leaderboard: false
+  comparison_key: individual_evaluations
+  source_registry_id: artificial_analysis_individual_evaluations
+- benchmark_id: terminal_bench_v4_0
+  display_name: Terminal-Bench 4.0
+  official_name: Terminal-Bench v4.0 Benchmark Leaderboard
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: terminal_bench_v4_0
+  source_registry_id: terminal_bench_v4_0
+- benchmark_id: humanitys_last_exam
+  display_name: Humanity's Last Exam
+  official_name: Humanity's Last Exam Benchmark Leaderboard
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: humanitys_last_exam
+  source_registry_id: humanitys_last_exam
+- benchmark_id: gpqa_diamond
+  display_name: GPQA Diamond
+  official_name: GPQA Diamond Benchmark Leaderboard
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: gpqa_diamond
+  source_registry_id: gpqa_diamond
+- benchmark_id: scicode
+  display_name: SciCode
+  official_name: SciCode Benchmark Leaderboard
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: scicode
+  source_registry_id: scicode
+- benchmark_id: livebench
+  display_name: LiveBench
+  official_name: LiveBench Leaderboard
+  parent_benchmark_id: null
+  level: family
+  status: manual_review
+  is_leaderboard: false
+  comparison_key: livebench
+  source_registry_id: livebench
+- benchmark_id: livebench_overall
+  display_name: LiveBench Overall
+  official_name: LiveBench
+  parent_benchmark_id: livebench
+  level: overall
+  status: enabled
+  is_leaderboard: true
+  comparison_key: live_bench
+  source_registry_id: livebench_overall
+- benchmark_id: livebench_coding
+  display_name: LiveBench Coding
+  official_name: coding
+  parent_benchmark_id: livebench
+  level: category
+  status: enabled
+  is_leaderboard: true
+  comparison_key: coding
+  source_registry_id: livebench_coding
+- benchmark_id: livebench_math
+  display_name: LiveBench Math
+  official_name: math
+  parent_benchmark_id: livebench
+  level: category
+  status: enabled
+  is_leaderboard: true
+  comparison_key: math
+  source_registry_id: livebench_math
+- benchmark_id: livebench_reasoning
+  display_name: LiveBench Reasoning
+  official_name: reasoning
+  parent_benchmark_id: livebench
+  level: category
+  status: enabled
+  is_leaderboard: true
+  comparison_key: reasoning
+  source_registry_id: livebench_reasoning
+- benchmark_id: livebench_data_analysis
+  display_name: LiveBench Data Analysis
+  official_name: data_analysis
+  parent_benchmark_id: livebench
+  level: category
+  status: enabled
+  is_leaderboard: true
+  comparison_key: data_analysis
+  source_registry_id: livebench_data_analysis
+- benchmark_id: livebench_language
+  display_name: LiveBench Language
+  official_name: language
+  parent_benchmark_id: livebench
+  level: category
+  status: enabled
+  is_leaderboard: true
+  comparison_key: language
+  source_registry_id: livebench_language
+- benchmark_id: livebench_instruction_following
+  display_name: LiveBench Instruction Following
+  official_name: instruction_following
+  parent_benchmark_id: livebench
+  level: category
+  status: enabled
+  is_leaderboard: true
+  comparison_key: instruction_following
+  source_registry_id: livebench_instruction_following
+- benchmark_id: livebench_agentic_coding
+  display_name: LiveBench Agentic Coding
+  official_name: Agentic Coding
+  parent_benchmark_id: livebench
+  level: category
+  status: enabled
+  is_leaderboard: true
+  comparison_key: agentic_coding
+  source_registry_id: livebench_agentic_coding
+- benchmark_id: deepswe
+  display_name: DeepSWE
+  official_name: DeepSWE
+  parent_benchmark_id: null
+  level: family
+  status: manual_review
+  is_leaderboard: false
+  comparison_key: deepswe
+  source_registry_id: deepswe
+- benchmark_id: deepswe_v1_1
+  display_name: DeepSWE v1.1
+  official_name: DeepSWE v1.1
+  parent_benchmark_id: deepswe
+  level: overall
+  status: enabled
+  is_leaderboard: true
+  comparison_key: v1.1
+  source_registry_id: deepswe_v1_1
+- benchmark_id: deepswe_v1_1_tasks
+  display_name: DeepSWE v1.1 Tasks
+  official_name: DeepSWE v1.1 Task Catalog
+  parent_benchmark_id: deepswe_v1_1
+  level: artifact
+  status: manual_review
+  is_leaderboard: false
+  comparison_key: v1.1_tasks
+  source_registry_id: deepswe_v1_1_tasks
+- benchmark_id: software_engineering_agent
+  display_name: Software Engineering Agent
+  official_name: Software Engineering Agent
+  parent_benchmark_id: deepswe
+  level: category
+  status: manual_review
+  is_leaderboard: false
+  comparison_key: software_engineering_agent
+  source_registry_id: software_engineering_agent
+- benchmark_id: swebench
+  display_name: SWE-bench Test
+  official_name: Test
+  parent_benchmark_id: null
+  level: overall
+  status: enabled
+  is_leaderboard: true
+  comparison_key: Test
+  source_registry_id: swebench
+- benchmark_id: swebench_verified
+  display_name: SWE-bench Verified
+  official_name: Verified
+  parent_benchmark_id: null
+  level: overall
+  status: enabled
+  is_leaderboard: true
+  comparison_key: Verified
+  source_registry_id: swebench_verified
+- benchmark_id: webdev_arena
+  display_name: WebDev Arena
+  official_name: WebDev Arena
+  parent_benchmark_id: null
+  level: family
+  status: disabled
+  is_leaderboard: true
+  comparison_key: webdev_arena
+  source_registry_id: webdev_arena
+- benchmark_id: aa_lcr
+  display_name: AA LCR
+  official_name: AA LCR
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: aa_lcr
+  source_registry_id: aa_lcr
+- benchmark_id: aa_omniscience_index
+  display_name: AA Omniscience Index
+  official_name: AA Omniscience Index
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: aa_omniscience_index
+  source_registry_id: aa_omniscience_index
+- benchmark_id: aa_omniscience_accuracy
+  display_name: AA Omniscience Accuracy
+  official_name: AA Omniscience Accuracy
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: manual_review
+  is_leaderboard: true
+  comparison_key: aa_omniscience_accuracy
+  source_registry_id: aa_omniscience_accuracy
+- benchmark_id: aa_omniscience_non_hallucination_rate
+  display_name: AA Omniscience Non-Hallucination Rate
+  official_name: AA Omniscience Non-Hallucination Rate
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: manual_review
+  is_leaderboard: true
+  comparison_key: aa_omniscience_non_hallucination_rate
+  source_registry_id: aa_omniscience_non_hallucination_rate
+- benchmark_id: critpt
+  display_name: CritPt
+  official_name: CritPt
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: critpt
+  source_registry_id: critpt
+- benchmark_id: gdpval_aa_elo
+  display_name: GDPval-AA Elo
+  official_name: GDPval-AA Elo
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: gdpval_aa_elo
+  source_registry_id: gdpval_aa_elo
+- benchmark_id: gdpval_aa_normalized
+  display_name: GDPval-AA normalized
+  official_name: GDPval-AA normalized
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: manual_review
+  is_leaderboard: true
+  comparison_key: gdpval_aa_normalized
+  source_registry_id: gdpval_aa_normalized
+- benchmark_id: tau2_telecom
+  display_name: τ² Telecom
+  official_name: τ² Telecom
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: manual_review
+  is_leaderboard: true
+  comparison_key: tau2_telecom
+  source_registry_id: tau2_telecom
+- benchmark_id: tau_banking
+  display_name: τ-Banking
+  official_name: τ-Banking
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: manual_review
+  is_leaderboard: true
+  comparison_key: tau_banking
+  source_registry_id: tau_banking
+- benchmark_id: terminalbench_hard
+  display_name: Terminal-Bench Hard
+  official_name: Terminal-Bench Hard
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: terminalbench_hard
+  source_registry_id: terminalbench_hard
+- benchmark_id: terminalbench_v2_1
+  display_name: Terminal-Bench v2.1
+  official_name: Terminal-Bench v2.1
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: terminalbench_v2_1
+  source_registry_id: terminalbench_v2_1
+- benchmark_id: ifbench
+  display_name: IFBench
+  official_name: IFBench
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: ifbench
+  source_registry_id: ifbench
+- benchmark_id: mmmu_pro
+  display_name: MMMU-Pro
+  official_name: MMMU-Pro
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: mmmu_pro
+  source_registry_id: mmmu_pro
+- benchmark_id: artificial_analysis_openness_index
+  display_name: Artificial Analysis Openness Index
+  official_name: Artificial Analysis Openness Index
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: artificial_analysis_openness_index
+  source_registry_id: artificial_analysis_openness_index
+- benchmark_id: artificial_analysis_multilingual_index
+  display_name: Artificial Analysis Multilingual Index
+  official_name: Artificial Analysis Multilingual Index
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: manual_review
+  is_leaderboard: true
+  comparison_key: artificial_analysis_multilingual_index
+  source_registry_id: artificial_analysis_multilingual_index
+- benchmark_id: mlcr_overall
+  display_name: MLCR Overall
+  official_name: MLCR Overall
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: mlcr_overall
+  source_registry_id: mlcr_overall
