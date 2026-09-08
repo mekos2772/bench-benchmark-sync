@@ -58,6 +58,8 @@ def test_factory_maps_enabled_and_manual_review_nodes():
     assert isinstance(registry.create("livebench_coding"), LiveBenchCollector)
     assert isinstance(registry.create("terminal_bench_v4_0"), ArtificialAnalysisCollector)
     assert isinstance(registry.create("software_engineering_agent"), ManualReviewCollector)
+    assert isinstance(registry.create("artificial_analysis_agents"), ManualReviewCollector)
+    assert isinstance(registry.create("livebench"), ManualReviewCollector)
 
 
 def test_hierarchy_is_complete_and_acyclic():

@@ -34,6 +34,8 @@ class CollectorRegistry:
         source = self.sources.get(benchmark_id)
         if source is None:
             raise KeyError(f"unknown benchmark: {benchmark_id}")
+        if source.get("status") != "enabled":
+            return ManualReviewCollector(source)
         if benchmark_id == "swebench":
             return SWEbenchCollector(source, board_name="Test")
         if benchmark_id == "swebench_verified":
