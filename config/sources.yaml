@@ -37,12 +37,12 @@ sources:
   endpoint: null
   fetch_method: null
   update_frequency: daily
-  requires_auth: unknown
+  requires_auth: false
   evidence_url: https://artificialanalysis.ai/methodology/intelligence-benchmarking
   release_tracking: unconfirmed
   hash_required: true
-  notes: Public pages were confirmed, but no stable official structured result endpoint
-    or file was confirmed. Do not scrape screenshots or guess an API.
+  notes: No independently verified public Dataset JSON-LD for this field/page; do
+    not use another evaluation as a substitute.
 - benchmark_id: lmarena_overall
   status: manual_review
   source_name: LMArena Overall Arena leaderboard
@@ -258,56 +258,59 @@ sources:
   endpoint: null
   fetch_method: null
   update_frequency: daily
-  requires_auth: unknown
+  requires_auth: false
   evidence_url: https://artificialanalysis.ai/methodology/intelligence-benchmarking
   release_tracking: unconfirmed
   hash_required: true
-  notes: Family registry node for Intelligence, Coding, Agents, Reasoning, Knowledge,
-    and individual evaluations. No stable official structured result endpoint was
-    confirmed.
+  notes: No independently verified public Dataset JSON-LD for this field/page; do
+    not use another evaluation as a substitute.
 - benchmark_id: artificial_analysis_intelligence_index_v4_3
-  status: manual_review
-  source_name: Artificial Analysis Intelligence Index v4.3
+  status: enabled
+  source_name: Artificial Analysis Intelligence Index official public Dataset page
   organization: Artificial Analysis
   source_type: official_page_endpoint
   official_url: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
-  endpoint: null
-  fetch_method: null
+  endpoint: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
+  fetch_method: GET
   update_frequency: daily
-  requires_auth: unknown
-  evidence_url: https://artificialanalysis.ai/methodology/intelligence-benchmarking
-  release_tracking: v4.3
+  requires_auth: false
+  evaluation_field: 'Artificial Analysis Intelligence Index: Score'
+  evidence_url: https://artificialanalysis.ai/api-reference/beta
+  release_tracking: page_jsonld
   hash_required: true
-  notes: Official page and version confirmed; no public stable JSON/CSV/raw/API endpoint
-    confirmed.
+  notes: Public official Dataset JSON-LD page; no API key required. Page contract
+    changes fail closed.
+  jsonld_name: 'Artificial Analysis Intelligence Index: Score'
 - benchmark_id: artificial_analysis_coding
   status: manual_review
-  source_name: Artificial Analysis Coding category
+  source_name: Artificial Analysis Coding candidate source (manual review)
   organization: Artificial Analysis
   source_type: official_page_endpoint
-  official_url: https://artificialanalysis.ai/methodology/intelligence-benchmarking
+  official_url: https://artificialanalysis.ai/evaluations/livecodebench
   endpoint: null
   fetch_method: null
   update_frequency: daily
-  requires_auth: unknown
-  evidence_url: https://artificialanalysis.ai/methodology/intelligence-benchmarking
-  release_tracking: unconfirmed
+  requires_auth: false
+  evidence_url: https://artificialanalysis.ai/api-reference/beta
+  release_tracking: page_jsonld
   hash_required: true
-  notes: Category label only until a structured official result source is verified.
+  notes: No independently verified public Dataset JSON-LD for this field/page; do
+    not use another evaluation as a substitute.
 - benchmark_id: artificial_analysis_agents
   status: manual_review
-  source_name: Artificial Analysis Agents category
+  source_name: Artificial Analysis Agentic Index candidate source (manual review)
   organization: Artificial Analysis
   source_type: official_page_endpoint
-  official_url: https://artificialanalysis.ai/methodology/intelligence-benchmarking
+  official_url: https://artificialanalysis.ai/evaluations/gdpval-aa
   endpoint: null
   fetch_method: null
   update_frequency: daily
-  requires_auth: unknown
-  evidence_url: https://artificialanalysis.ai/methodology/intelligence-benchmarking
-  release_tracking: unconfirmed
+  requires_auth: false
+  evidence_url: https://artificialanalysis.ai/api-reference/beta
+  release_tracking: page_jsonld
   hash_required: true
-  notes: Official naming is Agents/Agentic; no structured endpoint confirmed.
+  notes: No independently verified public Dataset JSON-LD for this field/page; do
+    not use another evaluation as a substitute.
 - benchmark_id: artificial_analysis_reasoning
   status: manual_review
   source_name: Artificial Analysis Reasoning category
@@ -317,11 +320,12 @@ sources:
   endpoint: null
   fetch_method: null
   update_frequency: daily
-  requires_auth: unknown
+  requires_auth: false
   evidence_url: https://artificialanalysis.ai/methodology/intelligence-benchmarking
   release_tracking: unconfirmed
   hash_required: true
-  notes: Category label only until a structured official result source is verified.
+  notes: No independently verified public Dataset JSON-LD for this field/page; do
+    not use another evaluation as a substitute.
 - benchmark_id: artificial_analysis_knowledge
   status: manual_review
   source_name: Artificial Analysis Knowledge category
@@ -331,12 +335,12 @@ sources:
   endpoint: null
   fetch_method: null
   update_frequency: daily
-  requires_auth: unknown
+  requires_auth: false
   evidence_url: https://artificialanalysis.ai/leaderboards/models
   release_tracking: unconfirmed
   hash_required: true
-  notes: Knowledge is a page/category concept, not a confirmed standalone structured
-    result source.
+  notes: No independently verified public Dataset JSON-LD for this field/page; do
+    not use another evaluation as a substitute.
 - benchmark_id: artificial_analysis_individual_evaluations
   status: manual_review
   source_name: Artificial Analysis AI Model Evaluations
@@ -346,173 +350,217 @@ sources:
   endpoint: null
   fetch_method: null
   update_frequency: daily
-  requires_auth: unknown
+  requires_auth: false
   evidence_url: https://artificialanalysis.ai/evaluations
   release_tracking: unconfirmed
   hash_required: true
-  notes: Individual evaluations are registered as a group only; each evaluation needs
-    separate source verification.
+  notes: No independently verified public Dataset JSON-LD for this field/page; do
+    not use another evaluation as a substitute.
 - benchmark_id: terminal_bench_v4_0
-  status: manual_review
-  source_name: Artificial Analysis Terminal-Bench v4.0 evaluation
+  status: enabled
+  source_name: Artificial Analysis Terminal-Bench v4.0 official public Dataset page
   organization: Artificial Analysis
   source_type: official_page_endpoint
   official_url: https://artificialanalysis.ai/evaluations/terminalbench-v4-0
-  endpoint: null
-  fetch_method: null
-  update_frequency: release_based
-  requires_auth: unknown
-  evidence_url: https://artificialanalysis.ai/evaluations/terminalbench-v4-0
-  release_tracking: v4.0
+  endpoint: https://artificialanalysis.ai/evaluations/terminalbench-v4-0
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'Terminal-Bench v4.0: Score'
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: page_jsonld
   hash_required: true
-  notes: Official evaluation page confirmed; no public structured endpoint confirmed.
+  notes: Public official Dataset JSON-LD page; no API key required. Page contract
+    changes fail closed.
+  jsonld_name: 'Terminal-Bench v4.0: Score'
 - benchmark_id: humanitys_last_exam
-  status: manual_review
-  source_name: Artificial Analysis Humanity's Last Exam evaluation
+  status: enabled
+  source_name: Artificial Analysis Humanity's Last Exam official public Dataset page
   organization: Artificial Analysis
   source_type: official_page_endpoint
   official_url: https://artificialanalysis.ai/evaluations/humanitys-last-exam
-  endpoint: null
-  fetch_method: null
-  update_frequency: release_based
-  requires_auth: unknown
-  evidence_url: https://artificialanalysis.ai/evaluations/humanitys-last-exam
-  release_tracking: unconfirmed
+  endpoint: https://artificialanalysis.ai/evaluations/humanitys-last-exam
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'Humanity''s Last Exam: Score'
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: page_jsonld
   hash_required: true
-  notes: HLE page confirmed; no public structured endpoint confirmed.
+  notes: Public official Dataset JSON-LD page; no API key required. Page contract
+    changes fail closed.
+  jsonld_name: 'Humanity''s Last Exam: Score'
 - benchmark_id: gpqa_diamond
-  status: manual_review
-  source_name: Artificial Analysis GPQA Diamond evaluation
+  status: enabled
+  source_name: Artificial Analysis GPQA Diamond official public Dataset page
   organization: Artificial Analysis
   source_type: official_page_endpoint
   official_url: https://artificialanalysis.ai/evaluations/gpqa-diamond
-  endpoint: null
-  fetch_method: null
-  update_frequency: release_based
-  requires_auth: unknown
-  evidence_url: https://artificialanalysis.ai/evaluations/gpqa-diamond
-  release_tracking: legacy
+  endpoint: https://artificialanalysis.ai/evaluations/gpqa-diamond
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'GPQA Diamond: Score'
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: page_jsonld
   hash_required: true
-  notes: Official GPQA Diamond page confirmed; no public structured endpoint confirmed.
+  notes: Public official Dataset JSON-LD page; no API key required. Page contract
+    changes fail closed.
+  jsonld_name: 'GPQA Diamond: Score'
 - benchmark_id: scicode
-  status: manual_review
-  source_name: Artificial Analysis SciCode evaluation
+  status: enabled
+  source_name: Artificial Analysis SciCode official public Dataset page
   organization: Artificial Analysis
   source_type: official_page_endpoint
   official_url: https://artificialanalysis.ai/evaluations/scicode
-  endpoint: null
-  fetch_method: null
-  update_frequency: release_based
-  requires_auth: unknown
-  evidence_url: https://artificialanalysis.ai/evaluations/scicode
-  release_tracking: unconfirmed
+  endpoint: https://artificialanalysis.ai/evaluations/scicode
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'SciCode: Score'
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: page_jsonld
   hash_required: true
-  notes: Official SciCode page confirmed; no public structured endpoint confirmed.
+  notes: Public official Dataset JSON-LD page; no API key required. Page contract
+    changes fail closed.
+  jsonld_name: 'SciCode: Score'
 - benchmark_id: livebench_overall
-  status: manual_review
-  source_name: LiveBench overall leaderboard
+  status: enabled
+  source_name: LiveBench dated official leaderboard CSV
   organization: LiveBench
   source_type: official_github_raw
   official_url: https://livebench.ai/
-  endpoint: null
-  fetch_method: null
-  update_frequency: weekly_or_release
+  endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
+  raw_base_url: https://raw.githubusercontent.com/LiveBench/livebench.github.io/main/public
+  fallback_release_id: '2026-06-25'
+  fetch_method: GET
+  update_frequency: release_based
   requires_auth: false
-  evidence_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
-  release_tracking: official_release_mechanism
+  category_selector: overall
+  evidence_url: https://github.com/LiveBench/livebench.github.io
+  release_tracking: dated_table_and_categories_files
   hash_required: true
-  notes: Overall evaluation route is documented, but no stable public aggregate leaderboard
-    score file was confirmed.
+  notes: Total is reconstructed with the official frontend category-mean algorithm;
+    no rank is inferred.
 - benchmark_id: livebench_coding
-  status: manual_review
-  source_name: LiveBench coding category
+  status: enabled
+  source_name: LiveBench Coding dated official leaderboard CSV
   organization: LiveBench
   source_type: official_github_raw
-  official_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
-  endpoint: null
-  fetch_method: null
-  update_frequency: weekly_or_release
+  official_url: https://livebench.ai/
+  endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
+  raw_base_url: https://raw.githubusercontent.com/LiveBench/livebench.github.io/main/public
+  fallback_release_id: '2026-06-25'
+  fetch_method: GET
+  update_frequency: release_based
   requires_auth: false
-  evidence_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
-  release_tracking: official_release_mechanism
+  category_selector: coding
+  evidence_url: https://github.com/LiveBench/livebench.github.io
+  release_tracking: dated_table_and_categories_files
   hash_required: true
-  notes: Official category name coding; no stable public aggregate leaderboard score
-    file confirmed.
+  notes: Official category Coding; scores are averaged only within this category.
 - benchmark_id: livebench_math
-  status: manual_review
-  source_name: LiveBench math category
+  status: enabled
+  source_name: LiveBench Mathematics dated official leaderboard CSV
   organization: LiveBench
   source_type: official_github_raw
-  official_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
-  endpoint: null
-  fetch_method: null
-  update_frequency: weekly_or_release
+  official_url: https://livebench.ai/
+  endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
+  raw_base_url: https://raw.githubusercontent.com/LiveBench/livebench.github.io/main/public
+  fallback_release_id: '2026-06-25'
+  fetch_method: GET
+  update_frequency: release_based
   requires_auth: false
-  evidence_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
-  release_tracking: official_release_mechanism
+  category_selector: math
+  evidence_url: https://github.com/LiveBench/livebench.github.io
+  release_tracking: dated_table_and_categories_files
   hash_required: true
-  notes: Official category name math; no stable public aggregate leaderboard score
-    file confirmed.
+  notes: User label Math maps to official taxonomy Mathematics.
 - benchmark_id: livebench_reasoning
-  status: manual_review
-  source_name: LiveBench reasoning category
+  status: enabled
+  source_name: LiveBench Reasoning dated official leaderboard CSV
   organization: LiveBench
   source_type: official_github_raw
-  official_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
-  endpoint: null
-  fetch_method: null
-  update_frequency: weekly_or_release
+  official_url: https://livebench.ai/
+  endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
+  raw_base_url: https://raw.githubusercontent.com/LiveBench/livebench.github.io/main/public
+  fallback_release_id: '2026-06-25'
+  fetch_method: GET
+  update_frequency: release_based
   requires_auth: false
-  evidence_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
-  release_tracking: official_release_mechanism
+  category_selector: reasoning
+  evidence_url: https://github.com/LiveBench/livebench.github.io
+  release_tracking: dated_table_and_categories_files
   hash_required: true
-  notes: Official category name reasoning; no stable public aggregate leaderboard
-    score file confirmed.
+  notes: Official category Reasoning.
 - benchmark_id: livebench_data_analysis
-  status: manual_review
-  source_name: LiveBench data analysis category
+  status: enabled
+  source_name: LiveBench Data Analysis dated official leaderboard CSV
   organization: LiveBench
   source_type: official_github_raw
-  official_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
-  endpoint: null
-  fetch_method: null
-  update_frequency: weekly_or_release
+  official_url: https://livebench.ai/
+  endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
+  raw_base_url: https://raw.githubusercontent.com/LiveBench/livebench.github.io/main/public
+  fallback_release_id: '2026-06-25'
+  fetch_method: GET
+  update_frequency: release_based
   requires_auth: false
-  evidence_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
-  release_tracking: official_release_mechanism
+  category_selector: data_analysis
+  evidence_url: https://github.com/LiveBench/livebench.github.io
+  release_tracking: dated_table_and_categories_files
   hash_required: true
-  notes: Official category name data_analysis; no stable public aggregate leaderboard
-    score file confirmed.
+  notes: Official category Data Analysis.
 - benchmark_id: livebench_language
-  status: manual_review
-  source_name: LiveBench language category
+  status: enabled
+  source_name: LiveBench Language dated official leaderboard CSV
   organization: LiveBench
   source_type: official_github_raw
-  official_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
-  endpoint: null
-  fetch_method: null
-  update_frequency: weekly_or_release
+  official_url: https://livebench.ai/
+  endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
+  raw_base_url: https://raw.githubusercontent.com/LiveBench/livebench.github.io/main/public
+  fallback_release_id: '2026-06-25'
+  fetch_method: GET
+  update_frequency: release_based
   requires_auth: false
-  evidence_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
-  release_tracking: official_release_mechanism
+  category_selector: language
+  evidence_url: https://github.com/LiveBench/livebench.github.io
+  release_tracking: dated_table_and_categories_files
   hash_required: true
-  notes: Official category name language; no stable public aggregate leaderboard score
-    file confirmed.
+  notes: Official category Language.
 - benchmark_id: livebench_instruction_following
-  status: manual_review
-  source_name: LiveBench instruction following category
+  status: enabled
+  source_name: LiveBench IF dated official leaderboard CSV
   organization: LiveBench
   source_type: official_github_raw
-  official_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
-  endpoint: null
-  fetch_method: null
-  update_frequency: weekly_or_release
+  official_url: https://livebench.ai/
+  endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
+  raw_base_url: https://raw.githubusercontent.com/LiveBench/livebench.github.io/main/public
+  fallback_release_id: '2026-06-25'
+  fetch_method: GET
+  update_frequency: release_based
   requires_auth: false
-  evidence_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
-  release_tracking: official_release_mechanism
+  category_selector: instruction_following
+  evidence_url: https://github.com/LiveBench/livebench.github.io
+  release_tracking: dated_table_and_categories_files
   hash_required: true
-  notes: Official category name instruction_following; no stable public aggregate
-    leaderboard score file confirmed.
+  notes: User label Instruction Following maps to official taxonomy IF.
+- benchmark_id: livebench_agentic_coding
+  status: enabled
+  source_name: LiveBench Agentic Coding dated official leaderboard CSV
+  organization: LiveBench
+  source_type: official_github_raw
+  official_url: https://livebench.ai/
+  endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
+  raw_base_url: https://raw.githubusercontent.com/LiveBench/livebench.github.io/main/public
+  fallback_release_id: '2026-06-25'
+  fetch_method: GET
+  update_frequency: release_based
+  requires_auth: false
+  category_selector: agentic_coding
+  evidence_url: https://github.com/LiveBench/livebench.github.io
+  release_tracking: dated_table_and_categories_files
+  hash_required: true
+  notes: Current taxonomy contains Agentic Coding; kept independent from Coding.
 - benchmark_id: deepswe
   status: manual_review
   source_name: DeepSWE family
@@ -572,3 +620,264 @@ sources:
   hash_required: true
   notes: User-facing display label only; no distinct official benchmark/result source
     was confirmed. Use deepswe_v1_1 for verified records.
+- benchmark_id: aa_lcr
+  status: enabled
+  source_name: Artificial Analysis AA LCR official public Dataset page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning
+  endpoint: https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'AA-LCR v1.1'
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: page_jsonld
+  hash_required: true
+  notes: Public official Dataset JSON-LD page; no API key required. Page contract
+    changes fail closed.
+  jsonld_name: 'AA-LCR v1.1: Score'
+- benchmark_id: aa_omniscience_index
+  status: enabled
+  source_name: Artificial Analysis AA Omniscience Index official public Dataset page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/omniscience
+  endpoint: https://artificialanalysis.ai/evaluations/omniscience
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: omniscienceIndex
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: page_jsonld
+  hash_required: true
+  notes: Public official Dataset JSON-LD page; no API key required. Page contract
+    changes fail closed.
+  jsonld_name: 'AA-Omniscience Index: Score'
+- benchmark_id: aa_omniscience_accuracy
+  status: manual_review
+  source_name: Artificial Analysis AA Omniscience Accuracy candidate source (manual review)
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations
+  endpoint: null
+  fetch_method: null
+  update_frequency: daily
+  requires_auth: false
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: intelligence_index_version
+  hash_required: true
+  notes: No independently verified public Dataset JSON-LD for this field/page; do
+    not use another evaluation as a substitute.
+- benchmark_id: aa_omniscience_non_hallucination_rate
+  status: manual_review
+  source_name: Artificial Analysis AA Omniscience Non-Hallucination Rate candidate source (manual review)
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations
+  endpoint: null
+  fetch_method: null
+  update_frequency: daily
+  requires_auth: false
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: intelligence_index_version
+  hash_required: true
+  notes: No independently verified public Dataset JSON-LD for this field/page; do
+    not use another evaluation as a substitute.
+- benchmark_id: critpt
+  status: enabled
+  source_name: Artificial Analysis CritPt official public Dataset page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/critpt
+  endpoint: https://artificialanalysis.ai/evaluations/critpt
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'CritPt: Score'
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: page_jsonld
+  hash_required: true
+  notes: Public official Dataset JSON-LD page; no API key required. Page contract
+    changes fail closed.
+  jsonld_name: 'CritPt: Score'
+- benchmark_id: gdpval_aa_elo
+  status: enabled
+  source_name: Artificial Analysis GDPval-AA Elo official public Dataset page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/gdpval-aa
+  endpoint: https://artificialanalysis.ai/evaluations/gdpval-aa
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: gdpvalAaElo
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: page_jsonld
+  hash_required: true
+  notes: Public official Dataset JSON-LD page; no API key required. Page contract
+    changes fail closed.
+  jsonld_name: 'GDPval-AA v2 Leaderboard'
+- benchmark_id: gdpval_aa_normalized
+  status: manual_review
+  source_name: Artificial Analysis GDPval-AA normalized candidate source (manual review)
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations
+  endpoint: null
+  fetch_method: null
+  update_frequency: daily
+  requires_auth: false
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: intelligence_index_version
+  hash_required: true
+  notes: No independently verified public Dataset JSON-LD for this field/page; do
+    not use another evaluation as a substitute.
+- benchmark_id: tau2_telecom
+  status: manual_review
+  source_name: Artificial Analysis τ² Telecom candidate source (manual review)
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations
+  endpoint: null
+  fetch_method: null
+  update_frequency: daily
+  requires_auth: false
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: intelligence_index_version
+  hash_required: true
+  notes: No independently verified public Dataset JSON-LD for this field/page; do
+    not use another evaluation as a substitute.
+- benchmark_id: tau_banking
+  status: manual_review
+  source_name: Artificial Analysis τ-Banking candidate source (manual review)
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations
+  endpoint: null
+  fetch_method: null
+  update_frequency: daily
+  requires_auth: false
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: intelligence_index_version
+  hash_required: true
+  notes: No independently verified public Dataset JSON-LD for this field/page; do
+    not use another evaluation as a substitute.
+- benchmark_id: terminalbench_hard
+  status: enabled
+  source_name: Artificial Analysis Terminal-Bench Hard official public Dataset page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/terminalbench-hard
+  endpoint: https://artificialanalysis.ai/evaluations/terminalbench-hard
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'Terminal-Bench Hard: Score'
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: page_jsonld
+  hash_required: true
+  notes: Public official Dataset JSON-LD page; no API key required. Page contract
+    changes fail closed.
+  jsonld_name: 'Terminal-Bench Hard: Score'
+- benchmark_id: terminalbench_v2_1
+  status: enabled
+  source_name: Artificial Analysis Terminal-Bench v2.1 official public Dataset page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/terminalbench-v2-1
+  endpoint: https://artificialanalysis.ai/evaluations/terminalbench-v2-1
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'Terminal-Bench v2.1: Score'
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: page_jsonld
+  hash_required: true
+  notes: Public official Dataset JSON-LD page; no API key required. Page contract
+    changes fail closed.
+  jsonld_name: 'Terminal-Bench v2.1: Score'
+- benchmark_id: ifbench
+  status: enabled
+  source_name: Artificial Analysis IFBench official public Dataset page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/ifbench
+  endpoint: https://artificialanalysis.ai/evaluations/ifbench
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'IFBench: Score'
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: page_jsonld
+  hash_required: true
+  notes: Public official Dataset JSON-LD page; no API key required. Page contract
+    changes fail closed.
+  jsonld_name: 'IFBench: Score'
+- benchmark_id: mmmu_pro
+  status: enabled
+  source_name: Artificial Analysis MMMU-Pro official public Dataset page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/mmmu-pro
+  endpoint: https://artificialanalysis.ai/evaluations/mmmu-pro
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'MMMU-Pro: Score'
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: page_jsonld
+  hash_required: true
+  notes: Public official Dataset JSON-LD page; no API key required. Page contract
+    changes fail closed.
+  jsonld_name: 'MMMU-Pro: Score'
+- benchmark_id: artificial_analysis_openness_index
+  status: enabled
+  source_name: Artificial Analysis Artificial Analysis Openness Index official Data
+    API
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/artificial-analysis-openness-index
+  endpoint: https://artificialanalysis.ai/evaluations/artificial-analysis-openness-index
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'Artificial Analysis Openness Index: Score'
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: page_jsonld
+  hash_required: true
+  notes: Public official Dataset JSON-LD page; no API key required. Page contract
+    changes fail closed.
+  jsonld_name: 'Artificial Analysis Openness Index: Score'
+- benchmark_id: artificial_analysis_multilingual_index
+  status: manual_review
+  source_name: Artificial Analysis Multilingual Index candidate source (manual review)
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations
+  endpoint: null
+  fetch_method: null
+  update_frequency: daily
+  requires_auth: false
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: intelligence_index_version
+  hash_required: true
+  notes: No independently verified public Dataset JSON-LD for this field/page; do
+    not use another evaluation as a substitute.
+- benchmark_id: mlcr_overall
+  status: enabled
+  source_name: Artificial Analysis MLCR Overall official public Dataset page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/mlcr-aa
+  endpoint: https://artificialanalysis.ai/evaluations/mlcr-aa
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'MLCR-AA'
+  evidence_url: https://artificialanalysis.ai/api/v2/openapi
+  release_tracking: page_jsonld
+  hash_required: true
+  notes: Public official Dataset JSON-LD page; no API key required. Page contract
+    changes fail closed.
+  jsonld_name: 'MLCR-AA: Score'

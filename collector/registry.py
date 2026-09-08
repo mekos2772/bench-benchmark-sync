@@ -5,8 +5,10 @@ from typing import Any
 
 import yaml
 
+from .artificial_analysis.collector import ArtificialAnalysisCollector
 from .base import BenchmarkCollector
 from .deepswe.collector import DeepSWECollector
+from .livebench.collector import LiveBenchCollector
 from .manual_review import ManualReviewCollector
 from .swebench.collector import SWEbenchCollector
 
@@ -38,4 +40,13 @@ class CollectorRegistry:
             return SWEbenchCollector(source, board_name="Verified")
         if benchmark_id == "deepswe_v1_1":
             return DeepSWECollector(source)
+        if (
+            benchmark_id.startswith("livebench_")
+            and source.get("source_type") == "official_github_raw"
+        ):
+            return LiveBenchCollector(source)
+        if source.get("organization") == "Artificial Analysis" and source.get(
+            "source_type"
+        ) in {"official_api", "official_page_endpoint"}:
+            return ArtificialAnalysisCollector(source)
         return ManualReviewCollector(source)

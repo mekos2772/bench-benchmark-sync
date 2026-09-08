@@ -1,1 +1,1 @@
-"""LiveBench collector namespace; source remains manual_review."""
+"""LiveBench collector namespace for dated official leaderboard assets."""
