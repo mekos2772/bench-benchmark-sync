@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Immutable benchmark snapshot",
+  "type": "object",
+  "required": ["schema_version", "status", "benchmark_id", "source", "fetch_time", "content_hash", "records"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "status": {"enum": ["success", "no_change", "partial", "failed", "manual_review"]},
+    "benchmark_id": {"type": "string"},
+    "source": {"type": "object"},
+    "fetch_time": {"type": "string"},
+    "content_hash": {"type": "string", "minLength": 64, "maxLength": 64},
+    "raw_payload_ref": {"type": "string"},
+    "records": {"type": "array", "items": {"$ref": "model_score.schema.json"}}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sync run",
+  "type": "object",
+  "required": ["run_id", "benchmark_id", "status", "started_at"],
+  "properties": {
+    "run_id": {"type": "string"},
+    "benchmark_id": {"type": "string"},
+    "status": {"enum": ["success", "no_change", "partial", "failed", "manual_review"]},
+    "started_at": {"type": "string"},
+    "finished_at": {"type": ["string", "null"]},
+    "error_message": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}

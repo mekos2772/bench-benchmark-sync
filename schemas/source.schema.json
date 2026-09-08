@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Benchmark source registry entry",
+  "type": "object",
+  "required": ["benchmark_id", "status", "source_name", "organization", "source_type", "official_url", "endpoint", "fetch_method", "update_frequency", "requires_auth", "evidence_url", "release_tracking", "hash_required", "notes"],
+  "properties": {
+    "benchmark_id": {"type": "string", "minLength": 1},
+    "status": {"enum": ["enabled", "manual_review", "disabled"]},
+    "source_name": {"type": "string", "minLength": 1},
+    "organization": {"type": "string", "minLength": 1},
+    "source_type": {"type": "string", "minLength": 1},
+    "official_url": {"type": ["string", "null"]},
+    "endpoint": {"type": ["string", "null"]},
+    "fetch_method": {"type": ["string", "null"]},
+    "update_frequency": {"type": ["string", "null"]},
+    "requires_auth": {},
+    "evidence_url": {"type": ["string", "null"]},
+    "release_tracking": {"type": ["string", "null"]},
+    "hash_required": {"type": "boolean"},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}

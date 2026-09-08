@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bench-benchmark-sync"
+version = "0.1.0"
+description = "Conservative, traceable collectors for public AI benchmark leaderboards"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "PyYAML>=6.0",
+  "jsonschema>=4.20",
+  "requests>=2.31",
+]
+
+[project.scripts]
+benchmark-sync = "collector.runner:main"
+
+[tool.setuptools.packages.find]
+include = ["collector*", "normalize*", "persistence*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]

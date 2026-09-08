@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ModelScore",
+  "type": "object",
+  "required": ["benchmark", "release", "metric", "comparison_key", "model", "provider", "score", "rank", "timestamp", "source_hash"],
+  "properties": {
+    "benchmark": {"type": "string", "minLength": 1},
+    "release": {"type": ["string", "null"]},
+    "metric": {"type": "string", "minLength": 1},
+    "comparison_key": {"type": "string", "minLength": 1},
+    "model": {"type": "string", "minLength": 1},
+    "provider": {"type": ["string", "null"]},
+    "score": {"type": ["number", "string", "null"]},
+    "rank": {"type": ["integer", "null"], "minimum": 1},
+    "timestamp": {"type": "string", "minLength": 1},
+    "source_hash": {"type": ["string", "null"]},
+    "category": {"type": ["string", "null"]},
+    "version": {"type": ["string", "null"]},
+    "source": {"type": ["object", "null"]},
+    "benchmark_weight": {"type": ["number", "null"]},
+    "confidence_score": {"type": ["number", "null"]},
+    "source_reliability": {"type": ["number", "null"]},
+    "last_verified": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}

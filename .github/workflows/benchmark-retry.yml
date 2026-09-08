@@ -1,0 +1,64 @@
+name: benchmark-retry
+
+on:
+  workflow_run:
+    workflows: ["benchmark-sync"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      benchmark:
+        description: "Benchmark to retry"
+        required: true
+        type: string
+      max_attempts:
+        description: "Maximum attempts, capped at 2"
+        required: false
+        default: "2"
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: benchmark-retry-${{ github.ref }}-${{ inputs.benchmark || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  retry:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'failure'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -r requirements.txt
+      - name: Retry at most twice
+        env:
+          INGESTION_URL: ${{ secrets.INGESTION_URL }}
+          INGESTION_SECRET: ${{ secrets.INGESTION_SECRET }}
+          INPUT_BENCHMARK: ${{ inputs.benchmark }}
+          INPUT_MAX_ATTEMPTS: ${{ inputs.max_attempts }}
+          WORKFLOW_BENCHMARK: swebench
+        run: |
+          set +e
+          benchmark_list="${INPUT_BENCHMARK:-swebench swebench_verified}"
+          attempts="${INPUT_MAX_ATTEMPTS:-2}"
+          case "$attempts" in 1|2) ;; *) attempts=2 ;; esac
+          for benchmark in $benchmark_list; do
+            succeeded=0
+            for attempt in $(seq 1 "$attempts"); do
+              python -m collector.runner --benchmark "$benchmark" --output-dir artifacts --ingest
+              status=$?
+              if [ "$status" -eq 0 ]; then succeeded=1; break; fi
+              sleep $((attempt * 5))
+            done
+            if [ "$succeeded" -ne 1 ]; then exit 1; fi
+          done
+          exit 0
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-retry-${{ github.run_id }}
+          path: artifacts/
+          if-no-files-found: ignore
