@@ -1,255 +1,574 @@
 sources:
-  - benchmark_id: swebench
-    status: enabled
-    source_name: SWE-bench official leaderboard JSON
-    organization: SWE-bench
-    source_type: official_github_raw
-    official_url: https://www.swebench.com/
-    endpoint: https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/master/data/leaderboards.json
-    fetch_method: GET
-    update_frequency: weekly_or_release
-    requires_auth: false
-    evidence_url: https://github.com/SWE-bench/swe-bench.github.io/blob/master/data/leaderboards.json
-    release_tracking: board.name_and_result.folder
-    hash_required: true
-    notes: The Test board is mapped to SWE-bench. Missing rank is preserved as null; no rank is inferred.
-
-  - benchmark_id: swebench_verified
-    status: enabled
-    source_name: SWE-bench Verified official leaderboard JSON
-    organization: SWE-bench
-    source_type: official_github_raw
-    official_url: https://www.swebench.com/
-    endpoint: https://raw.githubusercontent.com/SWE-bench/SWE-bench.github.io/master/data/leaderboards.json
-    fetch_method: GET
-    update_frequency: weekly_or_release
-    requires_auth: false
-    evidence_url: https://github.com/SWE-bench/SWE-bench.github.io/blob/master/data/leaderboards.json
-    release_tracking: board.name_and_result.folder
-    hash_required: true
-    notes: The Verified board is kept separate from SWE-bench and derived boards.
-
-  - benchmark_id: artificial_analysis
-    status: manual_review
-    source_name: Artificial Analysis Intelligence Index
-    organization: Artificial Analysis
-    source_type: official_page_endpoint
-    official_url: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
-    endpoint: null
-    fetch_method: null
-    update_frequency: daily
-    requires_auth: unknown
-    evidence_url: https://artificialanalysis.ai/methodology/intelligence-benchmarking
-    release_tracking: unconfirmed
-    hash_required: true
-    notes: Public pages were confirmed, but no stable official structured result endpoint or file was confirmed. Do not scrape screenshots or guess an API.
-
-  - benchmark_id: lmarena_overall
-    status: manual_review
-    source_name: LMArena Overall Arena leaderboard
-    organization: LMArena
-    source_type: official_page_endpoint
-    official_url: https://lmarena.ai/
-    endpoint: null
-    fetch_method: null
-    update_frequency: daily
-    requires_auth: unknown
-    evidence_url: https://lmarena.ai/
-    release_tracking: unconfirmed
-    hash_required: true
-    notes: Overall, Vision, Coding, Hard Prompts, and other categories must remain separate. No stable public structured endpoint was confirmed.
-
-  - benchmark_id: lmarena_vision
-    status: manual_review
-    source_name: LMArena Vision Arena leaderboard
-    organization: LMArena
-    source_type: official_page_endpoint
-    official_url: https://lmarena.ai/
-    endpoint: null
-    fetch_method: null
-    update_frequency: daily
-    requires_auth: unknown
-    evidence_url: https://lmarena.ai/
-    release_tracking: unconfirmed
-    hash_required: true
-    notes: Category-specific source is unconfirmed; battle data cannot be treated as leaderboard data.
-
-  - benchmark_id: lmarena_coding
-    status: manual_review
-    source_name: LMArena Coding Arena leaderboard
-    organization: LMArena
-    source_type: official_page_endpoint
-    official_url: https://lmarena.ai/
-    endpoint: null
-    fetch_method: null
-    update_frequency: daily
-    requires_auth: unknown
-    evidence_url: https://lmarena.ai/
-    release_tracking: unconfirmed
-    hash_required: true
-    notes: Category-specific source is unconfirmed; do not merge with Overall Arena.
-
-  - benchmark_id: lmarena_hard_prompts
-    status: manual_review
-    source_name: LMArena Hard Prompts leaderboard
-    organization: LMArena
-    source_type: official_page_endpoint
-    official_url: https://lmarena.ai/
-    endpoint: null
-    fetch_method: null
-    update_frequency: daily
-    requires_auth: unknown
-    evidence_url: https://lmarena.ai/
-    release_tracking: unconfirmed
-    hash_required: true
-    notes: Hard Prompts is a separate comparison key; no stable structured official endpoint was confirmed.
-
-  - benchmark_id: livebench
-    status: manual_review
-    source_name: LiveBench official leaderboard
-    organization: LiveBench
-    source_type: official_github_raw
-    official_url: https://livebench.ai/
-    endpoint: null
-    fetch_method: null
-    update_frequency: weekly_or_release
-    requires_auth: false
-    evidence_url: https://github.com/LiveBench/LiveBench/blob/main/README.md
-    release_tracking: official_release_mechanism
-    hash_required: true
-    notes: The official repository documents model_answer, model_judgment, question data, and a leaderboard site, but a verifiable structured leaderboard score file was not confirmed. Keep these artifact types separate.
-
-  - benchmark_id: livebench_model_answer
-    status: manual_review
-    source_name: LiveBench official model_answer artifact
-    organization: LiveBench
-    source_type: dataset
-    official_url: https://huggingface.co/datasets/livebench/model_answer
-    endpoint: null
-    fetch_method: null
-    update_frequency: release_based
-    requires_auth: false
-    evidence_url: https://github.com/LiveBench/LiveBench/blob/main/README.md
-    release_tracking: release_and_hash_only
-    hash_required: true
-    notes: Presence/version/hash metadata only. This artifact must never be normalized as leaderboard scores.
-
-  - benchmark_id: livebench_model_judgment
-    status: manual_review
-    source_name: LiveBench official model_judgment artifact
-    organization: LiveBench
-    source_type: dataset
-    official_url: https://huggingface.co/datasets/livebench/model_judgment
-    endpoint: null
-    fetch_method: null
-    update_frequency: release_based
-    requires_auth: false
-    evidence_url: https://github.com/LiveBench/LiveBench/blob/main/README.md
-    release_tracking: release_and_hash_only
-    hash_required: true
-    notes: Presence/version/hash metadata only. This artifact must never be normalized as leaderboard scores.
-
-  - benchmark_id: livebench_questions
-    status: manual_review
-    source_name: LiveBench official question dataset
-    organization: LiveBench
-    source_type: dataset
-    official_url: https://livebench.ai/
-    endpoint: null
-    fetch_method: null
-    update_frequency: release_based
-    requires_auth: false
-    evidence_url: https://github.com/LiveBench/LiveBench/blob/main/README.md
-    release_tracking: release_and_hash_only
-    hash_required: true
-    notes: Question data metadata only. It must never be combined with leaderboard, model_answer, or model_judgment rows.
-
-  - benchmark_id: swebench_derived
-    status: manual_review
-    source_name: SWE-bench derived leaderboard
-    organization: SWE-bench
-    source_type: official_page_endpoint
-    official_url: https://www.swebench.com/
-    endpoint: null
-    fetch_method: null
-    update_frequency: weekly_or_release
-    requires_auth: false
-    evidence_url: https://github.com/SWE-bench/SWE-bench.github.io/blob/master/data/leaderboards.json
-    release_tracking: unconfirmed
-    hash_required: true
-    notes: Derived boards are not mixed into SWE-bench or SWE-bench Verified.
-
-  - benchmark_id: terminalbench
-    status: manual_review
-    source_name: Terminal-Bench official leaderboard
-    organization: Harbor / Terminal-Bench
-    source_type: official_page_endpoint
-    official_url: https://github.com/harbor-framework/terminal-bench
-    endpoint: null
-    fetch_method: null
-    update_frequency: weekly_or_release
-    requires_auth: false
-    evidence_url: https://github.com/harbor-framework/terminal-bench
-    release_tracking: unconfirmed
-    hash_required: true
-    notes: Official project repositories were found, but no stable official result file for Terminal-Bench 4.0 was confirmed.
-
-  - benchmark_id: webdev_arena
-    status: disabled
-    source_name: WebDev Arena
-    organization: WebDev Arena
-    source_type: official_page_endpoint
-    official_url: null
-    endpoint: null
-    fetch_method: null
-    update_frequency: null
-    requires_auth: null
-    evidence_url: null
-    release_tracking: none
-    hash_required: false
-    notes: Disabled until a stable, public, verifiable official result source is identified. No third-party pages or simulated endpoint are used.
-
-  - benchmark_id: mmlu
-    status: manual_review
-    source_name: MMLU candidate source
-    organization: benchmark maintainers
-    source_type: dataset
-    official_url: https://github.com/hendrycks/test
-    endpoint: null
-    fetch_method: null
-    update_frequency: release_based
-    requires_auth: false
-    evidence_url: https://github.com/hendrycks/test
-    release_tracking: unconfirmed
-    hash_required: true
-    notes: Candidate registry only; no leaderboard collector is enabled.
-
-  - benchmark_id: mmlu_pro
-    status: manual_review
-    source_name: MMLU-Pro candidate source
-    organization: benchmark maintainers
-    source_type: dataset
-    official_url: null
-    endpoint: null
-    fetch_method: null
-    update_frequency: release_based
-    requires_auth: false
-    evidence_url: null
-    release_tracking: unconfirmed
-    hash_required: true
-    notes: Candidate registry only; no leaderboard collector is enabled.
-
-  - benchmark_id: gpqa
-    status: manual_review
-    source_name: GPQA candidate source
-    organization: benchmark maintainers
-    source_type: dataset
-    official_url: null
-    endpoint: null
-    fetch_method: null
-    update_frequency: release_based
-    requires_auth: false
-    evidence_url: null
-    release_tracking: unconfirmed
-    hash_required: true
-    notes: Candidate registry only; no leaderboard collector is enabled.
+- benchmark_id: swebench
+  status: enabled
+  source_name: SWE-bench official leaderboard JSON
+  organization: SWE-bench
+  source_type: official_github_raw
+  official_url: https://www.swebench.com/
+  endpoint: https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/master/data/leaderboards.json
+  fetch_method: GET
+  update_frequency: weekly_or_release
+  requires_auth: false
+  evidence_url: https://github.com/SWE-bench/swe-bench.github.io/blob/master/data/leaderboards.json
+  release_tracking: board.name_and_result.folder
+  hash_required: true
+  notes: The Test board is mapped to SWE-bench. Missing rank is preserved as null;
+    no rank is inferred.
+- benchmark_id: swebench_verified
+  status: enabled
+  source_name: SWE-bench Verified official leaderboard JSON
+  organization: SWE-bench
+  source_type: official_github_raw
+  official_url: https://www.swebench.com/
+  endpoint: https://raw.githubusercontent.com/SWE-bench/SWE-bench.github.io/master/data/leaderboards.json
+  fetch_method: GET
+  update_frequency: weekly_or_release
+  requires_auth: false
+  evidence_url: https://github.com/SWE-bench/SWE-bench.github.io/blob/master/data/leaderboards.json
+  release_tracking: board.name_and_result.folder
+  hash_required: true
+  notes: The Verified board is kept separate from SWE-bench and derived boards.
+- benchmark_id: artificial_analysis
+  status: manual_review
+  source_name: Artificial Analysis Intelligence Index
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
+  endpoint: null
+  fetch_method: null
+  update_frequency: daily
+  requires_auth: unknown
+  evidence_url: https://artificialanalysis.ai/methodology/intelligence-benchmarking
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: Public pages were confirmed, but no stable official structured result endpoint
+    or file was confirmed. Do not scrape screenshots or guess an API.
+- benchmark_id: lmarena_overall
+  status: manual_review
+  source_name: LMArena Overall Arena leaderboard
+  organization: LMArena
+  source_type: official_page_endpoint
+  official_url: https://lmarena.ai/
+  endpoint: null
+  fetch_method: null
+  update_frequency: daily
+  requires_auth: unknown
+  evidence_url: https://lmarena.ai/
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: Overall, Vision, Coding, Hard Prompts, and other categories must remain separate.
+    No stable public structured endpoint was confirmed.
+- benchmark_id: lmarena_vision
+  status: manual_review
+  source_name: LMArena Vision Arena leaderboard
+  organization: LMArena
+  source_type: official_page_endpoint
+  official_url: https://lmarena.ai/
+  endpoint: null
+  fetch_method: null
+  update_frequency: daily
+  requires_auth: unknown
+  evidence_url: https://lmarena.ai/
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: Category-specific source is unconfirmed; battle data cannot be treated as
+    leaderboard data.
+- benchmark_id: lmarena_coding
+  status: manual_review
+  source_name: LMArena Coding Arena leaderboard
+  organization: LMArena
+  source_type: official_page_endpoint
+  official_url: https://lmarena.ai/
+  endpoint: null
+  fetch_method: null
+  update_frequency: daily
+  requires_auth: unknown
+  evidence_url: https://lmarena.ai/
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: Category-specific source is unconfirmed; do not merge with Overall Arena.
+- benchmark_id: lmarena_hard_prompts
+  status: manual_review
+  source_name: LMArena Hard Prompts leaderboard
+  organization: LMArena
+  source_type: official_page_endpoint
+  official_url: https://lmarena.ai/
+  endpoint: null
+  fetch_method: null
+  update_frequency: daily
+  requires_auth: unknown
+  evidence_url: https://lmarena.ai/
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: Hard Prompts is a separate comparison key; no stable structured official
+    endpoint was confirmed.
+- benchmark_id: livebench
+  status: manual_review
+  source_name: LiveBench official leaderboard
+  organization: LiveBench
+  source_type: official_github_raw
+  official_url: https://livebench.ai/
+  endpoint: null
+  fetch_method: null
+  update_frequency: weekly_or_release
+  requires_auth: false
+  evidence_url: https://github.com/LiveBench/LiveBench/blob/main/README.md
+  release_tracking: official_release_mechanism
+  hash_required: true
+  notes: The official repository documents model_answer, model_judgment, question
+    data, and a leaderboard site, but a verifiable structured leaderboard score file
+    was not confirmed. Keep these artifact types separate.
+- benchmark_id: livebench_model_answer
+  status: manual_review
+  source_name: LiveBench official model_answer artifact
+  organization: LiveBench
+  source_type: dataset
+  official_url: https://huggingface.co/datasets/livebench/model_answer
+  endpoint: null
+  fetch_method: null
+  update_frequency: release_based
+  requires_auth: false
+  evidence_url: https://github.com/LiveBench/LiveBench/blob/main/README.md
+  release_tracking: release_and_hash_only
+  hash_required: true
+  notes: Presence/version/hash metadata only. This artifact must never be normalized
+    as leaderboard scores.
+- benchmark_id: livebench_model_judgment
+  status: manual_review
+  source_name: LiveBench official model_judgment artifact
+  organization: LiveBench
+  source_type: dataset
+  official_url: https://huggingface.co/datasets/livebench/model_judgment
+  endpoint: null
+  fetch_method: null
+  update_frequency: release_based
+  requires_auth: false
+  evidence_url: https://github.com/LiveBench/LiveBench/blob/main/README.md
+  release_tracking: release_and_hash_only
+  hash_required: true
+  notes: Presence/version/hash metadata only. This artifact must never be normalized
+    as leaderboard scores.
+- benchmark_id: livebench_questions
+  status: manual_review
+  source_name: LiveBench official question dataset
+  organization: LiveBench
+  source_type: dataset
+  official_url: https://livebench.ai/
+  endpoint: null
+  fetch_method: null
+  update_frequency: release_based
+  requires_auth: false
+  evidence_url: https://github.com/LiveBench/LiveBench/blob/main/README.md
+  release_tracking: release_and_hash_only
+  hash_required: true
+  notes: Question data metadata only. It must never be combined with leaderboard,
+    model_answer, or model_judgment rows.
+- benchmark_id: swebench_derived
+  status: manual_review
+  source_name: SWE-bench derived leaderboard
+  organization: SWE-bench
+  source_type: official_page_endpoint
+  official_url: https://www.swebench.com/
+  endpoint: null
+  fetch_method: null
+  update_frequency: weekly_or_release
+  requires_auth: false
+  evidence_url: https://github.com/SWE-bench/SWE-bench.github.io/blob/master/data/leaderboards.json
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: Derived boards are not mixed into SWE-bench or SWE-bench Verified.
+- benchmark_id: terminalbench
+  status: manual_review
+  source_name: Terminal-Bench official leaderboard
+  organization: Harbor / Terminal-Bench
+  source_type: official_page_endpoint
+  official_url: https://github.com/harbor-framework/terminal-bench
+  endpoint: null
+  fetch_method: null
+  update_frequency: weekly_or_release
+  requires_auth: false
+  evidence_url: https://github.com/harbor-framework/terminal-bench
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: Official project repositories were found, but no stable official result file
+    for Terminal-Bench 4.0 was confirmed.
+- benchmark_id: webdev_arena
+  status: disabled
+  source_name: WebDev Arena
+  organization: WebDev Arena
+  source_type: official_page_endpoint
+  official_url: null
+  endpoint: null
+  fetch_method: null
+  update_frequency: null
+  requires_auth: null
+  evidence_url: null
+  release_tracking: none
+  hash_required: false
+  notes: Disabled until a stable, public, verifiable official result source is identified.
+    No third-party pages or simulated endpoint are used.
+- benchmark_id: mmlu
+  status: manual_review
+  source_name: MMLU candidate source
+  organization: benchmark maintainers
+  source_type: dataset
+  official_url: https://github.com/hendrycks/test
+  endpoint: null
+  fetch_method: null
+  update_frequency: release_based
+  requires_auth: false
+  evidence_url: https://github.com/hendrycks/test
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: Candidate registry only; no leaderboard collector is enabled.
+- benchmark_id: mmlu_pro
+  status: manual_review
+  source_name: MMLU-Pro candidate source
+  organization: benchmark maintainers
+  source_type: dataset
+  official_url: null
+  endpoint: null
+  fetch_method: null
+  update_frequency: release_based
+  requires_auth: false
+  evidence_url: null
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: Candidate registry only; no leaderboard collector is enabled.
+- benchmark_id: gpqa
+  status: manual_review
+  source_name: GPQA candidate source
+  organization: benchmark maintainers
+  source_type: dataset
+  official_url: null
+  endpoint: null
+  fetch_method: null
+  update_frequency: release_based
+  requires_auth: false
+  evidence_url: null
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: Candidate registry only; no leaderboard collector is enabled.
+- benchmark_id: artificial_analysis_intelligence
+  status: manual_review
+  source_name: Artificial Analysis Intelligence family
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
+  endpoint: null
+  fetch_method: null
+  update_frequency: daily
+  requires_auth: unknown
+  evidence_url: https://artificialanalysis.ai/methodology/intelligence-benchmarking
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: Family registry node for Intelligence, Coding, Agents, Reasoning, Knowledge,
+    and individual evaluations. No stable official structured result endpoint was
+    confirmed.
+- benchmark_id: artificial_analysis_intelligence_index_v4_3
+  status: manual_review
+  source_name: Artificial Analysis Intelligence Index v4.3
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
+  endpoint: null
+  fetch_method: null
+  update_frequency: daily
+  requires_auth: unknown
+  evidence_url: https://artificialanalysis.ai/methodology/intelligence-benchmarking
+  release_tracking: v4.3
+  hash_required: true
+  notes: Official page and version confirmed; no public stable JSON/CSV/raw/API endpoint
+    confirmed.
+- benchmark_id: artificial_analysis_coding
+  status: manual_review
+  source_name: Artificial Analysis Coding category
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/methodology/intelligence-benchmarking
+  endpoint: null
+  fetch_method: null
+  update_frequency: daily
+  requires_auth: unknown
+  evidence_url: https://artificialanalysis.ai/methodology/intelligence-benchmarking
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: Category label only until a structured official result source is verified.
+- benchmark_id: artificial_analysis_agents
+  status: manual_review
+  source_name: Artificial Analysis Agents category
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/methodology/intelligence-benchmarking
+  endpoint: null
+  fetch_method: null
+  update_frequency: daily
+  requires_auth: unknown
+  evidence_url: https://artificialanalysis.ai/methodology/intelligence-benchmarking
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: Official naming is Agents/Agentic; no structured endpoint confirmed.
+- benchmark_id: artificial_analysis_reasoning
+  status: manual_review
+  source_name: Artificial Analysis Reasoning category
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/methodology/intelligence-benchmarking
+  endpoint: null
+  fetch_method: null
+  update_frequency: daily
+  requires_auth: unknown
+  evidence_url: https://artificialanalysis.ai/methodology/intelligence-benchmarking
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: Category label only until a structured official result source is verified.
+- benchmark_id: artificial_analysis_knowledge
+  status: manual_review
+  source_name: Artificial Analysis Knowledge category
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/leaderboards/models
+  endpoint: null
+  fetch_method: null
+  update_frequency: daily
+  requires_auth: unknown
+  evidence_url: https://artificialanalysis.ai/leaderboards/models
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: Knowledge is a page/category concept, not a confirmed standalone structured
+    result source.
+- benchmark_id: artificial_analysis_individual_evaluations
+  status: manual_review
+  source_name: Artificial Analysis AI Model Evaluations
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations
+  endpoint: null
+  fetch_method: null
+  update_frequency: daily
+  requires_auth: unknown
+  evidence_url: https://artificialanalysis.ai/evaluations
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: Individual evaluations are registered as a group only; each evaluation needs
+    separate source verification.
+- benchmark_id: terminal_bench_v4_0
+  status: manual_review
+  source_name: Artificial Analysis Terminal-Bench v4.0 evaluation
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/terminalbench-v4-0
+  endpoint: null
+  fetch_method: null
+  update_frequency: release_based
+  requires_auth: unknown
+  evidence_url: https://artificialanalysis.ai/evaluations/terminalbench-v4-0
+  release_tracking: v4.0
+  hash_required: true
+  notes: Official evaluation page confirmed; no public structured endpoint confirmed.
+- benchmark_id: humanitys_last_exam
+  status: manual_review
+  source_name: Artificial Analysis Humanity's Last Exam evaluation
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/humanitys-last-exam
+  endpoint: null
+  fetch_method: null
+  update_frequency: release_based
+  requires_auth: unknown
+  evidence_url: https://artificialanalysis.ai/evaluations/humanitys-last-exam
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: HLE page confirmed; no public structured endpoint confirmed.
+- benchmark_id: gpqa_diamond
+  status: manual_review
+  source_name: Artificial Analysis GPQA Diamond evaluation
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/gpqa-diamond
+  endpoint: null
+  fetch_method: null
+  update_frequency: release_based
+  requires_auth: unknown
+  evidence_url: https://artificialanalysis.ai/evaluations/gpqa-diamond
+  release_tracking: legacy
+  hash_required: true
+  notes: Official GPQA Diamond page confirmed; no public structured endpoint confirmed.
+- benchmark_id: scicode
+  status: manual_review
+  source_name: Artificial Analysis SciCode evaluation
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/scicode
+  endpoint: null
+  fetch_method: null
+  update_frequency: release_based
+  requires_auth: unknown
+  evidence_url: https://artificialanalysis.ai/evaluations/scicode
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: Official SciCode page confirmed; no public structured endpoint confirmed.
+- benchmark_id: livebench_overall
+  status: manual_review
+  source_name: LiveBench overall leaderboard
+  organization: LiveBench
+  source_type: official_github_raw
+  official_url: https://livebench.ai/
+  endpoint: null
+  fetch_method: null
+  update_frequency: weekly_or_release
+  requires_auth: false
+  evidence_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
+  release_tracking: official_release_mechanism
+  hash_required: true
+  notes: Overall evaluation route is documented, but no stable public aggregate leaderboard
+    score file was confirmed.
+- benchmark_id: livebench_coding
+  status: manual_review
+  source_name: LiveBench coding category
+  organization: LiveBench
+  source_type: official_github_raw
+  official_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
+  endpoint: null
+  fetch_method: null
+  update_frequency: weekly_or_release
+  requires_auth: false
+  evidence_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
+  release_tracking: official_release_mechanism
+  hash_required: true
+  notes: Official category name coding; no stable public aggregate leaderboard score
+    file confirmed.
+- benchmark_id: livebench_math
+  status: manual_review
+  source_name: LiveBench math category
+  organization: LiveBench
+  source_type: official_github_raw
+  official_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
+  endpoint: null
+  fetch_method: null
+  update_frequency: weekly_or_release
+  requires_auth: false
+  evidence_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
+  release_tracking: official_release_mechanism
+  hash_required: true
+  notes: Official category name math; no stable public aggregate leaderboard score
+    file confirmed.
+- benchmark_id: livebench_reasoning
+  status: manual_review
+  source_name: LiveBench reasoning category
+  organization: LiveBench
+  source_type: official_github_raw
+  official_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
+  endpoint: null
+  fetch_method: null
+  update_frequency: weekly_or_release
+  requires_auth: false
+  evidence_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
+  release_tracking: official_release_mechanism
+  hash_required: true
+  notes: Official category name reasoning; no stable public aggregate leaderboard
+    score file confirmed.
+- benchmark_id: livebench_data_analysis
+  status: manual_review
+  source_name: LiveBench data analysis category
+  organization: LiveBench
+  source_type: official_github_raw
+  official_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
+  endpoint: null
+  fetch_method: null
+  update_frequency: weekly_or_release
+  requires_auth: false
+  evidence_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
+  release_tracking: official_release_mechanism
+  hash_required: true
+  notes: Official category name data_analysis; no stable public aggregate leaderboard
+    score file confirmed.
+- benchmark_id: livebench_language
+  status: manual_review
+  source_name: LiveBench language category
+  organization: LiveBench
+  source_type: official_github_raw
+  official_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
+  endpoint: null
+  fetch_method: null
+  update_frequency: weekly_or_release
+  requires_auth: false
+  evidence_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
+  release_tracking: official_release_mechanism
+  hash_required: true
+  notes: Official category name language; no stable public aggregate leaderboard score
+    file confirmed.
+- benchmark_id: livebench_instruction_following
+  status: manual_review
+  source_name: LiveBench instruction following category
+  organization: LiveBench
+  source_type: official_github_raw
+  official_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
+  endpoint: null
+  fetch_method: null
+  update_frequency: weekly_or_release
+  requires_auth: false
+  evidence_url: https://github.com/LiveBench/LiveBench/blob/main/livebench/common.py
+  release_tracking: official_release_mechanism
+  hash_required: true
+  notes: Official category name instruction_following; no stable public aggregate
+    leaderboard score file confirmed.
+- benchmark_id: deepswe
+  status: manual_review
+  source_name: DeepSWE family
+  organization: DataCurve AI
+  source_type: official_page_endpoint
+  official_url: https://deepswe.datacurve.ai/
+  endpoint: null
+  fetch_method: null
+  update_frequency: release_based
+  requires_auth: false
+  evidence_url: https://github.com/datacurve-ai/deep-swe
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: Family node; the verified aggregate source is versioned as deepswe_v1_1.
+- benchmark_id: deepswe_v1_1
+  status: enabled
+  source_name: DeepSWE v1.1 official leaderboard JSON
+  organization: DataCurve AI
+  source_type: official_json
+  official_url: https://deepswe.datacurve.ai/data/v1.1
+  endpoint: https://deepswe.datacurve.ai/artifacts/v1.1/leaderboard-live.json
+  fetch_method: GET
+  update_frequency: release_based
+  requires_auth: false
+  evidence_url: https://deepswe.datacurve.ai/data/v1.1
+  release_tracking: v1.1.generated_at
+  hash_required: true
+  notes: Official aggregate JSON verified. Rows remain separated by config/harness/model/reasoning_effort;
+    no local rank is inferred.
+- benchmark_id: deepswe_v1_1_tasks
+  status: manual_review
+  source_name: DeepSWE v1.1 official task catalog
+  organization: DataCurve AI
+  source_type: official_json
+  official_url: https://deepswe.datacurve.ai/data/v1.1
+  endpoint: https://deepswe.datacurve.ai/artifacts/v1.1/tasks.json
+  fetch_method: GET
+  update_frequency: release_based
+  requires_auth: false
+  evidence_url: https://deepswe.datacurve.ai/data/v1.1
+  release_tracking: v1.1
+  hash_required: true
+  notes: Task catalog metadata only; it is not a leaderboard and never produces ModelScore
+    rows.
+- benchmark_id: software_engineering_agent
+  status: manual_review
+  source_name: Software Engineering Agent display family
+  organization: DataCurve AI
+  source_type: official_page_endpoint
+  official_url: https://deepswe.datacurve.ai/
+  endpoint: null
+  fetch_method: null
+  update_frequency: release_based
+  requires_auth: false
+  evidence_url: https://github.com/datacurve-ai/deep-swe
+  release_tracking: unconfirmed
+  hash_required: true
+  notes: User-facing display label only; no distinct official benchmark/result source
+    was confirmed. Use deepswe_v1_1 for verified records.

@@ -7,11 +7,11 @@ on:
   workflow_dispatch:
     inputs:
       benchmark:
-        description: "Benchmark to retry"
+        description: "One or more enabled benchmark ids separated by spaces"
         required: true
         type: string
       max_attempts:
-        description: "Maximum attempts, capped at 2"
+        description: "Maximum attempts per benchmark, capped at 2"
         required: false
         default: "2"
         type: string
@@ -33,18 +33,24 @@ jobs:
         with:
           python-version: "3.11"
       - run: python -m pip install -r requirements.txt
-      - name: Retry at most twice
+      - name: Validate and retry enabled collectors
         env:
           INGESTION_URL: ${{ secrets.INGESTION_URL }}
           INGESTION_SECRET: ${{ secrets.INGESTION_SECRET }}
           INPUT_BENCHMARK: ${{ inputs.benchmark }}
           INPUT_MAX_ATTEMPTS: ${{ inputs.max_attempts }}
-          WORKFLOW_BENCHMARK: swebench
         run: |
           set +e
-          benchmark_list="${INPUT_BENCHMARK:-swebench swebench_verified}"
+          if [ -n "${INPUT_BENCHMARK:-}" ]; then
+            python -m collector.ci_matrix --kind enabled --benchmark "$INPUT_BENCHMARK" >/dev/null
+            if [ "$?" -ne 0 ]; then exit 1; fi
+            benchmark_list="$INPUT_BENCHMARK"
+          else
+            benchmark_list=$(python -m collector.ci_matrix --kind enabled | tr -d '[]"' | tr ',' ' ')
+          fi
           attempts="${INPUT_MAX_ATTEMPTS:-2}"
           case "$attempts" in 1|2) ;; *) attempts=2 ;; esac
+          overall=0
           for benchmark in $benchmark_list; do
             succeeded=0
             for attempt in $(seq 1 "$attempts"); do
@@ -53,9 +59,9 @@ jobs:
               if [ "$status" -eq 0 ]; then succeeded=1; break; fi
               sleep $((attempt * 5))
             done
-            if [ "$succeeded" -ne 1 ]; then exit 1; fi
+            if [ "$succeeded" -ne 1 ]; then overall=1; fi
           done
-          exit 0
+          exit "$overall"
       - if: always()
         uses: actions/upload-artifact@v4
         with:

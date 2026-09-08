@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       benchmark:
-        description: "Optional benchmark id"
+        description: "Optional benchmark hierarchy id; empty checks all nodes"
         required: false
         type: string
 
@@ -14,16 +14,36 @@ permissions:
   contents: read
 
 concurrency:
-  group: benchmark-reconcile-${{ github.ref }}-${{ inputs.benchmark || 'weekly' }}
+  group: benchmark-reconcile-${{ github.ref }}-${{ inputs.benchmark || 'hierarchy' }}
   cancel-in-progress: false
 
 jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      benchmarks: ${{ steps.matrix.outputs.benchmarks }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -r requirements.txt
+      - id: matrix
+        env:
+          INPUT_BENCHMARK: ${{ inputs.benchmark }}
+        run: |
+          set -euo pipefail
+          python -m collector.ci_matrix --kind hierarchy --benchmark "${INPUT_BENCHMARK:-}" > /tmp/benchmarks.json
+          cat /tmp/benchmarks.json
+          echo "benchmarks=$(cat /tmp/benchmarks.json)" >> "$GITHUB_OUTPUT"
+
   reconcile:
+    needs: prepare
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        benchmark: [livebench, swebench, swebench_verified, terminalbench]
+        benchmark: ${{ fromJSON(needs.prepare.outputs.benchmarks) }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -31,16 +51,7 @@ jobs:
           python-version: "3.11"
       - run: python -m pip install -r requirements.txt
       - name: Check source status without guessing endpoints
-        env:
-          INPUT_BENCHMARK: ${{ inputs.benchmark }}
-        run: |
-          set -euo pipefail
-          benchmark="${INPUT_BENCHMARK:-${{ matrix.benchmark }}}"
-          if [ "$benchmark" = "${{ matrix.benchmark }}" ] || [ -z "${INPUT_BENCHMARK:-}" ]; then
-            python -m collector.runner --benchmark "$benchmark" --output-dir artifacts
-          else
-            exit 0
-          fi
+        run: python -m collector.runner --benchmark "${{ matrix.benchmark }}" --output-dir artifacts
       - if: always()
         uses: actions/upload-artifact@v4
         with:

@@ -6,6 +6,7 @@ from typing import Any
 import yaml
 
 from .base import BenchmarkCollector
+from .deepswe.collector import DeepSWECollector
 from .manual_review import ManualReviewCollector
 from .swebench.collector import SWEbenchCollector
 
@@ -35,4 +36,6 @@ class CollectorRegistry:
             return SWEbenchCollector(source, board_name="Test")
         if benchmark_id == "swebench_verified":
             return SWEbenchCollector(source, board_name="Verified")
+        if benchmark_id == "deepswe_v1_1":
+            return DeepSWECollector(source)
         return ManualReviewCollector(source)

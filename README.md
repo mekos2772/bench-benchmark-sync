@@ -14,13 +14,15 @@ This project does **not** fuse leaderboards, calculate Meta Scores, calculate co
 
 The registry in [`config/sources.yaml`](config/sources.yaml) is the gate. A source is `enabled` only when an official API, JSON, CSV, or raw file is verified. A page, dataset, model answer file, model judgment file, or third-party reproduction is not silently treated as a leaderboard result.
 
-At the initial release:
+At the current release:
 
-- **Enabled:** SWE-bench and SWE-bench Verified from the official SWE-bench website's public `leaderboards.json` raw file.
-- **Manual review:** Artificial Analysis Intelligence Index, LMArena/Arena categories, LiveBench leaderboard, Terminal-Bench 4.0, and candidate benchmarks such as MMLU, MMLU-Pro, and GPQA.
+- **Enabled:** `swebench` (official Test board), `swebench_verified` (official Verified board), and `deepswe_v1_1` (official DeepSWE v1.1 JSON leaderboard).
+- **Artificial Analysis hierarchy:** Intelligence Index v4.3; Coding; Agents; Reasoning; Knowledge; Individual Evaluations; Terminal-Bench 4.0; Humanity's Last Exam; GPQA Diamond; SciCode. These are registered as separate nodes and remain `manual_review` until a stable public structured result source is confirmed.
+- **LiveBench hierarchy:** Overall plus Coding, Math, Reasoning, Data Analysis, Language, and Instruction Following. These are separate `manual_review` nodes. `model_answer`, `model_judgment`, and question data remain separate artifacts and never become leaderboard rows.
+- **DeepSWE hierarchy:** `deepswe_v1_1` is enabled from the verified official JSON; `deepswe_v1_1_tasks` is an auxiliary task-catalog node; `software_engineering_agent` is a display-family node and remains `manual_review`.
 - **Disabled:** WebDev Arena because no stable, public, verifiable official result source was confirmed.
 
-The LiveBench entry explicitly distinguishes leaderboard results from `model_answer`, `model_judgment`, and question datasets. Those artifacts are never combined into scores here.
+The complete parent/child structure is in [`config/benchmark_hierarchy.yaml`](config/benchmark_hierarchy.yaml). GitHub Actions reconcile every hierarchy node, while the sync workflow dynamically runs every enabled source.
 
 ## Run locally
 

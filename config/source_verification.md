@@ -24,7 +24,24 @@ The official entry point is [lmarena.ai](https://lmarena.ai/). Overall Arena, Vi
 
 The official project is maintained under the [Harbor organization](https://github.com/harbor-framework/terminal-bench). The repository establishes project provenance, but a stable official Terminal-Bench 4.0 leaderboard result file was not confirmed. Documentation alone is not treated as data.
 
-## WebDev Arena — disabled
+## Artificial Analysis — manual review hierarchy
+
+The official pages confirm the requested hierarchy: Intelligence Index v4.3, Coding, Agents/Agentic, Reasoning, Knowledge-related evaluation views, Individual/AI Model Evaluations, Terminal-Bench v4.0, Humanity's Last Exam, GPQA Diamond, and SciCode. The official page routes are recorded in `config/sources.yaml`.
+
+No stable public official JSON, CSV, raw result file, or documented API endpoint was confirmed for these pages. The registry therefore keeps every Artificial Analysis node at `manual_review`; no HTML, screenshot, embedded page state, or Download data control is treated as a structured source.
+
+## LiveBench — manual review hierarchy
+
+The official LiveBench repository defines the categories `coding`, `data_analysis`, `instruction_following`, `math`, `reasoning`, and `language`, plus an all-question evaluation route. The registry exposes these as independent overall/category nodes. A verifiable stable aggregate leaderboard score file was not confirmed, so every LiveBench leaderboard node remains `manual_review`.
+
+The repository's `model_answer`, `model_judgment`, and question datasets remain separate artifact nodes. They are never merged into leaderboard scores.
+
+## DeepSWE — enabled v1.1 source
+
+The official DeepSWE v1.1 data page is [deepswe.datacurve.ai/data/v1.1](https://deepswe.datacurve.ai/data/v1.1). Its public artifact loader exposes the verified JSON leaderboard at [`leaderboard-live.json`](https://deepswe.datacurve.ai/artifacts/v1.1/leaderboard-live.json) and a separate task catalog at [`tasks.json`](https://deepswe.datacurve.ai/artifacts/v1.1/tasks.json).
+
+`deepswe_v1_1` is enabled because the aggregate JSON is public and re-fetchable. Rows are kept separate by `config`, `harness`, `model`, `provider`, and `reasoning_effort`; the collector preserves missing ranks as `null` and does not calculate a local rank. `deepswe_v1_1_tasks` is metadata only and does not produce ModelScore rows. `software_engineering_agent` is a display-family node, not a separate verified benchmark.
+
 
 No stable, public, verifiable official result source was confirmed. The registry is disabled rather than pointing at a third-party page or inventing an endpoint.
 

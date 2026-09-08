@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Benchmark hierarchy node",
+  "type": "object",
+  "required": ["benchmark_id", "display_name", "official_name", "parent_benchmark_id", "level", "status", "is_leaderboard", "comparison_key", "source_registry_id"],
+  "properties": {
+    "benchmark_id": {"type": "string", "minLength": 1},
+    "display_name": {"type": "string", "minLength": 1},
+    "official_name": {"type": "string", "minLength": 1},
+    "parent_benchmark_id": {"type": ["string", "null"]},
+    "level": {"enum": ["family", "overall", "category", "evaluation", "artifact"]},
+    "status": {"enum": ["enabled", "manual_review", "disabled"]},
+    "is_leaderboard": {"type": "boolean"},
+    "comparison_key": {"type": "string", "minLength": 1},
+    "source_registry_id": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false
+}
