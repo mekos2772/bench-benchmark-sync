@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Today activity event feed",
+  "type": "object",
+  "required": ["schemaVersion", "dataSource", "generatedAt", "windowStart", "collectorStatus", "families", "events", "eventCount"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "dataSource": {"const": "today-activity-aggregator"},
+    "generatedAt": {"type": "string", "format": "date-time"},
+    "windowStart": {"type": "string", "format": "date-time"},
+    "collectorStatus": {"enum": ["ok", "partial"]},
+    "staleAfterMinutes": {"type": "integer", "minimum": 1},
+    "families": {
+      "type": "array",
+      "const": ["model", "technology", "benchmark"]
+    },
+    "eventCount": {"type": "integer", "minimum": 0},
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["eventId", "family", "eventType", "severity", "title", "summary", "url", "observedAt", "source", "provenance"],
+        "properties": {
+          "eventId": {"type": "string", "minLength": 8},
+          "family": {"enum": ["model", "technology", "benchmark"]},
+          "eventType": {"type": "string", "minLength": 1},
+          "severity": {"enum": ["normal", "important"]},
+          "title": {"type": "string", "minLength": 1},
+          "summary": {"type": "string"},
+          "url": {"type": "string", "format": "uri"},
+          "observedAt": {"type": "string", "format": "date-time"},
+          "publishedAt": {"type": ["string", "null"], "format": "date-time"},
+          "source": {"type": "string", "minLength": 1},
+          "provenance": {
+            "type": "object",
+            "required": ["contentHash"],
+            "properties": {
+              "sourceUrl": {"type": ["string", "null"]},
+              "contentHash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+              "workflowRunId": {"type": ["string", "null"]},
+              "mainCommit": {"type": ["string", "null"]}
+            },
+            "additionalProperties": true
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

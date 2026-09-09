@@ -60,7 +60,20 @@ The scheduled workflow collects every enabled source with bounded matrix concurr
 
 A manual run with a specific `benchmark` input is a single-source diagnostic run only; it intentionally skips the static export job so an incomplete snapshot set cannot produce a partial Mini Program bundle. The workflow only writes its own generated directory; the private Mini Program repository pulls that public static path on its own schedule and updates only its bundle file. It does not call CloudBase, call `rankingAdmin`, upload an experience version, or publish.
 
-## Optional ingestion
+## Today activity feed
+
+The Mini Program Today page is intentionally separate from the 24-board static ranking bundle. A dedicated `today-activity` workflow runs every five minutes on an Ubuntu GitHub Actions runner and publishes a verified feed to `generated/static-events/today-events.json` plus a CommonJS copy.
+
+The feed has three explicit families:
+
+- `model`: public Hugging Face Hub repository activity (`model_created`, `model_updated`, `weights_updated`, `config_updated`, `tokenizer_updated`). These are Hub activities, not claims of official model release.
+- `technology`: GitHub Atom activity from a controlled repository allowlist (`github_release`, `important_pr`, `commit`, `architecture_code_change`, `tag_created`). Atom feeds are used instead of unauthenticated high-frequency GitHub API polling.
+- `benchmark`: changes detected by comparing successful observations from the official LiveBench, Artificial Analysis, and DeepSWE collectors. Missing official rank remains missing; a position derived from score is labeled `derived_rank_changed`.
+
+The collector keeps a bounded state file, filters events to the recent window, deduplicates by stable event ID, validates the JSON/CommonJS pair with `scripts/verify_today_events.js`, and preserves the last successful generated file if a source fails. The Mini Program requests only the stable raw feed URL; it never requests Hugging Face or GitHub directly and does not call CloudBase for Today.
+
+The real-time target is minute-level refresh through the workflow schedule, not second-level delivery. The page shows the generated time, stale warning, partial-source warning, source labels, and an explicit error state instead of inventing zero changes.
+
 
 `persistence/scf_adapter.py` is an interface adapter, disabled unless `--ingest` is requested and both `INGESTION_URL` and `INGESTION_SECRET` are present in the environment. The adapter sends an HMAC signature in a header and never logs the secret or authorization header. No production endpoint is configured in this repository.
 

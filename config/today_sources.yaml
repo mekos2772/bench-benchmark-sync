@@ -1,0 +1,67 @@
+# Today activity source registry. These are public repositories only; no token is required.
+repositories:
+  - id: huggingface/transformers
+    kind: training_framework
+    branch: main
+  - id: vllm-project/vllm
+    kind: inference_framework
+    branch: main
+  - id: sgl-project/sglang
+    kind: inference_framework
+    branch: main
+  - id: ggml-org/llama.cpp
+    kind: inference_framework
+    branch: master
+  - id: pytorch/pytorch
+    kind: training_framework
+    branch: main
+  - id: microsoft/DeepSpeed
+    kind: training_framework
+    branch: master
+  - id: NVIDIA/Megatron-LM
+    kind: training_framework
+    branch: main
+  - id: huggingface/accelerate
+    kind: training_framework
+    branch: main
+  - id: huggingface/trl
+    kind: training_framework
+    branch: main
+  - id: unslothai/unsloth
+    kind: training_framework
+    branch: main
+
+settings:
+  window_hours: 24
+  max_hub_models: 80
+  max_events: 240
+  github_feed_timeout_seconds: 20
+  hub_timeout_seconds: 30
+  stale_after_minutes: 60
+  important_pr_keywords:
+    - release
+    - breaking
+    - performance
+    - quantiz
+    - kernel
+    - attention
+    - transformer
+    - architecture
+    - backend
+    - cuda
+    - flash
+    - inference
+    - training
+  architecture_keywords:
+    - attention
+    - transformer
+    - kernel
+    - backend
+    - cuda
+    - rocm
+    - distributed
+    - trainer
+    - optimizer
+    - architecture
+    - model
+    - quantiz
