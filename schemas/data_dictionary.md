@@ -5,7 +5,7 @@
 A fetch run records the source identity and execution facts separately from the registry:
 
 - `source_name`: human-readable official source name.
-- `source_type`: `official_api`, `official_json`, `official_csv`, `official_github_raw`, `official_page_endpoint`, `dataset`, `page_collector`, or `html_parser`.
+- `source_type`: `official_api`, `official_json`, `official_csv`, `official_github_raw`, `official_site_dated_csv`, `official_page_endpoint`, `dataset`, `page_collector`, or `html_parser`.
 - `endpoint`: the exact public endpoint used, or `null` when the source is not enabled.
 - `fetch_time`: UTC time at which the request began.
 - `status`: one of `success`, `no_change`, `partial`, `failed`, or `manual_review`.

@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       benchmark:
-        description: "Optional enabled benchmark id; empty runs all enabled sources"
+        description: "Optional enabled benchmark id; set it for single-source diagnostics (full export runs only when empty)"
         required: false
         type: string
 
@@ -42,6 +42,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
+      max-parallel: 6
       matrix:
         benchmark: ${{ fromJSON(needs.prepare.outputs.benchmarks) }}
     steps:
@@ -51,14 +52,93 @@ jobs:
           python-version: "3.11"
       - run: python -m pip install -r requirements.txt
       - name: Run selected collector
-        env:
-          INGESTION_URL: ${{ secrets.INGESTION_URL }}
-          INGESTION_SECRET: ${{ secrets.INGESTION_SECRET }}
-        run: python -m collector.runner --benchmark "${{ matrix.benchmark }}" --output-dir artifacts --ingest
+        run: python -m collector.runner --benchmark "${{ matrix.benchmark }}" --output-dir artifacts
       - name: Upload run diagnostics
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: benchmark-sync-${{ matrix.benchmark }}-${{ github.run_id }}
+          name: benchmark-sync-snapshot-${{ matrix.benchmark }}-${{ github.run_id }}
           path: artifacts/
           if-no-files-found: ignore
+
+  export:
+    needs: sync
+    if: ${{ !cancelled() && (inputs.benchmark == '' || inputs.benchmark == null) }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -r requirements.txt
+      - name: Download snapshot artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: benchmark-sync-snapshot-*-${{ github.run_id }}
+          path: artifacts
+          merge-multiple: true
+      - name: Validate static export
+        env:
+          WORKFLOW_RUN_ID: ${{ github.run_id }}
+          MAIN_COMMIT: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          python -m exporter.cli \
+            --snapshot-root artifacts \
+            --workflow-run-id "$WORKFLOW_RUN_ID" \
+            --main-commit "$MAIN_COMMIT" \
+            --check | tee /tmp/export-check.json
+          python - /tmp/export-check.json <<'PY'
+          import json
+          import sys
+
+          result = json.load(open(sys.argv[1], encoding='utf-8'))
+          expected_families = ['livebench', 'aa', 'deepswe']
+          if result.get('families') != expected_families or result.get('boards') != 24:
+              raise SystemExit(f'incomplete static export: {result}')
+          PY
+      - name: Write static export artifact
+        env:
+          WORKFLOW_RUN_ID: ${{ github.run_id }}
+          MAIN_COMMIT: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          python -m exporter.cli \
+            --snapshot-root artifacts \
+            --workflow-run-id "$WORKFLOW_RUN_ID" \
+            --main-commit "$MAIN_COMMIT" \
+            --output-dir static-export
+      - name: Verify static export files
+        run: |
+          node scripts/verify_static_export.js \
+            static-export/livebench-ranking.json \
+            static-export/livebench-ranking.js \
+            24 \
+            "${{ github.run_id }}" \
+            "${{ github.sha }}"
+      - name: Publish verified static export to repository
+        env:
+          WORKFLOW_RUN_ID: ${{ github.run_id }}
+          MAIN_COMMIT: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          mkdir -p generated/static-export
+          cp static-export/livebench-ranking.json generated/static-export/livebench-ranking.json
+          cp static-export/livebench-ranking.js generated/static-export/livebench-ranking.js
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add generated/static-export/livebench-ranking.json generated/static-export/livebench-ranking.js
+          if git diff --cached --quiet; then
+            echo "No generated static export changes"
+            exit 0
+          fi
+          git commit -m "Update static benchmark export (run ${WORKFLOW_RUN_ID}, commit ${MAIN_COMMIT})"
+          git push origin HEAD:${GITHUB_REF_NAME}
+      - name: Upload static export
+        uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-sync-static-export-${{ github.run_id }}
+          path: static-export/
+          if-no-files-found: error

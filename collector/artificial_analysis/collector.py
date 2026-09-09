@@ -190,7 +190,7 @@ class ArtificialAnalysisCollector(BenchmarkCollector):
             if not model:
                 raise ValueError("Artificial Analysis record requires model/label")
             if self.source.get("source_type") == "official_page_endpoint":
-                raw_score = record.get(field)
+                raw_score = _record_value(record, field)
                 score, score_metadata = _page_score_value(raw_score)
                 metric = field
                 extra = {
@@ -296,6 +296,30 @@ def _page_score_value(value: Any) -> tuple[Any, dict[str, Any]]:
     if "value" in properties:
         return properties["value"], {"score_properties": properties}
     return None, {"score_properties": properties}
+
+
+def _record_value(record: dict[str, Any], field: str) -> Any:
+    """Read an AA JSON-LD data field.
+
+    Rows may name the metric without the ': Score' suffix, or use a camelCase
+    JSON-LD property; fall back to the row's single numeric metric.
+    """
+    if field in record:
+        return record[field]
+    base = field.rsplit(":", 1)[0].strip()
+    candidates = {candidate.lower() for candidate in (base, f"{base}: Score")}
+    for key, value in record.items():
+        if str(key).strip().lower() in candidates:
+            return value
+    metadata = {"label", "name", "model", "detailsurl", "url"}
+    numeric = [
+        value
+        for key, value in record.items()
+        if str(key).strip().lower() not in metadata
+        and isinstance(value, (int, float))
+        and not isinstance(value, bool)
+    ]
+    return numeric[0] if len(numeric) == 1 else None
 
 
 def _optional_string(value: Any) -> str | None:

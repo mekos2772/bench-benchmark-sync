@@ -6,7 +6,6 @@ import json
 import re
 import urllib.error
 import urllib.request
-from statistics import fmean
 from typing import Any
 
 from collector.base import BenchmarkCollector
@@ -51,7 +50,7 @@ class LiveBenchCollector(BenchmarkCollector):
         directory_url = self.source["endpoint"]
         raw_base = self.source.get(
             "raw_base_url",
-            "https://raw.githubusercontent.com/LiveBench/livebench.github.io/main/public",
+            "https://livebench.ai",
         ).rstrip("/")
         discovery_mode = "directory"
         discovery_error: str | None = None
@@ -187,9 +186,9 @@ class LiveBenchCollector(BenchmarkCollector):
                     if task in row
                 ]
                 values = [score for score in task_scores if score is not None]
-                category_scores[category] = fmean(values) if values else None
+                category_scores[category] = _mean(values) if values else None
             values = [score for score in category_scores.values() if score is not None]
-            score = fmean(values) if values else None
+            score = _mean(values) if values else None
             normalized.append(
                 ModelScore(
                     benchmark=self.benchmark_id,
@@ -280,3 +279,8 @@ def _number(value: Any) -> float | None:
         return float(value)
     except (TypeError, ValueError):
         return None
+
+
+def _mean(values: list[float]) -> float:
+    """Naive left-to-right sum, matching the official frontend's reduce-based mean."""
+    return sum(values) / len(values)

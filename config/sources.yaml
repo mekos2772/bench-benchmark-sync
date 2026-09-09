@@ -428,34 +428,35 @@ sources:
   status: enabled
   source_name: LiveBench dated official leaderboard CSV
   organization: LiveBench
-  source_type: official_github_raw
+  source_type: official_site_dated_csv
   official_url: https://livebench.ai/
   endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
-  raw_base_url: https://raw.githubusercontent.com/LiveBench/livebench.github.io/main/public
+  raw_base_url: https://livebench.ai
   fallback_release_id: '2026-06-25'
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
   category_selector: overall
-  evidence_url: https://github.com/LiveBench/livebench.github.io
+  evidence_url: https://livebench.ai/
   release_tracking: dated_table_and_categories_files
   hash_required: true
-  notes: Total is reconstructed with the official frontend category-mean algorithm;
-    no rank is inferred.
+  notes: 'Total is reconstructed with the official frontend category-mean algorithm;
+    no rank is inferred. The dated CSV is fetched from the official site root, which
+    is updated in place and is newer than the GitHub public/ mirror.'
 - benchmark_id: livebench_coding
   status: enabled
   source_name: LiveBench Coding dated official leaderboard CSV
   organization: LiveBench
-  source_type: official_github_raw
+  source_type: official_site_dated_csv
   official_url: https://livebench.ai/
   endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
-  raw_base_url: https://raw.githubusercontent.com/LiveBench/livebench.github.io/main/public
+  raw_base_url: https://livebench.ai
   fallback_release_id: '2026-06-25'
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
   category_selector: coding
-  evidence_url: https://github.com/LiveBench/livebench.github.io
+  evidence_url: https://livebench.ai/
   release_tracking: dated_table_and_categories_files
   hash_required: true
   notes: Official category Coding; scores are averaged only within this category.
@@ -463,16 +464,16 @@ sources:
   status: enabled
   source_name: LiveBench Mathematics dated official leaderboard CSV
   organization: LiveBench
-  source_type: official_github_raw
+  source_type: official_site_dated_csv
   official_url: https://livebench.ai/
   endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
-  raw_base_url: https://raw.githubusercontent.com/LiveBench/livebench.github.io/main/public
+  raw_base_url: https://livebench.ai
   fallback_release_id: '2026-06-25'
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
   category_selector: math
-  evidence_url: https://github.com/LiveBench/livebench.github.io
+  evidence_url: https://livebench.ai/
   release_tracking: dated_table_and_categories_files
   hash_required: true
   notes: User label Math maps to official taxonomy Mathematics.
@@ -480,16 +481,16 @@ sources:
   status: enabled
   source_name: LiveBench Reasoning dated official leaderboard CSV
   organization: LiveBench
-  source_type: official_github_raw
+  source_type: official_site_dated_csv
   official_url: https://livebench.ai/
   endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
-  raw_base_url: https://raw.githubusercontent.com/LiveBench/livebench.github.io/main/public
+  raw_base_url: https://livebench.ai
   fallback_release_id: '2026-06-25'
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
   category_selector: reasoning
-  evidence_url: https://github.com/LiveBench/livebench.github.io
+  evidence_url: https://livebench.ai/
   release_tracking: dated_table_and_categories_files
   hash_required: true
   notes: Official category Reasoning.
@@ -497,16 +498,16 @@ sources:
   status: enabled
   source_name: LiveBench Data Analysis dated official leaderboard CSV
   organization: LiveBench
-  source_type: official_github_raw
+  source_type: official_site_dated_csv
   official_url: https://livebench.ai/
   endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
-  raw_base_url: https://raw.githubusercontent.com/LiveBench/livebench.github.io/main/public
+  raw_base_url: https://livebench.ai
   fallback_release_id: '2026-06-25'
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
   category_selector: data_analysis
-  evidence_url: https://github.com/LiveBench/livebench.github.io
+  evidence_url: https://livebench.ai/
   release_tracking: dated_table_and_categories_files
   hash_required: true
   notes: Official category Data Analysis.
@@ -514,16 +515,16 @@ sources:
   status: enabled
   source_name: LiveBench Language dated official leaderboard CSV
   organization: LiveBench
-  source_type: official_github_raw
+  source_type: official_site_dated_csv
   official_url: https://livebench.ai/
   endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
-  raw_base_url: https://raw.githubusercontent.com/LiveBench/livebench.github.io/main/public
+  raw_base_url: https://livebench.ai
   fallback_release_id: '2026-06-25'
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
   category_selector: language
-  evidence_url: https://github.com/LiveBench/livebench.github.io
+  evidence_url: https://livebench.ai/
   release_tracking: dated_table_and_categories_files
   hash_required: true
   notes: Official category Language.
@@ -531,16 +532,16 @@ sources:
   status: enabled
   source_name: LiveBench IF dated official leaderboard CSV
   organization: LiveBench
-  source_type: official_github_raw
+  source_type: official_site_dated_csv
   official_url: https://livebench.ai/
   endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
-  raw_base_url: https://raw.githubusercontent.com/LiveBench/livebench.github.io/main/public
+  raw_base_url: https://livebench.ai
   fallback_release_id: '2026-06-25'
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
   category_selector: instruction_following
-  evidence_url: https://github.com/LiveBench/livebench.github.io
+  evidence_url: https://livebench.ai/
   release_tracking: dated_table_and_categories_files
   hash_required: true
   notes: User label Instruction Following maps to official taxonomy IF.
@@ -548,16 +549,16 @@ sources:
   status: enabled
   source_name: LiveBench Agentic Coding dated official leaderboard CSV
   organization: LiveBench
-  source_type: official_github_raw
+  source_type: official_site_dated_csv
   official_url: https://livebench.ai/
   endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
-  raw_base_url: https://raw.githubusercontent.com/LiveBench/livebench.github.io/main/public
+  raw_base_url: https://livebench.ai
   fallback_release_id: '2026-06-25'
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
   category_selector: agentic_coding
-  evidence_url: https://github.com/LiveBench/livebench.github.io
+  evidence_url: https://livebench.ai/
   release_tracking: dated_table_and_categories_files
   hash_required: true
   notes: Current taxonomy contains Agentic Coding; kept independent from Coding.
