@@ -178,3 +178,20 @@ def test_public_page_jsonld_requires_no_api_key(monkeypatch):
     assert records[0].model == "GPT-6 Astra (xhigh)"
     assert records[0].score == 0.5959
     assert records[0].extra["details_url"] == "/models/gpt-6-astra-xhigh"
+
+
+def test_record_value_matches_score_suffix_and_camelcase_metric():
+    from collector.artificial_analysis.collector import _record_value
+
+    assert _record_value({"AA-LCR v1.1": 0.88}, "AA-LCR v1.1") == 0.88
+    assert _record_value({"Terminal-Bench v4.0": 0.59}, "Terminal-Bench v4.0: Score") == 0.59
+    assert (
+        _record_value(
+            {"opennessIndex": 88.88, "detailsUrl": "/models/x"},
+            "Artificial Analysis Openness Index: Score",
+        )
+        == 88.88
+    )
+    assert (
+        _record_value({"a": 1, "b": 2, "detailsUrl": "/x"}, "Unknown: Score") is None
+    )

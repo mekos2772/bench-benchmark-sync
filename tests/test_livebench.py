@@ -11,8 +11,9 @@ SOURCE = {
     "benchmark_id": "livebench_coding",
     "status": "enabled",
     "source_name": "LiveBench coding",
-    "source_type": "official_github_raw",
+    "source_type": "official_site_dated_csv",
     "endpoint": "https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main",
+    "raw_base_url": "https://livebench.ai",
     "category_selector": "coding",
     "fallback_release_id": "2026-06-25",
 }
@@ -111,10 +112,8 @@ def test_livebench_fetch_uses_verified_fallback_after_directory_rate_limit(monke
     assert parsed["discovery_error"] == "http_403_rate_limit"
     assert calls == [
         SOURCE["endpoint"],
-        "https://raw.githubusercontent.com/LiveBench/livebench.github.io/main/public/"
-        "table_2026_06_25.csv",
-        "https://raw.githubusercontent.com/LiveBench/livebench.github.io/main/public/"
-        "categories_2026_06_25.json",
+        "https://livebench.ai/table_2026_06_25.csv",
+        "https://livebench.ai/categories_2026_06_25.json",
     ]
 
 

@@ -44,7 +44,7 @@ class CollectorRegistry:
             return DeepSWECollector(source)
         if (
             benchmark_id.startswith("livebench_")
-            and source.get("source_type") == "official_github_raw"
+            and source.get("source_type") in {"official_github_raw", "official_site_dated_csv"}
         ):
             return LiveBenchCollector(source)
         if source.get("organization") == "Artificial Analysis" and source.get(
