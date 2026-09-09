@@ -56,9 +56,9 @@ It fails closed on missing, failed, or partial snapshots, empty boards, cross-bo
 
 ## GitHub Actions static export
 
-The scheduled workflow collects every enabled source with bounded matrix concurrency. A scheduled run, or a manual run with an empty `benchmark` input, downloads the collector snapshots and exports all 24 mapped boards. The exporter receives the GitHub run ID and commit SHA as provenance, then the written JSON/CommonJS files are reloaded and compared by `scripts/verify_static_export.js` before the read-only static-export artifact is uploaded.
+The scheduled workflow collects every enabled source with bounded matrix concurrency. A scheduled run, or a manual run with an empty `benchmark` input, downloads the collector snapshots and exports all 24 mapped boards. The exporter receives the GitHub run ID and commit SHA as provenance, then the written JSON/CommonJS files are reloaded and compared by `scripts/verify_static_export.js`. After validation, the same files are published to `generated/static-export/` in the benchmark-sync `main` branch and uploaded as a read-only artifact.
 
-A manual run with a specific `benchmark` input is a single-source diagnostic run only; it intentionally skips the static export job so an incomplete snapshot set cannot produce a partial Mini Program bundle. The workflow does not copy artifacts to the Mini Program repository, create a PR, call CloudBase, call `rankingAdmin`, upload an experience version, or publish.
+A manual run with a specific `benchmark` input is a single-source diagnostic run only; it intentionally skips the static export job so an incomplete snapshot set cannot produce a partial Mini Program bundle. The workflow only writes its own generated directory; the private Mini Program repository pulls that public static path on its own schedule and updates only its bundle file. It does not call CloudBase, call `rankingAdmin`, upload an experience version, or publish.
 
 ## Optional ingestion
 

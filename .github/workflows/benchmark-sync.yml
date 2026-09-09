@@ -65,6 +65,8 @@ jobs:
     needs: sync
     if: ${{ !cancelled() && (inputs.benchmark == '' || inputs.benchmark == null) }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -116,6 +118,24 @@ jobs:
             24 \
             "${{ github.run_id }}" \
             "${{ github.sha }}"
+      - name: Publish verified static export to repository
+        env:
+          WORKFLOW_RUN_ID: ${{ github.run_id }}
+          MAIN_COMMIT: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          mkdir -p generated/static-export
+          cp static-export/livebench-ranking.json generated/static-export/livebench-ranking.json
+          cp static-export/livebench-ranking.js generated/static-export/livebench-ranking.js
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add generated/static-export/livebench-ranking.json generated/static-export/livebench-ranking.js
+          if git diff --cached --quiet; then
+            echo "No generated static export changes"
+            exit 0
+          fi
+          git commit -m "Update static benchmark export (run ${WORKFLOW_RUN_ID}, commit ${MAIN_COMMIT})"
+          git push origin HEAD:${GITHUB_REF_NAME}
       - name: Upload static export
         uses: actions/upload-artifact@v4
         with:
