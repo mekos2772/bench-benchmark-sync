@@ -109,12 +109,13 @@ jobs:
             --main-commit "$MAIN_COMMIT" \
             --output-dir static-export
       - name: Verify static export files
-        run: node scripts/verify_static_export.js \
-          static-export/livebench-ranking.json \
-          static-export/livebench-ranking.js \
-          24 \
-          "${{ github.run_id }}" \
-          "${{ github.sha }}"
+        run: |
+          node scripts/verify_static_export.js \
+            static-export/livebench-ranking.json \
+            static-export/livebench-ranking.js \
+            24 \
+            "${{ github.run_id }}" \
+            "${{ github.sha }}"
       - name: Upload static export
         uses: actions/upload-artifact@v4
         with:
