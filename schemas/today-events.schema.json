@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Today activity event feed",
   "type": "object",
-  "required": ["schemaVersion", "dataSource", "generatedAt", "windowStart", "collectorStatus", "families", "events", "eventCount"],
+  "required": ["schemaVersion", "dataSource", "generatedAt", "windowStart", "collectorStatus", "families", "events", "eventCount", "models", "modelCount"],
   "properties": {
     "schemaVersion": {"const": 1},
     "dataSource": {"const": "today-activity-aggregator"},
@@ -10,41 +10,115 @@
     "windowStart": {"type": "string", "format": "date-time"},
     "collectorStatus": {"enum": ["ok", "partial"]},
     "staleAfterMinutes": {"type": "integer", "minimum": 1},
-    "families": {
-      "type": "array",
-      "const": ["model", "technology", "benchmark"]
-    },
+    "families": {"type": "array", "const": ["model", "technology", "benchmark"]},
     "eventCount": {"type": "integer", "minimum": 0},
+    "modelCount": {"type": "integer", "minimum": 0},
+    "models": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/modelProfile"}
+    },
+    "officialSources": {"type": "object", "additionalProperties": true},
+    "sourceSummary": {"type": "object", "additionalProperties": true},
     "events": {
       "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["eventId", "family", "eventType", "severity", "title", "summary", "url", "observedAt", "source", "provenance"],
-        "properties": {
-          "eventId": {"type": "string", "minLength": 8},
-          "family": {"enum": ["model", "technology", "benchmark"]},
-          "eventType": {"type": "string", "minLength": 1},
-          "severity": {"enum": ["normal", "important"]},
-          "title": {"type": "string", "minLength": 1},
-          "summary": {"type": "string"},
-          "url": {"type": "string", "format": "uri"},
-          "observedAt": {"type": "string", "format": "date-time"},
-          "publishedAt": {"type": ["string", "null"], "format": "date-time"},
-          "source": {"type": "string", "minLength": 1},
-          "provenance": {
-            "type": "object",
-            "required": ["contentHash"],
-            "properties": {
-              "sourceUrl": {"type": ["string", "null"]},
-              "contentHash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
-              "workflowRunId": {"type": ["string", "null"]},
-              "mainCommit": {"type": ["string", "null"]}
-            },
-            "additionalProperties": true
-          }
+      "items": {"$ref": "#/$defs/event"}
+    }
+  },
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "required": ["field", "sourceUrl", "observedAt", "contentHash", "sourceType"],
+      "properties": {
+        "field": {"type": "string", "minLength": 1},
+        "sourceUrl": {"type": ["string", "null"]},
+        "observedAt": {"type": "string", "format": "date-time"},
+        "contentHash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "sourceType": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": true
+    },
+    "modelProfile": {
+      "type": "object",
+      "required": ["canonicalId", "provider", "modelId", "displayName", "version", "aliases", "releaseDate", "status", "deprecationDate", "releaseType", "access", "modalities", "capabilities", "contextWindow", "maxInputTokens", "maxOutputTokens", "pricing", "availability", "officialUrl", "documentationUrl", "modelCardUrl", "hubRepo", "sourceType", "sourceOwner", "evidence"],
+      "properties": {
+        "canonicalId": {"type": "string", "minLength": 1},
+        "provider": {"type": ["string", "null"]},
+        "modelId": {"type": "string", "minLength": 1},
+        "displayName": {"type": ["string", "null"]},
+        "version": {"type": ["string", "null"]},
+        "aliases": {"type": "array", "items": {"type": "string"}},
+        "releaseDate": {"type": ["string", "null"], "format": "date-time"},
+        "status": {"type": ["string", "null"]},
+        "deprecationDate": {"type": ["string", "null"], "format": "date-time"},
+        "releaseType": {"type": ["string", "null"]},
+        "access": {"enum": ["closed_api", "open_weights", "gated", "unknown"]},
+        "modalities": {
+          "type": "object",
+          "required": ["input", "output"],
+          "properties": {
+            "input": {"type": "array", "items": {"type": "string"}},
+            "output": {"type": "array", "items": {"type": "string"}}
+          },
+          "additionalProperties": true
         },
-        "additionalProperties": true
-      }
+        "capabilities": {"type": "array", "items": {"type": "string"}},
+        "contextWindow": {"type": ["number", "null"]},
+        "maxInputTokens": {"type": ["number", "null"]},
+        "maxOutputTokens": {"type": ["number", "null"]},
+        "pricing": {
+          "type": "object",
+          "required": ["currency", "inputPerMillionTokens", "outputPerMillionTokens", "cachedInputPerMillionTokens"],
+          "properties": {
+            "currency": {"type": ["string", "null"]},
+            "inputPerMillionTokens": {"type": ["number", "null"]},
+            "outputPerMillionTokens": {"type": ["number", "null"]},
+            "cachedInputPerMillionTokens": {"type": ["number", "null"]}
+          },
+          "additionalProperties": true
+        },
+        "availability": {"type": "array", "items": {"type": "string"}},
+        "officialUrl": {"type": ["string", "null"]},
+        "documentationUrl": {"type": ["string", "null"]},
+        "modelCardUrl": {"type": ["string", "null"]},
+        "hubRepo": {"type": ["string", "null"]},
+        "sourceType": {"type": "string", "minLength": 1},
+        "sourceOwner": {"type": ["string", "null"]},
+        "evidence": {"type": "array", "items": {"$ref": "#/$defs/evidence"}}
+      },
+      "additionalProperties": true
+    },
+    "event": {
+      "type": "object",
+      "required": ["eventId", "family", "eventType", "eventClass", "trustTier", "priority", "visibility", "isOfficial", "severity", "title", "summary", "url", "observedAt", "source", "provenance"],
+      "properties": {
+        "eventId": {"type": "string", "minLength": 8},
+        "family": {"enum": ["model", "technology", "benchmark"]},
+        "eventType": {"type": "string", "minLength": 1},
+        "eventClass": {"type": "string", "minLength": 1},
+        "trustTier": {"enum": ["official", "official_catalog", "hub", "technical", "derived", "unverified"]},
+        "priority": {"enum": ["P0", "P1", "P2", "P3"]},
+        "visibility": {"enum": ["primary", "secondary", "hidden"]},
+        "isOfficial": {"type": "boolean"},
+        "severity": {"enum": ["normal", "important"]},
+        "title": {"type": "string", "minLength": 1},
+        "summary": {"type": "string"},
+        "modelRef": {"type": ["string", "null"]},
+        "url": {"type": "string", "format": "uri"},
+        "observedAt": {"type": "string", "format": "date-time"},
+        "publishedAt": {"type": ["string", "null"], "format": "date-time"},
+        "source": {"type": "string", "minLength": 1},
+        "evidence": {"type": "array", "items": {"$ref": "#/$defs/evidence"}},
+        "provenance": {
+          "type": "object",
+          "required": ["contentHash"],
+          "properties": {
+            "sourceUrl": {"type": ["string", "null"]},
+            "contentHash": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
     }
   },
   "additionalProperties": true

@@ -338,6 +338,9 @@ def compare_benchmarks(
                         "rank": after_rank,
                         "previousDisplayRank": before.get("displayRank"),
                         "displayRank": after.get("displayRank"),
+                        "rankSource": (
+                            "derived" if rank_type == "derived_rank_changed" else "official"
+                        ),
                         "release": board.get("release"),
                     },
                 )
@@ -376,7 +379,15 @@ def main(argv: list[str] | None = None) -> int:
             if isinstance(item, dict) and item.get("family") == "benchmark"
         ]
         benchmark_events = previous_benchmark_events + benchmark_events
-        document = build_document(config, now=now, benchmark_events=benchmark_events)
+        document = build_document(
+            config,
+            now=now,
+            benchmark_events=benchmark_events,
+            previous_state=previous_state,
+            previous_models=previous_document.get("models")
+            if isinstance(previous_document, dict)
+            else None,
+        )
     except TodayFetchError as exc:
         print(json.dumps({"ok": False, "error": str(exc)}, ensure_ascii=False), file=sys.stderr)
         return 2
@@ -387,9 +398,22 @@ def main(argv: list[str] | None = None) -> int:
         "workflowRunId": args.workflow_run_id,
         "mainCommit": args.main_commit,
     }
-    event_hash = stable_hash(document.get("events", []))
+    document["sourceSummary"]["officialSources"] = len(document.get("officialSources", {}))
+    event_hash = stable_hash(
+        {
+            "events": document.get("events", []),
+            "models": document.get("models", {}),
+            "officialSources": document.get("officialSources", {}),
+        }
+    )
     previous_hash = (
-        stable_hash(previous_document.get("events", []))
+        stable_hash(
+            {
+                "events": previous_document.get("events", []),
+                "models": previous_document.get("models", {}),
+                "officialSources": previous_document.get("officialSources", {}),
+            }
+        )
         if isinstance(previous_document, dict)
         else ""
     )
@@ -399,6 +423,16 @@ def main(argv: list[str] | None = None) -> int:
     state = {
         "schemaVersion": 1,
         "generatedAt": iso(now),
+        "officialSources": document.get("officialSources", {}),
+        "models": {
+            key: {
+                "version": value.get("version"),
+                "contentHash": stable_hash(value),
+                "lastSeenAt": iso(now),
+            }
+            for key, value in (document.get("models") or {}).items()
+            if isinstance(value, dict)
+        },
         "benchmarks": benchmark_state,
     }
     if event_hash == previous_hash and state_path.exists():

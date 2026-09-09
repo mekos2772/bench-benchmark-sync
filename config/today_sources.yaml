@@ -1,4 +1,5 @@
-# Today activity source registry. These are public repositories only; no token is required.
+# Today activity sources. All external requests run in GitHub Actions only.
+# Official vendor sources remain disabled until their public endpoint contract is verified.
 repositories:
   - id: huggingface/transformers
     kind: training_framework
@@ -31,13 +32,125 @@ repositories:
     kind: training_framework
     branch: main
 
+official_sources:
+  # Enable only after confirming the endpoint is an official, structured source.
+  - source_id: openai_news
+    provider: OpenAI
+    source_type: official_news
+    endpoint: https://openai.com/news/
+    format: html
+    official_url: https://openai.com/news/
+    enabled: false
+    poll_minutes: 15
+    model_id_patterns: []
+  - source_id: anthropic_news
+    provider: Anthropic
+    source_type: official_news
+    endpoint: https://www.anthropic.com/news
+    format: html
+    official_url: https://www.anthropic.com/news
+    enabled: false
+    poll_minutes: 15
+    model_id_patterns: []
+  - source_id: google_gemini_models
+    provider: Google
+    source_type: official_model_catalog
+    endpoint: https://ai.google.dev/gemini-api/docs/models/gemini
+    format: html
+    official_url: https://ai.google.dev/gemini-api/docs/models/gemini
+    enabled: false
+    poll_minutes: 30
+    model_id_patterns: []
+  - source_id: xai_models
+    provider: xAI
+    source_type: official_model_catalog
+    endpoint: https://docs.x.ai/docs/models
+    format: html
+    official_url: https://docs.x.ai/docs/models
+    enabled: false
+    poll_minutes: 30
+    model_id_patterns: []
+  - source_id: mistral_models
+    provider: Mistral AI
+    source_type: official_model_catalog
+    endpoint: https://docs.mistral.ai/getting-started/models/models_overview/
+    format: html
+    official_url: https://docs.mistral.ai/getting-started/models/models_overview/
+    enabled: false
+    poll_minutes: 30
+    model_id_patterns: []
+  - source_id: deepseek_models
+    provider: DeepSeek
+    source_type: official_model_catalog
+    endpoint: https://api-docs.deepseek.com/quick_start/pricing
+    format: html
+    official_url: https://api-docs.deepseek.com/quick_start/pricing
+    enabled: false
+    poll_minutes: 30
+    model_id_patterns: []
+  - source_id: qwen_models
+    provider: Qwen
+    source_type: official_model_catalog
+    endpoint: https://help.aliyun.com/zh/model-studio/getting-started/models
+    format: html
+    official_url: https://help.aliyun.com/zh/model-studio/getting-started/models
+    enabled: false
+    poll_minutes: 30
+    model_id_patterns: []
+  - source_id: zhipu_models
+    provider: Zhipu AI
+    source_type: official_model_catalog
+    endpoint: https://docs.bigmodel.cn/cn/guide/models/text
+    format: html
+    official_url: https://docs.bigmodel.cn/cn/guide/models/text
+    enabled: false
+    poll_minutes: 30
+    model_id_patterns: []
+  - source_id: moonshot_models
+    provider: Moonshot AI
+    source_type: official_model_catalog
+    endpoint: https://platform.moonshot.cn/docs/intro
+    format: html
+    official_url: https://platform.moonshot.cn/docs/intro
+    enabled: false
+    poll_minutes: 30
+    model_id_patterns: []
+  - source_id: doubao_models
+    provider: ByteDance / Doubao
+    source_type: official_model_catalog
+    endpoint: https://www.volcengine.com/docs/82379
+    format: html
+    official_url: https://www.volcengine.com/docs/82379
+    enabled: false
+    poll_minutes: 30
+    model_id_patterns: []
+
 settings:
   window_hours: 24
   max_hub_models: 80
+  max_hub_discoveries: 12
   max_events: 240
   github_feed_timeout_seconds: 20
   hub_timeout_seconds: 30
+  official_timeout_seconds: 30
   stale_after_minutes: 60
+  hub_require_license: true
+  hub_allow_gated: false
+  hub_min_downloads: 0
+  hub_min_likes: 0
+  hub_denied_name_tokens:
+    - adapter
+    - lora
+    - controlnet
+    - embedding
+    - quantized
+    - quantisation
+    - quantization
+    - gguf
+    - test
+    - demo
+    - mirror
+    - merge
   important_pr_keywords:
     - release
     - breaking
