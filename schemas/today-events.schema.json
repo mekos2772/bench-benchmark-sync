@@ -10,7 +10,7 @@
     "windowStart": {"type": "string", "format": "date-time"},
     "collectorStatus": {"enum": ["ok", "partial"]},
     "staleAfterMinutes": {"type": "integer", "minimum": 1},
-    "families": {"type": "array", "const": ["model", "technology", "benchmark"]},
+    "families": {"type": "array", "const": ["model", "benchmark"]},
     "eventCount": {"type": "integer", "minimum": 0},
     "modelCount": {"type": "integer", "minimum": 0},
     "models": {
@@ -39,7 +39,7 @@
     },
     "modelProfile": {
       "type": "object",
-      "required": ["canonicalId", "provider", "modelId", "displayName", "version", "aliases", "releaseDate", "status", "deprecationDate", "releaseType", "access", "modalities", "capabilities", "contextWindow", "maxInputTokens", "maxOutputTokens", "pricing", "availability", "officialUrl", "documentationUrl", "modelCardUrl", "hubRepo", "sourceType", "sourceOwner", "evidence"],
+      "required": ["canonicalId", "provider", "modelId", "displayName", "version", "aliases", "releaseDate", "status", "deprecationDate", "releaseType", "access", "modalities", "capabilities", "parameterCount", "license", "contextWindow", "maxInputTokens", "maxOutputTokens", "pricing", "availability", "officialUrl", "documentationUrl", "modelCardUrl", "hubRepo", "sourceType", "sourceOwner", "evidence"],
       "properties": {
         "canonicalId": {"type": "string", "minLength": 1},
         "provider": {"type": ["string", "null"]},
@@ -62,6 +62,8 @@
           "additionalProperties": true
         },
         "capabilities": {"type": "array", "items": {"type": "string"}},
+        "parameterCount": {"type": ["integer", "null"], "minimum": 1},
+        "license": {"type": ["string", "null"]},
         "contextWindow": {"type": ["number", "null"]},
         "maxInputTokens": {"type": ["number", "null"]},
         "maxOutputTokens": {"type": ["number", "null"]},
@@ -92,10 +94,10 @@
       "required": ["eventId", "family", "eventType", "eventClass", "trustTier", "priority", "visibility", "isOfficial", "severity", "title", "summary", "url", "observedAt", "source", "provenance"],
       "properties": {
         "eventId": {"type": "string", "minLength": 8},
-        "family": {"enum": ["model", "technology", "benchmark"]},
+        "family": {"enum": ["model", "benchmark"]},
         "eventType": {"type": "string", "minLength": 1},
         "eventClass": {"type": "string", "minLength": 1},
-        "trustTier": {"enum": ["official", "official_catalog", "hub", "technical", "derived", "unverified"]},
+        "trustTier": {"enum": ["official", "catalog", "derived", "unverified"]},
         "priority": {"enum": ["P0", "P1", "P2", "P3"]},
         "visibility": {"enum": ["primary", "secondary", "hidden"]},
         "isOfficial": {"type": "boolean"},

@@ -383,7 +383,6 @@ def main(argv: list[str] | None = None) -> int:
             config,
             now=now,
             benchmark_events=benchmark_events,
-            previous_state=previous_state,
             previous_models=previous_document.get("models")
             if isinstance(previous_document, dict)
             else None,
@@ -398,12 +397,10 @@ def main(argv: list[str] | None = None) -> int:
         "workflowRunId": args.workflow_run_id,
         "mainCommit": args.main_commit,
     }
-    document["sourceSummary"]["officialSources"] = len(document.get("officialSources", {}))
     event_hash = stable_hash(
         {
             "events": document.get("events", []),
             "models": document.get("models", {}),
-            "officialSources": document.get("officialSources", {}),
         }
     )
     previous_hash = (
@@ -411,7 +408,6 @@ def main(argv: list[str] | None = None) -> int:
             {
                 "events": previous_document.get("events", []),
                 "models": previous_document.get("models", {}),
-                "officialSources": previous_document.get("officialSources", {}),
             }
         )
         if isinstance(previous_document, dict)
@@ -423,7 +419,6 @@ def main(argv: list[str] | None = None) -> int:
     state = {
         "schemaVersion": 1,
         "generatedAt": iso(now),
-        "officialSources": document.get("officialSources", {}),
         "models": {
             key: {
                 "version": value.get("version"),

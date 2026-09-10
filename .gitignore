@@ -12,6 +12,8 @@ config/*.local.*
 raw/
 tmp/
 artifacts/
+artifacts-local/
+out-static/
 .snapshots/
 *.payload
 *.payload.json

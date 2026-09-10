@@ -27,7 +27,7 @@ try {
 if (!util.isDeepStrictEqual(document, moduleValue)) fail('JSON and CommonJS differ');
 if (document.schemaVersion !== 1) fail(`schemaVersion must be 1, got ${document.schemaVersion}`);
 if (document.dataSource !== 'today-activity-aggregator') fail('unexpected dataSource');
-if (!Array.isArray(document.families) || JSON.stringify(document.families) !== JSON.stringify(['model', 'technology', 'benchmark'])) {
+if (!Array.isArray(document.families) || JSON.stringify(document.families) !== JSON.stringify(['model', 'benchmark'])) {
   fail('invalid family order');
 }
 if (!Array.isArray(document.events) || document.eventCount !== document.events.length) fail('eventCount mismatch');
@@ -38,12 +38,14 @@ if (!['ok', 'partial'].includes(document.collectorStatus)) fail('invalid collect
 const isHttpUrl = (value) => typeof value === 'string' && /^https?:\/\//.test(value);
 const isHash = (value) => typeof value === 'string' && /^[a-f0-9]{64}$/.test(value);
 const ids = new Set();
-const profileFields = ['contextWindow', 'maxInputTokens', 'maxOutputTokens', 'officialUrl', 'documentationUrl', 'modelCardUrl', 'hubRepo'];
+const profileFields = ['parameterCount', 'license', 'contextWindow', 'maxInputTokens', 'maxOutputTokens', 'officialUrl', 'documentationUrl', 'modelCardUrl', 'hubRepo'];
 for (const [modelRef, profile] of Object.entries(document.models)) {
   if (!profile || typeof profile !== 'object') fail(`invalid model profile: ${modelRef}`);
   if (profile.canonicalId !== modelRef) fail(`model canonicalId mismatch: ${modelRef}`);
   if (typeof profile.modelId !== 'string' || !profile.modelId) fail(`modelId missing: ${modelRef}`);
   if (!['closed_api', 'open_weights', 'gated', 'unknown'].includes(profile.access)) fail(`invalid model access: ${modelRef}`);
+  if (profile.parameterCount != null && (!Number.isInteger(profile.parameterCount) || profile.parameterCount < 1)) fail(`invalid parameterCount: ${modelRef}`);
+  if (profile.license != null && typeof profile.license !== 'string') fail(`invalid license: ${modelRef}`);
   if (!profile.modalities || !Array.isArray(profile.modalities.input) || !Array.isArray(profile.modalities.output)) fail(`invalid model modalities: ${modelRef}`);
   if (!profile.pricing || !Object.prototype.hasOwnProperty.call(profile.pricing, 'inputPerMillionTokens')) fail(`invalid model pricing: ${modelRef}`);
   if (!Array.isArray(profile.evidence)) fail(`model evidence missing: ${modelRef}`);
@@ -63,7 +65,7 @@ for (const event of document.events) {
   if (typeof event.title !== 'string' || !event.title) fail('event title missing');
   if (!isHttpUrl(event.url)) fail('event URL missing');
   if (!isHash(event.provenance?.contentHash)) fail('event provenance hash missing');
-  if (!['official', 'official_catalog', 'hub', 'technical', 'derived', 'unverified'].includes(event.trustTier)) fail(`invalid trustTier: ${event.eventId}`);
+  if (!['official', 'catalog', 'derived', 'unverified'].includes(event.trustTier)) fail(`invalid trustTier: ${event.eventId}`);
   if (!['P0', 'P1', 'P2', 'P3'].includes(event.priority)) fail(`invalid priority: ${event.eventId}`);
   if (!['primary', 'secondary', 'hidden'].includes(event.visibility)) fail(`invalid visibility: ${event.eventId}`);
   if (typeof event.isOfficial !== 'boolean') fail(`isOfficial missing: ${event.eventId}`);
@@ -71,13 +73,12 @@ for (const event of document.events) {
   if (event.eventType === 'official_model_release') {
     if (event.family !== 'model' || event.isOfficial !== true || event.trustTier !== 'official') fail(`official model event metadata invalid: ${event.eventId}`);
     if (!event.modelRef || !event.evidence?.length || !isHttpUrl(event.url)) fail(`official model event evidence missing: ${event.eventId}`);
+    const profile = document.models[event.modelRef];
+    if (!profile.evidence?.length) fail(`official model profile evidence missing: ${event.modelRef}`);
   }
-  if (event.eventType === 'official_catalog_added') {
-    if (event.family !== 'model' || event.isOfficial !== true || event.trustTier !== 'official_catalog') fail(`official catalog event metadata invalid: ${event.eventId}`);
-    if (!event.modelRef || !event.evidence?.length || !isHttpUrl(event.url)) fail(`official catalog event evidence missing: ${event.eventId}`);
-  }
-  if (event.eventType === 'hub_open_model_discovered') {
-    if (event.isOfficial || event.trustTier !== 'hub' || event.visibility !== 'secondary') fail(`Hub event metadata invalid: ${event.eventId}`);
+  if (event.eventType === 'catalog_model_added') {
+    if (event.family !== 'model' || event.isOfficial !== false || event.trustTier !== 'catalog') fail(`catalog event metadata invalid: ${event.eventId}`);
+    if (!event.modelRef || !event.evidence?.length || !isHttpUrl(event.url)) fail(`catalog event evidence missing: ${event.eventId}`);
   }
   if (event.family === 'benchmark' && !event.benchmarkId) fail(`benchmarkId missing: ${event.eventId}`);
   if (event.eventType === 'derived_rank_changed' && event.rankSource !== 'derived') fail(`derived rank source missing: ${event.eventId}`);

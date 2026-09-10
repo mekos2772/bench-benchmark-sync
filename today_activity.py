@@ -2,40 +2,37 @@ from __future__ import annotations
 
 import hashlib
 import json
+import math
 import re
-import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote
 
 import requests
 import yaml
 
 UTC = timezone.utc
 ISO_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
+WEIGHT_SUFFIXES = (".safetensors", ".bin", ".pt", ".pth", ".onnx", ".mlx", ".h5", ".msgpack")
 
 
 @dataclass(frozen=True)
 class TodayConfig:
     window_hours: int = 24
-    max_hub_models: int = 80
-    max_hub_discoveries: int = 12
-    max_events: int = 240
-    github_feed_timeout_seconds: int = 20
+    max_events: int = 200
+    max_hub_events: int = 40
+    catalog_max_models: int = 40
+    hub_org_limit: int = 20
     hub_timeout_seconds: int = 30
-    official_timeout_seconds: int = 30
+    openrouter_timeout_seconds: int = 30
     stale_after_minutes: int = 60
-    hub_require_license: bool = True
-    hub_allow_gated: bool = False
-    hub_min_downloads: int = 0
-    hub_min_likes: int = 0
     hub_denied_name_tokens: tuple[str, ...] = ()
-    important_pr_keywords: tuple[str, ...] = ()
-    architecture_keywords: tuple[str, ...] = ()
-    repositories: tuple[dict[str, Any], ...] = ()
-    official_sources: tuple[dict[str, Any], ...] = ()
+    hub_orgs: tuple[dict[str, Any], ...] = ()
+    openrouter_enabled: bool = True
+    openrouter_providers: tuple[tuple[str, str], ...] = ()
 
 
 class TodayFetchError(RuntimeError):
@@ -87,62 +84,39 @@ def get_json(url: str, timeout: int, headers: dict[str, str] | None = None) -> A
         raise TodayFetchError(f"invalid JSON: {url}") from exc
 
 
-def get_text(url: str, timeout: int, headers: dict[str, str] | None = None) -> str:
-    try:
-        response = requests.get(url, timeout=timeout, headers=headers or {})
-    except requests.RequestException as exc:
-        raise TodayFetchError(f"request failed: {url}") from exc
-    if response.status_code < 200 or response.status_code >= 300:
-        raise TodayFetchError(f"unexpected HTTP {response.status_code}: {url}")
-    return response.text
-
-
 def load_config(path: Path) -> TodayConfig:
     data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
     settings = data.get("settings") or {}
-    repositories = tuple(
+    hub_orgs = tuple(
         dict(item)
-        for item in data.get("repositories", [])
-        if isinstance(item, dict) and item.get("id") and item.get("kind")
+        for item in data.get("hub_orgs", [])
+        if isinstance(item, dict) and item.get("org")
     )
-    official_sources = tuple(
-        dict(item)
-        for item in data.get("official_sources", [])
-        if isinstance(item, dict) and item.get("source_id")
+    openrouter = data.get("openrouter") or {}
+    providers = openrouter.get("providers") or {}
+    openrouter_providers = tuple(
+        (str(slug), str(name)) for slug, name in providers.items() if slug and name
     )
     return TodayConfig(
         window_hours=int(settings.get("window_hours", 24)),
-        max_hub_models=int(settings.get("max_hub_models", 80)),
-        max_hub_discoveries=int(settings.get("max_hub_discoveries", 12)),
-        max_events=int(settings.get("max_events", 240)),
-        github_feed_timeout_seconds=int(settings.get("github_feed_timeout_seconds", 20)),
+        max_events=int(settings.get("max_events", 200)),
+        max_hub_events=int(settings.get("max_hub_events", 40)),
+        catalog_max_models=int(settings.get("catalog_max_models", 40)),
+        hub_org_limit=int(settings.get("hub_org_limit", 20)),
         hub_timeout_seconds=int(settings.get("hub_timeout_seconds", 30)),
-        official_timeout_seconds=int(settings.get("official_timeout_seconds", 30)),
+        openrouter_timeout_seconds=int(settings.get("openrouter_timeout_seconds", 30)),
         stale_after_minutes=int(settings.get("stale_after_minutes", 60)),
-        hub_require_license=bool(settings.get("hub_require_license", True)),
-        hub_allow_gated=bool(settings.get("hub_allow_gated", False)),
-        hub_min_downloads=int(settings.get("hub_min_downloads", 0)),
-        hub_min_likes=int(settings.get("hub_min_likes", 0)),
         hub_denied_name_tokens=tuple(
             str(item).lower() for item in settings.get("hub_denied_name_tokens", [])
         ),
-        important_pr_keywords=tuple(
-            str(item).lower() for item in settings.get("important_pr_keywords", [])
-        ),
-        architecture_keywords=tuple(
-            str(item).lower() for item in settings.get("architecture_keywords", [])
-        ),
-        repositories=repositories,
-        official_sources=official_sources,
+        hub_orgs=hub_orgs,
+        openrouter_enabled=bool(openrouter.get("enabled", True)),
+        openrouter_providers=openrouter_providers,
     )
 
 
 def _event_metadata(event_type: str) -> dict[str, Any]:
-    if event_type in {
-        "official_model_release",
-        "official_model_deprecated",
-        "official_model_metadata_changed",
-    }:
+    if event_type == "official_model_release":
         return {
             "eventClass": "model_release",
             "trustTier": "official",
@@ -150,13 +124,13 @@ def _event_metadata(event_type: str) -> dict[str, Any]:
             "visibility": "primary",
             "isOfficial": True,
         }
-    if event_type == "official_catalog_added":
+    if event_type == "catalog_model_added":
         return {
             "eventClass": "model_catalog",
-            "trustTier": "official_catalog",
-            "priority": "P0",
+            "trustTier": "catalog",
+            "priority": "P1",
             "visibility": "primary",
-            "isOfficial": True,
+            "isOfficial": False,
         }
     if event_type == "derived_rank_changed":
         return {
@@ -166,14 +140,6 @@ def _event_metadata(event_type: str) -> dict[str, Any]:
             "visibility": "primary",
             "isOfficial": False,
         }
-    if event_type.startswith("hub_"):
-        return {
-            "eventClass": "model_discovery",
-            "trustTier": "hub",
-            "priority": "P2",
-            "visibility": "secondary",
-            "isOfficial": False,
-        }
     if event_type in {
         "benchmark_updated",
         "model_added_to_benchmark",
@@ -181,7 +147,6 @@ def _event_metadata(event_type: str) -> dict[str, Any]:
         "score_changed",
         "significant_score_change",
         "rank_changed",
-        "derived_rank_changed",
     }:
         return {
             "eventClass": "benchmark",
@@ -192,18 +157,10 @@ def _event_metadata(event_type: str) -> dict[str, Any]:
             "visibility": "primary",
             "isOfficial": True,
         }
-    if event_type == "github_release":
-        return {
-            "eventClass": "technical_release",
-            "trustTier": "technical",
-            "priority": "P1",
-            "visibility": "primary",
-            "isOfficial": False,
-        }
     return {
-        "eventClass": "technical_activity",
-        "trustTier": "technical",
-        "priority": "P2",
+        "eventClass": "unverified_activity",
+        "trustTier": "unverified",
+        "priority": "P3",
         "visibility": "primary",
         "isOfficial": False,
     }
@@ -277,11 +234,6 @@ def _nonempty(value: Any) -> bool:
     return value is not None and value != "" and value != [] and value != {}
 
 
-def _provider_slug(provider: str) -> str:
-    slug = re.sub(r"[^a-z0-9]+", "-", provider.lower()).strip("-")
-    return slug or "unknown"
-
-
 def _as_list(value: Any) -> list[Any]:
     if value is None:
         return []
@@ -334,6 +286,8 @@ def _profile_evidence(
         "deprecationDate",
         "releaseType",
         "access",
+        "parameterCount",
+        "license",
         "contextWindow",
         "maxInputTokens",
         "maxOutputTokens",
@@ -389,6 +343,8 @@ def build_model_profile(
     deprecation_date: datetime | None = None,
     modalities: Any = None,
     capabilities: list[str] | None = None,
+    parameter_count: Any = None,
+    license: str | None = None,
     context_window: Any = None,
     max_input_tokens: Any = None,
     max_output_tokens: Any = None,
@@ -409,6 +365,8 @@ def build_model_profile(
         "access": access or "unknown",
         "modalities": _normalise_modalities(modalities),
         "capabilities": capabilities or [],
+        "parameterCount": parameter_count if isinstance(parameter_count, int) else None,
+        "license": license or None,
         "contextWindow": context_window,
         "maxInputTokens": max_input_tokens,
         "maxOutputTokens": max_output_tokens,
@@ -436,507 +394,553 @@ def _hub_license(model: dict[str, Any]) -> str | None:
     value = model.get("license")
     if value is None and isinstance(model.get("cardData"), dict):
         value = model["cardData"].get("license")
+    if value is None:
+        for tag in model.get("tags") or []:
+            text = str(tag)
+            if text.lower().startswith("license:"):
+                value = text.split(":", 1)[1]
+                break
     return str(value) if value else None
 
 
-def _hub_author(model: dict[str, Any]) -> str | None:
-    for key in ("author", "authorName", "organization"):
-        if model.get(key):
-            return str(model[key])
-    repo_id = model.get("id")
-    return str(repo_id).split("/", 1)[0] if isinstance(repo_id, str) and "/" in repo_id else None
+BRAND_OWNERS: dict[str, str] = {
+    "deepseek": "deepseek-ai",
+    "qwen": "qwen",
+    "llama": "meta-llama",
+    "gemma": "google",
+    "phi": "microsoft",
+    "mistral": "mistralai",
+    "mixtral": "mistralai",
+    "grok": "xai-org",
+    "kimi": "moonshotai",
+    "glm": "zai-org",
+    "minimax": "minimaxai",
+    "ernie": "baidu",
+    "hunyuan": "tencent",
+    "falcon": "tiiuae",
+    "granite": "ibm-granite",
+    "olmo": "allenai",
+    "nemotron": "nvidia",
+    "command": "coherelabs",
+    "yi": "01-ai",
+    "step": "stepfun-ai",
+    "ling": "inclusionai",
+    "mimo": "xiaomimimo",
+    "minicpm": "openbmb",
+}
 
 
-def _hub_is_eligible(model: dict[str, Any], config: TodayConfig | None) -> bool:
-    if config is None:
+def _hub_is_cross_brand_repackage(repo_id: str, org: str) -> bool:
+    """Repackagings such as nvidia/DeepSeek-... are not new model releases."""
+    name = repo_id.split("/", 1)[-1].lower()
+    org_slug = org.strip().lower()
+    for brand, owner in BRAND_OWNERS.items():
+        if re.match(rf"^{re.escape(brand)}(?:$|[-_.0-9])", name) and owner != org_slug:
+            return True
+    return False
+
+
+def _hub_is_denied(repo_id: str, tokens: tuple[str, ...]) -> bool:
+    name = repo_id.split("/", 1)[-1].lower()
+    for token in tokens:
+        if not token:
+            continue
+        pattern = r"(?:^|[-_.])" + re.escape(token) + r"s?(?:[-_.]|$)"
+        if re.search(pattern, name):
+            return True
+    return False
+
+
+def _hub_has_weights(model: dict[str, Any]) -> bool:
+    safetensors = model.get("safetensors")
+    if isinstance(safetensors, dict) and safetensors.get("total"):
         return True
-    repo_id = str(model.get("id") or "").lower()
-    if any(token and token in repo_id for token in config.hub_denied_name_tokens):
+    siblings = model.get("siblings")
+    if not isinstance(siblings, list):
         return False
-    if config.hub_require_license and not _hub_license(model):
-        return False
-    if not config.hub_allow_gated and (model.get("gated") is True or model.get("private") is True):
-        return False
-    downloads = model.get("downloads") if isinstance(model.get("downloads"), int) else 0
-    likes = model.get("likes") if isinstance(model.get("likes"), int) else 0
-    return downloads >= config.hub_min_downloads and likes >= config.hub_min_likes
+    for item in siblings:
+        name = str(item.get("rfilename") or item.get("path") or "").lower()
+        if name.endswith(WEIGHT_SUFFIXES):
+            return True
+    return False
 
 
-def hub_model_profile(model: dict[str, Any], observed_at: datetime) -> dict[str, Any] | None:
-    repo_id = model.get("id")
-    if not isinstance(repo_id, str) or not repo_id.strip():
-        return None
-    created = parse_time(model.get("createdAt"))
-    source_hash = stable_hash(model)
-    gated = model.get("gated") is True
-    return build_model_profile(
-        canonical_id=f"hub:{repo_id}",
-        provider=None,
-        model_id=repo_id,
-        display_name=repo_id,
-        version=None,
-        release_date=created,
-        access="gated" if gated else "open_weights",
-        status="available" if not model.get("private") else "private",
-        release_type="hub_repository",
-        official_url=None,
-        documentation_url=None,
-        model_card_url=f"https://huggingface.co/{repo_id}",
-        hub_repo=repo_id,
-        source_type="hub_model_page",
-        source_owner=_hub_author(model),
-        observed_at=observed_at,
-        source_hash=source_hash,
-        availability=["Hugging Face Hub"],
-    )
+PIPELINE_MODALITIES: dict[str, dict[str, list[str]]] = {
+    "text-generation": {"input": ["text"], "output": ["text"]},
+    "text2text-generation": {"input": ["text"], "output": ["text"]},
+    "image-text-to-text": {"input": ["text", "image"], "output": ["text"]},
+    "any-to-any": {"input": ["text", "image", "audio"], "output": ["text", "image", "audio"]},
+    "text-to-image": {"input": ["text"], "output": ["image"]},
+    "image-to-image": {"input": ["image"], "output": ["image"]},
+    "image-to-text": {"input": ["image"], "output": ["text"]},
+    "visual-question-answering": {"input": ["image", "text"], "output": ["text"]},
+    "text-to-video": {"input": ["text"], "output": ["video"]},
+    "image-to-video": {"input": ["image"], "output": ["video"]},
+    "automatic-speech-recognition": {"input": ["audio"], "output": ["text"]},
+    "text-to-speech": {"input": ["text"], "output": ["audio"]},
+    "audio-text-to-text": {"input": ["audio", "text"], "output": ["text"]},
+    "feature-extraction": {"input": ["text"], "output": ["text"]},
+}
+
+QUANT_SUFFIX_TOKENS = (
+    "fp8",
+    "bf16",
+    "fp4",
+    "mxfp4",
+    "nvfp4",
+    "awq",
+    "gptq",
+    "mlx",
+    "gguf",
+    "int4",
+    "int8",
+)
 
 
-def classify_hub_event(
-    model: dict[str, Any],
-    observed_at: datetime,
-    window_start: datetime,
-    previous: dict[str, Any] | None = None,
-    config: TodayConfig | None = None,
-) -> dict[str, Any] | None:
-    del previous
-    repo_id = model.get("id")
-    if not isinstance(repo_id, str) or not repo_id.strip():
-        return None
-    created = parse_time(model.get("createdAt"))
-    modified = parse_time(model.get("lastModified"))
-    if created is None or created < window_start or created > observed_at:
-        return None
-    if not _hub_is_eligible(model, config):
-        return None
-    observed = modified or created
-    if observed < window_start or observed > observed_at:
-        return None
-    filenames = [
-        str(item.get("rfilename") or item.get("path") or "")
-        for item in model.get("siblings", [])
-        if isinstance(item, dict) and (item.get("rfilename") or item.get("path"))
-    ]
-    model_ref = f"hub:{repo_id}"
-    return make_event(
-        family="model",
-        event_type="hub_open_model_discovered",
-        title="Hub 新开放模型",
-        summary=f"{repo_id} 在 Hugging Face Hub 新建公开模型仓库；这不是厂商官方发布或质量认证。",
-        url=f"https://huggingface.co/{repo_id}",
-        observed_at=observed,
-        published_at=created,
-        source="Hugging Face Hub",
-        repo_id=repo_id,
-        model_id=repo_id,
-        extra={
-            "modelRef": model_ref,
-            "sourceType": "hub_model_page",
-            "sourceOwner": _hub_author(model),
-            "downloads": model.get("downloads")
-            if isinstance(model.get("downloads"), int)
-            else None,
-            "likes": model.get("likes") if isinstance(model.get("likes"), int) else None,
-            "license": _hub_license(model),
-            "gated": model.get("gated") if isinstance(model.get("gated"), bool) else None,
-            "hubActivity": True,
-            "files": filenames[:20] or None,
-            "evidence": [
-                evidence_entry(
-                    "hubRepository",
-                    f"https://huggingface.co/{repo_id}",
-                    observed,
-                    stable_hash(model),
-                    "hub_model_page",
-                )
-            ],
-            "modelProfile": hub_model_profile(model, observed),
-        },
-    )
+def _hub_pipeline_modalities(pipeline_tag: Any) -> dict[str, list[str]]:
+    if not isinstance(pipeline_tag, str):
+        return {"input": [], "output": []}
+    mapping = PIPELINE_MODALITIES.get(pipeline_tag.strip())
+    if mapping is None:
+        return {"input": [], "output": []}
+    return {"input": list(mapping["input"]), "output": list(mapping["output"])}
 
 
-def collect_hub_models_with_profiles(
-    config: TodayConfig, now: datetime, window_start: datetime
-) -> tuple[list[dict[str, Any]], dict[str, dict[str, Any]]]:
-    url = (
-        "https://huggingface.co/api/models?sort=createdAt&direction=-1&limit="
-        f"{config.max_hub_models}&full=true"
-    )
-    payload = get_json(
-        url, config.hub_timeout_seconds, {"User-Agent": "bench-benchmark-sync/today"}
-    )
-    if not isinstance(payload, list):
-        raise TodayFetchError("Hugging Face model response is not a list")
-    events: list[dict[str, Any]] = []
-    profiles: dict[str, dict[str, Any]] = {}
-    for item in payload:
-        if not isinstance(item, dict):
-            continue
-        event = classify_hub_event(item, now, window_start, config=config)
-        if not event:
-            continue
-        events.append(event)
-        profile = event.get("modelProfile")
-        if isinstance(profile, dict) and event.get("modelRef"):
-            profiles[event["modelRef"]] = profile
-        if len(events) >= config.max_hub_discoveries:
-            break
-    return events, profiles
-
-
-def collect_hub_models(
-    config: TodayConfig, now: datetime, window_start: datetime
-) -> list[dict[str, Any]]:
-    events, _ = collect_hub_models_with_profiles(config, now, window_start)
-    return events
-
-
-def classify_paths(paths: list[str], keywords: tuple[str, ...]) -> bool:
-    lowered = " ".join(paths).lower()
-    return any(keyword in lowered for keyword in keywords)
-
-
-def atom_entries(payload: str) -> list[dict[str, str]]:
-    try:
-        root = ET.fromstring(payload)
-    except ET.ParseError as exc:
-        raise TodayFetchError("invalid Atom feed") from exc
-    namespace = "{http://www.w3.org/2005/Atom}"
-    entries: list[dict[str, str]] = []
-    for entry in root.findall(f"{namespace}entry"):
-        title = entry.findtext(f"{namespace}title") or ""
-        updated = (
-            entry.findtext(f"{namespace}updated") or entry.findtext(f"{namespace}published") or ""
-        )
-        links = [item.get("href") for item in entry.findall(f"{namespace}link") if item.get("href")]
-        author = entry.findtext(f"{namespace}author/{namespace}name") or ""
-        entry_id = entry.findtext(f"{namespace}id") or ""
-        summary = (
-            entry.findtext(f"{namespace}summary") or entry.findtext(f"{namespace}content") or ""
-        )
-        entries.append(
-            {
-                "title": title,
-                "updated": updated,
-                "url": links[0] if links else "",
-                "author": author,
-                "id": entry_id,
-                "summary": summary,
-            }
-        )
-    return entries
-
-
-def collect_github_repo(
-    repo: dict[str, Any], config: TodayConfig, now: datetime, window_start: datetime
-) -> list[dict[str, Any]]:
-    repo_id = repo["id"]
-    headers = {"User-Agent": "bench-benchmark-sync/today", "Accept": "application/atom+xml"}
-    branch = repo.get("branch") or "main"
-    feeds = [
-        (f"https://github.com/{repo_id}/commits/{branch}.atom", "commit"),
-        (f"https://github.com/{repo_id}/releases.atom", "github_release"),
-        (f"https://github.com/{repo_id}/pulls.atom", "important_pr"),
-        (f"https://github.com/{repo_id}/tags.atom", "tag_created"),
-    ]
-    events: list[dict[str, Any]] = []
-    for feed_url, feed_type in feeds:
-        try:
-            entries = atom_entries(get_text(feed_url, config.github_feed_timeout_seconds, headers))
-        except TodayFetchError:
-            continue
-        for entry in entries:
-            observed = parse_time(entry.get("updated"))
-            if not observed or observed < window_start or observed > now:
-                continue
-            title = entry.get("title") or feed_type
-            url = entry.get("url") or f"https://github.com/{repo_id}"
-            if feed_type == "important_pr":
-                if not any(keyword in title.lower() for keyword in config.important_pr_keywords):
-                    continue
-                event_type, event_title, summary, severity = (
-                    "important_pr",
-                    f"{repo_id} 重要 PR 活动",
-                    title[:180],
-                    "important",
-                )
-            elif feed_type == "github_release":
-                event_type, event_title, summary, severity = (
-                    "github_release",
-                    f"{repo_id} 发布版本",
-                    title[:180] or "GitHub Release 更新",
-                    "important",
-                )
-            elif feed_type == "tag_created":
-                event_type, event_title, summary, severity = (
-                    "tag_created",
-                    f"{repo_id} 创建 Tag",
-                    title[:180] or "GitHub Tag 更新",
-                    "normal",
-                )
-            else:
-                event_type = (
-                    "architecture_code_change"
-                    if any(keyword in title.lower() for keyword in config.architecture_keywords)
-                    else "commit"
-                )
-                event_title = (
-                    f"{repo_id} 架构相关代码变化"
-                    if event_type == "architecture_code_change"
-                    else f"{repo_id} Commit"
-                )
-                summary, severity = title[:180] or "GitHub Commit 更新", "normal"
-            events.append(
-                make_event(
-                    family="technology",
-                    event_type=event_type,
-                    title=event_title,
-                    summary=summary,
-                    url=url,
-                    observed_at=observed,
-                    published_at=observed,
-                    source="GitHub",
-                    repo_id=repo_id,
-                    severity=severity,
-                    extra={
-                        "kind": repo.get("kind"),
-                        "branch": branch,
-                        "author": entry.get("author") or None,
-                        "eventIdentity": entry.get("id") or url,
-                        "sourceType": "github_atom",
-                        "sourceOwner": repo_id.split("/", 1)[0],
-                        "evidence": [
-                            evidence_entry(
-                                "event", url, observed, stable_hash(entry), "github_atom"
-                            )
-                        ],
-                    },
-                )
-            )
-    return events
-
-
-def _official_records(payload: Any) -> list[dict[str, Any]]:
-    if isinstance(payload, str):
-        records: list[dict[str, Any]] = []
-        for match in re.findall(
-            r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
-            payload,
-            flags=re.IGNORECASE | re.DOTALL,
-        ):
-            try:
-                decoded = json.loads(match.strip())
-            except ValueError:
-                continue
-            records.extend(_official_records(decoded))
-        return records
-    records: list[dict[str, Any]] = []
-
-    def visit(value: Any, top_level: bool = False) -> None:
-        if isinstance(value, list):
-            for item in value:
-                visit(item)
-            return
-        if not isinstance(value, dict):
-            return
-        keys = set(value)
-        identity_keys = {"modelId", "model_id", "modelName", "model_name", "canonicalId", "model"}
-        if keys & identity_keys or (top_level and ("id" in keys or "name" in keys)):
-            records.append(value)
-        for key in ("models", "items", "releases", "data", "results", "@graph", "itemListElement"):
-            if key in value:
-                visit(value[key])
-
-    visit(payload, top_level=True)
-    return records
-
-
-def _official_model_id(record: dict[str, Any], source: dict[str, Any]) -> str | None:
-    for key in ("modelId", "model_id", "modelName", "model_name", "canonicalId", "model"):
-        value = record.get(key)
-        if isinstance(value, str) and value.strip():
-            return value.strip()
-    title = str(record.get("title") or record.get("name") or "")
-    for pattern in source.get("model_id_patterns") or []:
-        try:
-            match = re.search(str(pattern), title, flags=re.IGNORECASE)
-        except re.error:
-            continue
-        if match:
-            return match.groupdict().get("model_id") or match.group(0)
+def _hub_parameter_count(model: dict[str, Any]) -> int | None:
+    safetensors = model.get("safetensors")
+    if isinstance(safetensors, dict):
+        total = safetensors.get("total")
+        if isinstance(total, int) and total > 0:
+            return total
     return None
 
 
-def _official_profile(
-    source: dict[str, Any], record: dict[str, Any], model_id: str, observed_at: datetime
-) -> tuple[str, dict[str, Any], datetime | None, str]:
-    provider = str(source.get("provider") or "") or None
-    canonical_id = str(
-        record.get("canonicalId") or f"{_provider_slug(provider or 'unknown')}:{model_id}"
+def _hub_context_window(model: dict[str, Any]) -> int | None:
+    config = model.get("config")
+    if not isinstance(config, dict):
+        return None
+    for key in ("max_position_embeddings", "n_positions", "seq_length", "max_sequence_length"):
+        value = config.get(key)
+        if isinstance(value, int) and value > 0:
+            return value
+    text_config = config.get("text_config")
+    if isinstance(text_config, dict):
+        value = text_config.get("max_position_embeddings")
+        if isinstance(value, int) and value > 0:
+            return value
+    return None
+
+
+def _format_parameter_count(value: Any) -> str | None:
+    if not isinstance(value, (int, float)) or value <= 0:
+        return None
+    if value >= 1_000_000_000_000:
+        return f"{value / 1_000_000_000_000:.1f}T"
+    if value >= 1_000_000_000:
+        return f"{value / 1_000_000_000:.1f}B"
+    if value >= 1_000_000:
+        return f"{value / 1_000_000:.1f}M"
+    return str(int(value))
+
+
+def _hub_base_name(repo_id: str) -> str:
+    name = repo_id.split("/", 1)[-1].lower()
+    tokens = name.split("-")
+    while tokens and tokens[-1] in QUANT_SUFFIX_TOKENS:
+        tokens.pop()
+    return "-".join(tokens) or name
+
+
+def _hub_has_quant_suffix(repo_id: str) -> bool:
+    return _hub_base_name(repo_id) != repo_id.split("/", 1)[-1].lower()
+
+
+def _hub_is_preferred(candidate: dict[str, Any], current: dict[str, Any]) -> bool:
+    candidate_id = str(candidate.get("id") or "")
+    current_id = str(current.get("id") or "")
+    candidate_quant = _hub_has_quant_suffix(candidate_id)
+    current_quant = _hub_has_quant_suffix(current_id)
+    if candidate_quant != current_quant:
+        return not candidate_quant
+    candidate_created = parse_time(candidate.get("createdAt")) or datetime.min.replace(tzinfo=UTC)
+    current_created = parse_time(current.get("createdAt")) or datetime.min.replace(tzinfo=UTC)
+    return candidate_created > current_created
+
+
+def fetch_hub_model_detail(
+    repo_id: str, timeout: int, headers: dict[str, str] | None = None
+) -> dict[str, Any] | None:
+    try:
+        payload = get_json(f"https://huggingface.co/api/models/{repo_id}", timeout, headers or {})
+    except TodayFetchError:
+        return None
+    return payload if isinstance(payload, dict) else None
+
+
+def fetch_hub_raw_config(
+    repo_id: str, timeout: int, headers: dict[str, str] | None = None
+) -> dict[str, Any] | None:
+    try:
+        payload = get_json(
+            f"https://huggingface.co/{repo_id}/raw/main/config.json", timeout, headers or {}
+        )
+    except TodayFetchError:
+        return None
+    return payload if isinstance(payload, dict) else None
+
+
+def hub_org_model_profile(
+    model: dict[str, Any], provider: str, release_date: datetime | None
+) -> dict[str, Any] | None:
+    repo_id = model.get("id")
+    if not isinstance(repo_id, str) or not repo_id.strip():
+        return None
+    repo_id = repo_id.strip()
+    display_name = repo_id.split("/", 1)[1] if "/" in repo_id else repo_id
+    gated = model.get("gated") is True
+    return build_model_profile(
+        canonical_id=f"hf:{repo_id}",
+        provider=provider,
+        model_id=repo_id,
+        display_name=display_name,
+        version=None,
+        release_date=release_date,
+        access="gated" if gated else "open_weights",
+        status="available",
+        release_type="open_weights_release",
+        official_url=f"https://huggingface.co/{repo_id}",
+        documentation_url=None,
+        model_card_url=f"https://huggingface.co/{repo_id}",
+        hub_repo=repo_id,
+        source_type="hub_official_org",
+        source_owner=provider,
+        observed_at=release_date or utc_now(),
+        source_hash=stable_hash(model),
+        modalities=_hub_pipeline_modalities(model.get("pipeline_tag")),
+        context_window=_hub_context_window(model),
+        parameter_count=_hub_parameter_count(model),
+        license=_hub_license(model),
+        availability=["Hugging Face"],
     )
-    release_date = parse_time(
-        record.get("releaseDate")
-        or record.get("release_date")
-        or record.get("publishedAt")
-        or record.get("published_at")
-        or record.get("date")
+
+
+def hub_org_release_summary(profile: dict[str, Any]) -> str:
+    parts: list[str] = []
+    parameter_text = _format_parameter_count(profile.get("parameterCount"))
+    if parameter_text:
+        parts.append(f"参数量 {parameter_text}")
+    if isinstance(profile.get("contextWindow"), int):
+        parts.append(f"上下文 {profile['contextWindow']:,} tokens")
+    if profile.get("license"):
+        parts.append(f"许可 {profile['license']}")
+    base = f"{profile.get('provider') or '厂商'} 在官方组织发布新模型"
+    if parts:
+        return base + "：" + "，".join(parts) + "。"
+    return base + "。"
+
+
+def hub_org_model_entry(
+    model: dict[str, Any],
+    provider: str,
+    now: datetime,
+    window_start: datetime,
+    config: TodayConfig,
+    org: str | None = None,
+) -> tuple[dict[str, Any], dict[str, Any]] | None:
+    repo_id = str(model.get("id") or "").strip()
+    if not repo_id or model.get("private") is True:
+        return None
+    created = parse_time(model.get("createdAt"))
+    if created is None or created < window_start or created > now:
+        return None
+    if _hub_is_denied(repo_id, config.hub_denied_name_tokens):
+        return None
+    if org and _hub_is_cross_brand_repackage(repo_id, org):
+        return None
+    if not _hub_has_weights(model):
+        return None
+    profile = hub_org_model_profile(model, provider, created)
+    if profile is None:
+        return None
+    url = f"https://huggingface.co/{repo_id}"
+    event = make_event(
+        family="model",
+        event_type="official_model_release",
+        title=f"{profile['displayName']} 开放权重发布",
+        summary=hub_org_release_summary(profile),
+        url=url,
+        observed_at=created,
+        published_at=created,
+        source=f"Hugging Face · {provider}",
+        repo_id=repo_id,
+        model_id=repo_id,
+        severity="important",
+        extra={
+            "modelRef": profile["canonicalId"],
+            "sourceType": "hub_official_org",
+            "sourceOwner": provider,
+            "eventIdentity": f"open-release:{repo_id}",
+            "evidence": [
+                evidence_entry(
+                    "modelRepository", url, created, stable_hash(model), "hub_official_org"
+                )
+            ],
+        },
     )
-    source_url = str(
-        record.get("officialUrl") or record.get("url") or source.get("official_url") or ""
-    )
-    content_hash = stable_hash(record)
-    profile = build_model_profile(
-        canonical_id=canonical_id,
+    return event, profile
+
+
+def collect_hub_org_models(
+    config: TodayConfig, now: datetime, window_start: datetime
+) -> tuple[list[dict[str, Any]], dict[str, dict[str, Any]], list[str]]:
+    events: list[dict[str, Any]] = []
+    profiles: dict[str, dict[str, Any]] = {}
+    failures: list[str] = []
+    if not config.hub_orgs:
+        return events, profiles, failures
+    headers = {"User-Agent": "bench-benchmark-sync/today", "Accept": "application/json"}
+
+    def fetch_org(entry: dict[str, Any]) -> list[Any]:
+        org = str(entry.get("org") or "").strip()
+        url = (
+            "https://huggingface.co/api/models"
+            f"?author={quote(org, safe='')}&sort=createdAt&direction=-1"
+            f"&limit={config.hub_org_limit}&full=true"
+        )
+        payload = get_json(url, config.hub_timeout_seconds, headers)
+        return payload if isinstance(payload, list) else []
+
+    with ThreadPoolExecutor(max_workers=min(6, max(1, len(config.hub_orgs)))) as executor:
+        futures = {executor.submit(fetch_org, entry): entry for entry in config.hub_orgs}
+        for future in as_completed(futures):
+            entry = futures[future]
+            org = str(entry.get("org") or "")
+            provider = str(entry.get("provider") or org)
+            try:
+                payload = future.result()
+            except TodayFetchError:
+                failures.append(f"hub_org:{org}")
+                continue
+            selected: dict[str, dict[str, Any]] = {}
+            for model in payload:
+                if not isinstance(model, dict):
+                    continue
+                repo_id = str(model.get("id") or "")
+                if not repo_id or model.get("private") is True:
+                    continue
+                created = parse_time(model.get("createdAt"))
+                if created is None or created < window_start or created > now:
+                    continue
+                if _hub_is_denied(repo_id, config.hub_denied_name_tokens):
+                    continue
+                base = _hub_base_name(repo_id)
+                current = selected.get(base)
+                if current is None or _hub_is_preferred(model, current):
+                    selected[base] = model
+            for model in selected.values():
+                if len(events) >= config.max_hub_events:
+                    break
+                repo_id = str(model.get("id") or "")
+                detail = fetch_hub_model_detail(repo_id, config.hub_timeout_seconds, headers)
+                merged = {**model, **(detail or {})}
+                raw_config = fetch_hub_raw_config(repo_id, config.hub_timeout_seconds, headers)
+                if isinstance(raw_config, dict):
+                    merged["config"] = {**(merged.get("config") or {}), **raw_config}
+                item = hub_org_model_entry(merged, provider, now, window_start, config, org=org)
+                if item is None:
+                    continue
+                event, profile = item
+                profiles[profile["canonicalId"]] = profile
+                events.append(event)
+    return events, profiles, failures
+
+
+def _price_per_million(value: Any) -> float | None:
+    try:
+        number = float(value)
+    except (TypeError, ValueError):
+        return None
+    if not math.isfinite(number) or number < 0:
+        return None
+    return round(number * 1_000_000, 6)
+
+
+CATALOG_CAPABILITIES: dict[str, str] = {
+    "tools": "工具调用",
+    "tool_choice": "工具调用",
+    "reasoning": "推理",
+    "reasoning_effort": "推理",
+    "structured_outputs": "结构化输出",
+    "response_format": "结构化输出",
+    "web_search_options": "联网搜索",
+}
+
+
+def catalog_model_profile(
+    item: dict[str, Any], provider: str, created: datetime
+) -> dict[str, Any] | None:
+    model_id = str(item.get("id") or "").strip()
+    if not model_id:
+        return None
+    architecture = item.get("architecture") if isinstance(item.get("architecture"), dict) else {}
+    pricing = item.get("pricing") if isinstance(item.get("pricing"), dict) else {}
+    top_provider = item.get("top_provider") if isinstance(item.get("top_provider"), dict) else {}
+    name = str(item.get("name") or model_id)
+    if ": " in name:
+        name = name.rsplit(": ", 1)[1]
+    hf_id = item.get("hugging_face_id")
+    hub_repo = hf_id.strip() if isinstance(hf_id, str) and hf_id.strip() else None
+    capabilities: list[str] = []
+    for parameter in item.get("supported_parameters") or []:
+        label = CATALOG_CAPABILITIES.get(str(parameter))
+        if label and label not in capabilities:
+            capabilities.append(label)
+    max_output = top_provider.get("max_completion_tokens")
+    cached_price_key = None
+    for key in ("input_cache_read", "cached_tokens", "input_cache_write"):
+        if key in pricing:
+            cached_price_key = key
+            break
+    return build_model_profile(
+        canonical_id=f"openrouter:{model_id}",
         provider=provider,
         model_id=model_id,
-        display_name=record.get("displayName")
-        or record.get("display_name")
-        or record.get("name")
-        or model_id,
-        version=str(record.get("version")) if record.get("version") is not None else None,
-        release_date=release_date,
-        access=record.get("access"),
-        status=record.get("status"),
-        release_type=record.get("releaseType") or record.get("release_type"),
-        official_url=source_url or None,
-        documentation_url=record.get("documentationUrl") or record.get("documentation_url"),
-        model_card_url=record.get("modelCardUrl") or record.get("model_card_url"),
-        hub_repo=record.get("hubRepo") or record.get("hub_repo"),
-        source_type=str(source.get("source_type") or "official_source"),
+        display_name=name,
+        version=None,
+        release_date=created,
+        access="open_weights" if hub_repo else "closed_api",
+        status="available",
+        release_type="catalog_addition",
+        official_url=None,
+        documentation_url=None,
+        model_card_url=f"https://openrouter.ai/{model_id}",
+        hub_repo=hub_repo,
+        source_type="openrouter_catalog",
         source_owner=provider,
-        observed_at=observed_at,
-        source_hash=content_hash,
-        aliases=[str(item) for item in _as_list(record.get("aliases")) if item],
-        deprecation_date=parse_time(record.get("deprecationDate") or record.get("deprecated_at")),
-        modalities=record.get("modalities"),
-        capabilities=[str(item) for item in _as_list(record.get("capabilities")) if item],
-        context_window=record.get("contextWindow") or record.get("context_window"),
-        max_input_tokens=record.get("maxInputTokens") or record.get("max_input_tokens"),
-        max_output_tokens=record.get("maxOutputTokens") or record.get("max_output_tokens"),
-        pricing=record.get("pricing"),
-        availability=[str(item) for item in _as_list(record.get("availability")) if item],
+        observed_at=created,
+        source_hash=stable_hash(item),
+        modalities={
+            "input": [str(value) for value in architecture.get("input_modalities") or []],
+            "output": [str(value) for value in architecture.get("output_modalities") or []],
+        },
+        capabilities=capabilities,
+        context_window=item.get("context_length")
+        if isinstance(item.get("context_length"), int)
+        else None,
+        max_output_tokens=max_output
+        if isinstance(max_output, int) and max_output > 0
+        else None,
+        pricing={
+            "currency": "USD",
+            "inputPerMillionTokens": _price_per_million(pricing.get("prompt")),
+            "outputPerMillionTokens": _price_per_million(pricing.get("completion")),
+            "cachedInputPerMillionTokens": _price_per_million(
+                pricing.get(cached_price_key) if cached_price_key else None
+            ),
+        },
+        availability=["OpenRouter"],
     )
-    return canonical_id, profile, release_date, source_url
 
 
-def collect_official_sources(
+def catalog_added_summary(profile: dict[str, Any]) -> str:
+    parts: list[str] = []
+    if isinstance(profile.get("contextWindow"), int):
+        parts.append(f"上下文 {profile['contextWindow']:,} tokens")
+    pricing = profile.get("pricing") or {}
+    input_price = pricing.get("inputPerMillionTokens")
+    output_price = pricing.get("outputPerMillionTokens")
+    if input_price is not None and output_price is not None:
+        parts.append(f"价格 ${input_price:g}/${output_price:g} 每百万 tokens")
+    base = f"{profile.get('displayName') or '模型'} 新增可用"
+    if parts:
+        return base + "：" + "，".join(parts) + "。"
+    return base + "。"
+
+
+def catalog_model_entry(
+    item: dict[str, Any],
+    provider: str,
+    now: datetime,
+    window_start: datetime,
+    known_hf_repos: set[str],
+) -> tuple[dict[str, Any], dict[str, Any]] | None:
+    model_id = str(item.get("id") or "").strip()
+    if not model_id or model_id.startswith("~") or ":" in model_id:
+        return None
+    created_raw = item.get("created")
+    if not isinstance(created_raw, (int, float)) or isinstance(created_raw, bool):
+        return None
+    created = datetime.fromtimestamp(created_raw, tz=UTC)
+    if created < window_start or created > now:
+        return None
+    hf_id = item.get("hugging_face_id")
+    if isinstance(hf_id, str) and hf_id.strip().lower() in known_hf_repos:
+        return None
+    profile = catalog_model_profile(item, provider, created)
+    if profile is None:
+        return None
+    url = f"https://openrouter.ai/{model_id}"
+    event = make_event(
+        family="model",
+        event_type="catalog_model_added",
+        title=f"{profile['displayName']} 新增可用",
+        summary=catalog_added_summary(profile),
+        url=url,
+        observed_at=created,
+        published_at=created,
+        source=f"OpenRouter · {provider}",
+        model_id=model_id,
+        severity="normal",
+        extra={
+            "modelRef": profile["canonicalId"],
+            "sourceType": "openrouter_catalog",
+            "sourceOwner": provider,
+            "eventIdentity": f"catalog:{model_id}",
+            "evidence": [
+                evidence_entry(
+                    "catalogEntry", url, created, stable_hash(item), "openrouter_catalog"
+                )
+            ],
+        },
+    )
+    return event, profile
+
+
+def collect_catalog_models(
     config: TodayConfig,
     now: datetime,
     window_start: datetime,
-    previous_state: dict[str, Any] | None = None,
-) -> tuple[list[dict[str, Any]], dict[str, dict[str, Any]], dict[str, Any], list[str]]:
+    known_hf_repos: set[str],
+) -> tuple[list[dict[str, Any]], dict[str, dict[str, Any]], list[str]]:
+    if not config.openrouter_enabled:
+        return [], {}, []
+    headers = {"User-Agent": "bench-benchmark-sync/today", "Accept": "application/json"}
+    payload = get_json(
+        "https://openrouter.ai/api/v1/models", config.openrouter_timeout_seconds, headers
+    )
+    data = payload.get("data") if isinstance(payload, dict) else payload
+    if not isinstance(data, list):
+        raise TodayFetchError("OpenRouter model response is not a list")
+    providers = dict(config.openrouter_providers)
     events: list[dict[str, Any]] = []
     profiles: dict[str, dict[str, Any]] = {}
-    statuses: dict[str, Any] = {}
-    failures: list[str] = []
-    previous_sources = (previous_state or {}).get("officialSources") or {}
-    headers = {
-        "User-Agent": "bench-benchmark-sync/today",
-        "Accept": "application/json, application/atom+xml",
-    }
-    for source in config.official_sources:
-        source_id = str(source.get("source_id"))
-        status: dict[str, Any] = {
-            "enabled": bool(source.get("enabled")),
-            "sourceType": source.get("source_type"),
-            "provider": source.get("provider"),
-            "endpoint": source.get("endpoint"),
-            "lastSuccessAt": (previous_sources.get(source_id) or {}).get("lastSuccessAt"),
-            "contentHash": (previous_sources.get(source_id) or {}).get("contentHash"),
-            "modelCount": 0,
-            "models": dict((previous_sources.get(source_id) or {}).get("models") or {}),
-        }
-        statuses[source_id] = status
-        if not source.get("enabled"):
-            status["status"] = "disabled"
+    for item in data:
+        if not isinstance(item, dict):
             continue
-        source_format = str(source.get("format") or "").lower()
-        try:
-            if source_format in {"atom", "rss", "xml"}:
-                payload: Any = atom_entries(
-                    get_text(source["endpoint"], config.official_timeout_seconds, headers)
-                )
-            elif source_format in {"json", "jsonld", "json-ld"}:
-                payload = get_json(source["endpoint"], config.official_timeout_seconds, headers)
-            elif source_format in {"html", "html_jsonld", "html-jsonld"}:
-                payload = get_text(source["endpoint"], config.official_timeout_seconds, headers)
-            else:
-                raise TodayFetchError(f"unsupported official source format: {source_format}")
-            content_hash = stable_hash(payload)
-            status.update({"status": "ok", "lastSuccessAt": iso(now), "contentHash": content_hash})
-            previous_models = (previous_sources.get(source_id) or {}).get("models") or {}
-            for record in _official_records(payload):
-                if isinstance(record.get("updated"), str) and not record.get("updatedAt"):
-                    record = {**record, "updatedAt": record.get("updated")}
-                model_id = _official_model_id(record, source)
-                if not model_id:
-                    continue
-                canonical_id, profile, release_date, source_url = _official_profile(
-                    source, record, model_id, now
-                )
-                profiles[canonical_id] = profile
-                version = profile.get("version")
-                status["models"][canonical_id] = version
-                observed = release_date or parse_time(
-                    record.get("updatedAt") or record.get("updated_at")
-                )
-                if observed is None or observed < window_start or observed > now:
-                    continue
-                previous_version = previous_models.get(canonical_id)
-                is_catalog = str(source.get("source_type") or "").startswith(
-                    "official_model_catalog"
-                )
-                if is_catalog and previous_version is not None and previous_version == version:
-                    continue
-                event_type = "official_catalog_added" if is_catalog else "official_model_release"
-                event_url = source_url or str(
-                    source.get("official_url") or source.get("endpoint") or ""
-                )
-                events.append(
-                    make_event(
-                        family="model",
-                        event_type=event_type,
-                        title=(
-                            f"{profile.get('displayName')} 官方模型目录更新"
-                            if is_catalog
-                            else f"{profile.get('displayName')} 官方发布"
-                        ),
-                        summary=(
-                            f"{profile.get('provider') or source.get('provider')} 官方来源公布了 "
-                            f"{model_id}。"
-                        ),
-                        url=event_url,
-                        observed_at=observed,
-                        published_at=release_date,
-                        source=str(source.get("provider") or source_id),
-                        model_id=model_id,
-                        severity="important",
-                        extra={
-                            "modelRef": canonical_id,
-                            "sourceType": source.get("source_type"),
-                            "sourceOwner": source.get("provider"),
-                            "eventIdentity": (
-                                f"{source_id}:{canonical_id}:{version or ''}:"
-                                f"{record.get('id') or event_url}"
-                            ),
-                            "evidence": [
-                                evidence_entry(
-                                    "release",
-                                    event_url,
-                                    observed,
-                                    stable_hash(record),
-                                    str(source.get("source_type") or "official_source"),
-                                )
-                            ],
-                        },
-                    )
-                )
-            status["modelCount"] = len(status["models"])
-        except (TodayFetchError, KeyError, TypeError, ValueError) as exc:
-            status["status"] = "error"
-            status["error"] = str(exc)
-            status["modelCount"] = len(status["models"])
-            failures.append(f"official:{source_id}:{type(exc).__name__}")
-    return events, profiles, statuses, failures
+        if len(events) >= config.catalog_max_models:
+            break
+        model_id = str(item.get("id") or "")
+        slug = model_id.split("/", 1)[0] if "/" in model_id else ""
+        provider = providers.get(slug)
+        if not provider:
+            continue
+        entry = catalog_model_entry(item, provider, now, window_start, known_hf_repos)
+        if entry is None:
+            continue
+        event, profile = entry
+        profiles[profile["canonicalId"]] = profile
+        events.append(event)
+    return events, profiles, []
 
 
 def _benchmark_profile(event: dict[str, Any]) -> tuple[str, dict[str, Any]] | None:
@@ -985,31 +989,27 @@ def build_document(
     *,
     now: datetime | None = None,
     benchmark_events: list[dict[str, Any]] | None = None,
-    previous_state: dict[str, Any] | None = None,
     previous_models: dict[str, dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
     current = now or utc_now()
     window_start = current - timedelta(hours=config.window_hours)
-    hub_failures: list[str] = []
-    try:
-        model_events, hub_profiles = collect_hub_models_with_profiles(config, current, window_start)
-    except TodayFetchError as exc:
-        model_events, hub_profiles = [], {}
-        hub_failures.append(f"hub:{type(exc).__name__}")
-    official_events, official_profiles, official_statuses, official_failures = (
-        collect_official_sources(config, current, window_start, previous_state)
+    failures: list[str] = []
+    hub_events, hub_profiles, hub_failures = collect_hub_org_models(
+        config, current, window_start
     )
-    technology_events: list[dict[str, Any]] = []
-    with ThreadPoolExecutor(max_workers=min(5, max(1, len(config.repositories)))) as executor:
-        futures = {
-            executor.submit(collect_github_repo, repo, config, current, window_start): repo
-            for repo in config.repositories
-        }
-        for future in as_completed(futures):
-            try:
-                technology_events.extend(future.result())
-            except TodayFetchError:
-                continue
+    failures.extend(hub_failures)
+    known_hf_repos = {
+        str(profile.get("hubRepo") or "").lower()
+        for profile in hub_profiles.values()
+        if profile.get("hubRepo")
+    }
+    try:
+        catalog_events, catalog_profiles, catalog_failures = collect_catalog_models(
+            config, current, window_start, known_hf_repos
+        )
+    except TodayFetchError:
+        catalog_events, catalog_profiles, catalog_failures = [], {}, ["catalog:TodayFetchError"]
+    failures.extend(catalog_failures)
     recent_benchmark_events = [
         item
         for item in (benchmark_events or [])
@@ -1028,15 +1028,10 @@ def build_document(
         if event.get("eventType") == "derived_rank_changed":
             event.setdefault("rankSource", "derived")
     profiles: dict[str, dict[str, Any]] = {}
-    if official_failures and previous_models:
+    if failures and previous_models:
         profiles.update(previous_models)
-    profiles.update(official_profiles)
     profiles.update(hub_profiles)
-    if previous_models:
-        for event in recent_benchmark_events:
-            previous_ref = event.get("modelRef")
-            if previous_ref and previous_ref in previous_models:
-                profiles.setdefault(previous_ref, previous_models[previous_ref])
+    profiles.update(catalog_profiles)
     for event in recent_benchmark_events:
         profile_item = _benchmark_profile(event)
         if profile_item:
@@ -1044,7 +1039,7 @@ def build_document(
             event["modelRef"] = model_ref
             profiles.setdefault(model_ref, profile)
     events = sorted(
-        model_events + official_events + technology_events + recent_benchmark_events,
+        hub_events + catalog_events + recent_benchmark_events,
         key=lambda item: (
             priority_value(item.get("priority")),
             -(parse_time(item.get("observedAt")) or current).timestamp(),
@@ -1058,7 +1053,6 @@ def build_document(
     for item in events:
         item.pop("modelProfile", None)
         item["provenance"] = {"sourceUrl": item.get("url"), "contentHash": source_hash}
-    failures = hub_failures + official_failures
     return {
         "schemaVersion": 1,
         "dataSource": "today-activity-aggregator",
@@ -1066,19 +1060,14 @@ def build_document(
         "windowStart": iso(window_start),
         "collectorStatus": "partial" if failures else "ok",
         "staleAfterMinutes": config.stale_after_minutes,
-        "families": ["model", "technology", "benchmark"],
+        "families": ["model", "benchmark"],
         "models": profiles,
         "modelCount": len(profiles),
-        "officialSources": official_statuses,
         "sourceSummary": {
             "official": sum(
-                1
-                for item in events
-                if item.get("trustTier") in {"official", "official_catalog"}
-                and item.get("family") == "model"
+                1 for item in events if item.get("eventType") == "official_model_release"
             ),
-            "hub": sum(1 for item in events if item.get("trustTier") == "hub"),
-            "technology": sum(1 for item in events if item.get("family") == "technology"),
+            "catalog": sum(1 for item in events if item.get("eventType") == "catalog_model_added"),
             "benchmark": sum(1 for item in events if item.get("family") == "benchmark"),
         },
         "events": events,

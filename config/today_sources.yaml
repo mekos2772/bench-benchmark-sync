@@ -1,143 +1,88 @@
-# Today activity sources. All external requests run in GitHub Actions only.
-# Official vendor sources remain disabled until their public endpoint contract is verified.
-repositories:
-  - id: huggingface/transformers
-    kind: training_framework
-    branch: main
-  - id: vllm-project/vllm
-    kind: inference_framework
-    branch: main
-  - id: sgl-project/sglang
-    kind: inference_framework
-    branch: main
-  - id: ggml-org/llama.cpp
-    kind: inference_framework
-    branch: master
-  - id: pytorch/pytorch
-    kind: training_framework
-    branch: main
-  - id: microsoft/DeepSpeed
-    kind: training_framework
-    branch: master
-  - id: NVIDIA/Megatron-LM
-    kind: training_framework
-    branch: main
-  - id: huggingface/accelerate
-    kind: training_framework
-    branch: main
-  - id: huggingface/trl
-    kind: training_framework
-    branch: main
-  - id: unslothai/unsloth
-    kind: training_framework
-    branch: main
+# Today model feed sources. All external requests run in GitHub Actions only.
+#
+# Two channels, both carry concrete model parameters:
+#   1. hub_orgs: vendor official Hugging Face organizations -> open-weight releases
+#      (parameter count, license, context window, modalities from the model repo itself)
+#   2. openrouter: public model catalog -> closed-source API models
+#      (context window, pricing, modalities, capabilities)
+#
+# No GitHub repository activity, no generic "newest on the Hub" discovery.
+hub_orgs:
+  - {org: Qwen, provider: Qwen}
+  - {org: deepseek-ai, provider: DeepSeek}
+  - {org: meta-llama, provider: Meta}
+  - {org: mistralai, provider: Mistral AI}
+  - {org: google, provider: Google}
+  - {org: microsoft, provider: Microsoft}
+  - {org: nvidia, provider: NVIDIA}
+  - {org: openai, provider: OpenAI}
+  - {org: xai-org, provider: xAI}
+  - {org: moonshotai, provider: Moonshot AI}
+  - {org: zai-org, provider: Z.ai}
+  - {org: MiniMaxAI, provider: MiniMax}
+  - {org: tencent, provider: Tencent}
+  - {org: ByteDance-Seed, provider: ByteDance}
+  - {org: baidu, provider: Baidu}
+  - {org: 01-ai, provider: 01.AI}
+  - {org: internlm, provider: InternLM}
+  - {org: inclusionAI, provider: InclusionAI}
+  - {org: stepfun-ai, provider: StepFun}
+  - {org: ibm-granite, provider: IBM}
+  - {org: allenai, provider: Allen AI}
+  - {org: tiiuae, provider: TII}
+  - {org: black-forest-labs, provider: Black Forest Labs}
+  - {org: stabilityai, provider: Stability AI}
+  - {org: Lightricks, provider: Lightricks}
+  - {org: Wan-AI, provider: Alibaba Wan}
+  - {org: openbmb, provider: OpenBMB}
+  - {org: CohereLabs, provider: Cohere}
+  - {org: XiaomiMiMo, provider: Xiaomi}
 
-official_sources:
-  # Enable only after confirming the endpoint is an official, structured source.
-  - source_id: openai_news
-    provider: OpenAI
-    source_type: official_news
-    endpoint: https://openai.com/news/
-    format: html
-    official_url: https://openai.com/news/
-    enabled: false
-    poll_minutes: 15
-    model_id_patterns: []
-  - source_id: anthropic_news
-    provider: Anthropic
-    source_type: official_news
-    endpoint: https://www.anthropic.com/news
-    format: html
-    official_url: https://www.anthropic.com/news
-    enabled: false
-    poll_minutes: 15
-    model_id_patterns: []
-  - source_id: google_gemini_models
-    provider: Google
-    source_type: official_model_catalog
-    endpoint: https://ai.google.dev/gemini-api/docs/models/gemini
-    format: html
-    official_url: https://ai.google.dev/gemini-api/docs/models/gemini
-    enabled: false
-    poll_minutes: 30
-    model_id_patterns: []
-  - source_id: xai_models
-    provider: xAI
-    source_type: official_model_catalog
-    endpoint: https://docs.x.ai/docs/models
-    format: html
-    official_url: https://docs.x.ai/docs/models
-    enabled: false
-    poll_minutes: 30
-    model_id_patterns: []
-  - source_id: mistral_models
-    provider: Mistral AI
-    source_type: official_model_catalog
-    endpoint: https://docs.mistral.ai/getting-started/models/models_overview/
-    format: html
-    official_url: https://docs.mistral.ai/getting-started/models/models_overview/
-    enabled: false
-    poll_minutes: 30
-    model_id_patterns: []
-  - source_id: deepseek_models
-    provider: DeepSeek
-    source_type: official_model_catalog
-    endpoint: https://api-docs.deepseek.com/quick_start/pricing
-    format: html
-    official_url: https://api-docs.deepseek.com/quick_start/pricing
-    enabled: false
-    poll_minutes: 30
-    model_id_patterns: []
-  - source_id: qwen_models
-    provider: Qwen
-    source_type: official_model_catalog
-    endpoint: https://help.aliyun.com/zh/model-studio/getting-started/models
-    format: html
-    official_url: https://help.aliyun.com/zh/model-studio/getting-started/models
-    enabled: false
-    poll_minutes: 30
-    model_id_patterns: []
-  - source_id: zhipu_models
-    provider: Zhipu AI
-    source_type: official_model_catalog
-    endpoint: https://docs.bigmodel.cn/cn/guide/models/text
-    format: html
-    official_url: https://docs.bigmodel.cn/cn/guide/models/text
-    enabled: false
-    poll_minutes: 30
-    model_id_patterns: []
-  - source_id: moonshot_models
-    provider: Moonshot AI
-    source_type: official_model_catalog
-    endpoint: https://platform.moonshot.cn/docs/intro
-    format: html
-    official_url: https://platform.moonshot.cn/docs/intro
-    enabled: false
-    poll_minutes: 30
-    model_id_patterns: []
-  - source_id: doubao_models
-    provider: ByteDance / Doubao
-    source_type: official_model_catalog
-    endpoint: https://www.volcengine.com/docs/82379
-    format: html
-    official_url: https://www.volcengine.com/docs/82379
-    enabled: false
-    poll_minutes: 30
-    model_id_patterns: []
+openrouter:
+  enabled: true
+  providers:
+    openai: OpenAI
+    anthropic: Anthropic
+    google: Google
+    x-ai: xAI
+    mistralai: Mistral AI
+    deepseek: DeepSeek
+    qwen: Qwen
+    z-ai: Z.ai
+    moonshotai: Moonshot AI
+    minimax: MiniMax
+    meta-llama: Meta
+    meta: Meta
+    nvidia: NVIDIA
+    microsoft: Microsoft
+    amazon: Amazon
+    cohere: Cohere
+    tencent: Tencent
+    bytedance-seed: ByteDance
+    baidu: Baidu
+    inclusionai: InclusionAI
+    stepfun: StepFun
+    perplexity: Perplexity
+    ai21: AI21 Labs
+    ibm-granite: IBM
+    liquid: Liquid AI
+    upstage: Upstage
+    reka: Reka AI
+    inception: Inception
+    thinkingmachines: Thinking Machines
+    poolside: Poolside
+    nex-agi: Nex AGI
+    aion-labs: Aion Labs
 
 settings:
   window_hours: 24
-  max_hub_models: 80
-  max_hub_discoveries: 12
-  max_events: 240
-  github_feed_timeout_seconds: 20
+  max_events: 200
+  max_hub_events: 40
+  catalog_max_models: 40
+  hub_org_limit: 20
   hub_timeout_seconds: 30
-  official_timeout_seconds: 30
+  openrouter_timeout_seconds: 30
   stale_after_minutes: 60
-  hub_require_license: true
-  hub_allow_gated: false
-  hub_min_downloads: 0
-  hub_min_likes: 0
   hub_denied_name_tokens:
     - adapter
     - lora
@@ -149,32 +94,11 @@ settings:
     - gguf
     - test
     - demo
+    - tmp
+    - scratch
     - mirror
     - merge
-  important_pr_keywords:
-    - release
-    - breaking
-    - performance
-    - quantiz
-    - kernel
-    - attention
-    - transformer
-    - architecture
-    - backend
-    - cuda
-    - flash
-    - inference
-    - training
-  architecture_keywords:
-    - attention
-    - transformer
-    - kernel
-    - backend
-    - cuda
-    - rocm
-    - distributed
-    - trainer
-    - optimizer
-    - architecture
-    - model
-    - quantiz
+    - checkpoint
+    - checkpoints
+    - supplemental
+    - tokenizer

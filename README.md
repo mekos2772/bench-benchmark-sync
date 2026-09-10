@@ -64,13 +64,20 @@ A manual run with a specific `benchmark` input is a single-source diagnostic run
 
 The Mini Program Today page is intentionally separate from the 24-board static ranking bundle. A dedicated `today-activity` workflow runs every five minutes on an Ubuntu GitHub Actions runner and publishes a verified feed to `generated/static-events/today-events.json` plus a CommonJS copy.
 
-The feed has three explicit families:
+The feed covers exactly two families, and every event carries trust metadata (`trustTier`, `priority`, `visibility`, `isOfficial`, `sourceType`, `sourceOwner`) plus evidence records:
 
-- `model`: public Hugging Face Hub repository activity (`model_created`, `model_updated`, `weights_updated`, `config_updated`, `tokenizer_updated`). These are Hub activities, not claims of official model release.
-- `technology`: GitHub Atom activity from a controlled repository allowlist (`github_release`, `important_pr`, `commit`, `architecture_code_change`, `tag_created`). Atom feeds are used instead of unauthenticated high-frequency GitHub API polling.
-- `benchmark`: changes detected by comparing successful observations from the official LiveBench, Artificial Analysis, and DeepSWE collectors. Missing official rank remains missing; a position derived from score is labeled `derived_rank_changed`.
+- `model`: new model additions with concrete parameters, from two channels:
+  - **Open weights** (`official_model_release`): new repositories under vendor official Hugging Face organizations (`Qwen`, `deepseek-ai`, `meta-llama`, `mistralai`, `google`, `openai`, `moonshotai`, `zai-org`, `MiniMaxAI`, and others configured in `config/today_sources.yaml`). Parameter count comes from the repository's `safetensors` metadata, license from the model card, context window from the model config, modalities from the pipeline tag. Repackagings of another vendor's model (`nvidia/DeepSeek-...`), quantization-only variants (`-FP8`, `-GGUF`, `-MLX`, `-AWQ`, ...), adapters, checkpoints and test repositories are excluded.
+  - **Closed / API models** (`catalog_model_added`): models newly listed in the public OpenRouter catalog with context window, per-million-token pricing, input/output modalities and capability flags. Entries already covered by an official open-weight release are dropped, as are variant IDs (`:free`, `:batch`, `~` aliases).
+- `benchmark`: changes detected by comparing successful observations from the official LiveBench, Artificial Analysis, and DeepSWE collectors. Missing official rank remains missing; a position derived from score is labeled `derived_rank_changed` with `rankSource: derived`.
 
-The collector keeps a bounded state file, filters events to the recent window, deduplicates by stable event ID, validates the JSON/CommonJS pair with `scripts/verify_today_events.js`, and preserves the last successful generated file if a source fails. The Mini Program requests only the stable raw feed URL; it never requests Hugging Face or GitHub directly and does not call CloudBase for Today.
+### Model profiles
+
+Events reference models by `modelRef`; the feed carries a top-level `models` map with structured profiles (provider, modelId, version, release/access status, modalities, capabilities, parameter count, license, context window, max output tokens, pricing, availability, official URLs, and per-field evidence). Fields the source does not provide stay `null` or empty arrays — nothing is guessed.
+
+### Collection guarantees
+
+The collector filters events to the recent window, deduplicates by stable event ID (fetch time is not part of the ID), validates the JSON/CommonJS pair with `scripts/verify_today_events.js`, and preserves the last successful generated file if a source fails. The Mini Program requests only the stable raw feed URL; it never requests Hugging Face, OpenRouter, or GitHub directly and does not call CloudBase for Today.
 
 The real-time target is minute-level refresh through the workflow schedule, not second-level delivery. The page shows the generated time, stale warning, partial-source warning, source labels, and an explicit error state instead of inventing zero changes.
 
