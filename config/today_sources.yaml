@@ -82,7 +82,9 @@ settings:
   hub_org_limit: 20
   hub_timeout_seconds: 30
   openrouter_timeout_seconds: 30
-  stale_after_minutes: 60
+  # GitHub only runs the */5 schedule every 2-5 hours in practice, so a tighter
+  # threshold would flag a healthy pipeline as delayed most of the day.
+  stale_after_minutes: 360
   hub_denied_name_tokens:
     - adapter
     - lora
