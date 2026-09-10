@@ -77,7 +77,15 @@ Events reference models by `modelRef`; the feed carries a top-level `models` map
 
 ### Collection guarantees
 
-The collector filters events to the recent window, deduplicates by stable event ID (fetch time is not part of the ID), validates the JSON/CommonJS pair with `scripts/verify_today_events.js`, and preserves the last successful generated file if a source fails. The Mini Program requests only the stable raw feed URL; it never requests Hugging Face, OpenRouter, or GitHub directly and does not call CloudBase for Today.
+The collector filters events to the recent window, deduplicates by stable event ID (fetch time is not part of the ID), validates the JSON/CommonJS pair with `scripts/verify_today_events.js`, and preserves the last successful generated file if a source fails. The Mini Program never requests Hugging Face, OpenRouter, GitHub, or this repository's raw files directly.
+
+### Distribution to the Mini Program
+
+WeChat only allows ICP-filed HTTPS domains in `wx.request`, so the GitHub-hosted feed cannot be fetched on a real device. The workflow therefore also pushes the verified feed into the WeChat CloudBase database, and the Mini Program reads it back with `wx.cloud.callFunction` (which is exempt from the domain whitelist):
+
+- `scripts/push_today_feed.py` validates the feed contract and writes the whole document to `todayEvents/latest` through the CloudBase HTTP API (`cgi-bin/stable_token` + `tcb/databaseupdate` with `doc("latest").set(...)`); the collection is created on demand, transient failures are retried, and `cloudSyncedAt` records the push time so readers can distinguish a quiet window from a broken pipeline.
+- Credentials come from repository secrets `WX_APPID`, `WX_APP_SECRET`, and `WX_CLOUD_ENV`; they are never printed, committed, or written to artifacts. When the secrets are absent the push step logs a warning and is skipped, so collection and publishing keep working.
+- The push runs after the feed is committed, so a CloudBase outage cannot corrupt the published feed; a failed push fails the step visibly.
 
 The real-time target is minute-level refresh through the workflow schedule, not second-level delivery. The page shows the generated time, stale warning, partial-source warning, source labels, and an explicit error state instead of inventing zero changes.
 
@@ -92,4 +100,4 @@ Each normalized record contains the benchmark, release, metric, comparison key, 
 
 ## Safety boundary
 
-No current Mini Program files are copied into this repository. No current Mini Program business code is changed. No existing production database is accessed. No `rankingAdmin` endpoint is called. No CloudBase credential or data is included.
+No current Mini Program files are copied into this repository. No current Mini Program business code is changed. No existing production database is accessed. No `rankingAdmin` endpoint is called. The only CloudBase write is the Today feed document (`todayEvents/latest`); no CloudBase ranking data or ranking credential is read or stored here, and the AppSecret lives only in repository secrets.

@@ -50,3 +50,15 @@ jobs:
           fi
           git commit -m "Update Today activity feed (run ${WORKFLOW_RUN_ID})"
           git push origin HEAD:${GITHUB_REF_NAME}
+      - name: Push Today feed to WeChat CloudBase
+        env:
+          WX_APPID: ${{ secrets.WX_APPID }}
+          WX_APP_SECRET: ${{ secrets.WX_APP_SECRET }}
+          WX_CLOUD_ENV: ${{ secrets.WX_CLOUD_ENV }}
+        run: |
+          set -euo pipefail
+          if [ -z "$WX_APPID" ] || [ -z "$WX_APP_SECRET" ] || [ -z "$WX_CLOUD_ENV" ]; then
+            echo "::warning::CloudBase push skipped: set WX_APPID / WX_APP_SECRET / WX_CLOUD_ENV repository secrets"
+            exit 0
+          fi
+          python scripts/push_today_feed.py --feed generated/static-events/today-events.json
