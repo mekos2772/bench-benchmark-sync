@@ -1,8 +1,8 @@
 module.exports = {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-09-10T05:45:16Z",
-  "windowStart": "2026-09-09T05:45:16Z",
+  "generatedAt": "2026-09-10T10:03:15Z",
+  "windowStart": "2026-09-09T10:03:15Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 60,
   "families": [
@@ -213,11 +213,43 @@ module.exports = {
   "sourceSummary": {
     "official": 0,
     "hub": 0,
-    "technology": 200,
+    "technology": 195,
     "benchmark": 13,
     "officialSources": 10
   },
   "events": [
+    {
+      "eventId": "67cfc5b1185c6e69926e83d2eb7aa978",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Terminal-Bench 4.0 官方数据更新",
+      "summary": "Terminal-Bench 4.0 的官方公开数据内容发生变化。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
+      "observedAt": "2026-09-09T16:26:56Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
+      "benchmarkId": "aa_terminal_bench_v4_0",
+      "benchmarkTitle": "Terminal-Bench 4.0",
+      "release": "page_jsonld",
+      "contentHash": "ef7e32895661244886483f36114c7eb7e0d06ef97e445c6ac48f8e2977e26c41",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
     {
       "eventId": "003b89c8c09d48cdfb9b7ccfe666d1f9",
       "family": "benchmark",
@@ -247,7 +279,7 @@ module.exports = {
       "contentHash": "07f278ba93e22edc13a05c560e790440b839ddf739ac8d40122f6ded75f9ae66",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -279,7 +311,7 @@ module.exports = {
       "contentHash": "b4be3f87a3b55e42eb0b8798c0d7b426125fa36efa737bf9b4dc32a8ab610d9c",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -311,71 +343,7 @@ module.exports = {
       "contentHash": "6048b37f4b20266f516c2550af77495a2391fa2907f7ec9d404eeb43fdc35c7a",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "67cfc5b1185c6e69926e83d2eb7aa978",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Terminal-Bench 4.0 官方数据更新",
-      "summary": "Terminal-Bench 4.0 的官方公开数据内容发生变化。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
-      "observedAt": "2026-09-09T16:26:56Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
-      "benchmarkId": "aa_terminal_bench_v4_0",
-      "benchmarkTitle": "Terminal-Bench 4.0",
-      "release": "page_jsonld",
-      "contentHash": "ef7e32895661244886483f36114c7eb7e0d06ef97e445c6ac48f8e2977e26c41",
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "d7e6288b80d905660a213aca60a84ca8",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "SciCode 官方数据更新",
-      "summary": "SciCode 的官方公开数据内容发生变化。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/scicode",
-      "observedAt": "2026-09-09T16:26:56Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis SciCode official public Dataset page",
-      "benchmarkId": "aa_scicode",
-      "benchmarkTitle": "SciCode",
-      "release": "page_jsonld",
-      "contentHash": "de363e89a2e0c46bf73067d181ac73dec34b59930bd2d1f047b02b3af54ca370",
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -407,7 +375,39 @@ module.exports = {
       "contentHash": "259182a079ff95f415ff02c00a0cef0cd8cc4c1199bf890020deadf41c7b095c",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "d7e6288b80d905660a213aca60a84ca8",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "SciCode 官方数据更新",
+      "summary": "SciCode 的官方公开数据内容发生变化。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/scicode",
+      "observedAt": "2026-09-09T16:26:56Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis SciCode official public Dataset page",
+      "benchmarkId": "aa_scicode",
+      "benchmarkTitle": "SciCode",
+      "release": "page_jsonld",
+      "contentHash": "de363e89a2e0c46bf73067d181ac73dec34b59930bd2d1f047b02b3af54ca370",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -439,71 +439,7 @@ module.exports = {
       "contentHash": "8b0f20cfc047a2ee775b3e59ebd3e3a3de8235532b13dc2788e87c1caf64f1e3",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "a10609cf4ff080ee436fef8268386eab",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Terminal-Bench Hard 官方数据更新",
-      "summary": "Terminal-Bench Hard 的官方公开数据内容发生变化。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-      "observedAt": "2026-09-09T16:26:56Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
-      "benchmarkId": "aa_terminalbench_hard",
-      "benchmarkTitle": "Terminal-Bench Hard",
-      "release": "page_jsonld",
-      "contentHash": "80486fc0839c8f9f252a7274de4955839f2333c27e5379313e2c29e9ae223d51",
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "b61c3df424f537244322c3ac09126d7a",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "IFBench 官方数据更新",
-      "summary": "IFBench 的官方公开数据内容发生变化。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/ifbench",
-      "observedAt": "2026-09-09T16:26:56Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis IFBench official public Dataset page",
-      "benchmarkId": "aa_ifbench",
-      "benchmarkTitle": "IFBench",
-      "release": "page_jsonld",
-      "contentHash": "8214c833e7d5a690495e21e5938c18e6c12558ee63b290f0afdd3543d30b4af4",
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -535,7 +471,71 @@ module.exports = {
       "contentHash": "3325b0c103879b5e89a7587022e90fe49cef659c0190f7fc4868bd7e86b39a32",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "b61c3df424f537244322c3ac09126d7a",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "IFBench 官方数据更新",
+      "summary": "IFBench 的官方公开数据内容发生变化。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/ifbench",
+      "observedAt": "2026-09-09T16:26:56Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis IFBench official public Dataset page",
+      "benchmarkId": "aa_ifbench",
+      "benchmarkTitle": "IFBench",
+      "release": "page_jsonld",
+      "contentHash": "8214c833e7d5a690495e21e5938c18e6c12558ee63b290f0afdd3543d30b4af4",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "a10609cf4ff080ee436fef8268386eab",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Terminal-Bench Hard 官方数据更新",
+      "summary": "Terminal-Bench Hard 的官方公开数据内容发生变化。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
+      "observedAt": "2026-09-09T16:26:56Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
+      "benchmarkId": "aa_terminalbench_hard",
+      "benchmarkTitle": "Terminal-Bench Hard",
+      "release": "page_jsonld",
+      "contentHash": "80486fc0839c8f9f252a7274de4955839f2333c27e5379313e2c29e9ae223d51",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -567,11 +567,171 @@ module.exports = {
       "contentHash": "e7d257059a618917354a43954d3666ef2fc2e0d3713156e5663f156624012fd5",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
-      "eventId": "bbe8f15a1c8366fd2efcc804684805fd",
+      "eventId": "34a03ba13036dc575ee6d2f840262b3c",
+      "family": "technology",
+      "eventType": "github_release",
+      "eventClass": "technical_release",
+      "trustTier": "technical",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "important",
+      "title": "ggml-org/llama.cpp 发布版本",
+      "summary": "b10888",
+      "repoId": "ggml-org/llama.cpp",
+      "repo": "ggml-org/llama.cpp",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "ggml-org",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10888",
+          "observedAt": "2026-09-10T09:41:30Z",
+          "contentHash": "635eca4f735a355f1cab6dc210b678cf241049468fabfa427f46f80fc570b52e",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10888",
+      "observedAt": "2026-09-10T09:41:30Z",
+      "publishedAt": "2026-09-10T09:41:30Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "master",
+      "author": "github-actions[bot]",
+      "eventIdentity": "tag:github.com,2008:Repository/612354784/b10888",
+      "provenance": {
+        "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10888",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "c032b176a341de4bc55eb8ba0d1a1470",
+      "family": "technology",
+      "eventType": "github_release",
+      "eventClass": "technical_release",
+      "trustTier": "technical",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "important",
+      "title": "ggml-org/llama.cpp 发布版本",
+      "summary": "b10887",
+      "repoId": "ggml-org/llama.cpp",
+      "repo": "ggml-org/llama.cpp",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "ggml-org",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10887",
+          "observedAt": "2026-09-10T09:09:36Z",
+          "contentHash": "01d4c520c3eebb93edf1f4cb40f6af5591a74885490c83fd724d45c46374ffcf",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10887",
+      "observedAt": "2026-09-10T09:09:36Z",
+      "publishedAt": "2026-09-10T09:09:36Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "master",
+      "author": "github-actions[bot]",
+      "eventIdentity": "tag:github.com,2008:Repository/612354784/b10887",
+      "provenance": {
+        "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10887",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "f1e9a627a4ff5e8ce71dc3a48a934124",
+      "family": "technology",
+      "eventType": "github_release",
+      "eventClass": "technical_release",
+      "trustTier": "technical",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "important",
+      "title": "ggml-org/llama.cpp 发布版本",
+      "summary": "b10886",
+      "repoId": "ggml-org/llama.cpp",
+      "repo": "ggml-org/llama.cpp",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "ggml-org",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10886",
+          "observedAt": "2026-09-10T08:36:08Z",
+          "contentHash": "22ea069825343a9e5183ae8aa4280275d7871da760812da853084b969202d430",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10886",
+      "observedAt": "2026-09-10T08:36:08Z",
+      "publishedAt": "2026-09-10T08:36:08Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "master",
+      "author": "github-actions[bot]",
+      "eventIdentity": "tag:github.com,2008:Repository/612354784/b10886",
+      "provenance": {
+        "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10886",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "f81e916d3a3587edb71cd546bf824a80",
+      "family": "technology",
+      "eventType": "github_release",
+      "eventClass": "technical_release",
+      "trustTier": "technical",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "important",
+      "title": "ggml-org/llama.cpp 发布版本",
+      "summary": "b10885",
+      "repoId": "ggml-org/llama.cpp",
+      "repo": "ggml-org/llama.cpp",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "ggml-org",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10885",
+          "observedAt": "2026-09-10T07:53:44Z",
+          "contentHash": "1316a7ba1d6d69e97dc0655f47c323a34eb99886e7717740c4ea8a527a019555",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10885",
+      "observedAt": "2026-09-10T07:53:44Z",
+      "publishedAt": "2026-09-10T07:53:44Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "master",
+      "author": "github-actions[bot]",
+      "eventIdentity": "tag:github.com,2008:Repository/612354784/b10885",
+      "provenance": {
+        "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10885",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "1e8e76dfce1c709161f229180d8e3a0e",
       "family": "technology",
       "eventType": "github_release",
       "eventClass": "technical_release",
@@ -581,7 +741,7 @@ module.exports = {
       "isOfficial": false,
       "severity": "important",
       "title": "pytorch/pytorch 发布版本",
-      "summary": "trunk/3ac1dd042e9483d047a01e548488fef4337f8202: Update Metamates merge rule (#196381)",
+      "summary": "trunk/23996bab174deda316e0538d513e38ba3a00cbb6",
       "repoId": "pytorch/pytorch",
       "repo": "pytorch/pytorch",
       "modelId": null,
@@ -591,23 +751,103 @@ module.exports = {
       "evidence": [
         {
           "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F3ac1dd042e9483d047a01e548488fef4337f8202",
-          "observedAt": "2026-09-10T05:37:08Z",
-          "contentHash": "d227b6942e014c3e51a50787f591c762f261423142f7e40cfdfe45a9744c8943",
+          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F23996bab174deda316e0538d513e38ba3a00cbb6",
+          "observedAt": "2026-09-10T07:29:11Z",
+          "contentHash": "ae10cd5c35a52f3a594e25be4ab13f66f004e8e1f3129ad031627b4ef80690d5",
           "sourceType": "github_atom"
         }
       ],
-      "url": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F3ac1dd042e9483d047a01e548488fef4337f8202",
-      "observedAt": "2026-09-10T05:37:08Z",
-      "publishedAt": "2026-09-10T05:37:08Z",
+      "url": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F23996bab174deda316e0538d513e38ba3a00cbb6",
+      "observedAt": "2026-09-10T07:29:11Z",
+      "publishedAt": "2026-09-10T07:29:11Z",
       "source": "GitHub",
       "kind": "training_framework",
       "branch": "main",
-      "author": "pytorchupdatebot",
-      "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/3ac1dd042e9483d047a01e548488fef4337f8202",
+      "author": "oonyshch",
+      "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/23996bab174deda316e0538d513e38ba3a00cbb6",
       "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F3ac1dd042e9483d047a01e548488fef4337f8202",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F23996bab174deda316e0538d513e38ba3a00cbb6",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "3e133e3f67654a030195173defa205ec",
+      "family": "technology",
+      "eventType": "github_release",
+      "eventClass": "technical_release",
+      "trustTier": "technical",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "important",
+      "title": "pytorch/pytorch 发布版本",
+      "summary": "trunk/877dc97af3a3abbb3cac40d830259b34eb8d9584",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F877dc97af3a3abbb3cac40d830259b34eb8d9584",
+          "observedAt": "2026-09-10T07:21:06Z",
+          "contentHash": "d99e85a5c0edeb68a2bd5beeab66ca3e0d2a10738795618d0090490a5b56446e",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F877dc97af3a3abbb3cac40d830259b34eb8d9584",
+      "observedAt": "2026-09-10T07:21:06Z",
+      "publishedAt": "2026-09-10T07:21:06Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "Netlessfish",
+      "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/877dc97af3a3abbb3cac40d830259b34eb8d9584",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F877dc97af3a3abbb3cac40d830259b34eb8d9584",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "573810f127498790aabf1838260944ec",
+      "family": "technology",
+      "eventType": "github_release",
+      "eventClass": "technical_release",
+      "trustTier": "technical",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "important",
+      "title": "pytorch/pytorch 发布版本",
+      "summary": "viable/strict/1789033813",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789033813",
+          "observedAt": "2026-09-10T05:36:28Z",
+          "contentHash": "649aad81ac62f1fb5590d5c54bcaaece0bf732ac255ecdd06d12d910089f887b",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789033813",
+      "observedAt": "2026-09-10T05:36:28Z",
+      "publishedAt": "2026-09-10T05:36:28Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "kevzhuo",
+      "eventIdentity": "tag:github.com,2008:Repository/65600975/viable/strict/1789033813",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789033813",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -647,11 +887,11 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/927b3be8ba59a96837f531265f362b86fd4df338",
       "provenance": {
         "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F927b3be8ba59a96837f531265f362b86fd4df338",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
-      "eventId": "ea9debd5605072603b318ab4a3b39a3e",
+      "eventId": "0625e6619f89eb0c7e0e48970db31105",
       "family": "technology",
       "eventType": "github_release",
       "eventClass": "technical_release",
@@ -661,7 +901,7 @@ module.exports = {
       "isOfficial": false,
       "severity": "important",
       "title": "pytorch/pytorch 发布版本",
-      "summary": "trunk/9d32e095be13d609e90ba7475c5df8ad4157277e",
+      "summary": "viable/strict/1789032573: [Test][XPU] Enable inductor cases on XPU (#192506)",
       "repoId": "pytorch/pytorch",
       "repo": "pytorch/pytorch",
       "modelId": null,
@@ -671,27 +911,27 @@ module.exports = {
       "evidence": [
         {
           "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F9d32e095be13d609e90ba7475c5df8ad4157277e",
-          "observedAt": "2026-09-10T05:26:49Z",
-          "contentHash": "82bb1dda8f0f5d07d2221f8a07c7b15ec2d8a4cc765e7ae69bb3818933a36924",
+          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789032573",
+          "observedAt": "2026-09-10T05:36:08Z",
+          "contentHash": "6cdc9e301998c7f2a8756372ba920066d2c775f00519ff7537f629f62015e007",
           "sourceType": "github_atom"
         }
       ],
-      "url": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F9d32e095be13d609e90ba7475c5df8ad4157277e",
-      "observedAt": "2026-09-10T05:26:49Z",
-      "publishedAt": "2026-09-10T05:26:49Z",
+      "url": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789032573",
+      "observedAt": "2026-09-10T05:36:08Z",
+      "publishedAt": "2026-09-10T05:36:08Z",
       "source": "GitHub",
       "kind": "training_framework",
       "branch": "main",
-      "author": "eellison",
-      "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/9d32e095be13d609e90ba7475c5df8ad4157277e",
+      "author": "daisyden",
+      "eventIdentity": "tag:github.com,2008:Repository/65600975/viable/strict/1789032573",
       "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F9d32e095be13d609e90ba7475c5df8ad4157277e",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789032573",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
-      "eventId": "cffaa08ea694d502459a63e6630dbf58",
+      "eventId": "64440f10d49f268fbafa43fae7e18f2f",
       "family": "technology",
       "eventType": "github_release",
       "eventClass": "technical_release",
@@ -701,7 +941,7 @@ module.exports = {
       "isOfficial": false,
       "severity": "important",
       "title": "pytorch/pytorch 发布版本",
-      "summary": "trunk/0e7f619f994b5a7675e48d07b0da1c11424c6e99: Integrate scaled addmm with torch.compile (#195410)",
+      "summary": "viable/strict/1789030332: [Dynamo] Port CPython 3.13 test_grammar to Dynamo test suite (#196482)",
       "repoId": "pytorch/pytorch",
       "repo": "pytorch/pytorch",
       "modelId": null,
@@ -711,23 +951,23 @@ module.exports = {
       "evidence": [
         {
           "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F0e7f619f994b5a7675e48d07b0da1c11424c6e99",
-          "observedAt": "2026-09-10T04:31:17Z",
-          "contentHash": "10f0ec6507ecab73c60eb0ff77460e740a456d0fc60220cb11034824d465cd28",
+          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789030332",
+          "observedAt": "2026-09-10T05:01:47Z",
+          "contentHash": "9d55fffde0ce2fb05b7f452060bbf7b53fa9019d9c85c3c009abd4d2fec0f161",
           "sourceType": "github_atom"
         }
       ],
-      "url": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F0e7f619f994b5a7675e48d07b0da1c11424c6e99",
-      "observedAt": "2026-09-10T04:31:17Z",
-      "publishedAt": "2026-09-10T04:31:17Z",
+      "url": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789030332",
+      "observedAt": "2026-09-10T05:01:47Z",
+      "publishedAt": "2026-09-10T05:01:47Z",
       "source": "GitHub",
       "kind": "training_framework",
       "branch": "main",
-      "author": "drisspg",
-      "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/0e7f619f994b5a7675e48d07b0da1c11424c6e99",
+      "author": "Rudra-G-23",
+      "eventIdentity": "tag:github.com,2008:Repository/65600975/viable/strict/1789030332",
       "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F0e7f619f994b5a7675e48d07b0da1c11424c6e99",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789030332",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -767,11 +1007,11 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/05022acc8d39a91f0a4013dbef4b18f90fd4a956",
       "provenance": {
         "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F05022acc8d39a91f0a4013dbef4b18f90fd4a956",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
-      "eventId": "ff52cee5cd18283916a2e1cfd88bf06c",
+      "eventId": "e79803807f8ab4b91d81caddbec07d66",
       "family": "technology",
       "eventType": "github_release",
       "eventClass": "technical_release",
@@ -781,7 +1021,7 @@ module.exports = {
       "isOfficial": false,
       "severity": "important",
       "title": "pytorch/pytorch 发布版本",
-      "summary": "trunk/33c16aba36bdcd7b7ecc564eed443fab09ffdaf8",
+      "summary": "viable/strict/1789022478",
       "repoId": "pytorch/pytorch",
       "repo": "pytorch/pytorch",
       "modelId": null,
@@ -791,23 +1031,23 @@ module.exports = {
       "evidence": [
         {
           "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F33c16aba36bdcd7b7ecc564eed443fab09ffdaf8",
-          "observedAt": "2026-09-10T02:35:40Z",
-          "contentHash": "ca1d1dc4eddba958d4282e0d969a1c33a2dc4dc366cd9631213f5fb2c292a524",
+          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789022478",
+          "observedAt": "2026-09-10T02:39:40Z",
+          "contentHash": "93257f3f2d71d996e0c8742ef9e5ffaf2312073f8059ee6b21c9039e880cf520",
           "sourceType": "github_atom"
         }
       ],
-      "url": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F33c16aba36bdcd7b7ecc564eed443fab09ffdaf8",
-      "observedAt": "2026-09-10T02:35:40Z",
-      "publishedAt": "2026-09-10T02:35:40Z",
+      "url": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789022478",
+      "observedAt": "2026-09-10T02:39:40Z",
+      "publishedAt": "2026-09-10T02:39:40Z",
       "source": "GitHub",
       "kind": "training_framework",
       "branch": "main",
-      "author": "Skylion007",
-      "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/33c16aba36bdcd7b7ecc564eed443fab09ffdaf8",
+      "author": "rmiao",
+      "eventIdentity": "tag:github.com,2008:Repository/65600975/viable/strict/1789022478",
       "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F33c16aba36bdcd7b7ecc564eed443fab09ffdaf8",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789022478",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -833,7 +1073,7 @@ module.exports = {
           "field": "event",
           "sourceUrl": "https://github.com/huggingface/trl/releases/tag/v1.13.0",
           "observedAt": "2026-09-10T00:50:26Z",
-          "contentHash": "6cfb5742ca8cf3b8003153974aa00f36596a13db9f5032445bab179d0a0f4ff7",
+          "contentHash": "3da9049d09bf2ee9594d98b784749f916714c558ad8383a69b0058dd323f3d1f",
           "sourceType": "github_atom"
         }
       ],
@@ -847,87 +1087,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/250510075/v1.13.0",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/trl/releases/tag/v1.13.0",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "8a648221cf3dbb70f9596a7c284a2457",
-      "family": "technology",
-      "eventType": "github_release",
-      "eventClass": "technical_release",
-      "trustTier": "technical",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "important",
-      "title": "pytorch/pytorch 发布版本",
-      "summary": "trunk/9d5a71058272ed10ee6156c9f570711864e07e38",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F9d5a71058272ed10ee6156c9f570711864e07e38",
-          "observedAt": "2026-09-10T00:45:59Z",
-          "contentHash": "69c0249cec8fb07eb993bbea39d0ea7092095b081b800e8f7c4ab6f2befe68e4",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F9d5a71058272ed10ee6156c9f570711864e07e38",
-      "observedAt": "2026-09-10T00:45:59Z",
-      "publishedAt": "2026-09-10T00:45:59Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "pytorchmergebot",
-      "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/9d5a71058272ed10ee6156c9f570711864e07e38",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F9d5a71058272ed10ee6156c9f570711864e07e38",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "53c6a8054d3da8fa14d5eabcfce7cc4c",
-      "family": "technology",
-      "eventType": "github_release",
-      "eventClass": "technical_release",
-      "trustTier": "technical",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "important",
-      "title": "pytorch/pytorch 发布版本",
-      "summary": "trunk/072a88d63b2d6c0e6112c1d9b522c458a2700afe: [dynamo] Port CPython 3.13 test_abc to Dynamo (#196373)",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F072a88d63b2d6c0e6112c1d9b522c458a2700afe",
-          "observedAt": "2026-09-10T00:11:11Z",
-          "contentHash": "060821d8a60e3c8067e46071dbc824d14f839fa21d7c23cea3b7c604a9135576",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F072a88d63b2d6c0e6112c1d9b522c458a2700afe",
-      "observedAt": "2026-09-10T00:11:11Z",
-      "publishedAt": "2026-09-10T00:11:11Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "lalit10",
-      "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/072a88d63b2d6c0e6112c1d9b522c458a2700afe",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F072a88d63b2d6c0e6112c1d9b522c458a2700afe",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -967,7 +1127,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/65600975/viable/strict/1789014646",
       "provenance": {
         "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789014646",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -1007,7 +1167,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/2671203b4082c3c24d38b10cc44c8f7c9b98833b",
       "provenance": {
         "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F2671203b4082c3c24d38b10cc44c8f7c9b98833b",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -1047,7 +1207,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/612354784/b10884",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10884",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -1087,7 +1247,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/612354784/b10883",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10883",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -1119,7 +1279,7 @@ module.exports = {
       "contentHash": "b67a97c4749c036e137eaf6b0e2828165639d1b461a45e3ba3a4381828c92fc6",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -1159,7 +1319,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/725205304/v0.1.808-beta",
       "provenance": {
         "sourceUrl": "https://github.com/unslothai/unsloth/releases/tag/v0.1.808-beta",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -1185,7 +1345,7 @@ module.exports = {
           "field": "event",
           "sourceUrl": "https://github.com/huggingface/transformers/releases/tag/v5.17.0",
           "observedAt": "2026-09-09T15:42:45Z",
-          "contentHash": "47af7f4ee8526ee1bd0f6b5cdacb87d0efc5284d6bb13e167088c94f4e9cfa5a",
+          "contentHash": "6de21d7d4f254c57156f6a7d7d0906946f5a3f3450adde87298ade0683a7e8f1",
           "sourceType": "github_atom"
         }
       ],
@@ -1199,7 +1359,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/155220641/v5.17.0",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/transformers/releases/tag/v5.17.0",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -1239,7 +1399,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/612354784/b10881",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10881",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -1279,7 +1439,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/308638334/v1.15.0",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/accelerate/releases/tag/v1.15.0",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -1319,7 +1479,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/612354784/b10878",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10878",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -1359,7 +1519,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/612354784/b10877",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10877",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -1399,101 +1559,21 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/612354784/b10876",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10876",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
-      "eventId": "5a7778d0cbc0deadbcce5559a6b8c9d3",
+      "eventId": "aa6d39d88d38c096ddbba33664882a9e",
       "family": "technology",
-      "eventType": "github_release",
-      "eventClass": "technical_release",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
       "trustTier": "technical",
-      "priority": "P1",
+      "priority": "P2",
       "visibility": "primary",
       "isOfficial": false,
-      "severity": "important",
-      "title": "ggml-org/llama.cpp 发布版本",
-      "summary": "b10875",
-      "repoId": "ggml-org/llama.cpp",
-      "repo": "ggml-org/llama.cpp",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "ggml-org",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10875",
-          "observedAt": "2026-09-09T11:17:45Z",
-          "contentHash": "ad8571ad64c9b96ab7b6484f45ae4ec0bfddd57ca2e8e89ad2c9f11c2f82970e",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10875",
-      "observedAt": "2026-09-09T11:17:45Z",
-      "publishedAt": "2026-09-09T11:17:45Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "master",
-      "author": "github-actions[bot]",
-      "eventIdentity": "tag:github.com,2008:Repository/612354784/b10875",
-      "provenance": {
-        "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10875",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "8c348edf5018156408122647bb9b837b",
-      "family": "technology",
-      "eventType": "github_release",
-      "eventClass": "technical_release",
-      "trustTier": "technical",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "important",
-      "title": "ggml-org/llama.cpp 发布版本",
-      "summary": "b10874",
-      "repoId": "ggml-org/llama.cpp",
-      "repo": "ggml-org/llama.cpp",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "ggml-org",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10874",
-          "observedAt": "2026-09-09T09:56:51Z",
-          "contentHash": "a430bbb1f9c438bf18f7c8c0ca40083c71e80c4924603fff2d6908b2e59d5240",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10874",
-      "observedAt": "2026-09-09T09:56:51Z",
-      "publishedAt": "2026-09-09T09:56:51Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "master",
-      "author": "github-actions[bot]",
-      "eventIdentity": "tag:github.com,2008:Repository/612354784/b10874",
-      "provenance": {
-        "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10874",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "fd93757d621fbe675c43a1ddf56a2e72",
-      "family": "technology",
-      "eventType": "github_release",
-      "eventClass": "technical_release",
-      "trustTier": "technical",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "important",
-      "title": "vllm-project/vllm 发布版本",
-      "summary": "v0.29.0",
+      "severity": "normal",
+      "title": "vllm-project/vllm Commit",
+      "summary": "\n        [Kimi K3 Perf] Avoid KDA mixed-batch gather/scatter, 5.2%~7.7% E2E Th…\n    ",
       "repoId": "vllm-project/vllm",
       "repo": "vllm-project/vllm",
       "modelId": null,
@@ -1503,37 +1583,237 @@ module.exports = {
       "evidence": [
         {
           "field": "event",
-          "sourceUrl": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0",
-          "observedAt": "2026-09-09T09:40:07Z",
-          "contentHash": "0b5e9e6fd52215b01290512a6e70b7e67fd9fd74ce0d9bf42965f497df70be7a",
+          "sourceUrl": "https://github.com/vllm-project/vllm/commit/86aca6619161b308d675c753f228201e70b59ed7",
+          "observedAt": "2026-09-10T09:57:01Z",
+          "contentHash": "d2f2ccbc62fec9f8abbe4404baa12ba176e661e06f60731ae1167f63b0242c8c",
           "sourceType": "github_atom"
         }
       ],
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0",
-      "observedAt": "2026-09-09T09:40:07Z",
-      "publishedAt": "2026-09-09T09:40:07Z",
+      "url": "https://github.com/vllm-project/vllm/commit/86aca6619161b308d675c753f228201e70b59ed7",
+      "observedAt": "2026-09-10T09:57:01Z",
+      "publishedAt": "2026-09-10T09:57:01Z",
       "source": "GitHub",
       "kind": "inference_framework",
       "branch": "main",
-      "author": "khluu",
-      "eventIdentity": "tag:github.com,2008:Repository/599547518/v0.29.0",
+      "author": "yewentao256",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/86aca6619161b308d675c753f228201e70b59ed7",
       "provenance": {
-        "sourceUrl": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/86aca6619161b308d675c753f228201e70b59ed7",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
-      "eventId": "d1d92c532afbf80452aee5b201d6a92e",
+      "eventId": "ac7031ad53253a5cc3a1c5db286b86b1",
       "family": "technology",
-      "eventType": "github_release",
-      "eventClass": "technical_release",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
       "trustTier": "technical",
-      "priority": "P1",
+      "priority": "P2",
       "visibility": "primary",
       "isOfficial": false,
-      "severity": "important",
-      "title": "ggml-org/llama.cpp 发布版本",
-      "summary": "b10873",
+      "severity": "normal",
+      "title": "huggingface/trl Commit",
+      "summary": "\n        Align tiny Qwen2.5-Coder config with Qwen/Qwen2.5-Coder-0.5B (#7134)\n    ",
+      "repoId": "huggingface/trl",
+      "repo": "huggingface/trl",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "huggingface",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/huggingface/trl/commit/cdaaf291924bda36fd563227f7cafcda7388c663",
+          "observedAt": "2026-09-10T09:56:19Z",
+          "contentHash": "0a2e2663a6f119ae00334957e5c9090ef54dd226f43b77ad4d0aee841fcf8b6b",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/huggingface/trl/commit/cdaaf291924bda36fd563227f7cafcda7388c663",
+      "observedAt": "2026-09-10T09:56:19Z",
+      "publishedAt": "2026-09-10T09:56:19Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "albertvillanova",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/cdaaf291924bda36fd563227f7cafcda7388c663",
+      "provenance": {
+        "sourceUrl": "https://github.com/huggingface/trl/commit/cdaaf291924bda36fd563227f7cafcda7388c663",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "f5a877920ea3080cd4051f2b11934c21",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "sgl-project/sglang 架构相关代码变化",
+      "summary": "\n        [JIT] Port the expert-pack MXFP4 kernels to load_jit and fix their la…\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/dc2157dcd62d5fb1bc5317fcf8765ebfcd8a8dad",
+          "observedAt": "2026-09-10T09:50:51Z",
+          "contentHash": "fd2c79c384a512a593fbdcc19328818176606001ef98b8acaa5752ef6be393fe",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/dc2157dcd62d5fb1bc5317fcf8765ebfcd8a8dad",
+      "observedAt": "2026-09-10T09:50:51Z",
+      "publishedAt": "2026-09-10T09:50:51Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "mmangkad",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/dc2157dcd62d5fb1bc5317fcf8765ebfcd8a8dad",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/dc2157dcd62d5fb1bc5317fcf8765ebfcd8a8dad",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "13b0e59cbff8b6fd12a61b7d3c1aa83d",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "vllm-project/vllm Commit",
+      "summary": "\n        [XPU][Bugfix] Add forward_xpu to Ernie4_5_VLRotaryEmbedding (#55942)\n    ",
+      "repoId": "vllm-project/vllm",
+      "repo": "vllm-project/vllm",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "vllm-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/vllm-project/vllm/commit/c9355e25e8cfdc0548a5034f7bc148e1760e82d2",
+          "observedAt": "2026-09-10T09:48:00Z",
+          "contentHash": "e927739c63d21b70a7bbf2177ebb762f7bff196a4274b248c4e0027b590f31f5",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm/commit/c9355e25e8cfdc0548a5034f7bc148e1760e82d2",
+      "observedAt": "2026-09-10T09:48:00Z",
+      "publishedAt": "2026-09-10T09:48:00Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "jbyczkow",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/c9355e25e8cfdc0548a5034f7bc148e1760e82d2",
+      "provenance": {
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/c9355e25e8cfdc0548a5034f7bc148e1760e82d2",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "5e7cbc998847ac17786ffcffc0e81622",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "vllm-project/vllm Commit",
+      "summary": "\n        [XPU][Bugfix] Fix FalconH1 pipeline-parallel execution (#55913)\n    ",
+      "repoId": "vllm-project/vllm",
+      "repo": "vllm-project/vllm",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "vllm-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/vllm-project/vllm/commit/6fd08c45e696999b403b64835ae44d322efaab35",
+          "observedAt": "2026-09-10T09:47:29Z",
+          "contentHash": "709a9e1b52437f252cd60b5c9871cbe0c53946d1239fd4e0d7dba5ec3a1ca659",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm/commit/6fd08c45e696999b403b64835ae44d322efaab35",
+      "observedAt": "2026-09-10T09:47:29Z",
+      "publishedAt": "2026-09-10T09:47:29Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "jbyczkow",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/6fd08c45e696999b403b64835ae44d322efaab35",
+      "provenance": {
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/6fd08c45e696999b403b64835ae44d322efaab35",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "5da2d376260ba0562b554dc7f612cc61",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "vllm-project/vllm 架构相关代码变化",
+      "summary": "\n        [Model] Add Bailing V3 VL support (#55921)\n    ",
+      "repoId": "vllm-project/vllm",
+      "repo": "vllm-project/vllm",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "vllm-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/vllm-project/vllm/commit/fe26c705f7099da3b155b3cb6218f013bb308e63",
+          "observedAt": "2026-09-10T09:46:56Z",
+          "contentHash": "cea0d4eea716d1ec34a44e5fae28f04def9c11e23a44009c76a24b0e116723c7",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm/commit/fe26c705f7099da3b155b3cb6218f013bb308e63",
+      "observedAt": "2026-09-10T09:46:56Z",
+      "publishedAt": "2026-09-10T09:46:56Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "zexplorerhj",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/fe26c705f7099da3b155b3cb6218f013bb308e63",
+      "provenance": {
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/fe26c705f7099da3b155b3cb6218f013bb308e63",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "52de1dd6df02203bf4b4da33e9ab0dbc",
+      "family": "technology",
+      "eventType": "tag_created",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "ggml-org/llama.cpp 创建 Tag",
+      "summary": "b10888",
       "repoId": "ggml-org/llama.cpp",
       "repo": "ggml-org/llama.cpp",
       "modelId": null,
@@ -1543,37 +1823,437 @@ module.exports = {
       "evidence": [
         {
           "field": "event",
-          "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10873",
-          "observedAt": "2026-09-09T09:24:05Z",
-          "contentHash": "ffc0a60562376f6bb0e72c165c67c8d37184febb87855a30c1974a7bef408622",
+          "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10888",
+          "observedAt": "2026-09-10T09:41:30Z",
+          "contentHash": "2226b8930ac27ea1d5376471605e583cd5d99a4bf30d592e1116774106e5efad",
           "sourceType": "github_atom"
         }
       ],
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10873",
-      "observedAt": "2026-09-09T09:24:05Z",
-      "publishedAt": "2026-09-09T09:24:05Z",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10888",
+      "observedAt": "2026-09-10T09:41:30Z",
+      "publishedAt": "2026-09-10T09:41:30Z",
       "source": "GitHub",
       "kind": "inference_framework",
       "branch": "master",
-      "author": "github-actions[bot]",
-      "eventIdentity": "tag:github.com,2008:Repository/612354784/b10873",
+      "author": "github-actions",
+      "eventIdentity": "tag:github.com,2008:Repository/612354784/b10888",
       "provenance": {
-        "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10873",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10888",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
-      "eventId": "c32aa1130a53f8d7acef8b69fb1cb893",
+      "eventId": "3f086f9cf63da9fd117c1e0b68457607",
       "family": "technology",
-      "eventType": "github_release",
-      "eventClass": "technical_release",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
       "trustTier": "technical",
-      "priority": "P1",
+      "priority": "P2",
       "visibility": "primary",
       "isOfficial": false,
-      "severity": "important",
-      "title": "ggml-org/llama.cpp 发布版本",
-      "summary": "b10872",
+      "severity": "normal",
+      "title": "sgl-project/sglang Commit",
+      "summary": "\n        Revert \"[CI] Temporarily disable GB300 tests\" (#38842)\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/8022505705eb7dc6239ab0bbdb7c1a0ce8682d40",
+          "observedAt": "2026-09-10T09:41:15Z",
+          "contentHash": "7d8e741fd25c80496bed1180e0bbf4b1e126abf588d095852052e4e24c2c8f60",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/8022505705eb7dc6239ab0bbdb7c1a0ce8682d40",
+      "observedAt": "2026-09-10T09:41:15Z",
+      "publishedAt": "2026-09-10T09:41:15Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "mmangkad",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/8022505705eb7dc6239ab0bbdb7c1a0ce8682d40",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/8022505705eb7dc6239ab0bbdb7c1a0ce8682d40",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "b85d7bea1985d368cde07bca278a52a0",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "unslothai/unsloth Commit",
+      "summary": "\n        Studio: keep the output a timed-out python or terminal call already p…\n    ",
+      "repoId": "unslothai/unsloth",
+      "repo": "unslothai/unsloth",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "unslothai",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/unslothai/unsloth/commit/d7bc72c1f965bfe14c6b6cf4a18df10eb0bf2f66",
+          "observedAt": "2026-09-10T09:37:12Z",
+          "contentHash": "8719aebb3b70b3f8cd9b89827fde13fab19ff1f75c82ad6ec316bd67f7f4b2c7",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/unslothai/unsloth/commit/d7bc72c1f965bfe14c6b6cf4a18df10eb0bf2f66",
+      "observedAt": "2026-09-10T09:37:12Z",
+      "publishedAt": "2026-09-10T09:37:12Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "NilayYadav",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/d7bc72c1f965bfe14c6b6cf4a18df10eb0bf2f66",
+      "provenance": {
+        "sourceUrl": "https://github.com/unslothai/unsloth/commit/d7bc72c1f965bfe14c6b6cf4a18df10eb0bf2f66",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "772954133e42489c982f0176cf162377",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "huggingface/trl 架构相关代码变化",
+      "summary": "\n        Remove the experimental GRPO-with-replay-buffer trainer (#7132)\n    ",
+      "repoId": "huggingface/trl",
+      "repo": "huggingface/trl",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "huggingface",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/huggingface/trl/commit/bb50ac9edd1064cced86d56979df3e8220077c7e",
+          "observedAt": "2026-09-10T09:36:11Z",
+          "contentHash": "900237ec5c080f53416659345d433227344ffa0db3a2322180d968988b83eebd",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/huggingface/trl/commit/bb50ac9edd1064cced86d56979df3e8220077c7e",
+      "observedAt": "2026-09-10T09:36:11Z",
+      "publishedAt": "2026-09-10T09:36:11Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "qgallouedec",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/bb50ac9edd1064cced86d56979df3e8220077c7e",
+      "provenance": {
+        "sourceUrl": "https://github.com/huggingface/trl/commit/bb50ac9edd1064cced86d56979df3e8220077c7e",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "51b26993efffd479bbd7a37f91ddf5c3",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "unslothai/unsloth Commit",
+      "summary": "\n        Windows No Compiler CI: see the intermediates the compiler cleaned up…\n    ",
+      "repoId": "unslothai/unsloth",
+      "repo": "unslothai/unsloth",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "unslothai",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/unslothai/unsloth/commit/a167f284f15a2d7281869e11e16190d5ba0baa01",
+          "observedAt": "2026-09-10T09:31:01Z",
+          "contentHash": "93d4ae351907dcda99b8f4a0c8e5a739cc236760c2e8dd0f1485d60b01467838",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/unslothai/unsloth/commit/a167f284f15a2d7281869e11e16190d5ba0baa01",
+      "observedAt": "2026-09-10T09:31:01Z",
+      "publishedAt": "2026-09-10T09:31:01Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "danielhanchen",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/a167f284f15a2d7281869e11e16190d5ba0baa01",
+      "provenance": {
+        "sourceUrl": "https://github.com/unslothai/unsloth/commit/a167f284f15a2d7281869e11e16190d5ba0baa01",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "e5588d0a608f6f3d9323d7e90c1fc07f",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "unslothai/unsloth Commit",
+      "summary": "\n        CI: trigger Studio smokes on what they observe, run install matrices …\n    ",
+      "repoId": "unslothai/unsloth",
+      "repo": "unslothai/unsloth",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "unslothai",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/unslothai/unsloth/commit/9e8b747b3745472aa332e7a3af260e6f5a266ea8",
+          "observedAt": "2026-09-10T09:30:03Z",
+          "contentHash": "2a4cd417921fc9212da69f91d25bd2ac70ffd03ef33257da9115750e41939875",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/unslothai/unsloth/commit/9e8b747b3745472aa332e7a3af260e6f5a266ea8",
+      "observedAt": "2026-09-10T09:30:03Z",
+      "publishedAt": "2026-09-10T09:30:03Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "danielhanchen",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/9e8b747b3745472aa332e7a3af260e6f5a266ea8",
+      "provenance": {
+        "sourceUrl": "https://github.com/unslothai/unsloth/commit/9e8b747b3745472aa332e7a3af260e6f5a266ea8",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "0c9503967229454f58935f71e5a3feca",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "pytorch/pytorch Commit",
+      "summary": "\n        Revert \"allow horizontal fusion of copies from dynamic inputs into co…\n    ",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/commit/300f0c8298dc4610f1e13f6b7f8e0366fdd04204",
+          "observedAt": "2026-09-10T09:28:14Z",
+          "contentHash": "4a821f1cacf3850df06f7c9d25be61c272712067eeb1622a01be7ba80aba9f93",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/commit/300f0c8298dc4610f1e13f6b7f8e0366fdd04204",
+      "observedAt": "2026-09-10T09:28:14Z",
+      "publishedAt": "2026-09-10T09:28:14Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "pytorchmergebot",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/300f0c8298dc4610f1e13f6b7f8e0366fdd04204",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/commit/300f0c8298dc4610f1e13f6b7f8e0366fdd04204",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "dee7f94a427251a09d5ffd2b52c8fc2a",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "sgl-project/sglang Commit",
+      "summary": "\n        [diffusion] docs: sync snapshot and minimax-h3 subblock features (#38…\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/c9c26d56b2c68a98058312d9d0590dbd94ebdfb7",
+          "observedAt": "2026-09-10T09:23:43Z",
+          "contentHash": "5bcc54800affcdc86886d300d43de9d9ba61aee7c12fb0b34d7345ef620d5a17",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/c9c26d56b2c68a98058312d9d0590dbd94ebdfb7",
+      "observedAt": "2026-09-10T09:23:43Z",
+      "publishedAt": "2026-09-10T09:23:43Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "mickqian",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/c9c26d56b2c68a98058312d9d0590dbd94ebdfb7",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/c9c26d56b2c68a98058312d9d0590dbd94ebdfb7",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "cf3ca620ff685dd2c0f6219d8fdcf8bf",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "huggingface/trl Commit",
+      "summary": "\n        Ensure device agnostic for examples/docs/templates (#6770)\n    ",
+      "repoId": "huggingface/trl",
+      "repo": "huggingface/trl",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "huggingface",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/huggingface/trl/commit/a66e9f6e6857c5e6c75b9abb1a1faa1bdede7727",
+          "observedAt": "2026-09-10T09:22:41Z",
+          "contentHash": "cc9a4031f76d4c21e8e5ed539a5ad4f997fd6f41f3c4f1e639443558c86a585f",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/huggingface/trl/commit/a66e9f6e6857c5e6c75b9abb1a1faa1bdede7727",
+      "observedAt": "2026-09-10T09:22:41Z",
+      "publishedAt": "2026-09-10T09:22:41Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "kaixuanliu",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/a66e9f6e6857c5e6c75b9abb1a1faa1bdede7727",
+      "provenance": {
+        "sourceUrl": "https://github.com/huggingface/trl/commit/a66e9f6e6857c5e6c75b9abb1a1faa1bdede7727",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "b5872a4d07860c56c9c61593bfec8ae7",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "huggingface/trl 架构相关代码变化",
+      "summary": "\n        Align tie_word_embeddings with the reference models (#7130)\n    ",
+      "repoId": "huggingface/trl",
+      "repo": "huggingface/trl",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "huggingface",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/huggingface/trl/commit/0a71f34a409e399da89d629134def4bd6f1da94a",
+          "observedAt": "2026-09-10T09:21:16Z",
+          "contentHash": "a5be54180d33b0cc4d8645bc687ee352d6431ab90d85a59f2d086a8998535faf",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/huggingface/trl/commit/0a71f34a409e399da89d629134def4bd6f1da94a",
+      "observedAt": "2026-09-10T09:21:16Z",
+      "publishedAt": "2026-09-10T09:21:16Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "albertvillanova",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/0a71f34a409e399da89d629134def4bd6f1da94a",
+      "provenance": {
+        "sourceUrl": "https://github.com/huggingface/trl/commit/0a71f34a409e399da89d629134def4bd6f1da94a",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "5e6792443df636ea25f8139e92adce2a",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "vllm-project/vllm 架构相关代码变化",
+      "summary": "\n        [ROCm] Add better kv dtype error discoverability (#55236)\n    ",
+      "repoId": "vllm-project/vllm",
+      "repo": "vllm-project/vllm",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "vllm-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/vllm-project/vllm/commit/6ff479e1f798048829f884b4229f28c9b9b0c8d7",
+          "observedAt": "2026-09-10T09:17:41Z",
+          "contentHash": "f1f45bcc5db28f164a2a544b14fc94ce68653d0b496e2c62745e98c1d14bf161",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm/commit/6ff479e1f798048829f884b4229f28c9b9b0c8d7",
+      "observedAt": "2026-09-10T09:17:41Z",
+      "publishedAt": "2026-09-10T09:17:41Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "giuseppegrossi",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/6ff479e1f798048829f884b4229f28c9b9b0c8d7",
+      "provenance": {
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/6ff479e1f798048829f884b4229f28c9b9b0c8d7",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "3405e6c48395a1f67c693af304bfc632",
+      "family": "technology",
+      "eventType": "tag_created",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "ggml-org/llama.cpp 创建 Tag",
+      "summary": "b10887",
       "repoId": "ggml-org/llama.cpp",
       "repo": "ggml-org/llama.cpp",
       "modelId": null,
@@ -1583,23 +2263,2703 @@ module.exports = {
       "evidence": [
         {
           "field": "event",
-          "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10872",
-          "observedAt": "2026-09-09T07:47:26Z",
-          "contentHash": "9c89941a6c12a2772d121082eb1f65d11a19edf7d81af825ecbfa2b2d1bc34e8",
+          "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10887",
+          "observedAt": "2026-09-10T09:09:36Z",
+          "contentHash": "04de9eaf99282da1ed0f05a0b509bff305c2ea063208f522a8c76d750c4020bc",
           "sourceType": "github_atom"
         }
       ],
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10872",
-      "observedAt": "2026-09-09T07:47:26Z",
-      "publishedAt": "2026-09-09T07:47:26Z",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10887",
+      "observedAt": "2026-09-10T09:09:36Z",
+      "publishedAt": "2026-09-10T09:09:36Z",
       "source": "GitHub",
       "kind": "inference_framework",
       "branch": "master",
-      "author": "github-actions[bot]",
-      "eventIdentity": "tag:github.com,2008:Repository/612354784/b10872",
+      "author": "github-actions",
+      "eventIdentity": "tag:github.com,2008:Repository/612354784/b10887",
       "provenance": {
-        "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10872",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10887",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "f934c0bffbcb72454796344ecb951146",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "huggingface/trl 架构相关代码变化",
+      "summary": "\n        Sync the model config eos token id with the tokenizer in the trainers…\n    ",
+      "repoId": "huggingface/trl",
+      "repo": "huggingface/trl",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "huggingface",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/huggingface/trl/commit/26950083f7ba8f956ca6ec47187beb38a64849b8",
+          "observedAt": "2026-09-10T09:01:53Z",
+          "contentHash": "16c867c1663395fef2beba4202f7e393b02588913507a72f33f8108e07a6d860",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/huggingface/trl/commit/26950083f7ba8f956ca6ec47187beb38a64849b8",
+      "observedAt": "2026-09-10T09:01:53Z",
+      "publishedAt": "2026-09-10T09:01:53Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "albertvillanova",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/26950083f7ba8f956ca6ec47187beb38a64849b8",
+      "provenance": {
+        "sourceUrl": "https://github.com/huggingface/trl/commit/26950083f7ba8f956ca6ec47187beb38a64849b8",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "051eca6fba99b285f0e126a32dabdda8",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "sgl-project/sglang 架构相关代码变化",
+      "summary": "\n        [AMD] Enable Fast Triton Sparse MLA backend (#30575)\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/8a6ab89bf0b90304b3b454a833fcdcaefb777c29",
+          "observedAt": "2026-09-10T08:58:00Z",
+          "contentHash": "94adab62bf2b24287b74b866614157e2decf782df974f62b2ff12b08367911fb",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/8a6ab89bf0b90304b3b454a833fcdcaefb777c29",
+      "observedAt": "2026-09-10T08:58:00Z",
+      "publishedAt": "2026-09-10T08:58:00Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "clintg6",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/8a6ab89bf0b90304b3b454a833fcdcaefb777c29",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/8a6ab89bf0b90304b3b454a833fcdcaefb777c29",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "09e4c3d16ccb6b8856bd282cdaec4b87",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "ggml-org/llama.cpp Commit",
+      "summary": "\n        memory : avoid allocating V cache for indexer (it's not used) (#28330)\n    ",
+      "repoId": "ggml-org/llama.cpp",
+      "repo": "ggml-org/llama.cpp",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "ggml-org",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/311d4211bf1611ff7ca6b67035a4a07c79766efc",
+          "observedAt": "2026-09-10T08:55:46Z",
+          "contentHash": "42892ba03192bc6fa8767b47954a90b5f667ea26056bb64bd5c4b6dba076fa1d",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/commit/311d4211bf1611ff7ca6b67035a4a07c79766efc",
+      "observedAt": "2026-09-10T08:55:46Z",
+      "publishedAt": "2026-09-10T08:55:46Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "master",
+      "author": "fairydreaming",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/311d4211bf1611ff7ca6b67035a4a07c79766efc",
+      "provenance": {
+        "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/311d4211bf1611ff7ca6b67035a4a07c79766efc",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "a5075feefc0a68c8b2a8a5cae87c9c7c",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "sgl-project/sglang Commit",
+      "summary": "\n        Fix the DeepSeek-V4.1 reasoning example and mark the B300 cells verif…\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/5caafd2118b7b198416c5d74b24e1f0aae0346ef",
+          "observedAt": "2026-09-10T08:49:44Z",
+          "contentHash": "8d94bbdfb6b248b7a8d2cd652700398e1f722226b16a526de7b0858c42b9d752",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/5caafd2118b7b198416c5d74b24e1f0aae0346ef",
+      "observedAt": "2026-09-10T08:49:44Z",
+      "publishedAt": "2026-09-10T08:49:44Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "zijiexia",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/5caafd2118b7b198416c5d74b24e1f0aae0346ef",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/5caafd2118b7b198416c5d74b24e1f0aae0346ef",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "3ea3afdbc78cbd9aa3f3e9c3481c95a4",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "microsoft/DeepSpeed Commit",
+      "summary": "\n        [MPS] Update C++ Standard in CPUAdamBuilder  (#8466)\n    ",
+      "repoId": "microsoft/DeepSpeed",
+      "repo": "microsoft/DeepSpeed",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "microsoft",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/deepspeedai/DeepSpeed/commit/bb7ad0d828003c6d34cdf3a363e6351f4e70d47c",
+          "observedAt": "2026-09-10T08:47:03Z",
+          "contentHash": "754c696f7fbaa9cb3552f391fbc7774609c81269142e4ff54e7cd112056f9988",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/deepspeedai/DeepSpeed/commit/bb7ad0d828003c6d34cdf3a363e6351f4e70d47c",
+      "observedAt": "2026-09-10T08:47:03Z",
+      "publishedAt": "2026-09-10T08:47:03Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "master",
+      "author": "jinyouzhi",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/bb7ad0d828003c6d34cdf3a363e6351f4e70d47c",
+      "provenance": {
+        "sourceUrl": "https://github.com/deepspeedai/DeepSpeed/commit/bb7ad0d828003c6d34cdf3a363e6351f4e70d47c",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "b3129dfde3944096f2f8437d215ef7c0",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "unslothai/unsloth Commit",
+      "summary": "\n        Studio: keep an uploaded document's own name instead of replacing it …\n    ",
+      "repoId": "unslothai/unsloth",
+      "repo": "unslothai/unsloth",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "unslothai",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/unslothai/unsloth/commit/89b7ff009d93a3eaf4fa332d4fa6610607c27433",
+          "observedAt": "2026-09-10T08:45:00Z",
+          "contentHash": "83a4b05d98e1921abdcf37e566111f1a4feb01d29d892e0406ae21387d01ce9d",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/unslothai/unsloth/commit/89b7ff009d93a3eaf4fa332d4fa6610607c27433",
+      "observedAt": "2026-09-10T08:45:00Z",
+      "publishedAt": "2026-09-10T08:45:00Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "NilayYadav",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/89b7ff009d93a3eaf4fa332d4fa6610607c27433",
+      "provenance": {
+        "sourceUrl": "https://github.com/unslothai/unsloth/commit/89b7ff009d93a3eaf4fa332d4fa6610607c27433",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "5e23fafb2a2510301bdd1c281b16d38f",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "huggingface/transformers Commit",
+      "summary": "\n        Mirror the registered pytree flatten when building automatic dynamic …\n    ",
+      "repoId": "huggingface/transformers",
+      "repo": "huggingface/transformers",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "huggingface",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/huggingface/transformers/commit/c583a3a116b9394038c951627e2427b5e2b62b11",
+          "observedAt": "2026-09-10T08:39:43Z",
+          "contentHash": "47fb1ad83a0a95b69ef116cd179598f448bff23938dac21e270cf9dd17b5acb3",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/huggingface/transformers/commit/c583a3a116b9394038c951627e2427b5e2b62b11",
+      "observedAt": "2026-09-10T08:39:43Z",
+      "publishedAt": "2026-09-10T08:39:43Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "IlyasMoutawwakil",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/c583a3a116b9394038c951627e2427b5e2b62b11",
+      "provenance": {
+        "sourceUrl": "https://github.com/huggingface/transformers/commit/c583a3a116b9394038c951627e2427b5e2b62b11",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "19f7636e9308d343c1a1df7ba79a046e",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "vllm-project/vllm Commit",
+      "summary": "\n        [BugFix] Retain both replay boundaries so an EAGLE resend of a block-…\n    ",
+      "repoId": "vllm-project/vllm",
+      "repo": "vllm-project/vllm",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "vllm-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/vllm-project/vllm/commit/b28c3e1568bfae930f61d4b24940e47528c85d4a",
+          "observedAt": "2026-09-10T08:39:24Z",
+          "contentHash": "5a0c5f8d1b8236a1ddbedf5f6a1ace03e262fd6ab2dec98a87ec698cb71426e0",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm/commit/b28c3e1568bfae930f61d4b24940e47528c85d4a",
+      "observedAt": "2026-09-10T08:39:24Z",
+      "publishedAt": "2026-09-10T08:39:24Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "tobymao",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/b28c3e1568bfae930f61d4b24940e47528c85d4a",
+      "provenance": {
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/b28c3e1568bfae930f61d4b24940e47528c85d4a",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "c511313037d1c724270c05061cdce824",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "sgl-project/sglang Commit",
+      "summary": "\n        [misc] Update CI permission (#38834)\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/fa6e657b93cbef4b2a62b8c4e82c519381b38d7f",
+          "observedAt": "2026-09-10T08:38:58Z",
+          "contentHash": "0b1fba731a8c9127bca4ee9ce98794af6c01b4a194af0e873acc5451611d746e",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/fa6e657b93cbef4b2a62b8c4e82c519381b38d7f",
+      "observedAt": "2026-09-10T08:38:58Z",
+      "publishedAt": "2026-09-10T08:38:58Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "Fridge003",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/fa6e657b93cbef4b2a62b8c4e82c519381b38d7f",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/fa6e657b93cbef4b2a62b8c4e82c519381b38d7f",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "5980a41c121ffba830531ee8a24d34d9",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "unslothai/unsloth Commit",
+      "summary": "\n        Studio: keep literal <think> text visible when the request turns thin…\n    ",
+      "repoId": "unslothai/unsloth",
+      "repo": "unslothai/unsloth",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "unslothai",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/unslothai/unsloth/commit/1ceffa74a90dbf328d55a02b55d019be1f834b97",
+          "observedAt": "2026-09-10T08:37:27Z",
+          "contentHash": "0bcbb26dc3d86b4bca92f76687bc7cff1671fc540ca46f6dc71818084e319285",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/unslothai/unsloth/commit/1ceffa74a90dbf328d55a02b55d019be1f834b97",
+      "observedAt": "2026-09-10T08:37:27Z",
+      "publishedAt": "2026-09-10T08:37:27Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "NilayYadav",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/1ceffa74a90dbf328d55a02b55d019be1f834b97",
+      "provenance": {
+        "sourceUrl": "https://github.com/unslothai/unsloth/commit/1ceffa74a90dbf328d55a02b55d019be1f834b97",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "0a20f0c460a770f63279faf29694b625",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "unslothai/unsloth Commit",
+      "summary": "\n        Studio: fail a Deep Research run when no step gathered any evidence (…\n    ",
+      "repoId": "unslothai/unsloth",
+      "repo": "unslothai/unsloth",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "unslothai",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/unslothai/unsloth/commit/7ead40fce6adf81fa4a83b3e4a19968d45407a58",
+          "observedAt": "2026-09-10T08:37:16Z",
+          "contentHash": "bbe2b77ea37bfb4a4a77a57bcbedb1fa9da8081b25ba8f97748a3b998727f458",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/unslothai/unsloth/commit/7ead40fce6adf81fa4a83b3e4a19968d45407a58",
+      "observedAt": "2026-09-10T08:37:16Z",
+      "publishedAt": "2026-09-10T08:37:16Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "NilayYadav",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/7ead40fce6adf81fa4a83b3e4a19968d45407a58",
+      "provenance": {
+        "sourceUrl": "https://github.com/unslothai/unsloth/commit/7ead40fce6adf81fa4a83b3e4a19968d45407a58",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "9e36265fe7812f56f650697f604b9d44",
+      "family": "technology",
+      "eventType": "tag_created",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "ggml-org/llama.cpp 创建 Tag",
+      "summary": "b10886",
+      "repoId": "ggml-org/llama.cpp",
+      "repo": "ggml-org/llama.cpp",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "ggml-org",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10886",
+          "observedAt": "2026-09-10T08:36:08Z",
+          "contentHash": "a6c92d7eb1e8f75218a87426608c4b3eb28b91d86ba80cb0c35cd6e0ac31cfbf",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10886",
+      "observedAt": "2026-09-10T08:36:08Z",
+      "publishedAt": "2026-09-10T08:36:08Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "master",
+      "author": "github-actions",
+      "eventIdentity": "tag:github.com,2008:Repository/612354784/b10886",
+      "provenance": {
+        "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10886",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "328c95276d817b64e2ed6a26aae3adc6",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "vllm-project/vllm Commit",
+      "summary": "\n        [Perf][GLM-5.3-Flash] Decode hot-path cleanups: strided KDA recurrent…\n    ",
+      "repoId": "vllm-project/vllm",
+      "repo": "vllm-project/vllm",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "vllm-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/vllm-project/vllm/commit/1768273c13d8e083aa07d48f0fb79c05cec39df5",
+          "observedAt": "2026-09-10T08:28:33Z",
+          "contentHash": "b8f21b2e5eee9a2fb8f1bec868b426ae2094c7e28abf1ac45e89379bedded10b",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm/commit/1768273c13d8e083aa07d48f0fb79c05cec39df5",
+      "observedAt": "2026-09-10T08:28:33Z",
+      "publishedAt": "2026-09-10T08:28:33Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "JaredforReal",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/1768273c13d8e083aa07d48f0fb79c05cec39df5",
+      "provenance": {
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/1768273c13d8e083aa07d48f0fb79c05cec39df5",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "1dc39262918778bb6b659b4fb0cd00ca",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "pytorch/pytorch Commit",
+      "summary": "\n        [cuDNN][varlen] Support causal GQA paged KV serving (#195650)\n    ",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/commit/b86764d1b05f9e6df409dfaac601168669a65dff",
+          "observedAt": "2026-09-10T08:28:07Z",
+          "contentHash": "dacf05f656b54efecef6c873af4d8539990a7b7e8e53db9c47c3aa8ef672cb2b",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/commit/b86764d1b05f9e6df409dfaac601168669a65dff",
+      "observedAt": "2026-09-10T08:28:07Z",
+      "publishedAt": "2026-09-10T08:28:07Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "drisspg",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/b86764d1b05f9e6df409dfaac601168669a65dff",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/commit/b86764d1b05f9e6df409dfaac601168669a65dff",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "14645be1e262c81573d12360ec64d309",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "sgl-project/sglang Commit",
+      "summary": "\n        pyproject(xpu): drop human-eval git dep to unblock image build (#38824)\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/b23db06769ec3cf2b5dd0920aaac1cccc95358bf",
+          "observedAt": "2026-09-10T08:24:43Z",
+          "contentHash": "85ae19029ffa024b2e25df6362aac7c50e16d2ecb04d1eba7a9cd0f7267d3c11",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/b23db06769ec3cf2b5dd0920aaac1cccc95358bf",
+      "observedAt": "2026-09-10T08:24:43Z",
+      "publishedAt": "2026-09-10T08:24:43Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "arathi-hlab",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/b23db06769ec3cf2b5dd0920aaac1cccc95358bf",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/b23db06769ec3cf2b5dd0920aaac1cccc95358bf",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "62f6d915278073cad59f62263f0f103c",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "huggingface/transformers 架构相关代码变化",
+      "summary": "\n        Register activation kernel layers on XPU (#47858)\n    ",
+      "repoId": "huggingface/transformers",
+      "repo": "huggingface/transformers",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "huggingface",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/huggingface/transformers/commit/cb541c21cbb716cf8ec1a9016986ee1428814023",
+          "observedAt": "2026-09-10T08:22:43Z",
+          "contentHash": "ec4627747b71be31dd678c398a757812a9d2573003e32c6d8619902f02a9ef05",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/huggingface/transformers/commit/cb541c21cbb716cf8ec1a9016986ee1428814023",
+      "observedAt": "2026-09-10T08:22:43Z",
+      "publishedAt": "2026-09-10T08:22:43Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "jiqing-feng",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/cb541c21cbb716cf8ec1a9016986ee1428814023",
+      "provenance": {
+        "sourceUrl": "https://github.com/huggingface/transformers/commit/cb541c21cbb716cf8ec1a9016986ee1428814023",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "b587f31290a432c91044b730653e27ae",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "pytorch/pytorch Commit",
+      "summary": "\n        [BE] Extend grouped_mm test coverage (#196075)\n    ",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/commit/3c71eadba6ffd0d19c4524e723afd4cba966517a",
+          "observedAt": "2026-09-10T08:20:57Z",
+          "contentHash": "15cd9d5dc6535694143931790aa504c656a6e2be4a2a7b34c5b7c81c559f7764",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/commit/3c71eadba6ffd0d19c4524e723afd4cba966517a",
+      "observedAt": "2026-09-10T08:20:57Z",
+      "publishedAt": "2026-09-10T08:20:57Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "Isalia20",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/3c71eadba6ffd0d19c4524e723afd4cba966517a",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/commit/3c71eadba6ffd0d19c4524e723afd4cba966517a",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "f32b588338dbbb9b5718fae77743b514",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "vllm-project/vllm 架构相关代码变化",
+      "summary": "\n        [Model][Frontend] Support DeepSeek-V4.1-Flash in Rust and Python fron…\n    ",
+      "repoId": "vllm-project/vllm",
+      "repo": "vllm-project/vllm",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "vllm-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/vllm-project/vllm/commit/b47b01cf3383d50a5fae8569cadcbd0736076234",
+          "observedAt": "2026-09-10T08:15:06Z",
+          "contentHash": "d9774e1920ec606d4e74de2e75cd6027948e2d7e137c834ab12be9d80ac04bef",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm/commit/b47b01cf3383d50a5fae8569cadcbd0736076234",
+      "observedAt": "2026-09-10T08:15:06Z",
+      "publishedAt": "2026-09-10T08:15:06Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "BugenZhao",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/b47b01cf3383d50a5fae8569cadcbd0736076234",
+      "provenance": {
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/b47b01cf3383d50a5fae8569cadcbd0736076234",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "2eecd98bb4d69aeb6d0e1047dcb391de",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "sgl-project/sglang 架构相关代码变化",
+      "summary": "\n        [Test] Add offline Transformers loader compatibility checks (#38336)\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/55b4f4f19506c5571d7c4b04b1b47e85790b6db3",
+          "observedAt": "2026-09-10T08:07:43Z",
+          "contentHash": "5c229103a48d5e772c5cd6d938be9d747311f5821498703e835eefe83d1b7977",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/55b4f4f19506c5571d7c4b04b1b47e85790b6db3",
+      "observedAt": "2026-09-10T08:07:43Z",
+      "publishedAt": "2026-09-10T08:07:43Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "adarshxs",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/55b4f4f19506c5571d7c4b04b1b47e85790b6db3",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/55b4f4f19506c5571d7c4b04b1b47e85790b6db3",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "052a75907d34b3b35d491cd57f1b5e65",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "pytorch/pytorch Commit",
+      "summary": "\n        [inductor][NVGEMM] Generate wider dense EFC candidates (#195539)\n    ",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/commit/fd34cbee1e25fddee44b4076e6cb967e410c0729",
+          "observedAt": "2026-09-10T07:59:18Z",
+          "contentHash": "d32450ad76a2a28eb13d2ccd9306f4a5883ac05dbd33c7c69eab168e3f7eb6b3",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/commit/fd34cbee1e25fddee44b4076e6cb967e410c0729",
+      "observedAt": "2026-09-10T07:59:18Z",
+      "publishedAt": "2026-09-10T07:59:18Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "mlazos",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/fd34cbee1e25fddee44b4076e6cb967e410c0729",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/commit/fd34cbee1e25fddee44b4076e6cb967e410c0729",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "cdc0c85c1ff482243b0d702191466931",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "pytorch/pytorch Commit",
+      "summary": "\n        [inductor][NVGEMM] Support swap_ab reduction epilogues (#195538)\n    ",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/commit/ef2e319c17680588bf6b34874457e41886789cf2",
+          "observedAt": "2026-09-10T07:59:18Z",
+          "contentHash": "f9ae7fc3f32e0ad01ca191359448757f4c9f105e9763f8df6e9fd53b3c845ceb",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/commit/ef2e319c17680588bf6b34874457e41886789cf2",
+      "observedAt": "2026-09-10T07:59:18Z",
+      "publishedAt": "2026-09-10T07:59:18Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "mlazos",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/ef2e319c17680588bf6b34874457e41886789cf2",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/commit/ef2e319c17680588bf6b34874457e41886789cf2",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "b0580b70eea03f2b31319c23cc695741",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "huggingface/transformers Commit",
+      "summary": "\n        [GLM 5.3 Flash] Preserve original names when saving text checkpoints …\n    ",
+      "repoId": "huggingface/transformers",
+      "repo": "huggingface/transformers",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "huggingface",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/huggingface/transformers/commit/e71d8c53973f2b720c97ddcef0b038c18ec19e9f",
+          "observedAt": "2026-09-10T07:59:15Z",
+          "contentHash": "4e998e977723fcbcee4072d34023c5ebd2a9df6447393a30c662f7fd51085e4a",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/huggingface/transformers/commit/e71d8c53973f2b720c97ddcef0b038c18ec19e9f",
+      "observedAt": "2026-09-10T07:59:15Z",
+      "publishedAt": "2026-09-10T07:59:15Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "Dovis01",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/e71d8c53973f2b720c97ddcef0b038c18ec19e9f",
+      "provenance": {
+        "sourceUrl": "https://github.com/huggingface/transformers/commit/e71d8c53973f2b720c97ddcef0b038c18ec19e9f",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "f5b658c4587097de7f70415f5fe727d7",
+      "family": "technology",
+      "eventType": "tag_created",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "ggml-org/llama.cpp 创建 Tag",
+      "summary": "b10885",
+      "repoId": "ggml-org/llama.cpp",
+      "repo": "ggml-org/llama.cpp",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "ggml-org",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10885",
+          "observedAt": "2026-09-10T07:53:44Z",
+          "contentHash": "83203857f21c182cd908e310f2c51a77266a8319d3c419459d8796e2d5df09fb",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10885",
+      "observedAt": "2026-09-10T07:53:44Z",
+      "publishedAt": "2026-09-10T07:53:44Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "master",
+      "author": "github-actions",
+      "eventIdentity": "tag:github.com,2008:Repository/612354784/b10885",
+      "provenance": {
+        "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10885",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "87ea922464f5a3171599ef295f6e6a3f",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "pytorch/pytorch Commit",
+      "summary": "\n        [Test] Add hw_classification and enable XPU for test_overrides.py (#1…\n    ",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/commit/2b33d6510836f2b439f4ff1403316a8ef22b4177",
+          "observedAt": "2026-09-10T07:48:32Z",
+          "contentHash": "3810d0d66605633dcd30fa8d7496026c54a9ee267b176229bdc1571ed8150651",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/commit/2b33d6510836f2b439f4ff1403316a8ef22b4177",
+      "observedAt": "2026-09-10T07:48:32Z",
+      "publishedAt": "2026-09-10T07:48:32Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "tszulist-hbn",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/2b33d6510836f2b439f4ff1403316a8ef22b4177",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/commit/2b33d6510836f2b439f4ff1403316a8ef22b4177",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "0e8d2fef736f4aa0d1375498ad11cce9",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "unslothai/unsloth Commit",
+      "summary": "\n        Block markerless execution-class tool-call promotion in Studio (#10507)\n    ",
+      "repoId": "unslothai/unsloth",
+      "repo": "unslothai/unsloth",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "unslothai",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/unslothai/unsloth/commit/30584ef2d3c8de34778702448c1f8ddb060d79d8",
+          "observedAt": "2026-09-10T07:45:48Z",
+          "contentHash": "e382a7bed2137eac7a5446f227d92b558254d631ff77abdf7ac66e8396c8db46",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/unslothai/unsloth/commit/30584ef2d3c8de34778702448c1f8ddb060d79d8",
+      "observedAt": "2026-09-10T07:45:48Z",
+      "publishedAt": "2026-09-10T07:45:48Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "danielhanchen",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/30584ef2d3c8de34778702448c1f8ddb060d79d8",
+      "provenance": {
+        "sourceUrl": "https://github.com/unslothai/unsloth/commit/30584ef2d3c8de34778702448c1f8ddb060d79d8",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "633398e3b0c9fd152f3fbb6b421d67b5",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "vllm-project/vllm 架构相关代码变化",
+      "summary": "\n        [ROCm][Perf] Kimi-K3 Fused kernels for KDA prefill reland (#54038)\n    ",
+      "repoId": "vllm-project/vllm",
+      "repo": "vllm-project/vllm",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "vllm-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/vllm-project/vllm/commit/9521c60bdc0ccd1264961c284c64f4873335aed1",
+          "observedAt": "2026-09-10T07:37:54Z",
+          "contentHash": "2cca3ced846343cd9bb69fdae845f9626eee6756a560ad7561d8a843a2867f9e",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm/commit/9521c60bdc0ccd1264961c284c64f4873335aed1",
+      "observedAt": "2026-09-10T07:37:54Z",
+      "publishedAt": "2026-09-10T07:37:54Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "kliuae",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/9521c60bdc0ccd1264961c284c64f4873335aed1",
+      "provenance": {
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/9521c60bdc0ccd1264961c284c64f4873335aed1",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "d274a99ae94de01282648603802a9e0d",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "pytorch/pytorch Commit",
+      "summary": "\n        [Test] Refactor `test_indexing.py` (#194731)\n    ",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/commit/7f75edff54996cea928c046bdb93d58ec4dc1cce",
+          "observedAt": "2026-09-10T07:36:57Z",
+          "contentHash": "e15b8d455898bcaaf2b293fe13e16fc6ebb05510575eb9985eca9751a22ec38b",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/commit/7f75edff54996cea928c046bdb93d58ec4dc1cce",
+      "observedAt": "2026-09-10T07:36:57Z",
+      "publishedAt": "2026-09-10T07:36:57Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "pbielak",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/7f75edff54996cea928c046bdb93d58ec4dc1cce",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/commit/7f75edff54996cea928c046bdb93d58ec4dc1cce",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "d501d96471057d68179b7f2ba470ca9e",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "pytorch/pytorch Commit",
+      "summary": "\n        [Test] Make `functorch/test_ac.py` tests device-generic and enable te…\n    ",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/commit/b8b2630a6bfa9a11dd3d505dd2f29e4015d85037",
+          "observedAt": "2026-09-10T07:36:41Z",
+          "contentHash": "883dba6fbf14f2949804dc02c7c8b6ecf93bfc3bfe0e829d4309bf3c2215452f",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/commit/b8b2630a6bfa9a11dd3d505dd2f29e4015d85037",
+      "observedAt": "2026-09-10T07:36:41Z",
+      "publishedAt": "2026-09-10T07:36:41Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "BBBela",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/b8b2630a6bfa9a11dd3d505dd2f29e4015d85037",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/commit/b8b2630a6bfa9a11dd3d505dd2f29e4015d85037",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "188ed75ea0416d70e9a2942d3d74b267",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "vllm-project/vllm 架构相关代码变化",
+      "summary": "\n        [Kernel] Optional Q-norm in fused DSv4 MLA epilogue; group_size=32 fo…\n    ",
+      "repoId": "vllm-project/vllm",
+      "repo": "vllm-project/vllm",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "vllm-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/vllm-project/vllm/commit/be1cb9834b3d74114f4d426068d2bce57c9912a0",
+          "observedAt": "2026-09-10T07:35:59Z",
+          "contentHash": "d1245cd1a6516ea1b43ed039839162463461b8575537b8528cfe257231e8718e",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm/commit/be1cb9834b3d74114f4d426068d2bce57c9912a0",
+      "observedAt": "2026-09-10T07:35:59Z",
+      "publishedAt": "2026-09-10T07:35:59Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "zyongye",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/be1cb9834b3d74114f4d426068d2bce57c9912a0",
+      "provenance": {
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/be1cb9834b3d74114f4d426068d2bce57c9912a0",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "c1d7fd9394cb604374aac6955e11df08",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "pytorch/pytorch Commit",
+      "summary": "\n        [3/N][Test][Refactor] Just reorder `TestControlFlow` class members fo…\n    ",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/commit/2cf680d3367bf6591d8831a631ce261be1ee49d6",
+          "observedAt": "2026-09-10T07:35:32Z",
+          "contentHash": "9e90546590f749fc9fd924dd7868c7b105e4ff6c604610f9c250c5650aa62b44",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/commit/2cf680d3367bf6591d8831a631ce261be1ee49d6",
+      "observedAt": "2026-09-10T07:35:32Z",
+      "publishedAt": "2026-09-10T07:35:32Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "BBBela",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/2cf680d3367bf6591d8831a631ce261be1ee49d6",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/commit/2cf680d3367bf6591d8831a631ce261be1ee49d6",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "bc84ee48ef4d334d23f1239e2fa7dc76",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "pytorch/pytorch Commit",
+      "summary": "\n        [profiler][cuspy] Use the documented forced flush when a field select…\n    ",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/commit/0d8b0b957a9654edba2c34f5bdd5be25a5bea0d7",
+          "observedAt": "2026-09-10T07:32:29Z",
+          "contentHash": "239230b6128f5c60163b5567ed2de130b42e75d4284933f940c2c78255533e40",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/commit/0d8b0b957a9654edba2c34f5bdd5be25a5bea0d7",
+      "observedAt": "2026-09-10T07:32:29Z",
+      "publishedAt": "2026-09-10T07:32:29Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "dolpm",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/0d8b0b957a9654edba2c34f5bdd5be25a5bea0d7",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/commit/0d8b0b957a9654edba2c34f5bdd5be25a5bea0d7",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "4e9bc25cb11fcdadeb9a7aaa490c8b67",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "pytorch/pytorch Commit",
+      "summary": "\n        [Inductor] Remove the mix-order reduction row/column ratio gates + te…\n    ",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/commit/23996bab174deda316e0538d513e38ba3a00cbb6",
+          "observedAt": "2026-09-10T07:29:11Z",
+          "contentHash": "f2a205565cb505b91f633c1afbe2b76c71d9bf0ae56704b43865bcb94f2edeec",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/commit/23996bab174deda316e0538d513e38ba3a00cbb6",
+      "observedAt": "2026-09-10T07:29:11Z",
+      "publishedAt": "2026-09-10T07:29:11Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "oonyshch",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/23996bab174deda316e0538d513e38ba3a00cbb6",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/commit/23996bab174deda316e0538d513e38ba3a00cbb6",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "446d5928f9521ef5ecc1f0f0a5095c69",
+      "family": "technology",
+      "eventType": "tag_created",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "pytorch/pytorch 创建 Tag",
+      "summary": "trunk/23996bab174deda316e0538d513e38ba3a00cbb6",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F23996bab174deda316e0538d513e38ba3a00cbb6",
+          "observedAt": "2026-09-10T07:29:11Z",
+          "contentHash": "8c36515ca0d043334b468a1ec45d1f59575d3b906584c5cac7725142f2472151",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F23996bab174deda316e0538d513e38ba3a00cbb6",
+      "observedAt": "2026-09-10T07:29:11Z",
+      "publishedAt": "2026-09-10T07:29:11Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "oonyshch",
+      "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/23996bab174deda316e0538d513e38ba3a00cbb6",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F23996bab174deda316e0538d513e38ba3a00cbb6",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "028e67bf2e6c006681283a5c164d5399",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "sgl-project/sglang Commit",
+      "summary": "\n        Add INT4 and FP4 lanes to the Ling-3.0-flash-VL cookbook (#38527)\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/9a2f17f41d185614a17f740c006c4aca84c016bf",
+          "observedAt": "2026-09-10T07:23:50Z",
+          "contentHash": "216af57e51235feabd63782fb10004b089c859ccae4b43531aa7512da37cfc65",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/9a2f17f41d185614a17f740c006c4aca84c016bf",
+      "observedAt": "2026-09-10T07:23:50Z",
+      "publishedAt": "2026-09-10T07:23:50Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "JustinTong0323",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/9a2f17f41d185614a17f740c006c4aca84c016bf",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/9a2f17f41d185614a17f740c006c4aca84c016bf",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "69d6a208cb53497d8e2bc89438ba9cb2",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "sgl-project/sglang Commit",
+      "summary": "\n        [NVIDIA] Support flashinfer Mega Moe (#31470)\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/1b77f498a0f7c422782eaccd018fdd850b421cfd",
+          "observedAt": "2026-09-10T07:22:47Z",
+          "contentHash": "a0c51bd3efa3bd3917d265f6cdd9c8f71d6d85e5c396f7ebc55b2a15b0010afc",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/1b77f498a0f7c422782eaccd018fdd850b421cfd",
+      "observedAt": "2026-09-10T07:22:47Z",
+      "publishedAt": "2026-09-10T07:22:47Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "wenscarl",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/1b77f498a0f7c422782eaccd018fdd850b421cfd",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/1b77f498a0f7c422782eaccd018fdd850b421cfd",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "763c20dcb95d021cfc40950fee227f80",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "pytorch/pytorch Commit",
+      "summary": "\n        [Testcase Refactoring]Add hw_classification tags to test_aot_inductor…\n    ",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/commit/877dc97af3a3abbb3cac40d830259b34eb8d9584",
+          "observedAt": "2026-09-10T07:21:06Z",
+          "contentHash": "030594e87ae03275724bb5f016d8e490c4fe615baa54b8aa223f61f9be2c97ec",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/commit/877dc97af3a3abbb3cac40d830259b34eb8d9584",
+      "observedAt": "2026-09-10T07:21:06Z",
+      "publishedAt": "2026-09-10T07:21:06Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "Netlessfish",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/877dc97af3a3abbb3cac40d830259b34eb8d9584",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/commit/877dc97af3a3abbb3cac40d830259b34eb8d9584",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "f515c77d38ab040ad2d8f3294c492879",
+      "family": "technology",
+      "eventType": "tag_created",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "pytorch/pytorch 创建 Tag",
+      "summary": "trunk/877dc97af3a3abbb3cac40d830259b34eb8d9584",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F877dc97af3a3abbb3cac40d830259b34eb8d9584",
+          "observedAt": "2026-09-10T07:21:06Z",
+          "contentHash": "334f8ed1183a163e9e2fd5b95fbe33cb114a02da90ae13da15a8d867863198f7",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F877dc97af3a3abbb3cac40d830259b34eb8d9584",
+      "observedAt": "2026-09-10T07:21:06Z",
+      "publishedAt": "2026-09-10T07:21:06Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "Netlessfish",
+      "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/877dc97af3a3abbb3cac40d830259b34eb8d9584",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F877dc97af3a3abbb3cac40d830259b34eb8d9584",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "75df3aea74cb76b4814f9900106ab6ae",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "sgl-project/sglang 架构相关代码变化",
+      "summary": "\n        Delete cutlass_mla, non-Marlin GPTQ, AWQ AOT kernel, and Dual Chunk F…\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/c0b790cf7fe6dc1516c3ec1f23de9b37baca654a",
+          "observedAt": "2026-09-10T07:12:01Z",
+          "contentHash": "8755ec53f5083f6ce3e3dcf29a39681de02e2672e7659ecdb12a1715ed3a0c12",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/c0b790cf7fe6dc1516c3ec1f23de9b37baca654a",
+      "observedAt": "2026-09-10T07:12:01Z",
+      "publishedAt": "2026-09-10T07:12:01Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "b8zhong",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/c0b790cf7fe6dc1516c3ec1f23de9b37baca654a",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/c0b790cf7fe6dc1516c3ec1f23de9b37baca654a",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "453045a5538e2ee3b13d21e5a60c4a01",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "sgl-project/sglang Commit",
+      "summary": "\n        Fix DeepSeek-V4 routing: sqrtsoftplus underflow and unfloored renorm …\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/7152c143841df01cb8f5d27dd059fd338f958576",
+          "observedAt": "2026-09-10T07:10:50Z",
+          "contentHash": "daee39d6c9d6faea7e06440335b8883b42e38f5af8140dfe98b3462e91cdae97",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/7152c143841df01cb8f5d27dd059fd338f958576",
+      "observedAt": "2026-09-10T07:10:50Z",
+      "publishedAt": "2026-09-10T07:10:50Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "b8zhong",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/7152c143841df01cb8f5d27dd059fd338f958576",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/7152c143841df01cb8f5d27dd059fd338f958576",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "9a046d546622019f46abe473d71a73ce",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "unslothai/unsloth Commit",
+      "summary": "\n        Studio: stop pricing an Anthropic image by its base64 length in KV ad…\n    ",
+      "repoId": "unslothai/unsloth",
+      "repo": "unslothai/unsloth",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "unslothai",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/unslothai/unsloth/commit/db3e48a2ae2c3176b461812c57aef1c1759d7301",
+          "observedAt": "2026-09-10T07:08:09Z",
+          "contentHash": "aca212d50828b8e5b43b91d3349d7d54e4046902238ae7d929d07637ece54d38",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/unslothai/unsloth/commit/db3e48a2ae2c3176b461812c57aef1c1759d7301",
+      "observedAt": "2026-09-10T07:08:09Z",
+      "publishedAt": "2026-09-10T07:08:09Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "NilayYadav",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/db3e48a2ae2c3176b461812c57aef1c1759d7301",
+      "provenance": {
+        "sourceUrl": "https://github.com/unslothai/unsloth/commit/db3e48a2ae2c3176b461812c57aef1c1759d7301",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "b58f051cda967d52f5917447c9ad6010",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "sgl-project/sglang Commit",
+      "summary": "\n        [AMD] Fix the diffusion perf fixture lookup  (#38686)\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/6b2e13bcb02721899dcc495279238fa3c8d42018",
+          "observedAt": "2026-09-10T07:07:08Z",
+          "contentHash": "3400428b6d8a49706d0441de14931974743eee9905e3af49546f7af7a0b52a95",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/6b2e13bcb02721899dcc495279238fa3c8d42018",
+      "observedAt": "2026-09-10T07:07:08Z",
+      "publishedAt": "2026-09-10T07:07:08Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "yctseng0211",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/6b2e13bcb02721899dcc495279238fa3c8d42018",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/6b2e13bcb02721899dcc495279238fa3c8d42018",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "d7b9f2f52241cb24a0364c71767c6d66",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "ggml-org/llama.cpp Commit",
+      "summary": "\n        vulkan : add command-buffer debug labels for GPU profilers (#28101)\n    ",
+      "repoId": "ggml-org/llama.cpp",
+      "repo": "ggml-org/llama.cpp",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "ggml-org",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/72797e89198ab564fd0e6baa54ab196e8dd1d884",
+          "observedAt": "2026-09-10T07:06:07Z",
+          "contentHash": "9f092dc375d9d4260e4044aa7442ed676e2e667ef5c3868bbf896dfc4a5ff076",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/commit/72797e89198ab564fd0e6baa54ab196e8dd1d884",
+      "observedAt": "2026-09-10T07:06:07Z",
+      "publishedAt": "2026-09-10T07:06:07Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "master",
+      "author": "CordellBlanchard",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/72797e89198ab564fd0e6baa54ab196e8dd1d884",
+      "provenance": {
+        "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/72797e89198ab564fd0e6baa54ab196e8dd1d884",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "06e93c16f636eadbcd0196a2eb081c1a",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "vllm-project/vllm Commit",
+      "summary": "\n        [Bugfix] Tolerate misspelled DSML tool_calls wrapper (#56141)\n    ",
+      "repoId": "vllm-project/vllm",
+      "repo": "vllm-project/vllm",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "vllm-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/vllm-project/vllm/commit/9e2570656013a90cb601b391723af4bf9b3207d4",
+          "observedAt": "2026-09-10T07:04:29Z",
+          "contentHash": "db30e689c395061734d0074547e2b525dfe7f73994a47e121bd9c1518f384a67",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm/commit/9e2570656013a90cb601b391723af4bf9b3207d4",
+      "observedAt": "2026-09-10T07:04:29Z",
+      "publishedAt": "2026-09-10T07:04:29Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "sfeng33",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/9e2570656013a90cb601b391723af4bf9b3207d4",
+      "provenance": {
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/9e2570656013a90cb601b391723af4bf9b3207d4",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "275ebd4e1ce29ed41b9b9fbb18636d48",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "unslothai/unsloth 架构相关代码变化",
+      "summary": "\n        Studio: gate GGML_CUDA_P2P on a confirmed NVLink fabric, not a produc…\n    ",
+      "repoId": "unslothai/unsloth",
+      "repo": "unslothai/unsloth",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "unslothai",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/unslothai/unsloth/commit/10a95da9165289e4c1eacef11aaab3bd93f1374e",
+          "observedAt": "2026-09-10T07:03:07Z",
+          "contentHash": "3a5d4a1945e9dbcc06f2c5a839603430396de4b41d84b58f2f6a0f4de3350d34",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/unslothai/unsloth/commit/10a95da9165289e4c1eacef11aaab3bd93f1374e",
+      "observedAt": "2026-09-10T07:03:07Z",
+      "publishedAt": "2026-09-10T07:03:07Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "danielhanchen",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/10a95da9165289e4c1eacef11aaab3bd93f1374e",
+      "provenance": {
+        "sourceUrl": "https://github.com/unslothai/unsloth/commit/10a95da9165289e4c1eacef11aaab3bd93f1374e",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "1f3497a3e2de02968d89c5352a04e0fd",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "sgl-project/sglang Commit",
+      "summary": "\n        [AMD][CI] Fix UMBP test buffer after MoRI upgrade (#38672)\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/bd922bc39b09748d5f0f1c355bb8dcf41c4cc5e1",
+          "observedAt": "2026-09-10T07:02:00Z",
+          "contentHash": "0965cfb59033286a7cc59bfbb97d5bec59a68237e1f4e41ade642001b730762b",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/bd922bc39b09748d5f0f1c355bb8dcf41c4cc5e1",
+      "observedAt": "2026-09-10T07:02:00Z",
+      "publishedAt": "2026-09-10T07:02:00Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "bingxche",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/bd922bc39b09748d5f0f1c355bb8dcf41c4cc5e1",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/bd922bc39b09748d5f0f1c355bb8dcf41c4cc5e1",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "1a67a7c2a5b552606ca1d18a2bb689f9",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "unslothai/unsloth Commit",
+      "summary": "\n        Raise the startup bundle budget to where main actually is (#10702)\n    ",
+      "repoId": "unslothai/unsloth",
+      "repo": "unslothai/unsloth",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "unslothai",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/unslothai/unsloth/commit/b50d53d9a556daddf82fa8a1d4a625c243db954f",
+          "observedAt": "2026-09-10T07:00:54Z",
+          "contentHash": "8f90e96a266d18d411fb901524fb014ff333c55af6a7cfbffc7d046d5fa26931",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/unslothai/unsloth/commit/b50d53d9a556daddf82fa8a1d4a625c243db954f",
+      "observedAt": "2026-09-10T07:00:54Z",
+      "publishedAt": "2026-09-10T07:00:54Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "danielhanchen",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/b50d53d9a556daddf82fa8a1d4a625c243db954f",
+      "provenance": {
+        "sourceUrl": "https://github.com/unslothai/unsloth/commit/b50d53d9a556daddf82fa8a1d4a625c243db954f",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "2d48bc2fc70322ae7677494941872b54",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "sgl-project/sglang 架构相关代码变化",
+      "summary": "\n        [AMD][CI] Drop the dead miles ROCm 7.0 nightly image build (#38694)\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/13fb796c81bc01cf22cdb2c17975f4b31a0f138a",
+          "observedAt": "2026-09-10T07:00:28Z",
+          "contentHash": "8f7bb7fb0fb498b010d6a387a2fc3f2e620529b962e303da548c867aca43c1bd",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/13fb796c81bc01cf22cdb2c17975f4b31a0f138a",
+      "observedAt": "2026-09-10T07:00:28Z",
+      "publishedAt": "2026-09-10T07:00:28Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "michaelzhang-ai",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/13fb796c81bc01cf22cdb2c17975f4b31a0f138a",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/13fb796c81bc01cf22cdb2c17975f4b31a0f138a",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "38e46f4ec6d43fcf072a493e34d9623d",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "unslothai/unsloth Commit",
+      "summary": "\n        Read the installers' own code, not the scripts they emit (#10701)\n    ",
+      "repoId": "unslothai/unsloth",
+      "repo": "unslothai/unsloth",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "unslothai",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/unslothai/unsloth/commit/bd8df9bea4c26e38dc2daadb09db81efa013e706",
+          "observedAt": "2026-09-10T07:00:13Z",
+          "contentHash": "0993b85e9e6e56e55845fcd3c72c5cb0b118c4909e2327b764644432d98b37b7",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/unslothai/unsloth/commit/bd8df9bea4c26e38dc2daadb09db81efa013e706",
+      "observedAt": "2026-09-10T07:00:13Z",
+      "publishedAt": "2026-09-10T07:00:13Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "danielhanchen",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/bd8df9bea4c26e38dc2daadb09db81efa013e706",
+      "provenance": {
+        "sourceUrl": "https://github.com/unslothai/unsloth/commit/bd8df9bea4c26e38dc2daadb09db81efa013e706",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "2d7341e14f92558903ca3496e2641c86",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "sgl-project/sglang Commit",
+      "summary": "\n        [AMD] Restore AMD CI registrations dropped by #37436 (#38581)\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/026e61bd94e7be0f882ff4dbd1e46fd3dc59973d",
+          "observedAt": "2026-09-10T06:59:10Z",
+          "contentHash": "fb3400138cd1162adb75b9b5ad27220dd741b0ebb2af40a2c1ca5542d45cf451",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/026e61bd94e7be0f882ff4dbd1e46fd3dc59973d",
+      "observedAt": "2026-09-10T06:59:10Z",
+      "publishedAt": "2026-09-10T06:59:10Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "michaelzhang-ai",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/026e61bd94e7be0f882ff4dbd1e46fd3dc59973d",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/026e61bd94e7be0f882ff4dbd1e46fd3dc59973d",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "9d039a8120b41d3a76d384024a68ad69",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "sgl-project/sglang 架构相关代码变化",
+      "summary": "\n        [AMD][CI] Publish ROCm 10 release images and kernel wheel (#38763)\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/f3152439d0915e3bc2b06888fb35be15469841db",
+          "observedAt": "2026-09-10T06:57:00Z",
+          "contentHash": "d6e6c559b554dd13f3f376be1831c31918c67b07ce95e8ebc0d15b49e9f2742c",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/f3152439d0915e3bc2b06888fb35be15469841db",
+      "observedAt": "2026-09-10T06:57:00Z",
+      "publishedAt": "2026-09-10T06:57:00Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "michaelzhang-ai",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/f3152439d0915e3bc2b06888fb35be15469841db",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/f3152439d0915e3bc2b06888fb35be15469841db",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "8879febc6e6dfe1f27a79337a62d6385",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "ggml-org/llama.cpp Commit",
+      "summary": "\n        ggml-cpu(s390x): add repack support for q4_0 (#28667)\n    ",
+      "repoId": "ggml-org/llama.cpp",
+      "repo": "ggml-org/llama.cpp",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "ggml-org",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/4ea6d1bb6dac161f70be728983e2cd58e4d9246f",
+          "observedAt": "2026-09-10T06:51:17Z",
+          "contentHash": "8feb862d613aa827e4e4ff2923e9820d514ffda2524b2449a90203fe6b790d68",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/commit/4ea6d1bb6dac161f70be728983e2cd58e4d9246f",
+      "observedAt": "2026-09-10T06:51:17Z",
+      "publishedAt": "2026-09-10T06:51:17Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "master",
+      "author": "taronaeo",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/4ea6d1bb6dac161f70be728983e2cd58e4d9246f",
+      "provenance": {
+        "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/4ea6d1bb6dac161f70be728983e2cd58e4d9246f",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "c85e4843148118105efb914c3b7d942d",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "ggml-org/llama.cpp Commit",
+      "summary": "\n        ggml-cpu(s390x): add Q1_0 vector intrinsic support (#28606)\n    ",
+      "repoId": "ggml-org/llama.cpp",
+      "repo": "ggml-org/llama.cpp",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "ggml-org",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/f1b6fbf35cfa010b0a8d6301fdfccbb7f41bd903",
+          "observedAt": "2026-09-10T06:50:28Z",
+          "contentHash": "1d9e88be2e4ac1026ef18717c3480f06d7fe121f16bfa8dbe6592d0828988684",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/commit/f1b6fbf35cfa010b0a8d6301fdfccbb7f41bd903",
+      "observedAt": "2026-09-10T06:50:28Z",
+      "publishedAt": "2026-09-10T06:50:28Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "master",
+      "author": "taronaeo",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/f1b6fbf35cfa010b0a8d6301fdfccbb7f41bd903",
+      "provenance": {
+        "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/f1b6fbf35cfa010b0a8d6301fdfccbb7f41bd903",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "3bb29968b255dace05905c5e124afee7",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "vllm-project/vllm Commit",
+      "summary": "\n        [Bugfix][MRV2] Initialize DCP metadata after batch partitioning (#55212)\n    ",
+      "repoId": "vllm-project/vllm",
+      "repo": "vllm-project/vllm",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "vllm-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/vllm-project/vllm/commit/83990f5bcc0b5eb08b2f1fd1b109fa8a31b122f3",
+          "observedAt": "2026-09-10T06:50:09Z",
+          "contentHash": "d865bf96c0936cf6c344d9aad78791acd58f37978694eea4d97656df5cf21ca5",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm/commit/83990f5bcc0b5eb08b2f1fd1b109fa8a31b122f3",
+      "observedAt": "2026-09-10T06:50:09Z",
+      "publishedAt": "2026-09-10T06:50:09Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "Sy0307",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/83990f5bcc0b5eb08b2f1fd1b109fa8a31b122f3",
+      "provenance": {
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/83990f5bcc0b5eb08b2f1fd1b109fa8a31b122f3",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "c18a3c1beb3380d9b7ee2842dbdbf4f6",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "ggml-org/llama.cpp 架构相关代码变化",
+      "summary": "\n        model: fix all granite family parameter counts (#28643)\n    ",
+      "repoId": "ggml-org/llama.cpp",
+      "repo": "ggml-org/llama.cpp",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "ggml-org",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/d7e86430a7d5fa4a0a7ee8bfb24d413d87bb240e",
+          "observedAt": "2026-09-10T06:49:56Z",
+          "contentHash": "4e373ccc2109c134c8c7504c36f34f58732ab853f6bbea33e9871e36913da261",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/ggml-org/llama.cpp/commit/d7e86430a7d5fa4a0a7ee8bfb24d413d87bb240e",
+      "observedAt": "2026-09-10T06:49:56Z",
+      "publishedAt": "2026-09-10T06:49:56Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "master",
+      "author": "taronaeo",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/d7e86430a7d5fa4a0a7ee8bfb24d413d87bb240e",
+      "provenance": {
+        "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/d7e86430a7d5fa4a0a7ee8bfb24d413d87bb240e",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "619e299488c5e87c765a6d5f46cc3156",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "NVIDIA/Megatron-LM 架构相关代码变化",
+      "summary": "\n        Support full-iteration CUDA graphs with MFSDP v2 (#7075)\n    ",
+      "repoId": "NVIDIA/Megatron-LM",
+      "repo": "NVIDIA/Megatron-LM",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "NVIDIA",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/8190837c2b6ce176a431bc2a6ffd3439507648a7",
+          "observedAt": "2026-09-10T06:48:30Z",
+          "contentHash": "f8ecb179fc34a82bcedc74f2b7e4391b759debc12d2bf8c7bf4fd46f52e0f56b",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/NVIDIA/Megatron-LM/commit/8190837c2b6ce176a431bc2a6ffd3439507648a7",
+      "observedAt": "2026-09-10T06:48:30Z",
+      "publishedAt": "2026-09-10T06:48:30Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "wujingyue",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/8190837c2b6ce176a431bc2a6ffd3439507648a7",
+      "provenance": {
+        "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/8190837c2b6ce176a431bc2a6ffd3439507648a7",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "f349651c43acd8cb7e7f687ba1e8fe5b",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "vllm-project/vllm 架构相关代码变化",
+      "summary": "\n        [multimodal][feat] add torchaudio backend to AudioResampler (#52598)\n    ",
+      "repoId": "vllm-project/vllm",
+      "repo": "vllm-project/vllm",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "vllm-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/vllm-project/vllm/commit/912d2e79fe8571ded2fcc6ec669d26429f814d7b",
+          "observedAt": "2026-09-10T06:42:38Z",
+          "contentHash": "f13a2ac2b93ed0350b2927b51744fde3ff08dbfa3dd8afcc9b9c2f54ca0e79a8",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm/commit/912d2e79fe8571ded2fcc6ec669d26429f814d7b",
+      "observedAt": "2026-09-10T06:42:38Z",
+      "publishedAt": "2026-09-10T06:42:38Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "JaredforReal",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/912d2e79fe8571ded2fcc6ec669d26429f814d7b",
+      "provenance": {
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/912d2e79fe8571ded2fcc6ec669d26429f814d7b",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "3e1b925fc6a3518b7b92a669c15f84f6",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "vllm-project/vllm 架构相关代码变化",
+      "summary": "\n        [ROCm][Perf] Route large DSV4 sparse prefill to AITER OPUS (#54855)\n    ",
+      "repoId": "vllm-project/vllm",
+      "repo": "vllm-project/vllm",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "vllm-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/vllm-project/vllm/commit/7e917606504f48f22491eb9d04ce50c28618d45f",
+          "observedAt": "2026-09-10T06:39:12Z",
+          "contentHash": "0792a1932d1e0c33696e457368898b0fefe1cee4b4ce338fe27daa07a8aca02c",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm/commit/7e917606504f48f22491eb9d04ce50c28618d45f",
+      "observedAt": "2026-09-10T06:39:12Z",
+      "publishedAt": "2026-09-10T06:39:12Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "jiacao-amd",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/7e917606504f48f22491eb9d04ce50c28618d45f",
+      "provenance": {
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/7e917606504f48f22491eb9d04ce50c28618d45f",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "4e2f0791bb554abce66a973d51f6597f",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "sgl-project/sglang Commit",
+      "summary": "\n        docker(xpu): install libssl-dev so JIT hicache_hash_cpp builds (#38796)\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/a1ec35a3307653d94626302e63dad95b29457dd7",
+          "observedAt": "2026-09-10T06:37:20Z",
+          "contentHash": "46ad50d46602bda3787c67eab5004b233c43c074acdfe7c381f5806bcb940e68",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/a1ec35a3307653d94626302e63dad95b29457dd7",
+      "observedAt": "2026-09-10T06:37:20Z",
+      "publishedAt": "2026-09-10T06:37:20Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "arathi-hlab",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/a1ec35a3307653d94626302e63dad95b29457dd7",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/a1ec35a3307653d94626302e63dad95b29457dd7",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "6d46c5c0a22ca29ff7890eaf3739b88b",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "vllm-project/vllm 架构相关代码变化",
+      "summary": "\n        [MM][CG] Enable encoder CUDA Graph for MiniCPM-V (#42785)\n    ",
+      "repoId": "vllm-project/vllm",
+      "repo": "vllm-project/vllm",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "vllm-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/vllm-project/vllm/commit/442d36031ce710aa2a777c353becb660c57ab2bd",
+          "observedAt": "2026-09-10T06:28:48Z",
+          "contentHash": "cfaa9d380e67348680b1da20d1695abb4dad0a9665d455b190214e7046816b98",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm/commit/442d36031ce710aa2a777c353becb660c57ab2bd",
+      "observedAt": "2026-09-10T06:28:48Z",
+      "publishedAt": "2026-09-10T06:28:48Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "YunzhuLu",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/442d36031ce710aa2a777c353becb660c57ab2bd",
+      "provenance": {
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/442d36031ce710aa2a777c353becb660c57ab2bd",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "49850b121405d4b5904a04df0b59e3ea",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "sgl-project/sglang Commit",
+      "summary": "\n        [HiCache] Fix side pools to use resolved host allocator (#38350)\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/058cca0192e291aa739ec6d6e715077050cf9131",
+          "observedAt": "2026-09-10T06:28:20Z",
+          "contentHash": "116a64483faf6dfcd48c47fa8f8e01200133483c659ae8c583e410e015b3041e",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/058cca0192e291aa739ec6d6e715077050cf9131",
+      "observedAt": "2026-09-10T06:28:20Z",
+      "publishedAt": "2026-09-10T06:28:20Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "alphabetc1",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/058cca0192e291aa739ec6d6e715077050cf9131",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/058cca0192e291aa739ec6d6e715077050cf9131",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "6886728f2ee8f611c5a7101a2d3b3776",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "pytorch/pytorch Commit",
+      "summary": "\n        [XPU] Fix double submission in XPUEvent::record() (#194609)\n    ",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/commit/3d6eb405d52e207230cd759a4e4d916b6dfffa98",
+          "observedAt": "2026-09-10T06:28:02Z",
+          "contentHash": "a5cef99fb408b8134856beeba2e654f1f735a3a228873204fdd48f8d0a38d818",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/commit/3d6eb405d52e207230cd759a4e4d916b6dfffa98",
+      "observedAt": "2026-09-10T06:28:02Z",
+      "publishedAt": "2026-09-10T06:28:02Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "draghan",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/3d6eb405d52e207230cd759a4e4d916b6dfffa98",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/commit/3d6eb405d52e207230cd759a4e4d916b6dfffa98",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "ff9051b9b462bbf208b92442007abea3",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "sgl-project/sglang Commit",
+      "summary": "\n        Add DeepSeek-V4.1 Flash cookbook (#38802)\n    ",
+      "repoId": "sgl-project/sglang",
+      "repo": "sgl-project/sglang",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "sgl-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/sgl-project/sglang/commit/69777c4d36c05a061ae53ffb5b0627ff64218e76",
+          "observedAt": "2026-09-10T06:15:30Z",
+          "contentHash": "509316646340fd15e3b6a6019625a0553450d5aef48c13bf45d7692f470a7fa6",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/sgl-project/sglang/commit/69777c4d36c05a061ae53ffb5b0627ff64218e76",
+      "observedAt": "2026-09-10T06:15:30Z",
+      "publishedAt": "2026-09-10T06:15:30Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "zijiexia",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/69777c4d36c05a061ae53ffb5b0627ff64218e76",
+      "provenance": {
+        "sourceUrl": "https://github.com/sgl-project/sglang/commit/69777c4d36c05a061ae53ffb5b0627ff64218e76",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "1a278c14a76b1affe1741cad272309aa",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "vllm-project/vllm 架构相关代码变化",
+      "summary": "\n        [Model] Add DeepSeek-V4 CPU backend (#55355)\n    ",
+      "repoId": "vllm-project/vllm",
+      "repo": "vllm-project/vllm",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "vllm-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/vllm-project/vllm/commit/c3ccc0e957fbcb1f4b55fb10ff935cf0a114e880",
+          "observedAt": "2026-09-10T06:14:48Z",
+          "contentHash": "f5c7d651adb3d5cf19a242031c63dd368560d39a938815777ca118b490ecb9ff",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm/commit/c3ccc0e957fbcb1f4b55fb10ff935cf0a114e880",
+      "observedAt": "2026-09-10T06:14:48Z",
+      "publishedAt": "2026-09-10T06:14:48Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "bigPYJ1151",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/c3ccc0e957fbcb1f4b55fb10ff935cf0a114e880",
+      "provenance": {
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/c3ccc0e957fbcb1f4b55fb10ff935cf0a114e880",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "80e6f72608de6c1694968ace12a33dc9",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "pytorch/pytorch 架构相关代码变化",
+      "summary": "\n        [fc_quantization] Fix the problematic weights deletion (#194292) (#19…\n    ",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/commit/26da7ba3e7a1c99e67cd560499d6587d98568bc2",
+          "observedAt": "2026-09-10T06:07:29Z",
+          "contentHash": "00c94f13deb8c7657eafefa1f51c5c1b000ec8647e863e0942e514a054115ad5",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/commit/26da7ba3e7a1c99e67cd560499d6587d98568bc2",
+      "observedAt": "2026-09-10T06:07:29Z",
+      "publishedAt": "2026-09-10T06:07:29Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "zijianshen",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/26da7ba3e7a1c99e67cd560499d6587d98568bc2",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/commit/26da7ba3e7a1c99e67cd560499d6587d98568bc2",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "69086c649572ce9a77df029d6487ecdc",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "pytorch/pytorch 架构相关代码变化",
+      "summary": "\n        [native] Compute bmm outer-product kernel offsets in int64 (OOB write…\n    ",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/commit/731d7719df3516c740c70938db8c07f0057b3bc6",
+          "observedAt": "2026-09-10T06:05:13Z",
+          "contentHash": "559d44f10c05e4192e650441c72b5dddab6e6ec739e097643f8e4b61faf48c4e",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/commit/731d7719df3516c740c70938db8c07f0057b3bc6",
+      "observedAt": "2026-09-10T06:05:13Z",
+      "publishedAt": "2026-09-10T06:05:13Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "Roy-Kid",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/731d7719df3516c740c70938db8c07f0057b3bc6",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/commit/731d7719df3516c740c70938db8c07f0057b3bc6",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "a9573a3feac7a992fb9f3d6dfd103346",
+      "family": "technology",
+      "eventType": "architecture_code_change",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "vllm-project/vllm 架构相关代码变化",
+      "summary": "\n        [CI][XPU] Reject CUDA-IPC weight cache on non-CUDA/ROCm platforms (#5…\n    ",
+      "repoId": "vllm-project/vllm",
+      "repo": "vllm-project/vllm",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "vllm-project",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/vllm-project/vllm/commit/49632fb3ac8fa92de2b4626bb8f140ffcc4ab8d3",
+          "observedAt": "2026-09-10T06:05:07Z",
+          "contentHash": "62e0fdd39da648b107b02913894091c18ac03b1210c82a86b4a8cf2c65bc68a3",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/vllm-project/vllm/commit/49632fb3ac8fa92de2b4626bb8f140ffcc4ab8d3",
+      "observedAt": "2026-09-10T06:05:07Z",
+      "publishedAt": "2026-09-10T06:05:07Z",
+      "source": "GitHub",
+      "kind": "inference_framework",
+      "branch": "main",
+      "author": "mayuyuace",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/49632fb3ac8fa92de2b4626bb8f140ffcc4ab8d3",
+      "provenance": {
+        "sourceUrl": "https://github.com/vllm-project/vllm/commit/49632fb3ac8fa92de2b4626bb8f140ffcc4ab8d3",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "beaecbabf1121ffdc93d4573c5885fe8",
+      "family": "technology",
+      "eventType": "commit",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "pytorch/pytorch Commit",
+      "summary": "\n        [dynamo][benchmarks] Fix FSDP policy imports and clean up diffusion b…\n    ",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/commit/ab2eb1bafea2b03fdced398465a1eadd8761e79b",
+          "observedAt": "2026-09-10T06:01:01Z",
+          "contentHash": "81e3a6c7cc48d20563b90ba1c3ab605ad6e7e4cbaea148b98d6f8b2771afc45d",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/commit/ab2eb1bafea2b03fdced398465a1eadd8761e79b",
+      "observedAt": "2026-09-10T06:01:01Z",
+      "publishedAt": "2026-09-10T06:01:01Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "kevzhuo",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/ab2eb1bafea2b03fdced398465a1eadd8761e79b",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/commit/ab2eb1bafea2b03fdced398465a1eadd8761e79b",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -1639,7 +4999,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/d4ef69f848ad1be487526e782bac1cece8c896b7",
       "provenance": {
         "sourceUrl": "https://github.com/unslothai/unsloth/commit/d4ef69f848ad1be487526e782bac1cece8c896b7",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -1679,47 +5039,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/3ac1dd042e9483d047a01e548488fef4337f8202",
       "provenance": {
         "sourceUrl": "https://github.com/pytorch/pytorch/commit/3ac1dd042e9483d047a01e548488fef4337f8202",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "71aa96da5e2fd147a9dd569b227a9ca6",
-      "family": "technology",
-      "eventType": "tag_created",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "pytorch/pytorch 创建 Tag",
-      "summary": "trunk/3ac1dd042e9483d047a01e548488fef4337f8202: Update Metamates merge rule (#196381)",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F3ac1dd042e9483d047a01e548488fef4337f8202",
-          "observedAt": "2026-09-10T05:37:08Z",
-          "contentHash": "364bd74169a08ac3e89b299e5f4fe21b9095daea94cee4d3dedb27d991163250",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F3ac1dd042e9483d047a01e548488fef4337f8202",
-      "observedAt": "2026-09-10T05:37:08Z",
-      "publishedAt": "2026-09-10T05:37:08Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "pytorchupdatebot",
-      "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/3ac1dd042e9483d047a01e548488fef4337f8202",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F3ac1dd042e9483d047a01e548488fef4337f8202",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -1759,7 +5079,47 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/927b3be8ba59a96837f531265f362b86fd4df338",
       "provenance": {
         "sourceUrl": "https://github.com/pytorch/pytorch/commit/927b3be8ba59a96837f531265f362b86fd4df338",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
+      }
+    },
+    {
+      "eventId": "657178bbeacb50b720bd6b1e797465f0",
+      "family": "technology",
+      "eventType": "tag_created",
+      "eventClass": "technical_activity",
+      "trustTier": "technical",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "pytorch/pytorch 创建 Tag",
+      "summary": "viable/strict/1789033813",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": "github_atom",
+      "sourceOwner": "pytorch",
+      "evidence": [
+        {
+          "field": "event",
+          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789033813",
+          "observedAt": "2026-09-10T05:36:28Z",
+          "contentHash": "c8af8289313cb9cdfc4b9068b21ca6cf5266e4b8375c5c0a2485548629c10fae",
+          "sourceType": "github_atom"
+        }
+      ],
+      "url": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789033813",
+      "observedAt": "2026-09-10T05:36:28Z",
+      "publishedAt": "2026-09-10T05:36:28Z",
+      "source": "GitHub",
+      "kind": "training_framework",
+      "branch": "main",
+      "author": "kevzhuo",
+      "eventIdentity": "tag:github.com,2008:Repository/65600975/viable/strict/1789033813",
+      "provenance": {
+        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789033813",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -1799,7 +5159,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/927b3be8ba59a96837f531265f362b86fd4df338",
       "provenance": {
         "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F927b3be8ba59a96837f531265f362b86fd4df338",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -1839,47 +5199,47 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/d779fc9e9a0710d7fd0390b771062922f574ba55",
       "provenance": {
         "sourceUrl": "https://github.com/pytorch/pytorch/commit/d779fc9e9a0710d7fd0390b771062922f574ba55",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
-      "eventId": "1b3799adf9e706c207bfcbacc3d75ddd",
+      "eventId": "70e18b5e17137f806e6cdc4ec39d4eb3",
       "family": "technology",
-      "eventType": "commit",
+      "eventType": "tag_created",
       "eventClass": "technical_activity",
       "trustTier": "technical",
       "priority": "P2",
       "visibility": "primary",
       "isOfficial": false,
       "severity": "normal",
-      "title": "sgl-project/sglang Commit",
-      "summary": "\n        Fix Qwen3.5 GDN multi-item scoring (#33922)\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
+      "title": "pytorch/pytorch 创建 Tag",
+      "summary": "viable/strict/1789032573: [Test][XPU] Enable inductor cases on XPU (#192506)",
+      "repoId": "pytorch/pytorch",
+      "repo": "pytorch/pytorch",
       "modelId": null,
       "modelRef": null,
       "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
+      "sourceOwner": "pytorch",
       "evidence": [
         {
           "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/03e4c06589e35191b740b05d16f25aaaacb086ce",
-          "observedAt": "2026-09-10T05:30:39Z",
-          "contentHash": "e239536ec6267f7d42a41122fe92bd901627a56e83b3514e583e0c57e004f03c",
+          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789032573",
+          "observedAt": "2026-09-10T05:36:08Z",
+          "contentHash": "2da5a16fc0cdb3f556bc7f137ec801a8866cf96c231293046587fd20735a3669",
           "sourceType": "github_atom"
         }
       ],
-      "url": "https://github.com/sgl-project/sglang/commit/03e4c06589e35191b740b05d16f25aaaacb086ce",
-      "observedAt": "2026-09-10T05:30:39Z",
-      "publishedAt": "2026-09-10T05:30:39Z",
+      "url": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789032573",
+      "observedAt": "2026-09-10T05:36:08Z",
+      "publishedAt": "2026-09-10T05:36:08Z",
       "source": "GitHub",
-      "kind": "inference_framework",
+      "kind": "training_framework",
       "branch": "main",
-      "author": "daii-0818",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/03e4c06589e35191b740b05d16f25aaaacb086ce",
+      "author": "daisyden",
+      "eventIdentity": "tag:github.com,2008:Repository/65600975/viable/strict/1789032573",
       "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/03e4c06589e35191b740b05d16f25aaaacb086ce",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789032573",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -1919,47 +5279,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/9d32e095be13d609e90ba7475c5df8ad4157277e",
       "provenance": {
         "sourceUrl": "https://github.com/pytorch/pytorch/commit/9d32e095be13d609e90ba7475c5df8ad4157277e",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "b5019a29367de751ff8898d14b1b76a2",
-      "family": "technology",
-      "eventType": "tag_created",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "pytorch/pytorch 创建 Tag",
-      "summary": "trunk/9d32e095be13d609e90ba7475c5df8ad4157277e",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F9d32e095be13d609e90ba7475c5df8ad4157277e",
-          "observedAt": "2026-09-10T05:26:49Z",
-          "contentHash": "acf3913511f80b2e3aa08eb9acd413901e4a64b37c3e541e578154c21511f0e7",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F9d32e095be13d609e90ba7475c5df8ad4157277e",
-      "observedAt": "2026-09-10T05:26:49Z",
-      "publishedAt": "2026-09-10T05:26:49Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "eellison",
-      "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/9d32e095be13d609e90ba7475c5df8ad4157277e",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F9d32e095be13d609e90ba7475c5df8ad4157277e",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -1999,47 +5319,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/588a813a60448f6f71dfa0e0ecd52cc0bacc7329",
       "provenance": {
         "sourceUrl": "https://github.com/vllm-project/vllm/commit/588a813a60448f6f71dfa0e0ecd52cc0bacc7329",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "83f95f747307aef39e927dd68369514b",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "sgl-project/sglang Commit",
-      "summary": "\n        [router] Raise chat body cap to 32 MB for multimodal payloads (#38735)\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/6f481ad0e36be3ccf15206c56c11862db7579ac0",
-          "observedAt": "2026-09-10T05:14:49Z",
-          "contentHash": "2f827ca073f39230c2fe1ed4e015e0fa2d3a082997f8a7383185f22ef9e89571",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/sgl-project/sglang/commit/6f481ad0e36be3ccf15206c56c11862db7579ac0",
-      "observedAt": "2026-09-10T05:14:49Z",
-      "publishedAt": "2026-09-10T05:14:49Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "sherlockwu",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/6f481ad0e36be3ccf15206c56c11862db7579ac0",
-      "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/6f481ad0e36be3ccf15206c56c11862db7579ac0",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -2079,21 +5359,21 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/479611c0c6118f95d6028a337e69b4713c529843",
       "provenance": {
         "sourceUrl": "https://github.com/vllm-project/vllm/commit/479611c0c6118f95d6028a337e69b4713c529843",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
-      "eventId": "f020fd9d08c122470967047a8e234dce",
+      "eventId": "3314b8eda7f2025f526e885d72e80e20",
       "family": "technology",
-      "eventType": "commit",
+      "eventType": "tag_created",
       "eventClass": "technical_activity",
       "trustTier": "technical",
       "priority": "P2",
       "visibility": "primary",
       "isOfficial": false,
       "severity": "normal",
-      "title": "pytorch/pytorch Commit",
-      "summary": "\n        [Dynamo] Port CPython 3.13 test_grammar to Dynamo test suite (#196482)\n    ",
+      "title": "pytorch/pytorch 创建 Tag",
+      "summary": "viable/strict/1789030332: [Dynamo] Port CPython 3.13 test_grammar to Dynamo test suite (#196482)",
       "repoId": "pytorch/pytorch",
       "repo": "pytorch/pytorch",
       "modelId": null,
@@ -2103,23 +5383,23 @@ module.exports = {
       "evidence": [
         {
           "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/commit/a00a3b5189a09661201138da8ecc749a7bd9ecd1",
+          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789030332",
           "observedAt": "2026-09-10T05:01:47Z",
-          "contentHash": "a4afe3a645946b9e4ebd2ff7d7aa10c77aecbe68060106911cd9ac6bfb1a93cf",
+          "contentHash": "f5c13913bb32fe766c8548c6ccb84b8dc075fd5b6a0fe825c4722f8365512687",
           "sourceType": "github_atom"
         }
       ],
-      "url": "https://github.com/pytorch/pytorch/commit/a00a3b5189a09661201138da8ecc749a7bd9ecd1",
+      "url": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789030332",
       "observedAt": "2026-09-10T05:01:47Z",
       "publishedAt": "2026-09-10T05:01:47Z",
       "source": "GitHub",
       "kind": "training_framework",
       "branch": "main",
       "author": "Rudra-G-23",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/a00a3b5189a09661201138da8ecc749a7bd9ecd1",
+      "eventIdentity": "tag:github.com,2008:Repository/65600975/viable/strict/1789030332",
       "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/commit/a00a3b5189a09661201138da8ecc749a7bd9ecd1",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789030332",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -2159,127 +5439,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/29d0abbc21f11da806ca14970fa8b3ddb757a152",
       "provenance": {
         "sourceUrl": "https://github.com/deepspeedai/DeepSpeed/commit/29d0abbc21f11da806ca14970fa8b3ddb757a152",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "500043d47fe8a54df74f6388eaedbb92",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "sgl-project/sglang Commit",
-      "summary": "\n        [CPU] Fix native KV hash compilation in Xeon image (#34767)\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/01ad27ecd931483c30628ff2a639bd06b6560530",
-          "observedAt": "2026-09-10T04:51:25Z",
-          "contentHash": "f56cbc98568f238dab736807dbcdf1078a3ad56c0d448a17e346cd13bff8d04a",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/sgl-project/sglang/commit/01ad27ecd931483c30628ff2a639bd06b6560530",
-      "observedAt": "2026-09-10T04:51:25Z",
-      "publishedAt": "2026-09-10T04:51:25Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "sagearc",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/01ad27ecd931483c30628ff2a639bd06b6560530",
-      "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/01ad27ecd931483c30628ff2a639bd06b6560530",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "db6c04863a86639fd7694c97bcc15988",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "sgl-project/sglang Commit",
-      "summary": "\n        Add missing test dependencies to pyproject.toml variants (#36098)\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/6ab6df54b96e18f0f1844fff7092e6cded1888bd",
-          "observedAt": "2026-09-10T04:49:16Z",
-          "contentHash": "b0cf62037ff14ba075f43fe92e0ca9a391995c0d9c07d2fd4c3a5d12f2682d20",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/sgl-project/sglang/commit/6ab6df54b96e18f0f1844fff7092e6cded1888bd",
-      "observedAt": "2026-09-10T04:49:16Z",
-      "publishedAt": "2026-09-10T04:49:16Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "arathi-hlab",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/6ab6df54b96e18f0f1844fff7092e6cded1888bd",
-      "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/6ab6df54b96e18f0f1844fff7092e6cded1888bd",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "fab45210bb21aed0d3d73a42c3a5fbaf",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "sgl-project/sglang Commit",
-      "summary": "\n        [AMD] Update v4 args for agentic workload (#38677)\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/c415f977b848aef32c2902cfe62bfd99b69c1e30",
-          "observedAt": "2026-09-10T04:41:05Z",
-          "contentHash": "989eeb436d6793951a10405fe61be46cedbb6e15081c2109234b8f7a83c5c6a8",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/sgl-project/sglang/commit/c415f977b848aef32c2902cfe62bfd99b69c1e30",
-      "observedAt": "2026-09-10T04:41:05Z",
-      "publishedAt": "2026-09-10T04:41:05Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "1am9trash",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/c415f977b848aef32c2902cfe62bfd99b69c1e30",
-      "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/c415f977b848aef32c2902cfe62bfd99b69c1e30",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -2319,11 +5479,11 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/7436c103e9c0994da84f91c519c46051d285d2a8",
       "provenance": {
         "sourceUrl": "https://github.com/unslothai/unsloth/commit/7436c103e9c0994da84f91c519c46051d285d2a8",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
-      "eventId": "0ce94392a11f0be8b5e652c7db55cd3c",
+      "eventId": "4652414ad413975585e3bc45527e1071",
       "family": "technology",
       "eventType": "commit",
       "eventClass": "technical_activity",
@@ -2332,74 +5492,34 @@ module.exports = {
       "visibility": "primary",
       "isOfficial": false,
       "severity": "normal",
-      "title": "pytorch/pytorch Commit",
-      "summary": "\n        Integrate scaled addmm with torch.compile (#195410)\n    ",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
+      "title": "NVIDIA/Megatron-LM Commit",
+      "summary": "\n        Assert the runtime-CP group contract both ways (#6825)\n    ",
+      "repoId": "NVIDIA/Megatron-LM",
+      "repo": "NVIDIA/Megatron-LM",
       "modelId": null,
       "modelRef": null,
       "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
+      "sourceOwner": "NVIDIA",
       "evidence": [
         {
           "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/commit/0e7f619f994b5a7675e48d07b0da1c11424c6e99",
-          "observedAt": "2026-09-10T04:31:17Z",
-          "contentHash": "0019529c1cb592c73feeb576e34fa6883182ac1da1e297e6a0bbe368b1524f21",
+          "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/9be4a57455a08f617596c7a0683bc811a57c336c",
+          "observedAt": "2026-09-10T04:28:05Z",
+          "contentHash": "943f116136d523459928ff2d571b751f71bb9fa987216460a1fc4df8c3f53702",
           "sourceType": "github_atom"
         }
       ],
-      "url": "https://github.com/pytorch/pytorch/commit/0e7f619f994b5a7675e48d07b0da1c11424c6e99",
-      "observedAt": "2026-09-10T04:31:17Z",
-      "publishedAt": "2026-09-10T04:31:17Z",
+      "url": "https://github.com/NVIDIA/Megatron-LM/commit/9be4a57455a08f617596c7a0683bc811a57c336c",
+      "observedAt": "2026-09-10T04:28:05Z",
+      "publishedAt": "2026-09-10T04:28:05Z",
       "source": "GitHub",
       "kind": "training_framework",
       "branch": "main",
-      "author": "drisspg",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/0e7f619f994b5a7675e48d07b0da1c11424c6e99",
+      "author": "ilml",
+      "eventIdentity": "tag:github.com,2008:Grit::Commit/9be4a57455a08f617596c7a0683bc811a57c336c",
       "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/commit/0e7f619f994b5a7675e48d07b0da1c11424c6e99",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "6ee7cd7790e58b3b09122d8870a7eb4d",
-      "family": "technology",
-      "eventType": "tag_created",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "pytorch/pytorch 创建 Tag",
-      "summary": "trunk/0e7f619f994b5a7675e48d07b0da1c11424c6e99: Integrate scaled addmm with torch.compile (#195410)",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F0e7f619f994b5a7675e48d07b0da1c11424c6e99",
-          "observedAt": "2026-09-10T04:31:17Z",
-          "contentHash": "a566802ea7089839f2c423cee56525b7d351c825d20a2ba75e16c33ac59f014c",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F0e7f619f994b5a7675e48d07b0da1c11424c6e99",
-      "observedAt": "2026-09-10T04:31:17Z",
-      "publishedAt": "2026-09-10T04:31:17Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "drisspg",
-      "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/0e7f619f994b5a7675e48d07b0da1c11424c6e99",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F0e7f619f994b5a7675e48d07b0da1c11424c6e99",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/9be4a57455a08f617596c7a0683bc811a57c336c",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -2439,87 +5559,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/2a02f6efe319c885e3ccbcecde402e0028f9ec1e",
       "provenance": {
         "sourceUrl": "https://github.com/vllm-project/vllm/commit/2a02f6efe319c885e3ccbcecde402e0028f9ec1e",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "492e4486d4d63151800eb7573d44e560",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "vllm-project/vllm Commit",
-      "summary": "\n        [feature] Watermarked generation and detection (Gumbel-max algorithm)…\n    ",
-      "repoId": "vllm-project/vllm",
-      "repo": "vllm-project/vllm",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "vllm-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/vllm-project/vllm/commit/ea40bb9e905f8d552281dd1ec074f91865a0a242",
-          "observedAt": "2026-09-10T04:00:15Z",
-          "contentHash": "50b6c35b0dc2be7f3a046c50ab97b46b8a4be76b4bd2607ea4c9eabf13bb2dbf",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/vllm-project/vllm/commit/ea40bb9e905f8d552281dd1ec074f91865a0a242",
-      "observedAt": "2026-09-10T04:00:15Z",
-      "publishedAt": "2026-09-10T04:00:15Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "TQCB",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/ea40bb9e905f8d552281dd1ec074f91865a0a242",
-      "provenance": {
-        "sourceUrl": "https://github.com/vllm-project/vllm/commit/ea40bb9e905f8d552281dd1ec074f91865a0a242",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "b4e183b5ddd7a644ba30b9df8776b956",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "vllm-project/vllm Commit",
-      "summary": "\n        [Refactor] Extract maybe_run_omni() and defer CLI imports past omni e…\n    ",
-      "repoId": "vllm-project/vllm",
-      "repo": "vllm-project/vllm",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "vllm-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/vllm-project/vllm/commit/8c34a372323b3becc92c183257d195562882ef1a",
-          "observedAt": "2026-09-10T03:21:58Z",
-          "contentHash": "6840c170000d256d9c9f6306818006d94cdbd31d5cc5dd8e8a521bab2cc059eb",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/vllm-project/vllm/commit/8c34a372323b3becc92c183257d195562882ef1a",
-      "observedAt": "2026-09-10T03:21:58Z",
-      "publishedAt": "2026-09-10T03:21:58Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "zvier",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/8c34a372323b3becc92c183257d195562882ef1a",
-      "provenance": {
-        "sourceUrl": "https://github.com/vllm-project/vllm/commit/8c34a372323b3becc92c183257d195562882ef1a",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -2559,7 +5599,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/785061815b3e116332a610cc520574a7d2dbea69",
       "provenance": {
         "sourceUrl": "https://github.com/unslothai/unsloth/commit/785061815b3e116332a610cc520574a7d2dbea69",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -2599,87 +5639,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/3b33aacf37a86b1e54f750d6120389de34880d9f",
       "provenance": {
         "sourceUrl": "https://github.com/unslothai/unsloth/commit/3b33aacf37a86b1e54f750d6120389de34880d9f",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "f53a542e6d26801acc500c8f70fadcd1",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "sgl-project/sglang Commit",
-      "summary": "\n        [Simulator] Give the OFFLINE/BLOCKING comparison tolerances real head…\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/2f7393f0d245bfaa8ebe0b9d0533432e6b3bd9ed",
-          "observedAt": "2026-09-10T03:10:38Z",
-          "contentHash": "c15175d1b19ab651c934d3695bc7ecc3f15ef9517e517f480b425cc81a0d324c",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/sgl-project/sglang/commit/2f7393f0d245bfaa8ebe0b9d0533432e6b3bd9ed",
-      "observedAt": "2026-09-10T03:10:38Z",
-      "publishedAt": "2026-09-10T03:10:38Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "alisonshao",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/2f7393f0d245bfaa8ebe0b9d0533432e6b3bd9ed",
-      "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/2f7393f0d245bfaa8ebe0b9d0533432e6b3bd9ed",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "ebd572bfd01f1440c50f5e6366ef2a49",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "pytorch/pytorch 架构相关代码变化",
-      "summary": "\n        [c10d] Tear down on a NCCL timeout regardless of RETHROW_CUDA_ERRORS,…\n    ",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/commit/05022acc8d39a91f0a4013dbef4b18f90fd4a956",
-          "observedAt": "2026-09-10T03:07:11Z",
-          "contentHash": "01c4211f3bda6997f79c361b8f99d3a5c0ddf1ee09f5e63ade99a49f3f276068",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/commit/05022acc8d39a91f0a4013dbef4b18f90fd4a956",
-      "observedAt": "2026-09-10T03:07:11Z",
-      "publishedAt": "2026-09-10T03:07:11Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "kaanbaloglu",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/05022acc8d39a91f0a4013dbef4b18f90fd4a956",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/commit/05022acc8d39a91f0a4013dbef4b18f90fd4a956",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -2719,87 +5679,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/05022acc8d39a91f0a4013dbef4b18f90fd4a956",
       "provenance": {
         "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F05022acc8d39a91f0a4013dbef4b18f90fd4a956",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "f4641e006787fe1e58721e721772021e",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "vllm-project/vllm 架构相关代码变化",
-      "summary": "\n        [CI][XPU] skip test_models_text on XPU (#56038)\n    ",
-      "repoId": "vllm-project/vllm",
-      "repo": "vllm-project/vllm",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "vllm-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/vllm-project/vllm/commit/6e1d051fc942cc83b72ee5a173786baf6666700a",
-          "observedAt": "2026-09-10T03:03:09Z",
-          "contentHash": "8239e81c3de9f6ae8eddecef0d3e8afc483b1cb4170027ab4518cf25814726c2",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/vllm-project/vllm/commit/6e1d051fc942cc83b72ee5a173786baf6666700a",
-      "observedAt": "2026-09-10T03:03:09Z",
-      "publishedAt": "2026-09-10T03:03:09Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "mayuyuace",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/6e1d051fc942cc83b72ee5a173786baf6666700a",
-      "provenance": {
-        "sourceUrl": "https://github.com/vllm-project/vllm/commit/6e1d051fc942cc83b72ee5a173786baf6666700a",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "3837061aa88cdfd93682e9361005fb12",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "vllm-project/vllm 架构相关代码变化",
-      "summary": "\n        [CI][XPU] Disable model runner V2 for XPU quantization test for some …\n    ",
-      "repoId": "vllm-project/vllm",
-      "repo": "vllm-project/vllm",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "vllm-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/vllm-project/vllm/commit/5c0aeb5954be3384ea17ebdb8bb21719f538492a",
-          "observedAt": "2026-09-10T03:02:57Z",
-          "contentHash": "a8225d7a01cd4b12713ed60a89024dfc8eb7ac3a25b39eb6312f2c299754a00c",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/vllm-project/vllm/commit/5c0aeb5954be3384ea17ebdb8bb21719f538492a",
-      "observedAt": "2026-09-10T03:02:57Z",
-      "publishedAt": "2026-09-10T03:02:57Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "chaojun-zhang",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/5c0aeb5954be3384ea17ebdb8bb21719f538492a",
-      "provenance": {
-        "sourceUrl": "https://github.com/vllm-project/vllm/commit/5c0aeb5954be3384ea17ebdb8bb21719f538492a",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -2839,47 +5719,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/d4550898cc1a0fd32c6defe1f79de6d5183cf6d0",
       "provenance": {
         "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/d4550898cc1a0fd32c6defe1f79de6d5183cf6d0",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "531b8517617d5a783d3756c81cdfb414",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "vllm-project/vllm Commit",
-      "summary": "\n        [Security][Rust Frontend] Normalize HTTP method labels in metrics (#5…\n    ",
-      "repoId": "vllm-project/vllm",
-      "repo": "vllm-project/vllm",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "vllm-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/vllm-project/vllm/commit/3735c2d5f5248259482b9045c34fb7a8a3892352",
-          "observedAt": "2026-09-10T02:54:40Z",
-          "contentHash": "07d05734f298a313611972db418dcc85cf8aa69da8895ad664f2f1f667ace76f",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/vllm-project/vllm/commit/3735c2d5f5248259482b9045c34fb7a8a3892352",
-      "observedAt": "2026-09-10T02:54:40Z",
-      "publishedAt": "2026-09-10T02:54:40Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "jperezdealgaba",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/3735c2d5f5248259482b9045c34fb7a8a3892352",
-      "provenance": {
-        "sourceUrl": "https://github.com/vllm-project/vllm/commit/3735c2d5f5248259482b9045c34fb7a8a3892352",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -2919,171 +5759,11 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/ab6960778477dd1e05e4f35078d75a056b469001",
       "provenance": {
         "sourceUrl": "https://github.com/unslothai/unsloth/commit/ab6960778477dd1e05e4f35078d75a056b469001",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
-      "eventId": "2c95a49bd801301f4721eda70094e793",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "sgl-project/sglang Commit",
-      "summary": "\n        [Config] msgspec.Struct for the config tier (#38753)\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/f1a512c51c73ab660cf41e1af3110c7c11e3b600",
-          "observedAt": "2026-09-10T02:41:19Z",
-          "contentHash": "ec001e996a5d4e2d02803ff9ef9d1796262444b8b871ff4808f70002b9a27fa2",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/sgl-project/sglang/commit/f1a512c51c73ab660cf41e1af3110c7c11e3b600",
-      "observedAt": "2026-09-10T02:41:19Z",
-      "publishedAt": "2026-09-10T02:41:19Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "ch-wan",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/f1a512c51c73ab660cf41e1af3110c7c11e3b600",
-      "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/f1a512c51c73ab660cf41e1af3110c7c11e3b600",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "2e8c2a61d8e8a1579541295d495adfe8",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "pytorch/pytorch 架构相关代码变化",
-      "summary": "\n        [PrismNet][ROCm] Return the empty result from CK flash attention on a…\n    ",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/commit/d8ae8d5990dc2a34d044f313d788ae0dc3fbb668",
-          "observedAt": "2026-09-10T02:39:40Z",
-          "contentHash": "d0d850982c2db4bec1f42c94650ed509055a7fc32b29095a0544e9a452bd8f37",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/commit/d8ae8d5990dc2a34d044f313d788ae0dc3fbb668",
-      "observedAt": "2026-09-10T02:39:40Z",
-      "publishedAt": "2026-09-10T02:39:40Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "rmiao",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/d8ae8d5990dc2a34d044f313d788ae0dc3fbb668",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/commit/d8ae8d5990dc2a34d044f313d788ae0dc3fbb668",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "1728e6fc32ce4f2a78d01053528b6493",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "sgl-project/sglang 架构相关代码变化",
-      "summary": "\n        [AMD] ci: move the miles nightlies from rocm700 to rocm10 (#37495)\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/106cc561f9b3d883264a76799ef00880573f9a50",
-          "observedAt": "2026-09-10T02:37:34Z",
-          "contentHash": "682c6988c8d8df62df245dd0caa28673d34b7ba0790de9d364fbf38c476f9fb5",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/sgl-project/sglang/commit/106cc561f9b3d883264a76799ef00880573f9a50",
-      "observedAt": "2026-09-10T02:37:34Z",
-      "publishedAt": "2026-09-10T02:37:34Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "XinyuJiangCMU",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/106cc561f9b3d883264a76799ef00880573f9a50",
-      "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/106cc561f9b3d883264a76799ef00880573f9a50",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "0e9070728b1e82eead87ae7dc38df9d4",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "pytorch/pytorch Commit",
-      "summary": "\n        [BE][Ez]: Enable some optin cpp20 range features for AOT ArrayRef (#1…\n    ",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/commit/33c16aba36bdcd7b7ecc564eed443fab09ffdaf8",
-          "observedAt": "2026-09-10T02:35:40Z",
-          "contentHash": "92058bf77445163cc13d595c6ad24fa9723bf3ecd3bb6021005bc5e971959bec",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/commit/33c16aba36bdcd7b7ecc564eed443fab09ffdaf8",
-      "observedAt": "2026-09-10T02:35:40Z",
-      "publishedAt": "2026-09-10T02:35:40Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "Skylion007",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/33c16aba36bdcd7b7ecc564eed443fab09ffdaf8",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/commit/33c16aba36bdcd7b7ecc564eed443fab09ffdaf8",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "d589e099fa03cf2732711650be9ccf20",
+      "eventId": "806325c80efc7fd5c798266a728be9d6",
       "family": "technology",
       "eventType": "tag_created",
       "eventClass": "technical_activity",
@@ -3093,7 +5773,7 @@ module.exports = {
       "isOfficial": false,
       "severity": "normal",
       "title": "pytorch/pytorch 创建 Tag",
-      "summary": "trunk/33c16aba36bdcd7b7ecc564eed443fab09ffdaf8",
+      "summary": "viable/strict/1789022478",
       "repoId": "pytorch/pytorch",
       "repo": "pytorch/pytorch",
       "modelId": null,
@@ -3103,63 +5783,23 @@ module.exports = {
       "evidence": [
         {
           "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F33c16aba36bdcd7b7ecc564eed443fab09ffdaf8",
-          "observedAt": "2026-09-10T02:35:40Z",
-          "contentHash": "16134d1b62c96eee39bc1f528ddf249c76ef409757c8131f5cf5ceb6c0b685f6",
+          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789022478",
+          "observedAt": "2026-09-10T02:39:40Z",
+          "contentHash": "593a7b2c2359545f280c981a1d043c61bc2844e57e27ba7d48e9f4e4bd836f93",
           "sourceType": "github_atom"
         }
       ],
-      "url": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F33c16aba36bdcd7b7ecc564eed443fab09ffdaf8",
-      "observedAt": "2026-09-10T02:35:40Z",
-      "publishedAt": "2026-09-10T02:35:40Z",
+      "url": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789022478",
+      "observedAt": "2026-09-10T02:39:40Z",
+      "publishedAt": "2026-09-10T02:39:40Z",
       "source": "GitHub",
       "kind": "training_framework",
       "branch": "main",
-      "author": "Skylion007",
-      "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/33c16aba36bdcd7b7ecc564eed443fab09ffdaf8",
+      "author": "rmiao",
+      "eventIdentity": "tag:github.com,2008:Repository/65600975/viable/strict/1789022478",
       "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F33c16aba36bdcd7b7ecc564eed443fab09ffdaf8",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "3df119b8380d109046d3846e2198c09b",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "sgl-project/sglang Commit",
-      "summary": "\n        [Config] One writer for the declaration stash; no exception to the wr…\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/53dc77ff4e2b5e52259f1a764604d9be5418def8",
-          "observedAt": "2026-09-10T02:22:06Z",
-          "contentHash": "7875e01e9b8b1947fe62056728573d2caaeaede46ff827333b13db242d14444b",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/sgl-project/sglang/commit/53dc77ff4e2b5e52259f1a764604d9be5418def8",
-      "observedAt": "2026-09-10T02:22:06Z",
-      "publishedAt": "2026-09-10T02:22:06Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "ch-wan",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/53dc77ff4e2b5e52259f1a764604d9be5418def8",
-      "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/53dc77ff4e2b5e52259f1a764604d9be5418def8",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789022478",
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -3199,7 +5839,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/aa9b579fd3f64555be763379517a488df913433e",
       "provenance": {
         "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/aa9b579fd3f64555be763379517a488df913433e",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -3239,127 +5879,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/92141b327848f15402947053701c174784aeb3f9",
       "provenance": {
         "sourceUrl": "https://github.com/unslothai/unsloth/commit/92141b327848f15402947053701c174784aeb3f9",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "70fa1a3b60dae0ba5aff625ea362f032",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "sgl-project/sglang Commit",
-      "summary": "\n        docker(xpu): drop redundant setvars.sh from torch_memory_saver RUN (#…\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/9a1b1d2d5e26b6f1aca26d89982a0ef377ed472e",
-          "observedAt": "2026-09-10T02:14:50Z",
-          "contentHash": "74fe50b79375ffa2aac083c54e59b67db387f26c29f9c45693ec4d245c9d82a9",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/sgl-project/sglang/commit/9a1b1d2d5e26b6f1aca26d89982a0ef377ed472e",
-      "observedAt": "2026-09-10T02:14:50Z",
-      "publishedAt": "2026-09-10T02:14:50Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "arathi-hlab",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/9a1b1d2d5e26b6f1aca26d89982a0ef377ed472e",
-      "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/9a1b1d2d5e26b6f1aca26d89982a0ef377ed472e",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "a0b6508a248ffa0c95a476ccbb004620",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "sgl-project/sglang Commit",
-      "summary": "\n        [XPU][Fix] Pack device-pointer tables as uint64 to avoid 64-bit addre…\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/fd596a474c0f41a2338c6969a719b82918579eb5",
-          "observedAt": "2026-09-10T02:12:18Z",
-          "contentHash": "3b82be96ebe48393ef5d2d5db9fdd1d9e075b1a18b5a74b385c7794d26bcf16f",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/sgl-project/sglang/commit/fd596a474c0f41a2338c6969a719b82918579eb5",
-      "observedAt": "2026-09-10T02:12:18Z",
-      "publishedAt": "2026-09-10T02:12:18Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "dayanandav",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/fd596a474c0f41a2338c6969a719b82918579eb5",
-      "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/fd596a474c0f41a2338c6969a719b82918579eb5",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "93c825a515d63dd73245fcaced099281",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "vllm-project/vllm Commit",
-      "summary": "\n        [Rust Frontend] Strongly type wire dtypes and multimodal modalities (…\n    ",
-      "repoId": "vllm-project/vllm",
-      "repo": "vllm-project/vllm",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "vllm-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/vllm-project/vllm/commit/41cffa9af0b7317d71838262004186b68e976773",
-          "observedAt": "2026-09-10T02:11:22Z",
-          "contentHash": "4bbe162a2927353137b06f9876292d5245f11abc26bde7dd7bea5cba293b8620",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/vllm-project/vllm/commit/41cffa9af0b7317d71838262004186b68e976773",
-      "observedAt": "2026-09-10T02:11:22Z",
-      "publishedAt": "2026-09-10T02:11:22Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "BugenZhao",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/41cffa9af0b7317d71838262004186b68e976773",
-      "provenance": {
-        "sourceUrl": "https://github.com/vllm-project/vllm/commit/41cffa9af0b7317d71838262004186b68e976773",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -3399,7 +5919,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/0166cc878b106546adc78214da952f1aa6f5d02b",
       "provenance": {
         "sourceUrl": "https://github.com/deepspeedai/DeepSpeed/commit/0166cc878b106546adc78214da952f1aa6f5d02b",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -3439,87 +5959,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/5daeffebee5f4ea6aa0114881bfd8bd7cc80eed8",
       "provenance": {
         "sourceUrl": "https://github.com/deepspeedai/DeepSpeed/commit/5daeffebee5f4ea6aa0114881bfd8bd7cc80eed8",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "e89a923535ed8cb31d6046f4e022c213",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "sgl-project/sglang Commit",
-      "summary": "\n        [CI] Temporarily disable GB300 tests (#38770)\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/3700c4ee26a1df3fd27e10a4a83d40d991d87d6b",
-          "observedAt": "2026-09-10T01:31:00Z",
-          "contentHash": "a74c63fe06b7327184c28d6482184238579fa938c0bfdb12282c3439be1114e5",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/sgl-project/sglang/commit/3700c4ee26a1df3fd27e10a4a83d40d991d87d6b",
-      "observedAt": "2026-09-10T01:31:00Z",
-      "publishedAt": "2026-09-10T01:31:00Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "alisonshao",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/3700c4ee26a1df3fd27e10a4a83d40d991d87d6b",
-      "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/3700c4ee26a1df3fd27e10a4a83d40d991d87d6b",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "4a1be373646aebe60d1734fbda654cfe",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "vllm-project/vllm Commit",
-      "summary": "\n        [Rust Frontend] Resolve unified and split parser selections consisten…\n    ",
-      "repoId": "vllm-project/vllm",
-      "repo": "vllm-project/vllm",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "vllm-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/vllm-project/vllm/commit/285cbce6bd0982f5936d729d3fa2ac310dfeca59",
-          "observedAt": "2026-09-10T01:19:30Z",
-          "contentHash": "412bcbed2d53acaa096f80cf4d207422f5604773784716db8c0b82a2ba7af045",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/vllm-project/vllm/commit/285cbce6bd0982f5936d729d3fa2ac310dfeca59",
-      "observedAt": "2026-09-10T01:19:30Z",
-      "publishedAt": "2026-09-10T01:19:30Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "BugenZhao",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/285cbce6bd0982f5936d729d3fa2ac310dfeca59",
-      "provenance": {
-        "sourceUrl": "https://github.com/vllm-project/vllm/commit/285cbce6bd0982f5936d729d3fa2ac310dfeca59",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -3559,7 +5999,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/3b1c14ac1d9cc45476cac1c2612a112239841708",
       "provenance": {
         "sourceUrl": "https://github.com/deepspeedai/DeepSpeed/commit/3b1c14ac1d9cc45476cac1c2612a112239841708",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -3599,207 +6039,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/f992dc24bc1a1d2baf870bab17c8fac2c0414315",
       "provenance": {
         "sourceUrl": "https://github.com/deepspeedai/DeepSpeed/commit/f992dc24bc1a1d2baf870bab17c8fac2c0414315",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "3bbe2f296a1eb6dd04266cde80f3cb4f",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "sgl-project/sglang Commit",
-      "summary": "\n        [diffusion] feat: spill large tensors over shared memory like numpy a…\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/7f0285093e390ee55b937884480a9510a7ebc702",
-          "observedAt": "2026-09-10T01:14:06Z",
-          "contentHash": "afda61443c69465e6ecf33fc83c09acb4ae78aa722bcf669a5fc02b54169cb24",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/sgl-project/sglang/commit/7f0285093e390ee55b937884480a9510a7ebc702",
-      "observedAt": "2026-09-10T01:14:06Z",
-      "publishedAt": "2026-09-10T01:14:06Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "mickqian",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/7f0285093e390ee55b937884480a9510a7ebc702",
-      "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/7f0285093e390ee55b937884480a9510a7ebc702",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "868df4dc4047e3ad540370d6853ef432",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "sgl-project/sglang Commit",
-      "summary": "\n        [diffusion] refactor: refactor utility ownership and document helper …\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/ce555ed82a0762f05aa2ac2aa9fac9db158c7123",
-          "observedAt": "2026-09-10T01:11:01Z",
-          "contentHash": "b0c7671e712b708efb959c55dd4ea394fc027c72ad5a4cb0ee0461fa93020801",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/sgl-project/sglang/commit/ce555ed82a0762f05aa2ac2aa9fac9db158c7123",
-      "observedAt": "2026-09-10T01:11:01Z",
-      "publishedAt": "2026-09-10T01:11:01Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "mickqian",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/ce555ed82a0762f05aa2ac2aa9fac9db158c7123",
-      "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/ce555ed82a0762f05aa2ac2aa9fac9db158c7123",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "02a2448f495de732099ba9b0660f736e",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "sgl-project/sglang Commit",
-      "summary": "\n        [NPU]Support GLM5.2 and FP8 DSA&Indexer kvcache for 950 (#38250)\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/3ff226ba8f869cc83fdb68bd8bb2949f25ea58a0",
-          "observedAt": "2026-09-10T01:10:10Z",
-          "contentHash": "6928c50a729b1c6c698adb8ffa2e96e5f61bf1262e3b5317e86c6df4adaf1f7b",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/sgl-project/sglang/commit/3ff226ba8f869cc83fdb68bd8bb2949f25ea58a0",
-      "observedAt": "2026-09-10T01:10:10Z",
-      "publishedAt": "2026-09-10T01:10:10Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "LinyuanLi0046",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/3ff226ba8f869cc83fdb68bd8bb2949f25ea58a0",
-      "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/3ff226ba8f869cc83fdb68bd8bb2949f25ea58a0",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "b98c3969049348a04e58b18d28f6314e",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "sgl-project/sglang Commit",
-      "summary": "\n        [CI] Answer unrecognized slash commands instead of skipping silently …\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/a7e00b7576151d6f653bc53eeb51ccb7a99467dc",
-          "observedAt": "2026-09-10T01:01:18Z",
-          "contentHash": "b799e1082b91bcc1ebc67fcfffa6927389712deecf2307977be3caa152313f0b",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/sgl-project/sglang/commit/a7e00b7576151d6f653bc53eeb51ccb7a99467dc",
-      "observedAt": "2026-09-10T01:01:18Z",
-      "publishedAt": "2026-09-10T01:01:18Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "alisonshao",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/a7e00b7576151d6f653bc53eeb51ccb7a99467dc",
-      "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/a7e00b7576151d6f653bc53eeb51ccb7a99467dc",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "751b3fe48849d04d72647ae129a4177c",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "sgl-project/sglang Commit",
-      "summary": "\n        [AMD] Parallelize aiter spec-decode KV index building over token bloc…\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/92d831d3d7ef07bc19494f2e5a18f37add2c4435",
-          "observedAt": "2026-09-10T00:53:53Z",
-          "contentHash": "b50af12cf7ebff4234e903cc3a25560eb7911aadab0be90c88743dec151244e1",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/sgl-project/sglang/commit/92d831d3d7ef07bc19494f2e5a18f37add2c4435",
-      "observedAt": "2026-09-10T00:53:53Z",
-      "publishedAt": "2026-09-10T00:53:53Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "zijiecode",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/92d831d3d7ef07bc19494f2e5a18f37add2c4435",
-      "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/92d831d3d7ef07bc19494f2e5a18f37add2c4435",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -3839,127 +6079,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/250510075/v1.13.0",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/trl/releases/tag/v1.13.0",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "1818f14f94697921e661fba604230ac8",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "pytorch/pytorch 架构相关代码变化",
-      "summary": "\n        Revert \"[BE][Ez]: Use cuda::std::midpoint for clarity, safety and per…\n    ",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/commit/9d5a71058272ed10ee6156c9f570711864e07e38",
-          "observedAt": "2026-09-10T00:45:59Z",
-          "contentHash": "034e7140f5b89cf1e526adb6f13c17830f951cec4ee31998e37cbd127a817e69",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/commit/9d5a71058272ed10ee6156c9f570711864e07e38",
-      "observedAt": "2026-09-10T00:45:59Z",
-      "publishedAt": "2026-09-10T00:45:59Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "pytorchmergebot",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/9d5a71058272ed10ee6156c9f570711864e07e38",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/commit/9d5a71058272ed10ee6156c9f570711864e07e38",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "f278d51871b03415bf4e11c2fa45d957",
-      "family": "technology",
-      "eventType": "tag_created",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "pytorch/pytorch 创建 Tag",
-      "summary": "trunk/9d5a71058272ed10ee6156c9f570711864e07e38",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F9d5a71058272ed10ee6156c9f570711864e07e38",
-          "observedAt": "2026-09-10T00:45:59Z",
-          "contentHash": "e5e917959f214e22ac94e3e3a469627bd8cf864991207e435945f5fabb0b462f",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F9d5a71058272ed10ee6156c9f570711864e07e38",
-      "observedAt": "2026-09-10T00:45:59Z",
-      "publishedAt": "2026-09-10T00:45:59Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "pytorchmergebot",
-      "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/9d5a71058272ed10ee6156c9f570711864e07e38",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F9d5a71058272ed10ee6156c9f570711864e07e38",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "2514ea70bf6769068cc1e9e634dd1e55",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "vllm-project/vllm Commit",
-      "summary": "\n        [XPU] update triton-xpu 3.8.0 shim layer (#56014)\n    ",
-      "repoId": "vllm-project/vllm",
-      "repo": "vllm-project/vllm",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "vllm-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/vllm-project/vllm/commit/978c22f54b3076ccd98becc9318011104451fec7",
-          "observedAt": "2026-09-10T00:44:11Z",
-          "contentHash": "ba9ed402b2a2f1124885e7e711232621becdeccd4bfbd165228fdcc949013ec3",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/vllm-project/vllm/commit/978c22f54b3076ccd98becc9318011104451fec7",
-      "observedAt": "2026-09-10T00:44:11Z",
-      "publishedAt": "2026-09-10T00:44:11Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "yma11",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/978c22f54b3076ccd98becc9318011104451fec7",
-      "provenance": {
-        "sourceUrl": "https://github.com/vllm-project/vllm/commit/978c22f54b3076ccd98becc9318011104451fec7",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -3999,47 +6119,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/e47e6d981101d0009238b9c597315dd123ca2081",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/trl/commit/e47e6d981101d0009238b9c597315dd123ca2081",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "057bbb0ae10d0c3576b6fb96b8668284",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "sgl-project/sglang 架构相关代码变化",
-      "summary": "\n        [DSv4] Integrate TRT-LLM DSv4 Attention for SM100/103 (#30805)\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/880d6fa64d187ae1d14b58101e2a776853492f26",
-          "observedAt": "2026-09-10T00:40:07Z",
-          "contentHash": "d457a29377c9682b06b064b78592fd23c69b81bf705888aa9f2662f5c091cafc",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/sgl-project/sglang/commit/880d6fa64d187ae1d14b58101e2a776853492f26",
-      "observedAt": "2026-09-10T00:40:07Z",
-      "publishedAt": "2026-09-10T00:40:07Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "akhilg-nv",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/880d6fa64d187ae1d14b58101e2a776853492f26",
-      "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/880d6fa64d187ae1d14b58101e2a776853492f26",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -4079,7 +6159,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/3d9261f1fec9f9a8140099c78a65c7da73dce79c",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/trl/commit/3d9261f1fec9f9a8140099c78a65c7da73dce79c",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -4119,7 +6199,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/5eac8a7f3d5c3e414c9d49e1c28624afc18db1de",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/trl/commit/5eac8a7f3d5c3e414c9d49e1c28624afc18db1de",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -4159,47 +6239,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/1b0a2e4197a0fef375defb711f83b0bb9577a300",
       "provenance": {
         "sourceUrl": "https://github.com/unslothai/unsloth/commit/1b0a2e4197a0fef375defb711f83b0bb9577a300",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "257934ade0ee68a679b8540bbd470bf1",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "pytorch/pytorch Commit",
-      "summary": "\n        [BE] Remove test for reciprocal, logaddexp and logaddexp2 from test_m…\n    ",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/commit/a62499b17156f49891b06593215215c6df2f94b4",
-          "observedAt": "2026-09-10T00:32:56Z",
-          "contentHash": "9f0b2326efebcdf2e84e668b03863c6ca8b9c0a23206d05d8db733157af0eff5",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/commit/a62499b17156f49891b06593215215c6df2f94b4",
-      "observedAt": "2026-09-10T00:32:56Z",
-      "publishedAt": "2026-09-10T00:32:56Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "Isalia20",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/a62499b17156f49891b06593215215c6df2f94b4",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/commit/a62499b17156f49891b06593215215c6df2f94b4",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -4239,7 +6279,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/3e52c137a7a070cae24e0e0da0dc367ecda6040a",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/trl/commit/3e52c137a7a070cae24e0e0da0dc367ecda6040a",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -4279,87 +6319,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/38f78af7c3dc0a9435de51e0dd4c0d7f9216e2ac",
       "provenance": {
         "sourceUrl": "https://github.com/unslothai/unsloth/commit/38f78af7c3dc0a9435de51e0dd4c0d7f9216e2ac",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "aa199bee24ee05c8dd225202888f600e",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "pytorch/pytorch Commit",
-      "summary": "\n        [dynamo] Port CPython 3.13 test_abc to Dynamo (#196373)\n    ",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/commit/072a88d63b2d6c0e6112c1d9b522c458a2700afe",
-          "observedAt": "2026-09-10T00:11:11Z",
-          "contentHash": "4e26733e1b80aaf5f83e4eb15079541dc1832e9d8936191c8e097005a9d3524f",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/commit/072a88d63b2d6c0e6112c1d9b522c458a2700afe",
-      "observedAt": "2026-09-10T00:11:11Z",
-      "publishedAt": "2026-09-10T00:11:11Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "lalit10",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/072a88d63b2d6c0e6112c1d9b522c458a2700afe",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/commit/072a88d63b2d6c0e6112c1d9b522c458a2700afe",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "d0613fd783c0f82baf1c9fbf9c8cf336",
-      "family": "technology",
-      "eventType": "tag_created",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "pytorch/pytorch 创建 Tag",
-      "summary": "trunk/072a88d63b2d6c0e6112c1d9b522c458a2700afe: [dynamo] Port CPython 3.13 test_abc to Dynamo (#196373)",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F072a88d63b2d6c0e6112c1d9b522c458a2700afe",
-          "observedAt": "2026-09-10T00:11:11Z",
-          "contentHash": "dd419bc70a75ce2a9967769432281f80219e61de6dbb81e4b3517d5e5c874042",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F072a88d63b2d6c0e6112c1d9b522c458a2700afe",
-      "observedAt": "2026-09-10T00:11:11Z",
-      "publishedAt": "2026-09-10T00:11:11Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "lalit10",
-      "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/072a88d63b2d6c0e6112c1d9b522c458a2700afe",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F072a88d63b2d6c0e6112c1d9b522c458a2700afe",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -4399,47 +6359,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/d9caa7c414ffda37f742e459d098c98fe649378a",
       "provenance": {
         "sourceUrl": "https://github.com/unslothai/unsloth/commit/d9caa7c414ffda37f742e459d098c98fe649378a",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "b552e13c24f7811e5036d03f70d44f48",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "pytorch/pytorch Commit",
-      "summary": "\n        [Dynamo] Port CPython 3.13 test_copy to Dynamo test suite (#196456)\n    ",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/commit/2671203b4082c3c24d38b10cc44c8f7c9b98833b",
-          "observedAt": "2026-09-10T00:05:03Z",
-          "contentHash": "8df442364cf9514e48cd3fe9c7fd1056e869937bcc3aabe5c85a8bb7d24d90f8",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/commit/2671203b4082c3c24d38b10cc44c8f7c9b98833b",
-      "observedAt": "2026-09-10T00:05:03Z",
-      "publishedAt": "2026-09-10T00:05:03Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "VTASU",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/2671203b4082c3c24d38b10cc44c8f7c9b98833b",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/commit/2671203b4082c3c24d38b10cc44c8f7c9b98833b",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -4479,7 +6399,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/65600975/viable/strict/1789014646",
       "provenance": {
         "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/viable%2Fstrict%2F1789014646",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -4519,167 +6439,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/65600975/trunk/2671203b4082c3c24d38b10cc44c8f7c9b98833b",
       "provenance": {
         "sourceUrl": "https://github.com/pytorch/pytorch/releases/tag/trunk%2F2671203b4082c3c24d38b10cc44c8f7c9b98833b",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "7713078774e27016845b33426ae5f18a",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "pytorch/pytorch Commit",
-      "summary": "\n        [BE] [Typo] amsk -> mask (#196483)\n    ",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/commit/fdc553da26c359c942caef0e42272e726b12b0aa",
-          "observedAt": "2026-09-10T00:02:14Z",
-          "contentHash": "824a3396ddfc5341cf779dae56e3c276b9a0f7b67727a916a5314206e0d93876",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/commit/fdc553da26c359c942caef0e42272e726b12b0aa",
-      "observedAt": "2026-09-10T00:02:14Z",
-      "publishedAt": "2026-09-10T00:02:14Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "benediktjohannes",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/fdc553da26c359c942caef0e42272e726b12b0aa",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/commit/fdc553da26c359c942caef0e42272e726b12b0aa",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "52fa2e8f7cf1f2da3fad5a835ca0c6bf",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "sgl-project/sglang 架构相关代码变化",
-      "summary": "\n        Add Opt-In for GLM-5.3 Flash breakable prefill CUDA graphs (#38522)\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/0084030179bfba86bfeb6d43f7997d4076329d2c",
-          "observedAt": "2026-09-10T00:02:08Z",
-          "contentHash": "dc55b09e990ba1cbbdfc925c4a08407bf92970b46466456938824e4c0d84b81c",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/sgl-project/sglang/commit/0084030179bfba86bfeb6d43f7997d4076329d2c",
-      "observedAt": "2026-09-10T00:02:08Z",
-      "publishedAt": "2026-09-10T00:02:08Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "willhu-jpg",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/0084030179bfba86bfeb6d43f7997d4076329d2c",
-      "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/0084030179bfba86bfeb6d43f7997d4076329d2c",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "01103896c0b72877ab67f0b36293abd1",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "pytorch/pytorch Commit",
-      "summary": "\n        Use qualified type name in getset readonly-write error message (#195496)\n    ",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/commit/168fb6f17eeb1fdb50068ffd1eb32ceb16bb9635",
-          "observedAt": "2026-09-09T23:56:57Z",
-          "contentHash": "3cadaf5c52152319bd178b167120bca4298f9b793da7f7566fdabb112579bb8b",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/commit/168fb6f17eeb1fdb50068ffd1eb32ceb16bb9635",
-      "observedAt": "2026-09-09T23:56:57Z",
-      "publishedAt": "2026-09-09T23:56:57Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "guilhermeleobas",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/168fb6f17eeb1fdb50068ffd1eb32ceb16bb9635",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/commit/168fb6f17eeb1fdb50068ffd1eb32ceb16bb9635",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "62bbb0b47ff2df529ef894a842d455c4",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "pytorch/pytorch 架构相关代码变化",
-      "summary": "\n        Model `property` in PropertyVariable (#194642)\n    ",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/commit/8c1fdef937c17943da61f10c6b7c3b69ebc65903",
-          "observedAt": "2026-09-09T23:56:57Z",
-          "contentHash": "212a73e70f04958e5d7023dd2022071412d692c1fa208a8d225804a38443e5dc",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/commit/8c1fdef937c17943da61f10c6b7c3b69ebc65903",
-      "observedAt": "2026-09-09T23:56:57Z",
-      "publishedAt": "2026-09-09T23:56:57Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "guilhermeleobas",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/8c1fdef937c17943da61f10c6b7c3b69ebc65903",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/commit/8c1fdef937c17943da61f10c6b7c3b69ebc65903",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -4719,7 +6479,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/07991ea89fa2d58f44c726e4e18cd0eafc87a187",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/trl/commit/07991ea89fa2d58f44c726e4e18cd0eafc87a187",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -4759,7 +6519,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/6c66357d5cd975af210f0dd126819291daf8663b",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/trl/commit/6c66357d5cd975af210f0dd126819291daf8663b",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -4799,127 +6559,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/1780eed62d62935df30b0a9e01083df79bc82b5f",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/trl/commit/1780eed62d62935df30b0a9e01083df79bc82b5f",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "12ba208bc6ea50fda680d696af0dd6eb",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "vllm-project/vllm Commit",
-      "summary": "\n        [Bugfix][Parser] Seed-OSS turn-boundary tokens + boundary-fallback te…\n    ",
-      "repoId": "vllm-project/vllm",
-      "repo": "vllm-project/vllm",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "vllm-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/vllm-project/vllm/commit/65f3fca5683b4c7d48906ff8b2fd44903ec5dba6",
-          "observedAt": "2026-09-09T23:29:30Z",
-          "contentHash": "9d59de1a334410f75fd50c7df7202d5fe82d13a07d43f549a4c8c735a081840c",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/vllm-project/vllm/commit/65f3fca5683b4c7d48906ff8b2fd44903ec5dba6",
-      "observedAt": "2026-09-09T23:29:30Z",
-      "publishedAt": "2026-09-09T23:29:30Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "Xarbirus",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/65f3fca5683b4c7d48906ff8b2fd44903ec5dba6",
-      "provenance": {
-        "sourceUrl": "https://github.com/vllm-project/vllm/commit/65f3fca5683b4c7d48906ff8b2fd44903ec5dba6",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "b1758900fff8b9eb09f3f87ea5af589c",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "pytorch/pytorch Commit",
-      "summary": "\n        Revert \"[PERFORMANCE] [NN] Change `torch._C._get_tracing_state()` to …\n    ",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/commit/8cec3c0cf2c77ceec72d4d1b4063413d54192d08",
-          "observedAt": "2026-09-09T23:28:29Z",
-          "contentHash": "a7523343d15c60a78f7045fdf4c1d48f082f0bf156d03d7fe5579b9453b27ab6",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/commit/8cec3c0cf2c77ceec72d4d1b4063413d54192d08",
-      "observedAt": "2026-09-09T23:28:29Z",
-      "publishedAt": "2026-09-09T23:28:29Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "pytorchmergebot",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/8cec3c0cf2c77ceec72d4d1b4063413d54192d08",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/commit/8cec3c0cf2c77ceec72d4d1b4063413d54192d08",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "55daaa316f9a169c56c387039fccb00e",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "pytorch/pytorch Commit",
-      "summary": "\n        [BE] Fix B007 unused loop control variables in tools/, torchgen/ and …\n    ",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/commit/63bd3d6f5368a0d0c33330261aa150027e134af0",
-          "observedAt": "2026-09-09T23:27:09Z",
-          "contentHash": "aac4ff6561a0eb0a9c2ef5d2cdfc43c6b8e0058d1ca78f5466eaf1ccac93d33e",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/commit/63bd3d6f5368a0d0c33330261aa150027e134af0",
-      "observedAt": "2026-09-09T23:27:09Z",
-      "publishedAt": "2026-09-09T23:27:09Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "HumphreySun98",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/63bd3d6f5368a0d0c33330261aa150027e134af0",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/commit/63bd3d6f5368a0d0c33330261aa150027e134af0",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -4959,7 +6599,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/afbeb6fc20ec728ba39810bff5a29faf5463e87e",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/trl/commit/afbeb6fc20ec728ba39810bff5a29faf5463e87e",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -4999,7 +6639,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/8a8c14fa077303db3ab82e5d065276a3a1446bf1",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/trl/commit/8a8c14fa077303db3ab82e5d065276a3a1446bf1",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -5039,87 +6679,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/8c27071812e3057039b5113f853605f772390d02",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/trl/commit/8c27071812e3057039b5113f853605f772390d02",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "86cdbe729c1576104d42efc81ac50f1c",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "pytorch/pytorch Commit",
-      "summary": "\n        [Inductor][Host-side TMA] Make the static launcher tolerate triton/CU…\n    ",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/commit/c1793878c860239e18dba1aaaf0660a945824539",
-          "observedAt": "2026-09-09T23:22:19Z",
-          "contentHash": "35efcd39fe24f13b1c54efe218d825b6eeb0633422f0606d0757c81c37010e49",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/commit/c1793878c860239e18dba1aaaf0660a945824539",
-      "observedAt": "2026-09-09T23:22:19Z",
-      "publishedAt": "2026-09-09T23:22:19Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "jananisriram",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/c1793878c860239e18dba1aaaf0660a945824539",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/commit/c1793878c860239e18dba1aaaf0660a945824539",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "f77c035f8ab899b35648b8c0d6352301",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "sgl-project/sglang 架构相关代码变化",
-      "summary": "\n        [CI] Install helion 1.4.0 for the KDA Helion kernel tests (#38688)\n    ",
-      "repoId": "sgl-project/sglang",
-      "repo": "sgl-project/sglang",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "sgl-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/sgl-project/sglang/commit/2092f6df05960c52d9df1994b0af812c2fc6544a",
-          "observedAt": "2026-09-09T23:00:17Z",
-          "contentHash": "d6fdd79430429ed093e35e0d993c18fd31cb04a627b81f550283f14fb5716f9e",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/sgl-project/sglang/commit/2092f6df05960c52d9df1994b0af812c2fc6544a",
-      "observedAt": "2026-09-09T23:00:17Z",
-      "publishedAt": "2026-09-09T23:00:17Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "mmangkad",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/2092f6df05960c52d9df1994b0af812c2fc6544a",
-      "provenance": {
-        "sourceUrl": "https://github.com/sgl-project/sglang/commit/2092f6df05960c52d9df1994b0af812c2fc6544a",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -5159,7 +6719,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/aa89588dc63ad5f4354614e94c2851759ebb617e",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/trl/commit/aa89588dc63ad5f4354614e94c2851759ebb617e",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -5199,7 +6759,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/1c257a457e80bfb56aaa1f27994a64a906c97e1c",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/trl/commit/1c257a457e80bfb56aaa1f27994a64a906c97e1c",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -5239,47 +6799,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/a891b38e7fe20e0479a5027628c1ffccff039f19",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/trl/commit/a891b38e7fe20e0479a5027628c1ffccff039f19",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "9da9ccfa438ed7a170d5a382b83c1b14",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "vllm-project/vllm Commit",
-      "summary": "\n        [Cohere] Bound remaining request priorities to the MessagePack int64 …\n    ",
-      "repoId": "vllm-project/vllm",
-      "repo": "vllm-project/vllm",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "vllm-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/vllm-project/vllm/commit/4ebf61ebda8dc8bf090bd4ee14d2855f694111b0",
-          "observedAt": "2026-09-09T22:57:01Z",
-          "contentHash": "efc2332abbec65c60619a19da7e35dd26769c1367ccb7bdef8730ebd8f951a79",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/vllm-project/vllm/commit/4ebf61ebda8dc8bf090bd4ee14d2855f694111b0",
-      "observedAt": "2026-09-09T22:57:01Z",
-      "publishedAt": "2026-09-09T22:57:01Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "taneem-ibrahim",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/4ebf61ebda8dc8bf090bd4ee14d2855f694111b0",
-      "provenance": {
-        "sourceUrl": "https://github.com/vllm-project/vllm/commit/4ebf61ebda8dc8bf090bd4ee14d2855f694111b0",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -5319,7 +6839,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/d403f1af72e313e23103f8fc31a50b254b66c2cc",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/trl/commit/d403f1af72e313e23103f8fc31a50b254b66c2cc",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -5359,407 +6879,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/b033f88b2800987cae1efc53e744719bfbd8e623",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/trl/commit/b033f88b2800987cae1efc53e744719bfbd8e623",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "2aa078f7a2df7600a265ff1ffffbad99",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "huggingface/trl Commit",
-      "summary": "\n        Fix typos in help strings and error messages (#7146)\n    ",
-      "repoId": "huggingface/trl",
-      "repo": "huggingface/trl",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "huggingface",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/huggingface/trl/commit/89269ed6bf00fdd0f1a40b465f18da5cb1bee57a",
-          "observedAt": "2026-09-09T22:50:45Z",
-          "contentHash": "7c9ef94c032d9437ab9080e12f30ce989210b0caec71801a19ac8cc02c9b94ec",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/huggingface/trl/commit/89269ed6bf00fdd0f1a40b465f18da5cb1bee57a",
-      "observedAt": "2026-09-09T22:50:45Z",
-      "publishedAt": "2026-09-09T22:50:45Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "qgallouedec",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/89269ed6bf00fdd0f1a40b465f18da5cb1bee57a",
-      "provenance": {
-        "sourceUrl": "https://github.com/huggingface/trl/commit/89269ed6bf00fdd0f1a40b465f18da5cb1bee57a",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "739b6df335364e48b1f1996cbeacb928",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "vllm-project/vllm 架构相关代码变化",
-      "summary": "\n        [Performance][ROCm]  Integrate aiter indexer scoring and top-k kernel…\n    ",
-      "repoId": "vllm-project/vllm",
-      "repo": "vllm-project/vllm",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "vllm-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/vllm-project/vllm/commit/83252ea899c6538eaa0c1fb31f28a92c661bbffc",
-          "observedAt": "2026-09-09T22:40:33Z",
-          "contentHash": "b79564d1bde0be383ce0fc9eff3f5c45cffee893b1dad63aebcdb0206cf66cc1",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/vllm-project/vllm/commit/83252ea899c6538eaa0c1fb31f28a92c661bbffc",
-      "observedAt": "2026-09-09T22:40:33Z",
-      "publishedAt": "2026-09-09T22:40:33Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "ykamiset",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/83252ea899c6538eaa0c1fb31f28a92c661bbffc",
-      "provenance": {
-        "sourceUrl": "https://github.com/vllm-project/vllm/commit/83252ea899c6538eaa0c1fb31f28a92c661bbffc",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "b6ba02d642e4e19b717e61afef3d061c",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "pytorch/pytorch 架构相关代码变化",
-      "summary": "\n        [ROCm] Cache BMM outer-product warp size (#196368)\n    ",
-      "repoId": "pytorch/pytorch",
-      "repo": "pytorch/pytorch",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "pytorch",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/pytorch/pytorch/commit/4d3ac9e8118d09bab1f3666cc9b42b07067bc0f2",
-          "observedAt": "2026-09-09T22:39:14Z",
-          "contentHash": "7dff2be9a143e8a40ab1cadde960fe0b1fe7bedbde4c916782b0dbc572fe4668",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/pytorch/pytorch/commit/4d3ac9e8118d09bab1f3666cc9b42b07067bc0f2",
-      "observedAt": "2026-09-09T22:39:14Z",
-      "publishedAt": "2026-09-09T22:39:14Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "naromero77amd",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/4d3ac9e8118d09bab1f3666cc9b42b07067bc0f2",
-      "provenance": {
-        "sourceUrl": "https://github.com/pytorch/pytorch/commit/4d3ac9e8118d09bab1f3666cc9b42b07067bc0f2",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "3b8df3eaea6c4208b3dfede862aec7b6",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "huggingface/trl 架构相关代码变化",
-      "summary": "\n        Realign duplicated comments across the trainers (#7145)\n    ",
-      "repoId": "huggingface/trl",
-      "repo": "huggingface/trl",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "huggingface",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/huggingface/trl/commit/9bb9921590ea8d06084b4f88872082684939c603",
-          "observedAt": "2026-09-09T22:38:28Z",
-          "contentHash": "015c01dd77c4fda8305b2e50ede6434821ce5f3f9a2ea0ceb6089866c38e7fa7",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/huggingface/trl/commit/9bb9921590ea8d06084b4f88872082684939c603",
-      "observedAt": "2026-09-09T22:38:28Z",
-      "publishedAt": "2026-09-09T22:38:28Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "qgallouedec",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/9bb9921590ea8d06084b4f88872082684939c603",
-      "provenance": {
-        "sourceUrl": "https://github.com/huggingface/trl/commit/9bb9921590ea8d06084b4f88872082684939c603",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "227f7b7c7d09dc0dcc37b47c308ed773",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "vllm-project/vllm 架构相关代码变化",
-      "summary": "\n        [ROCm][CI] Split MI300 Distributed Compile by graph partition mode (#…\n    ",
-      "repoId": "vllm-project/vllm",
-      "repo": "vllm-project/vllm",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "vllm-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/vllm-project/vllm/commit/6983a0883dc831d33ffa2713b955159894a350d7",
-          "observedAt": "2026-09-09T22:07:51Z",
-          "contentHash": "9406dd58a527a9d318e7fa723b4ca22f6361a8d4fbf811fe00026feb7029736e",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/vllm-project/vllm/commit/6983a0883dc831d33ffa2713b955159894a350d7",
-      "observedAt": "2026-09-09T22:07:51Z",
-      "publishedAt": "2026-09-09T22:07:51Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "aarushjain29",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/6983a0883dc831d33ffa2713b955159894a350d7",
-      "provenance": {
-        "sourceUrl": "https://github.com/vllm-project/vllm/commit/6983a0883dc831d33ffa2713b955159894a350d7",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "32b80e3912e5c06f53359923e081f77f",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "unslothai/unsloth Commit",
-      "summary": "\n        Studio: keep GGUF compaction when the catalog row goes stale (#10158)\n    ",
-      "repoId": "unslothai/unsloth",
-      "repo": "unslothai/unsloth",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "unslothai",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/unslothai/unsloth/commit/7da85a03c60e66fbf25c1937496da0dac339657d",
-          "observedAt": "2026-09-09T21:55:19Z",
-          "contentHash": "79d7dfa2433e5a73d5ee64b59d900bd53bde4b3f8984ab7f85637a43b0c08867",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/unslothai/unsloth/commit/7da85a03c60e66fbf25c1937496da0dac339657d",
-      "observedAt": "2026-09-09T21:55:19Z",
-      "publishedAt": "2026-09-09T21:55:19Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "Biotrioo",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/7da85a03c60e66fbf25c1937496da0dac339657d",
-      "provenance": {
-        "sourceUrl": "https://github.com/unslothai/unsloth/commit/7da85a03c60e66fbf25c1937496da0dac339657d",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "66065558367daf380cea856237f30131",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "vllm-project/vllm 架构相关代码变化",
-      "summary": "\n        [ROCm][Bugfix] Support shared KV prefill in AITER attention (#55887)\n    ",
-      "repoId": "vllm-project/vllm",
-      "repo": "vllm-project/vllm",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "vllm-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/vllm-project/vllm/commit/dcd544486b7f4672b3c2e60ea289f19d86cf355c",
-          "observedAt": "2026-09-09T21:51:34Z",
-          "contentHash": "91a7374867e370f636b5e49547045fde915958ff58ad84543abcd1abca9ffe36",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/vllm-project/vllm/commit/dcd544486b7f4672b3c2e60ea289f19d86cf355c",
-      "observedAt": "2026-09-09T21:51:34Z",
-      "publishedAt": "2026-09-09T21:51:34Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "AndreasKaratzas",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/dcd544486b7f4672b3c2e60ea289f19d86cf355c",
-      "provenance": {
-        "sourceUrl": "https://github.com/vllm-project/vllm/commit/dcd544486b7f4672b3c2e60ea289f19d86cf355c",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "93a8f2b6c12a0736dec74e902c8e5a1c",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "vllm-project/vllm Commit",
-      "summary": "\n        [Bugfix] Fix Step-3.5 reasoning parser for structured outputs (#53174)\n    ",
-      "repoId": "vllm-project/vllm",
-      "repo": "vllm-project/vllm",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "vllm-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/vllm-project/vllm/commit/26fec6d183c3957ee4dc0022452c430e745dd20f",
-          "observedAt": "2026-09-09T21:10:23Z",
-          "contentHash": "2c13be03578c218e2e59863590f4fea1c8951a7d5b22ae87c9ac5f9b907ffde6",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/vllm-project/vllm/commit/26fec6d183c3957ee4dc0022452c430e745dd20f",
-      "observedAt": "2026-09-09T21:10:23Z",
-      "publishedAt": "2026-09-09T21:10:23Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "yzong-rh",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/26fec6d183c3957ee4dc0022452c430e745dd20f",
-      "provenance": {
-        "sourceUrl": "https://github.com/vllm-project/vllm/commit/26fec6d183c3957ee4dc0022452c430e745dd20f",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "d57f58b743e8e242e70a9cd5456982d4",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "unslothai/unsloth Commit",
-      "summary": "\n        Studio: say only localhost loses keyless access while a tunnel is up …\n    ",
-      "repoId": "unslothai/unsloth",
-      "repo": "unslothai/unsloth",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "unslothai",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/unslothai/unsloth/commit/7b9bb03957f16ed40f7dd49428cafd119ac51e33",
-          "observedAt": "2026-09-09T20:59:48Z",
-          "contentHash": "2fe52dacb203d8dd30593a24c9ae564c4c7e2714bd309545f533e9ffdc77ed3c",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/unslothai/unsloth/commit/7b9bb03957f16ed40f7dd49428cafd119ac51e33",
-      "observedAt": "2026-09-09T20:59:48Z",
-      "publishedAt": "2026-09-09T20:59:48Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "danielhanchen",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/7b9bb03957f16ed40f7dd49428cafd119ac51e33",
-      "provenance": {
-        "sourceUrl": "https://github.com/unslothai/unsloth/commit/7b9bb03957f16ed40f7dd49428cafd119ac51e33",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "3f83ddd54968f77185d624c8ca4e1b8d",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "vllm-project/vllm Commit",
-      "summary": "\n        [Perf] Fix TRTLLM ragged prefill perf regression (#55499)\n    ",
-      "repoId": "vllm-project/vllm",
-      "repo": "vllm-project/vllm",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "vllm-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/vllm-project/vllm/commit/8c87c333b84c85908b1d11f0044457692277c6f3",
-          "observedAt": "2026-09-09T20:38:20Z",
-          "contentHash": "e70be414bbab9d8da147c0ac7009811faa0e71769ebefbbe02d989609b86b76b",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/vllm-project/vllm/commit/8c87c333b84c85908b1d11f0044457692277c6f3",
-      "observedAt": "2026-09-09T20:38:20Z",
-      "publishedAt": "2026-09-09T20:38:20Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "wzhao18",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/8c87c333b84c85908b1d11f0044457692277c6f3",
-      "provenance": {
-        "sourceUrl": "https://github.com/vllm-project/vllm/commit/8c87c333b84c85908b1d11f0044457692277c6f3",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -5799,127 +6919,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/ba638f0b91ad721710b77031f761b396ae1b7a4f",
       "provenance": {
         "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/ba638f0b91ad721710b77031f761b396ae1b7a4f",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "b958d6ac20b79839ae461a316496748d",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "unslothai/unsloth Commit",
-      "summary": "\n        Stop the uninstaller stranding old installs, and deleting directories…\n    ",
-      "repoId": "unslothai/unsloth",
-      "repo": "unslothai/unsloth",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "unslothai",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/unslothai/unsloth/commit/1ad44677d462ad8c05c87dce71f4018253c1c18f",
-          "observedAt": "2026-09-09T20:22:01Z",
-          "contentHash": "69024a67cba23384d871990ae1a7ba0161088f19d60aed5b179e3ac648fe2261",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/unslothai/unsloth/commit/1ad44677d462ad8c05c87dce71f4018253c1c18f",
-      "observedAt": "2026-09-09T20:22:01Z",
-      "publishedAt": "2026-09-09T20:22:01Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "danielhanchen",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/1ad44677d462ad8c05c87dce71f4018253c1c18f",
-      "provenance": {
-        "sourceUrl": "https://github.com/unslothai/unsloth/commit/1ad44677d462ad8c05c87dce71f4018253c1c18f",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "e4982b7bc5568afe36af102f15472f89",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "vllm-project/vllm Commit",
-      "summary": "\n        [Bugfix] Detect OpenAI content format when message.content is passed …\n    ",
-      "repoId": "vllm-project/vllm",
-      "repo": "vllm-project/vllm",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "vllm-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/vllm-project/vllm/commit/56d001faf0f53c72fcedbbdd77e5418f68fe7494",
-          "observedAt": "2026-09-09T20:10:28Z",
-          "contentHash": "e7b4b4098a06022f50cf0962c13651442bdbbf745d36edd32d131e9de080e0e7",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/vllm-project/vllm/commit/56d001faf0f53c72fcedbbdd77e5418f68fe7494",
-      "observedAt": "2026-09-09T20:10:28Z",
-      "publishedAt": "2026-09-09T20:10:28Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "wuhangxian",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/56d001faf0f53c72fcedbbdd77e5418f68fe7494",
-      "provenance": {
-        "sourceUrl": "https://github.com/vllm-project/vllm/commit/56d001faf0f53c72fcedbbdd77e5418f68fe7494",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "0cb0f2e6f2daebe5e058fdbff109d861",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "vllm-project/vllm 架构相关代码变化",
-      "summary": "\n        [ROCm][CI] Use a platform-independent GEMM in the merged-column fuser…\n    ",
-      "repoId": "vllm-project/vllm",
-      "repo": "vllm-project/vllm",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "vllm-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/vllm-project/vllm/commit/cce50657b742598a5b8874fc9fe3a94dc4344a14",
-          "observedAt": "2026-09-09T20:08:39Z",
-          "contentHash": "6f68eecf6704577b239e36e28d66906040fdd5d239fcdc677d72b8b32b67d564",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/vllm-project/vllm/commit/cce50657b742598a5b8874fc9fe3a94dc4344a14",
-      "observedAt": "2026-09-09T20:08:39Z",
-      "publishedAt": "2026-09-09T20:08:39Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "djramic",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/cce50657b742598a5b8874fc9fe3a94dc4344a14",
-      "provenance": {
-        "sourceUrl": "https://github.com/vllm-project/vllm/commit/cce50657b742598a5b8874fc9fe3a94dc4344a14",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -5959,7 +6959,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/b2cea2236db7f5d46bf9a6b1664a92a873dda073",
       "provenance": {
         "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/b2cea2236db7f5d46bf9a6b1664a92a873dda073",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -5999,7 +6999,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/434ddbbc0e30522e897670681e503b797c12b7c1",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/434ddbbc0e30522e897670681e503b797c12b7c1",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -6039,47 +7039,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/612354784/b10884",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10884",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "c4c937b9c504dfe53e49ad75e4d70847",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "huggingface/trl Commit",
-      "summary": "\n        Count each token once in num_tokens under tensor parallelism (#7101)\n    ",
-      "repoId": "huggingface/trl",
-      "repo": "huggingface/trl",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "huggingface",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/huggingface/trl/commit/4f6d7a0dc3985b0147de09e65e2d73341a114501",
-          "observedAt": "2026-09-09T19:15:39Z",
-          "contentHash": "598a5afa008020318535d16308779f39a2bc60f178590780770fd768970fb775",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/huggingface/trl/commit/4f6d7a0dc3985b0147de09e65e2d73341a114501",
-      "observedAt": "2026-09-09T19:15:39Z",
-      "publishedAt": "2026-09-09T19:15:39Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "qgallouedec",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/4f6d7a0dc3985b0147de09e65e2d73341a114501",
-      "provenance": {
-        "sourceUrl": "https://github.com/huggingface/trl/commit/4f6d7a0dc3985b0147de09e65e2d73341a114501",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -6119,7 +7079,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/74dc1b570330d430d3c2a0b87dba2cefd7e630b8",
       "provenance": {
         "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/74dc1b570330d430d3c2a0b87dba2cefd7e630b8",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -6159,87 +7119,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/5590c4b1a74a4c62e9fb621ccc716d95c055914d",
       "provenance": {
         "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/5590c4b1a74a4c62e9fb621ccc716d95c055914d",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "1a772fd6ae17574b9d89be5d2439f4f2",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "huggingface/trl Commit",
-      "summary": "\n        Add support for vLLM 0.28.0 (#7001)\n    ",
-      "repoId": "huggingface/trl",
-      "repo": "huggingface/trl",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "huggingface",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/huggingface/trl/commit/8fbe6252a3d5aafe80e0c27477082cf5df131e3d",
-          "observedAt": "2026-09-09T18:13:08Z",
-          "contentHash": "1a221c15d306483dc467c4a6bfc4dc09b007af59499fd42a21d52c9e967be543",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/huggingface/trl/commit/8fbe6252a3d5aafe80e0c27477082cf5df131e3d",
-      "observedAt": "2026-09-09T18:13:08Z",
-      "publishedAt": "2026-09-09T18:13:08Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "qgallouedec",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/8fbe6252a3d5aafe80e0c27477082cf5df131e3d",
-      "provenance": {
-        "sourceUrl": "https://github.com/huggingface/trl/commit/8fbe6252a3d5aafe80e0c27477082cf5df131e3d",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "778a5c5cfe86b740c729bf24771822e1",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "huggingface/trl Commit",
-      "summary": "\n        Add missing TRL blog posts to the docs landing page (#7023)\n    ",
-      "repoId": "huggingface/trl",
-      "repo": "huggingface/trl",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "huggingface",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/huggingface/trl/commit/ab5d811d5054dae212d4b01000d2852eb1004ffe",
-          "observedAt": "2026-09-09T18:11:43Z",
-          "contentHash": "9e31177c967e4f01b68995504bec6927eb78b7fe87e4c2af5f36adfbfa73011f",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/huggingface/trl/commit/ab5d811d5054dae212d4b01000d2852eb1004ffe",
-      "observedAt": "2026-09-09T18:11:43Z",
-      "publishedAt": "2026-09-09T18:11:43Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "qgallouedec",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/ab5d811d5054dae212d4b01000d2852eb1004ffe",
-      "provenance": {
-        "sourceUrl": "https://github.com/huggingface/trl/commit/ab5d811d5054dae212d4b01000d2852eb1004ffe",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -6279,7 +7159,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/612354784/b10883",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10883",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -6319,7 +7199,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/56ef6ed61ccb3edffa138ec581c212d479d9ec06",
       "provenance": {
         "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/56ef6ed61ccb3edffa138ec581c212d479d9ec06",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -6359,7 +7239,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/91f6a6cf361385700bbe15981f0f39909df77498",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/91f6a6cf361385700bbe15981f0f39909df77498",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -6395,7 +7275,7 @@ module.exports = {
       "modelIdentity": "aa_gdpval_elo:GLM-5.3 (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -6435,7 +7315,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/9ca681caf1f6bf604400a5937c021367a65d85b7",
       "provenance": {
         "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/9ca681caf1f6bf604400a5937c021367a65d85b7",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -6475,7 +7355,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/4815a0a6a064214f2d8208c094464a5a6b76ca8d",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/transformers/commit/4815a0a6a064214f2d8208c094464a5a6b76ca8d",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -6515,7 +7395,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/725205304/v0.1.808-beta",
       "provenance": {
         "sourceUrl": "https://github.com/unslothai/unsloth/releases/tag/v0.1.808-beta",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -6555,7 +7435,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/bc984f9f74be3f035c2d5ee16679b4be793e26a2",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/transformers/commit/bc984f9f74be3f035c2d5ee16679b4be793e26a2",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -6595,47 +7475,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/b92c3ed70029005fd5769d2cf4c65bc3d061a74b",
       "provenance": {
         "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/b92c3ed70029005fd5769d2cf4c65bc3d061a74b",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "f0ea34584dd732834afc0113bdf05e91",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "unslothai/unsloth Commit",
-      "summary": "\n        Bump install.sh / install.ps1 pins to unsloth>=2026.9.4, unsloth-zoo>…\n    ",
-      "repoId": "unslothai/unsloth",
-      "repo": "unslothai/unsloth",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "unslothai",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/unslothai/unsloth/commit/191b69c12b4434b5247f1fd7a455b4a760b169ae",
-          "observedAt": "2026-09-09T15:59:16Z",
-          "contentHash": "7a7f9f902ae17444a370bc71640b6ad62304cfb93452ae80f033270f5fff78ae",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/unslothai/unsloth/commit/191b69c12b4434b5247f1fd7a455b4a760b169ae",
-      "observedAt": "2026-09-09T15:59:16Z",
-      "publishedAt": "2026-09-09T15:59:16Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "danielhanchen",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/191b69c12b4434b5247f1fd7a455b4a760b169ae",
-      "provenance": {
-        "sourceUrl": "https://github.com/unslothai/unsloth/commit/191b69c12b4434b5247f1fd7a455b4a760b169ae",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -6675,47 +7515,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/b9c22eb38884225b1a7abe6c08f539c14b0d2f7e",
       "provenance": {
         "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/b9c22eb38884225b1a7abe6c08f539c14b0d2f7e",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "3f15390a838314b5f9e0c2bed80c1cd3",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "unslothai/unsloth 架构相关代码变化",
-      "summary": "\n        Studio: account for resident memory during model reloads (#10627)\n    ",
-      "repoId": "unslothai/unsloth",
-      "repo": "unslothai/unsloth",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "unslothai",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/unslothai/unsloth/commit/ab28823880b8a15306b221e5fc6e32991f2e9ff3",
-          "observedAt": "2026-09-09T15:48:11Z",
-          "contentHash": "2f9461c5c60effab2313689ac288527d8246a4eb30cefe5ef892c46df743f229",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/unslothai/unsloth/commit/ab28823880b8a15306b221e5fc6e32991f2e9ff3",
-      "observedAt": "2026-09-09T15:48:11Z",
-      "publishedAt": "2026-09-09T15:48:11Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "shimmyshimmer",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/ab28823880b8a15306b221e5fc6e32991f2e9ff3",
-      "provenance": {
-        "sourceUrl": "https://github.com/unslothai/unsloth/commit/ab28823880b8a15306b221e5fc6e32991f2e9ff3",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -6755,7 +7555,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/293af3d2d2ce9f15600e1818443233a6ac3cbdbe",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/transformers/commit/293af3d2d2ce9f15600e1818443233a6ac3cbdbe",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -6795,47 +7595,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/155220641/v5.17.0",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/transformers/releases/tag/v5.17.0",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "7ff6366a6eaa2f8377cc6dd7d40a7e4a",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "unslothai/unsloth 架构相关代码变化",
-      "summary": "\n        Studio: stop a quit during a model load from orphaning llama-server (…\n    ",
-      "repoId": "unslothai/unsloth",
-      "repo": "unslothai/unsloth",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "unslothai",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/unslothai/unsloth/commit/fcaad20ef248ad8b9f2efb356c5b334b14a26419",
-          "observedAt": "2026-09-09T15:40:56Z",
-          "contentHash": "ae5673b91e0c23bb5540e0ccafa059b49e593e8623468df19f6448e181d25d14",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/unslothai/unsloth/commit/fcaad20ef248ad8b9f2efb356c5b334b14a26419",
-      "observedAt": "2026-09-09T15:40:56Z",
-      "publishedAt": "2026-09-09T15:40:56Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "danielhanchen",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/fcaad20ef248ad8b9f2efb356c5b334b14a26419",
-      "provenance": {
-        "sourceUrl": "https://github.com/unslothai/unsloth/commit/fcaad20ef248ad8b9f2efb356c5b334b14a26419",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -6875,7 +7635,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/6d9c82ea2bb34e277c0664b8dd3434bfb4dcfb27",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/6d9c82ea2bb34e277c0664b8dd3434bfb4dcfb27",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -6915,47 +7675,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/d7d7fff63cd9dd59814f51379de5e05145ea0cbb",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/transformers/commit/d7d7fff63cd9dd59814f51379de5e05145ea0cbb",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "79f7d9cb247991bee4521ef151bc9fd1",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "unslothai/unsloth Commit",
-      "summary": "\n        Windows installer: shorten the native-type comments (#10621)\n    ",
-      "repoId": "unslothai/unsloth",
-      "repo": "unslothai/unsloth",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "unslothai",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/unslothai/unsloth/commit/3cb17d7a5418930d9f8fa85dc3be3b766745298d",
-          "observedAt": "2026-09-09T15:35:49Z",
-          "contentHash": "052b650a070695095aeb0648402d81e477d9f161c31866ff74a7da5224088f3f",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/unslothai/unsloth/commit/3cb17d7a5418930d9f8fa85dc3be3b766745298d",
-      "observedAt": "2026-09-09T15:35:49Z",
-      "publishedAt": "2026-09-09T15:35:49Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "danielhanchen",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/3cb17d7a5418930d9f8fa85dc3be3b766745298d",
-      "provenance": {
-        "sourceUrl": "https://github.com/unslothai/unsloth/commit/3cb17d7a5418930d9f8fa85dc3be3b766745298d",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -6995,167 +7715,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/612354784/b10881",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10881",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "c188511c3dde9596bd6f00516af646f3",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "unslothai/unsloth Commit",
-      "summary": "\n        fix(studio): restore eager Settings and keep startup splash until rea…\n    ",
-      "repoId": "unslothai/unsloth",
-      "repo": "unslothai/unsloth",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "unslothai",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/unslothai/unsloth/commit/e3e457a7d7860c714fe721767ebad7c1f6a37ca4",
-          "observedAt": "2026-09-09T15:33:25Z",
-          "contentHash": "409d3a7a1eb6f60084ca761ae178d3f242dadd6c4ac3b878b361dadbfa389c36",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/unslothai/unsloth/commit/e3e457a7d7860c714fe721767ebad7c1f6a37ca4",
-      "observedAt": "2026-09-09T15:33:25Z",
-      "publishedAt": "2026-09-09T15:33:25Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "wasimysaid",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/e3e457a7d7860c714fe721767ebad7c1f6a37ca4",
-      "provenance": {
-        "sourceUrl": "https://github.com/unslothai/unsloth/commit/e3e457a7d7860c714fe721767ebad7c1f6a37ca4",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "2ff5ff881ffee89625a51d21d6344f78",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "unslothai/unsloth Commit",
-      "summary": "\n        Studio: restore the CLI help text the comment passes had trimmed (#10…\n    ",
-      "repoId": "unslothai/unsloth",
-      "repo": "unslothai/unsloth",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "unslothai",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/unslothai/unsloth/commit/3f2c89537a93b5cd62563ba2a38cd31e1c0f6e3f",
-          "observedAt": "2026-09-09T15:32:43Z",
-          "contentHash": "85166daa17681ab6b6f3fdaecb3da7dde57bd4bbb576804c5112464ada919c21",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/unslothai/unsloth/commit/3f2c89537a93b5cd62563ba2a38cd31e1c0f6e3f",
-      "observedAt": "2026-09-09T15:32:43Z",
-      "publishedAt": "2026-09-09T15:32:43Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "danielhanchen",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/3f2c89537a93b5cd62563ba2a38cd31e1c0f6e3f",
-      "provenance": {
-        "sourceUrl": "https://github.com/unslothai/unsloth/commit/3f2c89537a93b5cd62563ba2a38cd31e1c0f6e3f",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "f728af2ed82acc8a3d0d615bd9e86dcc",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "unslothai/unsloth Commit",
-      "summary": "\n        Windows: run the native-type tests on Windows, and fix the two that c…\n    ",
-      "repoId": "unslothai/unsloth",
-      "repo": "unslothai/unsloth",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "unslothai",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/unslothai/unsloth/commit/a73ecae0614a597dbdbfd3d75b5bc934c51562f7",
-          "observedAt": "2026-09-09T15:27:46Z",
-          "contentHash": "25c2bc8177b8ed882267abb12523cedb77edf0966875e7596442c203ba72b12a",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/unslothai/unsloth/commit/a73ecae0614a597dbdbfd3d75b5bc934c51562f7",
-      "observedAt": "2026-09-09T15:27:46Z",
-      "publishedAt": "2026-09-09T15:27:46Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "danielhanchen",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/a73ecae0614a597dbdbfd3d75b5bc934c51562f7",
-      "provenance": {
-        "sourceUrl": "https://github.com/unslothai/unsloth/commit/a73ecae0614a597dbdbfd3d75b5bc934c51562f7",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "98325121d8ebda59e77da155970c3a23",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "unslothai/unsloth Commit",
-      "summary": "\n        Studio: import readFileSync in the chat continuation test (#10628)\n    ",
-      "repoId": "unslothai/unsloth",
-      "repo": "unslothai/unsloth",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "unslothai",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/unslothai/unsloth/commit/ec5c3effe4f609fcf1efb8d5131f482eedb353da",
-          "observedAt": "2026-09-09T15:26:33Z",
-          "contentHash": "9c91e0d9c1adfb1e94247d50bab7638061f3f338aa8216625cf28dfda980e17c",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/unslothai/unsloth/commit/ec5c3effe4f609fcf1efb8d5131f482eedb353da",
-      "observedAt": "2026-09-09T15:26:33Z",
-      "publishedAt": "2026-09-09T15:26:33Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "danielhanchen",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/ec5c3effe4f609fcf1efb8d5131f482eedb353da",
-      "provenance": {
-        "sourceUrl": "https://github.com/unslothai/unsloth/commit/ec5c3effe4f609fcf1efb8d5131f482eedb353da",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -7195,7 +7755,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/d6e4e478f103cd36d91453d8083478762df699e5",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/transformers/commit/d6e4e478f103cd36d91453d8083478762df699e5",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -7235,7 +7795,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/22397c31a00e78f55ae556c41fc78b717c5911bd",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/22397c31a00e78f55ae556c41fc78b717c5911bd",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -7275,7 +7835,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/4b98ab805a2638121f1671bf572832e07ef13e7d",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/4b98ab805a2638121f1671bf572832e07ef13e7d",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -7315,7 +7875,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/308638334/v1.15.0",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/accelerate/releases/tag/v1.15.0",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -7355,7 +7915,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/612354784/b10878",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10878",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -7395,7 +7955,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/5b7dcb0d36c242d8d85920a81c564ef3a86ca6dd",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/transformers/commit/5b7dcb0d36c242d8d85920a81c564ef3a86ca6dd",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -7435,7 +7995,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/f13f7c13b64c10b6eb7e2d73171ea1b94c748701",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/accelerate/commit/f13f7c13b64c10b6eb7e2d73171ea1b94c748701",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -7475,7 +8035,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/9cf3bf256b5a50a971a636c36dfe974387140687",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/9cf3bf256b5a50a971a636c36dfe974387140687",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -7515,7 +8075,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/612354784/b10877",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10877",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -7555,7 +8115,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/636a9343b4265db1212b04c778b8910b5cbfa713",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/accelerate/commit/636a9343b4265db1212b04c778b8910b5cbfa713",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -7595,7 +8155,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/4850c7727fa73bbe3098e10ee369fbc3467c445f",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/4850c7727fa73bbe3098e10ee369fbc3467c445f",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -7635,7 +8195,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/50bbcc630ed1675d15d2def3877c88d6c2630415",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/transformers/commit/50bbcc630ed1675d15d2def3877c88d6c2630415",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -7675,7 +8235,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Repository/612354784/b10876",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10876",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -7715,47 +8275,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/d4abd573f6a360201799072384ceec6170fdb60c",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/d4abd573f6a360201799072384ceec6170fdb60c",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "680fb00376c8940dc278c48a34eb6274",
-      "family": "technology",
-      "eventType": "tag_created",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "ggml-org/llama.cpp 创建 Tag",
-      "summary": "b10875",
-      "repoId": "ggml-org/llama.cpp",
-      "repo": "ggml-org/llama.cpp",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "ggml-org",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10875",
-          "observedAt": "2026-09-09T11:17:45Z",
-          "contentHash": "702d778efa5337799055bcb9579dd1d8b1b4ed84b681711eb50aa82dcf61cb9d",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10875",
-      "observedAt": "2026-09-09T11:17:45Z",
-      "publishedAt": "2026-09-09T11:17:45Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "master",
-      "author": "github-actions",
-      "eventIdentity": "tag:github.com,2008:Repository/612354784/b10875",
-      "provenance": {
-        "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10875",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -7795,7 +8315,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/5a4d0fecae272c9caf0b32eb384fa6a58dddb560",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/5a4d0fecae272c9caf0b32eb384fa6a58dddb560",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -7835,7 +8355,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/e8bcd79c4c77a529bc34d6e19f7d718164b7fa6a",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/transformers/commit/e8bcd79c4c77a529bc34d6e19f7d718164b7fa6a",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -7875,7 +8395,7 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/14a9d09f75683c94c2c4f229efe54670d4209089",
       "provenance": {
         "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/14a9d09f75683c94c2c4f229efe54670d4209089",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     },
     {
@@ -7915,733 +8435,13 @@ module.exports = {
       "eventIdentity": "tag:github.com,2008:Grit::Commit/3283d5f78ed6836d39430c8190a6e0500be78698",
       "provenance": {
         "sourceUrl": "https://github.com/huggingface/transformers/commit/3283d5f78ed6836d39430c8190a6e0500be78698",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "0226a0389d0b69c7586a64c9d5ee7903",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "NVIDIA/Megatron-LM Commit",
-      "summary": "\n        Enter both autocast and fp8 contexts in combined 1F1B execution (#5761)\n    ",
-      "repoId": "NVIDIA/Megatron-LM",
-      "repo": "NVIDIA/Megatron-LM",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "NVIDIA",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/0d2dc9c43b24e957bf2241704c9c90836c90f680",
-          "observedAt": "2026-09-09T09:57:34Z",
-          "contentHash": "a3c7fff05e9e17fcd17e76dbb9975571c1708ef26c9651c7e94a8ec0d1e2c849",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/NVIDIA/Megatron-LM/commit/0d2dc9c43b24e957bf2241704c9c90836c90f680",
-      "observedAt": "2026-09-09T09:57:34Z",
-      "publishedAt": "2026-09-09T09:57:34Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "huthvincent",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/0d2dc9c43b24e957bf2241704c9c90836c90f680",
-      "provenance": {
-        "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/0d2dc9c43b24e957bf2241704c9c90836c90f680",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "2f83701c13f66ded649c10f8640ba806",
-      "family": "technology",
-      "eventType": "tag_created",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "ggml-org/llama.cpp 创建 Tag",
-      "summary": "b10874",
-      "repoId": "ggml-org/llama.cpp",
-      "repo": "ggml-org/llama.cpp",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "ggml-org",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10874",
-          "observedAt": "2026-09-09T09:56:51Z",
-          "contentHash": "2ab058b68c8cd72590afcfc98d052d3ed2d41b07732e45fc6fe83b8058f5ea58",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10874",
-      "observedAt": "2026-09-09T09:56:51Z",
-      "publishedAt": "2026-09-09T09:56:51Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "master",
-      "author": "github-actions",
-      "eventIdentity": "tag:github.com,2008:Repository/612354784/b10874",
-      "provenance": {
-        "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10874",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "befe9332515c6365d9c38dc950fd1e7b",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "huggingface/accelerate Commit",
-      "summary": "\n        docs: fix three dead links left by the docs restructure (#4230)\n    ",
-      "repoId": "huggingface/accelerate",
-      "repo": "huggingface/accelerate",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "huggingface",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/huggingface/accelerate/commit/385d9fb40bdb92b0cb34775ad0ef493c171e559f",
-          "observedAt": "2026-09-09T09:54:10Z",
-          "contentHash": "97451e6687c31404d275f1a7fdb0f35a0a11fa4e6a2e1d3d94e28ad037f8eea9",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/huggingface/accelerate/commit/385d9fb40bdb92b0cb34775ad0ef493c171e559f",
-      "observedAt": "2026-09-09T09:54:10Z",
-      "publishedAt": "2026-09-09T09:54:10Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "simpleqt",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/385d9fb40bdb92b0cb34775ad0ef493c171e559f",
-      "provenance": {
-        "sourceUrl": "https://github.com/huggingface/accelerate/commit/385d9fb40bdb92b0cb34775ad0ef493c171e559f",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "43d754e9c6f34576107a0e1fd62f4a60",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "huggingface/accelerate Commit",
-      "summary": "\n        docs: fix garbled sentence in CONTRIBUTING.md (#4231)\n    ",
-      "repoId": "huggingface/accelerate",
-      "repo": "huggingface/accelerate",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "huggingface",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/huggingface/accelerate/commit/c424d0b82d4ed61672bf30f1a81ce80370fd945a",
-          "observedAt": "2026-09-09T09:52:50Z",
-          "contentHash": "a0fec09c928c903dc1fc1ca912d0c90dd7ff84b7633499b2450121bc23f67b20",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/huggingface/accelerate/commit/c424d0b82d4ed61672bf30f1a81ce80370fd945a",
-      "observedAt": "2026-09-09T09:52:50Z",
-      "publishedAt": "2026-09-09T09:52:50Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "simpleqt",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/c424d0b82d4ed61672bf30f1a81ce80370fd945a",
-      "provenance": {
-        "sourceUrl": "https://github.com/huggingface/accelerate/commit/c424d0b82d4ed61672bf30f1a81ce80370fd945a",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "29107c3af12ac3578d37db65d551daac",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "NVIDIA/Megatron-LM Commit",
-      "summary": "\n        ci: AUT-2250 retry transient coverage artifact uploads (#7159)\n    ",
-      "repoId": "NVIDIA/Megatron-LM",
-      "repo": "NVIDIA/Megatron-LM",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "NVIDIA",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/8dcf188447b602a499336020678997d58a099f05",
-          "observedAt": "2026-09-09T09:49:41Z",
-          "contentHash": "c58d27e99f7929262c8c56c79069dba6a73b1190ee3b78d95012bdcbf8d67a85",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/NVIDIA/Megatron-LM/commit/8dcf188447b602a499336020678997d58a099f05",
-      "observedAt": "2026-09-09T09:49:41Z",
-      "publishedAt": "2026-09-09T09:49:41Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "svcnemo-autobot",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/8dcf188447b602a499336020678997d58a099f05",
-      "provenance": {
-        "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/8dcf188447b602a499336020678997d58a099f05",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "7bac2c863782a5e8ca68e07d4f00a869",
-      "family": "technology",
-      "eventType": "tag_created",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "vllm-project/vllm 创建 Tag",
-      "summary": "v0.29.0",
-      "repoId": "vllm-project/vllm",
-      "repo": "vllm-project/vllm",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "vllm-project",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0",
-          "observedAt": "2026-09-09T09:40:07Z",
-          "contentHash": "08d9b3f69b7713a386a2239afc05f0dfe477417284f6ed7dbd66d2a3887197a5",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0",
-      "observedAt": "2026-09-09T09:40:07Z",
-      "publishedAt": "2026-09-09T09:40:07Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "main",
-      "author": "khluu",
-      "eventIdentity": "tag:github.com,2008:Repository/599547518/v0.29.0",
-      "provenance": {
-        "sourceUrl": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "14a2f347e7e05ecd36a825cf5d478c57",
-      "family": "technology",
-      "eventType": "tag_created",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "ggml-org/llama.cpp 创建 Tag",
-      "summary": "b10873",
-      "repoId": "ggml-org/llama.cpp",
-      "repo": "ggml-org/llama.cpp",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "ggml-org",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10873",
-          "observedAt": "2026-09-09T09:24:05Z",
-          "contentHash": "fd305188fa7c70a7396fc235fa8cac4147c81199769ef4ff10e3cae271695eda",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10873",
-      "observedAt": "2026-09-09T09:24:05Z",
-      "publishedAt": "2026-09-09T09:24:05Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "master",
-      "author": "github-actions",
-      "eventIdentity": "tag:github.com,2008:Repository/612354784/b10873",
-      "provenance": {
-        "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10873",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "0824733c296fdecd342a1ed56c66c964",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "NVIDIA/Megatron-LM Commit",
-      "summary": "\n        chore: rotate oncall schedule\n    ",
-      "repoId": "NVIDIA/Megatron-LM",
-      "repo": "NVIDIA/Megatron-LM",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "NVIDIA",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/c6be9199750845bd99a7d1a438862bb9ab29b630",
-          "observedAt": "2026-09-09T09:10:18Z",
-          "contentHash": "6156f4260a70934078593d37797366b5687752e892bac5f3acee401018981c23",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/NVIDIA/Megatron-LM/commit/c6be9199750845bd99a7d1a438862bb9ab29b630",
-      "observedAt": "2026-09-09T09:10:18Z",
-      "publishedAt": "2026-09-09T09:10:18Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "github-actions",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/c6be9199750845bd99a7d1a438862bb9ab29b630",
-      "provenance": {
-        "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/c6be9199750845bd99a7d1a438862bb9ab29b630",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "a616ea3b40267ff90250340c71254397",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "ggml-org/llama.cpp 架构相关代码变化",
-      "summary": "\n        model: fix granite3 moe unknown parameter count (#28632)\n    ",
-      "repoId": "ggml-org/llama.cpp",
-      "repo": "ggml-org/llama.cpp",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "ggml-org",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/e2d2c0d6aa9b996d5d3a3c1d5e24c8c19728bb3d",
-          "observedAt": "2026-09-09T08:46:22Z",
-          "contentHash": "080ffd03f542f943e2e7b36267516e9d4408cc9b92fc992c42f917aa102271a7",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/ggml-org/llama.cpp/commit/e2d2c0d6aa9b996d5d3a3c1d5e24c8c19728bb3d",
-      "observedAt": "2026-09-09T08:46:22Z",
-      "publishedAt": "2026-09-09T08:46:22Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "master",
-      "author": "taronaeo",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/e2d2c0d6aa9b996d5d3a3c1d5e24c8c19728bb3d",
-      "provenance": {
-        "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/e2d2c0d6aa9b996d5d3a3c1d5e24c8c19728bb3d",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "a1ae9406197bc6f5d450380022dd11e9",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "huggingface/transformers Commit",
-      "summary": "\n        [tests] Fix integration test golden values broken by fast image proce…\n    ",
-      "repoId": "huggingface/transformers",
-      "repo": "huggingface/transformers",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "huggingface",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/huggingface/transformers/commit/5f47b5aad791b69dff597b903614fb2bef8b88a1",
-          "observedAt": "2026-09-09T08:44:28Z",
-          "contentHash": "cac68161c30704af9d2b66868a4af08a1e06f694759dbdf9860ed266325d8da5",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/huggingface/transformers/commit/5f47b5aad791b69dff597b903614fb2bef8b88a1",
-      "observedAt": "2026-09-09T08:44:28Z",
-      "publishedAt": "2026-09-09T08:44:28Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "ydshieh",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/5f47b5aad791b69dff597b903614fb2bef8b88a1",
-      "provenance": {
-        "sourceUrl": "https://github.com/huggingface/transformers/commit/5f47b5aad791b69dff597b903614fb2bef8b88a1",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "320cffd7502b3c9849fd992ddfa99bba",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "ggml-org/llama.cpp Commit",
-      "summary": "\n        mtmd: propagate video ID to bitmap (#28601)\n    ",
-      "repoId": "ggml-org/llama.cpp",
-      "repo": "ggml-org/llama.cpp",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "ggml-org",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/6de9cdb26b801489a007756ad9eb8d99f4262f07",
-          "observedAt": "2026-09-09T08:37:36Z",
-          "contentHash": "8ac64460c7b7a0b500941d476e947fac0c21c3c7b13e15b4a8e6e3df6725129a",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/ggml-org/llama.cpp/commit/6de9cdb26b801489a007756ad9eb8d99f4262f07",
-      "observedAt": "2026-09-09T08:37:36Z",
-      "publishedAt": "2026-09-09T08:37:36Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "master",
-      "author": "ngxson",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/6de9cdb26b801489a007756ad9eb8d99f4262f07",
-      "provenance": {
-        "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/6de9cdb26b801489a007756ad9eb8d99f4262f07",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "d48e0c2d1e3f24135d37d4798fed9f25",
-      "family": "technology",
-      "eventType": "tag_created",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "ggml-org/llama.cpp 创建 Tag",
-      "summary": "b10872",
-      "repoId": "ggml-org/llama.cpp",
-      "repo": "ggml-org/llama.cpp",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "ggml-org",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10872",
-          "observedAt": "2026-09-09T07:47:26Z",
-          "contentHash": "9fd3094c14ca592e4344f9ce51da0f67b52945378e48f0bb6d4f5080d56aa751",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10872",
-      "observedAt": "2026-09-09T07:47:26Z",
-      "publishedAt": "2026-09-09T07:47:26Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "master",
-      "author": "github-actions",
-      "eventIdentity": "tag:github.com,2008:Repository/612354784/b10872",
-      "provenance": {
-        "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b10872",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "0c5d8ff483c127f344d0a619e1890f6a",
-      "family": "technology",
-      "eventType": "architecture_code_change",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "huggingface/transformers 架构相关代码变化",
-      "summary": "\n        Add Fun-ASR-Nano model (#46180)\n    ",
-      "repoId": "huggingface/transformers",
-      "repo": "huggingface/transformers",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "huggingface",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/huggingface/transformers/commit/fc501343edfccdc840eb8594a6cafa8185c2de53",
-          "observedAt": "2026-09-09T07:24:32Z",
-          "contentHash": "4d430d516f7a72aa2ed7dc46c96359b8feca7c2a1dbd907a0edcdf1f78de8571",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/huggingface/transformers/commit/fc501343edfccdc840eb8594a6cafa8185c2de53",
-      "observedAt": "2026-09-09T07:24:32Z",
-      "publishedAt": "2026-09-09T07:24:32Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "LauraGPT",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/fc501343edfccdc840eb8594a6cafa8185c2de53",
-      "provenance": {
-        "sourceUrl": "https://github.com/huggingface/transformers/commit/fc501343edfccdc840eb8594a6cafa8185c2de53",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "a4f1f2d2cb403aa8289ff2dc2878ea15",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "ggml-org/llama.cpp Commit",
-      "summary": "\n        jinja: treat a null left operand of in as a plain lookup (#28620)\n    ",
-      "repoId": "ggml-org/llama.cpp",
-      "repo": "ggml-org/llama.cpp",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "ggml-org",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/b31b71f3a076bfc4278daad442203a9c51c6e676",
-          "observedAt": "2026-09-09T07:08:27Z",
-          "contentHash": "cdb8ed80540fd1560649e3c38298da965350777b20f9b5a9b661bcf80dabc768",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/ggml-org/llama.cpp/commit/b31b71f3a076bfc4278daad442203a9c51c6e676",
-      "observedAt": "2026-09-09T07:08:27Z",
-      "publishedAt": "2026-09-09T07:08:27Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "master",
-      "author": "ServeurpersoCom",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/b31b71f3a076bfc4278daad442203a9c51c6e676",
-      "provenance": {
-        "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/b31b71f3a076bfc4278daad442203a9c51c6e676",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "7554eb30755a9f40107364e0d1673e8b",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "huggingface/transformers Commit",
-      "summary": "\n        Fix YOLOS device mismatch with device_map=\"auto\" (#46886)\n    ",
-      "repoId": "huggingface/transformers",
-      "repo": "huggingface/transformers",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "huggingface",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/huggingface/transformers/commit/d9fe823d1cedbba33dd0aeef08f773abe971688e",
-          "observedAt": "2026-09-09T06:56:49Z",
-          "contentHash": "ac3e219f25c2ca7c3bafb6385b0081113205a60aedab69e709c622ca2f11a788",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/huggingface/transformers/commit/d9fe823d1cedbba33dd0aeef08f773abe971688e",
-      "observedAt": "2026-09-09T06:56:49Z",
-      "publishedAt": "2026-09-09T06:56:49Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "swankystark",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/d9fe823d1cedbba33dd0aeef08f773abe971688e",
-      "provenance": {
-        "sourceUrl": "https://github.com/huggingface/transformers/commit/d9fe823d1cedbba33dd0aeef08f773abe971688e",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "b18ff8a93923d96e6ab375d188b2298c",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "NVIDIA/Megatron-LM Commit",
-      "summary": "\n        fix(MoE): Preserve exact expert token counts for expert-bias updates …\n    ",
-      "repoId": "NVIDIA/Megatron-LM",
-      "repo": "NVIDIA/Megatron-LM",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "NVIDIA",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/8dc7ed381636e8c46f982dcfb96d4498dba68643",
-          "observedAt": "2026-09-09T06:30:48Z",
-          "contentHash": "2529501c18c7493450d09405c324ef59094cece43a0cbdf941b90303039649b1",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/NVIDIA/Megatron-LM/commit/8dc7ed381636e8c46f982dcfb96d4498dba68643",
-      "observedAt": "2026-09-09T06:30:48Z",
-      "publishedAt": "2026-09-09T06:30:48Z",
-      "source": "GitHub",
-      "kind": "training_framework",
-      "branch": "main",
-      "author": "JF-D",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/8dc7ed381636e8c46f982dcfb96d4498dba68643",
-      "provenance": {
-        "sourceUrl": "https://github.com/NVIDIA/Megatron-LM/commit/8dc7ed381636e8c46f982dcfb96d4498dba68643",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "53d7017a482a7c05969939fdac7ad16b",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "ggml-org/llama.cpp Commit",
-      "summary": "\n        vulkan: add dedicated iq4_xs mat-vec shader (#28426)\n    ",
-      "repoId": "ggml-org/llama.cpp",
-      "repo": "ggml-org/llama.cpp",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "ggml-org",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/df750f76bb6126566621803b69ddaeb993be5b08",
-          "observedAt": "2026-09-09T06:26:36Z",
-          "contentHash": "55b7740dc24a2c44698166ebf230e9b470dc52bbc4211af90abfbe958c8c79fc",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/ggml-org/llama.cpp/commit/df750f76bb6126566621803b69ddaeb993be5b08",
-      "observedAt": "2026-09-09T06:26:36Z",
-      "publishedAt": "2026-09-09T06:26:36Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "master",
-      "author": "WakeUpMorty",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/df750f76bb6126566621803b69ddaeb993be5b08",
-      "provenance": {
-        "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/df750f76bb6126566621803b69ddaeb993be5b08",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
-      }
-    },
-    {
-      "eventId": "cdc5480ebe5f55e9362a1094875e3965",
-      "family": "technology",
-      "eventType": "commit",
-      "eventClass": "technical_activity",
-      "trustTier": "technical",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "ggml-org/llama.cpp Commit",
-      "summary": "\n        vulkan: add f16 B-type matmul pipelines and warp tile size tuning for…\n    ",
-      "repoId": "ggml-org/llama.cpp",
-      "repo": "ggml-org/llama.cpp",
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": "github_atom",
-      "sourceOwner": "ggml-org",
-      "evidence": [
-        {
-          "field": "event",
-          "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/1945e092030f8668ff93382799502d01490e564d",
-          "observedAt": "2026-09-09T06:03:32Z",
-          "contentHash": "df8b720adce54e380628686533211b02cca18a07088256050e7e12417a0ce1e0",
-          "sourceType": "github_atom"
-        }
-      ],
-      "url": "https://github.com/ggml-org/llama.cpp/commit/1945e092030f8668ff93382799502d01490e564d",
-      "observedAt": "2026-09-09T06:03:32Z",
-      "publishedAt": "2026-09-09T06:03:32Z",
-      "source": "GitHub",
-      "kind": "inference_framework",
-      "branch": "master",
-      "author": "fish-jiang",
-      "eventIdentity": "tag:github.com,2008:Grit::Commit/1945e092030f8668ff93382799502d01490e564d",
-      "provenance": {
-        "sourceUrl": "https://github.com/ggml-org/llama.cpp/commit/1945e092030f8668ff93382799502d01490e564d",
-        "contentHash": "888194bcb99c74df4c0c8e90c23ec5fdac564a9be07953153b123ceb65aee976"
+        "contentHash": "f0853ddc288be46ea76d3215a241b00fa6c0b725e9d1825dbe721a16e91fd89e"
       }
     }
   ],
-  "eventCount": 213,
+  "eventCount": 208,
   "provenance": {
-    "workflowRunId": "34442322056",
-    "mainCommit": "28d3120011fd44deb2749f4dca31f46975339000"
+    "workflowRunId": "34463986773",
+    "mainCommit": "56228f7f697b8178b1ca1d477470cac97b815183"
   }
 };
