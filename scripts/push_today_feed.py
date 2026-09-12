@@ -29,6 +29,7 @@ COLLECTION_ADD_URL = "https://api.weixin.qq.com/tcb/databasecollectionadd"
 
 EXPECTED_DATA_SOURCE = "today-activity-aggregator"
 REQUIRED_FAMILIES = ("model", "benchmark")
+EXPECTED_BUNDLE_SOURCE = "benchmark-sync-static"
 MAX_DOCUMENT_BYTES = 1_000_000
 MISSING_COLLECTION_MARKERS = ("collection not exist", "collection not exists", "集合不存在")
 ATTEMPTS = 3
@@ -62,6 +63,25 @@ def load_feed(path: Path) -> dict:
         )
     if not isinstance(document.get("models"), dict):
         raise ValueError("feed models must be an object")
+    return document
+
+
+def load_ranking_bundle(path: Path) -> dict:
+    """The 24-board static export the mini program bundles; pushed as one document."""
+    document = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(document, dict):
+        raise ValueError("bundle root must be an object")
+    if document.get("schemaVersion") != 3:
+        raise ValueError(f"unsupported bundle schemaVersion: {document.get('schemaVersion')!r}")
+    if document.get("dataSource") != EXPECTED_BUNDLE_SOURCE:
+        raise ValueError(f"unexpected dataSource: {document.get('dataSource')!r}")
+    families = document.get("families")
+    rankings = document.get("rankings")
+    if not isinstance(families, list) or len(families) != 3:
+        raise ValueError(f"bundle families must list 3 families: {families!r}")
+    if not isinstance(rankings, dict) or len(rankings) != 24:
+        count = len(rankings) if isinstance(rankings, dict) else "n/a"
+        raise ValueError(f"bundle rankings must contain 24 boards: {count}")
     return document
 
 
@@ -176,10 +196,18 @@ def push_feed(
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Push the Today feed into WeChat CloudBase")
-    parser.add_argument("--feed", default="generated/static-events/today-events.json")
-    parser.add_argument("--collection", default="todayEvents")
-    parser.add_argument("--doc-id", default="latest")
+    parser = argparse.ArgumentParser(
+        description="Push Today/ranking documents into WeChat CloudBase"
+    )
+    parser.add_argument(
+        "--kind",
+        choices=("today", "ranking"),
+        default="today",
+        help="today: static-events feed; ranking: 24-board static export bundle",
+    )
+    parser.add_argument("--feed", default=None, help="path to the document JSON")
+    parser.add_argument("--collection", default=None)
+    parser.add_argument("--doc-id", default=None)
     parser.add_argument("--env", default=os.environ.get("WX_CLOUD_ENV", ""))
     parser.add_argument("--appid", default=os.environ.get("WX_APPID", ""))
     parser.add_argument("--secret", default=os.environ.get("WX_APP_SECRET", ""))
@@ -190,19 +218,43 @@ def main(argv: list[str] | None = None) -> int:
     )
     args = parser.parse_args(argv)
 
-    feed_path = Path(args.feed)
+    defaults = {
+        "today": {
+            "feed": "generated/static-events/today-events.json",
+            "collection": "todayEvents",
+            "doc_id": "latest",
+        },
+        "ranking": {
+            "feed": "generated/static-export/livebench-ranking.json",
+            "collection": "rankingBundles",
+            "doc_id": "latest",
+        },
+    }[args.kind]
+    feed_path = Path(args.feed or defaults["feed"])
+    collection = args.collection or defaults["collection"]
+    doc_id = args.doc_id or defaults["doc_id"]
+
+    loader = load_feed if args.kind == "today" else load_ranking_bundle
     try:
-        document = load_feed(feed_path)
+        document = loader(feed_path)
     except (OSError, ValueError) as error:
         log(f"refusing to push: {error}")
         return 1
 
-    events = len(document.get("events", []))
-    models = len(document.get("models", {}))
-    log(
-        f"feed {feed_path} generatedAt={document.get('generatedAt')} "
-        f"events={events} models={models} collectorStatus={document.get('collectorStatus')}"
-    )
+    if args.kind == "today":
+        events = len(document.get("events", []))
+        models = len(document.get("models", {}))
+        log(
+            f"feed {feed_path} generatedAt={document.get('generatedAt')} "
+            f"events={events} models={models} collectorStatus={document.get('collectorStatus')}"
+        )
+    else:
+        boards = len(document.get("rankings", {}))
+        log(
+            f"bundle {feed_path} generatedAt={document.get('generatedAt')} "
+            f"families={len(document.get('families', []))} boards={boards} "
+            f"exporterVersion={document.get('exporterVersion')}"
+        )
     if args.dry_run:
         log("dry run: no credentials used, nothing written")
         return 0
@@ -218,14 +270,12 @@ def main(argv: list[str] | None = None) -> int:
         return 1
 
     try:
-        payload = push_feed(
-            document, args.appid, args.secret, args.env, args.collection, args.doc_id
-        )
+        payload = push_feed(document, args.appid, args.secret, args.env, collection, doc_id)
     except RuntimeError as error:
         log(str(error))
         return 1
     outcome = "inserted" if payload.get("id") else "replaced"
-    log(f"pushed to {args.collection}/{args.doc_id} ({outcome})")
+    log(f"pushed to {collection}/{doc_id} ({outcome})")
     return 0
 
 
