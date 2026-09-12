@@ -203,8 +203,9 @@ def board_top_models(board: dict[str, Any], unit: str, count: int = 3) -> list[s
 
 def board_summary_parts(board: dict[str, Any], unit: str) -> str:
     parts = [f"共 {len(board.get('records') or {})} 个模型"]
+    # Exporter placeholder for "no release known"; never surface it to users.
     release = board.get("release")
-    if release:
+    if release and release not in {"unknown", "page_jsonld", "not_provided", "none"}:
         parts.append(f"数据版本 {release}")
     top = board_top_models(board, unit)
     if top:
@@ -410,6 +411,33 @@ def write_commonjs(path: Path, value: dict[str, Any]) -> None:
     )
 
 
+def enrich_benchmark_events(
+    events: list[dict[str, Any]], state: dict[str, Any]
+) -> list[dict[str, Any]]:
+    """Refresh board-update summaries so carried-over events describe the current data.
+
+    Events reused from the previous document keep the summary they were built with;
+    board-level facts (model count, top models) are re-derivable from the fresh
+    state, so they are rewritten here instead of aging into a bare "content changed".
+    """
+    boards_by_runtime = {value.get("runtimeId"): value for value in state.values()}
+    for event in events:
+        if event.get("eventType") != "benchmark_updated":
+            continue
+        board = boards_by_runtime.get(event.get("benchmarkId"))
+        if not board:
+            continue
+        unit = score_unit(list((board.get("records") or {}).values()))
+        event["summary"] = (
+            f"{board.get('title')} 官方数据发生变化；{board_summary_parts(board, unit)}。"
+        )
+        event["unit"] = unit
+        event["modelCount"] = len(board.get("records") or {})
+        event["topModels"] = board_top_models(board, unit)
+        event["release"] = board.get("release")
+    return events
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Build the Today activity feed")
     parser.add_argument("--output-dir", type=Path, default=ROOT / "generated" / "static-events")
@@ -434,6 +462,7 @@ def main(argv: list[str] | None = None) -> int:
             if isinstance(item, dict) and item.get("family") == "benchmark"
         ]
         benchmark_events = previous_benchmark_events + benchmark_events
+        benchmark_events = enrich_benchmark_events(benchmark_events, benchmark_state)
         document = build_document(
             config,
             now=now,
