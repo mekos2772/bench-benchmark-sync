@@ -38,7 +38,8 @@ if (!['ok', 'partial'].includes(document.collectorStatus)) fail('invalid collect
 const isHttpUrl = (value) => typeof value === 'string' && /^https?:\/\//.test(value);
 const isHash = (value) => typeof value === 'string' && /^[a-f0-9]{64}$/.test(value);
 const ids = new Set();
-const profileFields = ['parameterCount', 'license', 'contextWindow', 'maxInputTokens', 'maxOutputTokens', 'officialUrl', 'documentationUrl', 'modelCardUrl', 'hubRepo'];
+const profileFields = ['parameterCount', 'license', 'technicalReportUrl', 'description', 'contextWindow', 'maxInputTokens', 'maxOutputTokens', 'officialUrl', 'documentationUrl', 'modelCardUrl', 'hubRepo'];
+const arxivUrl = /^https:\/\/arxiv\.org\/abs\/\d{4}\.\d{4,5}$/;
 for (const [modelRef, profile] of Object.entries(document.models)) {
   if (!profile || typeof profile !== 'object') fail(`invalid model profile: ${modelRef}`);
   if (profile.canonicalId !== modelRef) fail(`model canonicalId mismatch: ${modelRef}`);
@@ -46,6 +47,8 @@ for (const [modelRef, profile] of Object.entries(document.models)) {
   if (!['closed_api', 'open_weights', 'gated', 'unknown'].includes(profile.access)) fail(`invalid model access: ${modelRef}`);
   if (profile.parameterCount != null && (!Number.isInteger(profile.parameterCount) || profile.parameterCount < 1)) fail(`invalid parameterCount: ${modelRef}`);
   if (profile.license != null && typeof profile.license !== 'string') fail(`invalid license: ${modelRef}`);
+  if (profile.technicalReportUrl != null && !arxivUrl.test(profile.technicalReportUrl)) fail(`invalid technicalReportUrl: ${modelRef}`);
+  if (profile.description != null && (typeof profile.description !== 'string' || profile.description.length > 700)) fail(`invalid description: ${modelRef}`);
   if (!profile.modalities || !Array.isArray(profile.modalities.input) || !Array.isArray(profile.modalities.output)) fail(`invalid model modalities: ${modelRef}`);
   if (!profile.pricing || !Object.prototype.hasOwnProperty.call(profile.pricing, 'inputPerMillionTokens')) fail(`invalid model pricing: ${modelRef}`);
   if (!Array.isArray(profile.evidence)) fail(`model evidence missing: ${modelRef}`);

@@ -288,6 +288,8 @@ def _profile_evidence(
         "access",
         "parameterCount",
         "license",
+        "technicalReportUrl",
+        "description",
         "contextWindow",
         "maxInputTokens",
         "maxOutputTokens",
@@ -345,6 +347,8 @@ def build_model_profile(
     capabilities: list[str] | None = None,
     parameter_count: Any = None,
     license: str | None = None,
+    technical_report_url: str | None = None,
+    description: str | None = None,
     context_window: Any = None,
     max_input_tokens: Any = None,
     max_output_tokens: Any = None,
@@ -367,6 +371,8 @@ def build_model_profile(
         "capabilities": capabilities or [],
         "parameterCount": parameter_count if isinstance(parameter_count, int) else None,
         "license": license or None,
+        "technicalReportUrl": technical_report_url or None,
+        "description": description or None,
         "contextWindow": context_window,
         "maxInputTokens": max_input_tokens,
         "maxOutputTokens": max_output_tokens,
@@ -401,6 +407,32 @@ def _hub_license(model: dict[str, Any]) -> str | None:
                 value = text.split(":", 1)[1]
                 break
     return str(value) if value else None
+
+
+ARXIV_ID_PATTERN = re.compile(r"^(\d{4}\.\d{4,5})(v\d+)?$", re.IGNORECASE)
+
+
+def _hub_technical_report_url(model: dict[str, Any]) -> str | None:
+    """arXiv link from metadata we already fetched; no extra request, PDF never stored."""
+    candidates: list[Any] = []
+    card_data = model.get("cardData")
+    if isinstance(card_data, dict):
+        candidates.append(card_data.get("arxiv"))
+        candidates.extend(card_data.get("arxivs") or [])
+    for tag in model.get("tags") or []:
+        text = str(tag)
+        if text.lower().startswith("arxiv:"):
+            candidates.append(text.split(":", 1)[1])
+    for candidate in candidates:
+        if not candidate:
+            continue
+        arxiv_id = str(candidate).strip()
+        if arxiv_id.startswith("http"):
+            return arxiv_id if "arxiv.org" in arxiv_id else None
+        match = ARXIV_ID_PATTERN.match(arxiv_id)
+        if match:
+            return f"https://arxiv.org/abs/{match.group(1)}"
+    return None
 
 
 BRAND_OWNERS: dict[str, str] = {
@@ -589,6 +621,78 @@ def fetch_hub_raw_config(
     return payload if isinstance(payload, dict) else None
 
 
+def fetch_hub_raw_readme(
+    repo_id: str, timeout: int, headers: dict[str, str] | None = None
+) -> str | None:
+    try:
+        response = requests.get(
+            f"https://huggingface.co/{repo_id}/raw/main/README.md",
+            timeout=timeout,
+            headers={"User-Agent": "bench-benchmark-sync/today", **(headers or {})},
+        )
+    except requests.RequestException:
+        return None
+    if response.status_code != 200:
+        return None
+    return response.text
+
+
+README_PROSE_MIN_CHARS = 10
+README_INTRO_MAX_CHARS = 600
+
+
+def _readme_clean_line(line: str) -> str:
+    line = re.sub(r"<!--.*?-->", "", line)
+    line = re.sub(r"<[^>]+>", "", line)
+    line = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", line)
+    line = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", line)
+    return line.strip()
+
+
+def _hub_readme_intro(text: str | None) -> str | None:
+    """First prose paragraph of the model card: what the vendor says the model is.
+
+    Vendor cards open with badges, HTML and code blocks; the heuristic keeps the
+    first run of natural-language sentences and ignores everything else.
+    """
+    if not text:
+        return None
+    lines = text.splitlines()
+    if lines and lines[0].strip() == "---":
+        try:
+            end = next(i for i, line in enumerate(lines[1:], 1) if line.strip() == "---")
+            lines = lines[end + 1 :]
+        except StopIteration:
+            return None
+    collected: list[str] = []
+    in_code = False
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("```"):
+            in_code = not in_code
+            continue
+        if in_code or not stripped:
+            continue
+        if stripped.startswith(("##", "<", "![", "|", "@", "#")):
+            if collected:
+                break
+            continue
+        clean = _readme_clean_line(stripped)
+        clean = re.sub(r"^[-*]\s*", "", clean).strip()
+        if not clean:
+            continue
+        if re.match(r"^[\w.]+\s*[=(]", clean) or "from_pretrained" in clean or "import " in clean:
+            continue
+        letters = len(re.findall(r"[A-Za-z\u4e00-\u9fff]", clean))
+        if letters < max(README_PROSE_MIN_CHARS, len(clean) * 0.5):
+            continue
+        collected.append(clean)
+        if sum(len(item) for item in collected) >= README_INTRO_MAX_CHARS or len(collected) >= 6:
+            break
+    intro = " ".join(collected)[:README_INTRO_MAX_CHARS].strip()
+    return intro or None
+
+
 def hub_org_model_profile(
     model: dict[str, Any], provider: str, release_date: datetime | None
 ) -> dict[str, Any] | None:
@@ -620,6 +724,10 @@ def hub_org_model_profile(
         context_window=_hub_context_window(model),
         parameter_count=_hub_parameter_count(model),
         license=_hub_license(model),
+        technical_report_url=_hub_technical_report_url(model),
+        description=(
+            model.get("readmeIntro") if isinstance(model.get("readmeIntro"), str) else None
+        ),
         availability=["Hugging Face"],
     )
 
@@ -746,6 +854,10 @@ def collect_hub_org_models(
                 raw_config = fetch_hub_raw_config(repo_id, config.hub_timeout_seconds, headers)
                 if isinstance(raw_config, dict):
                     merged["config"] = {**(merged.get("config") or {}), **raw_config}
+                readme = fetch_hub_raw_readme(repo_id, config.hub_timeout_seconds, headers)
+                intro = _hub_readme_intro(readme)
+                if intro:
+                    merged["readmeIntro"] = intro
                 item = hub_org_model_entry(merged, provider, now, window_start, config, org=org)
                 if item is None:
                     continue

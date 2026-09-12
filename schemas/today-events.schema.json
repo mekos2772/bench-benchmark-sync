@@ -39,7 +39,7 @@
     },
     "modelProfile": {
       "type": "object",
-      "required": ["canonicalId", "provider", "modelId", "displayName", "version", "aliases", "releaseDate", "status", "deprecationDate", "releaseType", "access", "modalities", "capabilities", "parameterCount", "license", "contextWindow", "maxInputTokens", "maxOutputTokens", "pricing", "availability", "officialUrl", "documentationUrl", "modelCardUrl", "hubRepo", "sourceType", "sourceOwner", "evidence"],
+      "required": ["canonicalId", "provider", "modelId", "displayName", "version", "aliases", "releaseDate", "status", "deprecationDate", "releaseType", "access", "modalities", "capabilities", "parameterCount", "license", "technicalReportUrl", "description", "contextWindow", "maxInputTokens", "maxOutputTokens", "pricing", "availability", "officialUrl", "documentationUrl", "modelCardUrl", "hubRepo", "sourceType", "sourceOwner", "evidence"],
       "properties": {
         "canonicalId": {"type": "string", "minLength": 1},
         "provider": {"type": ["string", "null"]},
@@ -64,6 +64,8 @@
         "capabilities": {"type": "array", "items": {"type": "string"}},
         "parameterCount": {"type": ["integer", "null"], "minimum": 1},
         "license": {"type": ["string", "null"]},
+        "technicalReportUrl": {"type": ["string", "null"], "pattern": "^https://arxiv\\.org/abs/[0-9]{4}\\.[0-9]{4,5}$"},
+        "description": {"type": ["string", "null"], "maxLength": 700},
         "contextWindow": {"type": ["number", "null"]},
         "maxInputTokens": {"type": ["number", "null"]},
         "maxOutputTokens": {"type": ["number", "null"]},
