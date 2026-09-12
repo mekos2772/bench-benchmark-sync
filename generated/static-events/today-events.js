@@ -2,7 +2,7 @@ module.exports = {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
   "generatedAt": "2026-09-11T23:34:27Z",
-  "windowStart": "2026-09-10T23:34:27Z",
+  "windowStart": "2026-09-11T01:28:44Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -46,7 +46,7 @@ module.exports = {
       "contentHash": "e4373b217ce063ca6cc273b95397a5584f07646af7d62d56a50a6c1e1b983a60",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
-        "contentHash": "d5c2680cf1eb2edd9a178ed17f7e2f21046d85699c287babca6ec855fca7c35e"
+        "contentHash": "37e8122a4865273db180686278e7251dbdae73a599d97911782ecb9e049b1588"
       }
     },
     {
@@ -78,7 +78,7 @@ module.exports = {
       "contentHash": "78551b200f40825642fd720eb6afbcd681cc4fca9d40c0695382ec4ac7587a11",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "d5c2680cf1eb2edd9a178ed17f7e2f21046d85699c287babca6ec855fca7c35e"
+        "contentHash": "37e8122a4865273db180686278e7251dbdae73a599d97911782ecb9e049b1588"
       }
     },
     {
@@ -110,7 +110,7 @@ module.exports = {
       "contentHash": "d6fc87c171766ab8b6dceb6fc88c3db7bc8f85bb359638afec85fb86d1089346",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "d5c2680cf1eb2edd9a178ed17f7e2f21046d85699c287babca6ec855fca7c35e"
+        "contentHash": "37e8122a4865273db180686278e7251dbdae73a599d97911782ecb9e049b1588"
       }
     },
     {
@@ -142,7 +142,7 @@ module.exports = {
       "contentHash": "9139a0932f938265a3a0c98230c855a7719660be20b5f1d510e02c24bde45bdf",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "d5c2680cf1eb2edd9a178ed17f7e2f21046d85699c287babca6ec855fca7c35e"
+        "contentHash": "37e8122a4865273db180686278e7251dbdae73a599d97911782ecb9e049b1588"
       }
     },
     {
@@ -174,7 +174,7 @@ module.exports = {
       "contentHash": "91833ed14b516d2db3b6d45e4c00882288263641813f381b63e68a9649dc0264",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "d5c2680cf1eb2edd9a178ed17f7e2f21046d85699c287babca6ec855fca7c35e"
+        "contentHash": "37e8122a4865273db180686278e7251dbdae73a599d97911782ecb9e049b1588"
       }
     },
     {
@@ -206,7 +206,7 @@ module.exports = {
       "contentHash": "a6551e223ead0dafe2827be77d714bdb1b7843ab9aa0662117ca9c2dfc8bec8f",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "d5c2680cf1eb2edd9a178ed17f7e2f21046d85699c287babca6ec855fca7c35e"
+        "contentHash": "37e8122a4865273db180686278e7251dbdae73a599d97911782ecb9e049b1588"
       }
     },
     {
@@ -238,7 +238,7 @@ module.exports = {
       "contentHash": "90f0dcfc1927211635e9d1c33cab7efed6b50e2bb393589d1937c04247904149",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "d5c2680cf1eb2edd9a178ed17f7e2f21046d85699c287babca6ec855fca7c35e"
+        "contentHash": "37e8122a4865273db180686278e7251dbdae73a599d97911782ecb9e049b1588"
       }
     },
     {
@@ -270,7 +270,7 @@ module.exports = {
       "contentHash": "55c14ff3747cbd80067c109a90967fb3f4f1d909ed0e8dfa7b3f79d475fdf288",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "d5c2680cf1eb2edd9a178ed17f7e2f21046d85699c287babca6ec855fca7c35e"
+        "contentHash": "37e8122a4865273db180686278e7251dbdae73a599d97911782ecb9e049b1588"
       }
     },
     {
@@ -302,7 +302,7 @@ module.exports = {
       "contentHash": "e74398f44b90a85af448def37891923d8a637e8b7be3ea4e029fffcf87a0334f",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
-        "contentHash": "d5c2680cf1eb2edd9a178ed17f7e2f21046d85699c287babca6ec855fca7c35e"
+        "contentHash": "37e8122a4865273db180686278e7251dbdae73a599d97911782ecb9e049b1588"
       }
     },
     {
@@ -334,7 +334,7 @@ module.exports = {
       "contentHash": "b945418c35f40df4d3e2a192c61e530e0543b68429dec4206ba8a1e83e360a15",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "d5c2680cf1eb2edd9a178ed17f7e2f21046d85699c287babca6ec855fca7c35e"
+        "contentHash": "37e8122a4865273db180686278e7251dbdae73a599d97911782ecb9e049b1588"
       }
     },
     {
@@ -366,7 +366,7 @@ module.exports = {
       "contentHash": "b41ad62bc3ed6c243678fe304c0c36b7ce186cb50870b23c8b30e538b6583e80",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "d5c2680cf1eb2edd9a178ed17f7e2f21046d85699c287babca6ec855fca7c35e"
+        "contentHash": "37e8122a4865273db180686278e7251dbdae73a599d97911782ecb9e049b1588"
       }
     }
   ],
