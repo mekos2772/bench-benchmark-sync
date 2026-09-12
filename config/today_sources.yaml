@@ -74,6 +74,22 @@ openrouter:
     nex-agi: Nex AGI
     aion-labs: Aion Labs
 
+# Second catalog for closed-source models. First-party vendor slugs only:
+# aggregator entries re-list other vendors' models with their own onboarding
+# date, which is not a model release.
+modelsdev:
+  enabled: true
+  providers:
+    openai: OpenAI
+    anthropic: Anthropic
+    google: Google
+    xai: xAI
+    mistral: Mistral AI
+    zai: Z.ai
+    meta: Meta
+    perplexity: Perplexity
+    nvidia: NVIDIA
+
 settings:
   window_hours: 24
   max_events: 200

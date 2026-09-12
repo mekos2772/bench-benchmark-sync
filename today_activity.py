@@ -28,11 +28,14 @@ class TodayConfig:
     hub_org_limit: int = 20
     hub_timeout_seconds: int = 30
     openrouter_timeout_seconds: int = 30
+    modelsdev_timeout_seconds: int = 60
     stale_after_minutes: int = 60
     hub_denied_name_tokens: tuple[str, ...] = ()
     hub_orgs: tuple[dict[str, Any], ...] = ()
     openrouter_enabled: bool = True
     openrouter_providers: tuple[tuple[str, str], ...] = ()
+    modelsdev_enabled: bool = True
+    modelsdev_providers: tuple[tuple[str, str], ...] = ()
 
 
 class TodayFetchError(RuntimeError):
@@ -97,6 +100,11 @@ def load_config(path: Path) -> TodayConfig:
     openrouter_providers = tuple(
         (str(slug), str(name)) for slug, name in providers.items() if slug and name
     )
+    modelsdev = data.get("modelsdev") or {}
+    modelsdev_providers_map = modelsdev.get("providers") or {}
+    modelsdev_providers = tuple(
+        (str(slug), str(name)) for slug, name in modelsdev_providers_map.items() if slug and name
+    )
     return TodayConfig(
         window_hours=int(settings.get("window_hours", 24)),
         max_events=int(settings.get("max_events", 200)),
@@ -112,6 +120,8 @@ def load_config(path: Path) -> TodayConfig:
         hub_orgs=hub_orgs,
         openrouter_enabled=bool(openrouter.get("enabled", True)),
         openrouter_providers=openrouter_providers,
+        modelsdev_enabled=bool(modelsdev.get("enabled", True)),
+        modelsdev_providers=modelsdev_providers,
     )
 
 
@@ -125,6 +135,14 @@ def _event_metadata(event_type: str) -> dict[str, Any]:
             "isOfficial": True,
         }
     if event_type == "catalog_model_added":
+        return {
+            "eventClass": "model_catalog",
+            "trustTier": "catalog",
+            "priority": "P1",
+            "visibility": "primary",
+            "isOfficial": False,
+        }
+    if event_type == "vendor_catalog_model_added":
         return {
             "eventClass": "model_catalog",
             "trustTier": "catalog",
@@ -877,6 +895,17 @@ def _price_per_million(value: Any) -> float | None:
     return round(number * 1_000_000, 6)
 
 
+def _price_already_per_million(value: Any) -> float | None:
+    """models.dev costs are already per-million; no unit conversion."""
+    try:
+        number = float(value)
+    except (TypeError, ValueError):
+        return None
+    if not math.isfinite(number) or number < 0:
+        return None
+    return round(number, 6)
+
+
 CATALOG_CAPABILITIES: dict[str, str] = {
     "tools": "工具调用",
     "tool_choice": "工具调用",
@@ -1055,6 +1084,168 @@ def collect_catalog_models(
     return events, profiles, []
 
 
+MODELSDEV_URL = "https://models.dev/api.json"
+
+# First-party vendor slugs only: aggregator entries on models.dev re-list other
+# vendors' models with their own onboarding date, which is not a model release.
+MODELSDEV_CAPABILITIES: dict[str, str] = {
+    "tool_call": "工具调用",
+    "reasoning": "推理",
+    "structured_output": "结构化输出",
+}
+
+
+def _modelsdev_release_date(item: dict[str, Any]) -> datetime | None:
+    value = item.get("release_date")
+    if isinstance(value, str) and value.strip():
+        try:
+            parsed = datetime.strptime(value.strip(), "%Y-%m-%d").replace(tzinfo=UTC)
+        except ValueError:
+            return None
+        return parsed
+    return None
+
+
+def modelsdev_model_profile(
+    item: dict[str, Any], provider: str, created: datetime
+) -> dict[str, Any] | None:
+    model_id = str(item.get("id") or "").strip()
+    if not model_id:
+        return None
+    modalities = item.get("modalities") if isinstance(item.get("modalities"), dict) else {}
+    limit = item.get("limit") if isinstance(item.get("limit"), dict) else {}
+    cost = item.get("cost") if isinstance(item.get("cost"), dict) else {}
+    capabilities: list[str] = []
+    for flag, label in MODELSDEV_CAPABILITIES.items():
+        if item.get(flag) is True and label not in capabilities:
+            capabilities.append(label)
+    return build_model_profile(
+        canonical_id=f"modelsdev:{model_id}",
+        provider=provider,
+        model_id=model_id,
+        display_name=str(item.get("name") or model_id),
+        version=None,
+        release_date=created,
+        access="open_weights" if item.get("open_weights") is True else "closed_api",
+        status="available",
+        release_type="catalog_addition",
+        official_url=None,
+        documentation_url=None,
+        model_card_url=None,
+        hub_repo=None,
+        source_type="modelsdev_catalog",
+        source_owner=provider,
+        observed_at=created,
+        source_hash=stable_hash(item),
+        modalities={
+            "input": [str(value) for value in modalities.get("input") or []],
+            "output": [str(value) for value in modalities.get("output") or []],
+        },
+        capabilities=capabilities,
+        context_window=limit.get("context")
+        if isinstance(limit.get("context"), int) and limit["context"] > 0
+        else None,
+        max_output_tokens=limit.get("output")
+        if isinstance(limit.get("output"), int) and limit["output"] > 0
+        else None,
+        pricing={
+            "currency": "USD",
+            "inputPerMillionTokens": _price_already_per_million(cost.get("input")),
+            "outputPerMillionTokens": _price_already_per_million(cost.get("output")),
+            "cachedInputPerMillionTokens": _price_already_per_million(cost.get("cache_read")),
+        },
+        availability=["models.dev"],
+    )
+
+
+def modelsdev_model_entry(
+    item: dict[str, Any],
+    provider: str,
+    now: datetime,
+    window_start: datetime,
+    known_model_ids: set[str],
+) -> tuple[dict[str, Any], dict[str, Any]] | None:
+    model_id = str(item.get("id") or "").strip()
+    if not model_id or ":" in model_id:
+        return None
+    if item.get("open_weights") is True:
+        return None  # open-weight releases come from the official HF org channel
+    created = _modelsdev_release_date(item)
+    if created is None or created < window_start or created > now:
+        return None
+    # OpenRouter already covers this model; keep a single event per model.
+    if model_id.lower() in known_model_ids:
+        return None
+    profile = modelsdev_model_profile(item, provider, created)
+    if profile is None:
+        return None
+    event = make_event(
+        family="model",
+        event_type="vendor_catalog_model_added",
+        title=f"{profile['displayName']} 新增可用",
+        summary=catalog_added_summary(profile),
+        url=MODELSDEV_URL,
+        observed_at=created,
+        published_at=created,
+        source=f"models.dev · {provider}",
+        model_id=model_id,
+        severity="normal",
+        extra={
+            "modelRef": profile["canonicalId"],
+            "sourceType": "modelsdev_catalog",
+            "sourceOwner": provider,
+            "eventIdentity": f"modelsdev:{model_id}",
+            "evidence": [
+                evidence_entry(
+                    "catalogEntry", MODELSDEV_URL, created, stable_hash(item), "modelsdev_catalog"
+                )
+            ],
+        },
+    )
+    return event, profile
+
+
+def collect_modelsdev_models(
+    config: TodayConfig,
+    now: datetime,
+    window_start: datetime,
+    known_hf_repos: set[str],
+    known_model_ids: set[str],
+) -> tuple[list[dict[str, Any]], dict[str, dict[str, Any]], list[str]]:
+    if not config.modelsdev_enabled:
+        return [], {}, []
+    payload = get_json(MODELSDEV_URL, config.modelsdev_timeout_seconds, {})
+    if not isinstance(payload, dict):
+        raise TodayFetchError("models.dev response is not an object")
+    providers = dict(config.modelsdev_providers)
+    events: list[dict[str, Any]] = []
+    profiles: dict[str, dict[str, Any]] = {}
+    for slug, provider in providers.items():
+        provider_payload = payload.get(slug)
+        if not isinstance(provider_payload, dict):
+            continue
+        models = provider_payload.get("models")
+        if not isinstance(models, dict):
+            continue
+        for model_id, item in models.items():
+            if not isinstance(item, dict):
+                continue
+            if len(events) >= config.catalog_max_models:
+                break
+            if item.get("open_weights") is True:
+                continue  # open-weight releases come from the official HF org channel
+            hub_repo = str(item.get("id") or "").lower()
+            if hub_repo in known_hf_repos:
+                continue
+            entry = modelsdev_model_entry(item, provider, now, window_start, known_model_ids)
+            if entry is None:
+                continue
+            event, profile = entry
+            profiles[profile["canonicalId"]] = profile
+            events.append(event)
+    return events, profiles, []
+
+
 def _benchmark_profile(event: dict[str, Any]) -> tuple[str, dict[str, Any]] | None:
     model_id = event.get("modelId")
     if not isinstance(model_id, str) or not model_id:
@@ -1122,6 +1313,16 @@ def build_document(
     except TodayFetchError:
         catalog_events, catalog_profiles, catalog_failures = [], {}, ["catalog:TodayFetchError"]
     failures.extend(catalog_failures)
+    known_model_ids = {str(event.get("modelId") or "").lower() for event in catalog_events}
+    try:
+        modelsdev_events, modelsdev_profiles, modelsdev_failures = collect_modelsdev_models(
+            config, current, window_start, known_hf_repos, known_model_ids
+        )
+    except TodayFetchError:
+        modelsdev_events, modelsdev_profiles, modelsdev_failures = [], {}, [
+            "modelsdev:TodayFetchError"
+        ]
+    failures.extend(modelsdev_failures)
     recent_benchmark_events = [
         item
         for item in (benchmark_events or [])
@@ -1144,6 +1345,7 @@ def build_document(
         profiles.update(previous_models)
     profiles.update(hub_profiles)
     profiles.update(catalog_profiles)
+    profiles.update(modelsdev_profiles)
     for event in recent_benchmark_events:
         profile_item = _benchmark_profile(event)
         if profile_item:
@@ -1151,7 +1353,7 @@ def build_document(
             event["modelRef"] = model_ref
             profiles.setdefault(model_ref, profile)
     events = sorted(
-        hub_events + catalog_events + recent_benchmark_events,
+        hub_events + catalog_events + modelsdev_events + recent_benchmark_events,
         key=lambda item: (
             priority_value(item.get("priority")),
             -(parse_time(item.get("observedAt")) or current).timestamp(),
@@ -1179,7 +1381,12 @@ def build_document(
             "official": sum(
                 1 for item in events if item.get("eventType") == "official_model_release"
             ),
-            "catalog": sum(1 for item in events if item.get("eventType") == "catalog_model_added"),
+            "catalog": sum(
+                1
+                for item in events
+                if item.get("eventType")
+                in ("catalog_model_added", "vendor_catalog_model_added")
+            ),
             "benchmark": sum(1 for item in events if item.get("family") == "benchmark"),
         },
         "events": events,

@@ -11,6 +11,7 @@ from today_activity import (
     catalog_model_entry,
     hub_org_model_entry,
     make_event,
+    modelsdev_model_entry,
     parse_time,
     stable_hash,
 )
@@ -243,3 +244,54 @@ def test_event_id_is_stable_and_ignores_fetch_time():
         value["eventId"]
         == stable_hash(["model", "official_model_release", "open-release:org/model"])[:32]
     )
+
+
+def _modelsdev_model(**overrides):
+    item = {
+        "id": "gpt-6-mini",
+        "name": "GPT-6 Mini",
+        "release_date": "2026-09-10",
+        "open_weights": False,
+        "tool_call": True,
+        "reasoning": True,
+        "structured_output": False,
+        "modalities": {"input": ["text", "image"], "output": ["text"]},
+        "limit": {"context": 400000, "output": 128000},
+        "cost": {"input": 0.05, "output": 0.4, "cache_read": 0.005},
+    }
+    item.update(overrides)
+    return item
+
+
+def test_modelsdev_entry_builds_catalog_event():
+    entry = modelsdev_model_entry(_modelsdev_model(), "OpenAI", NOW, WINDOW, set())
+    assert entry is not None
+    event, profile = entry
+    assert event["eventType"] == "vendor_catalog_model_added"
+    assert event["trustTier"] == "catalog"
+    assert event["isOfficial"] is False
+    assert profile["canonicalId"] == "modelsdev:gpt-6-mini"
+    assert profile["access"] == "closed_api"
+    assert profile["contextWindow"] == 400000
+    assert profile["maxOutputTokens"] == 128000
+    assert profile["pricing"]["inputPerMillionTokens"] == 0.05
+    assert profile["pricing"]["outputPerMillionTokens"] == 0.4
+    assert "工具调用" in profile["capabilities"] and "推理" in profile["capabilities"]
+    assert profile["evidence"]
+
+
+def test_modelsdev_entry_filters():
+    old = modelsdev_model_entry(
+        _modelsdev_model(release_date="2026-08-01"), "OpenAI", NOW, WINDOW, set()
+    )
+    assert old is None
+    dup = modelsdev_model_entry(_modelsdev_model(), "OpenAI", NOW, WINDOW, {"gpt-6-mini"})
+    assert dup is None
+    open_weights = modelsdev_model_entry(
+        _modelsdev_model(open_weights=True), "OpenAI", NOW, WINDOW, set()
+    )
+    assert open_weights is None
+    bad_date = modelsdev_model_entry(
+        _modelsdev_model(release_date="not-a-date"), "OpenAI", NOW, WINDOW, set()
+    )
+    assert bad_date is None
