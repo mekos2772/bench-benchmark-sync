@@ -177,6 +177,41 @@ def collect_benchmark_state(
     return state, [], failures
 
 
+def format_score(value: Any, unit: str) -> str:
+    try:
+        number = float(value)
+    except (TypeError, ValueError):
+        return str(value)
+    if unit == "ratio":
+        return f"{number * 100:.1f}%"
+    if unit == "score":
+        return f"{number:.2f}"
+    return f"{number:g}"
+
+
+def board_top_models(board: dict[str, Any], unit: str, count: int = 3) -> list[str]:
+    records = [
+        item
+        for item in (board.get("records") or {}).values()
+        if isinstance(item.get("score"), (int, float))
+    ]
+    records.sort(key=lambda item: item["score"], reverse=True)
+    return [
+        f"{item.get('model')}（{format_score(item['score'], unit)}）" for item in records[:count]
+    ]
+
+
+def board_summary_parts(board: dict[str, Any], unit: str) -> str:
+    parts = [f"共 {len(board.get('records') or {})} 个模型"]
+    release = board.get("release")
+    if release:
+        parts.append(f"数据版本 {release}")
+    top = board_top_models(board, unit)
+    if top:
+        parts.append(f"当前前列：{'、'.join(top)}")
+    return " · ".join(parts)
+
+
 def compare_benchmarks(
     previous: dict[str, Any], current: dict[str, Any], now: datetime
 ) -> list[dict[str, Any]]:
@@ -188,11 +223,15 @@ def compare_benchmarks(
         if board.get("contentHash") != old.get("contentHash") or board.get("release") != old.get(
             "release"
         ):
+            unit = score_unit(list((board.get("records") or {}).values()))
             events.append(
                 make_benchmark_event(
                     event_type="benchmark_updated",
                     title=f"{board['title']} 官方数据更新",
-                    summary=f"{board['title']} 的官方公开数据内容发生变化。",
+                    summary=(
+                        f"{board['title']} 官方数据发生变化；"
+                        f"{board_summary_parts(board, unit)}。"
+                    ),
                     board=type(
                         "Board",
                         (),
@@ -207,18 +246,26 @@ def compare_benchmarks(
                     extra={
                         "release": board.get("release"),
                         "contentHash": board.get("contentHash"),
+                        "unit": unit,
+                        "modelCount": len(board.get("records") or {}),
+                        "topModels": board_top_models(board, unit),
                     },
                 )
             )
         old_records = old.get("records") or {}
         new_records = board.get("records") or {}
+        unit = score_unit(list(new_records.values()))
         for key in sorted(set(new_records) - set(old_records)):
             item = new_records[key]
             events.append(
                 make_benchmark_event(
                     event_type="model_added_to_benchmark",
                     title=f"{item.get('model')} 新上榜",
-                    summary=f"{item.get('model')} 出现在 {board['title']} 官方数据中。",
+                    summary=(
+                        f"{item.get('model')} 进入 {board['title']}，"
+                        f"当前分数 {format_score(item.get('score'), unit)}"
+                        f"（第 {item.get('displayRank')} 位）。"
+                    ),
                     board=type(
                         "Board",
                         (),
@@ -235,6 +282,7 @@ def compare_benchmarks(
                         "rank": item.get("rank"),
                         "displayRank": item.get("displayRank"),
                         "release": board.get("release"),
+                        "unit": unit,
                     },
                 )
             )
@@ -244,7 +292,10 @@ def compare_benchmarks(
                 make_benchmark_event(
                     event_type="model_removed_from_benchmark",
                     title=f"{item.get('model')} 移出榜单",
-                    summary=f"{item.get('model')} 不再出现在 {board['title']} 当前官方数据中。",
+                    summary=(
+                        f"{item.get('model')} 不再出现在 {board['title']} 当前官方数据中"
+                        f"（此前分数 {format_score(item.get('score'), unit)}）。"
+                    ),
                     board=type(
                         "Board",
                         (),
@@ -260,10 +311,10 @@ def compare_benchmarks(
                         "previousScore": item.get("score"),
                         "previousRank": item.get("rank"),
                         "release": old.get("release"),
+                        "unit": unit,
                     },
                 )
             )
-        unit = score_unit(list(new_records.values()))
         threshold = {"ratio": 0.01, "score": 1.0, "raw": 25.0}.get(unit, 1.0)
         for key in sorted(set(new_records) & set(old_records)):
             before = old_records[key]
@@ -283,7 +334,11 @@ def compare_benchmarks(
                     make_benchmark_event(
                         event_type=event_type,
                         title=f"{after.get('model')} 分数变化",
-                        summary=f"{board['title']} 分数从 {old_score} 变为 {new_score}。",
+                        summary=(
+                            f"{board['title']} 分数从 {format_score(old_score, unit)} "
+                            f"变为 {format_score(new_score, unit)}"
+                            f"（{'+' if delta > 0 else ''}{format_score(delta, unit)}）。"
+                        ),
                         board=type(
                             "Board",
                             (),
@@ -308,11 +363,11 @@ def compare_benchmarks(
             after_rank = after.get("rank")
             if before_rank is not None and after_rank is not None and before_rank != after_rank:
                 rank_type = "rank_changed"
-                summary = f"官方排名从 {before_rank} 变为 {after_rank}。"
+                summary = f"{board['title']} 官方排名从 {before_rank} 变为 {after_rank}。"
             elif before.get("displayRank") != after.get("displayRank"):
                 rank_type = "derived_rank_changed"
                 summary = (
-                    f"按当前分数推导的列表位置从 {before.get('displayRank')} "
+                    f"{board['title']} 按当前分数推导的列表位置从 {before.get('displayRank')} "
                     f"变为 {after.get('displayRank')}；官方 rank 未提供。"
                 )
             else:
