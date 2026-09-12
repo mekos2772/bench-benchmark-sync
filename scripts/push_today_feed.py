@@ -31,7 +31,12 @@ EXPECTED_DATA_SOURCE = "today-activity-aggregator"
 REQUIRED_FAMILIES = ("model", "benchmark")
 EXPECTED_BUNDLE_SOURCE = "benchmark-sync-static"
 MAX_DOCUMENT_BYTES = 1_000_000
-MISSING_COLLECTION_MARKERS = ("collection not exist", "collection not exists", "集合不存在")
+MISSING_COLLECTION_MARKERS = (
+    "collection not exist",
+    "collection not exists",
+    "集合不存在",
+    "db or table not exist",
+)
 ATTEMPTS = 3
 
 
@@ -176,12 +181,10 @@ def push_feed(
     query_bytes = len(query.encode("utf-8"))
     if query_bytes > MAX_DOCUMENT_BYTES:
         raise RuntimeError(
-            f"feed document is {query_bytes} bytes, above the {MAX_DOCUMENT_BYTES}-byte "
-            "guard; trim the feed before pushing"
+            f"document is {query_bytes} bytes, above the {MAX_DOCUMENT_BYTES}-byte "
+            "guard; trim it before pushing"
         )
-    events = len(document.get("events", []))
-    models = len(document.get("models", {}))
-    log(f"pushing {events} events / {models} model profiles (query {query_bytes} bytes)")
+    log(f"pushing {collection}/{doc_id} (query {query_bytes} bytes)")
 
     token = fetch_access_token(appid, secret)
     payload = call_api(DATABASE_UPDATE_URL, token, {"env": env, "query": query})
