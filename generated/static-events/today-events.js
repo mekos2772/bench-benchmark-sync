@@ -1,8 +1,8 @@
 module.exports = {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-09-12T10:13:09Z",
-  "windowStart": "2026-09-11T10:13:09Z",
+  "generatedAt": "2026-09-12T10:34:38Z",
+  "windowStart": "2026-09-11T10:34:38Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -29,6 +29,8 @@ module.exports = {
       "capabilities": [],
       "parameterCount": null,
       "license": null,
+      "technicalReportUrl": null,
+      "description": null,
       "contextWindow": null,
       "maxInputTokens": null,
       "maxOutputTokens": null,
@@ -50,49 +52,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "b1e67b69dd2f68084530ef3a5a1bc6d19e54a3325dbed2cb48be5dbc705f1f88",
+          "contentHash": "a7fcf7599f347a60b2419ae63345106a7ba9ee82cd05584a1be212f289263ef3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "b1e67b69dd2f68084530ef3a5a1bc6d19e54a3325dbed2cb48be5dbc705f1f88",
+          "contentHash": "a7fcf7599f347a60b2419ae63345106a7ba9ee82cd05584a1be212f289263ef3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "b1e67b69dd2f68084530ef3a5a1bc6d19e54a3325dbed2cb48be5dbc705f1f88",
+          "contentHash": "a7fcf7599f347a60b2419ae63345106a7ba9ee82cd05584a1be212f289263ef3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "b1e67b69dd2f68084530ef3a5a1bc6d19e54a3325dbed2cb48be5dbc705f1f88",
+          "contentHash": "a7fcf7599f347a60b2419ae63345106a7ba9ee82cd05584a1be212f289263ef3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "b1e67b69dd2f68084530ef3a5a1bc6d19e54a3325dbed2cb48be5dbc705f1f88",
+          "contentHash": "a7fcf7599f347a60b2419ae63345106a7ba9ee82cd05584a1be212f289263ef3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "b1e67b69dd2f68084530ef3a5a1bc6d19e54a3325dbed2cb48be5dbc705f1f88",
+          "contentHash": "a7fcf7599f347a60b2419ae63345106a7ba9ee82cd05584a1be212f289263ef3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "b1e67b69dd2f68084530ef3a5a1bc6d19e54a3325dbed2cb48be5dbc705f1f88",
+          "contentHash": "a7fcf7599f347a60b2419ae63345106a7ba9ee82cd05584a1be212f289263ef3",
           "sourceType": "official_benchmark"
         }
       ]
@@ -116,6 +118,8 @@ module.exports = {
       "capabilities": [],
       "parameterCount": null,
       "license": null,
+      "technicalReportUrl": null,
+      "description": null,
       "contextWindow": null,
       "maxInputTokens": null,
       "maxOutputTokens": null,
@@ -137,49 +141,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "336d4f301bd2464cf8d98221f45fdaff699206a0512e5155d65f054dbaeefcec",
+          "contentHash": "180996d29d7164bec759ec275cab465ca11d73f727a6c3d7cc30925ff69d8e68",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "336d4f301bd2464cf8d98221f45fdaff699206a0512e5155d65f054dbaeefcec",
+          "contentHash": "180996d29d7164bec759ec275cab465ca11d73f727a6c3d7cc30925ff69d8e68",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "336d4f301bd2464cf8d98221f45fdaff699206a0512e5155d65f054dbaeefcec",
+          "contentHash": "180996d29d7164bec759ec275cab465ca11d73f727a6c3d7cc30925ff69d8e68",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "336d4f301bd2464cf8d98221f45fdaff699206a0512e5155d65f054dbaeefcec",
+          "contentHash": "180996d29d7164bec759ec275cab465ca11d73f727a6c3d7cc30925ff69d8e68",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "336d4f301bd2464cf8d98221f45fdaff699206a0512e5155d65f054dbaeefcec",
+          "contentHash": "180996d29d7164bec759ec275cab465ca11d73f727a6c3d7cc30925ff69d8e68",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "336d4f301bd2464cf8d98221f45fdaff699206a0512e5155d65f054dbaeefcec",
+          "contentHash": "180996d29d7164bec759ec275cab465ca11d73f727a6c3d7cc30925ff69d8e68",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "336d4f301bd2464cf8d98221f45fdaff699206a0512e5155d65f054dbaeefcec",
+          "contentHash": "180996d29d7164bec759ec275cab465ca11d73f727a6c3d7cc30925ff69d8e68",
           "sourceType": "official_benchmark"
         }
       ]
@@ -203,6 +207,8 @@ module.exports = {
       "capabilities": [],
       "parameterCount": null,
       "license": null,
+      "technicalReportUrl": null,
+      "description": null,
       "contextWindow": null,
       "maxInputTokens": null,
       "maxOutputTokens": null,
@@ -224,49 +230,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "637095e230dd29b0b688017e3866eb2be40c072a59bf8905e99bdd8bd8e4b61b",
+          "contentHash": "ffb357d69b7c3aae96b12093f6bc14ec89861c8523a4951041d9628bcffb5178",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "637095e230dd29b0b688017e3866eb2be40c072a59bf8905e99bdd8bd8e4b61b",
+          "contentHash": "ffb357d69b7c3aae96b12093f6bc14ec89861c8523a4951041d9628bcffb5178",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "637095e230dd29b0b688017e3866eb2be40c072a59bf8905e99bdd8bd8e4b61b",
+          "contentHash": "ffb357d69b7c3aae96b12093f6bc14ec89861c8523a4951041d9628bcffb5178",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "637095e230dd29b0b688017e3866eb2be40c072a59bf8905e99bdd8bd8e4b61b",
+          "contentHash": "ffb357d69b7c3aae96b12093f6bc14ec89861c8523a4951041d9628bcffb5178",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "637095e230dd29b0b688017e3866eb2be40c072a59bf8905e99bdd8bd8e4b61b",
+          "contentHash": "ffb357d69b7c3aae96b12093f6bc14ec89861c8523a4951041d9628bcffb5178",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "637095e230dd29b0b688017e3866eb2be40c072a59bf8905e99bdd8bd8e4b61b",
+          "contentHash": "ffb357d69b7c3aae96b12093f6bc14ec89861c8523a4951041d9628bcffb5178",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "637095e230dd29b0b688017e3866eb2be40c072a59bf8905e99bdd8bd8e4b61b",
+          "contentHash": "ffb357d69b7c3aae96b12093f6bc14ec89861c8523a4951041d9628bcffb5178",
           "sourceType": "official_benchmark"
         }
       ]
@@ -290,6 +296,8 @@ module.exports = {
       "capabilities": [],
       "parameterCount": null,
       "license": null,
+      "technicalReportUrl": null,
+      "description": null,
       "contextWindow": null,
       "maxInputTokens": null,
       "maxOutputTokens": null,
@@ -311,49 +319,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "75d961742cf977a35705a0acc9245c6f46cd50aec8ddbde6e90ef734c4b091d1",
+          "contentHash": "cb356db95ed2f7bf1ef9a58bedb8cf67c6e2b7bd954d4eac0c7496096793df47",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "75d961742cf977a35705a0acc9245c6f46cd50aec8ddbde6e90ef734c4b091d1",
+          "contentHash": "cb356db95ed2f7bf1ef9a58bedb8cf67c6e2b7bd954d4eac0c7496096793df47",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "75d961742cf977a35705a0acc9245c6f46cd50aec8ddbde6e90ef734c4b091d1",
+          "contentHash": "cb356db95ed2f7bf1ef9a58bedb8cf67c6e2b7bd954d4eac0c7496096793df47",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "75d961742cf977a35705a0acc9245c6f46cd50aec8ddbde6e90ef734c4b091d1",
+          "contentHash": "cb356db95ed2f7bf1ef9a58bedb8cf67c6e2b7bd954d4eac0c7496096793df47",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "75d961742cf977a35705a0acc9245c6f46cd50aec8ddbde6e90ef734c4b091d1",
+          "contentHash": "cb356db95ed2f7bf1ef9a58bedb8cf67c6e2b7bd954d4eac0c7496096793df47",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "75d961742cf977a35705a0acc9245c6f46cd50aec8ddbde6e90ef734c4b091d1",
+          "contentHash": "cb356db95ed2f7bf1ef9a58bedb8cf67c6e2b7bd954d4eac0c7496096793df47",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
           "observedAt": "2026-09-12T06:09:48Z",
-          "contentHash": "75d961742cf977a35705a0acc9245c6f46cd50aec8ddbde6e90ef734c4b091d1",
+          "contentHash": "cb356db95ed2f7bf1ef9a58bedb8cf67c6e2b7bd954d4eac0c7496096793df47",
           "sourceType": "official_benchmark"
         }
       ]
@@ -395,7 +403,7 @@ module.exports = {
       "contentHash": "ca9d9725d71f6de7126fd455de4495cf435b285e003397cedec80461d1a3e80c",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "3a5c5a04f2c06c1bda6ffd5715c8da35d191fc75733cdb0adf337ceffa5dd33d"
+        "contentHash": "23a9296daee410843e9fa7171e8d3ba982dae3887b1f2319b04b87e7d17c161c"
       },
       "unit": "raw",
       "modelCount": 20,
@@ -434,7 +442,7 @@ module.exports = {
       "contentHash": "78551b200f40825642fd720eb6afbcd681cc4fca9d40c0695382ec4ac7587a11",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "3a5c5a04f2c06c1bda6ffd5715c8da35d191fc75733cdb0adf337ceffa5dd33d"
+        "contentHash": "23a9296daee410843e9fa7171e8d3ba982dae3887b1f2319b04b87e7d17c161c"
       },
       "unit": "ratio",
       "modelCount": 20,
@@ -473,7 +481,7 @@ module.exports = {
       "contentHash": "e4373b217ce063ca6cc273b95397a5584f07646af7d62d56a50a6c1e1b983a60",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
-        "contentHash": "3a5c5a04f2c06c1bda6ffd5715c8da35d191fc75733cdb0adf337ceffa5dd33d"
+        "contentHash": "23a9296daee410843e9fa7171e8d3ba982dae3887b1f2319b04b87e7d17c161c"
       },
       "unit": "ratio",
       "modelCount": 20,
@@ -512,7 +520,7 @@ module.exports = {
       "contentHash": "d6fc87c171766ab8b6dceb6fc88c3db7bc8f85bb359638afec85fb86d1089346",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "3a5c5a04f2c06c1bda6ffd5715c8da35d191fc75733cdb0adf337ceffa5dd33d"
+        "contentHash": "23a9296daee410843e9fa7171e8d3ba982dae3887b1f2319b04b87e7d17c161c"
       },
       "unit": "ratio",
       "modelCount": 20,
@@ -551,7 +559,7 @@ module.exports = {
       "contentHash": "9139a0932f938265a3a0c98230c855a7719660be20b5f1d510e02c24bde45bdf",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "3a5c5a04f2c06c1bda6ffd5715c8da35d191fc75733cdb0adf337ceffa5dd33d"
+        "contentHash": "23a9296daee410843e9fa7171e8d3ba982dae3887b1f2319b04b87e7d17c161c"
       },
       "unit": "score",
       "modelCount": 20,
@@ -590,7 +598,7 @@ module.exports = {
       "contentHash": "a6551e223ead0dafe2827be77d714bdb1b7843ab9aa0662117ca9c2dfc8bec8f",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "3a5c5a04f2c06c1bda6ffd5715c8da35d191fc75733cdb0adf337ceffa5dd33d"
+        "contentHash": "23a9296daee410843e9fa7171e8d3ba982dae3887b1f2319b04b87e7d17c161c"
       },
       "unit": "ratio",
       "modelCount": 20,
@@ -629,7 +637,7 @@ module.exports = {
       "contentHash": "90f0dcfc1927211635e9d1c33cab7efed6b50e2bb393589d1937c04247904149",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "3a5c5a04f2c06c1bda6ffd5715c8da35d191fc75733cdb0adf337ceffa5dd33d"
+        "contentHash": "23a9296daee410843e9fa7171e8d3ba982dae3887b1f2319b04b87e7d17c161c"
       },
       "unit": "ratio",
       "modelCount": 20,
@@ -668,7 +676,7 @@ module.exports = {
       "contentHash": "91833ed14b516d2db3b6d45e4c00882288263641813f381b63e68a9649dc0264",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "3a5c5a04f2c06c1bda6ffd5715c8da35d191fc75733cdb0adf337ceffa5dd33d"
+        "contentHash": "23a9296daee410843e9fa7171e8d3ba982dae3887b1f2319b04b87e7d17c161c"
       },
       "unit": "ratio",
       "modelCount": 20,
@@ -707,7 +715,7 @@ module.exports = {
       "contentHash": "55c14ff3747cbd80067c109a90967fb3f4f1d909ed0e8dfa7b3f79d475fdf288",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "3a5c5a04f2c06c1bda6ffd5715c8da35d191fc75733cdb0adf337ceffa5dd33d"
+        "contentHash": "23a9296daee410843e9fa7171e8d3ba982dae3887b1f2319b04b87e7d17c161c"
       },
       "unit": "ratio",
       "modelCount": 12,
@@ -746,7 +754,7 @@ module.exports = {
       "contentHash": "e74398f44b90a85af448def37891923d8a637e8b7be3ea4e029fffcf87a0334f",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
-        "contentHash": "3a5c5a04f2c06c1bda6ffd5715c8da35d191fc75733cdb0adf337ceffa5dd33d"
+        "contentHash": "23a9296daee410843e9fa7171e8d3ba982dae3887b1f2319b04b87e7d17c161c"
       },
       "unit": "ratio",
       "modelCount": 20,
@@ -785,7 +793,7 @@ module.exports = {
       "contentHash": "b945418c35f40df4d3e2a192c61e530e0543b68429dec4206ba8a1e83e360a15",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "3a5c5a04f2c06c1bda6ffd5715c8da35d191fc75733cdb0adf337ceffa5dd33d"
+        "contentHash": "23a9296daee410843e9fa7171e8d3ba982dae3887b1f2319b04b87e7d17c161c"
       },
       "unit": "ratio",
       "modelCount": 12,
@@ -824,7 +832,7 @@ module.exports = {
       "contentHash": "b41ad62bc3ed6c243678fe304c0c36b7ce186cb50870b23c8b30e538b6583e80",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "3a5c5a04f2c06c1bda6ffd5715c8da35d191fc75733cdb0adf337ceffa5dd33d"
+        "contentHash": "23a9296daee410843e9fa7171e8d3ba982dae3887b1f2319b04b87e7d17c161c"
       },
       "unit": "ratio",
       "modelCount": 20,
@@ -867,7 +875,7 @@ module.exports = {
       "modelIdentity": "aa_gdpval_elo:Kimi K3 (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "3a5c5a04f2c06c1bda6ffd5715c8da35d191fc75733cdb0adf337ceffa5dd33d"
+        "contentHash": "23a9296daee410843e9fa7171e8d3ba982dae3887b1f2319b04b87e7d17c161c"
       }
     },
     {
@@ -902,7 +910,7 @@ module.exports = {
       "modelIdentity": "aa_terminal_bench_v4_0:GPT-6 Astra (medium)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
-        "contentHash": "3a5c5a04f2c06c1bda6ffd5715c8da35d191fc75733cdb0adf337ceffa5dd33d"
+        "contentHash": "23a9296daee410843e9fa7171e8d3ba982dae3887b1f2319b04b87e7d17c161c"
       }
     },
     {
@@ -936,7 +944,7 @@ module.exports = {
       "modelIdentity": "aa_terminal_bench_v4_0:GPT-6 Astra (Non-reasoning)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
-        "contentHash": "3a5c5a04f2c06c1bda6ffd5715c8da35d191fc75733cdb0adf337ceffa5dd33d"
+        "contentHash": "23a9296daee410843e9fa7171e8d3ba982dae3887b1f2319b04b87e7d17c161c"
       }
     },
     {
@@ -973,13 +981,13 @@ module.exports = {
       "modelIdentity": "aa_gdpval_elo:Muse Spark 1.3 (xhigh)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "3a5c5a04f2c06c1bda6ffd5715c8da35d191fc75733cdb0adf337ceffa5dd33d"
+        "contentHash": "23a9296daee410843e9fa7171e8d3ba982dae3887b1f2319b04b87e7d17c161c"
       }
     }
   ],
   "eventCount": 16,
   "provenance": {
-    "workflowRunId": "34687845048",
-    "mainCommit": "e2ef68234f32f0fcb693d6db156308e8ff18af36"
+    "workflowRunId": "34688808045",
+    "mainCommit": "62d964387d96a81a619ef6e0e5b9b535546a3dd4"
   }
 };
