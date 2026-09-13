@@ -1,26 +1,26 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T00:17:31Z",
+  "generatedAt": "2026-09-13T04:53:02Z",
   "models": {
     "benchmark:Kimi K3 (max)": {
       "version": null,
-      "contentHash": "5a84820994ec5b7738945679927961b2687a8cd794539b8d5c9e8a289405a8e8",
-      "lastSeenAt": "2026-09-13T00:17:31Z"
+      "contentHash": "2a83b824d804a454f4e4d62833f4db875d5b506935f3aa8780551bf9be4d87a8",
+      "lastSeenAt": "2026-09-13T04:53:02Z"
     },
     "benchmark:Muse Spark 1.3 (xhigh)": {
       "version": null,
-      "contentHash": "5abc43e1637e985cd082205572718ef06f427028530621a8a40ffe403ce89346",
-      "lastSeenAt": "2026-09-13T00:17:31Z"
+      "contentHash": "e8ab30fa0fc2df7d9b7806ea38f5a87a6f02071bb9bd235bf91f89eed68b6abb",
+      "lastSeenAt": "2026-09-13T04:53:02Z"
     },
     "benchmark:GPT-6 Astra (medium)": {
       "version": null,
-      "contentHash": "b6e582601f58c302a3e0bf820659a0b59a4ff325e4e1e407f97cf5d4f205d522",
-      "lastSeenAt": "2026-09-13T00:17:31Z"
+      "contentHash": "eb73b6b6d81b928ec1271d913fa0d9e85e24839f78edb07b8ce0ae4478cb364c",
+      "lastSeenAt": "2026-09-13T04:53:02Z"
     },
     "benchmark:GPT-6 Astra (Non-reasoning)": {
       "version": null,
-      "contentHash": "f97e2c551feb06ddee686812da460c3498175de14534d22558196a26a0807451",
-      "lastSeenAt": "2026-09-13T00:17:31Z"
+      "contentHash": "1af3a6e98227f6813ff9f39977bc47e101a227c6cdc0f82b7ae51cb88768a346",
+      "lastSeenAt": "2026-09-13T04:53:02Z"
     }
   },
   "benchmarks": {
@@ -508,490 +508,6 @@
         }
       }
     },
-    "livebench_reasoning": {
-      "runtimeId": "livebench_reasoning",
-      "familyId": "livebench",
-      "title": "LiveBench Reasoning",
-      "release": "2026-06-25",
-      "contentHash": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
-      "source": {
-        "benchmark_id": "livebench_reasoning",
-        "status": "enabled",
-        "source_name": "LiveBench Reasoning dated official leaderboard CSV",
-        "organization": "LiveBench",
-        "source_type": "official_site_dated_csv",
-        "official_url": "https://livebench.ai/",
-        "endpoint": "https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main",
-        "raw_base_url": "https://livebench.ai",
-        "fallback_release_id": "2026-06-25",
-        "fetch_method": "GET",
-        "update_frequency": "release_based",
-        "requires_auth": false,
-        "category_selector": "reasoning",
-        "evidence_url": "https://livebench.ai/",
-        "release_tracking": "dated_table_and_categories_files",
-        "hash_required": true,
-        "notes": "Official category Reasoning."
-      },
-      "records": {
-        "claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25:Reasoning:category_average:claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25": {
-          "model": "claude-opus-4-5-20251101-thinking-64k-high-effort",
-          "score": 80.0865,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:claude-opus-4-5-20251101-thinking-64k-high-effort",
-          "variant": "2026-06-25",
-          "displayRank": 41
-        },
-        "claude-opus-4-6-thinking-auto-high-effort|2026-06-25:Reasoning:category_average:claude-opus-4-6-thinking-auto-high-effort|2026-06-25": {
-          "model": "claude-opus-4-6-thinking-auto-high-effort",
-          "score": 88.673,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:claude-opus-4-6-thinking-auto-high-effort",
-          "variant": "2026-06-25",
-          "displayRank": 16
-        },
-        "claude-opus-4-7-xhigh-effort|2026-06-25:Reasoning:category_average:claude-opus-4-7-xhigh-effort|2026-06-25": {
-          "model": "claude-opus-4-7-xhigh-effort",
-          "score": 87.19225,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:claude-opus-4-7-xhigh-effort",
-          "variant": "2026-06-25",
-          "displayRank": 22
-        },
-        "claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25:Reasoning:category_average:claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25": {
-          "model": "claude-sonnet-4-6-thinking-auto-medium-effort",
-          "score": 84.76925,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:claude-sonnet-4-6-thinking-auto-medium-effort",
-          "variant": "2026-06-25",
-          "displayRank": 32
-        },
-        "claude-sonnet-5-xhigh-effort|2026-06-25:Reasoning:category_average:claude-sonnet-5-xhigh-effort|2026-06-25": {
-          "model": "claude-sonnet-5-xhigh-effort",
-          "score": 88.69225,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:claude-sonnet-5-xhigh-effort",
-          "variant": "2026-06-25",
-          "displayRank": 15
-        },
-        "deepseek-v4-flash|2026-06-25:Reasoning:category_average:deepseek-v4-flash|2026-06-25": {
-          "model": "deepseek-v4-flash",
-          "score": 70.58175,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:deepseek-v4-flash",
-          "variant": "2026-06-25",
-          "displayRank": 55
-        },
-        "deepseek-v4-pro|2026-06-25:Reasoning:category_average:deepseek-v4-pro|2026-06-25": {
-          "model": "deepseek-v4-pro",
-          "score": 82.69225,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:deepseek-v4-pro",
-          "variant": "2026-06-25",
-          "displayRank": 38
-        },
-        "gemini-3.1-pro-preview-high|2026-06-25:Reasoning:category_average:gemini-3.1-pro-preview-high|2026-06-25": {
-          "model": "gemini-3.1-pro-preview-high",
-          "score": 84.00475,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:gemini-3.1-pro-preview-high",
-          "variant": "2026-06-25",
-          "displayRank": 33
-        },
-        "gemini-3.5-flash-high|2026-06-25:Reasoning:category_average:gemini-3.5-flash-high|2026-06-25": {
-          "model": "gemini-3.5-flash-high",
-          "score": 82.00475,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:gemini-3.5-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 39
-        },
-        "glm-5.2|2026-06-25:Reasoning:category_average:glm-5.2|2026-06-25": {
-          "model": "glm-5.2",
-          "score": 78.625,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:glm-5.2",
-          "variant": "2026-06-25",
-          "displayRank": 44
-        },
-        "gpt-5.2-2025-12-11-high|2026-06-25:Reasoning:category_average:gpt-5.2-2025-12-11-high|2026-06-25": {
-          "model": "gpt-5.2-2025-12-11-high",
-          "score": 83.2115,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-5.2-2025-12-11-high",
-          "variant": "2026-06-25",
-          "displayRank": 35
-        },
-        "gpt-5.2-codex|2026-06-25:Reasoning:category_average:gpt-5.2-codex|2026-06-25": {
-          "model": "gpt-5.2-codex",
-          "score": 77.7115,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-5.2-codex",
-          "variant": "2026-06-25",
-          "displayRank": 46
-        },
-        "gpt-5.4-mini-xhigh|2026-06-25:Reasoning:category_average:gpt-5.4-mini-xhigh|2026-06-25": {
-          "model": "gpt-5.4-mini-xhigh",
-          "score": 71.32375,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-5.4-mini-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 53
-        },
-        "gpt-5.4-nano-xhigh|2026-06-25:Reasoning:category_average:gpt-5.4-nano-xhigh|2026-06-25": {
-          "model": "gpt-5.4-nano-xhigh",
-          "score": 81.09700000000001,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-5.4-nano-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 40
-        },
-        "gpt-5.4-xhigh|2026-06-25:Reasoning:category_average:gpt-5.4-xhigh|2026-06-25": {
-          "model": "gpt-5.4-xhigh",
-          "score": 88.1155,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-5.4-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 18
-        },
-        "gpt-5.5-xhigh|2026-06-25:Reasoning:category_average:gpt-5.5-xhigh|2026-06-25": {
-          "model": "gpt-5.5-xhigh",
-          "score": 89.65375,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-5.5-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 10
-        },
-        "grok-4.3|2026-06-25:Reasoning:category_average:grok-4.3|2026-06-25": {
-          "model": "grok-4.3",
-          "score": 70.822,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:grok-4.3",
-          "variant": "2026-06-25",
-          "displayRank": 54
-        },
-        "grok-4.5|2026-06-25:Reasoning:category_average:grok-4.5|2026-06-25": {
-          "model": "grok-4.5",
-          "score": 87.173,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:grok-4.5",
-          "variant": "2026-06-25",
-          "displayRank": 23
-        },
-        "grok-build-0.1|2026-06-25:Reasoning:category_average:grok-build-0.1|2026-06-25": {
-          "model": "grok-build-0.1",
-          "score": 76.37025,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:grok-build-0.1",
-          "variant": "2026-06-25",
-          "displayRank": 49
-        },
-        "kimi-k2.6-thinking|2026-06-25:Reasoning:category_average:kimi-k2.6-thinking|2026-06-25": {
-          "model": "kimi-k2.6-thinking",
-          "score": 79.375,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:kimi-k2.6-thinking",
-          "variant": "2026-06-25",
-          "displayRank": 43
-        },
-        "kimi-k2.7-code|2026-06-25:Reasoning:category_average:kimi-k2.7-code|2026-06-25": {
-          "model": "kimi-k2.7-code",
-          "score": 82.80775,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:kimi-k2.7-code",
-          "variant": "2026-06-25",
-          "displayRank": 36
-        },
-        "minimax-m3|2026-06-25:Reasoning:category_average:minimax-m3|2026-06-25": {
-          "model": "minimax-m3",
-          "score": 74.48075,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:minimax-m3",
-          "variant": "2026-06-25",
-          "displayRank": 52
-        },
-        "qwen3.6-27b|2026-06-25:Reasoning:category_average:qwen3.6-27b|2026-06-25": {
-          "model": "qwen3.6-27b",
-          "score": 70.28375,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:qwen3.6-27b",
-          "variant": "2026-06-25",
-          "displayRank": 56
-        },
-        "qwen3.6-plus|2026-06-25:Reasoning:category_average:qwen3.6-plus|2026-06-25": {
-          "model": "qwen3.6-plus",
-          "score": 75.827,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:qwen3.6-plus",
-          "variant": "2026-06-25",
-          "displayRank": 50
-        },
-        "qwen3.7-max|2026-06-25:Reasoning:category_average:qwen3.7-max|2026-06-25": {
-          "model": "qwen3.7-max",
-          "score": 83.3365,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:qwen3.7-max",
-          "variant": "2026-06-25",
-          "displayRank": 34
-        },
-        "gpt-5.6-sol-max|2026-06-25:Reasoning:category_average:gpt-5.6-sol-max|2026-06-25": {
-          "model": "gpt-5.6-sol-max",
-          "score": 91.65375,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-5.6-sol-max",
-          "variant": "2026-06-25",
-          "displayRank": 3
-        },
-        "gpt-5.6-terra-max|2026-06-25:Reasoning:category_average:gpt-5.6-terra-max|2026-06-25": {
-          "model": "gpt-5.6-terra-max",
-          "score": 90.6345,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-5.6-terra-max",
-          "variant": "2026-06-25",
-          "displayRank": 6
-        },
-        "gpt-5.6-luna-max|2026-06-25:Reasoning:category_average:gpt-5.6-luna-max|2026-06-25": {
-          "model": "gpt-5.6-luna-max",
-          "score": 85.64425,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-5.6-luna-max",
-          "variant": "2026-06-25",
-          "displayRank": 29
-        },
-        "claude-fable-5-max-effort|2026-06-25:Reasoning:category_average:claude-fable-5-max-effort|2026-06-25": {
-          "model": "claude-fable-5-max-effort",
-          "score": 89.65375,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:claude-fable-5-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 11
-        },
-        "muse-spark-1.1-xhigh|2026-06-25:Reasoning:category_average:muse-spark-1.1-xhigh|2026-06-25": {
-          "model": "muse-spark-1.1-xhigh",
-          "score": 87.73075,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:muse-spark-1.1-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 20
-        },
-        "kimi-k3|2026-06-25:Reasoning:category_average:kimi-k3|2026-06-25": {
-          "model": "kimi-k3",
-          "score": 90.673,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:kimi-k3",
-          "variant": "2026-06-25",
-          "displayRank": 5
-        },
-        "inkling-xhigh|2026-06-25:Reasoning:category_average:inkling-xhigh|2026-06-25": {
-          "model": "inkling-xhigh",
-          "score": 78.34625,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:inkling-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 45
-        },
-        "gemini-3.5-flash-lite-high|2026-06-25:Reasoning:category_average:gemini-3.5-flash-lite-high|2026-06-25": {
-          "model": "gemini-3.5-flash-lite-high",
-          "score": 60.1875,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:gemini-3.5-flash-lite-high",
-          "variant": "2026-06-25",
-          "displayRank": 57
-        },
-        "gemini-3.6-flash-high|2026-06-25:Reasoning:category_average:gemini-3.6-flash-high|2026-06-25": {
-          "model": "gemini-3.6-flash-high",
-          "score": 85.149,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:gemini-3.6-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 31
-        },
-        "claude-opus-5-max-effort|2026-06-25:Reasoning:category_average:claude-opus-5-max-effort|2026-06-25": {
-          "model": "claude-opus-5-max-effort",
-          "score": 91.2115,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:claude-opus-5-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 4
-        },
-        "claude-opus-4-8-max-effort|2026-06-25:Reasoning:category_average:claude-opus-4-8-max-effort|2026-06-25": {
-          "model": "claude-opus-4-8-max-effort",
-          "score": 89.19225,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:claude-opus-4-8-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 14
-        },
-        "deepseek-v4-flash-0731|2026-06-25:Reasoning:category_average:deepseek-v4-flash-0731|2026-06-25": {
-          "model": "deepseek-v4-flash-0731",
-          "score": 86.6345,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:deepseek-v4-flash-0731",
-          "variant": "2026-06-25",
-          "displayRank": 25
-        },
-        "qwen3.8-max|2026-06-25:Reasoning:category_average:qwen3.8-max|2026-06-25": {
-          "model": "qwen3.8-max",
-          "score": 88.2115,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:qwen3.8-max",
-          "variant": "2026-06-25",
-          "displayRank": 17
-        },
-        "muse-spark-1.2-xhigh|2026-06-25:Reasoning:category_average:muse-spark-1.2-xhigh|2026-06-25": {
-          "model": "muse-spark-1.2-xhigh",
-          "score": 90.00475,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:muse-spark-1.2-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 9
-        },
-        "smaug-agentic|2026-06-25:Reasoning:category_average:smaug-agentic|2026-06-25": {
-          "model": "smaug-agentic",
-          "score": 90.274,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:smaug-agentic",
-          "variant": "2026-06-25",
-          "displayRank": 8
-        },
-        "smaug-mini|2026-06-25:Reasoning:category_average:smaug-mini|2026-06-25": {
-          "model": "smaug-mini",
-          "score": 82.80775,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:smaug-mini",
-          "variant": "2026-06-25",
-          "displayRank": 37
-        },
-        "deepseek-v4-pro-0813|2026-06-25:Reasoning:category_average:deepseek-v4-pro-0813|2026-06-25": {
-          "model": "deepseek-v4-pro-0813",
-          "score": 85.84125,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:deepseek-v4-pro-0813",
-          "variant": "2026-06-25",
-          "displayRank": 27
-        },
-        "grok-4.6|2026-06-25:Reasoning:category_average:grok-4.6|2026-06-25": {
-          "model": "grok-4.6",
-          "score": 90.5095,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:grok-4.6",
-          "variant": "2026-06-25",
-          "displayRank": 7
-        },
-        "gemini-3.7-flash-high|2026-06-25:Reasoning:category_average:gemini-3.7-flash-high|2026-06-25": {
-          "model": "gemini-3.7-flash-high",
-          "score": 87.798,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:gemini-3.7-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 19
-        },
-        "qwen3.8-27b|2026-06-25:Reasoning:category_average:qwen3.8-27b|2026-06-25": {
-          "model": "qwen3.8-27b",
-          "score": 80.02875,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:qwen3.8-27b",
-          "variant": "2026-06-25",
-          "displayRank": 42
-        },
-        "ox-alpha-max|2026-06-25:Reasoning:category_average:ox-alpha-max|2026-06-25": {
-          "model": "ox-alpha-max",
-          "score": 76.5865,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:ox-alpha-max",
-          "variant": "2026-06-25",
-          "displayRank": 48
-        },
-        "deepseek-v4-flash-vision-exp|2026-06-25:Reasoning:category_average:deepseek-v4-flash-vision-exp|2026-06-25": {
-          "model": "deepseek-v4-flash-vision-exp",
-          "score": 85.399,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:deepseek-v4-flash-vision-exp",
-          "variant": "2026-06-25",
-          "displayRank": 30
-        },
-        "glm-5.3|2026-06-25:Reasoning:category_average:glm-5.3|2026-06-25": {
-          "model": "glm-5.3",
-          "score": 85.803,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:glm-5.3",
-          "variant": "2026-06-25",
-          "displayRank": 28
-        },
-        "glm-5.3-flash|2026-06-25:Reasoning:category_average:glm-5.3-flash|2026-06-25": {
-          "model": "glm-5.3-flash",
-          "score": 77.64425,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:glm-5.3-flash",
-          "variant": "2026-06-25",
-          "displayRank": 47
-        },
-        "qwen3.8-flash-next|2026-06-25:Reasoning:category_average:qwen3.8-flash-next|2026-06-25": {
-          "model": "qwen3.8-flash-next",
-          "score": 87.37975,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:qwen3.8-flash-next",
-          "variant": "2026-06-25",
-          "displayRank": 21
-        },
-        "nemotron-3-ultra-550b-a55b|2026-06-25:Reasoning:category_average:nemotron-3-ultra-550b-a55b|2026-06-25": {
-          "model": "nemotron-3-ultra-550b-a55b",
-          "score": 74.697,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:nemotron-3-ultra-550b-a55b",
-          "variant": "2026-06-25",
-          "displayRank": 51
-        },
-        "claude-fable-5-1-max-effort|2026-06-25:Reasoning:category_average:claude-fable-5-1-max-effort|2026-06-25": {
-          "model": "claude-fable-5-1-max-effort",
-          "score": 91.69225,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:claude-fable-5-1-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 2
-        },
-        "gemini-3.8-flash-high|2026-06-25:Reasoning:category_average:gemini-3.8-flash-high|2026-06-25": {
-          "model": "gemini-3.8-flash-high",
-          "score": 89.29325,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:gemini-3.8-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 13
-        },
-        "muse-spark-1.3-xhigh|2026-06-25:Reasoning:category_average:muse-spark-1.3-xhigh|2026-06-25": {
-          "model": "muse-spark-1.3-xhigh",
-          "score": 89.65375,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:muse-spark-1.3-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 12
-        },
-        "gpt-6-astra-max|2026-06-25:Reasoning:category_average:gpt-6-astra-max|2026-06-25": {
-          "model": "gpt-6-astra-max",
-          "score": 92.65375,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-6-astra-max",
-          "variant": "2026-06-25",
-          "displayRank": 1
-        },
-        "smaug-flash|2026-06-25:Reasoning:category_average:smaug-flash|2026-06-25": {
-          "model": "smaug-flash",
-          "score": 86.23075,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:smaug-flash",
-          "variant": "2026-06-25",
-          "displayRank": 26
-        },
-        "deepseek-v4.1-flash-max|2026-06-25:Reasoning:category_average:deepseek-v4.1-flash-max|2026-06-25": {
-          "model": "deepseek-v4.1-flash-max",
-          "score": 86.69225,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Reasoning:category_average:deepseek-v4.1-flash-max",
-          "variant": "2026-06-25",
-          "displayRank": 24
-        }
-      }
-    },
     "livebench_math": {
       "runtimeId": "livebench_math",
       "familyId": "livebench",
@@ -1473,490 +989,6 @@
           "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4.1-flash-max",
           "variant": "2026-06-25",
           "displayRank": 13
-        }
-      }
-    },
-    "livebench_overall": {
-      "runtimeId": "livebench_overall",
-      "familyId": "livebench",
-      "title": "LiveBench Overall",
-      "release": "2026-06-25",
-      "contentHash": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
-      "source": {
-        "benchmark_id": "livebench_overall",
-        "status": "enabled",
-        "source_name": "LiveBench dated official leaderboard CSV",
-        "organization": "LiveBench",
-        "source_type": "official_site_dated_csv",
-        "official_url": "https://livebench.ai/",
-        "endpoint": "https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main",
-        "raw_base_url": "https://livebench.ai",
-        "fallback_release_id": "2026-06-25",
-        "fetch_method": "GET",
-        "update_frequency": "release_based",
-        "requires_auth": false,
-        "category_selector": "overall",
-        "evidence_url": "https://livebench.ai/",
-        "release_tracking": "dated_table_and_categories_files",
-        "hash_required": true,
-        "notes": "Total is reconstructed with the official frontend category-mean algorithm; no rank is inferred. The dated CSV is fetched from the official site root, which is updated in place and is newer than the GitHub public/ mirror."
-      },
-      "records": {
-        "claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25:overall:global_average:claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25": {
-          "model": "claude-opus-4-5-20251101-thinking-64k-high-effort",
-          "score": 72.58216666666667,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:claude-opus-4-5-20251101-thinking-64k-high-effort",
-          "variant": "2026-06-25",
-          "displayRank": 41
-        },
-        "claude-opus-4-6-thinking-auto-high-effort|2026-06-25:overall:global_average:claude-opus-4-6-thinking-auto-high-effort|2026-06-25": {
-          "model": "claude-opus-4-6-thinking-auto-high-effort",
-          "score": 74.51990476190475,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:claude-opus-4-6-thinking-auto-high-effort",
-          "variant": "2026-06-25",
-          "displayRank": 33
-        },
-        "claude-opus-4-7-xhigh-effort|2026-06-25:overall:global_average:claude-opus-4-7-xhigh-effort|2026-06-25": {
-          "model": "claude-opus-4-7-xhigh-effort",
-          "score": 76.52935714285715,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:claude-opus-4-7-xhigh-effort",
-          "variant": "2026-06-25",
-          "displayRank": 22
-        },
-        "claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25:overall:global_average:claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25": {
-          "model": "claude-sonnet-4-6-thinking-auto-medium-effort",
-          "score": 72.99002380952382,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:claude-sonnet-4-6-thinking-auto-medium-effort",
-          "variant": "2026-06-25",
-          "displayRank": 40
-        },
-        "claude-sonnet-5-xhigh-effort|2026-06-25:overall:global_average:claude-sonnet-5-xhigh-effort|2026-06-25": {
-          "model": "claude-sonnet-5-xhigh-effort",
-          "score": 76.03971428571428,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:claude-sonnet-5-xhigh-effort",
-          "variant": "2026-06-25",
-          "displayRank": 26
-        },
-        "deepseek-v4-flash|2026-06-25:overall:global_average:deepseek-v4-flash|2026-06-25": {
-          "model": "deepseek-v4-flash",
-          "score": 65.48110714285716,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:deepseek-v4-flash",
-          "variant": "2026-06-25",
-          "displayRank": 54
-        },
-        "deepseek-v4-pro|2026-06-25:overall:global_average:deepseek-v4-pro|2026-06-25": {
-          "model": "deepseek-v4-pro",
-          "score": 71.57225,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:deepseek-v4-pro",
-          "variant": "2026-06-25",
-          "displayRank": 44
-        },
-        "gemini-3.1-pro-preview-high|2026-06-25:overall:global_average:gemini-3.1-pro-preview-high|2026-06-25": {
-          "model": "gemini-3.1-pro-preview-high",
-          "score": 76.95184523809523,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:gemini-3.1-pro-preview-high",
-          "variant": "2026-06-25",
-          "displayRank": 19
-        },
-        "gemini-3.5-flash-high|2026-06-25:overall:global_average:gemini-3.5-flash-high|2026-06-25": {
-          "model": "gemini-3.5-flash-high",
-          "score": 74.6377619047619,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:gemini-3.5-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 31
-        },
-        "glm-5.2|2026-06-25:overall:global_average:glm-5.2|2026-06-25": {
-          "model": "glm-5.2",
-          "score": 73.15728571428572,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:glm-5.2",
-          "variant": "2026-06-25",
-          "displayRank": 38
-        },
-        "gpt-5.2-2025-12-11-high|2026-06-25:overall:global_average:gpt-5.2-2025-12-11-high|2026-06-25": {
-          "model": "gpt-5.2-2025-12-11-high",
-          "score": 74.63496428571428,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:gpt-5.2-2025-12-11-high",
-          "variant": "2026-06-25",
-          "displayRank": 32
-        },
-        "gpt-5.2-codex|2026-06-25:overall:global_average:gpt-5.2-codex|2026-06-25": {
-          "model": "gpt-5.2-codex",
-          "score": 73.9752619047619,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:gpt-5.2-codex",
-          "variant": "2026-06-25",
-          "displayRank": 35
-        },
-        "gpt-5.4-mini-xhigh|2026-06-25:overall:global_average:gpt-5.4-mini-xhigh|2026-06-25": {
-          "model": "gpt-5.4-mini-xhigh",
-          "score": 66.37396428571428,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:gpt-5.4-mini-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 53
-        },
-        "gpt-5.4-nano-xhigh|2026-06-25:overall:global_average:gpt-5.4-nano-xhigh|2026-06-25": {
-          "model": "gpt-5.4-nano-xhigh",
-          "score": 69.57636904761905,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:gpt-5.4-nano-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 46
-        },
-        "gpt-5.4-xhigh|2026-06-25:overall:global_average:gpt-5.4-xhigh|2026-06-25": {
-          "model": "gpt-5.4-xhigh",
-          "score": 77.97244047619047,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:gpt-5.4-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 14
-        },
-        "gpt-5.5-xhigh|2026-06-25:overall:global_average:gpt-5.5-xhigh|2026-06-25": {
-          "model": "gpt-5.5-xhigh",
-          "score": 80.18829761904762,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:gpt-5.5-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 7
-        },
-        "grok-4.3|2026-06-25:overall:global_average:grok-4.3|2026-06-25": {
-          "model": "grok-4.3",
-          "score": 62.24735714285714,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:grok-4.3",
-          "variant": "2026-06-25",
-          "displayRank": 57
-        },
-        "grok-4.5|2026-06-25:overall:global_average:grok-4.5|2026-06-25": {
-          "model": "grok-4.5",
-          "score": 75.77284523809524,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:grok-4.5",
-          "variant": "2026-06-25",
-          "displayRank": 28
-        },
-        "grok-build-0.1|2026-06-25:overall:global_average:grok-build-0.1|2026-06-25": {
-          "model": "grok-build-0.1",
-          "score": 67.78103571428571,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:grok-build-0.1",
-          "variant": "2026-06-25",
-          "displayRank": 50
-        },
-        "kimi-k2.6-thinking|2026-06-25:overall:global_average:kimi-k2.6-thinking|2026-06-25": {
-          "model": "kimi-k2.6-thinking",
-          "score": 70.53878571428572,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:kimi-k2.6-thinking",
-          "variant": "2026-06-25",
-          "displayRank": 45
-        },
-        "kimi-k2.7-code|2026-06-25:overall:global_average:kimi-k2.7-code|2026-06-25": {
-          "model": "kimi-k2.7-code",
-          "score": 68.41172619047619,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:kimi-k2.7-code",
-          "variant": "2026-06-25",
-          "displayRank": 49
-        },
-        "minimax-m3|2026-06-25:overall:global_average:minimax-m3|2026-06-25": {
-          "model": "minimax-m3",
-          "score": 67.25676190476192,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:minimax-m3",
-          "variant": "2026-06-25",
-          "displayRank": 52
-        },
-        "qwen3.6-27b|2026-06-25:overall:global_average:qwen3.6-27b|2026-06-25": {
-          "model": "qwen3.6-27b",
-          "score": 64.02713095238094,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:qwen3.6-27b",
-          "variant": "2026-06-25",
-          "displayRank": 55
-        },
-        "qwen3.6-plus|2026-06-25:overall:global_average:qwen3.6-plus|2026-06-25": {
-          "model": "qwen3.6-plus",
-          "score": 68.90613095238095,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:qwen3.6-plus",
-          "variant": "2026-06-25",
-          "displayRank": 48
-        },
-        "qwen3.7-max|2026-06-25:overall:global_average:qwen3.7-max|2026-06-25": {
-          "model": "qwen3.7-max",
-          "score": 73.13660714285713,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:qwen3.7-max",
-          "variant": "2026-06-25",
-          "displayRank": 39
-        },
-        "gpt-5.6-sol-max|2026-06-25:overall:global_average:gpt-5.6-sol-max|2026-06-25": {
-          "model": "gpt-5.6-sol-max",
-          "score": 81.05354761904762,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:gpt-5.6-sol-max",
-          "variant": "2026-06-25",
-          "displayRank": 6
-        },
-        "gpt-5.6-terra-max|2026-06-25:overall:global_average:gpt-5.6-terra-max|2026-06-25": {
-          "model": "gpt-5.6-terra-max",
-          "score": 77.93625,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:gpt-5.6-terra-max",
-          "variant": "2026-06-25",
-          "displayRank": 16
-        },
-        "gpt-5.6-luna-max|2026-06-25:overall:global_average:gpt-5.6-luna-max|2026-06-25": {
-          "model": "gpt-5.6-luna-max",
-          "score": 73.55938095238096,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:gpt-5.6-luna-max",
-          "variant": "2026-06-25",
-          "displayRank": 37
-        },
-        "claude-fable-5-max-effort|2026-06-25:overall:global_average:claude-fable-5-max-effort|2026-06-25": {
-          "model": "claude-fable-5-max-effort",
-          "score": 82.97079761904762,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:claude-fable-5-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 2
-        },
-        "muse-spark-1.1-xhigh|2026-06-25:overall:global_average:muse-spark-1.1-xhigh|2026-06-25": {
-          "model": "muse-spark-1.1-xhigh",
-          "score": 75.29954761904762,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:muse-spark-1.1-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 29
-        },
-        "kimi-k3|2026-06-25:overall:global_average:kimi-k3|2026-06-25": {
-          "model": "kimi-k3",
-          "score": 79.19304761904763,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:kimi-k3",
-          "variant": "2026-06-25",
-          "displayRank": 10
-        },
-        "inkling-xhigh|2026-06-25:overall:global_average:inkling-xhigh|2026-06-25": {
-          "model": "inkling-xhigh",
-          "score": 71.92241666666668,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:inkling-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 42
-        },
-        "gemini-3.5-flash-lite-high|2026-06-25:overall:global_average:gemini-3.5-flash-lite-high|2026-06-25": {
-          "model": "gemini-3.5-flash-lite-high",
-          "score": 63.936988095238085,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:gemini-3.5-flash-lite-high",
-          "variant": "2026-06-25",
-          "displayRank": 56
-        },
-        "gemini-3.6-flash-high|2026-06-25:overall:global_average:gemini-3.6-flash-high|2026-06-25": {
-          "model": "gemini-3.6-flash-high",
-          "score": 73.5875119047619,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:gemini-3.6-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 36
-        },
-        "claude-opus-5-max-effort|2026-06-25:overall:global_average:claude-opus-5-max-effort|2026-06-25": {
-          "model": "claude-opus-5-max-effort",
-          "score": 80.08497619047618,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:claude-opus-5-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 8
-        },
-        "claude-opus-4-8-max-effort|2026-06-25:overall:global_average:claude-opus-4-8-max-effort|2026-06-25": {
-          "model": "claude-opus-4-8-max-effort",
-          "score": 76.22398809523808,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:claude-opus-4-8-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 23
-        },
-        "deepseek-v4-flash-0731|2026-06-25:overall:global_average:deepseek-v4-flash-0731|2026-06-25": {
-          "model": "deepseek-v4-flash-0731",
-          "score": 74.17078571428571,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:deepseek-v4-flash-0731",
-          "variant": "2026-06-25",
-          "displayRank": 34
-        },
-        "qwen3.8-max|2026-06-25:overall:global_average:qwen3.8-max|2026-06-25": {
-          "model": "qwen3.8-max",
-          "score": 78.46089285714287,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:qwen3.8-max",
-          "variant": "2026-06-25",
-          "displayRank": 12
-        },
-        "muse-spark-1.2-xhigh|2026-06-25:overall:global_average:muse-spark-1.2-xhigh|2026-06-25": {
-          "model": "muse-spark-1.2-xhigh",
-          "score": 77.95477380952379,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:muse-spark-1.2-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 15
-        },
-        "smaug-agentic|2026-06-25:overall:global_average:smaug-agentic|2026-06-25": {
-          "model": "smaug-agentic",
-          "score": 79.5082738095238,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:smaug-agentic",
-          "variant": "2026-06-25",
-          "displayRank": 9
-        },
-        "smaug-mini|2026-06-25:overall:global_average:smaug-mini|2026-06-25": {
-          "model": "smaug-mini",
-          "score": 76.93090476190476,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:smaug-mini",
-          "variant": "2026-06-25",
-          "displayRank": 20
-        },
-        "deepseek-v4-pro-0813|2026-06-25:overall:global_average:deepseek-v4-pro-0813|2026-06-25": {
-          "model": "deepseek-v4-pro-0813",
-          "score": 77.43614285714287,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:deepseek-v4-pro-0813",
-          "variant": "2026-06-25",
-          "displayRank": 17
-        },
-        "grok-4.6|2026-06-25:overall:global_average:grok-4.6|2026-06-25": {
-          "model": "grok-4.6",
-          "score": 78.042,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:grok-4.6",
-          "variant": "2026-06-25",
-          "displayRank": 13
-        },
-        "gemini-3.7-flash-high|2026-06-25:overall:global_average:gemini-3.7-flash-high|2026-06-25": {
-          "model": "gemini-3.7-flash-high",
-          "score": 78.8260119047619,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:gemini-3.7-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 11
-        },
-        "qwen3.8-27b|2026-06-25:overall:global_average:qwen3.8-27b|2026-06-25": {
-          "model": "qwen3.8-27b",
-          "score": 75.26910714285714,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:qwen3.8-27b",
-          "variant": "2026-06-25",
-          "displayRank": 30
-        },
-        "ox-alpha-max|2026-06-25:overall:global_average:ox-alpha-max|2026-06-25": {
-          "model": "ox-alpha-max",
-          "score": 69.23522619047618,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:ox-alpha-max",
-          "variant": "2026-06-25",
-          "displayRank": 47
-        },
-        "deepseek-v4-flash-vision-exp|2026-06-25:overall:global_average:deepseek-v4-flash-vision-exp|2026-06-25": {
-          "model": "deepseek-v4-flash-vision-exp",
-          "score": 76.75769047619049,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:deepseek-v4-flash-vision-exp",
-          "variant": "2026-06-25",
-          "displayRank": 21
-        },
-        "glm-5.3|2026-06-25:overall:global_average:glm-5.3|2026-06-25": {
-          "model": "glm-5.3",
-          "score": 76.13780952380952,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:glm-5.3",
-          "variant": "2026-06-25",
-          "displayRank": 25
-        },
-        "glm-5.3-flash|2026-06-25:overall:global_average:glm-5.3-flash|2026-06-25": {
-          "model": "glm-5.3-flash",
-          "score": 71.59078571428572,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:glm-5.3-flash",
-          "variant": "2026-06-25",
-          "displayRank": 43
-        },
-        "qwen3.8-flash-next|2026-06-25:overall:global_average:qwen3.8-flash-next|2026-06-25": {
-          "model": "qwen3.8-flash-next",
-          "score": 76.19415476190476,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:qwen3.8-flash-next",
-          "variant": "2026-06-25",
-          "displayRank": 24
-        },
-        "nemotron-3-ultra-550b-a55b|2026-06-25:overall:global_average:nemotron-3-ultra-550b-a55b|2026-06-25": {
-          "model": "nemotron-3-ultra-550b-a55b",
-          "score": 67.35844047619048,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:nemotron-3-ultra-550b-a55b",
-          "variant": "2026-06-25",
-          "displayRank": 51
-        },
-        "claude-fable-5-1-max-effort|2026-06-25:overall:global_average:claude-fable-5-1-max-effort|2026-06-25": {
-          "model": "claude-fable-5-1-max-effort",
-          "score": 83.41415476190477,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:claude-fable-5-1-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 1
-        },
-        "gemini-3.8-flash-high|2026-06-25:overall:global_average:gemini-3.8-flash-high|2026-06-25": {
-          "model": "gemini-3.8-flash-high",
-          "score": 75.82852380952382,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:gemini-3.8-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 27
-        },
-        "muse-spark-1.3-xhigh|2026-06-25:overall:global_average:muse-spark-1.3-xhigh|2026-06-25": {
-          "model": "muse-spark-1.3-xhigh",
-          "score": 81.58864285714286,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:muse-spark-1.3-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 4
-        },
-        "gpt-6-astra-max|2026-06-25:overall:global_average:gpt-6-astra-max|2026-06-25": {
-          "model": "gpt-6-astra-max",
-          "score": 82.16064285714286,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:gpt-6-astra-max",
-          "variant": "2026-06-25",
-          "displayRank": 3
-        },
-        "smaug-flash|2026-06-25:overall:global_average:smaug-flash|2026-06-25": {
-          "model": "smaug-flash",
-          "score": 77.43529761904763,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:smaug-flash",
-          "variant": "2026-06-25",
-          "displayRank": 18
-        },
-        "deepseek-v4.1-flash-max|2026-06-25:overall:global_average:deepseek-v4.1-flash-max|2026-06-25": {
-          "model": "deepseek-v4.1-flash-max",
-          "score": 81.10970238095238,
-          "rank": null,
-          "comparisonKey": "2026-06-25:overall:global_average:deepseek-v4.1-flash-max",
-          "variant": "2026-06-25",
-          "displayRank": 5
         }
       }
     },
@@ -2444,6 +1476,974 @@
         }
       }
     },
+    "livebench_overall": {
+      "runtimeId": "livebench_overall",
+      "familyId": "livebench",
+      "title": "LiveBench Overall",
+      "release": "2026-06-25",
+      "contentHash": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
+      "source": {
+        "benchmark_id": "livebench_overall",
+        "status": "enabled",
+        "source_name": "LiveBench dated official leaderboard CSV",
+        "organization": "LiveBench",
+        "source_type": "official_site_dated_csv",
+        "official_url": "https://livebench.ai/",
+        "endpoint": "https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main",
+        "raw_base_url": "https://livebench.ai",
+        "fallback_release_id": "2026-06-25",
+        "fetch_method": "GET",
+        "update_frequency": "release_based",
+        "requires_auth": false,
+        "category_selector": "overall",
+        "evidence_url": "https://livebench.ai/",
+        "release_tracking": "dated_table_and_categories_files",
+        "hash_required": true,
+        "notes": "Total is reconstructed with the official frontend category-mean algorithm; no rank is inferred. The dated CSV is fetched from the official site root, which is updated in place and is newer than the GitHub public/ mirror."
+      },
+      "records": {
+        "claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25:overall:global_average:claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25": {
+          "model": "claude-opus-4-5-20251101-thinking-64k-high-effort",
+          "score": 72.58216666666667,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:claude-opus-4-5-20251101-thinking-64k-high-effort",
+          "variant": "2026-06-25",
+          "displayRank": 41
+        },
+        "claude-opus-4-6-thinking-auto-high-effort|2026-06-25:overall:global_average:claude-opus-4-6-thinking-auto-high-effort|2026-06-25": {
+          "model": "claude-opus-4-6-thinking-auto-high-effort",
+          "score": 74.51990476190475,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:claude-opus-4-6-thinking-auto-high-effort",
+          "variant": "2026-06-25",
+          "displayRank": 33
+        },
+        "claude-opus-4-7-xhigh-effort|2026-06-25:overall:global_average:claude-opus-4-7-xhigh-effort|2026-06-25": {
+          "model": "claude-opus-4-7-xhigh-effort",
+          "score": 76.52935714285715,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:claude-opus-4-7-xhigh-effort",
+          "variant": "2026-06-25",
+          "displayRank": 22
+        },
+        "claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25:overall:global_average:claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25": {
+          "model": "claude-sonnet-4-6-thinking-auto-medium-effort",
+          "score": 72.99002380952382,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:claude-sonnet-4-6-thinking-auto-medium-effort",
+          "variant": "2026-06-25",
+          "displayRank": 40
+        },
+        "claude-sonnet-5-xhigh-effort|2026-06-25:overall:global_average:claude-sonnet-5-xhigh-effort|2026-06-25": {
+          "model": "claude-sonnet-5-xhigh-effort",
+          "score": 76.03971428571428,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:claude-sonnet-5-xhigh-effort",
+          "variant": "2026-06-25",
+          "displayRank": 26
+        },
+        "deepseek-v4-flash|2026-06-25:overall:global_average:deepseek-v4-flash|2026-06-25": {
+          "model": "deepseek-v4-flash",
+          "score": 65.48110714285716,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:deepseek-v4-flash",
+          "variant": "2026-06-25",
+          "displayRank": 54
+        },
+        "deepseek-v4-pro|2026-06-25:overall:global_average:deepseek-v4-pro|2026-06-25": {
+          "model": "deepseek-v4-pro",
+          "score": 71.57225,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:deepseek-v4-pro",
+          "variant": "2026-06-25",
+          "displayRank": 44
+        },
+        "gemini-3.1-pro-preview-high|2026-06-25:overall:global_average:gemini-3.1-pro-preview-high|2026-06-25": {
+          "model": "gemini-3.1-pro-preview-high",
+          "score": 76.95184523809523,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:gemini-3.1-pro-preview-high",
+          "variant": "2026-06-25",
+          "displayRank": 19
+        },
+        "gemini-3.5-flash-high|2026-06-25:overall:global_average:gemini-3.5-flash-high|2026-06-25": {
+          "model": "gemini-3.5-flash-high",
+          "score": 74.6377619047619,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:gemini-3.5-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 31
+        },
+        "glm-5.2|2026-06-25:overall:global_average:glm-5.2|2026-06-25": {
+          "model": "glm-5.2",
+          "score": 73.15728571428572,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:glm-5.2",
+          "variant": "2026-06-25",
+          "displayRank": 38
+        },
+        "gpt-5.2-2025-12-11-high|2026-06-25:overall:global_average:gpt-5.2-2025-12-11-high|2026-06-25": {
+          "model": "gpt-5.2-2025-12-11-high",
+          "score": 74.63496428571428,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:gpt-5.2-2025-12-11-high",
+          "variant": "2026-06-25",
+          "displayRank": 32
+        },
+        "gpt-5.2-codex|2026-06-25:overall:global_average:gpt-5.2-codex|2026-06-25": {
+          "model": "gpt-5.2-codex",
+          "score": 73.9752619047619,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:gpt-5.2-codex",
+          "variant": "2026-06-25",
+          "displayRank": 35
+        },
+        "gpt-5.4-mini-xhigh|2026-06-25:overall:global_average:gpt-5.4-mini-xhigh|2026-06-25": {
+          "model": "gpt-5.4-mini-xhigh",
+          "score": 66.37396428571428,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:gpt-5.4-mini-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 53
+        },
+        "gpt-5.4-nano-xhigh|2026-06-25:overall:global_average:gpt-5.4-nano-xhigh|2026-06-25": {
+          "model": "gpt-5.4-nano-xhigh",
+          "score": 69.57636904761905,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:gpt-5.4-nano-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 46
+        },
+        "gpt-5.4-xhigh|2026-06-25:overall:global_average:gpt-5.4-xhigh|2026-06-25": {
+          "model": "gpt-5.4-xhigh",
+          "score": 77.97244047619047,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:gpt-5.4-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 14
+        },
+        "gpt-5.5-xhigh|2026-06-25:overall:global_average:gpt-5.5-xhigh|2026-06-25": {
+          "model": "gpt-5.5-xhigh",
+          "score": 80.18829761904762,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:gpt-5.5-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 7
+        },
+        "grok-4.3|2026-06-25:overall:global_average:grok-4.3|2026-06-25": {
+          "model": "grok-4.3",
+          "score": 62.24735714285714,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:grok-4.3",
+          "variant": "2026-06-25",
+          "displayRank": 57
+        },
+        "grok-4.5|2026-06-25:overall:global_average:grok-4.5|2026-06-25": {
+          "model": "grok-4.5",
+          "score": 75.77284523809524,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:grok-4.5",
+          "variant": "2026-06-25",
+          "displayRank": 28
+        },
+        "grok-build-0.1|2026-06-25:overall:global_average:grok-build-0.1|2026-06-25": {
+          "model": "grok-build-0.1",
+          "score": 67.78103571428571,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:grok-build-0.1",
+          "variant": "2026-06-25",
+          "displayRank": 50
+        },
+        "kimi-k2.6-thinking|2026-06-25:overall:global_average:kimi-k2.6-thinking|2026-06-25": {
+          "model": "kimi-k2.6-thinking",
+          "score": 70.53878571428572,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:kimi-k2.6-thinking",
+          "variant": "2026-06-25",
+          "displayRank": 45
+        },
+        "kimi-k2.7-code|2026-06-25:overall:global_average:kimi-k2.7-code|2026-06-25": {
+          "model": "kimi-k2.7-code",
+          "score": 68.41172619047619,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:kimi-k2.7-code",
+          "variant": "2026-06-25",
+          "displayRank": 49
+        },
+        "minimax-m3|2026-06-25:overall:global_average:minimax-m3|2026-06-25": {
+          "model": "minimax-m3",
+          "score": 67.25676190476192,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:minimax-m3",
+          "variant": "2026-06-25",
+          "displayRank": 52
+        },
+        "qwen3.6-27b|2026-06-25:overall:global_average:qwen3.6-27b|2026-06-25": {
+          "model": "qwen3.6-27b",
+          "score": 64.02713095238094,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:qwen3.6-27b",
+          "variant": "2026-06-25",
+          "displayRank": 55
+        },
+        "qwen3.6-plus|2026-06-25:overall:global_average:qwen3.6-plus|2026-06-25": {
+          "model": "qwen3.6-plus",
+          "score": 68.90613095238095,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:qwen3.6-plus",
+          "variant": "2026-06-25",
+          "displayRank": 48
+        },
+        "qwen3.7-max|2026-06-25:overall:global_average:qwen3.7-max|2026-06-25": {
+          "model": "qwen3.7-max",
+          "score": 73.13660714285713,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:qwen3.7-max",
+          "variant": "2026-06-25",
+          "displayRank": 39
+        },
+        "gpt-5.6-sol-max|2026-06-25:overall:global_average:gpt-5.6-sol-max|2026-06-25": {
+          "model": "gpt-5.6-sol-max",
+          "score": 81.05354761904762,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:gpt-5.6-sol-max",
+          "variant": "2026-06-25",
+          "displayRank": 6
+        },
+        "gpt-5.6-terra-max|2026-06-25:overall:global_average:gpt-5.6-terra-max|2026-06-25": {
+          "model": "gpt-5.6-terra-max",
+          "score": 77.93625,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:gpt-5.6-terra-max",
+          "variant": "2026-06-25",
+          "displayRank": 16
+        },
+        "gpt-5.6-luna-max|2026-06-25:overall:global_average:gpt-5.6-luna-max|2026-06-25": {
+          "model": "gpt-5.6-luna-max",
+          "score": 73.55938095238096,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:gpt-5.6-luna-max",
+          "variant": "2026-06-25",
+          "displayRank": 37
+        },
+        "claude-fable-5-max-effort|2026-06-25:overall:global_average:claude-fable-5-max-effort|2026-06-25": {
+          "model": "claude-fable-5-max-effort",
+          "score": 82.97079761904762,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:claude-fable-5-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 2
+        },
+        "muse-spark-1.1-xhigh|2026-06-25:overall:global_average:muse-spark-1.1-xhigh|2026-06-25": {
+          "model": "muse-spark-1.1-xhigh",
+          "score": 75.29954761904762,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:muse-spark-1.1-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 29
+        },
+        "kimi-k3|2026-06-25:overall:global_average:kimi-k3|2026-06-25": {
+          "model": "kimi-k3",
+          "score": 79.19304761904763,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:kimi-k3",
+          "variant": "2026-06-25",
+          "displayRank": 10
+        },
+        "inkling-xhigh|2026-06-25:overall:global_average:inkling-xhigh|2026-06-25": {
+          "model": "inkling-xhigh",
+          "score": 71.92241666666668,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:inkling-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 42
+        },
+        "gemini-3.5-flash-lite-high|2026-06-25:overall:global_average:gemini-3.5-flash-lite-high|2026-06-25": {
+          "model": "gemini-3.5-flash-lite-high",
+          "score": 63.936988095238085,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:gemini-3.5-flash-lite-high",
+          "variant": "2026-06-25",
+          "displayRank": 56
+        },
+        "gemini-3.6-flash-high|2026-06-25:overall:global_average:gemini-3.6-flash-high|2026-06-25": {
+          "model": "gemini-3.6-flash-high",
+          "score": 73.5875119047619,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:gemini-3.6-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 36
+        },
+        "claude-opus-5-max-effort|2026-06-25:overall:global_average:claude-opus-5-max-effort|2026-06-25": {
+          "model": "claude-opus-5-max-effort",
+          "score": 80.08497619047618,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:claude-opus-5-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 8
+        },
+        "claude-opus-4-8-max-effort|2026-06-25:overall:global_average:claude-opus-4-8-max-effort|2026-06-25": {
+          "model": "claude-opus-4-8-max-effort",
+          "score": 76.22398809523808,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:claude-opus-4-8-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 23
+        },
+        "deepseek-v4-flash-0731|2026-06-25:overall:global_average:deepseek-v4-flash-0731|2026-06-25": {
+          "model": "deepseek-v4-flash-0731",
+          "score": 74.17078571428571,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:deepseek-v4-flash-0731",
+          "variant": "2026-06-25",
+          "displayRank": 34
+        },
+        "qwen3.8-max|2026-06-25:overall:global_average:qwen3.8-max|2026-06-25": {
+          "model": "qwen3.8-max",
+          "score": 78.46089285714287,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:qwen3.8-max",
+          "variant": "2026-06-25",
+          "displayRank": 12
+        },
+        "muse-spark-1.2-xhigh|2026-06-25:overall:global_average:muse-spark-1.2-xhigh|2026-06-25": {
+          "model": "muse-spark-1.2-xhigh",
+          "score": 77.95477380952379,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:muse-spark-1.2-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 15
+        },
+        "smaug-agentic|2026-06-25:overall:global_average:smaug-agentic|2026-06-25": {
+          "model": "smaug-agentic",
+          "score": 79.5082738095238,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:smaug-agentic",
+          "variant": "2026-06-25",
+          "displayRank": 9
+        },
+        "smaug-mini|2026-06-25:overall:global_average:smaug-mini|2026-06-25": {
+          "model": "smaug-mini",
+          "score": 76.93090476190476,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:smaug-mini",
+          "variant": "2026-06-25",
+          "displayRank": 20
+        },
+        "deepseek-v4-pro-0813|2026-06-25:overall:global_average:deepseek-v4-pro-0813|2026-06-25": {
+          "model": "deepseek-v4-pro-0813",
+          "score": 77.43614285714287,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:deepseek-v4-pro-0813",
+          "variant": "2026-06-25",
+          "displayRank": 17
+        },
+        "grok-4.6|2026-06-25:overall:global_average:grok-4.6|2026-06-25": {
+          "model": "grok-4.6",
+          "score": 78.042,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:grok-4.6",
+          "variant": "2026-06-25",
+          "displayRank": 13
+        },
+        "gemini-3.7-flash-high|2026-06-25:overall:global_average:gemini-3.7-flash-high|2026-06-25": {
+          "model": "gemini-3.7-flash-high",
+          "score": 78.8260119047619,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:gemini-3.7-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 11
+        },
+        "qwen3.8-27b|2026-06-25:overall:global_average:qwen3.8-27b|2026-06-25": {
+          "model": "qwen3.8-27b",
+          "score": 75.26910714285714,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:qwen3.8-27b",
+          "variant": "2026-06-25",
+          "displayRank": 30
+        },
+        "ox-alpha-max|2026-06-25:overall:global_average:ox-alpha-max|2026-06-25": {
+          "model": "ox-alpha-max",
+          "score": 69.23522619047618,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:ox-alpha-max",
+          "variant": "2026-06-25",
+          "displayRank": 47
+        },
+        "deepseek-v4-flash-vision-exp|2026-06-25:overall:global_average:deepseek-v4-flash-vision-exp|2026-06-25": {
+          "model": "deepseek-v4-flash-vision-exp",
+          "score": 76.75769047619049,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:deepseek-v4-flash-vision-exp",
+          "variant": "2026-06-25",
+          "displayRank": 21
+        },
+        "glm-5.3|2026-06-25:overall:global_average:glm-5.3|2026-06-25": {
+          "model": "glm-5.3",
+          "score": 76.13780952380952,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:glm-5.3",
+          "variant": "2026-06-25",
+          "displayRank": 25
+        },
+        "glm-5.3-flash|2026-06-25:overall:global_average:glm-5.3-flash|2026-06-25": {
+          "model": "glm-5.3-flash",
+          "score": 71.59078571428572,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:glm-5.3-flash",
+          "variant": "2026-06-25",
+          "displayRank": 43
+        },
+        "qwen3.8-flash-next|2026-06-25:overall:global_average:qwen3.8-flash-next|2026-06-25": {
+          "model": "qwen3.8-flash-next",
+          "score": 76.19415476190476,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:qwen3.8-flash-next",
+          "variant": "2026-06-25",
+          "displayRank": 24
+        },
+        "nemotron-3-ultra-550b-a55b|2026-06-25:overall:global_average:nemotron-3-ultra-550b-a55b|2026-06-25": {
+          "model": "nemotron-3-ultra-550b-a55b",
+          "score": 67.35844047619048,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:nemotron-3-ultra-550b-a55b",
+          "variant": "2026-06-25",
+          "displayRank": 51
+        },
+        "claude-fable-5-1-max-effort|2026-06-25:overall:global_average:claude-fable-5-1-max-effort|2026-06-25": {
+          "model": "claude-fable-5-1-max-effort",
+          "score": 83.41415476190477,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:claude-fable-5-1-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 1
+        },
+        "gemini-3.8-flash-high|2026-06-25:overall:global_average:gemini-3.8-flash-high|2026-06-25": {
+          "model": "gemini-3.8-flash-high",
+          "score": 75.82852380952382,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:gemini-3.8-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 27
+        },
+        "muse-spark-1.3-xhigh|2026-06-25:overall:global_average:muse-spark-1.3-xhigh|2026-06-25": {
+          "model": "muse-spark-1.3-xhigh",
+          "score": 81.58864285714286,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:muse-spark-1.3-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 4
+        },
+        "gpt-6-astra-max|2026-06-25:overall:global_average:gpt-6-astra-max|2026-06-25": {
+          "model": "gpt-6-astra-max",
+          "score": 82.16064285714286,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:gpt-6-astra-max",
+          "variant": "2026-06-25",
+          "displayRank": 3
+        },
+        "smaug-flash|2026-06-25:overall:global_average:smaug-flash|2026-06-25": {
+          "model": "smaug-flash",
+          "score": 77.43529761904763,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:smaug-flash",
+          "variant": "2026-06-25",
+          "displayRank": 18
+        },
+        "deepseek-v4.1-flash-max|2026-06-25:overall:global_average:deepseek-v4.1-flash-max|2026-06-25": {
+          "model": "deepseek-v4.1-flash-max",
+          "score": 81.10970238095238,
+          "rank": null,
+          "comparisonKey": "2026-06-25:overall:global_average:deepseek-v4.1-flash-max",
+          "variant": "2026-06-25",
+          "displayRank": 5
+        }
+      }
+    },
+    "livebench_reasoning": {
+      "runtimeId": "livebench_reasoning",
+      "familyId": "livebench",
+      "title": "LiveBench Reasoning",
+      "release": "2026-06-25",
+      "contentHash": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
+      "source": {
+        "benchmark_id": "livebench_reasoning",
+        "status": "enabled",
+        "source_name": "LiveBench Reasoning dated official leaderboard CSV",
+        "organization": "LiveBench",
+        "source_type": "official_site_dated_csv",
+        "official_url": "https://livebench.ai/",
+        "endpoint": "https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main",
+        "raw_base_url": "https://livebench.ai",
+        "fallback_release_id": "2026-06-25",
+        "fetch_method": "GET",
+        "update_frequency": "release_based",
+        "requires_auth": false,
+        "category_selector": "reasoning",
+        "evidence_url": "https://livebench.ai/",
+        "release_tracking": "dated_table_and_categories_files",
+        "hash_required": true,
+        "notes": "Official category Reasoning."
+      },
+      "records": {
+        "claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25:Reasoning:category_average:claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25": {
+          "model": "claude-opus-4-5-20251101-thinking-64k-high-effort",
+          "score": 80.0865,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:claude-opus-4-5-20251101-thinking-64k-high-effort",
+          "variant": "2026-06-25",
+          "displayRank": 41
+        },
+        "claude-opus-4-6-thinking-auto-high-effort|2026-06-25:Reasoning:category_average:claude-opus-4-6-thinking-auto-high-effort|2026-06-25": {
+          "model": "claude-opus-4-6-thinking-auto-high-effort",
+          "score": 88.673,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:claude-opus-4-6-thinking-auto-high-effort",
+          "variant": "2026-06-25",
+          "displayRank": 16
+        },
+        "claude-opus-4-7-xhigh-effort|2026-06-25:Reasoning:category_average:claude-opus-4-7-xhigh-effort|2026-06-25": {
+          "model": "claude-opus-4-7-xhigh-effort",
+          "score": 87.19225,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:claude-opus-4-7-xhigh-effort",
+          "variant": "2026-06-25",
+          "displayRank": 22
+        },
+        "claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25:Reasoning:category_average:claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25": {
+          "model": "claude-sonnet-4-6-thinking-auto-medium-effort",
+          "score": 84.76925,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:claude-sonnet-4-6-thinking-auto-medium-effort",
+          "variant": "2026-06-25",
+          "displayRank": 32
+        },
+        "claude-sonnet-5-xhigh-effort|2026-06-25:Reasoning:category_average:claude-sonnet-5-xhigh-effort|2026-06-25": {
+          "model": "claude-sonnet-5-xhigh-effort",
+          "score": 88.69225,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:claude-sonnet-5-xhigh-effort",
+          "variant": "2026-06-25",
+          "displayRank": 15
+        },
+        "deepseek-v4-flash|2026-06-25:Reasoning:category_average:deepseek-v4-flash|2026-06-25": {
+          "model": "deepseek-v4-flash",
+          "score": 70.58175,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:deepseek-v4-flash",
+          "variant": "2026-06-25",
+          "displayRank": 55
+        },
+        "deepseek-v4-pro|2026-06-25:Reasoning:category_average:deepseek-v4-pro|2026-06-25": {
+          "model": "deepseek-v4-pro",
+          "score": 82.69225,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:deepseek-v4-pro",
+          "variant": "2026-06-25",
+          "displayRank": 38
+        },
+        "gemini-3.1-pro-preview-high|2026-06-25:Reasoning:category_average:gemini-3.1-pro-preview-high|2026-06-25": {
+          "model": "gemini-3.1-pro-preview-high",
+          "score": 84.00475,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:gemini-3.1-pro-preview-high",
+          "variant": "2026-06-25",
+          "displayRank": 33
+        },
+        "gemini-3.5-flash-high|2026-06-25:Reasoning:category_average:gemini-3.5-flash-high|2026-06-25": {
+          "model": "gemini-3.5-flash-high",
+          "score": 82.00475,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:gemini-3.5-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 39
+        },
+        "glm-5.2|2026-06-25:Reasoning:category_average:glm-5.2|2026-06-25": {
+          "model": "glm-5.2",
+          "score": 78.625,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:glm-5.2",
+          "variant": "2026-06-25",
+          "displayRank": 44
+        },
+        "gpt-5.2-2025-12-11-high|2026-06-25:Reasoning:category_average:gpt-5.2-2025-12-11-high|2026-06-25": {
+          "model": "gpt-5.2-2025-12-11-high",
+          "score": 83.2115,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-5.2-2025-12-11-high",
+          "variant": "2026-06-25",
+          "displayRank": 35
+        },
+        "gpt-5.2-codex|2026-06-25:Reasoning:category_average:gpt-5.2-codex|2026-06-25": {
+          "model": "gpt-5.2-codex",
+          "score": 77.7115,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-5.2-codex",
+          "variant": "2026-06-25",
+          "displayRank": 46
+        },
+        "gpt-5.4-mini-xhigh|2026-06-25:Reasoning:category_average:gpt-5.4-mini-xhigh|2026-06-25": {
+          "model": "gpt-5.4-mini-xhigh",
+          "score": 71.32375,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-5.4-mini-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 53
+        },
+        "gpt-5.4-nano-xhigh|2026-06-25:Reasoning:category_average:gpt-5.4-nano-xhigh|2026-06-25": {
+          "model": "gpt-5.4-nano-xhigh",
+          "score": 81.09700000000001,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-5.4-nano-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 40
+        },
+        "gpt-5.4-xhigh|2026-06-25:Reasoning:category_average:gpt-5.4-xhigh|2026-06-25": {
+          "model": "gpt-5.4-xhigh",
+          "score": 88.1155,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-5.4-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 18
+        },
+        "gpt-5.5-xhigh|2026-06-25:Reasoning:category_average:gpt-5.5-xhigh|2026-06-25": {
+          "model": "gpt-5.5-xhigh",
+          "score": 89.65375,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-5.5-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 10
+        },
+        "grok-4.3|2026-06-25:Reasoning:category_average:grok-4.3|2026-06-25": {
+          "model": "grok-4.3",
+          "score": 70.822,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:grok-4.3",
+          "variant": "2026-06-25",
+          "displayRank": 54
+        },
+        "grok-4.5|2026-06-25:Reasoning:category_average:grok-4.5|2026-06-25": {
+          "model": "grok-4.5",
+          "score": 87.173,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:grok-4.5",
+          "variant": "2026-06-25",
+          "displayRank": 23
+        },
+        "grok-build-0.1|2026-06-25:Reasoning:category_average:grok-build-0.1|2026-06-25": {
+          "model": "grok-build-0.1",
+          "score": 76.37025,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:grok-build-0.1",
+          "variant": "2026-06-25",
+          "displayRank": 49
+        },
+        "kimi-k2.6-thinking|2026-06-25:Reasoning:category_average:kimi-k2.6-thinking|2026-06-25": {
+          "model": "kimi-k2.6-thinking",
+          "score": 79.375,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:kimi-k2.6-thinking",
+          "variant": "2026-06-25",
+          "displayRank": 43
+        },
+        "kimi-k2.7-code|2026-06-25:Reasoning:category_average:kimi-k2.7-code|2026-06-25": {
+          "model": "kimi-k2.7-code",
+          "score": 82.80775,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:kimi-k2.7-code",
+          "variant": "2026-06-25",
+          "displayRank": 36
+        },
+        "minimax-m3|2026-06-25:Reasoning:category_average:minimax-m3|2026-06-25": {
+          "model": "minimax-m3",
+          "score": 74.48075,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:minimax-m3",
+          "variant": "2026-06-25",
+          "displayRank": 52
+        },
+        "qwen3.6-27b|2026-06-25:Reasoning:category_average:qwen3.6-27b|2026-06-25": {
+          "model": "qwen3.6-27b",
+          "score": 70.28375,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:qwen3.6-27b",
+          "variant": "2026-06-25",
+          "displayRank": 56
+        },
+        "qwen3.6-plus|2026-06-25:Reasoning:category_average:qwen3.6-plus|2026-06-25": {
+          "model": "qwen3.6-plus",
+          "score": 75.827,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:qwen3.6-plus",
+          "variant": "2026-06-25",
+          "displayRank": 50
+        },
+        "qwen3.7-max|2026-06-25:Reasoning:category_average:qwen3.7-max|2026-06-25": {
+          "model": "qwen3.7-max",
+          "score": 83.3365,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:qwen3.7-max",
+          "variant": "2026-06-25",
+          "displayRank": 34
+        },
+        "gpt-5.6-sol-max|2026-06-25:Reasoning:category_average:gpt-5.6-sol-max|2026-06-25": {
+          "model": "gpt-5.6-sol-max",
+          "score": 91.65375,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-5.6-sol-max",
+          "variant": "2026-06-25",
+          "displayRank": 3
+        },
+        "gpt-5.6-terra-max|2026-06-25:Reasoning:category_average:gpt-5.6-terra-max|2026-06-25": {
+          "model": "gpt-5.6-terra-max",
+          "score": 90.6345,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-5.6-terra-max",
+          "variant": "2026-06-25",
+          "displayRank": 6
+        },
+        "gpt-5.6-luna-max|2026-06-25:Reasoning:category_average:gpt-5.6-luna-max|2026-06-25": {
+          "model": "gpt-5.6-luna-max",
+          "score": 85.64425,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-5.6-luna-max",
+          "variant": "2026-06-25",
+          "displayRank": 29
+        },
+        "claude-fable-5-max-effort|2026-06-25:Reasoning:category_average:claude-fable-5-max-effort|2026-06-25": {
+          "model": "claude-fable-5-max-effort",
+          "score": 89.65375,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:claude-fable-5-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 11
+        },
+        "muse-spark-1.1-xhigh|2026-06-25:Reasoning:category_average:muse-spark-1.1-xhigh|2026-06-25": {
+          "model": "muse-spark-1.1-xhigh",
+          "score": 87.73075,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:muse-spark-1.1-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 20
+        },
+        "kimi-k3|2026-06-25:Reasoning:category_average:kimi-k3|2026-06-25": {
+          "model": "kimi-k3",
+          "score": 90.673,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:kimi-k3",
+          "variant": "2026-06-25",
+          "displayRank": 5
+        },
+        "inkling-xhigh|2026-06-25:Reasoning:category_average:inkling-xhigh|2026-06-25": {
+          "model": "inkling-xhigh",
+          "score": 78.34625,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:inkling-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 45
+        },
+        "gemini-3.5-flash-lite-high|2026-06-25:Reasoning:category_average:gemini-3.5-flash-lite-high|2026-06-25": {
+          "model": "gemini-3.5-flash-lite-high",
+          "score": 60.1875,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:gemini-3.5-flash-lite-high",
+          "variant": "2026-06-25",
+          "displayRank": 57
+        },
+        "gemini-3.6-flash-high|2026-06-25:Reasoning:category_average:gemini-3.6-flash-high|2026-06-25": {
+          "model": "gemini-3.6-flash-high",
+          "score": 85.149,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:gemini-3.6-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 31
+        },
+        "claude-opus-5-max-effort|2026-06-25:Reasoning:category_average:claude-opus-5-max-effort|2026-06-25": {
+          "model": "claude-opus-5-max-effort",
+          "score": 91.2115,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:claude-opus-5-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 4
+        },
+        "claude-opus-4-8-max-effort|2026-06-25:Reasoning:category_average:claude-opus-4-8-max-effort|2026-06-25": {
+          "model": "claude-opus-4-8-max-effort",
+          "score": 89.19225,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:claude-opus-4-8-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 14
+        },
+        "deepseek-v4-flash-0731|2026-06-25:Reasoning:category_average:deepseek-v4-flash-0731|2026-06-25": {
+          "model": "deepseek-v4-flash-0731",
+          "score": 86.6345,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:deepseek-v4-flash-0731",
+          "variant": "2026-06-25",
+          "displayRank": 25
+        },
+        "qwen3.8-max|2026-06-25:Reasoning:category_average:qwen3.8-max|2026-06-25": {
+          "model": "qwen3.8-max",
+          "score": 88.2115,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:qwen3.8-max",
+          "variant": "2026-06-25",
+          "displayRank": 17
+        },
+        "muse-spark-1.2-xhigh|2026-06-25:Reasoning:category_average:muse-spark-1.2-xhigh|2026-06-25": {
+          "model": "muse-spark-1.2-xhigh",
+          "score": 90.00475,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:muse-spark-1.2-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 9
+        },
+        "smaug-agentic|2026-06-25:Reasoning:category_average:smaug-agentic|2026-06-25": {
+          "model": "smaug-agentic",
+          "score": 90.274,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:smaug-agentic",
+          "variant": "2026-06-25",
+          "displayRank": 8
+        },
+        "smaug-mini|2026-06-25:Reasoning:category_average:smaug-mini|2026-06-25": {
+          "model": "smaug-mini",
+          "score": 82.80775,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:smaug-mini",
+          "variant": "2026-06-25",
+          "displayRank": 37
+        },
+        "deepseek-v4-pro-0813|2026-06-25:Reasoning:category_average:deepseek-v4-pro-0813|2026-06-25": {
+          "model": "deepseek-v4-pro-0813",
+          "score": 85.84125,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:deepseek-v4-pro-0813",
+          "variant": "2026-06-25",
+          "displayRank": 27
+        },
+        "grok-4.6|2026-06-25:Reasoning:category_average:grok-4.6|2026-06-25": {
+          "model": "grok-4.6",
+          "score": 90.5095,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:grok-4.6",
+          "variant": "2026-06-25",
+          "displayRank": 7
+        },
+        "gemini-3.7-flash-high|2026-06-25:Reasoning:category_average:gemini-3.7-flash-high|2026-06-25": {
+          "model": "gemini-3.7-flash-high",
+          "score": 87.798,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:gemini-3.7-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 19
+        },
+        "qwen3.8-27b|2026-06-25:Reasoning:category_average:qwen3.8-27b|2026-06-25": {
+          "model": "qwen3.8-27b",
+          "score": 80.02875,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:qwen3.8-27b",
+          "variant": "2026-06-25",
+          "displayRank": 42
+        },
+        "ox-alpha-max|2026-06-25:Reasoning:category_average:ox-alpha-max|2026-06-25": {
+          "model": "ox-alpha-max",
+          "score": 76.5865,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:ox-alpha-max",
+          "variant": "2026-06-25",
+          "displayRank": 48
+        },
+        "deepseek-v4-flash-vision-exp|2026-06-25:Reasoning:category_average:deepseek-v4-flash-vision-exp|2026-06-25": {
+          "model": "deepseek-v4-flash-vision-exp",
+          "score": 85.399,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:deepseek-v4-flash-vision-exp",
+          "variant": "2026-06-25",
+          "displayRank": 30
+        },
+        "glm-5.3|2026-06-25:Reasoning:category_average:glm-5.3|2026-06-25": {
+          "model": "glm-5.3",
+          "score": 85.803,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:glm-5.3",
+          "variant": "2026-06-25",
+          "displayRank": 28
+        },
+        "glm-5.3-flash|2026-06-25:Reasoning:category_average:glm-5.3-flash|2026-06-25": {
+          "model": "glm-5.3-flash",
+          "score": 77.64425,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:glm-5.3-flash",
+          "variant": "2026-06-25",
+          "displayRank": 47
+        },
+        "qwen3.8-flash-next|2026-06-25:Reasoning:category_average:qwen3.8-flash-next|2026-06-25": {
+          "model": "qwen3.8-flash-next",
+          "score": 87.37975,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:qwen3.8-flash-next",
+          "variant": "2026-06-25",
+          "displayRank": 21
+        },
+        "nemotron-3-ultra-550b-a55b|2026-06-25:Reasoning:category_average:nemotron-3-ultra-550b-a55b|2026-06-25": {
+          "model": "nemotron-3-ultra-550b-a55b",
+          "score": 74.697,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:nemotron-3-ultra-550b-a55b",
+          "variant": "2026-06-25",
+          "displayRank": 51
+        },
+        "claude-fable-5-1-max-effort|2026-06-25:Reasoning:category_average:claude-fable-5-1-max-effort|2026-06-25": {
+          "model": "claude-fable-5-1-max-effort",
+          "score": 91.69225,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:claude-fable-5-1-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 2
+        },
+        "gemini-3.8-flash-high|2026-06-25:Reasoning:category_average:gemini-3.8-flash-high|2026-06-25": {
+          "model": "gemini-3.8-flash-high",
+          "score": 89.29325,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:gemini-3.8-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 13
+        },
+        "muse-spark-1.3-xhigh|2026-06-25:Reasoning:category_average:muse-spark-1.3-xhigh|2026-06-25": {
+          "model": "muse-spark-1.3-xhigh",
+          "score": 89.65375,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:muse-spark-1.3-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 12
+        },
+        "gpt-6-astra-max|2026-06-25:Reasoning:category_average:gpt-6-astra-max|2026-06-25": {
+          "model": "gpt-6-astra-max",
+          "score": 92.65375,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:gpt-6-astra-max",
+          "variant": "2026-06-25",
+          "displayRank": 1
+        },
+        "smaug-flash|2026-06-25:Reasoning:category_average:smaug-flash|2026-06-25": {
+          "model": "smaug-flash",
+          "score": 86.23075,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:smaug-flash",
+          "variant": "2026-06-25",
+          "displayRank": 26
+        },
+        "deepseek-v4.1-flash-max|2026-06-25:Reasoning:category_average:deepseek-v4.1-flash-max|2026-06-25": {
+          "model": "deepseek-v4.1-flash-max",
+          "score": 86.69225,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Reasoning:category_average:deepseek-v4.1-flash-max",
+          "variant": "2026-06-25",
+          "displayRank": 24
+        }
+      }
+    },
     "livebench_coding": {
       "runtimeId": "livebench_coding",
       "familyId": "livebench",
@@ -2928,375 +2928,188 @@
         }
       }
     },
-    "artificial_analysis_intelligence_index_v4_3": {
-      "runtimeId": "aa_intelligence_index_v4_3",
+    "terminal_bench_v4_0": {
+      "runtimeId": "aa_terminal_bench_v4_0",
       "familyId": "aa",
-      "title": "Artificial Analysis Intelligence Index v4.3",
+      "title": "Terminal-Bench 4.0",
       "release": "page_jsonld",
-      "contentHash": "a994f53c0cda1773e6138cf81b11fd0afa4327745b9f4f511be36f63f09d7ea8",
+      "contentHash": "9687c648e1f39f51e5825e64a53f6f2f2b55f1a9cbe366fa9198240c2298de76",
       "source": {
-        "benchmark_id": "artificial_analysis_intelligence_index_v4_3",
+        "benchmark_id": "terminal_bench_v4_0",
         "status": "enabled",
-        "source_name": "Artificial Analysis Intelligence Index official public Dataset page",
+        "source_name": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
         "organization": "Artificial Analysis",
         "source_type": "official_page_endpoint",
-        "official_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "endpoint": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+        "official_url": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
+        "endpoint": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
         "fetch_method": "GET",
         "update_frequency": "daily",
         "requires_auth": false,
-        "evaluation_field": "Artificial Analysis Intelligence Index: Score",
-        "evidence_url": "https://artificialanalysis.ai/api-reference/beta",
-        "release_tracking": "page_jsonld",
-        "hash_required": true,
-        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
-        "jsonld_name": "Artificial Analysis Intelligence Index: Score"
-      },
-      "records": {
-        "Claude Fable 5.1 (max with fallback)|Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (max with fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (max with fallback)",
-          "score": 53.3737509623252,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (max with fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 1
-        },
-        "Claude Fable 5.1 (xhigh with fallback)|Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (xhigh with fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (xhigh with fallback)",
-          "score": 53.1840337538944,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (xhigh with fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 2
-        },
-        "GPT-6 Astra (max)|Artificial Analysis Intelligence Index: Score:GPT-6 Astra (max)|page_jsonld": {
-          "model": "GPT-6 Astra (max)",
-          "score": 52.814069395513,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-6 Astra (max)",
-          "variant": "page_jsonld",
-          "displayRank": 3
-        },
-        "GPT-6 Astra (xhigh)|Artificial Analysis Intelligence Index: Score:GPT-6 Astra (xhigh)|page_jsonld": {
-          "model": "GPT-6 Astra (xhigh)",
-          "score": 52.5059027108782,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-6 Astra (xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 4
-        },
-        "Claude Fable 5.1 (high with fallback)|Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (high with fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (high with fallback)",
-          "score": 51.2094958852237,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (high with fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 5
-        },
-        "GPT-6 Astra (high)|Artificial Analysis Intelligence Index: Score:GPT-6 Astra (high)|page_jsonld": {
-          "model": "GPT-6 Astra (high)",
-          "score": 51.0480721636152,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-6 Astra (high)",
-          "variant": "page_jsonld",
-          "displayRank": 6
-        },
-        "Claude Opus 5 (max)|Artificial Analysis Intelligence Index: Score:Claude Opus 5 (max)|page_jsonld": {
-          "model": "Claude Opus 5 (max)",
-          "score": 50.7001865797629,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Opus 5 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 7
-        },
-        "Claude Fable 5 (with fallback)|Artificial Analysis Intelligence Index: Score:Claude Fable 5 (with fallback)|page_jsonld": {
-          "model": "Claude Fable 5 (with fallback)",
-          "score": 49.6994452733378,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Fable 5 (with fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 8
-        },
-        "GPT-6 Astra (medium)|Artificial Analysis Intelligence Index: Score:GPT-6 Astra (medium)|page_jsonld": {
-          "model": "GPT-6 Astra (medium)",
-          "score": 49.6685363034369,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-6 Astra (medium)",
-          "variant": "page_jsonld",
-          "displayRank": 9
-        },
-        "Muse Spark 1.3 (max)|Artificial Analysis Intelligence Index: Score:Muse Spark 1.3 (max)|page_jsonld": {
-          "model": "Muse Spark 1.3 (max)",
-          "score": 48.1690107719685,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Muse Spark 1.3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 10
-        },
-        "GPT-5.6 Sol (max)|Artificial Analysis Intelligence Index: Score:GPT-5.6 Sol (max)|page_jsonld": {
-          "model": "GPT-5.6 Sol (max)",
-          "score": 47.0613568915036,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-5.6 Sol (max)",
-          "variant": "page_jsonld",
-          "displayRank": 11
-        },
-        "GLM-5.3 (max)|Artificial Analysis Intelligence Index: Score:GLM-5.3 (max)|page_jsonld": {
-          "model": "GLM-5.3 (max)",
-          "score": 44.855717385614,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GLM-5.3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 12
-        },
-        "Grok 4.6 (high)|Artificial Analysis Intelligence Index: Score:Grok 4.6 (high)|page_jsonld": {
-          "model": "Grok 4.6 (high)",
-          "score": 44.4050073012592,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Grok 4.6 (high)",
-          "variant": "page_jsonld",
-          "displayRank": 13
-        },
-        "Kimi K3 (max)|Artificial Analysis Intelligence Index: Score:Kimi K3 (max)|page_jsonld": {
-          "model": "Kimi K3 (max)",
-          "score": 43.7841729518782,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Kimi K3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 14
-        },
-        "GPT-5.6 Terra (max)|Artificial Analysis Intelligence Index: Score:GPT-5.6 Terra (max)|page_jsonld": {
-          "model": "GPT-5.6 Terra (max)",
-          "score": 42.2514998239494,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-5.6 Terra (max)",
-          "variant": "page_jsonld",
-          "displayRank": 15
-        },
-        "GLM-5.3-Flash|Artificial Analysis Intelligence Index: Score:GLM-5.3-Flash|page_jsonld": {
-          "model": "GLM-5.3-Flash",
-          "score": 41.907366113455,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GLM-5.3-Flash",
-          "variant": "page_jsonld",
-          "displayRank": 16
-        },
-        "Gemini 3.8 Flash (high)|Artificial Analysis Intelligence Index: Score:Gemini 3.8 Flash (high)|page_jsonld": {
-          "model": "Gemini 3.8 Flash (high)",
-          "score": 41.1863571765904,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Gemini 3.8 Flash (high)",
-          "variant": "page_jsonld",
-          "displayRank": 17
-        },
-        "Qwen3.8 2.4T A95B|Artificial Analysis Intelligence Index: Score:Qwen3.8 2.4T A95B|page_jsonld": {
-          "model": "Qwen3.8 2.4T A95B",
-          "score": 40.0445723105325,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Qwen3.8 2.4T A95B",
-          "variant": "page_jsonld",
-          "displayRank": 18
-        },
-        "DeepSeek V4.1 Flash (max)|Artificial Analysis Intelligence Index: Score:DeepSeek V4.1 Flash (max)|page_jsonld": {
-          "model": "DeepSeek V4.1 Flash (max)",
-          "score": 39.545442472527,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:DeepSeek V4.1 Flash (max)",
-          "variant": "page_jsonld",
-          "displayRank": 19
-        },
-        "GPT-5.6 Luna (max)|Artificial Analysis Intelligence Index: Score:GPT-5.6 Luna (max)|page_jsonld": {
-          "model": "GPT-5.6 Luna (max)",
-          "score": 37.5048489690841,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-5.6 Luna (max)",
-          "variant": "page_jsonld",
-          "displayRank": 20
-        }
-      }
-    },
-    "gpqa_diamond": {
-      "runtimeId": "aa_gpqa_diamond",
-      "familyId": "aa",
-      "title": "GPQA Diamond",
-      "release": "page_jsonld",
-      "contentHash": "a74db0e3edffcf547e8c8fdd226fa16f76ce24effce9b8d8c7b544d73662f6f8",
-      "source": {
-        "benchmark_id": "gpqa_diamond",
-        "status": "enabled",
-        "source_name": "Artificial Analysis GPQA Diamond official public Dataset page",
-        "organization": "Artificial Analysis",
-        "source_type": "official_page_endpoint",
-        "official_url": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "endpoint": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "fetch_method": "GET",
-        "update_frequency": "daily",
-        "requires_auth": false,
-        "evaluation_field": "GPQA Diamond: Score",
+        "evaluation_field": "Terminal-Bench v4.0: Score",
         "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
         "release_tracking": "page_jsonld",
         "hash_required": true,
         "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
-        "jsonld_name": "GPQA Diamond: Score"
+        "jsonld_name": "Terminal-Bench v4.0: Score"
       },
       "records": {
-        "GPT-6 Astra (xhigh)|GPQA Diamond: Score:GPT-6 Astra (xhigh)|page_jsonld": {
+        "GPT-6 Astra (xhigh)|Terminal-Bench v4.0: Score:GPT-6 Astra (xhigh)|page_jsonld": {
           "model": "GPT-6 Astra (xhigh)",
-          "score": 0.962626262626263,
+          "score": 0.595959595959596,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:GPT-6 Astra (xhigh)",
+          "comparisonKey": "Terminal-Bench v4.0: Score:GPT-6 Astra (xhigh)",
           "variant": "page_jsonld",
           "displayRank": 1
         },
-        "GPT-6 Astra (max)|GPQA Diamond: Score:GPT-6 Astra (max)|page_jsonld": {
+        "GPT-6 Astra (max)|Terminal-Bench v4.0: Score:GPT-6 Astra (max)|page_jsonld": {
           "model": "GPT-6 Astra (max)",
-          "score": 0.960606060606061,
+          "score": 0.590909090909091,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:GPT-6 Astra (max)",
+          "comparisonKey": "Terminal-Bench v4.0: Score:GPT-6 Astra (max)",
           "variant": "page_jsonld",
           "displayRank": 2
         },
-        "Gemini 3.8 Flash (high)|GPQA Diamond: Score:Gemini 3.8 Flash (high)|page_jsonld": {
-          "model": "Gemini 3.8 Flash (high)",
-          "score": 0.952525252525253,
+        "Claude Fable 5.1 (xhigh with fallback)|Terminal-Bench v4.0: Score:Claude Fable 5.1 (xhigh with fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (xhigh with fallback)",
+          "score": 0.55050505050505,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:Gemini 3.8 Flash (high)",
+          "comparisonKey": "Terminal-Bench v4.0: Score:Claude Fable 5.1 (xhigh with fallback)",
           "variant": "page_jsonld",
           "displayRank": 3
         },
-        "GPT-6 Astra (high)|GPQA Diamond: Score:GPT-6 Astra (high)|page_jsonld": {
+        "GPT-6 Astra (high)|Terminal-Bench v4.0: Score:GPT-6 Astra (high)|page_jsonld": {
           "model": "GPT-6 Astra (high)",
-          "score": 0.94949494949495,
+          "score": 0.54040404040404,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:GPT-6 Astra (high)",
+          "comparisonKey": "Terminal-Bench v4.0: Score:GPT-6 Astra (high)",
           "variant": "page_jsonld",
           "displayRank": 4
         },
-        "Grok 4.6 (high)|GPQA Diamond: Score:Grok 4.6 (high)|page_jsonld": {
-          "model": "Grok 4.6 (high)",
-          "score": 0.94949494949495,
+        "Claude Fable 5.1 (max with fallback)|Terminal-Bench v4.0: Score:Claude Fable 5.1 (max with fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (max with fallback)",
+          "score": 0.52020202020202,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:Grok 4.6 (high)",
+          "comparisonKey": "Terminal-Bench v4.0: Score:Claude Fable 5.1 (max with fallback)",
           "variant": "page_jsonld",
           "displayRank": 5
         },
-        "Gemini 3.7 Flash (high)|GPQA Diamond: Score:Gemini 3.7 Flash (high)|page_jsonld": {
-          "model": "Gemini 3.7 Flash (high)",
-          "score": 0.945454545454545,
+        "Claude Fable 5.1 (high with fallback)|Terminal-Bench v4.0: Score:Claude Fable 5.1 (high with fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (high with fallback)",
+          "score": 0.52020202020202,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:Gemini 3.7 Flash (high)",
+          "comparisonKey": "Terminal-Bench v4.0: Score:Claude Fable 5.1 (high with fallback)",
           "variant": "page_jsonld",
           "displayRank": 6
         },
-        "GPT-5.6 Sol (max)|GPQA Diamond: Score:GPT-5.6 Sol (max)|page_jsonld": {
-          "model": "GPT-5.6 Sol (max)",
-          "score": 0.941414141414141,
+        "GPT-6 Astra (medium)|Terminal-Bench v4.0: Score:GPT-6 Astra (medium)|page_jsonld": {
+          "model": "GPT-6 Astra (medium)",
+          "score": 0.494949494949495,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:GPT-5.6 Sol (max)",
+          "comparisonKey": "Terminal-Bench v4.0: Score:GPT-6 Astra (medium)",
           "variant": "page_jsonld",
           "displayRank": 7
         },
-        "Muse Spark 1.3 (xhigh)|GPQA Diamond: Score:Muse Spark 1.3 (xhigh)|page_jsonld": {
-          "model": "Muse Spark 1.3 (xhigh)",
-          "score": 0.941414141414141,
+        "Claude Opus 5 (max)|Terminal-Bench v4.0: Score:Claude Opus 5 (max)|page_jsonld": {
+          "model": "Claude Opus 5 (max)",
+          "score": 0.48989898989899,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:Muse Spark 1.3 (xhigh)",
+          "comparisonKey": "Terminal-Bench v4.0: Score:Claude Opus 5 (max)",
           "variant": "page_jsonld",
           "displayRank": 8
         },
-        "Gemini 3.1 Pro Preview|GPQA Diamond: Score:Gemini 3.1 Pro Preview|page_jsonld": {
-          "model": "Gemini 3.1 Pro Preview",
-          "score": 0.941414141414141,
+        "Claude Fable 5 (with fallback)|Terminal-Bench v4.0: Score:Claude Fable 5 (with fallback)|page_jsonld": {
+          "model": "Claude Fable 5 (with fallback)",
+          "score": 0.424242424242424,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:Gemini 3.1 Pro Preview",
+          "comparisonKey": "Terminal-Bench v4.0: Score:Claude Fable 5 (with fallback)",
           "variant": "page_jsonld",
           "displayRank": 9
         },
-        "Claude Fable 5.1 (max with fallback)|GPQA Diamond: Score:Claude Fable 5.1 (max with fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (max with fallback)",
-          "score": 0.937373737373737,
+        "GLM-5.3 (max)|Terminal-Bench v4.0: Score:GLM-5.3 (max)|page_jsonld": {
+          "model": "GLM-5.3 (max)",
+          "score": 0.419191919191919,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:Claude Fable 5.1 (max with fallback)",
+          "comparisonKey": "Terminal-Bench v4.0: Score:GLM-5.3 (max)",
           "variant": "page_jsonld",
           "displayRank": 10
         },
-        "Muse Spark 1.3 (max)|GPQA Diamond: Score:Muse Spark 1.3 (max)|page_jsonld": {
-          "model": "Muse Spark 1.3 (max)",
-          "score": 0.935353535353535,
+        "GPT-5.6 Sol (max)|Terminal-Bench v4.0: Score:GPT-5.6 Sol (max)|page_jsonld": {
+          "model": "GPT-5.6 Sol (max)",
+          "score": 0.398989898989899,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:Muse Spark 1.3 (max)",
+          "comparisonKey": "Terminal-Bench v4.0: Score:GPT-5.6 Sol (max)",
           "variant": "page_jsonld",
           "displayRank": 11
         },
-        "Kimi K3 (max)|GPQA Diamond: Score:Kimi K3 (max)|page_jsonld": {
-          "model": "Kimi K3 (max)",
-          "score": 0.935353535353535,
+        "GPT-5.6 Terra (max)|Terminal-Bench v4.0: Score:GPT-5.6 Terra (max)|page_jsonld": {
+          "model": "GPT-5.6 Terra (max)",
+          "score": 0.353535353535354,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:Kimi K3 (max)",
+          "comparisonKey": "Terminal-Bench v4.0: Score:GPT-5.6 Terra (max)",
           "variant": "page_jsonld",
           "displayRank": 12
         },
-        "Qwen3.8 2.4T A95B|GPQA Diamond: Score:Qwen3.8 2.4T A95B|page_jsonld": {
-          "model": "Qwen3.8 2.4T A95B",
-          "score": 0.935353535353535,
+        "Muse Spark 1.3 (max)|Terminal-Bench v4.0: Score:Muse Spark 1.3 (max)|page_jsonld": {
+          "model": "Muse Spark 1.3 (max)",
+          "score": 0.333333333333333,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:Qwen3.8 2.4T A95B",
+          "comparisonKey": "Terminal-Bench v4.0: Score:Muse Spark 1.3 (max)",
           "variant": "page_jsonld",
           "displayRank": 13
         },
-        "Claude Opus 5 (max)|GPQA Diamond: Score:Claude Opus 5 (max)|page_jsonld": {
-          "model": "Claude Opus 5 (max)",
-          "score": 0.932323232323232,
+        "GLM-5.3-Flash|Terminal-Bench v4.0: Score:GLM-5.3-Flash|page_jsonld": {
+          "model": "GLM-5.3-Flash",
+          "score": 0.328282828282828,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:Claude Opus 5 (max)",
+          "comparisonKey": "Terminal-Bench v4.0: Score:GLM-5.3-Flash",
           "variant": "page_jsonld",
           "displayRank": 14
         },
-        "MiniMax-M3|GPQA Diamond: Score:MiniMax-M3|page_jsonld": {
-          "model": "MiniMax-M3",
-          "score": 0.929292929292929,
+        "DeepSeek V4.1 Flash (max)|Terminal-Bench v4.0: Score:DeepSeek V4.1 Flash (max)|page_jsonld": {
+          "model": "DeepSeek V4.1 Flash (max)",
+          "score": 0.267676767676768,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:MiniMax-M3",
+          "comparisonKey": "Terminal-Bench v4.0: Score:DeepSeek V4.1 Flash (max)",
           "variant": "page_jsonld",
           "displayRank": 15
         },
-        "DeepSeek V4 Pro 0813 (max)|GPQA Diamond: Score:DeepSeek V4 Pro 0813 (max)|page_jsonld": {
-          "model": "DeepSeek V4 Pro 0813 (max)",
-          "score": 0.928282828282828,
+        "Grok 4.6 (high)|Terminal-Bench v4.0: Score:Grok 4.6 (high)|page_jsonld": {
+          "model": "Grok 4.6 (high)",
+          "score": 0.212121212121212,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:DeepSeek V4 Pro 0813 (max)",
+          "comparisonKey": "Terminal-Bench v4.0: Score:Grok 4.6 (high)",
           "variant": "page_jsonld",
           "displayRank": 16
         },
-        "Claude Fable 5 (with fallback)|GPQA Diamond: Score:Claude Fable 5 (with fallback)|page_jsonld": {
-          "model": "Claude Fable 5 (with fallback)",
-          "score": 0.926262626262626,
+        "Gemini 3.8 Flash (high)|Terminal-Bench v4.0: Score:Gemini 3.8 Flash (high)|page_jsonld": {
+          "model": "Gemini 3.8 Flash (high)",
+          "score": 0.196969696969697,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:Claude Fable 5 (with fallback)",
+          "comparisonKey": "Terminal-Bench v4.0: Score:Gemini 3.8 Flash (high)",
           "variant": "page_jsonld",
           "displayRank": 17
         },
-        "GPT-5.6 Terra (max)|GPQA Diamond: Score:GPT-5.6 Terra (max)|page_jsonld": {
-          "model": "GPT-5.6 Terra (max)",
-          "score": 0.925252525252525,
+        "DeepSeek V4 Pro 0813 (max)|Terminal-Bench v4.0: Score:DeepSeek V4 Pro 0813 (max)|page_jsonld": {
+          "model": "DeepSeek V4 Pro 0813 (max)",
+          "score": 0.141414141414141,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:GPT-5.6 Terra (max)",
+          "comparisonKey": "Terminal-Bench v4.0: Score:DeepSeek V4 Pro 0813 (max)",
           "variant": "page_jsonld",
           "displayRank": 18
         },
-        "GLM-5.3 (max)|GPQA Diamond: Score:GLM-5.3 (max)|page_jsonld": {
-          "model": "GLM-5.3 (max)",
-          "score": 0.917171717171717,
+        "Kimi K3 (max)|Terminal-Bench v4.0: Score:Kimi K3 (max)|page_jsonld": {
+          "model": "Kimi K3 (max)",
+          "score": 0.126262626262626,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:GLM-5.3 (max)",
+          "comparisonKey": "Terminal-Bench v4.0: Score:Kimi K3 (max)",
           "variant": "page_jsonld",
           "displayRank": 19
         },
-        "GLM-5.3-Flash|GPQA Diamond: Score:GLM-5.3-Flash|page_jsonld": {
-          "model": "GLM-5.3-Flash",
-          "score": 0.912121212121212,
+        "GPT-5.6 Luna (max)|Terminal-Bench v4.0: Score:GPT-5.6 Luna (max)|page_jsonld": {
+          "model": "GPT-5.6 Luna (max)",
+          "score": 0.116161616161616,
           "rank": null,
-          "comparisonKey": "GPQA Diamond: Score:GLM-5.3-Flash",
+          "comparisonKey": "Terminal-Bench v4.0: Score:GPT-5.6 Luna (max)",
           "variant": "page_jsonld",
           "displayRank": 20
         }
@@ -3307,7 +3120,7 @@
       "familyId": "aa",
       "title": "Humanity's Last Exam",
       "release": "page_jsonld",
-      "contentHash": "fc18c47f5984b96df5a27205cd6e9006bcb6d1025ac71e225b9a658abdcfd6f5",
+      "contentHash": "809029a7b14339e8ba7d0913a8c8d9393b9eb7f649392c24551d3e866098c3ae",
       "source": {
         "benchmark_id": "humanitys_last_exam",
         "status": "enabled",
@@ -3489,188 +3302,375 @@
         }
       }
     },
-    "terminal_bench_v4_0": {
-      "runtimeId": "aa_terminal_bench_v4_0",
+    "gpqa_diamond": {
+      "runtimeId": "aa_gpqa_diamond",
       "familyId": "aa",
-      "title": "Terminal-Bench 4.0",
+      "title": "GPQA Diamond",
       "release": "page_jsonld",
-      "contentHash": "ee46e28abfa84963f95b4aafdd21b3ba060232a8dddd6968eadf6e81b8130184",
+      "contentHash": "b60cbcbdae24086237c7aa027c55b35d79cc26890ab705311d0cc1b36420377f",
       "source": {
-        "benchmark_id": "terminal_bench_v4_0",
+        "benchmark_id": "gpqa_diamond",
         "status": "enabled",
-        "source_name": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
+        "source_name": "Artificial Analysis GPQA Diamond official public Dataset page",
         "organization": "Artificial Analysis",
         "source_type": "official_page_endpoint",
-        "official_url": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
-        "endpoint": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
+        "official_url": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "endpoint": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
         "fetch_method": "GET",
         "update_frequency": "daily",
         "requires_auth": false,
-        "evaluation_field": "Terminal-Bench v4.0: Score",
+        "evaluation_field": "GPQA Diamond: Score",
         "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
         "release_tracking": "page_jsonld",
         "hash_required": true,
         "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
-        "jsonld_name": "Terminal-Bench v4.0: Score"
+        "jsonld_name": "GPQA Diamond: Score"
       },
       "records": {
-        "GPT-6 Astra (xhigh)|Terminal-Bench v4.0: Score:GPT-6 Astra (xhigh)|page_jsonld": {
+        "GPT-6 Astra (xhigh)|GPQA Diamond: Score:GPT-6 Astra (xhigh)|page_jsonld": {
           "model": "GPT-6 Astra (xhigh)",
-          "score": 0.595959595959596,
+          "score": 0.962626262626263,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:GPT-6 Astra (xhigh)",
+          "comparisonKey": "GPQA Diamond: Score:GPT-6 Astra (xhigh)",
           "variant": "page_jsonld",
           "displayRank": 1
         },
-        "GPT-6 Astra (max)|Terminal-Bench v4.0: Score:GPT-6 Astra (max)|page_jsonld": {
+        "GPT-6 Astra (max)|GPQA Diamond: Score:GPT-6 Astra (max)|page_jsonld": {
           "model": "GPT-6 Astra (max)",
-          "score": 0.590909090909091,
+          "score": 0.960606060606061,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:GPT-6 Astra (max)",
+          "comparisonKey": "GPQA Diamond: Score:GPT-6 Astra (max)",
           "variant": "page_jsonld",
           "displayRank": 2
         },
-        "Claude Fable 5.1 (xhigh with fallback)|Terminal-Bench v4.0: Score:Claude Fable 5.1 (xhigh with fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (xhigh with fallback)",
-          "score": 0.55050505050505,
+        "Gemini 3.8 Flash (high)|GPQA Diamond: Score:Gemini 3.8 Flash (high)|page_jsonld": {
+          "model": "Gemini 3.8 Flash (high)",
+          "score": 0.952525252525253,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:Claude Fable 5.1 (xhigh with fallback)",
+          "comparisonKey": "GPQA Diamond: Score:Gemini 3.8 Flash (high)",
           "variant": "page_jsonld",
           "displayRank": 3
         },
-        "GPT-6 Astra (high)|Terminal-Bench v4.0: Score:GPT-6 Astra (high)|page_jsonld": {
+        "GPT-6 Astra (high)|GPQA Diamond: Score:GPT-6 Astra (high)|page_jsonld": {
           "model": "GPT-6 Astra (high)",
-          "score": 0.54040404040404,
+          "score": 0.94949494949495,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:GPT-6 Astra (high)",
+          "comparisonKey": "GPQA Diamond: Score:GPT-6 Astra (high)",
           "variant": "page_jsonld",
           "displayRank": 4
         },
-        "Claude Fable 5.1 (max with fallback)|Terminal-Bench v4.0: Score:Claude Fable 5.1 (max with fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (max with fallback)",
-          "score": 0.52020202020202,
+        "Grok 4.6 (high)|GPQA Diamond: Score:Grok 4.6 (high)|page_jsonld": {
+          "model": "Grok 4.6 (high)",
+          "score": 0.94949494949495,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:Claude Fable 5.1 (max with fallback)",
+          "comparisonKey": "GPQA Diamond: Score:Grok 4.6 (high)",
           "variant": "page_jsonld",
           "displayRank": 5
         },
-        "Claude Fable 5.1 (high with fallback)|Terminal-Bench v4.0: Score:Claude Fable 5.1 (high with fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (high with fallback)",
-          "score": 0.52020202020202,
+        "Gemini 3.7 Flash (high)|GPQA Diamond: Score:Gemini 3.7 Flash (high)|page_jsonld": {
+          "model": "Gemini 3.7 Flash (high)",
+          "score": 0.945454545454545,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:Claude Fable 5.1 (high with fallback)",
+          "comparisonKey": "GPQA Diamond: Score:Gemini 3.7 Flash (high)",
           "variant": "page_jsonld",
           "displayRank": 6
         },
-        "GPT-6 Astra (medium)|Terminal-Bench v4.0: Score:GPT-6 Astra (medium)|page_jsonld": {
-          "model": "GPT-6 Astra (medium)",
-          "score": 0.494949494949495,
+        "GPT-5.6 Sol (max)|GPQA Diamond: Score:GPT-5.6 Sol (max)|page_jsonld": {
+          "model": "GPT-5.6 Sol (max)",
+          "score": 0.941414141414141,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:GPT-6 Astra (medium)",
+          "comparisonKey": "GPQA Diamond: Score:GPT-5.6 Sol (max)",
           "variant": "page_jsonld",
           "displayRank": 7
         },
-        "Claude Opus 5 (max)|Terminal-Bench v4.0: Score:Claude Opus 5 (max)|page_jsonld": {
-          "model": "Claude Opus 5 (max)",
-          "score": 0.48989898989899,
+        "Muse Spark 1.3 (xhigh)|GPQA Diamond: Score:Muse Spark 1.3 (xhigh)|page_jsonld": {
+          "model": "Muse Spark 1.3 (xhigh)",
+          "score": 0.941414141414141,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:Claude Opus 5 (max)",
+          "comparisonKey": "GPQA Diamond: Score:Muse Spark 1.3 (xhigh)",
           "variant": "page_jsonld",
           "displayRank": 8
         },
-        "Claude Fable 5 (with fallback)|Terminal-Bench v4.0: Score:Claude Fable 5 (with fallback)|page_jsonld": {
-          "model": "Claude Fable 5 (with fallback)",
-          "score": 0.424242424242424,
+        "Gemini 3.1 Pro Preview|GPQA Diamond: Score:Gemini 3.1 Pro Preview|page_jsonld": {
+          "model": "Gemini 3.1 Pro Preview",
+          "score": 0.941414141414141,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:Claude Fable 5 (with fallback)",
+          "comparisonKey": "GPQA Diamond: Score:Gemini 3.1 Pro Preview",
           "variant": "page_jsonld",
           "displayRank": 9
         },
-        "GLM-5.3 (max)|Terminal-Bench v4.0: Score:GLM-5.3 (max)|page_jsonld": {
-          "model": "GLM-5.3 (max)",
-          "score": 0.419191919191919,
+        "Claude Fable 5.1 (max with fallback)|GPQA Diamond: Score:Claude Fable 5.1 (max with fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (max with fallback)",
+          "score": 0.937373737373737,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:GLM-5.3 (max)",
+          "comparisonKey": "GPQA Diamond: Score:Claude Fable 5.1 (max with fallback)",
           "variant": "page_jsonld",
           "displayRank": 10
         },
-        "GPT-5.6 Sol (max)|Terminal-Bench v4.0: Score:GPT-5.6 Sol (max)|page_jsonld": {
-          "model": "GPT-5.6 Sol (max)",
-          "score": 0.398989898989899,
+        "Muse Spark 1.3 (max)|GPQA Diamond: Score:Muse Spark 1.3 (max)|page_jsonld": {
+          "model": "Muse Spark 1.3 (max)",
+          "score": 0.935353535353535,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:GPT-5.6 Sol (max)",
+          "comparisonKey": "GPQA Diamond: Score:Muse Spark 1.3 (max)",
           "variant": "page_jsonld",
           "displayRank": 11
         },
-        "GPT-5.6 Terra (max)|Terminal-Bench v4.0: Score:GPT-5.6 Terra (max)|page_jsonld": {
-          "model": "GPT-5.6 Terra (max)",
-          "score": 0.353535353535354,
+        "Kimi K3 (max)|GPQA Diamond: Score:Kimi K3 (max)|page_jsonld": {
+          "model": "Kimi K3 (max)",
+          "score": 0.935353535353535,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:GPT-5.6 Terra (max)",
+          "comparisonKey": "GPQA Diamond: Score:Kimi K3 (max)",
           "variant": "page_jsonld",
           "displayRank": 12
         },
-        "Muse Spark 1.3 (max)|Terminal-Bench v4.0: Score:Muse Spark 1.3 (max)|page_jsonld": {
-          "model": "Muse Spark 1.3 (max)",
-          "score": 0.333333333333333,
+        "Qwen3.8 2.4T A95B|GPQA Diamond: Score:Qwen3.8 2.4T A95B|page_jsonld": {
+          "model": "Qwen3.8 2.4T A95B",
+          "score": 0.935353535353535,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:Muse Spark 1.3 (max)",
+          "comparisonKey": "GPQA Diamond: Score:Qwen3.8 2.4T A95B",
           "variant": "page_jsonld",
           "displayRank": 13
         },
-        "GLM-5.3-Flash|Terminal-Bench v4.0: Score:GLM-5.3-Flash|page_jsonld": {
-          "model": "GLM-5.3-Flash",
-          "score": 0.328282828282828,
+        "Claude Opus 5 (max)|GPQA Diamond: Score:Claude Opus 5 (max)|page_jsonld": {
+          "model": "Claude Opus 5 (max)",
+          "score": 0.932323232323232,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:GLM-5.3-Flash",
+          "comparisonKey": "GPQA Diamond: Score:Claude Opus 5 (max)",
           "variant": "page_jsonld",
           "displayRank": 14
         },
-        "DeepSeek V4.1 Flash (max)|Terminal-Bench v4.0: Score:DeepSeek V4.1 Flash (max)|page_jsonld": {
-          "model": "DeepSeek V4.1 Flash (max)",
-          "score": 0.267676767676768,
+        "MiniMax-M3|GPQA Diamond: Score:MiniMax-M3|page_jsonld": {
+          "model": "MiniMax-M3",
+          "score": 0.929292929292929,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:DeepSeek V4.1 Flash (max)",
+          "comparisonKey": "GPQA Diamond: Score:MiniMax-M3",
           "variant": "page_jsonld",
           "displayRank": 15
         },
-        "Grok 4.6 (high)|Terminal-Bench v4.0: Score:Grok 4.6 (high)|page_jsonld": {
-          "model": "Grok 4.6 (high)",
-          "score": 0.212121212121212,
+        "DeepSeek V4 Pro 0813 (max)|GPQA Diamond: Score:DeepSeek V4 Pro 0813 (max)|page_jsonld": {
+          "model": "DeepSeek V4 Pro 0813 (max)",
+          "score": 0.928282828282828,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:Grok 4.6 (high)",
+          "comparisonKey": "GPQA Diamond: Score:DeepSeek V4 Pro 0813 (max)",
           "variant": "page_jsonld",
           "displayRank": 16
         },
-        "Gemini 3.8 Flash (high)|Terminal-Bench v4.0: Score:Gemini 3.8 Flash (high)|page_jsonld": {
-          "model": "Gemini 3.8 Flash (high)",
-          "score": 0.196969696969697,
+        "Claude Fable 5 (with fallback)|GPQA Diamond: Score:Claude Fable 5 (with fallback)|page_jsonld": {
+          "model": "Claude Fable 5 (with fallback)",
+          "score": 0.926262626262626,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:Gemini 3.8 Flash (high)",
+          "comparisonKey": "GPQA Diamond: Score:Claude Fable 5 (with fallback)",
           "variant": "page_jsonld",
           "displayRank": 17
         },
-        "DeepSeek V4 Pro 0813 (max)|Terminal-Bench v4.0: Score:DeepSeek V4 Pro 0813 (max)|page_jsonld": {
-          "model": "DeepSeek V4 Pro 0813 (max)",
-          "score": 0.141414141414141,
+        "GPT-5.6 Terra (max)|GPQA Diamond: Score:GPT-5.6 Terra (max)|page_jsonld": {
+          "model": "GPT-5.6 Terra (max)",
+          "score": 0.925252525252525,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:DeepSeek V4 Pro 0813 (max)",
+          "comparisonKey": "GPQA Diamond: Score:GPT-5.6 Terra (max)",
           "variant": "page_jsonld",
           "displayRank": 18
         },
-        "Kimi K3 (max)|Terminal-Bench v4.0: Score:Kimi K3 (max)|page_jsonld": {
-          "model": "Kimi K3 (max)",
-          "score": 0.126262626262626,
+        "GLM-5.3 (max)|GPQA Diamond: Score:GLM-5.3 (max)|page_jsonld": {
+          "model": "GLM-5.3 (max)",
+          "score": 0.917171717171717,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:Kimi K3 (max)",
+          "comparisonKey": "GPQA Diamond: Score:GLM-5.3 (max)",
           "variant": "page_jsonld",
           "displayRank": 19
         },
-        "GPT-5.6 Luna (max)|Terminal-Bench v4.0: Score:GPT-5.6 Luna (max)|page_jsonld": {
-          "model": "GPT-5.6 Luna (max)",
-          "score": 0.116161616161616,
+        "GLM-5.3-Flash|GPQA Diamond: Score:GLM-5.3-Flash|page_jsonld": {
+          "model": "GLM-5.3-Flash",
+          "score": 0.912121212121212,
           "rank": null,
-          "comparisonKey": "Terminal-Bench v4.0: Score:GPT-5.6 Luna (max)",
+          "comparisonKey": "GPQA Diamond: Score:GLM-5.3-Flash",
+          "variant": "page_jsonld",
+          "displayRank": 20
+        }
+      }
+    },
+    "artificial_analysis_intelligence_index_v4_3": {
+      "runtimeId": "aa_intelligence_index_v4_3",
+      "familyId": "aa",
+      "title": "Artificial Analysis Intelligence Index v4.3",
+      "release": "page_jsonld",
+      "contentHash": "ab736aecb5f03ab3869a11ec41631a840fa60a2de1de742989cf5524687a4d6d",
+      "source": {
+        "benchmark_id": "artificial_analysis_intelligence_index_v4_3",
+        "status": "enabled",
+        "source_name": "Artificial Analysis Intelligence Index official public Dataset page",
+        "organization": "Artificial Analysis",
+        "source_type": "official_page_endpoint",
+        "official_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+        "endpoint": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+        "fetch_method": "GET",
+        "update_frequency": "daily",
+        "requires_auth": false,
+        "evaluation_field": "Artificial Analysis Intelligence Index: Score",
+        "evidence_url": "https://artificialanalysis.ai/api-reference/beta",
+        "release_tracking": "page_jsonld",
+        "hash_required": true,
+        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
+        "jsonld_name": "Artificial Analysis Intelligence Index: Score"
+      },
+      "records": {
+        "Claude Fable 5.1 (max with fallback)|Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (max with fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (max with fallback)",
+          "score": 53.3737509623252,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (max with fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 1
+        },
+        "Claude Fable 5.1 (xhigh with fallback)|Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (xhigh with fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (xhigh with fallback)",
+          "score": 53.1840337538944,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (xhigh with fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 2
+        },
+        "GPT-6 Astra (max)|Artificial Analysis Intelligence Index: Score:GPT-6 Astra (max)|page_jsonld": {
+          "model": "GPT-6 Astra (max)",
+          "score": 52.814069395513,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-6 Astra (max)",
+          "variant": "page_jsonld",
+          "displayRank": 3
+        },
+        "GPT-6 Astra (xhigh)|Artificial Analysis Intelligence Index: Score:GPT-6 Astra (xhigh)|page_jsonld": {
+          "model": "GPT-6 Astra (xhigh)",
+          "score": 52.5059027108782,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-6 Astra (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 4
+        },
+        "Claude Fable 5.1 (high with fallback)|Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (high with fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (high with fallback)",
+          "score": 51.2094958852237,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (high with fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 5
+        },
+        "GPT-6 Astra (high)|Artificial Analysis Intelligence Index: Score:GPT-6 Astra (high)|page_jsonld": {
+          "model": "GPT-6 Astra (high)",
+          "score": 51.0480721636152,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-6 Astra (high)",
+          "variant": "page_jsonld",
+          "displayRank": 6
+        },
+        "Claude Opus 5 (max)|Artificial Analysis Intelligence Index: Score:Claude Opus 5 (max)|page_jsonld": {
+          "model": "Claude Opus 5 (max)",
+          "score": 50.7001865797629,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Opus 5 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 7
+        },
+        "Claude Fable 5 (with fallback)|Artificial Analysis Intelligence Index: Score:Claude Fable 5 (with fallback)|page_jsonld": {
+          "model": "Claude Fable 5 (with fallback)",
+          "score": 49.6994452733378,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Fable 5 (with fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 8
+        },
+        "GPT-6 Astra (medium)|Artificial Analysis Intelligence Index: Score:GPT-6 Astra (medium)|page_jsonld": {
+          "model": "GPT-6 Astra (medium)",
+          "score": 49.6685363034369,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-6 Astra (medium)",
+          "variant": "page_jsonld",
+          "displayRank": 9
+        },
+        "Muse Spark 1.3 (max)|Artificial Analysis Intelligence Index: Score:Muse Spark 1.3 (max)|page_jsonld": {
+          "model": "Muse Spark 1.3 (max)",
+          "score": 48.1690107719685,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Muse Spark 1.3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 10
+        },
+        "GPT-5.6 Sol (max)|Artificial Analysis Intelligence Index: Score:GPT-5.6 Sol (max)|page_jsonld": {
+          "model": "GPT-5.6 Sol (max)",
+          "score": 47.0613568915036,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-5.6 Sol (max)",
+          "variant": "page_jsonld",
+          "displayRank": 11
+        },
+        "GLM-5.3 (max)|Artificial Analysis Intelligence Index: Score:GLM-5.3 (max)|page_jsonld": {
+          "model": "GLM-5.3 (max)",
+          "score": 44.855717385614,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GLM-5.3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 12
+        },
+        "Grok 4.6 (high)|Artificial Analysis Intelligence Index: Score:Grok 4.6 (high)|page_jsonld": {
+          "model": "Grok 4.6 (high)",
+          "score": 44.4050073012592,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Grok 4.6 (high)",
+          "variant": "page_jsonld",
+          "displayRank": 13
+        },
+        "Kimi K3 (max)|Artificial Analysis Intelligence Index: Score:Kimi K3 (max)|page_jsonld": {
+          "model": "Kimi K3 (max)",
+          "score": 43.7841729518782,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Kimi K3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 14
+        },
+        "GPT-5.6 Terra (max)|Artificial Analysis Intelligence Index: Score:GPT-5.6 Terra (max)|page_jsonld": {
+          "model": "GPT-5.6 Terra (max)",
+          "score": 42.2514998239494,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-5.6 Terra (max)",
+          "variant": "page_jsonld",
+          "displayRank": 15
+        },
+        "GLM-5.3-Flash|Artificial Analysis Intelligence Index: Score:GLM-5.3-Flash|page_jsonld": {
+          "model": "GLM-5.3-Flash",
+          "score": 41.907366113455,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GLM-5.3-Flash",
+          "variant": "page_jsonld",
+          "displayRank": 16
+        },
+        "Gemini 3.8 Flash (high)|Artificial Analysis Intelligence Index: Score:Gemini 3.8 Flash (high)|page_jsonld": {
+          "model": "Gemini 3.8 Flash (high)",
+          "score": 41.1863571765904,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Gemini 3.8 Flash (high)",
+          "variant": "page_jsonld",
+          "displayRank": 17
+        },
+        "Qwen3.8 2.4T A95B|Artificial Analysis Intelligence Index: Score:Qwen3.8 2.4T A95B|page_jsonld": {
+          "model": "Qwen3.8 2.4T A95B",
+          "score": 40.0445723105325,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Qwen3.8 2.4T A95B",
+          "variant": "page_jsonld",
+          "displayRank": 18
+        },
+        "DeepSeek V4.1 Flash (max)|Artificial Analysis Intelligence Index: Score:DeepSeek V4.1 Flash (max)|page_jsonld": {
+          "model": "DeepSeek V4.1 Flash (max)",
+          "score": 39.545442472527,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:DeepSeek V4.1 Flash (max)",
+          "variant": "page_jsonld",
+          "displayRank": 19
+        },
+        "GPT-5.6 Luna (max)|Artificial Analysis Intelligence Index: Score:GPT-5.6 Luna (max)|page_jsonld": {
+          "model": "GPT-5.6 Luna (max)",
+          "score": 37.5048489690841,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-5.6 Luna (max)",
           "variant": "page_jsonld",
           "displayRank": 20
         }
@@ -4649,7 +4649,7 @@
       "familyId": "aa",
       "title": "SciCode",
       "release": "page_jsonld",
-      "contentHash": "53fac6998b2a5f7c5e7d96e5b2e7b4608f11a838ded127004f4a71d464c1d399",
+      "contentHash": "cef12c6a1fd4124a1ed702dd172a0b1e5455d400adf577f63e81e7a421b47066",
       "source": {
         "benchmark_id": "scicode",
         "status": "enabled",
@@ -5018,199 +5018,12 @@
         }
       }
     },
-    "gdpval_aa_elo": {
-      "runtimeId": "aa_gdpval_elo",
-      "familyId": "aa",
-      "title": "GDPval-AA Elo",
-      "release": "page_jsonld",
-      "contentHash": "f8c02e0dff101f85a97aee031b4f6b7259af500951d8e165149e859e77850320",
-      "source": {
-        "benchmark_id": "gdpval_aa_elo",
-        "status": "enabled",
-        "source_name": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-        "organization": "Artificial Analysis",
-        "source_type": "official_page_endpoint",
-        "official_url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "endpoint": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "fetch_method": "GET",
-        "update_frequency": "daily",
-        "requires_auth": false,
-        "evaluation_field": "gdpvalAaElo",
-        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
-        "release_tracking": "page_jsonld",
-        "hash_required": true,
-        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
-        "jsonld_name": "GDPval-AA v2 Leaderboard"
-      },
-      "records": {
-        "Claude Fable 5.1 (max with fallback)|gdpvalAaElo:Claude Fable 5.1 (max with fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (max with fallback)",
-          "score": 1763.64,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Claude Fable 5.1 (max with fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 1
-        },
-        "Claude Fable 5.1 (xhigh with fallback)|gdpvalAaElo:Claude Fable 5.1 (xhigh with fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (xhigh with fallback)",
-          "score": 1745.29,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Claude Fable 5.1 (xhigh with fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 2
-        },
-        "Claude Opus 5 (max)|gdpvalAaElo:Claude Opus 5 (max)|page_jsonld": {
-          "model": "Claude Opus 5 (max)",
-          "score": 1735.09,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Claude Opus 5 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 3
-        },
-        "Claude Opus 5 (xhigh)|gdpvalAaElo:Claude Opus 5 (xhigh)|page_jsonld": {
-          "model": "Claude Opus 5 (xhigh)",
-          "score": 1708.14,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Claude Opus 5 (xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 4
-        },
-        "Muse Spark 1.3 (max)|gdpvalAaElo:Muse Spark 1.3 (max)|page_jsonld": {
-          "model": "Muse Spark 1.3 (max)",
-          "score": 1703.34,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Muse Spark 1.3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 5
-        },
-        "Grok 4.6 (xhigh)|gdpvalAaElo:Grok 4.6 (xhigh)|page_jsonld": {
-          "model": "Grok 4.6 (xhigh)",
-          "score": 1663.07,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Grok 4.6 (xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 6
-        },
-        "Muse Spark 1.3 (xhigh)|gdpvalAaElo:Muse Spark 1.3 (xhigh)|page_jsonld": {
-          "model": "Muse Spark 1.3 (xhigh)",
-          "score": 1662.34,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Muse Spark 1.3 (xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 7
-        },
-        "GLM-5.3 (max)|gdpvalAaElo:GLM-5.3 (max)|page_jsonld": {
-          "model": "GLM-5.3 (max)",
-          "score": 1661.42,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:GLM-5.3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 8
-        },
-        "GLM-5.3-Flash|gdpvalAaElo:GLM-5.3-Flash|page_jsonld": {
-          "model": "GLM-5.3-Flash",
-          "score": 1655.48,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:GLM-5.3-Flash",
-          "variant": "page_jsonld",
-          "displayRank": 9
-        },
-        "Claude Fable 5.1 (high with fallback)|gdpvalAaElo:Claude Fable 5.1 (high with fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (high with fallback)",
-          "score": 1649.77,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Claude Fable 5.1 (high with fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 10
-        },
-        "Grok 4.6 (high)|gdpvalAaElo:Grok 4.6 (high)|page_jsonld": {
-          "model": "Grok 4.6 (high)",
-          "score": 1642.96,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Grok 4.6 (high)",
-          "variant": "page_jsonld",
-          "displayRank": 11
-        },
-        "DeepSeek V4.1 Flash (max)|gdpvalAaElo:DeepSeek V4.1 Flash (max)|page_jsonld": {
-          "model": "DeepSeek V4.1 Flash (max)",
-          "score": 1632.06,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:DeepSeek V4.1 Flash (max)",
-          "variant": "page_jsonld",
-          "displayRank": 12
-        },
-        "Claude Fable 5 (with fallback)|gdpvalAaElo:Claude Fable 5 (with fallback)|page_jsonld": {
-          "model": "Claude Fable 5 (with fallback)",
-          "score": 1631.46,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Claude Fable 5 (with fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 13
-        },
-        "Qwen3.8 2.4T A95B|gdpvalAaElo:Qwen3.8 2.4T A95B|page_jsonld": {
-          "model": "Qwen3.8 2.4T A95B",
-          "score": 1627.82,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Qwen3.8 2.4T A95B",
-          "variant": "page_jsonld",
-          "displayRank": 14
-        },
-        "GPT-5.6 Sol (max)|gdpvalAaElo:GPT-5.6 Sol (max)|page_jsonld": {
-          "model": "GPT-5.6 Sol (max)",
-          "score": 1624.11,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:GPT-5.6 Sol (max)",
-          "variant": "page_jsonld",
-          "displayRank": 15
-        },
-        "GPT-6 Astra (max)|gdpvalAaElo:GPT-6 Astra (max)|page_jsonld": {
-          "model": "GPT-6 Astra (max)",
-          "score": 1580.2,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:GPT-6 Astra (max)",
-          "variant": "page_jsonld",
-          "displayRank": 16
-        },
-        "Kimi K3 (max)|gdpvalAaElo:Kimi K3 (max)|page_jsonld": {
-          "model": "Kimi K3 (max)",
-          "score": 1569.47,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Kimi K3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 17
-        },
-        "DeepSeek V4 Pro 0813 (max)|gdpvalAaElo:DeepSeek V4 Pro 0813 (max)|page_jsonld": {
-          "model": "DeepSeek V4 Pro 0813 (max)",
-          "score": 1493.31,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:DeepSeek V4 Pro 0813 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 18
-        },
-        "GPT-5.6 Luna (max)|gdpvalAaElo:GPT-5.6 Luna (max)|page_jsonld": {
-          "model": "GPT-5.6 Luna (max)",
-          "score": 1489.33,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:GPT-5.6 Luna (max)",
-          "variant": "page_jsonld",
-          "displayRank": 19
-        },
-        "GPT-5.6 Terra (max)|gdpvalAaElo:GPT-5.6 Terra (max)|page_jsonld": {
-          "model": "GPT-5.6 Terra (max)",
-          "score": 1476.96,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:GPT-5.6 Terra (max)",
-          "variant": "page_jsonld",
-          "displayRank": 20
-        }
-      }
-    },
     "aa_lcr": {
       "runtimeId": "aa_lcr",
       "familyId": "aa",
       "title": "AA LCR",
       "release": "page_jsonld",
-      "contentHash": "ee85f788d79787ae1a612d94ecb2110087cb95fabd2c555dac513a84736fd614",
+      "contentHash": "cb8ebb5c6931d40e9366de73c820f345af8913d9ba2c5aed8428aa22970e3bbb",
       "source": {
         "benchmark_id": "aa_lcr",
         "status": "enabled",
@@ -5397,7 +5210,7 @@
       "familyId": "aa",
       "title": "CritPt",
       "release": "page_jsonld",
-      "contentHash": "db2543bad176cb1268c4e1af070efa99ffca1848d207cd392d569d42410e7307",
+      "contentHash": "cb8d07a91b4f101784517f89a8c04e610c93e224afa45616148342c5137815bd",
       "source": {
         "benchmark_id": "critpt",
         "status": "enabled",
@@ -5579,12 +5392,199 @@
         }
       }
     },
+    "gdpval_aa_elo": {
+      "runtimeId": "aa_gdpval_elo",
+      "familyId": "aa",
+      "title": "GDPval-AA Elo",
+      "release": "page_jsonld",
+      "contentHash": "d61b8325fed46960396e96a90778c871235d232fbba860246d5fa15203a87a35",
+      "source": {
+        "benchmark_id": "gdpval_aa_elo",
+        "status": "enabled",
+        "source_name": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+        "organization": "Artificial Analysis",
+        "source_type": "official_page_endpoint",
+        "official_url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "endpoint": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "fetch_method": "GET",
+        "update_frequency": "daily",
+        "requires_auth": false,
+        "evaluation_field": "gdpvalAaElo",
+        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
+        "release_tracking": "page_jsonld",
+        "hash_required": true,
+        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
+        "jsonld_name": "GDPval-AA v2 Leaderboard"
+      },
+      "records": {
+        "Claude Fable 5.1 (max with fallback)|gdpvalAaElo:Claude Fable 5.1 (max with fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (max with fallback)",
+          "score": 1763.64,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Claude Fable 5.1 (max with fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 1
+        },
+        "Claude Fable 5.1 (xhigh with fallback)|gdpvalAaElo:Claude Fable 5.1 (xhigh with fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (xhigh with fallback)",
+          "score": 1745.29,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Claude Fable 5.1 (xhigh with fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 2
+        },
+        "Claude Opus 5 (max)|gdpvalAaElo:Claude Opus 5 (max)|page_jsonld": {
+          "model": "Claude Opus 5 (max)",
+          "score": 1735.09,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Claude Opus 5 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 3
+        },
+        "Claude Opus 5 (xhigh)|gdpvalAaElo:Claude Opus 5 (xhigh)|page_jsonld": {
+          "model": "Claude Opus 5 (xhigh)",
+          "score": 1708.14,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Claude Opus 5 (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 4
+        },
+        "Muse Spark 1.3 (max)|gdpvalAaElo:Muse Spark 1.3 (max)|page_jsonld": {
+          "model": "Muse Spark 1.3 (max)",
+          "score": 1703.34,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Muse Spark 1.3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 5
+        },
+        "Grok 4.6 (xhigh)|gdpvalAaElo:Grok 4.6 (xhigh)|page_jsonld": {
+          "model": "Grok 4.6 (xhigh)",
+          "score": 1663.07,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Grok 4.6 (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 6
+        },
+        "Muse Spark 1.3 (xhigh)|gdpvalAaElo:Muse Spark 1.3 (xhigh)|page_jsonld": {
+          "model": "Muse Spark 1.3 (xhigh)",
+          "score": 1662.34,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Muse Spark 1.3 (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 7
+        },
+        "GLM-5.3 (max)|gdpvalAaElo:GLM-5.3 (max)|page_jsonld": {
+          "model": "GLM-5.3 (max)",
+          "score": 1661.42,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:GLM-5.3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 8
+        },
+        "GLM-5.3-Flash|gdpvalAaElo:GLM-5.3-Flash|page_jsonld": {
+          "model": "GLM-5.3-Flash",
+          "score": 1655.48,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:GLM-5.3-Flash",
+          "variant": "page_jsonld",
+          "displayRank": 9
+        },
+        "Claude Fable 5.1 (high with fallback)|gdpvalAaElo:Claude Fable 5.1 (high with fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (high with fallback)",
+          "score": 1649.77,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Claude Fable 5.1 (high with fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 10
+        },
+        "Grok 4.6 (high)|gdpvalAaElo:Grok 4.6 (high)|page_jsonld": {
+          "model": "Grok 4.6 (high)",
+          "score": 1642.96,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Grok 4.6 (high)",
+          "variant": "page_jsonld",
+          "displayRank": 11
+        },
+        "DeepSeek V4.1 Flash (max)|gdpvalAaElo:DeepSeek V4.1 Flash (max)|page_jsonld": {
+          "model": "DeepSeek V4.1 Flash (max)",
+          "score": 1632.06,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:DeepSeek V4.1 Flash (max)",
+          "variant": "page_jsonld",
+          "displayRank": 12
+        },
+        "Claude Fable 5 (with fallback)|gdpvalAaElo:Claude Fable 5 (with fallback)|page_jsonld": {
+          "model": "Claude Fable 5 (with fallback)",
+          "score": 1631.46,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Claude Fable 5 (with fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 13
+        },
+        "Qwen3.8 2.4T A95B|gdpvalAaElo:Qwen3.8 2.4T A95B|page_jsonld": {
+          "model": "Qwen3.8 2.4T A95B",
+          "score": 1627.82,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Qwen3.8 2.4T A95B",
+          "variant": "page_jsonld",
+          "displayRank": 14
+        },
+        "GPT-5.6 Sol (max)|gdpvalAaElo:GPT-5.6 Sol (max)|page_jsonld": {
+          "model": "GPT-5.6 Sol (max)",
+          "score": 1624.11,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:GPT-5.6 Sol (max)",
+          "variant": "page_jsonld",
+          "displayRank": 15
+        },
+        "GPT-6 Astra (max)|gdpvalAaElo:GPT-6 Astra (max)|page_jsonld": {
+          "model": "GPT-6 Astra (max)",
+          "score": 1580.2,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:GPT-6 Astra (max)",
+          "variant": "page_jsonld",
+          "displayRank": 16
+        },
+        "Kimi K3 (max)|gdpvalAaElo:Kimi K3 (max)|page_jsonld": {
+          "model": "Kimi K3 (max)",
+          "score": 1569.28,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Kimi K3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 17
+        },
+        "DeepSeek V4 Pro 0813 (max)|gdpvalAaElo:DeepSeek V4 Pro 0813 (max)|page_jsonld": {
+          "model": "DeepSeek V4 Pro 0813 (max)",
+          "score": 1493.31,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:DeepSeek V4 Pro 0813 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 18
+        },
+        "GPT-5.6 Luna (max)|gdpvalAaElo:GPT-5.6 Luna (max)|page_jsonld": {
+          "model": "GPT-5.6 Luna (max)",
+          "score": 1489.33,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:GPT-5.6 Luna (max)",
+          "variant": "page_jsonld",
+          "displayRank": 19
+        },
+        "GPT-5.6 Terra (max)|gdpvalAaElo:GPT-5.6 Terra (max)|page_jsonld": {
+          "model": "GPT-5.6 Terra (max)",
+          "score": 1476.96,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:GPT-5.6 Terra (max)",
+          "variant": "page_jsonld",
+          "displayRank": 20
+        }
+      }
+    },
     "terminalbench_hard": {
       "runtimeId": "aa_terminalbench_hard",
       "familyId": "aa",
       "title": "Terminal-Bench Hard",
       "release": "page_jsonld",
-      "contentHash": "55fd1f5e83412c9396bdbb891b25514a9ad142bf4cb85d86ed0a7a2cdc71b3eb",
+      "contentHash": "e05c9dd4e5b69d3bd4a621b9869900e28cca2ea1343b3e7d48e6938c4d1ddc95",
       "source": {
         "benchmark_id": "terminalbench_hard",
         "status": "enabled",
@@ -5702,199 +5702,12 @@
         }
       }
     },
-    "terminalbench_v2_1": {
-      "runtimeId": "aa_terminalbench_v2_1",
-      "familyId": "aa",
-      "title": "Terminal-Bench v2.1",
-      "release": "page_jsonld",
-      "contentHash": "74428502807b46428c716cf34ec047c73ef0d824a53e8a4a9098cc56036e2c95",
-      "source": {
-        "benchmark_id": "terminalbench_v2_1",
-        "status": "enabled",
-        "source_name": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
-        "organization": "Artificial Analysis",
-        "source_type": "official_page_endpoint",
-        "official_url": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
-        "endpoint": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
-        "fetch_method": "GET",
-        "update_frequency": "daily",
-        "requires_auth": false,
-        "evaluation_field": "Terminal-Bench v2.1: Score",
-        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
-        "release_tracking": "page_jsonld",
-        "hash_required": true,
-        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
-        "jsonld_name": "Terminal-Bench v2.1: Score"
-      },
-      "records": {
-        "Claude Fable 5.1 (max with fallback)|Terminal-Bench v2.1: Score:Claude Fable 5.1 (max with fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (max with fallback)",
-          "score": 0.913857677902622,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:Claude Fable 5.1 (max with fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 1
-        },
-        "Claude Fable 5.1 (xhigh with fallback)|Terminal-Bench v2.1: Score:Claude Fable 5.1 (xhigh with fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (xhigh with fallback)",
-          "score": 0.910112359550562,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:Claude Fable 5.1 (xhigh with fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 2
-        },
-        "Claude Fable 5.1 (high with fallback)|Terminal-Bench v2.1: Score:Claude Fable 5.1 (high with fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (high with fallback)",
-          "score": 0.898876404494382,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:Claude Fable 5.1 (high with fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 3
-        },
-        "GPT-6 Astra (high)|Terminal-Bench v2.1: Score:GPT-6 Astra (high)|page_jsonld": {
-          "model": "GPT-6 Astra (high)",
-          "score": 0.898876404494382,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:GPT-6 Astra (high)",
-          "variant": "page_jsonld",
-          "displayRank": 4
-        },
-        "GPT-6 Astra (medium)|Terminal-Bench v2.1: Score:GPT-6 Astra (medium)|page_jsonld": {
-          "model": "GPT-6 Astra (medium)",
-          "score": 0.895131086142322,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:GPT-6 Astra (medium)",
-          "variant": "page_jsonld",
-          "displayRank": 5
-        },
-        "GPT-5.6 Sol (xhigh)|Terminal-Bench v2.1: Score:GPT-5.6 Sol (xhigh)|page_jsonld": {
-          "model": "GPT-5.6 Sol (xhigh)",
-          "score": 0.895131086142322,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:GPT-5.6 Sol (xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 6
-        },
-        "Claude Opus 5 (max)|Terminal-Bench v2.1: Score:Claude Opus 5 (max)|page_jsonld": {
-          "model": "Claude Opus 5 (max)",
-          "score": 0.891385767790262,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:Claude Opus 5 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 7
-        },
-        "GPT-6 Astra (max)|Terminal-Bench v2.1: Score:GPT-6 Astra (max)|page_jsonld": {
-          "model": "GPT-6 Astra (max)",
-          "score": 0.883895131086142,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:GPT-6 Astra (max)",
-          "variant": "page_jsonld",
-          "displayRank": 8
-        },
-        "Grok 4.6 (high)|Terminal-Bench v2.1: Score:Grok 4.6 (high)|page_jsonld": {
-          "model": "Grok 4.6 (high)",
-          "score": 0.883895131086142,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:Grok 4.6 (high)",
-          "variant": "page_jsonld",
-          "displayRank": 9
-        },
-        "GPT-5.6 Sol (max)|Terminal-Bench v2.1: Score:GPT-5.6 Sol (max)|page_jsonld": {
-          "model": "GPT-5.6 Sol (max)",
-          "score": 0.880149812734082,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:GPT-5.6 Sol (max)",
-          "variant": "page_jsonld",
-          "displayRank": 10
-        },
-        "GPT-5.6 Terra (max)|Terminal-Bench v2.1: Score:GPT-5.6 Terra (max)|page_jsonld": {
-          "model": "GPT-5.6 Terra (max)",
-          "score": 0.880149812734082,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:GPT-5.6 Terra (max)",
-          "variant": "page_jsonld",
-          "displayRank": 11
-        },
-        "Gemini 3.8 Flash (high)|Terminal-Bench v2.1: Score:Gemini 3.8 Flash (high)|page_jsonld": {
-          "model": "Gemini 3.8 Flash (high)",
-          "score": 0.876404494382023,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:Gemini 3.8 Flash (high)",
-          "variant": "page_jsonld",
-          "displayRank": 12
-        },
-        "Kimi K3 (max)|Terminal-Bench v2.1: Score:Kimi K3 (max)|page_jsonld": {
-          "model": "Kimi K3 (max)",
-          "score": 0.850187265917603,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:Kimi K3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 13
-        },
-        "Claude Fable 5 (with fallback)|Terminal-Bench v2.1: Score:Claude Fable 5 (with fallback)|page_jsonld": {
-          "model": "Claude Fable 5 (with fallback)",
-          "score": 0.846441947565543,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:Claude Fable 5 (with fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 14
-        },
-        "Muse Spark 1.3 (max)|Terminal-Bench v2.1: Score:Muse Spark 1.3 (max)|page_jsonld": {
-          "model": "Muse Spark 1.3 (max)",
-          "score": 0.842696629213483,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:Muse Spark 1.3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 15
-        },
-        "GLM-5.3-Flash|Terminal-Bench v2.1: Score:GLM-5.3-Flash|page_jsonld": {
-          "model": "GLM-5.3-Flash",
-          "score": 0.842696629213483,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:GLM-5.3-Flash",
-          "variant": "page_jsonld",
-          "displayRank": 16
-        },
-        "GLM-5.3 (max)|Terminal-Bench v2.1: Score:GLM-5.3 (max)|page_jsonld": {
-          "model": "GLM-5.3 (max)",
-          "score": 0.838951310861423,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:GLM-5.3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 17
-        },
-        "Qwen3.8 2.4T A95B|Terminal-Bench v2.1: Score:Qwen3.8 2.4T A95B|page_jsonld": {
-          "model": "Qwen3.8 2.4T A95B",
-          "score": 0.820224719101124,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:Qwen3.8 2.4T A95B",
-          "variant": "page_jsonld",
-          "displayRank": 18
-        },
-        "GPT-5.6 Luna (max)|Terminal-Bench v2.1: Score:GPT-5.6 Luna (max)|page_jsonld": {
-          "model": "GPT-5.6 Luna (max)",
-          "score": 0.808988764044944,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:GPT-5.6 Luna (max)",
-          "variant": "page_jsonld",
-          "displayRank": 19
-        },
-        "Qwen3.8 27B (xhigh)|Terminal-Bench v2.1: Score:Qwen3.8 27B (xhigh)|page_jsonld": {
-          "model": "Qwen3.8 27B (xhigh)",
-          "score": 0.797752808988764,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench v2.1: Score:Qwen3.8 27B (xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 20
-        }
-      }
-    },
     "ifbench": {
       "runtimeId": "aa_ifbench",
       "familyId": "aa",
       "title": "IFBench",
       "release": "page_jsonld",
-      "contentHash": "b09962acbde0ebc8092c6d5e155ebcc21870f75901b82ca84c1c7a07dc6dcab3",
+      "contentHash": "4cb4f5381384d14b74d571a090a8923196fd7fc7d660699b3ea238f46c8c971a",
       "source": {
         "benchmark_id": "ifbench",
         "status": "enabled",
@@ -6188,6 +6001,193 @@
           "comparisonKey": "MMMU-Pro: Score:Mistral Medium 3.5",
           "variant": "page_jsonld",
           "displayRank": 19
+        }
+      }
+    },
+    "terminalbench_v2_1": {
+      "runtimeId": "aa_terminalbench_v2_1",
+      "familyId": "aa",
+      "title": "Terminal-Bench v2.1",
+      "release": "page_jsonld",
+      "contentHash": "548f08836a97d055d2558fec94c1be874ed2215afb20137ac292fb4c85d3e3a5",
+      "source": {
+        "benchmark_id": "terminalbench_v2_1",
+        "status": "enabled",
+        "source_name": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
+        "organization": "Artificial Analysis",
+        "source_type": "official_page_endpoint",
+        "official_url": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "endpoint": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "fetch_method": "GET",
+        "update_frequency": "daily",
+        "requires_auth": false,
+        "evaluation_field": "Terminal-Bench v2.1: Score",
+        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
+        "release_tracking": "page_jsonld",
+        "hash_required": true,
+        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
+        "jsonld_name": "Terminal-Bench v2.1: Score"
+      },
+      "records": {
+        "Claude Fable 5.1 (max with fallback)|Terminal-Bench v2.1: Score:Claude Fable 5.1 (max with fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (max with fallback)",
+          "score": 0.913857677902622,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:Claude Fable 5.1 (max with fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 1
+        },
+        "Claude Fable 5.1 (xhigh with fallback)|Terminal-Bench v2.1: Score:Claude Fable 5.1 (xhigh with fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (xhigh with fallback)",
+          "score": 0.910112359550562,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:Claude Fable 5.1 (xhigh with fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 2
+        },
+        "Claude Fable 5.1 (high with fallback)|Terminal-Bench v2.1: Score:Claude Fable 5.1 (high with fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (high with fallback)",
+          "score": 0.898876404494382,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:Claude Fable 5.1 (high with fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 3
+        },
+        "GPT-6 Astra (high)|Terminal-Bench v2.1: Score:GPT-6 Astra (high)|page_jsonld": {
+          "model": "GPT-6 Astra (high)",
+          "score": 0.898876404494382,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:GPT-6 Astra (high)",
+          "variant": "page_jsonld",
+          "displayRank": 4
+        },
+        "GPT-6 Astra (medium)|Terminal-Bench v2.1: Score:GPT-6 Astra (medium)|page_jsonld": {
+          "model": "GPT-6 Astra (medium)",
+          "score": 0.895131086142322,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:GPT-6 Astra (medium)",
+          "variant": "page_jsonld",
+          "displayRank": 5
+        },
+        "GPT-5.6 Sol (xhigh)|Terminal-Bench v2.1: Score:GPT-5.6 Sol (xhigh)|page_jsonld": {
+          "model": "GPT-5.6 Sol (xhigh)",
+          "score": 0.895131086142322,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:GPT-5.6 Sol (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 6
+        },
+        "Claude Opus 5 (max)|Terminal-Bench v2.1: Score:Claude Opus 5 (max)|page_jsonld": {
+          "model": "Claude Opus 5 (max)",
+          "score": 0.891385767790262,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:Claude Opus 5 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 7
+        },
+        "GPT-6 Astra (max)|Terminal-Bench v2.1: Score:GPT-6 Astra (max)|page_jsonld": {
+          "model": "GPT-6 Astra (max)",
+          "score": 0.883895131086142,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:GPT-6 Astra (max)",
+          "variant": "page_jsonld",
+          "displayRank": 8
+        },
+        "Grok 4.6 (high)|Terminal-Bench v2.1: Score:Grok 4.6 (high)|page_jsonld": {
+          "model": "Grok 4.6 (high)",
+          "score": 0.883895131086142,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:Grok 4.6 (high)",
+          "variant": "page_jsonld",
+          "displayRank": 9
+        },
+        "GPT-5.6 Sol (max)|Terminal-Bench v2.1: Score:GPT-5.6 Sol (max)|page_jsonld": {
+          "model": "GPT-5.6 Sol (max)",
+          "score": 0.880149812734082,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:GPT-5.6 Sol (max)",
+          "variant": "page_jsonld",
+          "displayRank": 10
+        },
+        "GPT-5.6 Terra (max)|Terminal-Bench v2.1: Score:GPT-5.6 Terra (max)|page_jsonld": {
+          "model": "GPT-5.6 Terra (max)",
+          "score": 0.880149812734082,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:GPT-5.6 Terra (max)",
+          "variant": "page_jsonld",
+          "displayRank": 11
+        },
+        "Gemini 3.8 Flash (high)|Terminal-Bench v2.1: Score:Gemini 3.8 Flash (high)|page_jsonld": {
+          "model": "Gemini 3.8 Flash (high)",
+          "score": 0.876404494382023,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:Gemini 3.8 Flash (high)",
+          "variant": "page_jsonld",
+          "displayRank": 12
+        },
+        "Kimi K3 (max)|Terminal-Bench v2.1: Score:Kimi K3 (max)|page_jsonld": {
+          "model": "Kimi K3 (max)",
+          "score": 0.850187265917603,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:Kimi K3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 13
+        },
+        "Claude Fable 5 (with fallback)|Terminal-Bench v2.1: Score:Claude Fable 5 (with fallback)|page_jsonld": {
+          "model": "Claude Fable 5 (with fallback)",
+          "score": 0.846441947565543,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:Claude Fable 5 (with fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 14
+        },
+        "Muse Spark 1.3 (max)|Terminal-Bench v2.1: Score:Muse Spark 1.3 (max)|page_jsonld": {
+          "model": "Muse Spark 1.3 (max)",
+          "score": 0.842696629213483,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:Muse Spark 1.3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 15
+        },
+        "GLM-5.3-Flash|Terminal-Bench v2.1: Score:GLM-5.3-Flash|page_jsonld": {
+          "model": "GLM-5.3-Flash",
+          "score": 0.842696629213483,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:GLM-5.3-Flash",
+          "variant": "page_jsonld",
+          "displayRank": 16
+        },
+        "GLM-5.3 (max)|Terminal-Bench v2.1: Score:GLM-5.3 (max)|page_jsonld": {
+          "model": "GLM-5.3 (max)",
+          "score": 0.838951310861423,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:GLM-5.3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 17
+        },
+        "Qwen3.8 2.4T A95B|Terminal-Bench v2.1: Score:Qwen3.8 2.4T A95B|page_jsonld": {
+          "model": "Qwen3.8 2.4T A95B",
+          "score": 0.820224719101124,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:Qwen3.8 2.4T A95B",
+          "variant": "page_jsonld",
+          "displayRank": 18
+        },
+        "GPT-5.6 Luna (max)|Terminal-Bench v2.1: Score:GPT-5.6 Luna (max)|page_jsonld": {
+          "model": "GPT-5.6 Luna (max)",
+          "score": 0.808988764044944,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:GPT-5.6 Luna (max)",
+          "variant": "page_jsonld",
+          "displayRank": 19
+        },
+        "Qwen3.8 27B (xhigh)|Terminal-Bench v2.1: Score:Qwen3.8 27B (xhigh)|page_jsonld": {
+          "model": "Qwen3.8 27B (xhigh)",
+          "score": 0.797752808988764,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench v2.1: Score:Qwen3.8 27B (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 20
         }
       }
     },
@@ -6968,7 +6968,7 @@
       "familyId": "aa",
       "title": "MLCR Overall",
       "release": "page_jsonld",
-      "contentHash": "6364b427b158a47fbdd3e3fda8112533effddd4fc36b3bb59a69f3267e081ea2",
+      "contentHash": "9ec2e5ed51f0e411d7e6059288383b4dc23d2c85a1da09eb15d6c75fd475300d",
       "source": {
         "benchmark_id": "mlcr_overall",
         "status": "enabled",
