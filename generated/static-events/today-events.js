@@ -1,8 +1,8 @@
 module.exports = {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-09-14T12:51:06Z",
-  "windowStart": "2026-09-13T12:51:06Z",
+  "generatedAt": "2026-09-14T18:13:18Z",
+  "windowStart": "2026-09-13T18:13:18Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -58,112 +58,112 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "https://huggingface.co/tencent/Simple-Attention-Sparsification",
           "observedAt": "2026-09-14T07:43:25Z",
-          "contentHash": "7b02cbdc0e612f3789e6cfddf78aef0d33c49f8d7b43002f5ab407cd94ac8f30",
+          "contentHash": "394f95647783f42be103de14bd2521b945bd3ed99e87ac816b73234a3142595a",
           "sourceType": "hub_official_org"
         },
         {
           "field": "provider",
           "sourceUrl": "https://huggingface.co/tencent/Simple-Attention-Sparsification",
           "observedAt": "2026-09-14T07:43:25Z",
-          "contentHash": "7b02cbdc0e612f3789e6cfddf78aef0d33c49f8d7b43002f5ab407cd94ac8f30",
+          "contentHash": "394f95647783f42be103de14bd2521b945bd3ed99e87ac816b73234a3142595a",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelId",
           "sourceUrl": "https://huggingface.co/tencent/Simple-Attention-Sparsification",
           "observedAt": "2026-09-14T07:43:25Z",
-          "contentHash": "7b02cbdc0e612f3789e6cfddf78aef0d33c49f8d7b43002f5ab407cd94ac8f30",
+          "contentHash": "394f95647783f42be103de14bd2521b945bd3ed99e87ac816b73234a3142595a",
           "sourceType": "hub_official_org"
         },
         {
           "field": "displayName",
           "sourceUrl": "https://huggingface.co/tencent/Simple-Attention-Sparsification",
           "observedAt": "2026-09-14T07:43:25Z",
-          "contentHash": "7b02cbdc0e612f3789e6cfddf78aef0d33c49f8d7b43002f5ab407cd94ac8f30",
+          "contentHash": "394f95647783f42be103de14bd2521b945bd3ed99e87ac816b73234a3142595a",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseDate",
           "sourceUrl": "https://huggingface.co/tencent/Simple-Attention-Sparsification",
           "observedAt": "2026-09-14T07:43:25Z",
-          "contentHash": "7b02cbdc0e612f3789e6cfddf78aef0d33c49f8d7b43002f5ab407cd94ac8f30",
+          "contentHash": "394f95647783f42be103de14bd2521b945bd3ed99e87ac816b73234a3142595a",
           "sourceType": "hub_official_org"
         },
         {
           "field": "status",
           "sourceUrl": "https://huggingface.co/tencent/Simple-Attention-Sparsification",
           "observedAt": "2026-09-14T07:43:25Z",
-          "contentHash": "7b02cbdc0e612f3789e6cfddf78aef0d33c49f8d7b43002f5ab407cd94ac8f30",
+          "contentHash": "394f95647783f42be103de14bd2521b945bd3ed99e87ac816b73234a3142595a",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseType",
           "sourceUrl": "https://huggingface.co/tencent/Simple-Attention-Sparsification",
           "observedAt": "2026-09-14T07:43:25Z",
-          "contentHash": "7b02cbdc0e612f3789e6cfddf78aef0d33c49f8d7b43002f5ab407cd94ac8f30",
+          "contentHash": "394f95647783f42be103de14bd2521b945bd3ed99e87ac816b73234a3142595a",
           "sourceType": "hub_official_org"
         },
         {
           "field": "access",
           "sourceUrl": "https://huggingface.co/tencent/Simple-Attention-Sparsification",
           "observedAt": "2026-09-14T07:43:25Z",
-          "contentHash": "7b02cbdc0e612f3789e6cfddf78aef0d33c49f8d7b43002f5ab407cd94ac8f30",
+          "contentHash": "394f95647783f42be103de14bd2521b945bd3ed99e87ac816b73234a3142595a",
           "sourceType": "hub_official_org"
         },
         {
           "field": "technicalReportUrl",
           "sourceUrl": "https://huggingface.co/tencent/Simple-Attention-Sparsification",
           "observedAt": "2026-09-14T07:43:25Z",
-          "contentHash": "7b02cbdc0e612f3789e6cfddf78aef0d33c49f8d7b43002f5ab407cd94ac8f30",
+          "contentHash": "394f95647783f42be103de14bd2521b945bd3ed99e87ac816b73234a3142595a",
           "sourceType": "hub_official_org"
         },
         {
           "field": "description",
           "sourceUrl": "https://huggingface.co/tencent/Simple-Attention-Sparsification",
           "observedAt": "2026-09-14T07:43:25Z",
-          "contentHash": "7b02cbdc0e612f3789e6cfddf78aef0d33c49f8d7b43002f5ab407cd94ac8f30",
+          "contentHash": "394f95647783f42be103de14bd2521b945bd3ed99e87ac816b73234a3142595a",
           "sourceType": "hub_official_org"
         },
         {
           "field": "officialUrl",
           "sourceUrl": "https://huggingface.co/tencent/Simple-Attention-Sparsification",
           "observedAt": "2026-09-14T07:43:25Z",
-          "contentHash": "7b02cbdc0e612f3789e6cfddf78aef0d33c49f8d7b43002f5ab407cd94ac8f30",
+          "contentHash": "394f95647783f42be103de14bd2521b945bd3ed99e87ac816b73234a3142595a",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelCardUrl",
           "sourceUrl": "https://huggingface.co/tencent/Simple-Attention-Sparsification",
           "observedAt": "2026-09-14T07:43:25Z",
-          "contentHash": "7b02cbdc0e612f3789e6cfddf78aef0d33c49f8d7b43002f5ab407cd94ac8f30",
+          "contentHash": "394f95647783f42be103de14bd2521b945bd3ed99e87ac816b73234a3142595a",
           "sourceType": "hub_official_org"
         },
         {
           "field": "hubRepo",
           "sourceUrl": "https://huggingface.co/tencent/Simple-Attention-Sparsification",
           "observedAt": "2026-09-14T07:43:25Z",
-          "contentHash": "7b02cbdc0e612f3789e6cfddf78aef0d33c49f8d7b43002f5ab407cd94ac8f30",
+          "contentHash": "394f95647783f42be103de14bd2521b945bd3ed99e87ac816b73234a3142595a",
           "sourceType": "hub_official_org"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "https://huggingface.co/tencent/Simple-Attention-Sparsification",
           "observedAt": "2026-09-14T07:43:25Z",
-          "contentHash": "7b02cbdc0e612f3789e6cfddf78aef0d33c49f8d7b43002f5ab407cd94ac8f30",
+          "contentHash": "394f95647783f42be103de14bd2521b945bd3ed99e87ac816b73234a3142595a",
           "sourceType": "hub_official_org"
         },
         {
           "field": "availability",
           "sourceUrl": "https://huggingface.co/tencent/Simple-Attention-Sparsification",
           "observedAt": "2026-09-14T07:43:25Z",
-          "contentHash": "7b02cbdc0e612f3789e6cfddf78aef0d33c49f8d7b43002f5ab407cd94ac8f30",
+          "contentHash": "394f95647783f42be103de14bd2521b945bd3ed99e87ac816b73234a3142595a",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modalities",
           "sourceUrl": "https://huggingface.co/tencent/Simple-Attention-Sparsification",
           "observedAt": "2026-09-14T07:43:25Z",
-          "contentHash": "7b02cbdc0e612f3789e6cfddf78aef0d33c49f8d7b43002f5ab407cd94ac8f30",
+          "contentHash": "394f95647783f42be103de14bd2521b945bd3ed99e87ac816b73234a3142595a",
           "sourceType": "hub_official_org"
         }
       ]
@@ -329,11 +329,11 @@ module.exports = {
         }
       ]
     },
-    "benchmark:Kimi K3 (max)": {
-      "canonicalId": "benchmark:Kimi K3 (max)",
+    "benchmark:GLM-5.3 (max)": {
+      "canonicalId": "benchmark:GLM-5.3 (max)",
       "provider": null,
-      "modelId": "Kimi K3 (max)",
-      "displayName": "Kimi K3 (max)",
+      "modelId": "GLM-5.3 (max)",
+      "displayName": "GLM-5.3 (max)",
       "version": null,
       "aliases": [],
       "releaseDate": null,
@@ -370,50 +370,50 @@ module.exports = {
         {
           "field": "canonicalId",
           "sourceUrl": "",
-          "observedAt": "2026-09-13T13:55:38Z",
-          "contentHash": "1cfe61ae6a24e04bad517e8f536ea2495706609884f0556fdc5ecd5feae1dfe5",
+          "observedAt": "2026-09-14T18:13:18Z",
+          "contentHash": "c0d82f75bbd1a5007a4b06ba91e4801ae145c1b45c0926c82001935a6ee4c449",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
-          "observedAt": "2026-09-13T13:55:38Z",
-          "contentHash": "1cfe61ae6a24e04bad517e8f536ea2495706609884f0556fdc5ecd5feae1dfe5",
+          "observedAt": "2026-09-14T18:13:18Z",
+          "contentHash": "c0d82f75bbd1a5007a4b06ba91e4801ae145c1b45c0926c82001935a6ee4c449",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
-          "observedAt": "2026-09-13T13:55:38Z",
-          "contentHash": "1cfe61ae6a24e04bad517e8f536ea2495706609884f0556fdc5ecd5feae1dfe5",
+          "observedAt": "2026-09-14T18:13:18Z",
+          "contentHash": "c0d82f75bbd1a5007a4b06ba91e4801ae145c1b45c0926c82001935a6ee4c449",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
-          "observedAt": "2026-09-13T13:55:38Z",
-          "contentHash": "1cfe61ae6a24e04bad517e8f536ea2495706609884f0556fdc5ecd5feae1dfe5",
+          "observedAt": "2026-09-14T18:13:18Z",
+          "contentHash": "c0d82f75bbd1a5007a4b06ba91e4801ae145c1b45c0926c82001935a6ee4c449",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
-          "observedAt": "2026-09-13T13:55:38Z",
-          "contentHash": "1cfe61ae6a24e04bad517e8f536ea2495706609884f0556fdc5ecd5feae1dfe5",
+          "observedAt": "2026-09-14T18:13:18Z",
+          "contentHash": "c0d82f75bbd1a5007a4b06ba91e4801ae145c1b45c0926c82001935a6ee4c449",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
-          "observedAt": "2026-09-13T13:55:38Z",
-          "contentHash": "1cfe61ae6a24e04bad517e8f536ea2495706609884f0556fdc5ecd5feae1dfe5",
+          "observedAt": "2026-09-14T18:13:18Z",
+          "contentHash": "c0d82f75bbd1a5007a4b06ba91e4801ae145c1b45c0926c82001935a6ee4c449",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-          "observedAt": "2026-09-13T13:55:38Z",
-          "contentHash": "1cfe61ae6a24e04bad517e8f536ea2495706609884f0556fdc5ecd5feae1dfe5",
+          "observedAt": "2026-09-14T18:13:18Z",
+          "contentHash": "c0d82f75bbd1a5007a4b06ba91e4801ae145c1b45c0926c82001935a6ee4c449",
           "sourceType": "official_benchmark"
         }
       ]
@@ -449,7 +449,7 @@ module.exports = {
           "field": "modelRepository",
           "sourceUrl": "https://huggingface.co/tencent/Simple-Attention-Sparsification",
           "observedAt": "2026-09-14T07:43:25Z",
-          "contentHash": "7b02cbdc0e612f3789e6cfddf78aef0d33c49f8d7b43002f5ab407cd94ac8f30",
+          "contentHash": "394f95647783f42be103de14bd2521b945bd3ed99e87ac816b73234a3142595a",
           "sourceType": "hub_official_org"
         }
       ],
@@ -460,7 +460,7 @@ module.exports = {
       "eventIdentity": "open-release:tencent/Simple-Attention-Sparsification",
       "provenance": {
         "sourceUrl": "https://huggingface.co/tencent/Simple-Attention-Sparsification",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
       }
     },
     {
@@ -497,7 +497,7 @@ module.exports = {
       "eventIdentity": "open-release:inclusionAI/gpt-oss-120b-singprobe",
       "provenance": {
         "sourceUrl": "https://huggingface.co/inclusionAI/gpt-oss-120b-singprobe",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
       }
     },
     {
@@ -536,85 +536,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
-      }
-    },
-    {
-      "eventId": "67cfc5b1185c6e69926e83d2eb7aa978",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Terminal-Bench 4.0 官方数据更新",
-      "summary": "Terminal-Bench 4.0 官方数据发生变化；共 20 个模型 · 当前前列：GPT-6 Astra (xhigh)（59.6%）、GPT-6 Astra (max)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（55.1%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
-      "observedAt": "2026-09-14T06:15:48Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
-      "benchmarkId": "aa_terminal_bench_v4_0",
-      "benchmarkTitle": "Terminal-Bench 4.0",
-      "release": "page_jsonld",
-      "contentHash": "c3fc11618eea04e030e315ec2685f700bc6ce941309c89937963bed9c11f1f7a",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "GPT-6 Astra (xhigh)（59.6%）",
-        "GPT-6 Astra (max)（59.1%）",
-        "Claude Fable 5.1 (xhigh with fallback)（55.1%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
-      }
-    },
-    {
-      "eventId": "003b89c8c09d48cdfb9b7ccfe666d1f9",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Humanity's Last Exam 官方数据更新",
-      "summary": "Humanity's Last Exam 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（58.7%）、Claude Fable 5.1 (high with fallback)（55.9%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-      "observedAt": "2026-09-14T06:15:48Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis Humanity's Last Exam official public Dataset page",
-      "benchmarkId": "aa_humanitys_last_exam",
-      "benchmarkTitle": "Humanity's Last Exam",
-      "release": "page_jsonld",
-      "contentHash": "86cdc112ef8f18cece0da30da837af4a6241e1e97de23bb14efcb0af3d671256",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Fable 5.1 (max with fallback)（59.1%）",
-        "Claude Fable 5.1 (xhigh with fallback)（58.7%）",
-        "Claude Fable 5.1 (high with fallback)（55.9%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
       }
     },
     {
@@ -653,11 +575,11 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
       }
     },
     {
-      "eventId": "d7e6288b80d905660a213aca60a84ca8",
+      "eventId": "67cfc5b1185c6e69926e83d2eb7aa978",
       "family": "benchmark",
       "eventType": "benchmark_updated",
       "eventClass": "benchmark",
@@ -666,8 +588,8 @@ module.exports = {
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "SciCode 官方数据更新",
-      "summary": "SciCode 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（63.1%）、Claude Fable 5 (with fallback)（61.0%）、Claude Fable 5.1 (xhigh with fallback)（60.9%）。",
+      "title": "Terminal-Bench 4.0 官方数据更新",
+      "summary": "Terminal-Bench 4.0 官方数据发生变化；共 20 个模型 · 当前前列：GPT-6 Astra (xhigh)（59.6%）、GPT-6 Astra (max)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（55.1%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -675,24 +597,24 @@ module.exports = {
       "sourceType": null,
       "sourceOwner": null,
       "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/scicode",
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
       "observedAt": "2026-09-14T06:15:48Z",
       "publishedAt": null,
-      "source": "Artificial Analysis SciCode official public Dataset page",
-      "benchmarkId": "aa_scicode",
-      "benchmarkTitle": "SciCode",
+      "source": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
+      "benchmarkId": "aa_terminal_bench_v4_0",
+      "benchmarkTitle": "Terminal-Bench 4.0",
       "release": "page_jsonld",
-      "contentHash": "80ba96947c79420d2229ae409d361ccc649b8ab33aa71a35f7a42811c540403e",
+      "contentHash": "c3fc11618eea04e030e315ec2685f700bc6ce941309c89937963bed9c11f1f7a",
       "unit": "ratio",
       "modelCount": 20,
       "topModels": [
-        "Claude Fable 5.1 (max with fallback)（63.1%）",
-        "Claude Fable 5 (with fallback)（61.0%）",
-        "Claude Fable 5.1 (xhigh with fallback)（60.9%）"
+        "GPT-6 Astra (xhigh)（59.6%）",
+        "GPT-6 Astra (max)（59.1%）",
+        "Claude Fable 5.1 (xhigh with fallback)（55.1%）"
       ],
       "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
       }
     },
     {
@@ -731,7 +653,85 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
+      }
+    },
+    {
+      "eventId": "003b89c8c09d48cdfb9b7ccfe666d1f9",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Humanity's Last Exam 官方数据更新",
+      "summary": "Humanity's Last Exam 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（58.7%）、Claude Fable 5.1 (high with fallback)（55.9%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "observedAt": "2026-09-14T06:15:48Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Humanity's Last Exam official public Dataset page",
+      "benchmarkId": "aa_humanitys_last_exam",
+      "benchmarkTitle": "Humanity's Last Exam",
+      "release": "page_jsonld",
+      "contentHash": "86cdc112ef8f18cece0da30da837af4a6241e1e97de23bb14efcb0af3d671256",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "Claude Fable 5.1 (max with fallback)（59.1%）",
+        "Claude Fable 5.1 (xhigh with fallback)（58.7%）",
+        "Claude Fable 5.1 (high with fallback)（55.9%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
+      }
+    },
+    {
+      "eventId": "d7e6288b80d905660a213aca60a84ca8",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "SciCode 官方数据更新",
+      "summary": "SciCode 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（63.1%）、Claude Fable 5 (with fallback)（61.0%）、Claude Fable 5.1 (xhigh with fallback)（60.9%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/scicode",
+      "observedAt": "2026-09-14T06:15:48Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis SciCode official public Dataset page",
+      "benchmarkId": "aa_scicode",
+      "benchmarkTitle": "SciCode",
+      "release": "page_jsonld",
+      "contentHash": "80ba96947c79420d2229ae409d361ccc649b8ab33aa71a35f7a42811c540403e",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "Claude Fable 5.1 (max with fallback)（63.1%）",
+        "Claude Fable 5 (with fallback)（61.0%）",
+        "Claude Fable 5.1 (xhigh with fallback)（60.9%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
       }
     },
     {
@@ -770,7 +770,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
       }
     },
     {
@@ -809,46 +809,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
-      }
-    },
-    {
-      "eventId": "e8e2f9a048244c2ae3e25b71813117b1",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Terminal-Bench v2.1 官方数据更新",
-      "summary": "Terminal-Bench v2.1 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（91.4%）、Claude Fable 5.1 (xhigh with fallback)（91.0%）、Claude Fable 5.1 (high with fallback)（89.9%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
-      "observedAt": "2026-09-14T06:15:48Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
-      "benchmarkId": "aa_terminalbench_v2_1",
-      "benchmarkTitle": "Terminal-Bench v2.1",
-      "release": "page_jsonld",
-      "contentHash": "37c7619bed2fc6c089d746cdb70833731e32429285072676d1da51c7061e0c9d",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Fable 5.1 (max with fallback)（91.4%）",
-        "Claude Fable 5.1 (xhigh with fallback)（91.0%）",
-        "Claude Fable 5.1 (high with fallback)（89.9%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
       }
     },
     {
@@ -887,7 +848,85 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
+      }
+    },
+    {
+      "eventId": "a69764de374688f9007ef89f474aa7f7",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "GDPval-AA Elo 官方数据更新",
+      "summary": "GDPval-AA Elo 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（1763.64）、Claude Fable 5.1 (xhigh with fallback)（1745.29）、Claude Opus 5 (max)（1735.09）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "observedAt": "2026-09-14T18:13:18Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "benchmarkId": "aa_gdpval_elo",
+      "benchmarkTitle": "GDPval-AA Elo",
+      "release": "page_jsonld",
+      "contentHash": "7402cfe17ae67b0efd7bcbbd229bed6b6cb2448b4e2ed56bddb148b516e9c544",
+      "unit": "raw",
+      "modelCount": 20,
+      "topModels": [
+        "Claude Fable 5.1 (max with fallback)（1763.64）",
+        "Claude Fable 5.1 (xhigh with fallback)（1745.29）",
+        "Claude Opus 5 (max)（1735.09）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
+      }
+    },
+    {
+      "eventId": "e8e2f9a048244c2ae3e25b71813117b1",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Terminal-Bench v2.1 官方数据更新",
+      "summary": "Terminal-Bench v2.1 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（91.4%）、Claude Fable 5.1 (xhigh with fallback)（91.0%）、Claude Fable 5.1 (high with fallback)（89.9%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+      "observedAt": "2026-09-14T06:15:48Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
+      "benchmarkId": "aa_terminalbench_v2_1",
+      "benchmarkTitle": "Terminal-Bench v2.1",
+      "release": "page_jsonld",
+      "contentHash": "37c7619bed2fc6c089d746cdb70833731e32429285072676d1da51c7061e0c9d",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "Claude Fable 5.1 (max with fallback)（91.4%）",
+        "Claude Fable 5.1 (xhigh with fallback)（91.0%）",
+        "Claude Fable 5.1 (high with fallback)（89.9%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
       }
     },
     {
@@ -926,7 +965,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
       }
     },
     {
@@ -965,7 +1004,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://livebench.ai/",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
       }
     },
     {
@@ -1004,7 +1043,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://livebench.ai/",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
       }
     },
     {
@@ -1043,7 +1082,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://livebench.ai/",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
       }
     },
     {
@@ -1082,7 +1121,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://livebench.ai/",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
       }
     },
     {
@@ -1121,7 +1160,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://livebench.ai/",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
       }
     },
     {
@@ -1160,7 +1199,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://livebench.ai/",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
       }
     },
     {
@@ -1199,7 +1238,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://livebench.ai/",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
       }
     },
     {
@@ -1238,46 +1277,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://livebench.ai/",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
-      }
-    },
-    {
-      "eventId": "a69764de374688f9007ef89f474aa7f7",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "GDPval-AA Elo 官方数据更新",
-      "summary": "GDPval-AA Elo 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（1763.64）、Claude Fable 5.1 (xhigh with fallback)（1745.29）、Claude Opus 5 (max)（1735.09）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-      "observedAt": "2026-09-13T13:55:38Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "benchmarkId": "aa_gdpval_elo",
-      "benchmarkTitle": "GDPval-AA Elo",
-      "release": "page_jsonld",
-      "contentHash": "add1fe6545fa79e2f5ec01fa3ca4180876e7eccc5329b9613db3445e2fea9601",
-      "unit": "raw",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Fable 5.1 (max with fallback)（1763.64）",
-        "Claude Fable 5.1 (xhigh with fallback)（1745.29）",
-        "Claude Opus 5 (max)（1735.09）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
       }
     },
     {
@@ -1290,36 +1290,36 @@ module.exports = {
       "visibility": "primary",
       "isOfficial": true,
       "severity": "normal",
-      "title": "Kimi K3 (max) 分数变化",
-      "summary": "GDPval-AA Elo 分数从 1569.28 变为 1569.1（-0.18）。",
+      "title": "GLM-5.3 (max) 分数变化",
+      "summary": "GDPval-AA Elo 分数从 1657.71 变为 1655.16（-2.55）。",
       "repoId": null,
       "repo": null,
-      "modelId": "Kimi K3 (max)",
-      "modelRef": "benchmark:Kimi K3 (max)",
+      "modelId": "GLM-5.3 (max)",
+      "modelRef": "benchmark:GLM-5.3 (max)",
       "sourceType": null,
       "sourceOwner": null,
       "evidence": [],
       "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-      "observedAt": "2026-09-13T13:55:38Z",
+      "observedAt": "2026-09-14T18:13:18Z",
       "publishedAt": null,
       "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
       "benchmarkId": "aa_gdpval_elo",
       "benchmarkTitle": "GDPval-AA Elo",
       "release": "page_jsonld",
-      "previousScore": 1569.28,
-      "score": 1569.1,
-      "delta": -0.18000000000006366,
+      "previousScore": 1657.71,
+      "score": 1655.16,
+      "delta": -2.5499999999999545,
       "unit": "raw",
-      "modelIdentity": "aa_gdpval_elo:Kimi K3 (max)",
+      "modelIdentity": "aa_gdpval_elo:GLM-5.3 (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "7f891e009bd3a3a6a4545bbb87183dc8d524a5c2fd8fa370922e6f72815fd6a1"
+        "contentHash": "9fca85ea4b960eb689d20dac48a456c8d435716428ce67024987da0fa66abdb8"
       }
     }
   ],
   "eventCount": 23,
   "provenance": {
-    "workflowRunId": "34845684528",
-    "mainCommit": "ca67c89300f9f2c68e9838ec34324a4344892473"
+    "workflowRunId": "34879453165",
+    "mainCommit": "e1662159424a107af8bd90dd2927ca812b38bf73"
   }
 };
