@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-09-15T14:22:13Z",
-  "windowStart": "2026-09-14T14:22:13Z",
+  "generatedAt": "2026-09-15T18:17:37Z",
+  "windowStart": "2026-09-14T18:17:37Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -10,27 +10,27 @@
     "benchmark"
   ],
   "models": {
-    "benchmark:GLM-5.3 (max)": {
-      "canonicalId": "benchmark:GLM-5.3 (max)",
-      "provider": null,
-      "modelId": "GLM-5.3 (max)",
-      "displayName": "GLM-5.3 (max)",
+    "hf:nvidia/c-foundationstereo-s": {
+      "canonicalId": "hf:nvidia/c-foundationstereo-s",
+      "provider": "NVIDIA",
+      "modelId": "nvidia/c-foundationstereo-s",
+      "displayName": "c-foundationstereo-s",
       "version": null,
       "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
+      "releaseDate": "2026-09-15T01:25:18Z",
+      "status": "available",
       "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
+      "releaseType": "open_weights_release",
+      "access": "open_weights",
       "modalities": {
         "input": [],
         "output": []
       },
       "capabilities": [],
       "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
+      "license": "other",
+      "technicalReportUrl": "https://arxiv.org/abs/2501.09898",
+      "description": "FoundationStereo is a foundation model developed by NVIDIA Research for Stereo Depth Estimation. The model takes as input an RGB stereo-image pair and outputs an accurate disparity map. The model was designed to achieve strong zero-shot generalization and has been shown to generalize to various scenarios with wide zero-shot coverage.",
       "contextWindow": null,
       "maxInputTokens": null,
       "maxOutputTokens": null,
@@ -40,62 +40,281 @@
         "outputPerMillionTokens": null,
         "cachedInputPerMillionTokens": null
       },
-      "availability": [],
-      "officialUrl": null,
+      "availability": [
+        "Hugging Face"
+      ],
+      "officialUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
       "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "modelCardUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
+      "hubRepo": "nvidia/c-foundationstereo-s",
+      "sourceType": "hub_official_org",
+      "sourceOwner": "NVIDIA",
       "evidence": [
         {
           "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-14T18:13:18Z",
-          "contentHash": "8c3a4b11b1ce6dd7870e5551f6dc979772f4b92d6264f972738496f040790d71",
-          "sourceType": "official_benchmark"
+          "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
+          "observedAt": "2026-09-15T01:25:18Z",
+          "contentHash": "614ec43cab44b1fd4fac665ac130fdb58df199722a4e5e2a4ff40b1180b2b2be",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "provider",
+          "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
+          "observedAt": "2026-09-15T01:25:18Z",
+          "contentHash": "614ec43cab44b1fd4fac665ac130fdb58df199722a4e5e2a4ff40b1180b2b2be",
+          "sourceType": "hub_official_org"
         },
         {
           "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-14T18:13:18Z",
-          "contentHash": "8c3a4b11b1ce6dd7870e5551f6dc979772f4b92d6264f972738496f040790d71",
-          "sourceType": "official_benchmark"
+          "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
+          "observedAt": "2026-09-15T01:25:18Z",
+          "contentHash": "614ec43cab44b1fd4fac665ac130fdb58df199722a4e5e2a4ff40b1180b2b2be",
+          "sourceType": "hub_official_org"
         },
         {
           "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-14T18:13:18Z",
-          "contentHash": "8c3a4b11b1ce6dd7870e5551f6dc979772f4b92d6264f972738496f040790d71",
-          "sourceType": "official_benchmark"
+          "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
+          "observedAt": "2026-09-15T01:25:18Z",
+          "contentHash": "614ec43cab44b1fd4fac665ac130fdb58df199722a4e5e2a4ff40b1180b2b2be",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "releaseDate",
+          "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
+          "observedAt": "2026-09-15T01:25:18Z",
+          "contentHash": "614ec43cab44b1fd4fac665ac130fdb58df199722a4e5e2a4ff40b1180b2b2be",
+          "sourceType": "hub_official_org"
         },
         {
           "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-14T18:13:18Z",
-          "contentHash": "8c3a4b11b1ce6dd7870e5551f6dc979772f4b92d6264f972738496f040790d71",
-          "sourceType": "official_benchmark"
+          "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
+          "observedAt": "2026-09-15T01:25:18Z",
+          "contentHash": "614ec43cab44b1fd4fac665ac130fdb58df199722a4e5e2a4ff40b1180b2b2be",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "releaseType",
+          "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
+          "observedAt": "2026-09-15T01:25:18Z",
+          "contentHash": "614ec43cab44b1fd4fac665ac130fdb58df199722a4e5e2a4ff40b1180b2b2be",
+          "sourceType": "hub_official_org"
         },
         {
           "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-14T18:13:18Z",
-          "contentHash": "8c3a4b11b1ce6dd7870e5551f6dc979772f4b92d6264f972738496f040790d71",
-          "sourceType": "official_benchmark"
+          "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
+          "observedAt": "2026-09-15T01:25:18Z",
+          "contentHash": "614ec43cab44b1fd4fac665ac130fdb58df199722a4e5e2a4ff40b1180b2b2be",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "license",
+          "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
+          "observedAt": "2026-09-15T01:25:18Z",
+          "contentHash": "614ec43cab44b1fd4fac665ac130fdb58df199722a4e5e2a4ff40b1180b2b2be",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "technicalReportUrl",
+          "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
+          "observedAt": "2026-09-15T01:25:18Z",
+          "contentHash": "614ec43cab44b1fd4fac665ac130fdb58df199722a4e5e2a4ff40b1180b2b2be",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
+          "observedAt": "2026-09-15T01:25:18Z",
+          "contentHash": "614ec43cab44b1fd4fac665ac130fdb58df199722a4e5e2a4ff40b1180b2b2be",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "officialUrl",
+          "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
+          "observedAt": "2026-09-15T01:25:18Z",
+          "contentHash": "614ec43cab44b1fd4fac665ac130fdb58df199722a4e5e2a4ff40b1180b2b2be",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "modelCardUrl",
+          "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
+          "observedAt": "2026-09-15T01:25:18Z",
+          "contentHash": "614ec43cab44b1fd4fac665ac130fdb58df199722a4e5e2a4ff40b1180b2b2be",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "hubRepo",
+          "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
+          "observedAt": "2026-09-15T01:25:18Z",
+          "contentHash": "614ec43cab44b1fd4fac665ac130fdb58df199722a4e5e2a4ff40b1180b2b2be",
+          "sourceType": "hub_official_org"
         },
         {
           "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-14T18:13:18Z",
-          "contentHash": "8c3a4b11b1ce6dd7870e5551f6dc979772f4b92d6264f972738496f040790d71",
-          "sourceType": "official_benchmark"
+          "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
+          "observedAt": "2026-09-15T01:25:18Z",
+          "contentHash": "614ec43cab44b1fd4fac665ac130fdb58df199722a4e5e2a4ff40b1180b2b2be",
+          "sourceType": "hub_official_org"
         },
         {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-          "observedAt": "2026-09-14T18:13:18Z",
-          "contentHash": "8c3a4b11b1ce6dd7870e5551f6dc979772f4b92d6264f972738496f040790d71",
-          "sourceType": "official_benchmark"
+          "field": "availability",
+          "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
+          "observedAt": "2026-09-15T01:25:18Z",
+          "contentHash": "614ec43cab44b1fd4fac665ac130fdb58df199722a4e5e2a4ff40b1180b2b2be",
+          "sourceType": "hub_official_org"
+        }
+      ]
+    },
+    "hf:nvidia/foundationpose": {
+      "canonicalId": "hf:nvidia/foundationpose",
+      "provider": "NVIDIA",
+      "modelId": "nvidia/foundationpose",
+      "displayName": "foundationpose",
+      "version": null,
+      "aliases": [],
+      "releaseDate": "2026-09-15T01:25:12Z",
+      "status": "available",
+      "deprecationDate": null,
+      "releaseType": "open_weights_release",
+      "access": "open_weights",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": "other",
+      "technicalReportUrl": "https://arxiv.org/abs/2312.08344",
+      "description": "FoundationPose is a unified foundation model for 6-DoF (Degrees of Freedom) object pose estimation and tracking. This approach can be instantly applied at test-time to a novel object without fine-tuning, as long as its CAD model is given. This model is ready for commercial use.",
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [
+        "Hugging Face"
+      ],
+      "officialUrl": "https://huggingface.co/nvidia/foundationpose",
+      "documentationUrl": null,
+      "modelCardUrl": "https://huggingface.co/nvidia/foundationpose",
+      "hubRepo": "nvidia/foundationpose",
+      "sourceType": "hub_official_org",
+      "sourceOwner": "NVIDIA",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
+          "observedAt": "2026-09-15T01:25:12Z",
+          "contentHash": "8943a205416052f5b18ef36be1545525aabe1b668dfc815c477e4f72418b8f53",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "provider",
+          "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
+          "observedAt": "2026-09-15T01:25:12Z",
+          "contentHash": "8943a205416052f5b18ef36be1545525aabe1b668dfc815c477e4f72418b8f53",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
+          "observedAt": "2026-09-15T01:25:12Z",
+          "contentHash": "8943a205416052f5b18ef36be1545525aabe1b668dfc815c477e4f72418b8f53",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
+          "observedAt": "2026-09-15T01:25:12Z",
+          "contentHash": "8943a205416052f5b18ef36be1545525aabe1b668dfc815c477e4f72418b8f53",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "releaseDate",
+          "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
+          "observedAt": "2026-09-15T01:25:12Z",
+          "contentHash": "8943a205416052f5b18ef36be1545525aabe1b668dfc815c477e4f72418b8f53",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
+          "observedAt": "2026-09-15T01:25:12Z",
+          "contentHash": "8943a205416052f5b18ef36be1545525aabe1b668dfc815c477e4f72418b8f53",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "releaseType",
+          "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
+          "observedAt": "2026-09-15T01:25:12Z",
+          "contentHash": "8943a205416052f5b18ef36be1545525aabe1b668dfc815c477e4f72418b8f53",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
+          "observedAt": "2026-09-15T01:25:12Z",
+          "contentHash": "8943a205416052f5b18ef36be1545525aabe1b668dfc815c477e4f72418b8f53",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "license",
+          "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
+          "observedAt": "2026-09-15T01:25:12Z",
+          "contentHash": "8943a205416052f5b18ef36be1545525aabe1b668dfc815c477e4f72418b8f53",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "technicalReportUrl",
+          "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
+          "observedAt": "2026-09-15T01:25:12Z",
+          "contentHash": "8943a205416052f5b18ef36be1545525aabe1b668dfc815c477e4f72418b8f53",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
+          "observedAt": "2026-09-15T01:25:12Z",
+          "contentHash": "8943a205416052f5b18ef36be1545525aabe1b668dfc815c477e4f72418b8f53",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "officialUrl",
+          "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
+          "observedAt": "2026-09-15T01:25:12Z",
+          "contentHash": "8943a205416052f5b18ef36be1545525aabe1b668dfc815c477e4f72418b8f53",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "modelCardUrl",
+          "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
+          "observedAt": "2026-09-15T01:25:12Z",
+          "contentHash": "8943a205416052f5b18ef36be1545525aabe1b668dfc815c477e4f72418b8f53",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "hubRepo",
+          "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
+          "observedAt": "2026-09-15T01:25:12Z",
+          "contentHash": "8943a205416052f5b18ef36be1545525aabe1b668dfc815c477e4f72418b8f53",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
+          "observedAt": "2026-09-15T01:25:12Z",
+          "contentHash": "8943a205416052f5b18ef36be1545525aabe1b668dfc815c477e4f72418b8f53",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "availability",
+          "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
+          "observedAt": "2026-09-15T01:25:12Z",
+          "contentHash": "8943a205416052f5b18ef36be1545525aabe1b668dfc815c477e4f72418b8f53",
+          "sourceType": "hub_official_org"
         }
       ]
     },
@@ -141,49 +360,49 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "3fed41b83402f60e8e6916b702cdb5c7ece251a070d97d72eb2441f05f62aadf",
+          "contentHash": "5d9fea87edf74e49ea51bb2791c7bd0aa0f5b5856325265e6708f3a8fe5b362f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "3fed41b83402f60e8e6916b702cdb5c7ece251a070d97d72eb2441f05f62aadf",
+          "contentHash": "5d9fea87edf74e49ea51bb2791c7bd0aa0f5b5856325265e6708f3a8fe5b362f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "3fed41b83402f60e8e6916b702cdb5c7ece251a070d97d72eb2441f05f62aadf",
+          "contentHash": "5d9fea87edf74e49ea51bb2791c7bd0aa0f5b5856325265e6708f3a8fe5b362f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "3fed41b83402f60e8e6916b702cdb5c7ece251a070d97d72eb2441f05f62aadf",
+          "contentHash": "5d9fea87edf74e49ea51bb2791c7bd0aa0f5b5856325265e6708f3a8fe5b362f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "3fed41b83402f60e8e6916b702cdb5c7ece251a070d97d72eb2441f05f62aadf",
+          "contentHash": "5d9fea87edf74e49ea51bb2791c7bd0aa0f5b5856325265e6708f3a8fe5b362f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "3fed41b83402f60e8e6916b702cdb5c7ece251a070d97d72eb2441f05f62aadf",
+          "contentHash": "5d9fea87edf74e49ea51bb2791c7bd0aa0f5b5856325265e6708f3a8fe5b362f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "3fed41b83402f60e8e6916b702cdb5c7ece251a070d97d72eb2441f05f62aadf",
+          "contentHash": "5d9fea87edf74e49ea51bb2791c7bd0aa0f5b5856325265e6708f3a8fe5b362f",
           "sourceType": "official_benchmark"
         }
       ]
@@ -230,61 +449,135 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "9f235f3782ca5e806091ceb9d47feca6eb57104a5462a9a96595fa6a6c88df2d",
+          "contentHash": "9092be089a10990177e1aad20682cf0822788ff51f6451fd233028735b7ec4c3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "9f235f3782ca5e806091ceb9d47feca6eb57104a5462a9a96595fa6a6c88df2d",
+          "contentHash": "9092be089a10990177e1aad20682cf0822788ff51f6451fd233028735b7ec4c3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "9f235f3782ca5e806091ceb9d47feca6eb57104a5462a9a96595fa6a6c88df2d",
+          "contentHash": "9092be089a10990177e1aad20682cf0822788ff51f6451fd233028735b7ec4c3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "9f235f3782ca5e806091ceb9d47feca6eb57104a5462a9a96595fa6a6c88df2d",
+          "contentHash": "9092be089a10990177e1aad20682cf0822788ff51f6451fd233028735b7ec4c3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "9f235f3782ca5e806091ceb9d47feca6eb57104a5462a9a96595fa6a6c88df2d",
+          "contentHash": "9092be089a10990177e1aad20682cf0822788ff51f6451fd233028735b7ec4c3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "9f235f3782ca5e806091ceb9d47feca6eb57104a5462a9a96595fa6a6c88df2d",
+          "contentHash": "9092be089a10990177e1aad20682cf0822788ff51f6451fd233028735b7ec4c3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "9f235f3782ca5e806091ceb9d47feca6eb57104a5462a9a96595fa6a6c88df2d",
+          "contentHash": "9092be089a10990177e1aad20682cf0822788ff51f6451fd233028735b7ec4c3",
           "sourceType": "official_benchmark"
         }
       ]
     }
   },
-  "modelCount": 3,
+  "modelCount": 4,
   "sourceSummary": {
-    "official": 0,
+    "official": 2,
     "catalog": 0,
-    "benchmark": 16
+    "benchmark": 14
   },
   "events": [
+    {
+      "eventId": "74a42da104358c2e7024e1b2de198f4d",
+      "family": "model",
+      "eventType": "official_model_release",
+      "eventClass": "model_release",
+      "trustTier": "official",
+      "priority": "P0",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "c-foundationstereo-s 开放权重发布",
+      "summary": "NVIDIA 在官方组织发布新模型：许可 other。",
+      "repoId": "nvidia/c-foundationstereo-s",
+      "repo": "nvidia/c-foundationstereo-s",
+      "modelId": "nvidia/c-foundationstereo-s",
+      "modelRef": "hf:nvidia/c-foundationstereo-s",
+      "sourceType": "hub_official_org",
+      "sourceOwner": "NVIDIA",
+      "evidence": [
+        {
+          "field": "modelRepository",
+          "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
+          "observedAt": "2026-09-15T01:25:18Z",
+          "contentHash": "614ec43cab44b1fd4fac665ac130fdb58df199722a4e5e2a4ff40b1180b2b2be",
+          "sourceType": "hub_official_org"
+        }
+      ],
+      "url": "https://huggingface.co/nvidia/c-foundationstereo-s",
+      "observedAt": "2026-09-15T01:25:18Z",
+      "publishedAt": "2026-09-15T01:25:18Z",
+      "source": "Hugging Face · NVIDIA",
+      "eventIdentity": "open-release:nvidia/c-foundationstereo-s",
+      "provenance": {
+        "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
+        "contentHash": "0a3d39093f8b079e75ab6738eded21b49fcd641524a166702fd8c384df4091ea"
+      }
+    },
+    {
+      "eventId": "f87764ad8282002f718f1fce040c281c",
+      "family": "model",
+      "eventType": "official_model_release",
+      "eventClass": "model_release",
+      "trustTier": "official",
+      "priority": "P0",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "foundationpose 开放权重发布",
+      "summary": "NVIDIA 在官方组织发布新模型：许可 other。",
+      "repoId": "nvidia/foundationpose",
+      "repo": "nvidia/foundationpose",
+      "modelId": "nvidia/foundationpose",
+      "modelRef": "hf:nvidia/foundationpose",
+      "sourceType": "hub_official_org",
+      "sourceOwner": "NVIDIA",
+      "evidence": [
+        {
+          "field": "modelRepository",
+          "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
+          "observedAt": "2026-09-15T01:25:12Z",
+          "contentHash": "8943a205416052f5b18ef36be1545525aabe1b668dfc815c477e4f72418b8f53",
+          "sourceType": "hub_official_org"
+        }
+      ],
+      "url": "https://huggingface.co/nvidia/foundationpose",
+      "observedAt": "2026-09-15T01:25:12Z",
+      "publishedAt": "2026-09-15T01:25:12Z",
+      "source": "Hugging Face · NVIDIA",
+      "eventIdentity": "open-release:nvidia/foundationpose",
+      "provenance": {
+        "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
+        "contentHash": "0a3d39093f8b079e75ab6738eded21b49fcd641524a166702fd8c384df4091ea"
+      }
+    },
     {
       "eventId": "69746bc164532ee20e35fa7927b83338",
       "family": "benchmark",
@@ -321,7 +614,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "a3e567e9e0ffcf1b614428748c1c21e7a0dabc0584bbd7401d76a59d04e811b7"
+        "contentHash": "0a3d39093f8b079e75ab6738eded21b49fcd641524a166702fd8c384df4091ea"
       }
     },
     {
@@ -360,7 +653,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
-        "contentHash": "a3e567e9e0ffcf1b614428748c1c21e7a0dabc0584bbd7401d76a59d04e811b7"
+        "contentHash": "0a3d39093f8b079e75ab6738eded21b49fcd641524a166702fd8c384df4091ea"
       }
     },
     {
@@ -399,7 +692,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "a3e567e9e0ffcf1b614428748c1c21e7a0dabc0584bbd7401d76a59d04e811b7"
+        "contentHash": "0a3d39093f8b079e75ab6738eded21b49fcd641524a166702fd8c384df4091ea"
       }
     },
     {
@@ -438,46 +731,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "a3e567e9e0ffcf1b614428748c1c21e7a0dabc0584bbd7401d76a59d04e811b7"
-      }
-    },
-    {
-      "eventId": "d7e6288b80d905660a213aca60a84ca8",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "SciCode 官方数据更新",
-      "summary": "SciCode 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（63.1%）、Claude Fable 5 (with fallback)（61.0%）、Claude Fable 5.1 (xhigh with fallback)（60.9%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/scicode",
-      "observedAt": "2026-09-15T09:21:31Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis SciCode official public Dataset page",
-      "benchmarkId": "aa_scicode",
-      "benchmarkTitle": "SciCode",
-      "release": "page_jsonld",
-      "contentHash": "8c58095f54c53e1bdea9eec23082605c53c808ec70aa7ea58cabb05ee5a99ef1",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Fable 5.1 (max with fallback)（63.1%）",
-        "Claude Fable 5 (with fallback)（61.0%）",
-        "Claude Fable 5.1 (xhigh with fallback)（60.9%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "a3e567e9e0ffcf1b614428748c1c21e7a0dabc0584bbd7401d76a59d04e811b7"
+        "contentHash": "0a3d39093f8b079e75ab6738eded21b49fcd641524a166702fd8c384df4091ea"
       }
     },
     {
@@ -516,7 +770,46 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "a3e567e9e0ffcf1b614428748c1c21e7a0dabc0584bbd7401d76a59d04e811b7"
+        "contentHash": "0a3d39093f8b079e75ab6738eded21b49fcd641524a166702fd8c384df4091ea"
+      }
+    },
+    {
+      "eventId": "d7e6288b80d905660a213aca60a84ca8",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "SciCode 官方数据更新",
+      "summary": "SciCode 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（63.1%）、Claude Fable 5 (with fallback)（61.0%）、Claude Fable 5.1 (xhigh with fallback)（60.9%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/scicode",
+      "observedAt": "2026-09-15T09:21:31Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis SciCode official public Dataset page",
+      "benchmarkId": "aa_scicode",
+      "benchmarkTitle": "SciCode",
+      "release": "page_jsonld",
+      "contentHash": "8c58095f54c53e1bdea9eec23082605c53c808ec70aa7ea58cabb05ee5a99ef1",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "Claude Fable 5.1 (max with fallback)（63.1%）",
+        "Claude Fable 5 (with fallback)（61.0%）",
+        "Claude Fable 5.1 (xhigh with fallback)（60.9%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "contentHash": "0a3d39093f8b079e75ab6738eded21b49fcd641524a166702fd8c384df4091ea"
       }
     },
     {
@@ -555,160 +848,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "a3e567e9e0ffcf1b614428748c1c21e7a0dabc0584bbd7401d76a59d04e811b7"
-      }
-    },
-    {
-      "eventId": "a69764de374688f9007ef89f474aa7f7",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "GDPval-AA Elo 官方数据更新",
-      "summary": "GDPval-AA Elo 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（1763.64）、Claude Fable 5.1 (xhigh with fallback)（1745.29）、Claude Opus 5 (max)（1735.09）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-      "observedAt": "2026-09-14T18:13:18Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "benchmarkId": "aa_gdpval_elo",
-      "benchmarkTitle": "GDPval-AA Elo",
-      "release": "page_jsonld",
-      "contentHash": "7402cfe17ae67b0efd7bcbbd229bed6b6cb2448b4e2ed56bddb148b516e9c544",
-      "unit": "raw",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Fable 5.1 (max with fallback)（1763.64）",
-        "Claude Fable 5.1 (xhigh with fallback)（1745.29）",
-        "Claude Opus 5 (max)（1735.09）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "a3e567e9e0ffcf1b614428748c1c21e7a0dabc0584bbd7401d76a59d04e811b7"
-      }
-    },
-    {
-      "eventId": "1a3beac418b6a8940cc0c246d233bc9d",
-      "family": "benchmark",
-      "eventType": "significant_score_change",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "GPT-5.6 Luna (max) 分数变化",
-      "summary": "GDPval-AA Elo 分数从 1489.33 变为 1463.89（-25.44）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "GPT-5.6 Luna (max)",
-      "modelRef": "benchmark:GPT-5.6 Luna (max)",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-      "observedAt": "2026-09-15T14:22:13Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "benchmarkId": "aa_gdpval_elo",
-      "benchmarkTitle": "GDPval-AA Elo",
-      "release": "page_jsonld",
-      "previousScore": 1489.33,
-      "score": 1463.89,
-      "delta": -25.439999999999827,
-      "unit": "raw",
-      "modelIdentity": "aa_gdpval_elo:GPT-5.6 Luna (max)",
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "a3e567e9e0ffcf1b614428748c1c21e7a0dabc0584bbd7401d76a59d04e811b7"
-      }
-    },
-    {
-      "eventId": "e8e2f9a048244c2ae3e25b71813117b1",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Terminal-Bench v2.1 官方数据更新",
-      "summary": "Terminal-Bench v2.1 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（91.4%）、Claude Fable 5.1 (xhigh with fallback)（91.0%）、Claude Fable 5.1 (high with fallback)（89.9%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
-      "observedAt": "2026-09-15T09:21:31Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
-      "benchmarkId": "aa_terminalbench_v2_1",
-      "benchmarkTitle": "Terminal-Bench v2.1",
-      "release": "page_jsonld",
-      "contentHash": "ea137315bba23d4e476f79254f6493edd6da2155e1c03e37dd4f289178b2b0d9",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Fable 5.1 (max with fallback)（91.4%）",
-        "Claude Fable 5.1 (xhigh with fallback)（91.0%）",
-        "Claude Fable 5.1 (high with fallback)（89.9%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
-        "contentHash": "a3e567e9e0ffcf1b614428748c1c21e7a0dabc0584bbd7401d76a59d04e811b7"
-      }
-    },
-    {
-      "eventId": "b61c3df424f537244322c3ac09126d7a",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "IFBench 官方数据更新",
-      "summary": "IFBench 官方数据发生变化；共 12 个模型 · 当前前列：Grok 4.3 (medium)（83.3%）、Grok 4.20 0309（82.9%）、MiniMax-M3（82.9%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/ifbench",
-      "observedAt": "2026-09-15T09:21:31Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis IFBench official public Dataset page",
-      "benchmarkId": "aa_ifbench",
-      "benchmarkTitle": "IFBench",
-      "release": "page_jsonld",
-      "contentHash": "23889712569a69d15965ba207d0f60afea8df5a86feb1f12797a3513344cfea1",
-      "unit": "ratio",
-      "modelCount": 12,
-      "topModels": [
-        "Grok 4.3 (medium)（83.3%）",
-        "Grok 4.20 0309（82.9%）",
-        "MiniMax-M3（82.9%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "a3e567e9e0ffcf1b614428748c1c21e7a0dabc0584bbd7401d76a59d04e811b7"
+        "contentHash": "0a3d39093f8b079e75ab6738eded21b49fcd641524a166702fd8c384df4091ea"
       }
     },
     {
@@ -747,7 +887,85 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "a3e567e9e0ffcf1b614428748c1c21e7a0dabc0584bbd7401d76a59d04e811b7"
+        "contentHash": "0a3d39093f8b079e75ab6738eded21b49fcd641524a166702fd8c384df4091ea"
+      }
+    },
+    {
+      "eventId": "b61c3df424f537244322c3ac09126d7a",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "IFBench 官方数据更新",
+      "summary": "IFBench 官方数据发生变化；共 12 个模型 · 当前前列：Grok 4.3 (medium)（83.3%）、Grok 4.20 0309（82.9%）、MiniMax-M3（82.9%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/ifbench",
+      "observedAt": "2026-09-15T09:21:31Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis IFBench official public Dataset page",
+      "benchmarkId": "aa_ifbench",
+      "benchmarkTitle": "IFBench",
+      "release": "page_jsonld",
+      "contentHash": "23889712569a69d15965ba207d0f60afea8df5a86feb1f12797a3513344cfea1",
+      "unit": "ratio",
+      "modelCount": 12,
+      "topModels": [
+        "Grok 4.3 (medium)（83.3%）",
+        "Grok 4.20 0309（82.9%）",
+        "MiniMax-M3（82.9%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+        "contentHash": "0a3d39093f8b079e75ab6738eded21b49fcd641524a166702fd8c384df4091ea"
+      }
+    },
+    {
+      "eventId": "e8e2f9a048244c2ae3e25b71813117b1",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Terminal-Bench v2.1 官方数据更新",
+      "summary": "Terminal-Bench v2.1 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（91.4%）、Claude Fable 5.1 (xhigh with fallback)（91.0%）、Claude Fable 5.1 (high with fallback)（89.9%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+      "observedAt": "2026-09-15T09:21:31Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
+      "benchmarkId": "aa_terminalbench_v2_1",
+      "benchmarkTitle": "Terminal-Bench v2.1",
+      "release": "page_jsonld",
+      "contentHash": "ea137315bba23d4e476f79254f6493edd6da2155e1c03e37dd4f289178b2b0d9",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "Claude Fable 5.1 (max with fallback)（91.4%）",
+        "Claude Fable 5.1 (xhigh with fallback)（91.0%）",
+        "Claude Fable 5.1 (high with fallback)（89.9%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "contentHash": "0a3d39093f8b079e75ab6738eded21b49fcd641524a166702fd8c384df4091ea"
       }
     },
     {
@@ -786,7 +1004,43 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "a3e567e9e0ffcf1b614428748c1c21e7a0dabc0584bbd7401d76a59d04e811b7"
+        "contentHash": "0a3d39093f8b079e75ab6738eded21b49fcd641524a166702fd8c384df4091ea"
+      }
+    },
+    {
+      "eventId": "1a3beac418b6a8940cc0c246d233bc9d",
+      "family": "benchmark",
+      "eventType": "significant_score_change",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "GPT-5.6 Luna (max) 分数变化",
+      "summary": "GDPval-AA Elo 分数从 1489.33 变为 1463.89（-25.44）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "GPT-5.6 Luna (max)",
+      "modelRef": "benchmark:GPT-5.6 Luna (max)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "observedAt": "2026-09-15T14:22:13Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "benchmarkId": "aa_gdpval_elo",
+      "benchmarkTitle": "GDPval-AA Elo",
+      "release": "page_jsonld",
+      "previousScore": 1489.33,
+      "score": 1463.89,
+      "delta": -25.439999999999827,
+      "unit": "raw",
+      "modelIdentity": "aa_gdpval_elo:GPT-5.6 Luna (max)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "contentHash": "0a3d39093f8b079e75ab6738eded21b49fcd641524a166702fd8c384df4091ea"
       }
     },
     {
@@ -825,7 +1079,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
-        "contentHash": "a3e567e9e0ffcf1b614428748c1c21e7a0dabc0584bbd7401d76a59d04e811b7"
+        "contentHash": "0a3d39093f8b079e75ab6738eded21b49fcd641524a166702fd8c384df4091ea"
       }
     },
     {
@@ -862,49 +1116,13 @@
       "modelIdentity": "aa_gdpval_elo:GPT-5.6 Terra (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "a3e567e9e0ffcf1b614428748c1c21e7a0dabc0584bbd7401d76a59d04e811b7"
-      }
-    },
-    {
-      "eventId": "5d23d9fc467c66841a32e4ccd45d0368",
-      "family": "benchmark",
-      "eventType": "score_changed",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "normal",
-      "title": "GLM-5.3 (max) 分数变化",
-      "summary": "GDPval-AA Elo 分数从 1657.71 变为 1655.16（-2.55）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "GLM-5.3 (max)",
-      "modelRef": "benchmark:GLM-5.3 (max)",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-      "observedAt": "2026-09-14T18:13:18Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "benchmarkId": "aa_gdpval_elo",
-      "benchmarkTitle": "GDPval-AA Elo",
-      "release": "page_jsonld",
-      "previousScore": 1657.71,
-      "score": 1655.16,
-      "delta": -2.5499999999999545,
-      "unit": "raw",
-      "modelIdentity": "aa_gdpval_elo:GLM-5.3 (max)",
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "a3e567e9e0ffcf1b614428748c1c21e7a0dabc0584bbd7401d76a59d04e811b7"
+        "contentHash": "0a3d39093f8b079e75ab6738eded21b49fcd641524a166702fd8c384df4091ea"
       }
     }
   ],
   "eventCount": 16,
   "provenance": {
-    "workflowRunId": "34981139394",
-    "mainCommit": "8d2e6d187b3aa9765ef02fc9e248e1af1d2f7337"
+    "workflowRunId": "35006539031",
+    "mainCommit": "0bce40c3715b7a923d7fc2fe9bff8a297e9dc3db"
   }
 }
