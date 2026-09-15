@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-09-15T21:25:01Z",
-  "windowStart": "2026-09-14T21:25:01Z",
+  "generatedAt": "2026-09-15T23:33:42Z",
+  "windowStart": "2026-09-14T23:33:42Z",
   "collectorStatus": "partial",
   "staleAfterMinutes": 360,
   "families": [
@@ -54,112 +54,112 @@
           "field": "canonicalId",
           "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
           "observedAt": "2026-09-15T01:25:18Z",
-          "contentHash": "b37b8424bf915046c0ffbf13920e612cd5a5e8f06030531b5681fba65e7b33c8",
+          "contentHash": "37c0cde4f6ae0f449c8292a96d19fe0858cba5ebe5ce016b9ba31260f111109b",
           "sourceType": "hub_official_org"
         },
         {
           "field": "provider",
           "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
           "observedAt": "2026-09-15T01:25:18Z",
-          "contentHash": "b37b8424bf915046c0ffbf13920e612cd5a5e8f06030531b5681fba65e7b33c8",
+          "contentHash": "37c0cde4f6ae0f449c8292a96d19fe0858cba5ebe5ce016b9ba31260f111109b",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelId",
           "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
           "observedAt": "2026-09-15T01:25:18Z",
-          "contentHash": "b37b8424bf915046c0ffbf13920e612cd5a5e8f06030531b5681fba65e7b33c8",
+          "contentHash": "37c0cde4f6ae0f449c8292a96d19fe0858cba5ebe5ce016b9ba31260f111109b",
           "sourceType": "hub_official_org"
         },
         {
           "field": "displayName",
           "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
           "observedAt": "2026-09-15T01:25:18Z",
-          "contentHash": "b37b8424bf915046c0ffbf13920e612cd5a5e8f06030531b5681fba65e7b33c8",
+          "contentHash": "37c0cde4f6ae0f449c8292a96d19fe0858cba5ebe5ce016b9ba31260f111109b",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseDate",
           "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
           "observedAt": "2026-09-15T01:25:18Z",
-          "contentHash": "b37b8424bf915046c0ffbf13920e612cd5a5e8f06030531b5681fba65e7b33c8",
+          "contentHash": "37c0cde4f6ae0f449c8292a96d19fe0858cba5ebe5ce016b9ba31260f111109b",
           "sourceType": "hub_official_org"
         },
         {
           "field": "status",
           "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
           "observedAt": "2026-09-15T01:25:18Z",
-          "contentHash": "b37b8424bf915046c0ffbf13920e612cd5a5e8f06030531b5681fba65e7b33c8",
+          "contentHash": "37c0cde4f6ae0f449c8292a96d19fe0858cba5ebe5ce016b9ba31260f111109b",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseType",
           "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
           "observedAt": "2026-09-15T01:25:18Z",
-          "contentHash": "b37b8424bf915046c0ffbf13920e612cd5a5e8f06030531b5681fba65e7b33c8",
+          "contentHash": "37c0cde4f6ae0f449c8292a96d19fe0858cba5ebe5ce016b9ba31260f111109b",
           "sourceType": "hub_official_org"
         },
         {
           "field": "access",
           "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
           "observedAt": "2026-09-15T01:25:18Z",
-          "contentHash": "b37b8424bf915046c0ffbf13920e612cd5a5e8f06030531b5681fba65e7b33c8",
+          "contentHash": "37c0cde4f6ae0f449c8292a96d19fe0858cba5ebe5ce016b9ba31260f111109b",
           "sourceType": "hub_official_org"
         },
         {
           "field": "license",
           "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
           "observedAt": "2026-09-15T01:25:18Z",
-          "contentHash": "b37b8424bf915046c0ffbf13920e612cd5a5e8f06030531b5681fba65e7b33c8",
+          "contentHash": "37c0cde4f6ae0f449c8292a96d19fe0858cba5ebe5ce016b9ba31260f111109b",
           "sourceType": "hub_official_org"
         },
         {
           "field": "technicalReportUrl",
           "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
           "observedAt": "2026-09-15T01:25:18Z",
-          "contentHash": "b37b8424bf915046c0ffbf13920e612cd5a5e8f06030531b5681fba65e7b33c8",
+          "contentHash": "37c0cde4f6ae0f449c8292a96d19fe0858cba5ebe5ce016b9ba31260f111109b",
           "sourceType": "hub_official_org"
         },
         {
           "field": "description",
           "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
           "observedAt": "2026-09-15T01:25:18Z",
-          "contentHash": "b37b8424bf915046c0ffbf13920e612cd5a5e8f06030531b5681fba65e7b33c8",
+          "contentHash": "37c0cde4f6ae0f449c8292a96d19fe0858cba5ebe5ce016b9ba31260f111109b",
           "sourceType": "hub_official_org"
         },
         {
           "field": "officialUrl",
           "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
           "observedAt": "2026-09-15T01:25:18Z",
-          "contentHash": "b37b8424bf915046c0ffbf13920e612cd5a5e8f06030531b5681fba65e7b33c8",
+          "contentHash": "37c0cde4f6ae0f449c8292a96d19fe0858cba5ebe5ce016b9ba31260f111109b",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelCardUrl",
           "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
           "observedAt": "2026-09-15T01:25:18Z",
-          "contentHash": "b37b8424bf915046c0ffbf13920e612cd5a5e8f06030531b5681fba65e7b33c8",
+          "contentHash": "37c0cde4f6ae0f449c8292a96d19fe0858cba5ebe5ce016b9ba31260f111109b",
           "sourceType": "hub_official_org"
         },
         {
           "field": "hubRepo",
           "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
           "observedAt": "2026-09-15T01:25:18Z",
-          "contentHash": "b37b8424bf915046c0ffbf13920e612cd5a5e8f06030531b5681fba65e7b33c8",
+          "contentHash": "37c0cde4f6ae0f449c8292a96d19fe0858cba5ebe5ce016b9ba31260f111109b",
           "sourceType": "hub_official_org"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
           "observedAt": "2026-09-15T01:25:18Z",
-          "contentHash": "b37b8424bf915046c0ffbf13920e612cd5a5e8f06030531b5681fba65e7b33c8",
+          "contentHash": "37c0cde4f6ae0f449c8292a96d19fe0858cba5ebe5ce016b9ba31260f111109b",
           "sourceType": "hub_official_org"
         },
         {
           "field": "availability",
           "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
           "observedAt": "2026-09-15T01:25:18Z",
-          "contentHash": "b37b8424bf915046c0ffbf13920e612cd5a5e8f06030531b5681fba65e7b33c8",
+          "contentHash": "37c0cde4f6ae0f449c8292a96d19fe0858cba5ebe5ce016b9ba31260f111109b",
           "sourceType": "hub_official_org"
         }
       ]
@@ -208,112 +208,273 @@
           "field": "canonicalId",
           "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
           "observedAt": "2026-09-15T01:25:12Z",
-          "contentHash": "366c7963dbc13f250d264a0d1c489797d7618aeb93afe93ce6018e6ff9e0256f",
+          "contentHash": "4c30476f625e1d63d1dc0ada565f51aec9e6a3a87e35c7caedf5b75b5a7931b7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "provider",
           "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
           "observedAt": "2026-09-15T01:25:12Z",
-          "contentHash": "366c7963dbc13f250d264a0d1c489797d7618aeb93afe93ce6018e6ff9e0256f",
+          "contentHash": "4c30476f625e1d63d1dc0ada565f51aec9e6a3a87e35c7caedf5b75b5a7931b7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelId",
           "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
           "observedAt": "2026-09-15T01:25:12Z",
-          "contentHash": "366c7963dbc13f250d264a0d1c489797d7618aeb93afe93ce6018e6ff9e0256f",
+          "contentHash": "4c30476f625e1d63d1dc0ada565f51aec9e6a3a87e35c7caedf5b75b5a7931b7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "displayName",
           "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
           "observedAt": "2026-09-15T01:25:12Z",
-          "contentHash": "366c7963dbc13f250d264a0d1c489797d7618aeb93afe93ce6018e6ff9e0256f",
+          "contentHash": "4c30476f625e1d63d1dc0ada565f51aec9e6a3a87e35c7caedf5b75b5a7931b7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseDate",
           "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
           "observedAt": "2026-09-15T01:25:12Z",
-          "contentHash": "366c7963dbc13f250d264a0d1c489797d7618aeb93afe93ce6018e6ff9e0256f",
+          "contentHash": "4c30476f625e1d63d1dc0ada565f51aec9e6a3a87e35c7caedf5b75b5a7931b7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "status",
           "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
           "observedAt": "2026-09-15T01:25:12Z",
-          "contentHash": "366c7963dbc13f250d264a0d1c489797d7618aeb93afe93ce6018e6ff9e0256f",
+          "contentHash": "4c30476f625e1d63d1dc0ada565f51aec9e6a3a87e35c7caedf5b75b5a7931b7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseType",
           "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
           "observedAt": "2026-09-15T01:25:12Z",
-          "contentHash": "366c7963dbc13f250d264a0d1c489797d7618aeb93afe93ce6018e6ff9e0256f",
+          "contentHash": "4c30476f625e1d63d1dc0ada565f51aec9e6a3a87e35c7caedf5b75b5a7931b7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "access",
           "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
           "observedAt": "2026-09-15T01:25:12Z",
-          "contentHash": "366c7963dbc13f250d264a0d1c489797d7618aeb93afe93ce6018e6ff9e0256f",
+          "contentHash": "4c30476f625e1d63d1dc0ada565f51aec9e6a3a87e35c7caedf5b75b5a7931b7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "license",
           "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
           "observedAt": "2026-09-15T01:25:12Z",
-          "contentHash": "366c7963dbc13f250d264a0d1c489797d7618aeb93afe93ce6018e6ff9e0256f",
+          "contentHash": "4c30476f625e1d63d1dc0ada565f51aec9e6a3a87e35c7caedf5b75b5a7931b7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "technicalReportUrl",
           "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
           "observedAt": "2026-09-15T01:25:12Z",
-          "contentHash": "366c7963dbc13f250d264a0d1c489797d7618aeb93afe93ce6018e6ff9e0256f",
+          "contentHash": "4c30476f625e1d63d1dc0ada565f51aec9e6a3a87e35c7caedf5b75b5a7931b7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "description",
           "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
           "observedAt": "2026-09-15T01:25:12Z",
-          "contentHash": "366c7963dbc13f250d264a0d1c489797d7618aeb93afe93ce6018e6ff9e0256f",
+          "contentHash": "4c30476f625e1d63d1dc0ada565f51aec9e6a3a87e35c7caedf5b75b5a7931b7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "officialUrl",
           "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
           "observedAt": "2026-09-15T01:25:12Z",
-          "contentHash": "366c7963dbc13f250d264a0d1c489797d7618aeb93afe93ce6018e6ff9e0256f",
+          "contentHash": "4c30476f625e1d63d1dc0ada565f51aec9e6a3a87e35c7caedf5b75b5a7931b7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelCardUrl",
           "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
           "observedAt": "2026-09-15T01:25:12Z",
-          "contentHash": "366c7963dbc13f250d264a0d1c489797d7618aeb93afe93ce6018e6ff9e0256f",
+          "contentHash": "4c30476f625e1d63d1dc0ada565f51aec9e6a3a87e35c7caedf5b75b5a7931b7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "hubRepo",
           "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
           "observedAt": "2026-09-15T01:25:12Z",
-          "contentHash": "366c7963dbc13f250d264a0d1c489797d7618aeb93afe93ce6018e6ff9e0256f",
+          "contentHash": "4c30476f625e1d63d1dc0ada565f51aec9e6a3a87e35c7caedf5b75b5a7931b7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
           "observedAt": "2026-09-15T01:25:12Z",
-          "contentHash": "366c7963dbc13f250d264a0d1c489797d7618aeb93afe93ce6018e6ff9e0256f",
+          "contentHash": "4c30476f625e1d63d1dc0ada565f51aec9e6a3a87e35c7caedf5b75b5a7931b7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "availability",
           "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
           "observedAt": "2026-09-15T01:25:12Z",
-          "contentHash": "366c7963dbc13f250d264a0d1c489797d7618aeb93afe93ce6018e6ff9e0256f",
+          "contentHash": "4c30476f625e1d63d1dc0ada565f51aec9e6a3a87e35c7caedf5b75b5a7931b7",
+          "sourceType": "hub_official_org"
+        }
+      ]
+    },
+    "hf:internlm/Atria-Dawn-Preview-Ascend-w8a8": {
+      "canonicalId": "hf:internlm/Atria-Dawn-Preview-Ascend-w8a8",
+      "provider": "InternLM",
+      "modelId": "internlm/Atria-Dawn-Preview-Ascend-w8a8",
+      "displayName": "Atria-Dawn-Preview-Ascend-w8a8",
+      "version": null,
+      "aliases": [],
+      "releaseDate": "2026-09-15T12:47:24Z",
+      "status": "available",
+      "deprecationDate": null,
+      "releaseType": "open_weights_release",
+      "access": "open_weights",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": "mit",
+      "technicalReportUrl": "https://arxiv.org/abs/2609.15818",
+      "description": "*Atria Dawn Preview** is a preview release of a new-generation agentic model developed by the **Shanghai Artificial Intelligence Laboratory**. Built on the **744B-parameter MoE GLM-5.2** foundation model, it targets research and engineering scenarios that demand continuous environmental understanding, tool use, and multi-step task completion. The model is designed to drive open-ended problems toward **executable, verifiable, and reproducible** results. By combining task objectives with environmental feedback, it supports the full loop of problem analysis, solution design, tool use, code implem",
+      "contextWindow": 1048576,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [
+        "Hugging Face"
+      ],
+      "officialUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+      "documentationUrl": null,
+      "modelCardUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+      "hubRepo": "internlm/Atria-Dawn-Preview-Ascend-w8a8",
+      "sourceType": "hub_official_org",
+      "sourceOwner": "InternLM",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+          "observedAt": "2026-09-15T12:47:24Z",
+          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "provider",
+          "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+          "observedAt": "2026-09-15T12:47:24Z",
+          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+          "observedAt": "2026-09-15T12:47:24Z",
+          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+          "observedAt": "2026-09-15T12:47:24Z",
+          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "releaseDate",
+          "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+          "observedAt": "2026-09-15T12:47:24Z",
+          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+          "observedAt": "2026-09-15T12:47:24Z",
+          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "releaseType",
+          "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+          "observedAt": "2026-09-15T12:47:24Z",
+          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+          "observedAt": "2026-09-15T12:47:24Z",
+          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "license",
+          "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+          "observedAt": "2026-09-15T12:47:24Z",
+          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "technicalReportUrl",
+          "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+          "observedAt": "2026-09-15T12:47:24Z",
+          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+          "observedAt": "2026-09-15T12:47:24Z",
+          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "contextWindow",
+          "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+          "observedAt": "2026-09-15T12:47:24Z",
+          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "officialUrl",
+          "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+          "observedAt": "2026-09-15T12:47:24Z",
+          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "modelCardUrl",
+          "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+          "observedAt": "2026-09-15T12:47:24Z",
+          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "hubRepo",
+          "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+          "observedAt": "2026-09-15T12:47:24Z",
+          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+          "observedAt": "2026-09-15T12:47:24Z",
+          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "availability",
+          "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+          "observedAt": "2026-09-15T12:47:24Z",
+          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
           "sourceType": "hub_official_org"
         }
       ]
@@ -360,138 +521,49 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "fb602685de6cf56a23c561230e0c2c1d2cf26d7a0b86e961cdfad5b0c27f5ff6",
+          "contentHash": "b246f77fa7bd9e297c5b7c3f2b6e7a7675f981e079a738e2e287489bef0daf45",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "fb602685de6cf56a23c561230e0c2c1d2cf26d7a0b86e961cdfad5b0c27f5ff6",
+          "contentHash": "b246f77fa7bd9e297c5b7c3f2b6e7a7675f981e079a738e2e287489bef0daf45",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "fb602685de6cf56a23c561230e0c2c1d2cf26d7a0b86e961cdfad5b0c27f5ff6",
+          "contentHash": "b246f77fa7bd9e297c5b7c3f2b6e7a7675f981e079a738e2e287489bef0daf45",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "fb602685de6cf56a23c561230e0c2c1d2cf26d7a0b86e961cdfad5b0c27f5ff6",
+          "contentHash": "b246f77fa7bd9e297c5b7c3f2b6e7a7675f981e079a738e2e287489bef0daf45",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "fb602685de6cf56a23c561230e0c2c1d2cf26d7a0b86e961cdfad5b0c27f5ff6",
+          "contentHash": "b246f77fa7bd9e297c5b7c3f2b6e7a7675f981e079a738e2e287489bef0daf45",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "fb602685de6cf56a23c561230e0c2c1d2cf26d7a0b86e961cdfad5b0c27f5ff6",
+          "contentHash": "b246f77fa7bd9e297c5b7c3f2b6e7a7675f981e079a738e2e287489bef0daf45",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "fb602685de6cf56a23c561230e0c2c1d2cf26d7a0b86e961cdfad5b0c27f5ff6",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GPT-5.6 Terra (max)": {
-      "canonicalId": "benchmark:GPT-5.6 Terra (max)",
-      "provider": null,
-      "modelId": "GPT-5.6 Terra (max)",
-      "displayName": "GPT-5.6 Terra (max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "4864cacf3bcb934e8c62efcf024cb49e0b2b530c91f59900dfe8b99bc424030f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "4864cacf3bcb934e8c62efcf024cb49e0b2b530c91f59900dfe8b99bc424030f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "4864cacf3bcb934e8c62efcf024cb49e0b2b530c91f59900dfe8b99bc424030f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "4864cacf3bcb934e8c62efcf024cb49e0b2b530c91f59900dfe8b99bc424030f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "4864cacf3bcb934e8c62efcf024cb49e0b2b530c91f59900dfe8b99bc424030f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "4864cacf3bcb934e8c62efcf024cb49e0b2b530c91f59900dfe8b99bc424030f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-          "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "4864cacf3bcb934e8c62efcf024cb49e0b2b530c91f59900dfe8b99bc424030f",
+          "contentHash": "b246f77fa7bd9e297c5b7c3f2b6e7a7675f981e079a738e2e287489bef0daf45",
           "sourceType": "official_benchmark"
         }
       ]
@@ -538,49 +610,49 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "d40d7a2c5095432bac7c9629596d04dc0cd1ccfc5c2efa5b2fa62e08a79e7e0a",
+          "contentHash": "0864b549d392de54e20ca4f7358c4c10b5e24117ec32b99fcfb5e48867be2235",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "d40d7a2c5095432bac7c9629596d04dc0cd1ccfc5c2efa5b2fa62e08a79e7e0a",
+          "contentHash": "0864b549d392de54e20ca4f7358c4c10b5e24117ec32b99fcfb5e48867be2235",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "d40d7a2c5095432bac7c9629596d04dc0cd1ccfc5c2efa5b2fa62e08a79e7e0a",
+          "contentHash": "0864b549d392de54e20ca4f7358c4c10b5e24117ec32b99fcfb5e48867be2235",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "d40d7a2c5095432bac7c9629596d04dc0cd1ccfc5c2efa5b2fa62e08a79e7e0a",
+          "contentHash": "0864b549d392de54e20ca4f7358c4c10b5e24117ec32b99fcfb5e48867be2235",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "d40d7a2c5095432bac7c9629596d04dc0cd1ccfc5c2efa5b2fa62e08a79e7e0a",
+          "contentHash": "0864b549d392de54e20ca4f7358c4c10b5e24117ec32b99fcfb5e48867be2235",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "d40d7a2c5095432bac7c9629596d04dc0cd1ccfc5c2efa5b2fa62e08a79e7e0a",
+          "contentHash": "0864b549d392de54e20ca4f7358c4c10b5e24117ec32b99fcfb5e48867be2235",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "d40d7a2c5095432bac7c9629596d04dc0cd1ccfc5c2efa5b2fa62e08a79e7e0a",
+          "contentHash": "0864b549d392de54e20ca4f7358c4c10b5e24117ec32b99fcfb5e48867be2235",
           "sourceType": "official_benchmark"
         }
       ]
@@ -627,58 +699,58 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "65a390d05e2244d8e919dea5eebe0b2dbb6c911fa15d2b683621b65d94d57cee",
+          "contentHash": "2dd63ab937e6164ec64cdaa9e08e2d5d0fd7571725f9afd8cfc2357ff514593f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "65a390d05e2244d8e919dea5eebe0b2dbb6c911fa15d2b683621b65d94d57cee",
+          "contentHash": "2dd63ab937e6164ec64cdaa9e08e2d5d0fd7571725f9afd8cfc2357ff514593f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "65a390d05e2244d8e919dea5eebe0b2dbb6c911fa15d2b683621b65d94d57cee",
+          "contentHash": "2dd63ab937e6164ec64cdaa9e08e2d5d0fd7571725f9afd8cfc2357ff514593f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "65a390d05e2244d8e919dea5eebe0b2dbb6c911fa15d2b683621b65d94d57cee",
+          "contentHash": "2dd63ab937e6164ec64cdaa9e08e2d5d0fd7571725f9afd8cfc2357ff514593f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "65a390d05e2244d8e919dea5eebe0b2dbb6c911fa15d2b683621b65d94d57cee",
+          "contentHash": "2dd63ab937e6164ec64cdaa9e08e2d5d0fd7571725f9afd8cfc2357ff514593f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "65a390d05e2244d8e919dea5eebe0b2dbb6c911fa15d2b683621b65d94d57cee",
+          "contentHash": "2dd63ab937e6164ec64cdaa9e08e2d5d0fd7571725f9afd8cfc2357ff514593f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "65a390d05e2244d8e919dea5eebe0b2dbb6c911fa15d2b683621b65d94d57cee",
+          "contentHash": "2dd63ab937e6164ec64cdaa9e08e2d5d0fd7571725f9afd8cfc2357ff514593f",
           "sourceType": "official_benchmark"
         }
       ]
     },
-    "benchmark:GLM-5.3 (max)": {
-      "canonicalId": "benchmark:GLM-5.3 (max)",
+    "benchmark:GPT-5.6 Terra (max)": {
+      "canonicalId": "benchmark:GPT-5.6 Terra (max)",
       "provider": null,
-      "modelId": "GLM-5.3 (max)",
-      "displayName": "GLM-5.3 (max)",
+      "modelId": "GPT-5.6 Terra (max)",
+      "displayName": "GPT-5.6 Terra (max)",
       "version": null,
       "aliases": [],
       "releaseDate": null,
@@ -715,329 +787,99 @@
         {
           "field": "canonicalId",
           "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "f1fb1c7d8df360c60efb20d6bf9d39e56447277fdfce63866c55b1eb277dd4f9",
+          "observedAt": "2026-09-15T14:22:13Z",
+          "contentHash": "8022e6cb48bc9d602cd80e613898ca17ca6faebad0e2c9881e64b677b2030eae",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "f1fb1c7d8df360c60efb20d6bf9d39e56447277fdfce63866c55b1eb277dd4f9",
+          "observedAt": "2026-09-15T14:22:13Z",
+          "contentHash": "8022e6cb48bc9d602cd80e613898ca17ca6faebad0e2c9881e64b677b2030eae",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "f1fb1c7d8df360c60efb20d6bf9d39e56447277fdfce63866c55b1eb277dd4f9",
+          "observedAt": "2026-09-15T14:22:13Z",
+          "contentHash": "8022e6cb48bc9d602cd80e613898ca17ca6faebad0e2c9881e64b677b2030eae",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "f1fb1c7d8df360c60efb20d6bf9d39e56447277fdfce63866c55b1eb277dd4f9",
+          "observedAt": "2026-09-15T14:22:13Z",
+          "contentHash": "8022e6cb48bc9d602cd80e613898ca17ca6faebad0e2c9881e64b677b2030eae",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "f1fb1c7d8df360c60efb20d6bf9d39e56447277fdfce63866c55b1eb277dd4f9",
+          "observedAt": "2026-09-15T14:22:13Z",
+          "contentHash": "8022e6cb48bc9d602cd80e613898ca17ca6faebad0e2c9881e64b677b2030eae",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "f1fb1c7d8df360c60efb20d6bf9d39e56447277fdfce63866c55b1eb277dd4f9",
+          "observedAt": "2026-09-15T14:22:13Z",
+          "contentHash": "8022e6cb48bc9d602cd80e613898ca17ca6faebad0e2c9881e64b677b2030eae",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "f1fb1c7d8df360c60efb20d6bf9d39e56447277fdfce63866c55b1eb277dd4f9",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GLM-5.3-Flash": {
-      "canonicalId": "benchmark:GLM-5.3-Flash",
-      "provider": null,
-      "modelId": "GLM-5.3-Flash",
-      "displayName": "GLM-5.3-Flash",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "7ee7b57b3956910681e5961ca6a03f62228b83a13f513d98f70b2a33ad8bd9b0",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "7ee7b57b3956910681e5961ca6a03f62228b83a13f513d98f70b2a33ad8bd9b0",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "7ee7b57b3956910681e5961ca6a03f62228b83a13f513d98f70b2a33ad8bd9b0",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "7ee7b57b3956910681e5961ca6a03f62228b83a13f513d98f70b2a33ad8bd9b0",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "7ee7b57b3956910681e5961ca6a03f62228b83a13f513d98f70b2a33ad8bd9b0",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "7ee7b57b3956910681e5961ca6a03f62228b83a13f513d98f70b2a33ad8bd9b0",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "7ee7b57b3956910681e5961ca6a03f62228b83a13f513d98f70b2a33ad8bd9b0",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Grok 4.6 (xhigh)": {
-      "canonicalId": "benchmark:Grok 4.6 (xhigh)",
-      "provider": null,
-      "modelId": "Grok 4.6 (xhigh)",
-      "displayName": "Grok 4.6 (xhigh)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "0c1d91e1f263ccbb60a969f277c9cd4330f4ed104490dca41fa3221cae7f0bbd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "0c1d91e1f263ccbb60a969f277c9cd4330f4ed104490dca41fa3221cae7f0bbd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "0c1d91e1f263ccbb60a969f277c9cd4330f4ed104490dca41fa3221cae7f0bbd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "0c1d91e1f263ccbb60a969f277c9cd4330f4ed104490dca41fa3221cae7f0bbd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "0c1d91e1f263ccbb60a969f277c9cd4330f4ed104490dca41fa3221cae7f0bbd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "0c1d91e1f263ccbb60a969f277c9cd4330f4ed104490dca41fa3221cae7f0bbd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "0c1d91e1f263ccbb60a969f277c9cd4330f4ed104490dca41fa3221cae7f0bbd",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Muse Spark 1.3 (xhigh)": {
-      "canonicalId": "benchmark:Muse Spark 1.3 (xhigh)",
-      "provider": null,
-      "modelId": "Muse Spark 1.3 (xhigh)",
-      "displayName": "Muse Spark 1.3 (xhigh)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "873d6278a8260d64f0e67128cabbe98027fccd571939084b983a48c61121fb32",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "873d6278a8260d64f0e67128cabbe98027fccd571939084b983a48c61121fb32",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "873d6278a8260d64f0e67128cabbe98027fccd571939084b983a48c61121fb32",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "873d6278a8260d64f0e67128cabbe98027fccd571939084b983a48c61121fb32",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "873d6278a8260d64f0e67128cabbe98027fccd571939084b983a48c61121fb32",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "873d6278a8260d64f0e67128cabbe98027fccd571939084b983a48c61121fb32",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-          "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "873d6278a8260d64f0e67128cabbe98027fccd571939084b983a48c61121fb32",
+          "observedAt": "2026-09-15T14:22:13Z",
+          "contentHash": "8022e6cb48bc9d602cd80e613898ca17ca6faebad0e2c9881e64b677b2030eae",
           "sourceType": "official_benchmark"
         }
       ]
     }
   },
-  "modelCount": 10,
+  "modelCount": 7,
   "sourceSummary": {
-    "official": 2,
+    "official": 3,
     "catalog": 0,
-    "benchmark": 17
+    "benchmark": 16
   },
   "events": [
+    {
+      "eventId": "31d79f78879260ed212dea3da10deeb6",
+      "family": "model",
+      "eventType": "official_model_release",
+      "eventClass": "model_release",
+      "trustTier": "official",
+      "priority": "P0",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Atria-Dawn-Preview-Ascend-w8a8 开放权重发布",
+      "summary": "InternLM 在官方组织发布新模型：上下文 1,048,576 tokens，许可 mit。",
+      "repoId": "internlm/Atria-Dawn-Preview-Ascend-w8a8",
+      "repo": "internlm/Atria-Dawn-Preview-Ascend-w8a8",
+      "modelId": "internlm/Atria-Dawn-Preview-Ascend-w8a8",
+      "modelRef": "hf:internlm/Atria-Dawn-Preview-Ascend-w8a8",
+      "sourceType": "hub_official_org",
+      "sourceOwner": "InternLM",
+      "evidence": [
+        {
+          "field": "modelRepository",
+          "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+          "observedAt": "2026-09-15T12:47:24Z",
+          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "sourceType": "hub_official_org"
+        }
+      ],
+      "url": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+      "observedAt": "2026-09-15T12:47:24Z",
+      "publishedAt": "2026-09-15T12:47:24Z",
+      "source": "Hugging Face · InternLM",
+      "eventIdentity": "open-release:internlm/Atria-Dawn-Preview-Ascend-w8a8",
+      "provenance": {
+        "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
+        "contentHash": "c9369819734ccea71333c69f9e03bc66f4595dd8e8c2ed852926eef407ea5c2f"
+      }
+    },
     {
       "eventId": "74a42da104358c2e7024e1b2de198f4d",
       "family": "model",
@@ -1061,7 +903,7 @@
           "field": "modelRepository",
           "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
           "observedAt": "2026-09-15T01:25:18Z",
-          "contentHash": "b37b8424bf915046c0ffbf13920e612cd5a5e8f06030531b5681fba65e7b33c8",
+          "contentHash": "37c0cde4f6ae0f449c8292a96d19fe0858cba5ebe5ce016b9ba31260f111109b",
           "sourceType": "hub_official_org"
         }
       ],
@@ -1072,7 +914,7 @@
       "eventIdentity": "open-release:nvidia/c-foundationstereo-s",
       "provenance": {
         "sourceUrl": "https://huggingface.co/nvidia/c-foundationstereo-s",
-        "contentHash": "c32ed831395c6007f559ba0383a18c053dcb7ddbf2b7fd9fa9fa08d8433e634e"
+        "contentHash": "c9369819734ccea71333c69f9e03bc66f4595dd8e8c2ed852926eef407ea5c2f"
       }
     },
     {
@@ -1098,7 +940,7 @@
           "field": "modelRepository",
           "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
           "observedAt": "2026-09-15T01:25:12Z",
-          "contentHash": "366c7963dbc13f250d264a0d1c489797d7618aeb93afe93ce6018e6ff9e0256f",
+          "contentHash": "4c30476f625e1d63d1dc0ada565f51aec9e6a3a87e35c7caedf5b75b5a7931b7",
           "sourceType": "hub_official_org"
         }
       ],
@@ -1109,202 +951,7 @@
       "eventIdentity": "open-release:nvidia/foundationpose",
       "provenance": {
         "sourceUrl": "https://huggingface.co/nvidia/foundationpose",
-        "contentHash": "c32ed831395c6007f559ba0383a18c053dcb7ddbf2b7fd9fa9fa08d8433e634e"
-      }
-    },
-    {
-      "eventId": "66b8d0eef118e7884c894362de96dd3b",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "GPQA Diamond 官方数据更新",
-      "summary": "GPQA Diamond 官方数据发生变化；共 20 个模型 · 当前前列：GPT-6 Astra (xhigh)（96.3%）、GPT-6 Astra (max)（96.1%）、Gemini 3.8 Flash (high)（95.3%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-      "observedAt": "2026-09-15T09:21:31Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis GPQA Diamond official public Dataset page",
-      "benchmarkId": "aa_gpqa_diamond",
-      "benchmarkTitle": "GPQA Diamond",
-      "release": "page_jsonld",
-      "contentHash": "a6fb6c5510f322df52412d27538584d8cfcaa765f193be5b7f61916e5c0b21d4",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "GPT-6 Astra (xhigh)（96.3%）",
-        "GPT-6 Astra (max)（96.1%）",
-        "Gemini 3.8 Flash (high)（95.3%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "c32ed831395c6007f559ba0383a18c053dcb7ddbf2b7fd9fa9fa08d8433e634e"
-      }
-    },
-    {
-      "eventId": "003b89c8c09d48cdfb9b7ccfe666d1f9",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Humanity's Last Exam 官方数据更新",
-      "summary": "Humanity's Last Exam 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（58.7%）、Claude Fable 5.1 (high with fallback)（55.9%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-      "observedAt": "2026-09-15T09:21:31Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis Humanity's Last Exam official public Dataset page",
-      "benchmarkId": "aa_humanitys_last_exam",
-      "benchmarkTitle": "Humanity's Last Exam",
-      "release": "page_jsonld",
-      "contentHash": "1c185fb0f437a10c8267ac906a9f7bd27deb6877c36528dd51990c8221b49a08",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Fable 5.1 (max with fallback)（59.1%）",
-        "Claude Fable 5.1 (xhigh with fallback)（58.7%）",
-        "Claude Fable 5.1 (high with fallback)（55.9%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "c32ed831395c6007f559ba0383a18c053dcb7ddbf2b7fd9fa9fa08d8433e634e"
-      }
-    },
-    {
-      "eventId": "69746bc164532ee20e35fa7927b83338",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Artificial Analysis Intelligence Index v4.3 官方数据更新",
-      "summary": "Artificial Analysis Intelligence Index v4.3 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（53.37）、Claude Fable 5.1 (xhigh with fallback)（53.18）、GPT-6 Astra (max)（52.81）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "observedAt": "2026-09-15T09:21:31Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis Intelligence Index official public Dataset page",
-      "benchmarkId": "aa_intelligence_index_v4_3",
-      "benchmarkTitle": "Artificial Analysis Intelligence Index v4.3",
-      "release": "page_jsonld",
-      "contentHash": "d00d90598288f33948bfd5fa55ed500dbcd23822cfabf859aad3ee035d25e3f3",
-      "unit": "score",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Fable 5.1 (max with fallback)（53.37）",
-        "Claude Fable 5.1 (xhigh with fallback)（53.18）",
-        "GPT-6 Astra (max)（52.81）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "c32ed831395c6007f559ba0383a18c053dcb7ddbf2b7fd9fa9fa08d8433e634e"
-      }
-    },
-    {
-      "eventId": "d7e6288b80d905660a213aca60a84ca8",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "SciCode 官方数据更新",
-      "summary": "SciCode 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（63.1%）、Claude Fable 5 (with fallback)（61.0%）、Claude Fable 5.1 (xhigh with fallback)（60.9%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/scicode",
-      "observedAt": "2026-09-15T09:21:31Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis SciCode official public Dataset page",
-      "benchmarkId": "aa_scicode",
-      "benchmarkTitle": "SciCode",
-      "release": "page_jsonld",
-      "contentHash": "8c58095f54c53e1bdea9eec23082605c53c808ec70aa7ea58cabb05ee5a99ef1",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Fable 5.1 (max with fallback)（63.1%）",
-        "Claude Fable 5 (with fallback)（61.0%）",
-        "Claude Fable 5.1 (xhigh with fallback)（60.9%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "c32ed831395c6007f559ba0383a18c053dcb7ddbf2b7fd9fa9fa08d8433e634e"
-      }
-    },
-    {
-      "eventId": "17900dff48b32f6df584fcfd74c3763e",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "CritPt 官方数据更新",
-      "summary": "CritPt 官方数据发生变化；共 20 个模型 · 当前前列：GPT-5.6 Sol (max)（32.3%）、GPT-6 Astra (max)（31.7%）、GPT-6 Astra (xhigh)（31.4%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/critpt",
-      "observedAt": "2026-09-15T09:21:31Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis CritPt official public Dataset page",
-      "benchmarkId": "aa_critpt",
-      "benchmarkTitle": "CritPt",
-      "release": "page_jsonld",
-      "contentHash": "fcd91805dcb2e36711d533afc0c974ca61f8af5a0c2b4558e1792a6ebf774ff7",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "GPT-5.6 Sol (max)（32.3%）",
-        "GPT-6 Astra (max)（31.7%）",
-        "GPT-6 Astra (xhigh)（31.4%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "c32ed831395c6007f559ba0383a18c053dcb7ddbf2b7fd9fa9fa08d8433e634e"
+        "contentHash": "c9369819734ccea71333c69f9e03bc66f4595dd8e8c2ed852926eef407ea5c2f"
       }
     },
     {
@@ -1343,7 +990,238 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "c32ed831395c6007f559ba0383a18c053dcb7ddbf2b7fd9fa9fa08d8433e634e"
+        "contentHash": "c9369819734ccea71333c69f9e03bc66f4595dd8e8c2ed852926eef407ea5c2f"
+      }
+    },
+    {
+      "eventId": "1a3beac418b6a8940cc0c246d233bc9d",
+      "family": "benchmark",
+      "eventType": "significant_score_change",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "GPT-5.6 Luna (max) 分数变化",
+      "summary": "GDPval-AA Elo 分数从 1489.33 变为 1463.89（-25.44）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "GPT-5.6 Luna (max)",
+      "modelRef": "benchmark:GPT-5.6 Luna (max)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "observedAt": "2026-09-15T14:22:13Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "benchmarkId": "aa_gdpval_elo",
+      "benchmarkTitle": "GDPval-AA Elo",
+      "release": "page_jsonld",
+      "previousScore": 1489.33,
+      "score": 1463.89,
+      "delta": -25.439999999999827,
+      "unit": "raw",
+      "modelIdentity": "aa_gdpval_elo:GPT-5.6 Luna (max)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "contentHash": "c9369819734ccea71333c69f9e03bc66f4595dd8e8c2ed852926eef407ea5c2f"
+      }
+    },
+    {
+      "eventId": "66b8d0eef118e7884c894362de96dd3b",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "GPQA Diamond 官方数据更新",
+      "summary": "GPQA Diamond 官方数据发生变化；共 20 个模型 · 当前前列：GPT-6 Astra (xhigh)（96.3%）、GPT-6 Astra (max)（96.1%）、Gemini 3.8 Flash (high)（95.3%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "observedAt": "2026-09-15T09:21:31Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GPQA Diamond official public Dataset page",
+      "benchmarkId": "aa_gpqa_diamond",
+      "benchmarkTitle": "GPQA Diamond",
+      "release": "page_jsonld",
+      "contentHash": "a6fb6c5510f322df52412d27538584d8cfcaa765f193be5b7f61916e5c0b21d4",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "GPT-6 Astra (xhigh)（96.3%）",
+        "GPT-6 Astra (max)（96.1%）",
+        "Gemini 3.8 Flash (high)（95.3%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "contentHash": "c9369819734ccea71333c69f9e03bc66f4595dd8e8c2ed852926eef407ea5c2f"
+      }
+    },
+    {
+      "eventId": "003b89c8c09d48cdfb9b7ccfe666d1f9",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Humanity's Last Exam 官方数据更新",
+      "summary": "Humanity's Last Exam 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（58.7%）、Claude Fable 5.1 (high with fallback)（55.9%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "observedAt": "2026-09-15T09:21:31Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Humanity's Last Exam official public Dataset page",
+      "benchmarkId": "aa_humanitys_last_exam",
+      "benchmarkTitle": "Humanity's Last Exam",
+      "release": "page_jsonld",
+      "contentHash": "1c185fb0f437a10c8267ac906a9f7bd27deb6877c36528dd51990c8221b49a08",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "Claude Fable 5.1 (max with fallback)（59.1%）",
+        "Claude Fable 5.1 (xhigh with fallback)（58.7%）",
+        "Claude Fable 5.1 (high with fallback)（55.9%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "contentHash": "c9369819734ccea71333c69f9e03bc66f4595dd8e8c2ed852926eef407ea5c2f"
+      }
+    },
+    {
+      "eventId": "69746bc164532ee20e35fa7927b83338",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Artificial Analysis Intelligence Index v4.3 官方数据更新",
+      "summary": "Artificial Analysis Intelligence Index v4.3 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（53.37）、Claude Fable 5.1 (xhigh with fallback)（53.18）、GPT-6 Astra (max)（52.81）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "observedAt": "2026-09-15T09:21:31Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Intelligence Index official public Dataset page",
+      "benchmarkId": "aa_intelligence_index_v4_3",
+      "benchmarkTitle": "Artificial Analysis Intelligence Index v4.3",
+      "release": "page_jsonld",
+      "contentHash": "d00d90598288f33948bfd5fa55ed500dbcd23822cfabf859aad3ee035d25e3f3",
+      "unit": "score",
+      "modelCount": 20,
+      "topModels": [
+        "Claude Fable 5.1 (max with fallback)（53.37）",
+        "Claude Fable 5.1 (xhigh with fallback)（53.18）",
+        "GPT-6 Astra (max)（52.81）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+        "contentHash": "c9369819734ccea71333c69f9e03bc66f4595dd8e8c2ed852926eef407ea5c2f"
+      }
+    },
+    {
+      "eventId": "d7e6288b80d905660a213aca60a84ca8",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "SciCode 官方数据更新",
+      "summary": "SciCode 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（63.1%）、Claude Fable 5 (with fallback)（61.0%）、Claude Fable 5.1 (xhigh with fallback)（60.9%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/scicode",
+      "observedAt": "2026-09-15T09:21:31Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis SciCode official public Dataset page",
+      "benchmarkId": "aa_scicode",
+      "benchmarkTitle": "SciCode",
+      "release": "page_jsonld",
+      "contentHash": "8c58095f54c53e1bdea9eec23082605c53c808ec70aa7ea58cabb05ee5a99ef1",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "Claude Fable 5.1 (max with fallback)（63.1%）",
+        "Claude Fable 5 (with fallback)（61.0%）",
+        "Claude Fable 5.1 (xhigh with fallback)（60.9%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "contentHash": "c9369819734ccea71333c69f9e03bc66f4595dd8e8c2ed852926eef407ea5c2f"
+      }
+    },
+    {
+      "eventId": "17900dff48b32f6df584fcfd74c3763e",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "CritPt 官方数据更新",
+      "summary": "CritPt 官方数据发生变化；共 20 个模型 · 当前前列：GPT-5.6 Sol (max)（32.3%）、GPT-6 Astra (max)（31.7%）、GPT-6 Astra (xhigh)（31.4%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/critpt",
+      "observedAt": "2026-09-15T09:21:31Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis CritPt official public Dataset page",
+      "benchmarkId": "aa_critpt",
+      "benchmarkTitle": "CritPt",
+      "release": "page_jsonld",
+      "contentHash": "fcd91805dcb2e36711d533afc0c974ca61f8af5a0c2b4558e1792a6ebf774ff7",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "GPT-5.6 Sol (max)（32.3%）",
+        "GPT-6 Astra (max)（31.7%）",
+        "GPT-6 Astra (xhigh)（31.4%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
+        "contentHash": "c9369819734ccea71333c69f9e03bc66f4595dd8e8c2ed852926eef407ea5c2f"
       }
     },
     {
@@ -1382,7 +1260,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "c32ed831395c6007f559ba0383a18c053dcb7ddbf2b7fd9fa9fa08d8433e634e"
+        "contentHash": "c9369819734ccea71333c69f9e03bc66f4595dd8e8c2ed852926eef407ea5c2f"
       }
     },
     {
@@ -1421,7 +1299,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "c32ed831395c6007f559ba0383a18c053dcb7ddbf2b7fd9fa9fa08d8433e634e"
+        "contentHash": "c9369819734ccea71333c69f9e03bc66f4595dd8e8c2ed852926eef407ea5c2f"
       }
     },
     {
@@ -1460,7 +1338,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "c32ed831395c6007f559ba0383a18c053dcb7ddbf2b7fd9fa9fa08d8433e634e"
+        "contentHash": "c9369819734ccea71333c69f9e03bc66f4595dd8e8c2ed852926eef407ea5c2f"
       }
     },
     {
@@ -1499,43 +1377,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "c32ed831395c6007f559ba0383a18c053dcb7ddbf2b7fd9fa9fa08d8433e634e"
-      }
-    },
-    {
-      "eventId": "1a3beac418b6a8940cc0c246d233bc9d",
-      "family": "benchmark",
-      "eventType": "significant_score_change",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "GPT-5.6 Luna (max) 分数变化",
-      "summary": "GDPval-AA Elo 分数从 1489.33 变为 1463.89（-25.44）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "GPT-5.6 Luna (max)",
-      "modelRef": "benchmark:GPT-5.6 Luna (max)",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-      "observedAt": "2026-09-15T14:22:13Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "benchmarkId": "aa_gdpval_elo",
-      "benchmarkTitle": "GDPval-AA Elo",
-      "release": "page_jsonld",
-      "previousScore": 1489.33,
-      "score": 1463.89,
-      "delta": -25.439999999999827,
-      "unit": "raw",
-      "modelIdentity": "aa_gdpval_elo:GPT-5.6 Luna (max)",
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "c32ed831395c6007f559ba0383a18c053dcb7ddbf2b7fd9fa9fa08d8433e634e"
+        "contentHash": "c9369819734ccea71333c69f9e03bc66f4595dd8e8c2ed852926eef407ea5c2f"
       }
     },
     {
@@ -1574,7 +1416,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
-        "contentHash": "c32ed831395c6007f559ba0383a18c053dcb7ddbf2b7fd9fa9fa08d8433e634e"
+        "contentHash": "c9369819734ccea71333c69f9e03bc66f4595dd8e8c2ed852926eef407ea5c2f"
       }
     },
     {
@@ -1613,46 +1455,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
-        "contentHash": "c32ed831395c6007f559ba0383a18c053dcb7ddbf2b7fd9fa9fa08d8433e634e"
-      }
-    },
-    {
-      "eventId": "41fe0b627d6032c4dd07ae1ff8ee46f0",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "AA Omniscience Index 官方数据更新",
-      "summary": "AA Omniscience Index 官方数据发生变化；共 20 个模型 · 当前前列：GPT-6 Astra (high)（43.73）、Claude Fable 5.1 (max with fallback)（43.45）、GPT-6 Astra (xhigh)（43.42）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/omniscience",
-      "observedAt": "2026-09-14T21:48:41Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis AA Omniscience Index official public Dataset page",
-      "benchmarkId": "aa_omniscience_index",
-      "benchmarkTitle": "AA Omniscience Index",
-      "release": "page_jsonld",
-      "contentHash": "74add8f44ae41dc9c3c940f3309bc7af00ae3e5cab51d5f6b8035aab14dc85df",
-      "unit": "score",
-      "modelCount": 20,
-      "topModels": [
-        "GPT-6 Astra (high)（43.73）",
-        "Claude Fable 5.1 (max with fallback)（43.45）",
-        "GPT-6 Astra (xhigh)（43.42）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
-        "contentHash": "c32ed831395c6007f559ba0383a18c053dcb7ddbf2b7fd9fa9fa08d8433e634e"
+        "contentHash": "c9369819734ccea71333c69f9e03bc66f4595dd8e8c2ed852926eef407ea5c2f"
       }
     },
     {
@@ -1688,7 +1491,7 @@
       "modelIdentity": "aa_gdpval_elo:Qwen3.8 Max (0902)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "c32ed831395c6007f559ba0383a18c053dcb7ddbf2b7fd9fa9fa08d8433e634e"
+        "contentHash": "c9369819734ccea71333c69f9e03bc66f4595dd8e8c2ed852926eef407ea5c2f"
       }
     },
     {
@@ -1723,7 +1526,7 @@
       "modelIdentity": "aa_gdpval_elo:Claude Fable 5.1 (high with fallback)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "c32ed831395c6007f559ba0383a18c053dcb7ddbf2b7fd9fa9fa08d8433e634e"
+        "contentHash": "c9369819734ccea71333c69f9e03bc66f4595dd8e8c2ed852926eef407ea5c2f"
       }
     },
     {
@@ -1760,7 +1563,7 @@
       "modelIdentity": "aa_gdpval_elo:GPT-5.6 Terra (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "c32ed831395c6007f559ba0383a18c053dcb7ddbf2b7fd9fa9fa08d8433e634e"
+        "contentHash": "c9369819734ccea71333c69f9e03bc66f4595dd8e8c2ed852926eef407ea5c2f"
       }
     }
   ],
@@ -1770,7 +1573,7 @@
     "terminalbench_v2_1:ValueError"
   ],
   "provenance": {
-    "workflowRunId": "35025462714",
-    "mainCommit": "e263e930b5ffb76d1235f9432ee569917291da08"
+    "workflowRunId": "35036198193",
+    "mainCommit": "7dad1e7063ddce589a5f3d2748f22096a4f3b200"
   }
 }
