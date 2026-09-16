@@ -1,8 +1,8 @@
 module.exports = {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-09-16T01:35:22Z",
-  "windowStart": "2026-09-15T01:35:22Z",
+  "generatedAt": "2026-09-16T06:39:25Z",
+  "windowStart": "2026-09-15T06:39:25Z",
   "collectorStatus": "partial",
   "staleAfterMinutes": 360,
   "families": [
@@ -54,119 +54,119 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
           "observedAt": "2026-09-15T12:47:24Z",
-          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "contentHash": "b3e69c832f6a9eeea5995261d2b756224689821a58a3c39bd601fea5e1589967",
           "sourceType": "hub_official_org"
         },
         {
           "field": "provider",
           "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
           "observedAt": "2026-09-15T12:47:24Z",
-          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "contentHash": "b3e69c832f6a9eeea5995261d2b756224689821a58a3c39bd601fea5e1589967",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelId",
           "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
           "observedAt": "2026-09-15T12:47:24Z",
-          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "contentHash": "b3e69c832f6a9eeea5995261d2b756224689821a58a3c39bd601fea5e1589967",
           "sourceType": "hub_official_org"
         },
         {
           "field": "displayName",
           "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
           "observedAt": "2026-09-15T12:47:24Z",
-          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "contentHash": "b3e69c832f6a9eeea5995261d2b756224689821a58a3c39bd601fea5e1589967",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseDate",
           "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
           "observedAt": "2026-09-15T12:47:24Z",
-          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "contentHash": "b3e69c832f6a9eeea5995261d2b756224689821a58a3c39bd601fea5e1589967",
           "sourceType": "hub_official_org"
         },
         {
           "field": "status",
           "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
           "observedAt": "2026-09-15T12:47:24Z",
-          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "contentHash": "b3e69c832f6a9eeea5995261d2b756224689821a58a3c39bd601fea5e1589967",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseType",
           "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
           "observedAt": "2026-09-15T12:47:24Z",
-          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "contentHash": "b3e69c832f6a9eeea5995261d2b756224689821a58a3c39bd601fea5e1589967",
           "sourceType": "hub_official_org"
         },
         {
           "field": "access",
           "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
           "observedAt": "2026-09-15T12:47:24Z",
-          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "contentHash": "b3e69c832f6a9eeea5995261d2b756224689821a58a3c39bd601fea5e1589967",
           "sourceType": "hub_official_org"
         },
         {
           "field": "license",
           "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
           "observedAt": "2026-09-15T12:47:24Z",
-          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "contentHash": "b3e69c832f6a9eeea5995261d2b756224689821a58a3c39bd601fea5e1589967",
           "sourceType": "hub_official_org"
         },
         {
           "field": "technicalReportUrl",
           "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
           "observedAt": "2026-09-15T12:47:24Z",
-          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "contentHash": "b3e69c832f6a9eeea5995261d2b756224689821a58a3c39bd601fea5e1589967",
           "sourceType": "hub_official_org"
         },
         {
           "field": "description",
           "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
           "observedAt": "2026-09-15T12:47:24Z",
-          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "contentHash": "b3e69c832f6a9eeea5995261d2b756224689821a58a3c39bd601fea5e1589967",
           "sourceType": "hub_official_org"
         },
         {
           "field": "contextWindow",
           "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
           "observedAt": "2026-09-15T12:47:24Z",
-          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "contentHash": "b3e69c832f6a9eeea5995261d2b756224689821a58a3c39bd601fea5e1589967",
           "sourceType": "hub_official_org"
         },
         {
           "field": "officialUrl",
           "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
           "observedAt": "2026-09-15T12:47:24Z",
-          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "contentHash": "b3e69c832f6a9eeea5995261d2b756224689821a58a3c39bd601fea5e1589967",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelCardUrl",
           "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
           "observedAt": "2026-09-15T12:47:24Z",
-          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "contentHash": "b3e69c832f6a9eeea5995261d2b756224689821a58a3c39bd601fea5e1589967",
           "sourceType": "hub_official_org"
         },
         {
           "field": "hubRepo",
           "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
           "observedAt": "2026-09-15T12:47:24Z",
-          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "contentHash": "b3e69c832f6a9eeea5995261d2b756224689821a58a3c39bd601fea5e1589967",
           "sourceType": "hub_official_org"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
           "observedAt": "2026-09-15T12:47:24Z",
-          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "contentHash": "b3e69c832f6a9eeea5995261d2b756224689821a58a3c39bd601fea5e1589967",
           "sourceType": "hub_official_org"
         },
         {
           "field": "availability",
           "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
           "observedAt": "2026-09-15T12:47:24Z",
-          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "contentHash": "b3e69c832f6a9eeea5995261d2b756224689821a58a3c39bd601fea5e1589967",
           "sourceType": "hub_official_org"
         }
       ]
@@ -213,49 +213,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "2bed6889ba911beebaa6c81aca68618cc768fff71fa6b2a0a9f0369892b79911",
+          "contentHash": "e039b0c6ac7bc55e2afe3153f164261061a9a4731cdadd04bde09bea4abd5a00",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "2bed6889ba911beebaa6c81aca68618cc768fff71fa6b2a0a9f0369892b79911",
+          "contentHash": "e039b0c6ac7bc55e2afe3153f164261061a9a4731cdadd04bde09bea4abd5a00",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "2bed6889ba911beebaa6c81aca68618cc768fff71fa6b2a0a9f0369892b79911",
+          "contentHash": "e039b0c6ac7bc55e2afe3153f164261061a9a4731cdadd04bde09bea4abd5a00",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "2bed6889ba911beebaa6c81aca68618cc768fff71fa6b2a0a9f0369892b79911",
+          "contentHash": "e039b0c6ac7bc55e2afe3153f164261061a9a4731cdadd04bde09bea4abd5a00",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "2bed6889ba911beebaa6c81aca68618cc768fff71fa6b2a0a9f0369892b79911",
+          "contentHash": "e039b0c6ac7bc55e2afe3153f164261061a9a4731cdadd04bde09bea4abd5a00",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "2bed6889ba911beebaa6c81aca68618cc768fff71fa6b2a0a9f0369892b79911",
+          "contentHash": "e039b0c6ac7bc55e2afe3153f164261061a9a4731cdadd04bde09bea4abd5a00",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "2bed6889ba911beebaa6c81aca68618cc768fff71fa6b2a0a9f0369892b79911",
+          "contentHash": "e039b0c6ac7bc55e2afe3153f164261061a9a4731cdadd04bde09bea4abd5a00",
           "sourceType": "official_benchmark"
         }
       ]
@@ -302,49 +302,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "e306f8334223c5a87cb4a7941eaef113948b86eaa4cc5b0054078fd26f58297b",
+          "contentHash": "d8701409e3efdaaadef0ed54db4fb0ffdc6b0e1c9caef2a33c3da9b7bcdb6024",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "e306f8334223c5a87cb4a7941eaef113948b86eaa4cc5b0054078fd26f58297b",
+          "contentHash": "d8701409e3efdaaadef0ed54db4fb0ffdc6b0e1c9caef2a33c3da9b7bcdb6024",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "e306f8334223c5a87cb4a7941eaef113948b86eaa4cc5b0054078fd26f58297b",
+          "contentHash": "d8701409e3efdaaadef0ed54db4fb0ffdc6b0e1c9caef2a33c3da9b7bcdb6024",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "e306f8334223c5a87cb4a7941eaef113948b86eaa4cc5b0054078fd26f58297b",
+          "contentHash": "d8701409e3efdaaadef0ed54db4fb0ffdc6b0e1c9caef2a33c3da9b7bcdb6024",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "e306f8334223c5a87cb4a7941eaef113948b86eaa4cc5b0054078fd26f58297b",
+          "contentHash": "d8701409e3efdaaadef0ed54db4fb0ffdc6b0e1c9caef2a33c3da9b7bcdb6024",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "e306f8334223c5a87cb4a7941eaef113948b86eaa4cc5b0054078fd26f58297b",
+          "contentHash": "d8701409e3efdaaadef0ed54db4fb0ffdc6b0e1c9caef2a33c3da9b7bcdb6024",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "e306f8334223c5a87cb4a7941eaef113948b86eaa4cc5b0054078fd26f58297b",
+          "contentHash": "d8701409e3efdaaadef0ed54db4fb0ffdc6b0e1c9caef2a33c3da9b7bcdb6024",
           "sourceType": "official_benchmark"
         }
       ]
@@ -391,49 +391,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "6611ac5a259df8760c0dd9728a46033bf64c80ead61a964df434e99a73d6f6d3",
+          "contentHash": "c8eea1756277749fdf679ca58d6321c83f0117e05f838d1d68fc791c21f25006",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "6611ac5a259df8760c0dd9728a46033bf64c80ead61a964df434e99a73d6f6d3",
+          "contentHash": "c8eea1756277749fdf679ca58d6321c83f0117e05f838d1d68fc791c21f25006",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "6611ac5a259df8760c0dd9728a46033bf64c80ead61a964df434e99a73d6f6d3",
+          "contentHash": "c8eea1756277749fdf679ca58d6321c83f0117e05f838d1d68fc791c21f25006",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "6611ac5a259df8760c0dd9728a46033bf64c80ead61a964df434e99a73d6f6d3",
+          "contentHash": "c8eea1756277749fdf679ca58d6321c83f0117e05f838d1d68fc791c21f25006",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "6611ac5a259df8760c0dd9728a46033bf64c80ead61a964df434e99a73d6f6d3",
+          "contentHash": "c8eea1756277749fdf679ca58d6321c83f0117e05f838d1d68fc791c21f25006",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "6611ac5a259df8760c0dd9728a46033bf64c80ead61a964df434e99a73d6f6d3",
+          "contentHash": "c8eea1756277749fdf679ca58d6321c83f0117e05f838d1d68fc791c21f25006",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
           "observedAt": "2026-09-15T21:25:01Z",
-          "contentHash": "6611ac5a259df8760c0dd9728a46033bf64c80ead61a964df434e99a73d6f6d3",
+          "contentHash": "c8eea1756277749fdf679ca58d6321c83f0117e05f838d1d68fc791c21f25006",
           "sourceType": "official_benchmark"
         }
       ]
@@ -480,49 +480,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "c070c16f455e460adf61b02e80cfea03966a8ded0e165ce027ab713f28efe645",
+          "contentHash": "0d4d74707f63451f73b07cbabf8a9b2c0504a59e798a9186d76bc4148f636cd5",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "c070c16f455e460adf61b02e80cfea03966a8ded0e165ce027ab713f28efe645",
+          "contentHash": "0d4d74707f63451f73b07cbabf8a9b2c0504a59e798a9186d76bc4148f636cd5",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "c070c16f455e460adf61b02e80cfea03966a8ded0e165ce027ab713f28efe645",
+          "contentHash": "0d4d74707f63451f73b07cbabf8a9b2c0504a59e798a9186d76bc4148f636cd5",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "c070c16f455e460adf61b02e80cfea03966a8ded0e165ce027ab713f28efe645",
+          "contentHash": "0d4d74707f63451f73b07cbabf8a9b2c0504a59e798a9186d76bc4148f636cd5",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "c070c16f455e460adf61b02e80cfea03966a8ded0e165ce027ab713f28efe645",
+          "contentHash": "0d4d74707f63451f73b07cbabf8a9b2c0504a59e798a9186d76bc4148f636cd5",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "c070c16f455e460adf61b02e80cfea03966a8ded0e165ce027ab713f28efe645",
+          "contentHash": "0d4d74707f63451f73b07cbabf8a9b2c0504a59e798a9186d76bc4148f636cd5",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
           "observedAt": "2026-09-15T14:22:13Z",
-          "contentHash": "c070c16f455e460adf61b02e80cfea03966a8ded0e165ce027ab713f28efe645",
+          "contentHash": "0d4d74707f63451f73b07cbabf8a9b2c0504a59e798a9186d76bc4148f636cd5",
           "sourceType": "official_benchmark"
         }
       ]
@@ -558,7 +558,7 @@ module.exports = {
           "field": "modelRepository",
           "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
           "observedAt": "2026-09-15T12:47:24Z",
-          "contentHash": "666c02e98606dbc2c71f9c673bf31e0ab9b84b1a6781eb2ffb1ce8784a8bf191",
+          "contentHash": "b3e69c832f6a9eeea5995261d2b756224689821a58a3c39bd601fea5e1589967",
           "sourceType": "hub_official_org"
         }
       ],
@@ -569,85 +569,7 @@ module.exports = {
       "eventIdentity": "open-release:internlm/Atria-Dawn-Preview-Ascend-w8a8",
       "provenance": {
         "sourceUrl": "https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8",
-        "contentHash": "29ad286c15d75ed36dfd35b790b2c1ea51819a2866d06344bb453c94ac07adc8"
-      }
-    },
-    {
-      "eventId": "66b8d0eef118e7884c894362de96dd3b",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "GPQA Diamond 官方数据更新",
-      "summary": "GPQA Diamond 官方数据发生变化；共 20 个模型 · 当前前列：GPT-6 Astra (xhigh)（96.3%）、GPT-6 Astra (max)（96.1%）、Gemini 3.8 Flash (high)（95.3%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-      "observedAt": "2026-09-15T09:21:31Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis GPQA Diamond official public Dataset page",
-      "benchmarkId": "aa_gpqa_diamond",
-      "benchmarkTitle": "GPQA Diamond",
-      "release": "page_jsonld",
-      "contentHash": "a6fb6c5510f322df52412d27538584d8cfcaa765f193be5b7f61916e5c0b21d4",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "GPT-6 Astra (xhigh)（96.3%）",
-        "GPT-6 Astra (max)（96.1%）",
-        "Gemini 3.8 Flash (high)（95.3%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "29ad286c15d75ed36dfd35b790b2c1ea51819a2866d06344bb453c94ac07adc8"
-      }
-    },
-    {
-      "eventId": "003b89c8c09d48cdfb9b7ccfe666d1f9",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Humanity's Last Exam 官方数据更新",
-      "summary": "Humanity's Last Exam 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（58.7%）、Claude Fable 5.1 (high with fallback)（55.9%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-      "observedAt": "2026-09-15T09:21:31Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis Humanity's Last Exam official public Dataset page",
-      "benchmarkId": "aa_humanitys_last_exam",
-      "benchmarkTitle": "Humanity's Last Exam",
-      "release": "page_jsonld",
-      "contentHash": "1c185fb0f437a10c8267ac906a9f7bd27deb6877c36528dd51990c8221b49a08",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Fable 5.1 (max with fallback)（59.1%）",
-        "Claude Fable 5.1 (xhigh with fallback)（58.7%）",
-        "Claude Fable 5.1 (high with fallback)（55.9%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "29ad286c15d75ed36dfd35b790b2c1ea51819a2866d06344bb453c94ac07adc8"
+        "contentHash": "4e5934bb52c9681ff9b568691e1bbf95cbcbfe7488b5b42583e8e531496fdc85"
       }
     },
     {
@@ -686,11 +608,11 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "29ad286c15d75ed36dfd35b790b2c1ea51819a2866d06344bb453c94ac07adc8"
+        "contentHash": "4e5934bb52c9681ff9b568691e1bbf95cbcbfe7488b5b42583e8e531496fdc85"
       }
     },
     {
-      "eventId": "17900dff48b32f6df584fcfd74c3763e",
+      "eventId": "66b8d0eef118e7884c894362de96dd3b",
       "family": "benchmark",
       "eventType": "benchmark_updated",
       "eventClass": "benchmark",
@@ -699,8 +621,8 @@ module.exports = {
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "CritPt 官方数据更新",
-      "summary": "CritPt 官方数据发生变化；共 20 个模型 · 当前前列：GPT-5.6 Sol (max)（32.3%）、GPT-6 Astra (max)（31.7%）、GPT-6 Astra (xhigh)（31.4%）。",
+      "title": "GPQA Diamond 官方数据更新",
+      "summary": "GPQA Diamond 官方数据发生变化；共 20 个模型 · 当前前列：GPT-6 Astra (xhigh)（96.3%）、GPT-6 Astra (max)（96.1%）、Gemini 3.8 Flash (high)（95.3%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -708,24 +630,63 @@ module.exports = {
       "sourceType": null,
       "sourceOwner": null,
       "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/critpt",
+      "url": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
       "observedAt": "2026-09-15T09:21:31Z",
       "publishedAt": null,
-      "source": "Artificial Analysis CritPt official public Dataset page",
-      "benchmarkId": "aa_critpt",
-      "benchmarkTitle": "CritPt",
+      "source": "Artificial Analysis GPQA Diamond official public Dataset page",
+      "benchmarkId": "aa_gpqa_diamond",
+      "benchmarkTitle": "GPQA Diamond",
       "release": "page_jsonld",
-      "contentHash": "fcd91805dcb2e36711d533afc0c974ca61f8af5a0c2b4558e1792a6ebf774ff7",
+      "contentHash": "a6fb6c5510f322df52412d27538584d8cfcaa765f193be5b7f61916e5c0b21d4",
       "unit": "ratio",
       "modelCount": 20,
       "topModels": [
-        "GPT-5.6 Sol (max)（32.3%）",
-        "GPT-6 Astra (max)（31.7%）",
-        "GPT-6 Astra (xhigh)（31.4%）"
+        "GPT-6 Astra (xhigh)（96.3%）",
+        "GPT-6 Astra (max)（96.1%）",
+        "Gemini 3.8 Flash (high)（95.3%）"
       ],
       "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "29ad286c15d75ed36dfd35b790b2c1ea51819a2866d06344bb453c94ac07adc8"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "contentHash": "4e5934bb52c9681ff9b568691e1bbf95cbcbfe7488b5b42583e8e531496fdc85"
+      }
+    },
+    {
+      "eventId": "003b89c8c09d48cdfb9b7ccfe666d1f9",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Humanity's Last Exam 官方数据更新",
+      "summary": "Humanity's Last Exam 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（58.7%）、Claude Fable 5.1 (high with fallback)（55.9%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "observedAt": "2026-09-15T09:21:31Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Humanity's Last Exam official public Dataset page",
+      "benchmarkId": "aa_humanitys_last_exam",
+      "benchmarkTitle": "Humanity's Last Exam",
+      "release": "page_jsonld",
+      "contentHash": "1c185fb0f437a10c8267ac906a9f7bd27deb6877c36528dd51990c8221b49a08",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "Claude Fable 5.1 (max with fallback)（59.1%）",
+        "Claude Fable 5.1 (xhigh with fallback)（58.7%）",
+        "Claude Fable 5.1 (high with fallback)（55.9%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "contentHash": "4e5934bb52c9681ff9b568691e1bbf95cbcbfe7488b5b42583e8e531496fdc85"
       }
     },
     {
@@ -764,7 +725,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "29ad286c15d75ed36dfd35b790b2c1ea51819a2866d06344bb453c94ac07adc8"
+        "contentHash": "4e5934bb52c9681ff9b568691e1bbf95cbcbfe7488b5b42583e8e531496fdc85"
       }
     },
     {
@@ -803,46 +764,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "29ad286c15d75ed36dfd35b790b2c1ea51819a2866d06344bb453c94ac07adc8"
-      }
-    },
-    {
-      "eventId": "b61c3df424f537244322c3ac09126d7a",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "IFBench 官方数据更新",
-      "summary": "IFBench 官方数据发生变化；共 12 个模型 · 当前前列：Grok 4.3 (medium)（83.3%）、Grok 4.20 0309（82.9%）、MiniMax-M3（82.9%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/ifbench",
-      "observedAt": "2026-09-15T09:21:31Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis IFBench official public Dataset page",
-      "benchmarkId": "aa_ifbench",
-      "benchmarkTitle": "IFBench",
-      "release": "page_jsonld",
-      "contentHash": "23889712569a69d15965ba207d0f60afea8df5a86feb1f12797a3513344cfea1",
-      "unit": "ratio",
-      "modelCount": 12,
-      "topModels": [
-        "Grok 4.3 (medium)（83.3%）",
-        "Grok 4.20 0309（82.9%）",
-        "MiniMax-M3（82.9%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "29ad286c15d75ed36dfd35b790b2c1ea51819a2866d06344bb453c94ac07adc8"
+        "contentHash": "4e5934bb52c9681ff9b568691e1bbf95cbcbfe7488b5b42583e8e531496fdc85"
       }
     },
     {
@@ -881,7 +803,85 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "29ad286c15d75ed36dfd35b790b2c1ea51819a2866d06344bb453c94ac07adc8"
+        "contentHash": "4e5934bb52c9681ff9b568691e1bbf95cbcbfe7488b5b42583e8e531496fdc85"
+      }
+    },
+    {
+      "eventId": "17900dff48b32f6df584fcfd74c3763e",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "CritPt 官方数据更新",
+      "summary": "CritPt 官方数据发生变化；共 20 个模型 · 当前前列：GPT-5.6 Sol (max)（32.3%）、GPT-6 Astra (max)（31.7%）、GPT-6 Astra (xhigh)（31.4%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/critpt",
+      "observedAt": "2026-09-15T09:21:31Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis CritPt official public Dataset page",
+      "benchmarkId": "aa_critpt",
+      "benchmarkTitle": "CritPt",
+      "release": "page_jsonld",
+      "contentHash": "fcd91805dcb2e36711d533afc0c974ca61f8af5a0c2b4558e1792a6ebf774ff7",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "GPT-5.6 Sol (max)（32.3%）",
+        "GPT-6 Astra (max)（31.7%）",
+        "GPT-6 Astra (xhigh)（31.4%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
+        "contentHash": "4e5934bb52c9681ff9b568691e1bbf95cbcbfe7488b5b42583e8e531496fdc85"
+      }
+    },
+    {
+      "eventId": "b61c3df424f537244322c3ac09126d7a",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "IFBench 官方数据更新",
+      "summary": "IFBench 官方数据发生变化；共 12 个模型 · 当前前列：Grok 4.3 (medium)（83.3%）、Grok 4.20 0309（82.9%）、MiniMax-M3（82.9%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/ifbench",
+      "observedAt": "2026-09-15T09:21:31Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis IFBench official public Dataset page",
+      "benchmarkId": "aa_ifbench",
+      "benchmarkTitle": "IFBench",
+      "release": "page_jsonld",
+      "contentHash": "23889712569a69d15965ba207d0f60afea8df5a86feb1f12797a3513344cfea1",
+      "unit": "ratio",
+      "modelCount": 12,
+      "topModels": [
+        "Grok 4.3 (medium)（83.3%）",
+        "Grok 4.20 0309（82.9%）",
+        "MiniMax-M3（82.9%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+        "contentHash": "4e5934bb52c9681ff9b568691e1bbf95cbcbfe7488b5b42583e8e531496fdc85"
       }
     },
     {
@@ -920,7 +920,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "29ad286c15d75ed36dfd35b790b2c1ea51819a2866d06344bb453c94ac07adc8"
+        "contentHash": "4e5934bb52c9681ff9b568691e1bbf95cbcbfe7488b5b42583e8e531496fdc85"
       }
     },
     {
@@ -959,7 +959,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "29ad286c15d75ed36dfd35b790b2c1ea51819a2866d06344bb453c94ac07adc8"
+        "contentHash": "4e5934bb52c9681ff9b568691e1bbf95cbcbfe7488b5b42583e8e531496fdc85"
       }
     },
     {
@@ -995,7 +995,7 @@ module.exports = {
       "modelIdentity": "aa_gdpval_elo:GPT-5.6 Luna (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "29ad286c15d75ed36dfd35b790b2c1ea51819a2866d06344bb453c94ac07adc8"
+        "contentHash": "4e5934bb52c9681ff9b568691e1bbf95cbcbfe7488b5b42583e8e531496fdc85"
       }
     },
     {
@@ -1034,7 +1034,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
-        "contentHash": "29ad286c15d75ed36dfd35b790b2c1ea51819a2866d06344bb453c94ac07adc8"
+        "contentHash": "4e5934bb52c9681ff9b568691e1bbf95cbcbfe7488b5b42583e8e531496fdc85"
       }
     },
     {
@@ -1073,7 +1073,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
-        "contentHash": "29ad286c15d75ed36dfd35b790b2c1ea51819a2866d06344bb453c94ac07adc8"
+        "contentHash": "4e5934bb52c9681ff9b568691e1bbf95cbcbfe7488b5b42583e8e531496fdc85"
       }
     },
     {
@@ -1109,7 +1109,7 @@ module.exports = {
       "modelIdentity": "aa_gdpval_elo:Qwen3.8 Max (0902)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "29ad286c15d75ed36dfd35b790b2c1ea51819a2866d06344bb453c94ac07adc8"
+        "contentHash": "4e5934bb52c9681ff9b568691e1bbf95cbcbfe7488b5b42583e8e531496fdc85"
       }
     },
     {
@@ -1144,7 +1144,7 @@ module.exports = {
       "modelIdentity": "aa_gdpval_elo:Claude Fable 5.1 (high with fallback)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "29ad286c15d75ed36dfd35b790b2c1ea51819a2866d06344bb453c94ac07adc8"
+        "contentHash": "4e5934bb52c9681ff9b568691e1bbf95cbcbfe7488b5b42583e8e531496fdc85"
       }
     },
     {
@@ -1181,7 +1181,7 @@ module.exports = {
       "modelIdentity": "aa_gdpval_elo:GPT-5.6 Terra (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "29ad286c15d75ed36dfd35b790b2c1ea51819a2866d06344bb453c94ac07adc8"
+        "contentHash": "4e5934bb52c9681ff9b568691e1bbf95cbcbfe7488b5b42583e8e531496fdc85"
       }
     }
   ],
@@ -1191,7 +1191,7 @@ module.exports = {
     "terminalbench_v2_1:ValueError"
   ],
   "provenance": {
-    "workflowRunId": "35044666552",
-    "mainCommit": "976cb09f79d0dd35350230babe628141c88db173"
+    "workflowRunId": "35064689200",
+    "mainCommit": "c154462d23fb46fa2b8c2964c2a3abc87630a8fd"
   }
 };
