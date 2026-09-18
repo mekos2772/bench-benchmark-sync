@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-09-18T20:42:23Z",
-  "windowStart": "2026-09-17T20:42:23Z",
+  "generatedAt": "2026-09-18T22:49:02Z",
+  "windowStart": "2026-09-17T22:49:02Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -52,49 +52,49 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-17T23:40:14Z",
-          "contentHash": "da31b1efd35913df25b6c11053887d0594ea57c0b1b3051ffead68e4776e14c2",
+          "contentHash": "7e89e8f2516f71175846d542ac664fde9af56d7cdc488f6916f117d162f71485",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-17T23:40:14Z",
-          "contentHash": "da31b1efd35913df25b6c11053887d0594ea57c0b1b3051ffead68e4776e14c2",
+          "contentHash": "7e89e8f2516f71175846d542ac664fde9af56d7cdc488f6916f117d162f71485",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-17T23:40:14Z",
-          "contentHash": "da31b1efd35913df25b6c11053887d0594ea57c0b1b3051ffead68e4776e14c2",
+          "contentHash": "7e89e8f2516f71175846d542ac664fde9af56d7cdc488f6916f117d162f71485",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-17T23:40:14Z",
-          "contentHash": "da31b1efd35913df25b6c11053887d0594ea57c0b1b3051ffead68e4776e14c2",
+          "contentHash": "7e89e8f2516f71175846d542ac664fde9af56d7cdc488f6916f117d162f71485",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-17T23:40:14Z",
-          "contentHash": "da31b1efd35913df25b6c11053887d0594ea57c0b1b3051ffead68e4776e14c2",
+          "contentHash": "7e89e8f2516f71175846d542ac664fde9af56d7cdc488f6916f117d162f71485",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-17T23:40:14Z",
-          "contentHash": "da31b1efd35913df25b6c11053887d0594ea57c0b1b3051ffead68e4776e14c2",
+          "contentHash": "7e89e8f2516f71175846d542ac664fde9af56d7cdc488f6916f117d162f71485",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
           "observedAt": "2026-09-17T23:40:14Z",
-          "contentHash": "da31b1efd35913df25b6c11053887d0594ea57c0b1b3051ffead68e4776e14c2",
+          "contentHash": "7e89e8f2516f71175846d542ac664fde9af56d7cdc488f6916f117d162f71485",
           "sourceType": "official_benchmark"
         }
       ]
@@ -107,45 +107,6 @@
     "benchmark": 12
   },
   "events": [
-    {
-      "eventId": "67cfc5b1185c6e69926e83d2eb7aa978",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Terminal-Bench 4.0 官方数据更新",
-      "summary": "Terminal-Bench 4.0 官方数据发生变化；共 20 个模型 · 当前前列：GPT-6 Astra (xhigh)（59.6%）、GPT-6 Astra (max)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（55.1%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-      "observedAt": "2026-09-18T14:57:57Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
-      "benchmarkId": "aa_terminal_bench_v4_0",
-      "benchmarkTitle": "Terminal-Bench 4.0",
-      "release": "page_jsonld",
-      "contentHash": "d0b34812d133f9e8b97972fb7617e64461ebf0d12a7c9526a25c853eef3b2f5b",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "GPT-6 Astra (xhigh)（59.6%）",
-        "GPT-6 Astra (max)（59.1%）",
-        "Claude Fable 5.1 (xhigh with fallback)（55.1%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-        "contentHash": "39a3336113d8dc79af67f643ed49aad607d467fb3e7f09731e9f40ae3df64cc8"
-      }
-    },
     {
       "eventId": "69746bc164532ee20e35fa7927b83338",
       "family": "benchmark",
@@ -182,11 +143,11 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "39a3336113d8dc79af67f643ed49aad607d467fb3e7f09731e9f40ae3df64cc8"
+        "contentHash": "64e87389715e636c6344de44d248c624844438621c952a6d0a697913c79d77ca"
       }
     },
     {
-      "eventId": "003b89c8c09d48cdfb9b7ccfe666d1f9",
+      "eventId": "67cfc5b1185c6e69926e83d2eb7aa978",
       "family": "benchmark",
       "eventType": "benchmark_updated",
       "eventClass": "benchmark",
@@ -195,8 +156,8 @@
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "Humanity's Last Exam 官方数据更新",
-      "summary": "Humanity's Last Exam 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（58.7%）、Claude Fable 5.1 (high with fallback)（55.9%）。",
+      "title": "Terminal-Bench 4.0 官方数据更新",
+      "summary": "Terminal-Bench 4.0 官方数据发生变化；共 20 个模型 · 当前前列：GPT-6 Astra (xhigh)（59.6%）、GPT-6 Astra (max)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（55.1%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -204,24 +165,24 @@
       "sourceType": null,
       "sourceOwner": null,
       "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-      "observedAt": "2026-09-18T20:42:23Z",
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+      "observedAt": "2026-09-18T14:57:57Z",
       "publishedAt": null,
-      "source": "Artificial Analysis Humanity's Last Exam official public Dataset page",
-      "benchmarkId": "aa_humanitys_last_exam",
-      "benchmarkTitle": "Humanity's Last Exam",
+      "source": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
+      "benchmarkId": "aa_terminal_bench_v4_0",
+      "benchmarkTitle": "Terminal-Bench 4.0",
       "release": "page_jsonld",
-      "contentHash": "cd88ee6b5d944af24bc03194c463037d03f8bfd82bd51c54213126778a4dbccd",
+      "contentHash": "d0b34812d133f9e8b97972fb7617e64461ebf0d12a7c9526a25c853eef3b2f5b",
       "unit": "ratio",
       "modelCount": 20,
       "topModels": [
-        "Claude Fable 5.1 (max with fallback)（59.1%）",
-        "Claude Fable 5.1 (xhigh with fallback)（58.7%）",
-        "Claude Fable 5.1 (high with fallback)（55.9%）"
+        "GPT-6 Astra (xhigh)（59.6%）",
+        "GPT-6 Astra (max)（59.1%）",
+        "Claude Fable 5.1 (xhigh with fallback)（55.1%）"
       ],
       "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "39a3336113d8dc79af67f643ed49aad607d467fb3e7f09731e9f40ae3df64cc8"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+        "contentHash": "64e87389715e636c6344de44d248c624844438621c952a6d0a697913c79d77ca"
       }
     },
     {
@@ -260,11 +221,11 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "39a3336113d8dc79af67f643ed49aad607d467fb3e7f09731e9f40ae3df64cc8"
+        "contentHash": "64e87389715e636c6344de44d248c624844438621c952a6d0a697913c79d77ca"
       }
     },
     {
-      "eventId": "dc20ee1a608920992b40cf8fd6c88477",
+      "eventId": "003b89c8c09d48cdfb9b7ccfe666d1f9",
       "family": "benchmark",
       "eventType": "benchmark_updated",
       "eventClass": "benchmark",
@@ -273,8 +234,8 @@
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "AA LCR 官方数据更新",
-      "summary": "AA LCR 官方数据发生变化；共 20 个模型 · 当前前列：Kimi K3 (max)（88.7%）、Claude Fable 5.1 (max with fallback)（85.3%）、Claude Fable 5.1 (medium with fallback)（84.7%）。",
+      "title": "Humanity's Last Exam 官方数据更新",
+      "summary": "Humanity's Last Exam 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（58.7%）、Claude Fable 5.1 (high with fallback)（55.9%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -282,24 +243,24 @@
       "sourceType": null,
       "sourceOwner": null,
       "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
       "observedAt": "2026-09-18T20:42:23Z",
       "publishedAt": null,
-      "source": "Artificial Analysis AA LCR official public Dataset page",
-      "benchmarkId": "aa_lcr",
-      "benchmarkTitle": "AA LCR",
+      "source": "Artificial Analysis Humanity's Last Exam official public Dataset page",
+      "benchmarkId": "aa_humanitys_last_exam",
+      "benchmarkTitle": "Humanity's Last Exam",
       "release": "page_jsonld",
-      "contentHash": "e500c3112b9afefb7f28b538f05af6e15ac129ff33987a3ff09f2236ad9d03b0",
+      "contentHash": "cd88ee6b5d944af24bc03194c463037d03f8bfd82bd51c54213126778a4dbccd",
       "unit": "ratio",
       "modelCount": 20,
       "topModels": [
-        "Kimi K3 (max)（88.7%）",
-        "Claude Fable 5.1 (max with fallback)（85.3%）",
-        "Claude Fable 5.1 (medium with fallback)（84.7%）"
+        "Claude Fable 5.1 (max with fallback)（59.1%）",
+        "Claude Fable 5.1 (xhigh with fallback)（58.7%）",
+        "Claude Fable 5.1 (high with fallback)（55.9%）"
       ],
       "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "39a3336113d8dc79af67f643ed49aad607d467fb3e7f09731e9f40ae3df64cc8"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "contentHash": "64e87389715e636c6344de44d248c624844438621c952a6d0a697913c79d77ca"
       }
     },
     {
@@ -338,7 +299,46 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "39a3336113d8dc79af67f643ed49aad607d467fb3e7f09731e9f40ae3df64cc8"
+        "contentHash": "64e87389715e636c6344de44d248c624844438621c952a6d0a697913c79d77ca"
+      }
+    },
+    {
+      "eventId": "dc20ee1a608920992b40cf8fd6c88477",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "AA LCR 官方数据更新",
+      "summary": "AA LCR 官方数据发生变化；共 20 个模型 · 当前前列：Kimi K3 (max)（88.7%）、Claude Fable 5.1 (max with fallback)（85.3%）、Claude Fable 5.1 (medium with fallback)（84.7%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "observedAt": "2026-09-18T20:42:23Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis AA LCR official public Dataset page",
+      "benchmarkId": "aa_lcr",
+      "benchmarkTitle": "AA LCR",
+      "release": "page_jsonld",
+      "contentHash": "e500c3112b9afefb7f28b538f05af6e15ac129ff33987a3ff09f2236ad9d03b0",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "Kimi K3 (max)（88.7%）",
+        "Claude Fable 5.1 (max with fallback)（85.3%）",
+        "Claude Fable 5.1 (medium with fallback)（84.7%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+        "contentHash": "64e87389715e636c6344de44d248c624844438621c952a6d0a697913c79d77ca"
       }
     },
     {
@@ -377,7 +377,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "39a3336113d8dc79af67f643ed49aad607d467fb3e7f09731e9f40ae3df64cc8"
+        "contentHash": "64e87389715e636c6344de44d248c624844438621c952a6d0a697913c79d77ca"
       }
     },
     {
@@ -416,46 +416,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "39a3336113d8dc79af67f643ed49aad607d467fb3e7f09731e9f40ae3df64cc8"
-      }
-    },
-    {
-      "eventId": "b61c3df424f537244322c3ac09126d7a",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "IFBench 官方数据更新",
-      "summary": "IFBench 官方数据发生变化；共 12 个模型 · 当前前列：Grok 4.3 (medium)（83.3%）、Grok 4.20 0309（82.9%）、MiniMax-M3（82.9%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/ifbench",
-      "observedAt": "2026-09-18T20:42:23Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis IFBench official public Dataset page",
-      "benchmarkId": "aa_ifbench",
-      "benchmarkTitle": "IFBench",
-      "release": "page_jsonld",
-      "contentHash": "2c6c248a840c7e6a5d74c84f698cc8cd3cc33c1bb2498d669fe0f985a2d51142",
-      "unit": "ratio",
-      "modelCount": 12,
-      "topModels": [
-        "Grok 4.3 (medium)（83.3%）",
-        "Grok 4.20 0309（82.9%）",
-        "MiniMax-M3（82.9%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "39a3336113d8dc79af67f643ed49aad607d467fb3e7f09731e9f40ae3df64cc8"
+        "contentHash": "64e87389715e636c6344de44d248c624844438621c952a6d0a697913c79d77ca"
       }
     },
     {
@@ -494,7 +455,46 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
-        "contentHash": "39a3336113d8dc79af67f643ed49aad607d467fb3e7f09731e9f40ae3df64cc8"
+        "contentHash": "64e87389715e636c6344de44d248c624844438621c952a6d0a697913c79d77ca"
+      }
+    },
+    {
+      "eventId": "b61c3df424f537244322c3ac09126d7a",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "IFBench 官方数据更新",
+      "summary": "IFBench 官方数据发生变化；共 12 个模型 · 当前前列：Grok 4.3 (medium)（83.3%）、Grok 4.20 0309（82.9%）、MiniMax-M3（82.9%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/ifbench",
+      "observedAt": "2026-09-18T20:42:23Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis IFBench official public Dataset page",
+      "benchmarkId": "aa_ifbench",
+      "benchmarkTitle": "IFBench",
+      "release": "page_jsonld",
+      "contentHash": "2c6c248a840c7e6a5d74c84f698cc8cd3cc33c1bb2498d669fe0f985a2d51142",
+      "unit": "ratio",
+      "modelCount": 12,
+      "topModels": [
+        "Grok 4.3 (medium)（83.3%）",
+        "Grok 4.20 0309（82.9%）",
+        "MiniMax-M3（82.9%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+        "contentHash": "64e87389715e636c6344de44d248c624844438621c952a6d0a697913c79d77ca"
       }
     },
     {
@@ -533,7 +533,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "39a3336113d8dc79af67f643ed49aad607d467fb3e7f09731e9f40ae3df64cc8"
+        "contentHash": "64e87389715e636c6344de44d248c624844438621c952a6d0a697913c79d77ca"
       }
     },
     {
@@ -569,13 +569,13 @@
       "modelIdentity": "aa_gdpval_elo:GPT-5.6 Sol (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "39a3336113d8dc79af67f643ed49aad607d467fb3e7f09731e9f40ae3df64cc8"
+        "contentHash": "64e87389715e636c6344de44d248c624844438621c952a6d0a697913c79d77ca"
       }
     }
   ],
   "eventCount": 12,
   "provenance": {
-    "workflowRunId": "35392886453",
-    "mainCommit": "597d294d2ccd6597136212ef78ac6c3978107704"
+    "workflowRunId": "35403166471",
+    "mainCommit": "edb0032f9e677af83be7d69ab125c1c4a48862c0"
   }
 }
