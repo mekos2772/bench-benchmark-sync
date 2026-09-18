@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-09-18T14:57:57Z",
-  "windowStart": "2026-09-17T14:57:57Z",
+  "generatedAt": "2026-09-18T18:01:39Z",
+  "windowStart": "2026-09-17T18:01:39Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -52,49 +52,49 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-17T23:40:14Z",
-          "contentHash": "e172888b1eda693f593683ff0d85496f4fca972adae4905565ac31df37a9b015",
+          "contentHash": "d9ada276574d9d10d12ef789f409198d6da12aa123b8b11e54305dca7d559009",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-17T23:40:14Z",
-          "contentHash": "e172888b1eda693f593683ff0d85496f4fca972adae4905565ac31df37a9b015",
+          "contentHash": "d9ada276574d9d10d12ef789f409198d6da12aa123b8b11e54305dca7d559009",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-17T23:40:14Z",
-          "contentHash": "e172888b1eda693f593683ff0d85496f4fca972adae4905565ac31df37a9b015",
+          "contentHash": "d9ada276574d9d10d12ef789f409198d6da12aa123b8b11e54305dca7d559009",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-17T23:40:14Z",
-          "contentHash": "e172888b1eda693f593683ff0d85496f4fca972adae4905565ac31df37a9b015",
+          "contentHash": "d9ada276574d9d10d12ef789f409198d6da12aa123b8b11e54305dca7d559009",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-17T23:40:14Z",
-          "contentHash": "e172888b1eda693f593683ff0d85496f4fca972adae4905565ac31df37a9b015",
+          "contentHash": "d9ada276574d9d10d12ef789f409198d6da12aa123b8b11e54305dca7d559009",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-17T23:40:14Z",
-          "contentHash": "e172888b1eda693f593683ff0d85496f4fca972adae4905565ac31df37a9b015",
+          "contentHash": "d9ada276574d9d10d12ef789f409198d6da12aa123b8b11e54305dca7d559009",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
           "observedAt": "2026-09-17T23:40:14Z",
-          "contentHash": "e172888b1eda693f593683ff0d85496f4fca972adae4905565ac31df37a9b015",
+          "contentHash": "d9ada276574d9d10d12ef789f409198d6da12aa123b8b11e54305dca7d559009",
           "sourceType": "official_benchmark"
         }
       ]
@@ -108,7 +108,7 @@
   },
   "events": [
     {
-      "eventId": "003b89c8c09d48cdfb9b7ccfe666d1f9",
+      "eventId": "69746bc164532ee20e35fa7927b83338",
       "family": "benchmark",
       "eventType": "benchmark_updated",
       "eventClass": "benchmark",
@@ -117,8 +117,8 @@
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "Humanity's Last Exam 官方数据更新",
-      "summary": "Humanity's Last Exam 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（58.7%）、Claude Fable 5.1 (high with fallback)（55.9%）。",
+      "title": "Artificial Analysis Intelligence Index v4.3 官方数据更新",
+      "summary": "Artificial Analysis Intelligence Index v4.3 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（53.37）、Claude Fable 5.1 (xhigh with fallback)（53.18）、GPT-6 Astra (max)（52.81）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -126,24 +126,24 @@
       "sourceType": null,
       "sourceOwner": null,
       "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
       "observedAt": "2026-09-17T18:35:05Z",
       "publishedAt": null,
-      "source": "Artificial Analysis Humanity's Last Exam official public Dataset page",
-      "benchmarkId": "aa_humanitys_last_exam",
-      "benchmarkTitle": "Humanity's Last Exam",
+      "source": "Artificial Analysis Intelligence Index official public Dataset page",
+      "benchmarkId": "aa_intelligence_index_v4_3",
+      "benchmarkTitle": "Artificial Analysis Intelligence Index v4.3",
       "release": "page_jsonld",
-      "contentHash": "714cc95b3a1e4190c4d14fb1cb7d1fc07c1872192af732d52da750f4c7ff43cc",
-      "unit": "ratio",
+      "contentHash": "7590b63acc54c1257e153d0498ec71a4f38bf1d492293c561631b1d7693dd400",
+      "unit": "score",
       "modelCount": 20,
       "topModels": [
-        "Claude Fable 5.1 (max with fallback)（59.1%）",
-        "Claude Fable 5.1 (xhigh with fallback)（58.7%）",
-        "Claude Fable 5.1 (high with fallback)（55.9%）"
+        "Claude Fable 5.1 (max with fallback)（53.37）",
+        "Claude Fable 5.1 (xhigh with fallback)（53.18）",
+        "GPT-6 Astra (max)（52.81）"
       ],
       "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "99154a6c6d57f2040dcabc3bd322e8ae4b6a3c455d8f4c567d49bc88f7819137"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+        "contentHash": "554a1a086113df0ba0fd96e620133ebbe4e6f825ce9fe542f7b0e17acb83176d"
       }
     },
     {
@@ -182,11 +182,11 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "99154a6c6d57f2040dcabc3bd322e8ae4b6a3c455d8f4c567d49bc88f7819137"
+        "contentHash": "554a1a086113df0ba0fd96e620133ebbe4e6f825ce9fe542f7b0e17acb83176d"
       }
     },
     {
-      "eventId": "69746bc164532ee20e35fa7927b83338",
+      "eventId": "003b89c8c09d48cdfb9b7ccfe666d1f9",
       "family": "benchmark",
       "eventType": "benchmark_updated",
       "eventClass": "benchmark",
@@ -195,8 +195,8 @@
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "Artificial Analysis Intelligence Index v4.3 官方数据更新",
-      "summary": "Artificial Analysis Intelligence Index v4.3 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（53.37）、Claude Fable 5.1 (xhigh with fallback)（53.18）、GPT-6 Astra (max)（52.81）。",
+      "title": "Humanity's Last Exam 官方数据更新",
+      "summary": "Humanity's Last Exam 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（58.7%）、Claude Fable 5.1 (high with fallback)（55.9%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -204,102 +204,24 @@
       "sourceType": null,
       "sourceOwner": null,
       "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
       "observedAt": "2026-09-17T18:35:05Z",
       "publishedAt": null,
-      "source": "Artificial Analysis Intelligence Index official public Dataset page",
-      "benchmarkId": "aa_intelligence_index_v4_3",
-      "benchmarkTitle": "Artificial Analysis Intelligence Index v4.3",
+      "source": "Artificial Analysis Humanity's Last Exam official public Dataset page",
+      "benchmarkId": "aa_humanitys_last_exam",
+      "benchmarkTitle": "Humanity's Last Exam",
       "release": "page_jsonld",
-      "contentHash": "7590b63acc54c1257e153d0498ec71a4f38bf1d492293c561631b1d7693dd400",
-      "unit": "score",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Fable 5.1 (max with fallback)（53.37）",
-        "Claude Fable 5.1 (xhigh with fallback)（53.18）",
-        "GPT-6 Astra (max)（52.81）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "99154a6c6d57f2040dcabc3bd322e8ae4b6a3c455d8f4c567d49bc88f7819137"
-      }
-    },
-    {
-      "eventId": "67cfc5b1185c6e69926e83d2eb7aa978",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Terminal-Bench 4.0 官方数据更新",
-      "summary": "Terminal-Bench 4.0 官方数据发生变化；共 20 个模型 · 当前前列：GPT-6 Astra (xhigh)（59.6%）、GPT-6 Astra (max)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（55.1%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-      "observedAt": "2026-09-18T14:57:57Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
-      "benchmarkId": "aa_terminal_bench_v4_0",
-      "benchmarkTitle": "Terminal-Bench 4.0",
-      "release": "page_jsonld",
-      "contentHash": "d0b34812d133f9e8b97972fb7617e64461ebf0d12a7c9526a25c853eef3b2f5b",
+      "contentHash": "714cc95b3a1e4190c4d14fb1cb7d1fc07c1872192af732d52da750f4c7ff43cc",
       "unit": "ratio",
       "modelCount": 20,
       "topModels": [
-        "GPT-6 Astra (xhigh)（59.6%）",
-        "GPT-6 Astra (max)（59.1%）",
-        "Claude Fable 5.1 (xhigh with fallback)（55.1%）"
+        "Claude Fable 5.1 (max with fallback)（59.1%）",
+        "Claude Fable 5.1 (xhigh with fallback)（58.7%）",
+        "Claude Fable 5.1 (high with fallback)（55.9%）"
       ],
       "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-        "contentHash": "99154a6c6d57f2040dcabc3bd322e8ae4b6a3c455d8f4c567d49bc88f7819137"
-      }
-    },
-    {
-      "eventId": "d7e6288b80d905660a213aca60a84ca8",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "SciCode 官方数据更新",
-      "summary": "SciCode 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（63.1%）、Claude Fable 5 (with fallback)（61.0%）、Claude Fable 5.1 (xhigh with fallback)（60.9%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/scicode",
-      "observedAt": "2026-09-17T18:35:05Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis SciCode official public Dataset page",
-      "benchmarkId": "aa_scicode",
-      "benchmarkTitle": "SciCode",
-      "release": "page_jsonld",
-      "contentHash": "3c20e0937e1547d40fbe77e5c8a1b538aa1e699eeee226002e256ec428101d04",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Fable 5.1 (max with fallback)（63.1%）",
-        "Claude Fable 5 (with fallback)（61.0%）",
-        "Claude Fable 5.1 (xhigh with fallback)（60.9%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "99154a6c6d57f2040dcabc3bd322e8ae4b6a3c455d8f4c567d49bc88f7819137"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "contentHash": "554a1a086113df0ba0fd96e620133ebbe4e6f825ce9fe542f7b0e17acb83176d"
       }
     },
     {
@@ -338,11 +260,11 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "99154a6c6d57f2040dcabc3bd322e8ae4b6a3c455d8f4c567d49bc88f7819137"
+        "contentHash": "554a1a086113df0ba0fd96e620133ebbe4e6f825ce9fe542f7b0e17acb83176d"
       }
     },
     {
-      "eventId": "17900dff48b32f6df584fcfd74c3763e",
+      "eventId": "67cfc5b1185c6e69926e83d2eb7aa978",
       "family": "benchmark",
       "eventType": "benchmark_updated",
       "eventClass": "benchmark",
@@ -351,8 +273,8 @@
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "CritPt 官方数据更新",
-      "summary": "CritPt 官方数据发生变化；共 20 个模型 · 当前前列：GPT-5.6 Sol (max)（32.3%）、GPT-6 Astra (max)（31.7%）、GPT-6 Astra (xhigh)（31.4%）。",
+      "title": "Terminal-Bench 4.0 官方数据更新",
+      "summary": "Terminal-Bench 4.0 官方数据发生变化；共 20 个模型 · 当前前列：GPT-6 Astra (xhigh)（59.6%）、GPT-6 Astra (max)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（55.1%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -360,28 +282,28 @@
       "sourceType": null,
       "sourceOwner": null,
       "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/critpt",
-      "observedAt": "2026-09-17T18:35:05Z",
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+      "observedAt": "2026-09-18T14:57:57Z",
       "publishedAt": null,
-      "source": "Artificial Analysis CritPt official public Dataset page",
-      "benchmarkId": "aa_critpt",
-      "benchmarkTitle": "CritPt",
+      "source": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
+      "benchmarkId": "aa_terminal_bench_v4_0",
+      "benchmarkTitle": "Terminal-Bench 4.0",
       "release": "page_jsonld",
-      "contentHash": "53c5194b6b7f79a49fa28fbb378f39f6ed8aa6c9c9b3dd943d3435bf91c3e833",
+      "contentHash": "d0b34812d133f9e8b97972fb7617e64461ebf0d12a7c9526a25c853eef3b2f5b",
       "unit": "ratio",
       "modelCount": 20,
       "topModels": [
-        "GPT-5.6 Sol (max)（32.3%）",
-        "GPT-6 Astra (max)（31.7%）",
-        "GPT-6 Astra (xhigh)（31.4%）"
+        "GPT-6 Astra (xhigh)（59.6%）",
+        "GPT-6 Astra (max)（59.1%）",
+        "Claude Fable 5.1 (xhigh with fallback)（55.1%）"
       ],
       "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "99154a6c6d57f2040dcabc3bd322e8ae4b6a3c455d8f4c567d49bc88f7819137"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+        "contentHash": "554a1a086113df0ba0fd96e620133ebbe4e6f825ce9fe542f7b0e17acb83176d"
       }
     },
     {
-      "eventId": "a10609cf4ff080ee436fef8268386eab",
+      "eventId": "d7e6288b80d905660a213aca60a84ca8",
       "family": "benchmark",
       "eventType": "benchmark_updated",
       "eventClass": "benchmark",
@@ -390,8 +312,8 @@
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "Terminal-Bench Hard 官方数据更新",
-      "summary": "Terminal-Bench Hard 官方数据发生变化；共 12 个模型 · 当前前列：GPT-5.6 Sol (max)（65.9%）、Claude Fable 5 (with fallback)（62.9%）、GPT-5.6 Sol (medium)（62.9%）。",
+      "title": "SciCode 官方数据更新",
+      "summary": "SciCode 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（63.1%）、Claude Fable 5 (with fallback)（61.0%）、Claude Fable 5.1 (xhigh with fallback)（60.9%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -399,24 +321,24 @@
       "sourceType": null,
       "sourceOwner": null,
       "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
+      "url": "https://artificialanalysis.ai/evaluations/scicode",
       "observedAt": "2026-09-17T18:35:05Z",
       "publishedAt": null,
-      "source": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
-      "benchmarkId": "aa_terminalbench_hard",
-      "benchmarkTitle": "Terminal-Bench Hard",
+      "source": "Artificial Analysis SciCode official public Dataset page",
+      "benchmarkId": "aa_scicode",
+      "benchmarkTitle": "SciCode",
       "release": "page_jsonld",
-      "contentHash": "baa2641a7fc1f48ed2d14eb9d0feed03b8380bcb1bd798174d3db97ee15fc7b2",
+      "contentHash": "3c20e0937e1547d40fbe77e5c8a1b538aa1e699eeee226002e256ec428101d04",
       "unit": "ratio",
-      "modelCount": 12,
+      "modelCount": 20,
       "topModels": [
-        "GPT-5.6 Sol (max)（65.9%）",
-        "Claude Fable 5 (with fallback)（62.9%）",
-        "GPT-5.6 Sol (medium)（62.9%）"
+        "Claude Fable 5.1 (max with fallback)（63.1%）",
+        "Claude Fable 5 (with fallback)（61.0%）",
+        "Claude Fable 5.1 (xhigh with fallback)（60.9%）"
       ],
       "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "99154a6c6d57f2040dcabc3bd322e8ae4b6a3c455d8f4c567d49bc88f7819137"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "contentHash": "554a1a086113df0ba0fd96e620133ebbe4e6f825ce9fe542f7b0e17acb83176d"
       }
     },
     {
@@ -455,7 +377,85 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
-        "contentHash": "99154a6c6d57f2040dcabc3bd322e8ae4b6a3c455d8f4c567d49bc88f7819137"
+        "contentHash": "554a1a086113df0ba0fd96e620133ebbe4e6f825ce9fe542f7b0e17acb83176d"
+      }
+    },
+    {
+      "eventId": "a10609cf4ff080ee436fef8268386eab",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Terminal-Bench Hard 官方数据更新",
+      "summary": "Terminal-Bench Hard 官方数据发生变化；共 12 个模型 · 当前前列：GPT-5.6 Sol (max)（65.9%）、Claude Fable 5 (with fallback)（62.9%）、GPT-5.6 Sol (medium)（62.9%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
+      "observedAt": "2026-09-17T18:35:05Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
+      "benchmarkId": "aa_terminalbench_hard",
+      "benchmarkTitle": "Terminal-Bench Hard",
+      "release": "page_jsonld",
+      "contentHash": "baa2641a7fc1f48ed2d14eb9d0feed03b8380bcb1bd798174d3db97ee15fc7b2",
+      "unit": "ratio",
+      "modelCount": 12,
+      "topModels": [
+        "GPT-5.6 Sol (max)（65.9%）",
+        "Claude Fable 5 (with fallback)（62.9%）",
+        "GPT-5.6 Sol (medium)（62.9%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
+        "contentHash": "554a1a086113df0ba0fd96e620133ebbe4e6f825ce9fe542f7b0e17acb83176d"
+      }
+    },
+    {
+      "eventId": "17900dff48b32f6df584fcfd74c3763e",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "CritPt 官方数据更新",
+      "summary": "CritPt 官方数据发生变化；共 20 个模型 · 当前前列：GPT-5.6 Sol (max)（32.3%）、GPT-6 Astra (max)（31.7%）、GPT-6 Astra (xhigh)（31.4%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/critpt",
+      "observedAt": "2026-09-17T18:35:05Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis CritPt official public Dataset page",
+      "benchmarkId": "aa_critpt",
+      "benchmarkTitle": "CritPt",
+      "release": "page_jsonld",
+      "contentHash": "53c5194b6b7f79a49fa28fbb378f39f6ed8aa6c9c9b3dd943d3435bf91c3e833",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "GPT-5.6 Sol (max)（32.3%）",
+        "GPT-6 Astra (max)（31.7%）",
+        "GPT-6 Astra (xhigh)（31.4%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
+        "contentHash": "554a1a086113df0ba0fd96e620133ebbe4e6f825ce9fe542f7b0e17acb83176d"
       }
     },
     {
@@ -494,7 +494,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "99154a6c6d57f2040dcabc3bd322e8ae4b6a3c455d8f4c567d49bc88f7819137"
+        "contentHash": "554a1a086113df0ba0fd96e620133ebbe4e6f825ce9fe542f7b0e17acb83176d"
       }
     },
     {
@@ -533,7 +533,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "99154a6c6d57f2040dcabc3bd322e8ae4b6a3c455d8f4c567d49bc88f7819137"
+        "contentHash": "554a1a086113df0ba0fd96e620133ebbe4e6f825ce9fe542f7b0e17acb83176d"
       }
     },
     {
@@ -569,13 +569,13 @@
       "modelIdentity": "aa_gdpval_elo:GPT-5.6 Sol (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "99154a6c6d57f2040dcabc3bd322e8ae4b6a3c455d8f4c567d49bc88f7819137"
+        "contentHash": "554a1a086113df0ba0fd96e620133ebbe4e6f825ce9fe542f7b0e17acb83176d"
       }
     }
   ],
   "eventCount": 12,
   "provenance": {
-    "workflowRunId": "35359479272",
-    "mainCommit": "001c0589f0631fb0b0f449dc8e16a349f3f8aba8"
+    "workflowRunId": "35377738537",
+    "mainCommit": "3d4717ef0e5d8dadd493bc8d8fe837e92ae551af"
   }
 }
