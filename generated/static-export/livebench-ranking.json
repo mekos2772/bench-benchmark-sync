@@ -2,9 +2,9 @@
   "schemaVersion": 3,
   "dataSource": "benchmark-sync-static",
   "exporterVersion": "0.4.0",
-  "workflowRunId": "34947973170",
-  "mainCommit": "6417f1f56a3ad49398eddf74b722703d87cfaacf",
-  "generatedAt": "2026-09-15T08:38:44Z",
+  "workflowRunId": "35324558713",
+  "mainCommit": "5fe6d248905128dad14b60fba738c211f397f4c0",
+  "generatedAt": "2026-09-18T08:29:55Z",
   "families": [
     {
       "familyId": "livebench",
@@ -15,49 +15,49 @@
           "id": "livebench_overall",
           "title": "LiveBench Overall",
           "isOverall": true,
-          "modelCount": 57
+          "modelCount": 58
         },
         {
           "id": "livebench_coding",
           "title": "LiveBench Coding",
           "isOverall": false,
-          "modelCount": 57
+          "modelCount": 58
         },
         {
           "id": "livebench_reasoning",
           "title": "LiveBench Reasoning",
           "isOverall": false,
-          "modelCount": 57
+          "modelCount": 58
         },
         {
           "id": "livebench_math",
           "title": "LiveBench Math",
           "isOverall": false,
-          "modelCount": 57
+          "modelCount": 58
         },
         {
           "id": "livebench_data_analysis",
           "title": "LiveBench Data Analysis",
           "isOverall": false,
-          "modelCount": 57
+          "modelCount": 58
         },
         {
           "id": "livebench_language",
           "title": "LiveBench Language",
           "isOverall": false,
-          "modelCount": 57
+          "modelCount": 58
         },
         {
           "id": "livebench_instruction_following",
           "title": "LiveBench Instruction Following",
           "isOverall": false,
-          "modelCount": 57
+          "modelCount": 58
         },
         {
           "id": "livebench_agentic_coding",
           "title": "LiveBench Agentic Coding",
           "isOverall": false,
-          "modelCount": 57
+          "modelCount": 58
         }
       ]
     },
@@ -142,7 +142,7 @@
           "id": "aa_mmmu_pro",
           "title": "MMMU-Pro",
           "isOverall": false,
-          "modelCount": 19
+          "modelCount": 20
         },
         {
           "id": "aa_openness_index",
@@ -184,9 +184,9 @@
       "metric": "global_average",
       "unit": "score",
       "comparisonKey": "live_bench",
-      "snapshotId": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
-      "contentHash": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
-      "generatedAt": "2026-09-15T08:38:15Z",
+      "snapshotId": "20b5e4e5375f9cf34329c8f4efe5efdaec26065f3ff01f61b2122007abaa4022",
+      "contentHash": "20b5e4e5375f9cf34329c8f4efe5efdaec26065f3ff01f61b2122007abaa4022",
+      "generatedAt": "2026-09-18T08:29:36Z",
       "taskCount": 23,
       "source": {
         "name": "LiveBench dated official leaderboard CSV",
@@ -369,6 +369,13 @@
           "glm-5.3",
           "glm-5.3",
           76.14,
+          null,
+          null
+        ],
+        [
+          "union-alpha",
+          "union-alpha",
+          76.13,
           null,
           null
         ],
@@ -609,9 +616,9 @@
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "coding",
-      "snapshotId": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
-      "contentHash": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
-      "generatedAt": "2026-09-15T08:38:05Z",
+      "snapshotId": "20b5e4e5375f9cf34329c8f4efe5efdaec26065f3ff01f61b2122007abaa4022",
+      "contentHash": "20b5e4e5375f9cf34329c8f4efe5efdaec26065f3ff01f61b2122007abaa4022",
+      "generatedAt": "2026-09-18T08:29:20Z",
       "taskCount": 2,
       "source": {
         "name": "LiveBench Coding dated official leaderboard CSV",
@@ -667,6 +674,13 @@
         [
           "gpt-5.5-xhigh",
           "gpt-5.5-xhigh",
+          82.15,
+          null,
+          null
+        ],
+        [
+          "union-alpha",
+          "union-alpha",
           82.15,
           null,
           null
@@ -1034,9 +1048,9 @@
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "reasoning",
-      "snapshotId": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
-      "contentHash": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
-      "generatedAt": "2026-09-15T08:38:18Z",
+      "snapshotId": "20b5e4e5375f9cf34329c8f4efe5efdaec26065f3ff01f61b2122007abaa4022",
+      "contentHash": "20b5e4e5375f9cf34329c8f4efe5efdaec26065f3ff01f61b2122007abaa4022",
+      "generatedAt": "2026-09-18T08:29:36Z",
       "taskCount": 4,
       "source": {
         "name": "LiveBench Reasoning dated official leaderboard CSV",
@@ -1328,6 +1342,13 @@
           null
         ],
         [
+          "union-alpha",
+          "union-alpha",
+          80.75,
+          null,
+          null
+        ],
+        [
           "claude-opus-4-5-20251101-thinking-64k-high-effort",
           "claude-opus-4-5-20251101-thinking-64k-high-effort",
           80.09,
@@ -1459,9 +1480,9 @@
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "math",
-      "snapshotId": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
-      "contentHash": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
-      "generatedAt": "2026-09-15T08:38:17Z",
+      "snapshotId": "20b5e4e5375f9cf34329c8f4efe5efdaec26065f3ff01f61b2122007abaa4022",
+      "contentHash": "20b5e4e5375f9cf34329c8f4efe5efdaec26065f3ff01f61b2122007abaa4022",
+      "generatedAt": "2026-09-18T08:29:33Z",
       "taskCount": 4,
       "source": {
         "name": "LiveBench Mathematics dated official leaderboard CSV",
@@ -1518,6 +1539,13 @@
           "claude-opus-5-max-effort",
           "claude-opus-5-max-effort",
           95.73,
+          null,
+          null
+        ],
+        [
+          "union-alpha",
+          "union-alpha",
+          95.29,
           null,
           null
         ],
@@ -1884,9 +1912,9 @@
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "data_analysis",
-      "snapshotId": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
-      "contentHash": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
-      "generatedAt": "2026-09-15T08:38:10Z",
+      "snapshotId": "20b5e4e5375f9cf34329c8f4efe5efdaec26065f3ff01f61b2122007abaa4022",
+      "contentHash": "20b5e4e5375f9cf34329c8f4efe5efdaec26065f3ff01f61b2122007abaa4022",
+      "generatedAt": "2026-09-18T08:29:25Z",
       "taskCount": 3,
       "source": {
         "name": "LiveBench Data Analysis dated official leaderboard CSV",
@@ -2090,6 +2118,13 @@
           "ox-alpha-max",
           "ox-alpha-max",
           75.77,
+          null,
+          null
+        ],
+        [
+          "union-alpha",
+          "union-alpha",
+          74.6,
           null,
           null
         ],
@@ -2309,9 +2344,9 @@
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "language",
-      "snapshotId": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
-      "contentHash": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
-      "generatedAt": "2026-09-15T08:38:16Z",
+      "snapshotId": "20b5e4e5375f9cf34329c8f4efe5efdaec26065f3ff01f61b2122007abaa4022",
+      "contentHash": "20b5e4e5375f9cf34329c8f4efe5efdaec26065f3ff01f61b2122007abaa4022",
+      "generatedAt": "2026-09-18T08:29:32Z",
       "taskCount": 3,
       "source": {
         "name": "LiveBench Language dated official leaderboard CSV",
@@ -2368,6 +2403,13 @@
           "gpt-5.5-xhigh",
           "gpt-5.5-xhigh",
           87.36,
+          null,
+          null
+        ],
+        [
+          "union-alpha",
+          "union-alpha",
+          85.89,
           null,
           null
         ],
@@ -2734,9 +2776,9 @@
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "instruction_following",
-      "snapshotId": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
-      "contentHash": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
-      "generatedAt": "2026-09-15T08:38:13Z",
+      "snapshotId": "20b5e4e5375f9cf34329c8f4efe5efdaec26065f3ff01f61b2122007abaa4022",
+      "contentHash": "20b5e4e5375f9cf34329c8f4efe5efdaec26065f3ff01f61b2122007abaa4022",
+      "generatedAt": "2026-09-18T08:29:26Z",
       "taskCount": 4,
       "source": {
         "name": "LiveBench IF dated official leaderboard CSV",
@@ -3112,6 +3154,13 @@
           null
         ],
         [
+          "union-alpha",
+          "union-alpha",
+          59.53,
+          null,
+          null
+        ],
+        [
           "qwen3.6-plus",
           "qwen3.6-plus",
           58.34,
@@ -3159,9 +3208,9 @@
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "agentic_coding",
-      "snapshotId": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
-      "contentHash": "324cded916ad89aebcf5fac5089e8c93448a7ba8f3e79e41b4128c1806d65f62",
-      "generatedAt": "2026-09-15T08:38:01Z",
+      "snapshotId": "20b5e4e5375f9cf34329c8f4efe5efdaec26065f3ff01f61b2122007abaa4022",
+      "contentHash": "20b5e4e5375f9cf34329c8f4efe5efdaec26065f3ff01f61b2122007abaa4022",
+      "generatedAt": "2026-09-18T08:29:22Z",
       "taskCount": 3,
       "source": {
         "name": "LiveBench Agentic Coding dated official leaderboard CSV",
@@ -3344,6 +3393,13 @@
           "deepseek-v4-pro-0813",
           "deepseek-v4-pro-0813",
           54.95,
+          null,
+          null
+        ],
+        [
+          "union-alpha",
+          "union-alpha",
+          54.7,
           null,
           null
         ],
@@ -3584,9 +3640,9 @@
       "metric": "Artificial Analysis Intelligence Index: Score",
       "unit": "score",
       "comparisonKey": "intelligence_index_v4_3",
-      "snapshotId": "d00d90598288f33948bfd5fa55ed500dbcd23822cfabf859aad3ee035d25e3f3",
-      "contentHash": "d00d90598288f33948bfd5fa55ed500dbcd23822cfabf859aad3ee035d25e3f3",
-      "generatedAt": "2026-09-15T08:37:47Z",
+      "snapshotId": "6f594d7b3597b639201bbc1dcd4b0fde89dff0e5b56b2da68b9239aa72e794e6",
+      "contentHash": "6f594d7b3597b639201bbc1dcd4b0fde89dff0e5b56b2da68b9239aa72e794e6",
+      "generatedAt": "2026-09-18T08:29:05Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Intelligence Index official public Dataset page",
@@ -3675,6 +3731,13 @@
           null
         ],
         [
+          "Qwen3.8 Max (0902)",
+          "Qwen3.8 Max (0902)",
+          45.44,
+          null,
+          null
+        ],
+        [
           "GLM-5.3 (max)",
           "GLM-5.3 (max)",
           44.86,
@@ -3717,13 +3780,6 @@
           null
         ],
         [
-          "Qwen3.8 2.4T A95B",
-          "Qwen3.8 2.4T A95B",
-          40.04,
-          null,
-          null
-        ],
-        [
           "DeepSeek V4.1 Flash (max)",
           "DeepSeek V4.1 Flash (max)",
           39.55,
@@ -3747,17 +3803,17 @@
       "category": "terminal_bench_v4_0",
       "release": "page_jsonld",
       "releaseId": "page_jsonld",
-      "metric": "Terminal-Bench v4.0: Score",
+      "metric": "Terminal-Bench 4.0: Score",
       "unit": "ratio",
       "comparisonKey": "terminal_bench_v4_0",
-      "snapshotId": "6a3b70d8aa7050627f52de22814e5ca491b9de7ba8531dacdaf970ff0b2a7043",
-      "contentHash": "6a3b70d8aa7050627f52de22814e5ca491b9de7ba8531dacdaf970ff0b2a7043",
-      "generatedAt": "2026-09-15T08:38:33Z",
+      "snapshotId": "299eccaf134ad965db9d5e4df7e73301291cc237fe6adc31b05b9f253b4a4bf4",
+      "contentHash": "299eccaf134ad965db9d5e4df7e73301291cc237fe6adc31b05b9f253b4a4bf4",
+      "generatedAt": "2026-09-18T08:29:52Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
         "type": "official_page_endpoint",
-        "url": "https://artificialanalysis.ai/evaluations/terminalbench-v4-0",
+        "url": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
         "evidenceUrl": "https://artificialanalysis.ai/api/v2/openapi",
         "tableUrl": null,
         "categoriesUrl": null
@@ -3841,6 +3897,13 @@
           null
         ],
         [
+          "Qwen3.8 Max (0902)",
+          "Qwen3.8 Max (0902)",
+          0.3889,
+          null,
+          null
+        ],
+        [
           "GPT-5.6 Terra (max)",
           "GPT-5.6 Terra (max)",
           0.3535,
@@ -3895,13 +3958,6 @@
           0.1263,
           null,
           null
-        ],
-        [
-          "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna (max)",
-          0.1162,
-          null,
-          null
         ]
       ]
     },
@@ -3916,9 +3972,9 @@
       "metric": "Humanity's Last Exam: Score",
       "unit": "ratio",
       "comparisonKey": "humanitys_last_exam",
-      "snapshotId": "1c185fb0f437a10c8267ac906a9f7bd27deb6877c36528dd51990c8221b49a08",
-      "contentHash": "1c185fb0f437a10c8267ac906a9f7bd27deb6877c36528dd51990c8221b49a08",
-      "generatedAt": "2026-09-15T08:38:00Z",
+      "snapshotId": "0800d1316a78ae68dee14b1e1fc0b7f94b7f63c5931cbdaac4efee7f12340661",
+      "contentHash": "0800d1316a78ae68dee14b1e1fc0b7f94b7f63c5931cbdaac4efee7f12340661",
+      "generatedAt": "2026-09-18T08:29:18Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Humanity's Last Exam official public Dataset page",
@@ -4021,6 +4077,13 @@
           null
         ],
         [
+          "Qwen3.8 Max (0902)",
+          "Qwen3.8 Max (0902)",
+          0.431,
+          null,
+          null
+        ],
+        [
           "Grok 4.6 (high)",
           "Grok 4.6 (high)",
           0.4291,
@@ -4031,13 +4094,6 @@
           "GPT-5.6 Terra (max)",
           "GPT-5.6 Terra (max)",
           0.4291,
-          null,
-          null
-        ],
-        [
-          "Qwen3.8 2.4T A95B",
-          "Qwen3.8 2.4T A95B",
-          0.4245,
           null,
           null
         ],
@@ -4082,9 +4138,9 @@
       "metric": "GPQA Diamond: Score",
       "unit": "ratio",
       "comparisonKey": "gpqa_diamond",
-      "snapshotId": "a6fb6c5510f322df52412d27538584d8cfcaa765f193be5b7f61916e5c0b21d4",
-      "contentHash": "a6fb6c5510f322df52412d27538584d8cfcaa765f193be5b7f61916e5c0b21d4",
-      "generatedAt": "2026-09-15T08:38:02Z",
+      "snapshotId": "a09a273cf43713772a93e7f430f0809c617e4285a67041d6931089345fe09c6d",
+      "contentHash": "a09a273cf43713772a93e7f430f0809c617e4285a67041d6931089345fe09c6d",
+      "generatedAt": "2026-09-18T08:29:15Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis GPQA Diamond official public Dataset page",
@@ -4180,13 +4236,6 @@
           null
         ],
         [
-          "Qwen3.8 2.4T A95B",
-          "Qwen3.8 2.4T A95B",
-          0.9354,
-          null,
-          null
-        ],
-        [
           "Claude Opus 5 (max)",
           "Claude Opus 5 (max)",
           0.9323,
@@ -4197,6 +4246,13 @@
           "MiniMax-M3",
           "MiniMax-M3",
           0.9293,
+          null,
+          null
+        ],
+        [
+          "Qwen3.8 Max (0902)",
+          "Qwen3.8 Max (0902)",
+          0.9283,
           null,
           null
         ],
@@ -4248,9 +4304,9 @@
       "metric": "SciCode: Score",
       "unit": "ratio",
       "comparisonKey": "scicode",
-      "snapshotId": "8c58095f54c53e1bdea9eec23082605c53c808ec70aa7ea58cabb05ee5a99ef1",
-      "contentHash": "8c58095f54c53e1bdea9eec23082605c53c808ec70aa7ea58cabb05ee5a99ef1",
-      "generatedAt": "2026-09-15T08:38:29Z",
+      "snapshotId": "31c9c5a10856652924fbcf389d567937dc16358c3cd4932f2e7d91afb349be8d",
+      "contentHash": "31c9c5a10856652924fbcf389d567937dc16358c3cd4932f2e7d91afb349be8d",
+      "generatedAt": "2026-09-18T08:29:44Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis SciCode official public Dataset page",
@@ -4374,16 +4430,16 @@
           null
         ],
         [
-          "Qwen3.8 2.4T A95B",
-          "Qwen3.8 2.4T A95B",
-          0.5405,
+          "GPT-5.6 Luna (max)",
+          "GPT-5.6 Luna (max)",
+          0.5359,
           null,
           null
         ],
         [
-          "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna (max)",
-          0.5359,
+          "Qwen3.8 Max (0902)",
+          "Qwen3.8 Max (0902)",
+          0.5208,
           null,
           null
         ],
@@ -4414,9 +4470,9 @@
       "metric": "AA-LCR v1.1",
       "unit": "ratio",
       "comparisonKey": "aa_lcr",
-      "snapshotId": "237d2d9d816a7408b3c5e1d74bfcd4fd0518996009903c446a4410b20422f03b",
-      "contentHash": "237d2d9d816a7408b3c5e1d74bfcd4fd0518996009903c446a4410b20422f03b",
-      "generatedAt": "2026-09-15T08:37:45Z",
+      "snapshotId": "527a537f17158e6f9b70898d19bc19dccb3ee5fdc4ec14a09eb3fd24bce7fcd2",
+      "contentHash": "527a537f17158e6f9b70898d19bc19dccb3ee5fdc4ec14a09eb3fd24bce7fcd2",
+      "generatedAt": "2026-09-18T08:29:06Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis AA LCR official public Dataset page",
@@ -4554,15 +4610,15 @@
           null
         ],
         [
-          "Grok 4.6 (high)",
-          "Grok 4.6 (high)",
+          "Qwen3.8 Max (0902)",
+          "Qwen3.8 Max (0902)",
           0.8033,
           null,
           null
         ],
         [
-          "Qwen3.8 2.4T A95B",
-          "Qwen3.8 2.4T A95B",
+          "Grok 4.6 (high)",
+          "Grok 4.6 (high)",
           0.8033,
           null,
           null
@@ -4580,9 +4636,9 @@
       "metric": "omniscienceIndex",
       "unit": "score",
       "comparisonKey": "aa_omniscience_index",
-      "snapshotId": "74add8f44ae41dc9c3c940f3309bc7af00ae3e5cab51d5f6b8035aab14dc85df",
-      "contentHash": "74add8f44ae41dc9c3c940f3309bc7af00ae3e5cab51d5f6b8035aab14dc85df",
-      "generatedAt": "2026-09-15T08:37:51Z",
+      "snapshotId": "1fac9ceb8e18565f95d9cb19bba542a0984756911867b8848714f69da00d4e80",
+      "contentHash": "1fac9ceb8e18565f95d9cb19bba542a0984756911867b8848714f69da00d4e80",
+      "generatedAt": "2026-09-18T08:29:06Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis AA Omniscience Index official public Dataset page",
@@ -4699,6 +4755,13 @@
           null
         ],
         [
+          "Qwen3.8 Max (0902)",
+          "Qwen3.8 Max (0902)",
+          11.98,
+          null,
+          null
+        ],
+        [
           "GLM-5.3-Flash",
           "GLM-5.3-Flash",
           7.47,
@@ -4709,13 +4772,6 @@
           "Gemini 3.5 Flash-Lite",
           "Gemini 3.5 Flash-Lite",
           5.23,
-          null,
-          null
-        ],
-        [
-          "Qwen3.8 2.4T A95B",
-          "Qwen3.8 2.4T A95B",
-          4.32,
           null,
           null
         ],
@@ -4746,9 +4802,9 @@
       "metric": "CritPt: Score",
       "unit": "ratio",
       "comparisonKey": "critpt",
-      "snapshotId": "fcd91805dcb2e36711d533afc0c974ca61f8af5a0c2b4558e1792a6ebf774ff7",
-      "contentHash": "fcd91805dcb2e36711d533afc0c974ca61f8af5a0c2b4558e1792a6ebf774ff7",
-      "generatedAt": "2026-09-15T08:37:45Z",
+      "snapshotId": "a9753a41b53eceaf0df83f00c0ef09b77c2bcf0ae1b64cb549cb44bc2433eb1a",
+      "contentHash": "a9753a41b53eceaf0df83f00c0ef09b77c2bcf0ae1b64cb549cb44bc2433eb1a",
+      "generatedAt": "2026-09-18T08:29:03Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis CritPt official public Dataset page",
@@ -4865,13 +4921,6 @@
           null
         ],
         [
-          "Qwen3.8 2.4T A95B",
-          "Qwen3.8 2.4T A95B",
-          0.2,
-          null,
-          null
-        ],
-        [
           "GLM-5.3 (max)",
           "GLM-5.3 (max)",
           0.1914,
@@ -4889,6 +4938,13 @@
           "DeepSeek V4 Pro 0813 (max)",
           "DeepSeek V4 Pro 0813 (max)",
           0.18,
+          null,
+          null
+        ],
+        [
+          "Qwen3.8 Max (0902)",
+          "Qwen3.8 Max (0902)",
+          0.1771,
           null,
           null
         ],
@@ -4912,9 +4968,9 @@
       "metric": "gdpvalAaElo",
       "unit": "raw",
       "comparisonKey": "gdpval_aa_elo",
-      "snapshotId": "af2a400d93db2b71a4ed5a79cbb4ddf4be347e9408e1dd562270b39b6b96453f",
-      "contentHash": "af2a400d93db2b71a4ed5a79cbb4ddf4be347e9408e1dd562270b39b6b96453f",
-      "generatedAt": "2026-09-15T08:37:55Z",
+      "snapshotId": "2291df4d6512a8aecd4e3076026ee57c252e180d55d735f3a59f7aa8a96f3cb9",
+      "contentHash": "2291df4d6512a8aecd4e3076026ee57c252e180d55d735f3a59f7aa8a96f3cb9",
+      "generatedAt": "2026-09-18T08:29:14Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis GDPval-AA Elo official public Dataset page",
@@ -4926,13 +4982,6 @@
       },
       "entries": [
         [
-          "Claude Fable 5.1 (max with fallback)",
-          "Claude Fable 5.1 (max with fallback)",
-          1763.64,
-          null,
-          null
-        ],
-        [
           "Claude Fable 5.1 (xhigh with fallback)",
           "Claude Fable 5.1 (xhigh with fallback)",
           1745.29,
@@ -4943,6 +4992,13 @@
           "Claude Opus 5 (max)",
           "Claude Opus 5 (max)",
           1735.09,
+          null,
+          null
+        ],
+        [
+          "Claude Fable 5.1 (max with fallback)",
+          "Claude Fable 5.1 (max with fallback)",
+          1723.58,
           null,
           null
         ],
@@ -4961,6 +5017,13 @@
           null
         ],
         [
+          "Qwen3.8 Max (0902)",
+          "Qwen3.8 Max (0902)",
+          1664.28,
+          null,
+          null
+        ],
+        [
           "Grok 4.6 (xhigh)",
           "Grok 4.6 (xhigh)",
           1663.07,
@@ -4971,13 +5034,6 @@
           "Muse Spark 1.3 (xhigh)",
           "Muse Spark 1.3 (xhigh)",
           1662.34,
-          null,
-          null
-        ],
-        [
-          "GLM-5.3 (max)",
-          "GLM-5.3 (max)",
-          1655.16,
           null,
           null
         ],
@@ -5003,6 +5059,13 @@
           null
         ],
         [
+          "GLM-5.3 (max)",
+          "GLM-5.3 (max)",
+          1633.8,
+          null,
+          null
+        ],
+        [
           "DeepSeek V4.1 Flash (max)",
           "DeepSeek V4.1 Flash (max)",
           1632.06,
@@ -5017,16 +5080,9 @@
           null
         ],
         [
-          "Qwen3.8 2.4T A95B",
-          "Qwen3.8 2.4T A95B",
-          1627.82,
-          null,
-          null
-        ],
-        [
           "GPT-5.6 Sol (max)",
           "GPT-5.6 Sol (max)",
-          1624.11,
+          1586.78,
           null,
           null
         ],
@@ -5040,7 +5096,7 @@
         [
           "Kimi K3 (max)",
           "Kimi K3 (max)",
-          1551.05,
+          1547.63,
           null,
           null
         ],
@@ -5052,16 +5108,16 @@
           null
         ],
         [
-          "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna (max)",
-          1489.33,
+          "GPT-5.6 Terra (max)",
+          "GPT-5.6 Terra (max)",
+          1476.96,
           null,
           null
         ],
         [
-          "GPT-5.6 Terra (max)",
-          "GPT-5.6 Terra (max)",
-          1476.96,
+          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash (high)",
+          1463.81,
           null,
           null
         ]
@@ -5078,9 +5134,9 @@
       "metric": "Terminal-Bench Hard: Score",
       "unit": "ratio",
       "comparisonKey": "terminalbench_hard",
-      "snapshotId": "21df99461b94024df5a03a372b9e3af43bff2b9753ed56b19fd83493f4b020ba",
-      "contentHash": "21df99461b94024df5a03a372b9e3af43bff2b9753ed56b19fd83493f4b020ba",
-      "generatedAt": "2026-09-15T08:38:42Z",
+      "snapshotId": "b37f16c076445644a40c62bf8e0d74b85826bc06fa908f8ee982fc035c275e2a",
+      "contentHash": "b37f16c076445644a40c62bf8e0d74b85826bc06fa908f8ee982fc035c275e2a",
+      "generatedAt": "2026-09-18T08:29:55Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
@@ -5185,17 +5241,17 @@
       "category": "terminalbench_v2_1",
       "release": "page_jsonld",
       "releaseId": "page_jsonld",
-      "metric": "Terminal-Bench v2.1: Score",
+      "metric": "Terminal-Bench 2.1: Score",
       "unit": "ratio",
       "comparisonKey": "terminalbench_v2_1",
-      "snapshotId": "ea137315bba23d4e476f79254f6493edd6da2155e1c03e37dd4f289178b2b0d9",
-      "contentHash": "ea137315bba23d4e476f79254f6493edd6da2155e1c03e37dd4f289178b2b0d9",
-      "generatedAt": "2026-09-15T08:38:44Z",
+      "snapshotId": "261732488651a8b23d5207c9adcff18bad67f14daadb030be792d80b99c92e4a",
+      "contentHash": "261732488651a8b23d5207c9adcff18bad67f14daadb030be792d80b99c92e4a",
+      "generatedAt": "2026-09-18T08:29:52Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
         "type": "official_page_endpoint",
-        "url": "https://artificialanalysis.ai/evaluations/terminalbench-v2-1",
+        "url": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
         "evidenceUrl": "https://artificialanalysis.ai/api/v2/openapi",
         "tableUrl": null,
         "categoriesUrl": null
@@ -5247,6 +5303,13 @@
           "Claude Opus 5 (max)",
           "Claude Opus 5 (max)",
           0.8914,
+          null,
+          null
+        ],
+        [
+          "Qwen3.8 Max (0902)",
+          "Qwen3.8 Max (0902)",
+          0.8876,
           null,
           null
         ],
@@ -5321,13 +5384,6 @@
           null
         ],
         [
-          "Qwen3.8 2.4T A95B",
-          "Qwen3.8 2.4T A95B",
-          0.8202,
-          null,
-          null
-        ],
-        [
           "GPT-5.6 Luna (max)",
           "GPT-5.6 Luna (max)",
           0.809,
@@ -5354,9 +5410,9 @@
       "metric": "IFBench: Score",
       "unit": "ratio",
       "comparisonKey": "ifbench",
-      "snapshotId": "23889712569a69d15965ba207d0f60afea8df5a86feb1f12797a3513344cfea1",
-      "contentHash": "23889712569a69d15965ba207d0f60afea8df5a86feb1f12797a3513344cfea1",
-      "generatedAt": "2026-09-15T08:38:01Z",
+      "snapshotId": "1e65f019ab92e37769352a53b8dbe2624e71b1f4ab048cdb50bb8f3a625ab8f2",
+      "contentHash": "1e65f019ab92e37769352a53b8dbe2624e71b1f4ab048cdb50bb8f3a625ab8f2",
+      "generatedAt": "2026-09-18T08:29:19Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis IFBench official public Dataset page",
@@ -5464,9 +5520,9 @@
       "metric": "MMMU-Pro: Score",
       "unit": "ratio",
       "comparisonKey": "mmmu_pro",
-      "snapshotId": "f31133bab517b8f725eafff3f9bae408bab86455d3402f32ce5aa8344b1aa098",
-      "contentHash": "f31133bab517b8f725eafff3f9bae408bab86455d3402f32ce5aa8344b1aa098",
-      "generatedAt": "2026-09-15T08:38:30Z",
+      "snapshotId": "d508769ca72b59c7c8314abb49742cefbc3f910045d65c74b453ced9f9cdd6c7",
+      "contentHash": "d508769ca72b59c7c8314abb49742cefbc3f910045d65c74b453ced9f9cdd6c7",
+      "generatedAt": "2026-09-18T08:29:38Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis MMMU-Pro official public Dataset page",
@@ -5537,6 +5593,13 @@
           "GPT-5.6 Sol (max)",
           "GPT-5.6 Sol (max)",
           0.8341,
+          null,
+          null
+        ],
+        [
+          "Qwen3.8 Max (0902)",
+          "Qwen3.8 Max (0902)",
+          0.8277,
           null,
           null
         ],
@@ -5625,7 +5688,7 @@
       "comparisonKey": "artificial_analysis_openness_index",
       "snapshotId": "d80af99d5c3875a6957400ad81518290d669e26b7795b20c54d739253e4ffa07",
       "contentHash": "d80af99d5c3875a6957400ad81518290d669e26b7795b20c54d739253e4ffa07",
-      "generatedAt": "2026-09-15T08:37:43Z",
+      "generatedAt": "2026-09-18T08:29:03Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Artificial Analysis Openness Index official Data API",
@@ -5789,9 +5852,9 @@
       "metric": "MLCR-AA",
       "unit": "ratio",
       "comparisonKey": "mlcr_overall",
-      "snapshotId": "8795beed5e5214a497d6149a351a5e87868736db66526165c762b2c564976f9c",
-      "contentHash": "8795beed5e5214a497d6149a351a5e87868736db66526165c762b2c564976f9c",
-      "generatedAt": "2026-09-15T08:38:29Z",
+      "snapshotId": "0d27e681e668b63d8a80d4d47b377a5183a1c9ccfa647ac36261589b3357a491",
+      "contentHash": "0d27e681e668b63d8a80d4d47b377a5183a1c9ccfa647ac36261589b3357a491",
+      "generatedAt": "2026-09-18T08:29:37Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis MLCR Overall official public Dataset page",
@@ -5957,7 +6020,7 @@
       "comparisonKey": "v1.1",
       "snapshotId": "005cbedb49f988ba3f0d9636300862ad7ace93ce1992b37faf9945fe5b383415",
       "contentHash": "005cbedb49f988ba3f0d9636300862ad7ace93ce1992b37faf9945fe5b383415",
-      "generatedAt": "2026-09-15T08:37:45Z",
+      "generatedAt": "2026-09-18T08:29:02Z",
       "taskCount": null,
       "source": {
         "name": "DeepSWE v1.1 official leaderboard JSON",
