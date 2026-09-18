@@ -361,18 +361,18 @@ sources:
   source_name: Artificial Analysis Terminal-Bench v4.0 official public Dataset page
   organization: Artificial Analysis
   source_type: official_page_endpoint
-  official_url: https://artificialanalysis.ai/evaluations/terminalbench-v4-0
-  endpoint: https://artificialanalysis.ai/evaluations/terminalbench-v4-0
+  official_url: https://artificialanalysis.ai/evaluations/terminalbench-4-0
+  endpoint: https://artificialanalysis.ai/evaluations/terminalbench-4-0
   fetch_method: GET
   update_frequency: daily
   requires_auth: false
-  evaluation_field: 'Terminal-Bench v4.0: Score'
+  evaluation_field: 'Terminal-Bench 4.0: Score'
   evidence_url: https://artificialanalysis.ai/api/v2/openapi
   release_tracking: page_jsonld
   hash_required: true
   notes: Public official Dataset JSON-LD page; no API key required. Page contract
     changes fail closed.
-  jsonld_name: 'Terminal-Bench v4.0: Score'
+  jsonld_name: 'Terminal-Bench 4.0: Score'
 - benchmark_id: humanitys_last_exam
   status: enabled
   source_name: Artificial Analysis Humanity's Last Exam official public Dataset page
@@ -786,18 +786,18 @@ sources:
   source_name: Artificial Analysis Terminal-Bench v2.1 official public Dataset page
   organization: Artificial Analysis
   source_type: official_page_endpoint
-  official_url: https://artificialanalysis.ai/evaluations/terminalbench-v2-1
-  endpoint: https://artificialanalysis.ai/evaluations/terminalbench-v2-1
+  official_url: https://artificialanalysis.ai/evaluations/terminalbench-2-1
+  endpoint: https://artificialanalysis.ai/evaluations/terminalbench-2-1
   fetch_method: GET
   update_frequency: daily
   requires_auth: false
-  evaluation_field: 'Terminal-Bench v2.1: Score'
+  evaluation_field: 'Terminal-Bench 2.1: Score'
   evidence_url: https://artificialanalysis.ai/api/v2/openapi
   release_tracking: page_jsonld
   hash_required: true
   notes: Public official Dataset JSON-LD page; no API key required. Page contract
     changes fail closed.
-  jsonld_name: 'Terminal-Bench v2.1: Score'
+  jsonld_name: 'Terminal-Bench 2.1: Score'
 - benchmark_id: ifbench
   status: enabled
   source_name: Artificial Analysis IFBench official public Dataset page
