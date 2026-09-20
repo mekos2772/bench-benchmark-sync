@@ -119,7 +119,7 @@ def test_page_property_value_score_uses_mid_and_preserves_interval():
             **PAGE_SOURCE,
             "benchmark_id": "gdpval_aa_elo",
             "evaluation_field": "gdpvalAaElo",
-            "jsonld_name": "GDPval-AA v2 Leaderboard",
+            "jsonld_name": "GDPval-AA v2.1 Leaderboard",
         }
     )
     raw = json.dumps(
@@ -127,7 +127,7 @@ def test_page_property_value_score_uses_mid_and_preserves_interval():
             "documents": [
                 {
                     "@type": "Dataset",
-                    "name": "GDPval-AA v2 Leaderboard",
+                    "name": "GDPval-AA v2.1 Leaderboard",
                     "data": [
                         {
                             "label": "Unit Model",

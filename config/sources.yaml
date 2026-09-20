@@ -718,7 +718,7 @@ sources:
   hash_required: true
   notes: Public official Dataset JSON-LD page; no API key required. Page contract
     changes fail closed.
-  jsonld_name: 'GDPval-AA v2 Leaderboard'
+  jsonld_name: 'GDPval-AA v2.1 Leaderboard'
 - benchmark_id: gdpval_aa_normalized
   status: manual_review
   source_name: Artificial Analysis GDPval-AA normalized candidate source (manual review)
