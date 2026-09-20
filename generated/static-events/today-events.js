@@ -1,8 +1,8 @@
 module.exports = {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-09-20T05:04:54Z",
-  "windowStart": "2026-09-19T05:04:54Z",
+  "generatedAt": "2026-09-20T09:43:37Z",
+  "windowStart": "2026-09-19T09:43:37Z",
   "collectorStatus": "partial",
   "staleAfterMinutes": 360,
   "families": [
@@ -10,153 +10,6 @@ module.exports = {
     "benchmark"
   ],
   "models": {
-    "hf:stepfun-ai/Step-5-Preview-BF16": {
-      "canonicalId": "hf:stepfun-ai/Step-5-Preview-BF16",
-      "provider": "StepFun",
-      "modelId": "stepfun-ai/Step-5-Preview-BF16",
-      "displayName": "Step-5-Preview-BF16",
-      "version": null,
-      "aliases": [],
-      "releaseDate": "2026-09-20T03:52:06Z",
-      "status": "available",
-      "deprecationDate": null,
-      "releaseType": "open_weights_release",
-      "access": "open_weights",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": 604339504832,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": 1048576,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [
-        "Hugging Face"
-      ],
-      "officialUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-      "documentationUrl": null,
-      "modelCardUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-      "hubRepo": "stepfun-ai/Step-5-Preview-BF16",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "StepFun",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-          "observedAt": "2026-09-20T03:52:06Z",
-          "contentHash": "0260928dc69510c9aa7657f1004329d888adc02da6c4a602799391c55fe3357a",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "provider",
-          "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-          "observedAt": "2026-09-20T03:52:06Z",
-          "contentHash": "0260928dc69510c9aa7657f1004329d888adc02da6c4a602799391c55fe3357a",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-          "observedAt": "2026-09-20T03:52:06Z",
-          "contentHash": "0260928dc69510c9aa7657f1004329d888adc02da6c4a602799391c55fe3357a",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-          "observedAt": "2026-09-20T03:52:06Z",
-          "contentHash": "0260928dc69510c9aa7657f1004329d888adc02da6c4a602799391c55fe3357a",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseDate",
-          "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-          "observedAt": "2026-09-20T03:52:06Z",
-          "contentHash": "0260928dc69510c9aa7657f1004329d888adc02da6c4a602799391c55fe3357a",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-          "observedAt": "2026-09-20T03:52:06Z",
-          "contentHash": "0260928dc69510c9aa7657f1004329d888adc02da6c4a602799391c55fe3357a",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseType",
-          "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-          "observedAt": "2026-09-20T03:52:06Z",
-          "contentHash": "0260928dc69510c9aa7657f1004329d888adc02da6c4a602799391c55fe3357a",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-          "observedAt": "2026-09-20T03:52:06Z",
-          "contentHash": "0260928dc69510c9aa7657f1004329d888adc02da6c4a602799391c55fe3357a",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "parameterCount",
-          "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-          "observedAt": "2026-09-20T03:52:06Z",
-          "contentHash": "0260928dc69510c9aa7657f1004329d888adc02da6c4a602799391c55fe3357a",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "contextWindow",
-          "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-          "observedAt": "2026-09-20T03:52:06Z",
-          "contentHash": "0260928dc69510c9aa7657f1004329d888adc02da6c4a602799391c55fe3357a",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "officialUrl",
-          "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-          "observedAt": "2026-09-20T03:52:06Z",
-          "contentHash": "0260928dc69510c9aa7657f1004329d888adc02da6c4a602799391c55fe3357a",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modelCardUrl",
-          "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-          "observedAt": "2026-09-20T03:52:06Z",
-          "contentHash": "0260928dc69510c9aa7657f1004329d888adc02da6c4a602799391c55fe3357a",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "hubRepo",
-          "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-          "observedAt": "2026-09-20T03:52:06Z",
-          "contentHash": "0260928dc69510c9aa7657f1004329d888adc02da6c4a602799391c55fe3357a",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-          "observedAt": "2026-09-20T03:52:06Z",
-          "contentHash": "0260928dc69510c9aa7657f1004329d888adc02da6c4a602799391c55fe3357a",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "availability",
-          "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-          "observedAt": "2026-09-20T03:52:06Z",
-          "contentHash": "0260928dc69510c9aa7657f1004329d888adc02da6c4a602799391c55fe3357a",
-          "sourceType": "hub_official_org"
-        }
-      ]
-    },
     "benchmark:MiniMax-M3": {
       "canonicalId": "benchmark:MiniMax-M3",
       "provider": null,
@@ -199,49 +52,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "36f0bd2b3d16203a42b360ad9bc67843b43b90038aa1675ddad89105473d0268",
+          "contentHash": "13eb85d45493dcf1f228c9f4bf1339b6ba503fa58357f0f9cf3f4f454f7da090",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "36f0bd2b3d16203a42b360ad9bc67843b43b90038aa1675ddad89105473d0268",
+          "contentHash": "13eb85d45493dcf1f228c9f4bf1339b6ba503fa58357f0f9cf3f4f454f7da090",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "36f0bd2b3d16203a42b360ad9bc67843b43b90038aa1675ddad89105473d0268",
+          "contentHash": "13eb85d45493dcf1f228c9f4bf1339b6ba503fa58357f0f9cf3f4f454f7da090",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "36f0bd2b3d16203a42b360ad9bc67843b43b90038aa1675ddad89105473d0268",
+          "contentHash": "13eb85d45493dcf1f228c9f4bf1339b6ba503fa58357f0f9cf3f4f454f7da090",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "36f0bd2b3d16203a42b360ad9bc67843b43b90038aa1675ddad89105473d0268",
+          "contentHash": "13eb85d45493dcf1f228c9f4bf1339b6ba503fa58357f0f9cf3f4f454f7da090",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "36f0bd2b3d16203a42b360ad9bc67843b43b90038aa1675ddad89105473d0268",
+          "contentHash": "13eb85d45493dcf1f228c9f4bf1339b6ba503fa58357f0f9cf3f4f454f7da090",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "36f0bd2b3d16203a42b360ad9bc67843b43b90038aa1675ddad89105473d0268",
+          "contentHash": "13eb85d45493dcf1f228c9f4bf1339b6ba503fa58357f0f9cf3f4f454f7da090",
           "sourceType": "official_benchmark"
         }
       ]
@@ -288,49 +141,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "a4d675990c34502e2848f27edf00cb51e740b3fed8023c91524ce5b57d79797b",
+          "contentHash": "cc529abe617f6e9537cb3ddbc48404e6ce464548ff9bc72023f491c5087bfd0b",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "a4d675990c34502e2848f27edf00cb51e740b3fed8023c91524ce5b57d79797b",
+          "contentHash": "cc529abe617f6e9537cb3ddbc48404e6ce464548ff9bc72023f491c5087bfd0b",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "a4d675990c34502e2848f27edf00cb51e740b3fed8023c91524ce5b57d79797b",
+          "contentHash": "cc529abe617f6e9537cb3ddbc48404e6ce464548ff9bc72023f491c5087bfd0b",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "a4d675990c34502e2848f27edf00cb51e740b3fed8023c91524ce5b57d79797b",
+          "contentHash": "cc529abe617f6e9537cb3ddbc48404e6ce464548ff9bc72023f491c5087bfd0b",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "a4d675990c34502e2848f27edf00cb51e740b3fed8023c91524ce5b57d79797b",
+          "contentHash": "cc529abe617f6e9537cb3ddbc48404e6ce464548ff9bc72023f491c5087bfd0b",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "a4d675990c34502e2848f27edf00cb51e740b3fed8023c91524ce5b57d79797b",
+          "contentHash": "cc529abe617f6e9537cb3ddbc48404e6ce464548ff9bc72023f491c5087bfd0b",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "a4d675990c34502e2848f27edf00cb51e740b3fed8023c91524ce5b57d79797b",
+          "contentHash": "cc529abe617f6e9537cb3ddbc48404e6ce464548ff9bc72023f491c5087bfd0b",
           "sourceType": "official_benchmark"
         }
       ]
@@ -377,49 +230,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "59e2d31206c227c73a39a2e544f839d3fbfd3b899d8d4fe59681e24338af4fb4",
+          "contentHash": "086c28a4076d5d77acb2ce2a2ed3ad9ca37e1204d714ec3bcf28b3bd2f217736",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "59e2d31206c227c73a39a2e544f839d3fbfd3b899d8d4fe59681e24338af4fb4",
+          "contentHash": "086c28a4076d5d77acb2ce2a2ed3ad9ca37e1204d714ec3bcf28b3bd2f217736",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "59e2d31206c227c73a39a2e544f839d3fbfd3b899d8d4fe59681e24338af4fb4",
+          "contentHash": "086c28a4076d5d77acb2ce2a2ed3ad9ca37e1204d714ec3bcf28b3bd2f217736",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "59e2d31206c227c73a39a2e544f839d3fbfd3b899d8d4fe59681e24338af4fb4",
+          "contentHash": "086c28a4076d5d77acb2ce2a2ed3ad9ca37e1204d714ec3bcf28b3bd2f217736",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "59e2d31206c227c73a39a2e544f839d3fbfd3b899d8d4fe59681e24338af4fb4",
+          "contentHash": "086c28a4076d5d77acb2ce2a2ed3ad9ca37e1204d714ec3bcf28b3bd2f217736",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "59e2d31206c227c73a39a2e544f839d3fbfd3b899d8d4fe59681e24338af4fb4",
+          "contentHash": "086c28a4076d5d77acb2ce2a2ed3ad9ca37e1204d714ec3bcf28b3bd2f217736",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "59e2d31206c227c73a39a2e544f839d3fbfd3b899d8d4fe59681e24338af4fb4",
+          "contentHash": "086c28a4076d5d77acb2ce2a2ed3ad9ca37e1204d714ec3bcf28b3bd2f217736",
           "sourceType": "official_benchmark"
         }
       ]
@@ -466,98 +319,61 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "79b89127e4cfce73b11eb49ca28b94ab3d70db453fe479f5d0499ac4f39f35ea",
+          "contentHash": "f590680d507ec1c708a9a226b067290173fc342608a88fe2f332585a0cbca0e3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "79b89127e4cfce73b11eb49ca28b94ab3d70db453fe479f5d0499ac4f39f35ea",
+          "contentHash": "f590680d507ec1c708a9a226b067290173fc342608a88fe2f332585a0cbca0e3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "79b89127e4cfce73b11eb49ca28b94ab3d70db453fe479f5d0499ac4f39f35ea",
+          "contentHash": "f590680d507ec1c708a9a226b067290173fc342608a88fe2f332585a0cbca0e3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "79b89127e4cfce73b11eb49ca28b94ab3d70db453fe479f5d0499ac4f39f35ea",
+          "contentHash": "f590680d507ec1c708a9a226b067290173fc342608a88fe2f332585a0cbca0e3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "79b89127e4cfce73b11eb49ca28b94ab3d70db453fe479f5d0499ac4f39f35ea",
+          "contentHash": "f590680d507ec1c708a9a226b067290173fc342608a88fe2f332585a0cbca0e3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "79b89127e4cfce73b11eb49ca28b94ab3d70db453fe479f5d0499ac4f39f35ea",
+          "contentHash": "f590680d507ec1c708a9a226b067290173fc342608a88fe2f332585a0cbca0e3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "79b89127e4cfce73b11eb49ca28b94ab3d70db453fe479f5d0499ac4f39f35ea",
+          "contentHash": "f590680d507ec1c708a9a226b067290173fc342608a88fe2f332585a0cbca0e3",
           "sourceType": "official_benchmark"
         }
       ]
     }
   },
-  "modelCount": 5,
+  "modelCount": 4,
   "sourceSummary": {
-    "official": 1,
+    "official": 0,
     "catalog": 0,
     "benchmark": 15
   },
   "events": [
-    {
-      "eventId": "359320a4e6b0cb0f93d4bce951a8b3f5",
-      "family": "model",
-      "eventType": "official_model_release",
-      "eventClass": "model_release",
-      "trustTier": "official",
-      "priority": "P0",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Step-5-Preview-BF16 开放权重发布",
-      "summary": "StepFun 在官方组织发布新模型：参数量 604.3B，上下文 1,048,576 tokens。",
-      "repoId": "stepfun-ai/Step-5-Preview-BF16",
-      "repo": "stepfun-ai/Step-5-Preview-BF16",
-      "modelId": "stepfun-ai/Step-5-Preview-BF16",
-      "modelRef": "hf:stepfun-ai/Step-5-Preview-BF16",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "StepFun",
-      "evidence": [
-        {
-          "field": "modelRepository",
-          "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-          "observedAt": "2026-09-20T03:52:06Z",
-          "contentHash": "0260928dc69510c9aa7657f1004329d888adc02da6c4a602799391c55fe3357a",
-          "sourceType": "hub_official_org"
-        }
-      ],
-      "url": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-      "observedAt": "2026-09-20T03:52:06Z",
-      "publishedAt": "2026-09-20T03:52:06Z",
-      "source": "Hugging Face · StepFun",
-      "eventIdentity": "open-release:stepfun-ai/Step-5-Preview-BF16",
-      "provenance": {
-        "sourceUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview-BF16",
-        "contentHash": "2229b0915b1fa74c98c603aacb13bb2034ca61bb528aa0b4655dd47453db48f4"
-      }
-    },
     {
       "eventId": "69746bc164532ee20e35fa7927b83338",
       "family": "benchmark",
@@ -594,7 +410,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "2229b0915b1fa74c98c603aacb13bb2034ca61bb528aa0b4655dd47453db48f4"
+        "contentHash": "eff3c2e8b5de175b714b3accc5fa8747d719af0b3cdcd389e7a660c65e4c8c85"
       }
     },
     {
@@ -633,7 +449,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "2229b0915b1fa74c98c603aacb13bb2034ca61bb528aa0b4655dd47453db48f4"
+        "contentHash": "eff3c2e8b5de175b714b3accc5fa8747d719af0b3cdcd389e7a660c65e4c8c85"
       }
     },
     {
@@ -672,7 +488,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-        "contentHash": "2229b0915b1fa74c98c603aacb13bb2034ca61bb528aa0b4655dd47453db48f4"
+        "contentHash": "eff3c2e8b5de175b714b3accc5fa8747d719af0b3cdcd389e7a660c65e4c8c85"
       }
     },
     {
@@ -711,7 +527,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "2229b0915b1fa74c98c603aacb13bb2034ca61bb528aa0b4655dd47453db48f4"
+        "contentHash": "eff3c2e8b5de175b714b3accc5fa8747d719af0b3cdcd389e7a660c65e4c8c85"
       }
     },
     {
@@ -750,7 +566,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "2229b0915b1fa74c98c603aacb13bb2034ca61bb528aa0b4655dd47453db48f4"
+        "contentHash": "eff3c2e8b5de175b714b3accc5fa8747d719af0b3cdcd389e7a660c65e4c8c85"
       }
     },
     {
@@ -789,7 +605,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "2229b0915b1fa74c98c603aacb13bb2034ca61bb528aa0b4655dd47453db48f4"
+        "contentHash": "eff3c2e8b5de175b714b3accc5fa8747d719af0b3cdcd389e7a660c65e4c8c85"
       }
     },
     {
@@ -828,7 +644,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "2229b0915b1fa74c98c603aacb13bb2034ca61bb528aa0b4655dd47453db48f4"
+        "contentHash": "eff3c2e8b5de175b714b3accc5fa8747d719af0b3cdcd389e7a660c65e4c8c85"
       }
     },
     {
@@ -867,7 +683,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
-        "contentHash": "2229b0915b1fa74c98c603aacb13bb2034ca61bb528aa0b4655dd47453db48f4"
+        "contentHash": "eff3c2e8b5de175b714b3accc5fa8747d719af0b3cdcd389e7a660c65e4c8c85"
       }
     },
     {
@@ -906,7 +722,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "2229b0915b1fa74c98c603aacb13bb2034ca61bb528aa0b4655dd47453db48f4"
+        "contentHash": "eff3c2e8b5de175b714b3accc5fa8747d719af0b3cdcd389e7a660c65e4c8c85"
       }
     },
     {
@@ -945,7 +761,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "2229b0915b1fa74c98c603aacb13bb2034ca61bb528aa0b4655dd47453db48f4"
+        "contentHash": "eff3c2e8b5de175b714b3accc5fa8747d719af0b3cdcd389e7a660c65e4c8c85"
       }
     },
     {
@@ -984,7 +800,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "2229b0915b1fa74c98c603aacb13bb2034ca61bb528aa0b4655dd47453db48f4"
+        "contentHash": "eff3c2e8b5de175b714b3accc5fa8747d719af0b3cdcd389e7a660c65e4c8c85"
       }
     },
     {
@@ -1020,7 +836,7 @@ module.exports = {
       "modelIdentity": "aa_mlcr_overall:MiniMax-M3",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "2229b0915b1fa74c98c603aacb13bb2034ca61bb528aa0b4655dd47453db48f4"
+        "contentHash": "eff3c2e8b5de175b714b3accc5fa8747d719af0b3cdcd389e7a660c65e4c8c85"
       }
     },
     {
@@ -1055,7 +871,7 @@ module.exports = {
       "modelIdentity": "aa_mlcr_overall:Muse Spark 1.3 (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "2229b0915b1fa74c98c603aacb13bb2034ca61bb528aa0b4655dd47453db48f4"
+        "contentHash": "eff3c2e8b5de175b714b3accc5fa8747d719af0b3cdcd389e7a660c65e4c8c85"
       }
     },
     {
@@ -1092,7 +908,7 @@ module.exports = {
       "modelIdentity": "aa_mlcr_overall:Qwen3.8 27B (xhigh)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "2229b0915b1fa74c98c603aacb13bb2034ca61bb528aa0b4655dd47453db48f4"
+        "contentHash": "eff3c2e8b5de175b714b3accc5fa8747d719af0b3cdcd389e7a660c65e4c8c85"
       }
     },
     {
@@ -1128,16 +944,16 @@ module.exports = {
       "modelIdentity": "aa_intelligence_index_v4_3:Step 5 Preview",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "2229b0915b1fa74c98c603aacb13bb2034ca61bb528aa0b4655dd47453db48f4"
+        "contentHash": "eff3c2e8b5de175b714b3accc5fa8747d719af0b3cdcd389e7a660c65e4c8c85"
       }
     }
   ],
-  "eventCount": 16,
+  "eventCount": 15,
   "collectorFailures": [
     "gdpval_aa_elo:ValueError"
   ],
   "provenance": {
-    "workflowRunId": "35490751309",
-    "mainCommit": "d5c9ee380b4d4e62b26952ceda07a722ae3c96a6"
+    "workflowRunId": "35503090460",
+    "mainCommit": "9fbc1590e2e0671b21fbdb7cdbdb6f19c612d95a"
   }
 };
