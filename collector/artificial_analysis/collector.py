@@ -142,10 +142,27 @@ class ArtificialAnalysisCollector(BenchmarkCollector):
                 raise ValueError("Artificial Analysis page payload must contain documents[]")
             rows: list[dict[str, Any]] = []
             wanted = self.source.get("jsonld_name")
+
+            # The site renames versions cosmetically ("v4.0" -> "4.0", mid-name);
+            # compare with that "v" stripped so such rewrites don't kill the source.
+            def version_normalized(value: str) -> str:
+                return re.sub(r"(?<= )v(?=\d)", "", value)
+
+            def matches(actual: Any) -> bool:
+                if not wanted:
+                    return True
+                if actual == wanted:
+                    return True
+                return (
+                    isinstance(actual, str)
+                    and isinstance(wanted, str)
+                    and version_normalized(actual) == version_normalized(wanted)
+                )
+
             for document in documents:
                 if not isinstance(document, dict) or document.get("@type") != "Dataset":
                     continue
-                if wanted and document.get("name") != wanted:
+                if not matches(document.get("name")):
                     continue
                 data = document.get("data")
                 if isinstance(data, list):

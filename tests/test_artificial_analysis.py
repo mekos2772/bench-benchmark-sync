@@ -195,3 +195,50 @@ def test_record_value_matches_score_suffix_and_camelcase_metric():
     assert (
         _record_value({"a": 1, "b": 2, "detailsUrl": "/x"}, "Unknown: Score") is None
     )
+
+
+def test_jsonld_name_match_tolerates_version_v_prefix():
+    # The site renamed "Terminal-Bench v4.0: Score" to "Terminal-Bench 4.0: Score";
+    # matching must survive either direction of that cosmetic rewrite.
+    collector = ArtificialAnalysisCollector(
+        {
+            **PAGE_SOURCE,
+            "benchmark_id": "terminal_bench_v4_0",
+            "jsonld_name": "Terminal-Bench 4.0: Score",
+        }
+    )
+    def payload_with(name):
+        return json.dumps(
+            {
+                "documents": [
+                    {
+                        "@type": "Dataset",
+                        "name": name,
+                        "data": [{"label": "Unit Model", "score": 0.42}],
+                    }
+                ]
+            },
+            separators=(",", ":"),
+        ).encode()
+
+    for live_name in ("Terminal-Bench 4.0: Score", "Terminal-Bench v4.0: Score"):
+        rows = collector.parse(payload_with(live_name))
+        assert rows and rows[0]["score"] == 0.42
+
+    # configured with the old v-form against the new name must also match
+    old = ArtificialAnalysisCollector(
+        {
+            **PAGE_SOURCE,
+            "benchmark_id": "terminal_bench_v4_0",
+            "jsonld_name": "Terminal-Bench v4.0: Score",
+        }
+    )
+    rows = old.parse(payload_with("Terminal-Bench 4.0: Score"))
+    assert rows and rows[0]["score"] == 0.42
+
+    # a genuinely different dataset still must not match
+    try:
+        collector.parse(payload_with("Terminal-Bench Hard: Score"))
+        raise AssertionError("expected ValueError for unrelated dataset name")
+    except ValueError as exc:
+        assert "no data[]" in str(exc)
