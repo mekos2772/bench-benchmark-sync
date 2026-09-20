@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-09-20T16:58:22Z",
-  "windowStart": "2026-09-19T16:58:22Z",
+  "generatedAt": "2026-09-20T19:14:53Z",
+  "windowStart": "2026-09-19T19:14:53Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -54,119 +54,119 @@
           "field": "canonicalId",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "54e6a78a437d3b57a6b8fc2a152393bea19df6b2172cbb28621e7795269683b5",
+          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "provider",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "54e6a78a437d3b57a6b8fc2a152393bea19df6b2172cbb28621e7795269683b5",
+          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelId",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "54e6a78a437d3b57a6b8fc2a152393bea19df6b2172cbb28621e7795269683b5",
+          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "displayName",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "54e6a78a437d3b57a6b8fc2a152393bea19df6b2172cbb28621e7795269683b5",
+          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseDate",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "54e6a78a437d3b57a6b8fc2a152393bea19df6b2172cbb28621e7795269683b5",
+          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "status",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "54e6a78a437d3b57a6b8fc2a152393bea19df6b2172cbb28621e7795269683b5",
+          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseType",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "54e6a78a437d3b57a6b8fc2a152393bea19df6b2172cbb28621e7795269683b5",
+          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "access",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "54e6a78a437d3b57a6b8fc2a152393bea19df6b2172cbb28621e7795269683b5",
+          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "parameterCount",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "54e6a78a437d3b57a6b8fc2a152393bea19df6b2172cbb28621e7795269683b5",
+          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "license",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "54e6a78a437d3b57a6b8fc2a152393bea19df6b2172cbb28621e7795269683b5",
+          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "description",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "54e6a78a437d3b57a6b8fc2a152393bea19df6b2172cbb28621e7795269683b5",
+          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "contextWindow",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "54e6a78a437d3b57a6b8fc2a152393bea19df6b2172cbb28621e7795269683b5",
+          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "officialUrl",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "54e6a78a437d3b57a6b8fc2a152393bea19df6b2172cbb28621e7795269683b5",
+          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelCardUrl",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "54e6a78a437d3b57a6b8fc2a152393bea19df6b2172cbb28621e7795269683b5",
+          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "hubRepo",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "54e6a78a437d3b57a6b8fc2a152393bea19df6b2172cbb28621e7795269683b5",
+          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "54e6a78a437d3b57a6b8fc2a152393bea19df6b2172cbb28621e7795269683b5",
+          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "availability",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "54e6a78a437d3b57a6b8fc2a152393bea19df6b2172cbb28621e7795269683b5",
+          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
           "sourceType": "hub_official_org"
         }
       ]
@@ -219,126 +219,126 @@
           "field": "canonicalId",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "33a882e5497013a4562b3d4bb80af366ccb3abfe69975f8705a58e0c4652ff0c",
+          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "provider",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "33a882e5497013a4562b3d4bb80af366ccb3abfe69975f8705a58e0c4652ff0c",
+          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelId",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "33a882e5497013a4562b3d4bb80af366ccb3abfe69975f8705a58e0c4652ff0c",
+          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "displayName",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "33a882e5497013a4562b3d4bb80af366ccb3abfe69975f8705a58e0c4652ff0c",
+          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseDate",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "33a882e5497013a4562b3d4bb80af366ccb3abfe69975f8705a58e0c4652ff0c",
+          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "status",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "33a882e5497013a4562b3d4bb80af366ccb3abfe69975f8705a58e0c4652ff0c",
+          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseType",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "33a882e5497013a4562b3d4bb80af366ccb3abfe69975f8705a58e0c4652ff0c",
+          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "access",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "33a882e5497013a4562b3d4bb80af366ccb3abfe69975f8705a58e0c4652ff0c",
+          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "parameterCount",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "33a882e5497013a4562b3d4bb80af366ccb3abfe69975f8705a58e0c4652ff0c",
+          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "license",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "33a882e5497013a4562b3d4bb80af366ccb3abfe69975f8705a58e0c4652ff0c",
+          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "description",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "33a882e5497013a4562b3d4bb80af366ccb3abfe69975f8705a58e0c4652ff0c",
+          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "contextWindow",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "33a882e5497013a4562b3d4bb80af366ccb3abfe69975f8705a58e0c4652ff0c",
+          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "officialUrl",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "33a882e5497013a4562b3d4bb80af366ccb3abfe69975f8705a58e0c4652ff0c",
+          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelCardUrl",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "33a882e5497013a4562b3d4bb80af366ccb3abfe69975f8705a58e0c4652ff0c",
+          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "hubRepo",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "33a882e5497013a4562b3d4bb80af366ccb3abfe69975f8705a58e0c4652ff0c",
+          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "33a882e5497013a4562b3d4bb80af366ccb3abfe69975f8705a58e0c4652ff0c",
+          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "availability",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "33a882e5497013a4562b3d4bb80af366ccb3abfe69975f8705a58e0c4652ff0c",
+          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modalities",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "33a882e5497013a4562b3d4bb80af366ccb3abfe69975f8705a58e0c4652ff0c",
+          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
           "sourceType": "hub_official_org"
         }
       ]
@@ -385,49 +385,49 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "ee9c3ffdc2bcd7d3d469f4c99ac98eec91b28611fc4c065e3ada9a8da53fe4d9",
+          "contentHash": "6abfe34b830a13757e544599ca9ea7cdbe7a6d866f5a143ae9566ea4650e9b78",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "ee9c3ffdc2bcd7d3d469f4c99ac98eec91b28611fc4c065e3ada9a8da53fe4d9",
+          "contentHash": "6abfe34b830a13757e544599ca9ea7cdbe7a6d866f5a143ae9566ea4650e9b78",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "ee9c3ffdc2bcd7d3d469f4c99ac98eec91b28611fc4c065e3ada9a8da53fe4d9",
+          "contentHash": "6abfe34b830a13757e544599ca9ea7cdbe7a6d866f5a143ae9566ea4650e9b78",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "ee9c3ffdc2bcd7d3d469f4c99ac98eec91b28611fc4c065e3ada9a8da53fe4d9",
+          "contentHash": "6abfe34b830a13757e544599ca9ea7cdbe7a6d866f5a143ae9566ea4650e9b78",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "ee9c3ffdc2bcd7d3d469f4c99ac98eec91b28611fc4c065e3ada9a8da53fe4d9",
+          "contentHash": "6abfe34b830a13757e544599ca9ea7cdbe7a6d866f5a143ae9566ea4650e9b78",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "ee9c3ffdc2bcd7d3d469f4c99ac98eec91b28611fc4c065e3ada9a8da53fe4d9",
+          "contentHash": "6abfe34b830a13757e544599ca9ea7cdbe7a6d866f5a143ae9566ea4650e9b78",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "ee9c3ffdc2bcd7d3d469f4c99ac98eec91b28611fc4c065e3ada9a8da53fe4d9",
+          "contentHash": "6abfe34b830a13757e544599ca9ea7cdbe7a6d866f5a143ae9566ea4650e9b78",
           "sourceType": "official_benchmark"
         }
       ]
@@ -474,49 +474,49 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "08f71a2754de4fbdabb3ff5f070cf03c2d1b0e528399fdd2bc5dccda43f8eeac",
+          "contentHash": "87f1d6cf3fffe71f6733b546c486486ade2d6a61941a6677a1daeaa96d9fe3f8",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "08f71a2754de4fbdabb3ff5f070cf03c2d1b0e528399fdd2bc5dccda43f8eeac",
+          "contentHash": "87f1d6cf3fffe71f6733b546c486486ade2d6a61941a6677a1daeaa96d9fe3f8",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "08f71a2754de4fbdabb3ff5f070cf03c2d1b0e528399fdd2bc5dccda43f8eeac",
+          "contentHash": "87f1d6cf3fffe71f6733b546c486486ade2d6a61941a6677a1daeaa96d9fe3f8",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "08f71a2754de4fbdabb3ff5f070cf03c2d1b0e528399fdd2bc5dccda43f8eeac",
+          "contentHash": "87f1d6cf3fffe71f6733b546c486486ade2d6a61941a6677a1daeaa96d9fe3f8",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "08f71a2754de4fbdabb3ff5f070cf03c2d1b0e528399fdd2bc5dccda43f8eeac",
+          "contentHash": "87f1d6cf3fffe71f6733b546c486486ade2d6a61941a6677a1daeaa96d9fe3f8",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "08f71a2754de4fbdabb3ff5f070cf03c2d1b0e528399fdd2bc5dccda43f8eeac",
+          "contentHash": "87f1d6cf3fffe71f6733b546c486486ade2d6a61941a6677a1daeaa96d9fe3f8",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "08f71a2754de4fbdabb3ff5f070cf03c2d1b0e528399fdd2bc5dccda43f8eeac",
+          "contentHash": "87f1d6cf3fffe71f6733b546c486486ade2d6a61941a6677a1daeaa96d9fe3f8",
           "sourceType": "official_benchmark"
         }
       ]
@@ -563,49 +563,49 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "c3b7a6372de708b0e13ae7f310313ae5a0cef94c6725c068832b0b0d44421265",
+          "contentHash": "3bcdf9b73669d8d38462cb4a47d7cfddc74fb29ad90d24873eed8e6b920888ac",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "c3b7a6372de708b0e13ae7f310313ae5a0cef94c6725c068832b0b0d44421265",
+          "contentHash": "3bcdf9b73669d8d38462cb4a47d7cfddc74fb29ad90d24873eed8e6b920888ac",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "c3b7a6372de708b0e13ae7f310313ae5a0cef94c6725c068832b0b0d44421265",
+          "contentHash": "3bcdf9b73669d8d38462cb4a47d7cfddc74fb29ad90d24873eed8e6b920888ac",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "c3b7a6372de708b0e13ae7f310313ae5a0cef94c6725c068832b0b0d44421265",
+          "contentHash": "3bcdf9b73669d8d38462cb4a47d7cfddc74fb29ad90d24873eed8e6b920888ac",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "c3b7a6372de708b0e13ae7f310313ae5a0cef94c6725c068832b0b0d44421265",
+          "contentHash": "3bcdf9b73669d8d38462cb4a47d7cfddc74fb29ad90d24873eed8e6b920888ac",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "c3b7a6372de708b0e13ae7f310313ae5a0cef94c6725c068832b0b0d44421265",
+          "contentHash": "3bcdf9b73669d8d38462cb4a47d7cfddc74fb29ad90d24873eed8e6b920888ac",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "c3b7a6372de708b0e13ae7f310313ae5a0cef94c6725c068832b0b0d44421265",
+          "contentHash": "3bcdf9b73669d8d38462cb4a47d7cfddc74fb29ad90d24873eed8e6b920888ac",
           "sourceType": "official_benchmark"
         }
       ]
@@ -652,49 +652,49 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "cea2338ee8110a5a05e177d52b48630f4cc5a0db1e2354286918293a30c79b2e",
+          "contentHash": "ab901572c4ef501c2e6d5a7c7083f3ac0e49ab4efd1dba277e3be9a7306a8efa",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "cea2338ee8110a5a05e177d52b48630f4cc5a0db1e2354286918293a30c79b2e",
+          "contentHash": "ab901572c4ef501c2e6d5a7c7083f3ac0e49ab4efd1dba277e3be9a7306a8efa",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "cea2338ee8110a5a05e177d52b48630f4cc5a0db1e2354286918293a30c79b2e",
+          "contentHash": "ab901572c4ef501c2e6d5a7c7083f3ac0e49ab4efd1dba277e3be9a7306a8efa",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "cea2338ee8110a5a05e177d52b48630f4cc5a0db1e2354286918293a30c79b2e",
+          "contentHash": "ab901572c4ef501c2e6d5a7c7083f3ac0e49ab4efd1dba277e3be9a7306a8efa",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "cea2338ee8110a5a05e177d52b48630f4cc5a0db1e2354286918293a30c79b2e",
+          "contentHash": "ab901572c4ef501c2e6d5a7c7083f3ac0e49ab4efd1dba277e3be9a7306a8efa",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "cea2338ee8110a5a05e177d52b48630f4cc5a0db1e2354286918293a30c79b2e",
+          "contentHash": "ab901572c4ef501c2e6d5a7c7083f3ac0e49ab4efd1dba277e3be9a7306a8efa",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
           "observedAt": "2026-09-19T21:01:04Z",
-          "contentHash": "cea2338ee8110a5a05e177d52b48630f4cc5a0db1e2354286918293a30c79b2e",
+          "contentHash": "ab901572c4ef501c2e6d5a7c7083f3ac0e49ab4efd1dba277e3be9a7306a8efa",
           "sourceType": "official_benchmark"
         }
       ]
@@ -730,7 +730,7 @@
           "field": "modelRepository",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "54e6a78a437d3b57a6b8fc2a152393bea19df6b2172cbb28621e7795269683b5",
+          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
           "sourceType": "hub_official_org"
         }
       ],
@@ -741,7 +741,7 @@
       "eventIdentity": "open-release:Qwen/Qwen-Image-2.1-PE-I2I",
       "provenance": {
         "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-        "contentHash": "07a7789a0ae8b078c64a60bbb5b0bcbee4331c72d8e63a1d5fb00d02603b9d21"
+        "contentHash": "f1d9500d267a3b736ca40743a37b48ee14cbde9a49a40bb3ffda731f0b0f6e70"
       }
     },
     {
@@ -767,7 +767,7 @@
           "field": "modelRepository",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "33a882e5497013a4562b3d4bb80af366ccb3abfe69975f8705a58e0c4652ff0c",
+          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
           "sourceType": "hub_official_org"
         }
       ],
@@ -778,7 +778,7 @@
       "eventIdentity": "open-release:Qwen/Qwen-Image-2.1-PE-T2I",
       "provenance": {
         "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-        "contentHash": "07a7789a0ae8b078c64a60bbb5b0bcbee4331c72d8e63a1d5fb00d02603b9d21"
+        "contentHash": "f1d9500d267a3b736ca40743a37b48ee14cbde9a49a40bb3ffda731f0b0f6e70"
       }
     },
     {
@@ -817,7 +817,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "07a7789a0ae8b078c64a60bbb5b0bcbee4331c72d8e63a1d5fb00d02603b9d21"
+        "contentHash": "f1d9500d267a3b736ca40743a37b48ee14cbde9a49a40bb3ffda731f0b0f6e70"
       }
     },
     {
@@ -856,7 +856,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "07a7789a0ae8b078c64a60bbb5b0bcbee4331c72d8e63a1d5fb00d02603b9d21"
+        "contentHash": "f1d9500d267a3b736ca40743a37b48ee14cbde9a49a40bb3ffda731f0b0f6e70"
       }
     },
     {
@@ -895,7 +895,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-        "contentHash": "07a7789a0ae8b078c64a60bbb5b0bcbee4331c72d8e63a1d5fb00d02603b9d21"
+        "contentHash": "f1d9500d267a3b736ca40743a37b48ee14cbde9a49a40bb3ffda731f0b0f6e70"
       }
     },
     {
@@ -934,7 +934,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "07a7789a0ae8b078c64a60bbb5b0bcbee4331c72d8e63a1d5fb00d02603b9d21"
+        "contentHash": "f1d9500d267a3b736ca40743a37b48ee14cbde9a49a40bb3ffda731f0b0f6e70"
       }
     },
     {
@@ -973,7 +973,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "07a7789a0ae8b078c64a60bbb5b0bcbee4331c72d8e63a1d5fb00d02603b9d21"
+        "contentHash": "f1d9500d267a3b736ca40743a37b48ee14cbde9a49a40bb3ffda731f0b0f6e70"
       }
     },
     {
@@ -1012,7 +1012,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "07a7789a0ae8b078c64a60bbb5b0bcbee4331c72d8e63a1d5fb00d02603b9d21"
+        "contentHash": "f1d9500d267a3b736ca40743a37b48ee14cbde9a49a40bb3ffda731f0b0f6e70"
       }
     },
     {
@@ -1051,7 +1051,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "07a7789a0ae8b078c64a60bbb5b0bcbee4331c72d8e63a1d5fb00d02603b9d21"
+        "contentHash": "f1d9500d267a3b736ca40743a37b48ee14cbde9a49a40bb3ffda731f0b0f6e70"
       }
     },
     {
@@ -1090,7 +1090,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
-        "contentHash": "07a7789a0ae8b078c64a60bbb5b0bcbee4331c72d8e63a1d5fb00d02603b9d21"
+        "contentHash": "f1d9500d267a3b736ca40743a37b48ee14cbde9a49a40bb3ffda731f0b0f6e70"
       }
     },
     {
@@ -1129,7 +1129,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "07a7789a0ae8b078c64a60bbb5b0bcbee4331c72d8e63a1d5fb00d02603b9d21"
+        "contentHash": "f1d9500d267a3b736ca40743a37b48ee14cbde9a49a40bb3ffda731f0b0f6e70"
       }
     },
     {
@@ -1168,7 +1168,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "07a7789a0ae8b078c64a60bbb5b0bcbee4331c72d8e63a1d5fb00d02603b9d21"
+        "contentHash": "f1d9500d267a3b736ca40743a37b48ee14cbde9a49a40bb3ffda731f0b0f6e70"
       }
     },
     {
@@ -1207,7 +1207,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "07a7789a0ae8b078c64a60bbb5b0bcbee4331c72d8e63a1d5fb00d02603b9d21"
+        "contentHash": "f1d9500d267a3b736ca40743a37b48ee14cbde9a49a40bb3ffda731f0b0f6e70"
       }
     },
     {
@@ -1243,7 +1243,7 @@
       "modelIdentity": "aa_mlcr_overall:MiniMax-M3",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "07a7789a0ae8b078c64a60bbb5b0bcbee4331c72d8e63a1d5fb00d02603b9d21"
+        "contentHash": "f1d9500d267a3b736ca40743a37b48ee14cbde9a49a40bb3ffda731f0b0f6e70"
       }
     },
     {
@@ -1278,7 +1278,7 @@
       "modelIdentity": "aa_mlcr_overall:Muse Spark 1.3 (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "07a7789a0ae8b078c64a60bbb5b0bcbee4331c72d8e63a1d5fb00d02603b9d21"
+        "contentHash": "f1d9500d267a3b736ca40743a37b48ee14cbde9a49a40bb3ffda731f0b0f6e70"
       }
     },
     {
@@ -1315,7 +1315,7 @@
       "modelIdentity": "aa_mlcr_overall:Qwen3.8 27B (xhigh)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "07a7789a0ae8b078c64a60bbb5b0bcbee4331c72d8e63a1d5fb00d02603b9d21"
+        "contentHash": "f1d9500d267a3b736ca40743a37b48ee14cbde9a49a40bb3ffda731f0b0f6e70"
       }
     },
     {
@@ -1351,13 +1351,13 @@
       "modelIdentity": "aa_intelligence_index_v4_3:Step 5 Preview",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "07a7789a0ae8b078c64a60bbb5b0bcbee4331c72d8e63a1d5fb00d02603b9d21"
+        "contentHash": "f1d9500d267a3b736ca40743a37b48ee14cbde9a49a40bb3ffda731f0b0f6e70"
       }
     }
   ],
   "eventCount": 17,
   "provenance": {
-    "workflowRunId": "35524359293",
-    "mainCommit": "597a9aa83031e1f6391bd5ce0b960b0b0cb889e3"
+    "workflowRunId": "35531665164",
+    "mainCommit": "d816ef6491e63c3b9a6b625d47fcf81ba7264644"
   }
 }
