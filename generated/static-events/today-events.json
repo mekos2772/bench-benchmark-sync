@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-09-20T21:34:10Z",
-  "windowStart": "2026-09-19T21:34:10Z",
+  "generatedAt": "2026-09-20T23:26:39Z",
+  "windowStart": "2026-09-19T23:26:39Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -54,119 +54,119 @@
           "field": "canonicalId",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
+          "contentHash": "e7b46c31749fbb90828ca2b88c2c1609c7fd9dd6d67195bacd3f227e4c6c8bba",
           "sourceType": "hub_official_org"
         },
         {
           "field": "provider",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
+          "contentHash": "e7b46c31749fbb90828ca2b88c2c1609c7fd9dd6d67195bacd3f227e4c6c8bba",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelId",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
+          "contentHash": "e7b46c31749fbb90828ca2b88c2c1609c7fd9dd6d67195bacd3f227e4c6c8bba",
           "sourceType": "hub_official_org"
         },
         {
           "field": "displayName",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
+          "contentHash": "e7b46c31749fbb90828ca2b88c2c1609c7fd9dd6d67195bacd3f227e4c6c8bba",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseDate",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
+          "contentHash": "e7b46c31749fbb90828ca2b88c2c1609c7fd9dd6d67195bacd3f227e4c6c8bba",
           "sourceType": "hub_official_org"
         },
         {
           "field": "status",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
+          "contentHash": "e7b46c31749fbb90828ca2b88c2c1609c7fd9dd6d67195bacd3f227e4c6c8bba",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseType",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
+          "contentHash": "e7b46c31749fbb90828ca2b88c2c1609c7fd9dd6d67195bacd3f227e4c6c8bba",
           "sourceType": "hub_official_org"
         },
         {
           "field": "access",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
+          "contentHash": "e7b46c31749fbb90828ca2b88c2c1609c7fd9dd6d67195bacd3f227e4c6c8bba",
           "sourceType": "hub_official_org"
         },
         {
           "field": "parameterCount",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
+          "contentHash": "e7b46c31749fbb90828ca2b88c2c1609c7fd9dd6d67195bacd3f227e4c6c8bba",
           "sourceType": "hub_official_org"
         },
         {
           "field": "license",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
+          "contentHash": "e7b46c31749fbb90828ca2b88c2c1609c7fd9dd6d67195bacd3f227e4c6c8bba",
           "sourceType": "hub_official_org"
         },
         {
           "field": "description",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
+          "contentHash": "e7b46c31749fbb90828ca2b88c2c1609c7fd9dd6d67195bacd3f227e4c6c8bba",
           "sourceType": "hub_official_org"
         },
         {
           "field": "contextWindow",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
+          "contentHash": "e7b46c31749fbb90828ca2b88c2c1609c7fd9dd6d67195bacd3f227e4c6c8bba",
           "sourceType": "hub_official_org"
         },
         {
           "field": "officialUrl",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
+          "contentHash": "e7b46c31749fbb90828ca2b88c2c1609c7fd9dd6d67195bacd3f227e4c6c8bba",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelCardUrl",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
+          "contentHash": "e7b46c31749fbb90828ca2b88c2c1609c7fd9dd6d67195bacd3f227e4c6c8bba",
           "sourceType": "hub_official_org"
         },
         {
           "field": "hubRepo",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
+          "contentHash": "e7b46c31749fbb90828ca2b88c2c1609c7fd9dd6d67195bacd3f227e4c6c8bba",
           "sourceType": "hub_official_org"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
+          "contentHash": "e7b46c31749fbb90828ca2b88c2c1609c7fd9dd6d67195bacd3f227e4c6c8bba",
           "sourceType": "hub_official_org"
         },
         {
           "field": "availability",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
+          "contentHash": "e7b46c31749fbb90828ca2b88c2c1609c7fd9dd6d67195bacd3f227e4c6c8bba",
           "sourceType": "hub_official_org"
         }
       ]
@@ -219,126 +219,126 @@
           "field": "canonicalId",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
+          "contentHash": "38b7bc8b8efd5c3f0c336d90bba8d48a1ea4ab8dd7d5af5c432327c98cc46dfe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "provider",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
+          "contentHash": "38b7bc8b8efd5c3f0c336d90bba8d48a1ea4ab8dd7d5af5c432327c98cc46dfe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelId",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
+          "contentHash": "38b7bc8b8efd5c3f0c336d90bba8d48a1ea4ab8dd7d5af5c432327c98cc46dfe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "displayName",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
+          "contentHash": "38b7bc8b8efd5c3f0c336d90bba8d48a1ea4ab8dd7d5af5c432327c98cc46dfe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseDate",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
+          "contentHash": "38b7bc8b8efd5c3f0c336d90bba8d48a1ea4ab8dd7d5af5c432327c98cc46dfe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "status",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
+          "contentHash": "38b7bc8b8efd5c3f0c336d90bba8d48a1ea4ab8dd7d5af5c432327c98cc46dfe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseType",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
+          "contentHash": "38b7bc8b8efd5c3f0c336d90bba8d48a1ea4ab8dd7d5af5c432327c98cc46dfe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "access",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
+          "contentHash": "38b7bc8b8efd5c3f0c336d90bba8d48a1ea4ab8dd7d5af5c432327c98cc46dfe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "parameterCount",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
+          "contentHash": "38b7bc8b8efd5c3f0c336d90bba8d48a1ea4ab8dd7d5af5c432327c98cc46dfe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "license",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
+          "contentHash": "38b7bc8b8efd5c3f0c336d90bba8d48a1ea4ab8dd7d5af5c432327c98cc46dfe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "description",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
+          "contentHash": "38b7bc8b8efd5c3f0c336d90bba8d48a1ea4ab8dd7d5af5c432327c98cc46dfe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "contextWindow",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
+          "contentHash": "38b7bc8b8efd5c3f0c336d90bba8d48a1ea4ab8dd7d5af5c432327c98cc46dfe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "officialUrl",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
+          "contentHash": "38b7bc8b8efd5c3f0c336d90bba8d48a1ea4ab8dd7d5af5c432327c98cc46dfe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelCardUrl",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
+          "contentHash": "38b7bc8b8efd5c3f0c336d90bba8d48a1ea4ab8dd7d5af5c432327c98cc46dfe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "hubRepo",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
+          "contentHash": "38b7bc8b8efd5c3f0c336d90bba8d48a1ea4ab8dd7d5af5c432327c98cc46dfe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
+          "contentHash": "38b7bc8b8efd5c3f0c336d90bba8d48a1ea4ab8dd7d5af5c432327c98cc46dfe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "availability",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
+          "contentHash": "38b7bc8b8efd5c3f0c336d90bba8d48a1ea4ab8dd7d5af5c432327c98cc46dfe",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modalities",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
+          "contentHash": "38b7bc8b8efd5c3f0c336d90bba8d48a1ea4ab8dd7d5af5c432327c98cc46dfe",
           "sourceType": "hub_official_org"
         }
       ]
@@ -374,7 +374,7 @@
           "field": "modelRepository",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "4c8fb7975f86f6b8f1529745178a2bda94c6b3da9db5a2868c2eefd48ade333d",
+          "contentHash": "e7b46c31749fbb90828ca2b88c2c1609c7fd9dd6d67195bacd3f227e4c6c8bba",
           "sourceType": "hub_official_org"
         }
       ],
@@ -385,7 +385,7 @@
       "eventIdentity": "open-release:Qwen/Qwen-Image-2.1-PE-I2I",
       "provenance": {
         "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-        "contentHash": "529299e4c4c184abd70725021c3295024e5c0522c395aff49b8a753f192ee9f5"
+        "contentHash": "7aa5936121c2cf03ca8c702cf0464022ca730995a4c9f347f93c0895faa94b52"
       }
     },
     {
@@ -411,7 +411,7 @@
           "field": "modelRepository",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "8bf4ee14f550886143295508fd21069bd32e085bfdb0255e41a53f46449d83fe",
+          "contentHash": "38b7bc8b8efd5c3f0c336d90bba8d48a1ea4ab8dd7d5af5c432327c98cc46dfe",
           "sourceType": "hub_official_org"
         }
       ],
@@ -422,13 +422,13 @@
       "eventIdentity": "open-release:Qwen/Qwen-Image-2.1-PE-T2I",
       "provenance": {
         "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-        "contentHash": "529299e4c4c184abd70725021c3295024e5c0522c395aff49b8a753f192ee9f5"
+        "contentHash": "7aa5936121c2cf03ca8c702cf0464022ca730995a4c9f347f93c0895faa94b52"
       }
     }
   ],
   "eventCount": 2,
   "provenance": {
-    "workflowRunId": "35539099995",
-    "mainCommit": "3828fe42f4a46f26c5e7a39b7e08024ec04d8910"
+    "workflowRunId": "35544653093",
+    "mainCommit": "c9f1fcda91a06fa0ae4d74d7d034be5c7f560056"
   }
 }
