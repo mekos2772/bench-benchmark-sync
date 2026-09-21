@@ -1,8 +1,8 @@
 module.exports = {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-09-21T06:27:15Z",
-  "windowStart": "2026-09-20T06:27:15Z",
+  "generatedAt": "2026-09-21T13:06:09Z",
+  "windowStart": "2026-09-20T13:06:09Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -10,339 +10,6 @@ module.exports = {
     "benchmark"
   ],
   "models": {
-    "hf:Qwen/Qwen-Image-2.1-PE-I2I": {
-      "canonicalId": "hf:Qwen/Qwen-Image-2.1-PE-I2I",
-      "provider": "Qwen",
-      "modelId": "Qwen/Qwen-Image-2.1-PE-I2I",
-      "displayName": "Qwen-Image-2.1-PE-I2I",
-      "version": null,
-      "aliases": [],
-      "releaseDate": "2026-09-20T08:46:47Z",
-      "status": "available",
-      "deprecationDate": null,
-      "releaseType": "open_weights_release",
-      "access": "open_weights",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": 9409813744,
-      "license": "other",
-      "technicalReportUrl": null,
-      "description": "🤖 ModelScope&nbsp;&nbsp;| &nbsp;&nbsp;🤗 HuggingFace&nbsp;&nbsp;| &nbsp;&nbsp;📑 Blog&nbsp;&nbsp;| &nbsp;&nbsp;🖥️ Demo&nbsp;&nbsp;| &nbsp;&nbsp;🫨 Discord",
-      "contextWindow": 262144,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [
-        "Hugging Face"
-      ],
-      "officialUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-      "documentationUrl": null,
-      "modelCardUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-      "hubRepo": "Qwen/Qwen-Image-2.1-PE-I2I",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "Qwen",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-          "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "provider",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-          "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-          "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-          "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseDate",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-          "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-          "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseType",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-          "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-          "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "parameterCount",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-          "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "license",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-          "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "description",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-          "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "contextWindow",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-          "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "officialUrl",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-          "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modelCardUrl",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-          "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "hubRepo",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-          "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-          "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "availability",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-          "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
-          "sourceType": "hub_official_org"
-        }
-      ]
-    },
-    "hf:Qwen/Qwen-Image-2.1-PE-T2I": {
-      "canonicalId": "hf:Qwen/Qwen-Image-2.1-PE-T2I",
-      "provider": "Qwen",
-      "modelId": "Qwen/Qwen-Image-2.1-PE-T2I",
-      "displayName": "Qwen-Image-2.1-PE-T2I",
-      "version": null,
-      "aliases": [],
-      "releaseDate": "2026-09-20T08:45:29Z",
-      "status": "available",
-      "deprecationDate": null,
-      "releaseType": "open_weights_release",
-      "access": "open_weights",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "image"
-        ]
-      },
-      "capabilities": [],
-      "parameterCount": 9409813744,
-      "license": "other",
-      "technicalReportUrl": null,
-      "description": "🤖 ModelScope&nbsp;&nbsp;| &nbsp;&nbsp;🤗 HuggingFace&nbsp;&nbsp;| &nbsp;&nbsp;📑 Blog&nbsp;&nbsp;| &nbsp;&nbsp;🖥️ Demo&nbsp;&nbsp;| &nbsp;&nbsp;🫨 Discord",
-      "contextWindow": 262144,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [
-        "Hugging Face"
-      ],
-      "officialUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-      "documentationUrl": null,
-      "modelCardUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-      "hubRepo": "Qwen/Qwen-Image-2.1-PE-T2I",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "Qwen",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-          "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "provider",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-          "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-          "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-          "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseDate",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-          "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-          "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseType",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-          "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-          "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "parameterCount",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-          "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "license",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-          "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "description",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-          "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "contextWindow",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-          "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "officialUrl",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-          "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modelCardUrl",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-          "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "hubRepo",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-          "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-          "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "availability",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-          "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modalities",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-          "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
-          "sourceType": "hub_official_org"
-        }
-      ]
-    },
     "benchmark:Step 5 Preview": {
       "canonicalId": "benchmark:Step 5 Preview",
       "provider": null,
@@ -385,133 +52,98 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "7a256d7f6f9b399865b574ff9346bc591b0e2a89436f7cb0126c03ba1c30b1d2",
+          "contentHash": "dfa4d0cf867dc790d37d2368690239c6f9e5bfdf2ba7088b9cdb69a3ac591dfa",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "7a256d7f6f9b399865b574ff9346bc591b0e2a89436f7cb0126c03ba1c30b1d2",
+          "contentHash": "dfa4d0cf867dc790d37d2368690239c6f9e5bfdf2ba7088b9cdb69a3ac591dfa",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "7a256d7f6f9b399865b574ff9346bc591b0e2a89436f7cb0126c03ba1c30b1d2",
+          "contentHash": "dfa4d0cf867dc790d37d2368690239c6f9e5bfdf2ba7088b9cdb69a3ac591dfa",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "7a256d7f6f9b399865b574ff9346bc591b0e2a89436f7cb0126c03ba1c30b1d2",
+          "contentHash": "dfa4d0cf867dc790d37d2368690239c6f9e5bfdf2ba7088b9cdb69a3ac591dfa",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "7a256d7f6f9b399865b574ff9346bc591b0e2a89436f7cb0126c03ba1c30b1d2",
+          "contentHash": "dfa4d0cf867dc790d37d2368690239c6f9e5bfdf2ba7088b9cdb69a3ac591dfa",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "7a256d7f6f9b399865b574ff9346bc591b0e2a89436f7cb0126c03ba1c30b1d2",
+          "contentHash": "dfa4d0cf867dc790d37d2368690239c6f9e5bfdf2ba7088b9cdb69a3ac591dfa",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
           "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "7a256d7f6f9b399865b574ff9346bc591b0e2a89436f7cb0126c03ba1c30b1d2",
+          "contentHash": "dfa4d0cf867dc790d37d2368690239c6f9e5bfdf2ba7088b9cdb69a3ac591dfa",
           "sourceType": "official_benchmark"
         }
       ]
     }
   },
-  "modelCount": 3,
+  "modelCount": 1,
   "sourceSummary": {
-    "official": 2,
+    "official": 0,
     "catalog": 0,
     "benchmark": 13
   },
   "events": [
     {
-      "eventId": "db35f5ba763fc80760d170503795c0f5",
-      "family": "model",
-      "eventType": "official_model_release",
-      "eventClass": "model_release",
+      "eventId": "003b89c8c09d48cdfb9b7ccfe666d1f9",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
       "trustTier": "official",
-      "priority": "P0",
+      "priority": "P1",
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "Qwen-Image-2.1-PE-I2I 开放权重发布",
-      "summary": "Qwen 在官方组织发布新模型：参数量 9.4B，上下文 262,144 tokens，许可 other。",
-      "repoId": "Qwen/Qwen-Image-2.1-PE-I2I",
-      "repo": "Qwen/Qwen-Image-2.1-PE-I2I",
-      "modelId": "Qwen/Qwen-Image-2.1-PE-I2I",
-      "modelRef": "hf:Qwen/Qwen-Image-2.1-PE-I2I",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "Qwen",
-      "evidence": [
-        {
-          "field": "modelRepository",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-          "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
-          "sourceType": "hub_official_org"
-        }
+      "title": "Humanity's Last Exam 官方数据更新",
+      "summary": "Humanity's Last Exam 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（58.7%）、Claude Fable 5.1 (high with fallback)（55.9%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "observedAt": "2026-09-21T01:18:27Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Humanity's Last Exam official public Dataset page",
+      "benchmarkId": "aa_humanitys_last_exam",
+      "benchmarkTitle": "Humanity's Last Exam",
+      "release": "page_jsonld",
+      "contentHash": "1e1f0050b5875d1fc9ddba6c49d3d611617b720ddbc4d3ab62fc6ef2776f8da9",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "Claude Fable 5.1 (max with fallback)（59.1%）",
+        "Claude Fable 5.1 (xhigh with fallback)（58.7%）",
+        "Claude Fable 5.1 (high with fallback)（55.9%）"
       ],
-      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-      "observedAt": "2026-09-20T08:46:47Z",
-      "publishedAt": "2026-09-20T08:46:47Z",
-      "source": "Hugging Face · Qwen",
-      "eventIdentity": "open-release:Qwen/Qwen-Image-2.1-PE-I2I",
       "provenance": {
-        "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
-      }
-    },
-    {
-      "eventId": "1955e3394a3ced438c3c92c739eac211",
-      "family": "model",
-      "eventType": "official_model_release",
-      "eventClass": "model_release",
-      "trustTier": "official",
-      "priority": "P0",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Qwen-Image-2.1-PE-T2I 开放权重发布",
-      "summary": "Qwen 在官方组织发布新模型：参数量 9.4B，上下文 262,144 tokens，许可 other。",
-      "repoId": "Qwen/Qwen-Image-2.1-PE-T2I",
-      "repo": "Qwen/Qwen-Image-2.1-PE-T2I",
-      "modelId": "Qwen/Qwen-Image-2.1-PE-T2I",
-      "modelRef": "hf:Qwen/Qwen-Image-2.1-PE-T2I",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "Qwen",
-      "evidence": [
-        {
-          "field": "modelRepository",
-          "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-          "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
-          "sourceType": "hub_official_org"
-        }
-      ],
-      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-      "observedAt": "2026-09-20T08:45:29Z",
-      "publishedAt": "2026-09-20T08:45:29Z",
-      "source": "Hugging Face · Qwen",
-      "eventIdentity": "open-release:Qwen/Qwen-Image-2.1-PE-T2I",
-      "provenance": {
-        "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "contentHash": "1dbd4e2ad667810edf354e2531392279d3f0b6d78aea07b24da406d1ab230e0b"
       }
     },
     {
@@ -550,85 +182,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
-      }
-    },
-    {
-      "eventId": "67cfc5b1185c6e69926e83d2eb7aa978",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Terminal-Bench 4.0 官方数据更新",
-      "summary": "Terminal-Bench 4.0 官方数据发生变化；共 20 个模型 · 当前前列：GPT-6 Astra (xhigh)（59.6%）、GPT-6 Astra (max)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（55.1%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-      "observedAt": "2026-09-21T01:18:27Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
-      "benchmarkId": "aa_terminal_bench_v4_0",
-      "benchmarkTitle": "Terminal-Bench 4.0",
-      "release": "page_jsonld",
-      "contentHash": "8abc838d48c0b0e1a47bf57d52e232731d1e4a63548f845b22133495c3aa18d6",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "GPT-6 Astra (xhigh)（59.6%）",
-        "GPT-6 Astra (max)（59.1%）",
-        "Claude Fable 5.1 (xhigh with fallback)（55.1%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
-      }
-    },
-    {
-      "eventId": "003b89c8c09d48cdfb9b7ccfe666d1f9",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Humanity's Last Exam 官方数据更新",
-      "summary": "Humanity's Last Exam 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（58.7%）、Claude Fable 5.1 (high with fallback)（55.9%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-      "observedAt": "2026-09-21T01:18:27Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis Humanity's Last Exam official public Dataset page",
-      "benchmarkId": "aa_humanitys_last_exam",
-      "benchmarkTitle": "Humanity's Last Exam",
-      "release": "page_jsonld",
-      "contentHash": "1e1f0050b5875d1fc9ddba6c49d3d611617b720ddbc4d3ab62fc6ef2776f8da9",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Fable 5.1 (max with fallback)（59.1%）",
-        "Claude Fable 5.1 (xhigh with fallback)（58.7%）",
-        "Claude Fable 5.1 (high with fallback)（55.9%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
+        "contentHash": "1dbd4e2ad667810edf354e2531392279d3f0b6d78aea07b24da406d1ab230e0b"
       }
     },
     {
@@ -667,7 +221,46 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
+        "contentHash": "1dbd4e2ad667810edf354e2531392279d3f0b6d78aea07b24da406d1ab230e0b"
+      }
+    },
+    {
+      "eventId": "67cfc5b1185c6e69926e83d2eb7aa978",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Terminal-Bench 4.0 官方数据更新",
+      "summary": "Terminal-Bench 4.0 官方数据发生变化；共 20 个模型 · 当前前列：GPT-6 Astra (xhigh)（59.6%）、GPT-6 Astra (max)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（55.1%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+      "observedAt": "2026-09-21T01:18:27Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
+      "benchmarkId": "aa_terminal_bench_v4_0",
+      "benchmarkTitle": "Terminal-Bench 4.0",
+      "release": "page_jsonld",
+      "contentHash": "8abc838d48c0b0e1a47bf57d52e232731d1e4a63548f845b22133495c3aa18d6",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "GPT-6 Astra (xhigh)（59.6%）",
+        "GPT-6 Astra (max)（59.1%）",
+        "Claude Fable 5.1 (xhigh with fallback)（55.1%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+        "contentHash": "1dbd4e2ad667810edf354e2531392279d3f0b6d78aea07b24da406d1ab230e0b"
       }
     },
     {
@@ -706,7 +299,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
+        "contentHash": "1dbd4e2ad667810edf354e2531392279d3f0b6d78aea07b24da406d1ab230e0b"
       }
     },
     {
@@ -745,7 +338,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
+        "contentHash": "1dbd4e2ad667810edf354e2531392279d3f0b6d78aea07b24da406d1ab230e0b"
       }
     },
     {
@@ -784,7 +377,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
+        "contentHash": "1dbd4e2ad667810edf354e2531392279d3f0b6d78aea07b24da406d1ab230e0b"
       }
     },
     {
@@ -823,7 +416,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
+        "contentHash": "1dbd4e2ad667810edf354e2531392279d3f0b6d78aea07b24da406d1ab230e0b"
       }
     },
     {
@@ -862,7 +455,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
-        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
+        "contentHash": "1dbd4e2ad667810edf354e2531392279d3f0b6d78aea07b24da406d1ab230e0b"
       }
     },
     {
@@ -901,7 +494,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
+        "contentHash": "1dbd4e2ad667810edf354e2531392279d3f0b6d78aea07b24da406d1ab230e0b"
       }
     },
     {
@@ -940,7 +533,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
+        "contentHash": "1dbd4e2ad667810edf354e2531392279d3f0b6d78aea07b24da406d1ab230e0b"
       }
     },
     {
@@ -979,7 +572,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
+        "contentHash": "1dbd4e2ad667810edf354e2531392279d3f0b6d78aea07b24da406d1ab230e0b"
       }
     },
     {
@@ -1015,13 +608,13 @@ module.exports = {
       "modelIdentity": "aa_gdpval_elo:Step 5 Preview",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
+        "contentHash": "1dbd4e2ad667810edf354e2531392279d3f0b6d78aea07b24da406d1ab230e0b"
       }
     }
   ],
-  "eventCount": 15,
+  "eventCount": 13,
   "provenance": {
-    "workflowRunId": "35568544654",
-    "mainCommit": "405ba55b6ad326e725d6d200dad7addf3bf439c0"
+    "workflowRunId": "35603436296",
+    "mainCommit": "72de84eb368abd34cbb7d9e2b0f9119604e8df9d"
   }
 };
