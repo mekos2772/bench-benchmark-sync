@@ -1,8 +1,8 @@
 module.exports = {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-09-21T01:18:27Z",
-  "windowStart": "2026-09-20T01:18:27Z",
+  "generatedAt": "2026-09-21T06:27:15Z",
+  "windowStart": "2026-09-20T06:27:15Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -54,119 +54,119 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "24dd844eda9e953b6bda32323a7e7467a9b592267af694ffd4b4e2f1162eca66",
+          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
           "sourceType": "hub_official_org"
         },
         {
           "field": "provider",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "24dd844eda9e953b6bda32323a7e7467a9b592267af694ffd4b4e2f1162eca66",
+          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelId",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "24dd844eda9e953b6bda32323a7e7467a9b592267af694ffd4b4e2f1162eca66",
+          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
           "sourceType": "hub_official_org"
         },
         {
           "field": "displayName",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "24dd844eda9e953b6bda32323a7e7467a9b592267af694ffd4b4e2f1162eca66",
+          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseDate",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "24dd844eda9e953b6bda32323a7e7467a9b592267af694ffd4b4e2f1162eca66",
+          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
           "sourceType": "hub_official_org"
         },
         {
           "field": "status",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "24dd844eda9e953b6bda32323a7e7467a9b592267af694ffd4b4e2f1162eca66",
+          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseType",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "24dd844eda9e953b6bda32323a7e7467a9b592267af694ffd4b4e2f1162eca66",
+          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
           "sourceType": "hub_official_org"
         },
         {
           "field": "access",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "24dd844eda9e953b6bda32323a7e7467a9b592267af694ffd4b4e2f1162eca66",
+          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
           "sourceType": "hub_official_org"
         },
         {
           "field": "parameterCount",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "24dd844eda9e953b6bda32323a7e7467a9b592267af694ffd4b4e2f1162eca66",
+          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
           "sourceType": "hub_official_org"
         },
         {
           "field": "license",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "24dd844eda9e953b6bda32323a7e7467a9b592267af694ffd4b4e2f1162eca66",
+          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
           "sourceType": "hub_official_org"
         },
         {
           "field": "description",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "24dd844eda9e953b6bda32323a7e7467a9b592267af694ffd4b4e2f1162eca66",
+          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
           "sourceType": "hub_official_org"
         },
         {
           "field": "contextWindow",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "24dd844eda9e953b6bda32323a7e7467a9b592267af694ffd4b4e2f1162eca66",
+          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
           "sourceType": "hub_official_org"
         },
         {
           "field": "officialUrl",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "24dd844eda9e953b6bda32323a7e7467a9b592267af694ffd4b4e2f1162eca66",
+          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelCardUrl",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "24dd844eda9e953b6bda32323a7e7467a9b592267af694ffd4b4e2f1162eca66",
+          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
           "sourceType": "hub_official_org"
         },
         {
           "field": "hubRepo",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "24dd844eda9e953b6bda32323a7e7467a9b592267af694ffd4b4e2f1162eca66",
+          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
           "sourceType": "hub_official_org"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "24dd844eda9e953b6bda32323a7e7467a9b592267af694ffd4b4e2f1162eca66",
+          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
           "sourceType": "hub_official_org"
         },
         {
           "field": "availability",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "24dd844eda9e953b6bda32323a7e7467a9b592267af694ffd4b4e2f1162eca66",
+          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
           "sourceType": "hub_official_org"
         }
       ]
@@ -219,1106 +219,127 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "3bc092890b5f26192611e326969ae90e1bb5a5812dc52a5ae239c7f618893a75",
+          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
           "sourceType": "hub_official_org"
         },
         {
           "field": "provider",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "3bc092890b5f26192611e326969ae90e1bb5a5812dc52a5ae239c7f618893a75",
+          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelId",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "3bc092890b5f26192611e326969ae90e1bb5a5812dc52a5ae239c7f618893a75",
+          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
           "sourceType": "hub_official_org"
         },
         {
           "field": "displayName",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "3bc092890b5f26192611e326969ae90e1bb5a5812dc52a5ae239c7f618893a75",
+          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseDate",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "3bc092890b5f26192611e326969ae90e1bb5a5812dc52a5ae239c7f618893a75",
+          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
           "sourceType": "hub_official_org"
         },
         {
           "field": "status",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "3bc092890b5f26192611e326969ae90e1bb5a5812dc52a5ae239c7f618893a75",
+          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseType",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "3bc092890b5f26192611e326969ae90e1bb5a5812dc52a5ae239c7f618893a75",
+          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
           "sourceType": "hub_official_org"
         },
         {
           "field": "access",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "3bc092890b5f26192611e326969ae90e1bb5a5812dc52a5ae239c7f618893a75",
+          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
           "sourceType": "hub_official_org"
         },
         {
           "field": "parameterCount",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "3bc092890b5f26192611e326969ae90e1bb5a5812dc52a5ae239c7f618893a75",
+          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
           "sourceType": "hub_official_org"
         },
         {
           "field": "license",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "3bc092890b5f26192611e326969ae90e1bb5a5812dc52a5ae239c7f618893a75",
+          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
           "sourceType": "hub_official_org"
         },
         {
           "field": "description",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "3bc092890b5f26192611e326969ae90e1bb5a5812dc52a5ae239c7f618893a75",
+          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
           "sourceType": "hub_official_org"
         },
         {
           "field": "contextWindow",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "3bc092890b5f26192611e326969ae90e1bb5a5812dc52a5ae239c7f618893a75",
+          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
           "sourceType": "hub_official_org"
         },
         {
           "field": "officialUrl",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "3bc092890b5f26192611e326969ae90e1bb5a5812dc52a5ae239c7f618893a75",
+          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelCardUrl",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "3bc092890b5f26192611e326969ae90e1bb5a5812dc52a5ae239c7f618893a75",
+          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
           "sourceType": "hub_official_org"
         },
         {
           "field": "hubRepo",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "3bc092890b5f26192611e326969ae90e1bb5a5812dc52a5ae239c7f618893a75",
+          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
           "sourceType": "hub_official_org"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "3bc092890b5f26192611e326969ae90e1bb5a5812dc52a5ae239c7f618893a75",
+          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
           "sourceType": "hub_official_org"
         },
         {
           "field": "availability",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "3bc092890b5f26192611e326969ae90e1bb5a5812dc52a5ae239c7f618893a75",
+          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modalities",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "3bc092890b5f26192611e326969ae90e1bb5a5812dc52a5ae239c7f618893a75",
+          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
           "sourceType": "hub_official_org"
-        }
-      ]
-    },
-    "benchmark:Claude Fable 5 (with fallback)": {
-      "canonicalId": "benchmark:Claude Fable 5 (with fallback)",
-      "provider": null,
-      "modelId": "Claude Fable 5 (with fallback)",
-      "displayName": "Claude Fable 5 (with fallback)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "c00a1a5ed7994ba294552fa86529b4cbfcf9d53dff3b586eab8c647619948d34",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "c00a1a5ed7994ba294552fa86529b4cbfcf9d53dff3b586eab8c647619948d34",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "c00a1a5ed7994ba294552fa86529b4cbfcf9d53dff3b586eab8c647619948d34",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "c00a1a5ed7994ba294552fa86529b4cbfcf9d53dff3b586eab8c647619948d34",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "c00a1a5ed7994ba294552fa86529b4cbfcf9d53dff3b586eab8c647619948d34",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "c00a1a5ed7994ba294552fa86529b4cbfcf9d53dff3b586eab8c647619948d34",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "c00a1a5ed7994ba294552fa86529b4cbfcf9d53dff3b586eab8c647619948d34",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:DeepSeek V4 Pro 0813 (max)": {
-      "canonicalId": "benchmark:DeepSeek V4 Pro 0813 (max)",
-      "provider": null,
-      "modelId": "DeepSeek V4 Pro 0813 (max)",
-      "displayName": "DeepSeek V4 Pro 0813 (max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "12a2914a4019ce13b91177846b8142ee709ee700b5537de8a37d9fa12dd021a5",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "12a2914a4019ce13b91177846b8142ee709ee700b5537de8a37d9fa12dd021a5",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "12a2914a4019ce13b91177846b8142ee709ee700b5537de8a37d9fa12dd021a5",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "12a2914a4019ce13b91177846b8142ee709ee700b5537de8a37d9fa12dd021a5",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "12a2914a4019ce13b91177846b8142ee709ee700b5537de8a37d9fa12dd021a5",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "12a2914a4019ce13b91177846b8142ee709ee700b5537de8a37d9fa12dd021a5",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "12a2914a4019ce13b91177846b8142ee709ee700b5537de8a37d9fa12dd021a5",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GLM-5.3 (max)": {
-      "canonicalId": "benchmark:GLM-5.3 (max)",
-      "provider": null,
-      "modelId": "GLM-5.3 (max)",
-      "displayName": "GLM-5.3 (max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "bc79c5eea94ee063d180451fbbfbd14e091fbbcf46df41993286ac4b5157ca88",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "bc79c5eea94ee063d180451fbbfbd14e091fbbcf46df41993286ac4b5157ca88",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "bc79c5eea94ee063d180451fbbfbd14e091fbbcf46df41993286ac4b5157ca88",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "bc79c5eea94ee063d180451fbbfbd14e091fbbcf46df41993286ac4b5157ca88",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "bc79c5eea94ee063d180451fbbfbd14e091fbbcf46df41993286ac4b5157ca88",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "bc79c5eea94ee063d180451fbbfbd14e091fbbcf46df41993286ac4b5157ca88",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "bc79c5eea94ee063d180451fbbfbd14e091fbbcf46df41993286ac4b5157ca88",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GLM-5.3-Flash": {
-      "canonicalId": "benchmark:GLM-5.3-Flash",
-      "provider": null,
-      "modelId": "GLM-5.3-Flash",
-      "displayName": "GLM-5.3-Flash",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "e885bbdd6f12e23dd0e7a216d714b6420ca6d67fc81f756255f7043a6903ca9a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "e885bbdd6f12e23dd0e7a216d714b6420ca6d67fc81f756255f7043a6903ca9a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "e885bbdd6f12e23dd0e7a216d714b6420ca6d67fc81f756255f7043a6903ca9a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "e885bbdd6f12e23dd0e7a216d714b6420ca6d67fc81f756255f7043a6903ca9a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "e885bbdd6f12e23dd0e7a216d714b6420ca6d67fc81f756255f7043a6903ca9a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "e885bbdd6f12e23dd0e7a216d714b6420ca6d67fc81f756255f7043a6903ca9a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "e885bbdd6f12e23dd0e7a216d714b6420ca6d67fc81f756255f7043a6903ca9a",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GPT-5.6 Luna (max)": {
-      "canonicalId": "benchmark:GPT-5.6 Luna (max)",
-      "provider": null,
-      "modelId": "GPT-5.6 Luna (max)",
-      "displayName": "GPT-5.6 Luna (max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "59f4680d4d2903922adb6b11e7c8dfe51f2e1ef1a0b327c545019122ec3187d2",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "59f4680d4d2903922adb6b11e7c8dfe51f2e1ef1a0b327c545019122ec3187d2",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "59f4680d4d2903922adb6b11e7c8dfe51f2e1ef1a0b327c545019122ec3187d2",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "59f4680d4d2903922adb6b11e7c8dfe51f2e1ef1a0b327c545019122ec3187d2",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "59f4680d4d2903922adb6b11e7c8dfe51f2e1ef1a0b327c545019122ec3187d2",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "59f4680d4d2903922adb6b11e7c8dfe51f2e1ef1a0b327c545019122ec3187d2",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "59f4680d4d2903922adb6b11e7c8dfe51f2e1ef1a0b327c545019122ec3187d2",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Grok 4.6 (high)": {
-      "canonicalId": "benchmark:Grok 4.6 (high)",
-      "provider": null,
-      "modelId": "Grok 4.6 (high)",
-      "displayName": "Grok 4.6 (high)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "791ab10b9f2c56fcf98a1bcb2c0327c98285044dcb7d51a7ff57a7ec695bff93",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "791ab10b9f2c56fcf98a1bcb2c0327c98285044dcb7d51a7ff57a7ec695bff93",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "791ab10b9f2c56fcf98a1bcb2c0327c98285044dcb7d51a7ff57a7ec695bff93",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "791ab10b9f2c56fcf98a1bcb2c0327c98285044dcb7d51a7ff57a7ec695bff93",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "791ab10b9f2c56fcf98a1bcb2c0327c98285044dcb7d51a7ff57a7ec695bff93",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "791ab10b9f2c56fcf98a1bcb2c0327c98285044dcb7d51a7ff57a7ec695bff93",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "791ab10b9f2c56fcf98a1bcb2c0327c98285044dcb7d51a7ff57a7ec695bff93",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Grok 4.6 (xhigh)": {
-      "canonicalId": "benchmark:Grok 4.6 (xhigh)",
-      "provider": null,
-      "modelId": "Grok 4.6 (xhigh)",
-      "displayName": "Grok 4.6 (xhigh)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "c5a77fe76b13497f6e5c510b1ae498d28fb09b9bd07786703000e86258616539",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "c5a77fe76b13497f6e5c510b1ae498d28fb09b9bd07786703000e86258616539",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "c5a77fe76b13497f6e5c510b1ae498d28fb09b9bd07786703000e86258616539",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "c5a77fe76b13497f6e5c510b1ae498d28fb09b9bd07786703000e86258616539",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "c5a77fe76b13497f6e5c510b1ae498d28fb09b9bd07786703000e86258616539",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "c5a77fe76b13497f6e5c510b1ae498d28fb09b9bd07786703000e86258616539",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "c5a77fe76b13497f6e5c510b1ae498d28fb09b9bd07786703000e86258616539",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Kimi K3 (max)": {
-      "canonicalId": "benchmark:Kimi K3 (max)",
-      "provider": null,
-      "modelId": "Kimi K3 (max)",
-      "displayName": "Kimi K3 (max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "9a1d29e9ae34d1ac523157f97729973e646773bde994064cc11096db620edddd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "9a1d29e9ae34d1ac523157f97729973e646773bde994064cc11096db620edddd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "9a1d29e9ae34d1ac523157f97729973e646773bde994064cc11096db620edddd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "9a1d29e9ae34d1ac523157f97729973e646773bde994064cc11096db620edddd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "9a1d29e9ae34d1ac523157f97729973e646773bde994064cc11096db620edddd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "9a1d29e9ae34d1ac523157f97729973e646773bde994064cc11096db620edddd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "9a1d29e9ae34d1ac523157f97729973e646773bde994064cc11096db620edddd",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Muse Spark 1.3 (max)": {
-      "canonicalId": "benchmark:Muse Spark 1.3 (max)",
-      "provider": null,
-      "modelId": "Muse Spark 1.3 (max)",
-      "displayName": "Muse Spark 1.3 (max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "309567d7829259f9c453ab79a3e149f19a73cf2957a9a9016deed66ff84cbd96",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "309567d7829259f9c453ab79a3e149f19a73cf2957a9a9016deed66ff84cbd96",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "309567d7829259f9c453ab79a3e149f19a73cf2957a9a9016deed66ff84cbd96",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "309567d7829259f9c453ab79a3e149f19a73cf2957a9a9016deed66ff84cbd96",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "309567d7829259f9c453ab79a3e149f19a73cf2957a9a9016deed66ff84cbd96",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "309567d7829259f9c453ab79a3e149f19a73cf2957a9a9016deed66ff84cbd96",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "309567d7829259f9c453ab79a3e149f19a73cf2957a9a9016deed66ff84cbd96",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Muse Spark 1.3 (xhigh)": {
-      "canonicalId": "benchmark:Muse Spark 1.3 (xhigh)",
-      "provider": null,
-      "modelId": "Muse Spark 1.3 (xhigh)",
-      "displayName": "Muse Spark 1.3 (xhigh)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "481ae056e6e33ef192075494bd68202da3ec2337870aa5e5dcaeb247fb33a9fd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "481ae056e6e33ef192075494bd68202da3ec2337870aa5e5dcaeb247fb33a9fd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "481ae056e6e33ef192075494bd68202da3ec2337870aa5e5dcaeb247fb33a9fd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "481ae056e6e33ef192075494bd68202da3ec2337870aa5e5dcaeb247fb33a9fd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "481ae056e6e33ef192075494bd68202da3ec2337870aa5e5dcaeb247fb33a9fd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "481ae056e6e33ef192075494bd68202da3ec2337870aa5e5dcaeb247fb33a9fd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "481ae056e6e33ef192075494bd68202da3ec2337870aa5e5dcaeb247fb33a9fd",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Qwen3.8 Max (0902)": {
-      "canonicalId": "benchmark:Qwen3.8 Max (0902)",
-      "provider": null,
-      "modelId": "Qwen3.8 Max (0902)",
-      "displayName": "Qwen3.8 Max (0902)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "df204fec3688dd105360a6d58bb9fde21677787192f203cb91c3a44b87dd8193",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "df204fec3688dd105360a6d58bb9fde21677787192f203cb91c3a44b87dd8193",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "df204fec3688dd105360a6d58bb9fde21677787192f203cb91c3a44b87dd8193",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "df204fec3688dd105360a6d58bb9fde21677787192f203cb91c3a44b87dd8193",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "df204fec3688dd105360a6d58bb9fde21677787192f203cb91c3a44b87dd8193",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "df204fec3688dd105360a6d58bb9fde21677787192f203cb91c3a44b87dd8193",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-          "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "df204fec3688dd105360a6d58bb9fde21677787192f203cb91c3a44b87dd8193",
-          "sourceType": "official_benchmark"
         }
       ]
     },
@@ -1364,55 +385,55 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "5efcbd7a2a208a75e641d970e2ccfb1fab4dd3b4194226aa28627cf7996dbb07",
+          "contentHash": "7a256d7f6f9b399865b574ff9346bc591b0e2a89436f7cb0126c03ba1c30b1d2",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "5efcbd7a2a208a75e641d970e2ccfb1fab4dd3b4194226aa28627cf7996dbb07",
+          "contentHash": "7a256d7f6f9b399865b574ff9346bc591b0e2a89436f7cb0126c03ba1c30b1d2",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "5efcbd7a2a208a75e641d970e2ccfb1fab4dd3b4194226aa28627cf7996dbb07",
+          "contentHash": "7a256d7f6f9b399865b574ff9346bc591b0e2a89436f7cb0126c03ba1c30b1d2",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "5efcbd7a2a208a75e641d970e2ccfb1fab4dd3b4194226aa28627cf7996dbb07",
+          "contentHash": "7a256d7f6f9b399865b574ff9346bc591b0e2a89436f7cb0126c03ba1c30b1d2",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "5efcbd7a2a208a75e641d970e2ccfb1fab4dd3b4194226aa28627cf7996dbb07",
+          "contentHash": "7a256d7f6f9b399865b574ff9346bc591b0e2a89436f7cb0126c03ba1c30b1d2",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "5efcbd7a2a208a75e641d970e2ccfb1fab4dd3b4194226aa28627cf7996dbb07",
+          "contentHash": "7a256d7f6f9b399865b574ff9346bc591b0e2a89436f7cb0126c03ba1c30b1d2",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
           "observedAt": "2026-09-21T01:18:27Z",
-          "contentHash": "5efcbd7a2a208a75e641d970e2ccfb1fab4dd3b4194226aa28627cf7996dbb07",
+          "contentHash": "7a256d7f6f9b399865b574ff9346bc591b0e2a89436f7cb0126c03ba1c30b1d2",
           "sourceType": "official_benchmark"
         }
       ]
     }
   },
-  "modelCount": 14,
+  "modelCount": 3,
   "sourceSummary": {
     "official": 2,
     "catalog": 0,
@@ -1442,7 +463,7 @@ module.exports = {
           "field": "modelRepository",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
           "observedAt": "2026-09-20T08:46:47Z",
-          "contentHash": "24dd844eda9e953b6bda32323a7e7467a9b592267af694ffd4b4e2f1162eca66",
+          "contentHash": "e1a6c8ad22139880fc0cfaea1821ee64c73fa53fb22daf9121221ff33041428f",
           "sourceType": "hub_official_org"
         }
       ],
@@ -1453,7 +474,7 @@ module.exports = {
       "eventIdentity": "open-release:Qwen/Qwen-Image-2.1-PE-I2I",
       "provenance": {
         "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
-        "contentHash": "524effa4e4803b6aedfc99837a3e0f6bb422fc837bb47392ea17cbc832c7b552"
+        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
       }
     },
     {
@@ -1479,7 +500,7 @@ module.exports = {
           "field": "modelRepository",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
           "observedAt": "2026-09-20T08:45:29Z",
-          "contentHash": "3bc092890b5f26192611e326969ae90e1bb5a5812dc52a5ae239c7f618893a75",
+          "contentHash": "62c8c5b6c177453a1d69e2604e6f277ed85e2421be1120fa2f5b5c5720fdb011",
           "sourceType": "hub_official_org"
         }
       ],
@@ -1490,7 +511,7 @@ module.exports = {
       "eventIdentity": "open-release:Qwen/Qwen-Image-2.1-PE-T2I",
       "provenance": {
         "sourceUrl": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
-        "contentHash": "524effa4e4803b6aedfc99837a3e0f6bb422fc837bb47392ea17cbc832c7b552"
+        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
       }
     },
     {
@@ -1529,7 +550,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "524effa4e4803b6aedfc99837a3e0f6bb422fc837bb47392ea17cbc832c7b552"
+        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
       }
     },
     {
@@ -1568,46 +589,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-        "contentHash": "524effa4e4803b6aedfc99837a3e0f6bb422fc837bb47392ea17cbc832c7b552"
-      }
-    },
-    {
-      "eventId": "d7e6288b80d905660a213aca60a84ca8",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "SciCode 官方数据更新",
-      "summary": "SciCode 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（63.1%）、Claude Fable 5 (with fallback)（61.0%）、Claude Fable 5.1 (xhigh with fallback)（60.9%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/scicode",
-      "observedAt": "2026-09-21T01:18:27Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis SciCode official public Dataset page",
-      "benchmarkId": "aa_scicode",
-      "benchmarkTitle": "SciCode",
-      "release": "page_jsonld",
-      "contentHash": "f2b3689f14b3af669189d7ae2f70aa122e08a46390c5a2f566ca1b8516e2e7dc",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Fable 5.1 (max with fallback)（63.1%）",
-        "Claude Fable 5 (with fallback)（61.0%）",
-        "Claude Fable 5.1 (xhigh with fallback)（60.9%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "524effa4e4803b6aedfc99837a3e0f6bb422fc837bb47392ea17cbc832c7b552"
+        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
       }
     },
     {
@@ -1646,46 +628,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "524effa4e4803b6aedfc99837a3e0f6bb422fc837bb47392ea17cbc832c7b552"
-      }
-    },
-    {
-      "eventId": "dc20ee1a608920992b40cf8fd6c88477",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "AA LCR 官方数据更新",
-      "summary": "AA LCR 官方数据发生变化；共 20 个模型 · 当前前列：Kimi K3 (max)（88.7%）、Step 5 Preview（88.3%）、Claude Fable 5.1 (max with fallback)（85.3%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-      "observedAt": "2026-09-21T01:18:27Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis AA LCR official public Dataset page",
-      "benchmarkId": "aa_lcr",
-      "benchmarkTitle": "AA LCR",
-      "release": "page_jsonld",
-      "contentHash": "b342793df248e87d758e1b45564f038b62b90ae1d68b4fef3406f708b052763f",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "Kimi K3 (max)（88.7%）",
-        "Step 5 Preview（88.3%）",
-        "Claude Fable 5.1 (max with fallback)（85.3%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "524effa4e4803b6aedfc99837a3e0f6bb422fc837bb47392ea17cbc832c7b552"
+        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
       }
     },
     {
@@ -1724,7 +667,85 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "524effa4e4803b6aedfc99837a3e0f6bb422fc837bb47392ea17cbc832c7b552"
+        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
+      }
+    },
+    {
+      "eventId": "dc20ee1a608920992b40cf8fd6c88477",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "AA LCR 官方数据更新",
+      "summary": "AA LCR 官方数据发生变化；共 20 个模型 · 当前前列：Kimi K3 (max)（88.7%）、Step 5 Preview（88.3%）、Claude Fable 5.1 (max with fallback)（85.3%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "observedAt": "2026-09-21T01:18:27Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis AA LCR official public Dataset page",
+      "benchmarkId": "aa_lcr",
+      "benchmarkTitle": "AA LCR",
+      "release": "page_jsonld",
+      "contentHash": "b342793df248e87d758e1b45564f038b62b90ae1d68b4fef3406f708b052763f",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "Kimi K3 (max)（88.7%）",
+        "Step 5 Preview（88.3%）",
+        "Claude Fable 5.1 (max with fallback)（85.3%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
+      }
+    },
+    {
+      "eventId": "d7e6288b80d905660a213aca60a84ca8",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "SciCode 官方数据更新",
+      "summary": "SciCode 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（63.1%）、Claude Fable 5 (with fallback)（61.0%）、Claude Fable 5.1 (xhigh with fallback)（60.9%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/scicode",
+      "observedAt": "2026-09-21T01:18:27Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis SciCode official public Dataset page",
+      "benchmarkId": "aa_scicode",
+      "benchmarkTitle": "SciCode",
+      "release": "page_jsonld",
+      "contentHash": "f2b3689f14b3af669189d7ae2f70aa122e08a46390c5a2f566ca1b8516e2e7dc",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "Claude Fable 5.1 (max with fallback)（63.1%）",
+        "Claude Fable 5 (with fallback)（61.0%）",
+        "Claude Fable 5.1 (xhigh with fallback)（60.9%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
       }
     },
     {
@@ -1763,7 +784,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "524effa4e4803b6aedfc99837a3e0f6bb422fc837bb47392ea17cbc832c7b552"
+        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
       }
     },
     {
@@ -1802,46 +823,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "524effa4e4803b6aedfc99837a3e0f6bb422fc837bb47392ea17cbc832c7b552"
-      }
-    },
-    {
-      "eventId": "a69764de374688f9007ef89f474aa7f7",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "GDPval-AA Elo 官方数据更新",
-      "summary": "GDPval-AA Elo 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（1734.67）、Claude Fable 5.1 (xhigh with fallback)（1720.92）、Claude Opus 5 (max)（1707.92）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-      "observedAt": "2026-09-21T01:18:27Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "benchmarkId": "aa_gdpval_elo",
-      "benchmarkTitle": "GDPval-AA Elo",
-      "release": "page_jsonld",
-      "contentHash": "f9825227fc7d997fd4d9915d13467fab1ba53ac62f8c7ed788dd145f901e35be",
-      "unit": "raw",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Fable 5.1 (max with fallback)（1734.67）",
-        "Claude Fable 5.1 (xhigh with fallback)（1720.92）",
-        "Claude Opus 5 (max)（1707.92）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "524effa4e4803b6aedfc99837a3e0f6bb422fc837bb47392ea17cbc832c7b552"
+        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
       }
     },
     {
@@ -1880,7 +862,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
-        "contentHash": "524effa4e4803b6aedfc99837a3e0f6bb422fc837bb47392ea17cbc832c7b552"
+        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
       }
     },
     {
@@ -1919,7 +901,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "524effa4e4803b6aedfc99837a3e0f6bb422fc837bb47392ea17cbc832c7b552"
+        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
       }
     },
     {
@@ -1958,7 +940,46 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "524effa4e4803b6aedfc99837a3e0f6bb422fc837bb47392ea17cbc832c7b552"
+        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
+      }
+    },
+    {
+      "eventId": "a69764de374688f9007ef89f474aa7f7",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "GDPval-AA Elo 官方数据更新",
+      "summary": "GDPval-AA Elo 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（1734.67）、Claude Fable 5.1 (xhigh with fallback)（1720.92）、Claude Opus 5 (max)（1707.92）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "observedAt": "2026-09-21T01:18:27Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "benchmarkId": "aa_gdpval_elo",
+      "benchmarkTitle": "GDPval-AA Elo",
+      "release": "page_jsonld",
+      "contentHash": "f9825227fc7d997fd4d9915d13467fab1ba53ac62f8c7ed788dd145f901e35be",
+      "unit": "raw",
+      "modelCount": 20,
+      "topModels": [
+        "Claude Fable 5.1 (max with fallback)（1734.67）",
+        "Claude Fable 5.1 (xhigh with fallback)（1720.92）",
+        "Claude Opus 5 (max)（1707.92）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
       }
     },
     {
@@ -1994,13 +1015,13 @@ module.exports = {
       "modelIdentity": "aa_gdpval_elo:Step 5 Preview",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "524effa4e4803b6aedfc99837a3e0f6bb422fc837bb47392ea17cbc832c7b552"
+        "contentHash": "899e8eaef2098427fce99642630c3c76985f7831a9dd8ac05f85cf6c235033f8"
       }
     }
   ],
   "eventCount": 15,
   "provenance": {
-    "workflowRunId": "35550471005",
-    "mainCommit": "1334283d80ed49f2ec0dc272aadd89c24cb32dd0"
+    "workflowRunId": "35568544654",
+    "mainCommit": "405ba55b6ad326e725d6d200dad7addf3bf439c0"
   }
 };
