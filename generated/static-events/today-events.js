@@ -1,8 +1,8 @@
 module.exports = {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-09-22T21:26:08Z",
-  "windowStart": "2026-09-21T21:26:08Z",
+  "generatedAt": "2026-09-22T23:40:26Z",
+  "windowStart": "2026-09-21T23:40:26Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -10,6 +10,169 @@ module.exports = {
     "benchmark"
   ],
   "models": {
+    "openrouter:cohere/command-a-plus": {
+      "canonicalId": "openrouter:cohere/command-a-plus",
+      "provider": "Cohere",
+      "modelId": "cohere/command-a-plus",
+      "displayName": "Command A+",
+      "version": null,
+      "aliases": [],
+      "releaseDate": "2026-09-22T18:48:16Z",
+      "status": "available",
+      "deprecationDate": null,
+      "releaseType": "catalog_addition",
+      "access": "closed_api",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [
+        "推理",
+        "结构化输出",
+        "工具调用"
+      ],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": 192000,
+      "maxInputTokens": null,
+      "maxOutputTokens": 64000,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": 0.3,
+        "outputPerMillionTokens": 1.5,
+        "cachedInputPerMillionTokens": 0.15
+      },
+      "availability": [
+        "OpenRouter"
+      ],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": "https://openrouter.ai/cohere/command-a-plus",
+      "hubRepo": null,
+      "sourceType": "openrouter_catalog",
+      "sourceOwner": "Cohere",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "https://openrouter.ai/cohere/command-a-plus",
+          "observedAt": "2026-09-22T18:48:16Z",
+          "contentHash": "748fa95e8e8a09033f520ed9f76222eb0e0cb79cc31c04e15be398836aa6f961",
+          "sourceType": "openrouter_catalog"
+        },
+        {
+          "field": "provider",
+          "sourceUrl": "https://openrouter.ai/cohere/command-a-plus",
+          "observedAt": "2026-09-22T18:48:16Z",
+          "contentHash": "748fa95e8e8a09033f520ed9f76222eb0e0cb79cc31c04e15be398836aa6f961",
+          "sourceType": "openrouter_catalog"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "https://openrouter.ai/cohere/command-a-plus",
+          "observedAt": "2026-09-22T18:48:16Z",
+          "contentHash": "748fa95e8e8a09033f520ed9f76222eb0e0cb79cc31c04e15be398836aa6f961",
+          "sourceType": "openrouter_catalog"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "https://openrouter.ai/cohere/command-a-plus",
+          "observedAt": "2026-09-22T18:48:16Z",
+          "contentHash": "748fa95e8e8a09033f520ed9f76222eb0e0cb79cc31c04e15be398836aa6f961",
+          "sourceType": "openrouter_catalog"
+        },
+        {
+          "field": "releaseDate",
+          "sourceUrl": "https://openrouter.ai/cohere/command-a-plus",
+          "observedAt": "2026-09-22T18:48:16Z",
+          "contentHash": "748fa95e8e8a09033f520ed9f76222eb0e0cb79cc31c04e15be398836aa6f961",
+          "sourceType": "openrouter_catalog"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "https://openrouter.ai/cohere/command-a-plus",
+          "observedAt": "2026-09-22T18:48:16Z",
+          "contentHash": "748fa95e8e8a09033f520ed9f76222eb0e0cb79cc31c04e15be398836aa6f961",
+          "sourceType": "openrouter_catalog"
+        },
+        {
+          "field": "releaseType",
+          "sourceUrl": "https://openrouter.ai/cohere/command-a-plus",
+          "observedAt": "2026-09-22T18:48:16Z",
+          "contentHash": "748fa95e8e8a09033f520ed9f76222eb0e0cb79cc31c04e15be398836aa6f961",
+          "sourceType": "openrouter_catalog"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "https://openrouter.ai/cohere/command-a-plus",
+          "observedAt": "2026-09-22T18:48:16Z",
+          "contentHash": "748fa95e8e8a09033f520ed9f76222eb0e0cb79cc31c04e15be398836aa6f961",
+          "sourceType": "openrouter_catalog"
+        },
+        {
+          "field": "contextWindow",
+          "sourceUrl": "https://openrouter.ai/cohere/command-a-plus",
+          "observedAt": "2026-09-22T18:48:16Z",
+          "contentHash": "748fa95e8e8a09033f520ed9f76222eb0e0cb79cc31c04e15be398836aa6f961",
+          "sourceType": "openrouter_catalog"
+        },
+        {
+          "field": "maxOutputTokens",
+          "sourceUrl": "https://openrouter.ai/cohere/command-a-plus",
+          "observedAt": "2026-09-22T18:48:16Z",
+          "contentHash": "748fa95e8e8a09033f520ed9f76222eb0e0cb79cc31c04e15be398836aa6f961",
+          "sourceType": "openrouter_catalog"
+        },
+        {
+          "field": "modelCardUrl",
+          "sourceUrl": "https://openrouter.ai/cohere/command-a-plus",
+          "observedAt": "2026-09-22T18:48:16Z",
+          "contentHash": "748fa95e8e8a09033f520ed9f76222eb0e0cb79cc31c04e15be398836aa6f961",
+          "sourceType": "openrouter_catalog"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "https://openrouter.ai/cohere/command-a-plus",
+          "observedAt": "2026-09-22T18:48:16Z",
+          "contentHash": "748fa95e8e8a09033f520ed9f76222eb0e0cb79cc31c04e15be398836aa6f961",
+          "sourceType": "openrouter_catalog"
+        },
+        {
+          "field": "capabilities",
+          "sourceUrl": "https://openrouter.ai/cohere/command-a-plus",
+          "observedAt": "2026-09-22T18:48:16Z",
+          "contentHash": "748fa95e8e8a09033f520ed9f76222eb0e0cb79cc31c04e15be398836aa6f961",
+          "sourceType": "openrouter_catalog"
+        },
+        {
+          "field": "availability",
+          "sourceUrl": "https://openrouter.ai/cohere/command-a-plus",
+          "observedAt": "2026-09-22T18:48:16Z",
+          "contentHash": "748fa95e8e8a09033f520ed9f76222eb0e0cb79cc31c04e15be398836aa6f961",
+          "sourceType": "openrouter_catalog"
+        },
+        {
+          "field": "modalities",
+          "sourceUrl": "https://openrouter.ai/cohere/command-a-plus",
+          "observedAt": "2026-09-22T18:48:16Z",
+          "contentHash": "748fa95e8e8a09033f520ed9f76222eb0e0cb79cc31c04e15be398836aa6f961",
+          "sourceType": "openrouter_catalog"
+        },
+        {
+          "field": "pricing",
+          "sourceUrl": "https://openrouter.ai/cohere/command-a-plus",
+          "observedAt": "2026-09-22T18:48:16Z",
+          "contentHash": "748fa95e8e8a09033f520ed9f76222eb0e0cb79cc31c04e15be398836aa6f961",
+          "sourceType": "openrouter_catalog"
+        }
+      ]
+    },
     "openrouter:openai/gpt-6-luna-pro": {
       "canonicalId": "openrouter:openai/gpt-6-luna-pro",
       "provider": "OpenAI",
@@ -1343,49 +1506,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T10:09:24Z",
-          "contentHash": "a31f3556a098126f1eb75b5b4e74efc0a533167c66ce7a370bc3753679a59d31",
+          "contentHash": "c0ef968ae5ad7fc16c3f01fbe2691ca1f2916b52b5ad3999a0da28b8d5bbb702",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T10:09:24Z",
-          "contentHash": "a31f3556a098126f1eb75b5b4e74efc0a533167c66ce7a370bc3753679a59d31",
+          "contentHash": "c0ef968ae5ad7fc16c3f01fbe2691ca1f2916b52b5ad3999a0da28b8d5bbb702",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-22T10:09:24Z",
-          "contentHash": "a31f3556a098126f1eb75b5b4e74efc0a533167c66ce7a370bc3753679a59d31",
+          "contentHash": "c0ef968ae5ad7fc16c3f01fbe2691ca1f2916b52b5ad3999a0da28b8d5bbb702",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-22T10:09:24Z",
-          "contentHash": "a31f3556a098126f1eb75b5b4e74efc0a533167c66ce7a370bc3753679a59d31",
+          "contentHash": "c0ef968ae5ad7fc16c3f01fbe2691ca1f2916b52b5ad3999a0da28b8d5bbb702",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-22T10:09:24Z",
-          "contentHash": "a31f3556a098126f1eb75b5b4e74efc0a533167c66ce7a370bc3753679a59d31",
+          "contentHash": "c0ef968ae5ad7fc16c3f01fbe2691ca1f2916b52b5ad3999a0da28b8d5bbb702",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-22T10:09:24Z",
-          "contentHash": "a31f3556a098126f1eb75b5b4e74efc0a533167c66ce7a370bc3753679a59d31",
+          "contentHash": "c0ef968ae5ad7fc16c3f01fbe2691ca1f2916b52b5ad3999a0da28b8d5bbb702",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://livebench.ai/",
           "observedAt": "2026-09-22T10:09:24Z",
-          "contentHash": "a31f3556a098126f1eb75b5b4e74efc0a533167c66ce7a370bc3753679a59d31",
+          "contentHash": "c0ef968ae5ad7fc16c3f01fbe2691ca1f2916b52b5ad3999a0da28b8d5bbb702",
           "sourceType": "official_benchmark"
         }
       ]
@@ -1426,55 +1589,55 @@ module.exports = {
       "modelCardUrl": null,
       "hubRepo": null,
       "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Reasoning dated official leaderboard CSV",
+      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
       "evidence": [
         {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "47e70d2f28adbc2074913de8a9eee685462e6a87644b4cf62cd5067c3aec6141",
+          "contentHash": "d8dc0922f905faa65b26bb87c10ccb36e021b55ea9227f2449f5ac42aae7d3f0",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "47e70d2f28adbc2074913de8a9eee685462e6a87644b4cf62cd5067c3aec6141",
+          "contentHash": "d8dc0922f905faa65b26bb87c10ccb36e021b55ea9227f2449f5ac42aae7d3f0",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "47e70d2f28adbc2074913de8a9eee685462e6a87644b4cf62cd5067c3aec6141",
+          "contentHash": "d8dc0922f905faa65b26bb87c10ccb36e021b55ea9227f2449f5ac42aae7d3f0",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "47e70d2f28adbc2074913de8a9eee685462e6a87644b4cf62cd5067c3aec6141",
+          "contentHash": "d8dc0922f905faa65b26bb87c10ccb36e021b55ea9227f2449f5ac42aae7d3f0",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "47e70d2f28adbc2074913de8a9eee685462e6a87644b4cf62cd5067c3aec6141",
+          "contentHash": "d8dc0922f905faa65b26bb87c10ccb36e021b55ea9227f2449f5ac42aae7d3f0",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "47e70d2f28adbc2074913de8a9eee685462e6a87644b4cf62cd5067c3aec6141",
+          "contentHash": "d8dc0922f905faa65b26bb87c10ccb36e021b55ea9227f2449f5ac42aae7d3f0",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://livebench.ai/",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "47e70d2f28adbc2074913de8a9eee685462e6a87644b4cf62cd5067c3aec6141",
+          "contentHash": "d8dc0922f905faa65b26bb87c10ccb36e021b55ea9227f2449f5ac42aae7d3f0",
           "sourceType": "official_benchmark"
         }
       ]
@@ -1515,55 +1678,55 @@ module.exports = {
       "modelCardUrl": null,
       "hubRepo": null,
       "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Language dated official leaderboard CSV",
+      "sourceOwner": "LiveBench Coding dated official leaderboard CSV",
       "evidence": [
         {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "f1b183b7a1b0c2809ccc9cc5dc91a6a522875d01d79b7949a92082c90f9879ce",
+          "contentHash": "e7601e738650d98bb8b7078f1178852528c7ba5e7c2984f71b4e2a41b882c413",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "f1b183b7a1b0c2809ccc9cc5dc91a6a522875d01d79b7949a92082c90f9879ce",
+          "contentHash": "e7601e738650d98bb8b7078f1178852528c7ba5e7c2984f71b4e2a41b882c413",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "f1b183b7a1b0c2809ccc9cc5dc91a6a522875d01d79b7949a92082c90f9879ce",
+          "contentHash": "e7601e738650d98bb8b7078f1178852528c7ba5e7c2984f71b4e2a41b882c413",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "f1b183b7a1b0c2809ccc9cc5dc91a6a522875d01d79b7949a92082c90f9879ce",
+          "contentHash": "e7601e738650d98bb8b7078f1178852528c7ba5e7c2984f71b4e2a41b882c413",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "f1b183b7a1b0c2809ccc9cc5dc91a6a522875d01d79b7949a92082c90f9879ce",
+          "contentHash": "e7601e738650d98bb8b7078f1178852528c7ba5e7c2984f71b4e2a41b882c413",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "f1b183b7a1b0c2809ccc9cc5dc91a6a522875d01d79b7949a92082c90f9879ce",
+          "contentHash": "e7601e738650d98bb8b7078f1178852528c7ba5e7c2984f71b4e2a41b882c413",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://livebench.ai/",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "f1b183b7a1b0c2809ccc9cc5dc91a6a522875d01d79b7949a92082c90f9879ce",
+          "contentHash": "e7601e738650d98bb8b7078f1178852528c7ba5e7c2984f71b4e2a41b882c413",
           "sourceType": "official_benchmark"
         }
       ]
@@ -1610,5567 +1773,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "fa788507f9900a8823c537dee04f6ed211c8d46809b27f50da81d0ad445e9227",
+          "contentHash": "362553fd3be328b78ed4dd3142268cb3f8b3436134d7e70e5ed1658376110b92",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "fa788507f9900a8823c537dee04f6ed211c8d46809b27f50da81d0ad445e9227",
+          "contentHash": "362553fd3be328b78ed4dd3142268cb3f8b3436134d7e70e5ed1658376110b92",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "fa788507f9900a8823c537dee04f6ed211c8d46809b27f50da81d0ad445e9227",
+          "contentHash": "362553fd3be328b78ed4dd3142268cb3f8b3436134d7e70e5ed1658376110b92",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "fa788507f9900a8823c537dee04f6ed211c8d46809b27f50da81d0ad445e9227",
+          "contentHash": "362553fd3be328b78ed4dd3142268cb3f8b3436134d7e70e5ed1658376110b92",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "fa788507f9900a8823c537dee04f6ed211c8d46809b27f50da81d0ad445e9227",
+          "contentHash": "362553fd3be328b78ed4dd3142268cb3f8b3436134d7e70e5ed1658376110b92",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "fa788507f9900a8823c537dee04f6ed211c8d46809b27f50da81d0ad445e9227",
+          "contentHash": "362553fd3be328b78ed4dd3142268cb3f8b3436134d7e70e5ed1658376110b92",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://livebench.ai/",
           "observedAt": "2026-09-22T00:47:45Z",
-          "contentHash": "fa788507f9900a8823c537dee04f6ed211c8d46809b27f50da81d0ad445e9227",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Step 5 Preview": {
-      "canonicalId": "benchmark:Step 5 Preview",
-      "provider": null,
-      "modelId": "Step 5 Preview",
-      "displayName": "Step 5 Preview",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis SciCode official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T22:10:25Z",
-          "contentHash": "a48b937fb2d206da4a7f2dfc74436abc943b855a6df052527a77567c88a5fda2",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T22:10:25Z",
-          "contentHash": "a48b937fb2d206da4a7f2dfc74436abc943b855a6df052527a77567c88a5fda2",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T22:10:25Z",
-          "contentHash": "a48b937fb2d206da4a7f2dfc74436abc943b855a6df052527a77567c88a5fda2",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T22:10:25Z",
-          "contentHash": "a48b937fb2d206da4a7f2dfc74436abc943b855a6df052527a77567c88a5fda2",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T22:10:25Z",
-          "contentHash": "a48b937fb2d206da4a7f2dfc74436abc943b855a6df052527a77567c88a5fda2",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-21T22:10:25Z",
-          "contentHash": "a48b937fb2d206da4a7f2dfc74436abc943b855a6df052527a77567c88a5fda2",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-          "observedAt": "2026-09-21T22:10:25Z",
-          "contentHash": "a48b937fb2d206da4a7f2dfc74436abc943b855a6df052527a77567c88a5fda2",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Claude Opus 5.5 (xhigh with fallback)": {
-      "canonicalId": "benchmark:Claude Opus 5.5 (xhigh with fallback)",
-      "provider": null,
-      "modelId": "Claude Opus 5.5 (xhigh with fallback)",
-      "displayName": "Claude Opus 5.5 (xhigh with fallback)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis MMMU-Pro official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T18:19:46Z",
-          "contentHash": "2d41c443f69fc3f6bea6245a52bfce5bc6a134c97a5524e32476a7521638adc3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T18:19:46Z",
-          "contentHash": "2d41c443f69fc3f6bea6245a52bfce5bc6a134c97a5524e32476a7521638adc3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T18:19:46Z",
-          "contentHash": "2d41c443f69fc3f6bea6245a52bfce5bc6a134c97a5524e32476a7521638adc3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T18:19:46Z",
-          "contentHash": "2d41c443f69fc3f6bea6245a52bfce5bc6a134c97a5524e32476a7521638adc3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T18:19:46Z",
-          "contentHash": "2d41c443f69fc3f6bea6245a52bfce5bc6a134c97a5524e32476a7521638adc3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T18:19:46Z",
-          "contentHash": "2d41c443f69fc3f6bea6245a52bfce5bc6a134c97a5524e32476a7521638adc3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-          "observedAt": "2026-09-22T18:19:46Z",
-          "contentHash": "2d41c443f69fc3f6bea6245a52bfce5bc6a134c97a5524e32476a7521638adc3",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Inkling": {
-      "canonicalId": "benchmark:Inkling",
-      "provider": null,
-      "modelId": "Inkling",
-      "displayName": "Inkling",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis MMMU-Pro official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T18:19:46Z",
-          "contentHash": "156a69f7dbfd21120c932cbf717f3cd247e74dcf5e5cb94e2a745cac11e03ec8",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T18:19:46Z",
-          "contentHash": "156a69f7dbfd21120c932cbf717f3cd247e74dcf5e5cb94e2a745cac11e03ec8",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T18:19:46Z",
-          "contentHash": "156a69f7dbfd21120c932cbf717f3cd247e74dcf5e5cb94e2a745cac11e03ec8",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T18:19:46Z",
-          "contentHash": "156a69f7dbfd21120c932cbf717f3cd247e74dcf5e5cb94e2a745cac11e03ec8",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T18:19:46Z",
-          "contentHash": "156a69f7dbfd21120c932cbf717f3cd247e74dcf5e5cb94e2a745cac11e03ec8",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T18:19:46Z",
-          "contentHash": "156a69f7dbfd21120c932cbf717f3cd247e74dcf5e5cb94e2a745cac11e03ec8",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-          "observedAt": "2026-09-22T18:19:46Z",
-          "contentHash": "156a69f7dbfd21120c932cbf717f3cd247e74dcf5e5cb94e2a745cac11e03ec8",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:gpt-6-luna-max": {
-      "canonicalId": "benchmark:gpt-6-luna-max",
-      "provider": null,
-      "modelId": "gpt-6-luna-max",
-      "displayName": "gpt-6-luna-max",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "90581e4123ea2bec9dd90ab6317169c1102256aefe70db7eaa2f70396974ce26",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "90581e4123ea2bec9dd90ab6317169c1102256aefe70db7eaa2f70396974ce26",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "90581e4123ea2bec9dd90ab6317169c1102256aefe70db7eaa2f70396974ce26",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "90581e4123ea2bec9dd90ab6317169c1102256aefe70db7eaa2f70396974ce26",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "90581e4123ea2bec9dd90ab6317169c1102256aefe70db7eaa2f70396974ce26",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "90581e4123ea2bec9dd90ab6317169c1102256aefe70db7eaa2f70396974ce26",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "90581e4123ea2bec9dd90ab6317169c1102256aefe70db7eaa2f70396974ce26",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:gpt-6-sol-max": {
-      "canonicalId": "benchmark:gpt-6-sol-max",
-      "provider": null,
-      "modelId": "gpt-6-sol-max",
-      "displayName": "gpt-6-sol-max",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fe774c4c9c7430c058b98a73976472e92b9004d233eb75f23e44c4c8ca56b5bf",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fe774c4c9c7430c058b98a73976472e92b9004d233eb75f23e44c4c8ca56b5bf",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fe774c4c9c7430c058b98a73976472e92b9004d233eb75f23e44c4c8ca56b5bf",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fe774c4c9c7430c058b98a73976472e92b9004d233eb75f23e44c4c8ca56b5bf",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fe774c4c9c7430c058b98a73976472e92b9004d233eb75f23e44c4c8ca56b5bf",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fe774c4c9c7430c058b98a73976472e92b9004d233eb75f23e44c4c8ca56b5bf",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fe774c4c9c7430c058b98a73976472e92b9004d233eb75f23e44c4c8ca56b5bf",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:claude-fable-5-1-max-effort": {
-      "canonicalId": "benchmark:claude-fable-5-1-max-effort",
-      "provider": null,
-      "modelId": "claude-fable-5-1-max-effort",
-      "displayName": "claude-fable-5-1-max-effort",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "452b87039753121a765d74b962758802d655d7ac0c1270dc225da10e64c7ca6a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "452b87039753121a765d74b962758802d655d7ac0c1270dc225da10e64c7ca6a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "452b87039753121a765d74b962758802d655d7ac0c1270dc225da10e64c7ca6a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "452b87039753121a765d74b962758802d655d7ac0c1270dc225da10e64c7ca6a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "452b87039753121a765d74b962758802d655d7ac0c1270dc225da10e64c7ca6a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "452b87039753121a765d74b962758802d655d7ac0c1270dc225da10e64c7ca6a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "452b87039753121a765d74b962758802d655d7ac0c1270dc225da10e64c7ca6a",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:claude-fable-5-max-effort": {
-      "canonicalId": "benchmark:claude-fable-5-max-effort",
-      "provider": null,
-      "modelId": "claude-fable-5-max-effort",
-      "displayName": "claude-fable-5-max-effort",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "784f42bfd6c3f015565254e5379c4c776bf46bf97398ceb95fe68536a78c28f0",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "784f42bfd6c3f015565254e5379c4c776bf46bf97398ceb95fe68536a78c28f0",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "784f42bfd6c3f015565254e5379c4c776bf46bf97398ceb95fe68536a78c28f0",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "784f42bfd6c3f015565254e5379c4c776bf46bf97398ceb95fe68536a78c28f0",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "784f42bfd6c3f015565254e5379c4c776bf46bf97398ceb95fe68536a78c28f0",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "784f42bfd6c3f015565254e5379c4c776bf46bf97398ceb95fe68536a78c28f0",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "784f42bfd6c3f015565254e5379c4c776bf46bf97398ceb95fe68536a78c28f0",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:claude-opus-4-5-20251101-thinking-64k-high-effort": {
-      "canonicalId": "benchmark:claude-opus-4-5-20251101-thinking-64k-high-effort",
-      "provider": null,
-      "modelId": "claude-opus-4-5-20251101-thinking-64k-high-effort",
-      "displayName": "claude-opus-4-5-20251101-thinking-64k-high-effort",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "2e54d1ff1ffe110779b926056bf367cf10cd5cc1cc5f0b153d6742f00b6bff4c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "2e54d1ff1ffe110779b926056bf367cf10cd5cc1cc5f0b153d6742f00b6bff4c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "2e54d1ff1ffe110779b926056bf367cf10cd5cc1cc5f0b153d6742f00b6bff4c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "2e54d1ff1ffe110779b926056bf367cf10cd5cc1cc5f0b153d6742f00b6bff4c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "2e54d1ff1ffe110779b926056bf367cf10cd5cc1cc5f0b153d6742f00b6bff4c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "2e54d1ff1ffe110779b926056bf367cf10cd5cc1cc5f0b153d6742f00b6bff4c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "2e54d1ff1ffe110779b926056bf367cf10cd5cc1cc5f0b153d6742f00b6bff4c",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:claude-opus-4-6-thinking-auto-high-effort": {
-      "canonicalId": "benchmark:claude-opus-4-6-thinking-auto-high-effort",
-      "provider": null,
-      "modelId": "claude-opus-4-6-thinking-auto-high-effort",
-      "displayName": "claude-opus-4-6-thinking-auto-high-effort",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "47795d6127d7a997ee80855c56f54cbcdce9b9b7e7bf09d2e2b855dcc2e0ab36",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "47795d6127d7a997ee80855c56f54cbcdce9b9b7e7bf09d2e2b855dcc2e0ab36",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "47795d6127d7a997ee80855c56f54cbcdce9b9b7e7bf09d2e2b855dcc2e0ab36",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "47795d6127d7a997ee80855c56f54cbcdce9b9b7e7bf09d2e2b855dcc2e0ab36",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "47795d6127d7a997ee80855c56f54cbcdce9b9b7e7bf09d2e2b855dcc2e0ab36",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "47795d6127d7a997ee80855c56f54cbcdce9b9b7e7bf09d2e2b855dcc2e0ab36",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "47795d6127d7a997ee80855c56f54cbcdce9b9b7e7bf09d2e2b855dcc2e0ab36",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:claude-opus-4-7-xhigh-effort": {
-      "canonicalId": "benchmark:claude-opus-4-7-xhigh-effort",
-      "provider": null,
-      "modelId": "claude-opus-4-7-xhigh-effort",
-      "displayName": "claude-opus-4-7-xhigh-effort",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "236c4096490af3514bd087330f36e711e90ca16c77227e2a3c38a220f3ad155a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "236c4096490af3514bd087330f36e711e90ca16c77227e2a3c38a220f3ad155a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "236c4096490af3514bd087330f36e711e90ca16c77227e2a3c38a220f3ad155a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "236c4096490af3514bd087330f36e711e90ca16c77227e2a3c38a220f3ad155a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "236c4096490af3514bd087330f36e711e90ca16c77227e2a3c38a220f3ad155a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "236c4096490af3514bd087330f36e711e90ca16c77227e2a3c38a220f3ad155a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "236c4096490af3514bd087330f36e711e90ca16c77227e2a3c38a220f3ad155a",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:claude-opus-4-8-max-effort": {
-      "canonicalId": "benchmark:claude-opus-4-8-max-effort",
-      "provider": null,
-      "modelId": "claude-opus-4-8-max-effort",
-      "displayName": "claude-opus-4-8-max-effort",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "faca93278090e081ffa15e77886289864a85ac9ea63c18e4fbf68c0afaffea8d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "faca93278090e081ffa15e77886289864a85ac9ea63c18e4fbf68c0afaffea8d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "faca93278090e081ffa15e77886289864a85ac9ea63c18e4fbf68c0afaffea8d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "faca93278090e081ffa15e77886289864a85ac9ea63c18e4fbf68c0afaffea8d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "faca93278090e081ffa15e77886289864a85ac9ea63c18e4fbf68c0afaffea8d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "faca93278090e081ffa15e77886289864a85ac9ea63c18e4fbf68c0afaffea8d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "faca93278090e081ffa15e77886289864a85ac9ea63c18e4fbf68c0afaffea8d",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:claude-opus-5-5-max-effort": {
-      "canonicalId": "benchmark:claude-opus-5-5-max-effort",
-      "provider": null,
-      "modelId": "claude-opus-5-5-max-effort",
-      "displayName": "claude-opus-5-5-max-effort",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "732f8f204c6dabe1b658feea7337241af9415c22483aff1ea1818fa584983b41",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "732f8f204c6dabe1b658feea7337241af9415c22483aff1ea1818fa584983b41",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "732f8f204c6dabe1b658feea7337241af9415c22483aff1ea1818fa584983b41",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "732f8f204c6dabe1b658feea7337241af9415c22483aff1ea1818fa584983b41",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "732f8f204c6dabe1b658feea7337241af9415c22483aff1ea1818fa584983b41",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "732f8f204c6dabe1b658feea7337241af9415c22483aff1ea1818fa584983b41",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "732f8f204c6dabe1b658feea7337241af9415c22483aff1ea1818fa584983b41",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:claude-opus-5-5-xhigh-effort": {
-      "canonicalId": "benchmark:claude-opus-5-5-xhigh-effort",
-      "provider": null,
-      "modelId": "claude-opus-5-5-xhigh-effort",
-      "displayName": "claude-opus-5-5-xhigh-effort",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b4a830e4c52d5e7f07b906c21216891572c151c5f5519cd925ceb26d7fb7f236",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b4a830e4c52d5e7f07b906c21216891572c151c5f5519cd925ceb26d7fb7f236",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b4a830e4c52d5e7f07b906c21216891572c151c5f5519cd925ceb26d7fb7f236",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b4a830e4c52d5e7f07b906c21216891572c151c5f5519cd925ceb26d7fb7f236",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b4a830e4c52d5e7f07b906c21216891572c151c5f5519cd925ceb26d7fb7f236",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b4a830e4c52d5e7f07b906c21216891572c151c5f5519cd925ceb26d7fb7f236",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b4a830e4c52d5e7f07b906c21216891572c151c5f5519cd925ceb26d7fb7f236",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:claude-opus-5-max-effort": {
-      "canonicalId": "benchmark:claude-opus-5-max-effort",
-      "provider": null,
-      "modelId": "claude-opus-5-max-effort",
-      "displayName": "claude-opus-5-max-effort",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "0b76bd4d924d71552da9dd67e626c39cdcfe6b0f5ba0b21649f86988e807268c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "0b76bd4d924d71552da9dd67e626c39cdcfe6b0f5ba0b21649f86988e807268c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "0b76bd4d924d71552da9dd67e626c39cdcfe6b0f5ba0b21649f86988e807268c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "0b76bd4d924d71552da9dd67e626c39cdcfe6b0f5ba0b21649f86988e807268c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "0b76bd4d924d71552da9dd67e626c39cdcfe6b0f5ba0b21649f86988e807268c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "0b76bd4d924d71552da9dd67e626c39cdcfe6b0f5ba0b21649f86988e807268c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "0b76bd4d924d71552da9dd67e626c39cdcfe6b0f5ba0b21649f86988e807268c",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:claude-sonnet-4-6-thinking-auto-medium-effort": {
-      "canonicalId": "benchmark:claude-sonnet-4-6-thinking-auto-medium-effort",
-      "provider": null,
-      "modelId": "claude-sonnet-4-6-thinking-auto-medium-effort",
-      "displayName": "claude-sonnet-4-6-thinking-auto-medium-effort",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cd70a92d79884ebd51884c897f6ecec86ba427fab0c1f0d08c15d7dbcd348b2b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cd70a92d79884ebd51884c897f6ecec86ba427fab0c1f0d08c15d7dbcd348b2b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cd70a92d79884ebd51884c897f6ecec86ba427fab0c1f0d08c15d7dbcd348b2b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cd70a92d79884ebd51884c897f6ecec86ba427fab0c1f0d08c15d7dbcd348b2b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cd70a92d79884ebd51884c897f6ecec86ba427fab0c1f0d08c15d7dbcd348b2b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cd70a92d79884ebd51884c897f6ecec86ba427fab0c1f0d08c15d7dbcd348b2b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cd70a92d79884ebd51884c897f6ecec86ba427fab0c1f0d08c15d7dbcd348b2b",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:claude-sonnet-5-xhigh-effort": {
-      "canonicalId": "benchmark:claude-sonnet-5-xhigh-effort",
-      "provider": null,
-      "modelId": "claude-sonnet-5-xhigh-effort",
-      "displayName": "claude-sonnet-5-xhigh-effort",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fdf1b95f13572cbcf54a0bb264111e3cfe2cfce207565c982e4a872d468754e6",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fdf1b95f13572cbcf54a0bb264111e3cfe2cfce207565c982e4a872d468754e6",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fdf1b95f13572cbcf54a0bb264111e3cfe2cfce207565c982e4a872d468754e6",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fdf1b95f13572cbcf54a0bb264111e3cfe2cfce207565c982e4a872d468754e6",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fdf1b95f13572cbcf54a0bb264111e3cfe2cfce207565c982e4a872d468754e6",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fdf1b95f13572cbcf54a0bb264111e3cfe2cfce207565c982e4a872d468754e6",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fdf1b95f13572cbcf54a0bb264111e3cfe2cfce207565c982e4a872d468754e6",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:deepseek-v4-flash-0731": {
-      "canonicalId": "benchmark:deepseek-v4-flash-0731",
-      "provider": null,
-      "modelId": "deepseek-v4-flash-0731",
-      "displayName": "deepseek-v4-flash-0731",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4e5855f9c12ab612868aee7c74d1e88832788f5a0f40ac4cf994412504207d86",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4e5855f9c12ab612868aee7c74d1e88832788f5a0f40ac4cf994412504207d86",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4e5855f9c12ab612868aee7c74d1e88832788f5a0f40ac4cf994412504207d86",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4e5855f9c12ab612868aee7c74d1e88832788f5a0f40ac4cf994412504207d86",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4e5855f9c12ab612868aee7c74d1e88832788f5a0f40ac4cf994412504207d86",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4e5855f9c12ab612868aee7c74d1e88832788f5a0f40ac4cf994412504207d86",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4e5855f9c12ab612868aee7c74d1e88832788f5a0f40ac4cf994412504207d86",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:deepseek-v4-flash-vision-exp": {
-      "canonicalId": "benchmark:deepseek-v4-flash-vision-exp",
-      "provider": null,
-      "modelId": "deepseek-v4-flash-vision-exp",
-      "displayName": "deepseek-v4-flash-vision-exp",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6a5a67b75b09e011efec8da4f9c87d5a6fb39ed09ac66619fb73d571d1e7edff",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6a5a67b75b09e011efec8da4f9c87d5a6fb39ed09ac66619fb73d571d1e7edff",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6a5a67b75b09e011efec8da4f9c87d5a6fb39ed09ac66619fb73d571d1e7edff",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6a5a67b75b09e011efec8da4f9c87d5a6fb39ed09ac66619fb73d571d1e7edff",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6a5a67b75b09e011efec8da4f9c87d5a6fb39ed09ac66619fb73d571d1e7edff",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6a5a67b75b09e011efec8da4f9c87d5a6fb39ed09ac66619fb73d571d1e7edff",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6a5a67b75b09e011efec8da4f9c87d5a6fb39ed09ac66619fb73d571d1e7edff",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:deepseek-v4-flash": {
-      "canonicalId": "benchmark:deepseek-v4-flash",
-      "provider": null,
-      "modelId": "deepseek-v4-flash",
-      "displayName": "deepseek-v4-flash",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "918461e472f7150126db921cb4eff6f864298d18838725529d37bd1485bd7323",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "918461e472f7150126db921cb4eff6f864298d18838725529d37bd1485bd7323",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "918461e472f7150126db921cb4eff6f864298d18838725529d37bd1485bd7323",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "918461e472f7150126db921cb4eff6f864298d18838725529d37bd1485bd7323",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "918461e472f7150126db921cb4eff6f864298d18838725529d37bd1485bd7323",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "918461e472f7150126db921cb4eff6f864298d18838725529d37bd1485bd7323",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "918461e472f7150126db921cb4eff6f864298d18838725529d37bd1485bd7323",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:deepseek-v4-pro-0813": {
-      "canonicalId": "benchmark:deepseek-v4-pro-0813",
-      "provider": null,
-      "modelId": "deepseek-v4-pro-0813",
-      "displayName": "deepseek-v4-pro-0813",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e402ab0a0c7b7bf4b4a11bb01dda41b43068e4338879f59fd9a1e3b68f34a979",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e402ab0a0c7b7bf4b4a11bb01dda41b43068e4338879f59fd9a1e3b68f34a979",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e402ab0a0c7b7bf4b4a11bb01dda41b43068e4338879f59fd9a1e3b68f34a979",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e402ab0a0c7b7bf4b4a11bb01dda41b43068e4338879f59fd9a1e3b68f34a979",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e402ab0a0c7b7bf4b4a11bb01dda41b43068e4338879f59fd9a1e3b68f34a979",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e402ab0a0c7b7bf4b4a11bb01dda41b43068e4338879f59fd9a1e3b68f34a979",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e402ab0a0c7b7bf4b4a11bb01dda41b43068e4338879f59fd9a1e3b68f34a979",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:deepseek-v4-pro": {
-      "canonicalId": "benchmark:deepseek-v4-pro",
-      "provider": null,
-      "modelId": "deepseek-v4-pro",
-      "displayName": "deepseek-v4-pro",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "d9b844a22f626eba84c7b0cc47f6bb40fa40ecbe83569797bcb6c265adf3d0cd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "d9b844a22f626eba84c7b0cc47f6bb40fa40ecbe83569797bcb6c265adf3d0cd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "d9b844a22f626eba84c7b0cc47f6bb40fa40ecbe83569797bcb6c265adf3d0cd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "d9b844a22f626eba84c7b0cc47f6bb40fa40ecbe83569797bcb6c265adf3d0cd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "d9b844a22f626eba84c7b0cc47f6bb40fa40ecbe83569797bcb6c265adf3d0cd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "d9b844a22f626eba84c7b0cc47f6bb40fa40ecbe83569797bcb6c265adf3d0cd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "d9b844a22f626eba84c7b0cc47f6bb40fa40ecbe83569797bcb6c265adf3d0cd",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:deepseek-v4.1-flash-max": {
-      "canonicalId": "benchmark:deepseek-v4.1-flash-max",
-      "provider": null,
-      "modelId": "deepseek-v4.1-flash-max",
-      "displayName": "deepseek-v4.1-flash-max",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "eab0b36bc278d81051b9f64e327fbd0c040fef6ca4abd1f8e964f017ce6253b1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "eab0b36bc278d81051b9f64e327fbd0c040fef6ca4abd1f8e964f017ce6253b1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "eab0b36bc278d81051b9f64e327fbd0c040fef6ca4abd1f8e964f017ce6253b1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "eab0b36bc278d81051b9f64e327fbd0c040fef6ca4abd1f8e964f017ce6253b1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "eab0b36bc278d81051b9f64e327fbd0c040fef6ca4abd1f8e964f017ce6253b1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "eab0b36bc278d81051b9f64e327fbd0c040fef6ca4abd1f8e964f017ce6253b1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "eab0b36bc278d81051b9f64e327fbd0c040fef6ca4abd1f8e964f017ce6253b1",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:gemini-3.1-pro-preview-high": {
-      "canonicalId": "benchmark:gemini-3.1-pro-preview-high",
-      "provider": null,
-      "modelId": "gemini-3.1-pro-preview-high",
-      "displayName": "gemini-3.1-pro-preview-high",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "13a56d905bd96d76c347e2d6e3fd56b0b66f719e66d3e143908ee52d0128734d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "13a56d905bd96d76c347e2d6e3fd56b0b66f719e66d3e143908ee52d0128734d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "13a56d905bd96d76c347e2d6e3fd56b0b66f719e66d3e143908ee52d0128734d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "13a56d905bd96d76c347e2d6e3fd56b0b66f719e66d3e143908ee52d0128734d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "13a56d905bd96d76c347e2d6e3fd56b0b66f719e66d3e143908ee52d0128734d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "13a56d905bd96d76c347e2d6e3fd56b0b66f719e66d3e143908ee52d0128734d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "13a56d905bd96d76c347e2d6e3fd56b0b66f719e66d3e143908ee52d0128734d",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:gemini-3.5-flash-high": {
-      "canonicalId": "benchmark:gemini-3.5-flash-high",
-      "provider": null,
-      "modelId": "gemini-3.5-flash-high",
-      "displayName": "gemini-3.5-flash-high",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "72e46c87ab940c757ffadc205d7011cf7c5fb0d9d372401709f142a145010917",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "72e46c87ab940c757ffadc205d7011cf7c5fb0d9d372401709f142a145010917",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "72e46c87ab940c757ffadc205d7011cf7c5fb0d9d372401709f142a145010917",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "72e46c87ab940c757ffadc205d7011cf7c5fb0d9d372401709f142a145010917",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "72e46c87ab940c757ffadc205d7011cf7c5fb0d9d372401709f142a145010917",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "72e46c87ab940c757ffadc205d7011cf7c5fb0d9d372401709f142a145010917",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "72e46c87ab940c757ffadc205d7011cf7c5fb0d9d372401709f142a145010917",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:gemini-3.5-flash-lite-high": {
-      "canonicalId": "benchmark:gemini-3.5-flash-lite-high",
-      "provider": null,
-      "modelId": "gemini-3.5-flash-lite-high",
-      "displayName": "gemini-3.5-flash-lite-high",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b08658c4c5a9fa2eca8af912ebdd79f74fc5fe0dbd8abdaf5b82459218285dcd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b08658c4c5a9fa2eca8af912ebdd79f74fc5fe0dbd8abdaf5b82459218285dcd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b08658c4c5a9fa2eca8af912ebdd79f74fc5fe0dbd8abdaf5b82459218285dcd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b08658c4c5a9fa2eca8af912ebdd79f74fc5fe0dbd8abdaf5b82459218285dcd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b08658c4c5a9fa2eca8af912ebdd79f74fc5fe0dbd8abdaf5b82459218285dcd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b08658c4c5a9fa2eca8af912ebdd79f74fc5fe0dbd8abdaf5b82459218285dcd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b08658c4c5a9fa2eca8af912ebdd79f74fc5fe0dbd8abdaf5b82459218285dcd",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:gemini-3.6-flash-high": {
-      "canonicalId": "benchmark:gemini-3.6-flash-high",
-      "provider": null,
-      "modelId": "gemini-3.6-flash-high",
-      "displayName": "gemini-3.6-flash-high",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "9c1356a967a832cfe641443927e23b53e8406d1143aa9e6967092107fdcde4da",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "9c1356a967a832cfe641443927e23b53e8406d1143aa9e6967092107fdcde4da",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "9c1356a967a832cfe641443927e23b53e8406d1143aa9e6967092107fdcde4da",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "9c1356a967a832cfe641443927e23b53e8406d1143aa9e6967092107fdcde4da",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "9c1356a967a832cfe641443927e23b53e8406d1143aa9e6967092107fdcde4da",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "9c1356a967a832cfe641443927e23b53e8406d1143aa9e6967092107fdcde4da",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "9c1356a967a832cfe641443927e23b53e8406d1143aa9e6967092107fdcde4da",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:gemini-3.7-flash-high": {
-      "canonicalId": "benchmark:gemini-3.7-flash-high",
-      "provider": null,
-      "modelId": "gemini-3.7-flash-high",
-      "displayName": "gemini-3.7-flash-high",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4ca39f06a5aa3fdf864e86fa7dd50819057fac17dfbc8f1a8aeb7395226b9870",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4ca39f06a5aa3fdf864e86fa7dd50819057fac17dfbc8f1a8aeb7395226b9870",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4ca39f06a5aa3fdf864e86fa7dd50819057fac17dfbc8f1a8aeb7395226b9870",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4ca39f06a5aa3fdf864e86fa7dd50819057fac17dfbc8f1a8aeb7395226b9870",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4ca39f06a5aa3fdf864e86fa7dd50819057fac17dfbc8f1a8aeb7395226b9870",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4ca39f06a5aa3fdf864e86fa7dd50819057fac17dfbc8f1a8aeb7395226b9870",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4ca39f06a5aa3fdf864e86fa7dd50819057fac17dfbc8f1a8aeb7395226b9870",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:gemini-3.8-flash-high": {
-      "canonicalId": "benchmark:gemini-3.8-flash-high",
-      "provider": null,
-      "modelId": "gemini-3.8-flash-high",
-      "displayName": "gemini-3.8-flash-high",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1a6d4136fe5e8dce5ccd46e67a72e88163d5565dba6290460a74621d05fc5449",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1a6d4136fe5e8dce5ccd46e67a72e88163d5565dba6290460a74621d05fc5449",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1a6d4136fe5e8dce5ccd46e67a72e88163d5565dba6290460a74621d05fc5449",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1a6d4136fe5e8dce5ccd46e67a72e88163d5565dba6290460a74621d05fc5449",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1a6d4136fe5e8dce5ccd46e67a72e88163d5565dba6290460a74621d05fc5449",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1a6d4136fe5e8dce5ccd46e67a72e88163d5565dba6290460a74621d05fc5449",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1a6d4136fe5e8dce5ccd46e67a72e88163d5565dba6290460a74621d05fc5449",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:glm-5.2": {
-      "canonicalId": "benchmark:glm-5.2",
-      "provider": null,
-      "modelId": "glm-5.2",
-      "displayName": "glm-5.2",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "775cb56032a75a6f78a9fc9d8e8cd0f88a9106dd83dfba93263b562b28106151",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "775cb56032a75a6f78a9fc9d8e8cd0f88a9106dd83dfba93263b562b28106151",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "775cb56032a75a6f78a9fc9d8e8cd0f88a9106dd83dfba93263b562b28106151",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "775cb56032a75a6f78a9fc9d8e8cd0f88a9106dd83dfba93263b562b28106151",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "775cb56032a75a6f78a9fc9d8e8cd0f88a9106dd83dfba93263b562b28106151",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "775cb56032a75a6f78a9fc9d8e8cd0f88a9106dd83dfba93263b562b28106151",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "775cb56032a75a6f78a9fc9d8e8cd0f88a9106dd83dfba93263b562b28106151",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:glm-5.3-flash": {
-      "canonicalId": "benchmark:glm-5.3-flash",
-      "provider": null,
-      "modelId": "glm-5.3-flash",
-      "displayName": "glm-5.3-flash",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "dd6bb2135ae44a3ba3b7f08ebb541b51f31b3dfb1fc067ee553ba2001ba20bde",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "dd6bb2135ae44a3ba3b7f08ebb541b51f31b3dfb1fc067ee553ba2001ba20bde",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "dd6bb2135ae44a3ba3b7f08ebb541b51f31b3dfb1fc067ee553ba2001ba20bde",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "dd6bb2135ae44a3ba3b7f08ebb541b51f31b3dfb1fc067ee553ba2001ba20bde",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "dd6bb2135ae44a3ba3b7f08ebb541b51f31b3dfb1fc067ee553ba2001ba20bde",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "dd6bb2135ae44a3ba3b7f08ebb541b51f31b3dfb1fc067ee553ba2001ba20bde",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "dd6bb2135ae44a3ba3b7f08ebb541b51f31b3dfb1fc067ee553ba2001ba20bde",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:glm-5.3": {
-      "canonicalId": "benchmark:glm-5.3",
-      "provider": null,
-      "modelId": "glm-5.3",
-      "displayName": "glm-5.3",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8feabb9a9ab79786fcd3779176e836a315d046dd84e7e420dc7cef1bd4312566",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8feabb9a9ab79786fcd3779176e836a315d046dd84e7e420dc7cef1bd4312566",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8feabb9a9ab79786fcd3779176e836a315d046dd84e7e420dc7cef1bd4312566",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8feabb9a9ab79786fcd3779176e836a315d046dd84e7e420dc7cef1bd4312566",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8feabb9a9ab79786fcd3779176e836a315d046dd84e7e420dc7cef1bd4312566",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8feabb9a9ab79786fcd3779176e836a315d046dd84e7e420dc7cef1bd4312566",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8feabb9a9ab79786fcd3779176e836a315d046dd84e7e420dc7cef1bd4312566",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:gpt-5.2-2025-12-11-high": {
-      "canonicalId": "benchmark:gpt-5.2-2025-12-11-high",
-      "provider": null,
-      "modelId": "gpt-5.2-2025-12-11-high",
-      "displayName": "gpt-5.2-2025-12-11-high",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cc9366ad77739d15560ff9026de9c954c1b277c877b9b5d57f2a3e9a1dcf3029",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cc9366ad77739d15560ff9026de9c954c1b277c877b9b5d57f2a3e9a1dcf3029",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cc9366ad77739d15560ff9026de9c954c1b277c877b9b5d57f2a3e9a1dcf3029",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cc9366ad77739d15560ff9026de9c954c1b277c877b9b5d57f2a3e9a1dcf3029",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cc9366ad77739d15560ff9026de9c954c1b277c877b9b5d57f2a3e9a1dcf3029",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cc9366ad77739d15560ff9026de9c954c1b277c877b9b5d57f2a3e9a1dcf3029",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cc9366ad77739d15560ff9026de9c954c1b277c877b9b5d57f2a3e9a1dcf3029",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:gpt-5.2-codex": {
-      "canonicalId": "benchmark:gpt-5.2-codex",
-      "provider": null,
-      "modelId": "gpt-5.2-codex",
-      "displayName": "gpt-5.2-codex",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "0855a5fd83ef9a7da776143b0143d5732d5cb803af1d69687630b9df80e43623",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "0855a5fd83ef9a7da776143b0143d5732d5cb803af1d69687630b9df80e43623",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "0855a5fd83ef9a7da776143b0143d5732d5cb803af1d69687630b9df80e43623",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "0855a5fd83ef9a7da776143b0143d5732d5cb803af1d69687630b9df80e43623",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "0855a5fd83ef9a7da776143b0143d5732d5cb803af1d69687630b9df80e43623",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "0855a5fd83ef9a7da776143b0143d5732d5cb803af1d69687630b9df80e43623",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "0855a5fd83ef9a7da776143b0143d5732d5cb803af1d69687630b9df80e43623",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:gpt-5.4-mini-xhigh": {
-      "canonicalId": "benchmark:gpt-5.4-mini-xhigh",
-      "provider": null,
-      "modelId": "gpt-5.4-mini-xhigh",
-      "displayName": "gpt-5.4-mini-xhigh",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "42550503f96bfb098b2e2f375b79a7e458d9535f75fdaba44992a1ffeb06d078",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "42550503f96bfb098b2e2f375b79a7e458d9535f75fdaba44992a1ffeb06d078",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "42550503f96bfb098b2e2f375b79a7e458d9535f75fdaba44992a1ffeb06d078",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "42550503f96bfb098b2e2f375b79a7e458d9535f75fdaba44992a1ffeb06d078",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "42550503f96bfb098b2e2f375b79a7e458d9535f75fdaba44992a1ffeb06d078",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "42550503f96bfb098b2e2f375b79a7e458d9535f75fdaba44992a1ffeb06d078",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "42550503f96bfb098b2e2f375b79a7e458d9535f75fdaba44992a1ffeb06d078",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:gpt-5.4-nano-xhigh": {
-      "canonicalId": "benchmark:gpt-5.4-nano-xhigh",
-      "provider": null,
-      "modelId": "gpt-5.4-nano-xhigh",
-      "displayName": "gpt-5.4-nano-xhigh",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "97e968cb61537edc606b7c5fe234f9f4f35b47c1ef68a167a2160a62f2dc39ce",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "97e968cb61537edc606b7c5fe234f9f4f35b47c1ef68a167a2160a62f2dc39ce",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "97e968cb61537edc606b7c5fe234f9f4f35b47c1ef68a167a2160a62f2dc39ce",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "97e968cb61537edc606b7c5fe234f9f4f35b47c1ef68a167a2160a62f2dc39ce",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "97e968cb61537edc606b7c5fe234f9f4f35b47c1ef68a167a2160a62f2dc39ce",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "97e968cb61537edc606b7c5fe234f9f4f35b47c1ef68a167a2160a62f2dc39ce",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "97e968cb61537edc606b7c5fe234f9f4f35b47c1ef68a167a2160a62f2dc39ce",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:gpt-5.4-xhigh": {
-      "canonicalId": "benchmark:gpt-5.4-xhigh",
-      "provider": null,
-      "modelId": "gpt-5.4-xhigh",
-      "displayName": "gpt-5.4-xhigh",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "94ec0fc56542cbf2756a7a1992fe988aebe09c7ddc440dbe9b27f19196b611fe",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "94ec0fc56542cbf2756a7a1992fe988aebe09c7ddc440dbe9b27f19196b611fe",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "94ec0fc56542cbf2756a7a1992fe988aebe09c7ddc440dbe9b27f19196b611fe",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "94ec0fc56542cbf2756a7a1992fe988aebe09c7ddc440dbe9b27f19196b611fe",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "94ec0fc56542cbf2756a7a1992fe988aebe09c7ddc440dbe9b27f19196b611fe",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "94ec0fc56542cbf2756a7a1992fe988aebe09c7ddc440dbe9b27f19196b611fe",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "94ec0fc56542cbf2756a7a1992fe988aebe09c7ddc440dbe9b27f19196b611fe",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:gpt-5.6-luna-max": {
-      "canonicalId": "benchmark:gpt-5.6-luna-max",
-      "provider": null,
-      "modelId": "gpt-5.6-luna-max",
-      "displayName": "gpt-5.6-luna-max",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fa9bfe7d8abdd7dc06129faf0f7b1121031922abbe949731a5fa185eb98f7c44",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fa9bfe7d8abdd7dc06129faf0f7b1121031922abbe949731a5fa185eb98f7c44",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fa9bfe7d8abdd7dc06129faf0f7b1121031922abbe949731a5fa185eb98f7c44",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fa9bfe7d8abdd7dc06129faf0f7b1121031922abbe949731a5fa185eb98f7c44",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fa9bfe7d8abdd7dc06129faf0f7b1121031922abbe949731a5fa185eb98f7c44",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fa9bfe7d8abdd7dc06129faf0f7b1121031922abbe949731a5fa185eb98f7c44",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "fa9bfe7d8abdd7dc06129faf0f7b1121031922abbe949731a5fa185eb98f7c44",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:gpt-5.6-sol-max": {
-      "canonicalId": "benchmark:gpt-5.6-sol-max",
-      "provider": null,
-      "modelId": "gpt-5.6-sol-max",
-      "displayName": "gpt-5.6-sol-max",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "80bdb08403525d5be3c87f21e27ece4d4199782be0efa6ddcb5257f7159c0234",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "80bdb08403525d5be3c87f21e27ece4d4199782be0efa6ddcb5257f7159c0234",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "80bdb08403525d5be3c87f21e27ece4d4199782be0efa6ddcb5257f7159c0234",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "80bdb08403525d5be3c87f21e27ece4d4199782be0efa6ddcb5257f7159c0234",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "80bdb08403525d5be3c87f21e27ece4d4199782be0efa6ddcb5257f7159c0234",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "80bdb08403525d5be3c87f21e27ece4d4199782be0efa6ddcb5257f7159c0234",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "80bdb08403525d5be3c87f21e27ece4d4199782be0efa6ddcb5257f7159c0234",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:gpt-5.6-terra-max": {
-      "canonicalId": "benchmark:gpt-5.6-terra-max",
-      "provider": null,
-      "modelId": "gpt-5.6-terra-max",
-      "displayName": "gpt-5.6-terra-max",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "c957868302db504d5fee79d8663fdf63856741d6118f9e68e73721c2eb2fc3f9",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "c957868302db504d5fee79d8663fdf63856741d6118f9e68e73721c2eb2fc3f9",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "c957868302db504d5fee79d8663fdf63856741d6118f9e68e73721c2eb2fc3f9",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "c957868302db504d5fee79d8663fdf63856741d6118f9e68e73721c2eb2fc3f9",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "c957868302db504d5fee79d8663fdf63856741d6118f9e68e73721c2eb2fc3f9",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "c957868302db504d5fee79d8663fdf63856741d6118f9e68e73721c2eb2fc3f9",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "c957868302db504d5fee79d8663fdf63856741d6118f9e68e73721c2eb2fc3f9",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:grok-4.3": {
-      "canonicalId": "benchmark:grok-4.3",
-      "provider": null,
-      "modelId": "grok-4.3",
-      "displayName": "grok-4.3",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8b86482e6ee45077490613b7045b7c451641bc47f7750044f684756995cbf966",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8b86482e6ee45077490613b7045b7c451641bc47f7750044f684756995cbf966",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8b86482e6ee45077490613b7045b7c451641bc47f7750044f684756995cbf966",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8b86482e6ee45077490613b7045b7c451641bc47f7750044f684756995cbf966",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8b86482e6ee45077490613b7045b7c451641bc47f7750044f684756995cbf966",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8b86482e6ee45077490613b7045b7c451641bc47f7750044f684756995cbf966",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8b86482e6ee45077490613b7045b7c451641bc47f7750044f684756995cbf966",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:grok-4.5": {
-      "canonicalId": "benchmark:grok-4.5",
-      "provider": null,
-      "modelId": "grok-4.5",
-      "displayName": "grok-4.5",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6fa07f40becca26f413cff9b780fdb2ca24d101921be604e508d88478fb70b11",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6fa07f40becca26f413cff9b780fdb2ca24d101921be604e508d88478fb70b11",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6fa07f40becca26f413cff9b780fdb2ca24d101921be604e508d88478fb70b11",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6fa07f40becca26f413cff9b780fdb2ca24d101921be604e508d88478fb70b11",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6fa07f40becca26f413cff9b780fdb2ca24d101921be604e508d88478fb70b11",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6fa07f40becca26f413cff9b780fdb2ca24d101921be604e508d88478fb70b11",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6fa07f40becca26f413cff9b780fdb2ca24d101921be604e508d88478fb70b11",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:grok-4.6": {
-      "canonicalId": "benchmark:grok-4.6",
-      "provider": null,
-      "modelId": "grok-4.6",
-      "displayName": "grok-4.6",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "d40e3ab76fabb1cbda074e5bd53bf290159e7e7ec0f4410ba64f1b9a683140cc",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "d40e3ab76fabb1cbda074e5bd53bf290159e7e7ec0f4410ba64f1b9a683140cc",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "d40e3ab76fabb1cbda074e5bd53bf290159e7e7ec0f4410ba64f1b9a683140cc",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "d40e3ab76fabb1cbda074e5bd53bf290159e7e7ec0f4410ba64f1b9a683140cc",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "d40e3ab76fabb1cbda074e5bd53bf290159e7e7ec0f4410ba64f1b9a683140cc",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "d40e3ab76fabb1cbda074e5bd53bf290159e7e7ec0f4410ba64f1b9a683140cc",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "d40e3ab76fabb1cbda074e5bd53bf290159e7e7ec0f4410ba64f1b9a683140cc",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:grok-build-0.1": {
-      "canonicalId": "benchmark:grok-build-0.1",
-      "provider": null,
-      "modelId": "grok-build-0.1",
-      "displayName": "grok-build-0.1",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "2fcd09b41f752f9087d0d03266a470bdff531c4611a5c4c26889abe2efcdfafe",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "2fcd09b41f752f9087d0d03266a470bdff531c4611a5c4c26889abe2efcdfafe",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "2fcd09b41f752f9087d0d03266a470bdff531c4611a5c4c26889abe2efcdfafe",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "2fcd09b41f752f9087d0d03266a470bdff531c4611a5c4c26889abe2efcdfafe",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "2fcd09b41f752f9087d0d03266a470bdff531c4611a5c4c26889abe2efcdfafe",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "2fcd09b41f752f9087d0d03266a470bdff531c4611a5c4c26889abe2efcdfafe",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "2fcd09b41f752f9087d0d03266a470bdff531c4611a5c4c26889abe2efcdfafe",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:inkling-xhigh": {
-      "canonicalId": "benchmark:inkling-xhigh",
-      "provider": null,
-      "modelId": "inkling-xhigh",
-      "displayName": "inkling-xhigh",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4c6f0543eeaaa11439e44c55c7d2daebbc67ede3909687ba2998cfead709bd0f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4c6f0543eeaaa11439e44c55c7d2daebbc67ede3909687ba2998cfead709bd0f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4c6f0543eeaaa11439e44c55c7d2daebbc67ede3909687ba2998cfead709bd0f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4c6f0543eeaaa11439e44c55c7d2daebbc67ede3909687ba2998cfead709bd0f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4c6f0543eeaaa11439e44c55c7d2daebbc67ede3909687ba2998cfead709bd0f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4c6f0543eeaaa11439e44c55c7d2daebbc67ede3909687ba2998cfead709bd0f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4c6f0543eeaaa11439e44c55c7d2daebbc67ede3909687ba2998cfead709bd0f",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:kimi-k2.6-thinking": {
-      "canonicalId": "benchmark:kimi-k2.6-thinking",
-      "provider": null,
-      "modelId": "kimi-k2.6-thinking",
-      "displayName": "kimi-k2.6-thinking",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6237cde86dde48fcb318d0ea96281ab83ee8717a97807cdd37750651739dcf88",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6237cde86dde48fcb318d0ea96281ab83ee8717a97807cdd37750651739dcf88",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6237cde86dde48fcb318d0ea96281ab83ee8717a97807cdd37750651739dcf88",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6237cde86dde48fcb318d0ea96281ab83ee8717a97807cdd37750651739dcf88",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6237cde86dde48fcb318d0ea96281ab83ee8717a97807cdd37750651739dcf88",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6237cde86dde48fcb318d0ea96281ab83ee8717a97807cdd37750651739dcf88",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6237cde86dde48fcb318d0ea96281ab83ee8717a97807cdd37750651739dcf88",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:kimi-k2.7-code": {
-      "canonicalId": "benchmark:kimi-k2.7-code",
-      "provider": null,
-      "modelId": "kimi-k2.7-code",
-      "displayName": "kimi-k2.7-code",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b08359eeac5376cd29a5522b2e93005a321f44c8fd6b4333ba9798d72f7782fe",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b08359eeac5376cd29a5522b2e93005a321f44c8fd6b4333ba9798d72f7782fe",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b08359eeac5376cd29a5522b2e93005a321f44c8fd6b4333ba9798d72f7782fe",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b08359eeac5376cd29a5522b2e93005a321f44c8fd6b4333ba9798d72f7782fe",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b08359eeac5376cd29a5522b2e93005a321f44c8fd6b4333ba9798d72f7782fe",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b08359eeac5376cd29a5522b2e93005a321f44c8fd6b4333ba9798d72f7782fe",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b08359eeac5376cd29a5522b2e93005a321f44c8fd6b4333ba9798d72f7782fe",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:kimi-k3": {
-      "canonicalId": "benchmark:kimi-k3",
-      "provider": null,
-      "modelId": "kimi-k3",
-      "displayName": "kimi-k3",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "13992488bbd2e31b97de378469ad46146cea68cb8a57caf17a2132eee9f5258c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "13992488bbd2e31b97de378469ad46146cea68cb8a57caf17a2132eee9f5258c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "13992488bbd2e31b97de378469ad46146cea68cb8a57caf17a2132eee9f5258c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "13992488bbd2e31b97de378469ad46146cea68cb8a57caf17a2132eee9f5258c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "13992488bbd2e31b97de378469ad46146cea68cb8a57caf17a2132eee9f5258c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "13992488bbd2e31b97de378469ad46146cea68cb8a57caf17a2132eee9f5258c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "13992488bbd2e31b97de378469ad46146cea68cb8a57caf17a2132eee9f5258c",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:minimax-m3": {
-      "canonicalId": "benchmark:minimax-m3",
-      "provider": null,
-      "modelId": "minimax-m3",
-      "displayName": "minimax-m3",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bdcafe71b9594ba4efd04781246358e6fc0c073c552404f2269d2126088a5d93",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bdcafe71b9594ba4efd04781246358e6fc0c073c552404f2269d2126088a5d93",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bdcafe71b9594ba4efd04781246358e6fc0c073c552404f2269d2126088a5d93",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bdcafe71b9594ba4efd04781246358e6fc0c073c552404f2269d2126088a5d93",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bdcafe71b9594ba4efd04781246358e6fc0c073c552404f2269d2126088a5d93",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bdcafe71b9594ba4efd04781246358e6fc0c073c552404f2269d2126088a5d93",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bdcafe71b9594ba4efd04781246358e6fc0c073c552404f2269d2126088a5d93",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:muse-spark-1.1-xhigh": {
-      "canonicalId": "benchmark:muse-spark-1.1-xhigh",
-      "provider": null,
-      "modelId": "muse-spark-1.1-xhigh",
-      "displayName": "muse-spark-1.1-xhigh",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "22c9488bdd663a844edf6de597c9b5d29d640840ce24b12f8874787b65f9b280",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "22c9488bdd663a844edf6de597c9b5d29d640840ce24b12f8874787b65f9b280",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "22c9488bdd663a844edf6de597c9b5d29d640840ce24b12f8874787b65f9b280",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "22c9488bdd663a844edf6de597c9b5d29d640840ce24b12f8874787b65f9b280",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "22c9488bdd663a844edf6de597c9b5d29d640840ce24b12f8874787b65f9b280",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "22c9488bdd663a844edf6de597c9b5d29d640840ce24b12f8874787b65f9b280",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "22c9488bdd663a844edf6de597c9b5d29d640840ce24b12f8874787b65f9b280",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:muse-spark-1.2-xhigh": {
-      "canonicalId": "benchmark:muse-spark-1.2-xhigh",
-      "provider": null,
-      "modelId": "muse-spark-1.2-xhigh",
-      "displayName": "muse-spark-1.2-xhigh",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3af441a99bcc87c435212946bece8606945d4f29690d30d7a8776a6beacc5535",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3af441a99bcc87c435212946bece8606945d4f29690d30d7a8776a6beacc5535",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3af441a99bcc87c435212946bece8606945d4f29690d30d7a8776a6beacc5535",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3af441a99bcc87c435212946bece8606945d4f29690d30d7a8776a6beacc5535",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3af441a99bcc87c435212946bece8606945d4f29690d30d7a8776a6beacc5535",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3af441a99bcc87c435212946bece8606945d4f29690d30d7a8776a6beacc5535",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3af441a99bcc87c435212946bece8606945d4f29690d30d7a8776a6beacc5535",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:muse-spark-1.3-xhigh": {
-      "canonicalId": "benchmark:muse-spark-1.3-xhigh",
-      "provider": null,
-      "modelId": "muse-spark-1.3-xhigh",
-      "displayName": "muse-spark-1.3-xhigh",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bfeb37f7d158d33c2d216ee57c74787c64e780a5c946176ad329f1851a640fe1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bfeb37f7d158d33c2d216ee57c74787c64e780a5c946176ad329f1851a640fe1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bfeb37f7d158d33c2d216ee57c74787c64e780a5c946176ad329f1851a640fe1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bfeb37f7d158d33c2d216ee57c74787c64e780a5c946176ad329f1851a640fe1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bfeb37f7d158d33c2d216ee57c74787c64e780a5c946176ad329f1851a640fe1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bfeb37f7d158d33c2d216ee57c74787c64e780a5c946176ad329f1851a640fe1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bfeb37f7d158d33c2d216ee57c74787c64e780a5c946176ad329f1851a640fe1",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:nemotron-3-ultra-550b-a55b": {
-      "canonicalId": "benchmark:nemotron-3-ultra-550b-a55b",
-      "provider": null,
-      "modelId": "nemotron-3-ultra-550b-a55b",
-      "displayName": "nemotron-3-ultra-550b-a55b",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "077aac3264f9ec8e46ee13a146c141d1b4b8f9d2538b9c515d36f3211a2ca59f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "077aac3264f9ec8e46ee13a146c141d1b4b8f9d2538b9c515d36f3211a2ca59f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "077aac3264f9ec8e46ee13a146c141d1b4b8f9d2538b9c515d36f3211a2ca59f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "077aac3264f9ec8e46ee13a146c141d1b4b8f9d2538b9c515d36f3211a2ca59f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "077aac3264f9ec8e46ee13a146c141d1b4b8f9d2538b9c515d36f3211a2ca59f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "077aac3264f9ec8e46ee13a146c141d1b4b8f9d2538b9c515d36f3211a2ca59f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "077aac3264f9ec8e46ee13a146c141d1b4b8f9d2538b9c515d36f3211a2ca59f",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:ox-alpha-max": {
-      "canonicalId": "benchmark:ox-alpha-max",
-      "provider": null,
-      "modelId": "ox-alpha-max",
-      "displayName": "ox-alpha-max",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "7a26458b66222e8a22a449b7014f936ede7e5e336b6011d830d8f2626f830cff",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "7a26458b66222e8a22a449b7014f936ede7e5e336b6011d830d8f2626f830cff",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "7a26458b66222e8a22a449b7014f936ede7e5e336b6011d830d8f2626f830cff",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "7a26458b66222e8a22a449b7014f936ede7e5e336b6011d830d8f2626f830cff",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "7a26458b66222e8a22a449b7014f936ede7e5e336b6011d830d8f2626f830cff",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "7a26458b66222e8a22a449b7014f936ede7e5e336b6011d830d8f2626f830cff",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "7a26458b66222e8a22a449b7014f936ede7e5e336b6011d830d8f2626f830cff",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:qwen3.6-27b": {
-      "canonicalId": "benchmark:qwen3.6-27b",
-      "provider": null,
-      "modelId": "qwen3.6-27b",
-      "displayName": "qwen3.6-27b",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b93ef22fac324f024e592661114ee6261424d74a502e6467b614c239dd7a4e95",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b93ef22fac324f024e592661114ee6261424d74a502e6467b614c239dd7a4e95",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b93ef22fac324f024e592661114ee6261424d74a502e6467b614c239dd7a4e95",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b93ef22fac324f024e592661114ee6261424d74a502e6467b614c239dd7a4e95",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b93ef22fac324f024e592661114ee6261424d74a502e6467b614c239dd7a4e95",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b93ef22fac324f024e592661114ee6261424d74a502e6467b614c239dd7a4e95",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b93ef22fac324f024e592661114ee6261424d74a502e6467b614c239dd7a4e95",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:qwen3.6-plus": {
-      "canonicalId": "benchmark:qwen3.6-plus",
-      "provider": null,
-      "modelId": "qwen3.6-plus",
-      "displayName": "qwen3.6-plus",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e9448ae75f30964a16eb52f715c626fa77a29b2a32306b5b28b954301b997d1e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e9448ae75f30964a16eb52f715c626fa77a29b2a32306b5b28b954301b997d1e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e9448ae75f30964a16eb52f715c626fa77a29b2a32306b5b28b954301b997d1e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e9448ae75f30964a16eb52f715c626fa77a29b2a32306b5b28b954301b997d1e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e9448ae75f30964a16eb52f715c626fa77a29b2a32306b5b28b954301b997d1e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e9448ae75f30964a16eb52f715c626fa77a29b2a32306b5b28b954301b997d1e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e9448ae75f30964a16eb52f715c626fa77a29b2a32306b5b28b954301b997d1e",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:qwen3.8-27b": {
-      "canonicalId": "benchmark:qwen3.8-27b",
-      "provider": null,
-      "modelId": "qwen3.8-27b",
-      "displayName": "qwen3.8-27b",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5b2e5c69694ab937e40ff808d48dd3372b14af6fcaa9f9511aec44652414aed0",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5b2e5c69694ab937e40ff808d48dd3372b14af6fcaa9f9511aec44652414aed0",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5b2e5c69694ab937e40ff808d48dd3372b14af6fcaa9f9511aec44652414aed0",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5b2e5c69694ab937e40ff808d48dd3372b14af6fcaa9f9511aec44652414aed0",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5b2e5c69694ab937e40ff808d48dd3372b14af6fcaa9f9511aec44652414aed0",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5b2e5c69694ab937e40ff808d48dd3372b14af6fcaa9f9511aec44652414aed0",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5b2e5c69694ab937e40ff808d48dd3372b14af6fcaa9f9511aec44652414aed0",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:qwen3.8-flash-next": {
-      "canonicalId": "benchmark:qwen3.8-flash-next",
-      "provider": null,
-      "modelId": "qwen3.8-flash-next",
-      "displayName": "qwen3.8-flash-next",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "083568adbaccfbeb787aaab21123cc8a7108892b81c1e39aa1729ee74039b18e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "083568adbaccfbeb787aaab21123cc8a7108892b81c1e39aa1729ee74039b18e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "083568adbaccfbeb787aaab21123cc8a7108892b81c1e39aa1729ee74039b18e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "083568adbaccfbeb787aaab21123cc8a7108892b81c1e39aa1729ee74039b18e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "083568adbaccfbeb787aaab21123cc8a7108892b81c1e39aa1729ee74039b18e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "083568adbaccfbeb787aaab21123cc8a7108892b81c1e39aa1729ee74039b18e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "083568adbaccfbeb787aaab21123cc8a7108892b81c1e39aa1729ee74039b18e",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:qwen3.8-max": {
-      "canonicalId": "benchmark:qwen3.8-max",
-      "provider": null,
-      "modelId": "qwen3.8-max",
-      "displayName": "qwen3.8-max",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1178fdb31b5439a9808b2105a975579211fb865e5efc45a96ddfc64ac0e03c37",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1178fdb31b5439a9808b2105a975579211fb865e5efc45a96ddfc64ac0e03c37",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1178fdb31b5439a9808b2105a975579211fb865e5efc45a96ddfc64ac0e03c37",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1178fdb31b5439a9808b2105a975579211fb865e5efc45a96ddfc64ac0e03c37",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1178fdb31b5439a9808b2105a975579211fb865e5efc45a96ddfc64ac0e03c37",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1178fdb31b5439a9808b2105a975579211fb865e5efc45a96ddfc64ac0e03c37",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1178fdb31b5439a9808b2105a975579211fb865e5efc45a96ddfc64ac0e03c37",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:smaug-agentic": {
-      "canonicalId": "benchmark:smaug-agentic",
-      "provider": null,
-      "modelId": "smaug-agentic",
-      "displayName": "smaug-agentic",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "a5cacfed60f3b26fb4ac02636312417835950ae858b829b1a73b20dc44ed2cad",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "a5cacfed60f3b26fb4ac02636312417835950ae858b829b1a73b20dc44ed2cad",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "a5cacfed60f3b26fb4ac02636312417835950ae858b829b1a73b20dc44ed2cad",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "a5cacfed60f3b26fb4ac02636312417835950ae858b829b1a73b20dc44ed2cad",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "a5cacfed60f3b26fb4ac02636312417835950ae858b829b1a73b20dc44ed2cad",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "a5cacfed60f3b26fb4ac02636312417835950ae858b829b1a73b20dc44ed2cad",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "a5cacfed60f3b26fb4ac02636312417835950ae858b829b1a73b20dc44ed2cad",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:smaug-flash": {
-      "canonicalId": "benchmark:smaug-flash",
-      "provider": null,
-      "modelId": "smaug-flash",
-      "displayName": "smaug-flash",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Data Analysis dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3926de37a064cec5a47a8dde764bfbc423411effbccaec77dc5f9583f11ee963",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3926de37a064cec5a47a8dde764bfbc423411effbccaec77dc5f9583f11ee963",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3926de37a064cec5a47a8dde764bfbc423411effbccaec77dc5f9583f11ee963",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3926de37a064cec5a47a8dde764bfbc423411effbccaec77dc5f9583f11ee963",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3926de37a064cec5a47a8dde764bfbc423411effbccaec77dc5f9583f11ee963",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3926de37a064cec5a47a8dde764bfbc423411effbccaec77dc5f9583f11ee963",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3926de37a064cec5a47a8dde764bfbc423411effbccaec77dc5f9583f11ee963",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:gpt-6-astra-max": {
-      "canonicalId": "benchmark:gpt-6-astra-max",
-      "provider": null,
-      "modelId": "gpt-6-astra-max",
-      "displayName": "gpt-6-astra-max",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Coding dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "a0478ac5f9f72c0643856d2ca0e6571a718ebb1c54508b455e4409db3c2e8f27",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "a0478ac5f9f72c0643856d2ca0e6571a718ebb1c54508b455e4409db3c2e8f27",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "a0478ac5f9f72c0643856d2ca0e6571a718ebb1c54508b455e4409db3c2e8f27",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "a0478ac5f9f72c0643856d2ca0e6571a718ebb1c54508b455e4409db3c2e8f27",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "a0478ac5f9f72c0643856d2ca0e6571a718ebb1c54508b455e4409db3c2e8f27",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "a0478ac5f9f72c0643856d2ca0e6571a718ebb1c54508b455e4409db3c2e8f27",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "a0478ac5f9f72c0643856d2ca0e6571a718ebb1c54508b455e4409db3c2e8f27",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:gpt-5.5-xhigh": {
-      "canonicalId": "benchmark:gpt-5.5-xhigh",
-      "provider": null,
-      "modelId": "gpt-5.5-xhigh",
-      "displayName": "gpt-5.5-xhigh",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "LiveBench Mathematics dated official leaderboard CSV",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "c5bf4844438411b27c9efc5f3c45ec68da089a10490de5cddc07054147de1413",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "c5bf4844438411b27c9efc5f3c45ec68da089a10490de5cddc07054147de1413",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "c5bf4844438411b27c9efc5f3c45ec68da089a10490de5cddc07054147de1413",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "c5bf4844438411b27c9efc5f3c45ec68da089a10490de5cddc07054147de1413",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "c5bf4844438411b27c9efc5f3c45ec68da089a10490de5cddc07054147de1413",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "c5bf4844438411b27c9efc5f3c45ec68da089a10490de5cddc07054147de1413",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://livebench.ai/",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "c5bf4844438411b27c9efc5f3c45ec68da089a10490de5cddc07054147de1413",
+          "contentHash": "362553fd3be328b78ed4dd3142268cb3f8b3436134d7e70e5ed1658376110b92",
           "sourceType": "official_benchmark"
         }
       ]
@@ -7217,49 +1862,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "11e623c8715ff65797caabdf7ae8443a4cc7f45db1f3adb632c9bbcc42ded819",
+          "contentHash": "a5e551ae4611ddbde80857aac0a5149a65ea42ac70090704c8c04a589e3e8e29",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "11e623c8715ff65797caabdf7ae8443a4cc7f45db1f3adb632c9bbcc42ded819",
+          "contentHash": "a5e551ae4611ddbde80857aac0a5149a65ea42ac70090704c8c04a589e3e8e29",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "11e623c8715ff65797caabdf7ae8443a4cc7f45db1f3adb632c9bbcc42ded819",
+          "contentHash": "a5e551ae4611ddbde80857aac0a5149a65ea42ac70090704c8c04a589e3e8e29",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "11e623c8715ff65797caabdf7ae8443a4cc7f45db1f3adb632c9bbcc42ded819",
+          "contentHash": "a5e551ae4611ddbde80857aac0a5149a65ea42ac70090704c8c04a589e3e8e29",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "11e623c8715ff65797caabdf7ae8443a4cc7f45db1f3adb632c9bbcc42ded819",
+          "contentHash": "a5e551ae4611ddbde80857aac0a5149a65ea42ac70090704c8c04a589e3e8e29",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "11e623c8715ff65797caabdf7ae8443a4cc7f45db1f3adb632c9bbcc42ded819",
+          "contentHash": "a5e551ae4611ddbde80857aac0a5149a65ea42ac70090704c8c04a589e3e8e29",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "11e623c8715ff65797caabdf7ae8443a4cc7f45db1f3adb632c9bbcc42ded819",
+          "contentHash": "a5e551ae4611ddbde80857aac0a5149a65ea42ac70090704c8c04a589e3e8e29",
           "sourceType": "official_benchmark"
         }
       ]
@@ -7306,227 +1951,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5c134c2a3d88352a18c9c4e306046e737639d91c4d0a9be8b03a36368be4483e",
+          "contentHash": "e58674647c63f0249ec3d123cc51475c7e51439f5acac28d0817c347848608ae",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5c134c2a3d88352a18c9c4e306046e737639d91c4d0a9be8b03a36368be4483e",
+          "contentHash": "e58674647c63f0249ec3d123cc51475c7e51439f5acac28d0817c347848608ae",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5c134c2a3d88352a18c9c4e306046e737639d91c4d0a9be8b03a36368be4483e",
+          "contentHash": "e58674647c63f0249ec3d123cc51475c7e51439f5acac28d0817c347848608ae",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5c134c2a3d88352a18c9c4e306046e737639d91c4d0a9be8b03a36368be4483e",
+          "contentHash": "e58674647c63f0249ec3d123cc51475c7e51439f5acac28d0817c347848608ae",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5c134c2a3d88352a18c9c4e306046e737639d91c4d0a9be8b03a36368be4483e",
+          "contentHash": "e58674647c63f0249ec3d123cc51475c7e51439f5acac28d0817c347848608ae",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5c134c2a3d88352a18c9c4e306046e737639d91c4d0a9be8b03a36368be4483e",
+          "contentHash": "e58674647c63f0249ec3d123cc51475c7e51439f5acac28d0817c347848608ae",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5c134c2a3d88352a18c9c4e306046e737639d91c4d0a9be8b03a36368be4483e",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GLM-5.3 (max)": {
-      "canonicalId": "benchmark:GLM-5.3 (max)",
-      "provider": null,
-      "modelId": "GLM-5.3 (max)",
-      "displayName": "GLM-5.3 (max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bd004a28d18c5f8b3f73d55cc157120af75efa6df93e0859a56c482d3a2af539",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bd004a28d18c5f8b3f73d55cc157120af75efa6df93e0859a56c482d3a2af539",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bd004a28d18c5f8b3f73d55cc157120af75efa6df93e0859a56c482d3a2af539",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bd004a28d18c5f8b3f73d55cc157120af75efa6df93e0859a56c482d3a2af539",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bd004a28d18c5f8b3f73d55cc157120af75efa6df93e0859a56c482d3a2af539",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bd004a28d18c5f8b3f73d55cc157120af75efa6df93e0859a56c482d3a2af539",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bd004a28d18c5f8b3f73d55cc157120af75efa6df93e0859a56c482d3a2af539",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GPT-5.6 Sol (max)": {
-      "canonicalId": "benchmark:GPT-5.6 Sol (max)",
-      "provider": null,
-      "modelId": "GPT-5.6 Sol (max)",
-      "displayName": "GPT-5.6 Sol (max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "44407350df2a3d3bb30f20e5e67db05d96b89df7beb116b74c8b49cd0fa1813f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "44407350df2a3d3bb30f20e5e67db05d96b89df7beb116b74c8b49cd0fa1813f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "44407350df2a3d3bb30f20e5e67db05d96b89df7beb116b74c8b49cd0fa1813f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "44407350df2a3d3bb30f20e5e67db05d96b89df7beb116b74c8b49cd0fa1813f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "44407350df2a3d3bb30f20e5e67db05d96b89df7beb116b74c8b49cd0fa1813f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "44407350df2a3d3bb30f20e5e67db05d96b89df7beb116b74c8b49cd0fa1813f",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "44407350df2a3d3bb30f20e5e67db05d96b89df7beb116b74c8b49cd0fa1813f",
+          "contentHash": "e58674647c63f0249ec3d123cc51475c7e51439f5acac28d0817c347848608ae",
           "sourceType": "official_benchmark"
         }
       ]
@@ -7573,58 +2040,58 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6f7c9099c0a751d1927b78613e2e6fd078c0a3c37e585e8cbce03cd07599f0f3",
+          "contentHash": "407826df67db6669bdbddef23de25eaa87f85a559f4b6884844b2abea72dfa54",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6f7c9099c0a751d1927b78613e2e6fd078c0a3c37e585e8cbce03cd07599f0f3",
+          "contentHash": "407826df67db6669bdbddef23de25eaa87f85a559f4b6884844b2abea72dfa54",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6f7c9099c0a751d1927b78613e2e6fd078c0a3c37e585e8cbce03cd07599f0f3",
+          "contentHash": "407826df67db6669bdbddef23de25eaa87f85a559f4b6884844b2abea72dfa54",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6f7c9099c0a751d1927b78613e2e6fd078c0a3c37e585e8cbce03cd07599f0f3",
+          "contentHash": "407826df67db6669bdbddef23de25eaa87f85a559f4b6884844b2abea72dfa54",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6f7c9099c0a751d1927b78613e2e6fd078c0a3c37e585e8cbce03cd07599f0f3",
+          "contentHash": "407826df67db6669bdbddef23de25eaa87f85a559f4b6884844b2abea72dfa54",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6f7c9099c0a751d1927b78613e2e6fd078c0a3c37e585e8cbce03cd07599f0f3",
+          "contentHash": "407826df67db6669bdbddef23de25eaa87f85a559f4b6884844b2abea72dfa54",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "6f7c9099c0a751d1927b78613e2e6fd078c0a3c37e585e8cbce03cd07599f0f3",
+          "contentHash": "407826df67db6669bdbddef23de25eaa87f85a559f4b6884844b2abea72dfa54",
           "sourceType": "official_benchmark"
         }
       ]
     },
-    "benchmark:Grok 4.6 (high)": {
-      "canonicalId": "benchmark:Grok 4.6 (high)",
+    "benchmark:Step 5 Preview": {
+      "canonicalId": "benchmark:Step 5 Preview",
       "provider": null,
-      "modelId": "Grok 4.6 (high)",
-      "displayName": "Grok 4.6 (high)",
+      "modelId": "Step 5 Preview",
+      "displayName": "Step 5 Preview",
       "version": null,
       "aliases": [],
       "releaseDate": null,
@@ -7662,494 +2129,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3e529b9d5199a608769f346b7561df80756a71456ce86be7846db5f6edfc5098",
+          "contentHash": "252c5a0c0abcb014372a4456209a63e2a8d787a3469fdf2d84b5ae83e7d855f0",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3e529b9d5199a608769f346b7561df80756a71456ce86be7846db5f6edfc5098",
+          "contentHash": "252c5a0c0abcb014372a4456209a63e2a8d787a3469fdf2d84b5ae83e7d855f0",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3e529b9d5199a608769f346b7561df80756a71456ce86be7846db5f6edfc5098",
+          "contentHash": "252c5a0c0abcb014372a4456209a63e2a8d787a3469fdf2d84b5ae83e7d855f0",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3e529b9d5199a608769f346b7561df80756a71456ce86be7846db5f6edfc5098",
+          "contentHash": "252c5a0c0abcb014372a4456209a63e2a8d787a3469fdf2d84b5ae83e7d855f0",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3e529b9d5199a608769f346b7561df80756a71456ce86be7846db5f6edfc5098",
+          "contentHash": "252c5a0c0abcb014372a4456209a63e2a8d787a3469fdf2d84b5ae83e7d855f0",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3e529b9d5199a608769f346b7561df80756a71456ce86be7846db5f6edfc5098",
+          "contentHash": "252c5a0c0abcb014372a4456209a63e2a8d787a3469fdf2d84b5ae83e7d855f0",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3e529b9d5199a608769f346b7561df80756a71456ce86be7846db5f6edfc5098",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Grok 4.7 (xhigh)": {
-      "canonicalId": "benchmark:Grok 4.7 (xhigh)",
-      "provider": null,
-      "modelId": "Grok 4.7 (xhigh)",
-      "displayName": "Grok 4.7 (xhigh)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis Intelligence Index official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "916b38dc6ed66892ed038f751397e04d4cba0f2faab5b9a35986c1e7395d3708",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "916b38dc6ed66892ed038f751397e04d4cba0f2faab5b9a35986c1e7395d3708",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "916b38dc6ed66892ed038f751397e04d4cba0f2faab5b9a35986c1e7395d3708",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "916b38dc6ed66892ed038f751397e04d4cba0f2faab5b9a35986c1e7395d3708",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "916b38dc6ed66892ed038f751397e04d4cba0f2faab5b9a35986c1e7395d3708",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "916b38dc6ed66892ed038f751397e04d4cba0f2faab5b9a35986c1e7395d3708",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "916b38dc6ed66892ed038f751397e04d4cba0f2faab5b9a35986c1e7395d3708",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Kimi K3 (max)": {
-      "canonicalId": "benchmark:Kimi K3 (max)",
-      "provider": null,
-      "modelId": "Kimi K3 (max)",
-      "displayName": "Kimi K3 (max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis Intelligence Index official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8bb137f7437308e8f41aab274748ce6f498b2cc5adbf75099fbc4c340d136e9e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8bb137f7437308e8f41aab274748ce6f498b2cc5adbf75099fbc4c340d136e9e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8bb137f7437308e8f41aab274748ce6f498b2cc5adbf75099fbc4c340d136e9e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8bb137f7437308e8f41aab274748ce6f498b2cc5adbf75099fbc4c340d136e9e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8bb137f7437308e8f41aab274748ce6f498b2cc5adbf75099fbc4c340d136e9e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8bb137f7437308e8f41aab274748ce6f498b2cc5adbf75099fbc4c340d136e9e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8bb137f7437308e8f41aab274748ce6f498b2cc5adbf75099fbc4c340d136e9e",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:MiMo-V2.6-Pro": {
-      "canonicalId": "benchmark:MiMo-V2.6-Pro",
-      "provider": null,
-      "modelId": "MiMo-V2.6-Pro",
-      "displayName": "MiMo-V2.6-Pro",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis Intelligence Index official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cccd58afa19fb0659b81c5d1637c5d6e64c345fdf386de3b9d609dcf7d8e75dd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cccd58afa19fb0659b81c5d1637c5d6e64c345fdf386de3b9d609dcf7d8e75dd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cccd58afa19fb0659b81c5d1637c5d6e64c345fdf386de3b9d609dcf7d8e75dd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cccd58afa19fb0659b81c5d1637c5d6e64c345fdf386de3b9d609dcf7d8e75dd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cccd58afa19fb0659b81c5d1637c5d6e64c345fdf386de3b9d609dcf7d8e75dd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cccd58afa19fb0659b81c5d1637c5d6e64c345fdf386de3b9d609dcf7d8e75dd",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "cccd58afa19fb0659b81c5d1637c5d6e64c345fdf386de3b9d609dcf7d8e75dd",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Gemini 3.8 Flash (high)": {
-      "canonicalId": "benchmark:Gemini 3.8 Flash (high)",
-      "provider": null,
-      "modelId": "Gemini 3.8 Flash (high)",
-      "displayName": "Gemini 3.8 Flash (high)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis Humanity's Last Exam official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b441fbaf5558944b6182bdd6baff0e4c6bebb5877b55475fe7d5562c74666a7d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b441fbaf5558944b6182bdd6baff0e4c6bebb5877b55475fe7d5562c74666a7d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b441fbaf5558944b6182bdd6baff0e4c6bebb5877b55475fe7d5562c74666a7d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b441fbaf5558944b6182bdd6baff0e4c6bebb5877b55475fe7d5562c74666a7d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b441fbaf5558944b6182bdd6baff0e4c6bebb5877b55475fe7d5562c74666a7d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b441fbaf5558944b6182bdd6baff0e4c6bebb5877b55475fe7d5562c74666a7d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "b441fbaf5558944b6182bdd6baff0e4c6bebb5877b55475fe7d5562c74666a7d",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:K2 Horizon 375B A23B": {
-      "canonicalId": "benchmark:K2 Horizon 375B A23B",
-      "provider": null,
-      "modelId": "K2 Horizon 375B A23B",
-      "displayName": "K2 Horizon 375B A23B",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GPQA Diamond official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "64cacdbd29afb40665364d7837e41728b3f116f5d67b4a5fe92e0ead26ac8d17",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "64cacdbd29afb40665364d7837e41728b3f116f5d67b4a5fe92e0ead26ac8d17",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "64cacdbd29afb40665364d7837e41728b3f116f5d67b4a5fe92e0ead26ac8d17",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "64cacdbd29afb40665364d7837e41728b3f116f5d67b4a5fe92e0ead26ac8d17",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "64cacdbd29afb40665364d7837e41728b3f116f5d67b4a5fe92e0ead26ac8d17",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "64cacdbd29afb40665364d7837e41728b3f116f5d67b4a5fe92e0ead26ac8d17",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "64cacdbd29afb40665364d7837e41728b3f116f5d67b4a5fe92e0ead26ac8d17",
+          "contentHash": "252c5a0c0abcb014372a4456209a63e2a8d787a3469fdf2d84b5ae83e7d855f0",
           "sourceType": "official_benchmark"
         }
       ]
@@ -8196,227 +2218,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "76f99a514fa3a8b4b0718c5198f132354e5f6f63505489e8525763f07a976036",
+          "contentHash": "40304897c2786e9c5f95622db6ed1daf3152a30e66c28305bcb80a03067aede3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "76f99a514fa3a8b4b0718c5198f132354e5f6f63505489e8525763f07a976036",
+          "contentHash": "40304897c2786e9c5f95622db6ed1daf3152a30e66c28305bcb80a03067aede3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "76f99a514fa3a8b4b0718c5198f132354e5f6f63505489e8525763f07a976036",
+          "contentHash": "40304897c2786e9c5f95622db6ed1daf3152a30e66c28305bcb80a03067aede3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "76f99a514fa3a8b4b0718c5198f132354e5f6f63505489e8525763f07a976036",
+          "contentHash": "40304897c2786e9c5f95622db6ed1daf3152a30e66c28305bcb80a03067aede3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "76f99a514fa3a8b4b0718c5198f132354e5f6f63505489e8525763f07a976036",
+          "contentHash": "40304897c2786e9c5f95622db6ed1daf3152a30e66c28305bcb80a03067aede3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "76f99a514fa3a8b4b0718c5198f132354e5f6f63505489e8525763f07a976036",
+          "contentHash": "40304897c2786e9c5f95622db6ed1daf3152a30e66c28305bcb80a03067aede3",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "76f99a514fa3a8b4b0718c5198f132354e5f6f63505489e8525763f07a976036",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:DeepSeek V4 Pro 0813 (max)": {
-      "canonicalId": "benchmark:DeepSeek V4 Pro 0813 (max)",
-      "provider": null,
-      "modelId": "DeepSeek V4 Pro 0813 (max)",
-      "displayName": "DeepSeek V4 Pro 0813 (max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GPQA Diamond official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1799f0ae7cfdbf7d90e12f20c483f233ca13c6c5b66557070e5f590db06f3253",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1799f0ae7cfdbf7d90e12f20c483f233ca13c6c5b66557070e5f590db06f3253",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1799f0ae7cfdbf7d90e12f20c483f233ca13c6c5b66557070e5f590db06f3253",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1799f0ae7cfdbf7d90e12f20c483f233ca13c6c5b66557070e5f590db06f3253",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1799f0ae7cfdbf7d90e12f20c483f233ca13c6c5b66557070e5f590db06f3253",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1799f0ae7cfdbf7d90e12f20c483f233ca13c6c5b66557070e5f590db06f3253",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1799f0ae7cfdbf7d90e12f20c483f233ca13c6c5b66557070e5f590db06f3253",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GLM-5.3-Flash": {
-      "canonicalId": "benchmark:GLM-5.3-Flash",
-      "provider": null,
-      "modelId": "GLM-5.3-Flash",
-      "displayName": "GLM-5.3-Flash",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GPQA Diamond official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5294d80859cdba65311a16f47e625d2ce8c96205de61f7de7ec8b869f35868ac",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5294d80859cdba65311a16f47e625d2ce8c96205de61f7de7ec8b869f35868ac",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5294d80859cdba65311a16f47e625d2ce8c96205de61f7de7ec8b869f35868ac",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5294d80859cdba65311a16f47e625d2ce8c96205de61f7de7ec8b869f35868ac",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5294d80859cdba65311a16f47e625d2ce8c96205de61f7de7ec8b869f35868ac",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5294d80859cdba65311a16f47e625d2ce8c96205de61f7de7ec8b869f35868ac",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "5294d80859cdba65311a16f47e625d2ce8c96205de61f7de7ec8b869f35868ac",
+          "contentHash": "40304897c2786e9c5f95622db6ed1daf3152a30e66c28305bcb80a03067aede3",
           "sourceType": "official_benchmark"
         }
       ]
@@ -8463,58 +2307,58 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bcfd603b1510bbf8d5b77ae5f904b61d51dab189f204451c577c4a8e5e2c40a0",
+          "contentHash": "c7528a4aa9a1ccb749f14b20c194f884ade697d01760d8361a351b328f7fa24f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bcfd603b1510bbf8d5b77ae5f904b61d51dab189f204451c577c4a8e5e2c40a0",
+          "contentHash": "c7528a4aa9a1ccb749f14b20c194f884ade697d01760d8361a351b328f7fa24f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bcfd603b1510bbf8d5b77ae5f904b61d51dab189f204451c577c4a8e5e2c40a0",
+          "contentHash": "c7528a4aa9a1ccb749f14b20c194f884ade697d01760d8361a351b328f7fa24f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bcfd603b1510bbf8d5b77ae5f904b61d51dab189f204451c577c4a8e5e2c40a0",
+          "contentHash": "c7528a4aa9a1ccb749f14b20c194f884ade697d01760d8361a351b328f7fa24f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bcfd603b1510bbf8d5b77ae5f904b61d51dab189f204451c577c4a8e5e2c40a0",
+          "contentHash": "c7528a4aa9a1ccb749f14b20c194f884ade697d01760d8361a351b328f7fa24f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bcfd603b1510bbf8d5b77ae5f904b61d51dab189f204451c577c4a8e5e2c40a0",
+          "contentHash": "c7528a4aa9a1ccb749f14b20c194f884ade697d01760d8361a351b328f7fa24f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "bcfd603b1510bbf8d5b77ae5f904b61d51dab189f204451c577c4a8e5e2c40a0",
+          "contentHash": "c7528a4aa9a1ccb749f14b20c194f884ade697d01760d8361a351b328f7fa24f",
           "sourceType": "official_benchmark"
         }
       ]
     },
-    "benchmark:Muse Spark 1.3 (max)": {
-      "canonicalId": "benchmark:Muse Spark 1.3 (max)",
+    "benchmark:GLM-5.3-Flash": {
+      "canonicalId": "benchmark:GLM-5.3-Flash",
       "provider": null,
-      "modelId": "Muse Spark 1.3 (max)",
-      "displayName": "Muse Spark 1.3 (max)",
+      "modelId": "GLM-5.3-Flash",
+      "displayName": "GLM-5.3-Flash",
       "version": null,
       "aliases": [],
       "releaseDate": null,
@@ -8552,138 +2396,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1a955af1c6bf0ab613e04c3c928653601e62474357ee24204b88c490e7dd86a3",
+          "contentHash": "b8fa2db3e70164b181a976470b4d71be4f7fbcec0cc6ccc6548c699326018172",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1a955af1c6bf0ab613e04c3c928653601e62474357ee24204b88c490e7dd86a3",
+          "contentHash": "b8fa2db3e70164b181a976470b4d71be4f7fbcec0cc6ccc6548c699326018172",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1a955af1c6bf0ab613e04c3c928653601e62474357ee24204b88c490e7dd86a3",
+          "contentHash": "b8fa2db3e70164b181a976470b4d71be4f7fbcec0cc6ccc6548c699326018172",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1a955af1c6bf0ab613e04c3c928653601e62474357ee24204b88c490e7dd86a3",
+          "contentHash": "b8fa2db3e70164b181a976470b4d71be4f7fbcec0cc6ccc6548c699326018172",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1a955af1c6bf0ab613e04c3c928653601e62474357ee24204b88c490e7dd86a3",
+          "contentHash": "b8fa2db3e70164b181a976470b4d71be4f7fbcec0cc6ccc6548c699326018172",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1a955af1c6bf0ab613e04c3c928653601e62474357ee24204b88c490e7dd86a3",
+          "contentHash": "b8fa2db3e70164b181a976470b4d71be4f7fbcec0cc6ccc6548c699326018172",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "1a955af1c6bf0ab613e04c3c928653601e62474357ee24204b88c490e7dd86a3",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GPT-6 Luna (max)": {
-      "canonicalId": "benchmark:GPT-6 Luna (max)",
-      "provider": null,
-      "modelId": "GPT-6 Luna (max)",
-      "displayName": "GPT-6 Luna (max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis AA LCR official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "453842c41412e89bab250f0658c2ea16b153f24b0e6b4ecc5bb95678ec4c0630",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "453842c41412e89bab250f0658c2ea16b153f24b0e6b4ecc5bb95678ec4c0630",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "453842c41412e89bab250f0658c2ea16b153f24b0e6b4ecc5bb95678ec4c0630",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "453842c41412e89bab250f0658c2ea16b153f24b0e6b4ecc5bb95678ec4c0630",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "453842c41412e89bab250f0658c2ea16b153f24b0e6b4ecc5bb95678ec4c0630",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "453842c41412e89bab250f0658c2ea16b153f24b0e6b4ecc5bb95678ec4c0630",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "453842c41412e89bab250f0658c2ea16b153f24b0e6b4ecc5bb95678ec4c0630",
+          "contentHash": "b8fa2db3e70164b181a976470b4d71be4f7fbcec0cc6ccc6548c699326018172",
           "sourceType": "official_benchmark"
         }
       ]
@@ -8730,236 +2485,58 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3f0114e88da34393650a76a587e3dd897bee4b9e57b4bf023476ccc96c13196e",
+          "contentHash": "45531c5d50986c059a4b1020b3e68043722a1751889c983923fb1c29be72e045",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3f0114e88da34393650a76a587e3dd897bee4b9e57b4bf023476ccc96c13196e",
+          "contentHash": "45531c5d50986c059a4b1020b3e68043722a1751889c983923fb1c29be72e045",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3f0114e88da34393650a76a587e3dd897bee4b9e57b4bf023476ccc96c13196e",
+          "contentHash": "45531c5d50986c059a4b1020b3e68043722a1751889c983923fb1c29be72e045",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3f0114e88da34393650a76a587e3dd897bee4b9e57b4bf023476ccc96c13196e",
+          "contentHash": "45531c5d50986c059a4b1020b3e68043722a1751889c983923fb1c29be72e045",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3f0114e88da34393650a76a587e3dd897bee4b9e57b4bf023476ccc96c13196e",
+          "contentHash": "45531c5d50986c059a4b1020b3e68043722a1751889c983923fb1c29be72e045",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3f0114e88da34393650a76a587e3dd897bee4b9e57b4bf023476ccc96c13196e",
+          "contentHash": "45531c5d50986c059a4b1020b3e68043722a1751889c983923fb1c29be72e045",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3f0114e88da34393650a76a587e3dd897bee4b9e57b4bf023476ccc96c13196e",
+          "contentHash": "45531c5d50986c059a4b1020b3e68043722a1751889c983923fb1c29be72e045",
           "sourceType": "official_benchmark"
         }
       ]
     },
-    "benchmark:MiniMax-M3": {
-      "canonicalId": "benchmark:MiniMax-M3",
+    "benchmark:Gemini 3.8 Flash (high)": {
+      "canonicalId": "benchmark:Gemini 3.8 Flash (high)",
       "provider": null,
-      "modelId": "MiniMax-M3",
-      "displayName": "MiniMax-M3",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis AA LCR official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "eb3ca61dd00f2f5033e3cc95df66f6861e9445cecf35adf68fe02f7a3f77c97c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "eb3ca61dd00f2f5033e3cc95df66f6861e9445cecf35adf68fe02f7a3f77c97c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "eb3ca61dd00f2f5033e3cc95df66f6861e9445cecf35adf68fe02f7a3f77c97c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "eb3ca61dd00f2f5033e3cc95df66f6861e9445cecf35adf68fe02f7a3f77c97c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "eb3ca61dd00f2f5033e3cc95df66f6861e9445cecf35adf68fe02f7a3f77c97c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "eb3ca61dd00f2f5033e3cc95df66f6861e9445cecf35adf68fe02f7a3f77c97c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "eb3ca61dd00f2f5033e3cc95df66f6861e9445cecf35adf68fe02f7a3f77c97c",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Muse Glimmer (high)": {
-      "canonicalId": "benchmark:Muse Glimmer (high)",
-      "provider": null,
-      "modelId": "Muse Glimmer (high)",
-      "displayName": "Muse Glimmer (high)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis AA LCR official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "30577c7b204dcfc61262354f98c53263a88c3f67ecceb78d5933e98c27f52cb6",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "30577c7b204dcfc61262354f98c53263a88c3f67ecceb78d5933e98c27f52cb6",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "30577c7b204dcfc61262354f98c53263a88c3f67ecceb78d5933e98c27f52cb6",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "30577c7b204dcfc61262354f98c53263a88c3f67ecceb78d5933e98c27f52cb6",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "30577c7b204dcfc61262354f98c53263a88c3f67ecceb78d5933e98c27f52cb6",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "30577c7b204dcfc61262354f98c53263a88c3f67ecceb78d5933e98c27f52cb6",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "30577c7b204dcfc61262354f98c53263a88c3f67ecceb78d5933e98c27f52cb6",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Claude Fable 5.1 (high with fallback)": {
-      "canonicalId": "benchmark:Claude Fable 5.1 (high with fallback)",
-      "provider": null,
-      "modelId": "Claude Fable 5.1 (high with fallback)",
-      "displayName": "Claude Fable 5.1 (high with fallback)",
+      "modelId": "Gemini 3.8 Flash (high)",
+      "displayName": "Gemini 3.8 Flash (high)",
       "version": null,
       "aliases": [],
       "releaseDate": null,
@@ -8997,227 +2574,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4d44cc5dc3b1e7c40baaa36bbfe80d4dcc4c01414e84bf6b3fb4f0d70cb7599f",
+          "contentHash": "4f07ad8f0fe947668ab429df30df238068cc010be19bcea3c907ede55ad5d33b",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4d44cc5dc3b1e7c40baaa36bbfe80d4dcc4c01414e84bf6b3fb4f0d70cb7599f",
+          "contentHash": "4f07ad8f0fe947668ab429df30df238068cc010be19bcea3c907ede55ad5d33b",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4d44cc5dc3b1e7c40baaa36bbfe80d4dcc4c01414e84bf6b3fb4f0d70cb7599f",
+          "contentHash": "4f07ad8f0fe947668ab429df30df238068cc010be19bcea3c907ede55ad5d33b",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4d44cc5dc3b1e7c40baaa36bbfe80d4dcc4c01414e84bf6b3fb4f0d70cb7599f",
+          "contentHash": "4f07ad8f0fe947668ab429df30df238068cc010be19bcea3c907ede55ad5d33b",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4d44cc5dc3b1e7c40baaa36bbfe80d4dcc4c01414e84bf6b3fb4f0d70cb7599f",
+          "contentHash": "4f07ad8f0fe947668ab429df30df238068cc010be19bcea3c907ede55ad5d33b",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4d44cc5dc3b1e7c40baaa36bbfe80d4dcc4c01414e84bf6b3fb4f0d70cb7599f",
+          "contentHash": "4f07ad8f0fe947668ab429df30df238068cc010be19bcea3c907ede55ad5d33b",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "4d44cc5dc3b1e7c40baaa36bbfe80d4dcc4c01414e84bf6b3fb4f0d70cb7599f",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GPT-5.5 Pro (xhigh)": {
-      "canonicalId": "benchmark:GPT-5.5 Pro (xhigh)",
-      "provider": null,
-      "modelId": "GPT-5.5 Pro (xhigh)",
-      "displayName": "GPT-5.5 Pro (xhigh)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis CritPt official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "7464a591aead909f6b94e85b935bdae011ac0c96ae2446dcd855d918c691516a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "7464a591aead909f6b94e85b935bdae011ac0c96ae2446dcd855d918c691516a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "7464a591aead909f6b94e85b935bdae011ac0c96ae2446dcd855d918c691516a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "7464a591aead909f6b94e85b935bdae011ac0c96ae2446dcd855d918c691516a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "7464a591aead909f6b94e85b935bdae011ac0c96ae2446dcd855d918c691516a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "7464a591aead909f6b94e85b935bdae011ac0c96ae2446dcd855d918c691516a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "7464a591aead909f6b94e85b935bdae011ac0c96ae2446dcd855d918c691516a",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Claude Opus 5 (max)": {
-      "canonicalId": "benchmark:Claude Opus 5 (max)",
-      "provider": null,
-      "modelId": "Claude Opus 5 (max)",
-      "displayName": "Claude Opus 5 (max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis SciCode official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e19b9bb4b357fd9afdf79476a75ccb40d3995a48b9be2a076ac5cede1c26f26b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e19b9bb4b357fd9afdf79476a75ccb40d3995a48b9be2a076ac5cede1c26f26b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e19b9bb4b357fd9afdf79476a75ccb40d3995a48b9be2a076ac5cede1c26f26b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e19b9bb4b357fd9afdf79476a75ccb40d3995a48b9be2a076ac5cede1c26f26b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e19b9bb4b357fd9afdf79476a75ccb40d3995a48b9be2a076ac5cede1c26f26b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e19b9bb4b357fd9afdf79476a75ccb40d3995a48b9be2a076ac5cede1c26f26b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "e19b9bb4b357fd9afdf79476a75ccb40d3995a48b9be2a076ac5cede1c26f26b",
+          "contentHash": "4f07ad8f0fe947668ab429df30df238068cc010be19bcea3c907ede55ad5d33b",
           "sourceType": "official_benchmark"
         }
       ]
@@ -9264,138 +2663,49 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3b68c36c009cac07cc1af6d55fd0c5cf923c3ca4f79fe830d3a10f480e018bde",
+          "contentHash": "8b12e56cd030696774023667d826919188acaaf1b6b8d3cc8da4c4729e86c288",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3b68c36c009cac07cc1af6d55fd0c5cf923c3ca4f79fe830d3a10f480e018bde",
+          "contentHash": "8b12e56cd030696774023667d826919188acaaf1b6b8d3cc8da4c4729e86c288",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3b68c36c009cac07cc1af6d55fd0c5cf923c3ca4f79fe830d3a10f480e018bde",
+          "contentHash": "8b12e56cd030696774023667d826919188acaaf1b6b8d3cc8da4c4729e86c288",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3b68c36c009cac07cc1af6d55fd0c5cf923c3ca4f79fe830d3a10f480e018bde",
+          "contentHash": "8b12e56cd030696774023667d826919188acaaf1b6b8d3cc8da4c4729e86c288",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3b68c36c009cac07cc1af6d55fd0c5cf923c3ca4f79fe830d3a10f480e018bde",
+          "contentHash": "8b12e56cd030696774023667d826919188acaaf1b6b8d3cc8da4c4729e86c288",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3b68c36c009cac07cc1af6d55fd0c5cf923c3ca4f79fe830d3a10f480e018bde",
+          "contentHash": "8b12e56cd030696774023667d826919188acaaf1b6b8d3cc8da4c4729e86c288",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "3b68c36c009cac07cc1af6d55fd0c5cf923c3ca4f79fe830d3a10f480e018bde",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Mistral Medium 3.5": {
-      "canonicalId": "benchmark:Mistral Medium 3.5",
-      "provider": null,
-      "modelId": "Mistral Medium 3.5",
-      "displayName": "Mistral Medium 3.5",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "9c06c8fbd11825f24fb561683fb9cfc91c207a0bb3cbfc36868e256629561922",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "9c06c8fbd11825f24fb561683fb9cfc91c207a0bb3cbfc36868e256629561922",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "9c06c8fbd11825f24fb561683fb9cfc91c207a0bb3cbfc36868e256629561922",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "9c06c8fbd11825f24fb561683fb9cfc91c207a0bb3cbfc36868e256629561922",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "9c06c8fbd11825f24fb561683fb9cfc91c207a0bb3cbfc36868e256629561922",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "9c06c8fbd11825f24fb561683fb9cfc91c207a0bb3cbfc36868e256629561922",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-          "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "9c06c8fbd11825f24fb561683fb9cfc91c207a0bb3cbfc36868e256629561922",
+          "contentHash": "8b12e56cd030696774023667d826919188acaaf1b6b8d3cc8da4c4729e86c288",
           "sourceType": "official_benchmark"
         }
       ]
@@ -9442,58 +2752,58 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8887e4acec7a87077104a89aef5f284ed31ac25373af24aa252c1121d9a0b61c",
+          "contentHash": "21e17b9929e5e84a43a8407e8ec39e64550786a4d49965e3538d48269e6e351e",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8887e4acec7a87077104a89aef5f284ed31ac25373af24aa252c1121d9a0b61c",
+          "contentHash": "21e17b9929e5e84a43a8407e8ec39e64550786a4d49965e3538d48269e6e351e",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8887e4acec7a87077104a89aef5f284ed31ac25373af24aa252c1121d9a0b61c",
+          "contentHash": "21e17b9929e5e84a43a8407e8ec39e64550786a4d49965e3538d48269e6e351e",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8887e4acec7a87077104a89aef5f284ed31ac25373af24aa252c1121d9a0b61c",
+          "contentHash": "21e17b9929e5e84a43a8407e8ec39e64550786a4d49965e3538d48269e6e351e",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8887e4acec7a87077104a89aef5f284ed31ac25373af24aa252c1121d9a0b61c",
+          "contentHash": "21e17b9929e5e84a43a8407e8ec39e64550786a4d49965e3538d48269e6e351e",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8887e4acec7a87077104a89aef5f284ed31ac25373af24aa252c1121d9a0b61c",
+          "contentHash": "21e17b9929e5e84a43a8407e8ec39e64550786a4d49965e3538d48269e6e351e",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "8887e4acec7a87077104a89aef5f284ed31ac25373af24aa252c1121d9a0b61c",
+          "contentHash": "21e17b9929e5e84a43a8407e8ec39e64550786a4d49965e3538d48269e6e351e",
           "sourceType": "official_benchmark"
         }
       ]
     },
-    "benchmark:DeepSeek V4.1 Flash (max)": {
-      "canonicalId": "benchmark:DeepSeek V4.1 Flash (max)",
+    "benchmark:MiniMax-M3": {
+      "canonicalId": "benchmark:MiniMax-M3",
       "provider": null,
-      "modelId": "DeepSeek V4.1 Flash (max)",
-      "displayName": "DeepSeek V4.1 Flash (max)",
+      "modelId": "MiniMax-M3",
+      "displayName": "MiniMax-M3",
       "version": null,
       "aliases": [],
       "releaseDate": null,
@@ -9525,418 +2835,334 @@ module.exports = {
       "modelCardUrl": null,
       "hubRepo": null,
       "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis MLCR Overall official public Dataset page",
+      "sourceOwner": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
       "evidence": [
         {
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "dde8efb9762ce6ac2c514bc7a7cadebfcaebe303e5591866bed58df60dc8f0b7",
+          "contentHash": "2e59a997eddc0607101df3e0811162516604d3f4d23c82302c395e2d0f979d4a",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "dde8efb9762ce6ac2c514bc7a7cadebfcaebe303e5591866bed58df60dc8f0b7",
+          "contentHash": "2e59a997eddc0607101df3e0811162516604d3f4d23c82302c395e2d0f979d4a",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "dde8efb9762ce6ac2c514bc7a7cadebfcaebe303e5591866bed58df60dc8f0b7",
+          "contentHash": "2e59a997eddc0607101df3e0811162516604d3f4d23c82302c395e2d0f979d4a",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "dde8efb9762ce6ac2c514bc7a7cadebfcaebe303e5591866bed58df60dc8f0b7",
+          "contentHash": "2e59a997eddc0607101df3e0811162516604d3f4d23c82302c395e2d0f979d4a",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "dde8efb9762ce6ac2c514bc7a7cadebfcaebe303e5591866bed58df60dc8f0b7",
+          "contentHash": "2e59a997eddc0607101df3e0811162516604d3f4d23c82302c395e2d0f979d4a",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "dde8efb9762ce6ac2c514bc7a7cadebfcaebe303e5591866bed58df60dc8f0b7",
+          "contentHash": "2e59a997eddc0607101df3e0811162516604d3f4d23c82302c395e2d0f979d4a",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
           "observedAt": "2026-09-22T21:26:08Z",
-          "contentHash": "dde8efb9762ce6ac2c514bc7a7cadebfcaebe303e5591866bed58df60dc8f0b7",
+          "contentHash": "2e59a997eddc0607101df3e0811162516604d3f4d23c82302c395e2d0f979d4a",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Mistral Medium 3.5": {
+      "canonicalId": "benchmark:Mistral Medium 3.5",
+      "provider": null,
+      "modelId": "Mistral Medium 3.5",
+      "displayName": "Mistral Medium 3.5",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis IFBench official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-09-22T21:26:08Z",
+          "contentHash": "6659a6792bb4632e12d18c877058f87c1656e6b00ef725e21659da4058a230f3",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-09-22T21:26:08Z",
+          "contentHash": "6659a6792bb4632e12d18c877058f87c1656e6b00ef725e21659da4058a230f3",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-09-22T21:26:08Z",
+          "contentHash": "6659a6792bb4632e12d18c877058f87c1656e6b00ef725e21659da4058a230f3",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-09-22T21:26:08Z",
+          "contentHash": "6659a6792bb4632e12d18c877058f87c1656e6b00ef725e21659da4058a230f3",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-09-22T21:26:08Z",
+          "contentHash": "6659a6792bb4632e12d18c877058f87c1656e6b00ef725e21659da4058a230f3",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-09-22T21:26:08Z",
+          "contentHash": "6659a6792bb4632e12d18c877058f87c1656e6b00ef725e21659da4058a230f3",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
+          "observedAt": "2026-09-22T21:26:08Z",
+          "contentHash": "6659a6792bb4632e12d18c877058f87c1656e6b00ef725e21659da4058a230f3",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Claude Opus 5.5 (xhigh with fallback)": {
+      "canonicalId": "benchmark:Claude Opus 5.5 (xhigh with fallback)",
+      "provider": null,
+      "modelId": "Claude Opus 5.5 (xhigh with fallback)",
+      "displayName": "Claude Opus 5.5 (xhigh with fallback)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis MMMU-Pro official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-09-22T18:19:46Z",
+          "contentHash": "0fc7491b53091948547fbd3f935355fa0be660bf4c7ed2600abf395ad004a127",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-09-22T18:19:46Z",
+          "contentHash": "0fc7491b53091948547fbd3f935355fa0be660bf4c7ed2600abf395ad004a127",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-09-22T18:19:46Z",
+          "contentHash": "0fc7491b53091948547fbd3f935355fa0be660bf4c7ed2600abf395ad004a127",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-09-22T18:19:46Z",
+          "contentHash": "0fc7491b53091948547fbd3f935355fa0be660bf4c7ed2600abf395ad004a127",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-09-22T18:19:46Z",
+          "contentHash": "0fc7491b53091948547fbd3f935355fa0be660bf4c7ed2600abf395ad004a127",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-09-22T18:19:46Z",
+          "contentHash": "0fc7491b53091948547fbd3f935355fa0be660bf4c7ed2600abf395ad004a127",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+          "observedAt": "2026-09-22T18:19:46Z",
+          "contentHash": "0fc7491b53091948547fbd3f935355fa0be660bf4c7ed2600abf395ad004a127",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Inkling": {
+      "canonicalId": "benchmark:Inkling",
+      "provider": null,
+      "modelId": "Inkling",
+      "displayName": "Inkling",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis MMMU-Pro official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-09-22T18:19:46Z",
+          "contentHash": "82795399650807f0a1844331fc7d3cfdca85641ddccbf41ef9dd535348540d2c",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-09-22T18:19:46Z",
+          "contentHash": "82795399650807f0a1844331fc7d3cfdca85641ddccbf41ef9dd535348540d2c",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-09-22T18:19:46Z",
+          "contentHash": "82795399650807f0a1844331fc7d3cfdca85641ddccbf41ef9dd535348540d2c",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-09-22T18:19:46Z",
+          "contentHash": "82795399650807f0a1844331fc7d3cfdca85641ddccbf41ef9dd535348540d2c",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-09-22T18:19:46Z",
+          "contentHash": "82795399650807f0a1844331fc7d3cfdca85641ddccbf41ef9dd535348540d2c",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-09-22T18:19:46Z",
+          "contentHash": "82795399650807f0a1844331fc7d3cfdca85641ddccbf41ef9dd535348540d2c",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+          "observedAt": "2026-09-22T18:19:46Z",
+          "contentHash": "82795399650807f0a1844331fc7d3cfdca85641ddccbf41ef9dd535348540d2c",
           "sourceType": "official_benchmark"
         }
       ]
     }
   },
-  "modelCount": 101,
+  "modelCount": 28,
   "sourceSummary": {
     "official": 0,
-    "catalog": 8,
-    "benchmark": 78
+    "catalog": 9,
+    "benchmark": 77
   },
   "events": [
-    {
-      "eventId": "2337b4a3b64a7e65de965dd208889cb7",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "LiveBench Data Analysis 官方数据更新",
-      "summary": "LiveBench Data Analysis 官方数据发生变化；共 63 个模型 · 数据版本 2026-06-25 · 当前前列：gpt-6-astra-max（82.97）、gpt-5.5-xhigh（81.58）、gpt-6-sol-max（81.19）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench Data Analysis dated official leaderboard CSV",
-      "benchmarkId": "livebench_data_analysis",
-      "benchmarkTitle": "LiveBench Data Analysis",
-      "release": "2026-06-25",
-      "contentHash": "b762286079427ef5ac704c62a09ed1b8cbfb6e3da7a82ac8f208d69224c9225d",
-      "unit": "score",
-      "modelCount": 63,
-      "topModels": [
-        "gpt-6-astra-max（82.97）",
-        "gpt-5.5-xhigh（81.58）",
-        "gpt-6-sol-max（81.19）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "0e913bc433a90d85aac43cadd837f4ef",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "LiveBench Reasoning 官方数据更新",
-      "summary": "LiveBench Reasoning 官方数据发生变化；共 63 个模型 · 数据版本 2026-06-25 · 当前前列：gpt-6-astra-max（92.65）、claude-opus-5-5-max-effort（92.15）、claude-fable-5-1-max-effort（91.69）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench Reasoning dated official leaderboard CSV",
-      "benchmarkId": "livebench_reasoning",
-      "benchmarkTitle": "LiveBench Reasoning",
-      "release": "2026-06-25",
-      "contentHash": "b762286079427ef5ac704c62a09ed1b8cbfb6e3da7a82ac8f208d69224c9225d",
-      "unit": "score",
-      "modelCount": 63,
-      "topModels": [
-        "gpt-6-astra-max（92.65）",
-        "claude-opus-5-5-max-effort（92.15）",
-        "claude-fable-5-1-max-effort（91.69）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "ac7b154817c3cc22954123d7fdb8ea0e",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "LiveBench Coding 官方数据更新",
-      "summary": "LiveBench Coding 官方数据发生变化；共 63 个模型 · 数据版本 2026-06-25 · 当前前列：claude-opus-5-5-max-effort（89.25）、claude-opus-5-5-xhigh-effort（89.25）、claude-fable-5-1-max-effort（86.38）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench Coding dated official leaderboard CSV",
-      "benchmarkId": "livebench_coding",
-      "benchmarkTitle": "LiveBench Coding",
-      "release": "2026-06-25",
-      "contentHash": "b762286079427ef5ac704c62a09ed1b8cbfb6e3da7a82ac8f208d69224c9225d",
-      "unit": "score",
-      "modelCount": 63,
-      "topModels": [
-        "claude-opus-5-5-max-effort（89.25）",
-        "claude-opus-5-5-xhigh-effort（89.25）",
-        "claude-fable-5-1-max-effort（86.38）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "c3267acc5abfd0e17f0352cfc0038308",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "LiveBench Math 官方数据更新",
-      "summary": "LiveBench Math 官方数据发生变化；共 63 个模型 · 数据版本 2026-06-25 · 当前前列：claude-opus-5-5-max-effort（97.08）、claude-fable-5-1-max-effort（97.01）、gpt-6-astra-max（96.81）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench Mathematics dated official leaderboard CSV",
-      "benchmarkId": "livebench_math",
-      "benchmarkTitle": "LiveBench Math",
-      "release": "2026-06-25",
-      "contentHash": "b762286079427ef5ac704c62a09ed1b8cbfb6e3da7a82ac8f208d69224c9225d",
-      "unit": "score",
-      "modelCount": 63,
-      "topModels": [
-        "claude-opus-5-5-max-effort（97.08）",
-        "claude-fable-5-1-max-effort（97.01）",
-        "gpt-6-astra-max（96.81）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "8980b7eb12c084180a2ee05008e4aeab",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "LiveBench Overall 官方数据更新",
-      "summary": "LiveBench Overall 官方数据发生变化；共 63 个模型 · 数据版本 2026-06-25 · 当前前列：claude-fable-5-1-max-effort（83.41）、claude-opus-5-5-max-effort（83.22）、claude-fable-5-max-effort（82.97）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench dated official leaderboard CSV",
-      "benchmarkId": "livebench_overall",
-      "benchmarkTitle": "LiveBench Overall",
-      "release": "2026-06-25",
-      "contentHash": "b762286079427ef5ac704c62a09ed1b8cbfb6e3da7a82ac8f208d69224c9225d",
-      "unit": "score",
-      "modelCount": 63,
-      "topModels": [
-        "claude-fable-5-1-max-effort（83.41）",
-        "claude-opus-5-5-max-effort（83.22）",
-        "claude-fable-5-max-effort（82.97）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "3f0d0cedc39ec358321fe1b694a2e4ed",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "LiveBench Language 官方数据更新",
-      "summary": "LiveBench Language 官方数据发生变化；共 63 个模型 · 数据版本 2026-06-25 · 当前前列：claude-fable-5-max-effort（90.68）、claude-fable-5-1-max-effort（89.50）、gpt-6-astra-max（89.43）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench Language dated official leaderboard CSV",
-      "benchmarkId": "livebench_language",
-      "benchmarkTitle": "LiveBench Language",
-      "release": "2026-06-25",
-      "contentHash": "b762286079427ef5ac704c62a09ed1b8cbfb6e3da7a82ac8f208d69224c9225d",
-      "unit": "score",
-      "modelCount": 63,
-      "topModels": [
-        "claude-fable-5-max-effort（90.68）",
-        "claude-fable-5-1-max-effort（89.50）",
-        "gpt-6-astra-max（89.43）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "2ed6865c010329d0072ccc35dfc82251",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "LiveBench Agentic Coding 官方数据更新",
-      "summary": "LiveBench Agentic Coding 官方数据发生变化；共 63 个模型 · 数据版本 2026-06-25 · 当前前列：deepseek-v4.1-flash-max（77.27）、claude-opus-5-5-max-effort（71.72）、claude-fable-5-1-max-effort（66.06）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench Agentic Coding dated official leaderboard CSV",
-      "benchmarkId": "livebench_agentic_coding",
-      "benchmarkTitle": "LiveBench Agentic Coding",
-      "release": "2026-06-25",
-      "contentHash": "b762286079427ef5ac704c62a09ed1b8cbfb6e3da7a82ac8f208d69224c9225d",
-      "unit": "score",
-      "modelCount": 63,
-      "topModels": [
-        "deepseek-v4.1-flash-max（77.27）",
-        "claude-opus-5-5-max-effort（71.72）",
-        "claude-fable-5-1-max-effort（66.06）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "30e72fd9a58e892d69cdc90e3d876935",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "LiveBench Instruction Following 官方数据更新",
-      "summary": "LiveBench Instruction Following 官方数据发生变化；共 63 个模型 · 数据版本 2026-06-25 · 当前前列：gemini-3.8-flash-high（81.41）、gemini-3.7-flash-high（79.93）、gemini-3.1-pro-preview-high（79.10）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench IF dated official leaderboard CSV",
-      "benchmarkId": "livebench_instruction_following",
-      "benchmarkTitle": "LiveBench Instruction Following",
-      "release": "2026-06-25",
-      "contentHash": "b762286079427ef5ac704c62a09ed1b8cbfb6e3da7a82ac8f208d69224c9225d",
-      "unit": "score",
-      "modelCount": 63,
-      "topModels": [
-        "gemini-3.8-flash-high（81.41）",
-        "gemini-3.7-flash-high（79.93）",
-        "gemini-3.1-pro-preview-high（79.10）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "67cfc5b1185c6e69926e83d2eb7aa978",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Terminal-Bench 4.0 官方数据更新",
-      "summary": "Terminal-Bench 4.0 官方数据发生变化；共 20 个模型 · 当前前列：Claude Opus 5.5 (max with fallback)（59.6%）、Claude Opus 5.5 (xhigh with fallback)（59.6%）、GPT-6 Astra (xhigh)（59.6%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-      "observedAt": "2026-09-22T05:27:00Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
-      "benchmarkId": "aa_terminal_bench_v4_0",
-      "benchmarkTitle": "Terminal-Bench 4.0",
-      "release": "page_jsonld",
-      "contentHash": "dabdd85ad1a143ff9ef59b04180b8ee1f2da61969e61c7f49a37132cc36c3df8",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Opus 5.5 (max with fallback)（59.6%）",
-        "Claude Opus 5.5 (xhigh with fallback)（59.6%）",
-        "GPT-6 Astra (xhigh)（59.6%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
     {
       "eventId": "69746bc164532ee20e35fa7927b83338",
       "family": "benchmark",
@@ -9973,46 +3199,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "003b89c8c09d48cdfb9b7ccfe666d1f9",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Humanity's Last Exam 官方数据更新",
-      "summary": "Humanity's Last Exam 官方数据发生变化；共 20 个模型 · 当前前列：Claude Opus 5.5 (max with fallback)（61.4%）、Claude Fable 5.1 (max with fallback)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（58.7%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-      "observedAt": "2026-09-22T05:27:00Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis Humanity's Last Exam official public Dataset page",
-      "benchmarkId": "aa_humanitys_last_exam",
-      "benchmarkTitle": "Humanity's Last Exam",
-      "release": "page_jsonld",
-      "contentHash": "f9ea77b2c032346fbdf4dbafa1980529eab8a1b0070a673e07bc8b7695e1fc0c",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Opus 5.5 (max with fallback)（61.4%）",
-        "Claude Fable 5.1 (max with fallback)（59.1%）",
-        "Claude Fable 5.1 (xhigh with fallback)（58.7%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -10051,11 +3238,11 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
-      "eventId": "41fe0b627d6032c4dd07ae1ff8ee46f0",
+      "eventId": "67cfc5b1185c6e69926e83d2eb7aa978",
       "family": "benchmark",
       "eventType": "benchmark_updated",
       "eventClass": "benchmark",
@@ -10064,8 +3251,8 @@ module.exports = {
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "AA Omniscience Index 官方数据更新",
-      "summary": "AA Omniscience Index 官方数据发生变化；共 20 个模型 · 当前前列：Claude Opus 5.5 (max with fallback)（46.42）、GPT-6 Astra (high)（43.73）、Claude Fable 5.1 (max with fallback)（43.45）。",
+      "title": "Terminal-Bench 4.0 官方数据更新",
+      "summary": "Terminal-Bench 4.0 官方数据发生变化；共 20 个模型 · 当前前列：Claude Opus 5.5 (max with fallback)（59.6%）、Claude Opus 5.5 (xhigh with fallback)（59.6%）、GPT-6 Astra (xhigh)（59.6%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -10073,102 +3260,24 @@ module.exports = {
       "sourceType": null,
       "sourceOwner": null,
       "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/omniscience",
-      "observedAt": "2026-09-22T21:26:08Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis AA Omniscience Index official public Dataset page",
-      "benchmarkId": "aa_omniscience_index",
-      "benchmarkTitle": "AA Omniscience Index",
-      "release": "page_jsonld",
-      "contentHash": "29986f4a948eba10ea0e0facd2cd1a7ac98caa521f9bbc7d9b2ec2ca3f32c12c",
-      "unit": "score",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Opus 5.5 (max with fallback)（46.42）",
-        "GPT-6 Astra (high)（43.73）",
-        "Claude Fable 5.1 (max with fallback)（43.45）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "dc20ee1a608920992b40cf8fd6c88477",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "AA LCR 官方数据更新",
-      "summary": "AA LCR 官方数据发生变化；共 20 个模型 · 当前前列：Kimi K3 (max)（88.7%）、Step 5 Preview（88.3%）、MiMo-V2.6-Pro（86.3%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
       "observedAt": "2026-09-22T05:27:00Z",
       "publishedAt": null,
-      "source": "Artificial Analysis AA LCR official public Dataset page",
-      "benchmarkId": "aa_lcr",
-      "benchmarkTitle": "AA LCR",
+      "source": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
+      "benchmarkId": "aa_terminal_bench_v4_0",
+      "benchmarkTitle": "Terminal-Bench 4.0",
       "release": "page_jsonld",
-      "contentHash": "3a154a43faf6d57395bd464c04fa1389e40390c9a1203ead23afe9a1d1bc9993",
+      "contentHash": "dabdd85ad1a143ff9ef59b04180b8ee1f2da61969e61c7f49a37132cc36c3df8",
       "unit": "ratio",
       "modelCount": 20,
       "topModels": [
-        "Kimi K3 (max)（88.7%）",
-        "Step 5 Preview（88.3%）",
-        "MiMo-V2.6-Pro（86.3%）"
+        "Claude Opus 5.5 (max with fallback)（59.6%）",
+        "Claude Opus 5.5 (xhigh with fallback)（59.6%）",
+        "GPT-6 Astra (xhigh)（59.6%）"
       ],
       "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "17900dff48b32f6df584fcfd74c3763e",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "CritPt 官方数据更新",
-      "summary": "CritPt 官方数据发生变化；共 20 个模型 · 当前前列：GPT-5.6 Sol (max)（32.3%）、Claude Opus 5.5 (max with fallback)（31.7%）、Claude Opus 5.5 (xhigh with fallback)（31.7%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/critpt",
-      "observedAt": "2026-09-22T05:27:00Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis CritPt official public Dataset page",
-      "benchmarkId": "aa_critpt",
-      "benchmarkTitle": "CritPt",
-      "release": "page_jsonld",
-      "contentHash": "d093ad637475ced40782ea5595c3473a7c014dd5bc4d524d8e09e83b5cb9a7a4",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "GPT-5.6 Sol (max)（32.3%）",
-        "Claude Opus 5.5 (max with fallback)（31.7%）",
-        "Claude Opus 5.5 (xhigh with fallback)（31.7%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -10207,11 +3316,11 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
-      "eventId": "a10609cf4ff080ee436fef8268386eab",
+      "eventId": "003b89c8c09d48cdfb9b7ccfe666d1f9",
       "family": "benchmark",
       "eventType": "benchmark_updated",
       "eventClass": "benchmark",
@@ -10220,8 +3329,8 @@ module.exports = {
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "Terminal-Bench Hard 官方数据更新",
-      "summary": "Terminal-Bench Hard 官方数据发生变化；共 9 个模型 · 当前前列：GPT-5.6 Sol (max)（65.9%）、Claude Fable 5 (with fallback)（62.9%）、GPT-5.6 Sol (medium)（62.9%）。",
+      "title": "Humanity's Last Exam 官方数据更新",
+      "summary": "Humanity's Last Exam 官方数据发生变化；共 20 个模型 · 当前前列：Claude Opus 5.5 (max with fallback)（61.4%）、Claude Fable 5.1 (max with fallback)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（58.7%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -10229,24 +3338,24 @@ module.exports = {
       "sourceType": null,
       "sourceOwner": null,
       "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
+      "url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
       "observedAt": "2026-09-22T05:27:00Z",
       "publishedAt": null,
-      "source": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
-      "benchmarkId": "aa_terminalbench_hard",
-      "benchmarkTitle": "Terminal-Bench Hard",
+      "source": "Artificial Analysis Humanity's Last Exam official public Dataset page",
+      "benchmarkId": "aa_humanitys_last_exam",
+      "benchmarkTitle": "Humanity's Last Exam",
       "release": "page_jsonld",
-      "contentHash": "08751f9d8162b6747c7232afa8ea480ec6bdb6a2452fcde233ab5655a7449d68",
+      "contentHash": "f9ea77b2c032346fbdf4dbafa1980529eab8a1b0070a673e07bc8b7695e1fc0c",
       "unit": "ratio",
-      "modelCount": 9,
+      "modelCount": 20,
       "topModels": [
-        "GPT-5.6 Sol (max)（65.9%）",
-        "Claude Fable 5 (with fallback)（62.9%）",
-        "GPT-5.6 Sol (medium)（62.9%）"
+        "Claude Opus 5.5 (max with fallback)（61.4%）",
+        "Claude Fable 5.1 (max with fallback)（59.1%）",
+        "Claude Fable 5.1 (xhigh with fallback)（58.7%）"
       ],
       "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -10285,11 +3394,11 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
-      "eventId": "e8e2f9a048244c2ae3e25b71813117b1",
+      "eventId": "dc20ee1a608920992b40cf8fd6c88477",
       "family": "benchmark",
       "eventType": "benchmark_updated",
       "eventClass": "benchmark",
@@ -10298,8 +3407,8 @@ module.exports = {
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "Terminal-Bench v2.1 官方数据更新",
-      "summary": "Terminal-Bench v2.1 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（91.4%）、Claude Fable 5.1 (xhigh with fallback)（91.0%）、Claude Fable 5.1 (high with fallback)（89.9%）。",
+      "title": "AA LCR 官方数据更新",
+      "summary": "AA LCR 官方数据发生变化；共 20 个模型 · 当前前列：Kimi K3 (max)（88.7%）、Step 5 Preview（88.3%）、MiMo-V2.6-Pro（86.3%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -10307,24 +3416,102 @@ module.exports = {
       "sourceType": null,
       "sourceOwner": null,
       "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
+      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
       "observedAt": "2026-09-22T05:27:00Z",
       "publishedAt": null,
-      "source": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
-      "benchmarkId": "aa_terminalbench_v2_1",
-      "benchmarkTitle": "Terminal-Bench v2.1",
+      "source": "Artificial Analysis AA LCR official public Dataset page",
+      "benchmarkId": "aa_lcr",
+      "benchmarkTitle": "AA LCR",
       "release": "page_jsonld",
-      "contentHash": "664e57ec7a8a7886a4f16c301c703fe43e3cb72009cc3de7e4346ae2730f0913",
+      "contentHash": "3a154a43faf6d57395bd464c04fa1389e40390c9a1203ead23afe9a1d1bc9993",
       "unit": "ratio",
       "modelCount": 20,
       "topModels": [
-        "Claude Fable 5.1 (max with fallback)（91.4%）",
-        "Claude Fable 5.1 (xhigh with fallback)（91.0%）",
-        "Claude Fable 5.1 (high with fallback)（89.9%）"
+        "Kimi K3 (max)（88.7%）",
+        "Step 5 Preview（88.3%）",
+        "MiMo-V2.6-Pro（86.3%）"
       ],
       "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "17900dff48b32f6df584fcfd74c3763e",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "CritPt 官方数据更新",
+      "summary": "CritPt 官方数据发生变化；共 20 个模型 · 当前前列：GPT-5.6 Sol (max)（32.3%）、Claude Opus 5.5 (max with fallback)（31.7%）、Claude Opus 5.5 (xhigh with fallback)（31.7%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/critpt",
+      "observedAt": "2026-09-22T05:27:00Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis CritPt official public Dataset page",
+      "benchmarkId": "aa_critpt",
+      "benchmarkTitle": "CritPt",
+      "release": "page_jsonld",
+      "contentHash": "d093ad637475ced40782ea5595c3473a7c014dd5bc4d524d8e09e83b5cb9a7a4",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "GPT-5.6 Sol (max)（32.3%）",
+        "Claude Opus 5.5 (max with fallback)（31.7%）",
+        "Claude Opus 5.5 (xhigh with fallback)（31.7%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "a10609cf4ff080ee436fef8268386eab",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Terminal-Bench Hard 官方数据更新",
+      "summary": "Terminal-Bench Hard 官方数据发生变化；共 9 个模型 · 当前前列：GPT-5.6 Sol (max)（65.9%）、Claude Fable 5 (with fallback)（62.9%）、GPT-5.6 Sol (medium)（62.9%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
+      "observedAt": "2026-09-22T05:27:00Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
+      "benchmarkId": "aa_terminalbench_hard",
+      "benchmarkTitle": "Terminal-Bench Hard",
+      "release": "page_jsonld",
+      "contentHash": "08751f9d8162b6747c7232afa8ea480ec6bdb6a2452fcde233ab5655a7449d68",
+      "unit": "ratio",
+      "modelCount": 9,
+      "topModels": [
+        "GPT-5.6 Sol (max)（65.9%）",
+        "Claude Fable 5 (with fallback)（62.9%）",
+        "GPT-5.6 Sol (medium)（62.9%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -10363,11 +3550,11 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
-      "eventId": "67c2e30b49b6f59353d3b1778937e0c3",
+      "eventId": "e8e2f9a048244c2ae3e25b71813117b1",
       "family": "benchmark",
       "eventType": "benchmark_updated",
       "eventClass": "benchmark",
@@ -10376,8 +3563,8 @@ module.exports = {
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "MMMU-Pro 官方数据更新",
-      "summary": "MMMU-Pro 官方数据发生变化；共 20 个模型 · 当前前列：Claude Opus 5.5 (max with fallback)（87.7%）、GPT-6 Astra (max)（86.9%）、Claude Opus 5.5 (xhigh with fallback)（86.6%）。",
+      "title": "Terminal-Bench v2.1 官方数据更新",
+      "summary": "Terminal-Bench v2.1 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（91.4%）、Claude Fable 5.1 (xhigh with fallback)（91.0%）、Claude Fable 5.1 (high with fallback)（89.9%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -10385,24 +3572,24 @@ module.exports = {
       "sourceType": null,
       "sourceOwner": null,
       "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-      "observedAt": "2026-09-22T18:19:46Z",
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
+      "observedAt": "2026-09-22T05:27:00Z",
       "publishedAt": null,
-      "source": "Artificial Analysis MMMU-Pro official public Dataset page",
-      "benchmarkId": "aa_mmmu_pro",
-      "benchmarkTitle": "MMMU-Pro",
+      "source": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
+      "benchmarkId": "aa_terminalbench_v2_1",
+      "benchmarkTitle": "Terminal-Bench v2.1",
       "release": "page_jsonld",
-      "contentHash": "ab9d992e68860f0026c955d21754c2e5210db3307808f44602da78a025896ef6",
+      "contentHash": "664e57ec7a8a7886a4f16c301c703fe43e3cb72009cc3de7e4346ae2730f0913",
       "unit": "ratio",
       "modelCount": 20,
       "topModels": [
-        "Claude Opus 5.5 (max with fallback)（87.7%）",
-        "GPT-6 Astra (max)（86.9%）",
-        "Claude Opus 5.5 (xhigh with fallback)（86.6%）"
+        "Claude Fable 5.1 (max with fallback)（91.4%）",
+        "Claude Fable 5.1 (xhigh with fallback)（91.0%）",
+        "Claude Fable 5.1 (high with fallback)（89.9%）"
       ],
       "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -10441,7 +3628,122 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "41fe0b627d6032c4dd07ae1ff8ee46f0",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "AA Omniscience Index 官方数据更新",
+      "summary": "AA Omniscience Index 官方数据发生变化；共 20 个模型 · 当前前列：Claude Opus 5.5 (max with fallback)（46.42）、GPT-6 Astra (high)（43.73）、Claude Fable 5.1 (max with fallback)（43.45）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/omniscience",
+      "observedAt": "2026-09-22T21:26:08Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis AA Omniscience Index official public Dataset page",
+      "benchmarkId": "aa_omniscience_index",
+      "benchmarkTitle": "AA Omniscience Index",
+      "release": "page_jsonld",
+      "contentHash": "29986f4a948eba10ea0e0facd2cd1a7ac98caa521f9bbc7d9b2ec2ca3f32c12c",
+      "unit": "score",
+      "modelCount": 20,
+      "topModels": [
+        "Claude Opus 5.5 (max with fallback)（46.42）",
+        "GPT-6 Astra (high)（43.73）",
+        "Claude Fable 5.1 (max with fallback)（43.45）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "abac71f1ca3d9e2682be2240077ed87a",
+      "family": "model",
+      "eventType": "catalog_model_added",
+      "eventClass": "model_catalog",
+      "trustTier": "catalog",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "Command A+ 新增可用",
+      "summary": "Command A+ 新增可用：上下文 192,000 tokens，价格 $0.3/$1.5 每百万 tokens。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "cohere/command-a-plus",
+      "modelRef": "openrouter:cohere/command-a-plus",
+      "sourceType": "openrouter_catalog",
+      "sourceOwner": "Cohere",
+      "evidence": [
+        {
+          "field": "catalogEntry",
+          "sourceUrl": "https://openrouter.ai/cohere/command-a-plus",
+          "observedAt": "2026-09-22T18:48:16Z",
+          "contentHash": "748fa95e8e8a09033f520ed9f76222eb0e0cb79cc31c04e15be398836aa6f961",
+          "sourceType": "openrouter_catalog"
+        }
+      ],
+      "url": "https://openrouter.ai/cohere/command-a-plus",
+      "observedAt": "2026-09-22T18:48:16Z",
+      "publishedAt": "2026-09-22T18:48:16Z",
+      "source": "OpenRouter · Cohere",
+      "eventIdentity": "catalog:cohere/command-a-plus",
+      "provenance": {
+        "sourceUrl": "https://openrouter.ai/cohere/command-a-plus",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "67c2e30b49b6f59353d3b1778937e0c3",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "MMMU-Pro 官方数据更新",
+      "summary": "MMMU-Pro 官方数据发生变化；共 20 个模型 · 当前前列：Claude Opus 5.5 (max with fallback)（87.7%）、GPT-6 Astra (max)（86.9%）、Claude Opus 5.5 (xhigh with fallback)（86.6%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+      "observedAt": "2026-09-22T18:19:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis MMMU-Pro official public Dataset page",
+      "benchmarkId": "aa_mmmu_pro",
+      "benchmarkTitle": "MMMU-Pro",
+      "release": "page_jsonld",
+      "contentHash": "ab9d992e68860f0026c955d21754c2e5210db3307808f44602da78a025896ef6",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "Claude Opus 5.5 (max with fallback)（87.7%）",
+        "GPT-6 Astra (max)（86.9%）",
+        "Claude Opus 5.5 (xhigh with fallback)（86.6%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -10478,7 +3780,7 @@ module.exports = {
       "eventIdentity": "catalog:openai/gpt-6-luna-pro",
       "provenance": {
         "sourceUrl": "https://openrouter.ai/openai/gpt-6-luna-pro",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -10515,7 +3817,7 @@ module.exports = {
       "eventIdentity": "catalog:openai/gpt-6-luna",
       "provenance": {
         "sourceUrl": "https://openrouter.ai/openai/gpt-6-luna",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -10552,7 +3854,7 @@ module.exports = {
       "eventIdentity": "catalog:openai/gpt-6-sol-pro",
       "provenance": {
         "sourceUrl": "https://openrouter.ai/openai/gpt-6-sol-pro",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -10589,7 +3891,7 @@ module.exports = {
       "eventIdentity": "catalog:openai/gpt-6-sol",
       "provenance": {
         "sourceUrl": "https://openrouter.ai/openai/gpt-6-sol",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -10626,7 +3928,7 @@ module.exports = {
       "eventIdentity": "catalog:anthropic/claude-opus-5.5",
       "provenance": {
         "sourceUrl": "https://openrouter.ai/anthropic/claude-opus-5.5",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -10662,7 +3964,7 @@ module.exports = {
       "modelIdentity": "livebench_agentic_coding:grok-4.7-xhigh",
       "provenance": {
         "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -10701,7 +4003,319 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://deepswe.datacurve.ai/data/v1.1",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "2337b4a3b64a7e65de965dd208889cb7",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "LiveBench Data Analysis 官方数据更新",
+      "summary": "LiveBench Data Analysis 官方数据发生变化；共 63 个模型 · 数据版本 2026-06-25 · 当前前列：gpt-6-astra-max（82.97）、gpt-5.5-xhigh（81.58）、gpt-6-sol-max（81.19）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench Data Analysis dated official leaderboard CSV",
+      "benchmarkId": "livebench_data_analysis",
+      "benchmarkTitle": "LiveBench Data Analysis",
+      "release": "2026-06-25",
+      "contentHash": "b762286079427ef5ac704c62a09ed1b8cbfb6e3da7a82ac8f208d69224c9225d",
+      "unit": "score",
+      "modelCount": 63,
+      "topModels": [
+        "gpt-6-astra-max（82.97）",
+        "gpt-5.5-xhigh（81.58）",
+        "gpt-6-sol-max（81.19）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "0e913bc433a90d85aac43cadd837f4ef",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "LiveBench Reasoning 官方数据更新",
+      "summary": "LiveBench Reasoning 官方数据发生变化；共 63 个模型 · 数据版本 2026-06-25 · 当前前列：gpt-6-astra-max（92.65）、claude-opus-5-5-max-effort（92.15）、claude-fable-5-1-max-effort（91.69）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench Reasoning dated official leaderboard CSV",
+      "benchmarkId": "livebench_reasoning",
+      "benchmarkTitle": "LiveBench Reasoning",
+      "release": "2026-06-25",
+      "contentHash": "b762286079427ef5ac704c62a09ed1b8cbfb6e3da7a82ac8f208d69224c9225d",
+      "unit": "score",
+      "modelCount": 63,
+      "topModels": [
+        "gpt-6-astra-max（92.65）",
+        "claude-opus-5-5-max-effort（92.15）",
+        "claude-fable-5-1-max-effort（91.69）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "ac7b154817c3cc22954123d7fdb8ea0e",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "LiveBench Coding 官方数据更新",
+      "summary": "LiveBench Coding 官方数据发生变化；共 63 个模型 · 数据版本 2026-06-25 · 当前前列：claude-opus-5-5-max-effort（89.25）、claude-opus-5-5-xhigh-effort（89.25）、claude-fable-5-1-max-effort（86.38）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench Coding dated official leaderboard CSV",
+      "benchmarkId": "livebench_coding",
+      "benchmarkTitle": "LiveBench Coding",
+      "release": "2026-06-25",
+      "contentHash": "b762286079427ef5ac704c62a09ed1b8cbfb6e3da7a82ac8f208d69224c9225d",
+      "unit": "score",
+      "modelCount": 63,
+      "topModels": [
+        "claude-opus-5-5-max-effort（89.25）",
+        "claude-opus-5-5-xhigh-effort（89.25）",
+        "claude-fable-5-1-max-effort（86.38）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "c3267acc5abfd0e17f0352cfc0038308",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "LiveBench Math 官方数据更新",
+      "summary": "LiveBench Math 官方数据发生变化；共 63 个模型 · 数据版本 2026-06-25 · 当前前列：claude-opus-5-5-max-effort（97.08）、claude-fable-5-1-max-effort（97.01）、gpt-6-astra-max（96.81）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench Mathematics dated official leaderboard CSV",
+      "benchmarkId": "livebench_math",
+      "benchmarkTitle": "LiveBench Math",
+      "release": "2026-06-25",
+      "contentHash": "b762286079427ef5ac704c62a09ed1b8cbfb6e3da7a82ac8f208d69224c9225d",
+      "unit": "score",
+      "modelCount": 63,
+      "topModels": [
+        "claude-opus-5-5-max-effort（97.08）",
+        "claude-fable-5-1-max-effort（97.01）",
+        "gpt-6-astra-max（96.81）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "8980b7eb12c084180a2ee05008e4aeab",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "LiveBench Overall 官方数据更新",
+      "summary": "LiveBench Overall 官方数据发生变化；共 63 个模型 · 数据版本 2026-06-25 · 当前前列：claude-fable-5-1-max-effort（83.41）、claude-opus-5-5-max-effort（83.22）、claude-fable-5-max-effort（82.97）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench dated official leaderboard CSV",
+      "benchmarkId": "livebench_overall",
+      "benchmarkTitle": "LiveBench Overall",
+      "release": "2026-06-25",
+      "contentHash": "b762286079427ef5ac704c62a09ed1b8cbfb6e3da7a82ac8f208d69224c9225d",
+      "unit": "score",
+      "modelCount": 63,
+      "topModels": [
+        "claude-fable-5-1-max-effort（83.41）",
+        "claude-opus-5-5-max-effort（83.22）",
+        "claude-fable-5-max-effort（82.97）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "3f0d0cedc39ec358321fe1b694a2e4ed",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "LiveBench Language 官方数据更新",
+      "summary": "LiveBench Language 官方数据发生变化；共 63 个模型 · 数据版本 2026-06-25 · 当前前列：claude-fable-5-max-effort（90.68）、claude-fable-5-1-max-effort（89.50）、gpt-6-astra-max（89.43）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench Language dated official leaderboard CSV",
+      "benchmarkId": "livebench_language",
+      "benchmarkTitle": "LiveBench Language",
+      "release": "2026-06-25",
+      "contentHash": "b762286079427ef5ac704c62a09ed1b8cbfb6e3da7a82ac8f208d69224c9225d",
+      "unit": "score",
+      "modelCount": 63,
+      "topModels": [
+        "claude-fable-5-max-effort（90.68）",
+        "claude-fable-5-1-max-effort（89.50）",
+        "gpt-6-astra-max（89.43）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "2ed6865c010329d0072ccc35dfc82251",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "LiveBench Agentic Coding 官方数据更新",
+      "summary": "LiveBench Agentic Coding 官方数据发生变化；共 63 个模型 · 数据版本 2026-06-25 · 当前前列：deepseek-v4.1-flash-max（77.27）、claude-opus-5-5-max-effort（71.72）、claude-fable-5-1-max-effort（66.06）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench Agentic Coding dated official leaderboard CSV",
+      "benchmarkId": "livebench_agentic_coding",
+      "benchmarkTitle": "LiveBench Agentic Coding",
+      "release": "2026-06-25",
+      "contentHash": "b762286079427ef5ac704c62a09ed1b8cbfb6e3da7a82ac8f208d69224c9225d",
+      "unit": "score",
+      "modelCount": 63,
+      "topModels": [
+        "deepseek-v4.1-flash-max（77.27）",
+        "claude-opus-5-5-max-effort（71.72）",
+        "claude-fable-5-1-max-effort（66.06）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "30e72fd9a58e892d69cdc90e3d876935",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "LiveBench Instruction Following 官方数据更新",
+      "summary": "LiveBench Instruction Following 官方数据发生变化；共 63 个模型 · 数据版本 2026-06-25 · 当前前列：gemini-3.8-flash-high（81.41）、gemini-3.7-flash-high（79.93）、gemini-3.1-pro-preview-high（79.10）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench IF dated official leaderboard CSV",
+      "benchmarkId": "livebench_instruction_following",
+      "benchmarkTitle": "LiveBench Instruction Following",
+      "release": "2026-06-25",
+      "contentHash": "b762286079427ef5ac704c62a09ed1b8cbfb6e3da7a82ac8f208d69224c9225d",
+      "unit": "score",
+      "modelCount": 63,
+      "topModels": [
+        "gemini-3.8-flash-high（81.41）",
+        "gemini-3.7-flash-high（79.93）",
+        "gemini-3.1-pro-preview-high（79.10）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -10738,7 +4352,7 @@ module.exports = {
       "eventIdentity": "modelsdev:gpt-6-luna",
       "provenance": {
         "sourceUrl": "https://models.dev/api.json",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -10775,7 +4389,7 @@ module.exports = {
       "eventIdentity": "modelsdev:gpt-6-sol",
       "provenance": {
         "sourceUrl": "https://models.dev/api.json",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -10812,591 +4426,7 @@ module.exports = {
       "eventIdentity": "modelsdev:claude-opus-5-5",
       "provenance": {
         "sourceUrl": "https://models.dev/api.json",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "1024b713f13abd8f9fb10c196b4c79db",
-      "family": "benchmark",
-      "eventType": "model_added_to_benchmark",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "normal",
-      "title": "grok-4.7-xhigh 新上榜",
-      "summary": "grok-4.7-xhigh 进入 LiveBench Data Analysis，当前分数 76.88（第 24 位）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "grok-4.7-xhigh",
-      "modelRef": "benchmark:grok-4.7-xhigh",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench Data Analysis dated official leaderboard CSV",
-      "benchmarkId": "livebench_data_analysis",
-      "benchmarkTitle": "LiveBench Data Analysis",
-      "release": "2026-06-25",
-      "score": 76.88333333333334,
-      "rank": null,
-      "displayRank": 24,
-      "unit": "score",
-      "modelIdentity": "livebench_data_analysis:grok-4.7-xhigh",
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "7eccb45e27f3f3ddeb0547911e2f5632",
-      "family": "benchmark",
-      "eventType": "derived_rank_changed",
-      "eventClass": "benchmark",
-      "trustTier": "derived",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "union-alpha 排名位置变化",
-      "summary": "LiveBench Data Analysis 按当前分数推导的列表位置从 29 变为 30；官方 rank 未提供。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "union-alpha",
-      "modelRef": "benchmark:union-alpha",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench Data Analysis dated official leaderboard CSV",
-      "benchmarkId": "livebench_data_analysis",
-      "benchmarkTitle": "LiveBench Data Analysis",
-      "release": "2026-06-25",
-      "previousRank": null,
-      "rank": null,
-      "previousDisplayRank": 29,
-      "displayRank": 30,
-      "rankSource": "derived",
-      "modelIdentity": "livebench_data_analysis:union-alpha",
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "8f3bfe994579c4cf1af3e90a88cf6652",
-      "family": "benchmark",
-      "eventType": "model_added_to_benchmark",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "normal",
-      "title": "grok-4.7-xhigh 新上榜",
-      "summary": "grok-4.7-xhigh 进入 LiveBench Reasoning，当前分数 82.65（第 39 位）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "grok-4.7-xhigh",
-      "modelRef": "benchmark:grok-4.7-xhigh",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench Reasoning dated official leaderboard CSV",
-      "benchmarkId": "livebench_reasoning",
-      "benchmarkTitle": "LiveBench Reasoning",
-      "release": "2026-06-25",
-      "score": 82.65375,
-      "rank": null,
-      "displayRank": 39,
-      "unit": "score",
-      "modelIdentity": "livebench_reasoning:grok-4.7-xhigh",
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "5bb0e46b1df879bb5fa75e82bebcfe6c",
-      "family": "benchmark",
-      "eventType": "derived_rank_changed",
-      "eventClass": "benchmark",
-      "trustTier": "derived",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "union-alpha 排名位置变化",
-      "summary": "LiveBench Reasoning 按当前分数推导的列表位置从 41 变为 42；官方 rank 未提供。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "union-alpha",
-      "modelRef": "benchmark:union-alpha",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench Reasoning dated official leaderboard CSV",
-      "benchmarkId": "livebench_reasoning",
-      "benchmarkTitle": "LiveBench Reasoning",
-      "release": "2026-06-25",
-      "previousRank": null,
-      "rank": null,
-      "previousDisplayRank": 41,
-      "displayRank": 42,
-      "rankSource": "derived",
-      "modelIdentity": "livebench_reasoning:union-alpha",
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "ec65eb2f4dfbd3f260055e7bd2b542ae",
-      "family": "benchmark",
-      "eventType": "model_added_to_benchmark",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "normal",
-      "title": "grok-4.7-xhigh 新上榜",
-      "summary": "grok-4.7-xhigh 进入 LiveBench Coding，当前分数 77.16（第 33 位）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "grok-4.7-xhigh",
-      "modelRef": "benchmark:grok-4.7-xhigh",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench Coding dated official leaderboard CSV",
-      "benchmarkId": "livebench_coding",
-      "benchmarkTitle": "LiveBench Coding",
-      "release": "2026-06-25",
-      "score": 77.1585,
-      "rank": null,
-      "displayRank": 33,
-      "unit": "score",
-      "modelIdentity": "livebench_coding:grok-4.7-xhigh",
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "d0135c9f145148856ad748e5fe2f519a",
-      "family": "benchmark",
-      "eventType": "derived_rank_changed",
-      "eventClass": "benchmark",
-      "trustTier": "derived",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "smaug-mini 排名位置变化",
-      "summary": "LiveBench Coding 按当前分数推导的列表位置从 40 变为 41；官方 rank 未提供。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "smaug-mini",
-      "modelRef": "benchmark:smaug-mini",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench Coding dated official leaderboard CSV",
-      "benchmarkId": "livebench_coding",
-      "benchmarkTitle": "LiveBench Coding",
-      "release": "2026-06-25",
-      "previousRank": null,
-      "rank": null,
-      "previousDisplayRank": 40,
-      "displayRank": 41,
-      "rankSource": "derived",
-      "modelIdentity": "livebench_coding:smaug-mini",
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "7912bd62c1c7fd0282b2b1c455516754",
-      "family": "benchmark",
-      "eventType": "model_added_to_benchmark",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "normal",
-      "title": "grok-4.7-xhigh 新上榜",
-      "summary": "grok-4.7-xhigh 进入 LiveBench Math，当前分数 95.68（第 8 位）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "grok-4.7-xhigh",
-      "modelRef": "benchmark:grok-4.7-xhigh",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench Mathematics dated official leaderboard CSV",
-      "benchmarkId": "livebench_math",
-      "benchmarkTitle": "LiveBench Math",
-      "release": "2026-06-25",
-      "score": 95.678,
-      "rank": null,
-      "displayRank": 8,
-      "unit": "score",
-      "modelIdentity": "livebench_math:grok-4.7-xhigh",
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "7f123e8d4c4a2e026a323218ca8f1db3",
-      "family": "benchmark",
-      "eventType": "derived_rank_changed",
-      "eventClass": "benchmark",
-      "trustTier": "derived",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "union-alpha 排名位置变化",
-      "summary": "LiveBench Math 按当前分数推导的列表位置从 8 变为 9；官方 rank 未提供。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "union-alpha",
-      "modelRef": "benchmark:union-alpha",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench Mathematics dated official leaderboard CSV",
-      "benchmarkId": "livebench_math",
-      "benchmarkTitle": "LiveBench Math",
-      "release": "2026-06-25",
-      "previousRank": null,
-      "rank": null,
-      "previousDisplayRank": 8,
-      "displayRank": 9,
-      "rankSource": "derived",
-      "modelIdentity": "livebench_math:union-alpha",
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "1865909cf313295749f03055efa9009d",
-      "family": "benchmark",
-      "eventType": "model_added_to_benchmark",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "normal",
-      "title": "grok-4.7-xhigh 新上榜",
-      "summary": "grok-4.7-xhigh 进入 LiveBench Overall，当前分数 77.08（第 19 位）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "grok-4.7-xhigh",
-      "modelRef": "benchmark:grok-4.7-xhigh",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench dated official leaderboard CSV",
-      "benchmarkId": "livebench_overall",
-      "benchmarkTitle": "LiveBench Overall",
-      "release": "2026-06-25",
-      "score": 77.07930952380953,
-      "rank": null,
-      "displayRank": 19,
-      "unit": "score",
-      "modelIdentity": "livebench_overall:grok-4.7-xhigh",
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "311596ab0490cae0d4810f358f6ab7c3",
-      "family": "benchmark",
-      "eventType": "derived_rank_changed",
-      "eventClass": "benchmark",
-      "trustTier": "derived",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "union-alpha 排名位置变化",
-      "summary": "LiveBench Overall 按当前分数推导的列表位置从 26 变为 27；官方 rank 未提供。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "union-alpha",
-      "modelRef": "benchmark:union-alpha",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench dated official leaderboard CSV",
-      "benchmarkId": "livebench_overall",
-      "benchmarkTitle": "LiveBench Overall",
-      "release": "2026-06-25",
-      "previousRank": null,
-      "rank": null,
-      "previousDisplayRank": 26,
-      "displayRank": 27,
-      "rankSource": "derived",
-      "modelIdentity": "livebench_overall:union-alpha",
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "66a09f95866d014bc73ae088b37ba52e",
-      "family": "benchmark",
-      "eventType": "model_added_to_benchmark",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "normal",
-      "title": "grok-4.7-xhigh 新上榜",
-      "summary": "grok-4.7-xhigh 进入 LiveBench Language，当前分数 80.14（第 25 位）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "grok-4.7-xhigh",
-      "modelRef": "benchmark:grok-4.7-xhigh",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench Language dated official leaderboard CSV",
-      "benchmarkId": "livebench_language",
-      "benchmarkTitle": "LiveBench Language",
-      "release": "2026-06-25",
-      "score": 80.13866666666667,
-      "rank": null,
-      "displayRank": 25,
-      "unit": "score",
-      "modelIdentity": "livebench_language:grok-4.7-xhigh",
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "cb01f39ecb85ff54ecffbc009a50ab54",
-      "family": "benchmark",
-      "eventType": "derived_rank_changed",
-      "eventClass": "benchmark",
-      "trustTier": "derived",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "smaug-mini 排名位置变化",
-      "summary": "LiveBench Language 按当前分数推导的列表位置从 37 变为 38；官方 rank 未提供。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "smaug-mini",
-      "modelRef": "benchmark:smaug-mini",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench Language dated official leaderboard CSV",
-      "benchmarkId": "livebench_language",
-      "benchmarkTitle": "LiveBench Language",
-      "release": "2026-06-25",
-      "previousRank": null,
-      "rank": null,
-      "previousDisplayRank": 37,
-      "displayRank": 38,
-      "rankSource": "derived",
-      "modelIdentity": "livebench_language:smaug-mini",
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "98d3b34b6770beb004d2d16dcb519af9",
-      "family": "benchmark",
-      "eventType": "model_added_to_benchmark",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "normal",
-      "title": "grok-4.7-xhigh 新上榜",
-      "summary": "grok-4.7-xhigh 进入 LiveBench Agentic Coding，当前分数 51.77（第 32 位）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "grok-4.7-xhigh",
-      "modelRef": "benchmark:grok-4.7-xhigh",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench Agentic Coding dated official leaderboard CSV",
-      "benchmarkId": "livebench_agentic_coding",
-      "benchmarkTitle": "LiveBench Agentic Coding",
-      "release": "2026-06-25",
-      "score": 51.76766666666666,
-      "rank": null,
-      "displayRank": 32,
-      "unit": "score",
-      "modelIdentity": "livebench_agentic_coding:grok-4.7-xhigh",
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "6214e5b389e97622c992562fb8701818",
-      "family": "benchmark",
-      "eventType": "derived_rank_changed",
-      "eventClass": "benchmark",
-      "trustTier": "derived",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "qwen3.7-max 排名位置变化",
-      "summary": "LiveBench Agentic Coding 按当前分数推导的列表位置从 47 变为 48；官方 rank 未提供。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "qwen3.7-max",
-      "modelRef": "benchmark:qwen3.7-max",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench Agentic Coding dated official leaderboard CSV",
-      "benchmarkId": "livebench_agentic_coding",
-      "benchmarkTitle": "LiveBench Agentic Coding",
-      "release": "2026-06-25",
-      "previousRank": null,
-      "rank": null,
-      "previousDisplayRank": 47,
-      "displayRank": 48,
-      "rankSource": "derived",
-      "modelIdentity": "livebench_agentic_coding:qwen3.7-max",
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "0fea4af31d1a1a97adf875d49a1acd2f",
-      "family": "benchmark",
-      "eventType": "model_added_to_benchmark",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "normal",
-      "title": "grok-4.7-xhigh 新上榜",
-      "summary": "grok-4.7-xhigh 进入 LiveBench Instruction Following，当前分数 75.28（第 10 位）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "grok-4.7-xhigh",
-      "modelRef": "benchmark:grok-4.7-xhigh",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench IF dated official leaderboard CSV",
-      "benchmarkId": "livebench_instruction_following",
-      "benchmarkTitle": "LiveBench Instruction Following",
-      "release": "2026-06-25",
-      "score": 75.27525,
-      "rank": null,
-      "displayRank": 10,
-      "unit": "score",
-      "modelIdentity": "livebench_instruction_following:grok-4.7-xhigh",
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "4b0b91361a8ee0ce2d0f29f57fe5140c",
-      "family": "benchmark",
-      "eventType": "derived_rank_changed",
-      "eventClass": "benchmark",
-      "trustTier": "derived",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "union-alpha 排名位置变化",
-      "summary": "LiveBench Instruction Following 按当前分数推导的列表位置从 53 变为 54；官方 rank 未提供。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "union-alpha",
-      "modelRef": "benchmark:union-alpha",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://livebench.ai/",
-      "observedAt": "2026-09-22T00:47:45Z",
-      "publishedAt": null,
-      "source": "LiveBench IF dated official leaderboard CSV",
-      "benchmarkId": "livebench_instruction_following",
-      "benchmarkTitle": "LiveBench Instruction Following",
-      "release": "2026-06-25",
-      "previousRank": null,
-      "rank": null,
-      "previousDisplayRank": 53,
-      "displayRank": 54,
-      "rankSource": "derived",
-      "modelIdentity": "livebench_instruction_following:union-alpha",
-      "provenance": {
-        "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -11432,7 +4462,7 @@ module.exports = {
       "modelIdentity": "aa_terminal_bench_v4_0:GPT-6 Sol (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -11467,7 +4497,7 @@ module.exports = {
       "modelIdentity": "aa_terminal_bench_v4_0:GPT-5.6 Terra (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -11504,7 +4534,7 @@ module.exports = {
       "modelIdentity": "aa_terminal_bench_v4_0:Qwen3.8 Max (0902)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -11540,7 +4570,7 @@ module.exports = {
       "modelIdentity": "aa_intelligence_index_v4_3:GPT-6 Sol (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -11575,7 +4605,7 @@ module.exports = {
       "modelIdentity": "aa_intelligence_index_v4_3:GPT-5.6 Terra (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -11612,7 +4642,7 @@ module.exports = {
       "modelIdentity": "aa_intelligence_index_v4_3:Step 5 Preview",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -11648,7 +4678,7 @@ module.exports = {
       "modelIdentity": "aa_humanitys_last_exam:GPT-6 Sol (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -11683,7 +4713,7 @@ module.exports = {
       "modelIdentity": "aa_humanitys_last_exam:GPT-5.6 Terra (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -11720,7 +4750,7 @@ module.exports = {
       "modelIdentity": "aa_humanitys_last_exam:Step 5 Preview",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -11756,7 +4786,7 @@ module.exports = {
       "modelIdentity": "aa_gpqa_diamond:Qwen3.8 27B (xhigh)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -11791,7 +4821,7 @@ module.exports = {
       "modelIdentity": "aa_gpqa_diamond:GPT-5.6 Terra (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -11828,7 +4858,7 @@ module.exports = {
       "modelIdentity": "aa_gpqa_diamond:GPT-5.6 Luna (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -11864,7 +4894,7 @@ module.exports = {
       "modelIdentity": "aa_omniscience_index:GPT-6 Sol (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -11899,7 +4929,7 @@ module.exports = {
       "modelIdentity": "aa_omniscience_index:GLM-5.3-Flash",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -11936,7 +4966,7 @@ module.exports = {
       "modelIdentity": "aa_omniscience_index:Step 5 Preview",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -11972,7 +5002,7 @@ module.exports = {
       "modelIdentity": "aa_lcr:GPT-6 Sol (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -12007,7 +5037,7 @@ module.exports = {
       "modelIdentity": "aa_lcr:GPT-6 Astra (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -12044,7 +5074,7 @@ module.exports = {
       "modelIdentity": "aa_lcr:Qwen3.8 27B (xhigh)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -12080,7 +5110,7 @@ module.exports = {
       "modelIdentity": "aa_critpt:GPT-6 Sol (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -12115,7 +5145,7 @@ module.exports = {
       "modelIdentity": "aa_critpt:GPT-5.6 Terra (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -12152,7 +5182,7 @@ module.exports = {
       "modelIdentity": "aa_critpt:Gemini 3.8 Flash (high)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -12188,7 +5218,7 @@ module.exports = {
       "modelIdentity": "aa_scicode:GPT-6 Sol (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -12223,44 +5253,7 @@ module.exports = {
       "modelIdentity": "aa_scicode:GPT-5.6 Terra (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "53435cb472a124dcdcdc57cef87712e1",
-      "family": "benchmark",
-      "eventType": "derived_rank_changed",
-      "eventClass": "benchmark",
-      "trustTier": "derived",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "Step 5 Preview 排名位置变化",
-      "summary": "SciCode 按当前分数推导的列表位置从 8 变为 9；官方 rank 未提供。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "Step 5 Preview",
-      "modelRef": "benchmark:Step 5 Preview",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/scicode",
-      "observedAt": "2026-09-21T22:10:25Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis SciCode official public Dataset page",
-      "benchmarkId": "aa_scicode",
-      "benchmarkTitle": "SciCode",
-      "release": "page_jsonld",
-      "previousRank": null,
-      "rank": null,
-      "previousDisplayRank": 8,
-      "displayRank": 9,
-      "rankSource": "derived",
-      "modelIdentity": "aa_scicode:Step 5 Preview",
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -12295,7 +5288,7 @@ module.exports = {
       "modelIdentity": "aa_terminalbench_hard:gpt-oss-120b (high)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -12332,7 +5325,7 @@ module.exports = {
       "modelIdentity": "aa_terminalbench_hard:Nemotron 3 Ultra",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -12368,7 +5361,7 @@ module.exports = {
       "modelIdentity": "aa_terminalbench_v2_1:MiniMax-M3",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -12403,7 +5396,7 @@ module.exports = {
       "modelIdentity": "aa_terminalbench_v2_1:GPT-5.6 Terra (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -12440,7 +5433,7 @@ module.exports = {
       "modelIdentity": "aa_terminalbench_v2_1:Qwen3.8 27B (xhigh)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -12475,7 +5468,7 @@ module.exports = {
       "modelIdentity": "aa_ifbench:gpt-oss-120b (high)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -12512,115 +5505,7 @@ module.exports = {
       "modelIdentity": "aa_ifbench:Mistral Medium 3.5",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "cc1350ccb1ba0b6fa430cd1690d4af36",
-      "family": "benchmark",
-      "eventType": "model_added_to_benchmark",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "normal",
-      "title": "Claude Opus 5.5 (xhigh with fallback) 新上榜",
-      "summary": "Claude Opus 5.5 (xhigh with fallback) 进入 MMMU-Pro，当前分数 86.6%（第 3 位）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "Claude Opus 5.5 (xhigh with fallback)",
-      "modelRef": "benchmark:Claude Opus 5.5 (xhigh with fallback)",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-      "observedAt": "2026-09-22T18:19:46Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis MMMU-Pro official public Dataset page",
-      "benchmarkId": "aa_mmmu_pro",
-      "benchmarkTitle": "MMMU-Pro",
-      "release": "page_jsonld",
-      "score": 0.865895953757225,
-      "rank": null,
-      "displayRank": 3,
-      "unit": "ratio",
-      "modelIdentity": "aa_mmmu_pro:Claude Opus 5.5 (xhigh with fallback)",
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "891e1c4579ffd620d44c0e1c7d410283",
-      "family": "benchmark",
-      "eventType": "model_removed_from_benchmark",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "normal",
-      "title": "Inkling 移出榜单",
-      "summary": "Inkling 不再出现在 MMMU-Pro 当前官方数据中（此前分数 73.5%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "Inkling",
-      "modelRef": "benchmark:Inkling",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-      "observedAt": "2026-09-22T18:19:46Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis MMMU-Pro official public Dataset page",
-      "benchmarkId": "aa_mmmu_pro",
-      "benchmarkTitle": "MMMU-Pro",
-      "release": "page_jsonld",
-      "previousScore": 0.734682080924856,
-      "previousRank": null,
-      "unit": "ratio",
-      "modelIdentity": "aa_mmmu_pro:Inkling",
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
-      }
-    },
-    {
-      "eventId": "7492b4c330eaff42c70c644470941bb2",
-      "family": "benchmark",
-      "eventType": "derived_rank_changed",
-      "eventClass": "benchmark",
-      "trustTier": "derived",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "Step 5 Preview 排名位置变化",
-      "summary": "MMMU-Pro 按当前分数推导的列表位置从 17 变为 18；官方 rank 未提供。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "Step 5 Preview",
-      "modelRef": "benchmark:Step 5 Preview",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-      "observedAt": "2026-09-22T18:19:46Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis MMMU-Pro official public Dataset page",
-      "benchmarkId": "aa_mmmu_pro",
-      "benchmarkTitle": "MMMU-Pro",
-      "release": "page_jsonld",
-      "previousRank": null,
-      "rank": null,
-      "previousDisplayRank": 17,
-      "displayRank": 18,
-      "rankSource": "derived",
-      "modelIdentity": "aa_mmmu_pro:Step 5 Preview",
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -12656,7 +5541,7 @@ module.exports = {
       "modelIdentity": "aa_mlcr_overall:MiniMax-M3",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -12691,7 +5576,7 @@ module.exports = {
       "modelIdentity": "aa_mlcr_overall:GPT-5.6 Terra (max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -12728,7 +5613,115 @@ module.exports = {
       "modelIdentity": "aa_mlcr_overall:Qwen3.8 Max (0902)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "cc1350ccb1ba0b6fa430cd1690d4af36",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Opus 5.5 (xhigh with fallback) 新上榜",
+      "summary": "Claude Opus 5.5 (xhigh with fallback) 进入 MMMU-Pro，当前分数 86.6%（第 3 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Opus 5.5 (xhigh with fallback)",
+      "modelRef": "benchmark:Claude Opus 5.5 (xhigh with fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+      "observedAt": "2026-09-22T18:19:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis MMMU-Pro official public Dataset page",
+      "benchmarkId": "aa_mmmu_pro",
+      "benchmarkTitle": "MMMU-Pro",
+      "release": "page_jsonld",
+      "score": 0.865895953757225,
+      "rank": null,
+      "displayRank": 3,
+      "unit": "ratio",
+      "modelIdentity": "aa_mmmu_pro:Claude Opus 5.5 (xhigh with fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "891e1c4579ffd620d44c0e1c7d410283",
+      "family": "benchmark",
+      "eventType": "model_removed_from_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Inkling 移出榜单",
+      "summary": "Inkling 不再出现在 MMMU-Pro 当前官方数据中（此前分数 73.5%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Inkling",
+      "modelRef": "benchmark:Inkling",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+      "observedAt": "2026-09-22T18:19:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis MMMU-Pro official public Dataset page",
+      "benchmarkId": "aa_mmmu_pro",
+      "benchmarkTitle": "MMMU-Pro",
+      "release": "page_jsonld",
+      "previousScore": 0.734682080924856,
+      "previousRank": null,
+      "unit": "ratio",
+      "modelIdentity": "aa_mmmu_pro:Inkling",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "7492b4c330eaff42c70c644470941bb2",
+      "family": "benchmark",
+      "eventType": "derived_rank_changed",
+      "eventClass": "benchmark",
+      "trustTier": "derived",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "Step 5 Preview 排名位置变化",
+      "summary": "MMMU-Pro 按当前分数推导的列表位置从 17 变为 18；官方 rank 未提供。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Step 5 Preview",
+      "modelRef": "benchmark:Step 5 Preview",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+      "observedAt": "2026-09-22T18:19:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis MMMU-Pro official public Dataset page",
+      "benchmarkId": "aa_mmmu_pro",
+      "benchmarkTitle": "MMMU-Pro",
+      "release": "page_jsonld",
+      "previousRank": null,
+      "rank": null,
+      "previousDisplayRank": 17,
+      "displayRank": 18,
+      "rankSource": "derived",
+      "modelIdentity": "aa_mmmu_pro:Step 5 Preview",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     },
     {
@@ -12764,13 +5757,597 @@ module.exports = {
       "modelIdentity": "livebench_overall:grok-4.7-xhigh",
       "provenance": {
         "sourceUrl": "https://livebench.ai/",
-        "contentHash": "659e5c6ae40639602a25fdb5eab3b8b4a9f59e2925255c4a64b1097f7fc8d35e"
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "1024b713f13abd8f9fb10c196b4c79db",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "grok-4.7-xhigh 新上榜",
+      "summary": "grok-4.7-xhigh 进入 LiveBench Data Analysis，当前分数 76.88（第 24 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "grok-4.7-xhigh",
+      "modelRef": "benchmark:grok-4.7-xhigh",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench Data Analysis dated official leaderboard CSV",
+      "benchmarkId": "livebench_data_analysis",
+      "benchmarkTitle": "LiveBench Data Analysis",
+      "release": "2026-06-25",
+      "score": 76.88333333333334,
+      "rank": null,
+      "displayRank": 24,
+      "unit": "score",
+      "modelIdentity": "livebench_data_analysis:grok-4.7-xhigh",
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "7eccb45e27f3f3ddeb0547911e2f5632",
+      "family": "benchmark",
+      "eventType": "derived_rank_changed",
+      "eventClass": "benchmark",
+      "trustTier": "derived",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "union-alpha 排名位置变化",
+      "summary": "LiveBench Data Analysis 按当前分数推导的列表位置从 29 变为 30；官方 rank 未提供。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "union-alpha",
+      "modelRef": "benchmark:union-alpha",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench Data Analysis dated official leaderboard CSV",
+      "benchmarkId": "livebench_data_analysis",
+      "benchmarkTitle": "LiveBench Data Analysis",
+      "release": "2026-06-25",
+      "previousRank": null,
+      "rank": null,
+      "previousDisplayRank": 29,
+      "displayRank": 30,
+      "rankSource": "derived",
+      "modelIdentity": "livebench_data_analysis:union-alpha",
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "8f3bfe994579c4cf1af3e90a88cf6652",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "grok-4.7-xhigh 新上榜",
+      "summary": "grok-4.7-xhigh 进入 LiveBench Reasoning，当前分数 82.65（第 39 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "grok-4.7-xhigh",
+      "modelRef": "benchmark:grok-4.7-xhigh",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench Reasoning dated official leaderboard CSV",
+      "benchmarkId": "livebench_reasoning",
+      "benchmarkTitle": "LiveBench Reasoning",
+      "release": "2026-06-25",
+      "score": 82.65375,
+      "rank": null,
+      "displayRank": 39,
+      "unit": "score",
+      "modelIdentity": "livebench_reasoning:grok-4.7-xhigh",
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "5bb0e46b1df879bb5fa75e82bebcfe6c",
+      "family": "benchmark",
+      "eventType": "derived_rank_changed",
+      "eventClass": "benchmark",
+      "trustTier": "derived",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "union-alpha 排名位置变化",
+      "summary": "LiveBench Reasoning 按当前分数推导的列表位置从 41 变为 42；官方 rank 未提供。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "union-alpha",
+      "modelRef": "benchmark:union-alpha",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench Reasoning dated official leaderboard CSV",
+      "benchmarkId": "livebench_reasoning",
+      "benchmarkTitle": "LiveBench Reasoning",
+      "release": "2026-06-25",
+      "previousRank": null,
+      "rank": null,
+      "previousDisplayRank": 41,
+      "displayRank": 42,
+      "rankSource": "derived",
+      "modelIdentity": "livebench_reasoning:union-alpha",
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "ec65eb2f4dfbd3f260055e7bd2b542ae",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "grok-4.7-xhigh 新上榜",
+      "summary": "grok-4.7-xhigh 进入 LiveBench Coding，当前分数 77.16（第 33 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "grok-4.7-xhigh",
+      "modelRef": "benchmark:grok-4.7-xhigh",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench Coding dated official leaderboard CSV",
+      "benchmarkId": "livebench_coding",
+      "benchmarkTitle": "LiveBench Coding",
+      "release": "2026-06-25",
+      "score": 77.1585,
+      "rank": null,
+      "displayRank": 33,
+      "unit": "score",
+      "modelIdentity": "livebench_coding:grok-4.7-xhigh",
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "d0135c9f145148856ad748e5fe2f519a",
+      "family": "benchmark",
+      "eventType": "derived_rank_changed",
+      "eventClass": "benchmark",
+      "trustTier": "derived",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "smaug-mini 排名位置变化",
+      "summary": "LiveBench Coding 按当前分数推导的列表位置从 40 变为 41；官方 rank 未提供。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "smaug-mini",
+      "modelRef": "benchmark:smaug-mini",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench Coding dated official leaderboard CSV",
+      "benchmarkId": "livebench_coding",
+      "benchmarkTitle": "LiveBench Coding",
+      "release": "2026-06-25",
+      "previousRank": null,
+      "rank": null,
+      "previousDisplayRank": 40,
+      "displayRank": 41,
+      "rankSource": "derived",
+      "modelIdentity": "livebench_coding:smaug-mini",
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "7912bd62c1c7fd0282b2b1c455516754",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "grok-4.7-xhigh 新上榜",
+      "summary": "grok-4.7-xhigh 进入 LiveBench Math，当前分数 95.68（第 8 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "grok-4.7-xhigh",
+      "modelRef": "benchmark:grok-4.7-xhigh",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench Mathematics dated official leaderboard CSV",
+      "benchmarkId": "livebench_math",
+      "benchmarkTitle": "LiveBench Math",
+      "release": "2026-06-25",
+      "score": 95.678,
+      "rank": null,
+      "displayRank": 8,
+      "unit": "score",
+      "modelIdentity": "livebench_math:grok-4.7-xhigh",
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "7f123e8d4c4a2e026a323218ca8f1db3",
+      "family": "benchmark",
+      "eventType": "derived_rank_changed",
+      "eventClass": "benchmark",
+      "trustTier": "derived",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "union-alpha 排名位置变化",
+      "summary": "LiveBench Math 按当前分数推导的列表位置从 8 变为 9；官方 rank 未提供。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "union-alpha",
+      "modelRef": "benchmark:union-alpha",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench Mathematics dated official leaderboard CSV",
+      "benchmarkId": "livebench_math",
+      "benchmarkTitle": "LiveBench Math",
+      "release": "2026-06-25",
+      "previousRank": null,
+      "rank": null,
+      "previousDisplayRank": 8,
+      "displayRank": 9,
+      "rankSource": "derived",
+      "modelIdentity": "livebench_math:union-alpha",
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "1865909cf313295749f03055efa9009d",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "grok-4.7-xhigh 新上榜",
+      "summary": "grok-4.7-xhigh 进入 LiveBench Overall，当前分数 77.08（第 19 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "grok-4.7-xhigh",
+      "modelRef": "benchmark:grok-4.7-xhigh",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench dated official leaderboard CSV",
+      "benchmarkId": "livebench_overall",
+      "benchmarkTitle": "LiveBench Overall",
+      "release": "2026-06-25",
+      "score": 77.07930952380953,
+      "rank": null,
+      "displayRank": 19,
+      "unit": "score",
+      "modelIdentity": "livebench_overall:grok-4.7-xhigh",
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "311596ab0490cae0d4810f358f6ab7c3",
+      "family": "benchmark",
+      "eventType": "derived_rank_changed",
+      "eventClass": "benchmark",
+      "trustTier": "derived",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "union-alpha 排名位置变化",
+      "summary": "LiveBench Overall 按当前分数推导的列表位置从 26 变为 27；官方 rank 未提供。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "union-alpha",
+      "modelRef": "benchmark:union-alpha",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench dated official leaderboard CSV",
+      "benchmarkId": "livebench_overall",
+      "benchmarkTitle": "LiveBench Overall",
+      "release": "2026-06-25",
+      "previousRank": null,
+      "rank": null,
+      "previousDisplayRank": 26,
+      "displayRank": 27,
+      "rankSource": "derived",
+      "modelIdentity": "livebench_overall:union-alpha",
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "66a09f95866d014bc73ae088b37ba52e",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "grok-4.7-xhigh 新上榜",
+      "summary": "grok-4.7-xhigh 进入 LiveBench Language，当前分数 80.14（第 25 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "grok-4.7-xhigh",
+      "modelRef": "benchmark:grok-4.7-xhigh",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench Language dated official leaderboard CSV",
+      "benchmarkId": "livebench_language",
+      "benchmarkTitle": "LiveBench Language",
+      "release": "2026-06-25",
+      "score": 80.13866666666667,
+      "rank": null,
+      "displayRank": 25,
+      "unit": "score",
+      "modelIdentity": "livebench_language:grok-4.7-xhigh",
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "cb01f39ecb85ff54ecffbc009a50ab54",
+      "family": "benchmark",
+      "eventType": "derived_rank_changed",
+      "eventClass": "benchmark",
+      "trustTier": "derived",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "smaug-mini 排名位置变化",
+      "summary": "LiveBench Language 按当前分数推导的列表位置从 37 变为 38；官方 rank 未提供。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "smaug-mini",
+      "modelRef": "benchmark:smaug-mini",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench Language dated official leaderboard CSV",
+      "benchmarkId": "livebench_language",
+      "benchmarkTitle": "LiveBench Language",
+      "release": "2026-06-25",
+      "previousRank": null,
+      "rank": null,
+      "previousDisplayRank": 37,
+      "displayRank": 38,
+      "rankSource": "derived",
+      "modelIdentity": "livebench_language:smaug-mini",
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "98d3b34b6770beb004d2d16dcb519af9",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "grok-4.7-xhigh 新上榜",
+      "summary": "grok-4.7-xhigh 进入 LiveBench Agentic Coding，当前分数 51.77（第 32 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "grok-4.7-xhigh",
+      "modelRef": "benchmark:grok-4.7-xhigh",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench Agentic Coding dated official leaderboard CSV",
+      "benchmarkId": "livebench_agentic_coding",
+      "benchmarkTitle": "LiveBench Agentic Coding",
+      "release": "2026-06-25",
+      "score": 51.76766666666666,
+      "rank": null,
+      "displayRank": 32,
+      "unit": "score",
+      "modelIdentity": "livebench_agentic_coding:grok-4.7-xhigh",
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "6214e5b389e97622c992562fb8701818",
+      "family": "benchmark",
+      "eventType": "derived_rank_changed",
+      "eventClass": "benchmark",
+      "trustTier": "derived",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "qwen3.7-max 排名位置变化",
+      "summary": "LiveBench Agentic Coding 按当前分数推导的列表位置从 47 变为 48；官方 rank 未提供。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "qwen3.7-max",
+      "modelRef": "benchmark:qwen3.7-max",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench Agentic Coding dated official leaderboard CSV",
+      "benchmarkId": "livebench_agentic_coding",
+      "benchmarkTitle": "LiveBench Agentic Coding",
+      "release": "2026-06-25",
+      "previousRank": null,
+      "rank": null,
+      "previousDisplayRank": 47,
+      "displayRank": 48,
+      "rankSource": "derived",
+      "modelIdentity": "livebench_agentic_coding:qwen3.7-max",
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "0fea4af31d1a1a97adf875d49a1acd2f",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "grok-4.7-xhigh 新上榜",
+      "summary": "grok-4.7-xhigh 进入 LiveBench Instruction Following，当前分数 75.28（第 10 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "grok-4.7-xhigh",
+      "modelRef": "benchmark:grok-4.7-xhigh",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench IF dated official leaderboard CSV",
+      "benchmarkId": "livebench_instruction_following",
+      "benchmarkTitle": "LiveBench Instruction Following",
+      "release": "2026-06-25",
+      "score": 75.27525,
+      "rank": null,
+      "displayRank": 10,
+      "unit": "score",
+      "modelIdentity": "livebench_instruction_following:grok-4.7-xhigh",
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
+      }
+    },
+    {
+      "eventId": "4b0b91361a8ee0ce2d0f29f57fe5140c",
+      "family": "benchmark",
+      "eventType": "derived_rank_changed",
+      "eventClass": "benchmark",
+      "trustTier": "derived",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "union-alpha 排名位置变化",
+      "summary": "LiveBench Instruction Following 按当前分数推导的列表位置从 53 变为 54；官方 rank 未提供。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "union-alpha",
+      "modelRef": "benchmark:union-alpha",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-09-22T00:47:45Z",
+      "publishedAt": null,
+      "source": "LiveBench IF dated official leaderboard CSV",
+      "benchmarkId": "livebench_instruction_following",
+      "benchmarkTitle": "LiveBench Instruction Following",
+      "release": "2026-06-25",
+      "previousRank": null,
+      "rank": null,
+      "previousDisplayRank": 53,
+      "displayRank": 54,
+      "rankSource": "derived",
+      "modelIdentity": "livebench_instruction_following:union-alpha",
+      "provenance": {
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "94e45ea14997a156ddf05284869619def38081d12abcdc72dc6977259a3ba2ef"
       }
     }
   ],
   "eventCount": 86,
   "provenance": {
-    "workflowRunId": "35786599763",
-    "mainCommit": "b7ff4f84e6080078afc500181d4cde0b3af1d2ee"
+    "workflowRunId": "35798526262",
+    "mainCommit": "7fa1bc5021254b972f2a7bc96dfbb17e346399f3"
   }
 };
