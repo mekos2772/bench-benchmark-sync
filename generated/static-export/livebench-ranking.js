@@ -2,9 +2,9 @@ module.exports = {
   "schemaVersion": 3,
   "dataSource": "benchmark-sync-static",
   "exporterVersion": "0.4.0",
-  "workflowRunId": "35837565961",
-  "mainCommit": "5b4f962e9d5b8396a0a5487fb450e1f27b8b516a",
-  "generatedAt": "2026-09-23T08:32:23Z",
+  "workflowRunId": "35974997736",
+  "mainCommit": "31eefc18740d36591bc8aa8427ee60070ec82133",
+  "generatedAt": "2026-09-24T08:25:29Z",
   "families": [
     {
       "familyId": "livebench",
@@ -186,7 +186,7 @@ module.exports = {
       "comparisonKey": "live_bench",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-23T08:32:02Z",
+      "generatedAt": "2026-09-24T08:24:59Z",
       "taskCount": 23,
       "source": {
         "name": "LiveBench dated official leaderboard CSV",
@@ -653,7 +653,7 @@ module.exports = {
       "comparisonKey": "coding",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-23T08:31:50Z",
+      "generatedAt": "2026-09-24T08:24:45Z",
       "taskCount": 2,
       "source": {
         "name": "LiveBench Coding dated official leaderboard CSV",
@@ -1120,7 +1120,7 @@ module.exports = {
       "comparisonKey": "reasoning",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-23T08:32:23Z",
+      "generatedAt": "2026-09-24T08:25:03Z",
       "taskCount": 4,
       "source": {
         "name": "LiveBench Reasoning dated official leaderboard CSV",
@@ -1587,7 +1587,7 @@ module.exports = {
       "comparisonKey": "math",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-23T08:31:56Z",
+      "generatedAt": "2026-09-24T08:25:08Z",
       "taskCount": 4,
       "source": {
         "name": "LiveBench Mathematics dated official leaderboard CSV",
@@ -2054,7 +2054,7 @@ module.exports = {
       "comparisonKey": "data_analysis",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-23T08:31:47Z",
+      "generatedAt": "2026-09-24T08:24:52Z",
       "taskCount": 3,
       "source": {
         "name": "LiveBench Data Analysis dated official leaderboard CSV",
@@ -2521,7 +2521,7 @@ module.exports = {
       "comparisonKey": "language",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-23T08:31:51Z",
+      "generatedAt": "2026-09-24T08:24:57Z",
       "taskCount": 3,
       "source": {
         "name": "LiveBench Language dated official leaderboard CSV",
@@ -2988,7 +2988,7 @@ module.exports = {
       "comparisonKey": "instruction_following",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-23T08:31:51Z",
+      "generatedAt": "2026-09-24T08:25:01Z",
       "taskCount": 4,
       "source": {
         "name": "LiveBench IF dated official leaderboard CSV",
@@ -3455,7 +3455,7 @@ module.exports = {
       "comparisonKey": "agentic_coding",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-23T08:31:47Z",
+      "generatedAt": "2026-09-24T08:24:48Z",
       "taskCount": 3,
       "source": {
         "name": "LiveBench Agentic Coding dated official leaderboard CSV",
@@ -3920,9 +3920,9 @@ module.exports = {
       "metric": "Artificial Analysis Intelligence Index: Score",
       "unit": "score",
       "comparisonKey": "intelligence_index_v4_3",
-      "snapshotId": "83aeb547cf0002df56e0d8cf51dc39b3d96d8227edb0cd1c1b62a133b26ce006",
-      "contentHash": "83aeb547cf0002df56e0d8cf51dc39b3d96d8227edb0cd1c1b62a133b26ce006",
-      "generatedAt": "2026-09-23T08:31:31Z",
+      "snapshotId": "845b321c26600eb93d1299bf3722b6c66fe6d055af5088922c37f5dd39be0da2",
+      "contentHash": "845b321c26600eb93d1299bf3722b6c66fe6d055af5088922c37f5dd39be0da2",
+      "generatedAt": "2026-09-24T08:24:29Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Intelligence Index official public Dataset page",
@@ -4086,9 +4086,9 @@ module.exports = {
       "metric": "Terminal-Bench 4.0: Score",
       "unit": "ratio",
       "comparisonKey": "terminal_bench_v4_0",
-      "snapshotId": "37c3391fed4bcc9d7db4705d4b479f1bbc7a8c319e209bd1fab1d3eb74eb21c0",
-      "contentHash": "37c3391fed4bcc9d7db4705d4b479f1bbc7a8c319e209bd1fab1d3eb74eb21c0",
-      "generatedAt": "2026-09-23T08:32:19Z",
+      "snapshotId": "ce3dd2d67e5fe3bb7aac453fd4aa6f5d29fc3eee441af29bd8cfece080ff2ec3",
+      "contentHash": "ce3dd2d67e5fe3bb7aac453fd4aa6f5d29fc3eee441af29bd8cfece080ff2ec3",
+      "generatedAt": "2026-09-24T08:25:17Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
@@ -4252,9 +4252,9 @@ module.exports = {
       "metric": "Humanity's Last Exam: Score",
       "unit": "ratio",
       "comparisonKey": "humanitys_last_exam",
-      "snapshotId": "e0362bde6b7d44d771c761eb8cf7fae8fa8ecac3b363d752f7b188abf63470da",
-      "contentHash": "e0362bde6b7d44d771c761eb8cf7fae8fa8ecac3b363d752f7b188abf63470da",
-      "generatedAt": "2026-09-23T08:31:37Z",
+      "snapshotId": "1d8da2e11113a8e2ec80bc0cc4aed3ca11b02e4463f88e81b8d1e8b34a834f23",
+      "contentHash": "1d8da2e11113a8e2ec80bc0cc4aed3ca11b02e4463f88e81b8d1e8b34a834f23",
+      "generatedAt": "2026-09-24T08:24:40Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Humanity's Last Exam official public Dataset page",
@@ -4418,9 +4418,9 @@ module.exports = {
       "metric": "GPQA Diamond: Score",
       "unit": "ratio",
       "comparisonKey": "gpqa_diamond",
-      "snapshotId": "b451f3c36c5052d29040895af3f5138add12a27392476974b3e078439c4fac12",
-      "contentHash": "b451f3c36c5052d29040895af3f5138add12a27392476974b3e078439c4fac12",
-      "generatedAt": "2026-09-23T08:31:37Z",
+      "snapshotId": "d99dd4ea2851a740d06431f72e30d1c8e91385f2a65f88d50a7d5ec9d37a0fd4",
+      "contentHash": "d99dd4ea2851a740d06431f72e30d1c8e91385f2a65f88d50a7d5ec9d37a0fd4",
+      "generatedAt": "2026-09-24T08:24:40Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis GPQA Diamond official public Dataset page",
@@ -4584,9 +4584,9 @@ module.exports = {
       "metric": "SciCode: Score",
       "unit": "ratio",
       "comparisonKey": "scicode",
-      "snapshotId": "8046eaaecae961b1c96461122642e4685717b38ada29f6e9e001461440b47cec",
-      "contentHash": "8046eaaecae961b1c96461122642e4685717b38ada29f6e9e001461440b47cec",
-      "generatedAt": "2026-09-23T08:32:05Z",
+      "snapshotId": "d0f02484fea8478ec07c75e627b15c86c6ae0fbb6d93d223c84a3d43d9e44cb9",
+      "contentHash": "d0f02484fea8478ec07c75e627b15c86c6ae0fbb6d93d223c84a3d43d9e44cb9",
+      "generatedAt": "2026-09-24T08:25:12Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis SciCode official public Dataset page",
@@ -4750,9 +4750,9 @@ module.exports = {
       "metric": "AA-LCR v1.1",
       "unit": "ratio",
       "comparisonKey": "aa_lcr",
-      "snapshotId": "515e7dc00fba8f73d9b2f27f8360d4919277e1e374f010364276e1dafb30cbb5",
-      "contentHash": "515e7dc00fba8f73d9b2f27f8360d4919277e1e374f010364276e1dafb30cbb5",
-      "generatedAt": "2026-09-23T08:31:31Z",
+      "snapshotId": "4a9e47f45e1b5a79b504afb457a9bafac4aa91684e460bcd7f94d183c5e879af",
+      "contentHash": "4a9e47f45e1b5a79b504afb457a9bafac4aa91684e460bcd7f94d183c5e879af",
+      "generatedAt": "2026-09-24T08:24:27Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis AA LCR official public Dataset page",
@@ -4918,7 +4918,7 @@ module.exports = {
       "comparisonKey": "aa_omniscience_index",
       "snapshotId": "2254f91edc9c03b4fee5eebc691db504ea463f8bd5edc16f47e902100c3818ec",
       "contentHash": "2254f91edc9c03b4fee5eebc691db504ea463f8bd5edc16f47e902100c3818ec",
-      "generatedAt": "2026-09-23T08:31:22Z",
+      "generatedAt": "2026-09-24T08:24:28Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis AA Omniscience Index official public Dataset page",
@@ -5082,9 +5082,9 @@ module.exports = {
       "metric": "CritPt: Score",
       "unit": "ratio",
       "comparisonKey": "critpt",
-      "snapshotId": "51d0dc6d9882acb53818dab403ac3c1114a6066834dabb05b525630e0b46a913",
-      "contentHash": "51d0dc6d9882acb53818dab403ac3c1114a6066834dabb05b525630e0b46a913",
-      "generatedAt": "2026-09-23T08:31:24Z",
+      "snapshotId": "dc10c21351329247ec5e356ad6bbeed87e72604be005113346cbd1d9903d1e38",
+      "contentHash": "dc10c21351329247ec5e356ad6bbeed87e72604be005113346cbd1d9903d1e38",
+      "generatedAt": "2026-09-24T08:24:30Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis CritPt official public Dataset page",
@@ -5250,7 +5250,7 @@ module.exports = {
       "comparisonKey": "gdpval_aa_elo",
       "snapshotId": "236b381fba5ae35f8456d637ec35c3229605b733423f786fd2a10ed85ac1b4b3",
       "contentHash": "236b381fba5ae35f8456d637ec35c3229605b733423f786fd2a10ed85ac1b4b3",
-      "generatedAt": "2026-09-23T08:31:34Z",
+      "generatedAt": "2026-09-24T08:24:43Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis GDPval-AA Elo official public Dataset page",
@@ -5414,9 +5414,9 @@ module.exports = {
       "metric": "Terminal-Bench Hard: Score",
       "unit": "ratio",
       "comparisonKey": "terminalbench_hard",
-      "snapshotId": "a44c0c86567f0b0cf84fd11a135c7c3faecd196f5a8cf682a959dc9b72e76f5a",
-      "contentHash": "a44c0c86567f0b0cf84fd11a135c7c3faecd196f5a8cf682a959dc9b72e76f5a",
-      "generatedAt": "2026-09-23T08:32:19Z",
+      "snapshotId": "a95269817e963297511903d6170bd5efa9da9c70a69f0f7dc4e1f626c2579611",
+      "contentHash": "a95269817e963297511903d6170bd5efa9da9c70a69f0f7dc4e1f626c2579611",
+      "generatedAt": "2026-09-24T08:25:21Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
@@ -5503,9 +5503,9 @@ module.exports = {
       "metric": "Terminal-Bench 2.1: Score",
       "unit": "ratio",
       "comparisonKey": "terminalbench_v2_1",
-      "snapshotId": "1e4589394813f469b8c3125c786d675cb05a32fd7cf36911e45edd668998ae61",
-      "contentHash": "1e4589394813f469b8c3125c786d675cb05a32fd7cf36911e45edd668998ae61",
-      "generatedAt": "2026-09-23T08:32:18Z",
+      "snapshotId": "cd21e9566ef92b4033b0a2eb6501ff08eba388734f58f62e0f030e7d119f60b8",
+      "contentHash": "cd21e9566ef92b4033b0a2eb6501ff08eba388734f58f62e0f030e7d119f60b8",
+      "generatedAt": "2026-09-24T08:25:29Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
@@ -5669,9 +5669,9 @@ module.exports = {
       "metric": "IFBench: Score",
       "unit": "ratio",
       "comparisonKey": "ifbench",
-      "snapshotId": "52818622d3d530a4063a75ad60acdfaa1894c226ae3c7c1944efcb4e3cad536c",
-      "contentHash": "52818622d3d530a4063a75ad60acdfaa1894c226ae3c7c1944efcb4e3cad536c",
-      "generatedAt": "2026-09-23T08:31:44Z",
+      "snapshotId": "5e25ecedd191c4296b9a0400e89d0c3af62a5ce7f2b96f31024470e673edbb62",
+      "contentHash": "5e25ecedd191c4296b9a0400e89d0c3af62a5ce7f2b96f31024470e673edbb62",
+      "generatedAt": "2026-09-24T08:24:44Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis IFBench official public Dataset page",
@@ -5758,9 +5758,9 @@ module.exports = {
       "metric": "MMMU-Pro: Score",
       "unit": "ratio",
       "comparisonKey": "mmmu_pro",
-      "snapshotId": "6688f94b5d90e03586d2c0221ef7e48aa05dfa2b50e022319ca8e057497e181a",
-      "contentHash": "6688f94b5d90e03586d2c0221ef7e48aa05dfa2b50e022319ca8e057497e181a",
-      "generatedAt": "2026-09-23T08:32:05Z",
+      "snapshotId": "94a2ebfac4c4183c35b48e07dcb02318955ed6311f552a0fd5c6678ef1dc6291",
+      "contentHash": "94a2ebfac4c4183c35b48e07dcb02318955ed6311f552a0fd5c6678ef1dc6291",
+      "generatedAt": "2026-09-24T08:25:14Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis MMMU-Pro official public Dataset page",
@@ -5926,7 +5926,7 @@ module.exports = {
       "comparisonKey": "artificial_analysis_openness_index",
       "snapshotId": "d80af99d5c3875a6957400ad81518290d669e26b7795b20c54d739253e4ffa07",
       "contentHash": "d80af99d5c3875a6957400ad81518290d669e26b7795b20c54d739253e4ffa07",
-      "generatedAt": "2026-09-23T08:31:29Z",
+      "generatedAt": "2026-09-24T08:24:33Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Artificial Analysis Openness Index official Data API",
@@ -6090,9 +6090,9 @@ module.exports = {
       "metric": "MLCR-AA",
       "unit": "ratio",
       "comparisonKey": "mlcr_overall",
-      "snapshotId": "45cfdb3bbdc8bf3f8ddd47c747e51d94df318bb561f510e2dea29c8ce8d00059",
-      "contentHash": "45cfdb3bbdc8bf3f8ddd47c747e51d94df318bb561f510e2dea29c8ce8d00059",
-      "generatedAt": "2026-09-23T08:32:05Z",
+      "snapshotId": "a022e58c5444fcb0ee9365a5eca4828007601a3f97c4d7730f08f63e218a1ee8",
+      "contentHash": "a022e58c5444fcb0ee9365a5eca4828007601a3f97c4d7730f08f63e218a1ee8",
+      "generatedAt": "2026-09-24T08:25:05Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis MLCR Overall official public Dataset page",
@@ -6107,6 +6107,13 @@ module.exports = {
           "Claude Fable 5.1 (max with fallback)",
           "Claude Fable 5.1 (max with fallback)",
           0.7111,
+          null,
+          null
+        ],
+        [
+          "Claude Opus 5.5 (max with fallback)",
+          "Claude Opus 5.5 (max with fallback)",
+          0.6667,
           null,
           null
         ],
@@ -6235,13 +6242,6 @@ module.exports = {
           0.1944,
           null,
           null
-        ],
-        [
-          "MiniMax-M3",
-          "MiniMax-M3",
-          0.1722,
-          null,
-          null
         ]
       ]
     },
@@ -6258,7 +6258,7 @@ module.exports = {
       "comparisonKey": "v1.1",
       "snapshotId": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019",
       "contentHash": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019",
-      "generatedAt": "2026-09-23T08:31:25Z",
+      "generatedAt": "2026-09-24T08:24:28Z",
       "taskCount": null,
       "source": {
         "name": "DeepSWE v1.1 official leaderboard JSON",
