@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-09-24T19:06:38Z",
-  "windowStart": "2026-09-23T19:06:38Z",
+  "generatedAt": "2026-09-24T22:17:02Z",
+  "windowStart": "2026-09-23T22:17:02Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -10,332 +10,6 @@
     "benchmark"
   ],
   "models": {
-    "openrouter:z-ai/glm-5.3-prime": {
-      "canonicalId": "openrouter:z-ai/glm-5.3-prime",
-      "provider": "Z.ai",
-      "modelId": "z-ai/glm-5.3-prime",
-      "displayName": "GLM 5.3 Prime",
-      "version": null,
-      "aliases": [],
-      "releaseDate": "2026-09-23T21:40:51Z",
-      "status": "available",
-      "deprecationDate": null,
-      "releaseType": "catalog_addition",
-      "access": "closed_api",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "capabilities": [
-        "推理",
-        "结构化输出",
-        "工具调用"
-      ],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": 1000000,
-      "maxInputTokens": null,
-      "maxOutputTokens": 131072,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": 2.8,
-        "outputPerMillionTokens": 8.8,
-        "cachedInputPerMillionTokens": 0.56
-      },
-      "availability": [
-        "OpenRouter"
-      ],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": "https://openrouter.ai/z-ai/glm-5.3-prime",
-      "hubRepo": null,
-      "sourceType": "openrouter_catalog",
-      "sourceOwner": "Z.ai",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "https://openrouter.ai/z-ai/glm-5.3-prime",
-          "observedAt": "2026-09-23T21:40:51Z",
-          "contentHash": "caa3ea09acbdf7e174ed02166bcdcf70df7565b40ea934354bccc8f309834f95",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "provider",
-          "sourceUrl": "https://openrouter.ai/z-ai/glm-5.3-prime",
-          "observedAt": "2026-09-23T21:40:51Z",
-          "contentHash": "caa3ea09acbdf7e174ed02166bcdcf70df7565b40ea934354bccc8f309834f95",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "https://openrouter.ai/z-ai/glm-5.3-prime",
-          "observedAt": "2026-09-23T21:40:51Z",
-          "contentHash": "caa3ea09acbdf7e174ed02166bcdcf70df7565b40ea934354bccc8f309834f95",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "https://openrouter.ai/z-ai/glm-5.3-prime",
-          "observedAt": "2026-09-23T21:40:51Z",
-          "contentHash": "caa3ea09acbdf7e174ed02166bcdcf70df7565b40ea934354bccc8f309834f95",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "releaseDate",
-          "sourceUrl": "https://openrouter.ai/z-ai/glm-5.3-prime",
-          "observedAt": "2026-09-23T21:40:51Z",
-          "contentHash": "caa3ea09acbdf7e174ed02166bcdcf70df7565b40ea934354bccc8f309834f95",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "https://openrouter.ai/z-ai/glm-5.3-prime",
-          "observedAt": "2026-09-23T21:40:51Z",
-          "contentHash": "caa3ea09acbdf7e174ed02166bcdcf70df7565b40ea934354bccc8f309834f95",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "releaseType",
-          "sourceUrl": "https://openrouter.ai/z-ai/glm-5.3-prime",
-          "observedAt": "2026-09-23T21:40:51Z",
-          "contentHash": "caa3ea09acbdf7e174ed02166bcdcf70df7565b40ea934354bccc8f309834f95",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "https://openrouter.ai/z-ai/glm-5.3-prime",
-          "observedAt": "2026-09-23T21:40:51Z",
-          "contentHash": "caa3ea09acbdf7e174ed02166bcdcf70df7565b40ea934354bccc8f309834f95",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "contextWindow",
-          "sourceUrl": "https://openrouter.ai/z-ai/glm-5.3-prime",
-          "observedAt": "2026-09-23T21:40:51Z",
-          "contentHash": "caa3ea09acbdf7e174ed02166bcdcf70df7565b40ea934354bccc8f309834f95",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "maxOutputTokens",
-          "sourceUrl": "https://openrouter.ai/z-ai/glm-5.3-prime",
-          "observedAt": "2026-09-23T21:40:51Z",
-          "contentHash": "caa3ea09acbdf7e174ed02166bcdcf70df7565b40ea934354bccc8f309834f95",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "modelCardUrl",
-          "sourceUrl": "https://openrouter.ai/z-ai/glm-5.3-prime",
-          "observedAt": "2026-09-23T21:40:51Z",
-          "contentHash": "caa3ea09acbdf7e174ed02166bcdcf70df7565b40ea934354bccc8f309834f95",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "https://openrouter.ai/z-ai/glm-5.3-prime",
-          "observedAt": "2026-09-23T21:40:51Z",
-          "contentHash": "caa3ea09acbdf7e174ed02166bcdcf70df7565b40ea934354bccc8f309834f95",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "capabilities",
-          "sourceUrl": "https://openrouter.ai/z-ai/glm-5.3-prime",
-          "observedAt": "2026-09-23T21:40:51Z",
-          "contentHash": "caa3ea09acbdf7e174ed02166bcdcf70df7565b40ea934354bccc8f309834f95",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "availability",
-          "sourceUrl": "https://openrouter.ai/z-ai/glm-5.3-prime",
-          "observedAt": "2026-09-23T21:40:51Z",
-          "contentHash": "caa3ea09acbdf7e174ed02166bcdcf70df7565b40ea934354bccc8f309834f95",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "modalities",
-          "sourceUrl": "https://openrouter.ai/z-ai/glm-5.3-prime",
-          "observedAt": "2026-09-23T21:40:51Z",
-          "contentHash": "caa3ea09acbdf7e174ed02166bcdcf70df7565b40ea934354bccc8f309834f95",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "pricing",
-          "sourceUrl": "https://openrouter.ai/z-ai/glm-5.3-prime",
-          "observedAt": "2026-09-23T21:40:51Z",
-          "contentHash": "caa3ea09acbdf7e174ed02166bcdcf70df7565b40ea934354bccc8f309834f95",
-          "sourceType": "openrouter_catalog"
-        }
-      ]
-    },
-    "openrouter:qwen/qwen3.8-max-prime": {
-      "canonicalId": "openrouter:qwen/qwen3.8-max-prime",
-      "provider": "Qwen",
-      "modelId": "qwen/qwen3.8-max-prime",
-      "displayName": "Qwen3.8 Max Prime",
-      "version": null,
-      "aliases": [],
-      "releaseDate": "2026-09-23T19:20:28Z",
-      "status": "available",
-      "deprecationDate": null,
-      "releaseType": "catalog_addition",
-      "access": "closed_api",
-      "modalities": {
-        "input": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "capabilities": [
-        "推理",
-        "结构化输出",
-        "工具调用"
-      ],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": 1000000,
-      "maxInputTokens": null,
-      "maxOutputTokens": 131072,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": 4.0,
-        "outputPerMillionTokens": 12.0,
-        "cachedInputPerMillionTokens": 0.5
-      },
-      "availability": [
-        "OpenRouter"
-      ],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-      "hubRepo": null,
-      "sourceType": "openrouter_catalog",
-      "sourceOwner": "Qwen",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-          "observedAt": "2026-09-23T19:20:28Z",
-          "contentHash": "7f38cdd913a9de89c950b251d7d5c79df4b7e5d7c967ffd447efd75e60336c32",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "provider",
-          "sourceUrl": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-          "observedAt": "2026-09-23T19:20:28Z",
-          "contentHash": "7f38cdd913a9de89c950b251d7d5c79df4b7e5d7c967ffd447efd75e60336c32",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-          "observedAt": "2026-09-23T19:20:28Z",
-          "contentHash": "7f38cdd913a9de89c950b251d7d5c79df4b7e5d7c967ffd447efd75e60336c32",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-          "observedAt": "2026-09-23T19:20:28Z",
-          "contentHash": "7f38cdd913a9de89c950b251d7d5c79df4b7e5d7c967ffd447efd75e60336c32",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "releaseDate",
-          "sourceUrl": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-          "observedAt": "2026-09-23T19:20:28Z",
-          "contentHash": "7f38cdd913a9de89c950b251d7d5c79df4b7e5d7c967ffd447efd75e60336c32",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-          "observedAt": "2026-09-23T19:20:28Z",
-          "contentHash": "7f38cdd913a9de89c950b251d7d5c79df4b7e5d7c967ffd447efd75e60336c32",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "releaseType",
-          "sourceUrl": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-          "observedAt": "2026-09-23T19:20:28Z",
-          "contentHash": "7f38cdd913a9de89c950b251d7d5c79df4b7e5d7c967ffd447efd75e60336c32",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-          "observedAt": "2026-09-23T19:20:28Z",
-          "contentHash": "7f38cdd913a9de89c950b251d7d5c79df4b7e5d7c967ffd447efd75e60336c32",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "contextWindow",
-          "sourceUrl": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-          "observedAt": "2026-09-23T19:20:28Z",
-          "contentHash": "7f38cdd913a9de89c950b251d7d5c79df4b7e5d7c967ffd447efd75e60336c32",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "maxOutputTokens",
-          "sourceUrl": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-          "observedAt": "2026-09-23T19:20:28Z",
-          "contentHash": "7f38cdd913a9de89c950b251d7d5c79df4b7e5d7c967ffd447efd75e60336c32",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "modelCardUrl",
-          "sourceUrl": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-          "observedAt": "2026-09-23T19:20:28Z",
-          "contentHash": "7f38cdd913a9de89c950b251d7d5c79df4b7e5d7c967ffd447efd75e60336c32",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-          "observedAt": "2026-09-23T19:20:28Z",
-          "contentHash": "7f38cdd913a9de89c950b251d7d5c79df4b7e5d7c967ffd447efd75e60336c32",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "capabilities",
-          "sourceUrl": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-          "observedAt": "2026-09-23T19:20:28Z",
-          "contentHash": "7f38cdd913a9de89c950b251d7d5c79df4b7e5d7c967ffd447efd75e60336c32",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "availability",
-          "sourceUrl": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-          "observedAt": "2026-09-23T19:20:28Z",
-          "contentHash": "7f38cdd913a9de89c950b251d7d5c79df4b7e5d7c967ffd447efd75e60336c32",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "modalities",
-          "sourceUrl": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-          "observedAt": "2026-09-23T19:20:28Z",
-          "contentHash": "7f38cdd913a9de89c950b251d7d5c79df4b7e5d7c967ffd447efd75e60336c32",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "pricing",
-          "sourceUrl": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-          "observedAt": "2026-09-23T19:20:28Z",
-          "contentHash": "7f38cdd913a9de89c950b251d7d5c79df4b7e5d7c967ffd447efd75e60336c32",
-          "sourceType": "openrouter_catalog"
-        }
-      ]
-    },
     "benchmark:Claude Opus 5.5 (max with fallback)": {
       "canonicalId": "benchmark:Claude Opus 5.5 (max with fallback)",
       "provider": null,
@@ -378,49 +52,49 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "2d00a26818183a5cacf594a3333872761208192e93078f982b8be81e7fee0899",
+          "contentHash": "25183f7d91cf954db2cb5374b8b79db6246d30aa1985d0f0c0b9dc1910985607",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "2d00a26818183a5cacf594a3333872761208192e93078f982b8be81e7fee0899",
+          "contentHash": "25183f7d91cf954db2cb5374b8b79db6246d30aa1985d0f0c0b9dc1910985607",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "2d00a26818183a5cacf594a3333872761208192e93078f982b8be81e7fee0899",
+          "contentHash": "25183f7d91cf954db2cb5374b8b79db6246d30aa1985d0f0c0b9dc1910985607",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "2d00a26818183a5cacf594a3333872761208192e93078f982b8be81e7fee0899",
+          "contentHash": "25183f7d91cf954db2cb5374b8b79db6246d30aa1985d0f0c0b9dc1910985607",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "2d00a26818183a5cacf594a3333872761208192e93078f982b8be81e7fee0899",
+          "contentHash": "25183f7d91cf954db2cb5374b8b79db6246d30aa1985d0f0c0b9dc1910985607",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "2d00a26818183a5cacf594a3333872761208192e93078f982b8be81e7fee0899",
+          "contentHash": "25183f7d91cf954db2cb5374b8b79db6246d30aa1985d0f0c0b9dc1910985607",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "2d00a26818183a5cacf594a3333872761208192e93078f982b8be81e7fee0899",
+          "contentHash": "25183f7d91cf954db2cb5374b8b79db6246d30aa1985d0f0c0b9dc1910985607",
           "sourceType": "official_benchmark"
         }
       ]
@@ -467,49 +141,49 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "7b77736e4e05711196a29ae1798347a3da91883a2c0ac901a0004ea68be2931b",
+          "contentHash": "e03aa79b24c805ea6be570d8bb4ff35314f035fb0e48e60ca92850a4ec68d719",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "7b77736e4e05711196a29ae1798347a3da91883a2c0ac901a0004ea68be2931b",
+          "contentHash": "e03aa79b24c805ea6be570d8bb4ff35314f035fb0e48e60ca92850a4ec68d719",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "7b77736e4e05711196a29ae1798347a3da91883a2c0ac901a0004ea68be2931b",
+          "contentHash": "e03aa79b24c805ea6be570d8bb4ff35314f035fb0e48e60ca92850a4ec68d719",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "7b77736e4e05711196a29ae1798347a3da91883a2c0ac901a0004ea68be2931b",
+          "contentHash": "e03aa79b24c805ea6be570d8bb4ff35314f035fb0e48e60ca92850a4ec68d719",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "7b77736e4e05711196a29ae1798347a3da91883a2c0ac901a0004ea68be2931b",
+          "contentHash": "e03aa79b24c805ea6be570d8bb4ff35314f035fb0e48e60ca92850a4ec68d719",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "7b77736e4e05711196a29ae1798347a3da91883a2c0ac901a0004ea68be2931b",
+          "contentHash": "e03aa79b24c805ea6be570d8bb4ff35314f035fb0e48e60ca92850a4ec68d719",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "7b77736e4e05711196a29ae1798347a3da91883a2c0ac901a0004ea68be2931b",
+          "contentHash": "e03aa79b24c805ea6be570d8bb4ff35314f035fb0e48e60ca92850a4ec68d719",
           "sourceType": "official_benchmark"
         }
       ]
@@ -556,100 +230,61 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "f4965c9b48802f8e0e66f790708d27f39812ccb30369f064748496560476a402",
+          "contentHash": "efc1dbcdbb00ec9fe6512b3831f8548e62f7bc3721212e793b97a3adaed134ca",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "f4965c9b48802f8e0e66f790708d27f39812ccb30369f064748496560476a402",
+          "contentHash": "efc1dbcdbb00ec9fe6512b3831f8548e62f7bc3721212e793b97a3adaed134ca",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "f4965c9b48802f8e0e66f790708d27f39812ccb30369f064748496560476a402",
+          "contentHash": "efc1dbcdbb00ec9fe6512b3831f8548e62f7bc3721212e793b97a3adaed134ca",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "f4965c9b48802f8e0e66f790708d27f39812ccb30369f064748496560476a402",
+          "contentHash": "efc1dbcdbb00ec9fe6512b3831f8548e62f7bc3721212e793b97a3adaed134ca",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "f4965c9b48802f8e0e66f790708d27f39812ccb30369f064748496560476a402",
+          "contentHash": "efc1dbcdbb00ec9fe6512b3831f8548e62f7bc3721212e793b97a3adaed134ca",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "f4965c9b48802f8e0e66f790708d27f39812ccb30369f064748496560476a402",
+          "contentHash": "efc1dbcdbb00ec9fe6512b3831f8548e62f7bc3721212e793b97a3adaed134ca",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
           "observedAt": "2026-09-23T22:29:42Z",
-          "contentHash": "f4965c9b48802f8e0e66f790708d27f39812ccb30369f064748496560476a402",
+          "contentHash": "efc1dbcdbb00ec9fe6512b3831f8548e62f7bc3721212e793b97a3adaed134ca",
           "sourceType": "official_benchmark"
         }
       ]
     }
   },
-  "modelCount": 5,
+  "modelCount": 3,
   "sourceSummary": {
     "official": 0,
-    "catalog": 2,
+    "catalog": 0,
     "benchmark": 15
   },
   "events": [
-    {
-      "eventId": "003b89c8c09d48cdfb9b7ccfe666d1f9",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Humanity's Last Exam 官方数据更新",
-      "summary": "Humanity's Last Exam 官方数据发生变化；共 20 个模型 · 当前前列：Claude Opus 5.5 (max with fallback)（61.4%）、Claude Fable 5.1 (max with fallback)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（58.7%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-      "observedAt": "2026-09-24T10:18:04Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis Humanity's Last Exam official public Dataset page",
-      "benchmarkId": "aa_humanitys_last_exam",
-      "benchmarkTitle": "Humanity's Last Exam",
-      "release": "page_jsonld",
-      "contentHash": "1d8da2e11113a8e2ec80bc0cc4aed3ca11b02e4463f88e81b8d1e8b34a834f23",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Opus 5.5 (max with fallback)（61.4%）",
-        "Claude Fable 5.1 (max with fallback)（59.1%）",
-        "Claude Fable 5.1 (xhigh with fallback)（58.7%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "08e30d47c5d9b2c1482386682265bd48758cd976db58c9b08ff0490b1ebcaec3"
-      }
-    },
     {
       "eventId": "67cfc5b1185c6e69926e83d2eb7aa978",
       "family": "benchmark",
@@ -686,46 +321,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-        "contentHash": "08e30d47c5d9b2c1482386682265bd48758cd976db58c9b08ff0490b1ebcaec3"
-      }
-    },
-    {
-      "eventId": "d7e6288b80d905660a213aca60a84ca8",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "SciCode 官方数据更新",
-      "summary": "SciCode 官方数据发生变化；共 20 个模型 · 当前前列：Claude Opus 5.5 (max with fallback)（66.9%）、Claude Opus 5.5 (xhigh with fallback)（65.0%）、Claude Fable 5.1 (max with fallback)（63.1%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/scicode",
-      "observedAt": "2026-09-24T10:18:04Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis SciCode official public Dataset page",
-      "benchmarkId": "aa_scicode",
-      "benchmarkTitle": "SciCode",
-      "release": "page_jsonld",
-      "contentHash": "d0f02484fea8478ec07c75e627b15c86c6ae0fbb6d93d223c84a3d43d9e44cb9",
-      "unit": "ratio",
-      "modelCount": 20,
-      "topModels": [
-        "Claude Opus 5.5 (max with fallback)（66.9%）",
-        "Claude Opus 5.5 (xhigh with fallback)（65.0%）",
-        "Claude Fable 5.1 (max with fallback)（63.1%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "08e30d47c5d9b2c1482386682265bd48758cd976db58c9b08ff0490b1ebcaec3"
+        "contentHash": "1ce804a4127a2b257a2f7874fe74ef2d620f5412c32085e68d8b9aa1a6e3b99d"
       }
     },
     {
@@ -764,7 +360,46 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "08e30d47c5d9b2c1482386682265bd48758cd976db58c9b08ff0490b1ebcaec3"
+        "contentHash": "1ce804a4127a2b257a2f7874fe74ef2d620f5412c32085e68d8b9aa1a6e3b99d"
+      }
+    },
+    {
+      "eventId": "003b89c8c09d48cdfb9b7ccfe666d1f9",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Humanity's Last Exam 官方数据更新",
+      "summary": "Humanity's Last Exam 官方数据发生变化；共 20 个模型 · 当前前列：Claude Opus 5.5 (max with fallback)（61.4%）、Claude Fable 5.1 (max with fallback)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（58.7%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "observedAt": "2026-09-24T10:18:04Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Humanity's Last Exam official public Dataset page",
+      "benchmarkId": "aa_humanitys_last_exam",
+      "benchmarkTitle": "Humanity's Last Exam",
+      "release": "page_jsonld",
+      "contentHash": "1d8da2e11113a8e2ec80bc0cc4aed3ca11b02e4463f88e81b8d1e8b34a834f23",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "Claude Opus 5.5 (max with fallback)（61.4%）",
+        "Claude Fable 5.1 (max with fallback)（59.1%）",
+        "Claude Fable 5.1 (xhigh with fallback)（58.7%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "contentHash": "1ce804a4127a2b257a2f7874fe74ef2d620f5412c32085e68d8b9aa1a6e3b99d"
       }
     },
     {
@@ -803,7 +438,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "08e30d47c5d9b2c1482386682265bd48758cd976db58c9b08ff0490b1ebcaec3"
+        "contentHash": "1ce804a4127a2b257a2f7874fe74ef2d620f5412c32085e68d8b9aa1a6e3b99d"
       }
     },
     {
@@ -842,11 +477,11 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "08e30d47c5d9b2c1482386682265bd48758cd976db58c9b08ff0490b1ebcaec3"
+        "contentHash": "1ce804a4127a2b257a2f7874fe74ef2d620f5412c32085e68d8b9aa1a6e3b99d"
       }
     },
     {
-      "eventId": "17900dff48b32f6df584fcfd74c3763e",
+      "eventId": "d7e6288b80d905660a213aca60a84ca8",
       "family": "benchmark",
       "eventType": "benchmark_updated",
       "eventClass": "benchmark",
@@ -855,8 +490,8 @@
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "CritPt 官方数据更新",
-      "summary": "CritPt 官方数据发生变化；共 20 个模型 · 当前前列：GPT-5.6 Sol (max)（32.3%）、Claude Opus 5.5 (max with fallback)（31.7%）、Claude Opus 5.5 (xhigh with fallback)（31.7%）。",
+      "title": "SciCode 官方数据更新",
+      "summary": "SciCode 官方数据发生变化；共 20 个模型 · 当前前列：Claude Opus 5.5 (max with fallback)（66.9%）、Claude Opus 5.5 (xhigh with fallback)（65.0%）、Claude Fable 5.1 (max with fallback)（63.1%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -864,24 +499,24 @@
       "sourceType": null,
       "sourceOwner": null,
       "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/critpt",
+      "url": "https://artificialanalysis.ai/evaluations/scicode",
       "observedAt": "2026-09-24T10:18:04Z",
       "publishedAt": null,
-      "source": "Artificial Analysis CritPt official public Dataset page",
-      "benchmarkId": "aa_critpt",
-      "benchmarkTitle": "CritPt",
+      "source": "Artificial Analysis SciCode official public Dataset page",
+      "benchmarkId": "aa_scicode",
+      "benchmarkTitle": "SciCode",
       "release": "page_jsonld",
-      "contentHash": "dc10c21351329247ec5e356ad6bbeed87e72604be005113346cbd1d9903d1e38",
+      "contentHash": "d0f02484fea8478ec07c75e627b15c86c6ae0fbb6d93d223c84a3d43d9e44cb9",
       "unit": "ratio",
       "modelCount": 20,
       "topModels": [
-        "GPT-5.6 Sol (max)（32.3%）",
-        "Claude Opus 5.5 (max with fallback)（31.7%）",
-        "Claude Opus 5.5 (xhigh with fallback)（31.7%）"
+        "Claude Opus 5.5 (max with fallback)（66.9%）",
+        "Claude Opus 5.5 (xhigh with fallback)（65.0%）",
+        "Claude Fable 5.1 (max with fallback)（63.1%）"
       ],
       "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "08e30d47c5d9b2c1482386682265bd48758cd976db58c9b08ff0490b1ebcaec3"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "contentHash": "1ce804a4127a2b257a2f7874fe74ef2d620f5412c32085e68d8b9aa1a6e3b99d"
       }
     },
     {
@@ -920,7 +555,46 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "08e30d47c5d9b2c1482386682265bd48758cd976db58c9b08ff0490b1ebcaec3"
+        "contentHash": "1ce804a4127a2b257a2f7874fe74ef2d620f5412c32085e68d8b9aa1a6e3b99d"
+      }
+    },
+    {
+      "eventId": "17900dff48b32f6df584fcfd74c3763e",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "CritPt 官方数据更新",
+      "summary": "CritPt 官方数据发生变化；共 20 个模型 · 当前前列：GPT-5.6 Sol (max)（32.3%）、Claude Opus 5.5 (max with fallback)（31.7%）、Claude Opus 5.5 (xhigh with fallback)（31.7%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/critpt",
+      "observedAt": "2026-09-24T10:18:04Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis CritPt official public Dataset page",
+      "benchmarkId": "aa_critpt",
+      "benchmarkTitle": "CritPt",
+      "release": "page_jsonld",
+      "contentHash": "dc10c21351329247ec5e356ad6bbeed87e72604be005113346cbd1d9903d1e38",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "GPT-5.6 Sol (max)（32.3%）",
+        "Claude Opus 5.5 (max with fallback)（31.7%）",
+        "Claude Opus 5.5 (xhigh with fallback)（31.7%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
+        "contentHash": "1ce804a4127a2b257a2f7874fe74ef2d620f5412c32085e68d8b9aa1a6e3b99d"
       }
     },
     {
@@ -959,7 +633,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "08e30d47c5d9b2c1482386682265bd48758cd976db58c9b08ff0490b1ebcaec3"
+        "contentHash": "1ce804a4127a2b257a2f7874fe74ef2d620f5412c32085e68d8b9aa1a6e3b99d"
       }
     },
     {
@@ -998,7 +672,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
-        "contentHash": "08e30d47c5d9b2c1482386682265bd48758cd976db58c9b08ff0490b1ebcaec3"
+        "contentHash": "1ce804a4127a2b257a2f7874fe74ef2d620f5412c32085e68d8b9aa1a6e3b99d"
       }
     },
     {
@@ -1021,13 +695,13 @@
       "sourceOwner": null,
       "evidence": [],
       "url": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-      "observedAt": "2026-09-23T19:53:12Z",
+      "observedAt": "2026-09-24T22:17:02Z",
       "publishedAt": null,
       "source": "Artificial Analysis MMMU-Pro official public Dataset page",
       "benchmarkId": "aa_mmmu_pro",
       "benchmarkTitle": "MMMU-Pro",
       "release": "page_jsonld",
-      "contentHash": "d10f9acc88e9bc047a454286ba19eb5bee46bfb4d3a8aab21597acbfe54a8763",
+      "contentHash": "b330c1617b3f9dd59b0efecda1ffe7faea214cfb10a4573a411145410c21ec7c",
       "unit": "ratio",
       "modelCount": 20,
       "topModels": [
@@ -1037,7 +711,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-        "contentHash": "08e30d47c5d9b2c1482386682265bd48758cd976db58c9b08ff0490b1ebcaec3"
+        "contentHash": "1ce804a4127a2b257a2f7874fe74ef2d620f5412c32085e68d8b9aa1a6e3b99d"
       }
     },
     {
@@ -1076,81 +750,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "08e30d47c5d9b2c1482386682265bd48758cd976db58c9b08ff0490b1ebcaec3"
-      }
-    },
-    {
-      "eventId": "cd4458a76bd99fc6b88458b9b5c6674c",
-      "family": "model",
-      "eventType": "catalog_model_added",
-      "eventClass": "model_catalog",
-      "trustTier": "catalog",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "GLM 5.3 Prime 新增可用",
-      "summary": "GLM 5.3 Prime 新增可用：上下文 1,000,000 tokens，价格 $2.8/$8.8 每百万 tokens。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "z-ai/glm-5.3-prime",
-      "modelRef": "openrouter:z-ai/glm-5.3-prime",
-      "sourceType": "openrouter_catalog",
-      "sourceOwner": "Z.ai",
-      "evidence": [
-        {
-          "field": "catalogEntry",
-          "sourceUrl": "https://openrouter.ai/z-ai/glm-5.3-prime",
-          "observedAt": "2026-09-23T21:40:51Z",
-          "contentHash": "caa3ea09acbdf7e174ed02166bcdcf70df7565b40ea934354bccc8f309834f95",
-          "sourceType": "openrouter_catalog"
-        }
-      ],
-      "url": "https://openrouter.ai/z-ai/glm-5.3-prime",
-      "observedAt": "2026-09-23T21:40:51Z",
-      "publishedAt": "2026-09-23T21:40:51Z",
-      "source": "OpenRouter · Z.ai",
-      "eventIdentity": "catalog:z-ai/glm-5.3-prime",
-      "provenance": {
-        "sourceUrl": "https://openrouter.ai/z-ai/glm-5.3-prime",
-        "contentHash": "08e30d47c5d9b2c1482386682265bd48758cd976db58c9b08ff0490b1ebcaec3"
-      }
-    },
-    {
-      "eventId": "717d7b1639af62a82607344aa893cf8b",
-      "family": "model",
-      "eventType": "catalog_model_added",
-      "eventClass": "model_catalog",
-      "trustTier": "catalog",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "Qwen3.8 Max Prime 新增可用",
-      "summary": "Qwen3.8 Max Prime 新增可用：上下文 1,000,000 tokens，价格 $4/$12 每百万 tokens。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "qwen/qwen3.8-max-prime",
-      "modelRef": "openrouter:qwen/qwen3.8-max-prime",
-      "sourceType": "openrouter_catalog",
-      "sourceOwner": "Qwen",
-      "evidence": [
-        {
-          "field": "catalogEntry",
-          "sourceUrl": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-          "observedAt": "2026-09-23T19:20:28Z",
-          "contentHash": "7f38cdd913a9de89c950b251d7d5c79df4b7e5d7c967ffd447efd75e60336c32",
-          "sourceType": "openrouter_catalog"
-        }
-      ],
-      "url": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-      "observedAt": "2026-09-23T19:20:28Z",
-      "publishedAt": "2026-09-23T19:20:28Z",
-      "source": "OpenRouter · Qwen",
-      "eventIdentity": "catalog:qwen/qwen3.8-max-prime",
-      "provenance": {
-        "sourceUrl": "https://openrouter.ai/qwen/qwen3.8-max-prime",
-        "contentHash": "08e30d47c5d9b2c1482386682265bd48758cd976db58c9b08ff0490b1ebcaec3"
+        "contentHash": "1ce804a4127a2b257a2f7874fe74ef2d620f5412c32085e68d8b9aa1a6e3b99d"
       }
     },
     {
@@ -1186,7 +786,7 @@
       "modelIdentity": "aa_mlcr_overall:Claude Opus 5.5 (max with fallback)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "08e30d47c5d9b2c1482386682265bd48758cd976db58c9b08ff0490b1ebcaec3"
+        "contentHash": "1ce804a4127a2b257a2f7874fe74ef2d620f5412c32085e68d8b9aa1a6e3b99d"
       }
     },
     {
@@ -1221,7 +821,7 @@
       "modelIdentity": "aa_mlcr_overall:MiniMax-M3",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "08e30d47c5d9b2c1482386682265bd48758cd976db58c9b08ff0490b1ebcaec3"
+        "contentHash": "1ce804a4127a2b257a2f7874fe74ef2d620f5412c32085e68d8b9aa1a6e3b99d"
       }
     },
     {
@@ -1258,13 +858,13 @@
       "modelIdentity": "aa_mlcr_overall:Qwen3.8 Max (0902)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "08e30d47c5d9b2c1482386682265bd48758cd976db58c9b08ff0490b1ebcaec3"
+        "contentHash": "1ce804a4127a2b257a2f7874fe74ef2d620f5412c32085e68d8b9aa1a6e3b99d"
       }
     }
   ],
-  "eventCount": 17,
+  "eventCount": 15,
   "provenance": {
-    "workflowRunId": "36045866805",
-    "mainCommit": "1f60b305369b2a8c3a92c65a6aca3391391e02f7"
+    "workflowRunId": "36066531482",
+    "mainCommit": "84dedbe6ddb559b2c8d8452100c5c2754a01802a"
   }
 }
