@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
   "generatedAt": "2026-09-25T15:16:18Z",
-  "windowStart": "2026-09-24T15:16:18Z",
+  "windowStart": "2026-09-24T19:16:00Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -53,7 +53,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-        "contentHash": "696e0a1ac95f6f257656d5442ae9849048378e38440b65846a93be7585656552"
+        "contentHash": "18a13f980f209703bbca9948629c5512beeb4e2f0b9a492f9ba1cfdbcfaf56c7"
       }
     }
   ],
