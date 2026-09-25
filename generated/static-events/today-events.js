@@ -2,7 +2,7 @@ module.exports = {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
   "generatedAt": "2026-09-25T00:34:43Z",
-  "windowStart": "2026-09-24T00:34:43Z",
+  "windowStart": "2026-09-24T05:17:55Z",
   "collectorStatus": "partial",
   "staleAfterMinutes": 360,
   "families": [
@@ -53,7 +53,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-        "contentHash": "ed9d294750ea915906570328bda86f17d18f6732ec57beace0e2afa916902987"
+        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
       }
     },
     {
@@ -92,7 +92,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-        "contentHash": "ed9d294750ea915906570328bda86f17d18f6732ec57beace0e2afa916902987"
+        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
       }
     },
     {
@@ -131,7 +131,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "ed9d294750ea915906570328bda86f17d18f6732ec57beace0e2afa916902987"
+        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
       }
     },
     {
@@ -170,7 +170,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "ed9d294750ea915906570328bda86f17d18f6732ec57beace0e2afa916902987"
+        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
       }
     },
     {
@@ -209,7 +209,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "ed9d294750ea915906570328bda86f17d18f6732ec57beace0e2afa916902987"
+        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
       }
     },
     {
@@ -248,7 +248,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "ed9d294750ea915906570328bda86f17d18f6732ec57beace0e2afa916902987"
+        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
       }
     },
     {
@@ -287,7 +287,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "ed9d294750ea915906570328bda86f17d18f6732ec57beace0e2afa916902987"
+        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
       }
     },
     {
@@ -326,7 +326,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "ed9d294750ea915906570328bda86f17d18f6732ec57beace0e2afa916902987"
+        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
       }
     },
     {
@@ -365,7 +365,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "ed9d294750ea915906570328bda86f17d18f6732ec57beace0e2afa916902987"
+        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
       }
     },
     {
@@ -404,7 +404,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "ed9d294750ea915906570328bda86f17d18f6732ec57beace0e2afa916902987"
+        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
       }
     },
     {
@@ -443,7 +443,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
-        "contentHash": "ed9d294750ea915906570328bda86f17d18f6732ec57beace0e2afa916902987"
+        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
       }
     },
     {
@@ -482,7 +482,7 @@ module.exports = {
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "ed9d294750ea915906570328bda86f17d18f6732ec57beace0e2afa916902987"
+        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
       }
     }
   ],
@@ -490,16 +490,16 @@ module.exports = {
   "collectorFailures": [
     "humanitys_last_exam:ValueError",
     "artificial_analysis_intelligence_index_v4_3:ValueError",
-    "terminal_bench_v4_0:ValueError",
     "gpqa_diamond:ValueError",
-    "aa_omniscience_index:ValueError",
-    "aa_lcr:ValueError",
+    "terminal_bench_v4_0:ValueError",
     "scicode:ValueError",
+    "aa_lcr:ValueError",
     "terminalbench_hard:ValueError",
     "critpt:ValueError",
-    "gdpval_aa_elo:ValueError",
     "terminalbench_v2_1:ValueError",
     "ifbench:ValueError",
+    "aa_omniscience_index:ValueError",
+    "gdpval_aa_elo:ValueError",
     "mmmu_pro:ValueError",
     "mlcr_overall:ValueError",
     "artificial_analysis_openness_index:ValueError"

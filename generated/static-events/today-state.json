@@ -3,6 +3,538 @@
   "generatedAt": "2026-09-25T00:34:43Z",
   "models": {},
   "benchmarks": {
+    "livebench_data_analysis": {
+      "runtimeId": "livebench_data_analysis",
+      "familyId": "livebench",
+      "title": "LiveBench Data Analysis",
+      "release": "2026-06-25",
+      "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
+      "source": {
+        "benchmark_id": "livebench_data_analysis",
+        "status": "enabled",
+        "source_name": "LiveBench Data Analysis dated official leaderboard CSV",
+        "organization": "LiveBench",
+        "source_type": "official_site_dated_csv",
+        "official_url": "https://livebench.ai/",
+        "endpoint": "https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main",
+        "raw_base_url": "https://livebench.ai",
+        "fallback_release_id": "2026-06-25",
+        "fetch_method": "GET",
+        "update_frequency": "release_based",
+        "requires_auth": false,
+        "category_selector": "data_analysis",
+        "evidence_url": "https://livebench.ai/",
+        "release_tracking": "dated_table_and_categories_files",
+        "hash_required": true,
+        "notes": "Official category Data Analysis."
+      },
+      "records": {
+        "claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25:Data Analysis:category_average:claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25": {
+          "model": "claude-opus-4-5-20251101-thinking-64k-high-effort",
+          "score": 74.44166666666666,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-opus-4-5-20251101-thinking-64k-high-effort",
+          "variant": "2026-06-25",
+          "displayRank": 36
+        },
+        "claude-opus-4-6-thinking-auto-high-effort|2026-06-25:Data Analysis:category_average:claude-opus-4-6-thinking-auto-high-effort|2026-06-25": {
+          "model": "claude-opus-4-6-thinking-auto-high-effort",
+          "score": 69.893,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-opus-4-6-thinking-auto-high-effort",
+          "variant": "2026-06-25",
+          "displayRank": 51
+        },
+        "claude-opus-4-7-xhigh-effort|2026-06-25:Data Analysis:category_average:claude-opus-4-7-xhigh-effort|2026-06-25": {
+          "model": "claude-opus-4-7-xhigh-effort",
+          "score": 78.26366666666667,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-opus-4-7-xhigh-effort",
+          "variant": "2026-06-25",
+          "displayRank": 22
+        },
+        "claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25:Data Analysis:category_average:claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25": {
+          "model": "claude-sonnet-4-6-thinking-auto-medium-effort",
+          "score": 77.946,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-sonnet-4-6-thinking-auto-medium-effort",
+          "variant": "2026-06-25",
+          "displayRank": 26
+        },
+        "claude-sonnet-5-xhigh-effort|2026-06-25:Data Analysis:category_average:claude-sonnet-5-xhigh-effort|2026-06-25": {
+          "model": "claude-sonnet-5-xhigh-effort",
+          "score": 71.74066666666666,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-sonnet-5-xhigh-effort",
+          "variant": "2026-06-25",
+          "displayRank": 45
+        },
+        "deepseek-v4-flash|2026-06-25:Data Analysis:category_average:deepseek-v4-flash|2026-06-25": {
+          "model": "deepseek-v4-flash",
+          "score": 68.02300000000001,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:deepseek-v4-flash",
+          "variant": "2026-06-25",
+          "displayRank": 52
+        },
+        "deepseek-v4-pro|2026-06-25:Data Analysis:category_average:deepseek-v4-pro|2026-06-25": {
+          "model": "deepseek-v4-pro",
+          "score": 74.53766666666667,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:deepseek-v4-pro",
+          "variant": "2026-06-25",
+          "displayRank": 35
+        },
+        "gemini-3.1-pro-preview-high|2026-06-25:Data Analysis:category_average:gemini-3.1-pro-preview-high|2026-06-25": {
+          "model": "gemini-3.1-pro-preview-high",
+          "score": 78.54133333333334,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:gemini-3.1-pro-preview-high",
+          "variant": "2026-06-25",
+          "displayRank": 20
+        },
+        "gemini-3.5-flash-high|2026-06-25:Data Analysis:category_average:gemini-3.5-flash-high|2026-06-25": {
+          "model": "gemini-3.5-flash-high",
+          "score": 64.85733333333333,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:gemini-3.5-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 57
+        },
+        "glm-5.2|2026-06-25:Data Analysis:category_average:glm-5.2|2026-06-25": {
+          "model": "glm-5.2",
+          "score": 73.73966666666666,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:glm-5.2",
+          "variant": "2026-06-25",
+          "displayRank": 39
+        },
+        "gpt-5.2-2025-12-11-high|2026-06-25:Data Analysis:category_average:gpt-5.2-2025-12-11-high|2026-06-25": {
+          "model": "gpt-5.2-2025-12-11-high",
+          "score": 78.16333333333334,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-5.2-2025-12-11-high",
+          "variant": "2026-06-25",
+          "displayRank": 24
+        },
+        "gpt-5.2-codex|2026-06-25:Data Analysis:category_average:gpt-5.2-codex|2026-06-25": {
+          "model": "gpt-5.2-codex",
+          "score": 78.204,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-5.2-codex",
+          "variant": "2026-06-25",
+          "displayRank": 23
+        },
+        "gpt-5.4-mini-xhigh|2026-06-25:Data Analysis:category_average:gpt-5.4-mini-xhigh|2026-06-25": {
+          "model": "gpt-5.4-mini-xhigh",
+          "score": 70.78566666666667,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-5.4-mini-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 47
+        },
+        "gpt-5.4-nano-xhigh|2026-06-25:Data Analysis:category_average:gpt-5.4-nano-xhigh|2026-06-25": {
+          "model": "gpt-5.4-nano-xhigh",
+          "score": 67.64266666666667,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-5.4-nano-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 54
+        },
+        "gpt-5.4-xhigh|2026-06-25:Data Analysis:category_average:gpt-5.4-xhigh|2026-06-25": {
+          "model": "gpt-5.4-xhigh",
+          "score": 79.31333333333333,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-5.4-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 13
+        },
+        "gpt-5.5-xhigh|2026-06-25:Data Analysis:category_average:gpt-5.5-xhigh|2026-06-25": {
+          "model": "gpt-5.5-xhigh",
+          "score": 81.57566666666666,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-5.5-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 2
+        },
+        "grok-4.3|2026-06-25:Data Analysis:category_average:grok-4.3|2026-06-25": {
+          "model": "grok-4.3",
+          "score": 55.77266666666666,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:grok-4.3",
+          "variant": "2026-06-25",
+          "displayRank": 60
+        },
+        "grok-4.5|2026-06-25:Data Analysis:category_average:grok-4.5|2026-06-25": {
+          "model": "grok-4.5",
+          "score": 73.03766666666667,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:grok-4.5",
+          "variant": "2026-06-25",
+          "displayRank": 41
+        },
+        "grok-build-0.1|2026-06-25:Data Analysis:category_average:grok-build-0.1|2026-06-25": {
+          "model": "grok-build-0.1",
+          "score": 70.794,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:grok-build-0.1",
+          "variant": "2026-06-25",
+          "displayRank": 46
+        },
+        "kimi-k2.6-thinking|2026-06-25:Data Analysis:category_average:kimi-k2.6-thinking|2026-06-25": {
+          "model": "kimi-k2.6-thinking",
+          "score": 65.13433333333334,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:kimi-k2.6-thinking",
+          "variant": "2026-06-25",
+          "displayRank": 56
+        },
+        "kimi-k2.7-code|2026-06-25:Data Analysis:category_average:kimi-k2.7-code|2026-06-25": {
+          "model": "kimi-k2.7-code",
+          "score": 62.65733333333333,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:kimi-k2.7-code",
+          "variant": "2026-06-25",
+          "displayRank": 59
+        },
+        "minimax-m3|2026-06-25:Data Analysis:category_average:minimax-m3|2026-06-25": {
+          "model": "minimax-m3",
+          "score": 76.16633333333334,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:minimax-m3",
+          "variant": "2026-06-25",
+          "displayRank": 31
+        },
+        "qwen3.6-27b|2026-06-25:Data Analysis:category_average:qwen3.6-27b|2026-06-25": {
+          "model": "qwen3.6-27b",
+          "score": 70.42666666666666,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:qwen3.6-27b",
+          "variant": "2026-06-25",
+          "displayRank": 48
+        },
+        "qwen3.6-plus|2026-06-25:Data Analysis:category_average:qwen3.6-plus|2026-06-25": {
+          "model": "qwen3.6-plus",
+          "score": 69.91166666666668,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:qwen3.6-plus",
+          "variant": "2026-06-25",
+          "displayRank": 50
+        },
+        "qwen3.7-max|2026-06-25:Data Analysis:category_average:qwen3.7-max|2026-06-25": {
+          "model": "qwen3.7-max",
+          "score": 71.786,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:qwen3.7-max",
+          "variant": "2026-06-25",
+          "displayRank": 44
+        },
+        "gpt-5.6-sol-max|2026-06-25:Data Analysis:category_average:gpt-5.6-sol-max|2026-06-25": {
+          "model": "gpt-5.6-sol-max",
+          "score": 79.84066666666666,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-5.6-sol-max",
+          "variant": "2026-06-25",
+          "displayRank": 8
+        },
+        "gpt-5.6-terra-max|2026-06-25:Data Analysis:category_average:gpt-5.6-terra-max|2026-06-25": {
+          "model": "gpt-5.6-terra-max",
+          "score": 79.30666666666667,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-5.6-terra-max",
+          "variant": "2026-06-25",
+          "displayRank": 14
+        },
+        "gpt-5.6-luna-max|2026-06-25:Data Analysis:category_average:gpt-5.6-luna-max|2026-06-25": {
+          "model": "gpt-5.6-luna-max",
+          "score": 78.03333333333333,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-5.6-luna-max",
+          "variant": "2026-06-25",
+          "displayRank": 25
+        },
+        "claude-fable-5-max-effort|2026-06-25:Data Analysis:category_average:claude-fable-5-max-effort|2026-06-25": {
+          "model": "claude-fable-5-max-effort",
+          "score": 80.53766666666667,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-fable-5-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 4
+        },
+        "muse-spark-1.1-xhigh|2026-06-25:Data Analysis:category_average:muse-spark-1.1-xhigh|2026-06-25": {
+          "model": "muse-spark-1.1-xhigh",
+          "score": 72.548,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:muse-spark-1.1-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 43
+        },
+        "kimi-k3|2026-06-25:Data Analysis:category_average:kimi-k3|2026-06-25": {
+          "model": "kimi-k3",
+          "score": 78.73366666666668,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:kimi-k3",
+          "variant": "2026-06-25",
+          "displayRank": 19
+        },
+        "inkling-xhigh|2026-06-25:Data Analysis:category_average:inkling-xhigh|2026-06-25": {
+          "model": "inkling-xhigh",
+          "score": 72.778,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:inkling-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 42
+        },
+        "gemini-3.5-flash-lite-high|2026-06-25:Data Analysis:category_average:gemini-3.5-flash-lite-high|2026-06-25": {
+          "model": "gemini-3.5-flash-lite-high",
+          "score": 53.24966666666666,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:gemini-3.5-flash-lite-high",
+          "variant": "2026-06-25",
+          "displayRank": 63
+        },
+        "gemini-3.6-flash-high|2026-06-25:Data Analysis:category_average:gemini-3.6-flash-high|2026-06-25": {
+          "model": "gemini-3.6-flash-high",
+          "score": 62.99933333333333,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:gemini-3.6-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 58
+        },
+        "claude-opus-5-max-effort|2026-06-25:Data Analysis:category_average:claude-opus-5-max-effort|2026-06-25": {
+          "model": "claude-opus-5-max-effort",
+          "score": 74.55033333333334,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-opus-5-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 34
+        },
+        "claude-opus-4-8-max-effort|2026-06-25:Data Analysis:category_average:claude-opus-4-8-max-effort|2026-06-25": {
+          "model": "claude-opus-4-8-max-effort",
+          "score": 66.03333333333333,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-opus-4-8-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 55
+        },
+        "deepseek-v4-flash-0731|2026-06-25:Data Analysis:category_average:deepseek-v4-flash-0731|2026-06-25": {
+          "model": "deepseek-v4-flash-0731",
+          "score": 79.32733333333333,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:deepseek-v4-flash-0731",
+          "variant": "2026-06-25",
+          "displayRank": 12
+        },
+        "qwen3.8-max|2026-06-25:Data Analysis:category_average:qwen3.8-max|2026-06-25": {
+          "model": "qwen3.8-max",
+          "score": 78.413,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:qwen3.8-max",
+          "variant": "2026-06-25",
+          "displayRank": 21
+        },
+        "muse-spark-1.2-xhigh|2026-06-25:Data Analysis:category_average:muse-spark-1.2-xhigh|2026-06-25": {
+          "model": "muse-spark-1.2-xhigh",
+          "score": 76.45833333333333,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:muse-spark-1.2-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 29
+        },
+        "smaug-agentic|2026-06-25:Data Analysis:category_average:smaug-agentic|2026-06-25": {
+          "model": "smaug-agentic",
+          "score": 79.89833333333333,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:smaug-agentic",
+          "variant": "2026-06-25",
+          "displayRank": 7
+        },
+        "smaug-mini|2026-06-25:Data Analysis:category_average:smaug-mini|2026-06-25": {
+          "model": "smaug-mini",
+          "score": 78.813,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:smaug-mini",
+          "variant": "2026-06-25",
+          "displayRank": 18
+        },
+        "deepseek-v4-pro-0813|2026-06-25:Data Analysis:category_average:deepseek-v4-pro-0813|2026-06-25": {
+          "model": "deepseek-v4-pro-0813",
+          "score": 79.24333333333334,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:deepseek-v4-pro-0813",
+          "variant": "2026-06-25",
+          "displayRank": 16
+        },
+        "grok-4.6|2026-06-25:Data Analysis:category_average:grok-4.6|2026-06-25": {
+          "model": "grok-4.6",
+          "score": 73.857,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:grok-4.6",
+          "variant": "2026-06-25",
+          "displayRank": 38
+        },
+        "gemini-3.7-flash-high|2026-06-25:Data Analysis:category_average:gemini-3.7-flash-high|2026-06-25": {
+          "model": "gemini-3.7-flash-high",
+          "score": 67.96433333333333,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:gemini-3.7-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 53
+        },
+        "qwen3.8-27b|2026-06-25:Data Analysis:category_average:qwen3.8-27b|2026-06-25": {
+          "model": "qwen3.8-27b",
+          "score": 76.58566666666667,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:qwen3.8-27b",
+          "variant": "2026-06-25",
+          "displayRank": 28
+        },
+        "ox-alpha-max|2026-06-25:Data Analysis:category_average:ox-alpha-max|2026-06-25": {
+          "model": "ox-alpha-max",
+          "score": 75.765,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:ox-alpha-max",
+          "variant": "2026-06-25",
+          "displayRank": 32
+        },
+        "deepseek-v4-flash-vision-exp|2026-06-25:Data Analysis:category_average:deepseek-v4-flash-vision-exp|2026-06-25": {
+          "model": "deepseek-v4-flash-vision-exp",
+          "score": 79.47666666666667,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:deepseek-v4-flash-vision-exp",
+          "variant": "2026-06-25",
+          "displayRank": 11
+        },
+        "glm-5.3|2026-06-25:Data Analysis:category_average:glm-5.3|2026-06-25": {
+          "model": "glm-5.3",
+          "score": 70.24433333333333,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:glm-5.3",
+          "variant": "2026-06-25",
+          "displayRank": 49
+        },
+        "glm-5.3-flash|2026-06-25:Data Analysis:category_average:glm-5.3-flash|2026-06-25": {
+          "model": "glm-5.3-flash",
+          "score": 76.401,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:glm-5.3-flash",
+          "variant": "2026-06-25",
+          "displayRank": 30
+        },
+        "qwen3.8-flash-next|2026-06-25:Data Analysis:category_average:qwen3.8-flash-next|2026-06-25": {
+          "model": "qwen3.8-flash-next",
+          "score": 74.24,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:qwen3.8-flash-next",
+          "variant": "2026-06-25",
+          "displayRank": 37
+        },
+        "nemotron-3-ultra-550b-a55b|2026-06-25:Data Analysis:category_average:nemotron-3-ultra-550b-a55b|2026-06-25": {
+          "model": "nemotron-3-ultra-550b-a55b",
+          "score": 54.45666666666667,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:nemotron-3-ultra-550b-a55b",
+          "variant": "2026-06-25",
+          "displayRank": 61
+        },
+        "claude-fable-5-1-max-effort|2026-06-25:Data Analysis:category_average:claude-fable-5-1-max-effort|2026-06-25": {
+          "model": "claude-fable-5-1-max-effort",
+          "score": 80.27566666666667,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-fable-5-1-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 6
+        },
+        "gemini-3.8-flash-high|2026-06-25:Data Analysis:category_average:gemini-3.8-flash-high|2026-06-25": {
+          "model": "gemini-3.8-flash-high",
+          "score": 54.00566666666666,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:gemini-3.8-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 62
+        },
+        "muse-spark-1.3-xhigh|2026-06-25:Data Analysis:category_average:muse-spark-1.3-xhigh|2026-06-25": {
+          "model": "muse-spark-1.3-xhigh",
+          "score": 79.56533333333333,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:muse-spark-1.3-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 10
+        },
+        "gpt-6-astra-max|2026-06-25:Data Analysis:category_average:gpt-6-astra-max|2026-06-25": {
+          "model": "gpt-6-astra-max",
+          "score": 82.97333333333334,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-6-astra-max",
+          "variant": "2026-06-25",
+          "displayRank": 1
+        },
+        "smaug-flash|2026-06-25:Data Analysis:category_average:smaug-flash|2026-06-25": {
+          "model": "smaug-flash",
+          "score": 79.12166666666667,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:smaug-flash",
+          "variant": "2026-06-25",
+          "displayRank": 17
+        },
+        "deepseek-v4.1-flash-max|2026-06-25:Data Analysis:category_average:deepseek-v4.1-flash-max|2026-06-25": {
+          "model": "deepseek-v4.1-flash-max",
+          "score": 79.25333333333333,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:deepseek-v4.1-flash-max",
+          "variant": "2026-06-25",
+          "displayRank": 15
+        },
+        "union-alpha|2026-06-25:Data Analysis:category_average:union-alpha|2026-06-25": {
+          "model": "union-alpha",
+          "score": 74.60133333333333,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:union-alpha",
+          "variant": "2026-06-25",
+          "displayRank": 33
+        },
+        "grok-4.7-xhigh|2026-06-25:Data Analysis:category_average:grok-4.7-xhigh|2026-06-25": {
+          "model": "grok-4.7-xhigh",
+          "score": 76.88333333333334,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:grok-4.7-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 27
+        },
+        "claude-opus-5-5-max-effort|2026-06-25:Data Analysis:category_average:claude-opus-5-5-max-effort|2026-06-25": {
+          "model": "claude-opus-5-5-max-effort",
+          "score": 80.307,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-opus-5-5-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 5
+        },
+        "claude-opus-5-5-xhigh-effort|2026-06-25:Data Analysis:category_average:claude-opus-5-5-xhigh-effort|2026-06-25": {
+          "model": "claude-opus-5-5-xhigh-effort",
+          "score": 79.803,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-opus-5-5-xhigh-effort",
+          "variant": "2026-06-25",
+          "displayRank": 9
+        },
+        "gpt-6-sol-max|2026-06-25:Data Analysis:category_average:gpt-6-sol-max|2026-06-25": {
+          "model": "gpt-6-sol-max",
+          "score": 81.18933333333334,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-6-sol-max",
+          "variant": "2026-06-25",
+          "displayRank": 3
+        },
+        "gpt-6-luna-max|2026-06-25:Data Analysis:category_average:gpt-6-luna-max|2026-06-25": {
+          "model": "gpt-6-luna-max",
+          "score": 73.36966666666667,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-6-luna-max",
+          "variant": "2026-06-25",
+          "displayRank": 40
+        }
+      }
+    },
     "livebench_overall": {
       "runtimeId": "livebench_overall",
       "familyId": "livebench",
@@ -532,6 +1064,538 @@
           "comparisonKey": "2026-06-25:overall:global_average:gpt-6-luna-max",
           "variant": "2026-06-25",
           "displayRank": 47
+        }
+      }
+    },
+    "livebench_math": {
+      "runtimeId": "livebench_math",
+      "familyId": "livebench",
+      "title": "LiveBench Math",
+      "release": "2026-06-25",
+      "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
+      "source": {
+        "benchmark_id": "livebench_math",
+        "status": "enabled",
+        "source_name": "LiveBench Mathematics dated official leaderboard CSV",
+        "organization": "LiveBench",
+        "source_type": "official_site_dated_csv",
+        "official_url": "https://livebench.ai/",
+        "endpoint": "https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main",
+        "raw_base_url": "https://livebench.ai",
+        "fallback_release_id": "2026-06-25",
+        "fetch_method": "GET",
+        "update_frequency": "release_based",
+        "requires_auth": false,
+        "category_selector": "math",
+        "evidence_url": "https://livebench.ai/",
+        "release_tracking": "dated_table_and_categories_files",
+        "hash_required": true,
+        "notes": "User label Math maps to official taxonomy Mathematics."
+      },
+      "records": {
+        "claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25:Mathematics:category_average:claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25": {
+          "model": "claude-opus-4-5-20251101-thinking-64k-high-effort",
+          "score": 90.38900000000001,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-4-5-20251101-thinking-64k-high-effort",
+          "variant": "2026-06-25",
+          "displayRank": 30
+        },
+        "claude-opus-4-6-thinking-auto-high-effort|2026-06-25:Mathematics:category_average:claude-opus-4-6-thinking-auto-high-effort|2026-06-25": {
+          "model": "claude-opus-4-6-thinking-auto-high-effort",
+          "score": 89.31700000000001,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-4-6-thinking-auto-high-effort",
+          "variant": "2026-06-25",
+          "displayRank": 34
+        },
+        "claude-opus-4-7-xhigh-effort|2026-06-25:Mathematics:category_average:claude-opus-4-7-xhigh-effort|2026-06-25": {
+          "model": "claude-opus-4-7-xhigh-effort",
+          "score": 92.85374999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-4-7-xhigh-effort",
+          "variant": "2026-06-25",
+          "displayRank": 21
+        },
+        "claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25:Mathematics:category_average:claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25": {
+          "model": "claude-sonnet-4-6-thinking-auto-medium-effort",
+          "score": 86.994,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-sonnet-4-6-thinking-auto-medium-effort",
+          "variant": "2026-06-25",
+          "displayRank": 44
+        },
+        "claude-sonnet-5-xhigh-effort|2026-06-25:Mathematics:category_average:claude-sonnet-5-xhigh-effort|2026-06-25": {
+          "model": "claude-sonnet-5-xhigh-effort",
+          "score": 92.94225,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-sonnet-5-xhigh-effort",
+          "variant": "2026-06-25",
+          "displayRank": 20
+        },
+        "deepseek-v4-flash|2026-06-25:Mathematics:category_average:deepseek-v4-flash|2026-06-25": {
+          "model": "deepseek-v4-flash",
+          "score": 79.64750000000001,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-flash",
+          "variant": "2026-06-25",
+          "displayRank": 57
+        },
+        "deepseek-v4-pro|2026-06-25:Mathematics:category_average:deepseek-v4-pro|2026-06-25": {
+          "model": "deepseek-v4-pro",
+          "score": 90.6755,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-pro",
+          "variant": "2026-06-25",
+          "displayRank": 29
+        },
+        "gemini-3.1-pro-preview-high|2026-06-25:Mathematics:category_average:gemini-3.1-pro-preview-high|2026-06-25": {
+          "model": "gemini-3.1-pro-preview-high",
+          "score": 91.04499999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.1-pro-preview-high",
+          "variant": "2026-06-25",
+          "displayRank": 26
+        },
+        "gemini-3.5-flash-high|2026-06-25:Mathematics:category_average:gemini-3.5-flash-high|2026-06-25": {
+          "model": "gemini-3.5-flash-high",
+          "score": 88.24375,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.5-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 39
+        },
+        "glm-5.2|2026-06-25:Mathematics:category_average:glm-5.2|2026-06-25": {
+          "model": "glm-5.2",
+          "score": 89.78125,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:glm-5.2",
+          "variant": "2026-06-25",
+          "displayRank": 32
+        },
+        "gpt-5.2-2025-12-11-high|2026-06-25:Mathematics:category_average:gpt-5.2-2025-12-11-high|2026-06-25": {
+          "model": "gpt-5.2-2025-12-11-high",
+          "score": 93.166,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.2-2025-12-11-high",
+          "variant": "2026-06-25",
+          "displayRank": 19
+        },
+        "gpt-5.2-codex|2026-06-25:Mathematics:category_average:gpt-5.2-codex|2026-06-25": {
+          "model": "gpt-5.2-codex",
+          "score": 88.77375,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.2-codex",
+          "variant": "2026-06-25",
+          "displayRank": 36
+        },
+        "gpt-5.4-mini-xhigh|2026-06-25:Mathematics:category_average:gpt-5.4-mini-xhigh|2026-06-25": {
+          "model": "gpt-5.4-mini-xhigh",
+          "score": 78.462,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.4-mini-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 59
+        },
+        "gpt-5.4-nano-xhigh|2026-06-25:Mathematics:category_average:gpt-5.4-nano-xhigh|2026-06-25": {
+          "model": "gpt-5.4-nano-xhigh",
+          "score": 90.977,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.4-nano-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 27
+        },
+        "gpt-5.4-xhigh|2026-06-25:Mathematics:category_average:gpt-5.4-xhigh|2026-06-25": {
+          "model": "gpt-5.4-xhigh",
+          "score": 94.148,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.4-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 16
+        },
+        "gpt-5.5-xhigh|2026-06-25:Mathematics:category_average:gpt-5.5-xhigh|2026-06-25": {
+          "model": "gpt-5.5-xhigh",
+          "score": 95.85725,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.5-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 9
+        },
+        "grok-4.3|2026-06-25:Mathematics:category_average:grok-4.3|2026-06-25": {
+          "model": "grok-4.3",
+          "score": 84.339,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-4.3",
+          "variant": "2026-06-25",
+          "displayRank": 51
+        },
+        "grok-4.5|2026-06-25:Mathematics:category_average:grok-4.5|2026-06-25": {
+          "model": "grok-4.5",
+          "score": 90.8245,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-4.5",
+          "variant": "2026-06-25",
+          "displayRank": 28
+        },
+        "grok-build-0.1|2026-06-25:Mathematics:category_average:grok-build-0.1|2026-06-25": {
+          "model": "grok-build-0.1",
+          "score": 78.42875000000001,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-build-0.1",
+          "variant": "2026-06-25",
+          "displayRank": 60
+        },
+        "kimi-k2.6-thinking|2026-06-25:Mathematics:category_average:kimi-k2.6-thinking|2026-06-25": {
+          "model": "kimi-k2.6-thinking",
+          "score": 84.27625,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:kimi-k2.6-thinking",
+          "variant": "2026-06-25",
+          "displayRank": 52
+        },
+        "kimi-k2.7-code|2026-06-25:Mathematics:category_average:kimi-k2.7-code|2026-06-25": {
+          "model": "kimi-k2.7-code",
+          "score": 79.60425000000001,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:kimi-k2.7-code",
+          "variant": "2026-06-25",
+          "displayRank": 58
+        },
+        "minimax-m3|2026-06-25:Mathematics:category_average:minimax-m3|2026-06-25": {
+          "model": "minimax-m3",
+          "score": 76.94749999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:minimax-m3",
+          "variant": "2026-06-25",
+          "displayRank": 62
+        },
+        "qwen3.6-27b|2026-06-25:Mathematics:category_average:qwen3.6-27b|2026-06-25": {
+          "model": "qwen3.6-27b",
+          "score": 79.8685,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.6-27b",
+          "variant": "2026-06-25",
+          "displayRank": 56
+        },
+        "qwen3.6-plus|2026-06-25:Mathematics:category_average:qwen3.6-plus|2026-06-25": {
+          "model": "qwen3.6-plus",
+          "score": 83.72475,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.6-plus",
+          "variant": "2026-06-25",
+          "displayRank": 54
+        },
+        "qwen3.7-max|2026-06-25:Mathematics:category_average:qwen3.7-max|2026-06-25": {
+          "model": "qwen3.7-max",
+          "score": 85.24825,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.7-max",
+          "variant": "2026-06-25",
+          "displayRank": 49
+        },
+        "gpt-5.6-sol-max|2026-06-25:Mathematics:category_average:gpt-5.6-sol-max|2026-06-25": {
+          "model": "gpt-5.6-sol-max",
+          "score": 96.19775,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.6-sol-max",
+          "variant": "2026-06-25",
+          "displayRank": 6
+        },
+        "gpt-5.6-terra-max|2026-06-25:Mathematics:category_average:gpt-5.6-terra-max|2026-06-25": {
+          "model": "gpt-5.6-terra-max",
+          "score": 94.90825000000001,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.6-terra-max",
+          "variant": "2026-06-25",
+          "displayRank": 14
+        },
+        "gpt-5.6-luna-max|2026-06-25:Mathematics:category_average:gpt-5.6-luna-max|2026-06-25": {
+          "model": "gpt-5.6-luna-max",
+          "score": 87.20075,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.6-luna-max",
+          "variant": "2026-06-25",
+          "displayRank": 42
+        },
+        "claude-fable-5-max-effort|2026-06-25:Mathematics:category_average:claude-fable-5-max-effort|2026-06-25": {
+          "model": "claude-fable-5-max-effort",
+          "score": 95.98575,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-fable-5-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 7
+        },
+        "muse-spark-1.1-xhigh|2026-06-25:Mathematics:category_average:muse-spark-1.1-xhigh|2026-06-25": {
+          "model": "muse-spark-1.1-xhigh",
+          "score": 87.14474999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:muse-spark-1.1-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 43
+        },
+        "kimi-k3|2026-06-25:Mathematics:category_average:kimi-k3|2026-06-25": {
+          "model": "kimi-k3",
+          "score": 84.43675,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:kimi-k3",
+          "variant": "2026-06-25",
+          "displayRank": 50
+        },
+        "inkling-xhigh|2026-06-25:Mathematics:category_average:inkling-xhigh|2026-06-25": {
+          "model": "inkling-xhigh",
+          "score": 88.36474999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:inkling-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 38
+        },
+        "gemini-3.5-flash-lite-high|2026-06-25:Mathematics:category_average:gemini-3.5-flash-lite-high|2026-06-25": {
+          "model": "gemini-3.5-flash-lite-high",
+          "score": 73.73949999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.5-flash-lite-high",
+          "variant": "2026-06-25",
+          "displayRank": 63
+        },
+        "gemini-3.6-flash-high|2026-06-25:Mathematics:category_average:gemini-3.6-flash-high|2026-06-25": {
+          "model": "gemini-3.6-flash-high",
+          "score": 86.4025,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.6-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 46
+        },
+        "claude-opus-5-max-effort|2026-06-25:Mathematics:category_average:claude-opus-5-max-effort|2026-06-25": {
+          "model": "claude-opus-5-max-effort",
+          "score": 95.731,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-5-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 10
+        },
+        "claude-opus-4-8-max-effort|2026-06-25:Mathematics:category_average:claude-opus-4-8-max-effort|2026-06-25": {
+          "model": "claude-opus-4-8-max-effort",
+          "score": 94.31649999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-4-8-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 15
+        },
+        "deepseek-v4-flash-0731|2026-06-25:Mathematics:category_average:deepseek-v4-flash-0731|2026-06-25": {
+          "model": "deepseek-v4-flash-0731",
+          "score": 86.78975,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-flash-0731",
+          "variant": "2026-06-25",
+          "displayRank": 45
+        },
+        "qwen3.8-max|2026-06-25:Mathematics:category_average:qwen3.8-max|2026-06-25": {
+          "model": "qwen3.8-max",
+          "score": 91.31225,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.8-max",
+          "variant": "2026-06-25",
+          "displayRank": 24
+        },
+        "muse-spark-1.2-xhigh|2026-06-25:Mathematics:category_average:muse-spark-1.2-xhigh|2026-06-25": {
+          "model": "muse-spark-1.2-xhigh",
+          "score": 91.20349999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:muse-spark-1.2-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 25
+        },
+        "smaug-agentic|2026-06-25:Mathematics:category_average:smaug-agentic|2026-06-25": {
+          "model": "smaug-agentic",
+          "score": 83.9195,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:smaug-agentic",
+          "variant": "2026-06-25",
+          "displayRank": 53
+        },
+        "smaug-mini|2026-06-25:Mathematics:category_average:smaug-mini|2026-06-25": {
+          "model": "smaug-mini",
+          "score": 89.74275,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:smaug-mini",
+          "variant": "2026-06-25",
+          "displayRank": 33
+        },
+        "deepseek-v4-pro-0813|2026-06-25:Mathematics:category_average:deepseek-v4-pro-0813|2026-06-25": {
+          "model": "deepseek-v4-pro-0813",
+          "score": 95.08624999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-pro-0813",
+          "variant": "2026-06-25",
+          "displayRank": 13
+        },
+        "grok-4.6|2026-06-25:Mathematics:category_average:grok-4.6|2026-06-25": {
+          "model": "grok-4.6",
+          "score": 92.56799999999998,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-4.6",
+          "variant": "2026-06-25",
+          "displayRank": 22
+        },
+        "gemini-3.7-flash-high|2026-06-25:Mathematics:category_average:gemini-3.7-flash-high|2026-06-25": {
+          "model": "gemini-3.7-flash-high",
+          "score": 93.46799999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.7-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 17
+        },
+        "qwen3.8-27b|2026-06-25:Mathematics:category_average:qwen3.8-27b|2026-06-25": {
+          "model": "qwen3.8-27b",
+          "score": 86.21275,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.8-27b",
+          "variant": "2026-06-25",
+          "displayRank": 47
+        },
+        "ox-alpha-max|2026-06-25:Mathematics:category_average:ox-alpha-max|2026-06-25": {
+          "model": "ox-alpha-max",
+          "score": 77.53275,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:ox-alpha-max",
+          "variant": "2026-06-25",
+          "displayRank": 61
+        },
+        "deepseek-v4-flash-vision-exp|2026-06-25:Mathematics:category_average:deepseek-v4-flash-vision-exp|2026-06-25": {
+          "model": "deepseek-v4-flash-vision-exp",
+          "score": 87.80675,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-flash-vision-exp",
+          "variant": "2026-06-25",
+          "displayRank": 41
+        },
+        "glm-5.3|2026-06-25:Mathematics:category_average:glm-5.3|2026-06-25": {
+          "model": "glm-5.3",
+          "score": 87.898,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:glm-5.3",
+          "variant": "2026-06-25",
+          "displayRank": 40
+        },
+        "glm-5.3-flash|2026-06-25:Mathematics:category_average:glm-5.3-flash|2026-06-25": {
+          "model": "glm-5.3-flash",
+          "score": 81.2445,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:glm-5.3-flash",
+          "variant": "2026-06-25",
+          "displayRank": 55
+        },
+        "qwen3.8-flash-next|2026-06-25:Mathematics:category_average:qwen3.8-flash-next|2026-06-25": {
+          "model": "qwen3.8-flash-next",
+          "score": 85.821,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.8-flash-next",
+          "variant": "2026-06-25",
+          "displayRank": 48
+        },
+        "nemotron-3-ultra-550b-a55b|2026-06-25:Mathematics:category_average:nemotron-3-ultra-550b-a55b|2026-06-25": {
+          "model": "nemotron-3-ultra-550b-a55b",
+          "score": 88.66324999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:nemotron-3-ultra-550b-a55b",
+          "variant": "2026-06-25",
+          "displayRank": 37
+        },
+        "claude-fable-5-1-max-effort|2026-06-25:Mathematics:category_average:claude-fable-5-1-max-effort|2026-06-25": {
+          "model": "claude-fable-5-1-max-effort",
+          "score": 97.00675,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-fable-5-1-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 2
+        },
+        "gemini-3.8-flash-high|2026-06-25:Mathematics:category_average:gemini-3.8-flash-high|2026-06-25": {
+          "model": "gemini-3.8-flash-high",
+          "score": 91.56425,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.8-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 23
+        },
+        "muse-spark-1.3-xhigh|2026-06-25:Mathematics:category_average:muse-spark-1.3-xhigh|2026-06-25": {
+          "model": "muse-spark-1.3-xhigh",
+          "score": 95.94999999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:muse-spark-1.3-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 8
+        },
+        "gpt-6-astra-max|2026-06-25:Mathematics:category_average:gpt-6-astra-max|2026-06-25": {
+          "model": "gpt-6-astra-max",
+          "score": 96.80624999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-6-astra-max",
+          "variant": "2026-06-25",
+          "displayRank": 3
+        },
+        "smaug-flash|2026-06-25:Mathematics:category_average:smaug-flash|2026-06-25": {
+          "model": "smaug-flash",
+          "score": 90.06424999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:smaug-flash",
+          "variant": "2026-06-25",
+          "displayRank": 31
+        },
+        "deepseek-v4.1-flash-max|2026-06-25:Mathematics:category_average:deepseek-v4.1-flash-max|2026-06-25": {
+          "model": "deepseek-v4.1-flash-max",
+          "score": 93.28975,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4.1-flash-max",
+          "variant": "2026-06-25",
+          "displayRank": 18
+        },
+        "union-alpha|2026-06-25:Mathematics:category_average:union-alpha|2026-06-25": {
+          "model": "union-alpha",
+          "score": 95.2935,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:union-alpha",
+          "variant": "2026-06-25",
+          "displayRank": 12
+        },
+        "grok-4.7-xhigh|2026-06-25:Mathematics:category_average:grok-4.7-xhigh|2026-06-25": {
+          "model": "grok-4.7-xhigh",
+          "score": 95.678,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-4.7-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 11
+        },
+        "claude-opus-5-5-max-effort|2026-06-25:Mathematics:category_average:claude-opus-5-5-max-effort|2026-06-25": {
+          "model": "claude-opus-5-5-max-effort",
+          "score": 97.07749999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-5-5-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 1
+        },
+        "claude-opus-5-5-xhigh-effort|2026-06-25:Mathematics:category_average:claude-opus-5-5-xhigh-effort|2026-06-25": {
+          "model": "claude-opus-5-5-xhigh-effort",
+          "score": 96.803,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-5-5-xhigh-effort",
+          "variant": "2026-06-25",
+          "displayRank": 4
+        },
+        "gpt-6-sol-max|2026-06-25:Mathematics:category_average:gpt-6-sol-max|2026-06-25": {
+          "model": "gpt-6-sol-max",
+          "score": 96.356,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-6-sol-max",
+          "variant": "2026-06-25",
+          "displayRank": 5
+        },
+        "gpt-6-luna-max|2026-06-25:Mathematics:category_average:gpt-6-luna-max|2026-06-25": {
+          "model": "gpt-6-luna-max",
+          "score": 89.1235,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-6-luna-max",
+          "variant": "2026-06-25",
+          "displayRank": 35
         }
       }
     },
@@ -1067,538 +2131,6 @@
         }
       }
     },
-    "livebench_data_analysis": {
-      "runtimeId": "livebench_data_analysis",
-      "familyId": "livebench",
-      "title": "LiveBench Data Analysis",
-      "release": "2026-06-25",
-      "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "source": {
-        "benchmark_id": "livebench_data_analysis",
-        "status": "enabled",
-        "source_name": "LiveBench Data Analysis dated official leaderboard CSV",
-        "organization": "LiveBench",
-        "source_type": "official_site_dated_csv",
-        "official_url": "https://livebench.ai/",
-        "endpoint": "https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main",
-        "raw_base_url": "https://livebench.ai",
-        "fallback_release_id": "2026-06-25",
-        "fetch_method": "GET",
-        "update_frequency": "release_based",
-        "requires_auth": false,
-        "category_selector": "data_analysis",
-        "evidence_url": "https://livebench.ai/",
-        "release_tracking": "dated_table_and_categories_files",
-        "hash_required": true,
-        "notes": "Official category Data Analysis."
-      },
-      "records": {
-        "claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25:Data Analysis:category_average:claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25": {
-          "model": "claude-opus-4-5-20251101-thinking-64k-high-effort",
-          "score": 74.44166666666666,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-opus-4-5-20251101-thinking-64k-high-effort",
-          "variant": "2026-06-25",
-          "displayRank": 36
-        },
-        "claude-opus-4-6-thinking-auto-high-effort|2026-06-25:Data Analysis:category_average:claude-opus-4-6-thinking-auto-high-effort|2026-06-25": {
-          "model": "claude-opus-4-6-thinking-auto-high-effort",
-          "score": 69.893,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-opus-4-6-thinking-auto-high-effort",
-          "variant": "2026-06-25",
-          "displayRank": 51
-        },
-        "claude-opus-4-7-xhigh-effort|2026-06-25:Data Analysis:category_average:claude-opus-4-7-xhigh-effort|2026-06-25": {
-          "model": "claude-opus-4-7-xhigh-effort",
-          "score": 78.26366666666667,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-opus-4-7-xhigh-effort",
-          "variant": "2026-06-25",
-          "displayRank": 22
-        },
-        "claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25:Data Analysis:category_average:claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25": {
-          "model": "claude-sonnet-4-6-thinking-auto-medium-effort",
-          "score": 77.946,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-sonnet-4-6-thinking-auto-medium-effort",
-          "variant": "2026-06-25",
-          "displayRank": 26
-        },
-        "claude-sonnet-5-xhigh-effort|2026-06-25:Data Analysis:category_average:claude-sonnet-5-xhigh-effort|2026-06-25": {
-          "model": "claude-sonnet-5-xhigh-effort",
-          "score": 71.74066666666666,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-sonnet-5-xhigh-effort",
-          "variant": "2026-06-25",
-          "displayRank": 45
-        },
-        "deepseek-v4-flash|2026-06-25:Data Analysis:category_average:deepseek-v4-flash|2026-06-25": {
-          "model": "deepseek-v4-flash",
-          "score": 68.02300000000001,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:deepseek-v4-flash",
-          "variant": "2026-06-25",
-          "displayRank": 52
-        },
-        "deepseek-v4-pro|2026-06-25:Data Analysis:category_average:deepseek-v4-pro|2026-06-25": {
-          "model": "deepseek-v4-pro",
-          "score": 74.53766666666667,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:deepseek-v4-pro",
-          "variant": "2026-06-25",
-          "displayRank": 35
-        },
-        "gemini-3.1-pro-preview-high|2026-06-25:Data Analysis:category_average:gemini-3.1-pro-preview-high|2026-06-25": {
-          "model": "gemini-3.1-pro-preview-high",
-          "score": 78.54133333333334,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:gemini-3.1-pro-preview-high",
-          "variant": "2026-06-25",
-          "displayRank": 20
-        },
-        "gemini-3.5-flash-high|2026-06-25:Data Analysis:category_average:gemini-3.5-flash-high|2026-06-25": {
-          "model": "gemini-3.5-flash-high",
-          "score": 64.85733333333333,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:gemini-3.5-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 57
-        },
-        "glm-5.2|2026-06-25:Data Analysis:category_average:glm-5.2|2026-06-25": {
-          "model": "glm-5.2",
-          "score": 73.73966666666666,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:glm-5.2",
-          "variant": "2026-06-25",
-          "displayRank": 39
-        },
-        "gpt-5.2-2025-12-11-high|2026-06-25:Data Analysis:category_average:gpt-5.2-2025-12-11-high|2026-06-25": {
-          "model": "gpt-5.2-2025-12-11-high",
-          "score": 78.16333333333334,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-5.2-2025-12-11-high",
-          "variant": "2026-06-25",
-          "displayRank": 24
-        },
-        "gpt-5.2-codex|2026-06-25:Data Analysis:category_average:gpt-5.2-codex|2026-06-25": {
-          "model": "gpt-5.2-codex",
-          "score": 78.204,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-5.2-codex",
-          "variant": "2026-06-25",
-          "displayRank": 23
-        },
-        "gpt-5.4-mini-xhigh|2026-06-25:Data Analysis:category_average:gpt-5.4-mini-xhigh|2026-06-25": {
-          "model": "gpt-5.4-mini-xhigh",
-          "score": 70.78566666666667,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-5.4-mini-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 47
-        },
-        "gpt-5.4-nano-xhigh|2026-06-25:Data Analysis:category_average:gpt-5.4-nano-xhigh|2026-06-25": {
-          "model": "gpt-5.4-nano-xhigh",
-          "score": 67.64266666666667,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-5.4-nano-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 54
-        },
-        "gpt-5.4-xhigh|2026-06-25:Data Analysis:category_average:gpt-5.4-xhigh|2026-06-25": {
-          "model": "gpt-5.4-xhigh",
-          "score": 79.31333333333333,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-5.4-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 13
-        },
-        "gpt-5.5-xhigh|2026-06-25:Data Analysis:category_average:gpt-5.5-xhigh|2026-06-25": {
-          "model": "gpt-5.5-xhigh",
-          "score": 81.57566666666666,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-5.5-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 2
-        },
-        "grok-4.3|2026-06-25:Data Analysis:category_average:grok-4.3|2026-06-25": {
-          "model": "grok-4.3",
-          "score": 55.77266666666666,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:grok-4.3",
-          "variant": "2026-06-25",
-          "displayRank": 60
-        },
-        "grok-4.5|2026-06-25:Data Analysis:category_average:grok-4.5|2026-06-25": {
-          "model": "grok-4.5",
-          "score": 73.03766666666667,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:grok-4.5",
-          "variant": "2026-06-25",
-          "displayRank": 41
-        },
-        "grok-build-0.1|2026-06-25:Data Analysis:category_average:grok-build-0.1|2026-06-25": {
-          "model": "grok-build-0.1",
-          "score": 70.794,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:grok-build-0.1",
-          "variant": "2026-06-25",
-          "displayRank": 46
-        },
-        "kimi-k2.6-thinking|2026-06-25:Data Analysis:category_average:kimi-k2.6-thinking|2026-06-25": {
-          "model": "kimi-k2.6-thinking",
-          "score": 65.13433333333334,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:kimi-k2.6-thinking",
-          "variant": "2026-06-25",
-          "displayRank": 56
-        },
-        "kimi-k2.7-code|2026-06-25:Data Analysis:category_average:kimi-k2.7-code|2026-06-25": {
-          "model": "kimi-k2.7-code",
-          "score": 62.65733333333333,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:kimi-k2.7-code",
-          "variant": "2026-06-25",
-          "displayRank": 59
-        },
-        "minimax-m3|2026-06-25:Data Analysis:category_average:minimax-m3|2026-06-25": {
-          "model": "minimax-m3",
-          "score": 76.16633333333334,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:minimax-m3",
-          "variant": "2026-06-25",
-          "displayRank": 31
-        },
-        "qwen3.6-27b|2026-06-25:Data Analysis:category_average:qwen3.6-27b|2026-06-25": {
-          "model": "qwen3.6-27b",
-          "score": 70.42666666666666,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:qwen3.6-27b",
-          "variant": "2026-06-25",
-          "displayRank": 48
-        },
-        "qwen3.6-plus|2026-06-25:Data Analysis:category_average:qwen3.6-plus|2026-06-25": {
-          "model": "qwen3.6-plus",
-          "score": 69.91166666666668,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:qwen3.6-plus",
-          "variant": "2026-06-25",
-          "displayRank": 50
-        },
-        "qwen3.7-max|2026-06-25:Data Analysis:category_average:qwen3.7-max|2026-06-25": {
-          "model": "qwen3.7-max",
-          "score": 71.786,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:qwen3.7-max",
-          "variant": "2026-06-25",
-          "displayRank": 44
-        },
-        "gpt-5.6-sol-max|2026-06-25:Data Analysis:category_average:gpt-5.6-sol-max|2026-06-25": {
-          "model": "gpt-5.6-sol-max",
-          "score": 79.84066666666666,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-5.6-sol-max",
-          "variant": "2026-06-25",
-          "displayRank": 8
-        },
-        "gpt-5.6-terra-max|2026-06-25:Data Analysis:category_average:gpt-5.6-terra-max|2026-06-25": {
-          "model": "gpt-5.6-terra-max",
-          "score": 79.30666666666667,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-5.6-terra-max",
-          "variant": "2026-06-25",
-          "displayRank": 14
-        },
-        "gpt-5.6-luna-max|2026-06-25:Data Analysis:category_average:gpt-5.6-luna-max|2026-06-25": {
-          "model": "gpt-5.6-luna-max",
-          "score": 78.03333333333333,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-5.6-luna-max",
-          "variant": "2026-06-25",
-          "displayRank": 25
-        },
-        "claude-fable-5-max-effort|2026-06-25:Data Analysis:category_average:claude-fable-5-max-effort|2026-06-25": {
-          "model": "claude-fable-5-max-effort",
-          "score": 80.53766666666667,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-fable-5-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 4
-        },
-        "muse-spark-1.1-xhigh|2026-06-25:Data Analysis:category_average:muse-spark-1.1-xhigh|2026-06-25": {
-          "model": "muse-spark-1.1-xhigh",
-          "score": 72.548,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:muse-spark-1.1-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 43
-        },
-        "kimi-k3|2026-06-25:Data Analysis:category_average:kimi-k3|2026-06-25": {
-          "model": "kimi-k3",
-          "score": 78.73366666666668,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:kimi-k3",
-          "variant": "2026-06-25",
-          "displayRank": 19
-        },
-        "inkling-xhigh|2026-06-25:Data Analysis:category_average:inkling-xhigh|2026-06-25": {
-          "model": "inkling-xhigh",
-          "score": 72.778,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:inkling-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 42
-        },
-        "gemini-3.5-flash-lite-high|2026-06-25:Data Analysis:category_average:gemini-3.5-flash-lite-high|2026-06-25": {
-          "model": "gemini-3.5-flash-lite-high",
-          "score": 53.24966666666666,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:gemini-3.5-flash-lite-high",
-          "variant": "2026-06-25",
-          "displayRank": 63
-        },
-        "gemini-3.6-flash-high|2026-06-25:Data Analysis:category_average:gemini-3.6-flash-high|2026-06-25": {
-          "model": "gemini-3.6-flash-high",
-          "score": 62.99933333333333,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:gemini-3.6-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 58
-        },
-        "claude-opus-5-max-effort|2026-06-25:Data Analysis:category_average:claude-opus-5-max-effort|2026-06-25": {
-          "model": "claude-opus-5-max-effort",
-          "score": 74.55033333333334,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-opus-5-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 34
-        },
-        "claude-opus-4-8-max-effort|2026-06-25:Data Analysis:category_average:claude-opus-4-8-max-effort|2026-06-25": {
-          "model": "claude-opus-4-8-max-effort",
-          "score": 66.03333333333333,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-opus-4-8-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 55
-        },
-        "deepseek-v4-flash-0731|2026-06-25:Data Analysis:category_average:deepseek-v4-flash-0731|2026-06-25": {
-          "model": "deepseek-v4-flash-0731",
-          "score": 79.32733333333333,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:deepseek-v4-flash-0731",
-          "variant": "2026-06-25",
-          "displayRank": 12
-        },
-        "qwen3.8-max|2026-06-25:Data Analysis:category_average:qwen3.8-max|2026-06-25": {
-          "model": "qwen3.8-max",
-          "score": 78.413,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:qwen3.8-max",
-          "variant": "2026-06-25",
-          "displayRank": 21
-        },
-        "muse-spark-1.2-xhigh|2026-06-25:Data Analysis:category_average:muse-spark-1.2-xhigh|2026-06-25": {
-          "model": "muse-spark-1.2-xhigh",
-          "score": 76.45833333333333,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:muse-spark-1.2-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 29
-        },
-        "smaug-agentic|2026-06-25:Data Analysis:category_average:smaug-agentic|2026-06-25": {
-          "model": "smaug-agentic",
-          "score": 79.89833333333333,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:smaug-agentic",
-          "variant": "2026-06-25",
-          "displayRank": 7
-        },
-        "smaug-mini|2026-06-25:Data Analysis:category_average:smaug-mini|2026-06-25": {
-          "model": "smaug-mini",
-          "score": 78.813,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:smaug-mini",
-          "variant": "2026-06-25",
-          "displayRank": 18
-        },
-        "deepseek-v4-pro-0813|2026-06-25:Data Analysis:category_average:deepseek-v4-pro-0813|2026-06-25": {
-          "model": "deepseek-v4-pro-0813",
-          "score": 79.24333333333334,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:deepseek-v4-pro-0813",
-          "variant": "2026-06-25",
-          "displayRank": 16
-        },
-        "grok-4.6|2026-06-25:Data Analysis:category_average:grok-4.6|2026-06-25": {
-          "model": "grok-4.6",
-          "score": 73.857,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:grok-4.6",
-          "variant": "2026-06-25",
-          "displayRank": 38
-        },
-        "gemini-3.7-flash-high|2026-06-25:Data Analysis:category_average:gemini-3.7-flash-high|2026-06-25": {
-          "model": "gemini-3.7-flash-high",
-          "score": 67.96433333333333,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:gemini-3.7-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 53
-        },
-        "qwen3.8-27b|2026-06-25:Data Analysis:category_average:qwen3.8-27b|2026-06-25": {
-          "model": "qwen3.8-27b",
-          "score": 76.58566666666667,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:qwen3.8-27b",
-          "variant": "2026-06-25",
-          "displayRank": 28
-        },
-        "ox-alpha-max|2026-06-25:Data Analysis:category_average:ox-alpha-max|2026-06-25": {
-          "model": "ox-alpha-max",
-          "score": 75.765,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:ox-alpha-max",
-          "variant": "2026-06-25",
-          "displayRank": 32
-        },
-        "deepseek-v4-flash-vision-exp|2026-06-25:Data Analysis:category_average:deepseek-v4-flash-vision-exp|2026-06-25": {
-          "model": "deepseek-v4-flash-vision-exp",
-          "score": 79.47666666666667,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:deepseek-v4-flash-vision-exp",
-          "variant": "2026-06-25",
-          "displayRank": 11
-        },
-        "glm-5.3|2026-06-25:Data Analysis:category_average:glm-5.3|2026-06-25": {
-          "model": "glm-5.3",
-          "score": 70.24433333333333,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:glm-5.3",
-          "variant": "2026-06-25",
-          "displayRank": 49
-        },
-        "glm-5.3-flash|2026-06-25:Data Analysis:category_average:glm-5.3-flash|2026-06-25": {
-          "model": "glm-5.3-flash",
-          "score": 76.401,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:glm-5.3-flash",
-          "variant": "2026-06-25",
-          "displayRank": 30
-        },
-        "qwen3.8-flash-next|2026-06-25:Data Analysis:category_average:qwen3.8-flash-next|2026-06-25": {
-          "model": "qwen3.8-flash-next",
-          "score": 74.24,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:qwen3.8-flash-next",
-          "variant": "2026-06-25",
-          "displayRank": 37
-        },
-        "nemotron-3-ultra-550b-a55b|2026-06-25:Data Analysis:category_average:nemotron-3-ultra-550b-a55b|2026-06-25": {
-          "model": "nemotron-3-ultra-550b-a55b",
-          "score": 54.45666666666667,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:nemotron-3-ultra-550b-a55b",
-          "variant": "2026-06-25",
-          "displayRank": 61
-        },
-        "claude-fable-5-1-max-effort|2026-06-25:Data Analysis:category_average:claude-fable-5-1-max-effort|2026-06-25": {
-          "model": "claude-fable-5-1-max-effort",
-          "score": 80.27566666666667,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-fable-5-1-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 6
-        },
-        "gemini-3.8-flash-high|2026-06-25:Data Analysis:category_average:gemini-3.8-flash-high|2026-06-25": {
-          "model": "gemini-3.8-flash-high",
-          "score": 54.00566666666666,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:gemini-3.8-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 62
-        },
-        "muse-spark-1.3-xhigh|2026-06-25:Data Analysis:category_average:muse-spark-1.3-xhigh|2026-06-25": {
-          "model": "muse-spark-1.3-xhigh",
-          "score": 79.56533333333333,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:muse-spark-1.3-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 10
-        },
-        "gpt-6-astra-max|2026-06-25:Data Analysis:category_average:gpt-6-astra-max|2026-06-25": {
-          "model": "gpt-6-astra-max",
-          "score": 82.97333333333334,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-6-astra-max",
-          "variant": "2026-06-25",
-          "displayRank": 1
-        },
-        "smaug-flash|2026-06-25:Data Analysis:category_average:smaug-flash|2026-06-25": {
-          "model": "smaug-flash",
-          "score": 79.12166666666667,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:smaug-flash",
-          "variant": "2026-06-25",
-          "displayRank": 17
-        },
-        "deepseek-v4.1-flash-max|2026-06-25:Data Analysis:category_average:deepseek-v4.1-flash-max|2026-06-25": {
-          "model": "deepseek-v4.1-flash-max",
-          "score": 79.25333333333333,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:deepseek-v4.1-flash-max",
-          "variant": "2026-06-25",
-          "displayRank": 15
-        },
-        "union-alpha|2026-06-25:Data Analysis:category_average:union-alpha|2026-06-25": {
-          "model": "union-alpha",
-          "score": 74.60133333333333,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:union-alpha",
-          "variant": "2026-06-25",
-          "displayRank": 33
-        },
-        "grok-4.7-xhigh|2026-06-25:Data Analysis:category_average:grok-4.7-xhigh|2026-06-25": {
-          "model": "grok-4.7-xhigh",
-          "score": 76.88333333333334,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:grok-4.7-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 27
-        },
-        "claude-opus-5-5-max-effort|2026-06-25:Data Analysis:category_average:claude-opus-5-5-max-effort|2026-06-25": {
-          "model": "claude-opus-5-5-max-effort",
-          "score": 80.307,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-opus-5-5-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 5
-        },
-        "claude-opus-5-5-xhigh-effort|2026-06-25:Data Analysis:category_average:claude-opus-5-5-xhigh-effort|2026-06-25": {
-          "model": "claude-opus-5-5-xhigh-effort",
-          "score": 79.803,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:claude-opus-5-5-xhigh-effort",
-          "variant": "2026-06-25",
-          "displayRank": 9
-        },
-        "gpt-6-sol-max|2026-06-25:Data Analysis:category_average:gpt-6-sol-max|2026-06-25": {
-          "model": "gpt-6-sol-max",
-          "score": 81.18933333333334,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-6-sol-max",
-          "variant": "2026-06-25",
-          "displayRank": 3
-        },
-        "gpt-6-luna-max|2026-06-25:Data Analysis:category_average:gpt-6-luna-max|2026-06-25": {
-          "model": "gpt-6-luna-max",
-          "score": 73.36966666666667,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-6-luna-max",
-          "variant": "2026-06-25",
-          "displayRank": 40
-        }
-      }
-    },
     "livebench_language": {
       "runtimeId": "livebench_language",
       "familyId": "livebench",
@@ -2128,538 +2660,6 @@
           "comparisonKey": "2026-06-25:Language:category_average:gpt-6-luna-max",
           "variant": "2026-06-25",
           "displayRank": 51
-        }
-      }
-    },
-    "livebench_math": {
-      "runtimeId": "livebench_math",
-      "familyId": "livebench",
-      "title": "LiveBench Math",
-      "release": "2026-06-25",
-      "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "source": {
-        "benchmark_id": "livebench_math",
-        "status": "enabled",
-        "source_name": "LiveBench Mathematics dated official leaderboard CSV",
-        "organization": "LiveBench",
-        "source_type": "official_site_dated_csv",
-        "official_url": "https://livebench.ai/",
-        "endpoint": "https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main",
-        "raw_base_url": "https://livebench.ai",
-        "fallback_release_id": "2026-06-25",
-        "fetch_method": "GET",
-        "update_frequency": "release_based",
-        "requires_auth": false,
-        "category_selector": "math",
-        "evidence_url": "https://livebench.ai/",
-        "release_tracking": "dated_table_and_categories_files",
-        "hash_required": true,
-        "notes": "User label Math maps to official taxonomy Mathematics."
-      },
-      "records": {
-        "claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25:Mathematics:category_average:claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25": {
-          "model": "claude-opus-4-5-20251101-thinking-64k-high-effort",
-          "score": 90.38900000000001,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-4-5-20251101-thinking-64k-high-effort",
-          "variant": "2026-06-25",
-          "displayRank": 30
-        },
-        "claude-opus-4-6-thinking-auto-high-effort|2026-06-25:Mathematics:category_average:claude-opus-4-6-thinking-auto-high-effort|2026-06-25": {
-          "model": "claude-opus-4-6-thinking-auto-high-effort",
-          "score": 89.31700000000001,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-4-6-thinking-auto-high-effort",
-          "variant": "2026-06-25",
-          "displayRank": 34
-        },
-        "claude-opus-4-7-xhigh-effort|2026-06-25:Mathematics:category_average:claude-opus-4-7-xhigh-effort|2026-06-25": {
-          "model": "claude-opus-4-7-xhigh-effort",
-          "score": 92.85374999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-4-7-xhigh-effort",
-          "variant": "2026-06-25",
-          "displayRank": 21
-        },
-        "claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25:Mathematics:category_average:claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25": {
-          "model": "claude-sonnet-4-6-thinking-auto-medium-effort",
-          "score": 86.994,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-sonnet-4-6-thinking-auto-medium-effort",
-          "variant": "2026-06-25",
-          "displayRank": 44
-        },
-        "claude-sonnet-5-xhigh-effort|2026-06-25:Mathematics:category_average:claude-sonnet-5-xhigh-effort|2026-06-25": {
-          "model": "claude-sonnet-5-xhigh-effort",
-          "score": 92.94225,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-sonnet-5-xhigh-effort",
-          "variant": "2026-06-25",
-          "displayRank": 20
-        },
-        "deepseek-v4-flash|2026-06-25:Mathematics:category_average:deepseek-v4-flash|2026-06-25": {
-          "model": "deepseek-v4-flash",
-          "score": 79.64750000000001,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-flash",
-          "variant": "2026-06-25",
-          "displayRank": 57
-        },
-        "deepseek-v4-pro|2026-06-25:Mathematics:category_average:deepseek-v4-pro|2026-06-25": {
-          "model": "deepseek-v4-pro",
-          "score": 90.6755,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-pro",
-          "variant": "2026-06-25",
-          "displayRank": 29
-        },
-        "gemini-3.1-pro-preview-high|2026-06-25:Mathematics:category_average:gemini-3.1-pro-preview-high|2026-06-25": {
-          "model": "gemini-3.1-pro-preview-high",
-          "score": 91.04499999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.1-pro-preview-high",
-          "variant": "2026-06-25",
-          "displayRank": 26
-        },
-        "gemini-3.5-flash-high|2026-06-25:Mathematics:category_average:gemini-3.5-flash-high|2026-06-25": {
-          "model": "gemini-3.5-flash-high",
-          "score": 88.24375,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.5-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 39
-        },
-        "glm-5.2|2026-06-25:Mathematics:category_average:glm-5.2|2026-06-25": {
-          "model": "glm-5.2",
-          "score": 89.78125,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:glm-5.2",
-          "variant": "2026-06-25",
-          "displayRank": 32
-        },
-        "gpt-5.2-2025-12-11-high|2026-06-25:Mathematics:category_average:gpt-5.2-2025-12-11-high|2026-06-25": {
-          "model": "gpt-5.2-2025-12-11-high",
-          "score": 93.166,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.2-2025-12-11-high",
-          "variant": "2026-06-25",
-          "displayRank": 19
-        },
-        "gpt-5.2-codex|2026-06-25:Mathematics:category_average:gpt-5.2-codex|2026-06-25": {
-          "model": "gpt-5.2-codex",
-          "score": 88.77375,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.2-codex",
-          "variant": "2026-06-25",
-          "displayRank": 36
-        },
-        "gpt-5.4-mini-xhigh|2026-06-25:Mathematics:category_average:gpt-5.4-mini-xhigh|2026-06-25": {
-          "model": "gpt-5.4-mini-xhigh",
-          "score": 78.462,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.4-mini-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 59
-        },
-        "gpt-5.4-nano-xhigh|2026-06-25:Mathematics:category_average:gpt-5.4-nano-xhigh|2026-06-25": {
-          "model": "gpt-5.4-nano-xhigh",
-          "score": 90.977,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.4-nano-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 27
-        },
-        "gpt-5.4-xhigh|2026-06-25:Mathematics:category_average:gpt-5.4-xhigh|2026-06-25": {
-          "model": "gpt-5.4-xhigh",
-          "score": 94.148,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.4-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 16
-        },
-        "gpt-5.5-xhigh|2026-06-25:Mathematics:category_average:gpt-5.5-xhigh|2026-06-25": {
-          "model": "gpt-5.5-xhigh",
-          "score": 95.85725,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.5-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 9
-        },
-        "grok-4.3|2026-06-25:Mathematics:category_average:grok-4.3|2026-06-25": {
-          "model": "grok-4.3",
-          "score": 84.339,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-4.3",
-          "variant": "2026-06-25",
-          "displayRank": 51
-        },
-        "grok-4.5|2026-06-25:Mathematics:category_average:grok-4.5|2026-06-25": {
-          "model": "grok-4.5",
-          "score": 90.8245,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-4.5",
-          "variant": "2026-06-25",
-          "displayRank": 28
-        },
-        "grok-build-0.1|2026-06-25:Mathematics:category_average:grok-build-0.1|2026-06-25": {
-          "model": "grok-build-0.1",
-          "score": 78.42875000000001,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-build-0.1",
-          "variant": "2026-06-25",
-          "displayRank": 60
-        },
-        "kimi-k2.6-thinking|2026-06-25:Mathematics:category_average:kimi-k2.6-thinking|2026-06-25": {
-          "model": "kimi-k2.6-thinking",
-          "score": 84.27625,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:kimi-k2.6-thinking",
-          "variant": "2026-06-25",
-          "displayRank": 52
-        },
-        "kimi-k2.7-code|2026-06-25:Mathematics:category_average:kimi-k2.7-code|2026-06-25": {
-          "model": "kimi-k2.7-code",
-          "score": 79.60425000000001,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:kimi-k2.7-code",
-          "variant": "2026-06-25",
-          "displayRank": 58
-        },
-        "minimax-m3|2026-06-25:Mathematics:category_average:minimax-m3|2026-06-25": {
-          "model": "minimax-m3",
-          "score": 76.94749999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:minimax-m3",
-          "variant": "2026-06-25",
-          "displayRank": 62
-        },
-        "qwen3.6-27b|2026-06-25:Mathematics:category_average:qwen3.6-27b|2026-06-25": {
-          "model": "qwen3.6-27b",
-          "score": 79.8685,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.6-27b",
-          "variant": "2026-06-25",
-          "displayRank": 56
-        },
-        "qwen3.6-plus|2026-06-25:Mathematics:category_average:qwen3.6-plus|2026-06-25": {
-          "model": "qwen3.6-plus",
-          "score": 83.72475,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.6-plus",
-          "variant": "2026-06-25",
-          "displayRank": 54
-        },
-        "qwen3.7-max|2026-06-25:Mathematics:category_average:qwen3.7-max|2026-06-25": {
-          "model": "qwen3.7-max",
-          "score": 85.24825,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.7-max",
-          "variant": "2026-06-25",
-          "displayRank": 49
-        },
-        "gpt-5.6-sol-max|2026-06-25:Mathematics:category_average:gpt-5.6-sol-max|2026-06-25": {
-          "model": "gpt-5.6-sol-max",
-          "score": 96.19775,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.6-sol-max",
-          "variant": "2026-06-25",
-          "displayRank": 6
-        },
-        "gpt-5.6-terra-max|2026-06-25:Mathematics:category_average:gpt-5.6-terra-max|2026-06-25": {
-          "model": "gpt-5.6-terra-max",
-          "score": 94.90825000000001,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.6-terra-max",
-          "variant": "2026-06-25",
-          "displayRank": 14
-        },
-        "gpt-5.6-luna-max|2026-06-25:Mathematics:category_average:gpt-5.6-luna-max|2026-06-25": {
-          "model": "gpt-5.6-luna-max",
-          "score": 87.20075,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.6-luna-max",
-          "variant": "2026-06-25",
-          "displayRank": 42
-        },
-        "claude-fable-5-max-effort|2026-06-25:Mathematics:category_average:claude-fable-5-max-effort|2026-06-25": {
-          "model": "claude-fable-5-max-effort",
-          "score": 95.98575,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-fable-5-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 7
-        },
-        "muse-spark-1.1-xhigh|2026-06-25:Mathematics:category_average:muse-spark-1.1-xhigh|2026-06-25": {
-          "model": "muse-spark-1.1-xhigh",
-          "score": 87.14474999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:muse-spark-1.1-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 43
-        },
-        "kimi-k3|2026-06-25:Mathematics:category_average:kimi-k3|2026-06-25": {
-          "model": "kimi-k3",
-          "score": 84.43675,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:kimi-k3",
-          "variant": "2026-06-25",
-          "displayRank": 50
-        },
-        "inkling-xhigh|2026-06-25:Mathematics:category_average:inkling-xhigh|2026-06-25": {
-          "model": "inkling-xhigh",
-          "score": 88.36474999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:inkling-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 38
-        },
-        "gemini-3.5-flash-lite-high|2026-06-25:Mathematics:category_average:gemini-3.5-flash-lite-high|2026-06-25": {
-          "model": "gemini-3.5-flash-lite-high",
-          "score": 73.73949999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.5-flash-lite-high",
-          "variant": "2026-06-25",
-          "displayRank": 63
-        },
-        "gemini-3.6-flash-high|2026-06-25:Mathematics:category_average:gemini-3.6-flash-high|2026-06-25": {
-          "model": "gemini-3.6-flash-high",
-          "score": 86.4025,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.6-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 46
-        },
-        "claude-opus-5-max-effort|2026-06-25:Mathematics:category_average:claude-opus-5-max-effort|2026-06-25": {
-          "model": "claude-opus-5-max-effort",
-          "score": 95.731,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-5-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 10
-        },
-        "claude-opus-4-8-max-effort|2026-06-25:Mathematics:category_average:claude-opus-4-8-max-effort|2026-06-25": {
-          "model": "claude-opus-4-8-max-effort",
-          "score": 94.31649999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-4-8-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 15
-        },
-        "deepseek-v4-flash-0731|2026-06-25:Mathematics:category_average:deepseek-v4-flash-0731|2026-06-25": {
-          "model": "deepseek-v4-flash-0731",
-          "score": 86.78975,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-flash-0731",
-          "variant": "2026-06-25",
-          "displayRank": 45
-        },
-        "qwen3.8-max|2026-06-25:Mathematics:category_average:qwen3.8-max|2026-06-25": {
-          "model": "qwen3.8-max",
-          "score": 91.31225,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.8-max",
-          "variant": "2026-06-25",
-          "displayRank": 24
-        },
-        "muse-spark-1.2-xhigh|2026-06-25:Mathematics:category_average:muse-spark-1.2-xhigh|2026-06-25": {
-          "model": "muse-spark-1.2-xhigh",
-          "score": 91.20349999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:muse-spark-1.2-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 25
-        },
-        "smaug-agentic|2026-06-25:Mathematics:category_average:smaug-agentic|2026-06-25": {
-          "model": "smaug-agentic",
-          "score": 83.9195,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:smaug-agentic",
-          "variant": "2026-06-25",
-          "displayRank": 53
-        },
-        "smaug-mini|2026-06-25:Mathematics:category_average:smaug-mini|2026-06-25": {
-          "model": "smaug-mini",
-          "score": 89.74275,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:smaug-mini",
-          "variant": "2026-06-25",
-          "displayRank": 33
-        },
-        "deepseek-v4-pro-0813|2026-06-25:Mathematics:category_average:deepseek-v4-pro-0813|2026-06-25": {
-          "model": "deepseek-v4-pro-0813",
-          "score": 95.08624999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-pro-0813",
-          "variant": "2026-06-25",
-          "displayRank": 13
-        },
-        "grok-4.6|2026-06-25:Mathematics:category_average:grok-4.6|2026-06-25": {
-          "model": "grok-4.6",
-          "score": 92.56799999999998,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-4.6",
-          "variant": "2026-06-25",
-          "displayRank": 22
-        },
-        "gemini-3.7-flash-high|2026-06-25:Mathematics:category_average:gemini-3.7-flash-high|2026-06-25": {
-          "model": "gemini-3.7-flash-high",
-          "score": 93.46799999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.7-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 17
-        },
-        "qwen3.8-27b|2026-06-25:Mathematics:category_average:qwen3.8-27b|2026-06-25": {
-          "model": "qwen3.8-27b",
-          "score": 86.21275,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.8-27b",
-          "variant": "2026-06-25",
-          "displayRank": 47
-        },
-        "ox-alpha-max|2026-06-25:Mathematics:category_average:ox-alpha-max|2026-06-25": {
-          "model": "ox-alpha-max",
-          "score": 77.53275,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:ox-alpha-max",
-          "variant": "2026-06-25",
-          "displayRank": 61
-        },
-        "deepseek-v4-flash-vision-exp|2026-06-25:Mathematics:category_average:deepseek-v4-flash-vision-exp|2026-06-25": {
-          "model": "deepseek-v4-flash-vision-exp",
-          "score": 87.80675,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-flash-vision-exp",
-          "variant": "2026-06-25",
-          "displayRank": 41
-        },
-        "glm-5.3|2026-06-25:Mathematics:category_average:glm-5.3|2026-06-25": {
-          "model": "glm-5.3",
-          "score": 87.898,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:glm-5.3",
-          "variant": "2026-06-25",
-          "displayRank": 40
-        },
-        "glm-5.3-flash|2026-06-25:Mathematics:category_average:glm-5.3-flash|2026-06-25": {
-          "model": "glm-5.3-flash",
-          "score": 81.2445,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:glm-5.3-flash",
-          "variant": "2026-06-25",
-          "displayRank": 55
-        },
-        "qwen3.8-flash-next|2026-06-25:Mathematics:category_average:qwen3.8-flash-next|2026-06-25": {
-          "model": "qwen3.8-flash-next",
-          "score": 85.821,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.8-flash-next",
-          "variant": "2026-06-25",
-          "displayRank": 48
-        },
-        "nemotron-3-ultra-550b-a55b|2026-06-25:Mathematics:category_average:nemotron-3-ultra-550b-a55b|2026-06-25": {
-          "model": "nemotron-3-ultra-550b-a55b",
-          "score": 88.66324999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:nemotron-3-ultra-550b-a55b",
-          "variant": "2026-06-25",
-          "displayRank": 37
-        },
-        "claude-fable-5-1-max-effort|2026-06-25:Mathematics:category_average:claude-fable-5-1-max-effort|2026-06-25": {
-          "model": "claude-fable-5-1-max-effort",
-          "score": 97.00675,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-fable-5-1-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 2
-        },
-        "gemini-3.8-flash-high|2026-06-25:Mathematics:category_average:gemini-3.8-flash-high|2026-06-25": {
-          "model": "gemini-3.8-flash-high",
-          "score": 91.56425,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.8-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 23
-        },
-        "muse-spark-1.3-xhigh|2026-06-25:Mathematics:category_average:muse-spark-1.3-xhigh|2026-06-25": {
-          "model": "muse-spark-1.3-xhigh",
-          "score": 95.94999999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:muse-spark-1.3-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 8
-        },
-        "gpt-6-astra-max|2026-06-25:Mathematics:category_average:gpt-6-astra-max|2026-06-25": {
-          "model": "gpt-6-astra-max",
-          "score": 96.80624999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-6-astra-max",
-          "variant": "2026-06-25",
-          "displayRank": 3
-        },
-        "smaug-flash|2026-06-25:Mathematics:category_average:smaug-flash|2026-06-25": {
-          "model": "smaug-flash",
-          "score": 90.06424999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:smaug-flash",
-          "variant": "2026-06-25",
-          "displayRank": 31
-        },
-        "deepseek-v4.1-flash-max|2026-06-25:Mathematics:category_average:deepseek-v4.1-flash-max|2026-06-25": {
-          "model": "deepseek-v4.1-flash-max",
-          "score": 93.28975,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4.1-flash-max",
-          "variant": "2026-06-25",
-          "displayRank": 18
-        },
-        "union-alpha|2026-06-25:Mathematics:category_average:union-alpha|2026-06-25": {
-          "model": "union-alpha",
-          "score": 95.2935,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:union-alpha",
-          "variant": "2026-06-25",
-          "displayRank": 12
-        },
-        "grok-4.7-xhigh|2026-06-25:Mathematics:category_average:grok-4.7-xhigh|2026-06-25": {
-          "model": "grok-4.7-xhigh",
-          "score": 95.678,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-4.7-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 11
-        },
-        "claude-opus-5-5-max-effort|2026-06-25:Mathematics:category_average:claude-opus-5-5-max-effort|2026-06-25": {
-          "model": "claude-opus-5-5-max-effort",
-          "score": 97.07749999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-5-5-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 1
-        },
-        "claude-opus-5-5-xhigh-effort|2026-06-25:Mathematics:category_average:claude-opus-5-5-xhigh-effort|2026-06-25": {
-          "model": "claude-opus-5-5-xhigh-effort",
-          "score": 96.803,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-5-5-xhigh-effort",
-          "variant": "2026-06-25",
-          "displayRank": 4
-        },
-        "gpt-6-sol-max|2026-06-25:Mathematics:category_average:gpt-6-sol-max|2026-06-25": {
-          "model": "gpt-6-sol-max",
-          "score": 96.356,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-6-sol-max",
-          "variant": "2026-06-25",
-          "displayRank": 5
-        },
-        "gpt-6-luna-max|2026-06-25:Mathematics:category_average:gpt-6-luna-max|2026-06-25": {
-          "model": "gpt-6-luna-max",
-          "score": 89.1235,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-6-luna-max",
-          "variant": "2026-06-25",
-          "displayRank": 35
         }
       }
     },
