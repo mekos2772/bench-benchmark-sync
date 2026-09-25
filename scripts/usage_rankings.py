@@ -12,6 +12,7 @@ import argparse
 import json
 import os
 import re
+import time
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
@@ -41,15 +42,35 @@ def log(message: str) -> None:
     print(f"[usage-rankings] {message}")
 
 
-def request_json(url: str, headers: dict[str, str], params: dict[str, str]) -> dict[str, Any]:
-    response = requests.get(url, headers=headers, params=params, timeout=30)
-    if response.status_code == 401:
-        raise RuntimeError("OpenRouter rejected the API key (HTTP 401)")
-    response.raise_for_status()
-    payload = response.json()
-    if not isinstance(payload, dict):
-        raise ValueError("OpenRouter response must be an object")
-    return payload
+def request_json(
+    url: str,
+    headers: dict[str, str],
+    params: dict[str, str],
+    attempts: int = 3,
+) -> dict[str, Any]:
+    """Fetch JSON, retrying transient failures; a rejected key fails immediately."""
+    last_error: Exception | None = None
+    for attempt in range(1, attempts + 1):
+        try:
+            response = requests.get(url, headers=headers, params=params, timeout=30)
+        except requests.RequestException as error:
+            last_error = error
+            log(f"openrouter attempt {attempt}/{attempts}: {type(error).__name__}: {error}")
+            if attempt < attempts:
+                time.sleep(2 * attempt)
+            continue
+        if response.status_code == 401:
+            raise RuntimeError("OpenRouter rejected the API key (HTTP 401)")
+        if response.status_code >= 500 and attempt < attempts:
+            log(f"openrouter attempt {attempt}/{attempts}: HTTP {response.status_code}")
+            time.sleep(2 * attempt)
+            continue
+        response.raise_for_status()
+        payload = response.json()
+        if not isinstance(payload, dict):
+            raise ValueError("OpenRouter response must be an object")
+        return payload
+    raise RuntimeError(f"OpenRouter request failed after {attempts} attempts: {last_error}")
 
 
 def fetch_openrouter(api_key: str, day: date) -> dict[str, Any]:
@@ -275,6 +296,8 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     document = build_document(args.api_key or None)
+    for error in document["errors"]:
+        log(f"collector error: {error}")
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(document, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
