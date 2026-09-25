@@ -2,9 +2,9 @@
   "schemaVersion": 3,
   "dataSource": "benchmark-sync-static",
   "exporterVersion": "0.4.0",
-  "workflowRunId": "36099525077",
-  "mainCommit": "5618e6b2f368b65957ff26298e1825d02b38ce8b",
-  "generatedAt": "2026-09-25T05:41:29Z",
+  "workflowRunId": "36100787609",
+  "mainCommit": "f4fdad5f8c1849706cf25d40c6905a949132151e",
+  "generatedAt": "2026-09-25T05:59:29Z",
   "families": [
     {
       "familyId": "livebench",
@@ -186,7 +186,7 @@
       "comparisonKey": "live_bench",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-25T05:41:07Z",
+      "generatedAt": "2026-09-25T05:59:00Z",
       "taskCount": 23,
       "source": {
         "name": "LiveBench dated official leaderboard CSV",
@@ -653,7 +653,7 @@
       "comparisonKey": "coding",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-25T05:40:48Z",
+      "generatedAt": "2026-09-25T05:58:48Z",
       "taskCount": 2,
       "source": {
         "name": "LiveBench Coding dated official leaderboard CSV",
@@ -1120,7 +1120,7 @@
       "comparisonKey": "reasoning",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-25T05:41:03Z",
+      "generatedAt": "2026-09-25T05:59:05Z",
       "taskCount": 4,
       "source": {
         "name": "LiveBench Reasoning dated official leaderboard CSV",
@@ -1587,7 +1587,7 @@
       "comparisonKey": "math",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-25T05:41:03Z",
+      "generatedAt": "2026-09-25T05:59:00Z",
       "taskCount": 4,
       "source": {
         "name": "LiveBench Mathematics dated official leaderboard CSV",
@@ -2054,7 +2054,7 @@
       "comparisonKey": "data_analysis",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-25T05:40:58Z",
+      "generatedAt": "2026-09-25T05:58:55Z",
       "taskCount": 3,
       "source": {
         "name": "LiveBench Data Analysis dated official leaderboard CSV",
@@ -2521,7 +2521,7 @@
       "comparisonKey": "language",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-25T05:40:59Z",
+      "generatedAt": "2026-09-25T05:58:59Z",
       "taskCount": 3,
       "source": {
         "name": "LiveBench Language dated official leaderboard CSV",
@@ -2988,7 +2988,7 @@
       "comparisonKey": "instruction_following",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-25T05:40:59Z",
+      "generatedAt": "2026-09-25T05:58:57Z",
       "taskCount": 4,
       "source": {
         "name": "LiveBench IF dated official leaderboard CSV",
@@ -3455,7 +3455,7 @@
       "comparisonKey": "agentic_coding",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-25T05:40:46Z",
+      "generatedAt": "2026-09-25T05:58:46Z",
       "taskCount": 3,
       "source": {
         "name": "LiveBench Agentic Coding dated official leaderboard CSV",
@@ -3922,7 +3922,7 @@
       "comparisonKey": "intelligence_index_v4_3",
       "snapshotId": "9247a559e5385fbb359e9430525d07b3ac43fd9f631868ed7a6337177510ca9b",
       "contentHash": "9247a559e5385fbb359e9430525d07b3ac43fd9f631868ed7a6337177510ca9b",
-      "generatedAt": "2026-09-25T05:40:33Z",
+      "generatedAt": "2026-09-25T05:58:34Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Intelligence Index official public Dataset page",
@@ -3935,94 +3935,94 @@
       "entries": [
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5",
           57.62,
           null,
-          null
+          "max with fallback"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5",
           55.99,
           null,
-          null
+          "xhigh with fallback"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Opus 5.5",
           53.58,
           null,
-          null
+          "high with fallback"
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1",
           53.35,
           null,
-          null
+          "max with fallback"
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1",
           53.2,
           null,
-          null
+          "xhigh with fallback"
         ],
         [
           "GPT-6 Astra (max)",
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra",
           52.67,
           null,
-          null
+          "max"
         ],
         [
           "GPT-6 Astra (xhigh)",
-          "GPT-6 Astra (xhigh)",
+          "GPT-6 Astra",
           52.39,
           null,
-          null
+          "xhigh"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+          "Claude Opus 5.5",
           51.24,
           null,
-          null
+          "medium with fallback"
         ],
         [
           "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5",
           50.78,
           null,
-          null
+          "max"
         ],
         [
           "Muse Spark 1.3 (max)",
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3",
           48.09,
           null,
-          null
+          "max"
         ],
         [
           "GPT-6 Sol (max)",
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol",
           47.53,
           null,
-          null
+          "max"
         ],
         [
           "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol (max)",
+          "GPT-5.6 Sol",
           46.97,
           null,
-          null
+          "max"
         ],
         [
           "Grok 4.7 (xhigh)",
-          "Grok 4.7 (xhigh)",
+          "Grok 4.7",
           46.45,
           null,
-          null
+          "xhigh"
         ],
         [
           "MiMo-V2.6-Pro",
@@ -4040,17 +4040,17 @@
         ],
         [
           "GLM-5.3 (max)",
-          "GLM-5.3 (max)",
+          "GLM-5.3",
           44.78,
           null,
-          null
+          "max"
         ],
         [
           "Grok 4.6 (high)",
-          "Grok 4.6 (high)",
+          "Grok 4.6",
           44.31,
           null,
-          null
+          "high"
         ],
         [
           "Step 5 Preview",
@@ -4061,10 +4061,10 @@
         ],
         [
           "Kimi K3 (max)",
-          "Kimi K3 (max)",
+          "Kimi K3",
           43.59,
           null,
-          null
+          "max"
         ],
         [
           "GLM 5.3 Flash",
@@ -4075,38 +4075,38 @@
         ],
         [
           "Gemini 3.8 Flash (high)",
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash",
           40.93,
           null,
-          null
+          "high"
         ],
         [
           "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash",
           39.46,
           null,
-          null
+          "max"
         ],
         [
           "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna (max)",
+          "GPT-5.6 Luna",
           37.32,
           null,
-          null
+          "max"
         ],
         [
           "GPT-6 Luna (max)",
-          "GPT-6 Luna (max)",
+          "GPT-6 Luna",
           37.26,
           null,
-          null
+          "max"
         ],
         [
           "Qwen3.8 27B (xhigh)",
-          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B",
           33.7,
           null,
-          null
+          "xhigh"
         ],
         [
           "K2 Horizon 375B A23B",
@@ -4124,10 +4124,10 @@
         ],
         [
           "Inkling (xhigh)",
-          "Inkling (xhigh)",
+          "Inkling",
           24.98,
           null,
-          null
+          "xhigh"
         ],
         [
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
@@ -4145,10 +4145,10 @@
         ],
         [
           "Muse Glimmer (high)",
-          "Muse Glimmer (high)",
+          "Muse Glimmer",
           17.48,
           null,
-          null
+          "high"
         ],
         [
           "Mistral Medium 3.5",
@@ -4172,7 +4172,7 @@
       "comparisonKey": "terminal_bench_v4_0",
       "snapshotId": "6f38c57fcd40783600d2ff2a24df55f7376b7f9c2990ff3f47ed0d02d08f45ce",
       "contentHash": "6f38c57fcd40783600d2ff2a24df55f7376b7f9c2990ff3f47ed0d02d08f45ce",
-      "generatedAt": "2026-09-25T05:41:18Z",
+      "generatedAt": "2026-09-25T05:59:17Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
@@ -4185,87 +4185,87 @@
       "entries": [
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.596,
           null,
-          null
+          "max with fallback"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.596,
           null,
-          null
+          "xhigh with fallback"
         ],
         [
           "GPT-6 Astra (xhigh)",
-          "GPT-6 Astra (xhigh)",
+          "GPT-6 Astra",
           0.596,
           null,
-          null
+          "xhigh"
         ],
         [
           "GPT-6 Astra (max)",
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra",
           0.5909,
           null,
-          null
+          "max"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.5657,
           null,
-          null
+          "high with fallback"
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1",
           0.5505,
           null,
-          null
+          "xhigh with fallback"
         ],
         [
           "GPT-6 Astra (high)",
-          "GPT-6 Astra (high)",
+          "GPT-6 Astra",
           0.5404,
           null,
-          null
+          "high"
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1",
           0.5202,
           null,
-          null
+          "max with fallback"
         ],
         [
           "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5",
           0.4899,
           null,
-          null
+          "max"
         ],
         [
           "GPT-6 Sol (max)",
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol",
           0.4394,
           null,
-          null
+          "max"
         ],
         [
           "GLM-5.3 (max)",
-          "GLM-5.3 (max)",
+          "GLM-5.3",
           0.4192,
           null,
-          null
+          "max"
         ],
         [
           "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol (max)",
+          "GPT-5.6 Sol",
           0.399,
           null,
-          null
+          "max"
         ],
         [
           "Qwen3.8 Max (0902)",
@@ -4283,10 +4283,10 @@
         ],
         [
           "Muse Spark 1.3 (max)",
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3",
           0.3333,
           null,
-          null
+          "max"
         ],
         [
           "Step 5 Preview",
@@ -4304,59 +4304,59 @@
         ],
         [
           "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash",
           0.2677,
           null,
-          null
+          "max"
         ],
         [
           "Grok 4.7 (xhigh)",
-          "Grok 4.7 (xhigh)",
+          "Grok 4.7",
           0.2576,
           null,
-          null
+          "xhigh"
         ],
         [
           "Grok 4.6 (high)",
-          "Grok 4.6 (high)",
+          "Grok 4.6",
           0.2121,
           null,
-          null
+          "high"
         ],
         [
           "Gemini 3.8 Flash (high)",
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash",
           0.197,
           null,
-          null
+          "high"
         ],
         [
           "Kimi K3 (max)",
-          "Kimi K3 (max)",
+          "Kimi K3",
           0.1263,
           null,
-          null
+          "max"
         ],
         [
           "GPT-6 Luna (max)",
-          "GPT-6 Luna (max)",
+          "GPT-6 Luna",
           0.1263,
           null,
-          null
+          "max"
         ],
         [
           "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna (max)",
+          "GPT-5.6 Luna",
           0.1162,
           null,
-          null
+          "max"
         ],
         [
           "Qwen3.8 27B (xhigh)",
-          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B",
           0.0556,
           null,
-          null
+          "xhigh"
         ],
         [
           "MiniMax-M3",
@@ -4374,10 +4374,10 @@
         ],
         [
           "Inkling (xhigh)",
-          "Inkling (xhigh)",
+          "Inkling",
           0.0101,
           null,
-          null
+          "xhigh"
         ],
         [
           "Gemini 3.5 Flash-Lite",
@@ -4395,10 +4395,10 @@
         ],
         [
           "Muse Glimmer (high)",
-          "Muse Glimmer (high)",
+          "Muse Glimmer",
           0.0051,
           null,
-          null
+          "high"
         ],
         [
           "Mistral Medium 3.5",
@@ -4422,7 +4422,7 @@
       "comparisonKey": "humanitys_last_exam",
       "snapshotId": "3a00237cd538ec41691efe5d7df51ba7c0fec95797baa3deb282c5bc2f982fba",
       "contentHash": "3a00237cd538ec41691efe5d7df51ba7c0fec95797baa3deb282c5bc2f982fba",
-      "generatedAt": "2026-09-25T05:40:49Z",
+      "generatedAt": "2026-09-25T05:58:50Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Humanity's Last Exam official public Dataset page",
@@ -4435,45 +4435,45 @@
       "entries": [
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.6135,
           null,
-          null
+          "max with fallback"
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1",
           0.5913,
           null,
-          null
+          "max with fallback"
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1",
           0.5871,
           null,
-          null
+          "xhigh with fallback"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.5751,
           null,
-          null
+          "xhigh with fallback"
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Fable 5.1",
           0.5593,
           null,
-          null
+          "high with fallback"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.5556,
           null,
-          null
+          "high with fallback"
         ],
         [
           "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
@@ -4484,24 +4484,24 @@
         ],
         [
           "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5",
           0.5487,
           null,
-          null
+          "max"
         ],
         [
           "GPT-6 Astra (max)",
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra",
           0.5468,
           null,
-          null
+          "max"
         ],
         [
           "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol (max)",
+          "GPT-5.6 Sol",
           0.4949,
           null,
-          null
+          "max"
         ],
         [
           "MiMo-V2.6-Pro",
@@ -4512,31 +4512,31 @@
         ],
         [
           "Muse Spark 1.3 (max)",
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3",
           0.487,
           null,
-          null
+          "max"
         ],
         [
           "GPT-6 Sol (max)",
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol",
           0.4791,
           null,
-          null
+          "max"
         ],
         [
           "Gemini 3.8 Flash (high)",
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash",
           0.4782,
           null,
-          null
+          "high"
         ],
         [
           "Kimi K3 (max)",
-          "Kimi K3 (max)",
+          "Kimi K3",
           0.469,
           null,
-          null
+          "max"
         ],
         [
           "Step 5 Preview",
@@ -4547,10 +4547,10 @@
         ],
         [
           "Grok 4.7 (xhigh)",
-          "Grok 4.7 (xhigh)",
+          "Grok 4.7",
           0.4314,
           null,
-          null
+          "xhigh"
         ],
         [
           "Qwen3.8 Max (0902)",
@@ -4561,17 +4561,17 @@
         ],
         [
           "Grok 4.6 (high)",
-          "Grok 4.6 (high)",
+          "Grok 4.6",
           0.4291,
           null,
-          null
+          "high"
         ],
         [
           "GLM-5.3 (max)",
-          "GLM-5.3 (max)",
+          "GLM-5.3",
           0.4226,
           null,
-          null
+          "max"
         ],
         [
           "GLM 5.3 Flash",
@@ -4582,17 +4582,17 @@
         ],
         [
           "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna (max)",
+          "GPT-5.6 Luna",
           0.3948,
           null,
-          null
+          "max"
         ],
         [
           "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash",
           0.3925,
           null,
-          null
+          "max"
         ],
         [
           "MiniMax-M3",
@@ -4603,17 +4603,17 @@
         ],
         [
           "GPT-6 Luna (max)",
-          "GPT-6 Luna (max)",
+          "GPT-6 Luna",
           0.3851,
           null,
-          null
+          "max"
         ],
         [
           "Qwen3.8 27B (xhigh)",
-          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B",
           0.3392,
           null,
-          null
+          "xhigh"
         ],
         [
           "K2 Horizon 375B A23B",
@@ -4624,10 +4624,10 @@
         ],
         [
           "Inkling (xhigh)",
-          "Inkling (xhigh)",
+          "Inkling",
           0.3188,
           null,
-          null
+          "xhigh"
         ],
         [
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
@@ -4638,10 +4638,10 @@
         ],
         [
           "Muse Glimmer (high)",
-          "Muse Glimmer (high)",
+          "Muse Glimmer",
           0.2196,
           null,
-          null
+          "high"
         ],
         [
           "Gemini 3.5 Flash-Lite",
@@ -4672,7 +4672,7 @@
       "comparisonKey": "gpqa_diamond",
       "snapshotId": "0a6516ab2311205af1c5468a8a8fe7481389ae678f64b3c9854dd7ae765164f8",
       "contentHash": "0a6516ab2311205af1c5468a8a8fe7481389ae678f64b3c9854dd7ae765164f8",
-      "generatedAt": "2026-09-25T05:40:47Z",
+      "generatedAt": "2026-09-25T05:58:44Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis GPQA Diamond official public Dataset page",
@@ -4685,59 +4685,59 @@
       "entries": [
         [
           "GPT-6 Astra (xhigh)",
-          "GPT-6 Astra (xhigh)",
+          "GPT-6 Astra",
           0.9626,
           null,
-          null
+          "xhigh"
         ],
         [
           "GPT-6 Astra (max)",
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra",
           0.9606,
           null,
-          null
+          "max"
         ],
         [
           "Gemini 3.8 Flash (high)",
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash",
           0.9525,
           null,
-          null
+          "high"
         ],
         [
           "GPT-6 Astra (high)",
-          "GPT-6 Astra (high)",
+          "GPT-6 Astra",
           0.9495,
           null,
-          null
+          "high"
         ],
         [
           "Grok 4.6 (high)",
-          "Grok 4.6 (high)",
+          "Grok 4.6",
           0.9495,
           null,
-          null
+          "high"
         ],
         [
           "Gemini 3.7 Flash (high)",
-          "Gemini 3.7 Flash (high)",
+          "Gemini 3.7 Flash",
           0.9455,
           null,
-          null
+          "high"
         ],
         [
           "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol (max)",
+          "GPT-5.6 Sol",
           0.9414,
           null,
-          null
+          "max"
         ],
         [
           "Muse Spark 1.3 (xhigh)",
-          "Muse Spark 1.3 (xhigh)",
+          "Muse Spark 1.3",
           0.9414,
           null,
-          null
+          "xhigh"
         ],
         [
           "Gemini 3.1 Pro Preview",
@@ -4748,31 +4748,31 @@
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1",
           0.9374,
           null,
-          null
+          "max with fallback"
         ],
         [
           "Muse Spark 1.3 (max)",
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3",
           0.9354,
           null,
-          null
+          "max"
         ],
         [
           "Kimi K3 (max)",
-          "Kimi K3 (max)",
+          "Kimi K3",
           0.9354,
           null,
-          null
+          "max"
         ],
         [
           "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5",
           0.9323,
           null,
-          null
+          "max"
         ],
         [
           "MiniMax-M3",
@@ -4790,10 +4790,10 @@
         ],
         [
           "GLM-5.3 (max)",
-          "GLM-5.3 (max)",
+          "GLM-5.3",
           0.9172,
           null,
-          null
+          "max"
         ],
         [
           "GLM 5.3 Flash",
@@ -4804,17 +4804,17 @@
         ],
         [
           "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna (max)",
+          "GPT-5.6 Luna",
           0.9111,
           null,
-          null
+          "max"
         ],
         [
           "Qwen3.8 27B (xhigh)",
-          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B",
           0.9051,
           null,
-          null
+          "xhigh"
         ],
         [
           "K2 Horizon 375B A23B",
@@ -4825,10 +4825,10 @@
         ],
         [
           "Inkling (xhigh)",
-          "Inkling (xhigh)",
+          "Inkling",
           0.8717,
           null,
-          null
+          "xhigh"
         ],
         [
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
@@ -4846,10 +4846,10 @@
         ],
         [
           "Muse Glimmer (high)",
-          "Muse Glimmer (high)",
+          "Muse Glimmer",
           0.8354,
           null,
-          null
+          "high"
         ],
         [
           "Mistral Medium 3.5",
@@ -4873,7 +4873,7 @@
       "comparisonKey": "scicode",
       "snapshotId": "ca06d1095e1ed71ada57a2e3fe2a3fcc052d5761b4d79f3310467b00dc05c49b",
       "contentHash": "ca06d1095e1ed71ada57a2e3fe2a3fcc052d5761b4d79f3310467b00dc05c49b",
-      "generatedAt": "2026-09-25T05:41:12Z",
+      "generatedAt": "2026-09-25T05:59:11Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis SciCode official public Dataset page",
@@ -4886,24 +4886,24 @@
       "entries": [
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.669,
           null,
-          null
+          "max with fallback"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.6505,
           null,
-          null
+          "xhigh with fallback"
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1",
           0.6308,
           null,
-          null
+          "max with fallback"
         ],
         [
           "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
@@ -4914,10 +4914,10 @@
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1",
           0.6088,
           null,
-          null
+          "xhigh with fallback"
         ],
         [
           "MiMo-V2.6-Pro",
@@ -4928,31 +4928,31 @@
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.6042,
           null,
-          null
+          "high with fallback"
         ],
         [
           "Gemini 3.7 Flash (medium)",
-          "Gemini 3.7 Flash (medium)",
+          "Gemini 3.7 Flash",
           0.5984,
           null,
-          null
+          "medium"
         ],
         [
           "Kimi K3 (max)",
-          "Kimi K3 (max)",
+          "Kimi K3",
           0.5949,
           null,
-          null
+          "max"
         ],
         [
           "GLM-5.3 (max)",
-          "GLM-5.3 (max)",
+          "GLM-5.3",
           0.5903,
           null,
-          null
+          "max"
         ],
         [
           "Step 5 Preview",
@@ -4963,73 +4963,73 @@
         ],
         [
           "Muse Spark 1.3 (max)",
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3",
           0.588,
           null,
-          null
+          "max"
         ],
         [
           "GPT-6 Sol (max)",
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol",
           0.5764,
           null,
-          null
+          "max"
         ],
         [
           "Grok 4.7 (xhigh)",
-          "Grok 4.7 (xhigh)",
+          "Grok 4.7",
           0.5741,
           null,
-          null
+          "xhigh"
         ],
         [
           "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol (max)",
+          "GPT-5.6 Sol",
           0.5706,
           null,
-          null
+          "max"
         ],
         [
           "Gemini 3.8 Flash (high)",
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash",
           0.566,
           null,
-          null
+          "high"
         ],
         [
           "GPT-6 Astra (max)",
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra",
           0.5648,
           null,
-          null
+          "max"
         ],
         [
           "Grok 4.6 (high)",
-          "Grok 4.6 (high)",
+          "Grok 4.6",
           0.5648,
           null,
-          null
+          "high"
         ],
         [
           "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5",
           0.5637,
           null,
-          null
+          "max"
         ],
         [
           "GPT-6 Luna (max)",
-          "GPT-6 Luna (max)",
+          "GPT-6 Luna",
           0.5463,
           null,
-          null
+          "max"
         ],
         [
           "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna (max)",
+          "GPT-5.6 Luna",
           0.5359,
           null,
-          null
+          "max"
         ],
         [
           "Qwen3.8 Max (0902)",
@@ -5040,10 +5040,10 @@
         ],
         [
           "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash",
           0.5185,
           null,
-          null
+          "max"
         ],
         [
           "GLM 5.3 Flash",
@@ -5061,24 +5061,24 @@
         ],
         [
           "Inkling (xhigh)",
-          "Inkling (xhigh)",
+          "Inkling",
           0.4699,
           null,
-          null
+          "xhigh"
         ],
         [
           "Qwen3.8 27B (xhigh)",
-          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B",
           0.4664,
           null,
-          null
+          "xhigh"
         ],
         [
           "Muse Glimmer (high)",
-          "Muse Glimmer (high)",
+          "Muse Glimmer",
           0.4491,
           null,
-          null
+          "high"
         ],
         [
           "K2 Horizon 375B A23B",
@@ -5123,7 +5123,7 @@
       "comparisonKey": "aa_lcr",
       "snapshotId": "93aebb0fe02f5e81610a2be3386a94d3d84ef3521e5f79cc8f26aae07b4a81d6",
       "contentHash": "93aebb0fe02f5e81610a2be3386a94d3d84ef3521e5f79cc8f26aae07b4a81d6",
-      "generatedAt": "2026-09-25T05:40:34Z",
+      "generatedAt": "2026-09-25T05:58:34Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis AA LCR official public Dataset page",
@@ -5136,10 +5136,10 @@
       "entries": [
         [
           "Kimi K3 (max)",
-          "Kimi K3 (max)",
+          "Kimi K3",
           0.8867,
           null,
-          null
+          "max"
         ],
         [
           "Step 5 Preview",
@@ -5157,101 +5157,101 @@
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1",
           0.8533,
           null,
-          null
+          "max with fallback"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.8467,
           null,
-          null
+          "max with fallback"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.8467,
           null,
-          null
+          "xhigh with fallback"
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+          "Claude Fable 5.1",
           0.8467,
           null,
-          null
+          "medium with fallback"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.8433,
           null,
-          null
+          "medium with fallback"
         ],
         [
           "GPT-5.5 (xhigh)",
-          "GPT-5.5 (xhigh)",
+          "GPT-5.5",
           0.8433,
           null,
-          null
+          "xhigh"
         ],
         [
           "GPT-5.5 (high)",
-          "GPT-5.5 (high)",
+          "GPT-5.5",
           0.8433,
           null,
-          null
+          "high"
         ],
         [
           "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol (max)",
+          "GPT-5.6 Sol",
           0.84,
           null,
-          null
+          "max"
         ],
         [
           "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash",
           0.84,
           null,
-          null
+          "max"
         ],
         [
           "GPT-6 Sol (max)",
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol",
           0.8367,
           null,
-          null
+          "max"
         ],
         [
           "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna (max)",
+          "GPT-5.6 Luna",
           0.8367,
           null,
-          null
+          "max"
         ],
         [
           "GPT-6 Luna (max)",
-          "GPT-6 Luna (max)",
+          "GPT-6 Luna",
           0.8333,
           null,
-          null
+          "max"
         ],
         [
           "Muse Glimmer (high)",
-          "Muse Glimmer (high)",
+          "Muse Glimmer",
           0.8333,
           null,
-          null
+          "high"
         ],
         [
           "Muse Spark 1.3 (max)",
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3",
           0.83,
           null,
-          null
+          "max"
         ],
         [
           "MiniMax-M3",
@@ -5262,24 +5262,24 @@
         ],
         [
           "Qwen3.8 27B (xhigh)",
-          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B",
           0.82,
           null,
-          null
+          "xhigh"
         ],
         [
           "Gemini 3.8 Flash (high)",
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash",
           0.8133,
           null,
-          null
+          "high"
         ],
         [
           "GPT-6 Astra (max)",
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra",
           0.8067,
           null,
-          null
+          "max"
         ],
         [
           "Qwen3.8 Max (0902)",
@@ -5290,10 +5290,10 @@
         ],
         [
           "Grok 4.6 (high)",
-          "Grok 4.6 (high)",
+          "Grok 4.6",
           0.8033,
           null,
-          null
+          "high"
         ],
         [
           "GLM 5.3 Flash",
@@ -5311,17 +5311,17 @@
         ],
         [
           "GLM-5.3 (max)",
-          "GLM-5.3 (max)",
+          "GLM-5.3",
           0.7967,
           null,
-          null
+          "max"
         ],
         [
           "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5",
           0.7933,
           null,
-          null
+          "max"
         ],
         [
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
@@ -5332,17 +5332,17 @@
         ],
         [
           "Inkling (xhigh)",
-          "Inkling (xhigh)",
+          "Inkling",
           0.7733,
           null,
-          null
+          "xhigh"
         ],
         [
           "Grok 4.7 (xhigh)",
-          "Grok 4.7 (xhigh)",
+          "Grok 4.7",
           0.7667,
           null,
-          null
+          "xhigh"
         ],
         [
           "Gemini 3.5 Flash-Lite",
@@ -5373,7 +5373,7 @@
       "comparisonKey": "aa_omniscience_index",
       "snapshotId": "3808138d7fb336e830f8d432f39ff0138dad5e89b73cf2b453825a23ace66849",
       "contentHash": "3808138d7fb336e830f8d432f39ff0138dad5e89b73cf2b453825a23ace66849",
-      "generatedAt": "2026-09-25T05:40:34Z",
+      "generatedAt": "2026-09-25T05:58:36Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis AA Omniscience Index official public Dataset page",
@@ -5386,38 +5386,38 @@
       "entries": [
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5",
           46.42,
           null,
-          null
+          "max with fallback"
         ],
         [
           "GPT-6 Astra (high)",
-          "GPT-6 Astra (high)",
+          "GPT-6 Astra",
           43.73,
           null,
-          null
+          "high"
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1",
           43.45,
           null,
-          null
+          "max with fallback"
         ],
         [
           "GPT-6 Astra (xhigh)",
-          "GPT-6 Astra (xhigh)",
+          "GPT-6 Astra",
           43.42,
           null,
-          null
+          "xhigh"
         ],
         [
           "GPT-6 Astra (max)",
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra",
           43.4,
           null,
-          null
+          "max"
         ],
         [
           "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
@@ -5428,73 +5428,73 @@
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5",
           42.65,
           null,
-          null
+          "xhigh with fallback"
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1",
           42.38,
           null,
-          null
+          "xhigh with fallback"
         ],
         [
           "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5",
           37.07,
           null,
-          null
+          "max"
         ],
         [
           "Grok 4.7 (xhigh)",
-          "Grok 4.7 (xhigh)",
+          "Grok 4.7",
           32.03,
           null,
-          null
+          "xhigh"
         ],
         [
           "Grok 4.6 (high)",
-          "Grok 4.6 (high)",
+          "Grok 4.6",
           30.48,
           null,
-          null
+          "high"
         ],
         [
           "Gemini 3.8 Flash (high)",
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash",
           29.55,
           null,
-          null
+          "high"
         ],
         [
           "GPT-6 Sol (max)",
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol",
           27.12,
           null,
-          null
+          "max"
         ],
         [
           "Muse Spark 1.3 (max)",
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3",
           25.0,
           null,
-          null
+          "max"
         ],
         [
           "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol (max)",
+          "GPT-5.6 Sol",
           21.97,
           null,
-          null
+          "max"
         ],
         [
           "Kimi K3 (max)",
-          "Kimi K3 (max)",
+          "Kimi K3",
           19.7,
           null,
-          null
+          "max"
         ],
         [
           "Step 5 Preview",
@@ -5505,10 +5505,10 @@
         ],
         [
           "GLM-5.3 (max)",
-          "GLM-5.3 (max)",
+          "GLM-5.3",
           14.3,
           null,
-          null
+          "max"
         ],
         [
           "Qwen3.8 Max (0902)",
@@ -5540,10 +5540,10 @@
         ],
         [
           "Inkling (xhigh)",
-          "Inkling (xhigh)",
+          "Inkling",
           2.0,
           null,
-          null
+          "xhigh"
         ],
         [
           "MiniMax-M3",
@@ -5554,10 +5554,10 @@
         ],
         [
           "GPT-6 Luna (max)",
-          "GPT-6 Luna (max)",
+          "GPT-6 Luna",
           0.65,
           null,
-          null
+          "max"
         ],
         [
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
@@ -5575,31 +5575,31 @@
         ],
         [
           "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash",
           -5.3,
           null,
-          null
+          "max"
         ],
         [
           "Qwen3.8 27B (xhigh)",
-          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B",
           -9.98,
           null,
-          null
+          "xhigh"
         ],
         [
           "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna (max)",
+          "GPT-5.6 Luna",
           -10.28,
           null,
-          null
+          "max"
         ],
         [
           "Muse Glimmer (high)",
-          "Muse Glimmer (high)",
+          "Muse Glimmer",
           -32.85,
           null,
-          null
+          "high"
         ],
         [
           "Mistral Medium 3.5",
@@ -5623,7 +5623,7 @@
       "comparisonKey": "critpt",
       "snapshotId": "11e864dce8eb6725d6277dad15f44a4a81a288d75634f0f43b1feead941f79bc",
       "contentHash": "11e864dce8eb6725d6277dad15f44a4a81a288d75634f0f43b1feead941f79bc",
-      "generatedAt": "2026-09-25T05:40:33Z",
+      "generatedAt": "2026-09-25T05:58:32Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis CritPt official public Dataset page",
@@ -5636,87 +5636,87 @@
       "entries": [
         [
           "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol (max)",
+          "GPT-5.6 Sol",
           0.3229,
           null,
-          null
+          "max"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.3171,
           null,
-          null
+          "max with fallback"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.3171,
           null,
-          null
+          "xhigh with fallback"
         ],
         [
           "GPT-6 Astra (max)",
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra",
           0.3171,
           null,
-          null
+          "max"
         ],
         [
           "GPT-6 Astra (xhigh)",
-          "GPT-6 Astra (xhigh)",
+          "GPT-6 Astra",
           0.3143,
           null,
-          null
+          "xhigh"
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1",
           0.3114,
           null,
-          null
+          "xhigh with fallback"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.3086,
           null,
-          null
+          "high with fallback"
         ],
         [
           "GPT-6 Sol (max)",
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol",
           0.3086,
           null,
-          null
+          "max"
         ],
         [
           "GPT-5.5 Pro (xhigh)",
-          "GPT-5.5 Pro (xhigh)",
+          "GPT-5.5 Pro",
           0.3057,
           null,
-          null
+          "xhigh"
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Fable 5.1",
           0.3029,
           null,
-          null
+          "high with fallback"
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1",
           0.2971,
           null,
-          null
+          "max with fallback"
         ],
         [
           "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5",
           0.2914,
           null,
-          null
+          "max"
         ],
         [
           "MiMo-V2.6-Pro",
@@ -5727,17 +5727,17 @@
         ],
         [
           "Muse Spark 1.3 (max)",
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3",
           0.2486,
           null,
-          null
+          "max"
         ],
         [
           "Kimi K3 (max)",
-          "Kimi K3 (max)",
+          "Kimi K3",
           0.2343,
           null,
-          null
+          "max"
         ],
         [
           "Step 5 Preview",
@@ -5748,38 +5748,38 @@
         ],
         [
           "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna (max)",
+          "GPT-5.6 Luna",
           0.2057,
           null,
-          null
+          "max"
         ],
         [
           "GPT-6 Luna (max)",
-          "GPT-6 Luna (max)",
+          "GPT-6 Luna",
           0.1943,
           null,
-          null
+          "max"
         ],
         [
           "GLM-5.3 (max)",
-          "GLM-5.3 (max)",
+          "GLM-5.3",
           0.1914,
           null,
-          null
+          "max"
         ],
         [
           "Gemini 3.8 Flash (high)",
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash",
           0.1829,
           null,
-          null
+          "high"
         ],
         [
           "Grok 4.7 (xhigh)",
-          "Grok 4.7 (xhigh)",
+          "Grok 4.7",
           0.1771,
           null,
-          null
+          "xhigh"
         ],
         [
           "Qwen3.8 Max (0902)",
@@ -5790,10 +5790,10 @@
         ],
         [
           "Grok 4.6 (high)",
-          "Grok 4.6 (high)",
+          "Grok 4.6",
           0.1714,
           null,
-          null
+          "high"
         ],
         [
           "GLM 5.3 Flash",
@@ -5804,24 +5804,24 @@
         ],
         [
           "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash",
           0.1429,
           null,
-          null
+          "max"
         ],
         [
           "Qwen3.8 27B (xhigh)",
-          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B",
           0.0543,
           null,
-          null
+          "xhigh"
         ],
         [
           "Inkling (xhigh)",
-          "Inkling (xhigh)",
+          "Inkling",
           0.0543,
           null,
-          null
+          "xhigh"
         ],
         [
           "K2 Horizon 375B A23B",
@@ -5846,10 +5846,10 @@
         ],
         [
           "Muse Glimmer (high)",
-          "Muse Glimmer (high)",
+          "Muse Glimmer",
           0.0257,
           null,
-          null
+          "high"
         ],
         [
           "Gemini 3.5 Flash-Lite",
@@ -5880,7 +5880,7 @@
       "comparisonKey": "gdpval_aa_elo",
       "snapshotId": "599062f01ecbcdfce2613c33b1a19cbe6a42aeb3ed1bf6ff2755b96cb8e337db",
       "contentHash": "599062f01ecbcdfce2613c33b1a19cbe6a42aeb3ed1bf6ff2755b96cb8e337db",
-      "generatedAt": "2026-09-25T05:40:52Z",
+      "generatedAt": "2026-09-25T05:58:44Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis GDPval-AA Elo official public Dataset page",
@@ -5893,73 +5893,73 @@
       "entries": [
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5",
           1846.17,
           null,
-          null
+          "max with fallback"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5",
           1820.11,
           null,
-          null
+          "xhigh with fallback"
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1",
           1734.67,
           null,
-          null
+          "max with fallback"
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1",
           1720.92,
           null,
-          null
+          "xhigh with fallback"
         ],
         [
           "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5",
           1707.92,
           null,
-          null
+          "max"
         ],
         [
           "Grok 4.7 (xhigh)",
-          "Grok 4.7 (xhigh)",
+          "Grok 4.7",
           1695.21,
           null,
-          null
+          "xhigh"
         ],
         [
           "Grok 4.7 (high)",
-          "Grok 4.7 (high)",
+          "Grok 4.7",
           1693.72,
           null,
-          null
+          "high"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Opus 5.5",
           1691.72,
           null,
-          null
+          "high with fallback"
         ],
         [
           "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
-          "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
+          "Claude Opus 5",
           1676.3,
           null,
-          null
+          "xhigh"
         ],
         [
           "Muse Spark 1.3 (max)",
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3",
           1674.07,
           null,
-          null
+          "max"
         ],
         [
           "MiMo-V2.6-Pro",
@@ -5977,10 +5977,10 @@
         ],
         [
           "GLM-5.3 (max)",
-          "GLM-5.3 (max)",
+          "GLM-5.3",
           1645.52,
           null,
-          null
+          "max"
         ],
         [
           "GLM 5.3 Flash",
@@ -5991,24 +5991,24 @@
         ],
         [
           "Grok 4.6 (high)",
-          "Grok 4.6 (high)",
+          "Grok 4.6",
           1605.49,
           null,
-          null
+          "high"
         ],
         [
           "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash",
           1600.0,
           null,
-          null
+          "max"
         ],
         [
           "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol (max)",
+          "GPT-5.6 Sol",
           1587.9,
           null,
-          null
+          "max"
         ],
         [
           "Step 5 Preview",
@@ -6019,52 +6019,52 @@
         ],
         [
           "GPT-6 Astra (max)",
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra",
           1541.89,
           null,
-          null
+          "max"
         ],
         [
           "Kimi K3 (max)",
-          "Kimi K3 (max)",
+          "Kimi K3",
           1523.97,
           null,
-          null
+          "max"
         ],
         [
           "GPT-6 Sol (max)",
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol",
           1486.93,
           null,
-          null
+          "max"
         ],
         [
           "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna (max)",
+          "GPT-5.6 Luna",
           1443.14,
           null,
-          null
+          "max"
         ],
         [
           "Gemini 3.8 Flash (high)",
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash",
           1411.95,
           null,
-          null
+          "high"
         ],
         [
           "Qwen3.8 27B (xhigh)",
-          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B",
           1408.94,
           null,
-          null
+          "xhigh"
         ],
         [
           "GPT-6 Luna (max)",
-          "GPT-6 Luna (max)",
+          "GPT-6 Luna",
           1367.09,
           null,
-          null
+          "max"
         ],
         [
           "K2 Horizon 375B A23B",
@@ -6082,10 +6082,10 @@
         ],
         [
           "Inkling (xhigh)",
-          "Inkling (xhigh)",
+          "Inkling",
           1063.67,
           null,
-          null
+          "xhigh"
         ],
         [
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
@@ -6103,10 +6103,10 @@
         ],
         [
           "Muse Glimmer (high)",
-          "Muse Glimmer (high)",
+          "Muse Glimmer",
           774.24,
           null,
-          null
+          "high"
         ],
         [
           "Mistral Medium 3.5",
@@ -6130,7 +6130,7 @@
       "comparisonKey": "terminalbench_hard",
       "snapshotId": "6b4c831cbc5c5f9ba09d67aceb0437922fcc280e6ca4584252833d824795aebd",
       "contentHash": "6b4c831cbc5c5f9ba09d67aceb0437922fcc280e6ca4584252833d824795aebd",
-      "generatedAt": "2026-09-25T05:41:29Z",
+      "generatedAt": "2026-09-25T05:59:24Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
@@ -6143,10 +6143,10 @@
       "entries": [
         [
           "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol (max)",
+          "GPT-5.6 Sol",
           0.6591,
           null,
-          null
+          "max"
         ],
         [
           "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
@@ -6157,31 +6157,31 @@
         ],
         [
           "GPT-5.6 Sol (medium)",
-          "GPT-5.6 Sol (medium)",
+          "GPT-5.6 Sol",
           0.6288,
           null,
-          null
+          "medium"
         ],
         [
           "GPT-5.6 Terra (xhigh)",
-          "GPT-5.6 Terra (xhigh)",
+          "GPT-5.6 Terra",
           0.6288,
           null,
-          null
+          "xhigh"
         ],
         [
           "GPT-5.6 Sol (high)",
-          "GPT-5.6 Sol (high)",
+          "GPT-5.6 Sol",
           0.6212,
           null,
-          null
+          "high"
         ],
         [
           "GPT-5.6 Sol (xhigh)",
-          "GPT-5.6 Sol (xhigh)",
+          "GPT-5.6 Sol",
           0.6136,
           null,
-          null
+          "xhigh"
         ],
         [
           "MiniMax-M3",
@@ -6219,7 +6219,7 @@
       "comparisonKey": "terminalbench_v2_1",
       "snapshotId": "f3f176c20ae56155a8bffb45fd54a775a73568129bec3dee91300cb76e761c33",
       "contentHash": "f3f176c20ae56155a8bffb45fd54a775a73568129bec3dee91300cb76e761c33",
-      "generatedAt": "2026-09-25T05:41:22Z",
+      "generatedAt": "2026-09-25T05:59:29Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
@@ -6232,52 +6232,52 @@
       "entries": [
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1",
           0.9139,
           null,
-          null
+          "max with fallback"
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1",
           0.9101,
           null,
-          null
+          "xhigh with fallback"
         ],
         [
           "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Fable 5.1",
           0.8989,
           null,
-          null
+          "high with fallback"
         ],
         [
           "GPT-6 Astra (high)",
-          "GPT-6 Astra (high)",
+          "GPT-6 Astra",
           0.8989,
           null,
-          null
+          "high"
         ],
         [
           "GPT-6 Astra (medium)",
-          "GPT-6 Astra (medium)",
+          "GPT-6 Astra",
           0.8951,
           null,
-          null
+          "medium"
         ],
         [
           "GPT-5.6 Sol (xhigh)",
-          "GPT-5.6 Sol (xhigh)",
+          "GPT-5.6 Sol",
           0.8951,
           null,
-          null
+          "xhigh"
         ],
         [
           "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5",
           0.8914,
           null,
-          null
+          "max"
         ],
         [
           "Qwen3.8 Max (0902)",
@@ -6288,45 +6288,45 @@
         ],
         [
           "GPT-6 Astra (max)",
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra",
           0.8839,
           null,
-          null
+          "max"
         ],
         [
           "Grok 4.6 (high)",
-          "Grok 4.6 (high)",
+          "Grok 4.6",
           0.8839,
           null,
-          null
+          "high"
         ],
         [
           "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol (max)",
+          "GPT-5.6 Sol",
           0.8801,
           null,
-          null
+          "max"
         ],
         [
           "Gemini 3.8 Flash (high)",
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash",
           0.8764,
           null,
-          null
+          "high"
         ],
         [
           "Kimi K3 (max)",
-          "Kimi K3 (max)",
+          "Kimi K3",
           0.8502,
           null,
-          null
+          "max"
         ],
         [
           "Muse Spark 1.3 (max)",
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3",
           0.8427,
           null,
-          null
+          "max"
         ],
         [
           "GLM 5.3 Flash",
@@ -6337,24 +6337,24 @@
         ],
         [
           "GLM-5.3 (max)",
-          "GLM-5.3 (max)",
+          "GLM-5.3",
           0.839,
           null,
-          null
+          "max"
         ],
         [
           "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna (max)",
+          "GPT-5.6 Luna",
           0.809,
           null,
-          null
+          "max"
         ],
         [
           "Qwen3.8 27B (xhigh)",
-          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B",
           0.7978,
           null,
-          null
+          "xhigh"
         ],
         [
           "K2 Horizon 375B A23B",
@@ -6372,10 +6372,10 @@
         ],
         [
           "Inkling (xhigh)",
-          "Inkling (xhigh)",
+          "Inkling",
           0.5506,
           null,
-          null
+          "xhigh"
         ],
         [
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
@@ -6393,10 +6393,10 @@
         ],
         [
           "Muse Glimmer (high)",
-          "Muse Glimmer (high)",
+          "Muse Glimmer",
           0.5169,
           null,
-          null
+          "high"
         ],
         [
           "Mistral Medium 3.5",
@@ -6420,7 +6420,7 @@
       "comparisonKey": "ifbench",
       "snapshotId": "2da9d98b704d1a1cd01dc7b88cce6a6cfd641479be9e99bc4a75576eac784b99",
       "contentHash": "2da9d98b704d1a1cd01dc7b88cce6a6cfd641479be9e99bc4a75576eac784b99",
-      "generatedAt": "2026-09-25T05:40:47Z",
+      "generatedAt": "2026-09-25T05:58:47Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis IFBench official public Dataset page",
@@ -6433,10 +6433,10 @@
       "entries": [
         [
           "Grok 4.3 (medium)",
-          "Grok 4.3 (medium)",
+          "Grok 4.3",
           0.8333,
           null,
-          null
+          "medium"
         ],
         [
           "Grok 4.20 0309 (Reasoning)",
@@ -6461,10 +6461,10 @@
         ],
         [
           "Grok 4.3 (high)",
-          "Grok 4.3 (high)",
+          "Grok 4.3",
           0.8129,
           null,
-          null
+          "high"
         ],
         [
           "Grok 4.20 0309 v2 (Reasoning)",
@@ -6475,17 +6475,17 @@
         ],
         [
           "Grok 4.3 (low)",
-          "Grok 4.3 (low)",
+          "Grok 4.3",
           0.8095,
           null,
-          null
+          "low"
         ],
         [
           "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol (max)",
+          "GPT-5.6 Sol",
           0.7265,
           null,
-          null
+          "max"
         ],
         [
           "Mistral Medium 3.5",
@@ -6509,7 +6509,7 @@
       "comparisonKey": "mmmu_pro",
       "snapshotId": "73621ca6fb44081af83f67e060780bee5597ed09157573a4375694b955755bc7",
       "contentHash": "73621ca6fb44081af83f67e060780bee5597ed09157573a4375694b955755bc7",
-      "generatedAt": "2026-09-25T05:41:10Z",
+      "generatedAt": "2026-09-25T05:59:09Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis MMMU-Pro official public Dataset page",
@@ -6522,80 +6522,80 @@
       "entries": [
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.8769,
           null,
-          null
+          "max with fallback"
         ],
         [
           "GPT-6 Astra (max)",
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra",
           0.8688,
           null,
-          null
+          "max"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.8659,
           null,
-          null
+          "xhigh with fallback"
         ],
         [
           "GPT-6 Astra (high)",
-          "GPT-6 Astra (high)",
+          "GPT-6 Astra",
           0.8642,
           null,
-          null
+          "high"
         ],
         [
           "GPT-6 Astra (xhigh)",
-          "GPT-6 Astra (xhigh)",
+          "GPT-6 Astra",
           0.8624,
           null,
-          null
+          "xhigh"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.8584,
           null,
-          null
+          "high with fallback"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.8572,
           null,
-          null
+          "medium with fallback"
         ],
         [
           "Gemini 3.8 Flash (high)",
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash",
           0.8561,
           null,
-          null
+          "high"
         ],
         [
           "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5",
           0.8474,
           null,
-          null
+          "max"
         ],
         [
           "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol (max)",
+          "GPT-5.6 Sol",
           0.8341,
           null,
-          null
+          "max"
         ],
         [
           "GPT-6 Sol (max)",
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol",
           0.8329,
           null,
-          null
+          "max"
         ],
         [
           "Qwen3.8 Max (0902)",
@@ -6606,10 +6606,10 @@
         ],
         [
           "Kimi K3 (max)",
-          "Kimi K3 (max)",
+          "Kimi K3",
           0.8052,
           null,
-          null
+          "max"
         ],
         [
           "Gemini 3.5 Flash-Lite",
@@ -6620,10 +6620,10 @@
         ],
         [
           "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna (max)",
+          "GPT-5.6 Luna",
           0.7855,
           null,
-          null
+          "max"
         ],
         [
           "MiniMax-M3",
@@ -6634,10 +6634,10 @@
         ],
         [
           "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash",
           0.7699,
           null,
-          null
+          "max"
         ],
         [
           "Step 5 Preview",
@@ -6648,31 +6648,31 @@
         ],
         [
           "Qwen3.8 27B (xhigh)",
-          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B",
           0.763,
           null,
-          null
+          "xhigh"
         ],
         [
           "GPT-6 Luna (max)",
-          "GPT-6 Luna (max)",
+          "GPT-6 Luna",
           0.7555,
           null,
-          null
+          "max"
         ],
         [
           "Muse Glimmer (high)",
-          "Muse Glimmer (high)",
+          "Muse Glimmer",
           0.7434,
           null,
-          null
+          "high"
         ],
         [
           "Inkling (xhigh)",
-          "Inkling (xhigh)",
+          "Inkling",
           0.7347,
           null,
-          null
+          "xhigh"
         ],
         [
           "Mistral Medium 3.5",
@@ -6696,7 +6696,7 @@
       "comparisonKey": "artificial_analysis_openness_index",
       "snapshotId": "e4b400ee57b654677a894082122e5e7413f40bddef3042383b173f9c49108fbe",
       "contentHash": "e4b400ee57b654677a894082122e5e7413f40bddef3042383b173f9c49108fbe",
-      "generatedAt": "2026-09-25T05:40:34Z",
+      "generatedAt": "2026-09-25T05:58:33Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Artificial Analysis Openness Index official Data API",
@@ -6716,24 +6716,24 @@
         ],
         [
           "K2-V2 (high)",
-          "K2-V2 (high)",
+          "K2-V2",
           88.89,
           null,
-          null
+          "high"
         ],
         [
           "K2-V2 (medium)",
-          "K2-V2 (medium)",
+          "K2-V2",
           88.89,
           null,
-          null
+          "medium"
         ],
         [
           "K2-V2 (low)",
-          "K2-V2 (low)",
+          "K2-V2",
           88.89,
           null,
-          null
+          "low"
         ],
         [
           "Olmo 3.1 32B Think",
@@ -6897,7 +6897,7 @@
       "comparisonKey": "mlcr_overall",
       "snapshotId": "19246d9428911bb5eb872cb58ab8f91cebdd9d296d92824e052307fe8a41addb",
       "contentHash": "19246d9428911bb5eb872cb58ab8f91cebdd9d296d92824e052307fe8a41addb",
-      "generatedAt": "2026-09-25T05:41:10Z",
+      "generatedAt": "2026-09-25T05:59:09Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis MLCR Overall official public Dataset page",
@@ -6910,17 +6910,17 @@
       "entries": [
         [
           "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1",
           0.7111,
           null,
-          null
+          "max with fallback"
         ],
         [
           "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5",
           0.6667,
           null,
-          null
+          "max with fallback"
         ],
         [
           "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
@@ -6931,38 +6931,38 @@
         ],
         [
           "Claude Opus 5 (Adaptive Reasoning, High Effort)",
-          "Claude Opus 5 (Adaptive Reasoning, High Effort)",
+          "Claude Opus 5",
           0.5944,
           null,
-          null
+          "high"
         ],
         [
           "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
-          "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
+          "Claude Opus 5",
           0.5833,
           null,
-          null
+          "xhigh"
         ],
         [
           "Claude Opus 5 (Adaptive Reasoning, Medium Effort)",
-          "Claude Opus 5 (Adaptive Reasoning, Medium Effort)",
+          "Claude Opus 5",
           0.5611,
           null,
-          null
+          "medium"
         ],
         [
           "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5",
           0.5556,
           null,
-          null
+          "max"
         ],
         [
           "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Sonnet 5",
           0.55,
           null,
-          null
+          "max"
         ],
         [
           "GLM 5.3 Flash",
@@ -6973,59 +6973,59 @@
         ],
         [
           "GLM-5.3 (max)",
-          "GLM-5.3 (max)",
+          "GLM-5.3",
           0.4833,
           null,
-          null
+          "max"
         ],
         [
           "Muse Spark 1.3 (max)",
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3",
           0.4333,
           null,
-          null
+          "max"
         ],
         [
           "Kimi K3 (max)",
-          "Kimi K3 (max)",
+          "Kimi K3",
           0.3833,
           null,
-          null
+          "max"
         ],
         [
           "GPT-6 Astra (max)",
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra",
           0.35,
           null,
-          null
+          "max"
         ],
         [
           "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol (max)",
+          "GPT-5.6 Sol",
           0.2611,
           null,
-          null
+          "max"
         ],
         [
           "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash",
           0.2278,
           null,
-          null
+          "max"
         ],
         [
           "Gemini 3.8 Flash (high)",
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash",
           0.2167,
           null,
-          null
+          "high"
         ],
         [
           "Qwen3.8 27B (xhigh)",
-          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B",
           0.2167,
           null,
-          null
+          "xhigh"
         ],
         [
           "Qwen3.8 Max (0902)",
@@ -7036,17 +7036,17 @@
         ],
         [
           "Muse Glimmer (high)",
-          "Muse Glimmer (high)",
+          "Muse Glimmer",
           0.2,
           null,
-          null
+          "high"
         ],
         [
           "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna (max)",
+          "GPT-5.6 Luna",
           0.1944,
           null,
-          null
+          "max"
         ],
         [
           "MiMo-V2.6-Pro",
@@ -7071,38 +7071,38 @@
         ],
         [
           "GPT-6 Sol (max)",
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol",
           0.1611,
           null,
-          null
+          "max"
         ],
         [
           "GPT-6 Luna (max)",
-          "GPT-6 Luna (max)",
+          "GPT-6 Luna",
           0.1611,
           null,
-          null
+          "max"
         ],
         [
           "Grok 4.7 (xhigh)",
-          "Grok 4.7 (xhigh)",
+          "Grok 4.7",
           0.15,
           null,
-          null
+          "xhigh"
         ],
         [
           "Grok 4.6 (high)",
-          "Grok 4.6 (high)",
+          "Grok 4.6",
           0.1222,
           null,
-          null
+          "high"
         ],
         [
           "Inkling (xhigh)",
-          "Inkling (xhigh)",
+          "Inkling",
           0.1222,
           null,
-          null
+          "xhigh"
         ],
         [
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
@@ -7140,7 +7140,7 @@
       "comparisonKey": "v1.1",
       "snapshotId": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019",
       "contentHash": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019",
-      "generatedAt": "2026-09-25T05:40:34Z",
+      "generatedAt": "2026-09-25T05:58:32Z",
       "taskCount": null,
       "source": {
         "name": "DeepSWE v1.1 official leaderboard JSON",
