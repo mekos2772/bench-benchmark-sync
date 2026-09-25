@@ -2,9 +2,9 @@
   "schemaVersion": 3,
   "dataSource": "benchmark-sync-static",
   "exporterVersion": "0.4.0",
-  "workflowRunId": "35974997736",
-  "mainCommit": "31eefc18740d36591bc8aa8427ee60070ec82133",
-  "generatedAt": "2026-09-24T08:25:29Z",
+  "workflowRunId": "36099525077",
+  "mainCommit": "5618e6b2f368b65957ff26298e1825d02b38ce8b",
+  "generatedAt": "2026-09-25T05:41:29Z",
   "families": [
     {
       "familyId": "livebench",
@@ -70,55 +70,55 @@
           "id": "aa_intelligence_index_v4_3",
           "title": "Artificial Analysis Intelligence Index v4.3",
           "isOverall": true,
-          "modelCount": 20
+          "modelCount": 32
         },
         {
           "id": "aa_terminal_bench_v4_0",
           "title": "Terminal-Bench 4.0",
           "isOverall": false,
-          "modelCount": 20
+          "modelCount": 32
         },
         {
           "id": "aa_humanitys_last_exam",
           "title": "Humanity's Last Exam",
           "isOverall": false,
-          "modelCount": 20
+          "modelCount": 32
         },
         {
           "id": "aa_gpqa_diamond",
           "title": "GPQA Diamond",
           "isOverall": false,
-          "modelCount": 20
+          "modelCount": 25
         },
         {
           "id": "aa_scicode",
           "title": "SciCode",
           "isOverall": false,
-          "modelCount": 20
+          "modelCount": 32
         },
         {
           "id": "aa_lcr",
           "title": "AA LCR",
           "isOverall": false,
-          "modelCount": 20
+          "modelCount": 32
         },
         {
           "id": "aa_omniscience_index",
           "title": "AA Omniscience Index",
           "isOverall": false,
-          "modelCount": 20
+          "modelCount": 32
         },
         {
           "id": "aa_critpt",
           "title": "CritPt",
           "isOverall": false,
-          "modelCount": 20
+          "modelCount": 33
         },
         {
           "id": "aa_gdpval_elo",
           "title": "GDPval-AA Elo",
           "isOverall": false,
-          "modelCount": 20
+          "modelCount": 32
         },
         {
           "id": "aa_terminalbench_hard",
@@ -130,7 +130,7 @@
           "id": "aa_terminalbench_v2_1",
           "title": "Terminal-Bench v2.1",
           "isOverall": false,
-          "modelCount": 20
+          "modelCount": 25
         },
         {
           "id": "aa_ifbench",
@@ -142,19 +142,19 @@
           "id": "aa_mmmu_pro",
           "title": "MMMU-Pro",
           "isOverall": false,
-          "modelCount": 20
+          "modelCount": 23
         },
         {
           "id": "aa_openness_index",
           "title": "Artificial Analysis Openness Index",
           "isOverall": false,
-          "modelCount": 20
+          "modelCount": 25
         },
         {
           "id": "aa_mlcr_overall",
           "title": "MLCR Overall",
           "isOverall": false,
-          "modelCount": 20
+          "modelCount": 31
         }
       ]
     },
@@ -186,7 +186,7 @@
       "comparisonKey": "live_bench",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-24T08:24:59Z",
+      "generatedAt": "2026-09-25T05:41:07Z",
       "taskCount": 23,
       "source": {
         "name": "LiveBench dated official leaderboard CSV",
@@ -653,7 +653,7 @@
       "comparisonKey": "coding",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-24T08:24:45Z",
+      "generatedAt": "2026-09-25T05:40:48Z",
       "taskCount": 2,
       "source": {
         "name": "LiveBench Coding dated official leaderboard CSV",
@@ -1120,7 +1120,7 @@
       "comparisonKey": "reasoning",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-24T08:25:03Z",
+      "generatedAt": "2026-09-25T05:41:03Z",
       "taskCount": 4,
       "source": {
         "name": "LiveBench Reasoning dated official leaderboard CSV",
@@ -1587,7 +1587,7 @@
       "comparisonKey": "math",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-24T08:25:08Z",
+      "generatedAt": "2026-09-25T05:41:03Z",
       "taskCount": 4,
       "source": {
         "name": "LiveBench Mathematics dated official leaderboard CSV",
@@ -2054,7 +2054,7 @@
       "comparisonKey": "data_analysis",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-24T08:24:52Z",
+      "generatedAt": "2026-09-25T05:40:58Z",
       "taskCount": 3,
       "source": {
         "name": "LiveBench Data Analysis dated official leaderboard CSV",
@@ -2521,7 +2521,7 @@
       "comparisonKey": "language",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-24T08:24:57Z",
+      "generatedAt": "2026-09-25T05:40:59Z",
       "taskCount": 3,
       "source": {
         "name": "LiveBench Language dated official leaderboard CSV",
@@ -2988,7 +2988,7 @@
       "comparisonKey": "instruction_following",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-24T08:25:01Z",
+      "generatedAt": "2026-09-25T05:40:59Z",
       "taskCount": 4,
       "source": {
         "name": "LiveBench IF dated official leaderboard CSV",
@@ -3455,7 +3455,7 @@
       "comparisonKey": "agentic_coding",
       "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
       "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-24T08:24:48Z",
+      "generatedAt": "2026-09-25T05:40:46Z",
       "taskCount": 3,
       "source": {
         "name": "LiveBench Agentic Coding dated official leaderboard CSV",
@@ -3920,9 +3920,9 @@
       "metric": "Artificial Analysis Intelligence Index: Score",
       "unit": "score",
       "comparisonKey": "intelligence_index_v4_3",
-      "snapshotId": "845b321c26600eb93d1299bf3722b6c66fe6d055af5088922c37f5dd39be0da2",
-      "contentHash": "845b321c26600eb93d1299bf3722b6c66fe6d055af5088922c37f5dd39be0da2",
-      "generatedAt": "2026-09-24T08:24:29Z",
+      "snapshotId": "9247a559e5385fbb359e9430525d07b3ac43fd9f631868ed7a6337177510ca9b",
+      "contentHash": "9247a559e5385fbb359e9430525d07b3ac43fd9f631868ed7a6337177510ca9b",
+      "generatedAt": "2026-09-25T05:40:33Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Intelligence Index official public Dataset page",
@@ -3934,36 +3934,36 @@
       },
       "entries": [
         [
-          "Claude Opus 5.5 (max with fallback)",
-          "Claude Opus 5.5 (max with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
           57.62,
           null,
           null
         ],
         [
-          "Claude Opus 5.5 (xhigh with fallback)",
-          "Claude Opus 5.5 (xhigh with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           55.99,
           null,
           null
         ],
         [
-          "Claude Opus 5.5 (high with fallback)",
-          "Claude Opus 5.5 (high with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
           53.58,
           null,
           null
         ],
         [
-          "Claude Fable 5.1 (max with fallback)",
-          "Claude Fable 5.1 (max with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
           53.35,
           null,
           null
         ],
         [
-          "Claude Fable 5.1 (xhigh with fallback)",
-          "Claude Fable 5.1 (xhigh with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           53.2,
           null,
           null
@@ -3983,15 +3983,15 @@
           null
         ],
         [
-          "Claude Opus 5.5 (medium with fallback)",
-          "Claude Opus 5.5 (medium with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
           51.24,
           null,
           null
         ],
         [
-          "Claude Opus 5 (max)",
-          "Claude Opus 5 (max)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
           50.78,
           null,
           null
@@ -4067,9 +4067,93 @@
           null
         ],
         [
-          "GLM-5.3-Flash",
-          "GLM-5.3-Flash",
+          "GLM 5.3 Flash",
+          "GLM 5.3 Flash",
           41.81,
+          null,
+          null
+        ],
+        [
+          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash (high)",
+          40.93,
+          null,
+          null
+        ],
+        [
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          39.46,
+          null,
+          null
+        ],
+        [
+          "GPT-5.6 Luna (max)",
+          "GPT-5.6 Luna (max)",
+          37.32,
+          null,
+          null
+        ],
+        [
+          "GPT-6 Luna (max)",
+          "GPT-6 Luna (max)",
+          37.26,
+          null,
+          null
+        ],
+        [
+          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B (xhigh)",
+          33.7,
+          null,
+          null
+        ],
+        [
+          "K2 Horizon 375B A23B",
+          "K2 Horizon 375B A23B",
+          30.5,
+          null,
+          null
+        ],
+        [
+          "MiniMax-M3",
+          "MiniMax-M3",
+          29.22,
+          null,
+          null
+        ],
+        [
+          "Inkling (xhigh)",
+          "Inkling (xhigh)",
+          24.98,
+          null,
+          null
+        ],
+        [
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          22.93,
+          null,
+          null
+        ],
+        [
+          "Gemini 3.5 Flash-Lite",
+          "Gemini 3.5 Flash-Lite",
+          22.17,
+          null,
+          null
+        ],
+        [
+          "Muse Glimmer (high)",
+          "Muse Glimmer (high)",
+          17.48,
+          null,
+          null
+        ],
+        [
+          "Mistral Medium 3.5",
+          "Mistral Medium 3.5",
+          14.19,
           null,
           null
         ]
@@ -4086,9 +4170,9 @@
       "metric": "Terminal-Bench 4.0: Score",
       "unit": "ratio",
       "comparisonKey": "terminal_bench_v4_0",
-      "snapshotId": "ce3dd2d67e5fe3bb7aac453fd4aa6f5d29fc3eee441af29bd8cfece080ff2ec3",
-      "contentHash": "ce3dd2d67e5fe3bb7aac453fd4aa6f5d29fc3eee441af29bd8cfece080ff2ec3",
-      "generatedAt": "2026-09-24T08:25:17Z",
+      "snapshotId": "6f38c57fcd40783600d2ff2a24df55f7376b7f9c2990ff3f47ed0d02d08f45ce",
+      "contentHash": "6f38c57fcd40783600d2ff2a24df55f7376b7f9c2990ff3f47ed0d02d08f45ce",
+      "generatedAt": "2026-09-25T05:41:18Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
@@ -4100,15 +4184,15 @@
       },
       "entries": [
         [
-          "Claude Opus 5.5 (max with fallback)",
-          "Claude Opus 5.5 (max with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
           0.596,
           null,
           null
         ],
         [
-          "Claude Opus 5.5 (xhigh with fallback)",
-          "Claude Opus 5.5 (xhigh with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           0.596,
           null,
           null
@@ -4128,15 +4212,15 @@
           null
         ],
         [
-          "Claude Opus 5.5 (high with fallback)",
-          "Claude Opus 5.5 (high with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
           0.5657,
           null,
           null
         ],
         [
-          "Claude Fable 5.1 (xhigh with fallback)",
-          "Claude Fable 5.1 (xhigh with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           0.5505,
           null,
           null
@@ -4149,15 +4233,15 @@
           null
         ],
         [
-          "Claude Fable 5.1 (max with fallback)",
-          "Claude Fable 5.1 (max with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
           0.5202,
           null,
           null
         ],
         [
-          "Claude Opus 5 (max)",
-          "Claude Opus 5 (max)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
           0.4899,
           null,
           null
@@ -4212,15 +4296,15 @@
           null
         ],
         [
-          "GLM-5.3-Flash",
-          "GLM-5.3-Flash",
+          "GLM 5.3 Flash",
+          "GLM 5.3 Flash",
           0.3283,
           null,
           null
         ],
         [
-          "DeepSeek V4.1 Flash (max)",
-          "DeepSeek V4.1 Flash (max)",
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
           0.2677,
           null,
           null
@@ -4238,6 +4322,90 @@
           0.2121,
           null,
           null
+        ],
+        [
+          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash (high)",
+          0.197,
+          null,
+          null
+        ],
+        [
+          "Kimi K3 (max)",
+          "Kimi K3 (max)",
+          0.1263,
+          null,
+          null
+        ],
+        [
+          "GPT-6 Luna (max)",
+          "GPT-6 Luna (max)",
+          0.1263,
+          null,
+          null
+        ],
+        [
+          "GPT-5.6 Luna (max)",
+          "GPT-5.6 Luna (max)",
+          0.1162,
+          null,
+          null
+        ],
+        [
+          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B (xhigh)",
+          0.0556,
+          null,
+          null
+        ],
+        [
+          "MiniMax-M3",
+          "MiniMax-M3",
+          0.0202,
+          null,
+          null
+        ],
+        [
+          "K2 Horizon 375B A23B",
+          "K2 Horizon 375B A23B",
+          0.0152,
+          null,
+          null
+        ],
+        [
+          "Inkling (xhigh)",
+          "Inkling (xhigh)",
+          0.0101,
+          null,
+          null
+        ],
+        [
+          "Gemini 3.5 Flash-Lite",
+          "Gemini 3.5 Flash-Lite",
+          0.0101,
+          null,
+          null
+        ],
+        [
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          0.0051,
+          null,
+          null
+        ],
+        [
+          "Muse Glimmer (high)",
+          "Muse Glimmer (high)",
+          0.0051,
+          null,
+          null
+        ],
+        [
+          "Mistral Medium 3.5",
+          "Mistral Medium 3.5",
+          0.0,
+          null,
+          null
         ]
       ]
     },
@@ -4252,9 +4420,9 @@
       "metric": "Humanity's Last Exam: Score",
       "unit": "ratio",
       "comparisonKey": "humanitys_last_exam",
-      "snapshotId": "1d8da2e11113a8e2ec80bc0cc4aed3ca11b02e4463f88e81b8d1e8b34a834f23",
-      "contentHash": "1d8da2e11113a8e2ec80bc0cc4aed3ca11b02e4463f88e81b8d1e8b34a834f23",
-      "generatedAt": "2026-09-24T08:24:40Z",
+      "snapshotId": "3a00237cd538ec41691efe5d7df51ba7c0fec95797baa3deb282c5bc2f982fba",
+      "contentHash": "3a00237cd538ec41691efe5d7df51ba7c0fec95797baa3deb282c5bc2f982fba",
+      "generatedAt": "2026-09-25T05:40:49Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Humanity's Last Exam official public Dataset page",
@@ -4266,57 +4434,57 @@
       },
       "entries": [
         [
-          "Claude Opus 5.5 (max with fallback)",
-          "Claude Opus 5.5 (max with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
           0.6135,
           null,
           null
         ],
         [
-          "Claude Fable 5.1 (max with fallback)",
-          "Claude Fable 5.1 (max with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
           0.5913,
           null,
           null
         ],
         [
-          "Claude Fable 5.1 (xhigh with fallback)",
-          "Claude Fable 5.1 (xhigh with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           0.5871,
           null,
           null
         ],
         [
-          "Claude Opus 5.5 (xhigh with fallback)",
-          "Claude Opus 5.5 (xhigh with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           0.5751,
           null,
           null
         ],
         [
-          "Claude Fable 5.1 (high with fallback)",
-          "Claude Fable 5.1 (high with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
           0.5593,
           null,
           null
         ],
         [
-          "Claude Opus 5.5 (high with fallback)",
-          "Claude Opus 5.5 (high with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
           0.5556,
           null,
           null
         ],
         [
-          "Claude Fable 5 (with fallback)",
-          "Claude Fable 5 (with fallback)",
+          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
           0.5547,
           null,
           null
         ],
         [
-          "Claude Opus 5 (max)",
-          "Claude Opus 5 (max)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
           0.5487,
           null,
           null
@@ -4404,6 +4572,90 @@
           0.4226,
           null,
           null
+        ],
+        [
+          "GLM 5.3 Flash",
+          "GLM 5.3 Flash",
+          0.3985,
+          null,
+          null
+        ],
+        [
+          "GPT-5.6 Luna (max)",
+          "GPT-5.6 Luna (max)",
+          0.3948,
+          null,
+          null
+        ],
+        [
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          0.3925,
+          null,
+          null
+        ],
+        [
+          "MiniMax-M3",
+          "MiniMax-M3",
+          0.3897,
+          null,
+          null
+        ],
+        [
+          "GPT-6 Luna (max)",
+          "GPT-6 Luna (max)",
+          0.3851,
+          null,
+          null
+        ],
+        [
+          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B (xhigh)",
+          0.3392,
+          null,
+          null
+        ],
+        [
+          "K2 Horizon 375B A23B",
+          "K2 Horizon 375B A23B",
+          0.3197,
+          null,
+          null
+        ],
+        [
+          "Inkling (xhigh)",
+          "Inkling (xhigh)",
+          0.3188,
+          null,
+          null
+        ],
+        [
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          0.2841,
+          null,
+          null
+        ],
+        [
+          "Muse Glimmer (high)",
+          "Muse Glimmer (high)",
+          0.2196,
+          null,
+          null
+        ],
+        [
+          "Gemini 3.5 Flash-Lite",
+          "Gemini 3.5 Flash-Lite",
+          0.1881,
+          null,
+          null
+        ],
+        [
+          "Mistral Medium 3.5",
+          "Mistral Medium 3.5",
+          0.1376,
+          null,
+          null
         ]
       ]
     },
@@ -4418,9 +4670,9 @@
       "metric": "GPQA Diamond: Score",
       "unit": "ratio",
       "comparisonKey": "gpqa_diamond",
-      "snapshotId": "d99dd4ea2851a740d06431f72e30d1c8e91385f2a65f88d50a7d5ec9d37a0fd4",
-      "contentHash": "d99dd4ea2851a740d06431f72e30d1c8e91385f2a65f88d50a7d5ec9d37a0fd4",
-      "generatedAt": "2026-09-24T08:24:40Z",
+      "snapshotId": "0a6516ab2311205af1c5468a8a8fe7481389ae678f64b3c9854dd7ae765164f8",
+      "contentHash": "0a6516ab2311205af1c5468a8a8fe7481389ae678f64b3c9854dd7ae765164f8",
+      "generatedAt": "2026-09-25T05:40:47Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis GPQA Diamond official public Dataset page",
@@ -4495,8 +4747,8 @@
           null
         ],
         [
-          "Claude Fable 5.1 (max with fallback)",
-          "Claude Fable 5.1 (max with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
           0.9374,
           null,
           null
@@ -4516,8 +4768,8 @@
           null
         ],
         [
-          "Claude Opus 5 (max)",
-          "Claude Opus 5 (max)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
           0.9323,
           null,
           null
@@ -4544,8 +4796,8 @@
           null
         ],
         [
-          "GLM-5.3-Flash",
-          "GLM-5.3-Flash",
+          "GLM 5.3 Flash",
+          "GLM 5.3 Flash",
           0.9121,
           null,
           null
@@ -4570,6 +4822,41 @@
           0.8727,
           null,
           null
+        ],
+        [
+          "Inkling (xhigh)",
+          "Inkling (xhigh)",
+          0.8717,
+          null,
+          null
+        ],
+        [
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          0.8667,
+          null,
+          null
+        ],
+        [
+          "Gemini 3.5 Flash-Lite",
+          "Gemini 3.5 Flash-Lite",
+          0.8384,
+          null,
+          null
+        ],
+        [
+          "Muse Glimmer (high)",
+          "Muse Glimmer (high)",
+          0.8354,
+          null,
+          null
+        ],
+        [
+          "Mistral Medium 3.5",
+          "Mistral Medium 3.5",
+          0.7485,
+          null,
+          null
         ]
       ]
     },
@@ -4584,9 +4871,9 @@
       "metric": "SciCode: Score",
       "unit": "ratio",
       "comparisonKey": "scicode",
-      "snapshotId": "d0f02484fea8478ec07c75e627b15c86c6ae0fbb6d93d223c84a3d43d9e44cb9",
-      "contentHash": "d0f02484fea8478ec07c75e627b15c86c6ae0fbb6d93d223c84a3d43d9e44cb9",
-      "generatedAt": "2026-09-24T08:25:12Z",
+      "snapshotId": "ca06d1095e1ed71ada57a2e3fe2a3fcc052d5761b4d79f3310467b00dc05c49b",
+      "contentHash": "ca06d1095e1ed71ada57a2e3fe2a3fcc052d5761b4d79f3310467b00dc05c49b",
+      "generatedAt": "2026-09-25T05:41:12Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis SciCode official public Dataset page",
@@ -4598,36 +4885,36 @@
       },
       "entries": [
         [
-          "Claude Opus 5.5 (max with fallback)",
-          "Claude Opus 5.5 (max with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
           0.669,
           null,
           null
         ],
         [
-          "Claude Opus 5.5 (xhigh with fallback)",
-          "Claude Opus 5.5 (xhigh with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           0.6505,
           null,
           null
         ],
         [
-          "Claude Fable 5.1 (max with fallback)",
-          "Claude Fable 5.1 (max with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
           0.6308,
           null,
           null
         ],
         [
-          "Claude Fable 5 (with fallback)",
-          "Claude Fable 5 (with fallback)",
+          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
           0.61,
           null,
           null
         ],
         [
-          "Claude Fable 5.1 (xhigh with fallback)",
-          "Claude Fable 5.1 (xhigh with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           0.6088,
           null,
           null
@@ -4640,8 +4927,8 @@
           null
         ],
         [
-          "Claude Opus 5.5 (high with fallback)",
-          "Claude Opus 5.5 (high with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
           0.6042,
           null,
           null
@@ -4724,8 +5011,8 @@
           null
         ],
         [
-          "Claude Opus 5 (max)",
-          "Claude Opus 5 (max)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
           0.5637,
           null,
           null
@@ -4734,6 +5021,90 @@
           "GPT-6 Luna (max)",
           "GPT-6 Luna (max)",
           0.5463,
+          null,
+          null
+        ],
+        [
+          "GPT-5.6 Luna (max)",
+          "GPT-5.6 Luna (max)",
+          0.5359,
+          null,
+          null
+        ],
+        [
+          "Qwen3.8 Max (0902)",
+          "Qwen3.8 Max (0902)",
+          0.5208,
+          null,
+          null
+        ],
+        [
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          0.5185,
+          null,
+          null
+        ],
+        [
+          "GLM 5.3 Flash",
+          "GLM 5.3 Flash",
+          0.5162,
+          null,
+          null
+        ],
+        [
+          "MiniMax-M3",
+          "MiniMax-M3",
+          0.4711,
+          null,
+          null
+        ],
+        [
+          "Inkling (xhigh)",
+          "Inkling (xhigh)",
+          0.4699,
+          null,
+          null
+        ],
+        [
+          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B (xhigh)",
+          0.4664,
+          null,
+          null
+        ],
+        [
+          "Muse Glimmer (high)",
+          "Muse Glimmer (high)",
+          0.4491,
+          null,
+          null
+        ],
+        [
+          "K2 Horizon 375B A23B",
+          "K2 Horizon 375B A23B",
+          0.4294,
+          null,
+          null
+        ],
+        [
+          "Gemini 3.5 Flash-Lite",
+          "Gemini 3.5 Flash-Lite",
+          0.4132,
+          null,
+          null
+        ],
+        [
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          0.4028,
+          null,
+          null
+        ],
+        [
+          "Mistral Medium 3.5",
+          "Mistral Medium 3.5",
+          0.4016,
           null,
           null
         ]
@@ -4750,9 +5121,9 @@
       "metric": "AA-LCR v1.1",
       "unit": "ratio",
       "comparisonKey": "aa_lcr",
-      "snapshotId": "4a9e47f45e1b5a79b504afb457a9bafac4aa91684e460bcd7f94d183c5e879af",
-      "contentHash": "4a9e47f45e1b5a79b504afb457a9bafac4aa91684e460bcd7f94d183c5e879af",
-      "generatedAt": "2026-09-24T08:24:27Z",
+      "snapshotId": "93aebb0fe02f5e81610a2be3386a94d3d84ef3521e5f79cc8f26aae07b4a81d6",
+      "contentHash": "93aebb0fe02f5e81610a2be3386a94d3d84ef3521e5f79cc8f26aae07b4a81d6",
+      "generatedAt": "2026-09-25T05:40:34Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis AA LCR official public Dataset page",
@@ -4785,36 +5156,36 @@
           null
         ],
         [
-          "Claude Fable 5.1 (max with fallback)",
-          "Claude Fable 5.1 (max with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
           0.8533,
           null,
           null
         ],
         [
-          "Claude Opus 5.5 (max with fallback)",
-          "Claude Opus 5.5 (max with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
           0.8467,
           null,
           null
         ],
         [
-          "Claude Opus 5.5 (xhigh with fallback)",
-          "Claude Opus 5.5 (xhigh with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           0.8467,
           null,
           null
         ],
         [
-          "Claude Fable 5.1 (medium with fallback)",
-          "Claude Fable 5.1 (medium with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
           0.8467,
           null,
           null
         ],
         [
-          "Claude Opus 5.5 (medium with fallback)",
-          "Claude Opus 5.5 (medium with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
           0.8433,
           null,
           null
@@ -4841,8 +5212,8 @@
           null
         ],
         [
-          "DeepSeek V4.1 Flash (max)",
-          "DeepSeek V4.1 Flash (max)",
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
           0.84,
           null,
           null
@@ -4902,6 +5273,90 @@
           0.8133,
           null,
           null
+        ],
+        [
+          "GPT-6 Astra (max)",
+          "GPT-6 Astra (max)",
+          0.8067,
+          null,
+          null
+        ],
+        [
+          "Qwen3.8 Max (0902)",
+          "Qwen3.8 Max (0902)",
+          0.8033,
+          null,
+          null
+        ],
+        [
+          "Grok 4.6 (high)",
+          "Grok 4.6 (high)",
+          0.8033,
+          null,
+          null
+        ],
+        [
+          "GLM 5.3 Flash",
+          "GLM 5.3 Flash",
+          0.8,
+          null,
+          null
+        ],
+        [
+          "K2 Horizon 375B A23B",
+          "K2 Horizon 375B A23B",
+          0.8,
+          null,
+          null
+        ],
+        [
+          "GLM-5.3 (max)",
+          "GLM-5.3 (max)",
+          0.7967,
+          null,
+          null
+        ],
+        [
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          0.7933,
+          null,
+          null
+        ],
+        [
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          0.7933,
+          null,
+          null
+        ],
+        [
+          "Inkling (xhigh)",
+          "Inkling (xhigh)",
+          0.7733,
+          null,
+          null
+        ],
+        [
+          "Grok 4.7 (xhigh)",
+          "Grok 4.7 (xhigh)",
+          0.7667,
+          null,
+          null
+        ],
+        [
+          "Gemini 3.5 Flash-Lite",
+          "Gemini 3.5 Flash-Lite",
+          0.76,
+          null,
+          null
+        ],
+        [
+          "Mistral Medium 3.5",
+          "Mistral Medium 3.5",
+          0.6933,
+          null,
+          null
         ]
       ]
     },
@@ -4916,9 +5371,9 @@
       "metric": "omniscienceIndex",
       "unit": "score",
       "comparisonKey": "aa_omniscience_index",
-      "snapshotId": "2254f91edc9c03b4fee5eebc691db504ea463f8bd5edc16f47e902100c3818ec",
-      "contentHash": "2254f91edc9c03b4fee5eebc691db504ea463f8bd5edc16f47e902100c3818ec",
-      "generatedAt": "2026-09-24T08:24:28Z",
+      "snapshotId": "3808138d7fb336e830f8d432f39ff0138dad5e89b73cf2b453825a23ace66849",
+      "contentHash": "3808138d7fb336e830f8d432f39ff0138dad5e89b73cf2b453825a23ace66849",
+      "generatedAt": "2026-09-25T05:40:34Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis AA Omniscience Index official public Dataset page",
@@ -4930,8 +5385,8 @@
       },
       "entries": [
         [
-          "Claude Opus 5.5 (max with fallback)",
-          "Claude Opus 5.5 (max with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
           46.42,
           null,
           null
@@ -4944,8 +5399,8 @@
           null
         ],
         [
-          "Claude Fable 5.1 (max with fallback)",
-          "Claude Fable 5.1 (max with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
           43.45,
           null,
           null
@@ -4965,29 +5420,29 @@
           null
         ],
         [
-          "Claude Fable 5 (with fallback)",
-          "Claude Fable 5 (with fallback)",
+          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
           43.3,
           null,
           null
         ],
         [
-          "Claude Opus 5.5 (xhigh with fallback)",
-          "Claude Opus 5.5 (xhigh with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           42.65,
           null,
           null
         ],
         [
-          "Claude Fable 5.1 (xhigh with fallback)",
-          "Claude Fable 5.1 (xhigh with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           42.38,
           null,
           null
         ],
         [
-          "Claude Opus 5 (max)",
-          "Claude Opus 5 (max)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
           37.07,
           null,
           null
@@ -5068,6 +5523,90 @@
           8.38,
           null,
           null
+        ],
+        [
+          "GLM 5.3 Flash",
+          "GLM 5.3 Flash",
+          7.47,
+          null,
+          null
+        ],
+        [
+          "Gemini 3.5 Flash-Lite",
+          "Gemini 3.5 Flash-Lite",
+          5.23,
+          null,
+          null
+        ],
+        [
+          "Inkling (xhigh)",
+          "Inkling (xhigh)",
+          2.0,
+          null,
+          null
+        ],
+        [
+          "MiniMax-M3",
+          "MiniMax-M3",
+          1.35,
+          null,
+          null
+        ],
+        [
+          "GPT-6 Luna (max)",
+          "GPT-6 Luna (max)",
+          0.65,
+          null,
+          null
+        ],
+        [
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          -0.4,
+          null,
+          null
+        ],
+        [
+          "K2 Horizon 375B A23B",
+          "K2 Horizon 375B A23B",
+          -2.97,
+          null,
+          null
+        ],
+        [
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          -5.3,
+          null,
+          null
+        ],
+        [
+          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B (xhigh)",
+          -9.98,
+          null,
+          null
+        ],
+        [
+          "GPT-5.6 Luna (max)",
+          "GPT-5.6 Luna (max)",
+          -10.28,
+          null,
+          null
+        ],
+        [
+          "Muse Glimmer (high)",
+          "Muse Glimmer (high)",
+          -32.85,
+          null,
+          null
+        ],
+        [
+          "Mistral Medium 3.5",
+          "Mistral Medium 3.5",
+          -36.8,
+          null,
+          null
         ]
       ]
     },
@@ -5082,9 +5621,9 @@
       "metric": "CritPt: Score",
       "unit": "ratio",
       "comparisonKey": "critpt",
-      "snapshotId": "dc10c21351329247ec5e356ad6bbeed87e72604be005113346cbd1d9903d1e38",
-      "contentHash": "dc10c21351329247ec5e356ad6bbeed87e72604be005113346cbd1d9903d1e38",
-      "generatedAt": "2026-09-24T08:24:30Z",
+      "snapshotId": "11e864dce8eb6725d6277dad15f44a4a81a288d75634f0f43b1feead941f79bc",
+      "contentHash": "11e864dce8eb6725d6277dad15f44a4a81a288d75634f0f43b1feead941f79bc",
+      "generatedAt": "2026-09-25T05:40:33Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis CritPt official public Dataset page",
@@ -5103,15 +5642,15 @@
           null
         ],
         [
-          "Claude Opus 5.5 (max with fallback)",
-          "Claude Opus 5.5 (max with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
           0.3171,
           null,
           null
         ],
         [
-          "Claude Opus 5.5 (xhigh with fallback)",
-          "Claude Opus 5.5 (xhigh with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           0.3171,
           null,
           null
@@ -5131,15 +5670,15 @@
           null
         ],
         [
-          "Claude Fable 5.1 (xhigh with fallback)",
-          "Claude Fable 5.1 (xhigh with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           0.3114,
           null,
           null
         ],
         [
-          "Claude Opus 5.5 (high with fallback)",
-          "Claude Opus 5.5 (high with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
           0.3086,
           null,
           null
@@ -5159,22 +5698,22 @@
           null
         ],
         [
-          "Claude Fable 5.1 (high with fallback)",
-          "Claude Fable 5.1 (high with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
           0.3029,
           null,
           null
         ],
         [
-          "Claude Fable 5.1 (max with fallback)",
-          "Claude Fable 5.1 (max with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
           0.2971,
           null,
           null
         ],
         [
-          "Claude Opus 5 (max)",
-          "Claude Opus 5 (max)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
           0.2914,
           null,
           null
@@ -5234,6 +5773,97 @@
           0.1829,
           null,
           null
+        ],
+        [
+          "Grok 4.7 (xhigh)",
+          "Grok 4.7 (xhigh)",
+          0.1771,
+          null,
+          null
+        ],
+        [
+          "Qwen3.8 Max (0902)",
+          "Qwen3.8 Max (0902)",
+          0.1771,
+          null,
+          null
+        ],
+        [
+          "Grok 4.6 (high)",
+          "Grok 4.6 (high)",
+          0.1714,
+          null,
+          null
+        ],
+        [
+          "GLM 5.3 Flash",
+          "GLM 5.3 Flash",
+          0.1543,
+          null,
+          null
+        ],
+        [
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          0.1429,
+          null,
+          null
+        ],
+        [
+          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B (xhigh)",
+          0.0543,
+          null,
+          null
+        ],
+        [
+          "Inkling (xhigh)",
+          "Inkling (xhigh)",
+          0.0543,
+          null,
+          null
+        ],
+        [
+          "K2 Horizon 375B A23B",
+          "K2 Horizon 375B A23B",
+          0.0457,
+          null,
+          null
+        ],
+        [
+          "MiniMax-M3",
+          "MiniMax-M3",
+          0.0371,
+          null,
+          null
+        ],
+        [
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          0.0314,
+          null,
+          null
+        ],
+        [
+          "Muse Glimmer (high)",
+          "Muse Glimmer (high)",
+          0.0257,
+          null,
+          null
+        ],
+        [
+          "Gemini 3.5 Flash-Lite",
+          "Gemini 3.5 Flash-Lite",
+          0.0,
+          null,
+          null
+        ],
+        [
+          "Mistral Medium 3.5",
+          "Mistral Medium 3.5",
+          0.0,
+          null,
+          null
         ]
       ]
     },
@@ -5248,9 +5878,9 @@
       "metric": "gdpvalAaElo",
       "unit": "raw",
       "comparisonKey": "gdpval_aa_elo",
-      "snapshotId": "236b381fba5ae35f8456d637ec35c3229605b733423f786fd2a10ed85ac1b4b3",
-      "contentHash": "236b381fba5ae35f8456d637ec35c3229605b733423f786fd2a10ed85ac1b4b3",
-      "generatedAt": "2026-09-24T08:24:43Z",
+      "snapshotId": "599062f01ecbcdfce2613c33b1a19cbe6a42aeb3ed1bf6ff2755b96cb8e337db",
+      "contentHash": "599062f01ecbcdfce2613c33b1a19cbe6a42aeb3ed1bf6ff2755b96cb8e337db",
+      "generatedAt": "2026-09-25T05:40:52Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis GDPval-AA Elo official public Dataset page",
@@ -5262,36 +5892,36 @@
       },
       "entries": [
         [
-          "Claude Opus 5.5 (max with fallback)",
-          "Claude Opus 5.5 (max with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
           1846.17,
           null,
           null
         ],
         [
-          "Claude Opus 5.5 (xhigh with fallback)",
-          "Claude Opus 5.5 (xhigh with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           1820.11,
           null,
           null
         ],
         [
-          "Claude Fable 5.1 (max with fallback)",
-          "Claude Fable 5.1 (max with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
           1734.67,
           null,
           null
         ],
         [
-          "Claude Fable 5.1 (xhigh with fallback)",
-          "Claude Fable 5.1 (xhigh with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           1720.92,
           null,
           null
         ],
         [
-          "Claude Opus 5 (max)",
-          "Claude Opus 5 (max)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
           1707.92,
           null,
           null
@@ -5311,15 +5941,15 @@
           null
         ],
         [
-          "Claude Opus 5.5 (high with fallback)",
-          "Claude Opus 5.5 (high with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
           1691.72,
           null,
           null
         ],
         [
-          "Claude Opus 5 (xhigh)",
-          "Claude Opus 5 (xhigh)",
+          "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
+          "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
           1676.3,
           null,
           null
@@ -5353,8 +5983,8 @@
           null
         ],
         [
-          "GLM-5.3-Flash",
-          "GLM-5.3-Flash",
+          "GLM 5.3 Flash",
+          "GLM 5.3 Flash",
           1640.78,
           null,
           null
@@ -5367,8 +5997,8 @@
           null
         ],
         [
-          "DeepSeek V4.1 Flash (max)",
-          "DeepSeek V4.1 Flash (max)",
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
           1600.0,
           null,
           null
@@ -5400,6 +6030,90 @@
           1523.97,
           null,
           null
+        ],
+        [
+          "GPT-6 Sol (max)",
+          "GPT-6 Sol (max)",
+          1486.93,
+          null,
+          null
+        ],
+        [
+          "GPT-5.6 Luna (max)",
+          "GPT-5.6 Luna (max)",
+          1443.14,
+          null,
+          null
+        ],
+        [
+          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash (high)",
+          1411.95,
+          null,
+          null
+        ],
+        [
+          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B (xhigh)",
+          1408.94,
+          null,
+          null
+        ],
+        [
+          "GPT-6 Luna (max)",
+          "GPT-6 Luna (max)",
+          1367.09,
+          null,
+          null
+        ],
+        [
+          "K2 Horizon 375B A23B",
+          "K2 Horizon 375B A23B",
+          1349.2,
+          null,
+          null
+        ],
+        [
+          "MiniMax-M3",
+          "MiniMax-M3",
+          1230.07,
+          null,
+          null
+        ],
+        [
+          "Inkling (xhigh)",
+          "Inkling (xhigh)",
+          1063.67,
+          null,
+          null
+        ],
+        [
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          1000.35,
+          null,
+          null
+        ],
+        [
+          "Gemini 3.5 Flash-Lite",
+          "Gemini 3.5 Flash-Lite",
+          969.52,
+          null,
+          null
+        ],
+        [
+          "Muse Glimmer (high)",
+          "Muse Glimmer (high)",
+          774.24,
+          null,
+          null
+        ],
+        [
+          "Mistral Medium 3.5",
+          "Mistral Medium 3.5",
+          747.1,
+          null,
+          null
         ]
       ]
     },
@@ -5414,9 +6128,9 @@
       "metric": "Terminal-Bench Hard: Score",
       "unit": "ratio",
       "comparisonKey": "terminalbench_hard",
-      "snapshotId": "a95269817e963297511903d6170bd5efa9da9c70a69f0f7dc4e1f626c2579611",
-      "contentHash": "a95269817e963297511903d6170bd5efa9da9c70a69f0f7dc4e1f626c2579611",
-      "generatedAt": "2026-09-24T08:25:21Z",
+      "snapshotId": "6b4c831cbc5c5f9ba09d67aceb0437922fcc280e6ca4584252833d824795aebd",
+      "contentHash": "6b4c831cbc5c5f9ba09d67aceb0437922fcc280e6ca4584252833d824795aebd",
+      "generatedAt": "2026-09-25T05:41:29Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
@@ -5435,8 +6149,8 @@
           null
         ],
         [
-          "Claude Fable 5 (with fallback)",
-          "Claude Fable 5 (with fallback)",
+          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
           0.6288,
           null,
           null
@@ -5477,8 +6191,8 @@
           null
         ],
         [
-          "Nemotron 3 Ultra",
-          "Nemotron 3 Ultra",
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
           0.3636,
           null,
           null
@@ -5503,9 +6217,9 @@
       "metric": "Terminal-Bench 2.1: Score",
       "unit": "ratio",
       "comparisonKey": "terminalbench_v2_1",
-      "snapshotId": "cd21e9566ef92b4033b0a2eb6501ff08eba388734f58f62e0f030e7d119f60b8",
-      "contentHash": "cd21e9566ef92b4033b0a2eb6501ff08eba388734f58f62e0f030e7d119f60b8",
-      "generatedAt": "2026-09-24T08:25:29Z",
+      "snapshotId": "f3f176c20ae56155a8bffb45fd54a775a73568129bec3dee91300cb76e761c33",
+      "contentHash": "f3f176c20ae56155a8bffb45fd54a775a73568129bec3dee91300cb76e761c33",
+      "generatedAt": "2026-09-25T05:41:22Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
@@ -5517,22 +6231,22 @@
       },
       "entries": [
         [
-          "Claude Fable 5.1 (max with fallback)",
-          "Claude Fable 5.1 (max with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
           0.9139,
           null,
           null
         ],
         [
-          "Claude Fable 5.1 (xhigh with fallback)",
-          "Claude Fable 5.1 (xhigh with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           0.9101,
           null,
           null
         ],
         [
-          "Claude Fable 5.1 (high with fallback)",
-          "Claude Fable 5.1 (high with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
           0.8989,
           null,
           null
@@ -5559,8 +6273,8 @@
           null
         ],
         [
-          "Claude Opus 5 (max)",
-          "Claude Opus 5 (max)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
           0.8914,
           null,
           null
@@ -5615,8 +6329,8 @@
           null
         ],
         [
-          "GLM-5.3-Flash",
-          "GLM-5.3-Flash",
+          "GLM 5.3 Flash",
+          "GLM 5.3 Flash",
           0.8427,
           null,
           null
@@ -5655,6 +6369,41 @@
           0.6517,
           null,
           null
+        ],
+        [
+          "Inkling (xhigh)",
+          "Inkling (xhigh)",
+          0.5506,
+          null,
+          null
+        ],
+        [
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          0.5393,
+          null,
+          null
+        ],
+        [
+          "Gemini 3.5 Flash-Lite",
+          "Gemini 3.5 Flash-Lite",
+          0.5356,
+          null,
+          null
+        ],
+        [
+          "Muse Glimmer (high)",
+          "Muse Glimmer (high)",
+          0.5169,
+          null,
+          null
+        ],
+        [
+          "Mistral Medium 3.5",
+          "Mistral Medium 3.5",
+          0.5056,
+          null,
+          null
         ]
       ]
     },
@@ -5669,9 +6418,9 @@
       "metric": "IFBench: Score",
       "unit": "ratio",
       "comparisonKey": "ifbench",
-      "snapshotId": "5e25ecedd191c4296b9a0400e89d0c3af62a5ce7f2b96f31024470e673edbb62",
-      "contentHash": "5e25ecedd191c4296b9a0400e89d0c3af62a5ce7f2b96f31024470e673edbb62",
-      "generatedAt": "2026-09-24T08:24:44Z",
+      "snapshotId": "2da9d98b704d1a1cd01dc7b88cce6a6cfd641479be9e99bc4a75576eac784b99",
+      "contentHash": "2da9d98b704d1a1cd01dc7b88cce6a6cfd641479be9e99bc4a75576eac784b99",
+      "generatedAt": "2026-09-25T05:40:47Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis IFBench official public Dataset page",
@@ -5690,8 +6439,8 @@
           null
         ],
         [
-          "Grok 4.20 0309",
-          "Grok 4.20 0309",
+          "Grok 4.20 0309 (Reasoning)",
+          "Grok 4.20 0309 (Reasoning)",
           0.8293,
           null,
           null
@@ -5704,8 +6453,8 @@
           null
         ],
         [
-          "Nemotron 3 Ultra",
-          "Nemotron 3 Ultra",
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
           0.8136,
           null,
           null
@@ -5718,8 +6467,8 @@
           null
         ],
         [
-          "Grok 4.20 0309 v2",
-          "Grok 4.20 0309 v2",
+          "Grok 4.20 0309 v2 (Reasoning)",
+          "Grok 4.20 0309 v2 (Reasoning)",
           0.8122,
           null,
           null
@@ -5758,9 +6507,9 @@
       "metric": "MMMU-Pro: Score",
       "unit": "ratio",
       "comparisonKey": "mmmu_pro",
-      "snapshotId": "94a2ebfac4c4183c35b48e07dcb02318955ed6311f552a0fd5c6678ef1dc6291",
-      "contentHash": "94a2ebfac4c4183c35b48e07dcb02318955ed6311f552a0fd5c6678ef1dc6291",
-      "generatedAt": "2026-09-24T08:25:14Z",
+      "snapshotId": "73621ca6fb44081af83f67e060780bee5597ed09157573a4375694b955755bc7",
+      "contentHash": "73621ca6fb44081af83f67e060780bee5597ed09157573a4375694b955755bc7",
+      "generatedAt": "2026-09-25T05:41:10Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis MMMU-Pro official public Dataset page",
@@ -5772,8 +6521,8 @@
       },
       "entries": [
         [
-          "Claude Opus 5.5 (max with fallback)",
-          "Claude Opus 5.5 (max with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
           0.8769,
           null,
           null
@@ -5786,8 +6535,8 @@
           null
         ],
         [
-          "Claude Opus 5.5 (xhigh with fallback)",
-          "Claude Opus 5.5 (xhigh with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           0.8659,
           null,
           null
@@ -5807,15 +6556,15 @@
           null
         ],
         [
-          "Claude Opus 5.5 (high with fallback)",
-          "Claude Opus 5.5 (high with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
           0.8584,
           null,
           null
         ],
         [
-          "Claude Opus 5.5 (medium with fallback)",
-          "Claude Opus 5.5 (medium with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
           0.8572,
           null,
           null
@@ -5828,8 +6577,8 @@
           null
         ],
         [
-          "Claude Opus 5 (max)",
-          "Claude Opus 5 (max)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
           0.8474,
           null,
           null
@@ -5884,8 +6633,8 @@
           null
         ],
         [
-          "DeepSeek V4.1 Flash (max)",
-          "DeepSeek V4.1 Flash (max)",
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
           0.7699,
           null,
           null
@@ -5910,6 +6659,27 @@
           0.7555,
           null,
           null
+        ],
+        [
+          "Muse Glimmer (high)",
+          "Muse Glimmer (high)",
+          0.7434,
+          null,
+          null
+        ],
+        [
+          "Inkling (xhigh)",
+          "Inkling (xhigh)",
+          0.7347,
+          null,
+          null
+        ],
+        [
+          "Mistral Medium 3.5",
+          "Mistral Medium 3.5",
+          0.6486,
+          null,
+          null
         ]
       ]
     },
@@ -5924,9 +6694,9 @@
       "metric": "Artificial Analysis Openness Index: Score",
       "unit": "score",
       "comparisonKey": "artificial_analysis_openness_index",
-      "snapshotId": "d80af99d5c3875a6957400ad81518290d669e26b7795b20c54d739253e4ffa07",
-      "contentHash": "d80af99d5c3875a6957400ad81518290d669e26b7795b20c54d739253e4ffa07",
-      "generatedAt": "2026-09-24T08:24:33Z",
+      "snapshotId": "e4b400ee57b654677a894082122e5e7413f40bddef3042383b173f9c49108fbe",
+      "contentHash": "e4b400ee57b654677a894082122e5e7413f40bddef3042383b173f9c49108fbe",
+      "generatedAt": "2026-09-25T05:40:34Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Artificial Analysis Openness Index official Data API",
@@ -5994,8 +6764,8 @@
           null
         ],
         [
-          "Olmo 3 7B",
-          "Olmo 3 7B",
+          "Olmo 3 7B Instruct",
+          "Olmo 3 7B Instruct",
           88.89,
           null,
           null
@@ -6015,8 +6785,8 @@
           null
         ],
         [
-          "Nemotron 3 Ultra",
-          "Nemotron 3 Ultra",
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
           83.33,
           null,
           null
@@ -6029,8 +6799,8 @@
           null
         ],
         [
-          "Nemotron 3 Super",
-          "Nemotron 3 Super",
+          "Nemotron 3 Super 120B A12B (Reasoning)",
+          "Nemotron 3 Super 120B A12B (Reasoning)",
           83.33,
           null,
           null
@@ -6043,15 +6813,15 @@
           null
         ],
         [
-          "Nemotron 3 Nano",
-          "Nemotron 3 Nano",
+          "NVIDIA Nemotron 3 Nano 30B A3B (Reasoning)",
+          "NVIDIA Nemotron 3 Nano 30B A3B (Reasoning)",
           83.33,
           null,
           null
         ],
         [
-          "MiniCPM5-1B",
-          "MiniCPM5-1B",
+          "MiniCPM5-1B (Reasoning)",
+          "MiniCPM5-1B (Reasoning)",
           83.33,
           null,
           null
@@ -6064,16 +6834,51 @@
           null
         ],
         [
-          "Nemotron 3 Nano 4B",
-          "Nemotron 3 Nano 4B",
+          "NVIDIA Nemotron 3 Nano 4B",
+          "NVIDIA Nemotron 3 Nano 4B",
           83.33,
           null,
           null
         ],
         [
-          "Nemotron 3 Nano (Non-reasoning)",
-          "Nemotron 3 Nano (Non-reasoning)",
+          "NVIDIA Nemotron 3 Nano 30B A3B (Non-reasoning)",
+          "NVIDIA Nemotron 3 Nano 30B A3B (Non-reasoning)",
           83.33,
+          null,
+          null
+        ],
+        [
+          "Granite 4.2 30B",
+          "Granite 4.2 30B",
+          72.22,
+          null,
+          null
+        ],
+        [
+          "Granite 4.2 8B",
+          "Granite 4.2 8B",
+          72.22,
+          null,
+          null
+        ],
+        [
+          "INTELLECT-3 (based on GLM-4.5-Air)",
+          "INTELLECT-3 (based on GLM-4.5-Air)",
+          72.22,
+          null,
+          null
+        ],
+        [
+          "Granite 4.2 3B",
+          "Granite 4.2 3B",
+          72.22,
+          null,
+          null
+        ],
+        [
+          "NVIDIA Nemotron Nano 12B v2 VL (Reasoning)",
+          "NVIDIA Nemotron Nano 12B v2 VL (Reasoning)",
+          72.22,
           null,
           null
         ]
@@ -6090,9 +6895,9 @@
       "metric": "MLCR-AA",
       "unit": "ratio",
       "comparisonKey": "mlcr_overall",
-      "snapshotId": "a022e58c5444fcb0ee9365a5eca4828007601a3f97c4d7730f08f63e218a1ee8",
-      "contentHash": "a022e58c5444fcb0ee9365a5eca4828007601a3f97c4d7730f08f63e218a1ee8",
-      "generatedAt": "2026-09-24T08:25:05Z",
+      "snapshotId": "19246d9428911bb5eb872cb58ab8f91cebdd9d296d92824e052307fe8a41addb",
+      "contentHash": "19246d9428911bb5eb872cb58ab8f91cebdd9d296d92824e052307fe8a41addb",
+      "generatedAt": "2026-09-25T05:41:10Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis MLCR Overall official public Dataset page",
@@ -6104,64 +6909,64 @@
       },
       "entries": [
         [
-          "Claude Fable 5.1 (max with fallback)",
-          "Claude Fable 5.1 (max with fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
           0.7111,
           null,
           null
         ],
         [
-          "Claude Opus 5.5 (max with fallback)",
-          "Claude Opus 5.5 (max with fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
           0.6667,
           null,
           null
         ],
         [
-          "Claude Fable 5 (with fallback)",
-          "Claude Fable 5 (with fallback)",
+          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
           0.6444,
           null,
           null
         ],
         [
-          "Claude Opus 5 (high)",
-          "Claude Opus 5 (high)",
+          "Claude Opus 5 (Adaptive Reasoning, High Effort)",
+          "Claude Opus 5 (Adaptive Reasoning, High Effort)",
           0.5944,
           null,
           null
         ],
         [
-          "Claude Opus 5 (xhigh)",
-          "Claude Opus 5 (xhigh)",
+          "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
+          "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
           0.5833,
           null,
           null
         ],
         [
-          "Claude Opus 5 (medium)",
-          "Claude Opus 5 (medium)",
+          "Claude Opus 5 (Adaptive Reasoning, Medium Effort)",
+          "Claude Opus 5 (Adaptive Reasoning, Medium Effort)",
           0.5611,
           null,
           null
         ],
         [
-          "Claude Opus 5 (max)",
-          "Claude Opus 5 (max)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
           0.5556,
           null,
           null
         ],
         [
-          "Claude Sonnet 5 (max)",
-          "Claude Sonnet 5 (max)",
+          "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",
           0.55,
           null,
           null
         ],
         [
-          "GLM-5.3-Flash",
-          "GLM-5.3-Flash",
+          "GLM 5.3 Flash",
+          "GLM 5.3 Flash",
           0.5111,
           null,
           null
@@ -6202,8 +7007,8 @@
           null
         ],
         [
-          "DeepSeek V4.1 Flash (max)",
-          "DeepSeek V4.1 Flash (max)",
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
           0.2278,
           null,
           null
@@ -6242,6 +7047,83 @@
           0.1944,
           null,
           null
+        ],
+        [
+          "MiMo-V2.6-Pro",
+          "MiMo-V2.6-Pro",
+          0.1833,
+          null,
+          null
+        ],
+        [
+          "MiniMax-M3",
+          "MiniMax-M3",
+          0.1722,
+          null,
+          null
+        ],
+        [
+          "Step 5 Preview",
+          "Step 5 Preview",
+          0.1667,
+          null,
+          null
+        ],
+        [
+          "GPT-6 Sol (max)",
+          "GPT-6 Sol (max)",
+          0.1611,
+          null,
+          null
+        ],
+        [
+          "GPT-6 Luna (max)",
+          "GPT-6 Luna (max)",
+          0.1611,
+          null,
+          null
+        ],
+        [
+          "Grok 4.7 (xhigh)",
+          "Grok 4.7 (xhigh)",
+          0.15,
+          null,
+          null
+        ],
+        [
+          "Grok 4.6 (high)",
+          "Grok 4.6 (high)",
+          0.1222,
+          null,
+          null
+        ],
+        [
+          "Inkling (xhigh)",
+          "Inkling (xhigh)",
+          0.1222,
+          null,
+          null
+        ],
+        [
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          0.1111,
+          null,
+          null
+        ],
+        [
+          "Gemini 3.5 Flash-Lite",
+          "Gemini 3.5 Flash-Lite",
+          0.0722,
+          null,
+          null
+        ],
+        [
+          "Mistral Medium 3.5",
+          "Mistral Medium 3.5",
+          0.0167,
+          null,
+          null
         ]
       ]
     },
@@ -6258,7 +7140,7 @@
       "comparisonKey": "v1.1",
       "snapshotId": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019",
       "contentHash": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019",
-      "generatedAt": "2026-09-24T08:24:28Z",
+      "generatedAt": "2026-09-25T05:40:34Z",
       "taskCount": null,
       "source": {
         "name": "DeepSWE v1.1 official leaderboard JSON",
