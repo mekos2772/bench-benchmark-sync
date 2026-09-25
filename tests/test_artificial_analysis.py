@@ -197,6 +197,86 @@ def test_record_value_matches_score_suffix_and_camelcase_metric():
     )
 
 
+def test_current_page_payload_reads_initial_models():
+    collector = ArtificialAnalysisCollector(PAGE_SOURCE)
+    raw = json.dumps(
+        {
+            "url": PAGE_SOURCE["endpoint"],
+            "page_models": [
+                {
+                    "slug": "unit-model",
+                    "name": "Unit Model",
+                    "terminalBench40": 0.595959595959596,
+                    "creator": {"name": "Unit Provider"},
+                },
+                {"slug": "missing-score", "name": "Missing Score", "terminalBench40": None,
+                 "contextWindowTokens": 262144},
+            ],
+            "documents": [],
+        },
+        separators=(",", ":"),
+    ).encode()
+    collector._last_fetch = type(
+        "Fetch",
+        (),
+        {
+            "content_hash": sha256_bytes(raw),
+            "fetch_time": "2026-09-08T00:00:00Z",
+            "release_id": "page_jsonld",
+        },
+    )()
+    records = collector.normalize(collector.parse(raw))
+    assert [(record.model, record.score) for record in records] == [
+        ("Unit Model", 0.595959595959596),
+        ("Missing Score", None),
+    ]
+    assert records[0].provider == "Unit Provider"
+    assert records[0].extra["details_url"] == "/models/unit-model"
+
+
+def test_page_html_extracts_scored_flight_models():
+    from collector.artificial_analysis.collector import _extract_page_models
+
+    html = """
+    <script>self.__next_f.push([1, "catalog models"])</script>
+    <script>self.__next_f.push([1, "{\\"initialModels\\":[{\\"slug\\":\\"unit\\",\\"name\\":\\"Unit\\",\\"hle\\":0.61}]}"])</script>
+    """
+    rows = _extract_page_models(html.encode(), "Humanity's Last Exam: Score")
+    assert len(rows) == 1
+    assert rows[0]["slug"] == "unit"
+    assert rows[0]["name"] == "Unit"
+    assert rows[0]["hle"] == 0.61
+
+
+def test_page_html_chooses_scored_models_not_larger_catalog():
+    from collector.artificial_analysis.collector import _extract_page_models
+
+    flight = (
+        '1:["$","div",null,{"models":['
+        '{"name":"Leader","intelligenceIndex":57.6},'
+        '{"name":"Missing Score","contextWindowTokens":262144}] }]'
+    )
+    catalog = '2:["$","div",null,{"models":[' + ','.join(
+        json.dumps({"name": f"Catalog {i}", "release": "v1"})
+        for i in range(20)
+    ) + ']}]'
+    html = ''.join(
+        '<script>self.__next_f.push(' + json.dumps([1, item]) + ')</script>'
+        for item in (flight, catalog)
+    )
+    rows = _extract_page_models(html.encode(), "Artificial Analysis Intelligence Index: Score")
+    assert len(rows) == 2
+    assert rows[0]["intelligenceIndex"] == 57.6
+
+
+def test_page_field_mappings_for_versioned_and_short_names():
+    from collector.artificial_analysis.collector import _page_model_field
+
+    assert _page_model_field("Terminal-Bench v4.0") == "terminalBench40"
+    assert _page_model_field("AA-LCR v1.1") == "lcr"
+    assert _page_model_field("MLCR-AA") == "mlcrOverall"
+
+
 def test_jsonld_name_match_tolerates_version_v_prefix():
     # The site renamed "Terminal-Bench v4.0: Score" to "Terminal-Bench 4.0: Score";
     # matching must survive either direction of that cosmetic rewrite.

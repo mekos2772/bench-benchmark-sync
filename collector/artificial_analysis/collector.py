@@ -39,11 +39,13 @@ class ArtificialAnalysisCollector(BenchmarkCollector):
     def _fetch_page(self, context: FetchContext) -> FetchResult:
         try:
             raw = _read_url(self.source["endpoint"], context)
-            documents = _extract_jsonld_datasets(raw)
-            if not documents:
-                raise ValueError("no Dataset JSON-LD found on Artificial Analysis page")
+            page_models = _extract_page_models(raw, str(self.source.get("evaluation_field") or ""))
+            documents = [] if page_models else _extract_jsonld_datasets(raw)
+            if not page_models and not documents:
+                raise ValueError("no leaderboard models or Dataset JSON-LD found on Artificial Analysis page")
             envelope = {
                 "url": self.source["endpoint"],
+                "page_models": page_models,
                 "documents": documents,
             }
             payload = json.dumps(
@@ -136,6 +138,11 @@ class ArtificialAnalysisCollector(BenchmarkCollector):
         if not isinstance(payload, dict):
             raise ValueError("Artificial Analysis payload must be an object")
         self._payload = payload
+        if "page_models" in payload and payload["page_models"]:
+            rows = payload["page_models"]
+            if not isinstance(rows, list) or not rows or not all(isinstance(row, dict) for row in rows):
+                raise ValueError("Artificial Analysis page payload has invalid page_models[]")
+            return rows
         if "documents" in payload:
             documents = payload.get("documents")
             if not isinstance(documents, list):
@@ -197,6 +204,10 @@ class ArtificialAnalysisCollector(BenchmarkCollector):
             content_hash=source_hash,
         )
         normalized: list[ModelScore] = []
+        is_page_models = self._payload is not None and bool(self._payload.get("page_models"))
+        page_field = _page_model_field(field) if is_page_models else None
+        if is_page_models and not page_field:
+            raise ValueError(f"no mapped score field for {self.benchmark_id}")
         for record in records:
             model = (
                 record.get("model")
@@ -206,7 +217,21 @@ class ArtificialAnalysisCollector(BenchmarkCollector):
             )
             if not model:
                 raise ValueError("Artificial Analysis record requires model/label")
-            if self.source.get("source_type") == "official_page_endpoint":
+            if is_page_models:
+                score = _page_model_score(record, page_field)
+                metric = field
+                creator = record.get("creator")
+                extra = {
+                    "details_url": f"/models/{record['slug']}" if record.get("slug") else None,
+                    "slug": record.get("slug"),
+                    "page_model": True,
+                    "provider": (
+                        creator.get("name")
+                        if isinstance(creator, dict)
+                        else record.get("modelCreatorName")
+                    ),
+                }
+            elif self.source.get("source_type") == "official_page_endpoint":
                 raw_score = _record_value(record, field)
                 score, score_metadata = _page_score_value(raw_score)
                 metric = field
@@ -239,7 +264,11 @@ class ArtificialAnalysisCollector(BenchmarkCollector):
                     metric=str(metric),
                     comparison_key=f"{field}:{model}",
                     model=str(model),
-                    provider=_optional_string(record.get("provider") or record.get("organization")),
+                    provider=_optional_string(
+                        extra.get("provider")
+                        or record.get("provider")
+                        or record.get("organization")
+                    ),
                     score=score,
                     rank=record.get("rank"),
                     timestamp=self._last_fetch.fetch_time,
@@ -262,6 +291,142 @@ def _read_url(url: str, context: FetchContext) -> bytes:
     )
     with urllib.request.urlopen(request, timeout=context.timeout_seconds) as response:
         return response.read()
+
+
+def _extract_page_models(raw: bytes, evaluation_field: str) -> list[dict[str, Any]]:
+    """Read the leaderboard embedded in the current Next.js page payload.
+
+    Dataset JSON-LD on these pages no longer carries rows. Each evaluation page
+    embeds the scored rows as ``initialModels``; the Intelligence Index page
+    embeds the full catalog as ``models``.
+    """
+    text = raw.decode("utf-8", errors="replace")
+    payloads: list[str] = []
+    for match in re.finditer(r"self\.__next_f\.push\((.*?)\)\s*</script>", text, re.DOTALL):
+        try:
+            value = json.loads(match.group(1))
+        except json.JSONDecodeError:
+            continue
+        if isinstance(value, list) and len(value) == 2 and isinstance(value[1], str):
+            payloads.append(value[1])
+    if not payloads:
+        return []
+    blob = "\n".join(payloads)
+    field = _page_model_field(evaluation_field)
+    # ``initialModels`` is the board shown on an evaluation page. The Intelligence
+    # Index page has no such array; its scored catalog is the ``models`` array.
+    # A later, larger ``models`` array on that page is only names and releases.
+    for name in ("initialModels", "models"):
+        for rows in _json_arrays_named(blob, name):
+            if not rows or not isinstance(rows[0], dict):
+                continue
+            if field and any(_page_model_score(row, field) is not None for row in rows):
+                return [
+                    {
+                        "name": row.get("name"),
+                        "slug": row.get("slug"),
+                        field: _page_model_score(row, field),
+                        "creator": {"name": row["creator"].get("name")}
+                        if isinstance(row.get("creator"), dict)
+                        else None,
+                        "modelCreatorName": row.get("modelCreatorName"),
+                    }
+                    for row in rows
+                    if isinstance(row, dict) and row.get("name")
+                ]
+    return []
+
+
+def _json_arrays_named(blob: str, name: str) -> list[list[Any]]:
+    found: list[list[Any]] = []
+    key = f'"{name}":'
+    start = 0
+    while True:
+        index = blob.find(key, start)
+        if index < 0:
+            return found
+        position = index + len(key)
+        while position < len(blob) and blob[position].isspace():
+            position += 1
+        if position >= len(blob) or blob[position] != "[":
+            start = index + len(key)
+            continue
+        depth = 0
+        in_string = False
+        escaped = False
+        end = None
+        for offset, char in enumerate(blob[position:], position):
+            if in_string:
+                if escaped:
+                    escaped = False
+                elif char == "\\":
+                    escaped = True
+                elif char == '"':
+                    in_string = False
+                continue
+            if char == '"':
+                in_string = True
+            elif char == "[":
+                depth += 1
+            elif char == "]":
+                depth -= 1
+                if depth == 0:
+                    end = offset + 1
+                    break
+        if end is not None:
+            try:
+                value = json.loads(blob[position:end])
+            except json.JSONDecodeError:
+                value = None
+            if isinstance(value, list):
+                found.append(value)
+        start = index + len(key)
+    return found
+
+
+def _canonical_evaluation_field(evaluation_field: str) -> str:
+    text = re.sub(r"\bv(?=\d)", "", evaluation_field)
+    if ":" not in text and not re.fullmatch(r"[A-Za-z][A-Za-z0-9]*", text):
+        text = f"{text}: Score"
+    return text
+
+
+def _page_model_field(evaluation_field: str) -> str | None:
+    candidates = {
+        evaluation_field,
+        _canonical_evaluation_field(evaluation_field),
+        re.sub(r"\bv(?=\d)", "", evaluation_field),
+    }
+    configured = {
+        "Artificial Analysis Intelligence Index: Score": "intelligenceIndex",
+        "Humanity's Last Exam: Score": "hle",
+        "Terminal-Bench 4.0: Score": "terminalBench40",
+        "GPQA Diamond: Score": "gpqa",
+        "SciCode: Score": "scicode",
+        "AA-LCR v1.1": "lcr",
+        "omniscienceIndex": "omniscience",
+        "CritPt: Score": "critpt",
+        "gdpvalAaElo": "gdpval",
+        "Terminal-Bench Hard: Score": "terminalbenchHard",
+        "Terminal-Bench 2.1: Score": "terminalBench21",
+        "IFBench: Score": "ifbench",
+        "MMMU-Pro: Score": "mmmuPro",
+        "Artificial Analysis Openness Index: Score": "opennessIndex",
+        "MLCR-AA": "mlcrOverall",
+        "MLCR-AA: Score": "mlcrOverall",
+        "AA-LCR 1.1: Score": "lcr",
+    }
+    for candidate in candidates:
+        if candidate in configured:
+            return configured[candidate]
+    if re.fullmatch(r"[A-Za-z][A-Za-z0-9]*", evaluation_field):
+        return evaluation_field
+    return None
+
+
+def _page_model_score(record: dict[str, Any], field: str) -> Any:
+    value = record.get(field)
+    return value if isinstance(value, (int, float)) and not isinstance(value, bool) else None
 
 
 def _extract_jsonld_datasets(raw: bytes) -> list[dict[str, Any]]:
