@@ -167,6 +167,75 @@ def cloud_document(document: dict, synced_at: str) -> dict:
     return payload
 
 
+def ranking_documents(document: dict, synced_at: str) -> list[tuple[str, dict]]:
+    """Split one export into a catalog plus one document per board.
+
+    A board is 1-6KB. The whole export is ~170KB and takes ~18s to read, so the
+    mini program loads the catalog first and fetches only the boards a page needs.
+    """
+    payload = cloud_document(document, synced_at)
+    rankings = payload.pop("rankings")
+    catalog = {
+        "schemaVersion": payload.get("schemaVersion"),
+        "dataSource": payload.get("dataSource"),
+        "exporterVersion": payload.get("exporterVersion"),
+        "generatedAt": payload.get("generatedAt"),
+        "workflowRunId": payload.get("workflowRunId"),
+        "mainCommit": payload.get("mainCommit"),
+        "cloudSyncedAt": payload["cloudSyncedAt"],
+        "kind": "catalog",
+        "boardCount": len(rankings),
+        "families": payload.get("families"),
+    }
+    documents = []
+    for board_id, ranking in rankings.items():
+        board = feed_payload(ranking)
+        board["kind"] = "board"
+        board["boardId"] = board_id
+        board["cloudSyncedAt"] = payload["cloudSyncedAt"]
+        board["bundleGeneratedAt"] = payload.get("generatedAt")
+        documents.append((board_id, board))
+    # Publish the catalog only after all referenced boards were written.
+    documents.append(("catalog", catalog))
+    return documents
+
+
+def push_documents(
+    documents: list[tuple[str, dict]],
+    appid: str,
+    secret: str,
+    env: str,
+    collection: str,
+) -> list[dict]:
+    """Write every document with one access token, creating the collection once."""
+    token = fetch_access_token(appid, secret)
+    collection_ready = False
+    results = []
+    for doc_id, document in documents:
+        query = build_set_query(collection, doc_id, document)
+        query_bytes = len(query.encode("utf-8"))
+        if query_bytes > MAX_DOCUMENT_BYTES:
+            raise RuntimeError(
+                f"{collection}/{doc_id} is {query_bytes} bytes, above the "
+                f"{MAX_DOCUMENT_BYTES}-byte guard"
+            )
+        log(f"pushing {collection}/{doc_id} (query {query_bytes} bytes)")
+        payload = call_api(DATABASE_UPDATE_URL, token, {"env": env, "query": query})
+        if payload.get("errcode") and is_missing_collection(payload) and not collection_ready:
+            ensure_collection(env, collection, token)
+            collection_ready = True
+            payload = call_api(DATABASE_UPDATE_URL, token, {"env": env, "query": query})
+        if payload.get("errcode"):
+            errcode = payload.get("errcode")
+            errmsg = payload.get("errmsg")
+            raise RuntimeError(
+                f"CloudBase write failed for {collection}/{doc_id}: "
+                f"errcode={errcode} errmsg={errmsg}"
+            )
+        results.append(payload)
+    return results
+
+
 def push_feed(
     document: dict,
     appid: str,
@@ -272,13 +341,26 @@ def main(argv: list[str] | None = None) -> int:
         log(f"missing credentials: {', '.join(missing)}")
         return 1
 
+    synced_at = utc_now()
     try:
-        payload = push_feed(document, args.appid, args.secret, args.env, collection, doc_id)
+        if args.kind == "ranking":
+            documents = ranking_documents(document, synced_at)
+            # Keep the legacy whole-bundle document so a client that has not
+            # picked up per-board reads still gets today's data.
+            documents.append(("latest", cloud_document(document, synced_at)))
+            payloads = push_documents(
+                documents, args.appid, args.secret, args.env, collection
+            )
+        else:
+            payloads = [
+                push_feed(
+                    document, args.appid, args.secret, args.env, collection, doc_id, synced_at
+                )
+            ]
     except RuntimeError as error:
         log(str(error))
         return 1
-    outcome = "inserted" if payload.get("id") else "replaced"
-    log(f"pushed to {collection}/{doc_id} ({outcome})")
+    log(f"pushed {len(payloads)} document(s) to {collection}")
     return 0
 
 
