@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
   "generatedAt": "2026-09-25T00:34:43Z",
-  "windowStart": "2026-09-24T05:17:55Z",
-  "collectorStatus": "partial",
+  "windowStart": "2026-09-24T05:37:13Z",
+  "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
     "model",
@@ -28,7 +28,7 @@
       "isOfficial": true,
       "severity": "important",
       "title": "MMMU-Pro 官方数据更新",
-      "summary": "MMMU-Pro 官方数据发生变化；共 20 个模型 · 当前前列：Claude Opus 5.5 (max with fallback)（87.7%）、GPT-6 Astra (max)（86.9%）、Claude Opus 5.5 (xhigh with fallback)（86.6%）。",
+      "summary": "MMMU-Pro 官方数据发生变化；共 23 个模型 · 当前前列：Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)（87.7%）、GPT-6 Astra (max)（86.9%）、Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)（86.6%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -45,15 +45,15 @@
       "release": "page_jsonld",
       "contentHash": "b330c1617b3f9dd59b0efecda1ffe7faea214cfb10a4573a411145410c21ec7c",
       "unit": "ratio",
-      "modelCount": 20,
+      "modelCount": 23,
       "topModels": [
-        "Claude Opus 5.5 (max with fallback)（87.7%）",
+        "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)（87.7%）",
         "GPT-6 Astra (max)（86.9%）",
-        "Claude Opus 5.5 (xhigh with fallback)（86.6%）"
+        "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)（86.6%）"
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
+        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
       }
     },
     {
@@ -67,7 +67,7 @@
       "isOfficial": true,
       "severity": "important",
       "title": "Terminal-Bench 4.0 官方数据更新",
-      "summary": "Terminal-Bench 4.0 官方数据发生变化；共 20 个模型 · 当前前列：Claude Opus 5.5 (max with fallback)（59.6%）、Claude Opus 5.5 (xhigh with fallback)（59.6%）、GPT-6 Astra (xhigh)（59.6%）。",
+      "summary": "Terminal-Bench 4.0 官方数据发生变化；共 32 个模型 · 当前前列：Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)（59.6%）、Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)（59.6%）、GPT-6 Astra (xhigh)（59.6%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -84,15 +84,15 @@
       "release": "page_jsonld",
       "contentHash": "ce3dd2d67e5fe3bb7aac453fd4aa6f5d29fc3eee441af29bd8cfece080ff2ec3",
       "unit": "ratio",
-      "modelCount": 20,
+      "modelCount": 32,
       "topModels": [
-        "Claude Opus 5.5 (max with fallback)（59.6%）",
-        "Claude Opus 5.5 (xhigh with fallback)（59.6%）",
+        "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)（59.6%）",
+        "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)（59.6%）",
         "GPT-6 Astra (xhigh)（59.6%）"
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
+        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
       }
     },
     {
@@ -106,7 +106,7 @@
       "isOfficial": true,
       "severity": "important",
       "title": "Artificial Analysis Intelligence Index v4.3 官方数据更新",
-      "summary": "Artificial Analysis Intelligence Index v4.3 官方数据发生变化；共 20 个模型 · 当前前列：Claude Opus 5.5 (max with fallback)（57.62）、Claude Opus 5.5 (xhigh with fallback)（55.99）、Claude Opus 5.5 (high with fallback)（53.58）。",
+      "summary": "Artificial Analysis Intelligence Index v4.3 官方数据发生变化；共 32 个模型 · 当前前列：Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)（57.62）、Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)（55.99）、Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)（53.58）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -123,15 +123,15 @@
       "release": "page_jsonld",
       "contentHash": "845b321c26600eb93d1299bf3722b6c66fe6d055af5088922c37f5dd39be0da2",
       "unit": "score",
-      "modelCount": 20,
+      "modelCount": 32,
       "topModels": [
-        "Claude Opus 5.5 (max with fallback)（57.62）",
-        "Claude Opus 5.5 (xhigh with fallback)（55.99）",
-        "Claude Opus 5.5 (high with fallback)（53.58）"
+        "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)（57.62）",
+        "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)（55.99）",
+        "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)（53.58）"
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
+        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
       }
     },
     {
@@ -145,7 +145,7 @@
       "isOfficial": true,
       "severity": "important",
       "title": "Humanity's Last Exam 官方数据更新",
-      "summary": "Humanity's Last Exam 官方数据发生变化；共 20 个模型 · 当前前列：Claude Opus 5.5 (max with fallback)（61.4%）、Claude Fable 5.1 (max with fallback)（59.1%）、Claude Fable 5.1 (xhigh with fallback)（58.7%）。",
+      "summary": "Humanity's Last Exam 官方数据发生变化；共 32 个模型 · 当前前列：Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)（61.4%）、Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)（59.1%）、Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)（58.7%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -162,15 +162,15 @@
       "release": "page_jsonld",
       "contentHash": "1d8da2e11113a8e2ec80bc0cc4aed3ca11b02e4463f88e81b8d1e8b34a834f23",
       "unit": "ratio",
-      "modelCount": 20,
+      "modelCount": 32,
       "topModels": [
-        "Claude Opus 5.5 (max with fallback)（61.4%）",
-        "Claude Fable 5.1 (max with fallback)（59.1%）",
-        "Claude Fable 5.1 (xhigh with fallback)（58.7%）"
+        "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)（61.4%）",
+        "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)（59.1%）",
+        "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)（58.7%）"
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
+        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
       }
     },
     {
@@ -184,7 +184,7 @@
       "isOfficial": true,
       "severity": "important",
       "title": "GPQA Diamond 官方数据更新",
-      "summary": "GPQA Diamond 官方数据发生变化；共 20 个模型 · 当前前列：GPT-6 Astra (xhigh)（96.3%）、GPT-6 Astra (max)（96.1%）、Gemini 3.8 Flash (high)（95.3%）。",
+      "summary": "GPQA Diamond 官方数据发生变化；共 25 个模型 · 当前前列：GPT-6 Astra (xhigh)（96.3%）、GPT-6 Astra (max)（96.1%）、Gemini 3.8 Flash (high)（95.3%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -201,7 +201,7 @@
       "release": "page_jsonld",
       "contentHash": "d99dd4ea2851a740d06431f72e30d1c8e91385f2a65f88d50a7d5ec9d37a0fd4",
       "unit": "ratio",
-      "modelCount": 20,
+      "modelCount": 25,
       "topModels": [
         "GPT-6 Astra (xhigh)（96.3%）",
         "GPT-6 Astra (max)（96.1%）",
@@ -209,7 +209,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
+        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
       }
     },
     {
@@ -223,7 +223,7 @@
       "isOfficial": true,
       "severity": "important",
       "title": "AA LCR 官方数据更新",
-      "summary": "AA LCR 官方数据发生变化；共 20 个模型 · 当前前列：Kimi K3 (max)（88.7%）、Step 5 Preview（88.3%）、MiMo-V2.6-Pro（86.3%）。",
+      "summary": "AA LCR 官方数据发生变化；共 32 个模型 · 当前前列：Kimi K3 (max)（88.7%）、Step 5 Preview（88.3%）、MiMo-V2.6-Pro（86.3%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -240,7 +240,7 @@
       "release": "page_jsonld",
       "contentHash": "4a9e47f45e1b5a79b504afb457a9bafac4aa91684e460bcd7f94d183c5e879af",
       "unit": "ratio",
-      "modelCount": 20,
+      "modelCount": 32,
       "topModels": [
         "Kimi K3 (max)（88.7%）",
         "Step 5 Preview（88.3%）",
@@ -248,7 +248,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
+        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
       }
     },
     {
@@ -262,7 +262,7 @@
       "isOfficial": true,
       "severity": "important",
       "title": "SciCode 官方数据更新",
-      "summary": "SciCode 官方数据发生变化；共 20 个模型 · 当前前列：Claude Opus 5.5 (max with fallback)（66.9%）、Claude Opus 5.5 (xhigh with fallback)（65.0%）、Claude Fable 5.1 (max with fallback)（63.1%）。",
+      "summary": "SciCode 官方数据发生变化；共 32 个模型 · 当前前列：Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)（66.9%）、Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)（65.0%）、Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)（63.1%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -279,15 +279,15 @@
       "release": "page_jsonld",
       "contentHash": "d0f02484fea8478ec07c75e627b15c86c6ae0fbb6d93d223c84a3d43d9e44cb9",
       "unit": "ratio",
-      "modelCount": 20,
+      "modelCount": 32,
       "topModels": [
-        "Claude Opus 5.5 (max with fallback)（66.9%）",
-        "Claude Opus 5.5 (xhigh with fallback)（65.0%）",
-        "Claude Fable 5.1 (max with fallback)（63.1%）"
+        "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)（66.9%）",
+        "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)（65.0%）",
+        "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)（63.1%）"
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
+        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
       }
     },
     {
@@ -301,7 +301,7 @@
       "isOfficial": true,
       "severity": "important",
       "title": "Terminal-Bench Hard 官方数据更新",
-      "summary": "Terminal-Bench Hard 官方数据发生变化；共 9 个模型 · 当前前列：GPT-5.6 Sol (max)（65.9%）、Claude Fable 5 (with fallback)（62.9%）、GPT-5.6 Sol (medium)（62.9%）。",
+      "summary": "Terminal-Bench Hard 官方数据发生变化；共 9 个模型 · 当前前列：GPT-5.6 Sol (max)（65.9%）、Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)（62.9%）、GPT-5.6 Sol (medium)（62.9%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -321,12 +321,12 @@
       "modelCount": 9,
       "topModels": [
         "GPT-5.6 Sol (max)（65.9%）",
-        "Claude Fable 5 (with fallback)（62.9%）",
+        "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)（62.9%）",
         "GPT-5.6 Sol (medium)（62.9%）"
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
+        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
       }
     },
     {
@@ -340,7 +340,7 @@
       "isOfficial": true,
       "severity": "important",
       "title": "CritPt 官方数据更新",
-      "summary": "CritPt 官方数据发生变化；共 20 个模型 · 当前前列：GPT-5.6 Sol (max)（32.3%）、Claude Opus 5.5 (max with fallback)（31.7%）、Claude Opus 5.5 (xhigh with fallback)（31.7%）。",
+      "summary": "CritPt 官方数据发生变化；共 33 个模型 · 当前前列：GPT-5.6 Sol (max)（32.3%）、Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)（31.7%）、Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)（31.7%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -357,15 +357,15 @@
       "release": "page_jsonld",
       "contentHash": "dc10c21351329247ec5e356ad6bbeed87e72604be005113346cbd1d9903d1e38",
       "unit": "ratio",
-      "modelCount": 20,
+      "modelCount": 33,
       "topModels": [
         "GPT-5.6 Sol (max)（32.3%）",
-        "Claude Opus 5.5 (max with fallback)（31.7%）",
-        "Claude Opus 5.5 (xhigh with fallback)（31.7%）"
+        "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)（31.7%）",
+        "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)（31.7%）"
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
+        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
       }
     },
     {
@@ -379,7 +379,7 @@
       "isOfficial": true,
       "severity": "important",
       "title": "IFBench 官方数据更新",
-      "summary": "IFBench 官方数据发生变化；共 9 个模型 · 当前前列：Grok 4.3 (medium)（83.3%）、Grok 4.20 0309（82.9%）、MiniMax-M3（82.9%）。",
+      "summary": "IFBench 官方数据发生变化；共 9 个模型 · 当前前列：Grok 4.3 (medium)（83.3%）、Grok 4.20 0309 (Reasoning)（82.9%）、MiniMax-M3（82.9%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -399,12 +399,12 @@
       "modelCount": 9,
       "topModels": [
         "Grok 4.3 (medium)（83.3%）",
-        "Grok 4.20 0309（82.9%）",
+        "Grok 4.20 0309 (Reasoning)（82.9%）",
         "MiniMax-M3（82.9%）"
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
+        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
       }
     },
     {
@@ -418,7 +418,7 @@
       "isOfficial": true,
       "severity": "important",
       "title": "Terminal-Bench v2.1 官方数据更新",
-      "summary": "Terminal-Bench v2.1 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（91.4%）、Claude Fable 5.1 (xhigh with fallback)（91.0%）、Claude Fable 5.1 (high with fallback)（89.9%）。",
+      "summary": "Terminal-Bench v2.1 官方数据发生变化；共 25 个模型 · 当前前列：Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)（91.4%）、Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)（91.0%）、Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)（89.9%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -435,15 +435,15 @@
       "release": "page_jsonld",
       "contentHash": "cd21e9566ef92b4033b0a2eb6501ff08eba388734f58f62e0f030e7d119f60b8",
       "unit": "ratio",
-      "modelCount": 20,
+      "modelCount": 25,
       "topModels": [
-        "Claude Fable 5.1 (max with fallback)（91.4%）",
-        "Claude Fable 5.1 (xhigh with fallback)（91.0%）",
-        "Claude Fable 5.1 (high with fallback)（89.9%）"
+        "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)（91.4%）",
+        "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)（91.0%）",
+        "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)（89.9%）"
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
-        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
+        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
       }
     },
     {
@@ -457,7 +457,7 @@
       "isOfficial": true,
       "severity": "important",
       "title": "MLCR Overall 官方数据更新",
-      "summary": "MLCR Overall 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (max with fallback)（71.1%）、Claude Opus 5.5 (max with fallback)（66.7%）、Claude Fable 5 (with fallback)（64.4%）。",
+      "summary": "MLCR Overall 官方数据发生变化；共 31 个模型 · 当前前列：Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)（71.1%）、Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)（66.7%）、Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)（64.4%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -474,36 +474,19 @@
       "release": "page_jsonld",
       "contentHash": "a022e58c5444fcb0ee9365a5eca4828007601a3f97c4d7730f08f63e218a1ee8",
       "unit": "ratio",
-      "modelCount": 20,
+      "modelCount": 31,
       "topModels": [
-        "Claude Fable 5.1 (max with fallback)（71.1%）",
-        "Claude Opus 5.5 (max with fallback)（66.7%）",
-        "Claude Fable 5 (with fallback)（64.4%）"
+        "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)（71.1%）",
+        "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)（66.7%）",
+        "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)（64.4%）"
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "2a42d720f7887a1ef70dd051948216d02ec7b01dff372535d2fdd2736eaf9d70"
+        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
       }
     }
   ],
   "eventCount": 12,
-  "collectorFailures": [
-    "humanitys_last_exam:ValueError",
-    "artificial_analysis_intelligence_index_v4_3:ValueError",
-    "gpqa_diamond:ValueError",
-    "terminal_bench_v4_0:ValueError",
-    "scicode:ValueError",
-    "aa_lcr:ValueError",
-    "terminalbench_hard:ValueError",
-    "critpt:ValueError",
-    "terminalbench_v2_1:ValueError",
-    "ifbench:ValueError",
-    "aa_omniscience_index:ValueError",
-    "gdpval_aa_elo:ValueError",
-    "mmmu_pro:ValueError",
-    "mlcr_overall:ValueError",
-    "artificial_analysis_openness_index:ValueError"
-  ],
   "provenance": {
     "workflowRunId": "36078163387",
     "mainCommit": "c26aa19dfd0e8950c1dbbdfbdb94d6a9cf39e4d8"
