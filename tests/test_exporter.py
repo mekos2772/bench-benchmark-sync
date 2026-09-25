@@ -6,7 +6,7 @@ from pathlib import Path
 import jsonschema
 import pytest
 
-from exporter.cli import build_export, display_score, unit_for
+from exporter.cli import _aa_model_variant, build_export, display_score, unit_for
 from exporter.contract import ExportContractError, validate_export
 from exporter.registry_map import DEFAULT_BOARD_IDS as BOARDS
 from exporter.registry_map import load_families
@@ -111,6 +111,38 @@ def test_contract_rejects_zero_task_count(tmp_path):
     assert entry[1] == 'gpt-x'
     assert entry[2] == 0.7412
     assert entry[4] == 'xhigh'
+
+
+def test_aa_reasoning_variants_keep_the_original_model_id(tmp_path):
+    benchmark = 'artificial_analysis_intelligence_index_v4_3'
+    names = [
+        'Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)',
+        'Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)',
+        'Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)',
+        'GPT-6 Astra (max)',
+        'Qwen3.8 Max (0902)',
+    ]
+    records = [_record(benchmark, model=name, score=57.62-index) for index, name in enumerate(names)]
+    _write_snapshot(tmp_path / 'store', benchmark, records)
+    export = build_export(tmp_path / 'store', SOURCES, HIERARCHY, [benchmark])
+    entries = export['rankings']['aa_intelligence_index_v4_3']['entries']
+    by_id = {entry[0]: entry for entry in entries}
+    assert by_id[names[0]][:2] == [names[0], 'Claude Opus 5.5']
+    assert [by_id[name][4] for name in names[:3]] == [
+        'max with fallback', 'xhigh with fallback', 'high with fallback',
+    ]
+    assert by_id[names[3]][1] == 'GPT-6 Astra'
+    assert by_id[names[3]][4] == 'max'
+    assert by_id[names[4]][1] == names[4]
+    assert by_id[names[4]][4] is None
+    assert export['families'][0]['boards'][0]['modelCount'] == 5
+
+
+def test_aa_effort_mapping_is_narrow_and_does_not_rewrite_edition_names():
+    assert _aa_model_variant('DeepSeek V4.1 (Reasoning, Max Effort)') == ('DeepSeek V4.1', 'max')
+    assert _aa_model_variant('Muse Spark (medium)') == ('Muse Spark', 'medium')
+    assert _aa_model_variant('Nemotron 3 (Reasoning)') == ('Nemotron 3 (Reasoning)', None)
+    assert _aa_model_variant('Qwen3.8 Max (0902)') == ('Qwen3.8 Max (0902)', None)
 
 
 def test_score_helpers():

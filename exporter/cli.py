@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import re
 import sys
 from decimal import ROUND_HALF_UP, Decimal
 from pathlib import Path
@@ -79,6 +80,25 @@ def _source_block(mapping: BoardMapping, snapshot: dict[str, Any]) -> dict[str, 
     }
 
 
+# Keep the source's complete model label as the stable entry ID for detail and
+# comparison. The approved Mini Program already groups rows by entry name and
+# displays entry[4] as the selectable reasoning level.
+_REASONING_SUFFIX = re.compile(
+    r'^(.*?) \((?:(?:Adaptive )?Reasoning, )?'
+    r'(max|xhigh|high|medium|low|minimal)(?: Effort)?'
+    r'(?:, Default Fallback| with fallback)?\)$',
+    re.IGNORECASE,
+)
+
+
+def _aa_model_variant(model: str) -> tuple[str, str | None]:
+    match = _REASONING_SUFFIX.fullmatch(model)
+    if not match:
+        return model, None
+    fallback = model.lower().endswith((', default fallback)', ' with fallback)'))
+    return match.group(1), match.group(2).lower() + (' with fallback' if fallback else '')
+
+
 def _entry(mapping: BoardMapping, record: dict[str, Any], unit: str) -> list[Any]:
     model = record.get('model')
     if not isinstance(model, str) or not model:
@@ -87,12 +107,15 @@ def _entry(mapping: BoardMapping, record: dict[str, Any], unit: str) -> list[Any
     if not isinstance(comparison_key, str) or not comparison_key:
         raise ExportContractError('record comparison_key is required')
     variant = None
+    display_name = model
     if mapping.family_id == 'deepswe':
         entry_id = comparison_key
         variant = record.get('reasoning_effort')
     else:
         entry_id = model
-    return [entry_id, model, display_score(record.get('score'), unit), record.get('rank'), variant]
+        if mapping.family_id == 'aa':
+            display_name, variant = _aa_model_variant(model)
+    return [entry_id, display_name, display_score(record.get('score'), unit), record.get('rank'), variant]
 
 
 def build_ranking(mapping: BoardMapping, snapshot: dict[str, Any]) -> dict[str, Any]:
