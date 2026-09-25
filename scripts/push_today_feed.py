@@ -30,6 +30,7 @@ COLLECTION_ADD_URL = "https://api.weixin.qq.com/tcb/databasecollectionadd"
 EXPECTED_DATA_SOURCE = "today-activity-aggregator"
 REQUIRED_FAMILIES = ("model", "benchmark")
 EXPECTED_BUNDLE_SOURCE = "benchmark-sync-static"
+EXPECTED_USAGE_SOURCE = "usage-rankings"
 MAX_DOCUMENT_BYTES = 1_000_000
 MISSING_COLLECTION_MARKERS = (
     "collection not exist",
@@ -68,6 +69,26 @@ def load_feed(path: Path) -> dict:
         )
     if not isinstance(document.get("models"), dict):
         raise ValueError("feed models must be an object")
+    return document
+
+
+def load_usage_rankings(path: Path) -> dict:
+    """Daily token rankings for OpenRouter and OpenCode, stored as one document."""
+    document = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(document, dict):
+        raise ValueError("usage root must be an object")
+    if document.get("schemaVersion") != 1:
+        raise ValueError(f"unsupported usage schemaVersion: {document.get('schemaVersion')!r}")
+    if document.get("dataSource") != EXPECTED_USAGE_SOURCE:
+        raise ValueError(f"unexpected dataSource: {document.get('dataSource')!r}")
+    if document.get("collectorStatus") not in ("ok", "partial", "unavailable"):
+        raise ValueError(f"unexpected collectorStatus: {document.get('collectorStatus')!r}")
+    for key in ("openrouter", "opencode"):
+        board = document.get(key)
+        if not isinstance(board, dict) or not isinstance(board.get("entries"), list):
+            raise ValueError(f"usage board {key} must contain an entries list")
+        if board.get("metric") != "daily_tokens" or board.get("unit") != "tokens":
+            raise ValueError(f"usage board {key} must be daily token volume")
     return document
 
 
@@ -273,9 +294,9 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument(
         "--kind",
-        choices=("today", "ranking"),
+        choices=("today", "ranking", "usage"),
         default="today",
-        help="today: static-events feed; ranking: 24-board static export bundle",
+        help="today: activity feed; ranking: 24-board export; usage: daily token rankings",
     )
     parser.add_argument("--feed", default=None, help="path to the document JSON")
     parser.add_argument("--collection", default=None)
@@ -301,12 +322,21 @@ def main(argv: list[str] | None = None) -> int:
             "collection": "rankingBundles",
             "doc_id": "latest",
         },
+        "usage": {
+            "feed": "generated/usage-rankings/usage-rankings.json",
+            "collection": "usageRankings",
+            "doc_id": "latest",
+        },
     }[args.kind]
     feed_path = Path(args.feed or defaults["feed"])
     collection = args.collection or defaults["collection"]
     doc_id = args.doc_id or defaults["doc_id"]
 
-    loader = load_feed if args.kind == "today" else load_ranking_bundle
+    loader = {
+        "today": load_feed,
+        "ranking": load_ranking_bundle,
+        "usage": load_usage_rankings,
+    }[args.kind]
     try:
         document = loader(feed_path)
     except (OSError, ValueError) as error:
@@ -319,6 +349,13 @@ def main(argv: list[str] | None = None) -> int:
         log(
             f"feed {feed_path} generatedAt={document.get('generatedAt')} "
             f"events={events} models={models} collectorStatus={document.get('collectorStatus')}"
+        )
+    elif args.kind == "usage":
+        log(
+            f"usage {feed_path} generatedAt={document.get('generatedAt')} "
+            f"status={document.get('collectorStatus')} "
+            f"openrouter={len(document['openrouter']['entries'])} "
+            f"opencode={len(document['opencode']['entries'])}"
         )
     else:
         boards = len(document.get("rankings", {}))
@@ -351,6 +388,12 @@ def main(argv: list[str] | None = None) -> int:
             payloads = push_documents(
                 documents, args.appid, args.secret, args.env, collection
             )
+        elif args.kind == "usage":
+            payloads = [
+                push_feed(
+                    document, args.appid, args.secret, args.env, collection, doc_id, synced_at
+                )
+            ]
         else:
             payloads = [
                 push_feed(
