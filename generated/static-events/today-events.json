@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
   "generatedAt": "2026-09-25T00:34:43Z",
-  "windowStart": "2026-09-24T05:37:13Z",
+  "windowStart": "2026-09-24T10:14:43Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -53,7 +53,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
+        "contentHash": "4e48f1a0b82646a8784daab712f4eaacda7f14ace7a9278153112de6b27cfd8e"
       }
     },
     {
@@ -92,7 +92,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
+        "contentHash": "4e48f1a0b82646a8784daab712f4eaacda7f14ace7a9278153112de6b27cfd8e"
       }
     },
     {
@@ -131,7 +131,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
+        "contentHash": "4e48f1a0b82646a8784daab712f4eaacda7f14ace7a9278153112de6b27cfd8e"
       }
     },
     {
@@ -170,7 +170,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
+        "contentHash": "4e48f1a0b82646a8784daab712f4eaacda7f14ace7a9278153112de6b27cfd8e"
       }
     },
     {
@@ -209,7 +209,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
+        "contentHash": "4e48f1a0b82646a8784daab712f4eaacda7f14ace7a9278153112de6b27cfd8e"
       }
     },
     {
@@ -248,7 +248,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
+        "contentHash": "4e48f1a0b82646a8784daab712f4eaacda7f14ace7a9278153112de6b27cfd8e"
       }
     },
     {
@@ -287,7 +287,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
+        "contentHash": "4e48f1a0b82646a8784daab712f4eaacda7f14ace7a9278153112de6b27cfd8e"
       }
     },
     {
@@ -326,7 +326,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
-        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
+        "contentHash": "4e48f1a0b82646a8784daab712f4eaacda7f14ace7a9278153112de6b27cfd8e"
       }
     },
     {
@@ -365,7 +365,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
+        "contentHash": "4e48f1a0b82646a8784daab712f4eaacda7f14ace7a9278153112de6b27cfd8e"
       }
     },
     {
@@ -404,7 +404,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/ifbench",
-        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
+        "contentHash": "4e48f1a0b82646a8784daab712f4eaacda7f14ace7a9278153112de6b27cfd8e"
       }
     },
     {
@@ -443,7 +443,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
-        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
+        "contentHash": "4e48f1a0b82646a8784daab712f4eaacda7f14ace7a9278153112de6b27cfd8e"
       }
     },
     {
@@ -482,7 +482,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "1895aba95e0904226f600974e9753052636a4bcc1e4b703fc7c0b0b3e3f8062f"
+        "contentHash": "4e48f1a0b82646a8784daab712f4eaacda7f14ace7a9278153112de6b27cfd8e"
       }
     }
   ],
