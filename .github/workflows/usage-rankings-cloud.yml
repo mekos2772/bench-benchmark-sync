@@ -32,7 +32,7 @@ jobs:
           mkdir -p generated/usage-rankings
           curl --fail --silent --show-error --location --retry 3 --max-time 20 \
             --output generated/usage-rankings/usage-rankings.json \
-            https://raw.githubusercontent.com/mekos2772/bench-benchmark-sync/usage-data/generated/usage-rankings/usage-rankings.json
+            https://raw.githubusercontent.com/mekos2772/usage-rankings-data/main/generated/usage-rankings/usage-rankings.json
       - name: Validate usage document
         run: python scripts/push_today_feed.py --kind usage --dry-run
       - name: Publish usage document
