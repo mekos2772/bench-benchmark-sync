@@ -2,7 +2,7 @@ module.exports = {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
   "generatedAt": "2026-09-25T22:22:48Z",
-  "windowStart": "2026-09-25T00:41:31Z",
+  "windowStart": "2026-09-25T05:28:04Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
