@@ -1,8 +1,8 @@
 module.exports = {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-09-26T14:19:45Z",
-  "windowStart": "2026-09-25T14:19:45Z",
+  "generatedAt": "2026-09-26T17:47:17Z",
+  "windowStart": "2026-09-25T17:47:17Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -59,126 +59,126 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
           "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
+          "contentHash": "4875184c248a49d65e7382ab53a721cb673feccef14d22e9e5cc20dd85b0b5b0",
           "sourceType": "hub_official_org"
         },
         {
           "field": "provider",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
           "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
+          "contentHash": "4875184c248a49d65e7382ab53a721cb673feccef14d22e9e5cc20dd85b0b5b0",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelId",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
           "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
+          "contentHash": "4875184c248a49d65e7382ab53a721cb673feccef14d22e9e5cc20dd85b0b5b0",
           "sourceType": "hub_official_org"
         },
         {
           "field": "displayName",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
           "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
+          "contentHash": "4875184c248a49d65e7382ab53a721cb673feccef14d22e9e5cc20dd85b0b5b0",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseDate",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
           "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
+          "contentHash": "4875184c248a49d65e7382ab53a721cb673feccef14d22e9e5cc20dd85b0b5b0",
           "sourceType": "hub_official_org"
         },
         {
           "field": "status",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
           "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
+          "contentHash": "4875184c248a49d65e7382ab53a721cb673feccef14d22e9e5cc20dd85b0b5b0",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseType",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
           "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
+          "contentHash": "4875184c248a49d65e7382ab53a721cb673feccef14d22e9e5cc20dd85b0b5b0",
           "sourceType": "hub_official_org"
         },
         {
           "field": "access",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
           "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
+          "contentHash": "4875184c248a49d65e7382ab53a721cb673feccef14d22e9e5cc20dd85b0b5b0",
           "sourceType": "hub_official_org"
         },
         {
           "field": "parameterCount",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
           "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
+          "contentHash": "4875184c248a49d65e7382ab53a721cb673feccef14d22e9e5cc20dd85b0b5b0",
           "sourceType": "hub_official_org"
         },
         {
           "field": "license",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
           "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
+          "contentHash": "4875184c248a49d65e7382ab53a721cb673feccef14d22e9e5cc20dd85b0b5b0",
           "sourceType": "hub_official_org"
         },
         {
           "field": "description",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
           "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
+          "contentHash": "4875184c248a49d65e7382ab53a721cb673feccef14d22e9e5cc20dd85b0b5b0",
           "sourceType": "hub_official_org"
         },
         {
           "field": "contextWindow",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
           "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
+          "contentHash": "4875184c248a49d65e7382ab53a721cb673feccef14d22e9e5cc20dd85b0b5b0",
           "sourceType": "hub_official_org"
         },
         {
           "field": "officialUrl",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
           "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
+          "contentHash": "4875184c248a49d65e7382ab53a721cb673feccef14d22e9e5cc20dd85b0b5b0",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelCardUrl",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
           "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
+          "contentHash": "4875184c248a49d65e7382ab53a721cb673feccef14d22e9e5cc20dd85b0b5b0",
           "sourceType": "hub_official_org"
         },
         {
           "field": "hubRepo",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
           "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
+          "contentHash": "4875184c248a49d65e7382ab53a721cb673feccef14d22e9e5cc20dd85b0b5b0",
           "sourceType": "hub_official_org"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
           "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
+          "contentHash": "4875184c248a49d65e7382ab53a721cb673feccef14d22e9e5cc20dd85b0b5b0",
           "sourceType": "hub_official_org"
         },
         {
           "field": "availability",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
           "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
+          "contentHash": "4875184c248a49d65e7382ab53a721cb673feccef14d22e9e5cc20dd85b0b5b0",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modalities",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
           "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
+          "contentHash": "4875184c248a49d65e7382ab53a721cb673feccef14d22e9e5cc20dd85b0b5b0",
           "sourceType": "hub_official_org"
         }
       ]
@@ -232,126 +232,126 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
           "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
+          "contentHash": "8dc4fe5433caee3ca8805d757a2bec78e060f7ce8b901555b940386fa14909ad",
           "sourceType": "hub_official_org"
         },
         {
           "field": "provider",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
           "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
+          "contentHash": "8dc4fe5433caee3ca8805d757a2bec78e060f7ce8b901555b940386fa14909ad",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelId",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
           "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
+          "contentHash": "8dc4fe5433caee3ca8805d757a2bec78e060f7ce8b901555b940386fa14909ad",
           "sourceType": "hub_official_org"
         },
         {
           "field": "displayName",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
           "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
+          "contentHash": "8dc4fe5433caee3ca8805d757a2bec78e060f7ce8b901555b940386fa14909ad",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseDate",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
           "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
+          "contentHash": "8dc4fe5433caee3ca8805d757a2bec78e060f7ce8b901555b940386fa14909ad",
           "sourceType": "hub_official_org"
         },
         {
           "field": "status",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
           "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
+          "contentHash": "8dc4fe5433caee3ca8805d757a2bec78e060f7ce8b901555b940386fa14909ad",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseType",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
           "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
+          "contentHash": "8dc4fe5433caee3ca8805d757a2bec78e060f7ce8b901555b940386fa14909ad",
           "sourceType": "hub_official_org"
         },
         {
           "field": "access",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
           "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
+          "contentHash": "8dc4fe5433caee3ca8805d757a2bec78e060f7ce8b901555b940386fa14909ad",
           "sourceType": "hub_official_org"
         },
         {
           "field": "parameterCount",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
           "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
+          "contentHash": "8dc4fe5433caee3ca8805d757a2bec78e060f7ce8b901555b940386fa14909ad",
           "sourceType": "hub_official_org"
         },
         {
           "field": "license",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
           "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
+          "contentHash": "8dc4fe5433caee3ca8805d757a2bec78e060f7ce8b901555b940386fa14909ad",
           "sourceType": "hub_official_org"
         },
         {
           "field": "description",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
           "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
+          "contentHash": "8dc4fe5433caee3ca8805d757a2bec78e060f7ce8b901555b940386fa14909ad",
           "sourceType": "hub_official_org"
         },
         {
           "field": "contextWindow",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
           "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
+          "contentHash": "8dc4fe5433caee3ca8805d757a2bec78e060f7ce8b901555b940386fa14909ad",
           "sourceType": "hub_official_org"
         },
         {
           "field": "officialUrl",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
           "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
+          "contentHash": "8dc4fe5433caee3ca8805d757a2bec78e060f7ce8b901555b940386fa14909ad",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelCardUrl",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
           "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
+          "contentHash": "8dc4fe5433caee3ca8805d757a2bec78e060f7ce8b901555b940386fa14909ad",
           "sourceType": "hub_official_org"
         },
         {
           "field": "hubRepo",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
           "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
+          "contentHash": "8dc4fe5433caee3ca8805d757a2bec78e060f7ce8b901555b940386fa14909ad",
           "sourceType": "hub_official_org"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
           "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
+          "contentHash": "8dc4fe5433caee3ca8805d757a2bec78e060f7ce8b901555b940386fa14909ad",
           "sourceType": "hub_official_org"
         },
         {
           "field": "availability",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
           "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
+          "contentHash": "8dc4fe5433caee3ca8805d757a2bec78e060f7ce8b901555b940386fa14909ad",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modalities",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
           "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
+          "contentHash": "8dc4fe5433caee3ca8805d757a2bec78e060f7ce8b901555b940386fa14909ad",
           "sourceType": "hub_official_org"
         }
       ]
@@ -405,126 +405,126 @@ module.exports = {
           "field": "canonicalId",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
           "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
+          "contentHash": "9b3efde188d9af252af6f14ab76c50433bb01f2bb41a124d0398ff230b55f1c7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "provider",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
           "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
+          "contentHash": "9b3efde188d9af252af6f14ab76c50433bb01f2bb41a124d0398ff230b55f1c7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelId",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
           "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
+          "contentHash": "9b3efde188d9af252af6f14ab76c50433bb01f2bb41a124d0398ff230b55f1c7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "displayName",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
           "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
+          "contentHash": "9b3efde188d9af252af6f14ab76c50433bb01f2bb41a124d0398ff230b55f1c7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseDate",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
           "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
+          "contentHash": "9b3efde188d9af252af6f14ab76c50433bb01f2bb41a124d0398ff230b55f1c7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "status",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
           "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
+          "contentHash": "9b3efde188d9af252af6f14ab76c50433bb01f2bb41a124d0398ff230b55f1c7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseType",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
           "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
+          "contentHash": "9b3efde188d9af252af6f14ab76c50433bb01f2bb41a124d0398ff230b55f1c7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "access",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
           "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
+          "contentHash": "9b3efde188d9af252af6f14ab76c50433bb01f2bb41a124d0398ff230b55f1c7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "parameterCount",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
           "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
+          "contentHash": "9b3efde188d9af252af6f14ab76c50433bb01f2bb41a124d0398ff230b55f1c7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "license",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
           "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
+          "contentHash": "9b3efde188d9af252af6f14ab76c50433bb01f2bb41a124d0398ff230b55f1c7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "description",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
           "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
+          "contentHash": "9b3efde188d9af252af6f14ab76c50433bb01f2bb41a124d0398ff230b55f1c7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "contextWindow",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
           "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
+          "contentHash": "9b3efde188d9af252af6f14ab76c50433bb01f2bb41a124d0398ff230b55f1c7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "officialUrl",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
           "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
+          "contentHash": "9b3efde188d9af252af6f14ab76c50433bb01f2bb41a124d0398ff230b55f1c7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelCardUrl",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
           "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
+          "contentHash": "9b3efde188d9af252af6f14ab76c50433bb01f2bb41a124d0398ff230b55f1c7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "hubRepo",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
           "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
+          "contentHash": "9b3efde188d9af252af6f14ab76c50433bb01f2bb41a124d0398ff230b55f1c7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
           "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
+          "contentHash": "9b3efde188d9af252af6f14ab76c50433bb01f2bb41a124d0398ff230b55f1c7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "availability",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
           "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
+          "contentHash": "9b3efde188d9af252af6f14ab76c50433bb01f2bb41a124d0398ff230b55f1c7",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modalities",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
           "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
+          "contentHash": "9b3efde188d9af252af6f14ab76c50433bb01f2bb41a124d0398ff230b55f1c7",
           "sourceType": "hub_official_org"
         }
       ]
@@ -560,7 +560,7 @@ module.exports = {
           "field": "modelRepository",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
           "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
+          "contentHash": "4875184c248a49d65e7382ab53a721cb673feccef14d22e9e5cc20dd85b0b5b0",
           "sourceType": "hub_official_org"
         }
       ],
@@ -571,7 +571,7 @@ module.exports = {
       "eventIdentity": "open-release:internlm/Intern-Decision-4B",
       "provenance": {
         "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-        "contentHash": "2e1a3f5c2c60ea42fc42099a3f42af2652cbaec53ec188131cce424946955343"
+        "contentHash": "616c6d11d53fbaf89f5089714379536f4eeb67d9b718f15f34b2a1e5f1f226af"
       }
     },
     {
@@ -597,7 +597,7 @@ module.exports = {
           "field": "modelRepository",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
           "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
+          "contentHash": "8dc4fe5433caee3ca8805d757a2bec78e060f7ce8b901555b940386fa14909ad",
           "sourceType": "hub_official_org"
         }
       ],
@@ -608,7 +608,7 @@ module.exports = {
       "eventIdentity": "open-release:internlm/Intern-Decision-2B",
       "provenance": {
         "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-        "contentHash": "2e1a3f5c2c60ea42fc42099a3f42af2652cbaec53ec188131cce424946955343"
+        "contentHash": "616c6d11d53fbaf89f5089714379536f4eeb67d9b718f15f34b2a1e5f1f226af"
       }
     },
     {
@@ -634,7 +634,7 @@ module.exports = {
           "field": "modelRepository",
           "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
           "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
+          "contentHash": "9b3efde188d9af252af6f14ab76c50433bb01f2bb41a124d0398ff230b55f1c7",
           "sourceType": "hub_official_org"
         }
       ],
@@ -645,13 +645,13 @@ module.exports = {
       "eventIdentity": "open-release:internlm/Intern-Decision-0.8B",
       "provenance": {
         "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-        "contentHash": "2e1a3f5c2c60ea42fc42099a3f42af2652cbaec53ec188131cce424946955343"
+        "contentHash": "616c6d11d53fbaf89f5089714379536f4eeb67d9b718f15f34b2a1e5f1f226af"
       }
     }
   ],
   "eventCount": 3,
   "provenance": {
-    "workflowRunId": "36248119686",
-    "mainCommit": "e555c8a0c9d7aadc5132bbc31e31d45af89da0eb"
+    "workflowRunId": "36260250640",
+    "mainCommit": "73fc6236ddc1b233d4f956e075d8731285425f5c"
   }
 };

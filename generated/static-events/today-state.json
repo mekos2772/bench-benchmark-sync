@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-26T14:19:45Z",
+  "generatedAt": "2026-09-26T17:47:17Z",
   "models": {
     "hf:internlm/Intern-Decision-4B": {
       "version": null,
-      "contentHash": "97e6ccb90a458cccf33a37e9d39412ff5d22ca1c010f24a2632431dce94d1ebc",
-      "lastSeenAt": "2026-09-26T14:19:45Z"
+      "contentHash": "acdeff5b8e874358858dca3534e6df57d13152dbcf7aa75c750575f39151fe4b",
+      "lastSeenAt": "2026-09-26T17:47:17Z"
     },
     "hf:internlm/Intern-Decision-2B": {
       "version": null,
-      "contentHash": "6afb3eac2d2181dfc58a23f9c93231fc492a34733d59660a7710aad7b2b08df1",
-      "lastSeenAt": "2026-09-26T14:19:45Z"
+      "contentHash": "1c56066dbadf241734c179d1a86255ddb311f74fd0bbaec1483ffc0807587881",
+      "lastSeenAt": "2026-09-26T17:47:17Z"
     },
     "hf:internlm/Intern-Decision-0.8B": {
       "version": null,
-      "contentHash": "dd5648ede8f67440734e40b140fa866cbccb729670079ff22e72be9055a7612d",
-      "lastSeenAt": "2026-09-26T14:19:45Z"
+      "contentHash": "58bb510a6accc5ea4e9d22457c2b77f86de4a07d0f309f3aa48ae6f21a5aeb1b",
+      "lastSeenAt": "2026-09-26T17:47:17Z"
     }
   },
   "benchmarks": {
@@ -548,538 +548,6 @@
           "comparisonKey": "2026-06-25:Data Analysis:category_average:gpt-6-luna-max",
           "variant": "2026-06-25",
           "displayRank": 40
-        }
-      }
-    },
-    "livebench_math": {
-      "runtimeId": "livebench_math",
-      "familyId": "livebench",
-      "title": "LiveBench Math",
-      "release": "2026-06-25",
-      "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "source": {
-        "benchmark_id": "livebench_math",
-        "status": "enabled",
-        "source_name": "LiveBench Mathematics dated official leaderboard CSV",
-        "organization": "LiveBench",
-        "source_type": "official_site_dated_csv",
-        "official_url": "https://livebench.ai/",
-        "endpoint": "https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main",
-        "raw_base_url": "https://livebench.ai",
-        "fallback_release_id": "2026-06-25",
-        "fetch_method": "GET",
-        "update_frequency": "release_based",
-        "requires_auth": false,
-        "category_selector": "math",
-        "evidence_url": "https://livebench.ai/",
-        "release_tracking": "dated_table_and_categories_files",
-        "hash_required": true,
-        "notes": "User label Math maps to official taxonomy Mathematics."
-      },
-      "records": {
-        "claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25:Mathematics:category_average:claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25": {
-          "model": "claude-opus-4-5-20251101-thinking-64k-high-effort",
-          "score": 90.38900000000001,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-4-5-20251101-thinking-64k-high-effort",
-          "variant": "2026-06-25",
-          "displayRank": 30
-        },
-        "claude-opus-4-6-thinking-auto-high-effort|2026-06-25:Mathematics:category_average:claude-opus-4-6-thinking-auto-high-effort|2026-06-25": {
-          "model": "claude-opus-4-6-thinking-auto-high-effort",
-          "score": 89.31700000000001,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-4-6-thinking-auto-high-effort",
-          "variant": "2026-06-25",
-          "displayRank": 34
-        },
-        "claude-opus-4-7-xhigh-effort|2026-06-25:Mathematics:category_average:claude-opus-4-7-xhigh-effort|2026-06-25": {
-          "model": "claude-opus-4-7-xhigh-effort",
-          "score": 92.85374999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-4-7-xhigh-effort",
-          "variant": "2026-06-25",
-          "displayRank": 21
-        },
-        "claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25:Mathematics:category_average:claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25": {
-          "model": "claude-sonnet-4-6-thinking-auto-medium-effort",
-          "score": 86.994,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-sonnet-4-6-thinking-auto-medium-effort",
-          "variant": "2026-06-25",
-          "displayRank": 44
-        },
-        "claude-sonnet-5-xhigh-effort|2026-06-25:Mathematics:category_average:claude-sonnet-5-xhigh-effort|2026-06-25": {
-          "model": "claude-sonnet-5-xhigh-effort",
-          "score": 92.94225,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-sonnet-5-xhigh-effort",
-          "variant": "2026-06-25",
-          "displayRank": 20
-        },
-        "deepseek-v4-flash|2026-06-25:Mathematics:category_average:deepseek-v4-flash|2026-06-25": {
-          "model": "deepseek-v4-flash",
-          "score": 79.64750000000001,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-flash",
-          "variant": "2026-06-25",
-          "displayRank": 57
-        },
-        "deepseek-v4-pro|2026-06-25:Mathematics:category_average:deepseek-v4-pro|2026-06-25": {
-          "model": "deepseek-v4-pro",
-          "score": 90.6755,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-pro",
-          "variant": "2026-06-25",
-          "displayRank": 29
-        },
-        "gemini-3.1-pro-preview-high|2026-06-25:Mathematics:category_average:gemini-3.1-pro-preview-high|2026-06-25": {
-          "model": "gemini-3.1-pro-preview-high",
-          "score": 91.04499999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.1-pro-preview-high",
-          "variant": "2026-06-25",
-          "displayRank": 26
-        },
-        "gemini-3.5-flash-high|2026-06-25:Mathematics:category_average:gemini-3.5-flash-high|2026-06-25": {
-          "model": "gemini-3.5-flash-high",
-          "score": 88.24375,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.5-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 39
-        },
-        "glm-5.2|2026-06-25:Mathematics:category_average:glm-5.2|2026-06-25": {
-          "model": "glm-5.2",
-          "score": 89.78125,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:glm-5.2",
-          "variant": "2026-06-25",
-          "displayRank": 32
-        },
-        "gpt-5.2-2025-12-11-high|2026-06-25:Mathematics:category_average:gpt-5.2-2025-12-11-high|2026-06-25": {
-          "model": "gpt-5.2-2025-12-11-high",
-          "score": 93.166,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.2-2025-12-11-high",
-          "variant": "2026-06-25",
-          "displayRank": 19
-        },
-        "gpt-5.2-codex|2026-06-25:Mathematics:category_average:gpt-5.2-codex|2026-06-25": {
-          "model": "gpt-5.2-codex",
-          "score": 88.77375,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.2-codex",
-          "variant": "2026-06-25",
-          "displayRank": 36
-        },
-        "gpt-5.4-mini-xhigh|2026-06-25:Mathematics:category_average:gpt-5.4-mini-xhigh|2026-06-25": {
-          "model": "gpt-5.4-mini-xhigh",
-          "score": 78.462,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.4-mini-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 59
-        },
-        "gpt-5.4-nano-xhigh|2026-06-25:Mathematics:category_average:gpt-5.4-nano-xhigh|2026-06-25": {
-          "model": "gpt-5.4-nano-xhigh",
-          "score": 90.977,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.4-nano-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 27
-        },
-        "gpt-5.4-xhigh|2026-06-25:Mathematics:category_average:gpt-5.4-xhigh|2026-06-25": {
-          "model": "gpt-5.4-xhigh",
-          "score": 94.148,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.4-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 16
-        },
-        "gpt-5.5-xhigh|2026-06-25:Mathematics:category_average:gpt-5.5-xhigh|2026-06-25": {
-          "model": "gpt-5.5-xhigh",
-          "score": 95.85725,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.5-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 9
-        },
-        "grok-4.3|2026-06-25:Mathematics:category_average:grok-4.3|2026-06-25": {
-          "model": "grok-4.3",
-          "score": 84.339,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-4.3",
-          "variant": "2026-06-25",
-          "displayRank": 51
-        },
-        "grok-4.5|2026-06-25:Mathematics:category_average:grok-4.5|2026-06-25": {
-          "model": "grok-4.5",
-          "score": 90.8245,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-4.5",
-          "variant": "2026-06-25",
-          "displayRank": 28
-        },
-        "grok-build-0.1|2026-06-25:Mathematics:category_average:grok-build-0.1|2026-06-25": {
-          "model": "grok-build-0.1",
-          "score": 78.42875000000001,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-build-0.1",
-          "variant": "2026-06-25",
-          "displayRank": 60
-        },
-        "kimi-k2.6-thinking|2026-06-25:Mathematics:category_average:kimi-k2.6-thinking|2026-06-25": {
-          "model": "kimi-k2.6-thinking",
-          "score": 84.27625,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:kimi-k2.6-thinking",
-          "variant": "2026-06-25",
-          "displayRank": 52
-        },
-        "kimi-k2.7-code|2026-06-25:Mathematics:category_average:kimi-k2.7-code|2026-06-25": {
-          "model": "kimi-k2.7-code",
-          "score": 79.60425000000001,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:kimi-k2.7-code",
-          "variant": "2026-06-25",
-          "displayRank": 58
-        },
-        "minimax-m3|2026-06-25:Mathematics:category_average:minimax-m3|2026-06-25": {
-          "model": "minimax-m3",
-          "score": 76.94749999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:minimax-m3",
-          "variant": "2026-06-25",
-          "displayRank": 62
-        },
-        "qwen3.6-27b|2026-06-25:Mathematics:category_average:qwen3.6-27b|2026-06-25": {
-          "model": "qwen3.6-27b",
-          "score": 79.8685,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.6-27b",
-          "variant": "2026-06-25",
-          "displayRank": 56
-        },
-        "qwen3.6-plus|2026-06-25:Mathematics:category_average:qwen3.6-plus|2026-06-25": {
-          "model": "qwen3.6-plus",
-          "score": 83.72475,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.6-plus",
-          "variant": "2026-06-25",
-          "displayRank": 54
-        },
-        "qwen3.7-max|2026-06-25:Mathematics:category_average:qwen3.7-max|2026-06-25": {
-          "model": "qwen3.7-max",
-          "score": 85.24825,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.7-max",
-          "variant": "2026-06-25",
-          "displayRank": 49
-        },
-        "gpt-5.6-sol-max|2026-06-25:Mathematics:category_average:gpt-5.6-sol-max|2026-06-25": {
-          "model": "gpt-5.6-sol-max",
-          "score": 96.19775,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.6-sol-max",
-          "variant": "2026-06-25",
-          "displayRank": 6
-        },
-        "gpt-5.6-terra-max|2026-06-25:Mathematics:category_average:gpt-5.6-terra-max|2026-06-25": {
-          "model": "gpt-5.6-terra-max",
-          "score": 94.90825000000001,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.6-terra-max",
-          "variant": "2026-06-25",
-          "displayRank": 14
-        },
-        "gpt-5.6-luna-max|2026-06-25:Mathematics:category_average:gpt-5.6-luna-max|2026-06-25": {
-          "model": "gpt-5.6-luna-max",
-          "score": 87.20075,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.6-luna-max",
-          "variant": "2026-06-25",
-          "displayRank": 42
-        },
-        "claude-fable-5-max-effort|2026-06-25:Mathematics:category_average:claude-fable-5-max-effort|2026-06-25": {
-          "model": "claude-fable-5-max-effort",
-          "score": 95.98575,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-fable-5-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 7
-        },
-        "muse-spark-1.1-xhigh|2026-06-25:Mathematics:category_average:muse-spark-1.1-xhigh|2026-06-25": {
-          "model": "muse-spark-1.1-xhigh",
-          "score": 87.14474999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:muse-spark-1.1-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 43
-        },
-        "kimi-k3|2026-06-25:Mathematics:category_average:kimi-k3|2026-06-25": {
-          "model": "kimi-k3",
-          "score": 84.43675,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:kimi-k3",
-          "variant": "2026-06-25",
-          "displayRank": 50
-        },
-        "inkling-xhigh|2026-06-25:Mathematics:category_average:inkling-xhigh|2026-06-25": {
-          "model": "inkling-xhigh",
-          "score": 88.36474999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:inkling-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 38
-        },
-        "gemini-3.5-flash-lite-high|2026-06-25:Mathematics:category_average:gemini-3.5-flash-lite-high|2026-06-25": {
-          "model": "gemini-3.5-flash-lite-high",
-          "score": 73.73949999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.5-flash-lite-high",
-          "variant": "2026-06-25",
-          "displayRank": 63
-        },
-        "gemini-3.6-flash-high|2026-06-25:Mathematics:category_average:gemini-3.6-flash-high|2026-06-25": {
-          "model": "gemini-3.6-flash-high",
-          "score": 86.4025,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.6-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 46
-        },
-        "claude-opus-5-max-effort|2026-06-25:Mathematics:category_average:claude-opus-5-max-effort|2026-06-25": {
-          "model": "claude-opus-5-max-effort",
-          "score": 95.731,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-5-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 10
-        },
-        "claude-opus-4-8-max-effort|2026-06-25:Mathematics:category_average:claude-opus-4-8-max-effort|2026-06-25": {
-          "model": "claude-opus-4-8-max-effort",
-          "score": 94.31649999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-4-8-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 15
-        },
-        "deepseek-v4-flash-0731|2026-06-25:Mathematics:category_average:deepseek-v4-flash-0731|2026-06-25": {
-          "model": "deepseek-v4-flash-0731",
-          "score": 86.78975,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-flash-0731",
-          "variant": "2026-06-25",
-          "displayRank": 45
-        },
-        "qwen3.8-max|2026-06-25:Mathematics:category_average:qwen3.8-max|2026-06-25": {
-          "model": "qwen3.8-max",
-          "score": 91.31225,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.8-max",
-          "variant": "2026-06-25",
-          "displayRank": 24
-        },
-        "muse-spark-1.2-xhigh|2026-06-25:Mathematics:category_average:muse-spark-1.2-xhigh|2026-06-25": {
-          "model": "muse-spark-1.2-xhigh",
-          "score": 91.20349999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:muse-spark-1.2-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 25
-        },
-        "smaug-agentic|2026-06-25:Mathematics:category_average:smaug-agentic|2026-06-25": {
-          "model": "smaug-agentic",
-          "score": 83.9195,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:smaug-agentic",
-          "variant": "2026-06-25",
-          "displayRank": 53
-        },
-        "smaug-mini|2026-06-25:Mathematics:category_average:smaug-mini|2026-06-25": {
-          "model": "smaug-mini",
-          "score": 89.74275,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:smaug-mini",
-          "variant": "2026-06-25",
-          "displayRank": 33
-        },
-        "deepseek-v4-pro-0813|2026-06-25:Mathematics:category_average:deepseek-v4-pro-0813|2026-06-25": {
-          "model": "deepseek-v4-pro-0813",
-          "score": 95.08624999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-pro-0813",
-          "variant": "2026-06-25",
-          "displayRank": 13
-        },
-        "grok-4.6|2026-06-25:Mathematics:category_average:grok-4.6|2026-06-25": {
-          "model": "grok-4.6",
-          "score": 92.56799999999998,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-4.6",
-          "variant": "2026-06-25",
-          "displayRank": 22
-        },
-        "gemini-3.7-flash-high|2026-06-25:Mathematics:category_average:gemini-3.7-flash-high|2026-06-25": {
-          "model": "gemini-3.7-flash-high",
-          "score": 93.46799999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.7-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 17
-        },
-        "qwen3.8-27b|2026-06-25:Mathematics:category_average:qwen3.8-27b|2026-06-25": {
-          "model": "qwen3.8-27b",
-          "score": 86.21275,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.8-27b",
-          "variant": "2026-06-25",
-          "displayRank": 47
-        },
-        "ox-alpha-max|2026-06-25:Mathematics:category_average:ox-alpha-max|2026-06-25": {
-          "model": "ox-alpha-max",
-          "score": 77.53275,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:ox-alpha-max",
-          "variant": "2026-06-25",
-          "displayRank": 61
-        },
-        "deepseek-v4-flash-vision-exp|2026-06-25:Mathematics:category_average:deepseek-v4-flash-vision-exp|2026-06-25": {
-          "model": "deepseek-v4-flash-vision-exp",
-          "score": 87.80675,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-flash-vision-exp",
-          "variant": "2026-06-25",
-          "displayRank": 41
-        },
-        "glm-5.3|2026-06-25:Mathematics:category_average:glm-5.3|2026-06-25": {
-          "model": "glm-5.3",
-          "score": 87.898,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:glm-5.3",
-          "variant": "2026-06-25",
-          "displayRank": 40
-        },
-        "glm-5.3-flash|2026-06-25:Mathematics:category_average:glm-5.3-flash|2026-06-25": {
-          "model": "glm-5.3-flash",
-          "score": 81.2445,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:glm-5.3-flash",
-          "variant": "2026-06-25",
-          "displayRank": 55
-        },
-        "qwen3.8-flash-next|2026-06-25:Mathematics:category_average:qwen3.8-flash-next|2026-06-25": {
-          "model": "qwen3.8-flash-next",
-          "score": 85.821,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.8-flash-next",
-          "variant": "2026-06-25",
-          "displayRank": 48
-        },
-        "nemotron-3-ultra-550b-a55b|2026-06-25:Mathematics:category_average:nemotron-3-ultra-550b-a55b|2026-06-25": {
-          "model": "nemotron-3-ultra-550b-a55b",
-          "score": 88.66324999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:nemotron-3-ultra-550b-a55b",
-          "variant": "2026-06-25",
-          "displayRank": 37
-        },
-        "claude-fable-5-1-max-effort|2026-06-25:Mathematics:category_average:claude-fable-5-1-max-effort|2026-06-25": {
-          "model": "claude-fable-5-1-max-effort",
-          "score": 97.00675,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-fable-5-1-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 2
-        },
-        "gemini-3.8-flash-high|2026-06-25:Mathematics:category_average:gemini-3.8-flash-high|2026-06-25": {
-          "model": "gemini-3.8-flash-high",
-          "score": 91.56425,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.8-flash-high",
-          "variant": "2026-06-25",
-          "displayRank": 23
-        },
-        "muse-spark-1.3-xhigh|2026-06-25:Mathematics:category_average:muse-spark-1.3-xhigh|2026-06-25": {
-          "model": "muse-spark-1.3-xhigh",
-          "score": 95.94999999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:muse-spark-1.3-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 8
-        },
-        "gpt-6-astra-max|2026-06-25:Mathematics:category_average:gpt-6-astra-max|2026-06-25": {
-          "model": "gpt-6-astra-max",
-          "score": 96.80624999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-6-astra-max",
-          "variant": "2026-06-25",
-          "displayRank": 3
-        },
-        "smaug-flash|2026-06-25:Mathematics:category_average:smaug-flash|2026-06-25": {
-          "model": "smaug-flash",
-          "score": 90.06424999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:smaug-flash",
-          "variant": "2026-06-25",
-          "displayRank": 31
-        },
-        "deepseek-v4.1-flash-max|2026-06-25:Mathematics:category_average:deepseek-v4.1-flash-max|2026-06-25": {
-          "model": "deepseek-v4.1-flash-max",
-          "score": 93.28975,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4.1-flash-max",
-          "variant": "2026-06-25",
-          "displayRank": 18
-        },
-        "union-alpha|2026-06-25:Mathematics:category_average:union-alpha|2026-06-25": {
-          "model": "union-alpha",
-          "score": 95.2935,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:union-alpha",
-          "variant": "2026-06-25",
-          "displayRank": 12
-        },
-        "grok-4.7-xhigh|2026-06-25:Mathematics:category_average:grok-4.7-xhigh|2026-06-25": {
-          "model": "grok-4.7-xhigh",
-          "score": 95.678,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-4.7-xhigh",
-          "variant": "2026-06-25",
-          "displayRank": 11
-        },
-        "claude-opus-5-5-max-effort|2026-06-25:Mathematics:category_average:claude-opus-5-5-max-effort|2026-06-25": {
-          "model": "claude-opus-5-5-max-effort",
-          "score": 97.07749999999999,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-5-5-max-effort",
-          "variant": "2026-06-25",
-          "displayRank": 1
-        },
-        "claude-opus-5-5-xhigh-effort|2026-06-25:Mathematics:category_average:claude-opus-5-5-xhigh-effort|2026-06-25": {
-          "model": "claude-opus-5-5-xhigh-effort",
-          "score": 96.803,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-5-5-xhigh-effort",
-          "variant": "2026-06-25",
-          "displayRank": 4
-        },
-        "gpt-6-sol-max|2026-06-25:Mathematics:category_average:gpt-6-sol-max|2026-06-25": {
-          "model": "gpt-6-sol-max",
-          "score": 96.356,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-6-sol-max",
-          "variant": "2026-06-25",
-          "displayRank": 5
-        },
-        "gpt-6-luna-max|2026-06-25:Mathematics:category_average:gpt-6-luna-max|2026-06-25": {
-          "model": "gpt-6-luna-max",
-          "score": 89.1235,
-          "rank": null,
-          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-6-luna-max",
-          "variant": "2026-06-25",
-          "displayRank": 35
         }
       }
     },
@@ -3211,6 +2679,538 @@
         }
       }
     },
+    "livebench_math": {
+      "runtimeId": "livebench_math",
+      "familyId": "livebench",
+      "title": "LiveBench Math",
+      "release": "2026-06-25",
+      "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
+      "source": {
+        "benchmark_id": "livebench_math",
+        "status": "enabled",
+        "source_name": "LiveBench Mathematics dated official leaderboard CSV",
+        "organization": "LiveBench",
+        "source_type": "official_site_dated_csv",
+        "official_url": "https://livebench.ai/",
+        "endpoint": "https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main",
+        "raw_base_url": "https://livebench.ai",
+        "fallback_release_id": "2026-06-25",
+        "fetch_method": "GET",
+        "update_frequency": "release_based",
+        "requires_auth": false,
+        "category_selector": "math",
+        "evidence_url": "https://livebench.ai/",
+        "release_tracking": "dated_table_and_categories_files",
+        "hash_required": true,
+        "notes": "User label Math maps to official taxonomy Mathematics."
+      },
+      "records": {
+        "claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25:Mathematics:category_average:claude-opus-4-5-20251101-thinking-64k-high-effort|2026-06-25": {
+          "model": "claude-opus-4-5-20251101-thinking-64k-high-effort",
+          "score": 90.38900000000001,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-4-5-20251101-thinking-64k-high-effort",
+          "variant": "2026-06-25",
+          "displayRank": 30
+        },
+        "claude-opus-4-6-thinking-auto-high-effort|2026-06-25:Mathematics:category_average:claude-opus-4-6-thinking-auto-high-effort|2026-06-25": {
+          "model": "claude-opus-4-6-thinking-auto-high-effort",
+          "score": 89.31700000000001,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-4-6-thinking-auto-high-effort",
+          "variant": "2026-06-25",
+          "displayRank": 34
+        },
+        "claude-opus-4-7-xhigh-effort|2026-06-25:Mathematics:category_average:claude-opus-4-7-xhigh-effort|2026-06-25": {
+          "model": "claude-opus-4-7-xhigh-effort",
+          "score": 92.85374999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-4-7-xhigh-effort",
+          "variant": "2026-06-25",
+          "displayRank": 21
+        },
+        "claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25:Mathematics:category_average:claude-sonnet-4-6-thinking-auto-medium-effort|2026-06-25": {
+          "model": "claude-sonnet-4-6-thinking-auto-medium-effort",
+          "score": 86.994,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-sonnet-4-6-thinking-auto-medium-effort",
+          "variant": "2026-06-25",
+          "displayRank": 44
+        },
+        "claude-sonnet-5-xhigh-effort|2026-06-25:Mathematics:category_average:claude-sonnet-5-xhigh-effort|2026-06-25": {
+          "model": "claude-sonnet-5-xhigh-effort",
+          "score": 92.94225,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-sonnet-5-xhigh-effort",
+          "variant": "2026-06-25",
+          "displayRank": 20
+        },
+        "deepseek-v4-flash|2026-06-25:Mathematics:category_average:deepseek-v4-flash|2026-06-25": {
+          "model": "deepseek-v4-flash",
+          "score": 79.64750000000001,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-flash",
+          "variant": "2026-06-25",
+          "displayRank": 57
+        },
+        "deepseek-v4-pro|2026-06-25:Mathematics:category_average:deepseek-v4-pro|2026-06-25": {
+          "model": "deepseek-v4-pro",
+          "score": 90.6755,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-pro",
+          "variant": "2026-06-25",
+          "displayRank": 29
+        },
+        "gemini-3.1-pro-preview-high|2026-06-25:Mathematics:category_average:gemini-3.1-pro-preview-high|2026-06-25": {
+          "model": "gemini-3.1-pro-preview-high",
+          "score": 91.04499999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.1-pro-preview-high",
+          "variant": "2026-06-25",
+          "displayRank": 26
+        },
+        "gemini-3.5-flash-high|2026-06-25:Mathematics:category_average:gemini-3.5-flash-high|2026-06-25": {
+          "model": "gemini-3.5-flash-high",
+          "score": 88.24375,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.5-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 39
+        },
+        "glm-5.2|2026-06-25:Mathematics:category_average:glm-5.2|2026-06-25": {
+          "model": "glm-5.2",
+          "score": 89.78125,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:glm-5.2",
+          "variant": "2026-06-25",
+          "displayRank": 32
+        },
+        "gpt-5.2-2025-12-11-high|2026-06-25:Mathematics:category_average:gpt-5.2-2025-12-11-high|2026-06-25": {
+          "model": "gpt-5.2-2025-12-11-high",
+          "score": 93.166,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.2-2025-12-11-high",
+          "variant": "2026-06-25",
+          "displayRank": 19
+        },
+        "gpt-5.2-codex|2026-06-25:Mathematics:category_average:gpt-5.2-codex|2026-06-25": {
+          "model": "gpt-5.2-codex",
+          "score": 88.77375,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.2-codex",
+          "variant": "2026-06-25",
+          "displayRank": 36
+        },
+        "gpt-5.4-mini-xhigh|2026-06-25:Mathematics:category_average:gpt-5.4-mini-xhigh|2026-06-25": {
+          "model": "gpt-5.4-mini-xhigh",
+          "score": 78.462,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.4-mini-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 59
+        },
+        "gpt-5.4-nano-xhigh|2026-06-25:Mathematics:category_average:gpt-5.4-nano-xhigh|2026-06-25": {
+          "model": "gpt-5.4-nano-xhigh",
+          "score": 90.977,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.4-nano-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 27
+        },
+        "gpt-5.4-xhigh|2026-06-25:Mathematics:category_average:gpt-5.4-xhigh|2026-06-25": {
+          "model": "gpt-5.4-xhigh",
+          "score": 94.148,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.4-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 16
+        },
+        "gpt-5.5-xhigh|2026-06-25:Mathematics:category_average:gpt-5.5-xhigh|2026-06-25": {
+          "model": "gpt-5.5-xhigh",
+          "score": 95.85725,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.5-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 9
+        },
+        "grok-4.3|2026-06-25:Mathematics:category_average:grok-4.3|2026-06-25": {
+          "model": "grok-4.3",
+          "score": 84.339,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-4.3",
+          "variant": "2026-06-25",
+          "displayRank": 51
+        },
+        "grok-4.5|2026-06-25:Mathematics:category_average:grok-4.5|2026-06-25": {
+          "model": "grok-4.5",
+          "score": 90.8245,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-4.5",
+          "variant": "2026-06-25",
+          "displayRank": 28
+        },
+        "grok-build-0.1|2026-06-25:Mathematics:category_average:grok-build-0.1|2026-06-25": {
+          "model": "grok-build-0.1",
+          "score": 78.42875000000001,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-build-0.1",
+          "variant": "2026-06-25",
+          "displayRank": 60
+        },
+        "kimi-k2.6-thinking|2026-06-25:Mathematics:category_average:kimi-k2.6-thinking|2026-06-25": {
+          "model": "kimi-k2.6-thinking",
+          "score": 84.27625,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:kimi-k2.6-thinking",
+          "variant": "2026-06-25",
+          "displayRank": 52
+        },
+        "kimi-k2.7-code|2026-06-25:Mathematics:category_average:kimi-k2.7-code|2026-06-25": {
+          "model": "kimi-k2.7-code",
+          "score": 79.60425000000001,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:kimi-k2.7-code",
+          "variant": "2026-06-25",
+          "displayRank": 58
+        },
+        "minimax-m3|2026-06-25:Mathematics:category_average:minimax-m3|2026-06-25": {
+          "model": "minimax-m3",
+          "score": 76.94749999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:minimax-m3",
+          "variant": "2026-06-25",
+          "displayRank": 62
+        },
+        "qwen3.6-27b|2026-06-25:Mathematics:category_average:qwen3.6-27b|2026-06-25": {
+          "model": "qwen3.6-27b",
+          "score": 79.8685,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.6-27b",
+          "variant": "2026-06-25",
+          "displayRank": 56
+        },
+        "qwen3.6-plus|2026-06-25:Mathematics:category_average:qwen3.6-plus|2026-06-25": {
+          "model": "qwen3.6-plus",
+          "score": 83.72475,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.6-plus",
+          "variant": "2026-06-25",
+          "displayRank": 54
+        },
+        "qwen3.7-max|2026-06-25:Mathematics:category_average:qwen3.7-max|2026-06-25": {
+          "model": "qwen3.7-max",
+          "score": 85.24825,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.7-max",
+          "variant": "2026-06-25",
+          "displayRank": 49
+        },
+        "gpt-5.6-sol-max|2026-06-25:Mathematics:category_average:gpt-5.6-sol-max|2026-06-25": {
+          "model": "gpt-5.6-sol-max",
+          "score": 96.19775,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.6-sol-max",
+          "variant": "2026-06-25",
+          "displayRank": 6
+        },
+        "gpt-5.6-terra-max|2026-06-25:Mathematics:category_average:gpt-5.6-terra-max|2026-06-25": {
+          "model": "gpt-5.6-terra-max",
+          "score": 94.90825000000001,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.6-terra-max",
+          "variant": "2026-06-25",
+          "displayRank": 14
+        },
+        "gpt-5.6-luna-max|2026-06-25:Mathematics:category_average:gpt-5.6-luna-max|2026-06-25": {
+          "model": "gpt-5.6-luna-max",
+          "score": 87.20075,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-5.6-luna-max",
+          "variant": "2026-06-25",
+          "displayRank": 42
+        },
+        "claude-fable-5-max-effort|2026-06-25:Mathematics:category_average:claude-fable-5-max-effort|2026-06-25": {
+          "model": "claude-fable-5-max-effort",
+          "score": 95.98575,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-fable-5-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 7
+        },
+        "muse-spark-1.1-xhigh|2026-06-25:Mathematics:category_average:muse-spark-1.1-xhigh|2026-06-25": {
+          "model": "muse-spark-1.1-xhigh",
+          "score": 87.14474999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:muse-spark-1.1-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 43
+        },
+        "kimi-k3|2026-06-25:Mathematics:category_average:kimi-k3|2026-06-25": {
+          "model": "kimi-k3",
+          "score": 84.43675,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:kimi-k3",
+          "variant": "2026-06-25",
+          "displayRank": 50
+        },
+        "inkling-xhigh|2026-06-25:Mathematics:category_average:inkling-xhigh|2026-06-25": {
+          "model": "inkling-xhigh",
+          "score": 88.36474999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:inkling-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 38
+        },
+        "gemini-3.5-flash-lite-high|2026-06-25:Mathematics:category_average:gemini-3.5-flash-lite-high|2026-06-25": {
+          "model": "gemini-3.5-flash-lite-high",
+          "score": 73.73949999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.5-flash-lite-high",
+          "variant": "2026-06-25",
+          "displayRank": 63
+        },
+        "gemini-3.6-flash-high|2026-06-25:Mathematics:category_average:gemini-3.6-flash-high|2026-06-25": {
+          "model": "gemini-3.6-flash-high",
+          "score": 86.4025,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.6-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 46
+        },
+        "claude-opus-5-max-effort|2026-06-25:Mathematics:category_average:claude-opus-5-max-effort|2026-06-25": {
+          "model": "claude-opus-5-max-effort",
+          "score": 95.731,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-5-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 10
+        },
+        "claude-opus-4-8-max-effort|2026-06-25:Mathematics:category_average:claude-opus-4-8-max-effort|2026-06-25": {
+          "model": "claude-opus-4-8-max-effort",
+          "score": 94.31649999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-4-8-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 15
+        },
+        "deepseek-v4-flash-0731|2026-06-25:Mathematics:category_average:deepseek-v4-flash-0731|2026-06-25": {
+          "model": "deepseek-v4-flash-0731",
+          "score": 86.78975,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-flash-0731",
+          "variant": "2026-06-25",
+          "displayRank": 45
+        },
+        "qwen3.8-max|2026-06-25:Mathematics:category_average:qwen3.8-max|2026-06-25": {
+          "model": "qwen3.8-max",
+          "score": 91.31225,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.8-max",
+          "variant": "2026-06-25",
+          "displayRank": 24
+        },
+        "muse-spark-1.2-xhigh|2026-06-25:Mathematics:category_average:muse-spark-1.2-xhigh|2026-06-25": {
+          "model": "muse-spark-1.2-xhigh",
+          "score": 91.20349999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:muse-spark-1.2-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 25
+        },
+        "smaug-agentic|2026-06-25:Mathematics:category_average:smaug-agentic|2026-06-25": {
+          "model": "smaug-agentic",
+          "score": 83.9195,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:smaug-agentic",
+          "variant": "2026-06-25",
+          "displayRank": 53
+        },
+        "smaug-mini|2026-06-25:Mathematics:category_average:smaug-mini|2026-06-25": {
+          "model": "smaug-mini",
+          "score": 89.74275,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:smaug-mini",
+          "variant": "2026-06-25",
+          "displayRank": 33
+        },
+        "deepseek-v4-pro-0813|2026-06-25:Mathematics:category_average:deepseek-v4-pro-0813|2026-06-25": {
+          "model": "deepseek-v4-pro-0813",
+          "score": 95.08624999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-pro-0813",
+          "variant": "2026-06-25",
+          "displayRank": 13
+        },
+        "grok-4.6|2026-06-25:Mathematics:category_average:grok-4.6|2026-06-25": {
+          "model": "grok-4.6",
+          "score": 92.56799999999998,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-4.6",
+          "variant": "2026-06-25",
+          "displayRank": 22
+        },
+        "gemini-3.7-flash-high|2026-06-25:Mathematics:category_average:gemini-3.7-flash-high|2026-06-25": {
+          "model": "gemini-3.7-flash-high",
+          "score": 93.46799999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.7-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 17
+        },
+        "qwen3.8-27b|2026-06-25:Mathematics:category_average:qwen3.8-27b|2026-06-25": {
+          "model": "qwen3.8-27b",
+          "score": 86.21275,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.8-27b",
+          "variant": "2026-06-25",
+          "displayRank": 47
+        },
+        "ox-alpha-max|2026-06-25:Mathematics:category_average:ox-alpha-max|2026-06-25": {
+          "model": "ox-alpha-max",
+          "score": 77.53275,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:ox-alpha-max",
+          "variant": "2026-06-25",
+          "displayRank": 61
+        },
+        "deepseek-v4-flash-vision-exp|2026-06-25:Mathematics:category_average:deepseek-v4-flash-vision-exp|2026-06-25": {
+          "model": "deepseek-v4-flash-vision-exp",
+          "score": 87.80675,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4-flash-vision-exp",
+          "variant": "2026-06-25",
+          "displayRank": 41
+        },
+        "glm-5.3|2026-06-25:Mathematics:category_average:glm-5.3|2026-06-25": {
+          "model": "glm-5.3",
+          "score": 87.898,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:glm-5.3",
+          "variant": "2026-06-25",
+          "displayRank": 40
+        },
+        "glm-5.3-flash|2026-06-25:Mathematics:category_average:glm-5.3-flash|2026-06-25": {
+          "model": "glm-5.3-flash",
+          "score": 81.2445,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:glm-5.3-flash",
+          "variant": "2026-06-25",
+          "displayRank": 55
+        },
+        "qwen3.8-flash-next|2026-06-25:Mathematics:category_average:qwen3.8-flash-next|2026-06-25": {
+          "model": "qwen3.8-flash-next",
+          "score": 85.821,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:qwen3.8-flash-next",
+          "variant": "2026-06-25",
+          "displayRank": 48
+        },
+        "nemotron-3-ultra-550b-a55b|2026-06-25:Mathematics:category_average:nemotron-3-ultra-550b-a55b|2026-06-25": {
+          "model": "nemotron-3-ultra-550b-a55b",
+          "score": 88.66324999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:nemotron-3-ultra-550b-a55b",
+          "variant": "2026-06-25",
+          "displayRank": 37
+        },
+        "claude-fable-5-1-max-effort|2026-06-25:Mathematics:category_average:claude-fable-5-1-max-effort|2026-06-25": {
+          "model": "claude-fable-5-1-max-effort",
+          "score": 97.00675,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-fable-5-1-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 2
+        },
+        "gemini-3.8-flash-high|2026-06-25:Mathematics:category_average:gemini-3.8-flash-high|2026-06-25": {
+          "model": "gemini-3.8-flash-high",
+          "score": 91.56425,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gemini-3.8-flash-high",
+          "variant": "2026-06-25",
+          "displayRank": 23
+        },
+        "muse-spark-1.3-xhigh|2026-06-25:Mathematics:category_average:muse-spark-1.3-xhigh|2026-06-25": {
+          "model": "muse-spark-1.3-xhigh",
+          "score": 95.94999999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:muse-spark-1.3-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 8
+        },
+        "gpt-6-astra-max|2026-06-25:Mathematics:category_average:gpt-6-astra-max|2026-06-25": {
+          "model": "gpt-6-astra-max",
+          "score": 96.80624999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-6-astra-max",
+          "variant": "2026-06-25",
+          "displayRank": 3
+        },
+        "smaug-flash|2026-06-25:Mathematics:category_average:smaug-flash|2026-06-25": {
+          "model": "smaug-flash",
+          "score": 90.06424999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:smaug-flash",
+          "variant": "2026-06-25",
+          "displayRank": 31
+        },
+        "deepseek-v4.1-flash-max|2026-06-25:Mathematics:category_average:deepseek-v4.1-flash-max|2026-06-25": {
+          "model": "deepseek-v4.1-flash-max",
+          "score": 93.28975,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:deepseek-v4.1-flash-max",
+          "variant": "2026-06-25",
+          "displayRank": 18
+        },
+        "union-alpha|2026-06-25:Mathematics:category_average:union-alpha|2026-06-25": {
+          "model": "union-alpha",
+          "score": 95.2935,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:union-alpha",
+          "variant": "2026-06-25",
+          "displayRank": 12
+        },
+        "grok-4.7-xhigh|2026-06-25:Mathematics:category_average:grok-4.7-xhigh|2026-06-25": {
+          "model": "grok-4.7-xhigh",
+          "score": 95.678,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:grok-4.7-xhigh",
+          "variant": "2026-06-25",
+          "displayRank": 11
+        },
+        "claude-opus-5-5-max-effort|2026-06-25:Mathematics:category_average:claude-opus-5-5-max-effort|2026-06-25": {
+          "model": "claude-opus-5-5-max-effort",
+          "score": 97.07749999999999,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-5-5-max-effort",
+          "variant": "2026-06-25",
+          "displayRank": 1
+        },
+        "claude-opus-5-5-xhigh-effort|2026-06-25:Mathematics:category_average:claude-opus-5-5-xhigh-effort|2026-06-25": {
+          "model": "claude-opus-5-5-xhigh-effort",
+          "score": 96.803,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:claude-opus-5-5-xhigh-effort",
+          "variant": "2026-06-25",
+          "displayRank": 4
+        },
+        "gpt-6-sol-max|2026-06-25:Mathematics:category_average:gpt-6-sol-max|2026-06-25": {
+          "model": "gpt-6-sol-max",
+          "score": 96.356,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-6-sol-max",
+          "variant": "2026-06-25",
+          "displayRank": 5
+        },
+        "gpt-6-luna-max|2026-06-25:Mathematics:category_average:gpt-6-luna-max|2026-06-25": {
+          "model": "gpt-6-luna-max",
+          "score": 89.1235,
+          "rank": null,
+          "comparisonKey": "2026-06-25:Mathematics:category_average:gpt-6-luna-max",
+          "variant": "2026-06-25",
+          "displayRank": 35
+        }
+      }
+    },
     "livebench_instruction_following": {
       "runtimeId": "livebench_instruction_following",
       "familyId": "livebench",
@@ -4275,289 +4275,6 @@
         }
       }
     },
-    "aa_lcr": {
-      "runtimeId": "aa_lcr",
-      "familyId": "aa",
-      "title": "AA LCR",
-      "release": "page_jsonld",
-      "contentHash": "93aebb0fe02f5e81610a2be3386a94d3d84ef3521e5f79cc8f26aae07b4a81d6",
-      "source": {
-        "benchmark_id": "aa_lcr",
-        "status": "enabled",
-        "source_name": "Artificial Analysis AA LCR official public Dataset page",
-        "organization": "Artificial Analysis",
-        "source_type": "official_page_endpoint",
-        "official_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "endpoint": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "fetch_method": "GET",
-        "update_frequency": "daily",
-        "requires_auth": false,
-        "evaluation_field": "AA-LCR v1.1",
-        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
-        "release_tracking": "page_jsonld",
-        "hash_required": true,
-        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
-        "jsonld_name": "AA-LCR v1.1: Score"
-      },
-      "records": {
-        "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)|AA-LCR v1.1:Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "score": 0.846666666666667,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 5
-        },
-        "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|AA-LCR v1.1:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "score": 0.846666666666667,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 6
-        },
-        "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|AA-LCR v1.1:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "score": 0.853333333333333,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 4
-        },
-        "GPT-6 Astra (max)|AA-LCR v1.1:GPT-6 Astra (max)|page_jsonld": {
-          "model": "GPT-6 Astra (max)",
-          "score": 0.806666666666667,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:GPT-6 Astra (max)",
-          "variant": "page_jsonld",
-          "displayRank": 21
-        },
-        "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)|AA-LCR v1.1:Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
-          "score": 0.843333333333333,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 8
-        },
-        "Claude Opus 5 (Adaptive Reasoning, Max Effort)|AA-LCR v1.1:Claude Opus 5 (Adaptive Reasoning, Max Effort)|page_jsonld": {
-          "model": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "score": 0.793333333333333,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "variant": "page_jsonld",
-          "displayRank": 27
-        },
-        "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)|AA-LCR v1.1:Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
-          "score": 0.846666666666667,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 7
-        },
-        "Muse Spark 1.3 (max)|AA-LCR v1.1:Muse Spark 1.3 (max)|page_jsonld": {
-          "model": "Muse Spark 1.3 (max)",
-          "score": 0.83,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:Muse Spark 1.3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 17
-        },
-        "GPT-6 Sol (max)|AA-LCR v1.1:GPT-6 Sol (max)|page_jsonld": {
-          "model": "GPT-6 Sol (max)",
-          "score": 0.836666666666667,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:GPT-6 Sol (max)",
-          "variant": "page_jsonld",
-          "displayRank": 13
-        },
-        "GPT-5.6 Sol (max)|AA-LCR v1.1:GPT-5.6 Sol (max)|page_jsonld": {
-          "model": "GPT-5.6 Sol (max)",
-          "score": 0.84,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:GPT-5.6 Sol (max)",
-          "variant": "page_jsonld",
-          "displayRank": 11
-        },
-        "Grok 4.7 (xhigh)|AA-LCR v1.1:Grok 4.7 (xhigh)|page_jsonld": {
-          "model": "Grok 4.7 (xhigh)",
-          "score": 0.766666666666667,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:Grok 4.7 (xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 30
-        },
-        "MiMo-V2.6-Pro|AA-LCR v1.1:MiMo-V2.6-Pro|page_jsonld": {
-          "model": "MiMo-V2.6-Pro",
-          "score": 0.863333333333333,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:MiMo-V2.6-Pro",
-          "variant": "page_jsonld",
-          "displayRank": 3
-        },
-        "Qwen3.8 Max (0902)|AA-LCR v1.1:Qwen3.8 Max (0902)|page_jsonld": {
-          "model": "Qwen3.8 Max (0902)",
-          "score": 0.803333333333333,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:Qwen3.8 Max (0902)",
-          "variant": "page_jsonld",
-          "displayRank": 22
-        },
-        "GLM-5.3 (max)|AA-LCR v1.1:GLM-5.3 (max)|page_jsonld": {
-          "model": "GLM-5.3 (max)",
-          "score": 0.796666666666667,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:GLM-5.3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 26
-        },
-        "Grok 4.6 (high)|AA-LCR v1.1:Grok 4.6 (high)|page_jsonld": {
-          "model": "Grok 4.6 (high)",
-          "score": 0.803333333333333,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:Grok 4.6 (high)",
-          "variant": "page_jsonld",
-          "displayRank": 23
-        },
-        "Step 5 Preview|AA-LCR v1.1:Step 5 Preview|page_jsonld": {
-          "model": "Step 5 Preview",
-          "score": 0.883333333333333,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:Step 5 Preview",
-          "variant": "page_jsonld",
-          "displayRank": 2
-        },
-        "Kimi K3 (max)|AA-LCR v1.1:Kimi K3 (max)|page_jsonld": {
-          "model": "Kimi K3 (max)",
-          "score": 0.886666666666667,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:Kimi K3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 1
-        },
-        "GLM 5.3 Flash|AA-LCR v1.1:GLM 5.3 Flash|page_jsonld": {
-          "model": "GLM 5.3 Flash",
-          "score": 0.8,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:GLM 5.3 Flash",
-          "variant": "page_jsonld",
-          "displayRank": 24
-        },
-        "Gemini 3.8 Flash (high)|AA-LCR v1.1:Gemini 3.8 Flash (high)|page_jsonld": {
-          "model": "Gemini 3.8 Flash (high)",
-          "score": 0.813333333333333,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:Gemini 3.8 Flash (high)",
-          "variant": "page_jsonld",
-          "displayRank": 20
-        },
-        "DeepSeek V4.1 Flash (Reasoning, Max Effort)|AA-LCR v1.1:DeepSeek V4.1 Flash (Reasoning, Max Effort)|page_jsonld": {
-          "model": "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
-          "score": 0.84,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:DeepSeek V4.1 Flash (Reasoning, Max Effort)",
-          "variant": "page_jsonld",
-          "displayRank": 12
-        },
-        "GPT-5.5 (xhigh)|AA-LCR v1.1:GPT-5.5 (xhigh)|page_jsonld": {
-          "model": "GPT-5.5 (xhigh)",
-          "score": 0.843333333333333,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:GPT-5.5 (xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 9
-        },
-        "GPT-5.6 Luna (max)|AA-LCR v1.1:GPT-5.6 Luna (max)|page_jsonld": {
-          "model": "GPT-5.6 Luna (max)",
-          "score": 0.836666666666667,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:GPT-5.6 Luna (max)",
-          "variant": "page_jsonld",
-          "displayRank": 14
-        },
-        "GPT-6 Luna (max)|AA-LCR v1.1:GPT-6 Luna (max)|page_jsonld": {
-          "model": "GPT-6 Luna (max)",
-          "score": 0.833333333333333,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:GPT-6 Luna (max)",
-          "variant": "page_jsonld",
-          "displayRank": 15
-        },
-        "GPT-5.5 (high)|AA-LCR v1.1:GPT-5.5 (high)|page_jsonld": {
-          "model": "GPT-5.5 (high)",
-          "score": 0.843333333333333,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:GPT-5.5 (high)",
-          "variant": "page_jsonld",
-          "displayRank": 10
-        },
-        "Qwen3.8 27B (xhigh)|AA-LCR v1.1:Qwen3.8 27B (xhigh)|page_jsonld": {
-          "model": "Qwen3.8 27B (xhigh)",
-          "score": 0.82,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:Qwen3.8 27B (xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 19
-        },
-        "K2 Horizon 375B A23B|AA-LCR v1.1:K2 Horizon 375B A23B|page_jsonld": {
-          "model": "K2 Horizon 375B A23B",
-          "score": 0.8,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:K2 Horizon 375B A23B",
-          "variant": "page_jsonld",
-          "displayRank": 25
-        },
-        "MiniMax-M3|AA-LCR v1.1:MiniMax-M3|page_jsonld": {
-          "model": "MiniMax-M3",
-          "score": 0.83,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:MiniMax-M3",
-          "variant": "page_jsonld",
-          "displayRank": 18
-        },
-        "Inkling (xhigh)|AA-LCR v1.1:Inkling (xhigh)|page_jsonld": {
-          "model": "Inkling (xhigh)",
-          "score": 0.773333333333333,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:Inkling (xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 29
-        },
-        "Nemotron 3 Ultra 550B A55B (Reasoning)|AA-LCR v1.1:Nemotron 3 Ultra 550B A55B (Reasoning)|page_jsonld": {
-          "model": "Nemotron 3 Ultra 550B A55B (Reasoning)",
-          "score": 0.793333333333333,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:Nemotron 3 Ultra 550B A55B (Reasoning)",
-          "variant": "page_jsonld",
-          "displayRank": 28
-        },
-        "Gemini 3.5 Flash-Lite|AA-LCR v1.1:Gemini 3.5 Flash-Lite|page_jsonld": {
-          "model": "Gemini 3.5 Flash-Lite",
-          "score": 0.76,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:Gemini 3.5 Flash-Lite",
-          "variant": "page_jsonld",
-          "displayRank": 31
-        },
-        "Muse Glimmer (high)|AA-LCR v1.1:Muse Glimmer (high)|page_jsonld": {
-          "model": "Muse Glimmer (high)",
-          "score": 0.833333333333333,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:Muse Glimmer (high)",
-          "variant": "page_jsonld",
-          "displayRank": 16
-        },
-        "Mistral Medium 3.5|AA-LCR v1.1:Mistral Medium 3.5|page_jsonld": {
-          "model": "Mistral Medium 3.5",
-          "score": 0.693333333333333,
-          "rank": null,
-          "comparisonKey": "AA-LCR v1.1:Mistral Medium 3.5",
-          "variant": "page_jsonld",
-          "displayRank": 32
-        }
-      }
-    },
     "gpqa_diamond": {
       "runtimeId": "aa_gpqa_diamond",
       "familyId": "aa",
@@ -4782,572 +4499,6 @@
           "comparisonKey": "GPQA Diamond: Score:Mistral Medium 3.5",
           "variant": "page_jsonld",
           "displayRank": 25
-        }
-      }
-    },
-    "humanitys_last_exam": {
-      "runtimeId": "aa_humanitys_last_exam",
-      "familyId": "aa",
-      "title": "Humanity's Last Exam",
-      "release": "page_jsonld",
-      "contentHash": "3a00237cd538ec41691efe5d7df51ba7c0fec95797baa3deb282c5bc2f982fba",
-      "source": {
-        "benchmark_id": "humanitys_last_exam",
-        "status": "enabled",
-        "source_name": "Artificial Analysis Humanity's Last Exam official public Dataset page",
-        "organization": "Artificial Analysis",
-        "source_type": "official_page_endpoint",
-        "official_url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "endpoint": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "fetch_method": "GET",
-        "update_frequency": "daily",
-        "requires_auth": false,
-        "evaluation_field": "Humanity's Last Exam: Score",
-        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
-        "release_tracking": "page_jsonld",
-        "hash_required": true,
-        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
-        "jsonld_name": "Humanity's Last Exam: Score"
-      },
-      "records": {
-        "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)|Humanity's Last Exam: Score:Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "score": 0.613531047265987,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 1
-        },
-        "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|Humanity's Last Exam: Score:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "score": 0.575069508804449,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 4
-        },
-        "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)|Humanity's Last Exam: Score:Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "score": 0.555607043558851,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 6
-        },
-        "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|Humanity's Last Exam: Score:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "score": 0.591288229842447,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 2
-        },
-        "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|Humanity's Last Exam: Score:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "score": 0.587117701575533,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 3
-        },
-        "GPT-6 Astra (max)|Humanity's Last Exam: Score:GPT-6 Astra (max)|page_jsonld": {
-          "model": "GPT-6 Astra (max)",
-          "score": 0.546802594995366,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:GPT-6 Astra (max)",
-          "variant": "page_jsonld",
-          "displayRank": 9
-        },
-        "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)|Humanity's Last Exam: Score:Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "score": 0.559314179796108,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 5
-        },
-        "Claude Opus 5 (Adaptive Reasoning, Max Effort)|Humanity's Last Exam: Score:Claude Opus 5 (Adaptive Reasoning, Max Effort)|page_jsonld": {
-          "model": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "score": 0.548656163113994,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "variant": "page_jsonld",
-          "displayRank": 8
-        },
-        "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)|Humanity's Last Exam: Score:Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)|page_jsonld": {
-          "model": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
-          "score": 0.554680259499537,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 7
-        },
-        "Muse Spark 1.3 (max)|Humanity's Last Exam: Score:Muse Spark 1.3 (max)|page_jsonld": {
-          "model": "Muse Spark 1.3 (max)",
-          "score": 0.487025023169602,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Muse Spark 1.3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 12
-        },
-        "GPT-6 Sol (max)|Humanity's Last Exam: Score:GPT-6 Sol (max)|page_jsonld": {
-          "model": "GPT-6 Sol (max)",
-          "score": 0.479147358665431,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:GPT-6 Sol (max)",
-          "variant": "page_jsonld",
-          "displayRank": 13
-        },
-        "GPT-5.6 Sol (max)|Humanity's Last Exam: Score:GPT-5.6 Sol (max)|page_jsonld": {
-          "model": "GPT-5.6 Sol (max)",
-          "score": 0.494902687673772,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:GPT-5.6 Sol (max)",
-          "variant": "page_jsonld",
-          "displayRank": 10
-        },
-        "Grok 4.7 (xhigh)|Humanity's Last Exam: Score:Grok 4.7 (xhigh)|page_jsonld": {
-          "model": "Grok 4.7 (xhigh)",
-          "score": 0.431417979610751,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Grok 4.7 (xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 17
-        },
-        "MiMo-V2.6-Pro|Humanity's Last Exam: Score:MiMo-V2.6-Pro|page_jsonld": {
-          "model": "MiMo-V2.6-Pro",
-          "score": 0.493512511584801,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:MiMo-V2.6-Pro",
-          "variant": "page_jsonld",
-          "displayRank": 11
-        },
-        "Qwen3.8 Max (0902)|Humanity's Last Exam: Score:Qwen3.8 Max (0902)|page_jsonld": {
-          "model": "Qwen3.8 Max (0902)",
-          "score": 0.430954587581094,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Qwen3.8 Max (0902)",
-          "variant": "page_jsonld",
-          "displayRank": 18
-        },
-        "GLM-5.3 (max)|Humanity's Last Exam: Score:GLM-5.3 (max)|page_jsonld": {
-          "model": "GLM-5.3 (max)",
-          "score": 0.422613531047266,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:GLM-5.3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 20
-        },
-        "Grok 4.6 (high)|Humanity's Last Exam: Score:Grok 4.6 (high)|page_jsonld": {
-          "model": "Grok 4.6 (high)",
-          "score": 0.429101019462465,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Grok 4.6 (high)",
-          "variant": "page_jsonld",
-          "displayRank": 19
-        },
-        "Step 5 Preview|Humanity's Last Exam: Score:Step 5 Preview|page_jsonld": {
-          "model": "Step 5 Preview",
-          "score": 0.464782205746061,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Step 5 Preview",
-          "variant": "page_jsonld",
-          "displayRank": 16
-        },
-        "Kimi K3 (max)|Humanity's Last Exam: Score:Kimi K3 (max)|page_jsonld": {
-          "model": "Kimi K3 (max)",
-          "score": 0.468952734012975,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Kimi K3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 15
-        },
-        "GLM 5.3 Flash|Humanity's Last Exam: Score:GLM 5.3 Flash|page_jsonld": {
-          "model": "GLM 5.3 Flash",
-          "score": 0.398517145505097,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:GLM 5.3 Flash",
-          "variant": "page_jsonld",
-          "displayRank": 21
-        },
-        "Gemini 3.8 Flash (high)|Humanity's Last Exam: Score:Gemini 3.8 Flash (high)|page_jsonld": {
-          "model": "Gemini 3.8 Flash (high)",
-          "score": 0.478220574606117,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Gemini 3.8 Flash (high)",
-          "variant": "page_jsonld",
-          "displayRank": 14
-        },
-        "DeepSeek V4.1 Flash (Reasoning, Max Effort)|Humanity's Last Exam: Score:DeepSeek V4.1 Flash (Reasoning, Max Effort)|page_jsonld": {
-          "model": "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
-          "score": 0.392493049119555,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:DeepSeek V4.1 Flash (Reasoning, Max Effort)",
-          "variant": "page_jsonld",
-          "displayRank": 23
-        },
-        "GPT-5.6 Luna (max)|Humanity's Last Exam: Score:GPT-5.6 Luna (max)|page_jsonld": {
-          "model": "GPT-5.6 Luna (max)",
-          "score": 0.394810009267841,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:GPT-5.6 Luna (max)",
-          "variant": "page_jsonld",
-          "displayRank": 22
-        },
-        "GPT-6 Luna (max)|Humanity's Last Exam: Score:GPT-6 Luna (max)|page_jsonld": {
-          "model": "GPT-6 Luna (max)",
-          "score": 0.385078776645042,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:GPT-6 Luna (max)",
-          "variant": "page_jsonld",
-          "displayRank": 25
-        },
-        "Qwen3.8 27B (xhigh)|Humanity's Last Exam: Score:Qwen3.8 27B (xhigh)|page_jsonld": {
-          "model": "Qwen3.8 27B (xhigh)",
-          "score": 0.33920296570899,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Qwen3.8 27B (xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 26
-        },
-        "K2 Horizon 375B A23B|Humanity's Last Exam: Score:K2 Horizon 375B A23B|page_jsonld": {
-          "model": "K2 Horizon 375B A23B",
-          "score": 0.319740500463392,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:K2 Horizon 375B A23B",
-          "variant": "page_jsonld",
-          "displayRank": 27
-        },
-        "MiniMax-M3|Humanity's Last Exam: Score:MiniMax-M3|page_jsonld": {
-          "model": "MiniMax-M3",
-          "score": 0.389712696941613,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:MiniMax-M3",
-          "variant": "page_jsonld",
-          "displayRank": 24
-        },
-        "Inkling (xhigh)|Humanity's Last Exam: Score:Inkling (xhigh)|page_jsonld": {
-          "model": "Inkling (xhigh)",
-          "score": 0.318813716404078,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Inkling (xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 28
-        },
-        "Nemotron 3 Ultra 550B A55B (Reasoning)|Humanity's Last Exam: Score:Nemotron 3 Ultra 550B A55B (Reasoning)|page_jsonld": {
-          "model": "Nemotron 3 Ultra 550B A55B (Reasoning)",
-          "score": 0.284059314179796,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Nemotron 3 Ultra 550B A55B (Reasoning)",
-          "variant": "page_jsonld",
-          "displayRank": 29
-        },
-        "Gemini 3.5 Flash-Lite|Humanity's Last Exam: Score:Gemini 3.5 Flash-Lite|page_jsonld": {
-          "model": "Gemini 3.5 Flash-Lite",
-          "score": 0.188137164040778,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Gemini 3.5 Flash-Lite",
-          "variant": "page_jsonld",
-          "displayRank": 31
-        },
-        "Muse Glimmer (high)|Humanity's Last Exam: Score:Muse Glimmer (high)|page_jsonld": {
-          "model": "Muse Glimmer (high)",
-          "score": 0.219647822057461,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Muse Glimmer (high)",
-          "variant": "page_jsonld",
-          "displayRank": 30
-        },
-        "Mistral Medium 3.5|Humanity's Last Exam: Score:Mistral Medium 3.5|page_jsonld": {
-          "model": "Mistral Medium 3.5",
-          "score": 0.137627432808156,
-          "rank": null,
-          "comparisonKey": "Humanity's Last Exam: Score:Mistral Medium 3.5",
-          "variant": "page_jsonld",
-          "displayRank": 32
-        }
-      }
-    },
-    "artificial_analysis_intelligence_index_v4_3": {
-      "runtimeId": "aa_intelligence_index_v4_3",
-      "familyId": "aa",
-      "title": "Artificial Analysis Intelligence Index v4.3",
-      "release": "page_jsonld",
-      "contentHash": "9247a559e5385fbb359e9430525d07b3ac43fd9f631868ed7a6337177510ca9b",
-      "source": {
-        "benchmark_id": "artificial_analysis_intelligence_index_v4_3",
-        "status": "enabled",
-        "source_name": "Artificial Analysis Intelligence Index official public Dataset page",
-        "organization": "Artificial Analysis",
-        "source_type": "official_page_endpoint",
-        "official_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "endpoint": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "fetch_method": "GET",
-        "update_frequency": "daily",
-        "requires_auth": false,
-        "evaluation_field": "Artificial Analysis Intelligence Index: Score",
-        "evidence_url": "https://artificialanalysis.ai/api-reference/beta",
-        "release_tracking": "page_jsonld",
-        "hash_required": true,
-        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
-        "jsonld_name": "Artificial Analysis Intelligence Index: Score"
-      },
-      "records": {
-        "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)|Artificial Analysis Intelligence Index: Score:Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "score": 57.6223698102963,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 1
-        },
-        "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|Artificial Analysis Intelligence Index: Score:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "score": 55.9873505840139,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 2
-        },
-        "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)|Artificial Analysis Intelligence Index: Score:Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "score": 53.5831959822067,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 3
-        },
-        "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "score": 53.3549259623252,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 4
-        },
-        "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "score": 53.2032587538944,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 5
-        },
-        "GPT-6 Astra (max)|Artificial Analysis Intelligence Index: Score:GPT-6 Astra (max)|page_jsonld": {
-          "model": "GPT-6 Astra (max)",
-          "score": 52.673669395513,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-6 Astra (max)",
-          "variant": "page_jsonld",
-          "displayRank": 6
-        },
-        "GPT-6 Astra (xhigh)|Artificial Analysis Intelligence Index: Score:GPT-6 Astra (xhigh)|page_jsonld": {
-          "model": "GPT-6 Astra (xhigh)",
-          "score": 52.3863277108782,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-6 Astra (xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 7
-        },
-        "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)|Artificial Analysis Intelligence Index: Score:Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
-          "score": 51.2434931792768,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 8
-        },
-        "Claude Opus 5 (Adaptive Reasoning, Max Effort)|Artificial Analysis Intelligence Index: Score:Claude Opus 5 (Adaptive Reasoning, Max Effort)|page_jsonld": {
-          "model": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "score": 50.7771115797629,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "variant": "page_jsonld",
-          "displayRank": 9
-        },
-        "Muse Spark 1.3 (max)|Artificial Analysis Intelligence Index: Score:Muse Spark 1.3 (max)|page_jsonld": {
-          "model": "Muse Spark 1.3 (max)",
-          "score": 48.0923107719685,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Muse Spark 1.3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 10
-        },
-        "GPT-6 Sol (max)|Artificial Analysis Intelligence Index: Score:GPT-6 Sol (max)|page_jsonld": {
-          "model": "GPT-6 Sol (max)",
-          "score": 47.5276426437724,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-6 Sol (max)",
-          "variant": "page_jsonld",
-          "displayRank": 11
-        },
-        "GPT-5.6 Sol (max)|Artificial Analysis Intelligence Index: Score:GPT-5.6 Sol (max)|page_jsonld": {
-          "model": "GPT-5.6 Sol (max)",
-          "score": 46.9727068915036,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-5.6 Sol (max)",
-          "variant": "page_jsonld",
-          "displayRank": 12
-        },
-        "Grok 4.7 (xhigh)|Artificial Analysis Intelligence Index: Score:Grok 4.7 (xhigh)|page_jsonld": {
-          "model": "Grok 4.7 (xhigh)",
-          "score": 46.4465506302286,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Grok 4.7 (xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 13
-        },
-        "MiMo-V2.6-Pro|Artificial Analysis Intelligence Index: Score:MiMo-V2.6-Pro|page_jsonld": {
-          "model": "MiMo-V2.6-Pro",
-          "score": 46.3242065310383,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:MiMo-V2.6-Pro",
-          "variant": "page_jsonld",
-          "displayRank": 14
-        },
-        "Qwen3.8 Max (0902)|Artificial Analysis Intelligence Index: Score:Qwen3.8 Max (0902)|page_jsonld": {
-          "model": "Qwen3.8 Max (0902)",
-          "score": 45.4152084980521,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Qwen3.8 Max (0902)",
-          "variant": "page_jsonld",
-          "displayRank": 15
-        },
-        "GLM-5.3 (max)|Artificial Analysis Intelligence Index: Score:GLM-5.3 (max)|page_jsonld": {
-          "model": "GLM-5.3 (max)",
-          "score": 44.777392385614,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GLM-5.3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 16
-        },
-        "Grok 4.6 (high)|Artificial Analysis Intelligence Index: Score:Grok 4.6 (high)|page_jsonld": {
-          "model": "Grok 4.6 (high)",
-          "score": 44.3113073012592,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Grok 4.6 (high)",
-          "variant": "page_jsonld",
-          "displayRank": 17
-        },
-        "Step 5 Preview|Artificial Analysis Intelligence Index: Score:Step 5 Preview|page_jsonld": {
-          "model": "Step 5 Preview",
-          "score": 43.7343049141614,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Step 5 Preview",
-          "variant": "page_jsonld",
-          "displayRank": 18
-        },
-        "Kimi K3 (max)|Artificial Analysis Intelligence Index: Score:Kimi K3 (max)|page_jsonld": {
-          "model": "Kimi K3 (max)",
-          "score": 43.5938229518782,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Kimi K3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 19
-        },
-        "GLM 5.3 Flash|Artificial Analysis Intelligence Index: Score:GLM 5.3 Flash|page_jsonld": {
-          "model": "GLM 5.3 Flash",
-          "score": 41.807466113455,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GLM 5.3 Flash",
-          "variant": "page_jsonld",
-          "displayRank": 20
-        },
-        "Gemini 3.8 Flash (high)|Artificial Analysis Intelligence Index: Score:Gemini 3.8 Flash (high)|page_jsonld": {
-          "model": "Gemini 3.8 Flash (high)",
-          "score": 40.9262321765904,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Gemini 3.8 Flash (high)",
-          "variant": "page_jsonld",
-          "displayRank": 21
-        },
-        "DeepSeek V4.1 Flash (Reasoning, Max Effort)|Artificial Analysis Intelligence Index: Score:DeepSeek V4.1 Flash (Reasoning, Max Effort)|page_jsonld": {
-          "model": "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
-          "score": 39.456167472527,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:DeepSeek V4.1 Flash (Reasoning, Max Effort)",
-          "variant": "page_jsonld",
-          "displayRank": 22
-        },
-        "GPT-5.6 Luna (max)|Artificial Analysis Intelligence Index: Score:GPT-5.6 Luna (max)|page_jsonld": {
-          "model": "GPT-5.6 Luna (max)",
-          "score": 37.3244239690841,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-5.6 Luna (max)",
-          "variant": "page_jsonld",
-          "displayRank": 23
-        },
-        "GPT-6 Luna (max)|Artificial Analysis Intelligence Index: Score:GPT-6 Luna (max)|page_jsonld": {
-          "model": "GPT-6 Luna (max)",
-          "score": 37.2559686869738,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-6 Luna (max)",
-          "variant": "page_jsonld",
-          "displayRank": 24
-        },
-        "Qwen3.8 27B (xhigh)|Artificial Analysis Intelligence Index: Score:Qwen3.8 27B (xhigh)|page_jsonld": {
-          "model": "Qwen3.8 27B (xhigh)",
-          "score": 33.6962858057476,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Qwen3.8 27B (xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 25
-        },
-        "K2 Horizon 375B A23B|Artificial Analysis Intelligence Index: Score:K2 Horizon 375B A23B|page_jsonld": {
-          "model": "K2 Horizon 375B A23B",
-          "score": 30.5015302696723,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:K2 Horizon 375B A23B",
-          "variant": "page_jsonld",
-          "displayRank": 26
-        },
-        "MiniMax-M3|Artificial Analysis Intelligence Index: Score:MiniMax-M3|page_jsonld": {
-          "model": "MiniMax-M3",
-          "score": 29.2202932236316,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:MiniMax-M3",
-          "variant": "page_jsonld",
-          "displayRank": 27
-        },
-        "Inkling (xhigh)|Artificial Analysis Intelligence Index: Score:Inkling (xhigh)|page_jsonld": {
-          "model": "Inkling (xhigh)",
-          "score": 24.9847810999384,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Inkling (xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 28
-        },
-        "Nemotron 3 Ultra 550B A55B (Reasoning)|Artificial Analysis Intelligence Index: Score:Nemotron 3 Ultra 550B A55B (Reasoning)|page_jsonld": {
-          "model": "Nemotron 3 Ultra 550B A55B (Reasoning)",
-          "score": 22.9279123422858,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Nemotron 3 Ultra 550B A55B (Reasoning)",
-          "variant": "page_jsonld",
-          "displayRank": 29
-        },
-        "Gemini 3.5 Flash-Lite|Artificial Analysis Intelligence Index: Score:Gemini 3.5 Flash-Lite|page_jsonld": {
-          "model": "Gemini 3.5 Flash-Lite",
-          "score": 22.1685424839812,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Gemini 3.5 Flash-Lite",
-          "variant": "page_jsonld",
-          "displayRank": 30
-        },
-        "Muse Glimmer (high)|Artificial Analysis Intelligence Index: Score:Muse Glimmer (high)|page_jsonld": {
-          "model": "Muse Glimmer (high)",
-          "score": 17.4754176089465,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Muse Glimmer (high)",
-          "variant": "page_jsonld",
-          "displayRank": 31
-        },
-        "Mistral Medium 3.5|Artificial Analysis Intelligence Index: Score:Mistral Medium 3.5|page_jsonld": {
-          "model": "Mistral Medium 3.5",
-          "score": 14.1889227802691,
-          "rank": null,
-          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Mistral Medium 3.5",
-          "variant": "page_jsonld",
-          "displayRank": 32
         }
       }
     },
@@ -5917,513 +5068,569 @@
         }
       }
     },
-    "aa_omniscience_index": {
-      "runtimeId": "aa_omniscience_index",
+    "humanitys_last_exam": {
+      "runtimeId": "aa_humanitys_last_exam",
       "familyId": "aa",
-      "title": "AA Omniscience Index",
+      "title": "Humanity's Last Exam",
       "release": "page_jsonld",
-      "contentHash": "3808138d7fb336e830f8d432f39ff0138dad5e89b73cf2b453825a23ace66849",
+      "contentHash": "3a00237cd538ec41691efe5d7df51ba7c0fec95797baa3deb282c5bc2f982fba",
       "source": {
-        "benchmark_id": "aa_omniscience_index",
+        "benchmark_id": "humanitys_last_exam",
         "status": "enabled",
-        "source_name": "Artificial Analysis AA Omniscience Index official public Dataset page",
+        "source_name": "Artificial Analysis Humanity's Last Exam official public Dataset page",
         "organization": "Artificial Analysis",
         "source_type": "official_page_endpoint",
-        "official_url": "https://artificialanalysis.ai/evaluations/omniscience",
-        "endpoint": "https://artificialanalysis.ai/evaluations/omniscience",
+        "official_url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "endpoint": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
         "fetch_method": "GET",
         "update_frequency": "daily",
         "requires_auth": false,
-        "evaluation_field": "omniscienceIndex",
+        "evaluation_field": "Humanity's Last Exam: Score",
         "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
         "release_tracking": "page_jsonld",
         "hash_required": true,
         "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
-        "jsonld_name": "AA-Omniscience Index: Score"
+        "jsonld_name": "Humanity's Last Exam: Score"
       },
       "records": {
-        "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)|omniscienceIndex:Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)|page_jsonld": {
+        "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)|Humanity's Last Exam: Score:Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)|page_jsonld": {
           "model": "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "score": 46.4166666666667,
+          "score": 0.613531047265987,
           "rank": null,
-          "comparisonKey": "omniscienceIndex:Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "comparisonKey": "Humanity's Last Exam: Score:Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
           "variant": "page_jsonld",
           "displayRank": 1
         },
-        "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|omniscienceIndex:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|page_jsonld": {
+        "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|Humanity's Last Exam: Score:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|page_jsonld": {
           "model": "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "score": 42.65,
+          "score": 0.575069508804449,
           "rank": null,
-          "comparisonKey": "omniscienceIndex:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 7
-        },
-        "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|omniscienceIndex:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "score": 43.45,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 3
-        },
-        "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|omniscienceIndex:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "score": 42.3833333333333,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 8
-        },
-        "GPT-6 Astra (max)|omniscienceIndex:GPT-6 Astra (max)|page_jsonld": {
-          "model": "GPT-6 Astra (max)",
-          "score": 43.4,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:GPT-6 Astra (max)",
-          "variant": "page_jsonld",
-          "displayRank": 5
-        },
-        "GPT-6 Astra (xhigh)|omniscienceIndex:GPT-6 Astra (xhigh)|page_jsonld": {
-          "model": "GPT-6 Astra (xhigh)",
-          "score": 43.4166666666667,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:GPT-6 Astra (xhigh)",
+          "comparisonKey": "Humanity's Last Exam: Score:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           "variant": "page_jsonld",
           "displayRank": 4
         },
-        "GPT-6 Astra (high)|omniscienceIndex:GPT-6 Astra (high)|page_jsonld": {
-          "model": "GPT-6 Astra (high)",
-          "score": 43.7333333333333,
+        "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)|Humanity's Last Exam: Score:Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "score": 0.555607043558851,
           "rank": null,
-          "comparisonKey": "omniscienceIndex:GPT-6 Astra (high)",
-          "variant": "page_jsonld",
-          "displayRank": 2
-        },
-        "Claude Opus 5 (Adaptive Reasoning, Max Effort)|omniscienceIndex:Claude Opus 5 (Adaptive Reasoning, Max Effort)|page_jsonld": {
-          "model": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "score": 37.0666666666667,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "variant": "page_jsonld",
-          "displayRank": 9
-        },
-        "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)|omniscienceIndex:Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)|page_jsonld": {
-          "model": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
-          "score": 43.3,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+          "comparisonKey": "Humanity's Last Exam: Score:Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
           "variant": "page_jsonld",
           "displayRank": 6
         },
-        "Muse Spark 1.3 (max)|omniscienceIndex:Muse Spark 1.3 (max)|page_jsonld": {
+        "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|Humanity's Last Exam: Score:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "score": 0.591288229842447,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 2
+        },
+        "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|Humanity's Last Exam: Score:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "score": 0.587117701575533,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 3
+        },
+        "GPT-6 Astra (max)|Humanity's Last Exam: Score:GPT-6 Astra (max)|page_jsonld": {
+          "model": "GPT-6 Astra (max)",
+          "score": 0.546802594995366,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:GPT-6 Astra (max)",
+          "variant": "page_jsonld",
+          "displayRank": 9
+        },
+        "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)|Humanity's Last Exam: Score:Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "score": 0.559314179796108,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 5
+        },
+        "Claude Opus 5 (Adaptive Reasoning, Max Effort)|Humanity's Last Exam: Score:Claude Opus 5 (Adaptive Reasoning, Max Effort)|page_jsonld": {
+          "model": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "score": 0.548656163113994,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "variant": "page_jsonld",
+          "displayRank": 8
+        },
+        "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)|Humanity's Last Exam: Score:Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)|page_jsonld": {
+          "model": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+          "score": 0.554680259499537,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 7
+        },
+        "Muse Spark 1.3 (max)|Humanity's Last Exam: Score:Muse Spark 1.3 (max)|page_jsonld": {
           "model": "Muse Spark 1.3 (max)",
-          "score": 25,
+          "score": 0.487025023169602,
           "rank": null,
-          "comparisonKey": "omniscienceIndex:Muse Spark 1.3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 14
-        },
-        "GPT-6 Sol (max)|omniscienceIndex:GPT-6 Sol (max)|page_jsonld": {
-          "model": "GPT-6 Sol (max)",
-          "score": 27.1166666666667,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:GPT-6 Sol (max)",
-          "variant": "page_jsonld",
-          "displayRank": 13
-        },
-        "GPT-5.6 Sol (max)|omniscienceIndex:GPT-5.6 Sol (max)|page_jsonld": {
-          "model": "GPT-5.6 Sol (max)",
-          "score": 21.9666666666667,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:GPT-5.6 Sol (max)",
-          "variant": "page_jsonld",
-          "displayRank": 15
-        },
-        "Grok 4.7 (xhigh)|omniscienceIndex:Grok 4.7 (xhigh)|page_jsonld": {
-          "model": "Grok 4.7 (xhigh)",
-          "score": 32.0333333333333,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:Grok 4.7 (xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 10
-        },
-        "MiMo-V2.6-Pro|omniscienceIndex:MiMo-V2.6-Pro|page_jsonld": {
-          "model": "MiMo-V2.6-Pro",
-          "score": 8.38333333333333,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:MiMo-V2.6-Pro",
-          "variant": "page_jsonld",
-          "displayRank": 20
-        },
-        "Qwen3.8 Max (0902)|omniscienceIndex:Qwen3.8 Max (0902)|page_jsonld": {
-          "model": "Qwen3.8 Max (0902)",
-          "score": 11.9833333333333,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:Qwen3.8 Max (0902)",
-          "variant": "page_jsonld",
-          "displayRank": 19
-        },
-        "GLM-5.3 (max)|omniscienceIndex:GLM-5.3 (max)|page_jsonld": {
-          "model": "GLM-5.3 (max)",
-          "score": 14.3,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:GLM-5.3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 18
-        },
-        "Grok 4.6 (high)|omniscienceIndex:Grok 4.6 (high)|page_jsonld": {
-          "model": "Grok 4.6 (high)",
-          "score": 30.4833333333333,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:Grok 4.6 (high)",
-          "variant": "page_jsonld",
-          "displayRank": 11
-        },
-        "Step 5 Preview|omniscienceIndex:Step 5 Preview|page_jsonld": {
-          "model": "Step 5 Preview",
-          "score": 16.3833333333333,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:Step 5 Preview",
-          "variant": "page_jsonld",
-          "displayRank": 17
-        },
-        "Kimi K3 (max)|omniscienceIndex:Kimi K3 (max)|page_jsonld": {
-          "model": "Kimi K3 (max)",
-          "score": 19.7,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:Kimi K3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 16
-        },
-        "GLM 5.3 Flash|omniscienceIndex:GLM 5.3 Flash|page_jsonld": {
-          "model": "GLM 5.3 Flash",
-          "score": 7.46666666666667,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:GLM 5.3 Flash",
-          "variant": "page_jsonld",
-          "displayRank": 21
-        },
-        "Gemini 3.8 Flash (high)|omniscienceIndex:Gemini 3.8 Flash (high)|page_jsonld": {
-          "model": "Gemini 3.8 Flash (high)",
-          "score": 29.55,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:Gemini 3.8 Flash (high)",
+          "comparisonKey": "Humanity's Last Exam: Score:Muse Spark 1.3 (max)",
           "variant": "page_jsonld",
           "displayRank": 12
         },
-        "DeepSeek V4.1 Flash (Reasoning, Max Effort)|omniscienceIndex:DeepSeek V4.1 Flash (Reasoning, Max Effort)|page_jsonld": {
+        "GPT-6 Sol (max)|Humanity's Last Exam: Score:GPT-6 Sol (max)|page_jsonld": {
+          "model": "GPT-6 Sol (max)",
+          "score": 0.479147358665431,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:GPT-6 Sol (max)",
+          "variant": "page_jsonld",
+          "displayRank": 13
+        },
+        "GPT-5.6 Sol (max)|Humanity's Last Exam: Score:GPT-5.6 Sol (max)|page_jsonld": {
+          "model": "GPT-5.6 Sol (max)",
+          "score": 0.494902687673772,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:GPT-5.6 Sol (max)",
+          "variant": "page_jsonld",
+          "displayRank": 10
+        },
+        "Grok 4.7 (xhigh)|Humanity's Last Exam: Score:Grok 4.7 (xhigh)|page_jsonld": {
+          "model": "Grok 4.7 (xhigh)",
+          "score": 0.431417979610751,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:Grok 4.7 (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 17
+        },
+        "MiMo-V2.6-Pro|Humanity's Last Exam: Score:MiMo-V2.6-Pro|page_jsonld": {
+          "model": "MiMo-V2.6-Pro",
+          "score": 0.493512511584801,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:MiMo-V2.6-Pro",
+          "variant": "page_jsonld",
+          "displayRank": 11
+        },
+        "Qwen3.8 Max (0902)|Humanity's Last Exam: Score:Qwen3.8 Max (0902)|page_jsonld": {
+          "model": "Qwen3.8 Max (0902)",
+          "score": 0.430954587581094,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:Qwen3.8 Max (0902)",
+          "variant": "page_jsonld",
+          "displayRank": 18
+        },
+        "GLM-5.3 (max)|Humanity's Last Exam: Score:GLM-5.3 (max)|page_jsonld": {
+          "model": "GLM-5.3 (max)",
+          "score": 0.422613531047266,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:GLM-5.3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 20
+        },
+        "Grok 4.6 (high)|Humanity's Last Exam: Score:Grok 4.6 (high)|page_jsonld": {
+          "model": "Grok 4.6 (high)",
+          "score": 0.429101019462465,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:Grok 4.6 (high)",
+          "variant": "page_jsonld",
+          "displayRank": 19
+        },
+        "Step 5 Preview|Humanity's Last Exam: Score:Step 5 Preview|page_jsonld": {
+          "model": "Step 5 Preview",
+          "score": 0.464782205746061,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:Step 5 Preview",
+          "variant": "page_jsonld",
+          "displayRank": 16
+        },
+        "Kimi K3 (max)|Humanity's Last Exam: Score:Kimi K3 (max)|page_jsonld": {
+          "model": "Kimi K3 (max)",
+          "score": 0.468952734012975,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:Kimi K3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 15
+        },
+        "GLM 5.3 Flash|Humanity's Last Exam: Score:GLM 5.3 Flash|page_jsonld": {
+          "model": "GLM 5.3 Flash",
+          "score": 0.398517145505097,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:GLM 5.3 Flash",
+          "variant": "page_jsonld",
+          "displayRank": 21
+        },
+        "Gemini 3.8 Flash (high)|Humanity's Last Exam: Score:Gemini 3.8 Flash (high)|page_jsonld": {
+          "model": "Gemini 3.8 Flash (high)",
+          "score": 0.478220574606117,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:Gemini 3.8 Flash (high)",
+          "variant": "page_jsonld",
+          "displayRank": 14
+        },
+        "DeepSeek V4.1 Flash (Reasoning, Max Effort)|Humanity's Last Exam: Score:DeepSeek V4.1 Flash (Reasoning, Max Effort)|page_jsonld": {
           "model": "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
-          "score": -5.3,
+          "score": 0.392493049119555,
           "rank": null,
-          "comparisonKey": "omniscienceIndex:DeepSeek V4.1 Flash (Reasoning, Max Effort)",
-          "variant": "page_jsonld",
-          "displayRank": 28
-        },
-        "GPT-5.6 Luna (max)|omniscienceIndex:GPT-5.6 Luna (max)|page_jsonld": {
-          "model": "GPT-5.6 Luna (max)",
-          "score": -10.2833333333333,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:GPT-5.6 Luna (max)",
-          "variant": "page_jsonld",
-          "displayRank": 30
-        },
-        "GPT-6 Luna (max)|omniscienceIndex:GPT-6 Luna (max)|page_jsonld": {
-          "model": "GPT-6 Luna (max)",
-          "score": 0.65,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:GPT-6 Luna (max)",
-          "variant": "page_jsonld",
-          "displayRank": 25
-        },
-        "Qwen3.8 27B (xhigh)|omniscienceIndex:Qwen3.8 27B (xhigh)|page_jsonld": {
-          "model": "Qwen3.8 27B (xhigh)",
-          "score": -9.98333333333333,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:Qwen3.8 27B (xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 29
-        },
-        "K2 Horizon 375B A23B|omniscienceIndex:K2 Horizon 375B A23B|page_jsonld": {
-          "model": "K2 Horizon 375B A23B",
-          "score": -2.96666666666667,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:K2 Horizon 375B A23B",
-          "variant": "page_jsonld",
-          "displayRank": 27
-        },
-        "MiniMax-M3|omniscienceIndex:MiniMax-M3|page_jsonld": {
-          "model": "MiniMax-M3",
-          "score": 1.35,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:MiniMax-M3",
-          "variant": "page_jsonld",
-          "displayRank": 24
-        },
-        "Inkling (xhigh)|omniscienceIndex:Inkling (xhigh)|page_jsonld": {
-          "model": "Inkling (xhigh)",
-          "score": 2,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:Inkling (xhigh)",
+          "comparisonKey": "Humanity's Last Exam: Score:DeepSeek V4.1 Flash (Reasoning, Max Effort)",
           "variant": "page_jsonld",
           "displayRank": 23
         },
-        "Nemotron 3 Ultra 550B A55B (Reasoning)|omniscienceIndex:Nemotron 3 Ultra 550B A55B (Reasoning)|page_jsonld": {
-          "model": "Nemotron 3 Ultra 550B A55B (Reasoning)",
-          "score": -0.4,
+        "GPT-5.6 Luna (max)|Humanity's Last Exam: Score:GPT-5.6 Luna (max)|page_jsonld": {
+          "model": "GPT-5.6 Luna (max)",
+          "score": 0.394810009267841,
           "rank": null,
-          "comparisonKey": "omniscienceIndex:Nemotron 3 Ultra 550B A55B (Reasoning)",
-          "variant": "page_jsonld",
-          "displayRank": 26
-        },
-        "Gemini 3.5 Flash-Lite|omniscienceIndex:Gemini 3.5 Flash-Lite|page_jsonld": {
-          "model": "Gemini 3.5 Flash-Lite",
-          "score": 5.23333333333333,
-          "rank": null,
-          "comparisonKey": "omniscienceIndex:Gemini 3.5 Flash-Lite",
+          "comparisonKey": "Humanity's Last Exam: Score:GPT-5.6 Luna (max)",
           "variant": "page_jsonld",
           "displayRank": 22
         },
-        "Muse Glimmer (high)|omniscienceIndex:Muse Glimmer (high)|page_jsonld": {
-          "model": "Muse Glimmer (high)",
-          "score": -32.85,
+        "GPT-6 Luna (max)|Humanity's Last Exam: Score:GPT-6 Luna (max)|page_jsonld": {
+          "model": "GPT-6 Luna (max)",
+          "score": 0.385078776645042,
           "rank": null,
-          "comparisonKey": "omniscienceIndex:Muse Glimmer (high)",
+          "comparisonKey": "Humanity's Last Exam: Score:GPT-6 Luna (max)",
+          "variant": "page_jsonld",
+          "displayRank": 25
+        },
+        "Qwen3.8 27B (xhigh)|Humanity's Last Exam: Score:Qwen3.8 27B (xhigh)|page_jsonld": {
+          "model": "Qwen3.8 27B (xhigh)",
+          "score": 0.33920296570899,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:Qwen3.8 27B (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 26
+        },
+        "K2 Horizon 375B A23B|Humanity's Last Exam: Score:K2 Horizon 375B A23B|page_jsonld": {
+          "model": "K2 Horizon 375B A23B",
+          "score": 0.319740500463392,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:K2 Horizon 375B A23B",
+          "variant": "page_jsonld",
+          "displayRank": 27
+        },
+        "MiniMax-M3|Humanity's Last Exam: Score:MiniMax-M3|page_jsonld": {
+          "model": "MiniMax-M3",
+          "score": 0.389712696941613,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:MiniMax-M3",
+          "variant": "page_jsonld",
+          "displayRank": 24
+        },
+        "Inkling (xhigh)|Humanity's Last Exam: Score:Inkling (xhigh)|page_jsonld": {
+          "model": "Inkling (xhigh)",
+          "score": 0.318813716404078,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:Inkling (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 28
+        },
+        "Nemotron 3 Ultra 550B A55B (Reasoning)|Humanity's Last Exam: Score:Nemotron 3 Ultra 550B A55B (Reasoning)|page_jsonld": {
+          "model": "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "score": 0.284059314179796,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "variant": "page_jsonld",
+          "displayRank": 29
+        },
+        "Gemini 3.5 Flash-Lite|Humanity's Last Exam: Score:Gemini 3.5 Flash-Lite|page_jsonld": {
+          "model": "Gemini 3.5 Flash-Lite",
+          "score": 0.188137164040778,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:Gemini 3.5 Flash-Lite",
           "variant": "page_jsonld",
           "displayRank": 31
         },
-        "Mistral Medium 3.5|omniscienceIndex:Mistral Medium 3.5|page_jsonld": {
-          "model": "Mistral Medium 3.5",
-          "score": -36.8,
+        "Muse Glimmer (high)|Humanity's Last Exam: Score:Muse Glimmer (high)|page_jsonld": {
+          "model": "Muse Glimmer (high)",
+          "score": 0.219647822057461,
           "rank": null,
-          "comparisonKey": "omniscienceIndex:Mistral Medium 3.5",
+          "comparisonKey": "Humanity's Last Exam: Score:Muse Glimmer (high)",
+          "variant": "page_jsonld",
+          "displayRank": 30
+        },
+        "Mistral Medium 3.5|Humanity's Last Exam: Score:Mistral Medium 3.5|page_jsonld": {
+          "model": "Mistral Medium 3.5",
+          "score": 0.137627432808156,
+          "rank": null,
+          "comparisonKey": "Humanity's Last Exam: Score:Mistral Medium 3.5",
           "variant": "page_jsonld",
           "displayRank": 32
         }
       }
     },
-    "terminalbench_v2_1": {
-      "runtimeId": "aa_terminalbench_v2_1",
+    "artificial_analysis_intelligence_index_v4_3": {
+      "runtimeId": "aa_intelligence_index_v4_3",
       "familyId": "aa",
-      "title": "Terminal-Bench v2.1",
+      "title": "Artificial Analysis Intelligence Index v4.3",
       "release": "page_jsonld",
-      "contentHash": "f3f176c20ae56155a8bffb45fd54a775a73568129bec3dee91300cb76e761c33",
+      "contentHash": "9247a559e5385fbb359e9430525d07b3ac43fd9f631868ed7a6337177510ca9b",
       "source": {
-        "benchmark_id": "terminalbench_v2_1",
+        "benchmark_id": "artificial_analysis_intelligence_index_v4_3",
         "status": "enabled",
-        "source_name": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
+        "source_name": "Artificial Analysis Intelligence Index official public Dataset page",
         "organization": "Artificial Analysis",
         "source_type": "official_page_endpoint",
-        "official_url": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
-        "endpoint": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
+        "official_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+        "endpoint": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
         "fetch_method": "GET",
         "update_frequency": "daily",
         "requires_auth": false,
-        "evaluation_field": "Terminal-Bench 2.1: Score",
-        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
+        "evaluation_field": "Artificial Analysis Intelligence Index: Score",
+        "evidence_url": "https://artificialanalysis.ai/api-reference/beta",
         "release_tracking": "page_jsonld",
         "hash_required": true,
         "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
-        "jsonld_name": "Terminal-Bench 2.1: Score"
+        "jsonld_name": "Artificial Analysis Intelligence Index: Score"
       },
       "records": {
-        "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|Terminal-Bench 2.1: Score:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "score": 0.913857677902622,
+        "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)|Artificial Analysis Intelligence Index: Score:Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "score": 57.6223698102963,
           "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
           "variant": "page_jsonld",
           "displayRank": 1
         },
-        "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|Terminal-Bench 2.1: Score:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "score": 0.910112359550562,
+        "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|Artificial Analysis Intelligence Index: Score:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "score": 55.9873505840139,
           "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           "variant": "page_jsonld",
           "displayRank": 2
         },
-        "GPT-6 Astra (max)|Terminal-Bench 2.1: Score:GPT-6 Astra (max)|page_jsonld": {
-          "model": "GPT-6 Astra (max)",
-          "score": 0.883895131086142,
+        "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)|Artificial Analysis Intelligence Index: Score:Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "score": 53.5831959822067,
           "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:GPT-6 Astra (max)",
-          "variant": "page_jsonld",
-          "displayRank": 9
-        },
-        "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)|Terminal-Bench 2.1: Score:Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "score": 0.898876404494382,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
           "variant": "page_jsonld",
           "displayRank": 3
         },
-        "GPT-6 Astra (high)|Terminal-Bench 2.1: Score:GPT-6 Astra (high)|page_jsonld": {
-          "model": "GPT-6 Astra (high)",
-          "score": 0.898876404494382,
+        "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "score": 53.3549259623252,
           "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:GPT-6 Astra (high)",
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
           "variant": "page_jsonld",
           "displayRank": 4
         },
-        "Claude Opus 5 (Adaptive Reasoning, Max Effort)|Terminal-Bench 2.1: Score:Claude Opus 5 (Adaptive Reasoning, Max Effort)|page_jsonld": {
-          "model": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "score": 0.891385767790262,
+        "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "score": 53.2032587538944,
           "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "variant": "page_jsonld",
-          "displayRank": 7
-        },
-        "GPT-6 Astra (medium)|Terminal-Bench 2.1: Score:GPT-6 Astra (medium)|page_jsonld": {
-          "model": "GPT-6 Astra (medium)",
-          "score": 0.895131086142322,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:GPT-6 Astra (medium)",
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
           "variant": "page_jsonld",
           "displayRank": 5
         },
-        "Muse Spark 1.3 (max)|Terminal-Bench 2.1: Score:Muse Spark 1.3 (max)|page_jsonld": {
-          "model": "Muse Spark 1.3 (max)",
-          "score": 0.842696629213483,
+        "GPT-6 Astra (max)|Artificial Analysis Intelligence Index: Score:GPT-6 Astra (max)|page_jsonld": {
+          "model": "GPT-6 Astra (max)",
+          "score": 52.673669395513,
           "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:Muse Spark 1.3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 14
-        },
-        "GPT-5.6 Sol (max)|Terminal-Bench 2.1: Score:GPT-5.6 Sol (max)|page_jsonld": {
-          "model": "GPT-5.6 Sol (max)",
-          "score": 0.880149812734082,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:GPT-5.6 Sol (max)",
-          "variant": "page_jsonld",
-          "displayRank": 11
-        },
-        "Qwen3.8 Max (0902)|Terminal-Bench 2.1: Score:Qwen3.8 Max (0902)|page_jsonld": {
-          "model": "Qwen3.8 Max (0902)",
-          "score": 0.887640449438202,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:Qwen3.8 Max (0902)",
-          "variant": "page_jsonld",
-          "displayRank": 8
-        },
-        "GLM-5.3 (max)|Terminal-Bench 2.1: Score:GLM-5.3 (max)|page_jsonld": {
-          "model": "GLM-5.3 (max)",
-          "score": 0.838951310861423,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:GLM-5.3 (max)",
-          "variant": "page_jsonld",
-          "displayRank": 16
-        },
-        "Grok 4.6 (high)|Terminal-Bench 2.1: Score:Grok 4.6 (high)|page_jsonld": {
-          "model": "Grok 4.6 (high)",
-          "score": 0.883895131086142,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:Grok 4.6 (high)",
-          "variant": "page_jsonld",
-          "displayRank": 10
-        },
-        "GPT-5.6 Sol (xhigh)|Terminal-Bench 2.1: Score:GPT-5.6 Sol (xhigh)|page_jsonld": {
-          "model": "GPT-5.6 Sol (xhigh)",
-          "score": 0.895131086142322,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:GPT-5.6 Sol (xhigh)",
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-6 Astra (max)",
           "variant": "page_jsonld",
           "displayRank": 6
         },
-        "Kimi K3 (max)|Terminal-Bench 2.1: Score:Kimi K3 (max)|page_jsonld": {
-          "model": "Kimi K3 (max)",
-          "score": 0.850187265917603,
+        "GPT-6 Astra (xhigh)|Artificial Analysis Intelligence Index: Score:GPT-6 Astra (xhigh)|page_jsonld": {
+          "model": "GPT-6 Astra (xhigh)",
+          "score": 52.3863277108782,
           "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:Kimi K3 (max)",
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-6 Astra (xhigh)",
           "variant": "page_jsonld",
-          "displayRank": 13
+          "displayRank": 7
         },
-        "GLM 5.3 Flash|Terminal-Bench 2.1: Score:GLM 5.3 Flash|page_jsonld": {
-          "model": "GLM 5.3 Flash",
-          "score": 0.842696629213483,
+        "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)|Artificial Analysis Intelligence Index: Score:Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+          "score": 51.2434931792768,
           "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:GLM 5.3 Flash",
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
           "variant": "page_jsonld",
-          "displayRank": 15
+          "displayRank": 8
         },
-        "Gemini 3.8 Flash (high)|Terminal-Bench 2.1: Score:Gemini 3.8 Flash (high)|page_jsonld": {
-          "model": "Gemini 3.8 Flash (high)",
-          "score": 0.876404494382023,
+        "Claude Opus 5 (Adaptive Reasoning, Max Effort)|Artificial Analysis Intelligence Index: Score:Claude Opus 5 (Adaptive Reasoning, Max Effort)|page_jsonld": {
+          "model": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "score": 50.7771115797629,
           "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:Gemini 3.8 Flash (high)",
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "variant": "page_jsonld",
+          "displayRank": 9
+        },
+        "Muse Spark 1.3 (max)|Artificial Analysis Intelligence Index: Score:Muse Spark 1.3 (max)|page_jsonld": {
+          "model": "Muse Spark 1.3 (max)",
+          "score": 48.0923107719685,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Muse Spark 1.3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 10
+        },
+        "GPT-6 Sol (max)|Artificial Analysis Intelligence Index: Score:GPT-6 Sol (max)|page_jsonld": {
+          "model": "GPT-6 Sol (max)",
+          "score": 47.5276426437724,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-6 Sol (max)",
+          "variant": "page_jsonld",
+          "displayRank": 11
+        },
+        "GPT-5.6 Sol (max)|Artificial Analysis Intelligence Index: Score:GPT-5.6 Sol (max)|page_jsonld": {
+          "model": "GPT-5.6 Sol (max)",
+          "score": 46.9727068915036,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-5.6 Sol (max)",
           "variant": "page_jsonld",
           "displayRank": 12
         },
-        "GPT-5.6 Luna (max)|Terminal-Bench 2.1: Score:GPT-5.6 Luna (max)|page_jsonld": {
-          "model": "GPT-5.6 Luna (max)",
-          "score": 0.808988764044944,
+        "Grok 4.7 (xhigh)|Artificial Analysis Intelligence Index: Score:Grok 4.7 (xhigh)|page_jsonld": {
+          "model": "Grok 4.7 (xhigh)",
+          "score": 46.4465506302286,
           "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:GPT-5.6 Luna (max)",
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Grok 4.7 (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 13
+        },
+        "MiMo-V2.6-Pro|Artificial Analysis Intelligence Index: Score:MiMo-V2.6-Pro|page_jsonld": {
+          "model": "MiMo-V2.6-Pro",
+          "score": 46.3242065310383,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:MiMo-V2.6-Pro",
+          "variant": "page_jsonld",
+          "displayRank": 14
+        },
+        "Qwen3.8 Max (0902)|Artificial Analysis Intelligence Index: Score:Qwen3.8 Max (0902)|page_jsonld": {
+          "model": "Qwen3.8 Max (0902)",
+          "score": 45.4152084980521,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Qwen3.8 Max (0902)",
+          "variant": "page_jsonld",
+          "displayRank": 15
+        },
+        "GLM-5.3 (max)|Artificial Analysis Intelligence Index: Score:GLM-5.3 (max)|page_jsonld": {
+          "model": "GLM-5.3 (max)",
+          "score": 44.777392385614,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GLM-5.3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 16
+        },
+        "Grok 4.6 (high)|Artificial Analysis Intelligence Index: Score:Grok 4.6 (high)|page_jsonld": {
+          "model": "Grok 4.6 (high)",
+          "score": 44.3113073012592,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Grok 4.6 (high)",
           "variant": "page_jsonld",
           "displayRank": 17
         },
-        "Qwen3.8 27B (xhigh)|Terminal-Bench 2.1: Score:Qwen3.8 27B (xhigh)|page_jsonld": {
-          "model": "Qwen3.8 27B (xhigh)",
-          "score": 0.797752808988764,
+        "Step 5 Preview|Artificial Analysis Intelligence Index: Score:Step 5 Preview|page_jsonld": {
+          "model": "Step 5 Preview",
+          "score": 43.7343049141614,
           "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:Qwen3.8 27B (xhigh)",
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Step 5 Preview",
           "variant": "page_jsonld",
           "displayRank": 18
         },
-        "K2 Horizon 375B A23B|Terminal-Bench 2.1: Score:K2 Horizon 375B A23B|page_jsonld": {
-          "model": "K2 Horizon 375B A23B",
-          "score": 0.719101123595506,
+        "Kimi K3 (max)|Artificial Analysis Intelligence Index: Score:Kimi K3 (max)|page_jsonld": {
+          "model": "Kimi K3 (max)",
+          "score": 43.5938229518782,
           "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:K2 Horizon 375B A23B",
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Kimi K3 (max)",
           "variant": "page_jsonld",
           "displayRank": 19
         },
-        "MiniMax-M3|Terminal-Bench 2.1: Score:MiniMax-M3|page_jsonld": {
-          "model": "MiniMax-M3",
-          "score": 0.651685393258427,
+        "GLM 5.3 Flash|Artificial Analysis Intelligence Index: Score:GLM 5.3 Flash|page_jsonld": {
+          "model": "GLM 5.3 Flash",
+          "score": 41.807466113455,
           "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:MiniMax-M3",
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GLM 5.3 Flash",
           "variant": "page_jsonld",
           "displayRank": 20
         },
-        "Inkling (xhigh)|Terminal-Bench 2.1: Score:Inkling (xhigh)|page_jsonld": {
-          "model": "Inkling (xhigh)",
-          "score": 0.550561797752809,
+        "Gemini 3.8 Flash (high)|Artificial Analysis Intelligence Index: Score:Gemini 3.8 Flash (high)|page_jsonld": {
+          "model": "Gemini 3.8 Flash (high)",
+          "score": 40.9262321765904,
           "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:Inkling (xhigh)",
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Gemini 3.8 Flash (high)",
           "variant": "page_jsonld",
           "displayRank": 21
         },
-        "Nemotron 3 Ultra 550B A55B (Reasoning)|Terminal-Bench 2.1: Score:Nemotron 3 Ultra 550B A55B (Reasoning)|page_jsonld": {
-          "model": "Nemotron 3 Ultra 550B A55B (Reasoning)",
-          "score": 0.539325842696629,
+        "DeepSeek V4.1 Flash (Reasoning, Max Effort)|Artificial Analysis Intelligence Index: Score:DeepSeek V4.1 Flash (Reasoning, Max Effort)|page_jsonld": {
+          "model": "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "score": 39.456167472527,
           "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:DeepSeek V4.1 Flash (Reasoning, Max Effort)",
           "variant": "page_jsonld",
           "displayRank": 22
         },
-        "Gemini 3.5 Flash-Lite|Terminal-Bench 2.1: Score:Gemini 3.5 Flash-Lite|page_jsonld": {
-          "model": "Gemini 3.5 Flash-Lite",
-          "score": 0.535580524344569,
+        "GPT-5.6 Luna (max)|Artificial Analysis Intelligence Index: Score:GPT-5.6 Luna (max)|page_jsonld": {
+          "model": "GPT-5.6 Luna (max)",
+          "score": 37.3244239690841,
           "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:Gemini 3.5 Flash-Lite",
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-5.6 Luna (max)",
           "variant": "page_jsonld",
           "displayRank": 23
         },
-        "Muse Glimmer (high)|Terminal-Bench 2.1: Score:Muse Glimmer (high)|page_jsonld": {
-          "model": "Muse Glimmer (high)",
-          "score": 0.51685393258427,
+        "GPT-6 Luna (max)|Artificial Analysis Intelligence Index: Score:GPT-6 Luna (max)|page_jsonld": {
+          "model": "GPT-6 Luna (max)",
+          "score": 37.2559686869738,
           "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:Muse Glimmer (high)",
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:GPT-6 Luna (max)",
           "variant": "page_jsonld",
           "displayRank": 24
         },
-        "Mistral Medium 3.5|Terminal-Bench 2.1: Score:Mistral Medium 3.5|page_jsonld": {
-          "model": "Mistral Medium 3.5",
-          "score": 0.50561797752809,
+        "Qwen3.8 27B (xhigh)|Artificial Analysis Intelligence Index: Score:Qwen3.8 27B (xhigh)|page_jsonld": {
+          "model": "Qwen3.8 27B (xhigh)",
+          "score": 33.6962858057476,
           "rank": null,
-          "comparisonKey": "Terminal-Bench 2.1: Score:Mistral Medium 3.5",
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Qwen3.8 27B (xhigh)",
           "variant": "page_jsonld",
           "displayRank": 25
+        },
+        "K2 Horizon 375B A23B|Artificial Analysis Intelligence Index: Score:K2 Horizon 375B A23B|page_jsonld": {
+          "model": "K2 Horizon 375B A23B",
+          "score": 30.5015302696723,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:K2 Horizon 375B A23B",
+          "variant": "page_jsonld",
+          "displayRank": 26
+        },
+        "MiniMax-M3|Artificial Analysis Intelligence Index: Score:MiniMax-M3|page_jsonld": {
+          "model": "MiniMax-M3",
+          "score": 29.2202932236316,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:MiniMax-M3",
+          "variant": "page_jsonld",
+          "displayRank": 27
+        },
+        "Inkling (xhigh)|Artificial Analysis Intelligence Index: Score:Inkling (xhigh)|page_jsonld": {
+          "model": "Inkling (xhigh)",
+          "score": 24.9847810999384,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Inkling (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 28
+        },
+        "Nemotron 3 Ultra 550B A55B (Reasoning)|Artificial Analysis Intelligence Index: Score:Nemotron 3 Ultra 550B A55B (Reasoning)|page_jsonld": {
+          "model": "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "score": 22.9279123422858,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "variant": "page_jsonld",
+          "displayRank": 29
+        },
+        "Gemini 3.5 Flash-Lite|Artificial Analysis Intelligence Index: Score:Gemini 3.5 Flash-Lite|page_jsonld": {
+          "model": "Gemini 3.5 Flash-Lite",
+          "score": 22.1685424839812,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Gemini 3.5 Flash-Lite",
+          "variant": "page_jsonld",
+          "displayRank": 30
+        },
+        "Muse Glimmer (high)|Artificial Analysis Intelligence Index: Score:Muse Glimmer (high)|page_jsonld": {
+          "model": "Muse Glimmer (high)",
+          "score": 17.4754176089465,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Muse Glimmer (high)",
+          "variant": "page_jsonld",
+          "displayRank": 31
+        },
+        "Mistral Medium 3.5|Artificial Analysis Intelligence Index: Score:Mistral Medium 3.5|page_jsonld": {
+          "model": "Mistral Medium 3.5",
+          "score": 14.1889227802691,
+          "rank": null,
+          "comparisonKey": "Artificial Analysis Intelligence Index: Score:Mistral Medium 3.5",
+          "variant": "page_jsonld",
+          "displayRank": 32
         }
       }
     },
@@ -6718,6 +5925,572 @@
         }
       }
     },
+    "aa_omniscience_index": {
+      "runtimeId": "aa_omniscience_index",
+      "familyId": "aa",
+      "title": "AA Omniscience Index",
+      "release": "page_jsonld",
+      "contentHash": "3808138d7fb336e830f8d432f39ff0138dad5e89b73cf2b453825a23ace66849",
+      "source": {
+        "benchmark_id": "aa_omniscience_index",
+        "status": "enabled",
+        "source_name": "Artificial Analysis AA Omniscience Index official public Dataset page",
+        "organization": "Artificial Analysis",
+        "source_type": "official_page_endpoint",
+        "official_url": "https://artificialanalysis.ai/evaluations/omniscience",
+        "endpoint": "https://artificialanalysis.ai/evaluations/omniscience",
+        "fetch_method": "GET",
+        "update_frequency": "daily",
+        "requires_auth": false,
+        "evaluation_field": "omniscienceIndex",
+        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
+        "release_tracking": "page_jsonld",
+        "hash_required": true,
+        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
+        "jsonld_name": "AA-Omniscience Index: Score"
+      },
+      "records": {
+        "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)|omniscienceIndex:Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "score": 46.4166666666667,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 1
+        },
+        "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|omniscienceIndex:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "score": 42.65,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 7
+        },
+        "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|omniscienceIndex:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "score": 43.45,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 3
+        },
+        "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|omniscienceIndex:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "score": 42.3833333333333,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 8
+        },
+        "GPT-6 Astra (max)|omniscienceIndex:GPT-6 Astra (max)|page_jsonld": {
+          "model": "GPT-6 Astra (max)",
+          "score": 43.4,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:GPT-6 Astra (max)",
+          "variant": "page_jsonld",
+          "displayRank": 5
+        },
+        "GPT-6 Astra (xhigh)|omniscienceIndex:GPT-6 Astra (xhigh)|page_jsonld": {
+          "model": "GPT-6 Astra (xhigh)",
+          "score": 43.4166666666667,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:GPT-6 Astra (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 4
+        },
+        "GPT-6 Astra (high)|omniscienceIndex:GPT-6 Astra (high)|page_jsonld": {
+          "model": "GPT-6 Astra (high)",
+          "score": 43.7333333333333,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:GPT-6 Astra (high)",
+          "variant": "page_jsonld",
+          "displayRank": 2
+        },
+        "Claude Opus 5 (Adaptive Reasoning, Max Effort)|omniscienceIndex:Claude Opus 5 (Adaptive Reasoning, Max Effort)|page_jsonld": {
+          "model": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "score": 37.0666666666667,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "variant": "page_jsonld",
+          "displayRank": 9
+        },
+        "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)|omniscienceIndex:Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)|page_jsonld": {
+          "model": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+          "score": 43.3,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 6
+        },
+        "Muse Spark 1.3 (max)|omniscienceIndex:Muse Spark 1.3 (max)|page_jsonld": {
+          "model": "Muse Spark 1.3 (max)",
+          "score": 25,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:Muse Spark 1.3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 14
+        },
+        "GPT-6 Sol (max)|omniscienceIndex:GPT-6 Sol (max)|page_jsonld": {
+          "model": "GPT-6 Sol (max)",
+          "score": 27.1166666666667,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:GPT-6 Sol (max)",
+          "variant": "page_jsonld",
+          "displayRank": 13
+        },
+        "GPT-5.6 Sol (max)|omniscienceIndex:GPT-5.6 Sol (max)|page_jsonld": {
+          "model": "GPT-5.6 Sol (max)",
+          "score": 21.9666666666667,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:GPT-5.6 Sol (max)",
+          "variant": "page_jsonld",
+          "displayRank": 15
+        },
+        "Grok 4.7 (xhigh)|omniscienceIndex:Grok 4.7 (xhigh)|page_jsonld": {
+          "model": "Grok 4.7 (xhigh)",
+          "score": 32.0333333333333,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:Grok 4.7 (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 10
+        },
+        "MiMo-V2.6-Pro|omniscienceIndex:MiMo-V2.6-Pro|page_jsonld": {
+          "model": "MiMo-V2.6-Pro",
+          "score": 8.38333333333333,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:MiMo-V2.6-Pro",
+          "variant": "page_jsonld",
+          "displayRank": 20
+        },
+        "Qwen3.8 Max (0902)|omniscienceIndex:Qwen3.8 Max (0902)|page_jsonld": {
+          "model": "Qwen3.8 Max (0902)",
+          "score": 11.9833333333333,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:Qwen3.8 Max (0902)",
+          "variant": "page_jsonld",
+          "displayRank": 19
+        },
+        "GLM-5.3 (max)|omniscienceIndex:GLM-5.3 (max)|page_jsonld": {
+          "model": "GLM-5.3 (max)",
+          "score": 14.3,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:GLM-5.3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 18
+        },
+        "Grok 4.6 (high)|omniscienceIndex:Grok 4.6 (high)|page_jsonld": {
+          "model": "Grok 4.6 (high)",
+          "score": 30.4833333333333,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:Grok 4.6 (high)",
+          "variant": "page_jsonld",
+          "displayRank": 11
+        },
+        "Step 5 Preview|omniscienceIndex:Step 5 Preview|page_jsonld": {
+          "model": "Step 5 Preview",
+          "score": 16.3833333333333,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:Step 5 Preview",
+          "variant": "page_jsonld",
+          "displayRank": 17
+        },
+        "Kimi K3 (max)|omniscienceIndex:Kimi K3 (max)|page_jsonld": {
+          "model": "Kimi K3 (max)",
+          "score": 19.7,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:Kimi K3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 16
+        },
+        "GLM 5.3 Flash|omniscienceIndex:GLM 5.3 Flash|page_jsonld": {
+          "model": "GLM 5.3 Flash",
+          "score": 7.46666666666667,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:GLM 5.3 Flash",
+          "variant": "page_jsonld",
+          "displayRank": 21
+        },
+        "Gemini 3.8 Flash (high)|omniscienceIndex:Gemini 3.8 Flash (high)|page_jsonld": {
+          "model": "Gemini 3.8 Flash (high)",
+          "score": 29.55,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:Gemini 3.8 Flash (high)",
+          "variant": "page_jsonld",
+          "displayRank": 12
+        },
+        "DeepSeek V4.1 Flash (Reasoning, Max Effort)|omniscienceIndex:DeepSeek V4.1 Flash (Reasoning, Max Effort)|page_jsonld": {
+          "model": "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "score": -5.3,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "variant": "page_jsonld",
+          "displayRank": 28
+        },
+        "GPT-5.6 Luna (max)|omniscienceIndex:GPT-5.6 Luna (max)|page_jsonld": {
+          "model": "GPT-5.6 Luna (max)",
+          "score": -10.2833333333333,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:GPT-5.6 Luna (max)",
+          "variant": "page_jsonld",
+          "displayRank": 30
+        },
+        "GPT-6 Luna (max)|omniscienceIndex:GPT-6 Luna (max)|page_jsonld": {
+          "model": "GPT-6 Luna (max)",
+          "score": 0.65,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:GPT-6 Luna (max)",
+          "variant": "page_jsonld",
+          "displayRank": 25
+        },
+        "Qwen3.8 27B (xhigh)|omniscienceIndex:Qwen3.8 27B (xhigh)|page_jsonld": {
+          "model": "Qwen3.8 27B (xhigh)",
+          "score": -9.98333333333333,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:Qwen3.8 27B (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 29
+        },
+        "K2 Horizon 375B A23B|omniscienceIndex:K2 Horizon 375B A23B|page_jsonld": {
+          "model": "K2 Horizon 375B A23B",
+          "score": -2.96666666666667,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:K2 Horizon 375B A23B",
+          "variant": "page_jsonld",
+          "displayRank": 27
+        },
+        "MiniMax-M3|omniscienceIndex:MiniMax-M3|page_jsonld": {
+          "model": "MiniMax-M3",
+          "score": 1.35,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:MiniMax-M3",
+          "variant": "page_jsonld",
+          "displayRank": 24
+        },
+        "Inkling (xhigh)|omniscienceIndex:Inkling (xhigh)|page_jsonld": {
+          "model": "Inkling (xhigh)",
+          "score": 2,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:Inkling (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 23
+        },
+        "Nemotron 3 Ultra 550B A55B (Reasoning)|omniscienceIndex:Nemotron 3 Ultra 550B A55B (Reasoning)|page_jsonld": {
+          "model": "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "score": -0.4,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "variant": "page_jsonld",
+          "displayRank": 26
+        },
+        "Gemini 3.5 Flash-Lite|omniscienceIndex:Gemini 3.5 Flash-Lite|page_jsonld": {
+          "model": "Gemini 3.5 Flash-Lite",
+          "score": 5.23333333333333,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:Gemini 3.5 Flash-Lite",
+          "variant": "page_jsonld",
+          "displayRank": 22
+        },
+        "Muse Glimmer (high)|omniscienceIndex:Muse Glimmer (high)|page_jsonld": {
+          "model": "Muse Glimmer (high)",
+          "score": -32.85,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:Muse Glimmer (high)",
+          "variant": "page_jsonld",
+          "displayRank": 31
+        },
+        "Mistral Medium 3.5|omniscienceIndex:Mistral Medium 3.5|page_jsonld": {
+          "model": "Mistral Medium 3.5",
+          "score": -36.8,
+          "rank": null,
+          "comparisonKey": "omniscienceIndex:Mistral Medium 3.5",
+          "variant": "page_jsonld",
+          "displayRank": 32
+        }
+      }
+    },
+    "aa_lcr": {
+      "runtimeId": "aa_lcr",
+      "familyId": "aa",
+      "title": "AA LCR",
+      "release": "page_jsonld",
+      "contentHash": "93aebb0fe02f5e81610a2be3386a94d3d84ef3521e5f79cc8f26aae07b4a81d6",
+      "source": {
+        "benchmark_id": "aa_lcr",
+        "status": "enabled",
+        "source_name": "Artificial Analysis AA LCR official public Dataset page",
+        "organization": "Artificial Analysis",
+        "source_type": "official_page_endpoint",
+        "official_url": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+        "endpoint": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+        "fetch_method": "GET",
+        "update_frequency": "daily",
+        "requires_auth": false,
+        "evaluation_field": "AA-LCR v1.1",
+        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
+        "release_tracking": "page_jsonld",
+        "hash_required": true,
+        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
+        "jsonld_name": "AA-LCR v1.1: Score"
+      },
+      "records": {
+        "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)|AA-LCR v1.1:Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "score": 0.846666666666667,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 5
+        },
+        "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|AA-LCR v1.1:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "score": 0.846666666666667,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 6
+        },
+        "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|AA-LCR v1.1:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "score": 0.853333333333333,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 4
+        },
+        "GPT-6 Astra (max)|AA-LCR v1.1:GPT-6 Astra (max)|page_jsonld": {
+          "model": "GPT-6 Astra (max)",
+          "score": 0.806666666666667,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:GPT-6 Astra (max)",
+          "variant": "page_jsonld",
+          "displayRank": 21
+        },
+        "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)|AA-LCR v1.1:Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+          "score": 0.843333333333333,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 8
+        },
+        "Claude Opus 5 (Adaptive Reasoning, Max Effort)|AA-LCR v1.1:Claude Opus 5 (Adaptive Reasoning, Max Effort)|page_jsonld": {
+          "model": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "score": 0.793333333333333,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "variant": "page_jsonld",
+          "displayRank": 27
+        },
+        "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)|AA-LCR v1.1:Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+          "score": 0.846666666666667,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 7
+        },
+        "Muse Spark 1.3 (max)|AA-LCR v1.1:Muse Spark 1.3 (max)|page_jsonld": {
+          "model": "Muse Spark 1.3 (max)",
+          "score": 0.83,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:Muse Spark 1.3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 17
+        },
+        "GPT-6 Sol (max)|AA-LCR v1.1:GPT-6 Sol (max)|page_jsonld": {
+          "model": "GPT-6 Sol (max)",
+          "score": 0.836666666666667,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:GPT-6 Sol (max)",
+          "variant": "page_jsonld",
+          "displayRank": 13
+        },
+        "GPT-5.6 Sol (max)|AA-LCR v1.1:GPT-5.6 Sol (max)|page_jsonld": {
+          "model": "GPT-5.6 Sol (max)",
+          "score": 0.84,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:GPT-5.6 Sol (max)",
+          "variant": "page_jsonld",
+          "displayRank": 11
+        },
+        "Grok 4.7 (xhigh)|AA-LCR v1.1:Grok 4.7 (xhigh)|page_jsonld": {
+          "model": "Grok 4.7 (xhigh)",
+          "score": 0.766666666666667,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:Grok 4.7 (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 30
+        },
+        "MiMo-V2.6-Pro|AA-LCR v1.1:MiMo-V2.6-Pro|page_jsonld": {
+          "model": "MiMo-V2.6-Pro",
+          "score": 0.863333333333333,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:MiMo-V2.6-Pro",
+          "variant": "page_jsonld",
+          "displayRank": 3
+        },
+        "Qwen3.8 Max (0902)|AA-LCR v1.1:Qwen3.8 Max (0902)|page_jsonld": {
+          "model": "Qwen3.8 Max (0902)",
+          "score": 0.803333333333333,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:Qwen3.8 Max (0902)",
+          "variant": "page_jsonld",
+          "displayRank": 22
+        },
+        "GLM-5.3 (max)|AA-LCR v1.1:GLM-5.3 (max)|page_jsonld": {
+          "model": "GLM-5.3 (max)",
+          "score": 0.796666666666667,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:GLM-5.3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 26
+        },
+        "Grok 4.6 (high)|AA-LCR v1.1:Grok 4.6 (high)|page_jsonld": {
+          "model": "Grok 4.6 (high)",
+          "score": 0.803333333333333,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:Grok 4.6 (high)",
+          "variant": "page_jsonld",
+          "displayRank": 23
+        },
+        "Step 5 Preview|AA-LCR v1.1:Step 5 Preview|page_jsonld": {
+          "model": "Step 5 Preview",
+          "score": 0.883333333333333,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:Step 5 Preview",
+          "variant": "page_jsonld",
+          "displayRank": 2
+        },
+        "Kimi K3 (max)|AA-LCR v1.1:Kimi K3 (max)|page_jsonld": {
+          "model": "Kimi K3 (max)",
+          "score": 0.886666666666667,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:Kimi K3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 1
+        },
+        "GLM 5.3 Flash|AA-LCR v1.1:GLM 5.3 Flash|page_jsonld": {
+          "model": "GLM 5.3 Flash",
+          "score": 0.8,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:GLM 5.3 Flash",
+          "variant": "page_jsonld",
+          "displayRank": 24
+        },
+        "Gemini 3.8 Flash (high)|AA-LCR v1.1:Gemini 3.8 Flash (high)|page_jsonld": {
+          "model": "Gemini 3.8 Flash (high)",
+          "score": 0.813333333333333,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:Gemini 3.8 Flash (high)",
+          "variant": "page_jsonld",
+          "displayRank": 20
+        },
+        "DeepSeek V4.1 Flash (Reasoning, Max Effort)|AA-LCR v1.1:DeepSeek V4.1 Flash (Reasoning, Max Effort)|page_jsonld": {
+          "model": "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "score": 0.84,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "variant": "page_jsonld",
+          "displayRank": 12
+        },
+        "GPT-5.5 (xhigh)|AA-LCR v1.1:GPT-5.5 (xhigh)|page_jsonld": {
+          "model": "GPT-5.5 (xhigh)",
+          "score": 0.843333333333333,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:GPT-5.5 (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 9
+        },
+        "GPT-5.6 Luna (max)|AA-LCR v1.1:GPT-5.6 Luna (max)|page_jsonld": {
+          "model": "GPT-5.6 Luna (max)",
+          "score": 0.836666666666667,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:GPT-5.6 Luna (max)",
+          "variant": "page_jsonld",
+          "displayRank": 14
+        },
+        "GPT-6 Luna (max)|AA-LCR v1.1:GPT-6 Luna (max)|page_jsonld": {
+          "model": "GPT-6 Luna (max)",
+          "score": 0.833333333333333,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:GPT-6 Luna (max)",
+          "variant": "page_jsonld",
+          "displayRank": 15
+        },
+        "GPT-5.5 (high)|AA-LCR v1.1:GPT-5.5 (high)|page_jsonld": {
+          "model": "GPT-5.5 (high)",
+          "score": 0.843333333333333,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:GPT-5.5 (high)",
+          "variant": "page_jsonld",
+          "displayRank": 10
+        },
+        "Qwen3.8 27B (xhigh)|AA-LCR v1.1:Qwen3.8 27B (xhigh)|page_jsonld": {
+          "model": "Qwen3.8 27B (xhigh)",
+          "score": 0.82,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:Qwen3.8 27B (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 19
+        },
+        "K2 Horizon 375B A23B|AA-LCR v1.1:K2 Horizon 375B A23B|page_jsonld": {
+          "model": "K2 Horizon 375B A23B",
+          "score": 0.8,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:K2 Horizon 375B A23B",
+          "variant": "page_jsonld",
+          "displayRank": 25
+        },
+        "MiniMax-M3|AA-LCR v1.1:MiniMax-M3|page_jsonld": {
+          "model": "MiniMax-M3",
+          "score": 0.83,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:MiniMax-M3",
+          "variant": "page_jsonld",
+          "displayRank": 18
+        },
+        "Inkling (xhigh)|AA-LCR v1.1:Inkling (xhigh)|page_jsonld": {
+          "model": "Inkling (xhigh)",
+          "score": 0.773333333333333,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:Inkling (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 29
+        },
+        "Nemotron 3 Ultra 550B A55B (Reasoning)|AA-LCR v1.1:Nemotron 3 Ultra 550B A55B (Reasoning)|page_jsonld": {
+          "model": "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "score": 0.793333333333333,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "variant": "page_jsonld",
+          "displayRank": 28
+        },
+        "Gemini 3.5 Flash-Lite|AA-LCR v1.1:Gemini 3.5 Flash-Lite|page_jsonld": {
+          "model": "Gemini 3.5 Flash-Lite",
+          "score": 0.76,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:Gemini 3.5 Flash-Lite",
+          "variant": "page_jsonld",
+          "displayRank": 31
+        },
+        "Muse Glimmer (high)|AA-LCR v1.1:Muse Glimmer (high)|page_jsonld": {
+          "model": "Muse Glimmer (high)",
+          "score": 0.833333333333333,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:Muse Glimmer (high)",
+          "variant": "page_jsonld",
+          "displayRank": 16
+        },
+        "Mistral Medium 3.5|AA-LCR v1.1:Mistral Medium 3.5|page_jsonld": {
+          "model": "Mistral Medium 3.5",
+          "score": 0.693333333333333,
+          "rank": null,
+          "comparisonKey": "AA-LCR v1.1:Mistral Medium 3.5",
+          "variant": "page_jsonld",
+          "displayRank": 32
+        }
+      }
+    },
     "terminalbench_hard": {
       "runtimeId": "aa_terminalbench_hard",
       "familyId": "aa",
@@ -6812,105 +6585,6 @@
           "score": 0.333333333333333,
           "rank": null,
           "comparisonKey": "Terminal-Bench Hard: Score:Mistral Medium 3.5",
-          "variant": "page_jsonld",
-          "displayRank": 9
-        }
-      }
-    },
-    "ifbench": {
-      "runtimeId": "aa_ifbench",
-      "familyId": "aa",
-      "title": "IFBench",
-      "release": "page_jsonld",
-      "contentHash": "2da9d98b704d1a1cd01dc7b88cce6a6cfd641479be9e99bc4a75576eac784b99",
-      "source": {
-        "benchmark_id": "ifbench",
-        "status": "enabled",
-        "source_name": "Artificial Analysis IFBench official public Dataset page",
-        "organization": "Artificial Analysis",
-        "source_type": "official_page_endpoint",
-        "official_url": "https://artificialanalysis.ai/evaluations/ifbench",
-        "endpoint": "https://artificialanalysis.ai/evaluations/ifbench",
-        "fetch_method": "GET",
-        "update_frequency": "daily",
-        "requires_auth": false,
-        "evaluation_field": "IFBench: Score",
-        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
-        "release_tracking": "page_jsonld",
-        "hash_required": true,
-        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
-        "jsonld_name": "IFBench: Score"
-      },
-      "records": {
-        "GPT-5.6 Sol (max)|IFBench: Score:GPT-5.6 Sol (max)|page_jsonld": {
-          "model": "GPT-5.6 Sol (max)",
-          "score": 0.726530612244898,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:GPT-5.6 Sol (max)",
-          "variant": "page_jsonld",
-          "displayRank": 8
-        },
-        "MiniMax-M3|IFBench: Score:MiniMax-M3|page_jsonld": {
-          "model": "MiniMax-M3",
-          "score": 0.828571428571429,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:MiniMax-M3",
-          "variant": "page_jsonld",
-          "displayRank": 3
-        },
-        "Grok 4.20 0309 v2 (Reasoning)|IFBench: Score:Grok 4.20 0309 v2 (Reasoning)|page_jsonld": {
-          "model": "Grok 4.20 0309 v2 (Reasoning)",
-          "score": 0.812244897959184,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Grok 4.20 0309 v2 (Reasoning)",
-          "variant": "page_jsonld",
-          "displayRank": 6
-        },
-        "Grok 4.20 0309 (Reasoning)|IFBench: Score:Grok 4.20 0309 (Reasoning)|page_jsonld": {
-          "model": "Grok 4.20 0309 (Reasoning)",
-          "score": 0.829251700680272,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Grok 4.20 0309 (Reasoning)",
-          "variant": "page_jsonld",
-          "displayRank": 2
-        },
-        "Grok 4.3 (high)|IFBench: Score:Grok 4.3 (high)|page_jsonld": {
-          "model": "Grok 4.3 (high)",
-          "score": 0.812925170068027,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Grok 4.3 (high)",
-          "variant": "page_jsonld",
-          "displayRank": 5
-        },
-        "Grok 4.3 (medium)|IFBench: Score:Grok 4.3 (medium)|page_jsonld": {
-          "model": "Grok 4.3 (medium)",
-          "score": 0.833333333333333,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Grok 4.3 (medium)",
-          "variant": "page_jsonld",
-          "displayRank": 1
-        },
-        "Grok 4.3 (low)|IFBench: Score:Grok 4.3 (low)|page_jsonld": {
-          "model": "Grok 4.3 (low)",
-          "score": 0.80952380952381,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Grok 4.3 (low)",
-          "variant": "page_jsonld",
-          "displayRank": 7
-        },
-        "Nemotron 3 Ultra 550B A55B (Reasoning)|IFBench: Score:Nemotron 3 Ultra 550B A55B (Reasoning)|page_jsonld": {
-          "model": "Nemotron 3 Ultra 550B A55B (Reasoning)",
-          "score": 0.813605442176871,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Nemotron 3 Ultra 550B A55B (Reasoning)",
-          "variant": "page_jsonld",
-          "displayRank": 4
-        },
-        "Mistral Medium 3.5|IFBench: Score:Mistral Medium 3.5|page_jsonld": {
-          "model": "Mistral Medium 3.5",
-          "score": 0.687755102040816,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Mistral Medium 3.5",
           "variant": "page_jsonld",
           "displayRank": 9
         }
@@ -7196,6 +6870,332 @@
           "comparisonKey": "gdpvalAaElo:Mistral Medium 3.5",
           "variant": "page_jsonld",
           "displayRank": 32
+        }
+      }
+    },
+    "terminalbench_v2_1": {
+      "runtimeId": "aa_terminalbench_v2_1",
+      "familyId": "aa",
+      "title": "Terminal-Bench v2.1",
+      "release": "page_jsonld",
+      "contentHash": "f3f176c20ae56155a8bffb45fd54a775a73568129bec3dee91300cb76e761c33",
+      "source": {
+        "benchmark_id": "terminalbench_v2_1",
+        "status": "enabled",
+        "source_name": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
+        "organization": "Artificial Analysis",
+        "source_type": "official_page_endpoint",
+        "official_url": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
+        "endpoint": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
+        "fetch_method": "GET",
+        "update_frequency": "daily",
+        "requires_auth": false,
+        "evaluation_field": "Terminal-Bench 2.1: Score",
+        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
+        "release_tracking": "page_jsonld",
+        "hash_required": true,
+        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
+        "jsonld_name": "Terminal-Bench 2.1: Score"
+      },
+      "records": {
+        "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|Terminal-Bench 2.1: Score:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "score": 0.913857677902622,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 1
+        },
+        "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|Terminal-Bench 2.1: Score:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "score": 0.910112359550562,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 2
+        },
+        "GPT-6 Astra (max)|Terminal-Bench 2.1: Score:GPT-6 Astra (max)|page_jsonld": {
+          "model": "GPT-6 Astra (max)",
+          "score": 0.883895131086142,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:GPT-6 Astra (max)",
+          "variant": "page_jsonld",
+          "displayRank": 9
+        },
+        "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)|Terminal-Bench 2.1: Score:Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "score": 0.898876404494382,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 3
+        },
+        "GPT-6 Astra (high)|Terminal-Bench 2.1: Score:GPT-6 Astra (high)|page_jsonld": {
+          "model": "GPT-6 Astra (high)",
+          "score": 0.898876404494382,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:GPT-6 Astra (high)",
+          "variant": "page_jsonld",
+          "displayRank": 4
+        },
+        "Claude Opus 5 (Adaptive Reasoning, Max Effort)|Terminal-Bench 2.1: Score:Claude Opus 5 (Adaptive Reasoning, Max Effort)|page_jsonld": {
+          "model": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "score": 0.891385767790262,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "variant": "page_jsonld",
+          "displayRank": 7
+        },
+        "GPT-6 Astra (medium)|Terminal-Bench 2.1: Score:GPT-6 Astra (medium)|page_jsonld": {
+          "model": "GPT-6 Astra (medium)",
+          "score": 0.895131086142322,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:GPT-6 Astra (medium)",
+          "variant": "page_jsonld",
+          "displayRank": 5
+        },
+        "Muse Spark 1.3 (max)|Terminal-Bench 2.1: Score:Muse Spark 1.3 (max)|page_jsonld": {
+          "model": "Muse Spark 1.3 (max)",
+          "score": 0.842696629213483,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:Muse Spark 1.3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 14
+        },
+        "GPT-5.6 Sol (max)|Terminal-Bench 2.1: Score:GPT-5.6 Sol (max)|page_jsonld": {
+          "model": "GPT-5.6 Sol (max)",
+          "score": 0.880149812734082,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:GPT-5.6 Sol (max)",
+          "variant": "page_jsonld",
+          "displayRank": 11
+        },
+        "Qwen3.8 Max (0902)|Terminal-Bench 2.1: Score:Qwen3.8 Max (0902)|page_jsonld": {
+          "model": "Qwen3.8 Max (0902)",
+          "score": 0.887640449438202,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:Qwen3.8 Max (0902)",
+          "variant": "page_jsonld",
+          "displayRank": 8
+        },
+        "GLM-5.3 (max)|Terminal-Bench 2.1: Score:GLM-5.3 (max)|page_jsonld": {
+          "model": "GLM-5.3 (max)",
+          "score": 0.838951310861423,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:GLM-5.3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 16
+        },
+        "Grok 4.6 (high)|Terminal-Bench 2.1: Score:Grok 4.6 (high)|page_jsonld": {
+          "model": "Grok 4.6 (high)",
+          "score": 0.883895131086142,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:Grok 4.6 (high)",
+          "variant": "page_jsonld",
+          "displayRank": 10
+        },
+        "GPT-5.6 Sol (xhigh)|Terminal-Bench 2.1: Score:GPT-5.6 Sol (xhigh)|page_jsonld": {
+          "model": "GPT-5.6 Sol (xhigh)",
+          "score": 0.895131086142322,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:GPT-5.6 Sol (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 6
+        },
+        "Kimi K3 (max)|Terminal-Bench 2.1: Score:Kimi K3 (max)|page_jsonld": {
+          "model": "Kimi K3 (max)",
+          "score": 0.850187265917603,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:Kimi K3 (max)",
+          "variant": "page_jsonld",
+          "displayRank": 13
+        },
+        "GLM 5.3 Flash|Terminal-Bench 2.1: Score:GLM 5.3 Flash|page_jsonld": {
+          "model": "GLM 5.3 Flash",
+          "score": 0.842696629213483,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:GLM 5.3 Flash",
+          "variant": "page_jsonld",
+          "displayRank": 15
+        },
+        "Gemini 3.8 Flash (high)|Terminal-Bench 2.1: Score:Gemini 3.8 Flash (high)|page_jsonld": {
+          "model": "Gemini 3.8 Flash (high)",
+          "score": 0.876404494382023,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:Gemini 3.8 Flash (high)",
+          "variant": "page_jsonld",
+          "displayRank": 12
+        },
+        "GPT-5.6 Luna (max)|Terminal-Bench 2.1: Score:GPT-5.6 Luna (max)|page_jsonld": {
+          "model": "GPT-5.6 Luna (max)",
+          "score": 0.808988764044944,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:GPT-5.6 Luna (max)",
+          "variant": "page_jsonld",
+          "displayRank": 17
+        },
+        "Qwen3.8 27B (xhigh)|Terminal-Bench 2.1: Score:Qwen3.8 27B (xhigh)|page_jsonld": {
+          "model": "Qwen3.8 27B (xhigh)",
+          "score": 0.797752808988764,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:Qwen3.8 27B (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 18
+        },
+        "K2 Horizon 375B A23B|Terminal-Bench 2.1: Score:K2 Horizon 375B A23B|page_jsonld": {
+          "model": "K2 Horizon 375B A23B",
+          "score": 0.719101123595506,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:K2 Horizon 375B A23B",
+          "variant": "page_jsonld",
+          "displayRank": 19
+        },
+        "MiniMax-M3|Terminal-Bench 2.1: Score:MiniMax-M3|page_jsonld": {
+          "model": "MiniMax-M3",
+          "score": 0.651685393258427,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:MiniMax-M3",
+          "variant": "page_jsonld",
+          "displayRank": 20
+        },
+        "Inkling (xhigh)|Terminal-Bench 2.1: Score:Inkling (xhigh)|page_jsonld": {
+          "model": "Inkling (xhigh)",
+          "score": 0.550561797752809,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:Inkling (xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 21
+        },
+        "Nemotron 3 Ultra 550B A55B (Reasoning)|Terminal-Bench 2.1: Score:Nemotron 3 Ultra 550B A55B (Reasoning)|page_jsonld": {
+          "model": "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "score": 0.539325842696629,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "variant": "page_jsonld",
+          "displayRank": 22
+        },
+        "Gemini 3.5 Flash-Lite|Terminal-Bench 2.1: Score:Gemini 3.5 Flash-Lite|page_jsonld": {
+          "model": "Gemini 3.5 Flash-Lite",
+          "score": 0.535580524344569,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:Gemini 3.5 Flash-Lite",
+          "variant": "page_jsonld",
+          "displayRank": 23
+        },
+        "Muse Glimmer (high)|Terminal-Bench 2.1: Score:Muse Glimmer (high)|page_jsonld": {
+          "model": "Muse Glimmer (high)",
+          "score": 0.51685393258427,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:Muse Glimmer (high)",
+          "variant": "page_jsonld",
+          "displayRank": 24
+        },
+        "Mistral Medium 3.5|Terminal-Bench 2.1: Score:Mistral Medium 3.5|page_jsonld": {
+          "model": "Mistral Medium 3.5",
+          "score": 0.50561797752809,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 2.1: Score:Mistral Medium 3.5",
+          "variant": "page_jsonld",
+          "displayRank": 25
+        }
+      }
+    },
+    "ifbench": {
+      "runtimeId": "aa_ifbench",
+      "familyId": "aa",
+      "title": "IFBench",
+      "release": "page_jsonld",
+      "contentHash": "2da9d98b704d1a1cd01dc7b88cce6a6cfd641479be9e99bc4a75576eac784b99",
+      "source": {
+        "benchmark_id": "ifbench",
+        "status": "enabled",
+        "source_name": "Artificial Analysis IFBench official public Dataset page",
+        "organization": "Artificial Analysis",
+        "source_type": "official_page_endpoint",
+        "official_url": "https://artificialanalysis.ai/evaluations/ifbench",
+        "endpoint": "https://artificialanalysis.ai/evaluations/ifbench",
+        "fetch_method": "GET",
+        "update_frequency": "daily",
+        "requires_auth": false,
+        "evaluation_field": "IFBench: Score",
+        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
+        "release_tracking": "page_jsonld",
+        "hash_required": true,
+        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
+        "jsonld_name": "IFBench: Score"
+      },
+      "records": {
+        "GPT-5.6 Sol (max)|IFBench: Score:GPT-5.6 Sol (max)|page_jsonld": {
+          "model": "GPT-5.6 Sol (max)",
+          "score": 0.726530612244898,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:GPT-5.6 Sol (max)",
+          "variant": "page_jsonld",
+          "displayRank": 8
+        },
+        "MiniMax-M3|IFBench: Score:MiniMax-M3|page_jsonld": {
+          "model": "MiniMax-M3",
+          "score": 0.828571428571429,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:MiniMax-M3",
+          "variant": "page_jsonld",
+          "displayRank": 3
+        },
+        "Grok 4.20 0309 v2 (Reasoning)|IFBench: Score:Grok 4.20 0309 v2 (Reasoning)|page_jsonld": {
+          "model": "Grok 4.20 0309 v2 (Reasoning)",
+          "score": 0.812244897959184,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Grok 4.20 0309 v2 (Reasoning)",
+          "variant": "page_jsonld",
+          "displayRank": 6
+        },
+        "Grok 4.20 0309 (Reasoning)|IFBench: Score:Grok 4.20 0309 (Reasoning)|page_jsonld": {
+          "model": "Grok 4.20 0309 (Reasoning)",
+          "score": 0.829251700680272,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Grok 4.20 0309 (Reasoning)",
+          "variant": "page_jsonld",
+          "displayRank": 2
+        },
+        "Grok 4.3 (high)|IFBench: Score:Grok 4.3 (high)|page_jsonld": {
+          "model": "Grok 4.3 (high)",
+          "score": 0.812925170068027,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Grok 4.3 (high)",
+          "variant": "page_jsonld",
+          "displayRank": 5
+        },
+        "Grok 4.3 (medium)|IFBench: Score:Grok 4.3 (medium)|page_jsonld": {
+          "model": "Grok 4.3 (medium)",
+          "score": 0.833333333333333,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Grok 4.3 (medium)",
+          "variant": "page_jsonld",
+          "displayRank": 1
+        },
+        "Grok 4.3 (low)|IFBench: Score:Grok 4.3 (low)|page_jsonld": {
+          "model": "Grok 4.3 (low)",
+          "score": 0.80952380952381,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Grok 4.3 (low)",
+          "variant": "page_jsonld",
+          "displayRank": 7
+        },
+        "Nemotron 3 Ultra 550B A55B (Reasoning)|IFBench: Score:Nemotron 3 Ultra 550B A55B (Reasoning)|page_jsonld": {
+          "model": "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "score": 0.813605442176871,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "variant": "page_jsonld",
+          "displayRank": 4
+        },
+        "Mistral Medium 3.5|IFBench: Score:Mistral Medium 3.5|page_jsonld": {
+          "model": "Mistral Medium 3.5",
+          "score": 0.687755102040816,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Mistral Medium 3.5",
+          "variant": "page_jsonld",
+          "displayRank": 9
         }
       }
     },
