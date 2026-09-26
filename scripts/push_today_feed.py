@@ -112,32 +112,38 @@ def load_ranking_bundle(path: Path) -> dict:
 
 
 def fetch_access_token(appid: str, secret: str) -> str:
-    response = requests.post(
-        STABLE_TOKEN_URL,
-        json={
-            "grant_type": "client_credential",
-            "appid": appid,
-            "secret": secret,
-            "force_refresh": False,
-        },
-        timeout=20,
-    )
-    payload = response.json()
+    try:
+        response = requests.post(
+            STABLE_TOKEN_URL,
+            json={
+                "grant_type": "client_credential",
+                "appid": appid,
+                "secret": secret,
+                "force_refresh": False,
+            },
+            timeout=20,
+        )
+        payload = response.json()
+    except (requests.RequestException, ValueError) as error:
+        # Request exceptions may include the request URL or body. Do not log them.
+        raise RuntimeError(f"stable_token request failed: {type(error).__name__}") from None
     token = payload.get("access_token")
     if token:
         return token
     # Older accounts may not expose stable_token; fall back to the classic endpoint.
-    response = requests.get(
-        TOKEN_URL,
-        params={"grant_type": "client_credential", "appid": appid, "secret": secret},
-        timeout=20,
-    )
-    payload = response.json()
+    try:
+        response = requests.get(
+            TOKEN_URL,
+            params={"grant_type": "client_credential", "appid": appid, "secret": secret},
+            timeout=20,
+        )
+        payload = response.json()
+    except (requests.RequestException, ValueError) as error:
+        raise RuntimeError(f"token request failed: {type(error).__name__}") from None
     token = payload.get("access_token")
     if not token:
         errcode = payload.get("errcode")
-        errmsg = payload.get("errmsg")
-        raise RuntimeError(f"access_token unavailable: errcode={errcode} errmsg={errmsg}")
+        raise RuntimeError(f"access_token unavailable: errcode={errcode}")
     return token
 
 
@@ -154,8 +160,8 @@ def call_api(url: str, token: str, body: dict, attempts: int = ATTEMPTS) -> dict
             response = requests.post(url, params={"access_token": token}, json=body, timeout=60)
             return response.json()
         except (requests.RequestException, ValueError) as error:
-            last_error = error
-            log(f"attempt {attempt}/{attempts} failed: {type(error).__name__}: {error}")
+            last_error = type(error).__name__
+            log(f"{endpoint} attempt {attempt}/{attempts} failed: {last_error}")
             if attempt < attempts:
                 time.sleep(2 * attempt)
     raise RuntimeError(f"request to {endpoint} failed after {attempts} attempts: {last_error}")
@@ -173,7 +179,7 @@ def ensure_collection(env: str, collection: str, token: str) -> None:
         log(f"created collection {collection}")
         return
     # Already-present is fine; anything else stays visible in the workflow log.
-    log(f"collection create returned errcode={errcode} errmsg={payload.get('errmsg')}")
+    log(f"collection create returned errcode={errcode}")
 
 
 def feed_payload(document: dict) -> dict:
@@ -248,10 +254,9 @@ def push_documents(
             payload = call_api(DATABASE_UPDATE_URL, token, {"env": env, "query": query})
         if payload.get("errcode"):
             errcode = payload.get("errcode")
-            errmsg = payload.get("errmsg")
             raise RuntimeError(
                 f"CloudBase write failed for {collection}/{doc_id}: "
-                f"errcode={errcode} errmsg={errmsg}"
+                f"errcode={errcode}"
             )
         results.append(payload)
     return results
@@ -283,8 +288,7 @@ def push_feed(
         payload = call_api(DATABASE_UPDATE_URL, token, {"env": env, "query": query})
     if payload.get("errcode"):
         errcode = payload.get("errcode")
-        errmsg = payload.get("errmsg")
-        raise RuntimeError(f"CloudBase write failed: errcode={errcode} errmsg={errmsg}")
+        raise RuntimeError(f"CloudBase write failed: errcode={errcode}")
     return payload
 
 

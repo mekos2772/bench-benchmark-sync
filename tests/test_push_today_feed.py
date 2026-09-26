@@ -1,11 +1,14 @@
 import json
 
 import pytest
+import requests
 
 from scripts.push_today_feed import (
     build_set_query,
+    call_api,
     cloud_document,
     feed_payload,
+    fetch_access_token,
     is_missing_collection,
     load_feed,
     main,
@@ -129,3 +132,20 @@ def test_missing_credentials_fail_loudly(tmp_path, monkeypatch, capsys):
         monkeypatch.delenv(name, raising=False)
     assert main(["--feed", str(path)]) == 1
     assert "missing credentials" in capsys.readouterr().out
+
+
+def test_request_errors_do_not_expose_credentials(monkeypatch, capsys):
+    def fail(*args, **kwargs):
+        raise requests.RequestException("https://api.weixin.qq.com/?access_token=sensitive-token&secret=sensitive-secret")
+
+    monkeypatch.setattr("scripts.push_today_feed.requests.post", fail)
+    monkeypatch.setattr("scripts.push_today_feed.requests.get", fail)
+    with pytest.raises(RuntimeError) as error:
+        fetch_access_token("appid", "sensitive-secret")
+    assert "sensitive-secret" not in str(error.value)
+
+    with pytest.raises(RuntimeError) as error:
+        call_api("https://api.weixin.qq.com/tcb/databaseupdate", "sensitive-token", {}, attempts=1)
+    output = capsys.readouterr().out + str(error.value)
+    assert "sensitive-token" not in output
+    assert "sensitive-secret" not in output
