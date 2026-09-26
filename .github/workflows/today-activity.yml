@@ -14,6 +14,7 @@ concurrency:
 
 jobs:
   collect:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -23,6 +24,15 @@ jobs:
         with:
           python-version: "3.11"
       - run: python -m pip install -r requirements.txt
+      - name: Restore previous published feed and state
+        run: |
+          set -euo pipefail
+          if git ls-remote --exit-code --heads origin today-data >/dev/null; then
+            git fetch --depth=1 origin today-data
+            mkdir -p generated/static-events
+            git show FETCH_HEAD:generated/static-events/today-events.json > generated/static-events/today-events.json
+            git show FETCH_HEAD:generated/static-events/today-state.json > generated/static-events/today-state.json
+          fi
       - name: Collect and build Today feed
         env:
           WORKFLOW_RUN_ID: ${{ github.run_id }}
@@ -36,7 +46,7 @@ jobs:
             --main-commit "$MAIN_COMMIT"
       - name: Verify Today feed
         run: node scripts/verify_today_events.js generated/static-events/today-events.json generated/static-events/today-events.js
-      - name: Publish verified Today feed
+      - name: Publish verified Today feed to data branch
         env:
           WORKFLOW_RUN_ID: ${{ github.run_id }}
         run: |
@@ -49,7 +59,7 @@ jobs:
             exit 0
           fi
           git commit -m "Update Today activity feed (run ${WORKFLOW_RUN_ID})"
-          git push origin HEAD:${GITHUB_REF_NAME}
+          git push origin HEAD:refs/heads/today-data --force
       - name: Push Today feed to WeChat CloudBase
         env:
           WX_APPID: ${{ secrets.WX_APPID }}

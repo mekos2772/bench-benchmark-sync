@@ -19,6 +19,7 @@ concurrency:
 
 jobs:
   prepare:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     outputs:
       benchmarks: ${{ steps.matrix.outputs.benchmarks }}
@@ -63,7 +64,7 @@ jobs:
 
   export:
     needs: sync
-    if: ${{ !cancelled() && (inputs.benchmark == '' || inputs.benchmark == null) }}
+    if: ${{ github.ref == 'refs/heads/main' && !cancelled() && (inputs.benchmark == '' || inputs.benchmark == null) }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -118,7 +119,7 @@ jobs:
             24 \
             "${{ github.run_id }}" \
             "${{ github.sha }}"
-      - name: Publish verified static export to repository
+      - name: Publish verified static export to data branch
         env:
           WORKFLOW_RUN_ID: ${{ github.run_id }}
           MAIN_COMMIT: ${{ github.sha }}
@@ -135,7 +136,7 @@ jobs:
             exit 0
           fi
           git commit -m "Update static benchmark export (run ${WORKFLOW_RUN_ID}, commit ${MAIN_COMMIT})"
-          git push origin HEAD:${GITHUB_REF_NAME}
+          git push origin HEAD:refs/heads/benchmark-data --force
       - name: Push ranking bundle to WeChat CloudBase
         env:
           WX_APPID: ${{ secrets.WX_APPID }}
