@@ -25,6 +25,9 @@ jobs:
       benchmarks: ${{ steps.matrix.outputs.benchmarks }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -48,6 +51,9 @@ jobs:
         benchmark: ${{ fromJSON(needs.prepare.outputs.benchmarks) }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -67,9 +73,12 @@ jobs:
     if: ${{ github.ref == 'refs/heads/main' && !cancelled() && (inputs.benchmark == '' || inputs.benchmark == null) }}
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -119,6 +128,35 @@ jobs:
             24 \
             "${{ github.run_id }}" \
             "${{ github.sha }}"
+      - name: Upload static export
+        uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-sync-static-export-${{ github.run_id }}
+          path: static-export/
+          if-no-files-found: error
+
+  publish-data:
+    needs: export
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/download-artifact@v4
+        with:
+          name: benchmark-sync-static-export-${{ github.run_id }}
+          path: static-export
+      - name: Verify static export files
+        run: |
+          node scripts/verify_static_export.js \
+            static-export/livebench-ranking.json \
+            static-export/livebench-ranking.js \
+            24 \
+            "${{ github.run_id }}" \
+            "${{ github.sha }}"
       - name: Publish verified static export to data branch
         env:
           WORKFLOW_RUN_ID: ${{ github.run_id }}
@@ -137,6 +175,34 @@ jobs:
           fi
           git commit -m "Update static benchmark export (run ${WORKFLOW_RUN_ID}, commit ${MAIN_COMMIT})"
           git push origin HEAD:refs/heads/benchmark-data --force
+
+  publish-cloudbase:
+    needs: export
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: benchmark-sync-static-export-${{ github.run_id }}
+          path: static-export
+      - name: Verify static export files
+        run: |
+          node scripts/verify_static_export.js \
+            static-export/livebench-ranking.json \
+            static-export/livebench-ranking.js \
+            24 \
+            "${{ github.run_id }}" \
+            "${{ github.sha }}"
       - name: Push ranking bundle to WeChat CloudBase
         env:
           WX_APPID: ${{ secrets.WX_APPID }}
@@ -149,9 +215,3 @@ jobs:
             exit 0
           fi
           python scripts/push_today_feed.py --kind ranking --feed static-export/livebench-ranking.json
-      - name: Upload static export
-        uses: actions/upload-artifact@v4
-        with:
-          name: benchmark-sync-static-export-${{ github.run_id }}
-          path: static-export/
-          if-no-files-found: error
