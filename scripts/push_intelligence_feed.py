@@ -101,8 +101,10 @@ def read_recent_events(data_dir: Path, now: datetime, window_hours: int = 24) ->
             event_id = event.get("event_id") if isinstance(event, dict) else None
             if not isinstance(event_id, str) or not event_id or event_id not in indexed_ids:
                 raise ValueError(f"{path}:{line_number}: event_id missing from dedup index")
-            if not all(isinstance(event.get(key), str) and event[key] for key in ("event_type", "title", "summary", "canonical_url")):
+            if not all(isinstance(event.get(key), str) and event[key] for key in ("event_type", "title", "summary")):
                 raise ValueError(f"{path}:{line_number}: required intelligence fields missing")
+            if event.get("canonical_url") is not None and not isinstance(event["canonical_url"], str):
+                raise ValueError(f"{path}:{line_number}: canonical_url must be a string when present")
             if not isinstance(event.get("sources"), list) or not isinstance(event.get("evidence"), list):
                 raise ValueError(f"{path}:{line_number}: sources and evidence must be arrays")
             collected = parse_datetime(event.get("collected_at"), "collected_at")
