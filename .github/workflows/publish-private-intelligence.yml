@@ -1,0 +1,48 @@
+name: Publish private intelligence to CloudBase
+
+on:
+  schedule:
+    # 12:00 Asia/Shanghai, after the private 11:00 collection.
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish-private-intelligence
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch private intelligence JSONL
+        env:
+          TODAY_PRIVATE_DEPLOY_KEY: ${{ secrets.TODAY_PRIVATE_DEPLOY_KEY }}
+        run: |
+          set -euo pipefail
+          test -n "$TODAY_PRIVATE_DEPLOY_KEY" || { echo 'Missing TODAY_PRIVATE_DEPLOY_KEY'; exit 1; }
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$TODAY_PRIVATE_DEPLOY_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          trap 'rm -f ~/.ssh/id_ed25519' EXIT
+          curl --fail --silent --show-error https://api.github.com/meta \
+            | python -c 'import json,sys; print("\n".join("github.com " + key for key in json.load(sys.stdin)["ssh_keys"] if key.startswith("ssh-ed25519 ")))' \
+            > ~/.ssh/known_hosts
+          test -s ~/.ssh/known_hosts
+          git clone --depth=1 git@github.com:mekos2772/ai-ranking-miniprogram.git /tmp/ai-ranking-miniprogram
+          echo "INTELLIGENCE_SOURCE_SHA=$(git -C /tmp/ai-ranking-miniprogram rev-parse HEAD)" >> "$GITHUB_ENV"
+      - name: Validate and write private intelligence
+        env:
+          WX_APPID: ${{ secrets.WX_APPID }}
+          WX_APP_SECRET: ${{ secrets.WX_APP_SECRET }}
+          WX_CLOUD_ENV: ${{ secrets.WX_CLOUD_ENV }}
+        run: python scripts/push_intelligence_feed.py --data-dir /tmp/ai-ranking-miniprogram/data/intelligence
