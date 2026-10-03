@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-09-26T14:19:45Z",
-  "windowStart": "2026-09-25T14:19:45Z",
+  "generatedAt": "2026-10-03T18:20:43Z",
+  "windowStart": "2026-10-02T18:20:43Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -10,33 +10,28 @@
     "benchmark"
   ],
   "models": {
-    "hf:internlm/Intern-Decision-4B": {
-      "canonicalId": "hf:internlm/Intern-Decision-4B",
-      "provider": "InternLM",
-      "modelId": "internlm/Intern-Decision-4B",
-      "displayName": "Intern-Decision-4B",
+    "benchmark:NVIDIA Nemotron 3 Nano 4B": {
+      "canonicalId": "benchmark:NVIDIA Nemotron 3 Nano 4B",
+      "provider": null,
+      "modelId": "NVIDIA Nemotron 3 Nano 4B",
+      "displayName": "NVIDIA Nemotron 3 Nano 4B",
       "version": null,
       "aliases": [],
-      "releaseDate": "2026-09-26T05:36:37Z",
-      "status": "available",
+      "releaseDate": null,
+      "status": "unknown",
       "deprecationDate": null,
-      "releaseType": "open_weights_release",
-      "access": "open_weights",
+      "releaseType": null,
+      "access": "unknown",
       "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
+        "input": [],
+        "output": []
       },
       "capabilities": [],
-      "parameterCount": 4539265536,
-      "license": "apache-2.0",
+      "parameterCount": null,
+      "license": null,
       "technicalReportUrl": null,
-      "description": "Demo | Model Weights | GitHub *Intern-Decision-4B** is a multimodal structured decision model fine-tuned from It accepts a shared state, a schema of named questions, and optional images, and returns an answer distribution for every question in one model forward pass.",
-      "contextWindow": 262144,
+      "description": null,
+      "contextWindow": null,
       "maxInputTokens": null,
       "maxOutputTokens": null,
       "pricing": {
@@ -45,171 +40,87 @@
         "outputPerMillionTokens": null,
         "cachedInputPerMillionTokens": null
       },
-      "availability": [
-        "Hugging Face"
-      ],
-      "officialUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
+      "availability": [],
+      "officialUrl": null,
       "documentationUrl": null,
-      "modelCardUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-      "hubRepo": "internlm/Intern-Decision-4B",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "InternLM",
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis Artificial Analysis Openness Index official Data API",
       "evidence": [
         {
           "field": "canonicalId",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "provider",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T05:45:24Z",
+          "contentHash": "380b778c9fa14c09f13a9887176addfcc995251c9a3f2771d517fb3e99076c18",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T05:45:24Z",
+          "contentHash": "380b778c9fa14c09f13a9887176addfcc995251c9a3f2771d517fb3e99076c18",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseDate",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T05:45:24Z",
+          "contentHash": "380b778c9fa14c09f13a9887176addfcc995251c9a3f2771d517fb3e99076c18",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "status",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseType",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T05:45:24Z",
+          "contentHash": "380b778c9fa14c09f13a9887176addfcc995251c9a3f2771d517fb3e99076c18",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "access",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "parameterCount",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "license",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "description",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "contextWindow",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "officialUrl",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modelCardUrl",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "hubRepo",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T05:45:24Z",
+          "contentHash": "380b778c9fa14c09f13a9887176addfcc995251c9a3f2771d517fb3e99076c18",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T05:45:24Z",
+          "contentHash": "380b778c9fa14c09f13a9887176addfcc995251c9a3f2771d517fb3e99076c18",
+          "sourceType": "official_benchmark"
         },
         {
-          "field": "availability",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modalities",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-openness-index",
+          "observedAt": "2026-10-03T05:45:24Z",
+          "contentHash": "380b778c9fa14c09f13a9887176addfcc995251c9a3f2771d517fb3e99076c18",
+          "sourceType": "official_benchmark"
         }
       ]
     },
-    "hf:internlm/Intern-Decision-2B": {
-      "canonicalId": "hf:internlm/Intern-Decision-2B",
-      "provider": "InternLM",
-      "modelId": "internlm/Intern-Decision-2B",
-      "displayName": "Intern-Decision-2B",
+    "benchmark:Step 5 Preview": {
+      "canonicalId": "benchmark:Step 5 Preview",
+      "provider": null,
+      "modelId": "Step 5 Preview",
+      "displayName": "Step 5 Preview",
       "version": null,
       "aliases": [],
-      "releaseDate": "2026-09-26T05:36:19Z",
-      "status": "available",
+      "releaseDate": null,
+      "status": "unknown",
       "deprecationDate": null,
-      "releaseType": "open_weights_release",
-      "access": "open_weights",
+      "releaseType": null,
+      "access": "unknown",
       "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
+        "input": [],
+        "output": []
       },
       "capabilities": [],
-      "parameterCount": 2213241664,
-      "license": "apache-2.0",
+      "parameterCount": null,
+      "license": null,
       "technicalReportUrl": null,
-      "description": "Demo | Model Weights | GitHub *Intern-Decision-2B** is a multimodal structured decision model fine-tuned from It accepts a shared state, a schema of named questions, and optional images, and returns an answer distribution for every question in one model forward pass.",
-      "contextWindow": 262144,
+      "description": null,
+      "contextWindow": null,
       "maxInputTokens": null,
       "maxOutputTokens": null,
       "pricing": {
@@ -218,171 +129,87 @@
         "outputPerMillionTokens": null,
         "cachedInputPerMillionTokens": null
       },
-      "availability": [
-        "Hugging Face"
-      ],
-      "officialUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
+      "availability": [],
+      "officialUrl": null,
       "documentationUrl": null,
-      "modelCardUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-      "hubRepo": "internlm/Intern-Decision-2B",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "InternLM",
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
       "evidence": [
         {
           "field": "canonicalId",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "provider",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T00:44:07Z",
+          "contentHash": "28c1bf8c336a5d904f8c4a403e417aee7adbec2d68aee13a567159674996e2d8",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T00:44:07Z",
+          "contentHash": "28c1bf8c336a5d904f8c4a403e417aee7adbec2d68aee13a567159674996e2d8",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseDate",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T00:44:07Z",
+          "contentHash": "28c1bf8c336a5d904f8c4a403e417aee7adbec2d68aee13a567159674996e2d8",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "status",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseType",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T00:44:07Z",
+          "contentHash": "28c1bf8c336a5d904f8c4a403e417aee7adbec2d68aee13a567159674996e2d8",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "access",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "parameterCount",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "license",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "description",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "contextWindow",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "officialUrl",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modelCardUrl",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "hubRepo",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T00:44:07Z",
+          "contentHash": "28c1bf8c336a5d904f8c4a403e417aee7adbec2d68aee13a567159674996e2d8",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T00:44:07Z",
+          "contentHash": "28c1bf8c336a5d904f8c4a403e417aee7adbec2d68aee13a567159674996e2d8",
+          "sourceType": "official_benchmark"
         },
         {
-          "field": "availability",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modalities",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+          "observedAt": "2026-10-03T00:44:07Z",
+          "contentHash": "28c1bf8c336a5d904f8c4a403e417aee7adbec2d68aee13a567159674996e2d8",
+          "sourceType": "official_benchmark"
         }
       ]
     },
-    "hf:internlm/Intern-Decision-0.8B": {
-      "canonicalId": "hf:internlm/Intern-Decision-0.8B",
-      "provider": "InternLM",
-      "modelId": "internlm/Intern-Decision-0.8B",
-      "displayName": "Intern-Decision-0.8B",
+    "benchmark:Claude Sonnet 5.5 (Xhigh, Default Fallback)": {
+      "canonicalId": "benchmark:Claude Sonnet 5.5 (Xhigh, Default Fallback)",
+      "provider": null,
+      "modelId": "Claude Sonnet 5.5 (Xhigh, Default Fallback)",
+      "displayName": "Claude Sonnet 5.5 (Xhigh, Default Fallback)",
       "version": null,
       "aliases": [],
-      "releaseDate": "2026-09-26T05:35:57Z",
-      "status": "available",
+      "releaseDate": null,
+      "status": "unknown",
       "deprecationDate": null,
-      "releaseType": "open_weights_release",
-      "access": "open_weights",
+      "releaseType": null,
+      "access": "unknown",
       "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
+        "input": [],
+        "output": []
       },
       "capabilities": [],
-      "parameterCount": 852985920,
-      "license": "apache-2.0",
+      "parameterCount": null,
+      "license": null,
       "technicalReportUrl": null,
-      "description": "Demo | Model Weights | GitHub *Intern-Decision-0.8B** is a multimodal structured decision model fine-tuned from It accepts a shared state, a schema of named questions, and optional images, and returns an answer distribution for every question in one model forward pass.",
-      "contextWindow": 262144,
+      "description": null,
+      "contextWindow": null,
       "maxInputTokens": null,
       "maxOutputTokens": null,
       "pricing": {
@@ -391,267 +218,2681 @@
         "outputPerMillionTokens": null,
         "cachedInputPerMillionTokens": null
       },
-      "availability": [
-        "Hugging Face"
-      ],
-      "officialUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
+      "availability": [],
+      "officialUrl": null,
       "documentationUrl": null,
-      "modelCardUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-      "hubRepo": "internlm/Intern-Decision-0.8B",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "InternLM",
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis Intelligence Index official public Dataset page",
       "evidence": [
         {
           "field": "canonicalId",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "provider",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "f516b915c26d425e44fd29e63dac130e29319d02ac6dd4ce6f22f103768dd09f",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "f516b915c26d425e44fd29e63dac130e29319d02ac6dd4ce6f22f103768dd09f",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseDate",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "f516b915c26d425e44fd29e63dac130e29319d02ac6dd4ce6f22f103768dd09f",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "status",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseType",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "f516b915c26d425e44fd29e63dac130e29319d02ac6dd4ce6f22f103768dd09f",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "access",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "parameterCount",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "license",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "description",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "contextWindow",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "officialUrl",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modelCardUrl",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "hubRepo",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "f516b915c26d425e44fd29e63dac130e29319d02ac6dd4ce6f22f103768dd09f",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "f516b915c26d425e44fd29e63dac130e29319d02ac6dd4ce6f22f103768dd09f",
+          "sourceType": "official_benchmark"
         },
         {
-          "field": "availability",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "f516b915c26d425e44fd29e63dac130e29319d02ac6dd4ce6f22f103768dd09f",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)": {
+      "canonicalId": "benchmark:Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "provider": null,
+      "modelId": "Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "displayName": "Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis Intelligence Index official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "060a54e9ea8e4aba72f1676c31fcb5abae8caf2b38c65a3cd72b42838ad80f31",
+          "sourceType": "official_benchmark"
         },
         {
-          "field": "modalities",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "060a54e9ea8e4aba72f1676c31fcb5abae8caf2b38c65a3cd72b42838ad80f31",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "060a54e9ea8e4aba72f1676c31fcb5abae8caf2b38c65a3cd72b42838ad80f31",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "060a54e9ea8e4aba72f1676c31fcb5abae8caf2b38c65a3cd72b42838ad80f31",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "060a54e9ea8e4aba72f1676c31fcb5abae8caf2b38c65a3cd72b42838ad80f31",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "060a54e9ea8e4aba72f1676c31fcb5abae8caf2b38c65a3cd72b42838ad80f31",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "060a54e9ea8e4aba72f1676c31fcb5abae8caf2b38c65a3cd72b42838ad80f31",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Claude Fable 5.1 (Max, Default Fallback)": {
+      "canonicalId": "benchmark:Claude Fable 5.1 (Max, Default Fallback)",
+      "provider": null,
+      "modelId": "Claude Fable 5.1 (Max, Default Fallback)",
+      "displayName": "Claude Fable 5.1 (Max, Default Fallback)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis GPQA Diamond official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "f7db7a247f41e91fcd46b7d882c31ceb6336cb76041833379c86cf03b09b4363",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "f7db7a247f41e91fcd46b7d882c31ceb6336cb76041833379c86cf03b09b4363",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "f7db7a247f41e91fcd46b7d882c31ceb6336cb76041833379c86cf03b09b4363",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "f7db7a247f41e91fcd46b7d882c31ceb6336cb76041833379c86cf03b09b4363",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "f7db7a247f41e91fcd46b7d882c31ceb6336cb76041833379c86cf03b09b4363",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "f7db7a247f41e91fcd46b7d882c31ceb6336cb76041833379c86cf03b09b4363",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "f7db7a247f41e91fcd46b7d882c31ceb6336cb76041833379c86cf03b09b4363",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)": {
+      "canonicalId": "benchmark:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "provider": null,
+      "modelId": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "displayName": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis GPQA Diamond official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "5e965630b8f96dff5ee9f7ab58e11b83fb888dcf0e01fb281e3b1a449d5df217",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "5e965630b8f96dff5ee9f7ab58e11b83fb888dcf0e01fb281e3b1a449d5df217",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "5e965630b8f96dff5ee9f7ab58e11b83fb888dcf0e01fb281e3b1a449d5df217",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "5e965630b8f96dff5ee9f7ab58e11b83fb888dcf0e01fb281e3b1a449d5df217",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "5e965630b8f96dff5ee9f7ab58e11b83fb888dcf0e01fb281e3b1a449d5df217",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "5e965630b8f96dff5ee9f7ab58e11b83fb888dcf0e01fb281e3b1a449d5df217",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "5e965630b8f96dff5ee9f7ab58e11b83fb888dcf0e01fb281e3b1a449d5df217",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Claude Sonnet 5.5 (Max, Default Fallback)": {
+      "canonicalId": "benchmark:Claude Sonnet 5.5 (Max, Default Fallback)",
+      "provider": null,
+      "modelId": "Claude Sonnet 5.5 (Max, Default Fallback)",
+      "displayName": "Claude Sonnet 5.5 (Max, Default Fallback)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis Humanity's Last Exam official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "e5ad51cf817e837897dc110d5b3d54d8dbc6ff52f9a45ebc3be443174793b1e4",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "e5ad51cf817e837897dc110d5b3d54d8dbc6ff52f9a45ebc3be443174793b1e4",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "e5ad51cf817e837897dc110d5b3d54d8dbc6ff52f9a45ebc3be443174793b1e4",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "e5ad51cf817e837897dc110d5b3d54d8dbc6ff52f9a45ebc3be443174793b1e4",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "e5ad51cf817e837897dc110d5b3d54d8dbc6ff52f9a45ebc3be443174793b1e4",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "e5ad51cf817e837897dc110d5b3d54d8dbc6ff52f9a45ebc3be443174793b1e4",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "e5ad51cf817e837897dc110d5b3d54d8dbc6ff52f9a45ebc3be443174793b1e4",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)": {
+      "canonicalId": "benchmark:Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "provider": null,
+      "modelId": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "displayName": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis Humanity's Last Exam official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "8651959f97229ba7d22e3cd849b24f8e6aac5f19d5ba0c8ed4a655e9c03e159b",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "8651959f97229ba7d22e3cd849b24f8e6aac5f19d5ba0c8ed4a655e9c03e159b",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "8651959f97229ba7d22e3cd849b24f8e6aac5f19d5ba0c8ed4a655e9c03e159b",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "8651959f97229ba7d22e3cd849b24f8e6aac5f19d5ba0c8ed4a655e9c03e159b",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "8651959f97229ba7d22e3cd849b24f8e6aac5f19d5ba0c8ed4a655e9c03e159b",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "8651959f97229ba7d22e3cd849b24f8e6aac5f19d5ba0c8ed4a655e9c03e159b",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "8651959f97229ba7d22e3cd849b24f8e6aac5f19d5ba0c8ed4a655e9c03e159b",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Claude Fable 5 (Max, Opus 4.8 Fallback)": {
+      "canonicalId": "benchmark:Claude Fable 5 (Max, Opus 4.8 Fallback)",
+      "provider": null,
+      "modelId": "Claude Fable 5 (Max, Opus 4.8 Fallback)",
+      "displayName": "Claude Fable 5 (Max, Opus 4.8 Fallback)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "24d3de3c4c55dd7650643d3c01b4bf946bbcd37087f4344e121610bb1b9c2b66",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "24d3de3c4c55dd7650643d3c01b4bf946bbcd37087f4344e121610bb1b9c2b66",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "24d3de3c4c55dd7650643d3c01b4bf946bbcd37087f4344e121610bb1b9c2b66",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "24d3de3c4c55dd7650643d3c01b4bf946bbcd37087f4344e121610bb1b9c2b66",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "24d3de3c4c55dd7650643d3c01b4bf946bbcd37087f4344e121610bb1b9c2b66",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "24d3de3c4c55dd7650643d3c01b4bf946bbcd37087f4344e121610bb1b9c2b66",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "24d3de3c4c55dd7650643d3c01b4bf946bbcd37087f4344e121610bb1b9c2b66",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)": {
+      "canonicalId": "benchmark:Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+      "provider": null,
+      "modelId": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+      "displayName": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "aefee503ab443e49741fcb623f5417d6a9d82038ca99775cb3222ba6955896ab",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "aefee503ab443e49741fcb623f5417d6a9d82038ca99775cb3222ba6955896ab",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "aefee503ab443e49741fcb623f5417d6a9d82038ca99775cb3222ba6955896ab",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "aefee503ab443e49741fcb623f5417d6a9d82038ca99775cb3222ba6955896ab",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "aefee503ab443e49741fcb623f5417d6a9d82038ca99775cb3222ba6955896ab",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "aefee503ab443e49741fcb623f5417d6a9d82038ca99775cb3222ba6955896ab",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "aefee503ab443e49741fcb623f5417d6a9d82038ca99775cb3222ba6955896ab",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Claude Fable 5.1 (Xhigh, Default Fallback)": {
+      "canonicalId": "benchmark:Claude Fable 5.1 (Xhigh, Default Fallback)",
+      "provider": null,
+      "modelId": "Claude Fable 5.1 (Xhigh, Default Fallback)",
+      "displayName": "Claude Fable 5.1 (Xhigh, Default Fallback)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "5e74385d7c98795ad40fabdc3bb8dea76534a3473fdbee3e51508efb4c693104",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "5e74385d7c98795ad40fabdc3bb8dea76534a3473fdbee3e51508efb4c693104",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "5e74385d7c98795ad40fabdc3bb8dea76534a3473fdbee3e51508efb4c693104",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "5e74385d7c98795ad40fabdc3bb8dea76534a3473fdbee3e51508efb4c693104",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "5e74385d7c98795ad40fabdc3bb8dea76534a3473fdbee3e51508efb4c693104",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "5e74385d7c98795ad40fabdc3bb8dea76534a3473fdbee3e51508efb4c693104",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "5e74385d7c98795ad40fabdc3bb8dea76534a3473fdbee3e51508efb4c693104",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)": {
+      "canonicalId": "benchmark:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "provider": null,
+      "modelId": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "displayName": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "dbd61a092ea9c0ba8479ef9569862ead99db23d39947a1f2f1ff37bdc530395d",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "dbd61a092ea9c0ba8479ef9569862ead99db23d39947a1f2f1ff37bdc530395d",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "dbd61a092ea9c0ba8479ef9569862ead99db23d39947a1f2f1ff37bdc530395d",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "dbd61a092ea9c0ba8479ef9569862ead99db23d39947a1f2f1ff37bdc530395d",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "dbd61a092ea9c0ba8479ef9569862ead99db23d39947a1f2f1ff37bdc530395d",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "dbd61a092ea9c0ba8479ef9569862ead99db23d39947a1f2f1ff37bdc530395d",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "dbd61a092ea9c0ba8479ef9569862ead99db23d39947a1f2f1ff37bdc530395d",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Claude Opus 5.5 (Xhigh, Default Fallback)": {
+      "canonicalId": "benchmark:Claude Opus 5.5 (Xhigh, Default Fallback)",
+      "provider": null,
+      "modelId": "Claude Opus 5.5 (Xhigh, Default Fallback)",
+      "displayName": "Claude Opus 5.5 (Xhigh, Default Fallback)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis MMMU-Pro official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "942742757a0893f4509e75876f024dca67e36704c1e3c1188cca23f259ad0f32",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "942742757a0893f4509e75876f024dca67e36704c1e3c1188cca23f259ad0f32",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "942742757a0893f4509e75876f024dca67e36704c1e3c1188cca23f259ad0f32",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "942742757a0893f4509e75876f024dca67e36704c1e3c1188cca23f259ad0f32",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "942742757a0893f4509e75876f024dca67e36704c1e3c1188cca23f259ad0f32",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "942742757a0893f4509e75876f024dca67e36704c1e3c1188cca23f259ad0f32",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "942742757a0893f4509e75876f024dca67e36704c1e3c1188cca23f259ad0f32",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)": {
+      "canonicalId": "benchmark:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "provider": null,
+      "modelId": "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "displayName": "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis MMMU-Pro official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "99cf6d035c706d662ecc9a75a14181404ad216c89ca826ec4d330ab992d3b482",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "99cf6d035c706d662ecc9a75a14181404ad216c89ca826ec4d330ab992d3b482",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "99cf6d035c706d662ecc9a75a14181404ad216c89ca826ec4d330ab992d3b482",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "99cf6d035c706d662ecc9a75a14181404ad216c89ca826ec4d330ab992d3b482",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "99cf6d035c706d662ecc9a75a14181404ad216c89ca826ec4d330ab992d3b482",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "99cf6d035c706d662ecc9a75a14181404ad216c89ca826ec4d330ab992d3b482",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+          "observedAt": "2026-10-02T21:42:46Z",
+          "contentHash": "99cf6d035c706d662ecc9a75a14181404ad216c89ca826ec4d330ab992d3b482",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:GLM-5.3 (Max)": {
+      "canonicalId": "benchmark:GLM-5.3 (Max)",
+      "provider": null,
+      "modelId": "GLM-5.3 (Max)",
+      "displayName": "GLM-5.3 (Max)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "700ce365b3f43e3efe528df9539a005797ee9782e2f82f65b865ecffa16d19e4",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "700ce365b3f43e3efe528df9539a005797ee9782e2f82f65b865ecffa16d19e4",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "700ce365b3f43e3efe528df9539a005797ee9782e2f82f65b865ecffa16d19e4",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "700ce365b3f43e3efe528df9539a005797ee9782e2f82f65b865ecffa16d19e4",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "700ce365b3f43e3efe528df9539a005797ee9782e2f82f65b865ecffa16d19e4",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "700ce365b3f43e3efe528df9539a005797ee9782e2f82f65b865ecffa16d19e4",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "700ce365b3f43e3efe528df9539a005797ee9782e2f82f65b865ecffa16d19e4",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Inkling (Xhigh)": {
+      "canonicalId": "benchmark:Inkling (Xhigh)",
+      "provider": null,
+      "modelId": "Inkling (Xhigh)",
+      "displayName": "Inkling (Xhigh)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "dc36a1dcdc2efe5fc9fcc44e5da1ba81d53d61a944c2122fc51d2cad4527a276",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "dc36a1dcdc2efe5fc9fcc44e5da1ba81d53d61a944c2122fc51d2cad4527a276",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "dc36a1dcdc2efe5fc9fcc44e5da1ba81d53d61a944c2122fc51d2cad4527a276",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "dc36a1dcdc2efe5fc9fcc44e5da1ba81d53d61a944c2122fc51d2cad4527a276",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "dc36a1dcdc2efe5fc9fcc44e5da1ba81d53d61a944c2122fc51d2cad4527a276",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "dc36a1dcdc2efe5fc9fcc44e5da1ba81d53d61a944c2122fc51d2cad4527a276",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "dc36a1dcdc2efe5fc9fcc44e5da1ba81d53d61a944c2122fc51d2cad4527a276",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Mistral Medium 3.5": {
+      "canonicalId": "benchmark:Mistral Medium 3.5",
+      "provider": null,
+      "modelId": "Mistral Medium 3.5",
+      "displayName": "Mistral Medium 3.5",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "f0620130906083d478acdb2ea36bb12cc3c7eb09ce4c65770a7337b5c13f51f6",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "f0620130906083d478acdb2ea36bb12cc3c7eb09ce4c65770a7337b5c13f51f6",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "f0620130906083d478acdb2ea36bb12cc3c7eb09ce4c65770a7337b5c13f51f6",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "f0620130906083d478acdb2ea36bb12cc3c7eb09ce4c65770a7337b5c13f51f6",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "f0620130906083d478acdb2ea36bb12cc3c7eb09ce4c65770a7337b5c13f51f6",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "f0620130906083d478acdb2ea36bb12cc3c7eb09ce4c65770a7337b5c13f51f6",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "f0620130906083d478acdb2ea36bb12cc3c7eb09ce4c65770a7337b5c13f51f6",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Muse Spark 1.3 (Max)": {
+      "canonicalId": "benchmark:Muse Spark 1.3 (Max)",
+      "provider": null,
+      "modelId": "Muse Spark 1.3 (Max)",
+      "displayName": "Muse Spark 1.3 (Max)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "67177a355484effc2d3a56bbe5e4b356f7bd066beae20280c9965aeed75576af",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "67177a355484effc2d3a56bbe5e4b356f7bd066beae20280c9965aeed75576af",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "67177a355484effc2d3a56bbe5e4b356f7bd066beae20280c9965aeed75576af",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "67177a355484effc2d3a56bbe5e4b356f7bd066beae20280c9965aeed75576af",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "67177a355484effc2d3a56bbe5e4b356f7bd066beae20280c9965aeed75576af",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "67177a355484effc2d3a56bbe5e4b356f7bd066beae20280c9965aeed75576af",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+          "observedAt": "2026-10-03T18:20:43Z",
+          "contentHash": "67177a355484effc2d3a56bbe5e4b356f7bd066beae20280c9965aeed75576af",
+          "sourceType": "official_benchmark"
         }
       ]
     }
   },
-  "modelCount": 3,
+  "modelCount": 18,
   "sourceSummary": {
-    "official": 3,
+    "official": 0,
     "catalog": 0,
-    "benchmark": 0
+    "benchmark": 35
   },
   "events": [
     {
-      "eventId": "53988aa400d6340cd071d338fed502bc",
-      "family": "model",
-      "eventType": "official_model_release",
-      "eventClass": "model_release",
+      "eventId": "a69764de374688f9007ef89f474aa7f7",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
       "trustTier": "official",
-      "priority": "P0",
+      "priority": "P1",
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "Intern-Decision-4B 开放权重发布",
-      "summary": "InternLM 在官方组织发布新模型：参数量 4.5B，上下文 262,144 tokens，许可 apache-2.0。",
-      "repoId": "internlm/Intern-Decision-4B",
-      "repo": "internlm/Intern-Decision-4B",
-      "modelId": "internlm/Intern-Decision-4B",
-      "modelRef": "hf:internlm/Intern-Decision-4B",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "InternLM",
-      "evidence": [
-        {
-          "field": "modelRepository",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        }
+      "title": "GDPval-AA Elo 官方数据更新",
+      "summary": "GDPval-AA Elo 官方数据发生变化；共 30 个模型 · 当前前列：Claude Opus 5.5 (Max, Default Fallback)（1867.05）、Claude Sonnet 5.5 (Max, Default Fallback)（1840.08）、Claude Opus 5.5 (Xhigh, Default Fallback)（1836.81）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "observedAt": "2026-10-03T00:44:07Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "benchmarkId": "aa_gdpval_elo",
+      "benchmarkTitle": "GDPval-AA Elo",
+      "release": "page_jsonld",
+      "contentHash": "3600d6d812fd0d263f26216a9ba23535dd5ec1111434146e8c08ed6dcd295963",
+      "unit": "raw",
+      "modelCount": 30,
+      "topModels": [
+        "Claude Opus 5.5 (Max, Default Fallback)（1867.05）",
+        "Claude Sonnet 5.5 (Max, Default Fallback)（1840.08）",
+        "Claude Opus 5.5 (Xhigh, Default Fallback)（1836.81）"
       ],
-      "url": "https://huggingface.co/internlm/Intern-Decision-4B",
-      "observedAt": "2026-09-26T05:36:37Z",
-      "publishedAt": "2026-09-26T05:36:37Z",
-      "source": "Hugging Face · InternLM",
-      "eventIdentity": "open-release:internlm/Intern-Decision-4B",
       "provenance": {
-        "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-        "contentHash": "2e1a3f5c2c60ea42fc42099a3f42af2652cbaec53ec188131cce424946955343"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
       }
     },
     {
-      "eventId": "482daa410ee78cd6abb0851fed5f5c38",
-      "family": "model",
-      "eventType": "official_model_release",
-      "eventClass": "model_release",
+      "eventId": "20c162e15b9cf5acc331493fbc28ae60",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
       "trustTier": "official",
-      "priority": "P0",
+      "priority": "P1",
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "Intern-Decision-2B 开放权重发布",
-      "summary": "InternLM 在官方组织发布新模型：参数量 2.2B，上下文 262,144 tokens，许可 apache-2.0。",
-      "repoId": "internlm/Intern-Decision-2B",
-      "repo": "internlm/Intern-Decision-2B",
-      "modelId": "internlm/Intern-Decision-2B",
-      "modelRef": "hf:internlm/Intern-Decision-2B",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "InternLM",
-      "evidence": [
-        {
-          "field": "modelRepository",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        }
+      "title": "Artificial Analysis Openness Index 官方数据更新",
+      "summary": "Artificial Analysis Openness Index 官方数据发生变化；共 25 个模型 · 当前前列：K2 Think V2（88.89）、K2-V2 (High)（88.89）、K2-V2 (Medium)（88.89）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-openness-index",
+      "observedAt": "2026-10-03T05:45:24Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Artificial Analysis Openness Index official Data API",
+      "benchmarkId": "aa_openness_index",
+      "benchmarkTitle": "Artificial Analysis Openness Index",
+      "release": "page_jsonld",
+      "contentHash": "8b661ffd182f3783423c928c86d6afb04960277cdf212f1317df0844132424f0",
+      "unit": "score",
+      "modelCount": 25,
+      "topModels": [
+        "K2 Think V2（88.89）",
+        "K2-V2 (High)（88.89）",
+        "K2-V2 (Medium)（88.89）"
       ],
-      "url": "https://huggingface.co/internlm/Intern-Decision-2B",
-      "observedAt": "2026-09-26T05:36:19Z",
-      "publishedAt": "2026-09-26T05:36:19Z",
-      "source": "Hugging Face · InternLM",
-      "eventIdentity": "open-release:internlm/Intern-Decision-2B",
       "provenance": {
-        "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-        "contentHash": "2e1a3f5c2c60ea42fc42099a3f42af2652cbaec53ec188131cce424946955343"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-openness-index",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
       }
     },
     {
-      "eventId": "0441e061660b5ef1b31d83a07fdbdb66",
-      "family": "model",
-      "eventType": "official_model_release",
-      "eventClass": "model_release",
+      "eventId": "66b8d0eef118e7884c894362de96dd3b",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
       "trustTier": "official",
-      "priority": "P0",
+      "priority": "P1",
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "Intern-Decision-0.8B 开放权重发布",
-      "summary": "InternLM 在官方组织发布新模型：参数量 853.0M，上下文 262,144 tokens，许可 apache-2.0。",
-      "repoId": "internlm/Intern-Decision-0.8B",
-      "repo": "internlm/Intern-Decision-0.8B",
-      "modelId": "internlm/Intern-Decision-0.8B",
-      "modelRef": "hf:internlm/Intern-Decision-0.8B",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "InternLM",
-      "evidence": [
-        {
-          "field": "modelRepository",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        }
+      "title": "GPQA Diamond 官方数据更新",
+      "summary": "GPQA Diamond 官方数据发生变化；共 20 个模型 · 当前前列：GPT-6 Astra (Xhigh)（96.3%）、GPT-6 Astra (Max)（96.1%）、Gemini 3.8 Flash (High)（95.3%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GPQA Diamond official public Dataset page",
+      "benchmarkId": "aa_gpqa_diamond",
+      "benchmarkTitle": "GPQA Diamond",
+      "release": "page_jsonld",
+      "contentHash": "5659408ee5056525aa1d78cb3b6a954508c67f9ab790e3223be94e5fd1b13e18",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "GPT-6 Astra (Xhigh)（96.3%）",
+        "GPT-6 Astra (Max)（96.1%）",
+        "Gemini 3.8 Flash (High)（95.3%）"
       ],
-      "url": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-      "observedAt": "2026-09-26T05:35:57Z",
-      "publishedAt": "2026-09-26T05:35:57Z",
-      "source": "Hugging Face · InternLM",
-      "eventIdentity": "open-release:internlm/Intern-Decision-0.8B",
       "provenance": {
-        "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-        "contentHash": "2e1a3f5c2c60ea42fc42099a3f42af2652cbaec53ec188131cce424946955343"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "a10609cf4ff080ee436fef8268386eab",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Terminal-Bench Hard 官方数据更新",
+      "summary": "Terminal-Bench Hard 官方数据发生变化；共 8 个模型 · 当前前列：GPT-5.6 Sol (Max)（65.9%）、Claude Fable 5 (Max, Opus 4.8 Fallback)（62.9%）、GPT-5.6 Sol (Medium)（62.9%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
+      "benchmarkId": "aa_terminalbench_hard",
+      "benchmarkTitle": "Terminal-Bench Hard",
+      "release": "page_jsonld",
+      "contentHash": "8fc1f502a1dcc569949c13ede76325f063c95734f4aec055301dae42b774c1f6",
+      "unit": "ratio",
+      "modelCount": 8,
+      "topModels": [
+        "GPT-5.6 Sol (Max)（65.9%）",
+        "Claude Fable 5 (Max, Opus 4.8 Fallback)（62.9%）",
+        "GPT-5.6 Sol (Medium)（62.9%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "e8e2f9a048244c2ae3e25b71813117b1",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Terminal-Bench v2.1 官方数据更新",
+      "summary": "Terminal-Bench v2.1 官方数据发生变化；共 20 个模型 · 当前前列：Claude Fable 5.1 (Max, Default Fallback)（91.4%）、Claude Fable 5.1 (Xhigh, Default Fallback)（91.0%）、Claude Fable 5.1 (High, Default Fallback)（89.9%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
+      "benchmarkId": "aa_terminalbench_v2_1",
+      "benchmarkTitle": "Terminal-Bench v2.1",
+      "release": "page_jsonld",
+      "contentHash": "4ca39fcd000ff7894f9e3c7d4200736e16bd8321341cf997f62024ecb744f961",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "Claude Fable 5.1 (Max, Default Fallback)（91.4%）",
+        "Claude Fable 5.1 (Xhigh, Default Fallback)（91.0%）",
+        "Claude Fable 5.1 (High, Default Fallback)（89.9%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "67c2e30b49b6f59353d3b1778937e0c3",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "MMMU-Pro 官方数据更新",
+      "summary": "MMMU-Pro 官方数据发生变化；共 20 个模型 · 当前前列：Claude Opus 5.5 (Max, Default Fallback)（87.7%）、GPT-6 Astra (Max)（86.9%）、Claude Opus 5.5 (Xhigh, Default Fallback)（86.6%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis MMMU-Pro official public Dataset page",
+      "benchmarkId": "aa_mmmu_pro",
+      "benchmarkTitle": "MMMU-Pro",
+      "release": "page_jsonld",
+      "contentHash": "fe7a117135a6c57032b2b88691359847fcc072c796ee32042939270573b6ab09",
+      "unit": "ratio",
+      "modelCount": 20,
+      "topModels": [
+        "Claude Opus 5.5 (Max, Default Fallback)（87.7%）",
+        "GPT-6 Astra (Max)（86.9%）",
+        "Claude Opus 5.5 (Xhigh, Default Fallback)（86.6%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "9745645755ae989f94ca75029c440388",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "MLCR Overall 官方数据更新",
+      "summary": "MLCR Overall 官方数据发生变化；共 28 个模型 · 当前前列：Claude Sonnet 5.5 (Max, Default Fallback)（75.0%）、Claude Fable 5.1 (Max, Default Fallback)（71.1%）、Claude Opus 5.5 (Max, Default Fallback)（66.7%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/mlcr-aa",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis MLCR Overall official public Dataset page",
+      "benchmarkId": "aa_mlcr_overall",
+      "benchmarkTitle": "MLCR Overall",
+      "release": "page_jsonld",
+      "contentHash": "8776f32bec5af5f1fae600479c35b9852d432560078c2da6b4b050f7945af8ca",
+      "unit": "ratio",
+      "modelCount": 28,
+      "topModels": [
+        "Claude Sonnet 5.5 (Max, Default Fallback)（75.0%）",
+        "Claude Fable 5.1 (Max, Default Fallback)（71.1%）",
+        "Claude Opus 5.5 (Max, Default Fallback)（66.7%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "5d23d9fc467c66841a32e4ccd45d0368",
+      "family": "benchmark",
+      "eventType": "score_changed",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Step 5 Preview 分数变化",
+      "summary": "GDPval-AA Elo 分数从 1566.12 变为 1586.67（+20.55）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Step 5 Preview",
+      "modelRef": "benchmark:Step 5 Preview",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "observedAt": "2026-10-03T00:44:07Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "benchmarkId": "aa_gdpval_elo",
+      "benchmarkTitle": "GDPval-AA Elo",
+      "release": "page_jsonld",
+      "previousScore": 1566.12,
+      "score": 1586.67,
+      "delta": 20.550000000000182,
+      "unit": "raw",
+      "modelIdentity": "aa_gdpval_elo:Step 5 Preview",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "0ef6bc8662266c75bce1e930befced2d",
+      "family": "benchmark",
+      "eventType": "derived_rank_changed",
+      "eventClass": "benchmark",
+      "trustTier": "derived",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "NVIDIA Nemotron 3 Nano 4B 排名位置变化",
+      "summary": "Artificial Analysis Openness Index 按当前分数推导的列表位置从 19 变为 20；官方 rank 未提供。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "NVIDIA Nemotron 3 Nano 4B",
+      "modelRef": "benchmark:NVIDIA Nemotron 3 Nano 4B",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-openness-index",
+      "observedAt": "2026-10-03T05:45:24Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Artificial Analysis Openness Index official Data API",
+      "benchmarkId": "aa_openness_index",
+      "benchmarkTitle": "Artificial Analysis Openness Index",
+      "release": "page_jsonld",
+      "previousRank": null,
+      "rank": null,
+      "previousDisplayRank": 19,
+      "displayRank": 20,
+      "rankSource": "derived",
+      "modelIdentity": "aa_openness_index:NVIDIA Nemotron 3 Nano 4B",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-openness-index",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "cb2540e141e5cb2ce92727c085b1146e",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Sonnet 5.5 (Xhigh, Default Fallback) 新上榜",
+      "summary": "Claude Sonnet 5.5 (Xhigh, Default Fallback) 进入 Artificial Analysis Intelligence Index v4.3，当前分数 51.90（第 10 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Sonnet 5.5 (Xhigh, Default Fallback)",
+      "modelRef": "benchmark:Claude Sonnet 5.5 (Xhigh, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Intelligence Index official public Dataset page",
+      "benchmarkId": "aa_intelligence_index_v4_3",
+      "benchmarkTitle": "Artificial Analysis Intelligence Index v4.3",
+      "release": "page_jsonld",
+      "score": 51.8955544183089,
+      "rank": null,
+      "displayRank": 10,
+      "unit": "score",
+      "modelIdentity": "aa_intelligence_index_v4_3:Claude Sonnet 5.5 (Xhigh, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "a4049ee6dcbde9c59f393f4ed94ceb6b",
+      "family": "benchmark",
+      "eventType": "model_removed_from_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback) 移出榜单",
+      "summary": "Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback) 不再出现在 Artificial Analysis Intelligence Index v4.3 当前官方数据中（此前分数 51.90）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "modelRef": "benchmark:Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Intelligence Index official public Dataset page",
+      "benchmarkId": "aa_intelligence_index_v4_3",
+      "benchmarkTitle": "Artificial Analysis Intelligence Index v4.3",
+      "release": "page_jsonld",
+      "previousScore": 51.8955544183089,
+      "previousRank": null,
+      "unit": "score",
+      "modelIdentity": "aa_intelligence_index_v4_3:Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "c18807bab0c89abf189a566425023f06",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Fable 5.1 (Max, Default Fallback) 新上榜",
+      "summary": "Claude Fable 5.1 (Max, Default Fallback) 进入 GPQA Diamond，当前分数 93.7%（第 8 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Fable 5.1 (Max, Default Fallback)",
+      "modelRef": "benchmark:Claude Fable 5.1 (Max, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GPQA Diamond official public Dataset page",
+      "benchmarkId": "aa_gpqa_diamond",
+      "benchmarkTitle": "GPQA Diamond",
+      "release": "page_jsonld",
+      "score": 0.937373737373737,
+      "rank": null,
+      "displayRank": 8,
+      "unit": "ratio",
+      "modelIdentity": "aa_gpqa_diamond:Claude Fable 5.1 (Max, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "c65d3765b4d40a402c309b0c86b4a2f8",
+      "family": "benchmark",
+      "eventType": "model_removed_from_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) 移出榜单",
+      "summary": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback) 不再出现在 GPQA Diamond 当前官方数据中（此前分数 93.7%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "modelRef": "benchmark:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GPQA Diamond official public Dataset page",
+      "benchmarkId": "aa_gpqa_diamond",
+      "benchmarkTitle": "GPQA Diamond",
+      "release": "page_jsonld",
+      "previousScore": 0.937373737373737,
+      "previousRank": null,
+      "unit": "ratio",
+      "modelIdentity": "aa_gpqa_diamond:Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "1de89f74110609a6f8ac20e09822ed58",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Sonnet 5.5 (Xhigh, Default Fallback) 新上榜",
+      "summary": "Claude Sonnet 5.5 (Xhigh, Default Fallback) 进入 Terminal-Bench 4.0，当前分数 57.1%（第 7 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Sonnet 5.5 (Xhigh, Default Fallback)",
+      "modelRef": "benchmark:Claude Sonnet 5.5 (Xhigh, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
+      "benchmarkId": "aa_terminal_bench_v4_0",
+      "benchmarkTitle": "Terminal-Bench 4.0",
+      "release": "page_jsonld",
+      "score": 0.570707070707071,
+      "rank": null,
+      "displayRank": 7,
+      "unit": "ratio",
+      "modelIdentity": "aa_terminal_bench_v4_0:Claude Sonnet 5.5 (Xhigh, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "fb47d6777de6b7c325174244cc51fd6d",
+      "family": "benchmark",
+      "eventType": "model_removed_from_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback) 移出榜单",
+      "summary": "Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback) 不再出现在 Terminal-Bench 4.0 当前官方数据中（此前分数 57.1%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "modelRef": "benchmark:Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
+      "benchmarkId": "aa_terminal_bench_v4_0",
+      "benchmarkTitle": "Terminal-Bench 4.0",
+      "release": "page_jsonld",
+      "previousScore": 0.570707070707071,
+      "previousRank": null,
+      "unit": "ratio",
+      "modelIdentity": "aa_terminal_bench_v4_0:Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "339cba7ba201bab387ead4a316fc64b7",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Sonnet 5.5 (Max, Default Fallback) 新上榜",
+      "summary": "Claude Sonnet 5.5 (Max, Default Fallback) 进入 Humanity's Last Exam，当前分数 55.0%（第 9 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Sonnet 5.5 (Max, Default Fallback)",
+      "modelRef": "benchmark:Claude Sonnet 5.5 (Max, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Humanity's Last Exam official public Dataset page",
+      "benchmarkId": "aa_humanitys_last_exam",
+      "benchmarkTitle": "Humanity's Last Exam",
+      "release": "page_jsonld",
+      "score": 0.549582947173309,
+      "rank": null,
+      "displayRank": 9,
+      "unit": "ratio",
+      "modelIdentity": "aa_humanitys_last_exam:Claude Sonnet 5.5 (Max, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "dd5e10162d0828041cf5f6618a671ccd",
+      "family": "benchmark",
+      "eventType": "model_removed_from_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback) 移出榜单",
+      "summary": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback) 不再出现在 Humanity's Last Exam 当前官方数据中（此前分数 55.0%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "modelRef": "benchmark:Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Humanity's Last Exam official public Dataset page",
+      "benchmarkId": "aa_humanitys_last_exam",
+      "benchmarkTitle": "Humanity's Last Exam",
+      "release": "page_jsonld",
+      "previousScore": 0.549582947173309,
+      "previousRank": null,
+      "unit": "ratio",
+      "modelIdentity": "aa_humanitys_last_exam:Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "13be8057a7a3c9032cbc7583b21a6af4",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Sonnet 5.5 (Max, Default Fallback) 新上榜",
+      "summary": "Claude Sonnet 5.5 (Max, Default Fallback) 进入 SciCode，当前分数 61.0%（第 5 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Sonnet 5.5 (Max, Default Fallback)",
+      "modelRef": "benchmark:Claude Sonnet 5.5 (Max, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/scicode",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis SciCode official public Dataset page",
+      "benchmarkId": "aa_scicode",
+      "benchmarkTitle": "SciCode",
+      "release": "page_jsonld",
+      "score": 0.609953703703704,
+      "rank": null,
+      "displayRank": 5,
+      "unit": "ratio",
+      "modelIdentity": "aa_scicode:Claude Sonnet 5.5 (Max, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "b528270354cf9edb43c634249dda25ea",
+      "family": "benchmark",
+      "eventType": "model_removed_from_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback) 移出榜单",
+      "summary": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback) 不再出现在 SciCode 当前官方数据中（此前分数 61.0%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "modelRef": "benchmark:Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/scicode",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis SciCode official public Dataset page",
+      "benchmarkId": "aa_scicode",
+      "benchmarkTitle": "SciCode",
+      "release": "page_jsonld",
+      "previousScore": 0.609953703703704,
+      "previousRank": null,
+      "unit": "ratio",
+      "modelIdentity": "aa_scicode:Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "ac11df094eb77ea791155aa909524a09",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Sonnet 5.5 (Max, Default Fallback) 新上榜",
+      "summary": "Claude Sonnet 5.5 (Max, Default Fallback) 进入 AA LCR，当前分数 82.7%（第 18 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Sonnet 5.5 (Max, Default Fallback)",
+      "modelRef": "benchmark:Claude Sonnet 5.5 (Max, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis AA LCR official public Dataset page",
+      "benchmarkId": "aa_lcr",
+      "benchmarkTitle": "AA LCR",
+      "release": "page_jsonld",
+      "score": 0.826666666666667,
+      "rank": null,
+      "displayRank": 18,
+      "unit": "ratio",
+      "modelIdentity": "aa_lcr:Claude Sonnet 5.5 (Max, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "ec71f058d79d374b8d8ea5b5ac9e9066",
+      "family": "benchmark",
+      "eventType": "model_removed_from_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback) 移出榜单",
+      "summary": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback) 不再出现在 AA LCR 当前官方数据中（此前分数 82.7%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "modelRef": "benchmark:Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis AA LCR official public Dataset page",
+      "benchmarkId": "aa_lcr",
+      "benchmarkTitle": "AA LCR",
+      "release": "page_jsonld",
+      "previousScore": 0.826666666666667,
+      "previousRank": null,
+      "unit": "ratio",
+      "modelIdentity": "aa_lcr:Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "58960e8dbc934ffe15e9ebfdef182185",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Sonnet 5.5 (Max, Default Fallback) 新上榜",
+      "summary": "Claude Sonnet 5.5 (Max, Default Fallback) 进入 AA Omniscience Index，当前分数 32.30（第 11 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Sonnet 5.5 (Max, Default Fallback)",
+      "modelRef": "benchmark:Claude Sonnet 5.5 (Max, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/omniscience",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis AA Omniscience Index official public Dataset page",
+      "benchmarkId": "aa_omniscience_index",
+      "benchmarkTitle": "AA Omniscience Index",
+      "release": "page_jsonld",
+      "score": 32.3,
+      "rank": null,
+      "displayRank": 11,
+      "unit": "score",
+      "modelIdentity": "aa_omniscience_index:Claude Sonnet 5.5 (Max, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "afcb5963b5e8bcbe03e433a031e64ba9",
+      "family": "benchmark",
+      "eventType": "model_removed_from_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback) 移出榜单",
+      "summary": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback) 不再出现在 AA Omniscience Index 当前官方数据中（此前分数 32.30）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "modelRef": "benchmark:Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/omniscience",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis AA Omniscience Index official public Dataset page",
+      "benchmarkId": "aa_omniscience_index",
+      "benchmarkTitle": "AA Omniscience Index",
+      "release": "page_jsonld",
+      "previousScore": 32.3,
+      "previousRank": null,
+      "unit": "score",
+      "modelIdentity": "aa_omniscience_index:Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "e35dd84e066104a7b35e6e8ca10f1abf",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Sonnet 5.5 (Max, Default Fallback) 新上榜",
+      "summary": "Claude Sonnet 5.5 (Max, Default Fallback) 进入 CritPt，当前分数 31.4%（第 7 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Sonnet 5.5 (Max, Default Fallback)",
+      "modelRef": "benchmark:Claude Sonnet 5.5 (Max, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/critpt",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis CritPt official public Dataset page",
+      "benchmarkId": "aa_critpt",
+      "benchmarkTitle": "CritPt",
+      "release": "page_jsonld",
+      "score": 0.314285714285714,
+      "rank": null,
+      "displayRank": 7,
+      "unit": "ratio",
+      "modelIdentity": "aa_critpt:Claude Sonnet 5.5 (Max, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "3c0aa54fe53b762228783d197be7ca04",
+      "family": "benchmark",
+      "eventType": "model_removed_from_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback) 移出榜单",
+      "summary": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback) 不再出现在 CritPt 当前官方数据中（此前分数 31.4%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "modelRef": "benchmark:Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/critpt",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis CritPt official public Dataset page",
+      "benchmarkId": "aa_critpt",
+      "benchmarkTitle": "CritPt",
+      "release": "page_jsonld",
+      "previousScore": 0.314285714285714,
+      "previousRank": null,
+      "unit": "ratio",
+      "modelIdentity": "aa_critpt:Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "e8b506952b5bee868e5c31f76ac39628",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Fable 5 (Max, Opus 4.8 Fallback) 新上榜",
+      "summary": "Claude Fable 5 (Max, Opus 4.8 Fallback) 进入 Terminal-Bench Hard，当前分数 62.9%（第 2 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Fable 5 (Max, Opus 4.8 Fallback)",
+      "modelRef": "benchmark:Claude Fable 5 (Max, Opus 4.8 Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
+      "benchmarkId": "aa_terminalbench_hard",
+      "benchmarkTitle": "Terminal-Bench Hard",
+      "release": "page_jsonld",
+      "score": 0.628787878787879,
+      "rank": null,
+      "displayRank": 2,
+      "unit": "ratio",
+      "modelIdentity": "aa_terminalbench_hard:Claude Fable 5 (Max, Opus 4.8 Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "9445f7d1e16b86b7b739954df71a9b9f",
+      "family": "benchmark",
+      "eventType": "model_removed_from_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback) 移出榜单",
+      "summary": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback) 不再出现在 Terminal-Bench Hard 当前官方数据中（此前分数 62.9%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+      "modelRef": "benchmark:Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
+      "benchmarkId": "aa_terminalbench_hard",
+      "benchmarkTitle": "Terminal-Bench Hard",
+      "release": "page_jsonld",
+      "previousScore": 0.628787878787879,
+      "previousRank": null,
+      "unit": "ratio",
+      "modelIdentity": "aa_terminalbench_hard:Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-hard",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "be882b1dcc7d2ab4cf6a2185932f9e35",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Fable 5.1 (Xhigh, Default Fallback) 新上榜",
+      "summary": "Claude Fable 5.1 (Xhigh, Default Fallback) 进入 Terminal-Bench v2.1，当前分数 91.0%（第 2 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Fable 5.1 (Xhigh, Default Fallback)",
+      "modelRef": "benchmark:Claude Fable 5.1 (Xhigh, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
+      "benchmarkId": "aa_terminalbench_v2_1",
+      "benchmarkTitle": "Terminal-Bench v2.1",
+      "release": "page_jsonld",
+      "score": 0.910112359550562,
+      "rank": null,
+      "displayRank": 2,
+      "unit": "ratio",
+      "modelIdentity": "aa_terminalbench_v2_1:Claude Fable 5.1 (Xhigh, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "cde97e24aa883ab7dbb2e007323e38c0",
+      "family": "benchmark",
+      "eventType": "model_removed_from_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback) 移出榜单",
+      "summary": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback) 不再出现在 Terminal-Bench v2.1 当前官方数据中（此前分数 91.0%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "modelRef": "benchmark:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
+      "benchmarkId": "aa_terminalbench_v2_1",
+      "benchmarkTitle": "Terminal-Bench v2.1",
+      "release": "page_jsonld",
+      "previousScore": 0.910112359550562,
+      "previousRank": null,
+      "unit": "ratio",
+      "modelIdentity": "aa_terminalbench_v2_1:Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-2-1",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "340a5bdb660ce1d115e76d6134d488a6",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Sonnet 5.5 (Xhigh, Default Fallback) 新上榜",
+      "summary": "Claude Sonnet 5.5 (Xhigh, Default Fallback) 进入 GDPval-AA Elo，当前分数 1728.12（第 5 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Sonnet 5.5 (Xhigh, Default Fallback)",
+      "modelRef": "benchmark:Claude Sonnet 5.5 (Xhigh, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "benchmarkId": "aa_gdpval_elo",
+      "benchmarkTitle": "GDPval-AA Elo",
+      "release": "page_jsonld",
+      "score": 1728.12,
+      "rank": null,
+      "displayRank": 5,
+      "unit": "raw",
+      "modelIdentity": "aa_gdpval_elo:Claude Sonnet 5.5 (Xhigh, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "f29d8bf81104a0907a322cc6084e6578",
+      "family": "benchmark",
+      "eventType": "model_removed_from_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback) 移出榜单",
+      "summary": "Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback) 不再出现在 GDPval-AA Elo 当前官方数据中（此前分数 1728.12）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "modelRef": "benchmark:Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "benchmarkId": "aa_gdpval_elo",
+      "benchmarkTitle": "GDPval-AA Elo",
+      "release": "page_jsonld",
+      "previousScore": 1728.12,
+      "previousRank": null,
+      "unit": "raw",
+      "modelIdentity": "aa_gdpval_elo:Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "cc1350ccb1ba0b6fa430cd1690d4af36",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Opus 5.5 (Xhigh, Default Fallback) 新上榜",
+      "summary": "Claude Opus 5.5 (Xhigh, Default Fallback) 进入 MMMU-Pro，当前分数 86.6%（第 3 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Opus 5.5 (Xhigh, Default Fallback)",
+      "modelRef": "benchmark:Claude Opus 5.5 (Xhigh, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis MMMU-Pro official public Dataset page",
+      "benchmarkId": "aa_mmmu_pro",
+      "benchmarkTitle": "MMMU-Pro",
+      "release": "page_jsonld",
+      "score": 0.865895953757225,
+      "rank": null,
+      "displayRank": 3,
+      "unit": "ratio",
+      "modelIdentity": "aa_mmmu_pro:Claude Opus 5.5 (Xhigh, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "891e1c4579ffd620d44c0e1c7d410283",
+      "family": "benchmark",
+      "eventType": "model_removed_from_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback) 移出榜单",
+      "summary": "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback) 不再出现在 MMMU-Pro 当前官方数据中（此前分数 86.6%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "modelRef": "benchmark:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis MMMU-Pro official public Dataset page",
+      "benchmarkId": "aa_mmmu_pro",
+      "benchmarkTitle": "MMMU-Pro",
+      "release": "page_jsonld",
+      "previousScore": 0.865895953757225,
+      "previousRank": null,
+      "unit": "ratio",
+      "modelIdentity": "aa_mmmu_pro:Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "1550bfeeb877c3c2a233a131e2c1348e",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Sonnet 5.5 (Max, Default Fallback) 新上榜",
+      "summary": "Claude Sonnet 5.5 (Max, Default Fallback) 进入 MLCR Overall，当前分数 75.0%（第 1 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Sonnet 5.5 (Max, Default Fallback)",
+      "modelRef": "benchmark:Claude Sonnet 5.5 (Max, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/mlcr-aa",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis MLCR Overall official public Dataset page",
+      "benchmarkId": "aa_mlcr_overall",
+      "benchmarkTitle": "MLCR Overall",
+      "release": "page_jsonld",
+      "score": 0.75,
+      "rank": null,
+      "displayRank": 1,
+      "unit": "ratio",
+      "modelIdentity": "aa_mlcr_overall:Claude Sonnet 5.5 (Max, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
+      }
+    },
+    {
+      "eventId": "96e5ec3d06636388e65c7de1ea8846f5",
+      "family": "benchmark",
+      "eventType": "model_removed_from_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback) 移出榜单",
+      "summary": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback) 不再出现在 MLCR Overall 当前官方数据中（此前分数 75.0%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "modelRef": "benchmark:Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/mlcr-aa",
+      "observedAt": "2026-10-02T21:42:46Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis MLCR Overall official public Dataset page",
+      "benchmarkId": "aa_mlcr_overall",
+      "benchmarkTitle": "MLCR Overall",
+      "release": "page_jsonld",
+      "previousScore": 0.75,
+      "previousRank": null,
+      "unit": "ratio",
+      "modelIdentity": "aa_mlcr_overall:Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
+        "contentHash": "4c7d31de968c03ff8a6d69ef296ce3ed17c6b9415bc9e57d7c1e6837007993ec"
       }
     }
   ],
-  "eventCount": 3,
+  "eventCount": 35,
   "provenance": {
-    "workflowRunId": "36248119686",
-    "mainCommit": "e555c8a0c9d7aadc5132bbc31e31d45af89da0eb"
+    "workflowRunId": "37143827440",
+    "mainCommit": "00a92a01b3996da4fb5459e6b048f043b9cefc35"
   }
 }
