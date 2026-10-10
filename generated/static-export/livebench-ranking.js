@@ -2,9 +2,9 @@ module.exports = {
   "schemaVersion": 3,
   "dataSource": "benchmark-sync-static",
   "exporterVersion": "0.4.0",
-  "workflowRunId": "36230081222",
-  "mainCommit": "ca364c10656926db4fe77e4657ccec6257801b13",
-  "generatedAt": "2026-09-26T08:33:38Z",
+  "workflowRunId": "38042534764",
+  "mainCommit": "00a92a01b3996da4fb5459e6b048f043b9cefc35",
+  "generatedAt": "2026-10-10T09:47:00Z",
   "families": [
     {
       "familyId": "livebench",
@@ -15,49 +15,49 @@ module.exports = {
           "id": "livebench_overall",
           "title": "LiveBench Overall",
           "isOverall": true,
-          "modelCount": 63
+          "modelCount": 69
         },
         {
           "id": "livebench_coding",
           "title": "LiveBench Coding",
           "isOverall": false,
-          "modelCount": 63
+          "modelCount": 69
         },
         {
           "id": "livebench_reasoning",
           "title": "LiveBench Reasoning",
           "isOverall": false,
-          "modelCount": 63
+          "modelCount": 69
         },
         {
           "id": "livebench_math",
           "title": "LiveBench Math",
           "isOverall": false,
-          "modelCount": 63
+          "modelCount": 69
         },
         {
           "id": "livebench_data_analysis",
           "title": "LiveBench Data Analysis",
           "isOverall": false,
-          "modelCount": 63
+          "modelCount": 69
         },
         {
           "id": "livebench_language",
           "title": "LiveBench Language",
           "isOverall": false,
-          "modelCount": 63
+          "modelCount": 69
         },
         {
           "id": "livebench_instruction_following",
           "title": "LiveBench Instruction Following",
           "isOverall": false,
-          "modelCount": 63
+          "modelCount": 69
         },
         {
           "id": "livebench_agentic_coding",
           "title": "LiveBench Agentic Coding",
           "isOverall": false,
-          "modelCount": 63
+          "modelCount": 69
         }
       ]
     },
@@ -70,79 +70,79 @@ module.exports = {
           "id": "aa_intelligence_index_v4_3",
           "title": "Artificial Analysis Intelligence Index v4.3",
           "isOverall": true,
-          "modelCount": 32
+          "modelCount": 31
         },
         {
           "id": "aa_terminal_bench_v4_0",
           "title": "Terminal-Bench 4.0",
           "isOverall": false,
-          "modelCount": 32
+          "modelCount": 31
         },
         {
           "id": "aa_humanitys_last_exam",
           "title": "Humanity's Last Exam",
           "isOverall": false,
-          "modelCount": 32
+          "modelCount": 31
         },
         {
           "id": "aa_gpqa_diamond",
           "title": "GPQA Diamond",
           "isOverall": false,
-          "modelCount": 25
+          "modelCount": 19
         },
         {
           "id": "aa_scicode",
           "title": "SciCode",
           "isOverall": false,
-          "modelCount": 32
+          "modelCount": 31
         },
         {
           "id": "aa_lcr",
           "title": "AA LCR",
           "isOverall": false,
-          "modelCount": 32
+          "modelCount": 31
         },
         {
           "id": "aa_omniscience_index",
           "title": "AA Omniscience Index",
           "isOverall": false,
-          "modelCount": 32
+          "modelCount": 31
         },
         {
           "id": "aa_critpt",
           "title": "CritPt",
           "isOverall": false,
-          "modelCount": 33
+          "modelCount": 31
         },
         {
           "id": "aa_gdpval_elo",
           "title": "GDPval-AA Elo",
           "isOverall": false,
-          "modelCount": 32
+          "modelCount": 31
         },
         {
           "id": "aa_terminalbench_hard",
           "title": "Terminal-Bench Hard",
           "isOverall": false,
-          "modelCount": 9
+          "modelCount": 7
         },
         {
           "id": "aa_terminalbench_v2_1",
           "title": "Terminal-Bench v2.1",
           "isOverall": false,
-          "modelCount": 25
+          "modelCount": 19
         },
         {
           "id": "aa_ifbench",
           "title": "IFBench",
           "isOverall": false,
-          "modelCount": 9
+          "modelCount": 7
         },
         {
           "id": "aa_mmmu_pro",
           "title": "MMMU-Pro",
           "isOverall": false,
-          "modelCount": 23
+          "modelCount": 20
         },
         {
           "id": "aa_openness_index",
@@ -154,7 +154,7 @@ module.exports = {
           "id": "aa_mlcr_overall",
           "title": "MLCR Overall",
           "isOverall": false,
-          "modelCount": 31
+          "modelCount": 28
         }
       ]
     },
@@ -184,9 +184,9 @@ module.exports = {
       "metric": "global_average",
       "unit": "score",
       "comparisonKey": "live_bench",
-      "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-26T08:33:19Z",
+      "snapshotId": "db6bd3ecebe4d1aa02f1ebe89341d83de247d5588b4d37c2b94780cf3e217138",
+      "contentHash": "db6bd3ecebe4d1aa02f1ebe89341d83de247d5588b4d37c2b94780cf3e217138",
+      "generatedAt": "2026-10-10T09:46:37Z",
       "taskCount": 23,
       "source": {
         "name": "LiveBench dated official leaderboard CSV",
@@ -233,6 +233,13 @@ module.exports = {
           null
         ],
         [
+          "gpt-6.1-sol-max",
+          "gpt-6.1-sol-max",
+          81.62,
+          null,
+          null
+        ],
+        [
           "muse-spark-1.3-xhigh",
           "muse-spark-1.3-xhigh",
           81.59,
@@ -242,6 +249,13 @@ module.exports = {
         [
           "deepseek-v4.1-flash-max",
           "deepseek-v4.1-flash-max",
+          81.11,
+          null,
+          null
+        ],
+        [
+          "gpt-6.1-sol-xhigh",
+          "gpt-6.1-sol-xhigh",
           81.11,
           null,
           null
@@ -331,6 +345,13 @@ module.exports = {
           null
         ],
         [
+          "claude-sonnet-5-5-xhigh-effort",
+          "claude-sonnet-5-5-xhigh-effort",
+          77.75,
+          null,
+          null
+        ],
+        [
           "deepseek-v4-pro-0813",
           "deepseek-v4-pro-0813",
           77.44,
@@ -401,13 +422,6 @@ module.exports = {
           null
         ],
         [
-          "union-alpha",
-          "union-alpha",
-          76.13,
-          null,
-          null
-        ],
-        [
           "claude-sonnet-5-xhigh-effort",
           "claude-sonnet-5-xhigh-effort",
           76.04,
@@ -425,6 +439,13 @@ module.exports = {
           "grok-4.5",
           "grok-4.5",
           75.77,
+          null,
+          null
+        ],
+        [
+          "claude-sonnet-5-5-max-effort",
+          "claude-sonnet-5-5-max-effort",
+          75.67,
           null,
           null
         ],
@@ -520,6 +541,13 @@ module.exports = {
           null
         ],
         [
+          "claude-haiku-5-5-xhigh-effort",
+          "claude-haiku-5-5-xhigh-effort",
+          72.07,
+          null,
+          null
+        ],
+        [
           "gpt-6-luna-max",
           "gpt-6-luna-max",
           72.03,
@@ -530,6 +558,13 @@ module.exports = {
           "inkling-xhigh",
           "inkling-xhigh",
           71.92,
+          null,
+          null
+        ],
+        [
+          "mistral-large-4-high",
+          "mistral-large-4-high",
+          71.84,
           null,
           null
         ],
@@ -579,6 +614,13 @@ module.exports = {
           "kimi-k2.7-code",
           "kimi-k2.7-code",
           68.41,
+          null,
+          null
+        ],
+        [
+          "claude-haiku-5-5-max-effort",
+          "claude-haiku-5-5-max-effort",
+          67.88,
           null,
           null
         ],
@@ -651,9 +693,9 @@ module.exports = {
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "coding",
-      "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-26T08:33:09Z",
+      "snapshotId": "db6bd3ecebe4d1aa02f1ebe89341d83de247d5588b4d37c2b94780cf3e217138",
+      "contentHash": "db6bd3ecebe4d1aa02f1ebe89341d83de247d5588b4d37c2b94780cf3e217138",
+      "generatedAt": "2026-10-10T09:46:29Z",
       "taskCount": 2,
       "source": {
         "name": "LiveBench Coding dated official leaderboard CSV",
@@ -665,6 +707,13 @@ module.exports = {
       },
       "entries": [
         [
+          "claude-sonnet-5-5-max-effort",
+          "claude-sonnet-5-5-max-effort",
+          91.37,
+          null,
+          null
+        ],
+        [
           "claude-opus-5-5-max-effort",
           "claude-opus-5-5-max-effort",
           89.25,
@@ -675,6 +724,13 @@ module.exports = {
           "claude-opus-5-5-xhigh-effort",
           "claude-opus-5-5-xhigh-effort",
           89.25,
+          null,
+          null
+        ],
+        [
+          "claude-sonnet-5-5-xhigh-effort",
+          "claude-sonnet-5-5-xhigh-effort",
+          88.87,
           null,
           null
         ],
@@ -728,13 +784,6 @@ module.exports = {
           null
         ],
         [
-          "union-alpha",
-          "union-alpha",
-          82.15,
-          null,
-          null
-        ],
-        [
           "claude-opus-4-7-xhigh-effort",
           "claude-opus-4-7-xhigh-effort",
           82.09,
@@ -777,6 +826,13 @@ module.exports = {
           null
         ],
         [
+          "gpt-6.1-sol-xhigh",
+          "gpt-6.1-sol-xhigh",
+          80.74,
+          null,
+          null
+        ],
+        [
           "claude-sonnet-5-xhigh-effort",
           "claude-sonnet-5-xhigh-effort",
           80.68,
@@ -786,6 +842,13 @@ module.exports = {
         [
           "gpt-6-astra-max",
           "gpt-6-astra-max",
+          80.36,
+          null,
+          null
+        ],
+        [
+          "gpt-6.1-sol-max",
+          "gpt-6.1-sol-max",
           80.36,
           null,
           null
@@ -889,6 +952,13 @@ module.exports = {
           null
         ],
         [
+          "claude-haiku-5-5-max-effort",
+          "claude-haiku-5-5-max-effort",
+          77.86,
+          null,
+          null
+        ],
+        [
           "gpt-5.4-xhigh",
           "gpt-5.4-xhigh",
           77.54,
@@ -919,6 +989,13 @@ module.exports = {
         [
           "grok-4.7-xhigh",
           "grok-4.7-xhigh",
+          77.16,
+          null,
+          null
+        ],
+        [
+          "mistral-large-4-high",
+          "mistral-large-4-high",
           77.16,
           null,
           null
@@ -941,6 +1018,13 @@ module.exports = {
           "gemini-3.1-pro-preview-high",
           "gemini-3.1-pro-preview-high",
           76.45,
+          null,
+          null
+        ],
+        [
+          "claude-haiku-5-5-xhigh-effort",
+          "claude-haiku-5-5-xhigh-effort",
+          76.39,
           null,
           null
         ],
@@ -1118,9 +1202,9 @@ module.exports = {
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "reasoning",
-      "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-26T08:33:25Z",
+      "snapshotId": "db6bd3ecebe4d1aa02f1ebe89341d83de247d5588b4d37c2b94780cf3e217138",
+      "contentHash": "db6bd3ecebe4d1aa02f1ebe89341d83de247d5588b4d37c2b94780cf3e217138",
+      "generatedAt": "2026-10-10T09:46:44Z",
       "taskCount": 4,
       "source": {
         "name": "LiveBench Reasoning dated official leaderboard CSV",
@@ -1135,6 +1219,13 @@ module.exports = {
           "gpt-6-astra-max",
           "gpt-6-astra-max",
           92.65,
+          null,
+          null
+        ],
+        [
+          "gpt-6.1-sol-max",
+          "gpt-6.1-sol-max",
+          92.63,
           null,
           null
         ],
@@ -1156,6 +1247,20 @@ module.exports = {
           "gpt-5.6-sol-max",
           "gpt-5.6-sol-max",
           91.65,
+          null,
+          null
+        ],
+        [
+          "claude-sonnet-5-5-max-effort",
+          "claude-sonnet-5-5-max-effort",
+          91.63,
+          null,
+          null
+        ],
+        [
+          "gpt-6.1-sol-xhigh",
+          "gpt-6.1-sol-xhigh",
+          91.63,
           null,
           null
         ],
@@ -1314,6 +1419,13 @@ module.exports = {
           null
         ],
         [
+          "claude-sonnet-5-5-xhigh-effort",
+          "claude-sonnet-5-5-xhigh-effort",
+          86.81,
+          null,
+          null
+        ],
+        [
           "deepseek-v4.1-flash-max",
           "deepseek-v4.1-flash-max",
           86.69,
@@ -1377,9 +1489,23 @@ module.exports = {
           null
         ],
         [
+          "claude-haiku-5-5-max-effort",
+          "claude-haiku-5-5-max-effort",
+          84.63,
+          null,
+          null
+        ],
+        [
           "gemini-3.1-pro-preview-high",
           "gemini-3.1-pro-preview-high",
           84.0,
+          null,
+          null
+        ],
+        [
+          "mistral-large-4-high",
+          "mistral-large-4-high",
+          83.94,
           null,
           null
         ],
@@ -1440,16 +1566,16 @@ module.exports = {
           null
         ],
         [
-          "gpt-5.4-nano-xhigh",
-          "gpt-5.4-nano-xhigh",
-          81.1,
+          "claude-haiku-5-5-xhigh-effort",
+          "claude-haiku-5-5-xhigh-effort",
+          81.23,
           null,
           null
         ],
         [
-          "union-alpha",
-          "union-alpha",
-          80.75,
+          "gpt-5.4-nano-xhigh",
+          "gpt-5.4-nano-xhigh",
+          81.1,
           null,
           null
         ],
@@ -1585,9 +1711,9 @@ module.exports = {
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "math",
-      "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-26T08:33:16Z",
+      "snapshotId": "db6bd3ecebe4d1aa02f1ebe89341d83de247d5588b4d37c2b94780cf3e217138",
+      "contentHash": "db6bd3ecebe4d1aa02f1ebe89341d83de247d5588b4d37c2b94780cf3e217138",
+      "generatedAt": "2026-10-10T09:46:40Z",
       "taskCount": 4,
       "source": {
         "name": "LiveBench Mathematics dated official leaderboard CSV",
@@ -1613,6 +1739,13 @@ module.exports = {
           null
         ],
         [
+          "gpt-6.1-sol-max",
+          "gpt-6.1-sol-max",
+          96.83,
+          null,
+          null
+        ],
+        [
           "gpt-6-astra-max",
           "gpt-6-astra-max",
           96.81,
@@ -1627,6 +1760,20 @@ module.exports = {
           null
         ],
         [
+          "claude-sonnet-5-5-xhigh-effort",
+          "claude-sonnet-5-5-xhigh-effort",
+          96.69,
+          null,
+          null
+        ],
+        [
+          "gpt-6.1-sol-xhigh",
+          "gpt-6.1-sol-xhigh",
+          96.48,
+          null,
+          null
+        ],
+        [
           "gpt-6-sol-max",
           "gpt-6-sol-max",
           96.36,
@@ -1637,6 +1784,13 @@ module.exports = {
           "gpt-5.6-sol-max",
           "gpt-5.6-sol-max",
           96.2,
+          null,
+          null
+        ],
+        [
+          "claude-sonnet-5-5-max-effort",
+          "claude-sonnet-5-5-max-effort",
+          96.13,
           null,
           null
         ],
@@ -1676,13 +1830,6 @@ module.exports = {
           null
         ],
         [
-          "union-alpha",
-          "union-alpha",
-          95.29,
-          null,
-          null
-        ],
-        [
           "deepseek-v4-pro-0813",
           "deepseek-v4-pro-0813",
           95.09,
@@ -1707,6 +1854,13 @@ module.exports = {
           "gpt-5.4-xhigh",
           "gpt-5.4-xhigh",
           94.15,
+          null,
+          null
+        ],
+        [
+          "mistral-large-4-high",
+          "mistral-large-4-high",
+          93.58,
           null,
           null
         ],
@@ -1742,6 +1896,13 @@ module.exports = {
           "claude-opus-4-7-xhigh-effort",
           "claude-opus-4-7-xhigh-effort",
           92.85,
+          null,
+          null
+        ],
+        [
+          "claude-haiku-5-5-xhigh-effort",
+          "claude-haiku-5-5-xhigh-effort",
+          92.75,
           null,
           null
         ],
@@ -1914,6 +2075,13 @@ module.exports = {
           null
         ],
         [
+          "claude-haiku-5-5-max-effort",
+          "claude-haiku-5-5-max-effort",
+          86.44,
+          null,
+          null
+        ],
+        [
           "gemini-3.6-flash-high",
           "gemini-3.6-flash-high",
           86.4,
@@ -2052,9 +2220,9 @@ module.exports = {
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "data_analysis",
-      "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-26T08:33:10Z",
+      "snapshotId": "db6bd3ecebe4d1aa02f1ebe89341d83de247d5588b4d37c2b94780cf3e217138",
+      "contentHash": "db6bd3ecebe4d1aa02f1ebe89341d83de247d5588b4d37c2b94780cf3e217138",
+      "generatedAt": "2026-10-10T09:46:33Z",
       "taskCount": 3,
       "source": {
         "name": "LiveBench Data Analysis dated official leaderboard CSV",
@@ -2069,6 +2237,20 @@ module.exports = {
           "gpt-6-astra-max",
           "gpt-6-astra-max",
           82.97,
+          null,
+          null
+        ],
+        [
+          "gpt-6.1-sol-max",
+          "gpt-6.1-sol-max",
+          82.66,
+          null,
+          null
+        ],
+        [
+          "gpt-6.1-sol-xhigh",
+          "gpt-6.1-sol-xhigh",
+          82.18,
           null,
           null
         ],
@@ -2199,6 +2381,13 @@ module.exports = {
           null
         ],
         [
+          "claude-sonnet-5-5-xhigh-effort",
+          "claude-sonnet-5-5-xhigh-effort",
+          78.62,
+          null,
+          null
+        ],
+        [
           "gemini-3.1-pro-preview-high",
           "gemini-3.1-pro-preview-high",
           78.54,
@@ -2262,6 +2451,13 @@ module.exports = {
           null
         ],
         [
+          "mistral-large-4-high",
+          "mistral-large-4-high",
+          76.54,
+          null,
+          null
+        ],
+        [
           "muse-spark-1.2-xhigh",
           "muse-spark-1.2-xhigh",
           76.46,
@@ -2286,13 +2482,6 @@ module.exports = {
           "ox-alpha-max",
           "ox-alpha-max",
           75.77,
-          null,
-          null
-        ],
-        [
-          "union-alpha",
-          "union-alpha",
-          74.6,
           null,
           null
         ],
@@ -2356,6 +2545,13 @@ module.exports = {
           "inkling-xhigh",
           "inkling-xhigh",
           72.78,
+          null,
+          null
+        ],
+        [
+          "claude-haiku-5-5-xhigh-effort",
+          "claude-haiku-5-5-xhigh-effort",
+          72.75,
           null,
           null
         ],
@@ -2479,6 +2675,13 @@ module.exports = {
           null
         ],
         [
+          "claude-sonnet-5-5-max-effort",
+          "claude-sonnet-5-5-max-effort",
+          59.49,
+          null,
+          null
+        ],
+        [
           "grok-4.3",
           "grok-4.3",
           55.77,
@@ -2505,6 +2708,13 @@ module.exports = {
           53.25,
           null,
           null
+        ],
+        [
+          "claude-haiku-5-5-max-effort",
+          "claude-haiku-5-5-max-effort",
+          51.78,
+          null,
+          null
         ]
       ]
     },
@@ -2519,9 +2729,9 @@ module.exports = {
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "language",
-      "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-26T08:33:14Z",
+      "snapshotId": "db6bd3ecebe4d1aa02f1ebe89341d83de247d5588b4d37c2b94780cf3e217138",
+      "contentHash": "db6bd3ecebe4d1aa02f1ebe89341d83de247d5588b4d37c2b94780cf3e217138",
+      "generatedAt": "2026-10-10T09:46:34Z",
       "taskCount": 3,
       "source": {
         "name": "LiveBench Language dated official leaderboard CSV",
@@ -2536,6 +2746,13 @@ module.exports = {
           "claude-fable-5-max-effort",
           "claude-fable-5-max-effort",
           90.68,
+          null,
+          null
+        ],
+        [
+          "gpt-6.1-sol-max",
+          "gpt-6.1-sol-max",
+          90.13,
           null,
           null
         ],
@@ -2557,6 +2774,13 @@ module.exports = {
           "claude-opus-5-max-effort",
           "claude-opus-5-max-effort",
           88.69,
+          null,
+          null
+        ],
+        [
+          "gpt-6.1-sol-xhigh",
+          "gpt-6.1-sol-xhigh",
+          88.64,
           null,
           null
         ],
@@ -2585,13 +2809,6 @@ module.exports = {
           "claude-opus-5-5-max-effort",
           "claude-opus-5-5-max-effort",
           86.27,
-          null,
-          null
-        ],
-        [
-          "union-alpha",
-          "union-alpha",
-          85.89,
           null,
           null
         ],
@@ -2655,6 +2872,13 @@ module.exports = {
           "grok-4.6",
           "grok-4.6",
           83.7,
+          null,
+          null
+        ],
+        [
+          "claude-sonnet-5-5-xhigh-effort",
+          "claude-sonnet-5-5-xhigh-effort",
+          83.43,
           null,
           null
         ],
@@ -2788,6 +3012,13 @@ module.exports = {
           "deepseek-v4-pro",
           "deepseek-v4-pro",
           78.13,
+          null,
+          null
+        ],
+        [
+          "claude-sonnet-5-5-max-effort",
+          "claude-sonnet-5-5-max-effort",
+          77.98,
           null,
           null
         ],
@@ -2960,6 +3191,13 @@ module.exports = {
           null
         ],
         [
+          "claude-haiku-5-5-xhigh-effort",
+          "claude-haiku-5-5-xhigh-effort",
+          63.52,
+          null,
+          null
+        ],
+        [
           "qwen3.6-27b",
           "qwen3.6-27b",
           63.3,
@@ -2967,9 +3205,23 @@ module.exports = {
           null
         ],
         [
+          "claude-haiku-5-5-max-effort",
+          "claude-haiku-5-5-max-effort",
+          62.63,
+          null,
+          null
+        ],
+        [
           "gpt-5.4-nano-xhigh",
           "gpt-5.4-nano-xhigh",
           62.51,
+          null,
+          null
+        ],
+        [
+          "mistral-large-4-high",
+          "mistral-large-4-high",
+          49.64,
           null,
           null
         ]
@@ -2986,9 +3238,9 @@ module.exports = {
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "instruction_following",
-      "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-26T08:33:13Z",
+      "snapshotId": "db6bd3ecebe4d1aa02f1ebe89341d83de247d5588b4d37c2b94780cf3e217138",
+      "contentHash": "db6bd3ecebe4d1aa02f1ebe89341d83de247d5588b4d37c2b94780cf3e217138",
+      "generatedAt": "2026-10-10T09:46:34Z",
       "taskCount": 4,
       "source": {
         "name": "LiveBench IF dated official leaderboard CSV",
@@ -3077,6 +3329,13 @@ module.exports = {
           null
         ],
         [
+          "gpt-6.1-sol-max",
+          "gpt-6.1-sol-max",
+          74.15,
+          null,
+          null
+        ],
+        [
           "qwen3.8-max",
           "qwen3.8-max",
           74.08,
@@ -3154,6 +3413,13 @@ module.exports = {
           null
         ],
         [
+          "gpt-6.1-sol-xhigh",
+          "gpt-6.1-sol-xhigh",
+          71.33,
+          null,
+          null
+        ],
+        [
           "smaug-agentic",
           "smaug-agentic",
           70.99,
@@ -3171,6 +3437,13 @@ module.exports = {
           "gpt-5.5-xhigh",
           "gpt-5.5-xhigh",
           70.73,
+          null,
+          null
+        ],
+        [
+          "claude-sonnet-5-5-xhigh-effort",
+          "claude-sonnet-5-5-xhigh-effort",
+          70.52,
           null,
           null
         ],
@@ -3259,6 +3532,13 @@ module.exports = {
           null
         ],
         [
+          "claude-haiku-5-5-xhigh-effort",
+          "claude-haiku-5-5-xhigh-effort",
+          66.47,
+          null,
+          null
+        ],
+        [
           "gpt-5.2-codex",
           "gpt-5.2-codex",
           66.45,
@@ -3283,6 +3563,13 @@ module.exports = {
           "grok-build-0.1",
           "grok-build-0.1",
           65.22,
+          null,
+          null
+        ],
+        [
+          "mistral-large-4-high",
+          "mistral-large-4-high",
+          64.82,
           null,
           null
         ],
@@ -3392,13 +3679,6 @@ module.exports = {
           null
         ],
         [
-          "union-alpha",
-          "union-alpha",
-          59.53,
-          null,
-          null
-        ],
-        [
           "qwen3.6-plus",
           "qwen3.6-plus",
           58.34,
@@ -3413,6 +3693,13 @@ module.exports = {
           null
         ],
         [
+          "claude-sonnet-5-5-max-effort",
+          "claude-sonnet-5-5-max-effort",
+          56.79,
+          null,
+          null
+        ],
+        [
           "kimi-k2.7-code",
           "kimi-k2.7-code",
           56.29,
@@ -3423,6 +3710,13 @@ module.exports = {
           "gpt-6-luna-max",
           "gpt-6-luna-max",
           55.93,
+          null,
+          null
+        ],
+        [
+          "claude-haiku-5-5-max-effort",
+          "claude-haiku-5-5-max-effort",
+          54.66,
           null,
           null
         ],
@@ -3453,9 +3747,9 @@ module.exports = {
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "agentic_coding",
-      "snapshotId": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "contentHash": "7c4a82f0afc095b62c1d2484c9b1ac612a2274408473857d9cad75663638405e",
-      "generatedAt": "2026-09-26T08:33:04Z",
+      "snapshotId": "db6bd3ecebe4d1aa02f1ebe89341d83de247d5588b4d37c2b94780cf3e217138",
+      "contentHash": "db6bd3ecebe4d1aa02f1ebe89341d83de247d5588b4d37c2b94780cf3e217138",
+      "generatedAt": "2026-10-10T09:46:24Z",
       "taskCount": 3,
       "source": {
         "name": "LiveBench Agentic Coding dated official leaderboard CSV",
@@ -3614,6 +3908,20 @@ module.exports = {
           null
         ],
         [
+          "mistral-large-4-high",
+          "mistral-large-4-high",
+          57.17,
+          null,
+          null
+        ],
+        [
+          "claude-haiku-5-5-max-effort",
+          "claude-haiku-5-5-max-effort",
+          57.17,
+          null,
+          null
+        ],
+        [
           "grok-4.6",
           "grok-4.6",
           57.02,
@@ -3628,9 +3936,23 @@ module.exports = {
           null
         ],
         [
+          "gpt-6.1-sol-xhigh",
+          "gpt-6.1-sol-xhigh",
+          56.77,
+          null,
+          null
+        ],
+        [
           "grok-4.5",
           "grok-4.5",
           56.46,
+          null,
+          null
+        ],
+        [
+          "claude-sonnet-5-5-max-effort",
+          "claude-sonnet-5-5-max-effort",
+          56.31,
           null,
           null
         ],
@@ -3656,9 +3978,9 @@ module.exports = {
           null
         ],
         [
-          "union-alpha",
-          "union-alpha",
-          54.7,
+          "gpt-6.1-sol-max",
+          "gpt-6.1-sol-max",
+          54.55,
           null,
           null
         ],
@@ -3708,6 +4030,13 @@ module.exports = {
           "glm-5.2",
           "glm-5.2",
           51.77,
+          null,
+          null
+        ],
+        [
+          "claude-haiku-5-5-xhigh-effort",
+          "claude-haiku-5-5-xhigh-effort",
+          51.36,
           null,
           null
         ],
@@ -3880,6 +4209,13 @@ module.exports = {
           null
         ],
         [
+          "claude-sonnet-5-5-xhigh-effort",
+          "claude-sonnet-5-5-xhigh-effort",
+          39.34,
+          null,
+          null
+        ],
+        [
           "qwen3.6-27b",
           "qwen3.6-27b",
           39.29,
@@ -3920,9 +4256,9 @@ module.exports = {
       "metric": "Artificial Analysis Intelligence Index: Score",
       "unit": "score",
       "comparisonKey": "intelligence_index_v4_3",
-      "snapshotId": "9247a559e5385fbb359e9430525d07b3ac43fd9f631868ed7a6337177510ca9b",
-      "contentHash": "9247a559e5385fbb359e9430525d07b3ac43fd9f631868ed7a6337177510ca9b",
-      "generatedAt": "2026-09-26T08:32:49Z",
+      "snapshotId": "6e3a8cf9375c8c9e8a7010b5dadd48e92fa7eb6c8170c292f0da39ef08da726b",
+      "contentHash": "6e3a8cf9375c8c9e8a7010b5dadd48e92fa7eb6c8170c292f0da39ef08da726b",
+      "generatedAt": "2026-10-10T09:46:14Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Intelligence Index official public Dataset page",
@@ -3934,91 +4270,98 @@ module.exports = {
       },
       "entries": [
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5 (Max, Default Fallback)",
           "Claude Opus 5.5",
           57.62,
           null,
           "max with fallback"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Sonnet 5.5 (Max, Default Fallback)",
+          "Claude Sonnet 5.5",
+          56.0,
+          null,
+          "max with fallback"
+        ],
+        [
+          "Claude Opus 5.5 (Xhigh, Default Fallback)",
           "Claude Opus 5.5",
           55.99,
           null,
           "xhigh with fallback"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Opus 5.5 (High, Default Fallback)",
           "Claude Opus 5.5",
           53.58,
           null,
           "high with fallback"
         ],
         [
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Max, Default Fallback)",
           "Claude Fable 5.1",
           53.35,
           null,
           "max with fallback"
         ],
         [
-          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1 (Xhigh, Default Fallback)",
           "Claude Fable 5.1",
           53.2,
           null,
           "xhigh with fallback"
         ],
         [
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra (Max)",
           "GPT-6 Astra",
           52.67,
           null,
           "max"
         ],
         [
-          "GPT-6 Astra (xhigh)",
+          "Gemini 4 Argon (High)",
+          "Gemini 4 Argon",
+          52.56,
+          null,
+          "high"
+        ],
+        [
+          "GPT-6 Astra (Xhigh)",
           "GPT-6 Astra",
           52.39,
           null,
           "xhigh"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
-          "Claude Opus 5.5",
-          51.24,
+          "Claude Sonnet 5.5 (Xhigh, Default Fallback)",
+          "Claude Sonnet 5.5",
+          51.9,
           null,
-          "medium with fallback"
+          "xhigh with fallback"
         ],
         [
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5",
-          50.78,
+          "GPT-6.1 Sol (Max)",
+          "GPT-6.1 Sol",
+          51.83,
           null,
           "max"
         ],
         [
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3 (Max)",
           "Muse Spark 1.3",
           48.09,
           null,
           "max"
         ],
         [
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol (Max)",
           "GPT-6 Sol",
-          47.53,
+          47.63,
           null,
           "max"
         ],
         [
-          "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol",
-          46.97,
-          null,
-          "max"
-        ],
-        [
-          "Grok 4.7 (xhigh)",
+          "Grok 4.7 (Xhigh)",
           "Grok 4.7",
           46.45,
           null,
@@ -4039,18 +4382,11 @@ module.exports = {
           null
         ],
         [
-          "GLM-5.3 (max)",
+          "GLM-5.3 (Max)",
           "GLM-5.3",
           44.78,
           null,
           "max"
-        ],
-        [
-          "Grok 4.6 (high)",
-          "Grok 4.6",
-          44.31,
-          null,
-          "high"
         ],
         [
           "Step 5 Preview",
@@ -4060,49 +4396,56 @@ module.exports = {
           null
         ],
         [
-          "Kimi K3 (max)",
+          "Kimi K3 (Max)",
           "Kimi K3",
           43.59,
           null,
           "max"
         ],
         [
-          "GLM 5.3 Flash",
-          "GLM 5.3 Flash",
+          "Claude Haiku 5.5 (Max)",
+          "Claude Haiku 5.5",
+          43.4,
+          null,
+          "max"
+        ],
+        [
+          "GLM-5.3-Flash",
+          "GLM-5.3-Flash",
           41.81,
           null,
           null
         ],
         [
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash (High)",
           "Gemini 3.8 Flash",
           40.93,
           null,
           "high"
         ],
         [
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash (Max)",
           "DeepSeek V4.1 Flash",
           39.46,
           null,
           "max"
         ],
         [
-          "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna",
-          37.32,
+          "Mistral Large 4 Preview",
+          "Mistral Large 4 Preview",
+          38.38,
           null,
-          "max"
+          null
         ],
         [
-          "GPT-6 Luna (max)",
+          "GPT-6 Luna (Max)",
           "GPT-6 Luna",
-          37.26,
+          38.12,
           null,
           "max"
         ],
         [
-          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B (Xhigh)",
           "Qwen3.8 27B",
           33.7,
           null,
@@ -4123,7 +4466,7 @@ module.exports = {
           null
         ],
         [
-          "Inkling (xhigh)",
+          "Inkling (Xhigh)",
           "Inkling",
           24.98,
           null,
@@ -4137,25 +4480,11 @@ module.exports = {
           null
         ],
         [
-          "Gemini 3.5 Flash-Lite",
-          "Gemini 3.5 Flash-Lite",
-          22.17,
-          null,
-          null
-        ],
-        [
-          "Muse Glimmer (high)",
+          "Muse Glimmer (High)",
           "Muse Glimmer",
           17.48,
           null,
           "high"
-        ],
-        [
-          "Mistral Medium 3.5",
-          "Mistral Medium 3.5",
-          14.19,
-          null,
-          null
         ]
       ]
     },
@@ -4170,9 +4499,9 @@ module.exports = {
       "metric": "Terminal-Bench 4.0: Score",
       "unit": "ratio",
       "comparisonKey": "terminal_bench_v4_0",
-      "snapshotId": "6f38c57fcd40783600d2ff2a24df55f7376b7f9c2990ff3f47ed0d02d08f45ce",
-      "contentHash": "6f38c57fcd40783600d2ff2a24df55f7376b7f9c2990ff3f47ed0d02d08f45ce",
-      "generatedAt": "2026-09-26T08:33:33Z",
+      "snapshotId": "fafc77f6965bb9ee9bf9b0b2c8bd173eb09f078de81fee29733414d4e9b2bf00",
+      "contentHash": "fafc77f6965bb9ee9bf9b0b2c8bd173eb09f078de81fee29733414d4e9b2bf00",
+      "generatedAt": "2026-10-10T09:46:57Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
@@ -4184,86 +4513,93 @@ module.exports = {
       },
       "entries": [
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Sonnet 5.5 (Max, Default Fallback)",
+          "Claude Sonnet 5.5",
+          0.6364,
+          null,
+          "max with fallback"
+        ],
+        [
+          "Claude Opus 5.5 (Max, Default Fallback)",
           "Claude Opus 5.5",
           0.596,
           null,
           "max with fallback"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5 (Xhigh, Default Fallback)",
           "Claude Opus 5.5",
           0.596,
           null,
           "xhigh with fallback"
         ],
         [
-          "GPT-6 Astra (xhigh)",
+          "GPT-6 Astra (Xhigh)",
           "GPT-6 Astra",
           0.596,
           null,
           "xhigh"
         ],
         [
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra (Max)",
           "GPT-6 Astra",
           0.5909,
           null,
           "max"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Gemini 4 Argon (High)",
+          "Gemini 4 Argon",
+          0.5707,
+          null,
+          "high"
+        ],
+        [
+          "Claude Sonnet 5.5 (Xhigh, Default Fallback)",
+          "Claude Sonnet 5.5",
+          0.5707,
+          null,
+          "xhigh with fallback"
+        ],
+        [
+          "Claude Opus 5.5 (High, Default Fallback)",
           "Claude Opus 5.5",
           0.5657,
           null,
           "high with fallback"
         ],
         [
-          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "GPT-6.1 Sol (Max)",
+          "GPT-6.1 Sol",
+          0.5606,
+          null,
+          "max"
+        ],
+        [
+          "Claude Fable 5.1 (Xhigh, Default Fallback)",
           "Claude Fable 5.1",
           0.5505,
           null,
           "xhigh with fallback"
         ],
         [
-          "GPT-6 Astra (high)",
-          "GPT-6 Astra",
-          0.5404,
-          null,
-          "high"
-        ],
-        [
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Max, Default Fallback)",
           "Claude Fable 5.1",
           0.5202,
           null,
           "max with fallback"
         ],
         [
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5",
-          0.4899,
-          null,
-          "max"
-        ],
-        [
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol (Max)",
           "GPT-6 Sol",
           0.4394,
           null,
           "max"
         ],
         [
-          "GLM-5.3 (max)",
+          "GLM-5.3 (Max)",
           "GLM-5.3",
           0.4192,
-          null,
-          "max"
-        ],
-        [
-          "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol",
-          0.399,
           null,
           "max"
         ],
@@ -4282,7 +4618,7 @@ module.exports = {
           null
         ],
         [
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3 (Max)",
           "Muse Spark 1.3",
           0.3333,
           null,
@@ -4296,63 +4632,63 @@ module.exports = {
           null
         ],
         [
-          "GLM 5.3 Flash",
-          "GLM 5.3 Flash",
+          "Claude Haiku 5.5 (Max)",
+          "Claude Haiku 5.5",
+          0.3283,
+          null,
+          "max"
+        ],
+        [
+          "GLM-5.3-Flash",
+          "GLM-5.3-Flash",
           0.3283,
           null,
           null
         ],
         [
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash (Max)",
           "DeepSeek V4.1 Flash",
           0.2677,
           null,
           "max"
         ],
         [
-          "Grok 4.7 (xhigh)",
+          "Mistral Large 4 Preview",
+          "Mistral Large 4 Preview",
+          0.2677,
+          null,
+          null
+        ],
+        [
+          "Grok 4.7 (Xhigh)",
           "Grok 4.7",
           0.2576,
           null,
           "xhigh"
         ],
         [
-          "Grok 4.6 (high)",
-          "Grok 4.6",
-          0.2121,
-          null,
-          "high"
-        ],
-        [
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash (High)",
           "Gemini 3.8 Flash",
           0.197,
           null,
           "high"
         ],
         [
-          "Kimi K3 (max)",
+          "Kimi K3 (Max)",
           "Kimi K3",
           0.1263,
           null,
           "max"
         ],
         [
-          "GPT-6 Luna (max)",
+          "GPT-6 Luna (Max)",
           "GPT-6 Luna",
           0.1263,
           null,
           "max"
         ],
         [
-          "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna",
-          0.1162,
-          null,
-          "max"
-        ],
-        [
-          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B (Xhigh)",
           "Qwen3.8 27B",
           0.0556,
           null,
@@ -4373,20 +4709,13 @@ module.exports = {
           null
         ],
         [
-          "Inkling (xhigh)",
+          "Inkling (Xhigh)",
           "Inkling",
           0.0101,
           null,
           "xhigh"
         ],
         [
-          "Gemini 3.5 Flash-Lite",
-          "Gemini 3.5 Flash-Lite",
-          0.0101,
-          null,
-          null
-        ],
-        [
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
           0.0051,
@@ -4394,18 +4723,11 @@ module.exports = {
           null
         ],
         [
-          "Muse Glimmer (high)",
+          "Muse Glimmer (High)",
           "Muse Glimmer",
           0.0051,
           null,
           "high"
-        ],
-        [
-          "Mistral Medium 3.5",
-          "Mistral Medium 3.5",
-          0.0,
-          null,
-          null
         ]
       ]
     },
@@ -4420,9 +4742,9 @@ module.exports = {
       "metric": "Humanity's Last Exam: Score",
       "unit": "ratio",
       "comparisonKey": "humanitys_last_exam",
-      "snapshotId": "3a00237cd538ec41691efe5d7df51ba7c0fec95797baa3deb282c5bc2f982fba",
-      "contentHash": "3a00237cd538ec41691efe5d7df51ba7c0fec95797baa3deb282c5bc2f982fba",
-      "generatedAt": "2026-09-26T08:33:01Z",
+      "snapshotId": "671f1dd622eb7a7a2ee20ad8d69a38bcac170c2b3b9c6cfd4e4746bb4c477fd2",
+      "contentHash": "671f1dd622eb7a7a2ee20ad8d69a38bcac170c2b3b9c6cfd4e4746bb4c477fd2",
+      "generatedAt": "2026-10-10T09:46:22Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Humanity's Last Exam official public Dataset page",
@@ -4434,72 +4756,79 @@ module.exports = {
       },
       "entries": [
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5 (Max, Default Fallback)",
           "Claude Opus 5.5",
           0.6135,
           null,
           "max with fallback"
         ],
         [
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Max, Default Fallback)",
           "Claude Fable 5.1",
           0.5913,
           null,
           "max with fallback"
         ],
         [
-          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1 (Xhigh, Default Fallback)",
           "Claude Fable 5.1",
           0.5871,
           null,
           "xhigh with fallback"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5 (Xhigh, Default Fallback)",
           "Claude Opus 5.5",
           0.5751,
           null,
           "xhigh with fallback"
         ],
         [
-          "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Gemini 4 Argon (High)",
+          "Gemini 4 Argon",
+          0.5709,
+          null,
+          "high"
+        ],
+        [
+          "Claude Fable 5.1 (High, Default Fallback)",
           "Claude Fable 5.1",
           0.5593,
           null,
           "high with fallback"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Opus 5.5 (High, Default Fallback)",
           "Claude Opus 5.5",
           0.5556,
           null,
           "high with fallback"
         ],
         [
-          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
-          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+          "Claude Fable 5 (Max, Opus 4.8 Fallback)",
+          "Claude Fable 5 (Max, Opus 4.8 Fallback)",
           0.5547,
           null,
           null
         ],
         [
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5",
-          0.5487,
+          "Claude Sonnet 5.5 (Max, Default Fallback)",
+          "Claude Sonnet 5.5",
+          0.5496,
           null,
-          "max"
+          "max with fallback"
         ],
         [
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra (Max)",
           "GPT-6 Astra",
           0.5468,
           null,
           "max"
         ],
         [
-          "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol",
-          0.4949,
+          "GPT-6.1 Sol (Max)",
+          "GPT-6.1 Sol",
+          0.5292,
           null,
           "max"
         ],
@@ -4511,28 +4840,28 @@ module.exports = {
           null
         ],
         [
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3 (Max)",
           "Muse Spark 1.3",
           0.487,
           null,
           "max"
         ],
         [
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol (Max)",
           "GPT-6 Sol",
           0.4791,
           null,
           "max"
         ],
         [
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash (High)",
           "Gemini 3.8 Flash",
           0.4782,
           null,
           "high"
         ],
         [
-          "Kimi K3 (max)",
+          "Kimi K3 (Max)",
           "Kimi K3",
           0.469,
           null,
@@ -4546,7 +4875,14 @@ module.exports = {
           null
         ],
         [
-          "Grok 4.7 (xhigh)",
+          "Claude Haiku 5.5 (Max)",
+          "Claude Haiku 5.5",
+          0.4439,
+          null,
+          "max"
+        ],
+        [
+          "Grok 4.7 (Xhigh)",
           "Grok 4.7",
           0.4314,
           null,
@@ -4560,35 +4896,21 @@ module.exports = {
           null
         ],
         [
-          "Grok 4.6 (high)",
-          "Grok 4.6",
-          0.4291,
-          null,
-          "high"
-        ],
-        [
-          "GLM-5.3 (max)",
+          "GLM-5.3 (Max)",
           "GLM-5.3",
           0.4226,
           null,
           "max"
         ],
         [
-          "GLM 5.3 Flash",
-          "GLM 5.3 Flash",
+          "GLM-5.3-Flash",
+          "GLM-5.3-Flash",
           0.3985,
           null,
           null
         ],
         [
-          "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna",
-          0.3948,
-          null,
-          "max"
-        ],
-        [
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash (Max)",
           "DeepSeek V4.1 Flash",
           0.3925,
           null,
@@ -4602,14 +4924,21 @@ module.exports = {
           null
         ],
         [
-          "GPT-6 Luna (max)",
+          "GPT-6 Luna (Max)",
           "GPT-6 Luna",
           0.3851,
           null,
           "max"
         ],
         [
-          "Qwen3.8 27B (xhigh)",
+          "Mistral Large 4 Preview",
+          "Mistral Large 4 Preview",
+          0.3503,
+          null,
+          null
+        ],
+        [
+          "Qwen3.8 27B (Xhigh)",
           "Qwen3.8 27B",
           0.3392,
           null,
@@ -4623,7 +4952,7 @@ module.exports = {
           null
         ],
         [
-          "Inkling (xhigh)",
+          "Inkling (Xhigh)",
           "Inkling",
           0.3188,
           null,
@@ -4637,25 +4966,11 @@ module.exports = {
           null
         ],
         [
-          "Muse Glimmer (high)",
+          "Muse Glimmer (High)",
           "Muse Glimmer",
           0.2196,
           null,
           "high"
-        ],
-        [
-          "Gemini 3.5 Flash-Lite",
-          "Gemini 3.5 Flash-Lite",
-          0.1881,
-          null,
-          null
-        ],
-        [
-          "Mistral Medium 3.5",
-          "Mistral Medium 3.5",
-          0.1376,
-          null,
-          null
         ]
       ]
     },
@@ -4670,9 +4985,9 @@ module.exports = {
       "metric": "GPQA Diamond: Score",
       "unit": "ratio",
       "comparisonKey": "gpqa_diamond",
-      "snapshotId": "0a6516ab2311205af1c5468a8a8fe7481389ae678f64b3c9854dd7ae765164f8",
-      "contentHash": "0a6516ab2311205af1c5468a8a8fe7481389ae678f64b3c9854dd7ae765164f8",
-      "generatedAt": "2026-09-26T08:32:59Z",
+      "snapshotId": "018d53d98b843bca9aeb1fe7432b1409b7c40ee4ab7b481acca381425a013c1d",
+      "contentHash": "018d53d98b843bca9aeb1fe7432b1409b7c40ee4ab7b481acca381425a013c1d",
+      "generatedAt": "2026-10-10T09:46:20Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis GPQA Diamond official public Dataset page",
@@ -4684,93 +4999,72 @@ module.exports = {
       },
       "entries": [
         [
-          "GPT-6 Astra (xhigh)",
+          "GPT-6 Astra (Xhigh)",
           "GPT-6 Astra",
           0.9626,
           null,
           "xhigh"
         ],
         [
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra (Max)",
           "GPT-6 Astra",
           0.9606,
           null,
           "max"
         ],
         [
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash (High)",
           "Gemini 3.8 Flash",
           0.9525,
           null,
           "high"
         ],
         [
-          "GPT-6 Astra (high)",
+          "GPT-6 Astra (High)",
           "GPT-6 Astra",
           0.9495,
           null,
           "high"
         ],
         [
-          "Grok 4.6 (high)",
+          "Grok 4.6 (High)",
           "Grok 4.6",
           0.9495,
           null,
           "high"
         ],
         [
-          "Gemini 3.7 Flash (high)",
+          "Gemini 3.7 Flash (High)",
           "Gemini 3.7 Flash",
           0.9455,
           null,
           "high"
         ],
         [
-          "GPT-5.6 Sol (max)",
+          "GPT-5.6 Sol (Max)",
           "GPT-5.6 Sol",
           0.9414,
           null,
           "max"
         ],
         [
-          "Muse Spark 1.3 (xhigh)",
-          "Muse Spark 1.3",
-          0.9414,
-          null,
-          "xhigh"
-        ],
-        [
-          "Gemini 3.1 Pro Preview",
-          "Gemini 3.1 Pro Preview",
-          0.9414,
-          null,
-          null
-        ],
-        [
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Max, Default Fallback)",
           "Claude Fable 5.1",
           0.9374,
           null,
           "max with fallback"
         ],
         [
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3 (Max)",
           "Muse Spark 1.3",
           0.9354,
           null,
           "max"
         ],
         [
-          "Kimi K3 (max)",
+          "Kimi K3 (Max)",
           "Kimi K3",
           0.9354,
-          null,
-          "max"
-        ],
-        [
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5",
-          0.9323,
           null,
           "max"
         ],
@@ -4789,28 +5083,21 @@ module.exports = {
           null
         ],
         [
-          "GLM-5.3 (max)",
+          "GLM-5.3 (Max)",
           "GLM-5.3",
           0.9172,
           null,
           "max"
         ],
         [
-          "GLM 5.3 Flash",
-          "GLM 5.3 Flash",
+          "GLM-5.3-Flash",
+          "GLM-5.3-Flash",
           0.9121,
           null,
           null
         ],
         [
-          "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna",
-          0.9111,
-          null,
-          "max"
-        ],
-        [
-          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B (Xhigh)",
           "Qwen3.8 27B",
           0.9051,
           null,
@@ -4824,7 +5111,7 @@ module.exports = {
           null
         ],
         [
-          "Inkling (xhigh)",
+          "Inkling (Xhigh)",
           "Inkling",
           0.8717,
           null,
@@ -4838,25 +5125,11 @@ module.exports = {
           null
         ],
         [
-          "Gemini 3.5 Flash-Lite",
-          "Gemini 3.5 Flash-Lite",
-          0.8384,
-          null,
-          null
-        ],
-        [
-          "Muse Glimmer (high)",
+          "Muse Glimmer (High)",
           "Muse Glimmer",
           0.8354,
           null,
           "high"
-        ],
-        [
-          "Mistral Medium 3.5",
-          "Mistral Medium 3.5",
-          0.7485,
-          null,
-          null
         ]
       ]
     },
@@ -4871,9 +5144,9 @@ module.exports = {
       "metric": "SciCode: Score",
       "unit": "ratio",
       "comparisonKey": "scicode",
-      "snapshotId": "ca06d1095e1ed71ada57a2e3fe2a3fcc052d5761b4d79f3310467b00dc05c49b",
-      "contentHash": "ca06d1095e1ed71ada57a2e3fe2a3fcc052d5761b4d79f3310467b00dc05c49b",
-      "generatedAt": "2026-09-26T08:33:26Z",
+      "snapshotId": "160a77424cfd3f3e6f4198b8544bb33dadc04fe5462903c25fcc792f829ed785",
+      "contentHash": "160a77424cfd3f3e6f4198b8544bb33dadc04fe5462903c25fcc792f829ed785",
+      "generatedAt": "2026-10-10T09:46:48Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis SciCode official public Dataset page",
@@ -4885,35 +5158,49 @@ module.exports = {
       },
       "entries": [
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5 (Max, Default Fallback)",
           "Claude Opus 5.5",
           0.669,
           null,
           "max with fallback"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5 (Xhigh, Default Fallback)",
           "Claude Opus 5.5",
           0.6505,
           null,
           "xhigh with fallback"
         ],
         [
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Max, Default Fallback)",
           "Claude Fable 5.1",
           0.6308,
           null,
           "max with fallback"
         ],
         [
-          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
-          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+          "Gemini 4 Argon (High)",
+          "Gemini 4 Argon",
+          0.6181,
+          null,
+          "high"
+        ],
+        [
+          "Claude Sonnet 5.5 (Max, Default Fallback)",
+          "Claude Sonnet 5.5",
+          0.61,
+          null,
+          "max with fallback"
+        ],
+        [
+          "Claude Fable 5 (Max, Opus 4.8 Fallback)",
+          "Claude Fable 5 (Max, Opus 4.8 Fallback)",
           0.61,
           null,
           null
         ],
         [
-          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1 (Xhigh, Default Fallback)",
           "Claude Fable 5.1",
           0.6088,
           null,
@@ -4927,28 +5214,28 @@ module.exports = {
           null
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Opus 5.5 (High, Default Fallback)",
           "Claude Opus 5.5",
           0.6042,
           null,
           "high with fallback"
         ],
         [
-          "Gemini 3.7 Flash (medium)",
+          "Gemini 3.7 Flash (Medium)",
           "Gemini 3.7 Flash",
           0.5984,
           null,
           "medium"
         ],
         [
-          "Kimi K3 (max)",
+          "Kimi K3 (Max)",
           "Kimi K3",
           0.5949,
           null,
           "max"
         ],
         [
-          "GLM-5.3 (max)",
+          "GLM-5.3 (Max)",
           "GLM-5.3",
           0.5903,
           null,
@@ -4962,74 +5249,67 @@ module.exports = {
           null
         ],
         [
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3 (Max)",
           "Muse Spark 1.3",
           0.588,
           null,
           "max"
         ],
         [
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol (Max)",
           "GPT-6 Sol",
           0.5764,
           null,
           "max"
         ],
         [
-          "Grok 4.7 (xhigh)",
+          "Grok 4.7 (Xhigh)",
           "Grok 4.7",
           0.5741,
           null,
           "xhigh"
         ],
         [
-          "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol",
-          0.5706,
-          null,
-          "max"
-        ],
-        [
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash (High)",
           "Gemini 3.8 Flash",
           0.566,
           null,
           "high"
         ],
         [
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra (Max)",
           "GPT-6 Astra",
           0.5648,
           null,
           "max"
         ],
         [
-          "Grok 4.6 (high)",
-          "Grok 4.6",
-          0.5648,
-          null,
-          "high"
-        ],
-        [
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5",
-          0.5637,
+          "Claude Haiku 5.5 (Max)",
+          "Claude Haiku 5.5",
+          0.5498,
           null,
           "max"
         ],
         [
-          "GPT-6 Luna (max)",
+          "GPT-6 Luna (Max)",
           "GPT-6 Luna",
           0.5463,
           null,
           "max"
         ],
         [
-          "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna",
-          0.5359,
+          "GPT-6.1 Sol (Max)",
+          "GPT-6.1 Sol",
+          0.5417,
           null,
           "max"
+        ],
+        [
+          "Mistral Large 4 Preview",
+          "Mistral Large 4 Preview",
+          0.5417,
+          null,
+          null
         ],
         [
           "Qwen3.8 Max (0902)",
@@ -5039,15 +5319,15 @@ module.exports = {
           null
         ],
         [
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash (Max)",
           "DeepSeek V4.1 Flash",
           0.5185,
           null,
           "max"
         ],
         [
-          "GLM 5.3 Flash",
-          "GLM 5.3 Flash",
+          "GLM-5.3-Flash",
+          "GLM-5.3-Flash",
           0.5162,
           null,
           null
@@ -5060,21 +5340,21 @@ module.exports = {
           null
         ],
         [
-          "Inkling (xhigh)",
+          "Inkling (Xhigh)",
           "Inkling",
           0.4699,
           null,
           "xhigh"
         ],
         [
-          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B (Xhigh)",
           "Qwen3.8 27B",
           0.4664,
           null,
           "xhigh"
         ],
         [
-          "Muse Glimmer (high)",
+          "Muse Glimmer (High)",
           "Muse Glimmer",
           0.4491,
           null,
@@ -5088,23 +5368,9 @@ module.exports = {
           null
         ],
         [
-          "Gemini 3.5 Flash-Lite",
-          "Gemini 3.5 Flash-Lite",
-          0.4132,
-          null,
-          null
-        ],
-        [
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
           0.4028,
-          null,
-          null
-        ],
-        [
-          "Mistral Medium 3.5",
-          "Mistral Medium 3.5",
-          0.4016,
           null,
           null
         ]
@@ -5121,9 +5387,9 @@ module.exports = {
       "metric": "AA-LCR v1.1",
       "unit": "ratio",
       "comparisonKey": "aa_lcr",
-      "snapshotId": "93aebb0fe02f5e81610a2be3386a94d3d84ef3521e5f79cc8f26aae07b4a81d6",
-      "contentHash": "93aebb0fe02f5e81610a2be3386a94d3d84ef3521e5f79cc8f26aae07b4a81d6",
-      "generatedAt": "2026-09-26T08:32:48Z",
+      "snapshotId": "7f8040482fb14af1ed410844df32387124a2ed0e234e27d4442d4da1ca3d2fdc",
+      "contentHash": "7f8040482fb14af1ed410844df32387124a2ed0e234e27d4442d4da1ca3d2fdc",
+      "generatedAt": "2026-10-10T09:46:09Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis AA LCR official public Dataset page",
@@ -5135,7 +5401,7 @@ module.exports = {
       },
       "entries": [
         [
-          "Kimi K3 (max)",
+          "Kimi K3 (Max)",
           "Kimi K3",
           0.8867,
           null,
@@ -5156,98 +5422,91 @@ module.exports = {
           null
         ],
         [
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Max, Default Fallback)",
           "Claude Fable 5.1",
           0.8533,
           null,
           "max with fallback"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5 (Max, Default Fallback)",
           "Claude Opus 5.5",
           0.8467,
           null,
           "max with fallback"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5 (Xhigh, Default Fallback)",
           "Claude Opus 5.5",
           0.8467,
           null,
           "xhigh with fallback"
         ],
         [
-          "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+          "Claude Fable 5.1 (Medium, Default Fallback)",
           "Claude Fable 5.1",
           0.8467,
           null,
           "medium with fallback"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+          "Claude Opus 5.5 (Medium, Default Fallback)",
           "Claude Opus 5.5",
           0.8433,
           null,
           "medium with fallback"
         ],
         [
-          "GPT-5.5 (xhigh)",
+          "GPT-5.5 (Xhigh)",
           "GPT-5.5",
           0.8433,
           null,
           "xhigh"
         ],
         [
-          "GPT-5.5 (high)",
+          "GPT-5.5 (High)",
           "GPT-5.5",
           0.8433,
           null,
           "high"
         ],
         [
-          "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol",
-          0.84,
-          null,
-          "max"
-        ],
-        [
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash (Max)",
           "DeepSeek V4.1 Flash",
           0.84,
           null,
           "max"
         ],
         [
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol (Max)",
           "GPT-6 Sol",
           0.8367,
           null,
           "max"
         ],
         [
-          "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna",
-          0.8367,
-          null,
-          "max"
-        ],
-        [
-          "GPT-6 Luna (max)",
+          "GPT-6 Luna (Max)",
           "GPT-6 Luna",
           0.8333,
           null,
           "max"
         ],
         [
-          "Muse Glimmer (high)",
+          "Muse Glimmer (High)",
           "Muse Glimmer",
           0.8333,
           null,
           "high"
         ],
         [
-          "Muse Spark 1.3 (max)",
+          "GPT-6.1 Sol (Max)",
+          "GPT-6.1 Sol",
+          0.83,
+          null,
+          "max"
+        ],
+        [
+          "Muse Spark 1.3 (Max)",
           "Muse Spark 1.3",
           0.83,
           null,
@@ -5261,21 +5520,42 @@ module.exports = {
           null
         ],
         [
-          "Qwen3.8 27B (xhigh)",
+          "Claude Sonnet 5.5 (Max, Default Fallback)",
+          "Claude Sonnet 5.5",
+          0.8267,
+          null,
+          "max with fallback"
+        ],
+        [
+          "Claude Haiku 5.5 (Max)",
+          "Claude Haiku 5.5",
+          0.8267,
+          null,
+          "max"
+        ],
+        [
+          "Qwen3.8 27B (Xhigh)",
           "Qwen3.8 27B",
           0.82,
           null,
           "xhigh"
         ],
         [
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash (High)",
           "Gemini 3.8 Flash",
           0.8133,
           null,
           "high"
         ],
         [
-          "GPT-6 Astra (max)",
+          "Mistral Large 4 Preview",
+          "Mistral Large 4 Preview",
+          0.8133,
+          null,
+          null
+        ],
+        [
+          "GPT-6 Astra (Max)",
           "GPT-6 Astra",
           0.8067,
           null,
@@ -5289,41 +5569,34 @@ module.exports = {
           null
         ],
         [
-          "Grok 4.6 (high)",
-          "Grok 4.6",
-          0.8033,
+          "GLM-5.3-Flash",
+          "GLM-5.3-Flash",
+          0.8,
+          null,
+          null
+        ],
+        [
+          "K2 Horizon 375B A23B",
+          "K2 Horizon 375B A23B",
+          0.8,
+          null,
+          null
+        ],
+        [
+          "Gemini 4 Argon (High)",
+          "Gemini 4 Argon",
+          0.7967,
           null,
           "high"
         ],
         [
-          "GLM 5.3 Flash",
-          "GLM 5.3 Flash",
-          0.8,
-          null,
-          null
-        ],
-        [
-          "K2 Horizon 375B A23B",
-          "K2 Horizon 375B A23B",
-          0.8,
-          null,
-          null
-        ],
-        [
-          "GLM-5.3 (max)",
+          "GLM-5.3 (Max)",
           "GLM-5.3",
           0.7967,
           null,
           "max"
         ],
         [
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5",
-          0.7933,
-          null,
-          "max"
-        ],
-        [
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
           0.7933,
@@ -5331,32 +5604,18 @@ module.exports = {
           null
         ],
         [
-          "Inkling (xhigh)",
+          "Inkling (Xhigh)",
           "Inkling",
           0.7733,
           null,
           "xhigh"
         ],
         [
-          "Grok 4.7 (xhigh)",
+          "Grok 4.7 (Xhigh)",
           "Grok 4.7",
           0.7667,
           null,
           "xhigh"
-        ],
-        [
-          "Gemini 3.5 Flash-Lite",
-          "Gemini 3.5 Flash-Lite",
-          0.76,
-          null,
-          null
-        ],
-        [
-          "Mistral Medium 3.5",
-          "Mistral Medium 3.5",
-          0.6933,
-          null,
-          null
         ]
       ]
     },
@@ -5371,9 +5630,9 @@ module.exports = {
       "metric": "omniscienceIndex",
       "unit": "score",
       "comparisonKey": "aa_omniscience_index",
-      "snapshotId": "3808138d7fb336e830f8d432f39ff0138dad5e89b73cf2b453825a23ace66849",
-      "contentHash": "3808138d7fb336e830f8d432f39ff0138dad5e89b73cf2b453825a23ace66849",
-      "generatedAt": "2026-09-26T08:32:52Z",
+      "snapshotId": "6e3b9d6929dd8236f87fed67d0d9014fa0b3f20af850b61dc5e92a273458338f",
+      "contentHash": "6e3b9d6929dd8236f87fed67d0d9014fa0b3f20af850b61dc5e92a273458338f",
+      "generatedAt": "2026-10-10T09:46:12Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis AA Omniscience Index official public Dataset page",
@@ -5385,112 +5644,112 @@ module.exports = {
       },
       "entries": [
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5 (Max, Default Fallback)",
           "Claude Opus 5.5",
           46.42,
           null,
           "max with fallback"
         ],
         [
-          "GPT-6 Astra (high)",
+          "GPT-6 Astra (High)",
           "GPT-6 Astra",
           43.73,
           null,
           "high"
         ],
         [
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Max, Default Fallback)",
           "Claude Fable 5.1",
           43.45,
           null,
           "max with fallback"
         ],
         [
-          "GPT-6 Astra (xhigh)",
+          "GPT-6 Astra (Xhigh)",
           "GPT-6 Astra",
           43.42,
           null,
           "xhigh"
         ],
         [
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra (Max)",
           "GPT-6 Astra",
           43.4,
           null,
           "max"
         ],
         [
-          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
-          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+          "Claude Fable 5 (Max, Opus 4.8 Fallback)",
+          "Claude Fable 5 (Max, Opus 4.8 Fallback)",
           43.3,
           null,
           null
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5 (Xhigh, Default Fallback)",
           "Claude Opus 5.5",
           42.65,
           null,
           "xhigh with fallback"
         ],
         [
-          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1 (Xhigh, Default Fallback)",
           "Claude Fable 5.1",
           42.38,
           null,
           "xhigh with fallback"
         ],
         [
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5",
-          37.07,
+          "Gemini 4 Argon (High)",
+          "Gemini 4 Argon",
+          42.35,
+          null,
+          "high"
+        ],
+        [
+          "GPT-6.1 Sol (Max)",
+          "GPT-6.1 Sol",
+          41.53,
           null,
           "max"
         ],
         [
-          "Grok 4.7 (xhigh)",
+          "Claude Sonnet 5.5 (Max, Default Fallback)",
+          "Claude Sonnet 5.5",
+          32.3,
+          null,
+          "max with fallback"
+        ],
+        [
+          "Grok 4.7 (Xhigh)",
           "Grok 4.7",
           32.03,
           null,
           "xhigh"
         ],
         [
-          "Grok 4.6 (high)",
-          "Grok 4.6",
-          30.48,
-          null,
-          "high"
-        ],
-        [
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash (High)",
           "Gemini 3.8 Flash",
           29.55,
           null,
           "high"
         ],
         [
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol (Max)",
           "GPT-6 Sol",
           27.12,
           null,
           "max"
         ],
         [
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3 (Max)",
           "Muse Spark 1.3",
           25.0,
           null,
           "max"
         ],
         [
-          "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol",
-          21.97,
-          null,
-          "max"
-        ],
-        [
-          "Kimi K3 (max)",
+          "Kimi K3 (Max)",
           "Kimi K3",
           19.7,
           null,
@@ -5504,7 +5763,7 @@ module.exports = {
           null
         ],
         [
-          "GLM-5.3 (max)",
+          "GLM-5.3 (Max)",
           "GLM-5.3",
           14.3,
           null,
@@ -5518,6 +5777,13 @@ module.exports = {
           null
         ],
         [
+          "Claude Haiku 5.5 (Max)",
+          "Claude Haiku 5.5",
+          10.67,
+          null,
+          "max"
+        ],
+        [
           "MiMo-V2.6-Pro",
           "MiMo-V2.6-Pro",
           8.38,
@@ -5525,21 +5791,14 @@ module.exports = {
           null
         ],
         [
-          "GLM 5.3 Flash",
-          "GLM 5.3 Flash",
+          "GLM-5.3-Flash",
+          "GLM-5.3-Flash",
           7.47,
           null,
           null
         ],
         [
-          "Gemini 3.5 Flash-Lite",
-          "Gemini 3.5 Flash-Lite",
-          5.23,
-          null,
-          null
-        ],
-        [
-          "Inkling (xhigh)",
+          "Inkling (Xhigh)",
           "Inkling",
           2.0,
           null,
@@ -5553,7 +5812,7 @@ module.exports = {
           null
         ],
         [
-          "GPT-6 Luna (max)",
+          "GPT-6 Luna (Max)",
           "GPT-6 Luna",
           0.65,
           null,
@@ -5574,39 +5833,32 @@ module.exports = {
           null
         ],
         [
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash (Max)",
           "DeepSeek V4.1 Flash",
           -5.3,
           null,
           "max"
         ],
         [
-          "Qwen3.8 27B (xhigh)",
+          "Mistral Large 4 Preview",
+          "Mistral Large 4 Preview",
+          -5.3,
+          null,
+          null
+        ],
+        [
+          "Qwen3.8 27B (Xhigh)",
           "Qwen3.8 27B",
           -9.98,
           null,
           "xhigh"
         ],
         [
-          "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna",
-          -10.28,
-          null,
-          "max"
-        ],
-        [
-          "Muse Glimmer (high)",
+          "Muse Glimmer (High)",
           "Muse Glimmer",
           -32.85,
           null,
           "high"
-        ],
-        [
-          "Mistral Medium 3.5",
-          "Mistral Medium 3.5",
-          -36.8,
-          null,
-          null
         ]
       ]
     },
@@ -5621,9 +5873,9 @@ module.exports = {
       "metric": "CritPt: Score",
       "unit": "ratio",
       "comparisonKey": "critpt",
-      "snapshotId": "11e864dce8eb6725d6277dad15f44a4a81a288d75634f0f43b1feead941f79bc",
-      "contentHash": "11e864dce8eb6725d6277dad15f44a4a81a288d75634f0f43b1feead941f79bc",
-      "generatedAt": "2026-09-26T08:32:48Z",
+      "snapshotId": "62c3ae9784558abe63e36e23489a8d511928893dadb3c075779fbcb9093fd681",
+      "contentHash": "62c3ae9784558abe63e36e23489a8d511928893dadb3c075779fbcb9093fd681",
+      "generatedAt": "2026-10-10T09:46:09Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis CritPt official public Dataset page",
@@ -5635,88 +5887,88 @@ module.exports = {
       },
       "entries": [
         [
-          "GPT-5.6 Sol (max)",
+          "GPT-5.6 Sol (Max)",
           "GPT-5.6 Sol",
           0.3229,
           null,
           "max"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5 (Max, Default Fallback)",
           "Claude Opus 5.5",
           0.3171,
           null,
           "max with fallback"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5 (Xhigh, Default Fallback)",
           "Claude Opus 5.5",
           0.3171,
           null,
           "xhigh with fallback"
         ],
         [
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra (Max)",
           "GPT-6 Astra",
           0.3171,
           null,
           "max"
         ],
         [
-          "GPT-6 Astra (xhigh)",
+          "GPT-6.1 Sol (Max)",
+          "GPT-6.1 Sol",
+          0.3171,
+          null,
+          "max"
+        ],
+        [
+          "GPT-6.1 Sol (Xhigh)",
+          "GPT-6.1 Sol",
+          0.3171,
+          null,
+          "xhigh"
+        ],
+        [
+          "Claude Sonnet 5.5 (Max, Default Fallback)",
+          "Claude Sonnet 5.5",
+          0.3143,
+          null,
+          "max with fallback"
+        ],
+        [
+          "GPT-6 Astra (Xhigh)",
           "GPT-6 Astra",
           0.3143,
           null,
           "xhigh"
         ],
         [
-          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1 (Xhigh, Default Fallback)",
           "Claude Fable 5.1",
           0.3114,
           null,
           "xhigh with fallback"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "Claude Opus 5.5",
-          0.3086,
-          null,
-          "high with fallback"
-        ],
-        [
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol (Max)",
           "GPT-6 Sol",
           0.3086,
           null,
           "max"
         ],
         [
-          "GPT-5.5 Pro (xhigh)",
-          "GPT-5.5 Pro",
-          0.3057,
-          null,
-          "xhigh"
-        ],
-        [
-          "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "Claude Fable 5.1",
-          0.3029,
-          null,
-          "high with fallback"
-        ],
-        [
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Max, Default Fallback)",
           "Claude Fable 5.1",
           0.2971,
           null,
           "max with fallback"
         ],
         [
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5",
-          0.2914,
+          "Gemini 4 Argon (High)",
+          "Gemini 4 Argon",
+          0.2714,
           null,
-          "max"
+          "high"
         ],
         [
           "MiMo-V2.6-Pro",
@@ -5726,14 +5978,14 @@ module.exports = {
           null
         ],
         [
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3 (Max)",
           "Muse Spark 1.3",
           0.2486,
           null,
           "max"
         ],
         [
-          "Kimi K3 (max)",
+          "Kimi K3 (Max)",
           "Kimi K3",
           0.2343,
           null,
@@ -5747,35 +5999,35 @@ module.exports = {
           null
         ],
         [
-          "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna",
-          0.2057,
-          null,
-          "max"
-        ],
-        [
-          "GPT-6 Luna (max)",
+          "GPT-6 Luna (Max)",
           "GPT-6 Luna",
           0.1943,
           null,
           "max"
         ],
         [
-          "GLM-5.3 (max)",
+          "GLM-5.3 (Max)",
           "GLM-5.3",
           0.1914,
           null,
           "max"
         ],
         [
-          "Gemini 3.8 Flash (high)",
+          "Claude Haiku 5.5 (Max)",
+          "Claude Haiku 5.5",
+          0.1886,
+          null,
+          "max"
+        ],
+        [
+          "Gemini 3.8 Flash (High)",
           "Gemini 3.8 Flash",
           0.1829,
           null,
           "high"
         ],
         [
-          "Grok 4.7 (xhigh)",
+          "Grok 4.7 (Xhigh)",
           "Grok 4.7",
           0.1771,
           null,
@@ -5789,35 +6041,35 @@ module.exports = {
           null
         ],
         [
-          "Grok 4.6 (high)",
-          "Grok 4.6",
-          0.1714,
-          null,
-          "high"
-        ],
-        [
-          "GLM 5.3 Flash",
-          "GLM 5.3 Flash",
+          "GLM-5.3-Flash",
+          "GLM-5.3-Flash",
           0.1543,
           null,
           null
         ],
         [
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash (Max)",
           "DeepSeek V4.1 Flash",
           0.1429,
           null,
           "max"
         ],
         [
-          "Qwen3.8 27B (xhigh)",
+          "Mistral Large 4 Preview",
+          "Mistral Large 4 Preview",
+          0.1057,
+          null,
+          null
+        ],
+        [
+          "Qwen3.8 27B (Xhigh)",
           "Qwen3.8 27B",
           0.0543,
           null,
           "xhigh"
         ],
         [
-          "Inkling (xhigh)",
+          "Inkling (Xhigh)",
           "Inkling",
           0.0543,
           null,
@@ -5845,25 +6097,11 @@ module.exports = {
           null
         ],
         [
-          "Muse Glimmer (high)",
+          "Muse Glimmer (High)",
           "Muse Glimmer",
           0.0257,
           null,
           "high"
-        ],
-        [
-          "Gemini 3.5 Flash-Lite",
-          "Gemini 3.5 Flash-Lite",
-          0.0,
-          null,
-          null
-        ],
-        [
-          "Mistral Medium 3.5",
-          "Mistral Medium 3.5",
-          0.0,
-          null,
-          null
         ]
       ]
     },
@@ -5878,9 +6116,9 @@ module.exports = {
       "metric": "gdpvalAaElo",
       "unit": "raw",
       "comparisonKey": "gdpval_aa_elo",
-      "snapshotId": "599062f01ecbcdfce2613c33b1a19cbe6a42aeb3ed1bf6ff2755b96cb8e337db",
-      "contentHash": "599062f01ecbcdfce2613c33b1a19cbe6a42aeb3ed1bf6ff2755b96cb8e337db",
-      "generatedAt": "2026-09-26T08:32:58Z",
+      "snapshotId": "508566a2298d42d11114442ec2ba56f137f018f35619d64d4b12af543444851b",
+      "contentHash": "508566a2298d42d11114442ec2ba56f137f018f35619d64d4b12af543444851b",
+      "generatedAt": "2026-10-10T09:46:21Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis GDPval-AA Elo official public Dataset page",
@@ -5892,228 +6130,221 @@ module.exports = {
       },
       "entries": [
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5 (Max, Default Fallback)",
           "Claude Opus 5.5",
-          1846.17,
+          1866.27,
           null,
           "max with fallback"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "Claude Opus 5.5",
-          1820.11,
-          null,
-          "xhigh with fallback"
-        ],
-        [
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-          "Claude Fable 5.1",
-          1734.67,
+          "Claude Sonnet 5.5 (Max, Default Fallback)",
+          "Claude Sonnet 5.5",
+          1837.82,
           null,
           "max with fallback"
         ],
         [
-          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
-          "Claude Fable 5.1",
-          1720.92,
+          "Claude Opus 5.5 (Xhigh, Default Fallback)",
+          "Claude Opus 5.5",
+          1835.8,
           null,
           "xhigh with fallback"
         ],
         [
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Fable 5.1 (Max, Default Fallback)",
+          "Claude Fable 5.1",
+          1756.22,
+          null,
+          "max with fallback"
+        ],
+        [
+          "Claude Fable 5.1 (Xhigh, Default Fallback)",
+          "Claude Fable 5.1",
+          1732.79,
+          null,
+          "xhigh with fallback"
+        ],
+        [
+          "Claude Sonnet 5.5 (Xhigh, Default Fallback)",
+          "Claude Sonnet 5.5",
+          1729.54,
+          null,
+          "xhigh with fallback"
+        ],
+        [
+          "Claude Opus 5 (Max)",
           "Claude Opus 5",
-          1707.92,
+          1721.9,
           null,
           "max"
         ],
         [
-          "Grok 4.7 (xhigh)",
+          "Grok 4.7 (Xhigh)",
           "Grok 4.7",
-          1695.21,
+          1712.45,
           null,
           "xhigh"
         ],
         [
-          "Grok 4.7 (high)",
+          "Grok 4.7 (High)",
           "Grok 4.7",
-          1693.72,
+          1707.5,
           null,
           "high"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
-          "Claude Opus 5.5",
-          1691.72,
+          "MiMo-V2.6-Pro",
+          "MiMo-V2.6-Pro",
+          1684.77,
           null,
-          "high with fallback"
+          null
         ],
         [
-          "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
-          "Claude Opus 5",
-          1676.3,
-          null,
-          "xhigh"
-        ],
-        [
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3 (Max)",
           "Muse Spark 1.3",
-          1674.07,
+          1680.99,
           null,
           "max"
         ],
         [
-          "MiMo-V2.6-Pro",
-          "MiMo-V2.6-Pro",
-          1673.19,
+          "Qwen3.8 Max (0902)",
+          "Qwen3.8 Max (0902)",
+          1667.28,
           null,
           null
         ],
         [
-          "Qwen3.8 Max (0902)",
-          "Qwen3.8 Max (0902)",
-          1667.72,
-          null,
-          null
-        ],
-        [
-          "GLM-5.3 (max)",
+          "GLM-5.3 (Max)",
           "GLM-5.3",
-          1645.52,
+          1650.73,
           null,
           "max"
         ],
         [
-          "GLM 5.3 Flash",
-          "GLM 5.3 Flash",
-          1640.78,
+          "GLM-5.3-Flash",
+          "GLM-5.3-Flash",
+          1644.13,
           null,
           null
         ],
         [
-          "Grok 4.6 (high)",
-          "Grok 4.6",
-          1605.49,
+          "Gemini 4 Argon (High)",
+          "Gemini 4 Argon",
+          1623.83,
           null,
           "high"
         ],
         [
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "Claude Haiku 5.5 (Max)",
+          "Claude Haiku 5.5",
+          1618.07,
+          null,
+          "max"
+        ],
+        [
+          "DeepSeek V4.1 Flash (Max)",
           "DeepSeek V4.1 Flash",
           1600.0,
           null,
           "max"
         ],
         [
-          "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol",
-          1587.9,
+          "GPT-6.1 Sol (Max)",
+          "GPT-6.1 Sol",
+          1591.97,
           null,
           "max"
         ],
         [
           "Step 5 Preview",
           "Step 5 Preview",
-          1566.12,
+          1584.24,
           null,
           null
         ],
         [
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra (Max)",
           "GPT-6 Astra",
-          1541.89,
+          1573.9,
           null,
           "max"
         ],
         [
-          "Kimi K3 (max)",
+          "Kimi K3 (Max)",
           "Kimi K3",
-          1523.97,
+          1533.4,
           null,
           "max"
         ],
         [
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol (Max)",
           "GPT-6 Sol",
-          1486.93,
+          1507.56,
           null,
           "max"
         ],
         [
-          "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna",
-          1443.14,
-          null,
-          "max"
-        ],
-        [
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash (High)",
           "Gemini 3.8 Flash",
-          1411.95,
+          1435.52,
           null,
           "high"
         ],
         [
-          "Qwen3.8 27B (xhigh)",
-          "Qwen3.8 27B",
-          1408.94,
-          null,
-          "xhigh"
-        ],
-        [
-          "GPT-6 Luna (max)",
+          "GPT-6 Luna (Max)",
           "GPT-6 Luna",
-          1367.09,
+          1431.64,
           null,
           "max"
         ],
         [
+          "Mistral Large 4 Preview",
+          "Mistral Large 4 Preview",
+          1421.68,
+          null,
+          null
+        ],
+        [
+          "Qwen3.8 27B (Xhigh)",
+          "Qwen3.8 27B",
+          1419.13,
+          null,
+          "xhigh"
+        ],
+        [
           "K2 Horizon 375B A23B",
           "K2 Horizon 375B A23B",
-          1349.2,
+          1360.51,
           null,
           null
         ],
         [
           "MiniMax-M3",
           "MiniMax-M3",
-          1230.07,
+          1242.26,
           null,
           null
         ],
         [
-          "Inkling (xhigh)",
+          "Inkling (Xhigh)",
           "Inkling",
-          1063.67,
+          1075.6,
           null,
           "xhigh"
         ],
         [
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
-          1000.35,
+          1012.79,
           null,
           null
         ],
         [
-          "Gemini 3.5 Flash-Lite",
-          "Gemini 3.5 Flash-Lite",
-          969.52,
-          null,
-          null
-        ],
-        [
-          "Muse Glimmer (high)",
+          "Muse Glimmer (High)",
           "Muse Glimmer",
-          774.24,
+          786.36,
           null,
           "high"
-        ],
-        [
-          "Mistral Medium 3.5",
-          "Mistral Medium 3.5",
-          747.1,
-          null,
-          null
         ]
       ]
     },
@@ -6128,9 +6359,9 @@ module.exports = {
       "metric": "Terminal-Bench Hard: Score",
       "unit": "ratio",
       "comparisonKey": "terminalbench_hard",
-      "snapshotId": "6b4c831cbc5c5f9ba09d67aceb0437922fcc280e6ca4584252833d824795aebd",
-      "contentHash": "6b4c831cbc5c5f9ba09d67aceb0437922fcc280e6ca4584252833d824795aebd",
-      "generatedAt": "2026-09-26T08:33:36Z",
+      "snapshotId": "e780f57680a910c94e98712ad2aca4b9d696ec60f5760009a29367e38cd82d3d",
+      "contentHash": "e780f57680a910c94e98712ad2aca4b9d696ec60f5760009a29367e38cd82d3d",
+      "generatedAt": "2026-10-10T09:47:00Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
@@ -6142,46 +6373,39 @@ module.exports = {
       },
       "entries": [
         [
-          "GPT-5.6 Sol (max)",
+          "GPT-5.6 Sol (Max)",
           "GPT-5.6 Sol",
           0.6591,
           null,
           "max"
         ],
         [
-          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
-          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+          "Claude Fable 5 (Max, Opus 4.8 Fallback)",
+          "Claude Fable 5 (Max, Opus 4.8 Fallback)",
           0.6288,
           null,
           null
         ],
         [
-          "GPT-5.6 Sol (medium)",
+          "GPT-5.6 Sol (Medium)",
           "GPT-5.6 Sol",
           0.6288,
           null,
           "medium"
         ],
         [
-          "GPT-5.6 Terra (xhigh)",
+          "GPT-5.6 Terra (Xhigh)",
           "GPT-5.6 Terra",
           0.6288,
           null,
           "xhigh"
         ],
         [
-          "GPT-5.6 Sol (high)",
+          "GPT-5.6 Sol (High)",
           "GPT-5.6 Sol",
           0.6212,
           null,
           "high"
-        ],
-        [
-          "GPT-5.6 Sol (xhigh)",
-          "GPT-5.6 Sol",
-          0.6136,
-          null,
-          "xhigh"
         ],
         [
           "MiniMax-M3",
@@ -6194,13 +6418,6 @@ module.exports = {
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
           0.3636,
-          null,
-          null
-        ],
-        [
-          "Mistral Medium 3.5",
-          "Mistral Medium 3.5",
-          0.3333,
           null,
           null
         ]
@@ -6217,9 +6434,9 @@ module.exports = {
       "metric": "Terminal-Bench 2.1: Score",
       "unit": "ratio",
       "comparisonKey": "terminalbench_v2_1",
-      "snapshotId": "f3f176c20ae56155a8bffb45fd54a775a73568129bec3dee91300cb76e761c33",
-      "contentHash": "f3f176c20ae56155a8bffb45fd54a775a73568129bec3dee91300cb76e761c33",
-      "generatedAt": "2026-09-26T08:33:38Z",
+      "snapshotId": "4c78581c410c0b9bf03417f9636d5cbfafe047c1c62e04f1468ae72bab1e863a",
+      "contentHash": "4c78581c410c0b9bf03417f9636d5cbfafe047c1c62e04f1468ae72bab1e863a",
+      "generatedAt": "2026-10-10T09:47:00Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
@@ -6231,53 +6448,46 @@ module.exports = {
       },
       "entries": [
         [
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Fable 5.1 (Max, Default Fallback)",
           "Claude Fable 5.1",
           0.9139,
           null,
           "max with fallback"
         ],
         [
-          "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Fable 5.1 (Xhigh, Default Fallback)",
           "Claude Fable 5.1",
           0.9101,
           null,
           "xhigh with fallback"
         ],
         [
-          "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "Claude Fable 5.1 (High, Default Fallback)",
           "Claude Fable 5.1",
           0.8989,
           null,
           "high with fallback"
         ],
         [
-          "GPT-6 Astra (high)",
+          "GPT-6 Astra (High)",
           "GPT-6 Astra",
           0.8989,
           null,
           "high"
         ],
         [
-          "GPT-6 Astra (medium)",
+          "GPT-6 Astra (Medium)",
           "GPT-6 Astra",
           0.8951,
           null,
           "medium"
         ],
         [
-          "GPT-5.6 Sol (xhigh)",
+          "GPT-5.6 Sol (Xhigh)",
           "GPT-5.6 Sol",
           0.8951,
           null,
           "xhigh"
-        ],
-        [
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5",
-          0.8914,
-          null,
-          "max"
         ],
         [
           "Qwen3.8 Max (0902)",
@@ -6287,70 +6497,49 @@ module.exports = {
           null
         ],
         [
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra (Max)",
           "GPT-6 Astra",
           0.8839,
           null,
           "max"
         ],
         [
-          "Grok 4.6 (high)",
-          "Grok 4.6",
-          0.8839,
-          null,
-          "high"
-        ],
-        [
-          "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol",
-          0.8801,
-          null,
-          "max"
-        ],
-        [
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash (High)",
           "Gemini 3.8 Flash",
           0.8764,
           null,
           "high"
         ],
         [
-          "Kimi K3 (max)",
+          "Kimi K3 (Max)",
           "Kimi K3",
           0.8502,
           null,
           "max"
         ],
         [
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3 (Max)",
           "Muse Spark 1.3",
           0.8427,
           null,
           "max"
         ],
         [
-          "GLM 5.3 Flash",
-          "GLM 5.3 Flash",
+          "GLM-5.3-Flash",
+          "GLM-5.3-Flash",
           0.8427,
           null,
           null
         ],
         [
-          "GLM-5.3 (max)",
+          "GLM-5.3 (Max)",
           "GLM-5.3",
           0.839,
           null,
           "max"
         ],
         [
-          "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna",
-          0.809,
-          null,
-          "max"
-        ],
-        [
-          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B (Xhigh)",
           "Qwen3.8 27B",
           0.7978,
           null,
@@ -6371,7 +6560,7 @@ module.exports = {
           null
         ],
         [
-          "Inkling (xhigh)",
+          "Inkling (Xhigh)",
           "Inkling",
           0.5506,
           null,
@@ -6385,25 +6574,11 @@ module.exports = {
           null
         ],
         [
-          "Gemini 3.5 Flash-Lite",
-          "Gemini 3.5 Flash-Lite",
-          0.5356,
-          null,
-          null
-        ],
-        [
-          "Muse Glimmer (high)",
+          "Muse Glimmer (High)",
           "Muse Glimmer",
           0.5169,
           null,
           "high"
-        ],
-        [
-          "Mistral Medium 3.5",
-          "Mistral Medium 3.5",
-          0.5056,
-          null,
-          null
         ]
       ]
     },
@@ -6418,9 +6593,9 @@ module.exports = {
       "metric": "IFBench: Score",
       "unit": "ratio",
       "comparisonKey": "ifbench",
-      "snapshotId": "2da9d98b704d1a1cd01dc7b88cce6a6cfd641479be9e99bc4a75576eac784b99",
-      "contentHash": "2da9d98b704d1a1cd01dc7b88cce6a6cfd641479be9e99bc4a75576eac784b99",
-      "generatedAt": "2026-09-26T08:33:05Z",
+      "snapshotId": "ca41da9996f9b6fdc444f9bb98d6dfd5add4c3b61ef2c25c4e868585bd60a7e1",
+      "contentHash": "ca41da9996f9b6fdc444f9bb98d6dfd5add4c3b61ef2c25c4e868585bd60a7e1",
+      "generatedAt": "2026-10-10T09:46:24Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis IFBench official public Dataset page",
@@ -6432,7 +6607,7 @@ module.exports = {
       },
       "entries": [
         [
-          "Grok 4.3 (medium)",
+          "Grok 4.3 (Medium)",
           "Grok 4.3",
           0.8333,
           null,
@@ -6460,7 +6635,7 @@ module.exports = {
           null
         ],
         [
-          "Grok 4.3 (high)",
+          "Grok 4.3 (High)",
           "Grok 4.3",
           0.8129,
           null,
@@ -6474,25 +6649,11 @@ module.exports = {
           null
         ],
         [
-          "Grok 4.3 (low)",
+          "Grok 4.3 (Low)",
           "Grok 4.3",
           0.8095,
           null,
           "low"
-        ],
-        [
-          "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol",
-          0.7265,
-          null,
-          "max"
-        ],
-        [
-          "Mistral Medium 3.5",
-          "Mistral Medium 3.5",
-          0.6878,
-          null,
-          null
         ]
       ]
     },
@@ -6507,9 +6668,9 @@ module.exports = {
       "metric": "MMMU-Pro: Score",
       "unit": "ratio",
       "comparisonKey": "mmmu_pro",
-      "snapshotId": "73621ca6fb44081af83f67e060780bee5597ed09157573a4375694b955755bc7",
-      "contentHash": "73621ca6fb44081af83f67e060780bee5597ed09157573a4375694b955755bc7",
-      "generatedAt": "2026-09-26T08:33:25Z",
+      "snapshotId": "124edc21d8d51eebc6919824a9203cdcb5d4d70878189afd9a780255bf4c5288",
+      "contentHash": "124edc21d8d51eebc6919824a9203cdcb5d4d70878189afd9a780255bf4c5288",
+      "generatedAt": "2026-10-10T09:46:47Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis MMMU-Pro official public Dataset page",
@@ -6521,79 +6682,72 @@ module.exports = {
       },
       "entries": [
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5 (Max, Default Fallback)",
           "Claude Opus 5.5",
           0.8769,
           null,
           "max with fallback"
         ],
         [
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra (Max)",
           "GPT-6 Astra",
           0.8688,
           null,
           "max"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+          "Claude Opus 5.5 (Xhigh, Default Fallback)",
           "Claude Opus 5.5",
           0.8659,
           null,
           "xhigh with fallback"
         ],
         [
-          "GPT-6 Astra (high)",
+          "GPT-6 Astra (High)",
           "GPT-6 Astra",
           0.8642,
           null,
           "high"
         ],
         [
-          "GPT-6 Astra (xhigh)",
+          "GPT-6 Astra (Xhigh)",
           "GPT-6 Astra",
           0.8624,
           null,
           "xhigh"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, High Effort, Default Fallback)",
+          "GPT-6.1 Sol (Max)",
+          "GPT-6.1 Sol",
+          0.8595,
+          null,
+          "max"
+        ],
+        [
+          "Claude Opus 5.5 (High, Default Fallback)",
           "Claude Opus 5.5",
           0.8584,
           null,
           "high with fallback"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+          "Claude Opus 5.5 (Medium, Default Fallback)",
           "Claude Opus 5.5",
           0.8572,
           null,
           "medium with fallback"
         ],
         [
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash (High)",
           "Gemini 3.8 Flash",
           0.8561,
           null,
           "high"
         ],
         [
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Opus 5",
-          0.8474,
-          null,
-          "max"
-        ],
-        [
-          "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol",
-          0.8341,
-          null,
-          "max"
-        ],
-        [
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol (Max)",
           "GPT-6 Sol",
-          0.8329,
+          0.8295,
           null,
           "max"
         ],
@@ -6605,23 +6759,16 @@ module.exports = {
           null
         ],
         [
-          "Kimi K3 (max)",
+          "Kimi K3 (Max)",
           "Kimi K3",
           0.8052,
           null,
           "max"
         ],
         [
-          "Gemini 3.5 Flash-Lite",
-          "Gemini 3.5 Flash-Lite",
-          0.7902,
-          null,
-          null
-        ],
-        [
-          "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna",
-          0.7855,
+          "GPT-6 Luna (Max)",
+          "GPT-6 Luna",
+          0.7965,
           null,
           "max"
         ],
@@ -6633,11 +6780,18 @@ module.exports = {
           null
         ],
         [
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash (Max)",
           "DeepSeek V4.1 Flash",
           0.7699,
           null,
           "max"
+        ],
+        [
+          "Mistral Large 4 Preview",
+          "Mistral Large 4 Preview",
+          0.7642,
+          null,
+          null
         ],
         [
           "Step 5 Preview",
@@ -6647,39 +6801,25 @@ module.exports = {
           null
         ],
         [
-          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B (Xhigh)",
           "Qwen3.8 27B",
           0.763,
           null,
           "xhigh"
         ],
         [
-          "GPT-6 Luna (max)",
-          "GPT-6 Luna",
-          0.7555,
-          null,
-          "max"
-        ],
-        [
-          "Muse Glimmer (high)",
+          "Muse Glimmer (High)",
           "Muse Glimmer",
           0.7434,
           null,
           "high"
         ],
         [
-          "Inkling (xhigh)",
+          "Inkling (Xhigh)",
           "Inkling",
           0.7347,
           null,
           "xhigh"
-        ],
-        [
-          "Mistral Medium 3.5",
-          "Mistral Medium 3.5",
-          0.6486,
-          null,
-          null
         ]
       ]
     },
@@ -6694,9 +6834,9 @@ module.exports = {
       "metric": "Artificial Analysis Openness Index: Score",
       "unit": "score",
       "comparisonKey": "artificial_analysis_openness_index",
-      "snapshotId": "e4b400ee57b654677a894082122e5e7413f40bddef3042383b173f9c49108fbe",
-      "contentHash": "e4b400ee57b654677a894082122e5e7413f40bddef3042383b173f9c49108fbe",
-      "generatedAt": "2026-09-26T08:32:47Z",
+      "snapshotId": "cd7ba09ac2b7a5b6bb242c41d432ed7643549daf382a31b01aaa4e7f47ab9af0",
+      "contentHash": "cd7ba09ac2b7a5b6bb242c41d432ed7643549daf382a31b01aaa4e7f47ab9af0",
+      "generatedAt": "2026-10-10T09:46:08Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Artificial Analysis Openness Index official Data API",
@@ -6715,21 +6855,21 @@ module.exports = {
           null
         ],
         [
-          "K2-V2 (high)",
+          "K2-V2 (High)",
           "K2-V2",
           88.89,
           null,
           "high"
         ],
         [
-          "K2-V2 (medium)",
+          "K2-V2 (Medium)",
           "K2-V2",
           88.89,
           null,
           "medium"
         ],
         [
-          "K2-V2 (low)",
+          "K2-V2 (Low)",
           "K2-V2",
           88.89,
           null,
@@ -6834,15 +6974,15 @@ module.exports = {
           null
         ],
         [
-          "NVIDIA Nemotron 3 Nano 4B",
-          "NVIDIA Nemotron 3 Nano 4B",
+          "NVIDIA Nemotron 3 Nano 30B A3B (Non-reasoning)",
+          "NVIDIA Nemotron 3 Nano 30B A3B (Non-reasoning)",
           83.33,
           null,
           null
         ],
         [
-          "NVIDIA Nemotron 3 Nano 30B A3B (Non-reasoning)",
-          "NVIDIA Nemotron 3 Nano 30B A3B (Non-reasoning)",
+          "NVIDIA Nemotron 3 Nano 4B",
+          "NVIDIA Nemotron 3 Nano 4B",
           83.33,
           null,
           null
@@ -6862,8 +7002,8 @@ module.exports = {
           null
         ],
         [
-          "INTELLECT-3 (based on GLM-4.5-Air)",
-          "INTELLECT-3 (based on GLM-4.5-Air)",
+          "INTELLECT-3 (Based on GLM-4.5-Air)",
+          "INTELLECT-3 (Based on GLM-4.5-Air)",
           72.22,
           null,
           null
@@ -6895,9 +7035,9 @@ module.exports = {
       "metric": "MLCR-AA",
       "unit": "ratio",
       "comparisonKey": "mlcr_overall",
-      "snapshotId": "19246d9428911bb5eb872cb58ab8f91cebdd9d296d92824e052307fe8a41addb",
-      "contentHash": "19246d9428911bb5eb872cb58ab8f91cebdd9d296d92824e052307fe8a41addb",
-      "generatedAt": "2026-09-26T08:33:21Z",
+      "snapshotId": "ed89317b079022d72c2ade1685ce1fc8a19e22cbb463068bf1e72f48ee83490e",
+      "contentHash": "ed89317b079022d72c2ade1685ce1fc8a19e22cbb463068bf1e72f48ee83490e",
+      "generatedAt": "2026-10-10T09:46:46Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis MLCR Overall official public Dataset page",
@@ -6909,119 +7049,126 @@ module.exports = {
       },
       "entries": [
         [
-          "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Sonnet 5.5 (Max, Default Fallback)",
+          "Claude Sonnet 5.5",
+          0.75,
+          null,
+          "max with fallback"
+        ],
+        [
+          "Claude Fable 5.1 (Max, Default Fallback)",
           "Claude Fable 5.1",
           0.7111,
           null,
           "max with fallback"
         ],
         [
-          "Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)",
+          "Claude Opus 5.5 (Max, Default Fallback)",
           "Claude Opus 5.5",
           0.6667,
           null,
           "max with fallback"
         ],
         [
-          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
-          "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+          "Claude Fable 5 (Max, Opus 4.8 Fallback)",
+          "Claude Fable 5 (Max, Opus 4.8 Fallback)",
           0.6444,
           null,
           null
         ],
         [
-          "Claude Opus 5 (Adaptive Reasoning, High Effort)",
+          "Claude Haiku 5.5 (Max)",
+          "Claude Haiku 5.5",
+          0.6333,
+          null,
+          "max"
+        ],
+        [
+          "Claude Opus 5 (High)",
           "Claude Opus 5",
           0.5944,
           null,
           "high"
         ],
         [
-          "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
+          "Claude Opus 5 (Xhigh)",
           "Claude Opus 5",
           0.5833,
           null,
           "xhigh"
         ],
         [
-          "Claude Opus 5 (Adaptive Reasoning, Medium Effort)",
+          "Claude Opus 5 (Medium)",
           "Claude Opus 5",
           0.5611,
           null,
           "medium"
         ],
         [
-          "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
+          "Claude Opus 5 (Max)",
           "Claude Opus 5",
           0.5556,
           null,
           "max"
         ],
         [
-          "Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",
-          "Claude Sonnet 5",
-          0.55,
-          null,
-          "max"
-        ],
-        [
-          "GLM 5.3 Flash",
-          "GLM 5.3 Flash",
+          "GLM-5.3-Flash",
+          "GLM-5.3-Flash",
           0.5111,
           null,
           null
         ],
         [
-          "GLM-5.3 (max)",
+          "GLM-5.3 (Max)",
           "GLM-5.3",
           0.4833,
           null,
           "max"
         ],
         [
-          "Muse Spark 1.3 (max)",
+          "Muse Spark 1.3 (Max)",
           "Muse Spark 1.3",
           0.4333,
           null,
           "max"
         ],
         [
-          "Kimi K3 (max)",
+          "Kimi K3 (Max)",
           "Kimi K3",
           0.3833,
           null,
           "max"
         ],
         [
-          "GPT-6 Astra (max)",
+          "GPT-6 Astra (Max)",
           "GPT-6 Astra",
           0.35,
           null,
           "max"
         ],
         [
-          "GPT-5.6 Sol (max)",
-          "GPT-5.6 Sol",
-          0.2611,
+          "GPT-6.1 Sol (Max)",
+          "GPT-6.1 Sol",
+          0.3389,
           null,
           "max"
         ],
         [
-          "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+          "DeepSeek V4.1 Flash (Max)",
           "DeepSeek V4.1 Flash",
           0.2278,
           null,
           "max"
         ],
         [
-          "Gemini 3.8 Flash (high)",
+          "Gemini 3.8 Flash (High)",
           "Gemini 3.8 Flash",
           0.2167,
           null,
           "high"
         ],
         [
-          "Qwen3.8 27B (xhigh)",
+          "Qwen3.8 27B (Xhigh)",
           "Qwen3.8 27B",
           0.2167,
           null,
@@ -7035,18 +7182,11 @@ module.exports = {
           null
         ],
         [
-          "Muse Glimmer (high)",
+          "Muse Glimmer (High)",
           "Muse Glimmer",
           0.2,
           null,
           "high"
-        ],
-        [
-          "GPT-5.6 Luna (max)",
-          "GPT-5.6 Luna",
-          0.1944,
-          null,
-          "max"
         ],
         [
           "MiMo-V2.6-Pro",
@@ -7070,35 +7210,28 @@ module.exports = {
           null
         ],
         [
-          "GPT-6 Sol (max)",
+          "GPT-6 Sol (Max)",
           "GPT-6 Sol",
           0.1611,
           null,
           "max"
         ],
         [
-          "GPT-6 Luna (max)",
+          "GPT-6 Luna (Max)",
           "GPT-6 Luna",
           0.1611,
           null,
           "max"
         ],
         [
-          "Grok 4.7 (xhigh)",
+          "Grok 4.7 (Xhigh)",
           "Grok 4.7",
           0.15,
           null,
           "xhigh"
         ],
         [
-          "Grok 4.6 (high)",
-          "Grok 4.6",
-          0.1222,
-          null,
-          "high"
-        ],
-        [
-          "Inkling (xhigh)",
+          "Inkling (Xhigh)",
           "Inkling",
           0.1222,
           null,
@@ -7108,20 +7241,6 @@ module.exports = {
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
           "Nemotron 3 Ultra 550B A55B (Reasoning)",
           0.1111,
-          null,
-          null
-        ],
-        [
-          "Gemini 3.5 Flash-Lite",
-          "Gemini 3.5 Flash-Lite",
-          0.0722,
-          null,
-          null
-        ],
-        [
-          "Mistral Medium 3.5",
-          "Mistral Medium 3.5",
-          0.0167,
           null,
           null
         ]
@@ -7140,7 +7259,7 @@ module.exports = {
       "comparisonKey": "v1.1",
       "snapshotId": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019",
       "contentHash": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019",
-      "generatedAt": "2026-09-26T08:32:56Z",
+      "generatedAt": "2026-10-10T09:46:09Z",
       "taskCount": null,
       "source": {
         "name": "DeepSWE v1.1 official leaderboard JSON",
