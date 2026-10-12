@@ -44,6 +44,10 @@ jobs:
           test -s ~/.ssh/known_hosts
           git clone --depth=1 git@github.com:mekos2772/ai-ranking-miniprogram.git /tmp/ai-ranking-miniprogram
           echo "INTELLIGENCE_SOURCE_SHA=$(git -C /tmp/ai-ranking-miniprogram rev-parse HEAD)" >> "$GITHUB_ENV"
+      - name: Verify intelligence ledger
+        run: |
+          python scripts/verify_intelligence_feed.py \
+            --data-dir /tmp/ai-ranking-miniprogram/data/intelligence
       - name: Validate and write private intelligence
         env:
           WX_APPID: ${{ secrets.WX_APPID }}
