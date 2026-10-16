@@ -430,9 +430,9 @@ sources:
   organization: LiveBench
   source_type: official_site_dated_csv
   official_url: https://livebench.ai/
-  endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
+  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
   raw_base_url: https://livebench.ai
-  fallback_release_id: '2026-06-25'
+  fallback_release_id: '2026-09-02'
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
@@ -440,18 +440,16 @@ sources:
   evidence_url: https://livebench.ai/
   release_tracking: dated_table_and_categories_files
   hash_required: true
-  notes: 'Total is reconstructed with the official frontend category-mean algorithm;
-    no rank is inferred. The dated CSV is fetched from the official site root, which
-    is updated in place and is newer than the GitHub public/ mirror.'
+  notes: 'LiveBench 2.0. Overall is the arithmetic mean of the suite scores available for a model, so every suite counts equally; no rank is inferred. Release discovery reads the published gh-pages tree of LiveBench/new-livebench, while the dated CSV and JSON are fetched from the official site root, which is updated in place.'
 - benchmark_id: livebench_coding
   status: enabled
   source_name: LiveBench Coding dated official leaderboard CSV
   organization: LiveBench
   source_type: official_site_dated_csv
   official_url: https://livebench.ai/
-  endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
+  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
   raw_base_url: https://livebench.ai
-  fallback_release_id: '2026-06-25'
+  fallback_release_id: '2026-09-02'
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
@@ -459,33 +457,16 @@ sources:
   evidence_url: https://livebench.ai/
   release_tracking: dated_table_and_categories_files
   hash_required: true
-  notes: Official category Coding; scores are averaged only within this category.
-- benchmark_id: livebench_math
-  status: enabled
-  source_name: LiveBench Mathematics dated official leaderboard CSV
-  organization: LiveBench
-  source_type: official_site_dated_csv
-  official_url: https://livebench.ai/
-  endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
-  raw_base_url: https://livebench.ai
-  fallback_release_id: '2026-06-25'
-  fetch_method: GET
-  update_frequency: release_based
-  requires_auth: false
-  category_selector: math
-  evidence_url: https://livebench.ai/
-  release_tracking: dated_table_and_categories_files
-  hash_required: true
-  notes: User label Math maps to official taxonomy Mathematics.
+  notes: 'Official LiveBench 2.0 suite Coding; bug-fix tasks from real merged pull requests. Scores are averaged only within this suite.'
 - benchmark_id: livebench_reasoning
   status: enabled
   source_name: LiveBench Reasoning dated official leaderboard CSV
   organization: LiveBench
   source_type: official_site_dated_csv
   official_url: https://livebench.ai/
-  endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
+  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
   raw_base_url: https://livebench.ai
-  fallback_release_id: '2026-06-25'
+  fallback_release_id: '2026-09-02'
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
@@ -493,16 +474,16 @@ sources:
   evidence_url: https://livebench.ai/
   release_tracking: dated_table_and_categories_files
   hash_required: true
-  notes: Official category Reasoning.
+  notes: 'Official LiveBench 2.0 suite Reasoning; short logic, spatial and theory-of-mind questions.'
 - benchmark_id: livebench_data_analysis
   status: enabled
   source_name: LiveBench Data Analysis dated official leaderboard CSV
   organization: LiveBench
   source_type: official_site_dated_csv
   official_url: https://livebench.ai/
-  endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
+  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
   raw_base_url: https://livebench.ai
-  fallback_release_id: '2026-06-25'
+  fallback_release_id: '2026-09-02'
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
@@ -510,58 +491,146 @@ sources:
   evidence_url: https://livebench.ai/
   release_tracking: dated_table_and_categories_files
   hash_required: true
-  notes: Official category Data Analysis.
-- benchmark_id: livebench_language
+  notes: 'Official LiveBench 2.0 suite Data Analysis; short table questions with a single correct answer.'
+- benchmark_id: livebench_long_horizon
   status: enabled
+  source_name: LiveBench Long-Horizon dated official leaderboard CSV
+  organization: LiveBench
+  source_type: official_site_dated_csv
+  official_url: https://livebench.ai/
+  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
+  raw_base_url: https://livebench.ai
+  fallback_release_id: '2026-09-02'
+  fetch_method: GET
+  update_frequency: release_based
+  requires_auth: false
+  category_selector: long_horizon
+  evidence_url: https://livebench.ai/
+  release_tracking: dated_table_and_categories_files
+  hash_required: true
+  notes: 'Official LiveBench 2.0 suite Long-Horizon, introduced by 2.0; the v1 Mathematics suite no longer exists in this taxonomy.'
+- benchmark_id: livebench_browser
+  status: enabled
+  source_name: LiveBench Browser dated official leaderboard CSV
+  organization: LiveBench
+  source_type: official_site_dated_csv
+  official_url: https://livebench.ai/
+  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
+  raw_base_url: https://livebench.ai
+  fallback_release_id: '2026-09-02'
+  fetch_method: GET
+  update_frequency: release_based
+  requires_auth: false
+  category_selector: browser
+  evidence_url: https://livebench.ai/
+  release_tracking: dated_table_and_categories_files
+  hash_required: true
+  notes: 'Official LiveBench 2.0 suite Browser; multi-step tasks completed through a real browser. Added by 2.0, replacing the v1 Language suite.'
+- benchmark_id: livebench_research
+  status: enabled
+  source_name: LiveBench Research dated official leaderboard CSV
+  organization: LiveBench
+  source_type: official_site_dated_csv
+  official_url: https://livebench.ai/
+  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
+  raw_base_url: https://livebench.ai
+  fallback_release_id: '2026-09-02'
+  fetch_method: GET
+  update_frequency: release_based
+  requires_auth: false
+  category_selector: research
+  evidence_url: https://livebench.ai/
+  release_tracking: dated_table_and_categories_files
+  hash_required: true
+  notes: 'Official LiveBench 2.0 suite Research; open-ended research briefs graded against a rubric. Added by 2.0, replacing the v1 IF suite.'
+- benchmark_id: livebench_design
+  status: enabled
+  source_name: LiveBench Design dated official leaderboard CSV
+  organization: LiveBench
+  source_type: official_site_dated_csv
+  official_url: https://livebench.ai/
+  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
+  raw_base_url: https://livebench.ai
+  fallback_release_id: '2026-09-02'
+  fetch_method: GET
+  update_frequency: release_based
+  requires_auth: false
+  category_selector: design
+  evidence_url: https://livebench.ai/
+  release_tracking: dated_table_and_categories_files
+  hash_required: true
+  notes: 'Official LiveBench 2.0 suite Design, whose single subtask column is design_layout. Added by 2.0, replacing the v1 Agentic Coding suite.'
+# LiveBench v1 suites retired by LiveBench 2.0 (2026-09-02 release). Kept as disabled
+# entries so the retired taxonomy stays auditable; disabled sources are excluded from the
+# CI matrix and from the static export, so the shipped board count remains 24.
+- benchmark_id: livebench_math
+  status: disabled
+  source_name: LiveBench Mathematics dated official leaderboard CSV
+  organization: LiveBench
+  source_type: official_site_dated_csv
+  official_url: https://livebench.ai/
+  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
+  raw_base_url: https://livebench.ai
+  fallback_release_id: '2026-06-25'
+  fetch_method: GET
+  update_frequency: retired
+  requires_auth: false
+  category_selector: math
+  evidence_url: https://livebench.ai/
+  release_tracking: dated_table_and_categories_files
+  hash_required: true
+  notes: 'Retired by LiveBench 2.0, which dropped the Mathematics suite. The v1 dated assets are still published under v1/ on the gh-pages branch, so this entry stays fetchable if a v1 board is ever reinstated.'
+- benchmark_id: livebench_language
+  status: disabled
   source_name: LiveBench Language dated official leaderboard CSV
   organization: LiveBench
   source_type: official_site_dated_csv
   official_url: https://livebench.ai/
-  endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
+  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
   raw_base_url: https://livebench.ai
   fallback_release_id: '2026-06-25'
   fetch_method: GET
-  update_frequency: release_based
+  update_frequency: retired
   requires_auth: false
   category_selector: language
   evidence_url: https://livebench.ai/
   release_tracking: dated_table_and_categories_files
   hash_required: true
-  notes: Official category Language.
+  notes: 'Retired by LiveBench 2.0, which dropped the Language suite. Kept disabled so the v1 taxonomy stays on record.'
 - benchmark_id: livebench_instruction_following
-  status: enabled
+  status: disabled
   source_name: LiveBench IF dated official leaderboard CSV
   organization: LiveBench
   source_type: official_site_dated_csv
   official_url: https://livebench.ai/
-  endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
+  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
   raw_base_url: https://livebench.ai
   fallback_release_id: '2026-06-25'
   fetch_method: GET
-  update_frequency: release_based
+  update_frequency: retired
   requires_auth: false
   category_selector: instruction_following
   evidence_url: https://livebench.ai/
   release_tracking: dated_table_and_categories_files
   hash_required: true
-  notes: User label Instruction Following maps to official taxonomy IF.
+  notes: 'Retired by LiveBench 2.0, which dropped the instruction-following suite. The v1 user label maps to the official taxonomy name IF.'
 - benchmark_id: livebench_agentic_coding
-  status: enabled
+  status: disabled
   source_name: LiveBench Agentic Coding dated official leaderboard CSV
   organization: LiveBench
   source_type: official_site_dated_csv
   official_url: https://livebench.ai/
-  endpoint: https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main
+  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
   raw_base_url: https://livebench.ai
   fallback_release_id: '2026-06-25'
   fetch_method: GET
-  update_frequency: release_based
+  update_frequency: retired
   requires_auth: false
   category_selector: agentic_coding
   evidence_url: https://livebench.ai/
   release_tracking: dated_table_and_categories_files
   hash_required: true
-  notes: Current taxonomy contains Agentic Coding; kept independent from Coding.
+  notes: 'Retired by LiveBench 2.0, which folded long-running work into its Long-Horizon suite. Kept disabled so the v1 Agentic Coding board stays on record.'
 - benchmark_id: deepswe
   status: manual_review
   source_name: DeepSWE family

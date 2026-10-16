@@ -12,10 +12,10 @@ SOURCE = {
     "status": "enabled",
     "source_name": "LiveBench coding",
     "source_type": "official_site_dated_csv",
-    "endpoint": "https://api.github.com/repos/LiveBench/livebench.github.io/contents/public?ref=main",
+    "endpoint": "https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages",
     "raw_base_url": "https://livebench.ai",
     "category_selector": "coding",
-    "fallback_release_id": "2026-06-25",
+    "fallback_release_id": "2026-09-02",
 }
 
 
@@ -106,14 +106,14 @@ def test_livebench_fetch_uses_verified_fallback_after_directory_rate_limit(monke
     monkeypatch.setattr("collector.livebench.collector._read_url", fake_read)
     result = collector.fetch(FetchContext(fetch_time="2026-09-08T00:00:00Z"))
     assert result.status == "success"
-    assert result.release_id == "2026-06-25"
+    assert result.release_id == "2026-09-02"
     parsed = json.loads(result.payload)
     assert parsed["discovery_mode"] == "verified_fallback"
     assert parsed["discovery_error"] == "http_403_rate_limit"
     assert calls == [
         SOURCE["endpoint"],
-        "https://livebench.ai/table_2026_06_25.csv",
-        "https://livebench.ai/categories_2026_06_25.json",
+        "https://livebench.ai/table_2026_09_02.csv",
+        "https://livebench.ai/categories_2026_09_02.json",
     ]
 
 

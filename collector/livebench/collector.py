@@ -28,6 +28,13 @@ CATEGORY_ALIASES = {
     "if": "IF",
     "agentic_coding": "Agentic Coding",
     "agentic coding": "Agentic Coding",
+    # LiveBench 2.0 suites. The v1 selectors above stay mapped so the older
+    # dated releases still published under v1/ keep parsing.
+    "long_horizon": "Long-Horizon",
+    "long-horizon": "Long-Horizon",
+    "browser": "Browser",
+    "research": "Research",
+    "design": "Design",
 }
 
 

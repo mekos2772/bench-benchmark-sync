@@ -31,14 +31,14 @@ def test_registry_has_explicit_statuses():
         "gpqa_diamond",
         "humanitys_last_exam",
         "ifbench",
-        "livebench_agentic_coding",
+        "livebench_browser",
         "livebench_coding",
         "livebench_data_analysis",
-        "livebench_instruction_following",
-        "livebench_language",
-        "livebench_math",
+        "livebench_design",
+        "livebench_long_horizon",
         "livebench_overall",
         "livebench_reasoning",
+        "livebench_research",
         "mlcr_overall",
         "mmmu_pro",
         "scicode",
@@ -80,11 +80,12 @@ def test_hierarchy_is_complete_and_acyclic():
         "scicode",
         "livebench_overall",
         "livebench_coding",
-        "livebench_math",
         "livebench_reasoning",
         "livebench_data_analysis",
-        "livebench_language",
-        "livebench_instruction_following",
+        "livebench_long_horizon",
+        "livebench_browser",
+        "livebench_research",
+        "livebench_design",
         "deepswe_v1_1",
         "deepswe_v1_1_tasks",
         "software_engineering_agent",
@@ -94,7 +95,9 @@ def test_hierarchy_is_complete_and_acyclic():
 
 def test_matrix_generation_rejects_unknown_ids():
     assert "deepswe_v1_1" in matrix_ids("enabled", None, SOURCES, HIERARCHY)
-    assert matrix_ids("hierarchy", "livebench_math", SOURCES, HIERARCHY) == ["livebench_math"]
+    assert matrix_ids("hierarchy", "livebench_long_horizon", SOURCES, HIERARCHY) == [
+        "livebench_long_horizon"
+    ]
     try:
         matrix_ids("hierarchy", "not-a-benchmark", SOURCES, HIERARCHY)
     except ValueError as exc:

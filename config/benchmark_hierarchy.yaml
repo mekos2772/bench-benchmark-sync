@@ -125,15 +125,15 @@ benchmarks:
   is_leaderboard: true
   comparison_key: coding
   source_registry_id: livebench_coding
-- benchmark_id: livebench_math
-  display_name: LiveBench Math
-  official_name: math
+- benchmark_id: livebench_long_horizon
+  display_name: LiveBench Long-Horizon
+  official_name: Long-Horizon
   parent_benchmark_id: livebench
   level: category
   status: enabled
   is_leaderboard: true
-  comparison_key: math
-  source_registry_id: livebench_math
+  comparison_key: long_horizon
+  source_registry_id: livebench_long_horizon
 - benchmark_id: livebench_reasoning
   display_name: LiveBench Reasoning
   official_name: reasoning
@@ -152,30 +152,66 @@ benchmarks:
   is_leaderboard: true
   comparison_key: data_analysis
   source_registry_id: livebench_data_analysis
-- benchmark_id: livebench_language
-  display_name: LiveBench Language
-  official_name: language
+- benchmark_id: livebench_browser
+  display_name: LiveBench Browser
+  official_name: Browser
   parent_benchmark_id: livebench
   level: category
   status: enabled
+  is_leaderboard: true
+  comparison_key: browser
+  source_registry_id: livebench_browser
+- benchmark_id: livebench_research
+  display_name: LiveBench Research
+  official_name: Research
+  parent_benchmark_id: livebench
+  level: category
+  status: enabled
+  is_leaderboard: true
+  comparison_key: research
+  source_registry_id: livebench_research
+- benchmark_id: livebench_design
+  display_name: LiveBench Design
+  official_name: Design
+  parent_benchmark_id: livebench
+  level: category
+  status: enabled
+  is_leaderboard: true
+  comparison_key: design
+  source_registry_id: livebench_design
+- benchmark_id: livebench_math
+  display_name: LiveBench Mathematics (retired)
+  official_name: Mathematics
+  parent_benchmark_id: livebench
+  level: category
+  status: disabled
+  is_leaderboard: true
+  comparison_key: math
+  source_registry_id: livebench_math
+- benchmark_id: livebench_language
+  display_name: LiveBench Language (retired)
+  official_name: Language
+  parent_benchmark_id: livebench
+  level: category
+  status: disabled
   is_leaderboard: true
   comparison_key: language
   source_registry_id: livebench_language
 - benchmark_id: livebench_instruction_following
-  display_name: LiveBench Instruction Following
-  official_name: instruction_following
+  display_name: LiveBench IF (retired)
+  official_name: IF
   parent_benchmark_id: livebench
   level: category
-  status: enabled
+  status: disabled
   is_leaderboard: true
   comparison_key: instruction_following
   source_registry_id: livebench_instruction_following
 - benchmark_id: livebench_agentic_coding
-  display_name: LiveBench Agentic Coding
+  display_name: LiveBench Agentic Coding (retired)
   official_name: Agentic Coding
   parent_benchmark_id: livebench
   level: category
-  status: enabled
+  status: disabled
   is_leaderboard: true
   comparison_key: agentic_coding
   source_registry_id: livebench_agentic_coding
