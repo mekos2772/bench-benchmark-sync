@@ -126,8 +126,8 @@ benchmarks:
   comparison_key: coding
   source_registry_id: livebench_coding
 - benchmark_id: livebench_long_horizon
-  display_name: LiveBench Long-Horizon
-  official_name: Long-Horizon
+  display_name: LiveBench Long Agentic
+  official_name: Long Agentic
   parent_benchmark_id: livebench
   level: category
   status: enabled

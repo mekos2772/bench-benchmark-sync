@@ -17,6 +17,7 @@
     "secret_env": {"type": ["string", "null"]},
     "api_family": {"type": ["string", "null"]},
     "evaluation_field": {"type": ["string", "null"]},
+    "asset_layout": {"enum": ["dated_files", "release_directory"]},
     "raw_base_url": {"type": ["string", "null"]},
     "fallback_release_id": {"type": ["string", "null"]},
     "category_selector": {"type": ["string", "null"]},

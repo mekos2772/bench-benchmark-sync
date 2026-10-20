@@ -153,3 +153,42 @@ def test_livebench_fetch_uses_directory_and_paired_raw_assets(monkeypatch):
     assert result.status == "success"
     assert result.release_id == "2026-06-25"
     assert len(calls) == 3
+
+
+def test_livebench_discovers_current_site_layout_and_long_agentic(monkeypatch):
+    source = {**SOURCE, 'endpoint': 'https://livebench.ai/',
+              'asset_layout': 'release_directory', 'category_selector': 'long_horizon'}
+    source.pop('fallback_release_id')
+    calls = []
+
+    def fake_read(url, context):
+        calls.append(url)
+        if url == source['endpoint']:
+            return b'<script src="./static/js/main.abc.js"></script>'
+        if url.endswith('main.abc.js'):
+            return b'const releases=["20260902","20261014"];'
+        if url.endswith('table.csv'):
+            return b'model,long_agentic\nbeam-1.0,17.3\nclaude-fable-5.1,80.8\n'
+        if url.endswith('categories.json'):
+            return b'{"Long Agentic":["long_agentic"]}'
+        raise AssertionError(url)
+
+    monkeypatch.setattr('collector.livebench.collector._read_url', fake_read)
+    collector = LiveBenchCollector(source)
+    result = collector.fetch()
+    assert result.status == 'success'
+    assert result.release_id == '2026-10-14'
+    records = collector.normalize(collector.parse(result.payload))
+    assert [r.score for r in records] == [17.3, 80.8]
+    assert records[0].category == 'Long Agentic'
+    assert calls[-2:] == ['https://livebench.ai/data/20261014/table.csv',
+                          'https://livebench.ai/data/20261014/categories.json']
+
+
+def test_livebench_site_discovery_does_not_guess_when_bundle_changes(monkeypatch):
+    source = {**SOURCE, 'endpoint': 'https://livebench.ai/',
+              'asset_layout': 'release_directory'}
+    monkeypatch.setattr('collector.livebench.collector._read_url', lambda *args: b'no releases')
+    result = LiveBenchCollector(source).fetch()
+    assert result.status == 'failed'
+    assert result.error_message == 'ValueError'

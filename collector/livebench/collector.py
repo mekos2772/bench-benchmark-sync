@@ -7,6 +7,7 @@ import re
 import urllib.error
 import urllib.request
 from typing import Any
+from urllib.parse import urljoin
 
 from collector.base import BenchmarkCollector
 from collector.models import FetchContext, FetchResult, ModelScore, SourceRef
@@ -62,9 +63,13 @@ class LiveBenchCollector(BenchmarkCollector):
         discovery_mode = "directory"
         discovery_error: str | None = None
         try:
-            directory_payload = _read_url(directory_url, context)
-            directory = json.loads(directory_payload)
-            release = self._select_release(directory)
+            if self.source.get("asset_layout") == "release_directory":
+                release = self._discover_site_release(directory_url, context)
+                discovery_mode = "official_site_bundle"
+            else:
+                directory_payload = _read_url(directory_url, context)
+                directory = json.loads(directory_payload)
+                release = self._select_release(directory)
         except urllib.error.HTTPError as exc:
             if exc.code not in {403, 429}:
                 return self._failed_result(context, f"http_{exc.code}")
@@ -81,6 +86,10 @@ class LiveBenchCollector(BenchmarkCollector):
 
         table_url = f"{raw_base}/table_{release.replace('-', '_')}.csv"
         categories_url = f"{raw_base}/categories_{release.replace('-', '_')}.json"
+        if self.source.get("asset_layout") == "release_directory":
+            asset_base = f"{raw_base}/data/{release.replace('-', '')}"
+            table_url = f"{asset_base}/table.csv"
+            categories_url = f"{asset_base}/categories.json"
         try:
             csv_payload = _read_url(table_url, context)
             categories_payload = _read_url(categories_url, context)
@@ -113,6 +122,29 @@ class LiveBenchCollector(BenchmarkCollector):
         )
         self._last_fetch = result
         return result
+
+    def _discover_site_release(self, site_url: str, context: FetchContext) -> str:
+        html = _read_url(site_url, context).decode("utf-8")
+        scripts = re.findall(r'<script\b[^>]*\bsrc=[\"\']([^\"\']+)[\"\']', html)
+        releases: set[str] = set()
+        for script in scripts:
+            # Only inspect the official app bundle, never arbitrary third-party scripts.
+            script_url = urljoin(site_url, script)
+            if not script_url.startswith(site_url.rstrip("/") + "/static/js/main."):
+                continue
+            bundle = _read_url(script_url, context).decode("utf-8")
+            for array in re.findall(r'\[\s*"20\d{6}"(?:\s*,\s*"20\d{6}")*\s*\]', bundle):
+                releases.update(re.findall(r'"(20\d{6})"', array))
+        if not releases:
+            raise ValueError("no LiveBench release list found in official app bundle")
+        requested = self.source.get("release_id")
+        if requested:
+            compact = str(requested).replace("-", "")
+            if compact not in releases:
+                raise ValueError(f"requested LiveBench release is unavailable: {requested}")
+        else:
+            compact = max(releases)
+        return f"{compact[:4]}-{compact[4:6]}-{compact[6:]}"
 
     def _failed_result(self, context: FetchContext, error_message: str) -> FetchResult:
         result = FetchResult(
@@ -164,6 +196,8 @@ class LiveBenchCollector(BenchmarkCollector):
             raise ValueError("normalize requires parsed LiveBench metadata")
         selector = str(self.source.get("category_selector", "overall"))
         category_name = CATEGORY_ALIASES.get(selector.lower(), selector)
+        if category_name == "Long-Horizon" and "Long Agentic" in self._parsed_categories:
+            category_name = "Long Agentic"
         if category_name != "overall" and category_name not in self._parsed_categories:
             raise ValueError(f"LiveBench category not present in release: {category_name}")
         if category_name == "overall":

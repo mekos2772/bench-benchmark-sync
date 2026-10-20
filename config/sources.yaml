@@ -430,9 +430,9 @@ sources:
   organization: LiveBench
   source_type: official_site_dated_csv
   official_url: https://livebench.ai/
-  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
+  endpoint: https://livebench.ai/
   raw_base_url: https://livebench.ai
-  fallback_release_id: '2026-09-02'
+  asset_layout: release_directory
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
@@ -440,16 +440,16 @@ sources:
   evidence_url: https://livebench.ai/
   release_tracking: dated_table_and_categories_files
   hash_required: true
-  notes: 'LiveBench 2.0. Overall is the arithmetic mean of the suite scores available for a model, so every suite counts equally; no rank is inferred. Release discovery reads the published gh-pages tree of LiveBench/new-livebench, while the dated CSV and JSON are fetched from the official site root, which is updated in place.'
+  notes: 'LiveBench 2.0. Overall is the arithmetic mean of the suite scores available for a model, so every suite counts equally; no rank is inferred. Release discovery reads the official site app bundle; paired CSV and taxonomy JSON are fetched from data/<release>/ with no stale fallback.'
 - benchmark_id: livebench_coding
   status: enabled
   source_name: LiveBench Coding dated official leaderboard CSV
   organization: LiveBench
   source_type: official_site_dated_csv
   official_url: https://livebench.ai/
-  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
+  endpoint: https://livebench.ai/
   raw_base_url: https://livebench.ai
-  fallback_release_id: '2026-09-02'
+  asset_layout: release_directory
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
@@ -464,9 +464,9 @@ sources:
   organization: LiveBench
   source_type: official_site_dated_csv
   official_url: https://livebench.ai/
-  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
+  endpoint: https://livebench.ai/
   raw_base_url: https://livebench.ai
-  fallback_release_id: '2026-09-02'
+  asset_layout: release_directory
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
@@ -481,9 +481,9 @@ sources:
   organization: LiveBench
   source_type: official_site_dated_csv
   official_url: https://livebench.ai/
-  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
+  endpoint: https://livebench.ai/
   raw_base_url: https://livebench.ai
-  fallback_release_id: '2026-09-02'
+  asset_layout: release_directory
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
@@ -498,9 +498,9 @@ sources:
   organization: LiveBench
   source_type: official_site_dated_csv
   official_url: https://livebench.ai/
-  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
+  endpoint: https://livebench.ai/
   raw_base_url: https://livebench.ai
-  fallback_release_id: '2026-09-02'
+  asset_layout: release_directory
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
@@ -515,9 +515,9 @@ sources:
   organization: LiveBench
   source_type: official_site_dated_csv
   official_url: https://livebench.ai/
-  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
+  endpoint: https://livebench.ai/
   raw_base_url: https://livebench.ai
-  fallback_release_id: '2026-09-02'
+  asset_layout: release_directory
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
@@ -532,9 +532,9 @@ sources:
   organization: LiveBench
   source_type: official_site_dated_csv
   official_url: https://livebench.ai/
-  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
+  endpoint: https://livebench.ai/
   raw_base_url: https://livebench.ai
-  fallback_release_id: '2026-09-02'
+  asset_layout: release_directory
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
@@ -549,9 +549,9 @@ sources:
   organization: LiveBench
   source_type: official_site_dated_csv
   official_url: https://livebench.ai/
-  endpoint: https://api.github.com/repos/LiveBench/new-livebench/contents?ref=gh-pages
+  endpoint: https://livebench.ai/
   raw_base_url: https://livebench.ai
-  fallback_release_id: '2026-09-02'
+  asset_layout: release_directory
   fetch_method: GET
   update_frequency: release_based
   requires_auth: false
