@@ -43,7 +43,7 @@ def run_one(collector, store: SnapshotStore, ingest: bool = False) -> dict[str, 
             "benchmark_id": collector.benchmark_id,
             "status": "failed",
             "records": 0,
-            "error_message": type(exc).__name__,
+            "error_message": f"{type(exc).__name__}: {exc}"[:500],
         }
     snapshot = store.save(
         benchmark_id=collector.benchmark_id,
