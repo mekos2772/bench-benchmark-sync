@@ -7,7 +7,7 @@ import re
 import urllib.error
 import urllib.request
 from typing import Any
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 from collector.base import BenchmarkCollector
 from collector.models import FetchContext, FetchResult, ModelScore, SourceRef
@@ -80,9 +80,9 @@ class LiveBenchCollector(BenchmarkCollector):
             discovery_mode = "verified_fallback"
             discovery_error = f"http_{exc.code}_rate_limit"
         except (json.JSONDecodeError, ValueError) as exc:
-            return self._failed_result(context, type(exc).__name__)
+            return self._failed_result(context, _error_message(exc))
         except Exception as exc:  # pragma: no cover - network failure is integration behavior
-            return self._failed_result(context, type(exc).__name__)
+            return self._failed_result(context, _error_message(exc))
 
         table_url = f"{raw_base}/table_{release.replace('-', '_')}.csv"
         categories_url = f"{raw_base}/categories_{release.replace('-', '_')}.json"
@@ -125,21 +125,31 @@ class LiveBenchCollector(BenchmarkCollector):
 
     def _discover_site_release(self, site_url: str, context: FetchContext) -> str:
         html = _read_url(site_url, context).decode("utf-8")
-        scripts = re.findall(r'<script\b[^>]*\bsrc=[\"\']([^\"\']+)[\"\']', html)
+        scripts = re.findall(r'<script\\b[^>]*\\bsrc=["\\']([^"\\']+)["\\']', html, flags=re.IGNORECASE)
+        site_origin = urlparse(site_url)
         releases: set[str] = set()
+        # Read only first-party JavaScript; hashed bundles, chunks, and module assets
+        # can all contain the release list after an official site deployment.
         for script in scripts:
-            # Only inspect the official app bundle, never arbitrary third-party scripts.
             script_url = urljoin(site_url, script)
-            if not script_url.startswith(site_url.rstrip("/") + "/static/js/main."):
+            parsed = urlparse(script_url)
+            if (parsed.scheme, parsed.netloc) != (site_origin.scheme, site_origin.netloc):
+                continue
+            if not parsed.path.lower().endswith(".js"):
                 continue
             bundle = _read_url(script_url, context).decode("utf-8")
-            for array in re.findall(r'\[\s*"20\d{6}"(?:\s*,\s*"20\d{6}")*\s*\]', bundle):
-                releases.update(re.findall(r'"(20\d{6})"', array))
+            # The official app has shipped compact lists, standalone release IDs,
+            # and ISO-style dates. A release is used only with its dated asset pair.
+            releases.update(re.findall(r"(?<!\\d)20\\d{6}(?!\\d)", bundle))
+            for year, month, day in re.findall(
+                r"(?<!\\d)(20\\d{2})[-_](\\d{2})[-_](\\d{2})(?!\\d)", bundle
+            ):
+                releases.add(f"{year}{month}{day}")
         if not releases:
-            raise ValueError("no LiveBench release list found in official app bundle")
+            raise ValueError("no LiveBench release date found in first-party JavaScript")
         requested = self.source.get("release_id")
         if requested:
-            compact = str(requested).replace("-", "")
+            compact = str(requested).replace("-", "").replace("_", "")
             if compact not in releases:
                 raise ValueError(f"requested LiveBench release is unavailable: {requested}")
         else:
@@ -310,7 +320,7 @@ def _read_url(url: str, context: FetchContext) -> bytes:
 def _error_message(exc: Exception) -> str:
     if isinstance(exc, urllib.error.HTTPError):
         return f"http_{exc.code}"
-    return type(exc).__name__
+    return f"{type(exc).__name__}: {exc}"[:300]
 
 
 def _number(value: Any) -> float | None:
