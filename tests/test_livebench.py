@@ -191,4 +191,42 @@ def test_livebench_site_discovery_does_not_guess_when_bundle_changes(monkeypatch
     monkeypatch.setattr('collector.livebench.collector._read_url', lambda *args: b'no releases')
     result = LiveBenchCollector(source).fetch()
     assert result.status == 'failed'
-    assert result.error_message == 'ValueError'
+    assert result.error_message.startswith('ValueError: no LiveBench release date')
+
+
+def test_livebench_finds_new_release_in_module_bundle_without_array(monkeypatch):
+    source = {
+        **SOURCE,
+        "endpoint": "https://livebench.ai/",
+        "asset_layout": "release_directory",
+        "category_selector": "long_horizon",
+    }
+    source.pop("fallback_release_id")
+    calls = []
+
+    def fake_read(url, context):
+        calls.append(url)
+        if url == source["endpoint"]:
+            return (
+                b'<script src="https://analytics.example/tracker.js"></script>'
+                b'<script type="module" src="/assets/index.abcd.js"></script>'
+            )
+        if url.endswith("index.abcd.js"):
+            return b'const releases = [{id:"2026-10-14"},{id:"2026-10-25"}];'
+        if url.endswith("table.csv"):
+            return b'model,long_agentic\nalpha,70\n'
+        if url.endswith("categories.json"):
+            return b'{"Long Agentic":["long_agentic"]}'
+        raise AssertionError(url)
+
+    monkeypatch.setattr("collector.livebench.collector._read_url", fake_read)
+    collector = LiveBenchCollector(source)
+    result = collector.fetch()
+    assert result.status == "success"
+    assert result.release_id == "2026-10-25"
+    assert collector.normalize(collector.parse(result.payload))[0].score == 70.0
+    assert not any("analytics.example" in url for url in calls)
+    assert calls[-2:] == [
+        "https://livebench.ai/data/20261025/table.csv",
+        "https://livebench.ai/data/20261025/categories.json",
+    ]
