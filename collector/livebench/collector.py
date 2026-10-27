@@ -178,7 +178,10 @@ class LiveBenchCollector(BenchmarkCollector):
         parsed_categories: dict[str, list[str]] = {}
         for name, tasks in categories.items():
             if not isinstance(name, str) or not isinstance(tasks, list):
-                raise ValueError("LiveBench category taxonomy must map names to task lists")
+                raise ValueError(
+                    f"LiveBench category {name!r}: expected a task list, "
+                    f"got {type(tasks).__name__} {repr(tasks)[:200]}"
+                )
             parsed_categories[name] = [str(task) for task in tasks]
         rows = list(csv.DictReader(io.StringIO(csv_text)))
         if not rows or not rows[0].get("model"):
