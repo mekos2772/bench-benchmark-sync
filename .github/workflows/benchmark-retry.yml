@@ -18,6 +18,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
 
 concurrency:
   group: benchmark-retry-${{ github.ref }}-${{ inputs.benchmark || github.run_id }}
@@ -36,25 +37,40 @@ jobs:
         with:
           python-version: "3.11"
       - run: python -m pip install -r requirements.txt
-      - name: Validate and retry enabled collectors
+      - name: Select only failed collectors from the upstream run
+        id: targets
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_RUN_ID: ${{ github.event.workflow_run.id }}
+          INPUT_BENCHMARK: ${{ inputs.benchmark }}
+        run: |
+          set -euo pipefail
+          if [ -n "${INPUT_BENCHMARK:-}" ]; then
+            benchmark_list="$INPUT_BENCHMARK"
+          else
+            benchmark_list="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${SOURCE_RUN_ID}/jobs?per_page=100" \
+              --jq '.jobs[] | select(.conclusion == "failure") | .name | select(startswith("sync (") and endswith(")")) | .[6:-1]' \
+              | sort -u | tr '\n' ' ')"
+          fi
+          if [ -n "$benchmark_list" ]; then
+            python -m collector.ci_matrix --kind enabled --benchmark "$benchmark_list" >/dev/null
+          else
+            echo "No failed collector jobs to retry"
+          fi
+          echo "benchmarks=$benchmark_list" >> "$GITHUB_OUTPUT"
+      - name: Retry selected collectors
+        if: steps.targets.outputs.benchmarks != ''
         env:
           INGESTION_URL: ${{ secrets.INGESTION_URL }}
           INGESTION_SECRET: ${{ secrets.INGESTION_SECRET }}
-          INPUT_BENCHMARK: ${{ inputs.benchmark }}
+          BENCHMARK_LIST: ${{ steps.targets.outputs.benchmarks }}
           INPUT_MAX_ATTEMPTS: ${{ inputs.max_attempts }}
         run: |
           set +e
-          if [ -n "${INPUT_BENCHMARK:-}" ]; then
-            python -m collector.ci_matrix --kind enabled --benchmark "$INPUT_BENCHMARK" >/dev/null
-            if [ "$?" -ne 0 ]; then exit 1; fi
-            benchmark_list="$INPUT_BENCHMARK"
-          else
-            benchmark_list=$(python -m collector.ci_matrix --kind enabled | tr -d '[]"' | tr ',' ' ')
-          fi
           attempts="${INPUT_MAX_ATTEMPTS:-2}"
           case "$attempts" in 1|2) ;; *) attempts=2 ;; esac
           overall=0
-          for benchmark in $benchmark_list; do
+          for benchmark in $BENCHMARK_LIST; do
             succeeded=0
             for attempt in $(seq 1 "$attempts"); do
               python -m collector.runner --benchmark "$benchmark" --output-dir artifacts --ingest
