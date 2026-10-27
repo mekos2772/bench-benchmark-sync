@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import io
 import json
+import math
 import re
 import urllib.error
 import urllib.request
@@ -47,6 +48,7 @@ class LiveBenchCollector(BenchmarkCollector):
         self.benchmark_id = source["benchmark_id"]
         self._last_fetch: FetchResult | None = None
         self._parsed_categories: dict[str, list[str]] = {}
+        self._parsed_overall_weights: dict[str, float] = {}
         self._parsed_release: str | None = None
         self._parsed_urls: dict[str, str] = {}
 
@@ -177,16 +179,34 @@ class LiveBenchCollector(BenchmarkCollector):
             raise ValueError("LiveBench payload requires release, csv, and categories")
         parsed_categories: dict[str, list[str]] = {}
         for name, tasks in categories.items():
+            if isinstance(name, str) and name.startswith("_"):
+                continue
             if not isinstance(name, str) or not isinstance(tasks, list):
                 raise ValueError(
                     f"LiveBench category {name!r}: expected a task list, "
                     f"got {type(tasks).__name__} {repr(tasks)[:200]}"
                 )
             parsed_categories[name] = [str(task) for task in tasks]
+        raw_weights = categories.get("_overall_weights", {})
+        if not isinstance(raw_weights, dict):
+            raise ValueError("LiveBench _overall_weights must be an object")
+        overall_weights: dict[str, float] = {}
+        for name, weight in raw_weights.items():
+            number = _number(weight)
+            if (
+                name not in parsed_categories
+                or isinstance(weight, bool)
+                or number is None
+                or not math.isfinite(number)
+                or number <= 0
+            ):
+                raise ValueError(f"invalid LiveBench overall category weight: {name!r}")
+            overall_weights[name] = number
         rows = list(csv.DictReader(io.StringIO(csv_text)))
         if not rows or not rows[0].get("model"):
             raise ValueError("LiveBench CSV must contain model rows")
         self._parsed_categories = parsed_categories
+        self._parsed_overall_weights = overall_weights
         self._parsed_release = str(release)
         self._parsed_urls = {
             "table_url": str(payload.get("table_url")),
@@ -211,7 +231,7 @@ class LiveBenchCollector(BenchmarkCollector):
             raise ValueError(f"LiveBench category not present in release: {category_name}")
         if category_name == "overall":
             category_tasks = list(self._parsed_categories)
-            metric = "global_average"
+            metric = "weighted_category_average" if self._parsed_overall_weights else "global_average"
         else:
             category_tasks = [category_name]
             metric = "category_average"
@@ -238,7 +258,17 @@ class LiveBenchCollector(BenchmarkCollector):
                 values = [score for score in task_scores if score is not None]
                 category_scores[category] = _mean(values) if values else None
             values = [score for score in category_scores.values() if score is not None]
-            score = _mean(values) if values else None
+            if category_name == "overall" and values:
+                weighted = [
+                    (score, self._parsed_overall_weights.get(name, 1.0))
+                    for name, score in category_scores.items()
+                    if score is not None
+                ]
+                score = sum(value * weight for value, weight in weighted) / sum(
+                    weight for _, weight in weighted
+                )
+            else:
+                score = _mean(values) if values else None
             normalized.append(
                 ModelScore(
                     benchmark=self.benchmark_id,
@@ -265,8 +295,15 @@ class LiveBenchCollector(BenchmarkCollector):
                             if task in row
                         },
                         "release_urls": self._parsed_urls,
+                        "category_weights": (
+                            dict(self._parsed_overall_weights)
+                            if category_name == "overall"
+                            else None
+                        ),
                         "calculation": (
-                            "mean of category means"
+                            "weighted mean of category means"
+                            if category_name == "overall" and self._parsed_overall_weights
+                            else "mean of category means"
                             if category_name == "overall"
                             else "mean of available task scores"
                         ),
