@@ -125,11 +125,9 @@ class LiveBenchCollector(BenchmarkCollector):
 
     def _discover_site_release(self, site_url: str, context: FetchContext) -> str:
         html = _read_url(site_url, context).decode("utf-8")
-        scripts = re.findall(r'<script\\b[^>]*\\bsrc=["\\']([^"\\']+)["\\']', html, flags=re.IGNORECASE)
+        scripts = re.findall(r"""<script\b[^>]*\bsrc=["']([^"']+)["']""", html, flags=re.IGNORECASE)
         site_origin = urlparse(site_url)
         releases: set[str] = set()
-        # Read only first-party JavaScript; hashed bundles, chunks, and module assets
-        # can all contain the release list after an official site deployment.
         for script in scripts:
             script_url = urljoin(site_url, script)
             parsed = urlparse(script_url)
@@ -138,11 +136,9 @@ class LiveBenchCollector(BenchmarkCollector):
             if not parsed.path.lower().endswith(".js"):
                 continue
             bundle = _read_url(script_url, context).decode("utf-8")
-            # The official app has shipped compact lists, standalone release IDs,
-            # and ISO-style dates. A release is used only with its dated asset pair.
-            releases.update(re.findall(r"(?<!\\d)20\\d{6}(?!\\d)", bundle))
+            releases.update(re.findall(r"(?<!\d)20\d{6}(?!\d)", bundle))
             for year, month, day in re.findall(
-                r"(?<!\\d)(20\\d{2})[-_](\\d{2})[-_](\\d{2})(?!\\d)", bundle
+                r"(?<!\d)(20\d{2})[-_](\d{2})[-_](\d{2})(?!\d)", bundle
             ):
                 releases.add(f"{year}{month}{day}")
         if not releases:
