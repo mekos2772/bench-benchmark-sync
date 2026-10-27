@@ -230,3 +230,50 @@ def test_livebench_finds_new_release_in_module_bundle_without_array(monkeypatch)
         "https://livebench.ai/data/20261025/table.csv",
         "https://livebench.ai/data/20261025/categories.json",
     ]
+
+
+def test_livebench_v2_weighted_overall_ignores_metadata_as_category():
+    source = {**SOURCE, "benchmark_id": "livebench_overall", "category_selector": "overall"}
+    collector = LiveBenchCollector(source)
+    raw = json.dumps({
+        "release": "2026-10-25",
+        "csv": "model,code,design,agent\nalpha,60,80,50\n",
+        "categories": {
+            "Coding": ["code"],
+            "Design": ["design"],
+            "Long Agentic": ["agent"],
+            "_overall_weights": {"Coding": 1.5, "Design": 1.5, "Long Agentic": 2.0},
+        },
+    }).encode()
+    collector._last_fetch = type(
+        "Fetch",
+        (),
+        {"content_hash": sha256_bytes(raw), "fetch_time": "2026-10-27T00:00:00Z"},
+    )()
+    records = collector.normalize(collector.parse(raw))
+    assert records[0].metric == "weighted_category_average"
+    assert records[0].score == 62.0
+    assert "_overall_weights" not in records[0].extra["category_scores"]
+    assert records[0].extra["category_weights"]["Long Agentic"] == 2.0
+
+
+def test_livebench_v2_long_horizon_uses_long_agentic_not_overall_weight():
+    source = {**SOURCE, "benchmark_id": "livebench_long_horizon", "category_selector": "long_horizon"}
+    collector = LiveBenchCollector(source)
+    raw = json.dumps({
+        "release": "2026-10-25",
+        "csv": "model,code,agent\nalpha,60,50\n",
+        "categories": {
+            "Coding": ["code"],
+            "Long Agentic": ["agent"],
+            "_overall_weights": {"Coding": 1.5, "Long Agentic": 2.0},
+        },
+    }).encode()
+    collector._last_fetch = type(
+        "Fetch",
+        (),
+        {"content_hash": sha256_bytes(raw), "fetch_time": "2026-10-27T00:00:00Z"},
+    )()
+    records = collector.normalize(collector.parse(raw))
+    assert records[0].score == 50.0
+    assert records[0].category == "Long Agentic"
