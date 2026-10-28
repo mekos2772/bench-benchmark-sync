@@ -23,10 +23,11 @@ def matrix_ids(kind: str, benchmark: str | None, sources: Path, hierarchy: Path)
     else:
         raise ValueError(f"unknown matrix kind: {kind}")
     if benchmark:
-        requested = benchmark.strip()
-        if requested not in allowed:
-            raise ValueError(f"benchmark is not valid for {kind} matrix: {requested}")
-        return [requested]
+        requested = list(dict.fromkeys(benchmark.split()))
+        invalid = [benchmark_id for benchmark_id in requested if benchmark_id not in allowed]
+        if invalid:
+            raise ValueError(f"benchmark is not valid for {kind} matrix: {' '.join(invalid)}")
+        return requested
     return allowed
 
 

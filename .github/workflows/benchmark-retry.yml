@@ -53,7 +53,8 @@ jobs:
               | sort -u | tr '\n' ' ')"
           fi
           if [ -n "$benchmark_list" ]; then
-            python -m collector.ci_matrix --kind enabled --benchmark "$benchmark_list" >/dev/null
+            benchmark_list="$(python -m collector.ci_matrix --kind enabled --benchmark "$benchmark_list" \
+              | jq -r 'join(" ")')"
           else
             echo "No failed collector jobs to retry"
           fi
