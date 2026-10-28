@@ -106,7 +106,7 @@ jobs:
 
           result = json.load(open(sys.argv[1], encoding='utf-8'))
           expected_families = ['livebench', 'aa', 'deepswe']
-          if result.get('families') != expected_families or result.get('boards') != 24:
+          if result.get('families') != expected_families or result.get('boards') != 31:
               raise SystemExit(f'incomplete static export: {result}')
           PY
       - name: Write static export artifact
@@ -125,7 +125,7 @@ jobs:
           node scripts/verify_static_export.js \
             static-export/livebench-ranking.json \
             static-export/livebench-ranking.js \
-            24 \
+            31 \
             "${{ github.run_id }}" \
             "${{ github.sha }}"
       - name: Upload static export
@@ -154,7 +154,7 @@ jobs:
           node scripts/verify_static_export.js \
             static-export/livebench-ranking.json \
             static-export/livebench-ranking.js \
-            24 \
+            31 \
             "${{ github.run_id }}" \
             "${{ github.sha }}"
       - name: Publish verified static export to data branch
@@ -200,7 +200,7 @@ jobs:
           node scripts/verify_static_export.js \
             static-export/livebench-ranking.json \
             static-export/livebench-ranking.js \
-            24 \
+            31 \
             "${{ github.run_id }}" \
             "${{ github.sha }}"
       - name: Push ranking bundle to WeChat CloudBase

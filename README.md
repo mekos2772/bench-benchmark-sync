@@ -18,7 +18,7 @@ At the current release:
 
 - **Enabled SWE sources:** `swebench` (official Test board), `swebench_verified` (official Verified board), and `deepswe_v1_1` (official DeepSWE v1.1 live JSON leaderboard).
 - **Enabled LiveBench 2.0 sources:** Eight boards retain their existing IDs. Release discovery reads the compact release list from the official livebench.ai app bundle, then fetches paired `data/<YYYYMMDD>/table.csv` and `categories.json` assets. Scores stay isolated by release and suite; Overall averages available suite means. The `livebench_long_horizon` ID now selects the official `Long Agentic` suite. No stale release fallback is configured for this layout.
-- **Enabled Artificial Analysis public-page sources:** `artificial_analysis_intelligence_index_v4_3`, `terminal_bench_v4_0`, `humanitys_last_exam`, `gpqa_diamond`, `scicode`, `aa_lcr`, `aa_omniscience_index`, `critpt`, `gdpval_aa_elo`, `terminalbench_hard`, `terminalbench_v2_1`, `ifbench`, `mmmu_pro`, `artificial_analysis_openness_index`, and `mlcr_overall`. These use the official page's schema.org `Dataset` JSON-LD contract and do not require an API key. A page contract change fails closed; screenshots, hidden endpoints, and Download controls are not used.
+- **Enabled Artificial Analysis public-page sources:** `artificial_analysis_intelligence_index_v5_0`, `terminal_bench_v4_0`, `humanitys_last_exam`, `gpqa_diamond`, `scicode`, `aa_lcr`, `aa_omniscience_index_v1_1`, `critpt`, `gdpval_aa_elo`, `terminalbench_hard`, `terminalbench_v2_1`, `ifbench`, `mmmu_pro`, `artificial_analysis_openness_index`, `mlcr_overall`, `aa_briefcase_v1_1`, `automationbench_aa`, `frontiercode_v2_0`, `gdp_pdf`, `hle_diamond`, `critpt_v2_hard`, and `terminal_bench_science_v0_1`. These read the official public Next.js `initialModels` score payload (with Dataset JSON-LD compatibility) and do not require an API key. A page contract change fails closed; screenshots, hidden endpoints, and Download controls are not used.
 - **Artificial Analysis still under `manual_review`:** the family/display nodes, Coding, Agents, Reasoning, Knowledge, and fields without an independently verified Dataset JSON-LD document. No other benchmark page is substituted for an AA composite, and no cross-evaluation average is generated.
 - **DeepSWE hierarchy:** `deepswe_v1_1` is enabled from the verified official JSON; `deepswe_v1_1_tasks` is an auxiliary task-catalog node; `software_engineering_agent` is a display-family node and remains `manual_review`.
 - **Separate artifacts:** LiveBench `model_answer`, `model_judgment`, and question datasets remain metadata/artifact sources and never become leaderboard rows.
@@ -48,21 +48,21 @@ python -m exporter.cli --snapshot-root artifacts --check
 python -m exporter.cli --snapshot-root artifacts --output-dir static-export
 ```
 
-The export groups boards into three families — `livebench` (Overall + 7 categories), `aa` (Intelligence Index + 14 individual evaluations), and `deepswe` (v1.1) — and records a per-board `unit` (`ratio`, `score`, or `raw`) so the client formats percentages, 0–100 indices, and Elo-style values correctly.
+The export groups boards into three families — `livebench` (Overall + 7 categories), `aa` (Intelligence Index + 21 individual evaluations), and `deepswe` (v1.1) — and records a per-board `unit` (`ratio`, `score`, or `raw`) so the client formats percentages, 0–100 indices, and Elo-style values correctly.
 
-The collector registry currently has 26 enabled sources. `swebench` and `swebench_verified` are collector-only sources and are intentionally excluded from the explicit 24-board Mini Program export. The exporter fails closed unless all 24 mapped boards have complete successful snapshots. A board whose source does not expose task-level scores uses `taskCount: null`; zero is not used to mean unknown.
+The collector registry currently has 33 enabled sources. `swebench` and `swebench_verified` are collector-only sources and are intentionally excluded from the explicit 31-board Mini Program export. The exporter fails closed unless all 31 mapped boards have complete successful snapshots. A board whose source does not expose task-level scores uses `taskCount: null`; zero is not used to mean unknown.
 
 It fails closed on missing, failed, or partial snapshots, empty boards, cross-board records, and scores that are not rounded to two decimals. It writes only local JSON/CommonJS files: no CloudBase write, no `rankingAdmin` call, and no Mini Program repository push.
 
 ## GitHub Actions static export
 
-The scheduled workflow collects every enabled source with bounded matrix concurrency. A scheduled run, or a manual run with an empty `benchmark` input, downloads the collector snapshots and exports all 24 mapped boards. The exporter receives the GitHub run ID and commit SHA as provenance, then the written JSON/CommonJS files are reloaded and compared by `scripts/verify_static_export.js`. After validation, the same files are published to `generated/static-export/` in the benchmark-sync `main` branch and uploaded as a read-only artifact.
+The scheduled workflow collects every enabled source with bounded matrix concurrency. A scheduled run, or a manual run with an empty `benchmark` input, downloads the collector snapshots and exports all 31 mapped boards. The exporter receives the GitHub run ID and commit SHA as provenance, then the written JSON/CommonJS files are reloaded and compared by `scripts/verify_static_export.js`. After validation, the same files are published to `generated/static-export/` in the benchmark-sync `benchmark-data` branch and uploaded as a read-only artifact.
 
 A manual run with a specific `benchmark` input is a single-source diagnostic run only; it intentionally skips the static export job so an incomplete snapshot set cannot produce a partial Mini Program bundle. The workflow only writes its own generated directory; the private Mini Program repository pulls that public static path on its own schedule and updates only its bundle file. It does not call CloudBase, call `rankingAdmin`, upload an experience version, or publish.
 
 ## Today activity feed
 
-The Mini Program Today page is intentionally separate from the 24-board static ranking bundle. A dedicated `today-activity` workflow runs every five minutes on an Ubuntu GitHub Actions runner and publishes a verified feed to `generated/static-events/today-events.json` plus a CommonJS copy.
+The Mini Program Today page is intentionally separate from the 31-board static ranking bundle. A dedicated `today-activity` workflow runs every five minutes on an Ubuntu GitHub Actions runner and publishes a verified feed to `generated/static-events/today-events.json` plus a CommonJS copy.
 
 The feed covers exactly two families, and every event carries trust metadata (`trustTier`, `priority`, `visibility`, `isOfficial`, `sourceType`, `sourceOwner`) plus evidence records:
 
@@ -101,3 +101,11 @@ Each normalized record contains the benchmark, release, metric, comparison key, 
 ## Safety boundary
 
 No current Mini Program files are copied into this repository. No current Mini Program business code is changed. No existing production database is accessed. No `rankingAdmin` endpoint is called. The only CloudBase write is the Today feed document (`todayEvents/latest`); no CloudBase ranking data or ranking credential is read or stored here, and the AppSecret lives only in repository secrets.
+
+## Artificial Analysis v5.0 migration
+
+The current AA overall board is `aa_intelligence_index_v5_0`, with release `v5.0`. The previous v4.3 registry/hierarchy entries remain disabled for auditability; new v5.0 scores are never published under their IDs. AA-Omniscience v1.1 similarly has a separate versioned ID. Existing independent older evaluations remain available as their own boards.
+
+The nine v5.0 components are AA-Briefcase v1.1, AutomationBench-AA, Terminal-Bench 4.0, FrontierCode 2.0, AA-Omniscience v1.1, GDP.pdf, HLE-Diamond, CritPt v2 (Hard Subset), and Terminal-Bench-Science 0.1. See [verified public source fields](docs/aa-v5-sources.md). Versioned pages must match their configured official heading; a later methodology change fails explicitly instead of silently mixing releases.
+
+Public evaluation pages currently embed selected model subsets, not all leaderboard rows. Each page-derived record and exported board includes `coverage` with `collectedModels`, `totalModels`, and `isComplete` (null if the total is not published). For example, the total-index page exposed 28 of 77 models when verified. The collector does not claim full coverage or call undocumented endpoints.

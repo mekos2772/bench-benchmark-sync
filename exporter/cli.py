@@ -14,7 +14,7 @@ from .registry_map import BoardMapping, select_families
 from .snapshot_loader import SnapshotLoadError, load_snapshot
 from .writers import write_static_export
 
-EXPORTER_VERSION = '0.4.0'
+EXPORTER_VERSION = '0.5.0'
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -115,7 +115,10 @@ def _entry(mapping: BoardMapping, record: dict[str, Any], unit: str) -> list[Any
         entry_id = model
         if mapping.family_id == 'aa':
             display_name, variant = _aa_model_variant(model)
-    return [entry_id, display_name, display_score(record.get('score'), unit), record.get('rank'), variant]
+    return [
+        entry_id, display_name, display_score(record.get('score'), unit),
+        record.get('rank'), variant,
+    ]
 
 
 def build_ranking(mapping: BoardMapping, snapshot: dict[str, Any]) -> dict[str, Any]:
@@ -123,6 +126,11 @@ def build_ranking(mapping: BoardMapping, snapshot: dict[str, Any]) -> dict[str, 
     if not records:
         raise ExportContractError(f'empty snapshot for {mapping.benchmark_id}')
     release = _release_for(snapshot, records)
+    expected_release = mapping.source.get('release_id')
+    if expected_release and release != expected_release:
+        raise ExportContractError(
+            f'{mapping.benchmark_id} requires release {expected_release}, got {release}'
+        )
     metric = _single_value({record.get('metric') for record in records}, 'snapshot metric')
     category = _single_value({record.get('category') for record in records}, 'snapshot category')
     task_counts = {len(record.get('task_scores') or {}) for record in records}
@@ -167,6 +175,7 @@ def build_ranking(mapping: BoardMapping, snapshot: dict[str, Any]) -> dict[str, 
         'generatedAt': fetched_at,
         'taskCount': task_count,
         'source': _source_block(mapping, snapshot),
+        'coverage': records[0].get('coverage'),
         'entries': entries,
     }
 

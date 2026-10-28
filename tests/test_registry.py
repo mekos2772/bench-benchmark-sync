@@ -20,34 +20,45 @@ def test_registry_has_explicit_statuses():
     assert registry.sources["webdev_arena"]["status"] == "disabled"
     assert registry.sources["livebench"]["status"] == "manual_review"
     assert registry.sources["deepswe_v1_1"]["status"] == "enabled"
-    assert registry.enabled_ids() == [
-        "aa_lcr",
-        "aa_omniscience_index",
-        "artificial_analysis_intelligence_index_v4_3",
-        "artificial_analysis_openness_index",
-        "critpt",
-        "deepswe_v1_1",
-        "gdpval_aa_elo",
-        "gpqa_diamond",
-        "humanitys_last_exam",
-        "ifbench",
-        "livebench_browser",
-        "livebench_coding",
-        "livebench_data_analysis",
-        "livebench_design",
-        "livebench_long_horizon",
-        "livebench_overall",
-        "livebench_reasoning",
-        "livebench_research",
-        "mlcr_overall",
-        "mmmu_pro",
-        "scicode",
-        "swebench",
-        "swebench_verified",
-        "terminal_bench_v4_0",
-        "terminalbench_hard",
-        "terminalbench_v2_1",
-    ]
+    assert registry.sources["artificial_analysis_intelligence_index_v4_3"]["status"] == "disabled"
+    assert registry.sources["aa_omniscience_index"]["status"] == "disabled"
+    assert registry.enabled_ids() == sorted(
+        [
+            "aa_lcr",
+            "aa_omniscience_index_v1_1",
+            "artificial_analysis_intelligence_index_v5_0",
+            "artificial_analysis_openness_index",
+            "critpt",
+            "deepswe_v1_1",
+            "gdpval_aa_elo",
+            "gpqa_diamond",
+            "humanitys_last_exam",
+            "ifbench",
+            "livebench_browser",
+            "livebench_coding",
+            "livebench_data_analysis",
+            "livebench_design",
+            "livebench_long_horizon",
+            "livebench_overall",
+            "livebench_reasoning",
+            "livebench_research",
+            "mlcr_overall",
+            "mmmu_pro",
+            "scicode",
+            "swebench",
+            "swebench_verified",
+            "terminal_bench_v4_0",
+            "terminalbench_hard",
+            "terminalbench_v2_1",
+            "aa_briefcase_v1_1",
+            "automationbench_aa",
+            "frontiercode_v2_0",
+            "gdp_pdf",
+            "hle_diamond",
+            "critpt_v2_hard",
+            "terminal_bench_science_v0_1",
+        ]
+    )
 
 
 def test_factory_maps_enabled_and_manual_review_nodes():
@@ -68,7 +79,7 @@ def test_hierarchy_is_complete_and_acyclic():
     validate_hierarchy(nodes, set(registry.source_ids()))
     ids = {node["benchmark_id"] for node in nodes}
     required = {
-        "artificial_analysis_intelligence_index_v4_3",
+        "artificial_analysis_intelligence_index_v5_0",
         "artificial_analysis_coding",
         "artificial_analysis_agents",
         "artificial_analysis_reasoning",

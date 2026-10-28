@@ -13,7 +13,7 @@ benchmarks:
   official_name: Artificial Analysis Intelligence Index v4.3
   parent_benchmark_id: artificial_analysis_intelligence
   level: overall
-  status: enabled
+  status: disabled
   is_leaderboard: true
   comparison_key: intelligence_index_v4_3
   source_registry_id: artificial_analysis_intelligence_index_v4_3
@@ -292,7 +292,7 @@ benchmarks:
   official_name: AA Omniscience Index
   parent_benchmark_id: artificial_analysis_individual_evaluations
   level: evaluation
-  status: enabled
+  status: disabled
   is_leaderboard: true
   comparison_key: aa_omniscience_index
   source_registry_id: aa_omniscience_index
@@ -422,3 +422,93 @@ benchmarks:
   is_leaderboard: true
   comparison_key: mlcr_overall
   source_registry_id: mlcr_overall
+
+- benchmark_id: artificial_analysis_intelligence_index_v5_0
+  display_name: Artificial Analysis Intelligence Index v5.0
+  official_name: Artificial Analysis Intelligence Index v5.0
+  parent_benchmark_id: artificial_analysis_intelligence
+  level: overall
+  status: enabled
+  is_leaderboard: true
+  comparison_key: aa_intelligence_index_v5_0
+  source_registry_id: artificial_analysis_intelligence_index_v5_0
+
+- benchmark_id: aa_briefcase_v1_1
+  display_name: AA-Briefcase v1.1
+  official_name: AA-Briefcase v1.1
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: aa_briefcase_v1_1
+  source_registry_id: aa_briefcase_v1_1
+
+- benchmark_id: automationbench_aa
+  display_name: AutomationBench-AA
+  official_name: AutomationBench-AA
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: aa_automationbench
+  source_registry_id: automationbench_aa
+
+- benchmark_id: frontiercode_v2_0
+  display_name: FrontierCode 2.0
+  official_name: FrontierCode 2.0
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: aa_frontiercode_v2_0
+  source_registry_id: frontiercode_v2_0
+
+- benchmark_id: aa_omniscience_index_v1_1
+  display_name: AA-Omniscience v1.1
+  official_name: AA-Omniscience v1.1
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: aa_omniscience_index_v1_1
+  source_registry_id: aa_omniscience_index_v1_1
+
+- benchmark_id: gdp_pdf
+  display_name: GDP.pdf
+  official_name: GDP.pdf
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: aa_gdp_pdf
+  source_registry_id: gdp_pdf
+
+- benchmark_id: hle_diamond
+  display_name: HLE-Diamond
+  official_name: HLE-Diamond
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: aa_hle_diamond
+  source_registry_id: hle_diamond
+
+- benchmark_id: critpt_v2_hard
+  display_name: CritPt v2 (Hard Subset)
+  official_name: CritPt v2 (Hard Subset)
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: aa_critpt_v2_hard
+  source_registry_id: critpt_v2_hard
+
+- benchmark_id: terminal_bench_science_v0_1
+  display_name: Terminal-Bench-Science 0.1
+  official_name: Terminal-Bench-Science 0.1
+  parent_benchmark_id: artificial_analysis_individual_evaluations
+  level: evaluation
+  status: enabled
+  is_leaderboard: true
+  comparison_key: aa_terminal_bench_science_v0_1
+  source_registry_id: terminal_bench_science_v0_1

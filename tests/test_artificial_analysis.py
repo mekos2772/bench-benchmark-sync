@@ -2,9 +2,64 @@ from __future__ import annotations
 
 import json
 
+import pytest
+
 from collector.artificial_analysis.collector import ArtificialAnalysisCollector
 from collector.models import FetchContext
 from persistence.hash import sha256_bytes
+
+
+@pytest.mark.parametrize("heading", ["Artificial Analysis Intelligence Index v4.3.2", ""])
+def test_index_version_change_fails_before_parsing_scores(monkeypatch, heading):
+    raw = f"<h1>{heading}</h1>".encode()
+    monkeypatch.setattr(
+        "collector.artificial_analysis.collector._read_url", lambda url, context: raw
+    )
+    collector = ArtificialAnalysisCollector(
+        {
+            "benchmark_id": "artificial_analysis_intelligence_index_v5_0",
+            "source_type": "official_page_endpoint",
+            "endpoint": "https://example.invalid/",
+            "expected_page_heading": "Artificial Analysis Intelligence Index v5.0",
+            "release_id": "v5.0",
+        }
+    )
+    result = collector.fetch()
+    assert result.status == "failed"
+    assert result.payload is None
+    assert "AA page version changed" in result.error_message
+
+
+def test_public_page_metadata_reports_subset_without_counting_script_text():
+    from collector.artificial_analysis.collector import _page_metadata
+
+    raw = (
+        b"<h1>AA-Omniscience <span>v1.1</span></h1>"
+        b'<script>"999 of 999 models"</script>'
+        b"<div><span>28</span> of <span>77</span> models</div>"
+    )
+    assert _page_metadata(raw) == ("AA-Omniscience v1.1", 77)
+    assert _page_metadata(b"<h1>No coverage published</h1>") == ("No coverage published", None)
+
+
+@pytest.mark.parametrize(
+    ("metric", "field"),
+    [
+        ("AA-Briefcase Elo", "briefcaseElo"),
+        ("AutomationBench-AA: Score", "automationBenchPartialScore"),
+        ("FrontierCode 2.0: Score", "frontierCode20"),
+        ("AA-Omniscience Index: Score", "omniscience"),
+        ("GDP.pdf: All-pass Rate", "gdpPdfAllPass"),
+        ("HLE-Diamond: Score", "hleDiamond"),
+        ("CritPt v2 (Hard Subset): Score", "critptAgenticHard"),
+        ("Terminal-Bench-Science 0.1: Score", "terminalBenchScience"),
+    ],
+)
+def test_v5_evaluations_use_the_verified_official_score_field(metric, field):
+    from collector.artificial_analysis.collector import _page_model_field
+
+    assert _page_model_field(metric) == field
+
 
 SOURCE = {
     "benchmark_id": "artificial_analysis_coding",
@@ -192,9 +247,7 @@ def test_record_value_matches_score_suffix_and_camelcase_metric():
         )
         == 88.88
     )
-    assert (
-        _record_value({"a": 1, "b": 2, "detailsUrl": "/x"}, "Unknown: Score") is None
-    )
+    assert _record_value({"a": 1, "b": 2, "detailsUrl": "/x"}, "Unknown: Score") is None
 
 
 def test_current_page_payload_reads_initial_models():
@@ -209,8 +262,12 @@ def test_current_page_payload_reads_initial_models():
                     "terminalBench40": 0.595959595959596,
                     "creator": {"name": "Unit Provider"},
                 },
-                {"slug": "missing-score", "name": "Missing Score", "terminalBench40": None,
-                 "contextWindowTokens": 262144},
+                {
+                    "slug": "missing-score",
+                    "name": "Missing Score",
+                    "terminalBench40": None,
+                    "contextWindowTokens": 262144,
+                },
             ],
             "documents": [],
         },
@@ -239,7 +296,8 @@ def test_page_html_extracts_scored_flight_models():
 
     html = """
     <script>self.__next_f.push([1, "catalog models"])</script>
-    <script>self.__next_f.push([1, "{\\"initialModels\\":[{\\"slug\\":\\"unit\\",\\"name\\":\\"Unit\\",\\"hle\\":0.61}]}"])</script>
+    <script>self.__next_f.push([1, "{\
+\\"initialModels\\":[{\\"slug\\":\\"unit\\",\\"name\\":\\"Unit\\",\\"hle\\":0.61}]}"])</script>
     """
     rows = _extract_page_models(html.encode(), "Humanity's Last Exam: Score")
     assert len(rows) == 1
@@ -256,12 +314,13 @@ def test_page_html_chooses_scored_models_not_larger_catalog():
         '{"name":"Leader","intelligenceIndex":57.6},'
         '{"name":"Missing Score","contextWindowTokens":262144}] }]'
     )
-    catalog = '2:["$","div",null,{"models":[' + ','.join(
-        json.dumps({"name": f"Catalog {i}", "release": "v1"})
-        for i in range(20)
-    ) + ']}]'
-    html = ''.join(
-        '<script>self.__next_f.push(' + json.dumps([1, item]) + ')</script>'
+    catalog = (
+        '2:["$","div",null,{"models":['
+        + ",".join(json.dumps({"name": f"Catalog {i}", "release": "v1"}) for i in range(20))
+        + "]}]"
+    )
+    html = "".join(
+        "<script>self.__next_f.push(" + json.dumps([1, item]) + ")</script>"
         for item in (flight, catalog)
     )
     rows = _extract_page_models(html.encode(), "Artificial Analysis Intelligence Index: Score")
@@ -287,6 +346,7 @@ def test_jsonld_name_match_tolerates_version_v_prefix():
             "jsonld_name": "Terminal-Bench 4.0: Score",
         }
     )
+
     def payload_with(name):
         return json.dumps(
             {

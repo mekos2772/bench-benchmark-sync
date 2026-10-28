@@ -5,6 +5,7 @@ from pathlib import Path
 
 import jsonschema
 import pytest
+import yaml
 
 from exporter.cli import _aa_model_variant, build_export, display_score, unit_for
 from exporter.contract import ExportContractError, validate_export
@@ -41,25 +42,29 @@ def _record(benchmark='livebench_overall', model='model-a', score=80.12, rank=No
     return record
 
 
-def _write_snapshot(root: Path, benchmark='livebench_overall', records=None):
+def _write_snapshot(root: Path, benchmark="livebench_overall", records=None):
     store = SnapshotStore(root)
     actual_records = [_record(benchmark)] if records is None else records
+    sources = yaml.safe_load(SOURCES.read_text())["sources"]
+    source = next(item for item in sources if item["benchmark_id"] == benchmark)
+    release = source.get("release_id") or "2026-06-25"
+    actual_records = [{**record, "release": release} for record in actual_records]
     payload = json.dumps(
-        {'benchmark': benchmark, 'records': actual_records},
+        {"benchmark": benchmark, "records": actual_records},
         sort_keys=True,
     ).encode()
     return store.save(
         benchmark,
         {
-            'source_name': f'{benchmark} official source',
-            'official_url': 'https://example.invalid/',
-            'evidence_url': 'https://example.invalid/evidence',
+            "source_name": f"{benchmark} official source",
+            "official_url": "https://example.invalid/",
+            "evidence_url": "https://example.invalid/evidence",
         },
         FETCH_TIME,
         sha256_bytes(payload),
         payload,
         actual_records,
-        release_id='2026-06-25',
+        release_id=release,
     )
 
 
@@ -70,18 +75,25 @@ def _write_all_boards(root: Path):
 
 
 def test_export_builds_family_structure(tmp_path):
-    _write_all_boards(tmp_path / 'store')
-    export = build_export(tmp_path / 'store', SOURCES, HIERARCHY)
-    assert export['schemaVersion'] == 3
-    assert [family['familyId'] for family in export['families']] == ['livebench', 'aa', 'deepswe']
-    livebench = export['families'][0]
-    assert livebench['overall'] == 'livebench_overall'
-    assert len(livebench['boards']) == 8
-    board = export['rankings']['livebench_overall']
-    entry = board['entries'][0]
-    assert entry == ['model-a', 'model-a', 80.12, None, None]
-    assert board['familyId'] == 'livebench'
-    assert board['unit'] == 'score'
+    _write_all_boards(tmp_path / "store")
+    export = build_export(tmp_path / "store", SOURCES, HIERARCHY)
+    assert export["schemaVersion"] == 3
+    assert [family["familyId"] for family in export["families"]] == ["livebench", "aa", "deepswe"]
+    livebench = export["families"][0]
+    assert livebench["overall"] == "livebench_overall"
+    assert len(livebench["boards"]) == 8
+    board = export["rankings"]["livebench_overall"]
+    entry = board["entries"][0]
+    assert entry == ["model-a", "model-a", 80.12, None, None]
+    assert board["familyId"] == "livebench"
+    assert board["unit"] == "score"
+    aa = export["families"][1]
+    assert aa["overall"] == "aa_intelligence_index_v5_0"
+    assert len(aa["boards"]) == 22
+    assert len(export["rankings"]) == 31
+    assert "aa_intelligence_index_v4_3" not in export["rankings"]
+    assert "aa_omniscience_index" not in export["rankings"]
+    assert export["rankings"][aa["overall"]]["release"] == "v5.0"
 
 
 def test_task_count_without_task_scores_is_null(tmp_path):
@@ -114,7 +126,7 @@ def test_contract_rejects_zero_task_count(tmp_path):
 
 
 def test_aa_reasoning_variants_keep_the_original_model_id(tmp_path):
-    benchmark = 'artificial_analysis_intelligence_index_v4_3'
+    benchmark = 'artificial_analysis_intelligence_index_v5_0'
     names = [
         'Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)',
         'Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)',
@@ -122,10 +134,12 @@ def test_aa_reasoning_variants_keep_the_original_model_id(tmp_path):
         'GPT-6 Astra (max)',
         'Qwen3.8 Max (0902)',
     ]
-    records = [_record(benchmark, model=name, score=57.62-index) for index, name in enumerate(names)]
+    records = [
+        _record(benchmark, model=name, score=57.62-index) for index, name in enumerate(names)
+    ]
     _write_snapshot(tmp_path / 'store', benchmark, records)
     export = build_export(tmp_path / 'store', SOURCES, HIERARCHY, [benchmark])
-    entries = export['rankings']['aa_intelligence_index_v4_3']['entries']
+    entries = export['rankings']['aa_intelligence_index_v5_0']['entries']
     by_id = {entry[0]: entry for entry in entries}
     assert by_id[names[0]][:2] == [names[0], 'Claude Opus 5.5']
     assert [by_id[name][4] for name in names[:3]] == [
@@ -239,3 +253,26 @@ def test_export_schema_accepts_generated_export(tmp_path):
     schema = json.loads((ROOT / 'schemas' / 'export.schema.json').read_text())
     jsonschema.validate(export, schema)
     assert len(export['rankings']) == len(BOARDS)
+
+
+def test_export_rejects_old_index_release_even_under_new_board_id(tmp_path):
+    benchmark = "artificial_analysis_intelligence_index_v5_0"
+    root = tmp_path / "store"
+    result = _write_snapshot(root, benchmark)
+    path = Path(result["snapshot_path"])
+    snapshot = json.loads(path.read_text())
+    snapshot["release_id"] = "v4.3"
+    for record in snapshot["records"]:
+        record["release"] = "v4.3"
+    path.write_text(json.dumps(snapshot))
+    with pytest.raises(ExportContractError, match="requires release v5.0"):
+        build_export(root, SOURCES, HIERARCHY, [benchmark])
+
+
+def test_export_preserves_public_page_coverage(tmp_path):
+    benchmark = "artificial_analysis_intelligence_index_v5_0"
+    coverage = {"collectedModels": 28, "totalModels": 77, "isComplete": False}
+    record = {**_record(benchmark), "coverage": coverage}
+    _write_snapshot(tmp_path / "store", benchmark, [record])
+    export = build_export(tmp_path / "store", SOURCES, HIERARCHY, [benchmark])
+    assert export["rankings"]["aa_intelligence_index_v5_0"]["coverage"] == coverage

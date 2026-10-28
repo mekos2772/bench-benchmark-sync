@@ -39,14 +39,30 @@ class ArtificialAnalysisCollector(BenchmarkCollector):
     def _fetch_page(self, context: FetchContext) -> FetchResult:
         try:
             raw = _read_url(self.source["endpoint"], context)
+            heading, total_models = _page_metadata(raw)
+            expected_heading = self.source.get("expected_page_heading")
+            if expected_heading and heading != expected_heading:
+                raise ValueError(
+                    f"AA page version changed: expected {expected_heading!r}, got {heading!r}"
+                )
             page_models = _extract_page_models(raw, str(self.source.get("evaluation_field") or ""))
             documents = [] if page_models else _extract_jsonld_datasets(raw)
             if not page_models and not documents:
-                raise ValueError("no leaderboard models or Dataset JSON-LD found on Artificial Analysis page")
+                raise ValueError(
+                    "no leaderboard models or Dataset JSON-LD found on Artificial Analysis page"
+                )
             envelope = {
                 "url": self.source["endpoint"],
                 "page_models": page_models,
                 "documents": documents,
+                "page_heading": heading,
+                "coverage": {
+                    "collectedModels": len(page_models),
+                    "totalModels": total_models,
+                    "isComplete": len(page_models) == total_models if total_models else None,
+                }
+                if page_models
+                else None,
             }
             payload = json.dumps(
                 envelope, ensure_ascii=False, sort_keys=True, separators=(",", ":")
@@ -56,7 +72,9 @@ class ArtificialAnalysisCollector(BenchmarkCollector):
                 payload=payload,
                 fetch_time=context.fetch_time,
                 content_hash=sha256_bytes(payload),
-                release_id=self.source.get("release_tracking") or "page",
+                release_id=self.source.get("release_id")
+                or self.source.get("release_tracking")
+                or "page",
             )
         except Exception as exc:  # pragma: no cover - network integration
             result = FetchResult(
@@ -64,7 +82,11 @@ class ArtificialAnalysisCollector(BenchmarkCollector):
                 payload=None,
                 fetch_time=context.fetch_time,
                 content_hash=None,
-                error_message=type(exc).__name__,
+                error_message=(
+                    f"http_{exc.code}"
+                    if isinstance(exc, urllib.error.HTTPError)
+                    else f"{type(exc).__name__}: {exc}"[:500]
+                ),
             )
         self._last_fetch = result
         return result
@@ -140,7 +162,11 @@ class ArtificialAnalysisCollector(BenchmarkCollector):
         self._payload = payload
         if "page_models" in payload and payload["page_models"]:
             rows = payload["page_models"]
-            if not isinstance(rows, list) or not rows or not all(isinstance(row, dict) for row in rows):
+            if (
+                not isinstance(rows, list)
+                or not rows
+                or not all(isinstance(row, dict) for row in rows)
+            ):
                 raise ValueError("Artificial Analysis page payload has invalid page_models[]")
             return rows
         if "documents" in payload:
@@ -225,6 +251,7 @@ class ArtificialAnalysisCollector(BenchmarkCollector):
                     "details_url": f"/models/{record['slug']}" if record.get("slug") else None,
                     "slug": record.get("slug"),
                     "page_model": True,
+                    "coverage": self._payload.get("coverage"),
                     "provider": (
                         creator.get("name")
                         if isinstance(creator, dict)
@@ -281,6 +308,18 @@ class ArtificialAnalysisCollector(BenchmarkCollector):
                 )
             )
         return normalized
+
+
+def _page_metadata(raw: bytes) -> tuple[str | None, int | None]:
+    text = raw.decode("utf-8", errors="replace")
+    match = re.search(r"<h1\b[^>]*>(.*?)</h1>", text, re.IGNORECASE | re.DOTALL)
+    heading = None
+    if match:
+        heading = " ".join(html.unescape(re.sub(r"<[^>]+>", " ", match[1])).split())
+    visible = re.sub(r"<script\b.*?</script>", "", text, flags=re.IGNORECASE | re.DOTALL)
+    visible = html.unescape(re.sub(r"<[^>]+>", " ", visible))
+    count = re.search(r"\b[\d,]+\s+of\s+([\d,]+)\s+models\b", visible)
+    return heading, int(count[1].replace(",", "")) if count else None
 
 
 def _read_url(url: str, context: FetchContext) -> bytes:
@@ -415,6 +454,14 @@ def _page_model_field(evaluation_field: str) -> str | None:
         "MLCR-AA": "mlcrOverall",
         "MLCR-AA: Score": "mlcrOverall",
         "AA-LCR 1.1: Score": "lcr",
+        "AA-Briefcase Elo": "briefcaseElo",
+        "AutomationBench-AA: Score": "automationBenchPartialScore",
+        "FrontierCode 2.0: Score": "frontierCode20",
+        "AA-Omniscience Index: Score": "omniscience",
+        "GDP.pdf: All-pass Rate": "gdpPdfAllPass",
+        "HLE-Diamond: Score": "hleDiamond",
+        "CritPt v2 (Hard Subset): Score": "critptAgenticHard",
+        "Terminal-Bench-Science 0.1: Score": "terminalBenchScience",
     }
     for candidate in candidates:
         if candidate in configured:

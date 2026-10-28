@@ -64,9 +64,7 @@ def load_feed(path: Path) -> dict:
         family in families for family in REQUIRED_FAMILIES
     )
     if not covers_required:
-        raise ValueError(
-            f"feed families must include {list(REQUIRED_FAMILIES)}: {families!r}"
-        )
+        raise ValueError(f"feed families must include {list(REQUIRED_FAMILIES)}: {families!r}")
     if not isinstance(document.get("models"), dict):
         raise ValueError("feed models must be an object")
     return document
@@ -93,7 +91,7 @@ def load_usage_rankings(path: Path) -> dict:
 
 
 def load_ranking_bundle(path: Path) -> dict:
-    """The 24-board static export the mini program bundles; pushed as one document."""
+    """The 31-board static export the mini program bundles; pushed as one document."""
     document = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(document, dict):
         raise ValueError("bundle root must be an object")
@@ -105,9 +103,9 @@ def load_ranking_bundle(path: Path) -> dict:
     rankings = document.get("rankings")
     if not isinstance(families, list) or len(families) != 3:
         raise ValueError(f"bundle families must list 3 families: {families!r}")
-    if not isinstance(rankings, dict) or len(rankings) != 24:
+    if not isinstance(rankings, dict) or len(rankings) != 31:
         count = len(rankings) if isinstance(rankings, dict) else "n/a"
-        raise ValueError(f"bundle rankings must contain 24 boards: {count}")
+        raise ValueError(f"bundle rankings must contain 31 boards: {count}")
     return document
 
 
@@ -255,8 +253,7 @@ def push_documents(
         if payload.get("errcode"):
             errcode = payload.get("errcode")
             raise RuntimeError(
-                f"CloudBase write failed for {collection}/{doc_id}: "
-                f"errcode={errcode}"
+                f"CloudBase write failed for {collection}/{doc_id}: errcode={errcode}"
             )
         results.append(payload)
     return results
@@ -300,7 +297,7 @@ def main(argv: list[str] | None = None) -> int:
         "--kind",
         choices=("today", "ranking", "usage"),
         default="today",
-        help="today: activity feed; ranking: 24-board export; usage: daily token rankings",
+        help="today: activity feed; ranking: 31-board export; usage: daily token rankings",
     )
     parser.add_argument("--feed", default=None, help="path to the document JSON")
     parser.add_argument("--collection", default=None)
@@ -389,9 +386,7 @@ def main(argv: list[str] | None = None) -> int:
             # Keep the legacy whole-bundle document so a client that has not
             # picked up per-board reads still gets today's data.
             documents.append(("latest", cloud_document(document, synced_at)))
-            payloads = push_documents(
-                documents, args.appid, args.secret, args.env, collection
-            )
+            payloads = push_documents(documents, args.appid, args.secret, args.env, collection)
         elif args.kind == "usage":
             payloads = [
                 push_feed(

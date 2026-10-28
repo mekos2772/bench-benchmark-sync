@@ -265,7 +265,7 @@ sources:
   notes: No independently verified public Dataset JSON-LD for this field/page; do
     not use another evaluation as a substitute.
 - benchmark_id: artificial_analysis_intelligence_index_v4_3
-  status: enabled
+  status: disabled
   source_name: Artificial Analysis Intelligence Index official public Dataset page
   organization: Artificial Analysis
   source_type: official_page_endpoint
@@ -281,6 +281,8 @@ sources:
   notes: Public official Dataset JSON-LD page; no API key required. Page contract
     changes fail closed.
   jsonld_name: 'Artificial Analysis Intelligence Index: Score'
+  # Retired: Official page now serves a new version; use the versioned replacement.
+
 - benchmark_id: artificial_analysis_coding
   status: manual_review
   source_name: Artificial Analysis Coding candidate source (manual review)
@@ -562,7 +564,7 @@ sources:
   notes: 'Official LiveBench 2.0 suite Design, whose single subtask column is design_layout. Added by 2.0, replacing the v1 Agentic Coding suite.'
 # LiveBench v1 suites retired by LiveBench 2.0 (2026-09-02 release). Kept as disabled
 # entries so the retired taxonomy stays auditable; disabled sources are excluded from the
-# CI matrix and from the static export, so the shipped board count remains 24.
+# CI matrix and from the static export.
 - benchmark_id: livebench_math
   status: disabled
   source_name: LiveBench Mathematics dated official leaderboard CSV
@@ -708,7 +710,7 @@ sources:
     changes fail closed.
   jsonld_name: 'AA-LCR v1.1: Score'
 - benchmark_id: aa_omniscience_index
-  status: enabled
+  status: disabled
   source_name: Artificial Analysis AA Omniscience Index official public Dataset page
   organization: Artificial Analysis
   source_type: official_page_endpoint
@@ -724,6 +726,8 @@ sources:
   notes: Public official Dataset JSON-LD page; no API key required. Page contract
     changes fail closed.
   jsonld_name: 'AA-Omniscience Index: Score'
+  # Retired: Official page now serves a new version; use the versioned replacement.
+
 - benchmark_id: aa_omniscience_accuracy
   status: manual_review
   source_name: Artificial Analysis AA Omniscience Accuracy candidate source (manual review)
@@ -951,3 +955,174 @@ sources:
   notes: Public official Dataset JSON-LD page; no API key required. Page contract
     changes fail closed.
   jsonld_name: 'MLCR-AA: Score'
+
+- benchmark_id: artificial_analysis_intelligence_index_v5_0
+  status: enabled
+  source_name: Artificial Analysis Intelligence Index v5.0 official public page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
+  endpoint: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'Artificial Analysis Intelligence Index: Score'
+  release_id: v5.0
+  expected_page_heading: Artificial Analysis Intelligence Index v5.0
+  evidence_url: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
+  release_tracking: official_page_heading
+  hash_required: true
+  notes: Verified 2026-10-28 against official public Next.js initialModels. Scores are limited to the
+    models embedded in the public page; coverage is exported explicitly.
+
+- benchmark_id: aa_briefcase_v1_1
+  status: enabled
+  source_name: AA-Briefcase v1.1 official public page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/aa-briefcase
+  endpoint: https://artificialanalysis.ai/evaluations/aa-briefcase
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: AA-Briefcase Elo
+  release_id: v1.1
+  expected_page_heading: 'AA-Briefcase v1.1: Agentic Knowledge Work Benchmark'
+  evidence_url: https://artificialanalysis.ai/evaluations/aa-briefcase
+  release_tracking: official_page_heading
+  hash_required: true
+  notes: Verified 2026-10-28 against official public Next.js initialModels. Scores are limited to the
+    models embedded in the public page; coverage is exported explicitly.
+
+- benchmark_id: automationbench_aa
+  status: enabled
+  source_name: AutomationBench-AA official public page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/automationbench-aa
+  endpoint: https://artificialanalysis.ai/evaluations/automationbench-aa
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'AutomationBench-AA: Score'
+  release_id: page
+  expected_page_heading: 'AutomationBench-AA: Agentic SaaS Workflow Benchmark'
+  evidence_url: https://artificialanalysis.ai/evaluations/automationbench-aa
+  release_tracking: official_page_heading
+  hash_required: true
+  notes: Verified 2026-10-28 against official public Next.js initialModels. Scores are limited to the
+    models embedded in the public page; coverage is exported explicitly.
+
+- benchmark_id: frontiercode_v2_0
+  status: enabled
+  source_name: FrontierCode 2.0 official public page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/frontiercode-2-0
+  endpoint: https://artificialanalysis.ai/evaluations/frontiercode-2-0
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'FrontierCode 2.0: Score'
+  release_id: v2.0
+  expected_page_heading: FrontierCode 2.0 Benchmark
+  evidence_url: https://artificialanalysis.ai/evaluations/frontiercode-2-0
+  release_tracking: official_page_heading
+  hash_required: true
+  notes: Verified 2026-10-28 against official public Next.js initialModels. Scores are limited to the
+    models embedded in the public page; coverage is exported explicitly.
+
+- benchmark_id: aa_omniscience_index_v1_1
+  status: enabled
+  source_name: AA-Omniscience v1.1 official public page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/omniscience
+  endpoint: https://artificialanalysis.ai/evaluations/omniscience
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'AA-Omniscience Index: Score'
+  release_id: v1.1
+  expected_page_heading: 'AA-Omniscience v1.1: Knowledge and Hallucination Benchmark'
+  evidence_url: https://artificialanalysis.ai/evaluations/omniscience
+  release_tracking: official_page_heading
+  hash_required: true
+  notes: Verified 2026-10-28 against official public Next.js initialModels. Scores are limited to the
+    models embedded in the public page; coverage is exported explicitly.
+
+- benchmark_id: gdp_pdf
+  status: enabled
+  source_name: GDP.pdf official public page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/gdp-pdf
+  endpoint: https://artificialanalysis.ai/evaluations/gdp-pdf
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'GDP.pdf: All-pass Rate'
+  release_id: page
+  expected_page_heading: GDP.pdf Benchmark
+  evidence_url: https://artificialanalysis.ai/evaluations/gdp-pdf
+  release_tracking: official_page_heading
+  hash_required: true
+  notes: Verified 2026-10-28 against official public Next.js initialModels. Scores are limited to the
+    models embedded in the public page; coverage is exported explicitly.
+
+- benchmark_id: hle_diamond
+  status: enabled
+  source_name: HLE-Diamond official public page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/hle-diamond
+  endpoint: https://artificialanalysis.ai/evaluations/hle-diamond
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'HLE-Diamond: Score'
+  release_id: page
+  expected_page_heading: HLE-Diamond Benchmark
+  evidence_url: https://artificialanalysis.ai/evaluations/hle-diamond
+  release_tracking: official_page_heading
+  hash_required: true
+  notes: Verified 2026-10-28 against official public Next.js initialModels. Scores are limited to the
+    models embedded in the public page; coverage is exported explicitly.
+
+- benchmark_id: critpt_v2_hard
+  status: enabled
+  source_name: CritPt v2 (Hard Subset) official public page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/critpt-v2?critpt-subset=hard
+  endpoint: https://artificialanalysis.ai/evaluations/critpt-v2?critpt-subset=hard
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'CritPt v2 (Hard Subset): Score'
+  release_id: v2:hard
+  expected_page_heading: CritPt v2 Benchmark
+  evidence_url: https://artificialanalysis.ai/evaluations/critpt-v2?critpt-subset=hard
+  release_tracking: official_page_heading
+  hash_required: true
+  notes: Verified 2026-10-28 against official public Next.js initialModels. Scores are limited to the
+    models embedded in the public page; coverage is exported explicitly.
+
+- benchmark_id: terminal_bench_science_v0_1
+  status: enabled
+  source_name: Terminal-Bench-Science 0.1 official public page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/terminal-bench-science
+  endpoint: https://artificialanalysis.ai/evaluations/terminal-bench-science
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'Terminal-Bench-Science 0.1: Score'
+  release_id: v0.1
+  expected_page_heading: Terminal-Bench-Science 0.1 Benchmark
+  evidence_url: https://artificialanalysis.ai/evaluations/terminal-bench-science
+  release_tracking: official_page_heading
+  hash_required: true
+  notes: Verified 2026-10-28 against official public Next.js initialModels. Scores are limited to the
+    models embedded in the public page; coverage is exported explicitly.

@@ -24,6 +24,8 @@
     "jsonld_name": {"type": ["string", "null"]},
     "evidence_url": {"type": ["string", "null"]},
     "release_tracking": {"type": ["string", "null"]},
+    "release_id": {"type": "string", "minLength": 1},
+    "expected_page_heading": {"type": "string", "minLength": 1},
     "hash_required": {"type": "boolean"},
     "notes": {"type": "string"}
   },

@@ -104,8 +104,11 @@ def _ranking(**overrides):
         "mainCommit": "abc",
         "families": [{"familyId": "livebench", "boards": []}] * 3,
         "rankings": {
-            f"board_{index}": {"rankingId": f"board_{index}", "entries": [[f"m{index}", "Model", 1]]}
-            for index in range(24)
+            f"board_{index}": {
+                "rankingId": f"board_{index}",
+                "entries": [[f"m{index}", "Model", 1]],
+            }
+            for index in range(31)
         },
     }
     document.update(overrides)
@@ -117,13 +120,13 @@ def test_ranking_documents_split_catalog_and_boards():
     assert items[-1][0] == "catalog"  # advertise boards only after they are written
     documents = dict(items)
     assert documents["catalog"]["kind"] == "catalog"
-    assert documents["catalog"]["boardCount"] == 24
+    assert documents["catalog"]["boardCount"] == 31
     assert "rankings" not in documents["catalog"]
     assert documents["board_0"]["kind"] == "board"
     assert documents["board_0"]["boardId"] == "board_0"
     assert documents["board_0"]["entries"][0][0] == "m0"
     assert documents["board_23"]["bundleGeneratedAt"] == "2026-09-24T08:25:29Z"
-    assert len(documents) == 25
+    assert len(documents) == 32
 
 
 def test_missing_credentials_fail_loudly(tmp_path, monkeypatch, capsys):
@@ -136,7 +139,9 @@ def test_missing_credentials_fail_loudly(tmp_path, monkeypatch, capsys):
 
 def test_request_errors_do_not_expose_credentials(monkeypatch, capsys):
     def fail(*args, **kwargs):
-        raise requests.RequestException("https://api.weixin.qq.com/?access_token=sensitive-token&secret=sensitive-secret")
+        raise requests.RequestException(
+            "https://api.weixin.qq.com/?access_token=sensitive-token&secret=sensitive-secret"
+        )
 
     monkeypatch.setattr("scripts.push_today_feed.requests.post", fail)
     monkeypatch.setattr("scripts.push_today_feed.requests.get", fail)
