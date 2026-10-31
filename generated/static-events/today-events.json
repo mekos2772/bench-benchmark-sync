@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-09-26T14:19:45Z",
-  "windowStart": "2026-09-25T14:19:45Z",
+  "generatedAt": "2026-10-31T14:50:08Z",
+  "windowStart": "2026-10-30T14:50:08Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -10,33 +10,28 @@
     "benchmark"
   ],
   "models": {
-    "hf:internlm/Intern-Decision-4B": {
-      "canonicalId": "hf:internlm/Intern-Decision-4B",
-      "provider": "InternLM",
-      "modelId": "internlm/Intern-Decision-4B",
-      "displayName": "Intern-Decision-4B",
+    "benchmark:deepseek-v4.1-flash-1017": {
+      "canonicalId": "benchmark:deepseek-v4.1-flash-1017",
+      "provider": null,
+      "modelId": "deepseek-v4.1-flash-1017",
+      "displayName": "deepseek-v4.1-flash-1017",
       "version": null,
       "aliases": [],
-      "releaseDate": "2026-09-26T05:36:37Z",
-      "status": "available",
+      "releaseDate": null,
+      "status": "unknown",
       "deprecationDate": null,
-      "releaseType": "open_weights_release",
-      "access": "open_weights",
+      "releaseType": null,
+      "access": "unknown",
       "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
+        "input": [],
+        "output": []
       },
       "capabilities": [],
-      "parameterCount": 4539265536,
-      "license": "apache-2.0",
+      "parameterCount": null,
+      "license": null,
       "technicalReportUrl": null,
-      "description": "Demo | Model Weights | GitHub *Intern-Decision-4B** is a multimodal structured decision model fine-tuned from It accepts a shared state, a schema of named questions, and optional images, and returns an answer distribution for every question in one model forward pass.",
-      "contextWindow": 262144,
+      "description": null,
+      "contextWindow": null,
       "maxInputTokens": null,
       "maxOutputTokens": null,
       "pricing": {
@@ -45,613 +40,383 @@
         "outputPerMillionTokens": null,
         "cachedInputPerMillionTokens": null
       },
-      "availability": [
-        "Hugging Face"
-      ],
-      "officialUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
+      "availability": [],
+      "officialUrl": null,
       "documentationUrl": null,
-      "modelCardUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-      "hubRepo": "internlm/Intern-Decision-4B",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "InternLM",
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "LiveBench dated official leaderboard CSV",
       "evidence": [
         {
           "field": "canonicalId",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "provider",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-30T23:30:21Z",
+          "contentHash": "f2ea3a8231572fd05c98a949dbe972e4b5e971576e38fb2562bb9673afdcde68",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-30T23:30:21Z",
+          "contentHash": "f2ea3a8231572fd05c98a949dbe972e4b5e971576e38fb2562bb9673afdcde68",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseDate",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-30T23:30:21Z",
+          "contentHash": "f2ea3a8231572fd05c98a949dbe972e4b5e971576e38fb2562bb9673afdcde68",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "status",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseType",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-30T23:30:21Z",
+          "contentHash": "f2ea3a8231572fd05c98a949dbe972e4b5e971576e38fb2562bb9673afdcde68",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "access",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "parameterCount",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "license",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "description",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "contextWindow",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "officialUrl",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modelCardUrl",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "hubRepo",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-30T23:30:21Z",
+          "contentHash": "f2ea3a8231572fd05c98a949dbe972e4b5e971576e38fb2562bb9673afdcde68",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-10-30T23:30:21Z",
+          "contentHash": "f2ea3a8231572fd05c98a949dbe972e4b5e971576e38fb2562bb9673afdcde68",
+          "sourceType": "official_benchmark"
         },
         {
-          "field": "availability",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modalities",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        }
-      ]
-    },
-    "hf:internlm/Intern-Decision-2B": {
-      "canonicalId": "hf:internlm/Intern-Decision-2B",
-      "provider": "InternLM",
-      "modelId": "internlm/Intern-Decision-2B",
-      "displayName": "Intern-Decision-2B",
-      "version": null,
-      "aliases": [],
-      "releaseDate": "2026-09-26T05:36:19Z",
-      "status": "available",
-      "deprecationDate": null,
-      "releaseType": "open_weights_release",
-      "access": "open_weights",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "capabilities": [],
-      "parameterCount": 2213241664,
-      "license": "apache-2.0",
-      "technicalReportUrl": null,
-      "description": "Demo | Model Weights | GitHub *Intern-Decision-2B** is a multimodal structured decision model fine-tuned from It accepts a shared state, a schema of named questions, and optional images, and returns an answer distribution for every question in one model forward pass.",
-      "contextWindow": 262144,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [
-        "Hugging Face"
-      ],
-      "officialUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-      "documentationUrl": null,
-      "modelCardUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-      "hubRepo": "internlm/Intern-Decision-2B",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "InternLM",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "provider",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseDate",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseType",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "parameterCount",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "license",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "description",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "contextWindow",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "officialUrl",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modelCardUrl",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "hubRepo",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "availability",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modalities",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        }
-      ]
-    },
-    "hf:internlm/Intern-Decision-0.8B": {
-      "canonicalId": "hf:internlm/Intern-Decision-0.8B",
-      "provider": "InternLM",
-      "modelId": "internlm/Intern-Decision-0.8B",
-      "displayName": "Intern-Decision-0.8B",
-      "version": null,
-      "aliases": [],
-      "releaseDate": "2026-09-26T05:35:57Z",
-      "status": "available",
-      "deprecationDate": null,
-      "releaseType": "open_weights_release",
-      "access": "open_weights",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "capabilities": [],
-      "parameterCount": 852985920,
-      "license": "apache-2.0",
-      "technicalReportUrl": null,
-      "description": "Demo | Model Weights | GitHub *Intern-Decision-0.8B** is a multimodal structured decision model fine-tuned from It accepts a shared state, a schema of named questions, and optional images, and returns an answer distribution for every question in one model forward pass.",
-      "contextWindow": 262144,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [
-        "Hugging Face"
-      ],
-      "officialUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-      "documentationUrl": null,
-      "modelCardUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-      "hubRepo": "internlm/Intern-Decision-0.8B",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "InternLM",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "provider",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseDate",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseType",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "parameterCount",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "license",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "description",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "contextWindow",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "officialUrl",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modelCardUrl",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "hubRepo",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "availability",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modalities",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://livebench.ai/",
+          "observedAt": "2026-10-30T23:30:21Z",
+          "contentHash": "f2ea3a8231572fd05c98a949dbe972e4b5e971576e38fb2562bb9673afdcde68",
+          "sourceType": "official_benchmark"
         }
       ]
     }
   },
-  "modelCount": 3,
+  "modelCount": 1,
   "sourceSummary": {
-    "official": 3,
+    "official": 0,
     "catalog": 0,
-    "benchmark": 0
+    "benchmark": 8
   },
   "events": [
     {
-      "eventId": "53988aa400d6340cd071d338fed502bc",
-      "family": "model",
-      "eventType": "official_model_release",
-      "eventClass": "model_release",
+      "eventId": "57617eec645b8d8de2f5df4fc3af356e",
+      "family": "benchmark",
+      "eventType": "significant_score_change",
+      "eventClass": "benchmark",
       "trustTier": "official",
-      "priority": "P0",
+      "priority": "P1",
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "Intern-Decision-4B 开放权重发布",
-      "summary": "InternLM 在官方组织发布新模型：参数量 4.5B，上下文 262,144 tokens，许可 apache-2.0。",
-      "repoId": "internlm/Intern-Decision-4B",
-      "repo": "internlm/Intern-Decision-4B",
-      "modelId": "internlm/Intern-Decision-4B",
-      "modelRef": "hf:internlm/Intern-Decision-4B",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "InternLM",
-      "evidence": [
-        {
-          "field": "modelRepository",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        }
-      ],
-      "url": "https://huggingface.co/internlm/Intern-Decision-4B",
-      "observedAt": "2026-09-26T05:36:37Z",
-      "publishedAt": "2026-09-26T05:36:37Z",
-      "source": "Hugging Face · InternLM",
-      "eventIdentity": "open-release:internlm/Intern-Decision-4B",
+      "title": "deepseek-v4.1-flash-1017 分数变化",
+      "summary": "LiveBench Overall 分数从 74.02 变为 72.87（-1.16）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "deepseek-v4.1-flash-1017",
+      "modelRef": "benchmark:deepseek-v4.1-flash-1017",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-10-30T23:30:21Z",
+      "publishedAt": null,
+      "source": "LiveBench dated official leaderboard CSV",
+      "benchmarkId": "livebench_overall",
+      "benchmarkTitle": "LiveBench Overall",
+      "release": "2026-10-25",
+      "previousScore": 74.02222222222223,
+      "score": 72.86666666666667,
+      "delta": -1.1555555555555515,
+      "unit": "score",
+      "modelIdentity": "livebench_overall:deepseek-v4.1-flash-1017",
       "provenance": {
-        "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-        "contentHash": "2e1a3f5c2c60ea42fc42099a3f42af2652cbaec53ec188131cce424946955343"
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "480f396b1ac8a72922fa41a603c52b0e8bd564456fb2b0533267e79ba6809d0f"
       }
     },
     {
-      "eventId": "482daa410ee78cd6abb0851fed5f5c38",
-      "family": "model",
-      "eventType": "official_model_release",
-      "eventClass": "model_release",
+      "eventId": "9c475c006c9c923ac1ff6425f10bdfe0",
+      "family": "benchmark",
+      "eventType": "significant_score_change",
+      "eventClass": "benchmark",
       "trustTier": "official",
-      "priority": "P0",
+      "priority": "P1",
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "Intern-Decision-2B 开放权重发布",
-      "summary": "InternLM 在官方组织发布新模型：参数量 2.2B，上下文 262,144 tokens，许可 apache-2.0。",
-      "repoId": "internlm/Intern-Decision-2B",
-      "repo": "internlm/Intern-Decision-2B",
-      "modelId": "internlm/Intern-Decision-2B",
-      "modelRef": "hf:internlm/Intern-Decision-2B",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "InternLM",
-      "evidence": [
-        {
-          "field": "modelRepository",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        }
-      ],
-      "url": "https://huggingface.co/internlm/Intern-Decision-2B",
-      "observedAt": "2026-09-26T05:36:19Z",
-      "publishedAt": "2026-09-26T05:36:19Z",
-      "source": "Hugging Face · InternLM",
-      "eventIdentity": "open-release:internlm/Intern-Decision-2B",
+      "title": "deepseek-v4.1-flash-1017 分数变化",
+      "summary": "LiveBench Long Agentic 分数从 40.90 变为 35.70（-5.20）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "deepseek-v4.1-flash-1017",
+      "modelRef": "benchmark:deepseek-v4.1-flash-1017",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://livebench.ai/",
+      "observedAt": "2026-10-30T23:30:21Z",
+      "publishedAt": null,
+      "source": "LiveBench Long-Horizon dated official leaderboard CSV",
+      "benchmarkId": "livebench_long_horizon",
+      "benchmarkTitle": "LiveBench Long Agentic",
+      "release": "2026-10-25",
+      "previousScore": 40.9,
+      "score": 35.7,
+      "delta": -5.199999999999996,
+      "unit": "score",
+      "modelIdentity": "livebench_long_horizon:deepseek-v4.1-flash-1017",
       "provenance": {
-        "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-        "contentHash": "2e1a3f5c2c60ea42fc42099a3f42af2652cbaec53ec188131cce424946955343"
+        "sourceUrl": "https://livebench.ai/",
+        "contentHash": "480f396b1ac8a72922fa41a603c52b0e8bd564456fb2b0533267e79ba6809d0f"
       }
     },
     {
-      "eventId": "0441e061660b5ef1b31d83a07fdbdb66",
-      "family": "model",
-      "eventType": "official_model_release",
-      "eventClass": "model_release",
+      "eventId": "4b9e9a5f80aab9a8abaaa144cea9064c",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
       "trustTier": "official",
-      "priority": "P0",
+      "priority": "P1",
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "Intern-Decision-0.8B 开放权重发布",
-      "summary": "InternLM 在官方组织发布新模型：参数量 853.0M，上下文 262,144 tokens，许可 apache-2.0。",
-      "repoId": "internlm/Intern-Decision-0.8B",
-      "repo": "internlm/Intern-Decision-0.8B",
-      "modelId": "internlm/Intern-Decision-0.8B",
-      "modelRef": "hf:internlm/Intern-Decision-0.8B",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "InternLM",
-      "evidence": [
-        {
-          "field": "modelRepository",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        }
+      "title": "AutomationBench-AA 官方数据更新",
+      "summary": "AutomationBench-AA 官方数据发生变化；共 29 个模型 · 数据版本 page · 当前前列：Gemini 4 Carbon (High)（77.8%）、Gemini 4 Argon (High)（77.5%）、Kimi K3.1 Pro（73.3%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/automationbench-aa",
+      "observedAt": "2026-10-30T20:00:37Z",
+      "publishedAt": null,
+      "source": "AutomationBench-AA official public page",
+      "benchmarkId": "aa_automationbench",
+      "benchmarkTitle": "AutomationBench-AA",
+      "release": "page",
+      "contentHash": "83dcaf8d4a4715e51dc65098135c8532a1d8966f6dafc937dd64a2c54d47ad6b",
+      "unit": "ratio",
+      "modelCount": 29,
+      "topModels": [
+        "Gemini 4 Carbon (High)（77.8%）",
+        "Gemini 4 Argon (High)（77.5%）",
+        "Kimi K3.1 Pro（73.3%）"
       ],
-      "url": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-      "observedAt": "2026-09-26T05:35:57Z",
-      "publishedAt": "2026-09-26T05:35:57Z",
-      "source": "Hugging Face · InternLM",
-      "eventIdentity": "open-release:internlm/Intern-Decision-0.8B",
       "provenance": {
-        "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-        "contentHash": "2e1a3f5c2c60ea42fc42099a3f42af2652cbaec53ec188131cce424946955343"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/automationbench-aa",
+        "contentHash": "480f396b1ac8a72922fa41a603c52b0e8bd564456fb2b0533267e79ba6809d0f"
+      }
+    },
+    {
+      "eventId": "ca1fa2a0ae77234ec1160730937fadb3",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "GDP.pdf 官方数据更新",
+      "summary": "GDP.pdf 官方数据发生变化；共 28 个模型 · 数据版本 page · 当前前列：Muse Wonder Full (Max)（32.6%）、Kimi K3.1 Pro（31.4%）、GPT-6 Astra (Max)（31.0%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdp-pdf",
+      "observedAt": "2026-10-30T20:00:37Z",
+      "publishedAt": null,
+      "source": "GDP.pdf official public page",
+      "benchmarkId": "aa_gdp_pdf",
+      "benchmarkTitle": "GDP.pdf",
+      "release": "page",
+      "contentHash": "4824f6e90d2c10063cb8333a82d3aea35554e2d6c07349f7e0cccfd4f4491d4b",
+      "unit": "ratio",
+      "modelCount": 28,
+      "topModels": [
+        "Muse Wonder Full (Max)（32.6%）",
+        "Kimi K3.1 Pro（31.4%）",
+        "GPT-6 Astra (Max)（31.0%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdp-pdf",
+        "contentHash": "480f396b1ac8a72922fa41a603c52b0e8bd564456fb2b0533267e79ba6809d0f"
+      }
+    },
+    {
+      "eventId": "67cfc5b1185c6e69926e83d2eb7aa978",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Terminal-Bench 4.0 官方数据更新",
+      "summary": "Terminal-Bench 4.0 官方数据发生变化；共 28 个模型 · 当前前列：Kimi K3.1 Pro（67.2%）、Gemini 4 Carbon (High)（65.2%）、Claude Sonnet 5.5 (Max, Default Fallback)（63.6%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+      "observedAt": "2026-10-30T20:00:37Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
+      "benchmarkId": "aa_terminal_bench_v4_0",
+      "benchmarkTitle": "Terminal-Bench 4.0",
+      "release": "page_jsonld",
+      "contentHash": "5f0bc29c5c526ea6e3b7be62764801fc052651e1312b1751786d9d780b730466",
+      "unit": "ratio",
+      "modelCount": 28,
+      "topModels": [
+        "Kimi K3.1 Pro（67.2%）",
+        "Gemini 4 Carbon (High)（65.2%）",
+        "Claude Sonnet 5.5 (Max, Default Fallback)（63.6%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+        "contentHash": "480f396b1ac8a72922fa41a603c52b0e8bd564456fb2b0533267e79ba6809d0f"
+      }
+    },
+    {
+      "eventId": "dc20ee1a608920992b40cf8fd6c88477",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "AA LCR 官方数据更新",
+      "summary": "AA LCR 官方数据发生变化；共 28 个模型 · 当前前列：Kimi K3 (Max)（88.7%）、Step 5 Preview（88.3%）、Kimi K3.1 Pro（86.3%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "observedAt": "2026-10-30T20:00:37Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis AA LCR official public Dataset page",
+      "benchmarkId": "aa_lcr",
+      "benchmarkTitle": "AA LCR",
+      "release": "page_jsonld",
+      "contentHash": "893f9259ed2c65f57ed9e8656a93eff9f5bbc7137d1923b2479673435d3e30e8",
+      "unit": "ratio",
+      "modelCount": 28,
+      "topModels": [
+        "Kimi K3 (Max)（88.7%）",
+        "Step 5 Preview（88.3%）",
+        "Kimi K3.1 Pro（86.3%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+        "contentHash": "480f396b1ac8a72922fa41a603c52b0e8bd564456fb2b0533267e79ba6809d0f"
+      }
+    },
+    {
+      "eventId": "67c2e30b49b6f59353d3b1778937e0c3",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "MMMU-Pro 官方数据更新",
+      "summary": "MMMU-Pro 官方数据发生变化；共 27 个模型 · 当前前列：Claude Opus 5.5 (Max, Default Fallback)（87.7%）、GPT-6 Astra (Max)（86.9%）、GPT-6.1 Sol (Max)（86.0%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+      "observedAt": "2026-10-30T20:00:37Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis MMMU-Pro official public Dataset page",
+      "benchmarkId": "aa_mmmu_pro",
+      "benchmarkTitle": "MMMU-Pro",
+      "release": "page_jsonld",
+      "contentHash": "c847893ed31dad008c1c7cdcd19ffa0b1cbfff0aa06e10ec33d4610ee85f45a0",
+      "unit": "ratio",
+      "modelCount": 27,
+      "topModels": [
+        "Claude Opus 5.5 (Max, Default Fallback)（87.7%）",
+        "GPT-6 Astra (Max)（86.9%）",
+        "GPT-6.1 Sol (Max)（86.0%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+        "contentHash": "480f396b1ac8a72922fa41a603c52b0e8bd564456fb2b0533267e79ba6809d0f"
+      }
+    },
+    {
+      "eventId": "20c162e15b9cf5acc331493fbc28ae60",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Artificial Analysis Openness Index 官方数据更新",
+      "summary": "Artificial Analysis Openness Index 官方数据发生变化；共 25 个模型 · 当前前列：Olmo 3 7B Think（88.89）、Olmo 3.1 32B Think（88.89）、Apertus 70B Instruct（88.89）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-openness-index",
+      "observedAt": "2026-10-30T20:00:37Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Artificial Analysis Openness Index official Data API",
+      "benchmarkId": "aa_openness_index",
+      "benchmarkTitle": "Artificial Analysis Openness Index",
+      "release": "page_jsonld",
+      "contentHash": "4df890225fc70e3a9c9d7a25607b20402b483348614483b7c52fbc64bb07f545",
+      "unit": "score",
+      "modelCount": 25,
+      "topModels": [
+        "Olmo 3 7B Think（88.89）",
+        "Olmo 3.1 32B Think（88.89）",
+        "Apertus 70B Instruct（88.89）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-openness-index",
+        "contentHash": "480f396b1ac8a72922fa41a603c52b0e8bd564456fb2b0533267e79ba6809d0f"
       }
     }
   ],
-  "eventCount": 3,
+  "eventCount": 8,
   "provenance": {
-    "workflowRunId": "36248119686",
-    "mainCommit": "e555c8a0c9d7aadc5132bbc31e31d45af89da0eb"
+    "workflowRunId": "41211950079",
+    "mainCommit": "051754cf096f02b5ae33f65c5875d143413bce83"
   }
 }
