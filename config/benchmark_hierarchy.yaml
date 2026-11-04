@@ -428,10 +428,20 @@ benchmarks:
   official_name: Artificial Analysis Intelligence Index v5.0
   parent_benchmark_id: artificial_analysis_intelligence
   level: overall
-  status: enabled
+  status: disabled
   is_leaderboard: true
   comparison_key: aa_intelligence_index_v5_0
   source_registry_id: artificial_analysis_intelligence_index_v5_0
+
+- benchmark_id: artificial_analysis_intelligence_index_v5_0_1
+  display_name: Artificial Analysis Intelligence Index v5.0.1
+  official_name: Artificial Analysis Intelligence Index v5.0.1
+  parent_benchmark_id: artificial_analysis_intelligence
+  level: overall
+  status: enabled
+  is_leaderboard: true
+  comparison_key: aa_intelligence_index_v5_0_1
+  source_registry_id: artificial_analysis_intelligence_index_v5_0_1
 
 - benchmark_id: aa_briefcase_v1_1
   display_name: AA-Briefcase v1.1

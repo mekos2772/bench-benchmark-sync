@@ -40,3 +40,14 @@ API, or guessed endpoint was used.
 The export now has 31 boards: 8 LiveBench, 22 AA (current overall, nine v5.0
 components, and twelve other independent evaluations), and 1 DeepSWE. The nine
 components include the existing Terminal-Bench board; seven boards were added.
+
+
+## 2026-11-04: v5.0.1 release
+
+The same official index and methodology pages now explicitly identify v5.0.1.
+The nine components remain listed on both pages. The public score field remains
+`intelligenceIndex`; the page advertises 28 selected models out of 97.
+A separate source ID `artificial_analysis_intelligence_index_v5_0_1`, runtime ID
+`aa_intelligence_index_v5_0_1`, and release `v5.0.1` replace the active v5.0 board.
+The old source and hierarchy entries stay disabled for auditability. Exact heading
+and export release validation remain enabled; v5.0 snapshots cannot satisfy this release.

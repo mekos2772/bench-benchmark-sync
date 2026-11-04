@@ -9,7 +9,15 @@ from collector.models import FetchContext
 from persistence.hash import sha256_bytes
 
 
-@pytest.mark.parametrize("heading", ["Artificial Analysis Intelligence Index v4.3.2", ""])
+@pytest.mark.parametrize(
+    "heading",
+    [
+        "Artificial Analysis Intelligence Index v4.3.2",
+        "Artificial Analysis Intelligence Index v5.0",
+        "Artificial Analysis Intelligence Index v5.0.2",
+        "",
+    ],
+)
 def test_index_version_change_fails_before_parsing_scores(monkeypatch, heading):
     raw = f"<h1>{heading}</h1>".encode()
     monkeypatch.setattr(
@@ -17,11 +25,11 @@ def test_index_version_change_fails_before_parsing_scores(monkeypatch, heading):
     )
     collector = ArtificialAnalysisCollector(
         {
-            "benchmark_id": "artificial_analysis_intelligence_index_v5_0",
+            "benchmark_id": "artificial_analysis_intelligence_index_v5_0_1",
             "source_type": "official_page_endpoint",
             "endpoint": "https://example.invalid/",
-            "expected_page_heading": "Artificial Analysis Intelligence Index v5.0",
-            "release_id": "v5.0",
+            "expected_page_heading": "Artificial Analysis Intelligence Index v5.0.1",
+            "release_id": "v5.0.1",
         }
     )
     result = collector.fetch()

@@ -957,7 +957,7 @@ sources:
   jsonld_name: 'MLCR-AA: Score'
 
 - benchmark_id: artificial_analysis_intelligence_index_v5_0
-  status: enabled
+  status: disabled
   source_name: Artificial Analysis Intelligence Index v5.0 official public page
   organization: Artificial Analysis
   source_type: official_page_endpoint
@@ -973,6 +973,25 @@ sources:
   release_tracking: official_page_heading
   hash_required: true
   notes: Verified 2026-10-28 against official public Next.js initialModels. Scores are limited to the
+    models embedded in the public page; coverage is exported explicitly.
+
+- benchmark_id: artificial_analysis_intelligence_index_v5_0_1
+  status: enabled
+  source_name: Artificial Analysis Intelligence Index v5.0.1 official public page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
+  endpoint: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'Artificial Analysis Intelligence Index: Score'
+  release_id: v5.0.1
+  expected_page_heading: Artificial Analysis Intelligence Index v5.0.1
+  evidence_url: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
+  release_tracking: official_page_heading
+  hash_required: true
+  notes: Verified 2026-11-04 against official public Next.js initialModels. Scores are limited to the
     models embedded in the public page; coverage is exported explicitly.
 
 - benchmark_id: aa_briefcase_v1_1

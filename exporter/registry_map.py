@@ -45,9 +45,9 @@ FAMILY_DEFS: list[dict[str, Any]] = [
     {
         'family_id': 'aa',
         'title': 'Artificial Analysis',
-        'overall': 'aa_intelligence_index_v5_0',
+        'overall': 'aa_intelligence_index_v5_0_1',
         'boards': [
-            ('artificial_analysis_intelligence_index_v5_0', 'aa_intelligence_index_v5_0'),
+            ('artificial_analysis_intelligence_index_v5_0_1', 'aa_intelligence_index_v5_0_1'),
             ('aa_briefcase_v1_1', 'aa_briefcase_v1_1'),
             ('automationbench_aa', 'aa_automationbench'),
             ('frontiercode_v2_0', 'aa_frontiercode_v2_0'),
