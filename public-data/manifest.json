@@ -4,9 +4,9 @@
   "datasets": {
     "benchmark": {
       "path": "benchmark/livebench-ranking.json",
-      "generatedAt": "2026-11-07T10:01:22Z",
-      "sourceCommit": "4fd8509011a6764376c94b2d1149c68bcc8f49ee",
-      "sourceRunId": "42362029837",
+      "generatedAt": "2026-11-08T10:15:03Z",
+      "sourceCommit": "7eccb513e7ce870604c04b50351ca06d07782c50",
+      "sourceRunId": "42470511358",
       "families": 3,
       "boards": 31
     },
@@ -19,7 +19,7 @@
     },
     "usage": {
       "path": "usage/usage-rankings.json",
-      "generatedAt": "2026-11-07T07:14:55Z",
+      "generatedAt": "2026-11-08T07:26:18Z",
       "collectorStatus": "ok"
     },
     "intelligence": {
