@@ -92,10 +92,20 @@ jobs:
           python -m json.tool public-data/manifest.json > /dev/null
           python -m json.tool public-data/intelligence/index.json > /dev/null
 
-      - name: Commit updated public JSON and JSONL files
+      - name: Publish to separate public data-hub branch
         shell: bash
         run: |
           set -euo pipefail
+          mv public-data "$RUNNER_TEMP/built-public-data"
+          if git ls-remote --exit-code --heads origin data-hub > /dev/null; then
+            git fetch --no-tags --depth=1 origin \
+              +refs/heads/data-hub:refs/remotes/origin/data-hub
+            git switch -C data-hub origin/data-hub
+          else
+            git switch -c data-hub
+          fi
+          rm -rf public-data
+          mv "$RUNNER_TEMP/built-public-data" public-data
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A public-data
@@ -105,14 +115,14 @@ jobs:
           fi
           git commit -m "Sync public AI data hub (run ${GITHUB_RUN_ID})"
           for attempt in 1 2 3; do
-            if git push origin HEAD:main; then
+            if git push origin HEAD:data-hub; then
               exit 0
             fi
             if [ "$attempt" -eq 3 ]; then
               break
             fi
-            git fetch origin main
-            git rebase origin/main
+            git fetch origin data-hub
+            git rebase origin/data-hub
           done
-          echo "::error::Could not push public data hub after retries."
+          echo "::error::Could not push data-hub branch after retries."
           exit 1
