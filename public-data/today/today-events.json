@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "dataSource": "today-activity-aggregator",
+  "generatedAt": "2026-11-08T01:27:02Z",
+  "windowStart": "2026-11-07T01:27:02Z",
+  "collectorStatus": "ok",
+  "staleAfterMinutes": 360,
+  "families": [
+    "model",
+    "benchmark"
+  ],
+  "models": {},
+  "modelCount": 0,
+  "sourceSummary": {
+    "official": 0,
+    "catalog": 0,
+    "benchmark": 0
+  },
+  "events": [],
+  "eventCount": 0,
+  "provenance": {
+    "workflowRunId": "42434289257",
+    "mainCommit": "4fd8509011a6764376c94b2d1149c68bcc8f49ee"
+  }
+}

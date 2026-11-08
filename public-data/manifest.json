@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "description": "Public AI benchmark, Today, usage and intelligence data exports",
+  "datasets": {
+    "benchmark": {
+      "path": "benchmark/livebench-ranking.json",
+      "generatedAt": "2026-11-07T10:01:22Z",
+      "sourceCommit": "4fd8509011a6764376c94b2d1149c68bcc8f49ee",
+      "sourceRunId": "42362029837",
+      "families": 3,
+      "boards": 31
+    },
+    "today": {
+      "path": "today/today-events.json",
+      "collectorStatePath": "today/today-state.json",
+      "generatedAt": "2026-11-08T01:27:02Z",
+      "collectorStatus": "ok",
+      "eventCount": 0
+    },
+    "usage": {
+      "path": "usage/usage-rankings.json",
+      "generatedAt": "2026-11-07T07:14:55Z",
+      "collectorStatus": "ok"
+    },
+    "intelligence": {
+      "indexPath": "intelligence/index.json",
+      "latestPath": "intelligence/latest.json",
+      "latestArchiveDate": "2026-11-08",
+      "archiveDays": 38,
+      "totalRecords": 461
+    }
+  }
+}
