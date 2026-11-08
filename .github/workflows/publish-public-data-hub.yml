@@ -1,0 +1,118 @@
+name: Publish public AI data hub
+
+on:
+  schedule:
+    # 12:27, 18:27, 00:27, 06:27 Asia/Shanghai.
+    - cron: "27 4,10,16,22 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/publish-public-data-hub.yml"
+      - "scripts/build_public_data_hub.py"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-public-data-hub
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out public data repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Fetch verified public benchmark and Today exports
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --no-tags --depth=1 origin \
+            +refs/heads/benchmark-data:refs/remotes/origin/benchmark-data \
+            +refs/heads/today-data:refs/remotes/origin/today-data
+          mkdir -p "$RUNNER_TEMP/public-source"
+          git show origin/benchmark-data:generated/static-export/livebench-ranking.json \
+            > "$RUNNER_TEMP/public-source/benchmark.json"
+          git show origin/today-data:generated/static-events/today-events.json \
+            > "$RUNNER_TEMP/public-source/today.json"
+          git show origin/today-data:generated/static-events/today-state.json \
+            > "$RUNNER_TEMP/public-source/today-state.json"
+          python -m json.tool "$RUNNER_TEMP/public-source/benchmark.json" > /dev/null
+          python -m json.tool "$RUNNER_TEMP/public-source/today.json" > /dev/null
+          python -m json.tool "$RUNNER_TEMP/public-source/today-state.json" > /dev/null
+
+      - name: Fetch public usage rankings
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --location --retry 3 \
+            --max-time 60 \
+            --output "$RUNNER_TEMP/public-source/usage.json" \
+            https://raw.githubusercontent.com/mekos2772/usage-rankings-data/main/generated/usage-rankings/usage-rankings.json
+          python -m json.tool "$RUNNER_TEMP/public-source/usage.json" > /dev/null
+
+      - name: Fetch private intelligence for field-filtered public release
+        shell: bash
+        env:
+          TODAY_PRIVATE_DEPLOY_KEY: ${{ secrets.TODAY_PRIVATE_DEPLOY_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "${TODAY_PRIVATE_DEPLOY_KEY:-}" ]; then
+            echo "::error::Missing TODAY_PRIVATE_DEPLOY_KEY; public export aborted without changing data."
+            exit 1
+          fi
+          install -m 700 -d "$RUNNER_TEMP/github-ssh"
+          printf '%s\n' "$TODAY_PRIVATE_DEPLOY_KEY" > "$RUNNER_TEMP/github-ssh/id_ed25519"
+          chmod 600 "$RUNNER_TEMP/github-ssh/id_ed25519"
+          trap 'rm -f "$RUNNER_TEMP/github-ssh/id_ed25519"' EXIT
+          curl --fail --silent --show-error --retry 3 https://api.github.com/meta \
+            | python -c 'import json,sys; print("\n".join("github.com " + key for key in json.load(sys.stdin)["ssh_keys"] if key.startswith("ssh-ed25519 ")))' \
+            > "$RUNNER_TEMP/github-ssh/known_hosts"
+          test -s "$RUNNER_TEMP/github-ssh/known_hosts"
+          export GIT_SSH_COMMAND="ssh -i $RUNNER_TEMP/github-ssh/id_ed25519 -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$RUNNER_TEMP/github-ssh/known_hosts"
+          git clone --depth=1 git@github.com:mekos2772/ai-ranking-miniprogram.git \
+            "$RUNNER_TEMP/private-source"
+
+      - name: Validate and prepare all four datasets
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/build_public_data_hub.py \
+            --benchmark "$RUNNER_TEMP/public-source/benchmark.json" \
+            --today "$RUNNER_TEMP/public-source/today.json" \
+            --today-state "$RUNNER_TEMP/public-source/today-state.json" \
+            --usage "$RUNNER_TEMP/public-source/usage.json" \
+            --intelligence-dir "$RUNNER_TEMP/private-source/data/intelligence" \
+            --output public-data
+          python -m json.tool public-data/manifest.json > /dev/null
+          python -m json.tool public-data/intelligence/index.json > /dev/null
+
+      - name: Commit updated public JSON and JSONL files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A public-data
+          if git diff --cached --quiet; then
+            echo "Public data hub already matches current upstream exports."
+            exit 0
+          fi
+          git commit -m "Sync public AI data hub (run ${GITHUB_RUN_ID})"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              break
+            fi
+            git fetch origin main
+            git rebase origin/main
+          done
+          echo "::error::Could not push public data hub after retries."
+          exit 1
