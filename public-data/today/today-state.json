@@ -3,6 +3,290 @@
   "generatedAt": "2026-11-08T01:27:02Z",
   "models": {},
   "benchmarks": {
+    "livebench_long_horizon": {
+      "runtimeId": "livebench_long_horizon",
+      "familyId": "livebench",
+      "title": "LiveBench Long Agentic",
+      "release": "2026-10-25",
+      "contentHash": "6b282c7289de1228cc866b8735ce76bad1f477985032db8b6f07e1daa8e9d398",
+      "source": {
+        "benchmark_id": "livebench_long_horizon",
+        "status": "enabled",
+        "source_name": "LiveBench Long-Horizon dated official leaderboard CSV",
+        "organization": "LiveBench",
+        "source_type": "official_site_dated_csv",
+        "official_url": "https://livebench.ai/",
+        "endpoint": "https://livebench.ai/",
+        "raw_base_url": "https://livebench.ai",
+        "asset_layout": "release_directory",
+        "fetch_method": "GET",
+        "update_frequency": "release_based",
+        "requires_auth": false,
+        "category_selector": "long_horizon",
+        "evidence_url": "https://livebench.ai/",
+        "release_tracking": "dated_table_and_categories_files",
+        "hash_required": true,
+        "notes": "Official LiveBench 2.0 suite Long-Horizon, introduced by 2.0; the v1 Mathematics suite no longer exists in this taxonomy."
+      },
+      "records": {
+        "claude-fable-5.1|2026-10-25:Long Agentic:category_average:claude-fable-5.1|2026-10-25": {
+          "model": "claude-fable-5.1",
+          "score": 77.9,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:claude-fable-5.1",
+          "variant": "2026-10-25",
+          "displayRank": 1
+        },
+        "claude-haiku-5.5|2026-10-25:Long Agentic:category_average:claude-haiku-5.5|2026-10-25": {
+          "model": "claude-haiku-5.5",
+          "score": 40.0,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:claude-haiku-5.5",
+          "variant": "2026-10-25",
+          "displayRank": 10
+        },
+        "claude-opus-5.5|2026-10-25:Long Agentic:category_average:claude-opus-5.5|2026-10-25": {
+          "model": "claude-opus-5.5",
+          "score": 72.8,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:claude-opus-5.5",
+          "variant": "2026-10-25",
+          "displayRank": 3
+        },
+        "claude-sonnet-5.5|2026-10-25:Long Agentic:category_average:claude-sonnet-5.5|2026-10-25": {
+          "model": "claude-sonnet-5.5",
+          "score": 63.4,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:claude-sonnet-5.5",
+          "variant": "2026-10-25",
+          "displayRank": 5
+        },
+        "deepseek-v4.1-flash-1017|2026-10-25:Long Agentic:category_average:deepseek-v4.1-flash-1017|2026-10-25": {
+          "model": "deepseek-v4.1-flash-1017",
+          "score": 35.7,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:deepseek-v4.1-flash-1017",
+          "variant": "2026-10-25",
+          "displayRank": 12
+        },
+        "gemini-3.8-flash|2026-10-25:Long Agentic:category_average:gemini-3.8-flash|2026-10-25": {
+          "model": "gemini-3.8-flash",
+          "score": 16.5,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:gemini-3.8-flash",
+          "variant": "2026-10-25",
+          "displayRank": 25
+        },
+        "gemini-4-argon|2026-10-25:Long Agentic:category_average:gemini-4-argon|2026-10-25": {
+          "model": "gemini-4-argon",
+          "score": 61.2,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:gemini-4-argon",
+          "variant": "2026-10-25",
+          "displayRank": 6
+        },
+        "gemma-4-31b|2026-10-25:Long Agentic:category_average:gemma-4-31b|2026-10-25": {
+          "model": "gemma-4-31b",
+          "score": 10.7,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:gemma-4-31b",
+          "variant": "2026-10-25",
+          "displayRank": 28
+        },
+        "glm-5.3-flash|2026-10-25:Long Agentic:category_average:glm-5.3-flash|2026-10-25": {
+          "model": "glm-5.3-flash",
+          "score": 19.0,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:glm-5.3-flash",
+          "variant": "2026-10-25",
+          "displayRank": 24
+        },
+        "gpt-5.6-terra|2026-10-25:Long Agentic:category_average:gpt-5.6-terra|2026-10-25": {
+          "model": "gpt-5.6-terra",
+          "score": 33.1,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:gpt-5.6-terra",
+          "variant": "2026-10-25",
+          "displayRank": 14
+        },
+        "gpt-6-astra|2026-10-25:Long Agentic:category_average:gpt-6-astra|2026-10-25": {
+          "model": "gpt-6-astra",
+          "score": 77.5,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:gpt-6-astra",
+          "variant": "2026-10-25",
+          "displayRank": 2
+        },
+        "gpt-6-luna|2026-10-25:Long Agentic:category_average:gpt-6-luna|2026-10-25": {
+          "model": "gpt-6-luna",
+          "score": 30.9,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:gpt-6-luna",
+          "variant": "2026-10-25",
+          "displayRank": 15
+        },
+        "gpt-6.1-sol|2026-10-25:Long Agentic:category_average:gpt-6.1-sol|2026-10-25": {
+          "model": "gpt-6.1-sol",
+          "score": 68.7,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:gpt-6.1-sol",
+          "variant": "2026-10-25",
+          "displayRank": 4
+        },
+        "gpt-6.1-terra|2026-10-25:Long Agentic:category_average:gpt-6.1-terra|2026-10-25": {
+          "model": "gpt-6.1-terra",
+          "score": 48.6,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:gpt-6.1-terra",
+          "variant": "2026-10-25",
+          "displayRank": 8
+        },
+        "grok-4.6|2026-10-25:Long Agentic:category_average:grok-4.6|2026-10-25": {
+          "model": "grok-4.6",
+          "score": 28.0,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:grok-4.6",
+          "variant": "2026-10-25",
+          "displayRank": 18
+        },
+        "grok-4.7|2026-10-25:Long Agentic:category_average:grok-4.7|2026-10-25": {
+          "model": "grok-4.7",
+          "score": 46.1,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:grok-4.7",
+          "variant": "2026-10-25",
+          "displayRank": 9
+        },
+        "inkling|2026-10-25:Long Agentic:category_average:inkling|2026-10-25": {
+          "model": "inkling",
+          "score": 8.5,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:inkling",
+          "variant": "2026-10-25",
+          "displayRank": 30
+        },
+        "kimi-k3.1-pro|2026-10-25:Long Agentic:category_average:kimi-k3.1-pro|2026-10-25": {
+          "model": "kimi-k3.1-pro",
+          "score": 39.1,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:kimi-k3.1-pro",
+          "variant": "2026-10-25",
+          "displayRank": 11
+        },
+        "kimi-k3|2026-10-25:Long Agentic:category_average:kimi-k3|2026-10-25": {
+          "model": "kimi-k3",
+          "score": 26.4,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:kimi-k3",
+          "variant": "2026-10-25",
+          "displayRank": 20
+        },
+        "mimo-v2.6-pro|2026-10-25:Long Agentic:category_average:mimo-v2.6-pro|2026-10-25": {
+          "model": "mimo-v2.6-pro",
+          "score": 35.2,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:mimo-v2.6-pro",
+          "variant": "2026-10-25",
+          "displayRank": 13
+        },
+        "minimax-m3.1-flash|2026-10-25:Long Agentic:category_average:minimax-m3.1-flash|2026-10-25": {
+          "model": "minimax-m3.1-flash",
+          "score": 28.8,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:minimax-m3.1-flash",
+          "variant": "2026-10-25",
+          "displayRank": 17
+        },
+        "mistral-large-4-0|2026-10-25:Long Agentic:category_average:mistral-large-4-0|2026-10-25": {
+          "model": "mistral-large-4-0",
+          "score": 27.5,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:mistral-large-4-0",
+          "variant": "2026-10-25",
+          "displayRank": 19
+        },
+        "mistral-large-4|2026-10-25:Long Agentic:category_average:mistral-large-4|2026-10-25": {
+          "model": "mistral-large-4",
+          "score": 8.8,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:mistral-large-4",
+          "variant": "2026-10-25",
+          "displayRank": 29
+        },
+        "muse-spark-1.3|2026-10-25:Long Agentic:category_average:muse-spark-1.3|2026-10-25": {
+          "model": "muse-spark-1.3",
+          "score": 25.5,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:muse-spark-1.3",
+          "variant": "2026-10-25",
+          "displayRank": 21
+        },
+        "muse-spark-open|2026-10-25:Long Agentic:category_average:muse-spark-open|2026-10-25": {
+          "model": "muse-spark-open",
+          "score": 11.7,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:muse-spark-open",
+          "variant": "2026-10-25",
+          "displayRank": 26
+        },
+        "muse-wonder-1.0|2026-10-25:Long Agentic:category_average:muse-wonder-1.0|2026-10-25": {
+          "model": "muse-wonder-1.0",
+          "score": 52.6,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:muse-wonder-1.0",
+          "variant": "2026-10-25",
+          "displayRank": 7
+        },
+        "nemotron-super-vl-3.5-nvfp4|2026-10-25:Long Agentic:category_average:nemotron-super-vl-3.5-nvfp4|2026-10-25": {
+          "model": "nemotron-super-vl-3.5-nvfp4",
+          "score": 7.3,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:nemotron-super-vl-3.5-nvfp4",
+          "variant": "2026-10-25",
+          "displayRank": 32
+        },
+        "nemotron-super-vl-3.5|2026-10-25:Long Agentic:category_average:nemotron-super-vl-3.5|2026-10-25": {
+          "model": "nemotron-super-vl-3.5",
+          "score": 11.7,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:nemotron-super-vl-3.5",
+          "variant": "2026-10-25",
+          "displayRank": 27
+        },
+        "qwen3.8-27b|2026-10-25:Long Agentic:category_average:qwen3.8-27b|2026-10-25": {
+          "model": "qwen3.8-27b",
+          "score": 20.6,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:qwen3.8-27b",
+          "variant": "2026-10-25",
+          "displayRank": 22
+        },
+        "qwen3.8-max|2026-10-25:Long Agentic:category_average:qwen3.8-max|2026-10-25": {
+          "model": "qwen3.8-max",
+          "score": 29.9,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:qwen3.8-max",
+          "variant": "2026-10-25",
+          "displayRank": 16
+        },
+        "smaug-nemotron-3.5-nvfp4|2026-10-25:Long Agentic:category_average:smaug-nemotron-3.5-nvfp4|2026-10-25": {
+          "model": "smaug-nemotron-3.5-nvfp4",
+          "score": 8.4,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:smaug-nemotron-3.5-nvfp4",
+          "variant": "2026-10-25",
+          "displayRank": 31
+        },
+        "step-5-preview|2026-10-25:Long Agentic:category_average:step-5-preview|2026-10-25": {
+          "model": "step-5-preview",
+          "score": 19.4,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Long Agentic:category_average:step-5-preview",
+          "variant": "2026-10-25",
+          "displayRank": 23
+        }
+      }
+    },
     "livebench_overall": {
       "runtimeId": "livebench_overall",
       "familyId": "livebench",
@@ -284,290 +568,6 @@
           "comparisonKey": "2026-10-25:overall:weighted_category_average:step-5-preview",
           "variant": "2026-10-25",
           "displayRank": 24
-        }
-      }
-    },
-    "livebench_coding": {
-      "runtimeId": "livebench_coding",
-      "familyId": "livebench",
-      "title": "LiveBench Coding",
-      "release": "2026-10-25",
-      "contentHash": "6b282c7289de1228cc866b8735ce76bad1f477985032db8b6f07e1daa8e9d398",
-      "source": {
-        "benchmark_id": "livebench_coding",
-        "status": "enabled",
-        "source_name": "LiveBench Coding dated official leaderboard CSV",
-        "organization": "LiveBench",
-        "source_type": "official_site_dated_csv",
-        "official_url": "https://livebench.ai/",
-        "endpoint": "https://livebench.ai/",
-        "raw_base_url": "https://livebench.ai",
-        "asset_layout": "release_directory",
-        "fetch_method": "GET",
-        "update_frequency": "release_based",
-        "requires_auth": false,
-        "category_selector": "coding",
-        "evidence_url": "https://livebench.ai/",
-        "release_tracking": "dated_table_and_categories_files",
-        "hash_required": true,
-        "notes": "Official LiveBench 2.0 suite Coding; bug-fix tasks from real merged pull requests. Scores are averaged only within this suite."
-      },
-      "records": {
-        "claude-fable-5.1|2026-10-25:Coding:category_average:claude-fable-5.1|2026-10-25": {
-          "model": "claude-fable-5.1",
-          "score": 97.7,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:claude-fable-5.1",
-          "variant": "2026-10-25",
-          "displayRank": 1
-        },
-        "claude-haiku-5.5|2026-10-25:Coding:category_average:claude-haiku-5.5|2026-10-25": {
-          "model": "claude-haiku-5.5",
-          "score": 91.4,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:claude-haiku-5.5",
-          "variant": "2026-10-25",
-          "displayRank": 9
-        },
-        "claude-opus-5.5|2026-10-25:Coding:category_average:claude-opus-5.5|2026-10-25": {
-          "model": "claude-opus-5.5",
-          "score": 96.3,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:claude-opus-5.5",
-          "variant": "2026-10-25",
-          "displayRank": 2
-        },
-        "claude-sonnet-5.5|2026-10-25:Coding:category_average:claude-sonnet-5.5|2026-10-25": {
-          "model": "claude-sonnet-5.5",
-          "score": 94.7,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:claude-sonnet-5.5",
-          "variant": "2026-10-25",
-          "displayRank": 6
-        },
-        "deepseek-v4.1-flash-1017|2026-10-25:Coding:category_average:deepseek-v4.1-flash-1017|2026-10-25": {
-          "model": "deepseek-v4.1-flash-1017",
-          "score": 96.0,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:deepseek-v4.1-flash-1017",
-          "variant": "2026-10-25",
-          "displayRank": 3
-        },
-        "gemini-3.8-flash|2026-10-25:Coding:category_average:gemini-3.8-flash|2026-10-25": {
-          "model": "gemini-3.8-flash",
-          "score": 82.2,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:gemini-3.8-flash",
-          "variant": "2026-10-25",
-          "displayRank": 20
-        },
-        "gemini-4-argon|2026-10-25:Coding:category_average:gemini-4-argon|2026-10-25": {
-          "model": "gemini-4-argon",
-          "score": 89.7,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:gemini-4-argon",
-          "variant": "2026-10-25",
-          "displayRank": 11
-        },
-        "gemma-4-31b|2026-10-25:Coding:category_average:gemma-4-31b|2026-10-25": {
-          "model": "gemma-4-31b",
-          "score": 49.0,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:gemma-4-31b",
-          "variant": "2026-10-25",
-          "displayRank": 32
-        },
-        "glm-5.3-flash|2026-10-25:Coding:category_average:glm-5.3-flash|2026-10-25": {
-          "model": "glm-5.3-flash",
-          "score": 80.6,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:glm-5.3-flash",
-          "variant": "2026-10-25",
-          "displayRank": 23
-        },
-        "gpt-5.6-terra|2026-10-25:Coding:category_average:gpt-5.6-terra|2026-10-25": {
-          "model": "gpt-5.6-terra",
-          "score": 86.2,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:gpt-5.6-terra",
-          "variant": "2026-10-25",
-          "displayRank": 14
-        },
-        "gpt-6-astra|2026-10-25:Coding:category_average:gpt-6-astra|2026-10-25": {
-          "model": "gpt-6-astra",
-          "score": 93.7,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:gpt-6-astra",
-          "variant": "2026-10-25",
-          "displayRank": 8
-        },
-        "gpt-6-luna|2026-10-25:Coding:category_average:gpt-6-luna|2026-10-25": {
-          "model": "gpt-6-luna",
-          "score": 84.5,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:gpt-6-luna",
-          "variant": "2026-10-25",
-          "displayRank": 17
-        },
-        "gpt-6.1-sol|2026-10-25:Coding:category_average:gpt-6.1-sol|2026-10-25": {
-          "model": "gpt-6.1-sol",
-          "score": 96.0,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:gpt-6.1-sol",
-          "variant": "2026-10-25",
-          "displayRank": 4
-        },
-        "gpt-6.1-terra|2026-10-25:Coding:category_average:gpt-6.1-terra|2026-10-25": {
-          "model": "gpt-6.1-terra",
-          "score": 94.3,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:gpt-6.1-terra",
-          "variant": "2026-10-25",
-          "displayRank": 7
-        },
-        "grok-4.6|2026-10-25:Coding:category_average:grok-4.6|2026-10-25": {
-          "model": "grok-4.6",
-          "score": 89.1,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:grok-4.6",
-          "variant": "2026-10-25",
-          "displayRank": 12
-        },
-        "grok-4.7|2026-10-25:Coding:category_average:grok-4.7|2026-10-25": {
-          "model": "grok-4.7",
-          "score": 84.5,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:grok-4.7",
-          "variant": "2026-10-25",
-          "displayRank": 18
-        },
-        "inkling|2026-10-25:Coding:category_average:inkling|2026-10-25": {
-          "model": "inkling",
-          "score": 64.0,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:inkling",
-          "variant": "2026-10-25",
-          "displayRank": 27
-        },
-        "kimi-k3.1-pro|2026-10-25:Coding:category_average:kimi-k3.1-pro|2026-10-25": {
-          "model": "kimi-k3.1-pro",
-          "score": 81.8,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:kimi-k3.1-pro",
-          "variant": "2026-10-25",
-          "displayRank": 21
-        },
-        "kimi-k3|2026-10-25:Coding:category_average:kimi-k3|2026-10-25": {
-          "model": "kimi-k3",
-          "score": 59.3,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:kimi-k3",
-          "variant": "2026-10-25",
-          "displayRank": 31
-        },
-        "mimo-v2.6-pro|2026-10-25:Coding:category_average:mimo-v2.6-pro|2026-10-25": {
-          "model": "mimo-v2.6-pro",
-          "score": 81.5,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:mimo-v2.6-pro",
-          "variant": "2026-10-25",
-          "displayRank": 22
-        },
-        "minimax-m3.1-flash|2026-10-25:Coding:category_average:minimax-m3.1-flash|2026-10-25": {
-          "model": "minimax-m3.1-flash",
-          "score": 83.9,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:minimax-m3.1-flash",
-          "variant": "2026-10-25",
-          "displayRank": 19
-        },
-        "mistral-large-4-0|2026-10-25:Coding:category_average:mistral-large-4-0|2026-10-25": {
-          "model": "mistral-large-4-0",
-          "score": 95.4,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:mistral-large-4-0",
-          "variant": "2026-10-25",
-          "displayRank": 5
-        },
-        "mistral-large-4|2026-10-25:Coding:category_average:mistral-large-4|2026-10-25": {
-          "model": "mistral-large-4",
-          "score": 60.0,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:mistral-large-4",
-          "variant": "2026-10-25",
-          "displayRank": 30
-        },
-        "muse-spark-1.3|2026-10-25:Coding:category_average:muse-spark-1.3|2026-10-25": {
-          "model": "muse-spark-1.3",
-          "score": 90.2,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:muse-spark-1.3",
-          "variant": "2026-10-25",
-          "displayRank": 10
-        },
-        "muse-spark-open|2026-10-25:Coding:category_average:muse-spark-open|2026-10-25": {
-          "model": "muse-spark-open",
-          "score": 73.6,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:muse-spark-open",
-          "variant": "2026-10-25",
-          "displayRank": 24
-        },
-        "muse-wonder-1.0|2026-10-25:Coding:category_average:muse-wonder-1.0|2026-10-25": {
-          "model": "muse-wonder-1.0",
-          "score": 86.2,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:muse-wonder-1.0",
-          "variant": "2026-10-25",
-          "displayRank": 15
-        },
-        "nemotron-super-vl-3.5-nvfp4|2026-10-25:Coding:category_average:nemotron-super-vl-3.5-nvfp4|2026-10-25": {
-          "model": "nemotron-super-vl-3.5-nvfp4",
-          "score": 61.3,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:nemotron-super-vl-3.5-nvfp4",
-          "variant": "2026-10-25",
-          "displayRank": 28
-        },
-        "nemotron-super-vl-3.5|2026-10-25:Coding:category_average:nemotron-super-vl-3.5|2026-10-25": {
-          "model": "nemotron-super-vl-3.5",
-          "score": 71.3,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:nemotron-super-vl-3.5",
-          "variant": "2026-10-25",
-          "displayRank": 26
-        },
-        "qwen3.8-27b|2026-10-25:Coding:category_average:qwen3.8-27b|2026-10-25": {
-          "model": "qwen3.8-27b",
-          "score": 86.8,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:qwen3.8-27b",
-          "variant": "2026-10-25",
-          "displayRank": 13
-        },
-        "qwen3.8-max|2026-10-25:Coding:category_average:qwen3.8-max|2026-10-25": {
-          "model": "qwen3.8-max",
-          "score": 60.3,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:qwen3.8-max",
-          "variant": "2026-10-25",
-          "displayRank": 29
-        },
-        "smaug-nemotron-3.5-nvfp4|2026-10-25:Coding:category_average:smaug-nemotron-3.5-nvfp4|2026-10-25": {
-          "model": "smaug-nemotron-3.5-nvfp4",
-          "score": 72.2,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:smaug-nemotron-3.5-nvfp4",
-          "variant": "2026-10-25",
-          "displayRank": 25
-        },
-        "step-5-preview|2026-10-25:Coding:category_average:step-5-preview|2026-10-25": {
-          "model": "step-5-preview",
-          "score": 85.6,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Coding:category_average:step-5-preview",
-          "variant": "2026-10-25",
-          "displayRank": 16
         }
       }
     },
@@ -855,290 +855,6 @@
         }
       }
     },
-    "livebench_long_horizon": {
-      "runtimeId": "livebench_long_horizon",
-      "familyId": "livebench",
-      "title": "LiveBench Long Agentic",
-      "release": "2026-10-25",
-      "contentHash": "6b282c7289de1228cc866b8735ce76bad1f477985032db8b6f07e1daa8e9d398",
-      "source": {
-        "benchmark_id": "livebench_long_horizon",
-        "status": "enabled",
-        "source_name": "LiveBench Long-Horizon dated official leaderboard CSV",
-        "organization": "LiveBench",
-        "source_type": "official_site_dated_csv",
-        "official_url": "https://livebench.ai/",
-        "endpoint": "https://livebench.ai/",
-        "raw_base_url": "https://livebench.ai",
-        "asset_layout": "release_directory",
-        "fetch_method": "GET",
-        "update_frequency": "release_based",
-        "requires_auth": false,
-        "category_selector": "long_horizon",
-        "evidence_url": "https://livebench.ai/",
-        "release_tracking": "dated_table_and_categories_files",
-        "hash_required": true,
-        "notes": "Official LiveBench 2.0 suite Long-Horizon, introduced by 2.0; the v1 Mathematics suite no longer exists in this taxonomy."
-      },
-      "records": {
-        "claude-fable-5.1|2026-10-25:Long Agentic:category_average:claude-fable-5.1|2026-10-25": {
-          "model": "claude-fable-5.1",
-          "score": 77.9,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:claude-fable-5.1",
-          "variant": "2026-10-25",
-          "displayRank": 1
-        },
-        "claude-haiku-5.5|2026-10-25:Long Agentic:category_average:claude-haiku-5.5|2026-10-25": {
-          "model": "claude-haiku-5.5",
-          "score": 40.0,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:claude-haiku-5.5",
-          "variant": "2026-10-25",
-          "displayRank": 10
-        },
-        "claude-opus-5.5|2026-10-25:Long Agentic:category_average:claude-opus-5.5|2026-10-25": {
-          "model": "claude-opus-5.5",
-          "score": 72.8,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:claude-opus-5.5",
-          "variant": "2026-10-25",
-          "displayRank": 3
-        },
-        "claude-sonnet-5.5|2026-10-25:Long Agentic:category_average:claude-sonnet-5.5|2026-10-25": {
-          "model": "claude-sonnet-5.5",
-          "score": 63.4,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:claude-sonnet-5.5",
-          "variant": "2026-10-25",
-          "displayRank": 5
-        },
-        "deepseek-v4.1-flash-1017|2026-10-25:Long Agentic:category_average:deepseek-v4.1-flash-1017|2026-10-25": {
-          "model": "deepseek-v4.1-flash-1017",
-          "score": 35.7,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:deepseek-v4.1-flash-1017",
-          "variant": "2026-10-25",
-          "displayRank": 12
-        },
-        "gemini-3.8-flash|2026-10-25:Long Agentic:category_average:gemini-3.8-flash|2026-10-25": {
-          "model": "gemini-3.8-flash",
-          "score": 16.5,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:gemini-3.8-flash",
-          "variant": "2026-10-25",
-          "displayRank": 25
-        },
-        "gemini-4-argon|2026-10-25:Long Agentic:category_average:gemini-4-argon|2026-10-25": {
-          "model": "gemini-4-argon",
-          "score": 61.2,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:gemini-4-argon",
-          "variant": "2026-10-25",
-          "displayRank": 6
-        },
-        "gemma-4-31b|2026-10-25:Long Agentic:category_average:gemma-4-31b|2026-10-25": {
-          "model": "gemma-4-31b",
-          "score": 10.7,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:gemma-4-31b",
-          "variant": "2026-10-25",
-          "displayRank": 28
-        },
-        "glm-5.3-flash|2026-10-25:Long Agentic:category_average:glm-5.3-flash|2026-10-25": {
-          "model": "glm-5.3-flash",
-          "score": 19.0,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:glm-5.3-flash",
-          "variant": "2026-10-25",
-          "displayRank": 24
-        },
-        "gpt-5.6-terra|2026-10-25:Long Agentic:category_average:gpt-5.6-terra|2026-10-25": {
-          "model": "gpt-5.6-terra",
-          "score": 33.1,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:gpt-5.6-terra",
-          "variant": "2026-10-25",
-          "displayRank": 14
-        },
-        "gpt-6-astra|2026-10-25:Long Agentic:category_average:gpt-6-astra|2026-10-25": {
-          "model": "gpt-6-astra",
-          "score": 77.5,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:gpt-6-astra",
-          "variant": "2026-10-25",
-          "displayRank": 2
-        },
-        "gpt-6-luna|2026-10-25:Long Agentic:category_average:gpt-6-luna|2026-10-25": {
-          "model": "gpt-6-luna",
-          "score": 30.9,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:gpt-6-luna",
-          "variant": "2026-10-25",
-          "displayRank": 15
-        },
-        "gpt-6.1-sol|2026-10-25:Long Agentic:category_average:gpt-6.1-sol|2026-10-25": {
-          "model": "gpt-6.1-sol",
-          "score": 68.7,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:gpt-6.1-sol",
-          "variant": "2026-10-25",
-          "displayRank": 4
-        },
-        "gpt-6.1-terra|2026-10-25:Long Agentic:category_average:gpt-6.1-terra|2026-10-25": {
-          "model": "gpt-6.1-terra",
-          "score": 48.6,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:gpt-6.1-terra",
-          "variant": "2026-10-25",
-          "displayRank": 8
-        },
-        "grok-4.6|2026-10-25:Long Agentic:category_average:grok-4.6|2026-10-25": {
-          "model": "grok-4.6",
-          "score": 28.0,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:grok-4.6",
-          "variant": "2026-10-25",
-          "displayRank": 18
-        },
-        "grok-4.7|2026-10-25:Long Agentic:category_average:grok-4.7|2026-10-25": {
-          "model": "grok-4.7",
-          "score": 46.1,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:grok-4.7",
-          "variant": "2026-10-25",
-          "displayRank": 9
-        },
-        "inkling|2026-10-25:Long Agentic:category_average:inkling|2026-10-25": {
-          "model": "inkling",
-          "score": 8.5,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:inkling",
-          "variant": "2026-10-25",
-          "displayRank": 30
-        },
-        "kimi-k3.1-pro|2026-10-25:Long Agentic:category_average:kimi-k3.1-pro|2026-10-25": {
-          "model": "kimi-k3.1-pro",
-          "score": 39.1,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:kimi-k3.1-pro",
-          "variant": "2026-10-25",
-          "displayRank": 11
-        },
-        "kimi-k3|2026-10-25:Long Agentic:category_average:kimi-k3|2026-10-25": {
-          "model": "kimi-k3",
-          "score": 26.4,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:kimi-k3",
-          "variant": "2026-10-25",
-          "displayRank": 20
-        },
-        "mimo-v2.6-pro|2026-10-25:Long Agentic:category_average:mimo-v2.6-pro|2026-10-25": {
-          "model": "mimo-v2.6-pro",
-          "score": 35.2,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:mimo-v2.6-pro",
-          "variant": "2026-10-25",
-          "displayRank": 13
-        },
-        "minimax-m3.1-flash|2026-10-25:Long Agentic:category_average:minimax-m3.1-flash|2026-10-25": {
-          "model": "minimax-m3.1-flash",
-          "score": 28.8,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:minimax-m3.1-flash",
-          "variant": "2026-10-25",
-          "displayRank": 17
-        },
-        "mistral-large-4-0|2026-10-25:Long Agentic:category_average:mistral-large-4-0|2026-10-25": {
-          "model": "mistral-large-4-0",
-          "score": 27.5,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:mistral-large-4-0",
-          "variant": "2026-10-25",
-          "displayRank": 19
-        },
-        "mistral-large-4|2026-10-25:Long Agentic:category_average:mistral-large-4|2026-10-25": {
-          "model": "mistral-large-4",
-          "score": 8.8,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:mistral-large-4",
-          "variant": "2026-10-25",
-          "displayRank": 29
-        },
-        "muse-spark-1.3|2026-10-25:Long Agentic:category_average:muse-spark-1.3|2026-10-25": {
-          "model": "muse-spark-1.3",
-          "score": 25.5,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:muse-spark-1.3",
-          "variant": "2026-10-25",
-          "displayRank": 21
-        },
-        "muse-spark-open|2026-10-25:Long Agentic:category_average:muse-spark-open|2026-10-25": {
-          "model": "muse-spark-open",
-          "score": 11.7,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:muse-spark-open",
-          "variant": "2026-10-25",
-          "displayRank": 26
-        },
-        "muse-wonder-1.0|2026-10-25:Long Agentic:category_average:muse-wonder-1.0|2026-10-25": {
-          "model": "muse-wonder-1.0",
-          "score": 52.6,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:muse-wonder-1.0",
-          "variant": "2026-10-25",
-          "displayRank": 7
-        },
-        "nemotron-super-vl-3.5-nvfp4|2026-10-25:Long Agentic:category_average:nemotron-super-vl-3.5-nvfp4|2026-10-25": {
-          "model": "nemotron-super-vl-3.5-nvfp4",
-          "score": 7.3,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:nemotron-super-vl-3.5-nvfp4",
-          "variant": "2026-10-25",
-          "displayRank": 32
-        },
-        "nemotron-super-vl-3.5|2026-10-25:Long Agentic:category_average:nemotron-super-vl-3.5|2026-10-25": {
-          "model": "nemotron-super-vl-3.5",
-          "score": 11.7,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:nemotron-super-vl-3.5",
-          "variant": "2026-10-25",
-          "displayRank": 27
-        },
-        "qwen3.8-27b|2026-10-25:Long Agentic:category_average:qwen3.8-27b|2026-10-25": {
-          "model": "qwen3.8-27b",
-          "score": 20.6,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:qwen3.8-27b",
-          "variant": "2026-10-25",
-          "displayRank": 22
-        },
-        "qwen3.8-max|2026-10-25:Long Agentic:category_average:qwen3.8-max|2026-10-25": {
-          "model": "qwen3.8-max",
-          "score": 29.9,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:qwen3.8-max",
-          "variant": "2026-10-25",
-          "displayRank": 16
-        },
-        "smaug-nemotron-3.5-nvfp4|2026-10-25:Long Agentic:category_average:smaug-nemotron-3.5-nvfp4|2026-10-25": {
-          "model": "smaug-nemotron-3.5-nvfp4",
-          "score": 8.4,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:smaug-nemotron-3.5-nvfp4",
-          "variant": "2026-10-25",
-          "displayRank": 31
-        },
-        "step-5-preview|2026-10-25:Long Agentic:category_average:step-5-preview|2026-10-25": {
-          "model": "step-5-preview",
-          "score": 19.4,
-          "rank": null,
-          "comparisonKey": "2026-10-25:Long Agentic:category_average:step-5-preview",
-          "variant": "2026-10-25",
-          "displayRank": 23
-        }
-      }
-    },
     "livebench_data_analysis": {
       "runtimeId": "livebench_data_analysis",
       "familyId": "livebench",
@@ -1420,6 +1136,290 @@
           "comparisonKey": "2026-10-25:Data Analysis:category_average:step-5-preview",
           "variant": "2026-10-25",
           "displayRank": 27
+        }
+      }
+    },
+    "livebench_coding": {
+      "runtimeId": "livebench_coding",
+      "familyId": "livebench",
+      "title": "LiveBench Coding",
+      "release": "2026-10-25",
+      "contentHash": "6b282c7289de1228cc866b8735ce76bad1f477985032db8b6f07e1daa8e9d398",
+      "source": {
+        "benchmark_id": "livebench_coding",
+        "status": "enabled",
+        "source_name": "LiveBench Coding dated official leaderboard CSV",
+        "organization": "LiveBench",
+        "source_type": "official_site_dated_csv",
+        "official_url": "https://livebench.ai/",
+        "endpoint": "https://livebench.ai/",
+        "raw_base_url": "https://livebench.ai",
+        "asset_layout": "release_directory",
+        "fetch_method": "GET",
+        "update_frequency": "release_based",
+        "requires_auth": false,
+        "category_selector": "coding",
+        "evidence_url": "https://livebench.ai/",
+        "release_tracking": "dated_table_and_categories_files",
+        "hash_required": true,
+        "notes": "Official LiveBench 2.0 suite Coding; bug-fix tasks from real merged pull requests. Scores are averaged only within this suite."
+      },
+      "records": {
+        "claude-fable-5.1|2026-10-25:Coding:category_average:claude-fable-5.1|2026-10-25": {
+          "model": "claude-fable-5.1",
+          "score": 97.7,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:claude-fable-5.1",
+          "variant": "2026-10-25",
+          "displayRank": 1
+        },
+        "claude-haiku-5.5|2026-10-25:Coding:category_average:claude-haiku-5.5|2026-10-25": {
+          "model": "claude-haiku-5.5",
+          "score": 91.4,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:claude-haiku-5.5",
+          "variant": "2026-10-25",
+          "displayRank": 9
+        },
+        "claude-opus-5.5|2026-10-25:Coding:category_average:claude-opus-5.5|2026-10-25": {
+          "model": "claude-opus-5.5",
+          "score": 96.3,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:claude-opus-5.5",
+          "variant": "2026-10-25",
+          "displayRank": 2
+        },
+        "claude-sonnet-5.5|2026-10-25:Coding:category_average:claude-sonnet-5.5|2026-10-25": {
+          "model": "claude-sonnet-5.5",
+          "score": 94.7,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:claude-sonnet-5.5",
+          "variant": "2026-10-25",
+          "displayRank": 6
+        },
+        "deepseek-v4.1-flash-1017|2026-10-25:Coding:category_average:deepseek-v4.1-flash-1017|2026-10-25": {
+          "model": "deepseek-v4.1-flash-1017",
+          "score": 96.0,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:deepseek-v4.1-flash-1017",
+          "variant": "2026-10-25",
+          "displayRank": 3
+        },
+        "gemini-3.8-flash|2026-10-25:Coding:category_average:gemini-3.8-flash|2026-10-25": {
+          "model": "gemini-3.8-flash",
+          "score": 82.2,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:gemini-3.8-flash",
+          "variant": "2026-10-25",
+          "displayRank": 20
+        },
+        "gemini-4-argon|2026-10-25:Coding:category_average:gemini-4-argon|2026-10-25": {
+          "model": "gemini-4-argon",
+          "score": 89.7,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:gemini-4-argon",
+          "variant": "2026-10-25",
+          "displayRank": 11
+        },
+        "gemma-4-31b|2026-10-25:Coding:category_average:gemma-4-31b|2026-10-25": {
+          "model": "gemma-4-31b",
+          "score": 49.0,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:gemma-4-31b",
+          "variant": "2026-10-25",
+          "displayRank": 32
+        },
+        "glm-5.3-flash|2026-10-25:Coding:category_average:glm-5.3-flash|2026-10-25": {
+          "model": "glm-5.3-flash",
+          "score": 80.6,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:glm-5.3-flash",
+          "variant": "2026-10-25",
+          "displayRank": 23
+        },
+        "gpt-5.6-terra|2026-10-25:Coding:category_average:gpt-5.6-terra|2026-10-25": {
+          "model": "gpt-5.6-terra",
+          "score": 86.2,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:gpt-5.6-terra",
+          "variant": "2026-10-25",
+          "displayRank": 14
+        },
+        "gpt-6-astra|2026-10-25:Coding:category_average:gpt-6-astra|2026-10-25": {
+          "model": "gpt-6-astra",
+          "score": 93.7,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:gpt-6-astra",
+          "variant": "2026-10-25",
+          "displayRank": 8
+        },
+        "gpt-6-luna|2026-10-25:Coding:category_average:gpt-6-luna|2026-10-25": {
+          "model": "gpt-6-luna",
+          "score": 84.5,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:gpt-6-luna",
+          "variant": "2026-10-25",
+          "displayRank": 17
+        },
+        "gpt-6.1-sol|2026-10-25:Coding:category_average:gpt-6.1-sol|2026-10-25": {
+          "model": "gpt-6.1-sol",
+          "score": 96.0,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:gpt-6.1-sol",
+          "variant": "2026-10-25",
+          "displayRank": 4
+        },
+        "gpt-6.1-terra|2026-10-25:Coding:category_average:gpt-6.1-terra|2026-10-25": {
+          "model": "gpt-6.1-terra",
+          "score": 94.3,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:gpt-6.1-terra",
+          "variant": "2026-10-25",
+          "displayRank": 7
+        },
+        "grok-4.6|2026-10-25:Coding:category_average:grok-4.6|2026-10-25": {
+          "model": "grok-4.6",
+          "score": 89.1,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:grok-4.6",
+          "variant": "2026-10-25",
+          "displayRank": 12
+        },
+        "grok-4.7|2026-10-25:Coding:category_average:grok-4.7|2026-10-25": {
+          "model": "grok-4.7",
+          "score": 84.5,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:grok-4.7",
+          "variant": "2026-10-25",
+          "displayRank": 18
+        },
+        "inkling|2026-10-25:Coding:category_average:inkling|2026-10-25": {
+          "model": "inkling",
+          "score": 64.0,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:inkling",
+          "variant": "2026-10-25",
+          "displayRank": 27
+        },
+        "kimi-k3.1-pro|2026-10-25:Coding:category_average:kimi-k3.1-pro|2026-10-25": {
+          "model": "kimi-k3.1-pro",
+          "score": 81.8,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:kimi-k3.1-pro",
+          "variant": "2026-10-25",
+          "displayRank": 21
+        },
+        "kimi-k3|2026-10-25:Coding:category_average:kimi-k3|2026-10-25": {
+          "model": "kimi-k3",
+          "score": 59.3,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:kimi-k3",
+          "variant": "2026-10-25",
+          "displayRank": 31
+        },
+        "mimo-v2.6-pro|2026-10-25:Coding:category_average:mimo-v2.6-pro|2026-10-25": {
+          "model": "mimo-v2.6-pro",
+          "score": 81.5,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:mimo-v2.6-pro",
+          "variant": "2026-10-25",
+          "displayRank": 22
+        },
+        "minimax-m3.1-flash|2026-10-25:Coding:category_average:minimax-m3.1-flash|2026-10-25": {
+          "model": "minimax-m3.1-flash",
+          "score": 83.9,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:minimax-m3.1-flash",
+          "variant": "2026-10-25",
+          "displayRank": 19
+        },
+        "mistral-large-4-0|2026-10-25:Coding:category_average:mistral-large-4-0|2026-10-25": {
+          "model": "mistral-large-4-0",
+          "score": 95.4,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:mistral-large-4-0",
+          "variant": "2026-10-25",
+          "displayRank": 5
+        },
+        "mistral-large-4|2026-10-25:Coding:category_average:mistral-large-4|2026-10-25": {
+          "model": "mistral-large-4",
+          "score": 60.0,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:mistral-large-4",
+          "variant": "2026-10-25",
+          "displayRank": 30
+        },
+        "muse-spark-1.3|2026-10-25:Coding:category_average:muse-spark-1.3|2026-10-25": {
+          "model": "muse-spark-1.3",
+          "score": 90.2,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:muse-spark-1.3",
+          "variant": "2026-10-25",
+          "displayRank": 10
+        },
+        "muse-spark-open|2026-10-25:Coding:category_average:muse-spark-open|2026-10-25": {
+          "model": "muse-spark-open",
+          "score": 73.6,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:muse-spark-open",
+          "variant": "2026-10-25",
+          "displayRank": 24
+        },
+        "muse-wonder-1.0|2026-10-25:Coding:category_average:muse-wonder-1.0|2026-10-25": {
+          "model": "muse-wonder-1.0",
+          "score": 86.2,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:muse-wonder-1.0",
+          "variant": "2026-10-25",
+          "displayRank": 15
+        },
+        "nemotron-super-vl-3.5-nvfp4|2026-10-25:Coding:category_average:nemotron-super-vl-3.5-nvfp4|2026-10-25": {
+          "model": "nemotron-super-vl-3.5-nvfp4",
+          "score": 61.3,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:nemotron-super-vl-3.5-nvfp4",
+          "variant": "2026-10-25",
+          "displayRank": 28
+        },
+        "nemotron-super-vl-3.5|2026-10-25:Coding:category_average:nemotron-super-vl-3.5|2026-10-25": {
+          "model": "nemotron-super-vl-3.5",
+          "score": 71.3,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:nemotron-super-vl-3.5",
+          "variant": "2026-10-25",
+          "displayRank": 26
+        },
+        "qwen3.8-27b|2026-10-25:Coding:category_average:qwen3.8-27b|2026-10-25": {
+          "model": "qwen3.8-27b",
+          "score": 86.8,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:qwen3.8-27b",
+          "variant": "2026-10-25",
+          "displayRank": 13
+        },
+        "qwen3.8-max|2026-10-25:Coding:category_average:qwen3.8-max|2026-10-25": {
+          "model": "qwen3.8-max",
+          "score": 60.3,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:qwen3.8-max",
+          "variant": "2026-10-25",
+          "displayRank": 29
+        },
+        "smaug-nemotron-3.5-nvfp4|2026-10-25:Coding:category_average:smaug-nemotron-3.5-nvfp4|2026-10-25": {
+          "model": "smaug-nemotron-3.5-nvfp4",
+          "score": 72.2,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:smaug-nemotron-3.5-nvfp4",
+          "variant": "2026-10-25",
+          "displayRank": 25
+        },
+        "step-5-preview|2026-10-25:Coding:category_average:step-5-preview|2026-10-25": {
+          "model": "step-5-preview",
+          "score": 85.6,
+          "rank": null,
+          "comparisonKey": "2026-10-25:Coding:category_average:step-5-preview",
+          "variant": "2026-10-25",
+          "displayRank": 16
         }
       }
     },
@@ -2779,258 +2779,6 @@
         }
       }
     },
-    "aa_briefcase_v1_1": {
-      "runtimeId": "aa_briefcase_v1_1",
-      "familyId": "aa",
-      "title": "AA-Briefcase v1.1",
-      "release": "v1.1",
-      "contentHash": "3995f3d3c714ecffdea3e7bc5f261c38ddf3846e257b3f9084afee88f51733c3",
-      "source": {
-        "benchmark_id": "aa_briefcase_v1_1",
-        "status": "enabled",
-        "source_name": "AA-Briefcase v1.1 official public page",
-        "organization": "Artificial Analysis",
-        "source_type": "official_page_endpoint",
-        "official_url": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-        "endpoint": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-        "fetch_method": "GET",
-        "update_frequency": "daily",
-        "requires_auth": false,
-        "evaluation_field": "AA-Briefcase Elo",
-        "release_id": "v1.1",
-        "expected_page_heading": "AA-Briefcase v1.1: Agentic Knowledge Work Benchmark",
-        "evidence_url": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-        "release_tracking": "official_page_heading",
-        "hash_required": true,
-        "notes": "Verified 2026-10-28 against official public Next.js initialModels. Scores are limited to the models embedded in the public page; coverage is exported explicitly."
-      },
-      "records": {
-        "Gemini 4 Carbon (High)|AA-Briefcase Elo:Gemini 4 Carbon (High)|v1.1": {
-          "model": "Gemini 4 Carbon (High)",
-          "score": 1610.63,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:Gemini 4 Carbon (High)",
-          "variant": "v1.1",
-          "displayRank": 8
-        },
-        "Claude Opus 5.5 (Max, Default Fallback)|AA-Briefcase Elo:Claude Opus 5.5 (Max, Default Fallback)|v1.1": {
-          "model": "Claude Opus 5.5 (Max, Default Fallback)",
-          "score": 1799.89,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:Claude Opus 5.5 (Max, Default Fallback)",
-          "variant": "v1.1",
-          "displayRank": 2
-        },
-        "GPT-6 Astra (Max)|AA-Briefcase Elo:GPT-6 Astra (Max)|v1.1": {
-          "model": "GPT-6 Astra (Max)",
-          "score": 1568.59,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:GPT-6 Astra (Max)",
-          "variant": "v1.1",
-          "displayRank": 12
-        },
-        "GPT-6.1 Sol (Max)|AA-Briefcase Elo:GPT-6.1 Sol (Max)|v1.1": {
-          "model": "GPT-6.1 Sol (Max)",
-          "score": 1555.09,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:GPT-6.1 Sol (Max)",
-          "variant": "v1.1",
-          "displayRank": 13
-        },
-        "Claude Sonnet 5.5 (Max, Default Fallback)|AA-Briefcase Elo:Claude Sonnet 5.5 (Max, Default Fallback)|v1.1": {
-          "model": "Claude Sonnet 5.5 (Max, Default Fallback)",
-          "score": 1813.33,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:Claude Sonnet 5.5 (Max, Default Fallback)",
-          "variant": "v1.1",
-          "displayRank": 1
-        },
-        "GPT-6.1 Terra (Max)|AA-Briefcase Elo:GPT-6.1 Terra (Max)|v1.1": {
-          "model": "GPT-6.1 Terra (Max)",
-          "score": 1401.36,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:GPT-6.1 Terra (Max)",
-          "variant": "v1.1",
-          "displayRank": 20
-        },
-        "Muse Wonder Full (Max)|AA-Briefcase Elo:Muse Wonder Full (Max)|v1.1": {
-          "model": "Muse Wonder Full (Max)",
-          "score": 1729.32,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:Muse Wonder Full (Max)",
-          "variant": "v1.1",
-          "displayRank": 3
-        },
-        "Claude Fable 5.1 (Max, Default Fallback)|AA-Briefcase Elo:Claude Fable 5.1 (Max, Default Fallback)|v1.1": {
-          "model": "Claude Fable 5.1 (Max, Default Fallback)",
-          "score": 1669.49,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:Claude Fable 5.1 (Max, Default Fallback)",
-          "variant": "v1.1",
-          "displayRank": 5
-        },
-        "Kimi K3.1 Pro|AA-Briefcase Elo:Kimi K3.1 Pro|v1.1": {
-          "model": "Kimi K3.1 Pro",
-          "score": 1674.17,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:Kimi K3.1 Pro",
-          "variant": "v1.1",
-          "displayRank": 4
-        },
-        "Muse Wonder (Max)|AA-Briefcase Elo:Muse Wonder (Max)|v1.1": {
-          "model": "Muse Wonder (Max)",
-          "score": 1658.65,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:Muse Wonder (Max)",
-          "variant": "v1.1",
-          "displayRank": 6
-        },
-        "Claude Haiku 5.5 (Max)|AA-Briefcase Elo:Claude Haiku 5.5 (Max)|v1.1": {
-          "model": "Claude Haiku 5.5 (Max)",
-          "score": 1574.12,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:Claude Haiku 5.5 (Max)",
-          "variant": "v1.1",
-          "displayRank": 10
-        },
-        "Grok 4.7 (Xhigh)|AA-Briefcase Elo:Grok 4.7 (Xhigh)|v1.1": {
-          "model": "Grok 4.7 (Xhigh)",
-          "score": 1637.4,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:Grok 4.7 (Xhigh)",
-          "variant": "v1.1",
-          "displayRank": 7
-        },
-        "Tencent Hy4|AA-Briefcase Elo:Tencent Hy4|v1.1": {
-          "model": "Tencent Hy4",
-          "score": 1446.69,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:Tencent Hy4",
-          "variant": "v1.1",
-          "displayRank": 19
-        },
-        "Qwen3.8 Max (0902)|AA-Briefcase Elo:Qwen3.8 Max (0902)|v1.1": {
-          "model": "Qwen3.8 Max (0902)",
-          "score": 1606.14,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:Qwen3.8 Max (0902)",
-          "variant": "v1.1",
-          "displayRank": 9
-        },
-        "DeepSeek V4.1 Flash 1017 (Max)|AA-Briefcase Elo:DeepSeek V4.1 Flash 1017 (Max)|v1.1": {
-          "model": "DeepSeek V4.1 Flash 1017 (Max)",
-          "score": 1570.42,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:DeepSeek V4.1 Flash 1017 (Max)",
-          "variant": "v1.1",
-          "displayRank": 11
-        },
-        "GLM-5.3 (Max)|AA-Briefcase Elo:GLM-5.3 (Max)|v1.1": {
-          "model": "GLM-5.3 (Max)",
-          "score": 1502.84,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:GLM-5.3 (Max)",
-          "variant": "v1.1",
-          "displayRank": 17
-        },
-        "Gemini 3.8 Flash (High)|AA-Briefcase Elo:Gemini 3.8 Flash (High)|v1.1": {
-          "model": "Gemini 3.8 Flash (High)",
-          "score": 1202.99,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:Gemini 3.8 Flash (High)",
-          "variant": "v1.1",
-          "displayRank": 26
-        },
-        "Inkling 2 Small|AA-Briefcase Elo:Inkling 2 Small|v1.1": {
-          "model": "Inkling 2 Small",
-          "score": 1526.86,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:Inkling 2 Small",
-          "variant": "v1.1",
-          "displayRank": 14
-        },
-        "MiMo-V2.6-Pro|AA-Briefcase Elo:MiMo-V2.6-Pro|v1.1": {
-          "model": "MiMo-V2.6-Pro",
-          "score": 1511.88,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:MiMo-V2.6-Pro",
-          "variant": "v1.1",
-          "displayRank": 16
-        },
-        "Ling 3.1 Flash 1019|AA-Briefcase Elo:Ling 3.1 Flash 1019|v1.1": {
-          "model": "Ling 3.1 Flash 1019",
-          "score": 1522,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:Ling 3.1 Flash 1019",
-          "variant": "v1.1",
-          "displayRank": 15
-        },
-        "MiniMax-M3.1-Flash|AA-Briefcase Elo:MiniMax-M3.1-Flash|v1.1": {
-          "model": "MiniMax-M3.1-Flash",
-          "score": 1475.98,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:MiniMax-M3.1-Flash",
-          "variant": "v1.1",
-          "displayRank": 18
-        },
-        "GPT-6 Luna (Max)|AA-Briefcase Elo:GPT-6 Luna (Max)|v1.1": {
-          "model": "GPT-6 Luna (Max)",
-          "score": 1337.06,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:GPT-6 Luna (Max)",
-          "variant": "v1.1",
-          "displayRank": 23
-        },
-        "Mistral Large 4 (High)|AA-Briefcase Elo:Mistral Large 4 (High)|v1.1": {
-          "model": "Mistral Large 4 (High)",
-          "score": 1348.31,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:Mistral Large 4 (High)",
-          "variant": "v1.1",
-          "displayRank": 22
-        },
-        "Muse Spark Open (Xhigh)|AA-Briefcase Elo:Muse Spark Open (Xhigh)|v1.1": {
-          "model": "Muse Spark Open (Xhigh)",
-          "score": 1278.69,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:Muse Spark Open (Xhigh)",
-          "variant": "v1.1",
-          "displayRank": 25
-        },
-        "Qwen3.8 27B (Xhigh)|AA-Briefcase Elo:Qwen3.8 27B (Xhigh)|v1.1": {
-          "model": "Qwen3.8 27B (Xhigh)",
-          "score": 1391.36,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:Qwen3.8 27B (Xhigh)",
-          "variant": "v1.1",
-          "displayRank": 21
-        },
-        "K2 Horizon 375B A23B|AA-Briefcase Elo:K2 Horizon 375B A23B|v1.1": {
-          "model": "K2 Horizon 375B A23B",
-          "score": 1292.48,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:K2 Horizon 375B A23B",
-          "variant": "v1.1",
-          "displayRank": 24
-        },
-        "Beam 1.0|AA-Briefcase Elo:Beam 1.0|v1.1": {
-          "model": "Beam 1.0",
-          "score": 976.2,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:Beam 1.0",
-          "variant": "v1.1",
-          "displayRank": 28
-        },
-        "Nemotron 3.5 Super VL|AA-Briefcase Elo:Nemotron 3.5 Super VL|v1.1": {
-          "model": "Nemotron 3.5 Super VL",
-          "score": 998.76,
-          "rank": null,
-          "comparisonKey": "AA-Briefcase Elo:Nemotron 3.5 Super VL",
-          "variant": "v1.1",
-          "displayRank": 27
-        }
-      }
-    },
     "automationbench_aa": {
       "runtimeId": "aa_automationbench",
       "familyId": "aa",
@@ -3288,6 +3036,510 @@
           "comparisonKey": "AutomationBench-AA: Score:Nemotron 3.5 Super VL",
           "variant": "page",
           "displayRank": 29
+        }
+      }
+    },
+    "aa_briefcase_v1_1": {
+      "runtimeId": "aa_briefcase_v1_1",
+      "familyId": "aa",
+      "title": "AA-Briefcase v1.1",
+      "release": "v1.1",
+      "contentHash": "3995f3d3c714ecffdea3e7bc5f261c38ddf3846e257b3f9084afee88f51733c3",
+      "source": {
+        "benchmark_id": "aa_briefcase_v1_1",
+        "status": "enabled",
+        "source_name": "AA-Briefcase v1.1 official public page",
+        "organization": "Artificial Analysis",
+        "source_type": "official_page_endpoint",
+        "official_url": "https://artificialanalysis.ai/evaluations/aa-briefcase",
+        "endpoint": "https://artificialanalysis.ai/evaluations/aa-briefcase",
+        "fetch_method": "GET",
+        "update_frequency": "daily",
+        "requires_auth": false,
+        "evaluation_field": "AA-Briefcase Elo",
+        "release_id": "v1.1",
+        "expected_page_heading": "AA-Briefcase v1.1: Agentic Knowledge Work Benchmark",
+        "evidence_url": "https://artificialanalysis.ai/evaluations/aa-briefcase",
+        "release_tracking": "official_page_heading",
+        "hash_required": true,
+        "notes": "Verified 2026-10-28 against official public Next.js initialModels. Scores are limited to the models embedded in the public page; coverage is exported explicitly."
+      },
+      "records": {
+        "Gemini 4 Carbon (High)|AA-Briefcase Elo:Gemini 4 Carbon (High)|v1.1": {
+          "model": "Gemini 4 Carbon (High)",
+          "score": 1610.63,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:Gemini 4 Carbon (High)",
+          "variant": "v1.1",
+          "displayRank": 8
+        },
+        "Claude Opus 5.5 (Max, Default Fallback)|AA-Briefcase Elo:Claude Opus 5.5 (Max, Default Fallback)|v1.1": {
+          "model": "Claude Opus 5.5 (Max, Default Fallback)",
+          "score": 1799.89,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:Claude Opus 5.5 (Max, Default Fallback)",
+          "variant": "v1.1",
+          "displayRank": 2
+        },
+        "GPT-6 Astra (Max)|AA-Briefcase Elo:GPT-6 Astra (Max)|v1.1": {
+          "model": "GPT-6 Astra (Max)",
+          "score": 1568.59,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:GPT-6 Astra (Max)",
+          "variant": "v1.1",
+          "displayRank": 12
+        },
+        "GPT-6.1 Sol (Max)|AA-Briefcase Elo:GPT-6.1 Sol (Max)|v1.1": {
+          "model": "GPT-6.1 Sol (Max)",
+          "score": 1555.09,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:GPT-6.1 Sol (Max)",
+          "variant": "v1.1",
+          "displayRank": 13
+        },
+        "Claude Sonnet 5.5 (Max, Default Fallback)|AA-Briefcase Elo:Claude Sonnet 5.5 (Max, Default Fallback)|v1.1": {
+          "model": "Claude Sonnet 5.5 (Max, Default Fallback)",
+          "score": 1813.33,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:Claude Sonnet 5.5 (Max, Default Fallback)",
+          "variant": "v1.1",
+          "displayRank": 1
+        },
+        "GPT-6.1 Terra (Max)|AA-Briefcase Elo:GPT-6.1 Terra (Max)|v1.1": {
+          "model": "GPT-6.1 Terra (Max)",
+          "score": 1401.36,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:GPT-6.1 Terra (Max)",
+          "variant": "v1.1",
+          "displayRank": 20
+        },
+        "Muse Wonder Full (Max)|AA-Briefcase Elo:Muse Wonder Full (Max)|v1.1": {
+          "model": "Muse Wonder Full (Max)",
+          "score": 1729.32,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:Muse Wonder Full (Max)",
+          "variant": "v1.1",
+          "displayRank": 3
+        },
+        "Claude Fable 5.1 (Max, Default Fallback)|AA-Briefcase Elo:Claude Fable 5.1 (Max, Default Fallback)|v1.1": {
+          "model": "Claude Fable 5.1 (Max, Default Fallback)",
+          "score": 1669.49,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:Claude Fable 5.1 (Max, Default Fallback)",
+          "variant": "v1.1",
+          "displayRank": 5
+        },
+        "Kimi K3.1 Pro|AA-Briefcase Elo:Kimi K3.1 Pro|v1.1": {
+          "model": "Kimi K3.1 Pro",
+          "score": 1674.17,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:Kimi K3.1 Pro",
+          "variant": "v1.1",
+          "displayRank": 4
+        },
+        "Muse Wonder (Max)|AA-Briefcase Elo:Muse Wonder (Max)|v1.1": {
+          "model": "Muse Wonder (Max)",
+          "score": 1658.65,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:Muse Wonder (Max)",
+          "variant": "v1.1",
+          "displayRank": 6
+        },
+        "Claude Haiku 5.5 (Max)|AA-Briefcase Elo:Claude Haiku 5.5 (Max)|v1.1": {
+          "model": "Claude Haiku 5.5 (Max)",
+          "score": 1574.12,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:Claude Haiku 5.5 (Max)",
+          "variant": "v1.1",
+          "displayRank": 10
+        },
+        "Grok 4.7 (Xhigh)|AA-Briefcase Elo:Grok 4.7 (Xhigh)|v1.1": {
+          "model": "Grok 4.7 (Xhigh)",
+          "score": 1637.4,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:Grok 4.7 (Xhigh)",
+          "variant": "v1.1",
+          "displayRank": 7
+        },
+        "Tencent Hy4|AA-Briefcase Elo:Tencent Hy4|v1.1": {
+          "model": "Tencent Hy4",
+          "score": 1446.69,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:Tencent Hy4",
+          "variant": "v1.1",
+          "displayRank": 19
+        },
+        "Qwen3.8 Max (0902)|AA-Briefcase Elo:Qwen3.8 Max (0902)|v1.1": {
+          "model": "Qwen3.8 Max (0902)",
+          "score": 1606.14,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:Qwen3.8 Max (0902)",
+          "variant": "v1.1",
+          "displayRank": 9
+        },
+        "DeepSeek V4.1 Flash 1017 (Max)|AA-Briefcase Elo:DeepSeek V4.1 Flash 1017 (Max)|v1.1": {
+          "model": "DeepSeek V4.1 Flash 1017 (Max)",
+          "score": 1570.42,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:DeepSeek V4.1 Flash 1017 (Max)",
+          "variant": "v1.1",
+          "displayRank": 11
+        },
+        "GLM-5.3 (Max)|AA-Briefcase Elo:GLM-5.3 (Max)|v1.1": {
+          "model": "GLM-5.3 (Max)",
+          "score": 1502.84,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:GLM-5.3 (Max)",
+          "variant": "v1.1",
+          "displayRank": 17
+        },
+        "Gemini 3.8 Flash (High)|AA-Briefcase Elo:Gemini 3.8 Flash (High)|v1.1": {
+          "model": "Gemini 3.8 Flash (High)",
+          "score": 1202.99,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:Gemini 3.8 Flash (High)",
+          "variant": "v1.1",
+          "displayRank": 26
+        },
+        "Inkling 2 Small|AA-Briefcase Elo:Inkling 2 Small|v1.1": {
+          "model": "Inkling 2 Small",
+          "score": 1526.86,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:Inkling 2 Small",
+          "variant": "v1.1",
+          "displayRank": 14
+        },
+        "MiMo-V2.6-Pro|AA-Briefcase Elo:MiMo-V2.6-Pro|v1.1": {
+          "model": "MiMo-V2.6-Pro",
+          "score": 1511.88,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:MiMo-V2.6-Pro",
+          "variant": "v1.1",
+          "displayRank": 16
+        },
+        "Ling 3.1 Flash 1019|AA-Briefcase Elo:Ling 3.1 Flash 1019|v1.1": {
+          "model": "Ling 3.1 Flash 1019",
+          "score": 1522,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:Ling 3.1 Flash 1019",
+          "variant": "v1.1",
+          "displayRank": 15
+        },
+        "MiniMax-M3.1-Flash|AA-Briefcase Elo:MiniMax-M3.1-Flash|v1.1": {
+          "model": "MiniMax-M3.1-Flash",
+          "score": 1475.98,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:MiniMax-M3.1-Flash",
+          "variant": "v1.1",
+          "displayRank": 18
+        },
+        "GPT-6 Luna (Max)|AA-Briefcase Elo:GPT-6 Luna (Max)|v1.1": {
+          "model": "GPT-6 Luna (Max)",
+          "score": 1337.06,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:GPT-6 Luna (Max)",
+          "variant": "v1.1",
+          "displayRank": 23
+        },
+        "Mistral Large 4 (High)|AA-Briefcase Elo:Mistral Large 4 (High)|v1.1": {
+          "model": "Mistral Large 4 (High)",
+          "score": 1348.31,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:Mistral Large 4 (High)",
+          "variant": "v1.1",
+          "displayRank": 22
+        },
+        "Muse Spark Open (Xhigh)|AA-Briefcase Elo:Muse Spark Open (Xhigh)|v1.1": {
+          "model": "Muse Spark Open (Xhigh)",
+          "score": 1278.69,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:Muse Spark Open (Xhigh)",
+          "variant": "v1.1",
+          "displayRank": 25
+        },
+        "Qwen3.8 27B (Xhigh)|AA-Briefcase Elo:Qwen3.8 27B (Xhigh)|v1.1": {
+          "model": "Qwen3.8 27B (Xhigh)",
+          "score": 1391.36,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:Qwen3.8 27B (Xhigh)",
+          "variant": "v1.1",
+          "displayRank": 21
+        },
+        "K2 Horizon 375B A23B|AA-Briefcase Elo:K2 Horizon 375B A23B|v1.1": {
+          "model": "K2 Horizon 375B A23B",
+          "score": 1292.48,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:K2 Horizon 375B A23B",
+          "variant": "v1.1",
+          "displayRank": 24
+        },
+        "Beam 1.0|AA-Briefcase Elo:Beam 1.0|v1.1": {
+          "model": "Beam 1.0",
+          "score": 976.2,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:Beam 1.0",
+          "variant": "v1.1",
+          "displayRank": 28
+        },
+        "Nemotron 3.5 Super VL|AA-Briefcase Elo:Nemotron 3.5 Super VL|v1.1": {
+          "model": "Nemotron 3.5 Super VL",
+          "score": 998.76,
+          "rank": null,
+          "comparisonKey": "AA-Briefcase Elo:Nemotron 3.5 Super VL",
+          "variant": "v1.1",
+          "displayRank": 27
+        }
+      }
+    },
+    "critpt_v2_hard": {
+      "runtimeId": "aa_critpt_v2_hard",
+      "familyId": "aa",
+      "title": "CritPt v2 (Hard Subset)",
+      "release": "v2:hard",
+      "contentHash": "3a5112d5e4bfbd96771ea006d74909d79b5209c0d32c4d617f0c66c6fcbb585e",
+      "source": {
+        "benchmark_id": "critpt_v2_hard",
+        "status": "enabled",
+        "source_name": "CritPt v2 (Hard Subset) official public page",
+        "organization": "Artificial Analysis",
+        "source_type": "official_page_endpoint",
+        "official_url": "https://artificialanalysis.ai/evaluations/critpt-v2?critpt-subset=hard",
+        "endpoint": "https://artificialanalysis.ai/evaluations/critpt-v2?critpt-subset=hard",
+        "fetch_method": "GET",
+        "update_frequency": "daily",
+        "requires_auth": false,
+        "evaluation_field": "CritPt v2 (Hard Subset): Score",
+        "release_id": "v2:hard",
+        "expected_page_heading": "CritPt v2 Benchmark",
+        "evidence_url": "https://artificialanalysis.ai/evaluations/critpt-v2?critpt-subset=hard",
+        "release_tracking": "official_page_heading",
+        "hash_required": true,
+        "notes": "Verified 2026-10-28 against official public Next.js initialModels. Scores are limited to the models embedded in the public page; coverage is exported explicitly."
+      },
+      "records": {
+        "Gemini 4 Carbon (High)|CritPt v2 (Hard Subset): Score:Gemini 4 Carbon (High)|v2:hard": {
+          "model": "Gemini 4 Carbon (High)",
+          "score": 0.69,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:Gemini 4 Carbon (High)",
+          "variant": "v2:hard",
+          "displayRank": 3
+        },
+        "Claude Opus 5.5 (Max, Default Fallback)|CritPt v2 (Hard Subset): Score:Claude Opus 5.5 (Max, Default Fallback)|v2:hard": {
+          "model": "Claude Opus 5.5 (Max, Default Fallback)",
+          "score": 0.68,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:Claude Opus 5.5 (Max, Default Fallback)",
+          "variant": "v2:hard",
+          "displayRank": 4
+        },
+        "GPT-6 Astra (Max)|CritPt v2 (Hard Subset): Score:GPT-6 Astra (Max)|v2:hard": {
+          "model": "GPT-6 Astra (Max)",
+          "score": 0.705,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:GPT-6 Astra (Max)",
+          "variant": "v2:hard",
+          "displayRank": 1
+        },
+        "GPT-6.1 Sol (Max)|CritPt v2 (Hard Subset): Score:GPT-6.1 Sol (Max)|v2:hard": {
+          "model": "GPT-6.1 Sol (Max)",
+          "score": 0.695,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:GPT-6.1 Sol (Max)",
+          "variant": "v2:hard",
+          "displayRank": 2
+        },
+        "Claude Sonnet 5.5 (Max, Default Fallback)|CritPt v2 (Hard Subset): Score:Claude Sonnet 5.5 (Max, Default Fallback)|v2:hard": {
+          "model": "Claude Sonnet 5.5 (Max, Default Fallback)",
+          "score": 0.59,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:Claude Sonnet 5.5 (Max, Default Fallback)",
+          "variant": "v2:hard",
+          "displayRank": 6
+        },
+        "GPT-6.1 Terra (Max)|CritPt v2 (Hard Subset): Score:GPT-6.1 Terra (Max)|v2:hard": {
+          "model": "GPT-6.1 Terra (Max)",
+          "score": 0.68,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:GPT-6.1 Terra (Max)",
+          "variant": "v2:hard",
+          "displayRank": 5
+        },
+        "Muse Wonder Full (Max)|CritPt v2 (Hard Subset): Score:Muse Wonder Full (Max)|v2:hard": {
+          "model": "Muse Wonder Full (Max)",
+          "score": 0.565,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:Muse Wonder Full (Max)",
+          "variant": "v2:hard",
+          "displayRank": 7
+        },
+        "Claude Fable 5.1 (Max, Default Fallback)|CritPt v2 (Hard Subset): Score:Claude Fable 5.1 (Max, Default Fallback)|v2:hard": {
+          "model": "Claude Fable 5.1 (Max, Default Fallback)",
+          "score": 0.525,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:Claude Fable 5.1 (Max, Default Fallback)",
+          "variant": "v2:hard",
+          "displayRank": 8
+        },
+        "Kimi K3.1 Pro|CritPt v2 (Hard Subset): Score:Kimi K3.1 Pro|v2:hard": {
+          "model": "Kimi K3.1 Pro",
+          "score": 0.495,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:Kimi K3.1 Pro",
+          "variant": "v2:hard",
+          "displayRank": 10
+        },
+        "Muse Wonder (Max)|CritPt v2 (Hard Subset): Score:Muse Wonder (Max)|v2:hard": {
+          "model": "Muse Wonder (Max)",
+          "score": 0.505,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:Muse Wonder (Max)",
+          "variant": "v2:hard",
+          "displayRank": 9
+        },
+        "Claude Haiku 5.5 (Max)|CritPt v2 (Hard Subset): Score:Claude Haiku 5.5 (Max)|v2:hard": {
+          "model": "Claude Haiku 5.5 (Max)",
+          "score": 0.435,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:Claude Haiku 5.5 (Max)",
+          "variant": "v2:hard",
+          "displayRank": 12
+        },
+        "Grok 4.7 (Xhigh)|CritPt v2 (Hard Subset): Score:Grok 4.7 (Xhigh)|v2:hard": {
+          "model": "Grok 4.7 (Xhigh)",
+          "score": 0.335,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:Grok 4.7 (Xhigh)",
+          "variant": "v2:hard",
+          "displayRank": 18
+        },
+        "Tencent Hy4|CritPt v2 (Hard Subset): Score:Tencent Hy4|v2:hard": {
+          "model": "Tencent Hy4",
+          "score": 0.39,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:Tencent Hy4",
+          "variant": "v2:hard",
+          "displayRank": 14
+        },
+        "Qwen3.8 Max (0902)|CritPt v2 (Hard Subset): Score:Qwen3.8 Max (0902)|v2:hard": {
+          "model": "Qwen3.8 Max (0902)",
+          "score": 0.295,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:Qwen3.8 Max (0902)",
+          "variant": "v2:hard",
+          "displayRank": 21
+        },
+        "DeepSeek V4.1 Flash 1017 (Max)|CritPt v2 (Hard Subset): Score:DeepSeek V4.1 Flash 1017 (Max)|v2:hard": {
+          "model": "DeepSeek V4.1 Flash 1017 (Max)",
+          "score": 0.25,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:DeepSeek V4.1 Flash 1017 (Max)",
+          "variant": "v2:hard",
+          "displayRank": 25
+        },
+        "GLM-5.3 (Max)|CritPt v2 (Hard Subset): Score:GLM-5.3 (Max)|v2:hard": {
+          "model": "GLM-5.3 (Max)",
+          "score": 0.335,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:GLM-5.3 (Max)",
+          "variant": "v2:hard",
+          "displayRank": 19
+        },
+        "Gemini 3.8 Flash (High)|CritPt v2 (Hard Subset): Score:Gemini 3.8 Flash (High)|v2:hard": {
+          "model": "Gemini 3.8 Flash (High)",
+          "score": 0.465,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:Gemini 3.8 Flash (High)",
+          "variant": "v2:hard",
+          "displayRank": 11
+        },
+        "Inkling 2 Small|CritPt v2 (Hard Subset): Score:Inkling 2 Small|v2:hard": {
+          "model": "Inkling 2 Small",
+          "score": 0.35,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:Inkling 2 Small",
+          "variant": "v2:hard",
+          "displayRank": 16
+        },
+        "MiMo-V2.6-Pro|CritPt v2 (Hard Subset): Score:MiMo-V2.6-Pro|v2:hard": {
+          "model": "MiMo-V2.6-Pro",
+          "score": 0.34,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:MiMo-V2.6-Pro",
+          "variant": "v2:hard",
+          "displayRank": 17
+        },
+        "Ling 3.1 Flash 1019|CritPt v2 (Hard Subset): Score:Ling 3.1 Flash 1019|v2:hard": {
+          "model": "Ling 3.1 Flash 1019",
+          "score": 0.385,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:Ling 3.1 Flash 1019",
+          "variant": "v2:hard",
+          "displayRank": 15
+        },
+        "MiniMax-M3.1-Flash|CritPt v2 (Hard Subset): Score:MiniMax-M3.1-Flash|v2:hard": {
+          "model": "MiniMax-M3.1-Flash",
+          "score": 0.325,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:MiniMax-M3.1-Flash",
+          "variant": "v2:hard",
+          "displayRank": 20
+        },
+        "GPT-6 Luna (Max)|CritPt v2 (Hard Subset): Score:GPT-6 Luna (Max)|v2:hard": {
+          "model": "GPT-6 Luna (Max)",
+          "score": 0.425,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:GPT-6 Luna (Max)",
+          "variant": "v2:hard",
+          "displayRank": 13
+        },
+        "Mistral Large 4 (High)|CritPt v2 (Hard Subset): Score:Mistral Large 4 (High)|v2:hard": {
+          "model": "Mistral Large 4 (High)",
+          "score": 0.27,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:Mistral Large 4 (High)",
+          "variant": "v2:hard",
+          "displayRank": 23
+        },
+        "Muse Spark Open (Xhigh)|CritPt v2 (Hard Subset): Score:Muse Spark Open (Xhigh)|v2:hard": {
+          "model": "Muse Spark Open (Xhigh)",
+          "score": 0.295,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:Muse Spark Open (Xhigh)",
+          "variant": "v2:hard",
+          "displayRank": 22
+        },
+        "Qwen3.8 27B (Xhigh)|CritPt v2 (Hard Subset): Score:Qwen3.8 27B (Xhigh)|v2:hard": {
+          "model": "Qwen3.8 27B (Xhigh)",
+          "score": 0.04,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:Qwen3.8 27B (Xhigh)",
+          "variant": "v2:hard",
+          "displayRank": 28
+        },
+        "K2 Horizon 375B A23B|CritPt v2 (Hard Subset): Score:K2 Horizon 375B A23B|v2:hard": {
+          "model": "K2 Horizon 375B A23B",
+          "score": 0.12,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:K2 Horizon 375B A23B",
+          "variant": "v2:hard",
+          "displayRank": 27
+        },
+        "Beam 1.0|CritPt v2 (Hard Subset): Score:Beam 1.0|v2:hard": {
+          "model": "Beam 1.0",
+          "score": 0.265,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:Beam 1.0",
+          "variant": "v2:hard",
+          "displayRank": 24
+        },
+        "Nemotron 3.5 Super VL|CritPt v2 (Hard Subset): Score:Nemotron 3.5 Super VL|v2:hard": {
+          "model": "Nemotron 3.5 Super VL",
+          "score": 0.135,
+          "rank": null,
+          "comparisonKey": "CritPt v2 (Hard Subset): Score:Nemotron 3.5 Super VL",
+          "variant": "v2:hard",
+          "displayRank": 26
         }
       }
     },
@@ -3795,255 +4047,254 @@
         }
       }
     },
-    "critpt_v2_hard": {
-      "runtimeId": "aa_critpt_v2_hard",
+    "terminal_bench_v4_0": {
+      "runtimeId": "aa_terminal_bench_v4_0",
       "familyId": "aa",
-      "title": "CritPt v2 (Hard Subset)",
-      "release": "v2:hard",
-      "contentHash": "3a5112d5e4bfbd96771ea006d74909d79b5209c0d32c4d617f0c66c6fcbb585e",
+      "title": "Terminal-Bench 4.0",
+      "release": "page_jsonld",
+      "contentHash": "d21c6e0bdf9450ad3c52a4fe5fa5e75f0fc2b2b367c7905b8f51f857382aafe2",
       "source": {
-        "benchmark_id": "critpt_v2_hard",
+        "benchmark_id": "terminal_bench_v4_0",
         "status": "enabled",
-        "source_name": "CritPt v2 (Hard Subset) official public page",
+        "source_name": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
         "organization": "Artificial Analysis",
         "source_type": "official_page_endpoint",
-        "official_url": "https://artificialanalysis.ai/evaluations/critpt-v2?critpt-subset=hard",
-        "endpoint": "https://artificialanalysis.ai/evaluations/critpt-v2?critpt-subset=hard",
+        "official_url": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+        "endpoint": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
         "fetch_method": "GET",
         "update_frequency": "daily",
         "requires_auth": false,
-        "evaluation_field": "CritPt v2 (Hard Subset): Score",
-        "release_id": "v2:hard",
-        "expected_page_heading": "CritPt v2 Benchmark",
-        "evidence_url": "https://artificialanalysis.ai/evaluations/critpt-v2?critpt-subset=hard",
-        "release_tracking": "official_page_heading",
+        "evaluation_field": "Terminal-Bench 4.0: Score",
+        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
+        "release_tracking": "page_jsonld",
         "hash_required": true,
-        "notes": "Verified 2026-10-28 against official public Next.js initialModels. Scores are limited to the models embedded in the public page; coverage is exported explicitly."
+        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
+        "jsonld_name": "Terminal-Bench 4.0: Score"
       },
       "records": {
-        "Gemini 4 Carbon (High)|CritPt v2 (Hard Subset): Score:Gemini 4 Carbon (High)|v2:hard": {
+        "Gemini 4 Carbon (High)|Terminal-Bench 4.0: Score:Gemini 4 Carbon (High)|page_jsonld": {
           "model": "Gemini 4 Carbon (High)",
-          "score": 0.69,
+          "score": 0.651515151515151,
           "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:Gemini 4 Carbon (High)",
-          "variant": "v2:hard",
-          "displayRank": 3
-        },
-        "Claude Opus 5.5 (Max, Default Fallback)|CritPt v2 (Hard Subset): Score:Claude Opus 5.5 (Max, Default Fallback)|v2:hard": {
-          "model": "Claude Opus 5.5 (Max, Default Fallback)",
-          "score": 0.68,
-          "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:Claude Opus 5.5 (Max, Default Fallback)",
-          "variant": "v2:hard",
-          "displayRank": 4
-        },
-        "GPT-6 Astra (Max)|CritPt v2 (Hard Subset): Score:GPT-6 Astra (Max)|v2:hard": {
-          "model": "GPT-6 Astra (Max)",
-          "score": 0.705,
-          "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:GPT-6 Astra (Max)",
-          "variant": "v2:hard",
-          "displayRank": 1
-        },
-        "GPT-6.1 Sol (Max)|CritPt v2 (Hard Subset): Score:GPT-6.1 Sol (Max)|v2:hard": {
-          "model": "GPT-6.1 Sol (Max)",
-          "score": 0.695,
-          "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:GPT-6.1 Sol (Max)",
-          "variant": "v2:hard",
+          "comparisonKey": "Terminal-Bench 4.0: Score:Gemini 4 Carbon (High)",
+          "variant": "page_jsonld",
           "displayRank": 2
         },
-        "Claude Sonnet 5.5 (Max, Default Fallback)|CritPt v2 (Hard Subset): Score:Claude Sonnet 5.5 (Max, Default Fallback)|v2:hard": {
-          "model": "Claude Sonnet 5.5 (Max, Default Fallback)",
-          "score": 0.59,
+        "Claude Opus 5.5 (Max, Default Fallback)|Terminal-Bench 4.0: Score:Claude Opus 5.5 (Max, Default Fallback)|page_jsonld": {
+          "model": "Claude Opus 5.5 (Max, Default Fallback)",
+          "score": 0.595959595959596,
           "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:Claude Sonnet 5.5 (Max, Default Fallback)",
-          "variant": "v2:hard",
-          "displayRank": 6
+          "comparisonKey": "Terminal-Bench 4.0: Score:Claude Opus 5.5 (Max, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 4
         },
-        "GPT-6.1 Terra (Max)|CritPt v2 (Hard Subset): Score:GPT-6.1 Terra (Max)|v2:hard": {
-          "model": "GPT-6.1 Terra (Max)",
-          "score": 0.68,
+        "GPT-6 Astra (Max)|Terminal-Bench 4.0: Score:GPT-6 Astra (Max)|page_jsonld": {
+          "model": "GPT-6 Astra (Max)",
+          "score": 0.590909090909091,
           "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:GPT-6.1 Terra (Max)",
-          "variant": "v2:hard",
+          "comparisonKey": "Terminal-Bench 4.0: Score:GPT-6 Astra (Max)",
+          "variant": "page_jsonld",
           "displayRank": 5
         },
-        "Muse Wonder Full (Max)|CritPt v2 (Hard Subset): Score:Muse Wonder Full (Max)|v2:hard": {
-          "model": "Muse Wonder Full (Max)",
-          "score": 0.565,
+        "GPT-6.1 Sol (Max)|Terminal-Bench 4.0: Score:GPT-6.1 Sol (Max)|page_jsonld": {
+          "model": "GPT-6.1 Sol (Max)",
+          "score": 0.560606060606061,
           "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:Muse Wonder Full (Max)",
-          "variant": "v2:hard",
+          "comparisonKey": "Terminal-Bench 4.0: Score:GPT-6.1 Sol (Max)",
+          "variant": "page_jsonld",
           "displayRank": 7
         },
-        "Claude Fable 5.1 (Max, Default Fallback)|CritPt v2 (Hard Subset): Score:Claude Fable 5.1 (Max, Default Fallback)|v2:hard": {
-          "model": "Claude Fable 5.1 (Max, Default Fallback)",
-          "score": 0.525,
+        "Claude Sonnet 5.5 (Max, Default Fallback)|Terminal-Bench 4.0: Score:Claude Sonnet 5.5 (Max, Default Fallback)|page_jsonld": {
+          "model": "Claude Sonnet 5.5 (Max, Default Fallback)",
+          "score": 0.636363636363636,
           "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:Claude Fable 5.1 (Max, Default Fallback)",
-          "variant": "v2:hard",
+          "comparisonKey": "Terminal-Bench 4.0: Score:Claude Sonnet 5.5 (Max, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 3
+        },
+        "GPT-6.1 Terra (Max)|Terminal-Bench 4.0: Score:GPT-6.1 Terra (Max)|page_jsonld": {
+          "model": "GPT-6.1 Terra (Max)",
+          "score": 0.555555555555556,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 4.0: Score:GPT-6.1 Terra (Max)",
+          "variant": "page_jsonld",
           "displayRank": 8
         },
-        "Kimi K3.1 Pro|CritPt v2 (Hard Subset): Score:Kimi K3.1 Pro|v2:hard": {
-          "model": "Kimi K3.1 Pro",
-          "score": 0.495,
+        "Muse Wonder Full (Max)|Terminal-Bench 4.0: Score:Muse Wonder Full (Max)|page_jsonld": {
+          "model": "Muse Wonder Full (Max)",
+          "score": 0.570707070707071,
           "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:Kimi K3.1 Pro",
-          "variant": "v2:hard",
-          "displayRank": 10
+          "comparisonKey": "Terminal-Bench 4.0: Score:Muse Wonder Full (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 6
         },
-        "Muse Wonder (Max)|CritPt v2 (Hard Subset): Score:Muse Wonder (Max)|v2:hard": {
-          "model": "Muse Wonder (Max)",
-          "score": 0.505,
+        "Claude Fable 5.1 (Max, Default Fallback)|Terminal-Bench 4.0: Score:Claude Fable 5.1 (Max, Default Fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (Max, Default Fallback)",
+          "score": 0.52020202020202,
           "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:Muse Wonder (Max)",
-          "variant": "v2:hard",
+          "comparisonKey": "Terminal-Bench 4.0: Score:Claude Fable 5.1 (Max, Default Fallback)",
+          "variant": "page_jsonld",
           "displayRank": 9
         },
-        "Claude Haiku 5.5 (Max)|CritPt v2 (Hard Subset): Score:Claude Haiku 5.5 (Max)|v2:hard": {
+        "Kimi K3.1 Pro|Terminal-Bench 4.0: Score:Kimi K3.1 Pro|page_jsonld": {
+          "model": "Kimi K3.1 Pro",
+          "score": 0.671717171717172,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 4.0: Score:Kimi K3.1 Pro",
+          "variant": "page_jsonld",
+          "displayRank": 1
+        },
+        "Muse Wonder (Max)|Terminal-Bench 4.0: Score:Muse Wonder (Max)|page_jsonld": {
+          "model": "Muse Wonder (Max)",
+          "score": 0.52020202020202,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 4.0: Score:Muse Wonder (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 10
+        },
+        "Claude Haiku 5.5 (Max)|Terminal-Bench 4.0: Score:Claude Haiku 5.5 (Max)|page_jsonld": {
           "model": "Claude Haiku 5.5 (Max)",
-          "score": 0.435,
+          "score": 0.328282828282828,
           "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:Claude Haiku 5.5 (Max)",
-          "variant": "v2:hard",
-          "displayRank": 12
-        },
-        "Grok 4.7 (Xhigh)|CritPt v2 (Hard Subset): Score:Grok 4.7 (Xhigh)|v2:hard": {
-          "model": "Grok 4.7 (Xhigh)",
-          "score": 0.335,
-          "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:Grok 4.7 (Xhigh)",
-          "variant": "v2:hard",
-          "displayRank": 18
-        },
-        "Tencent Hy4|CritPt v2 (Hard Subset): Score:Tencent Hy4|v2:hard": {
-          "model": "Tencent Hy4",
-          "score": 0.39,
-          "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:Tencent Hy4",
-          "variant": "v2:hard",
-          "displayRank": 14
-        },
-        "Qwen3.8 Max (0902)|CritPt v2 (Hard Subset): Score:Qwen3.8 Max (0902)|v2:hard": {
-          "model": "Qwen3.8 Max (0902)",
-          "score": 0.295,
-          "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:Qwen3.8 Max (0902)",
-          "variant": "v2:hard",
-          "displayRank": 21
-        },
-        "DeepSeek V4.1 Flash 1017 (Max)|CritPt v2 (Hard Subset): Score:DeepSeek V4.1 Flash 1017 (Max)|v2:hard": {
-          "model": "DeepSeek V4.1 Flash 1017 (Max)",
-          "score": 0.25,
-          "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:DeepSeek V4.1 Flash 1017 (Max)",
-          "variant": "v2:hard",
-          "displayRank": 25
-        },
-        "GLM-5.3 (Max)|CritPt v2 (Hard Subset): Score:GLM-5.3 (Max)|v2:hard": {
-          "model": "GLM-5.3 (Max)",
-          "score": 0.335,
-          "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:GLM-5.3 (Max)",
-          "variant": "v2:hard",
-          "displayRank": 19
-        },
-        "Gemini 3.8 Flash (High)|CritPt v2 (Hard Subset): Score:Gemini 3.8 Flash (High)|v2:hard": {
-          "model": "Gemini 3.8 Flash (High)",
-          "score": 0.465,
-          "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:Gemini 3.8 Flash (High)",
-          "variant": "v2:hard",
-          "displayRank": 11
-        },
-        "Inkling 2 Small|CritPt v2 (Hard Subset): Score:Inkling 2 Small|v2:hard": {
-          "model": "Inkling 2 Small",
-          "score": 0.35,
-          "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:Inkling 2 Small",
-          "variant": "v2:hard",
+          "comparisonKey": "Terminal-Bench 4.0: Score:Claude Haiku 5.5 (Max)",
+          "variant": "page_jsonld",
           "displayRank": 16
         },
-        "MiMo-V2.6-Pro|CritPt v2 (Hard Subset): Score:MiMo-V2.6-Pro|v2:hard": {
-          "model": "MiMo-V2.6-Pro",
-          "score": 0.34,
+        "Grok 4.7 (Xhigh)|Terminal-Bench 4.0: Score:Grok 4.7 (Xhigh)|page_jsonld": {
+          "model": "Grok 4.7 (Xhigh)",
+          "score": 0.257575757575758,
           "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:MiMo-V2.6-Pro",
-          "variant": "v2:hard",
-          "displayRank": 17
+          "comparisonKey": "Terminal-Bench 4.0: Score:Grok 4.7 (Xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 18
         },
-        "Ling 3.1 Flash 1019|CritPt v2 (Hard Subset): Score:Ling 3.1 Flash 1019|v2:hard": {
-          "model": "Ling 3.1 Flash 1019",
-          "score": 0.385,
+        "Tencent Hy4|Terminal-Bench 4.0: Score:Tencent Hy4|page_jsonld": {
+          "model": "Tencent Hy4",
+          "score": 0.373737373737374,
           "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:Ling 3.1 Flash 1019",
-          "variant": "v2:hard",
-          "displayRank": 15
-        },
-        "MiniMax-M3.1-Flash|CritPt v2 (Hard Subset): Score:MiniMax-M3.1-Flash|v2:hard": {
-          "model": "MiniMax-M3.1-Flash",
-          "score": 0.325,
-          "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:MiniMax-M3.1-Flash",
-          "variant": "v2:hard",
-          "displayRank": 20
-        },
-        "GPT-6 Luna (Max)|CritPt v2 (Hard Subset): Score:GPT-6 Luna (Max)|v2:hard": {
-          "model": "GPT-6 Luna (Max)",
-          "score": 0.425,
-          "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:GPT-6 Luna (Max)",
-          "variant": "v2:hard",
+          "comparisonKey": "Terminal-Bench 4.0: Score:Tencent Hy4",
+          "variant": "page_jsonld",
           "displayRank": 13
         },
-        "Mistral Large 4 (High)|CritPt v2 (Hard Subset): Score:Mistral Large 4 (High)|v2:hard": {
-          "model": "Mistral Large 4 (High)",
-          "score": 0.27,
+        "Qwen3.8 Max (0902)|Terminal-Bench 4.0: Score:Qwen3.8 Max (0902)|page_jsonld": {
+          "model": "Qwen3.8 Max (0902)",
+          "score": 0.388888888888889,
           "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:Mistral Large 4 (High)",
-          "variant": "v2:hard",
-          "displayRank": 23
+          "comparisonKey": "Terminal-Bench 4.0: Score:Qwen3.8 Max (0902)",
+          "variant": "page_jsonld",
+          "displayRank": 12
         },
-        "Muse Spark Open (Xhigh)|CritPt v2 (Hard Subset): Score:Muse Spark Open (Xhigh)|v2:hard": {
-          "model": "Muse Spark Open (Xhigh)",
-          "score": 0.295,
+        "DeepSeek V4.1 Flash 1017 (Max)|Terminal-Bench 4.0: Score:DeepSeek V4.1 Flash 1017 (Max)|page_jsonld": {
+          "model": "DeepSeek V4.1 Flash 1017 (Max)",
+          "score": 0.338383838383838,
           "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:Muse Spark Open (Xhigh)",
-          "variant": "v2:hard",
+          "comparisonKey": "Terminal-Bench 4.0: Score:DeepSeek V4.1 Flash 1017 (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 15
+        },
+        "GLM-5.3 (Max)|Terminal-Bench 4.0: Score:GLM-5.3 (Max)|page_jsonld": {
+          "model": "GLM-5.3 (Max)",
+          "score": 0.419191919191919,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 4.0: Score:GLM-5.3 (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 11
+        },
+        "Gemini 3.8 Flash (High)|Terminal-Bench 4.0: Score:Gemini 3.8 Flash (High)|page_jsonld": {
+          "model": "Gemini 3.8 Flash (High)",
+          "score": 0.196969696969697,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 4.0: Score:Gemini 3.8 Flash (High)",
+          "variant": "page_jsonld",
+          "displayRank": 21
+        },
+        "Inkling 2 Small|Terminal-Bench 4.0: Score:Inkling 2 Small|page_jsonld": {
+          "model": "Inkling 2 Small",
+          "score": 0.131313131313131,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 4.0: Score:Inkling 2 Small",
+          "variant": "page_jsonld",
           "displayRank": 22
         },
-        "Qwen3.8 27B (Xhigh)|CritPt v2 (Hard Subset): Score:Qwen3.8 27B (Xhigh)|v2:hard": {
-          "model": "Qwen3.8 27B (Xhigh)",
-          "score": 0.04,
+        "MiMo-V2.6-Pro|Terminal-Bench 4.0: Score:MiMo-V2.6-Pro|page_jsonld": {
+          "model": "MiMo-V2.6-Pro",
+          "score": 0.348484848484849,
           "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:Qwen3.8 27B (Xhigh)",
-          "variant": "v2:hard",
-          "displayRank": 28
+          "comparisonKey": "Terminal-Bench 4.0: Score:MiMo-V2.6-Pro",
+          "variant": "page_jsonld",
+          "displayRank": 14
         },
-        "K2 Horizon 375B A23B|CritPt v2 (Hard Subset): Score:K2 Horizon 375B A23B|v2:hard": {
-          "model": "K2 Horizon 375B A23B",
-          "score": 0.12,
+        "Ling 3.1 Flash 1019|Terminal-Bench 4.0: Score:Ling 3.1 Flash 1019|page_jsonld": {
+          "model": "Ling 3.1 Flash 1019",
+          "score": 0.328282828282828,
           "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:K2 Horizon 375B A23B",
-          "variant": "v2:hard",
-          "displayRank": 27
+          "comparisonKey": "Terminal-Bench 4.0: Score:Ling 3.1 Flash 1019",
+          "variant": "page_jsonld",
+          "displayRank": 17
         },
-        "Beam 1.0|CritPt v2 (Hard Subset): Score:Beam 1.0|v2:hard": {
-          "model": "Beam 1.0",
-          "score": 0.265,
+        "MiniMax-M3.1-Flash|Terminal-Bench 4.0: Score:MiniMax-M3.1-Flash|page_jsonld": {
+          "model": "MiniMax-M3.1-Flash",
+          "score": 0.257575757575758,
           "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:Beam 1.0",
-          "variant": "v2:hard",
+          "comparisonKey": "Terminal-Bench 4.0: Score:MiniMax-M3.1-Flash",
+          "variant": "page_jsonld",
+          "displayRank": 19
+        },
+        "GPT-6 Luna (Max)|Terminal-Bench 4.0: Score:GPT-6 Luna (Max)|page_jsonld": {
+          "model": "GPT-6 Luna (Max)",
+          "score": 0.126262626262626,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 4.0: Score:GPT-6 Luna (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 23
+        },
+        "Mistral Large 4 (High)|Terminal-Bench 4.0: Score:Mistral Large 4 (High)|page_jsonld": {
+          "model": "Mistral Large 4 (High)",
+          "score": 0.247474747474747,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 4.0: Score:Mistral Large 4 (High)",
+          "variant": "page_jsonld",
+          "displayRank": 20
+        },
+        "Muse Spark Open (Xhigh)|Terminal-Bench 4.0: Score:Muse Spark Open (Xhigh)|page_jsonld": {
+          "model": "Muse Spark Open (Xhigh)",
+          "score": 0.0808080808080808,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 4.0: Score:Muse Spark Open (Xhigh)",
+          "variant": "page_jsonld",
           "displayRank": 24
         },
-        "Nemotron 3.5 Super VL|CritPt v2 (Hard Subset): Score:Nemotron 3.5 Super VL|v2:hard": {
-          "model": "Nemotron 3.5 Super VL",
-          "score": 0.135,
+        "Qwen3.8 27B (Xhigh)|Terminal-Bench 4.0: Score:Qwen3.8 27B (Xhigh)|page_jsonld": {
+          "model": "Qwen3.8 27B (Xhigh)",
+          "score": 0.0555555555555556,
           "rank": null,
-          "comparisonKey": "CritPt v2 (Hard Subset): Score:Nemotron 3.5 Super VL",
-          "variant": "v2:hard",
+          "comparisonKey": "Terminal-Bench 4.0: Score:Qwen3.8 27B (Xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 25
+        },
+        "K2 Horizon 375B A23B|Terminal-Bench 4.0: Score:K2 Horizon 375B A23B|page_jsonld": {
+          "model": "K2 Horizon 375B A23B",
+          "score": 0.0151515151515152,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 4.0: Score:K2 Horizon 375B A23B",
+          "variant": "page_jsonld",
+          "displayRank": 27
+        },
+        "Beam 1.0|Terminal-Bench 4.0: Score:Beam 1.0|page_jsonld": {
+          "model": "Beam 1.0",
+          "score": 0.0303030303030303,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 4.0: Score:Beam 1.0",
+          "variant": "page_jsonld",
           "displayRank": 26
+        },
+        "Nemotron 3.5 Super VL|Terminal-Bench 4.0: Score:Nemotron 3.5 Super VL|page_jsonld": {
+          "model": "Nemotron 3.5 Super VL",
+          "score": 0,
+          "rank": null,
+          "comparisonKey": "Terminal-Bench 4.0: Score:Nemotron 3.5 Super VL",
+          "variant": "page_jsonld",
+          "displayRank": 28
         }
       }
     },
@@ -4295,257 +4546,6 @@
           "rank": null,
           "comparisonKey": "Terminal-Bench-Science 0.1: Score:Nemotron 3.5 Super VL",
           "variant": "v0.1",
-          "displayRank": 28
-        }
-      }
-    },
-    "terminal_bench_v4_0": {
-      "runtimeId": "aa_terminal_bench_v4_0",
-      "familyId": "aa",
-      "title": "Terminal-Bench 4.0",
-      "release": "page_jsonld",
-      "contentHash": "d21c6e0bdf9450ad3c52a4fe5fa5e75f0fc2b2b367c7905b8f51f857382aafe2",
-      "source": {
-        "benchmark_id": "terminal_bench_v4_0",
-        "status": "enabled",
-        "source_name": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
-        "organization": "Artificial Analysis",
-        "source_type": "official_page_endpoint",
-        "official_url": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-        "endpoint": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-        "fetch_method": "GET",
-        "update_frequency": "daily",
-        "requires_auth": false,
-        "evaluation_field": "Terminal-Bench 4.0: Score",
-        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
-        "release_tracking": "page_jsonld",
-        "hash_required": true,
-        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
-        "jsonld_name": "Terminal-Bench 4.0: Score"
-      },
-      "records": {
-        "Gemini 4 Carbon (High)|Terminal-Bench 4.0: Score:Gemini 4 Carbon (High)|page_jsonld": {
-          "model": "Gemini 4 Carbon (High)",
-          "score": 0.651515151515151,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:Gemini 4 Carbon (High)",
-          "variant": "page_jsonld",
-          "displayRank": 2
-        },
-        "Claude Opus 5.5 (Max, Default Fallback)|Terminal-Bench 4.0: Score:Claude Opus 5.5 (Max, Default Fallback)|page_jsonld": {
-          "model": "Claude Opus 5.5 (Max, Default Fallback)",
-          "score": 0.595959595959596,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:Claude Opus 5.5 (Max, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 4
-        },
-        "GPT-6 Astra (Max)|Terminal-Bench 4.0: Score:GPT-6 Astra (Max)|page_jsonld": {
-          "model": "GPT-6 Astra (Max)",
-          "score": 0.590909090909091,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:GPT-6 Astra (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 5
-        },
-        "GPT-6.1 Sol (Max)|Terminal-Bench 4.0: Score:GPT-6.1 Sol (Max)|page_jsonld": {
-          "model": "GPT-6.1 Sol (Max)",
-          "score": 0.560606060606061,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:GPT-6.1 Sol (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 7
-        },
-        "Claude Sonnet 5.5 (Max, Default Fallback)|Terminal-Bench 4.0: Score:Claude Sonnet 5.5 (Max, Default Fallback)|page_jsonld": {
-          "model": "Claude Sonnet 5.5 (Max, Default Fallback)",
-          "score": 0.636363636363636,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:Claude Sonnet 5.5 (Max, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 3
-        },
-        "GPT-6.1 Terra (Max)|Terminal-Bench 4.0: Score:GPT-6.1 Terra (Max)|page_jsonld": {
-          "model": "GPT-6.1 Terra (Max)",
-          "score": 0.555555555555556,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:GPT-6.1 Terra (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 8
-        },
-        "Muse Wonder Full (Max)|Terminal-Bench 4.0: Score:Muse Wonder Full (Max)|page_jsonld": {
-          "model": "Muse Wonder Full (Max)",
-          "score": 0.570707070707071,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:Muse Wonder Full (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 6
-        },
-        "Claude Fable 5.1 (Max, Default Fallback)|Terminal-Bench 4.0: Score:Claude Fable 5.1 (Max, Default Fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (Max, Default Fallback)",
-          "score": 0.52020202020202,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:Claude Fable 5.1 (Max, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 9
-        },
-        "Kimi K3.1 Pro|Terminal-Bench 4.0: Score:Kimi K3.1 Pro|page_jsonld": {
-          "model": "Kimi K3.1 Pro",
-          "score": 0.671717171717172,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:Kimi K3.1 Pro",
-          "variant": "page_jsonld",
-          "displayRank": 1
-        },
-        "Muse Wonder (Max)|Terminal-Bench 4.0: Score:Muse Wonder (Max)|page_jsonld": {
-          "model": "Muse Wonder (Max)",
-          "score": 0.52020202020202,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:Muse Wonder (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 10
-        },
-        "Claude Haiku 5.5 (Max)|Terminal-Bench 4.0: Score:Claude Haiku 5.5 (Max)|page_jsonld": {
-          "model": "Claude Haiku 5.5 (Max)",
-          "score": 0.328282828282828,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:Claude Haiku 5.5 (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 16
-        },
-        "Grok 4.7 (Xhigh)|Terminal-Bench 4.0: Score:Grok 4.7 (Xhigh)|page_jsonld": {
-          "model": "Grok 4.7 (Xhigh)",
-          "score": 0.257575757575758,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:Grok 4.7 (Xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 18
-        },
-        "Tencent Hy4|Terminal-Bench 4.0: Score:Tencent Hy4|page_jsonld": {
-          "model": "Tencent Hy4",
-          "score": 0.373737373737374,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:Tencent Hy4",
-          "variant": "page_jsonld",
-          "displayRank": 13
-        },
-        "Qwen3.8 Max (0902)|Terminal-Bench 4.0: Score:Qwen3.8 Max (0902)|page_jsonld": {
-          "model": "Qwen3.8 Max (0902)",
-          "score": 0.388888888888889,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:Qwen3.8 Max (0902)",
-          "variant": "page_jsonld",
-          "displayRank": 12
-        },
-        "DeepSeek V4.1 Flash 1017 (Max)|Terminal-Bench 4.0: Score:DeepSeek V4.1 Flash 1017 (Max)|page_jsonld": {
-          "model": "DeepSeek V4.1 Flash 1017 (Max)",
-          "score": 0.338383838383838,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:DeepSeek V4.1 Flash 1017 (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 15
-        },
-        "GLM-5.3 (Max)|Terminal-Bench 4.0: Score:GLM-5.3 (Max)|page_jsonld": {
-          "model": "GLM-5.3 (Max)",
-          "score": 0.419191919191919,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:GLM-5.3 (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 11
-        },
-        "Gemini 3.8 Flash (High)|Terminal-Bench 4.0: Score:Gemini 3.8 Flash (High)|page_jsonld": {
-          "model": "Gemini 3.8 Flash (High)",
-          "score": 0.196969696969697,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:Gemini 3.8 Flash (High)",
-          "variant": "page_jsonld",
-          "displayRank": 21
-        },
-        "Inkling 2 Small|Terminal-Bench 4.0: Score:Inkling 2 Small|page_jsonld": {
-          "model": "Inkling 2 Small",
-          "score": 0.131313131313131,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:Inkling 2 Small",
-          "variant": "page_jsonld",
-          "displayRank": 22
-        },
-        "MiMo-V2.6-Pro|Terminal-Bench 4.0: Score:MiMo-V2.6-Pro|page_jsonld": {
-          "model": "MiMo-V2.6-Pro",
-          "score": 0.348484848484849,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:MiMo-V2.6-Pro",
-          "variant": "page_jsonld",
-          "displayRank": 14
-        },
-        "Ling 3.1 Flash 1019|Terminal-Bench 4.0: Score:Ling 3.1 Flash 1019|page_jsonld": {
-          "model": "Ling 3.1 Flash 1019",
-          "score": 0.328282828282828,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:Ling 3.1 Flash 1019",
-          "variant": "page_jsonld",
-          "displayRank": 17
-        },
-        "MiniMax-M3.1-Flash|Terminal-Bench 4.0: Score:MiniMax-M3.1-Flash|page_jsonld": {
-          "model": "MiniMax-M3.1-Flash",
-          "score": 0.257575757575758,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:MiniMax-M3.1-Flash",
-          "variant": "page_jsonld",
-          "displayRank": 19
-        },
-        "GPT-6 Luna (Max)|Terminal-Bench 4.0: Score:GPT-6 Luna (Max)|page_jsonld": {
-          "model": "GPT-6 Luna (Max)",
-          "score": 0.126262626262626,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:GPT-6 Luna (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 23
-        },
-        "Mistral Large 4 (High)|Terminal-Bench 4.0: Score:Mistral Large 4 (High)|page_jsonld": {
-          "model": "Mistral Large 4 (High)",
-          "score": 0.247474747474747,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:Mistral Large 4 (High)",
-          "variant": "page_jsonld",
-          "displayRank": 20
-        },
-        "Muse Spark Open (Xhigh)|Terminal-Bench 4.0: Score:Muse Spark Open (Xhigh)|page_jsonld": {
-          "model": "Muse Spark Open (Xhigh)",
-          "score": 0.0808080808080808,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:Muse Spark Open (Xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 24
-        },
-        "Qwen3.8 27B (Xhigh)|Terminal-Bench 4.0: Score:Qwen3.8 27B (Xhigh)|page_jsonld": {
-          "model": "Qwen3.8 27B (Xhigh)",
-          "score": 0.0555555555555556,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:Qwen3.8 27B (Xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 25
-        },
-        "K2 Horizon 375B A23B|Terminal-Bench 4.0: Score:K2 Horizon 375B A23B|page_jsonld": {
-          "model": "K2 Horizon 375B A23B",
-          "score": 0.0151515151515152,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:K2 Horizon 375B A23B",
-          "variant": "page_jsonld",
-          "displayRank": 27
-        },
-        "Beam 1.0|Terminal-Bench 4.0: Score:Beam 1.0|page_jsonld": {
-          "model": "Beam 1.0",
-          "score": 0.0303030303030303,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:Beam 1.0",
-          "variant": "page_jsonld",
-          "displayRank": 26
-        },
-        "Nemotron 3.5 Super VL|Terminal-Bench 4.0: Score:Nemotron 3.5 Super VL|page_jsonld": {
-          "model": "Nemotron 3.5 Super VL",
-          "score": 0,
-          "rank": null,
-          "comparisonKey": "Terminal-Bench 4.0: Score:Nemotron 3.5 Super VL",
-          "variant": "page_jsonld",
           "displayRank": 28
         }
       }
@@ -5287,492 +5287,6 @@
         }
       }
     },
-    "critpt": {
-      "runtimeId": "aa_critpt",
-      "familyId": "aa",
-      "title": "CritPt",
-      "release": "page_jsonld",
-      "contentHash": "9224e9b16aa84099b3621a886381de3f0b5de14c94c97a9e2311fa1040f91fb7",
-      "source": {
-        "benchmark_id": "critpt",
-        "status": "enabled",
-        "source_name": "Artificial Analysis CritPt official public Dataset page",
-        "organization": "Artificial Analysis",
-        "source_type": "official_page_endpoint",
-        "official_url": "https://artificialanalysis.ai/evaluations/critpt",
-        "endpoint": "https://artificialanalysis.ai/evaluations/critpt",
-        "fetch_method": "GET",
-        "update_frequency": "daily",
-        "requires_auth": false,
-        "evaluation_field": "CritPt: Score",
-        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
-        "release_tracking": "page_jsonld",
-        "hash_required": true,
-        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
-        "jsonld_name": "CritPt: Score"
-      },
-      "records": {
-        "Claude Opus 5.5 (Max, Default Fallback)|CritPt: Score:Claude Opus 5.5 (Max, Default Fallback)|page_jsonld": {
-          "model": "Claude Opus 5.5 (Max, Default Fallback)",
-          "score": 0.317142857142857,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:Claude Opus 5.5 (Max, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 3
-        },
-        "GPT-6 Astra (Max)|CritPt: Score:GPT-6 Astra (Max)|page_jsonld": {
-          "model": "GPT-6 Astra (Max)",
-          "score": 0.317142857142857,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:GPT-6 Astra (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 4
-        },
-        "GPT-6.1 Sol (Max)|CritPt: Score:GPT-6.1 Sol (Max)|page_jsonld": {
-          "model": "GPT-6.1 Sol (Max)",
-          "score": 0.317142857142857,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:GPT-6.1 Sol (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 5
-        },
-        "Claude Sonnet 5.5 (Max, Default Fallback)|CritPt: Score:Claude Sonnet 5.5 (Max, Default Fallback)|page_jsonld": {
-          "model": "Claude Sonnet 5.5 (Max, Default Fallback)",
-          "score": 0.314285714285714,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:Claude Sonnet 5.5 (Max, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 6
-        },
-        "GPT-6.1 Terra (Max)|CritPt: Score:GPT-6.1 Terra (Max)|page_jsonld": {
-          "model": "GPT-6.1 Terra (Max)",
-          "score": 0.28,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:GPT-6.1 Terra (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 10
-        },
-        "Muse Wonder Full (Max)|CritPt: Score:Muse Wonder Full (Max)|page_jsonld": {
-          "model": "Muse Wonder Full (Max)",
-          "score": 0.328571428571429,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:Muse Wonder Full (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 1
-        },
-        "Claude Fable 5.1 (Max, Default Fallback)|CritPt: Score:Claude Fable 5.1 (Max, Default Fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (Max, Default Fallback)",
-          "score": 0.297142857142857,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:Claude Fable 5.1 (Max, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 8
-        },
-        "Kimi K3.1 Pro|CritPt: Score:Kimi K3.1 Pro|page_jsonld": {
-          "model": "Kimi K3.1 Pro",
-          "score": 0.245714285714286,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:Kimi K3.1 Pro",
-          "variant": "page_jsonld",
-          "displayRank": 13
-        },
-        "GPT-6 Sol (Max)|CritPt: Score:GPT-6 Sol (Max)|page_jsonld": {
-          "model": "GPT-6 Sol (Max)",
-          "score": 0.308571428571429,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:GPT-6 Sol (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 7
-        },
-        "Muse Wonder (Max)|CritPt: Score:Muse Wonder (Max)|page_jsonld": {
-          "model": "Muse Wonder (Max)",
-          "score": 0.282857142857143,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:Muse Wonder (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 9
-        },
-        "Claude Haiku 5.5 (Max)|CritPt: Score:Claude Haiku 5.5 (Max)|page_jsonld": {
-          "model": "Claude Haiku 5.5 (Max)",
-          "score": 0.188571428571429,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:Claude Haiku 5.5 (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 18
-        },
-        "Grok 4.7 (Xhigh)|CritPt: Score:Grok 4.7 (Xhigh)|page_jsonld": {
-          "model": "Grok 4.7 (Xhigh)",
-          "score": 0.177142857142857,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:Grok 4.7 (Xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 20
-        },
-        "Qwen3.8 Max (0902)|CritPt: Score:Qwen3.8 Max (0902)|page_jsonld": {
-          "model": "Qwen3.8 Max (0902)",
-          "score": 0.177142857142857,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:Qwen3.8 Max (0902)",
-          "variant": "page_jsonld",
-          "displayRank": 21
-        },
-        "DeepSeek V4.1 Flash 1017 (Max)|CritPt: Score:DeepSeek V4.1 Flash 1017 (Max)|page_jsonld": {
-          "model": "DeepSeek V4.1 Flash 1017 (Max)",
-          "score": 0.24,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:DeepSeek V4.1 Flash 1017 (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 14
-        },
-        "GLM-5.3 (Max)|CritPt: Score:GLM-5.3 (Max)|page_jsonld": {
-          "model": "GLM-5.3 (Max)",
-          "score": 0.191428571428571,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:GLM-5.3 (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 17
-        },
-        "Gemini 3.8 Flash (High)|CritPt: Score:Gemini 3.8 Flash (High)|page_jsonld": {
-          "model": "Gemini 3.8 Flash (High)",
-          "score": 0.182857142857143,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:Gemini 3.8 Flash (High)",
-          "variant": "page_jsonld",
-          "displayRank": 19
-        },
-        "MiMo-V2.6-Pro|CritPt: Score:MiMo-V2.6-Pro|page_jsonld": {
-          "model": "MiMo-V2.6-Pro",
-          "score": 0.265714285714286,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:MiMo-V2.6-Pro",
-          "variant": "page_jsonld",
-          "displayRank": 11
-        },
-        "Ling 3.1 Flash 1019|CritPt: Score:Ling 3.1 Flash 1019|page_jsonld": {
-          "model": "Ling 3.1 Flash 1019",
-          "score": 0.26,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:Ling 3.1 Flash 1019",
-          "variant": "page_jsonld",
-          "displayRank": 12
-        },
-        "MiniMax-M3.1-Flash|CritPt: Score:MiniMax-M3.1-Flash|page_jsonld": {
-          "model": "MiniMax-M3.1-Flash",
-          "score": 0.222857142857143,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:MiniMax-M3.1-Flash",
-          "variant": "page_jsonld",
-          "displayRank": 15
-        },
-        "GPT-6 Luna (Max)|CritPt: Score:GPT-6 Luna (Max)|page_jsonld": {
-          "model": "GPT-6 Luna (Max)",
-          "score": 0.194285714285714,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:GPT-6 Luna (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 16
-        },
-        "Mistral Large 4 (High)|CritPt: Score:Mistral Large 4 (High)|page_jsonld": {
-          "model": "Mistral Large 4 (High)",
-          "score": 0.1,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:Mistral Large 4 (High)",
-          "variant": "page_jsonld",
-          "displayRank": 25
-        },
-        "Muse Spark Open (Xhigh)|CritPt: Score:Muse Spark Open (Xhigh)|page_jsonld": {
-          "model": "Muse Spark Open (Xhigh)",
-          "score": 0.148571428571429,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:Muse Spark Open (Xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 22
-        },
-        "Qwen3.8 27B (Xhigh)|CritPt: Score:Qwen3.8 27B (Xhigh)|page_jsonld": {
-          "model": "Qwen3.8 27B (Xhigh)",
-          "score": 0.0542857142857143,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:Qwen3.8 27B (Xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 26
-        },
-        "K2 Horizon 375B A23B|CritPt: Score:K2 Horizon 375B A23B|page_jsonld": {
-          "model": "K2 Horizon 375B A23B",
-          "score": 0.0457142857142857,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:K2 Horizon 375B A23B",
-          "variant": "page_jsonld",
-          "displayRank": 27
-        },
-        "Beam 1.0|CritPt: Score:Beam 1.0|page_jsonld": {
-          "model": "Beam 1.0",
-          "score": 0.131428571428571,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:Beam 1.0",
-          "variant": "page_jsonld",
-          "displayRank": 23
-        },
-        "Nemotron 3.5 Super VL|CritPt: Score:Nemotron 3.5 Super VL|page_jsonld": {
-          "model": "Nemotron 3.5 Super VL",
-          "score": 0.105714285714286,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:Nemotron 3.5 Super VL",
-          "variant": "page_jsonld",
-          "displayRank": 24
-        },
-        "GPT-5.6 Sol (Max)|CritPt: Score:GPT-5.6 Sol (Max)|page_jsonld": {
-          "model": "GPT-5.6 Sol (Max)",
-          "score": 0.322857142857143,
-          "rank": null,
-          "comparisonKey": "CritPt: Score:GPT-5.6 Sol (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 2
-        }
-      }
-    },
-    "scicode": {
-      "runtimeId": "aa_scicode",
-      "familyId": "aa",
-      "title": "SciCode",
-      "release": "page_jsonld",
-      "contentHash": "a4f32d69073e80d49d8e7537c675e9c376333c200bbaf8d3fe6c1dc2f3b5f29b",
-      "source": {
-        "benchmark_id": "scicode",
-        "status": "enabled",
-        "source_name": "Artificial Analysis SciCode official public Dataset page",
-        "organization": "Artificial Analysis",
-        "source_type": "official_page_endpoint",
-        "official_url": "https://artificialanalysis.ai/evaluations/scicode",
-        "endpoint": "https://artificialanalysis.ai/evaluations/scicode",
-        "fetch_method": "GET",
-        "update_frequency": "daily",
-        "requires_auth": false,
-        "evaluation_field": "SciCode: Score",
-        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
-        "release_tracking": "page_jsonld",
-        "hash_required": true,
-        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
-        "jsonld_name": "SciCode: Score"
-      },
-      "records": {
-        "Claude Opus 5.5 (Max, Default Fallback)|SciCode: Score:Claude Opus 5.5 (Max, Default Fallback)|page_jsonld": {
-          "model": "Claude Opus 5.5 (Max, Default Fallback)",
-          "score": 0.668981481481482,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:Claude Opus 5.5 (Max, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 1
-        },
-        "GPT-6 Astra (Max)|SciCode: Score:GPT-6 Astra (Max)|page_jsonld": {
-          "model": "GPT-6 Astra (Max)",
-          "score": 0.564814814814815,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:GPT-6 Astra (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 15
-        },
-        "GPT-6.1 Sol (Max)|SciCode: Score:GPT-6.1 Sol (Max)|page_jsonld": {
-          "model": "GPT-6.1 Sol (Max)",
-          "score": 0.541666666666667,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:GPT-6.1 Sol (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 20
-        },
-        "Claude Sonnet 5.5 (Max, Default Fallback)|SciCode: Score:Claude Sonnet 5.5 (Max, Default Fallback)|page_jsonld": {
-          "model": "Claude Sonnet 5.5 (Max, Default Fallback)",
-          "score": 0.609953703703704,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:Claude Sonnet 5.5 (Max, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 5
-        },
-        "GPT-6.1 Terra (Max)|SciCode: Score:GPT-6.1 Terra (Max)|page_jsonld": {
-          "model": "GPT-6.1 Terra (Max)",
-          "score": 0.550925925925926,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:GPT-6.1 Terra (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 17
-        },
-        "Gemini 4 Argon (High)|SciCode: Score:Gemini 4 Argon (High)|page_jsonld": {
-          "model": "Gemini 4 Argon (High)",
-          "score": 0.618055555555556,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:Gemini 4 Argon (High)",
-          "variant": "page_jsonld",
-          "displayRank": 4
-        },
-        "Muse Wonder Full (Max)|SciCode: Score:Muse Wonder Full (Max)|page_jsonld": {
-          "model": "Muse Wonder Full (Max)",
-          "score": 0.626157407407407,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:Muse Wonder Full (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 3
-        },
-        "Claude Fable 5.1 (Max, Default Fallback)|SciCode: Score:Claude Fable 5.1 (Max, Default Fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (Max, Default Fallback)",
-          "score": 0.630787037037037,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:Claude Fable 5.1 (Max, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 2
-        },
-        "Kimi K3.1 Pro|SciCode: Score:Kimi K3.1 Pro|page_jsonld": {
-          "model": "Kimi K3.1 Pro",
-          "score": 0.607638888888889,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:Kimi K3.1 Pro",
-          "variant": "page_jsonld",
-          "displayRank": 8
-        },
-        "Muse Wonder (Max)|SciCode: Score:Muse Wonder (Max)|page_jsonld": {
-          "model": "Muse Wonder (Max)",
-          "score": 0.603009259259259,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:Muse Wonder (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 9
-        },
-        "Claude Haiku 5.5 (Max)|SciCode: Score:Claude Haiku 5.5 (Max)|page_jsonld": {
-          "model": "Claude Haiku 5.5 (Max)",
-          "score": 0.549768518518518,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:Claude Haiku 5.5 (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 18
-        },
-        "Grok 4.7 (Xhigh)|SciCode: Score:Grok 4.7 (Xhigh)|page_jsonld": {
-          "model": "Grok 4.7 (Xhigh)",
-          "score": 0.574074074074074,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:Grok 4.7 (Xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 12
-        },
-        "Qwen3.8 Max (0902)|SciCode: Score:Qwen3.8 Max (0902)|page_jsonld": {
-          "model": "Qwen3.8 Max (0902)",
-          "score": 0.520833333333333,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:Qwen3.8 Max (0902)",
-          "variant": "page_jsonld",
-          "displayRank": 23
-        },
-        "DeepSeek V4.1 Flash 1017 (Max)|SciCode: Score:DeepSeek V4.1 Flash 1017 (Max)|page_jsonld": {
-          "model": "DeepSeek V4.1 Flash 1017 (Max)",
-          "score": 0.559027777777778,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:DeepSeek V4.1 Flash 1017 (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 16
-        },
-        "GLM-5.3 (Max)|SciCode: Score:GLM-5.3 (Max)|page_jsonld": {
-          "model": "GLM-5.3 (Max)",
-          "score": 0.590277777777778,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:GLM-5.3 (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 10
-        },
-        "Gemini 3.8 Flash (High)|SciCode: Score:Gemini 3.8 Flash (High)|page_jsonld": {
-          "model": "Gemini 3.8 Flash (High)",
-          "score": 0.565972222222222,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:Gemini 3.8 Flash (High)",
-          "variant": "page_jsonld",
-          "displayRank": 14
-        },
-        "Inkling 2 Small|SciCode: Score:Inkling 2 Small|page_jsonld": {
-          "model": "Inkling 2 Small",
-          "score": 0.523148148148148,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:Inkling 2 Small",
-          "variant": "page_jsonld",
-          "displayRank": 22
-        },
-        "MiMo-V2.6-Pro|SciCode: Score:MiMo-V2.6-Pro|page_jsonld": {
-          "model": "MiMo-V2.6-Pro",
-          "score": 0.608796296296296,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:MiMo-V2.6-Pro",
-          "variant": "page_jsonld",
-          "displayRank": 7
-        },
-        "Ling 3.1 Flash 1019|SciCode: Score:Ling 3.1 Flash 1019|page_jsonld": {
-          "model": "Ling 3.1 Flash 1019",
-          "score": 0.568287037037037,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:Ling 3.1 Flash 1019",
-          "variant": "page_jsonld",
-          "displayRank": 13
-        },
-        "MiniMax-M3.1-Flash|SciCode: Score:MiniMax-M3.1-Flash|page_jsonld": {
-          "model": "MiniMax-M3.1-Flash",
-          "score": 0.533564814814815,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:MiniMax-M3.1-Flash",
-          "variant": "page_jsonld",
-          "displayRank": 21
-        },
-        "GPT-6 Luna (Max)|SciCode: Score:GPT-6 Luna (Max)|page_jsonld": {
-          "model": "GPT-6 Luna (Max)",
-          "score": 0.546296296296296,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:GPT-6 Luna (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 19
-        },
-        "Muse Spark Open (Xhigh)|SciCode: Score:Muse Spark Open (Xhigh)|page_jsonld": {
-          "model": "Muse Spark Open (Xhigh)",
-          "score": 0.584490740740741,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:Muse Spark Open (Xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 11
-        },
-        "Qwen3.8 27B (Xhigh)|SciCode: Score:Qwen3.8 27B (Xhigh)|page_jsonld": {
-          "model": "Qwen3.8 27B (Xhigh)",
-          "score": 0.466435185185185,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:Qwen3.8 27B (Xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 26
-        },
-        "K2 Horizon 375B A23B|SciCode: Score:K2 Horizon 375B A23B|page_jsonld": {
-          "model": "K2 Horizon 375B A23B",
-          "score": 0.429398148148148,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:K2 Horizon 375B A23B",
-          "variant": "page_jsonld",
-          "displayRank": 27
-        },
-        "Beam 1.0|SciCode: Score:Beam 1.0|page_jsonld": {
-          "model": "Beam 1.0",
-          "score": 0.484953703703704,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:Beam 1.0",
-          "variant": "page_jsonld",
-          "displayRank": 24
-        },
-        "Nemotron 3.5 Super VL|SciCode: Score:Nemotron 3.5 Super VL|page_jsonld": {
-          "model": "Nemotron 3.5 Super VL",
-          "score": 0.478009259259259,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:Nemotron 3.5 Super VL",
-          "variant": "page_jsonld",
-          "displayRank": 25
-        },
-        "Claude Fable 5 (Max, Opus 4.8 Fallback)|SciCode: Score:Claude Fable 5 (Max, Opus 4.8 Fallback)|page_jsonld": {
-          "model": "Claude Fable 5 (Max, Opus 4.8 Fallback)",
-          "score": 0.609953703703704,
-          "rank": null,
-          "comparisonKey": "SciCode: Score:Claude Fable 5 (Max, Opus 4.8 Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 6
-        }
-      }
-    },
     "aa_omniscience_index_v1_1": {
       "runtimeId": "aa_omniscience_index_v1_1",
       "familyId": "aa",
@@ -6025,246 +5539,489 @@
         }
       }
     },
-    "gdpval_aa_elo": {
-      "runtimeId": "aa_gdpval_elo",
+    "scicode": {
+      "runtimeId": "aa_scicode",
       "familyId": "aa",
-      "title": "GDPval-AA Elo",
+      "title": "SciCode",
       "release": "page_jsonld",
-      "contentHash": "8903df636a6fa694b1874fc412e90135a15d62ec0b97bd29ee33dcd2235a423c",
+      "contentHash": "a4f32d69073e80d49d8e7537c675e9c376333c200bbaf8d3fe6c1dc2f3b5f29b",
       "source": {
-        "benchmark_id": "gdpval_aa_elo",
+        "benchmark_id": "scicode",
         "status": "enabled",
-        "source_name": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+        "source_name": "Artificial Analysis SciCode official public Dataset page",
         "organization": "Artificial Analysis",
         "source_type": "official_page_endpoint",
-        "official_url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "endpoint": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "official_url": "https://artificialanalysis.ai/evaluations/scicode",
+        "endpoint": "https://artificialanalysis.ai/evaluations/scicode",
         "fetch_method": "GET",
         "update_frequency": "daily",
         "requires_auth": false,
-        "evaluation_field": "gdpvalAaElo",
+        "evaluation_field": "SciCode: Score",
         "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
         "release_tracking": "page_jsonld",
         "hash_required": true,
         "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
-        "jsonld_name": "GDPval-AA v2.1 Leaderboard"
+        "jsonld_name": "SciCode: Score"
       },
       "records": {
-        "Gemini 4 Carbon (High)|gdpvalAaElo:Gemini 4 Carbon (High)|page_jsonld": {
-          "model": "Gemini 4 Carbon (High)",
-          "score": 1732.68,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Gemini 4 Carbon (High)",
-          "variant": "page_jsonld",
-          "displayRank": 8
-        },
-        "Claude Opus 5.5 (Max, Default Fallback)|gdpvalAaElo:Claude Opus 5.5 (Max, Default Fallback)|page_jsonld": {
+        "Claude Opus 5.5 (Max, Default Fallback)|SciCode: Score:Claude Opus 5.5 (Max, Default Fallback)|page_jsonld": {
           "model": "Claude Opus 5.5 (Max, Default Fallback)",
-          "score": 1866.27,
+          "score": 0.668981481481482,
           "rank": null,
-          "comparisonKey": "gdpvalAaElo:Claude Opus 5.5 (Max, Default Fallback)",
+          "comparisonKey": "SciCode: Score:Claude Opus 5.5 (Max, Default Fallback)",
           "variant": "page_jsonld",
           "displayRank": 1
         },
-        "GPT-6 Astra (Max)|gdpvalAaElo:GPT-6 Astra (Max)|page_jsonld": {
+        "GPT-6 Astra (Max)|SciCode: Score:GPT-6 Astra (Max)|page_jsonld": {
           "model": "GPT-6 Astra (Max)",
-          "score": 1583.69,
+          "score": 0.564814814814815,
           "rank": null,
-          "comparisonKey": "gdpvalAaElo:GPT-6 Astra (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 18
-        },
-        "GPT-6.1 Sol (Max)|gdpvalAaElo:GPT-6.1 Sol (Max)|page_jsonld": {
-          "model": "GPT-6.1 Sol (Max)",
-          "score": 1608.89,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:GPT-6.1 Sol (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 17
-        },
-        "Claude Sonnet 5.5 (Max, Default Fallback)|gdpvalAaElo:Claude Sonnet 5.5 (Max, Default Fallback)|page_jsonld": {
-          "model": "Claude Sonnet 5.5 (Max, Default Fallback)",
-          "score": 1837.82,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Claude Sonnet 5.5 (Max, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 4
-        },
-        "GPT-6.1 Terra (Max)|gdpvalAaElo:GPT-6.1 Terra (Max)|page_jsonld": {
-          "model": "GPT-6.1 Terra (Max)",
-          "score": 1475.63,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:GPT-6.1 Terra (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 19
-        },
-        "Muse Wonder Full (Max)|gdpvalAaElo:Muse Wonder Full (Max)|page_jsonld": {
-          "model": "Muse Wonder Full (Max)",
-          "score": 1857.09,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Muse Wonder Full (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 3
-        },
-        "Claude Fable 5.1 (Max, Default Fallback)|gdpvalAaElo:Claude Fable 5.1 (Max, Default Fallback)|page_jsonld": {
-          "model": "Claude Fable 5.1 (Max, Default Fallback)",
-          "score": 1763.29,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Claude Fable 5.1 (Max, Default Fallback)",
-          "variant": "page_jsonld",
-          "displayRank": 6
-        },
-        "Kimi K3.1 Pro|gdpvalAaElo:Kimi K3.1 Pro|page_jsonld": {
-          "model": "Kimi K3.1 Pro",
-          "score": 1858.05,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Kimi K3.1 Pro",
-          "variant": "page_jsonld",
-          "displayRank": 2
-        },
-        "Claude Opus 5 (Max)|gdpvalAaElo:Claude Opus 5 (Max)|page_jsonld": {
-          "model": "Claude Opus 5 (Max)",
-          "score": 1729.9,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Claude Opus 5 (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 9
-        },
-        "Muse Wonder (Max)|gdpvalAaElo:Muse Wonder (Max)|page_jsonld": {
-          "model": "Muse Wonder (Max)",
-          "score": 1770.34,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Muse Wonder (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 5
-        },
-        "Claude Haiku 5.5 (Max)|gdpvalAaElo:Claude Haiku 5.5 (Max)|page_jsonld": {
-          "model": "Claude Haiku 5.5 (Max)",
-          "score": 1630.83,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Claude Haiku 5.5 (Max)",
+          "comparisonKey": "SciCode: Score:GPT-6 Astra (Max)",
           "variant": "page_jsonld",
           "displayRank": 15
         },
-        "Grok 4.7 (Xhigh)|gdpvalAaElo:Grok 4.7 (Xhigh)|page_jsonld": {
-          "model": "Grok 4.7 (Xhigh)",
-          "score": 1718.42,
+        "GPT-6.1 Sol (Max)|SciCode: Score:GPT-6.1 Sol (Max)|page_jsonld": {
+          "model": "GPT-6.1 Sol (Max)",
+          "score": 0.541666666666667,
           "rank": null,
-          "comparisonKey": "gdpvalAaElo:Grok 4.7 (Xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 10
-        },
-        "Qwen3.8 Max (0902)|gdpvalAaElo:Qwen3.8 Max (0902)|page_jsonld": {
-          "model": "Qwen3.8 Max (0902)",
-          "score": 1673.9,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Qwen3.8 Max (0902)",
-          "variant": "page_jsonld",
-          "displayRank": 12
-        },
-        "DeepSeek V4.1 Flash 1017 (Max)|gdpvalAaElo:DeepSeek V4.1 Flash 1017 (Max)|page_jsonld": {
-          "model": "DeepSeek V4.1 Flash 1017 (Max)",
-          "score": 1745.77,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:DeepSeek V4.1 Flash 1017 (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 7
-        },
-        "GLM-5.3 (Max)|gdpvalAaElo:GLM-5.3 (Max)|page_jsonld": {
-          "model": "GLM-5.3 (Max)",
-          "score": 1656.88,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:GLM-5.3 (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 13
-        },
-        "Gemini 3.8 Flash (High)|gdpvalAaElo:Gemini 3.8 Flash (High)|page_jsonld": {
-          "model": "Gemini 3.8 Flash (High)",
-          "score": 1445.43,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Gemini 3.8 Flash (High)",
-          "variant": "page_jsonld",
-          "displayRank": 21
-        },
-        "Inkling 2 Small|gdpvalAaElo:Inkling 2 Small|page_jsonld": {
-          "model": "Inkling 2 Small",
-          "score": 1630.23,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Inkling 2 Small",
-          "variant": "page_jsonld",
-          "displayRank": 16
-        },
-        "MiMo-V2.6-Pro|gdpvalAaElo:MiMo-V2.6-Pro|page_jsonld": {
-          "model": "MiMo-V2.6-Pro",
-          "score": 1689.4,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:MiMo-V2.6-Pro",
-          "variant": "page_jsonld",
-          "displayRank": 11
-        },
-        "Ling 3.1 Flash 1019|gdpvalAaElo:Ling 3.1 Flash 1019|page_jsonld": {
-          "model": "Ling 3.1 Flash 1019",
-          "score": 1652.94,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:Ling 3.1 Flash 1019",
-          "variant": "page_jsonld",
-          "displayRank": 14
-        },
-        "MiniMax-M3.1-Flash|gdpvalAaElo:MiniMax-M3.1-Flash|page_jsonld": {
-          "model": "MiniMax-M3.1-Flash",
-          "score": 1465.36,
-          "rank": null,
-          "comparisonKey": "gdpvalAaElo:MiniMax-M3.1-Flash",
+          "comparisonKey": "SciCode: Score:GPT-6.1 Sol (Max)",
           "variant": "page_jsonld",
           "displayRank": 20
         },
-        "GPT-6 Luna (Max)|gdpvalAaElo:GPT-6 Luna (Max)|page_jsonld": {
-          "model": "GPT-6 Luna (Max)",
-          "score": 1444.46,
+        "Claude Sonnet 5.5 (Max, Default Fallback)|SciCode: Score:Claude Sonnet 5.5 (Max, Default Fallback)|page_jsonld": {
+          "model": "Claude Sonnet 5.5 (Max, Default Fallback)",
+          "score": 0.609953703703704,
           "rank": null,
-          "comparisonKey": "gdpvalAaElo:GPT-6 Luna (Max)",
+          "comparisonKey": "SciCode: Score:Claude Sonnet 5.5 (Max, Default Fallback)",
           "variant": "page_jsonld",
-          "displayRank": 22
+          "displayRank": 5
         },
-        "Muse Spark Open (Xhigh)|gdpvalAaElo:Muse Spark Open (Xhigh)|page_jsonld": {
-          "model": "Muse Spark Open (Xhigh)",
-          "score": 1401.12,
+        "GPT-6.1 Terra (Max)|SciCode: Score:GPT-6.1 Terra (Max)|page_jsonld": {
+          "model": "GPT-6.1 Terra (Max)",
+          "score": 0.550925925925926,
           "rank": null,
-          "comparisonKey": "gdpvalAaElo:Muse Spark Open (Xhigh)",
+          "comparisonKey": "SciCode: Score:GPT-6.1 Terra (Max)",
           "variant": "page_jsonld",
-          "displayRank": 24
+          "displayRank": 17
         },
-        "Qwen3.8 27B (Xhigh)|gdpvalAaElo:Qwen3.8 27B (Xhigh)|page_jsonld": {
-          "model": "Qwen3.8 27B (Xhigh)",
-          "score": 1426.73,
+        "Gemini 4 Argon (High)|SciCode: Score:Gemini 4 Argon (High)|page_jsonld": {
+          "model": "Gemini 4 Argon (High)",
+          "score": 0.618055555555556,
           "rank": null,
-          "comparisonKey": "gdpvalAaElo:Qwen3.8 27B (Xhigh)",
+          "comparisonKey": "SciCode: Score:Gemini 4 Argon (High)",
+          "variant": "page_jsonld",
+          "displayRank": 4
+        },
+        "Muse Wonder Full (Max)|SciCode: Score:Muse Wonder Full (Max)|page_jsonld": {
+          "model": "Muse Wonder Full (Max)",
+          "score": 0.626157407407407,
+          "rank": null,
+          "comparisonKey": "SciCode: Score:Muse Wonder Full (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 3
+        },
+        "Claude Fable 5.1 (Max, Default Fallback)|SciCode: Score:Claude Fable 5.1 (Max, Default Fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (Max, Default Fallback)",
+          "score": 0.630787037037037,
+          "rank": null,
+          "comparisonKey": "SciCode: Score:Claude Fable 5.1 (Max, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 2
+        },
+        "Kimi K3.1 Pro|SciCode: Score:Kimi K3.1 Pro|page_jsonld": {
+          "model": "Kimi K3.1 Pro",
+          "score": 0.607638888888889,
+          "rank": null,
+          "comparisonKey": "SciCode: Score:Kimi K3.1 Pro",
+          "variant": "page_jsonld",
+          "displayRank": 8
+        },
+        "Muse Wonder (Max)|SciCode: Score:Muse Wonder (Max)|page_jsonld": {
+          "model": "Muse Wonder (Max)",
+          "score": 0.603009259259259,
+          "rank": null,
+          "comparisonKey": "SciCode: Score:Muse Wonder (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 9
+        },
+        "Claude Haiku 5.5 (Max)|SciCode: Score:Claude Haiku 5.5 (Max)|page_jsonld": {
+          "model": "Claude Haiku 5.5 (Max)",
+          "score": 0.549768518518518,
+          "rank": null,
+          "comparisonKey": "SciCode: Score:Claude Haiku 5.5 (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 18
+        },
+        "Grok 4.7 (Xhigh)|SciCode: Score:Grok 4.7 (Xhigh)|page_jsonld": {
+          "model": "Grok 4.7 (Xhigh)",
+          "score": 0.574074074074074,
+          "rank": null,
+          "comparisonKey": "SciCode: Score:Grok 4.7 (Xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 12
+        },
+        "Qwen3.8 Max (0902)|SciCode: Score:Qwen3.8 Max (0902)|page_jsonld": {
+          "model": "Qwen3.8 Max (0902)",
+          "score": 0.520833333333333,
+          "rank": null,
+          "comparisonKey": "SciCode: Score:Qwen3.8 Max (0902)",
           "variant": "page_jsonld",
           "displayRank": 23
         },
-        "K2 Horizon 375B A23B|gdpvalAaElo:K2 Horizon 375B A23B|page_jsonld": {
-          "model": "K2 Horizon 375B A23B",
-          "score": 1365.05,
+        "DeepSeek V4.1 Flash 1017 (Max)|SciCode: Score:DeepSeek V4.1 Flash 1017 (Max)|page_jsonld": {
+          "model": "DeepSeek V4.1 Flash 1017 (Max)",
+          "score": 0.559027777777778,
           "rank": null,
-          "comparisonKey": "gdpvalAaElo:K2 Horizon 375B A23B",
+          "comparisonKey": "SciCode: Score:DeepSeek V4.1 Flash 1017 (Max)",
           "variant": "page_jsonld",
-          "displayRank": 25
+          "displayRank": 16
         },
-        "Beam 1.0|gdpvalAaElo:Beam 1.0|page_jsonld": {
-          "model": "Beam 1.0",
-          "score": 1177.08,
+        "GLM-5.3 (Max)|SciCode: Score:GLM-5.3 (Max)|page_jsonld": {
+          "model": "GLM-5.3 (Max)",
+          "score": 0.590277777777778,
           "rank": null,
-          "comparisonKey": "gdpvalAaElo:Beam 1.0",
+          "comparisonKey": "SciCode: Score:GLM-5.3 (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 10
+        },
+        "Gemini 3.8 Flash (High)|SciCode: Score:Gemini 3.8 Flash (High)|page_jsonld": {
+          "model": "Gemini 3.8 Flash (High)",
+          "score": 0.565972222222222,
+          "rank": null,
+          "comparisonKey": "SciCode: Score:Gemini 3.8 Flash (High)",
+          "variant": "page_jsonld",
+          "displayRank": 14
+        },
+        "Inkling 2 Small|SciCode: Score:Inkling 2 Small|page_jsonld": {
+          "model": "Inkling 2 Small",
+          "score": 0.523148148148148,
+          "rank": null,
+          "comparisonKey": "SciCode: Score:Inkling 2 Small",
+          "variant": "page_jsonld",
+          "displayRank": 22
+        },
+        "MiMo-V2.6-Pro|SciCode: Score:MiMo-V2.6-Pro|page_jsonld": {
+          "model": "MiMo-V2.6-Pro",
+          "score": 0.608796296296296,
+          "rank": null,
+          "comparisonKey": "SciCode: Score:MiMo-V2.6-Pro",
+          "variant": "page_jsonld",
+          "displayRank": 7
+        },
+        "Ling 3.1 Flash 1019|SciCode: Score:Ling 3.1 Flash 1019|page_jsonld": {
+          "model": "Ling 3.1 Flash 1019",
+          "score": 0.568287037037037,
+          "rank": null,
+          "comparisonKey": "SciCode: Score:Ling 3.1 Flash 1019",
+          "variant": "page_jsonld",
+          "displayRank": 13
+        },
+        "MiniMax-M3.1-Flash|SciCode: Score:MiniMax-M3.1-Flash|page_jsonld": {
+          "model": "MiniMax-M3.1-Flash",
+          "score": 0.533564814814815,
+          "rank": null,
+          "comparisonKey": "SciCode: Score:MiniMax-M3.1-Flash",
+          "variant": "page_jsonld",
+          "displayRank": 21
+        },
+        "GPT-6 Luna (Max)|SciCode: Score:GPT-6 Luna (Max)|page_jsonld": {
+          "model": "GPT-6 Luna (Max)",
+          "score": 0.546296296296296,
+          "rank": null,
+          "comparisonKey": "SciCode: Score:GPT-6 Luna (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 19
+        },
+        "Muse Spark Open (Xhigh)|SciCode: Score:Muse Spark Open (Xhigh)|page_jsonld": {
+          "model": "Muse Spark Open (Xhigh)",
+          "score": 0.584490740740741,
+          "rank": null,
+          "comparisonKey": "SciCode: Score:Muse Spark Open (Xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 11
+        },
+        "Qwen3.8 27B (Xhigh)|SciCode: Score:Qwen3.8 27B (Xhigh)|page_jsonld": {
+          "model": "Qwen3.8 27B (Xhigh)",
+          "score": 0.466435185185185,
+          "rank": null,
+          "comparisonKey": "SciCode: Score:Qwen3.8 27B (Xhigh)",
           "variant": "page_jsonld",
           "displayRank": 26
         },
-        "Nemotron 3.5 Super VL|gdpvalAaElo:Nemotron 3.5 Super VL|page_jsonld": {
-          "model": "Nemotron 3.5 Super VL",
-          "score": 1162.41,
+        "K2 Horizon 375B A23B|SciCode: Score:K2 Horizon 375B A23B|page_jsonld": {
+          "model": "K2 Horizon 375B A23B",
+          "score": 0.429398148148148,
           "rank": null,
-          "comparisonKey": "gdpvalAaElo:Nemotron 3.5 Super VL",
+          "comparisonKey": "SciCode: Score:K2 Horizon 375B A23B",
           "variant": "page_jsonld",
           "displayRank": 27
+        },
+        "Beam 1.0|SciCode: Score:Beam 1.0|page_jsonld": {
+          "model": "Beam 1.0",
+          "score": 0.484953703703704,
+          "rank": null,
+          "comparisonKey": "SciCode: Score:Beam 1.0",
+          "variant": "page_jsonld",
+          "displayRank": 24
+        },
+        "Nemotron 3.5 Super VL|SciCode: Score:Nemotron 3.5 Super VL|page_jsonld": {
+          "model": "Nemotron 3.5 Super VL",
+          "score": 0.478009259259259,
+          "rank": null,
+          "comparisonKey": "SciCode: Score:Nemotron 3.5 Super VL",
+          "variant": "page_jsonld",
+          "displayRank": 25
+        },
+        "Claude Fable 5 (Max, Opus 4.8 Fallback)|SciCode: Score:Claude Fable 5 (Max, Opus 4.8 Fallback)|page_jsonld": {
+          "model": "Claude Fable 5 (Max, Opus 4.8 Fallback)",
+          "score": 0.609953703703704,
+          "rank": null,
+          "comparisonKey": "SciCode: Score:Claude Fable 5 (Max, Opus 4.8 Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 6
+        }
+      }
+    },
+    "critpt": {
+      "runtimeId": "aa_critpt",
+      "familyId": "aa",
+      "title": "CritPt",
+      "release": "page_jsonld",
+      "contentHash": "9224e9b16aa84099b3621a886381de3f0b5de14c94c97a9e2311fa1040f91fb7",
+      "source": {
+        "benchmark_id": "critpt",
+        "status": "enabled",
+        "source_name": "Artificial Analysis CritPt official public Dataset page",
+        "organization": "Artificial Analysis",
+        "source_type": "official_page_endpoint",
+        "official_url": "https://artificialanalysis.ai/evaluations/critpt",
+        "endpoint": "https://artificialanalysis.ai/evaluations/critpt",
+        "fetch_method": "GET",
+        "update_frequency": "daily",
+        "requires_auth": false,
+        "evaluation_field": "CritPt: Score",
+        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
+        "release_tracking": "page_jsonld",
+        "hash_required": true,
+        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
+        "jsonld_name": "CritPt: Score"
+      },
+      "records": {
+        "Claude Opus 5.5 (Max, Default Fallback)|CritPt: Score:Claude Opus 5.5 (Max, Default Fallback)|page_jsonld": {
+          "model": "Claude Opus 5.5 (Max, Default Fallback)",
+          "score": 0.317142857142857,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:Claude Opus 5.5 (Max, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 3
+        },
+        "GPT-6 Astra (Max)|CritPt: Score:GPT-6 Astra (Max)|page_jsonld": {
+          "model": "GPT-6 Astra (Max)",
+          "score": 0.317142857142857,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:GPT-6 Astra (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 4
+        },
+        "GPT-6.1 Sol (Max)|CritPt: Score:GPT-6.1 Sol (Max)|page_jsonld": {
+          "model": "GPT-6.1 Sol (Max)",
+          "score": 0.317142857142857,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:GPT-6.1 Sol (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 5
+        },
+        "Claude Sonnet 5.5 (Max, Default Fallback)|CritPt: Score:Claude Sonnet 5.5 (Max, Default Fallback)|page_jsonld": {
+          "model": "Claude Sonnet 5.5 (Max, Default Fallback)",
+          "score": 0.314285714285714,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:Claude Sonnet 5.5 (Max, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 6
+        },
+        "GPT-6.1 Terra (Max)|CritPt: Score:GPT-6.1 Terra (Max)|page_jsonld": {
+          "model": "GPT-6.1 Terra (Max)",
+          "score": 0.28,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:GPT-6.1 Terra (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 10
+        },
+        "Muse Wonder Full (Max)|CritPt: Score:Muse Wonder Full (Max)|page_jsonld": {
+          "model": "Muse Wonder Full (Max)",
+          "score": 0.328571428571429,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:Muse Wonder Full (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 1
+        },
+        "Claude Fable 5.1 (Max, Default Fallback)|CritPt: Score:Claude Fable 5.1 (Max, Default Fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (Max, Default Fallback)",
+          "score": 0.297142857142857,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:Claude Fable 5.1 (Max, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 8
+        },
+        "Kimi K3.1 Pro|CritPt: Score:Kimi K3.1 Pro|page_jsonld": {
+          "model": "Kimi K3.1 Pro",
+          "score": 0.245714285714286,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:Kimi K3.1 Pro",
+          "variant": "page_jsonld",
+          "displayRank": 13
+        },
+        "GPT-6 Sol (Max)|CritPt: Score:GPT-6 Sol (Max)|page_jsonld": {
+          "model": "GPT-6 Sol (Max)",
+          "score": 0.308571428571429,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:GPT-6 Sol (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 7
+        },
+        "Muse Wonder (Max)|CritPt: Score:Muse Wonder (Max)|page_jsonld": {
+          "model": "Muse Wonder (Max)",
+          "score": 0.282857142857143,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:Muse Wonder (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 9
+        },
+        "Claude Haiku 5.5 (Max)|CritPt: Score:Claude Haiku 5.5 (Max)|page_jsonld": {
+          "model": "Claude Haiku 5.5 (Max)",
+          "score": 0.188571428571429,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:Claude Haiku 5.5 (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 18
+        },
+        "Grok 4.7 (Xhigh)|CritPt: Score:Grok 4.7 (Xhigh)|page_jsonld": {
+          "model": "Grok 4.7 (Xhigh)",
+          "score": 0.177142857142857,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:Grok 4.7 (Xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 20
+        },
+        "Qwen3.8 Max (0902)|CritPt: Score:Qwen3.8 Max (0902)|page_jsonld": {
+          "model": "Qwen3.8 Max (0902)",
+          "score": 0.177142857142857,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:Qwen3.8 Max (0902)",
+          "variant": "page_jsonld",
+          "displayRank": 21
+        },
+        "DeepSeek V4.1 Flash 1017 (Max)|CritPt: Score:DeepSeek V4.1 Flash 1017 (Max)|page_jsonld": {
+          "model": "DeepSeek V4.1 Flash 1017 (Max)",
+          "score": 0.24,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:DeepSeek V4.1 Flash 1017 (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 14
+        },
+        "GLM-5.3 (Max)|CritPt: Score:GLM-5.3 (Max)|page_jsonld": {
+          "model": "GLM-5.3 (Max)",
+          "score": 0.191428571428571,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:GLM-5.3 (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 17
+        },
+        "Gemini 3.8 Flash (High)|CritPt: Score:Gemini 3.8 Flash (High)|page_jsonld": {
+          "model": "Gemini 3.8 Flash (High)",
+          "score": 0.182857142857143,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:Gemini 3.8 Flash (High)",
+          "variant": "page_jsonld",
+          "displayRank": 19
+        },
+        "MiMo-V2.6-Pro|CritPt: Score:MiMo-V2.6-Pro|page_jsonld": {
+          "model": "MiMo-V2.6-Pro",
+          "score": 0.265714285714286,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:MiMo-V2.6-Pro",
+          "variant": "page_jsonld",
+          "displayRank": 11
+        },
+        "Ling 3.1 Flash 1019|CritPt: Score:Ling 3.1 Flash 1019|page_jsonld": {
+          "model": "Ling 3.1 Flash 1019",
+          "score": 0.26,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:Ling 3.1 Flash 1019",
+          "variant": "page_jsonld",
+          "displayRank": 12
+        },
+        "MiniMax-M3.1-Flash|CritPt: Score:MiniMax-M3.1-Flash|page_jsonld": {
+          "model": "MiniMax-M3.1-Flash",
+          "score": 0.222857142857143,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:MiniMax-M3.1-Flash",
+          "variant": "page_jsonld",
+          "displayRank": 15
+        },
+        "GPT-6 Luna (Max)|CritPt: Score:GPT-6 Luna (Max)|page_jsonld": {
+          "model": "GPT-6 Luna (Max)",
+          "score": 0.194285714285714,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:GPT-6 Luna (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 16
+        },
+        "Mistral Large 4 (High)|CritPt: Score:Mistral Large 4 (High)|page_jsonld": {
+          "model": "Mistral Large 4 (High)",
+          "score": 0.1,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:Mistral Large 4 (High)",
+          "variant": "page_jsonld",
+          "displayRank": 25
+        },
+        "Muse Spark Open (Xhigh)|CritPt: Score:Muse Spark Open (Xhigh)|page_jsonld": {
+          "model": "Muse Spark Open (Xhigh)",
+          "score": 0.148571428571429,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:Muse Spark Open (Xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 22
+        },
+        "Qwen3.8 27B (Xhigh)|CritPt: Score:Qwen3.8 27B (Xhigh)|page_jsonld": {
+          "model": "Qwen3.8 27B (Xhigh)",
+          "score": 0.0542857142857143,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:Qwen3.8 27B (Xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 26
+        },
+        "K2 Horizon 375B A23B|CritPt: Score:K2 Horizon 375B A23B|page_jsonld": {
+          "model": "K2 Horizon 375B A23B",
+          "score": 0.0457142857142857,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:K2 Horizon 375B A23B",
+          "variant": "page_jsonld",
+          "displayRank": 27
+        },
+        "Beam 1.0|CritPt: Score:Beam 1.0|page_jsonld": {
+          "model": "Beam 1.0",
+          "score": 0.131428571428571,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:Beam 1.0",
+          "variant": "page_jsonld",
+          "displayRank": 23
+        },
+        "Nemotron 3.5 Super VL|CritPt: Score:Nemotron 3.5 Super VL|page_jsonld": {
+          "model": "Nemotron 3.5 Super VL",
+          "score": 0.105714285714286,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:Nemotron 3.5 Super VL",
+          "variant": "page_jsonld",
+          "displayRank": 24
+        },
+        "GPT-5.6 Sol (Max)|CritPt: Score:GPT-5.6 Sol (Max)|page_jsonld": {
+          "model": "GPT-5.6 Sol (Max)",
+          "score": 0.322857142857143,
+          "rank": null,
+          "comparisonKey": "CritPt: Score:GPT-5.6 Sol (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 2
         }
       }
     },
@@ -6508,6 +6265,249 @@
           "comparisonKey": "Terminal-Bench Hard: Score:KAT Coder Pro V2",
           "variant": "page_jsonld",
           "displayRank": 14
+        }
+      }
+    },
+    "gdpval_aa_elo": {
+      "runtimeId": "aa_gdpval_elo",
+      "familyId": "aa",
+      "title": "GDPval-AA Elo",
+      "release": "page_jsonld",
+      "contentHash": "8903df636a6fa694b1874fc412e90135a15d62ec0b97bd29ee33dcd2235a423c",
+      "source": {
+        "benchmark_id": "gdpval_aa_elo",
+        "status": "enabled",
+        "source_name": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+        "organization": "Artificial Analysis",
+        "source_type": "official_page_endpoint",
+        "official_url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "endpoint": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "fetch_method": "GET",
+        "update_frequency": "daily",
+        "requires_auth": false,
+        "evaluation_field": "gdpvalAaElo",
+        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
+        "release_tracking": "page_jsonld",
+        "hash_required": true,
+        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
+        "jsonld_name": "GDPval-AA v2.1 Leaderboard"
+      },
+      "records": {
+        "Gemini 4 Carbon (High)|gdpvalAaElo:Gemini 4 Carbon (High)|page_jsonld": {
+          "model": "Gemini 4 Carbon (High)",
+          "score": 1732.68,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Gemini 4 Carbon (High)",
+          "variant": "page_jsonld",
+          "displayRank": 8
+        },
+        "Claude Opus 5.5 (Max, Default Fallback)|gdpvalAaElo:Claude Opus 5.5 (Max, Default Fallback)|page_jsonld": {
+          "model": "Claude Opus 5.5 (Max, Default Fallback)",
+          "score": 1866.27,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Claude Opus 5.5 (Max, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 1
+        },
+        "GPT-6 Astra (Max)|gdpvalAaElo:GPT-6 Astra (Max)|page_jsonld": {
+          "model": "GPT-6 Astra (Max)",
+          "score": 1583.69,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:GPT-6 Astra (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 18
+        },
+        "GPT-6.1 Sol (Max)|gdpvalAaElo:GPT-6.1 Sol (Max)|page_jsonld": {
+          "model": "GPT-6.1 Sol (Max)",
+          "score": 1608.89,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:GPT-6.1 Sol (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 17
+        },
+        "Claude Sonnet 5.5 (Max, Default Fallback)|gdpvalAaElo:Claude Sonnet 5.5 (Max, Default Fallback)|page_jsonld": {
+          "model": "Claude Sonnet 5.5 (Max, Default Fallback)",
+          "score": 1837.82,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Claude Sonnet 5.5 (Max, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 4
+        },
+        "GPT-6.1 Terra (Max)|gdpvalAaElo:GPT-6.1 Terra (Max)|page_jsonld": {
+          "model": "GPT-6.1 Terra (Max)",
+          "score": 1475.63,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:GPT-6.1 Terra (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 19
+        },
+        "Muse Wonder Full (Max)|gdpvalAaElo:Muse Wonder Full (Max)|page_jsonld": {
+          "model": "Muse Wonder Full (Max)",
+          "score": 1857.09,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Muse Wonder Full (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 3
+        },
+        "Claude Fable 5.1 (Max, Default Fallback)|gdpvalAaElo:Claude Fable 5.1 (Max, Default Fallback)|page_jsonld": {
+          "model": "Claude Fable 5.1 (Max, Default Fallback)",
+          "score": 1763.29,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Claude Fable 5.1 (Max, Default Fallback)",
+          "variant": "page_jsonld",
+          "displayRank": 6
+        },
+        "Kimi K3.1 Pro|gdpvalAaElo:Kimi K3.1 Pro|page_jsonld": {
+          "model": "Kimi K3.1 Pro",
+          "score": 1858.05,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Kimi K3.1 Pro",
+          "variant": "page_jsonld",
+          "displayRank": 2
+        },
+        "Claude Opus 5 (Max)|gdpvalAaElo:Claude Opus 5 (Max)|page_jsonld": {
+          "model": "Claude Opus 5 (Max)",
+          "score": 1729.9,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Claude Opus 5 (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 9
+        },
+        "Muse Wonder (Max)|gdpvalAaElo:Muse Wonder (Max)|page_jsonld": {
+          "model": "Muse Wonder (Max)",
+          "score": 1770.34,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Muse Wonder (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 5
+        },
+        "Claude Haiku 5.5 (Max)|gdpvalAaElo:Claude Haiku 5.5 (Max)|page_jsonld": {
+          "model": "Claude Haiku 5.5 (Max)",
+          "score": 1630.83,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Claude Haiku 5.5 (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 15
+        },
+        "Grok 4.7 (Xhigh)|gdpvalAaElo:Grok 4.7 (Xhigh)|page_jsonld": {
+          "model": "Grok 4.7 (Xhigh)",
+          "score": 1718.42,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Grok 4.7 (Xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 10
+        },
+        "Qwen3.8 Max (0902)|gdpvalAaElo:Qwen3.8 Max (0902)|page_jsonld": {
+          "model": "Qwen3.8 Max (0902)",
+          "score": 1673.9,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Qwen3.8 Max (0902)",
+          "variant": "page_jsonld",
+          "displayRank": 12
+        },
+        "DeepSeek V4.1 Flash 1017 (Max)|gdpvalAaElo:DeepSeek V4.1 Flash 1017 (Max)|page_jsonld": {
+          "model": "DeepSeek V4.1 Flash 1017 (Max)",
+          "score": 1745.77,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:DeepSeek V4.1 Flash 1017 (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 7
+        },
+        "GLM-5.3 (Max)|gdpvalAaElo:GLM-5.3 (Max)|page_jsonld": {
+          "model": "GLM-5.3 (Max)",
+          "score": 1656.88,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:GLM-5.3 (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 13
+        },
+        "Gemini 3.8 Flash (High)|gdpvalAaElo:Gemini 3.8 Flash (High)|page_jsonld": {
+          "model": "Gemini 3.8 Flash (High)",
+          "score": 1445.43,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Gemini 3.8 Flash (High)",
+          "variant": "page_jsonld",
+          "displayRank": 21
+        },
+        "Inkling 2 Small|gdpvalAaElo:Inkling 2 Small|page_jsonld": {
+          "model": "Inkling 2 Small",
+          "score": 1630.23,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Inkling 2 Small",
+          "variant": "page_jsonld",
+          "displayRank": 16
+        },
+        "MiMo-V2.6-Pro|gdpvalAaElo:MiMo-V2.6-Pro|page_jsonld": {
+          "model": "MiMo-V2.6-Pro",
+          "score": 1689.4,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:MiMo-V2.6-Pro",
+          "variant": "page_jsonld",
+          "displayRank": 11
+        },
+        "Ling 3.1 Flash 1019|gdpvalAaElo:Ling 3.1 Flash 1019|page_jsonld": {
+          "model": "Ling 3.1 Flash 1019",
+          "score": 1652.94,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Ling 3.1 Flash 1019",
+          "variant": "page_jsonld",
+          "displayRank": 14
+        },
+        "MiniMax-M3.1-Flash|gdpvalAaElo:MiniMax-M3.1-Flash|page_jsonld": {
+          "model": "MiniMax-M3.1-Flash",
+          "score": 1465.36,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:MiniMax-M3.1-Flash",
+          "variant": "page_jsonld",
+          "displayRank": 20
+        },
+        "GPT-6 Luna (Max)|gdpvalAaElo:GPT-6 Luna (Max)|page_jsonld": {
+          "model": "GPT-6 Luna (Max)",
+          "score": 1444.46,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:GPT-6 Luna (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 22
+        },
+        "Muse Spark Open (Xhigh)|gdpvalAaElo:Muse Spark Open (Xhigh)|page_jsonld": {
+          "model": "Muse Spark Open (Xhigh)",
+          "score": 1401.12,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Muse Spark Open (Xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 24
+        },
+        "Qwen3.8 27B (Xhigh)|gdpvalAaElo:Qwen3.8 27B (Xhigh)|page_jsonld": {
+          "model": "Qwen3.8 27B (Xhigh)",
+          "score": 1426.73,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Qwen3.8 27B (Xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 23
+        },
+        "K2 Horizon 375B A23B|gdpvalAaElo:K2 Horizon 375B A23B|page_jsonld": {
+          "model": "K2 Horizon 375B A23B",
+          "score": 1365.05,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:K2 Horizon 375B A23B",
+          "variant": "page_jsonld",
+          "displayRank": 25
+        },
+        "Beam 1.0|gdpvalAaElo:Beam 1.0|page_jsonld": {
+          "model": "Beam 1.0",
+          "score": 1177.08,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Beam 1.0",
+          "variant": "page_jsonld",
+          "displayRank": 26
+        },
+        "Nemotron 3.5 Super VL|gdpvalAaElo:Nemotron 3.5 Super VL|page_jsonld": {
+          "model": "Nemotron 3.5 Super VL",
+          "score": 1162.41,
+          "rank": null,
+          "comparisonKey": "gdpvalAaElo:Nemotron 3.5 Super VL",
+          "variant": "page_jsonld",
+          "displayRank": 27
         }
       }
     },
@@ -6997,249 +6997,6 @@
         }
       }
     },
-    "ifbench": {
-      "runtimeId": "aa_ifbench",
-      "familyId": "aa",
-      "title": "IFBench",
-      "release": "page_jsonld",
-      "contentHash": "91a810074bd250e5d05ccbfc4238385a3cbd326dd62c4fdb3ea483108d8b5279",
-      "source": {
-        "benchmark_id": "ifbench",
-        "status": "enabled",
-        "source_name": "Artificial Analysis IFBench official public Dataset page",
-        "organization": "Artificial Analysis",
-        "source_type": "official_page_endpoint",
-        "official_url": "https://artificialanalysis.ai/evaluations/ifbench",
-        "endpoint": "https://artificialanalysis.ai/evaluations/ifbench",
-        "fetch_method": "GET",
-        "update_frequency": "daily",
-        "requires_auth": false,
-        "evaluation_field": "IFBench: Score",
-        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
-        "release_tracking": "page_jsonld",
-        "hash_required": true,
-        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
-        "jsonld_name": "IFBench: Score"
-      },
-      "records": {
-        "MiniMax-M3|IFBench: Score:MiniMax-M3|page_jsonld": {
-          "model": "MiniMax-M3",
-          "score": 0.828571428571429,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:MiniMax-M3",
-          "variant": "page_jsonld",
-          "displayRank": 3
-        },
-        "Nemotron 3 Ultra 550B A55B (Reasoning)|IFBench: Score:Nemotron 3 Ultra 550B A55B (Reasoning)|page_jsonld": {
-          "model": "Nemotron 3 Ultra 550B A55B (Reasoning)",
-          "score": 0.813605442176871,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Nemotron 3 Ultra 550B A55B (Reasoning)",
-          "variant": "page_jsonld",
-          "displayRank": 4
-        },
-        "Gemini 3.1 Flash-Lite|IFBench: Score:Gemini 3.1 Flash-Lite|page_jsonld": {
-          "model": "Gemini 3.1 Flash-Lite",
-          "score": 0.772108843537415,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Gemini 3.1 Flash-Lite",
-          "variant": "page_jsonld",
-          "displayRank": 15
-        },
-        "Gemma 4 31B (Reasoning)|IFBench: Score:Gemma 4 31B (Reasoning)|page_jsonld": {
-          "model": "Gemma 4 31B (Reasoning)",
-          "score": 0.75578231292517,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Gemma 4 31B (Reasoning)",
-          "variant": "page_jsonld",
-          "displayRank": 27
-        },
-        "Gemini 3.5 Flash (High)|IFBench: Score:Gemini 3.5 Flash (High)|page_jsonld": {
-          "model": "Gemini 3.5 Flash (High)",
-          "score": 0.763265306122449,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Gemini 3.5 Flash (High)",
-          "variant": "page_jsonld",
-          "displayRank": 19
-        },
-        "MiMo-V2.5-Pro (Reasoning)|IFBench: Score:MiMo-V2.5-Pro (Reasoning)|page_jsonld": {
-          "model": "MiMo-V2.5-Pro (Reasoning)",
-          "score": 0.798639455782313,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:MiMo-V2.5-Pro (Reasoning)",
-          "variant": "page_jsonld",
-          "displayRank": 8
-        },
-        "GPT-5.2 Codex (Xhigh)|IFBench: Score:GPT-5.2 Codex (Xhigh)|page_jsonld": {
-          "model": "GPT-5.2 Codex (Xhigh)",
-          "score": 0.776190476190476,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:GPT-5.2 Codex (Xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 14
-        },
-        "Grok 4.20 0309 (Reasoning)|IFBench: Score:Grok 4.20 0309 (Reasoning)|page_jsonld": {
-          "model": "Grok 4.20 0309 (Reasoning)",
-          "score": 0.829251700680272,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Grok 4.20 0309 (Reasoning)",
-          "variant": "page_jsonld",
-          "displayRank": 2
-        },
-        "Kimi K2.6 (Reasoning)|IFBench: Score:Kimi K2.6 (Reasoning)|page_jsonld": {
-          "model": "Kimi K2.6 (Reasoning)",
-          "score": 0.759863945578231,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Kimi K2.6 (Reasoning)",
-          "variant": "page_jsonld",
-          "displayRank": 21
-        },
-        "Qwen3.5 397B A17B (Reasoning)|IFBench: Score:Qwen3.5 397B A17B (Reasoning)|page_jsonld": {
-          "model": "Qwen3.5 397B A17B (Reasoning)",
-          "score": 0.787755102040816,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Qwen3.5 397B A17B (Reasoning)",
-          "variant": "page_jsonld",
-          "displayRank": 11
-        },
-        "GPT-5.5 (Xhigh)|IFBench: Score:GPT-5.5 (Xhigh)|page_jsonld": {
-          "model": "GPT-5.5 (Xhigh)",
-          "score": 0.758503401360544,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:GPT-5.5 (Xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 24
-        },
-        "Qwen3.5 122B A10B (Reasoning)|IFBench: Score:Qwen3.5 122B A10B (Reasoning)|page_jsonld": {
-          "model": "Qwen3.5 122B A10B (Reasoning)",
-          "score": 0.757142857142857,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Qwen3.5 122B A10B (Reasoning)",
-          "variant": "page_jsonld",
-          "displayRank": 25
-        },
-        "MiniMax-M2.7|IFBench: Score:MiniMax-M2.7|page_jsonld": {
-          "model": "MiniMax-M2.7",
-          "score": 0.757142857142857,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:MiniMax-M2.7",
-          "variant": "page_jsonld",
-          "displayRank": 26
-        },
-        "GLM-5.1 (Reasoning)|IFBench: Score:GLM-5.1 (Reasoning)|page_jsonld": {
-          "model": "GLM-5.1 (Reasoning)",
-          "score": 0.762585034013605,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:GLM-5.1 (Reasoning)",
-          "variant": "page_jsonld",
-          "displayRank": 20
-        },
-        "Grok 4.3 (Medium)|IFBench: Score:Grok 4.3 (Medium)|page_jsonld": {
-          "model": "Grok 4.3 (Medium)",
-          "score": 0.833333333333333,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Grok 4.3 (Medium)",
-          "variant": "page_jsonld",
-          "displayRank": 1
-        },
-        "Qwen3.6 Max Preview|IFBench: Score:Qwen3.6 Max Preview|page_jsonld": {
-          "model": "Qwen3.6 Max Preview",
-          "score": 0.765986394557823,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Qwen3.6 Max Preview",
-          "variant": "page_jsonld",
-          "displayRank": 17
-        },
-        "Qwen3.7 Max|IFBench: Score:Qwen3.7 Max|page_jsonld": {
-          "model": "Qwen3.7 Max",
-          "score": 0.805442176870748,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Qwen3.7 Max",
-          "variant": "page_jsonld",
-          "displayRank": 6
-        },
-        "Gemini 3 Flash Preview (Reasoning)|IFBench: Score:Gemini 3 Flash Preview (Reasoning)|page_jsonld": {
-          "model": "Gemini 3 Flash Preview (Reasoning)",
-          "score": 0.779591836734694,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Gemini 3 Flash Preview (Reasoning)",
-          "variant": "page_jsonld",
-          "displayRank": 12
-        },
-        "Nemotron Cascade 2 30B A3B|IFBench: Score:Nemotron Cascade 2 30B A3B|page_jsonld": {
-          "model": "Nemotron Cascade 2 30B A3B",
-          "score": 0.804081632653061,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Nemotron Cascade 2 30B A3B",
-          "variant": "page_jsonld",
-          "displayRank": 7
-        },
-        "Qwen3.7 Plus|IFBench: Score:Qwen3.7 Plus|page_jsonld": {
-          "model": "Qwen3.7 Plus",
-          "score": 0.779591836734694,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Qwen3.7 Plus",
-          "variant": "page_jsonld",
-          "displayRank": 13
-        },
-        "Gemini 3.1 Pro Preview|IFBench: Score:Gemini 3.1 Pro Preview|page_jsonld": {
-          "model": "Gemini 3.1 Pro Preview",
-          "score": 0.771428571428571,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Gemini 3.1 Pro Preview",
-          "variant": "page_jsonld",
-          "displayRank": 16
-        },
-        "DeepSeek V4 Pro 0424 (Max)|IFBench: Score:DeepSeek V4 Pro 0424 (Max)|page_jsonld": {
-          "model": "DeepSeek V4 Pro 0424 (Max)",
-          "score": 0.764625850340136,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:DeepSeek V4 Pro 0424 (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 18
-        },
-        "Grok 4.20 0309 v2 (Reasoning)|IFBench: Score:Grok 4.20 0309 v2 (Reasoning)|page_jsonld": {
-          "model": "Grok 4.20 0309 v2 (Reasoning)",
-          "score": 0.812244897959184,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Grok 4.20 0309 v2 (Reasoning)",
-          "variant": "page_jsonld",
-          "displayRank": 5
-        },
-        "GPT-5.4 nano (Xhigh)|IFBench: Score:GPT-5.4 nano (Xhigh)|page_jsonld": {
-          "model": "GPT-5.4 nano (Xhigh)",
-          "score": 0.759183673469388,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:GPT-5.4 nano (Xhigh)",
-          "variant": "page_jsonld",
-          "displayRank": 22
-        },
-        "DeepSeek V4 Flash 0420 (Max)|IFBench: Score:DeepSeek V4 Flash 0420 (Max)|page_jsonld": {
-          "model": "DeepSeek V4 Flash 0420 (Max)",
-          "score": 0.791836734693877,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:DeepSeek V4 Flash 0420 (Max)",
-          "variant": "page_jsonld",
-          "displayRank": 10
-        },
-        "Muse Spark|IFBench: Score:Muse Spark|page_jsonld": {
-          "model": "Muse Spark",
-          "score": 0.759183673469388,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Muse Spark",
-          "variant": "page_jsonld",
-          "displayRank": 23
-        },
-        "Nova 2.0 Pro Preview (Low)|IFBench: Score:Nova 2.0 Pro Preview (Low)|page_jsonld": {
-          "model": "Nova 2.0 Pro Preview (Low)",
-          "score": 0.795918367346939,
-          "rank": null,
-          "comparisonKey": "IFBench: Score:Nova 2.0 Pro Preview (Low)",
-          "variant": "page_jsonld",
-          "displayRank": 9
-        }
-      }
-    },
     "mlcr_overall": {
       "runtimeId": "aa_mlcr_overall",
       "familyId": "aa",
@@ -7707,6 +7464,249 @@
           "comparisonKey": "Artificial Analysis Openness Index: Score:K2-V2 (Medium)",
           "variant": "page_jsonld",
           "displayRank": 11
+        }
+      }
+    },
+    "ifbench": {
+      "runtimeId": "aa_ifbench",
+      "familyId": "aa",
+      "title": "IFBench",
+      "release": "page_jsonld",
+      "contentHash": "91a810074bd250e5d05ccbfc4238385a3cbd326dd62c4fdb3ea483108d8b5279",
+      "source": {
+        "benchmark_id": "ifbench",
+        "status": "enabled",
+        "source_name": "Artificial Analysis IFBench official public Dataset page",
+        "organization": "Artificial Analysis",
+        "source_type": "official_page_endpoint",
+        "official_url": "https://artificialanalysis.ai/evaluations/ifbench",
+        "endpoint": "https://artificialanalysis.ai/evaluations/ifbench",
+        "fetch_method": "GET",
+        "update_frequency": "daily",
+        "requires_auth": false,
+        "evaluation_field": "IFBench: Score",
+        "evidence_url": "https://artificialanalysis.ai/api/v2/openapi",
+        "release_tracking": "page_jsonld",
+        "hash_required": true,
+        "notes": "Public official Dataset JSON-LD page; no API key required. Page contract changes fail closed.",
+        "jsonld_name": "IFBench: Score"
+      },
+      "records": {
+        "MiniMax-M3|IFBench: Score:MiniMax-M3|page_jsonld": {
+          "model": "MiniMax-M3",
+          "score": 0.828571428571429,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:MiniMax-M3",
+          "variant": "page_jsonld",
+          "displayRank": 3
+        },
+        "Nemotron 3 Ultra 550B A55B (Reasoning)|IFBench: Score:Nemotron 3 Ultra 550B A55B (Reasoning)|page_jsonld": {
+          "model": "Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "score": 0.813605442176871,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Nemotron 3 Ultra 550B A55B (Reasoning)",
+          "variant": "page_jsonld",
+          "displayRank": 4
+        },
+        "Gemini 3.1 Flash-Lite|IFBench: Score:Gemini 3.1 Flash-Lite|page_jsonld": {
+          "model": "Gemini 3.1 Flash-Lite",
+          "score": 0.772108843537415,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Gemini 3.1 Flash-Lite",
+          "variant": "page_jsonld",
+          "displayRank": 15
+        },
+        "Gemma 4 31B (Reasoning)|IFBench: Score:Gemma 4 31B (Reasoning)|page_jsonld": {
+          "model": "Gemma 4 31B (Reasoning)",
+          "score": 0.75578231292517,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Gemma 4 31B (Reasoning)",
+          "variant": "page_jsonld",
+          "displayRank": 27
+        },
+        "Gemini 3.5 Flash (High)|IFBench: Score:Gemini 3.5 Flash (High)|page_jsonld": {
+          "model": "Gemini 3.5 Flash (High)",
+          "score": 0.763265306122449,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Gemini 3.5 Flash (High)",
+          "variant": "page_jsonld",
+          "displayRank": 19
+        },
+        "MiMo-V2.5-Pro (Reasoning)|IFBench: Score:MiMo-V2.5-Pro (Reasoning)|page_jsonld": {
+          "model": "MiMo-V2.5-Pro (Reasoning)",
+          "score": 0.798639455782313,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:MiMo-V2.5-Pro (Reasoning)",
+          "variant": "page_jsonld",
+          "displayRank": 8
+        },
+        "GPT-5.2 Codex (Xhigh)|IFBench: Score:GPT-5.2 Codex (Xhigh)|page_jsonld": {
+          "model": "GPT-5.2 Codex (Xhigh)",
+          "score": 0.776190476190476,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:GPT-5.2 Codex (Xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 14
+        },
+        "Grok 4.20 0309 (Reasoning)|IFBench: Score:Grok 4.20 0309 (Reasoning)|page_jsonld": {
+          "model": "Grok 4.20 0309 (Reasoning)",
+          "score": 0.829251700680272,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Grok 4.20 0309 (Reasoning)",
+          "variant": "page_jsonld",
+          "displayRank": 2
+        },
+        "Kimi K2.6 (Reasoning)|IFBench: Score:Kimi K2.6 (Reasoning)|page_jsonld": {
+          "model": "Kimi K2.6 (Reasoning)",
+          "score": 0.759863945578231,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Kimi K2.6 (Reasoning)",
+          "variant": "page_jsonld",
+          "displayRank": 21
+        },
+        "Qwen3.5 397B A17B (Reasoning)|IFBench: Score:Qwen3.5 397B A17B (Reasoning)|page_jsonld": {
+          "model": "Qwen3.5 397B A17B (Reasoning)",
+          "score": 0.787755102040816,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Qwen3.5 397B A17B (Reasoning)",
+          "variant": "page_jsonld",
+          "displayRank": 11
+        },
+        "GPT-5.5 (Xhigh)|IFBench: Score:GPT-5.5 (Xhigh)|page_jsonld": {
+          "model": "GPT-5.5 (Xhigh)",
+          "score": 0.758503401360544,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:GPT-5.5 (Xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 24
+        },
+        "Qwen3.5 122B A10B (Reasoning)|IFBench: Score:Qwen3.5 122B A10B (Reasoning)|page_jsonld": {
+          "model": "Qwen3.5 122B A10B (Reasoning)",
+          "score": 0.757142857142857,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Qwen3.5 122B A10B (Reasoning)",
+          "variant": "page_jsonld",
+          "displayRank": 25
+        },
+        "MiniMax-M2.7|IFBench: Score:MiniMax-M2.7|page_jsonld": {
+          "model": "MiniMax-M2.7",
+          "score": 0.757142857142857,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:MiniMax-M2.7",
+          "variant": "page_jsonld",
+          "displayRank": 26
+        },
+        "GLM-5.1 (Reasoning)|IFBench: Score:GLM-5.1 (Reasoning)|page_jsonld": {
+          "model": "GLM-5.1 (Reasoning)",
+          "score": 0.762585034013605,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:GLM-5.1 (Reasoning)",
+          "variant": "page_jsonld",
+          "displayRank": 20
+        },
+        "Grok 4.3 (Medium)|IFBench: Score:Grok 4.3 (Medium)|page_jsonld": {
+          "model": "Grok 4.3 (Medium)",
+          "score": 0.833333333333333,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Grok 4.3 (Medium)",
+          "variant": "page_jsonld",
+          "displayRank": 1
+        },
+        "Qwen3.6 Max Preview|IFBench: Score:Qwen3.6 Max Preview|page_jsonld": {
+          "model": "Qwen3.6 Max Preview",
+          "score": 0.765986394557823,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Qwen3.6 Max Preview",
+          "variant": "page_jsonld",
+          "displayRank": 17
+        },
+        "Qwen3.7 Max|IFBench: Score:Qwen3.7 Max|page_jsonld": {
+          "model": "Qwen3.7 Max",
+          "score": 0.805442176870748,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Qwen3.7 Max",
+          "variant": "page_jsonld",
+          "displayRank": 6
+        },
+        "Gemini 3 Flash Preview (Reasoning)|IFBench: Score:Gemini 3 Flash Preview (Reasoning)|page_jsonld": {
+          "model": "Gemini 3 Flash Preview (Reasoning)",
+          "score": 0.779591836734694,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Gemini 3 Flash Preview (Reasoning)",
+          "variant": "page_jsonld",
+          "displayRank": 12
+        },
+        "Nemotron Cascade 2 30B A3B|IFBench: Score:Nemotron Cascade 2 30B A3B|page_jsonld": {
+          "model": "Nemotron Cascade 2 30B A3B",
+          "score": 0.804081632653061,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Nemotron Cascade 2 30B A3B",
+          "variant": "page_jsonld",
+          "displayRank": 7
+        },
+        "Qwen3.7 Plus|IFBench: Score:Qwen3.7 Plus|page_jsonld": {
+          "model": "Qwen3.7 Plus",
+          "score": 0.779591836734694,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Qwen3.7 Plus",
+          "variant": "page_jsonld",
+          "displayRank": 13
+        },
+        "Gemini 3.1 Pro Preview|IFBench: Score:Gemini 3.1 Pro Preview|page_jsonld": {
+          "model": "Gemini 3.1 Pro Preview",
+          "score": 0.771428571428571,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Gemini 3.1 Pro Preview",
+          "variant": "page_jsonld",
+          "displayRank": 16
+        },
+        "DeepSeek V4 Pro 0424 (Max)|IFBench: Score:DeepSeek V4 Pro 0424 (Max)|page_jsonld": {
+          "model": "DeepSeek V4 Pro 0424 (Max)",
+          "score": 0.764625850340136,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:DeepSeek V4 Pro 0424 (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 18
+        },
+        "Grok 4.20 0309 v2 (Reasoning)|IFBench: Score:Grok 4.20 0309 v2 (Reasoning)|page_jsonld": {
+          "model": "Grok 4.20 0309 v2 (Reasoning)",
+          "score": 0.812244897959184,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Grok 4.20 0309 v2 (Reasoning)",
+          "variant": "page_jsonld",
+          "displayRank": 5
+        },
+        "GPT-5.4 nano (Xhigh)|IFBench: Score:GPT-5.4 nano (Xhigh)|page_jsonld": {
+          "model": "GPT-5.4 nano (Xhigh)",
+          "score": 0.759183673469388,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:GPT-5.4 nano (Xhigh)",
+          "variant": "page_jsonld",
+          "displayRank": 22
+        },
+        "DeepSeek V4 Flash 0420 (Max)|IFBench: Score:DeepSeek V4 Flash 0420 (Max)|page_jsonld": {
+          "model": "DeepSeek V4 Flash 0420 (Max)",
+          "score": 0.791836734693877,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:DeepSeek V4 Flash 0420 (Max)",
+          "variant": "page_jsonld",
+          "displayRank": 10
+        },
+        "Muse Spark|IFBench: Score:Muse Spark|page_jsonld": {
+          "model": "Muse Spark",
+          "score": 0.759183673469388,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Muse Spark",
+          "variant": "page_jsonld",
+          "displayRank": 23
+        },
+        "Nova 2.0 Pro Preview (Low)|IFBench: Score:Nova 2.0 Pro Preview (Low)|page_jsonld": {
+          "model": "Nova 2.0 Pro Preview (Low)",
+          "score": 0.795918367346939,
+          "rank": null,
+          "comparisonKey": "IFBench: Score:Nova 2.0 Pro Preview (Low)",
+          "variant": "page_jsonld",
+          "displayRank": 9
         }
       }
     },

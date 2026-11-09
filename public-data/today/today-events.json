@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
   "generatedAt": "2026-11-08T01:27:02Z",
-  "windowStart": "2026-11-07T14:30:30Z",
+  "windowStart": "2026-11-07T22:38:47Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
