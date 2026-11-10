@@ -1,8 +1,467 @@
 {
   "schemaVersion": 1,
-  "latestArchiveDate": "2026-11-09",
-  "eventCount": 246,
+  "latestArchiveDate": "2026-11-10",
+  "eventCount": 247,
   "events": [
+    {
+      "event_id": "sglang-paged-experts-empty-pagein-github-2026-11-10",
+      "event_type": "github",
+      "title": "SGLang 分页专家以整块决策跳过空页换入",
+      "org": "SGLang",
+      "model": "Paged Experts",
+      "summary": "SGLang 优化分页专家的设备侧换入流程，将每个线程重复判断是否需要复制改为线程块统一决策，并在本轮没有缺失专家时直接跳过主机到设备的页面搬运。驻留选择、槽位分配和路由输入仍在 GPU 上完成，因此可继续被 CUDA Graph 捕获。该变化减少命中率高时的空操作和同步成本；提交未提供模型级收益。",
+      "key_points": [
+        "线程块统一决定是否执行专家换入",
+        "没有缺失专家时跳过页面搬运",
+        "保留设备侧驻留选择和 CUDA Graph 兼容"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "SGLang GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交重构分页专家 decide 与 gather 内核并加入空换入快速路径。"
+      ],
+      "published_at": "2026-11-10T10:48:45+08:00",
+      "collected_at": "2026-11-10T11:05:00+08:00"
+    },
+    {
+      "event_id": "vllm-kimi-k3-1-rocm-tp8-specialized-decode-github-2026-11-10",
+      "event_type": "github",
+      "title": "vLLM 扩展 Kimi K3.1 专用解码与 ROCm TP8 支持",
+      "org": "vLLM",
+      "model": "Kimi K3.1",
+      "summary": "vLLM 继续完善 Kimi K3.1 推理栈，加入 NVIDIA 专用解码路径，并补齐 AMD 侧 MXFP4 索引器、稀疏注意力缓存隔离和 ROCm 张量并行八路支持。实现增加图安全的行范围选择与相邻缓存保护测试，使同一模型可在两类加速器上使用针对性内核；提交未公布统一吞吐数据。",
+      "key_points": [
+        "加入 NVIDIA 专用解码路径",
+        "AMD 侧新增 MXFP4 索引与缓存隔离实现",
+        "ROCm 支持张量并行八路部署"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 3,
+      "sources": [
+        {
+          "name": "vLLM GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交增加 Kimi K3.1 NVIDIA 与 AMD 模型代码、gfx950 测试及 ROCm TP8 配置。"
+      ],
+      "published_at": "2026-11-10T10:23:04+08:00",
+      "collected_at": "2026-11-10T11:05:00+08:00"
+    },
+    {
+      "event_id": "vllm-deepseek-v4-1-umbp-standalone-github-2026-11-10",
+      "event_type": "github",
+      "title": "vLLM 为 DeepSeek V4.1 Flash 启用 UMBP 独立缓存模式",
+      "org": "vLLM",
+      "model": "DeepSeek V4.1 Flash",
+      "summary": "vLLM 让 DeepSeek V4.1 Flash 可直接使用 UMBP 独立缓存服务，并对张量并行中各副本相同的 MLA 潜变量进行去重：仅由零号分片写入，其他分片共享读取。缓存键同时纳入模型配置、布局和并行拓扑，防止不兼容数据串用。该变化可降低共享缓存容量消耗，但官方未披露命中率或延迟结果。",
+      "key_points": [
+        "DeepSeek V4.1 Flash 支持 UMBP 独立模式",
+        "张量并行副本相同的 KV 数据仅存一份",
+        "缓存键包含布局与并行拓扑以隔离数据"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "vLLM GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交接入 UMBPStoreConnector 并增加 TP 复制 KV 去重配置与测试。"
+      ],
+      "published_at": "2026-11-10T10:19:41+08:00",
+      "collected_at": "2026-11-10T11:05:00+08:00"
+    },
+    {
+      "event_id": "sglang-ascend950-modelslim-mxfp8-kv-github-2026-11-10",
+      "event_type": "github",
+      "title": "SGLang 在昇腾 950 支持 ModelSlim GQA MXFP8 KV 缓存",
+      "org": "SGLang",
+      "model": "ModelSlim GQA MXFP8 KV Cache",
+      "summary": "SGLang 为昇腾 950 NPU 加入 ModelSlim 分组查询注意力的 MXFP8 KV 缓存路径，元数据携带统一查询长度、Flash Attention 调度计划和反量化布局。按批次形态选择量化缓存并复用调度信息，降低 KV 存储带宽压力。该能力扩大低精度注意力部署范围，未给性能结果。",
+      "key_points": [
+        "昇腾 950 支持 GQA MXFP8 KV 缓存",
+        "前向元数据携带调度计划和缩放布局",
+        "按批次形态选择低精度缓存路径"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "SGLang GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交新增 950 NPU 的 ModelSlim MXFP8 KV 缓存元数据和注意力执行分支。"
+      ],
+      "published_at": "2026-11-10T09:15:24+08:00",
+      "collected_at": "2026-11-10T11:05:00+08:00"
+    },
+    {
+      "event_id": "sglang-flashinfer-megamoe-decode-workspace-github-2026-11-10",
+      "event_type": "github",
+      "title": "SGLang 为 FlashInfer MegaMoE 增加独立解码工作区",
+      "org": "SGLang",
+      "model": "FlashInfer MegaMoE",
+      "summary": "SGLang 为 FlashInfer MegaMoE 增加可选的小型解码专用对称工作区，与预填充及较大批次共用的主工作区分离。部署者可按每卡最大解码令牌数设置容量，ModelOpt NVFP4 等解码前向优先使用小工作区，从而减少常驻通信缓冲占用；其他量化格式保持原路径，未提供节省量或吞吐数字。",
+      "key_points": [
+        "增加独立的小型解码对称工作区",
+        "可按每卡最大解码令牌数设置容量",
+        "ModelOpt NVFP4 解码优先使用该工作区"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "SGLang GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交加入解码工作区环境变量、分配逻辑和适用格式说明。"
+      ],
+      "published_at": "2026-11-10T09:14:41+08:00",
+      "collected_at": "2026-11-10T11:05:00+08:00"
+    },
+    {
+      "event_id": "vllm-modelopt-int8-block-weight-only-github-2026-11-10",
+      "event_type": "github",
+      "title": "vLLM 支持 ModelOpt 分块 INT8 仅权重量化线性层",
+      "org": "vLLM",
+      "model": "ModelOpt INT8_PB_WO",
+      "summary": "vLLM 新增 ModelOpt INT8_PB_WO 检查点支持，线性层权重按输入维度分组保存为对称 INT8，并为每组携带独立缩放因子，激活继续使用十六位精度。运行时复用 Marlin、Humming 等 WNA16 混合精度内核，也允许逐层混合格式；当前不支持 MoE 专家，未披露性能数字。",
+      "key_points": [
+        "支持分块 INT8 仅权重检查点",
+        "每个输入分组保存独立缩放因子",
+        "通过 WNA16 内核运行且暂不支持 MoE 专家"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "vLLM GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交增加 INT8_PB_WO 配置解析、权重加载和混合精度线性层执行路径。"
+      ],
+      "published_at": "2026-11-10T08:30:01+08:00",
+      "collected_at": "2026-11-10T11:05:00+08:00"
+    },
+    {
+      "event_id": "vllm-nvlink-copy-engine-pipeline-transport-github-2026-11-10",
+      "event_type": "github",
+      "title": "vLLM 默认启用 NVLink 复制引擎流水线传输",
+      "org": "vLLM",
+      "model": null,
+      "summary": "vLLM 为流水线并行新增复制引擎传输层，在支持的 NVLink 拓扑上默认启用，使用独立复制通道搬运阶段间张量，避免计算内核承担数据传输。实现覆盖不同张量尺寸、阶段迟滞和连续推理步，并在不满足条件时回退原路径。该设计旨在提高计算与通信重叠度，但提交未给出端到端增益。",
+      "key_points": [
+        "流水线阶段间张量使用复制引擎传输",
+        "在支持的 NVLink 拓扑上默认启用",
+        "不兼容环境自动回退原有传输路径"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "vLLM GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交新增流水线传输实现及多阶段、变长张量的完整性测试。"
+      ],
+      "published_at": "2026-11-10T08:09:09+08:00",
+      "collected_at": "2026-11-10T11:05:00+08:00"
+    },
+    {
+      "event_id": "llama-cpp-gemma4-streaming-audio-github-2026-11-10",
+      "event_type": "github",
+      "title": "llama.cpp 支持 Gemma 4 流式音频输入",
+      "org": "llama.cpp",
+      "model": "Gemma 4 Audio",
+      "summary": "llama.cpp 的多模态模块新增 Gemma 4 流式音频编码，显式维护卷积状态、位置计数以及各注意力层的键值历史，使连续音频块无需从头重算即可接入模型。实现定义固定状态槽和最大历史窗口，并在冷启动与后续分块间复用状态。该能力为本地实时语音交互奠定基础；官方提交未披露实时率或延迟数据。",
+      "key_points": [
+        "Gemma 4 音频编码器支持连续分块输入",
+        "维护卷积状态、位置和注意力 KV 历史",
+        "避免每个音频块从头重新编码"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "llama.cpp GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交新增 Gemma 4 音频状态槽、流式编码图和分块处理逻辑。"
+      ],
+      "published_at": "2026-11-10T06:36:31+08:00",
+      "collected_at": "2026-11-10T11:05:00+08:00"
+    },
+    {
+      "event_id": "vllm-compressed-tensors-mxfp6-github-2026-11-10",
+      "event_type": "github",
+      "title": "vLLM 支持 compressed-tensors 的 MXFP6 量化格式",
+      "org": "vLLM",
+      "model": "MXFP6",
+      "summary": "vLLM 将 compressed-tensors 量化支持扩展到 MXFP6，新增打包格式识别、权重加载和线性计算分派，使六位微缩放浮点检查点可进入现有推理流程。该格式位于 MXFP4 与 FP8 之间，为精度、显存和带宽提供新的折中，并能衔接已有量化工具链；官方未提供质量或吞吐对比。",
+      "key_points": [
+        "新增 MXFP6 打包量化格式识别",
+        "接入 compressed-tensors 权重加载与执行分派",
+        "为 MXFP4 与 FP8 之间提供部署折中"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "vLLM GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交更新 compressed-tensors 能力列表并加入 MXFP6 配置、加载与测试。"
+      ],
+      "published_at": "2026-11-10T05:44:09+08:00",
+      "collected_at": "2026-11-10T11:05:00+08:00"
+    },
+    {
+      "event_id": "sglang-deepgemm-dual-prenorm-gemm-github-2026-11-10",
+      "event_type": "github",
+      "title": "SGLang 合并双路 DeepGEMM 预归一化投影",
+      "org": "SGLang",
+      "model": "DeepGEMM mHC",
+      "summary": "SGLang 升级 DeepGEMM 并在新架构路径中用一次双输出预归一化 GEMM 同时计算 mHC 的高、低两路投影，共享输入平方和，避免第二次投影重复扫描输入及生成临时统计。实现保留旧架构的双调用回退，并取消特定解码路径预留计算单元的策略。该改动减少投影和临时缓冲开销，但未公布端到端加速数据。",
+      "key_points": [
+        "一次 GEMM 同时生成高低两路投影",
+        "共享输入平方和并减少重复扫描",
+        "旧架构继续使用原双调用路径"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 3,
+      "sources": [
+        {
+          "name": "SGLang GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交升级 DeepGEMM 并接入双输出 tf32 预归一化 GEMM 接口。"
+      ],
+      "published_at": "2026-11-10T03:30:17+08:00",
+      "collected_at": "2026-11-10T11:05:00+08:00"
+    },
+    {
+      "event_id": "sglang-kda-mtp-verify-critical-path-github-2026-11-10",
+      "event_type": "github",
+      "title": "SGLang 缩短 KDA 多令牌预测验证第一阶段关键路径",
+      "org": "SGLang",
+      "model": "KDA MTP",
+      "summary": "SGLang 优化 KDA 多令牌预测验证内核的第一阶段，将不变量读取改为只读全局加载，并重新安排状态分块、同步与共享内存使用，减少串行等待。官方在 VR 平台测得候选数三十二时该阶段缩短百分之十一、六十四时缩短百分之十二。改动主要降低推测解码验证延迟，未披露完整模型的每秒词元变化。",
+      "key_points": [
+        "不变量改用只读全局加载",
+        "重排状态分块和同步以缩短关键路径",
+        "官方测得阶段耗时降低 11%–12%"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 3,
+      "sources": [
+        {
+          "name": "SGLang GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交给出内核调整及 N=32、N=64 的阶段性能测量。"
+      ],
+      "published_at": "2026-11-10T03:13:38+08:00",
+      "collected_at": "2026-11-10T11:05:00+08:00"
+    },
+    {
+      "event_id": "llama-cpp-external-ple-shards-github-2026-11-10",
+      "event_type": "github",
+      "title": "llama.cpp 支持从外部文件加载 PLE 模型分片",
+      "org": "llama.cpp",
+      "model": "PLE GGUF",
+      "summary": "llama.cpp 新增外部 PLE 文件加载能力，命令行可多次传入额外 GGUF 分片，路径不必与主模型位于同一目录或磁盘。加载器把这些文件并入模型张量索引，同时保持主模型配置和分词器入口不变。该设计便于将大体积 PLE 表独立存储、按需更换或跨盘部署，减少重新打包成本；未给加载性能数据。",
+      "key_points": [
+        "可通过命令行传入额外 GGUF 分片",
+        "分片可位于不同目录或磁盘",
+        "PLE 表可独立存储和更换而无需重打包主模型"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 1,
+      "sources": [
+        {
+          "name": "llama.cpp GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交增加外部分片参数并将额外 GGUF 文件接入模型加载器。"
+      ],
+      "published_at": "2026-11-10T02:41:01+08:00",
+      "collected_at": "2026-11-10T11:05:00+08:00"
+    },
+    {
+      "event_id": "llama-cpp-windows-unbuffered-model-load-github-2026-11-10",
+      "event_type": "github",
+      "title": "llama.cpp 在 Windows 增加无缓冲模型读取路径",
+      "org": "llama.cpp",
+      "model": null,
+      "summary": "llama.cpp 为 Windows 模型加载加入无缓冲文件读取，使用独立直接读取句柄和按存储扇区对齐的内存，在满足条件时绕过系统页缓存；逻辑文件游标仍由普通句柄维护，未对齐尾部则分块回退。实现还在直接读取不可用时自动退回缓冲模式。该变化面向大模型冷加载和缓存污染控制，提交未保留性能测量。",
+      "key_points": [
+        "Windows 支持按扇区对齐的无缓冲读取",
+        "普通句柄维护逻辑游标并处理回退",
+        "直接读取不可用时自动切回缓冲模式"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "llama.cpp GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交增加 FILE_FLAG_NO_BUFFERING 句柄、对齐分配和分块回退测试。"
+      ],
+      "published_at": "2026-11-10T02:22:08+08:00",
+      "collected_at": "2026-11-10T11:05:00+08:00"
+    },
+    {
+      "event_id": "sglang-mooncake-layer-load-host-time-github-2026-11-09",
+      "event_type": "github",
+      "title": "SGLang 降低 Mooncake 分层直接加载的主机开销",
+      "org": "SGLang",
+      "model": "Mooncake Direct Linker",
+      "summary": "SGLang 优化 Mooncake Direct Linker 的逐层缓存加载，将每行指针计算改为 NumPy 向量化，并让相同行的大小与偏移元数据复用只读列表；非预取路径也避免不必要的设备同步。该实现减少缓存行和层组合时的 Python 循环与主机等待，对长上下文加载更有利；未披露具体耗时降幅。",
+      "key_points": [
+        "用 NumPy 向量化生成缓存行指针",
+        "复用重复的大小和偏移元数据",
+        "非预取加载避免额外设备同步"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "SGLang GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交替换逐行 Python 循环并调整 Direct Linker 的同步位置。"
+      ],
+      "published_at": "2026-11-09T20:52:22+08:00",
+      "collected_at": "2026-11-10T11:05:00+08:00"
+    },
+    {
+      "event_id": "sglang-hicache-unified-layout-tma-github-2026-11-09",
+      "event_type": "github",
+      "title": "SGLang 为 HiCache 统一布局加入 TMA 复制内核",
+      "org": "SGLang",
+      "model": "HiCache",
+      "summary": "SGLang 为 HiCache 的统一页面布局新增 Tensor Memory Accelerator 复制内核，可在表式或连续地址间按令牌行和层组批量搬运 KV 数据。实现将多个行复制合并为较少的传输描述，并处理键值双缓冲和不同步长。该路径旨在降低主机调度与逐行复制开销；提交未给出吞吐数字。",
+      "key_points": [
+        "统一页面布局支持 TMA 批量复制",
+        "覆盖表式与连续地址以及键值双缓冲",
+        "减少逐行复制与主机调度操作"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 3,
+      "sources": [
+        {
+          "name": "SGLang GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交新增 HiCache TMA 参数、统一页面专用复制与正确性测试。"
+      ],
+      "published_at": "2026-11-09T20:50:51+08:00",
+      "collected_at": "2026-11-10T11:05:00+08:00"
+    },
+    {
+      "event_id": "vllm-rdma-object-kv-offload-github-2026-11-09",
+      "event_type": "github",
+      "title": "vLLM KV 卸载对象存储层支持 RDMA 加速",
+      "org": "vLLM",
+      "model": "NIXL OBJ KV Offload",
+      "summary": "vLLM 扩展 KV 卸载的对象存储层，可通过 NIXL OBJ 后端选择厂商加速引擎，将缓存块由普通兼容对象接口切换为支持 RDMA 的传输路径。配置允许传入虚拟寻址、校验和与加速类型，同时保留默认凭据链和连接探测。该能力适合跨实例共享大规模 KV 缓存；实际收益取决于后端，提交未给统一指标。",
+      "key_points": [
+        "对象存储 KV 层可选择 RDMA 加速后端",
+        "支持传入寻址、校验和与厂商类型参数",
+        "保留默认凭据链和启动连接探测"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "vLLM GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交为 NIXL OBJ 创建加速后端并补充配置、内存注册与传输测试。"
+      ],
+      "published_at": "2026-11-09T18:45:22+08:00",
+      "collected_at": "2026-11-10T11:05:00+08:00"
+    },
+    {
+      "event_id": "vllm-qwen4exp-deepgemm-megamoe-github-2026-11-09",
+      "event_type": "github",
+      "title": "vLLM 让 Qwen4Exp 路由专家使用 DeepGEMM MegaMoE",
+      "org": "vLLM",
+      "model": "Qwen4Exp",
+      "summary": "vLLM 为 Qwen4Exp 增加 DeepGEMM MegaMoE 执行后端，使路由专家可使用 MXFP8 或 MXFP4 格式，共享专家和超连接逻辑仍沿用专用路径。实现新增模型适配、量化分派和 B200 测试，减少通用 MoE 路径的转换。该变化面向低精度高吞吐部署，但未公开模型级加速结果。",
+      "key_points": [
+        "Qwen4Exp 路由专家接入 DeepGEMM MegaMoE",
+        "同时覆盖 MXFP8 与 MXFP4 低精度格式",
+        "增加 B200 专用测试与模型分派"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 3,
+      "sources": [
+        {
+          "name": "vLLM GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交加入 Qwen4Exp MegaMoE 适配代码和 B200 测试项。"
+      ],
+      "published_at": "2026-11-09T17:16:17+08:00",
+      "collected_at": "2026-11-10T11:05:00+08:00"
+    },
     {
       "event_id": "sglang-hopper-group32-fp8-quantization-github-2026-11-09",
       "event_type": "github",
@@ -245,6 +704,33 @@
       ],
       "published_at": "2026-11-09T03:11:12+08:00",
       "collected_at": "2026-11-09T11:05:00+08:00"
+    },
+    {
+      "event_id": "amazon-hope-expert-pruning-paper-2026-11-09",
+      "event_type": "paper",
+      "title": "HOPE 以二阶专家交互改进 MoE 剪枝",
+      "org": "Amazon",
+      "model": "HOPE",
+      "summary": "Amazon 研究团队提出 HOPE 专家剪枝方法，不再为每个专家独立计算重要性，而是利用校准数据估计专家之间的成对协作关系，再联合选择保留集合。该方法无需重新训练，可与量化组合；官方报告在剪除一半专家时平均排名最佳，代理编程任务较次优方法最高提升百分之六点一。",
+      "key_points": [
+        "以二阶成对交互代替独立专家评分",
+        "剪枝后无需重新训练且可与量化组合",
+        "官方报告代理编程任务最高提升 6.1%"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 3,
+      "sources": [
+        {
+          "name": "Hugging Face Amazon Research Blog",
+          "type": "primary_research_blog"
+        }
+      ],
+      "evidence": [
+        "原始研究团队公开方法推导、实验设置与半数专家剪枝结果。"
+      ],
+      "published_at": "2026-11-09",
+      "collected_at": "2026-11-10T11:05:00+08:00"
     },
     {
       "event_id": "llama-cpp-spacemit-ime2-mxfp4-github-2026-11-08",
@@ -6138,33 +6624,6 @@
       "collected_at": "2026-10-28T11:01:00+08:00"
     },
     {
-      "event_id": "sglang-async-nan-validation-fusion-github-2026-10-27",
-      "event_type": "github",
-      "title": "SGLang 融合异步 NaN 校验探针",
-      "org": "SGLang",
-      "model": "SGLang Runtime",
-      "summary": "SGLang 将异步运行时中的 NaN 检查收敛为融合校验内核，减少分散探针带来的同步与 kernel launch 开销。",
-      "key_points": [
-        "融合路径批量检查关键张量的非有限值。",
-        "异步探针保持错误检测能力，同时降低执行流干扰。",
-        "该改动有利于大规模服务中的数值监控成本控制。"
-      ],
-      "importance": 2,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "SGLang 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "SGLang 于 2026-10-27 合并提交 ee5443f5，加入异步 probe 的融合 NaN validation。"
-      ],
-      "published_at": "2026-10-27",
-      "collected_at": "2026-10-27T11:00:00+08:00"
-    },
-    {
       "event_id": "llama-cpp-router-device-memory-margin-github-2026-10-27",
       "event_type": "github",
       "title": "llama.cpp Router 支持按设备显存余量动态卸载模型",
@@ -6298,438 +6757,6 @@
       ],
       "published_at": "2026-10-27",
       "collected_at": "2026-10-28T11:01:00+08:00"
-    },
-    {
-      "event_id": "vllm-pcp-dspark-deepseek-v4-1-github-2026-10-26",
-      "event_type": "github",
-      "title": "vLLM 为 DeepSeek V4.1 打通 PCP 与 DSpark",
-      "org": "vLLM",
-      "model": "DeepSeek V4.1",
-      "summary": "vLLM 将并行上下文处理与 DSpark 投机解码组合扩展到 DeepSeek V4.1，并补齐拒绝回滚时的压缩器状态维护。",
-      "key_points": [
-        "测试覆盖 PCP 规模二和四，以及零、五、九个投机 token。",
-        "拒绝采样发生时保存并恢复压缩状态，避免后续校验漂移。",
-        "该路径把长上下文并行与草稿模型加速组合到同一服务配置。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "vLLM 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "vLLM 于 2026-10-26 合并提交 af6665b5，加入 DeepSeek V4.1 的 PCP 与 DSpark 联合执行及回滚测试。"
-      ],
-      "published_at": "2026-10-26",
-      "collected_at": "2026-10-27T11:00:00+08:00"
-    },
-    {
-      "event_id": "vllm-nvfp4-locality-domain-allocation-github-2026-10-26",
-      "event_type": "github",
-      "title": "vLLM 为 CuTe DSL NVFP4 MoE 加入 Locality-Domain 分配",
-      "org": "vLLM",
-      "model": "FlashInfer CuTe DSL NVFP4 MoE",
-      "summary": "vLLM 为 FlashInfer CuTe DSL 的 NVFP4 MoE 路径加入 locality-domain 资源分配，使专家计算在支持的 GPU 拓扑上更贴近局部执行域。",
-      "key_points": [
-        "分配策略作用于 NVFP4 MoE 内核的执行资源组织。",
-        "局部域映射用于改善专家路由后的数据访问与并行调度。",
-        "该能力属于低精度 MoE 推理的硬件感知优化。"
-      ],
-      "importance": 2,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "vLLM 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "vLLM 于 2026-10-26 合并提交 9e3db488，加入 CuTe DSL NVFP4 MoE 的 locality-domain allocation。"
-      ],
-      "published_at": "2026-10-26",
-      "collected_at": "2026-10-27T11:00:00+08:00"
-    },
-    {
-      "event_id": "vllm-mxfp4-activation-quant-optimization-github-2026-10-26",
-      "event_type": "github",
-      "title": "vLLM 优化 MXFP4 激活量化内核",
-      "org": "vLLM",
-      "model": "MXFP4 / GLM-5.3",
-      "summary": "vLLM 优化 MXFP4 激活量化内核；官方提交基准报告在 GLM-5.3 形状上内核约三倍提速，并带来约百分之五的端到端吞吐提升。",
-      "key_points": [
-        "优化针对动态激活量化的数据布局与 GPU 执行路径。",
-        "提交同时给出代表性矩阵形状的微基准和服务吞吐对比。",
-        "性能数字来自项目提交中的特定硬件与配置，不应外推为所有模型的固定收益。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "vLLM 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "vLLM 于 2026-10-26 合并提交 f3bdb0e0，更新 MXFP4 激活量化实现并附带 GLM-5.3 形状基准。"
-      ],
-      "published_at": "2026-10-26",
-      "collected_at": "2026-10-27T11:00:00+08:00"
-    },
-    {
-      "event_id": "vllm-mrv2-uva-staged-write-github-2026-10-26",
-      "event_type": "github",
-      "title": "vLLM MRV2 通过 UVA 直写阶段缓冲区",
-      "org": "vLLM",
-      "model": "vLLM MRV2",
-      "summary": "vLLM 的 MRV2 数据路径改为引用 UVA 池中的阶段缓冲内容，并在目标为 GPU 或 UVA 时直接复制，减少额外主机到设备暂存和列表复制。",
-      "key_points": [
-        "阶段写入内容由引用传递，避免重复构造中间列表。",
-        "GPU 与 UVA 目标可以从统一虚拟寻址缓冲区直接搬运。",
-        "该改动面向模型执行数据通路的复制次数和调度延迟。"
-      ],
-      "importance": 2,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "vLLM 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "vLLM 于 2026-10-26 合并提交 78e2f796，重构 MRV2 阶段写入以直接使用 UVA 池内容。"
-      ],
-      "published_at": "2026-10-26",
-      "collected_at": "2026-10-27T11:00:00+08:00"
-    },
-    {
-      "event_id": "vllm-kimi-k3-kv-balanced-mla-github-2026-10-26",
-      "event_type": "github",
-      "title": "vLLM 为 Kimi K3 加入 KV-Balanced FP8 MLA 解码",
-      "org": "vLLM",
-      "model": "Kimi K3",
-      "summary": "vLLM 增加面向 Kimi K3 的 KV-balanced MLA 解码后端，在支持的 NVIDIA 架构上针对 BF16 模型与 FP8 KV 缓存组合优化注意力负载均衡。",
-      "key_points": [
-        "后端为可选路径，限定 Kimi K3 的模型维度与兼容硬件条件。",
-        "实现围绕多头潜变量注意力的 KV 访问分布进行平衡。",
-        "目标场景是长上下文和代理式工作负载下的高吞吐解码。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "vLLM 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "vLLM 于 2026-10-26 合并提交 6597ceaf，加入 Kimi K3 KV-balanced MLA 后端及相关约束检查。"
-      ],
-      "published_at": "2026-10-26",
-      "collected_at": "2026-10-27T11:00:00+08:00"
-    },
-    {
-      "event_id": "vllm-batch-sharded-draft-logits-github-2026-10-26",
-      "event_type": "github",
-      "title": "vLLM 支持批分片 Draft Logits",
-      "org": "vLLM",
-      "model": "vLLM Speculative Decoding",
-      "summary": "vLLM 为投机解码加入按批次分片的 draft logits 表示，使草稿输出可沿张量并行分片保存和处理，减少不必要的完整 logits 聚合。",
-      "key_points": [
-        "新增 draft logits 分片数量、分片索引及对应元数据。",
-        "采样与校验路径适配分片张量，保持张量并行下的批处理语义。",
-        "该改动为高并发投机解码降低中间张量通信与显存压力提供基础。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "vLLM 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "vLLM 于 2026-10-26 合并提交 26cbb47d，加入 batch-sharded draft logits 的配置、元数据与执行路径。"
-      ],
-      "published_at": "2026-10-26",
-      "collected_at": "2026-10-27T11:00:00+08:00"
-    },
-    {
-      "event_id": "vllm-adaptive-verification-draft-budget-triton-github-2026-10-26",
-      "event_type": "github",
-      "title": "vLLM 用 Triton 重写自适应校验 Draft Budget",
-      "org": "vLLM",
-      "model": "vLLM Adaptive Verification",
-      "summary": "vLLM 将自适应校验中的 draft budget 选择从编译式张量路径替换为专用 Triton 内核，降低调度开销并保持全局 top-k 与并列预算语义。",
-      "key_points": [
-        "内核直接计算每个请求的草稿 token 预算。",
-        "实现与既有全局 top-k 结果和相同分数下的精确预算保持一致。",
-        "改动针对投机解码校验阶段的细粒度 GPU 控制开销。"
-      ],
-      "importance": 2,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "vLLM 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "vLLM 于 2026-10-26 合并提交 41f5146b，加入自适应校验 draft budget 的 Triton 实现和等价性测试。"
-      ],
-      "published_at": "2026-10-26",
-      "collected_at": "2026-10-27T11:00:00+08:00"
-    },
-    {
-      "event_id": "sglang-rust-chat-sglang-processor-github-2026-10-26",
-      "event_type": "github",
-      "title": "SGLang Rust Server 统一使用 sglang-processor 处理对话",
-      "org": "SGLang",
-      "model": "SGLang Rust Server",
-      "summary": "SGLang Rust Server 将对话模板渲染、tokenize 与 chat serving 统一委托给 sglang-processor，减少两套处理逻辑的行为偏差。",
-      "key_points": [
-        "统一路径覆盖消息渲染、特殊 token 与用量统计。",
-        "提交补齐 Kimi K3 等模型的处理兼容细节。",
-        "服务端与处理器解耦有助于保持 Python 与 Rust 接口语义一致。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "SGLang 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "SGLang 于 2026-10-26 合并提交 911693e3，重构 Rust chat rendering、tokenization 与 serving 到 sglang-processor。"
-      ],
-      "published_at": "2026-10-26",
-      "collected_at": "2026-10-27T11:00:00+08:00"
-    },
-    {
-      "event_id": "sglang-qsa-long-cached-prefix-indexer-github-2026-10-26",
-      "event_type": "github",
-      "title": "SGLang 优化 QSA 长缓存前缀索引器",
-      "org": "SGLang",
-      "model": "QSA Prefill Indexer",
-      "summary": "SGLang 优化 QSA 预填充索引器在长缓存前缀场景下的执行路径，避免对已缓存范围重复承担完整索引开销。",
-      "key_points": [
-        "索引器显式利用 cached prefix 的长度信息。",
-        "优化面向前缀缓存命中较高的长上下文请求。",
-        "改动降低预填充阶段的索引计算与数据处理负担。"
-      ],
-      "importance": 2,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "SGLang 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "SGLang 于 2026-10-26 合并提交 642e9c14，加入 QSA prefill indexer 的 long cached prefix 优化。"
-      ],
-      "published_at": "2026-10-26",
-      "collected_at": "2026-10-27T11:00:00+08:00"
-    },
-    {
-      "event_id": "sglang-glm-streaming-tool-parser-linear-scan-github-2026-10-26",
-      "event_type": "github",
-      "title": "SGLang 消除 GLM 流式工具解析的二次方扫描",
-      "org": "SGLang",
-      "model": "GLM Tool Parser",
-      "summary": "SGLang 为 GLM 流式工具调用解析器记录开放调用与扫描位置，避免每次增量到达时重新扫描全部累积缓冲区。",
-      "key_points": [
-        "解析器只处理新到达的未扫描片段。",
-        "开放中的工具调用状态跨流式 chunk 保留。",
-        "复杂度由随缓冲增长的重复扫描降为近似线性处理。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "SGLang 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "SGLang 于 2026-10-26 合并提交 316ff4dc，更新 GLM streaming tool parser 以避免重复全量扫描。"
-      ],
-      "published_at": "2026-10-26",
-      "collected_at": "2026-10-27T11:00:00+08:00"
-    },
-    {
-      "event_id": "sglang-diffusion-ulysses-copy-overlap-github-2026-10-26",
-      "event_type": "github",
-      "title": "SGLang Diffusion 重叠 Ulysses 通信与本行复制",
-      "org": "SGLang",
-      "model": "SGLang Diffusion Ulysses",
-      "summary": "SGLang Diffusion 将 Q、K 填充与发送流水化，并把本行数据复制隐藏在 Ulysses 交换期间，以提高序列并行通信重叠。",
-      "key_points": [
-        "Q 与 K 的填充和发送改为流水执行。",
-        "本地行复制与跨设备 exchange 并行。",
-        "优化针对扩散模型 Ulysses 序列并行的通信等待。"
-      ],
-      "importance": 2,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "SGLang 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "SGLang 于 2026-10-26 合并提交 98411838，加入 Ulysses exchange 与 own-row copy 的重叠执行。"
-      ],
-      "published_at": "2026-10-26",
-      "collected_at": "2026-10-27T11:00:00+08:00"
-    },
-    {
-      "event_id": "sglang-deepseek-v4-dspark-fp8-lm-head-github-2026-10-26",
-      "event_type": "github",
-      "title": "SGLang 为 DeepSeek V4 DSpark 校验加入 FP8 lm_head GEMM",
-      "org": "SGLang",
-      "model": "DeepSeek V4 / DSpark",
-      "summary": "SGLang 在 AMD 路径为 DeepSeek V4 的 DSpark 校验 logits 加入目标侧 FP8 lm_head GEMM，减少校验阶段的高精度矩阵乘成本。",
-      "key_points": [
-        "内核面向投机解码目标模型的 lm_head 计算。",
-        "FP8 路径与 DeepSeek V4 的 DSpark 校验流程集成。",
-        "改动聚焦 AMD GPU 上的推理吞吐和校验延迟。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "SGLang 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "SGLang 于 2026-10-26 合并提交 01759f0a，加入 DeepSeek V4 DSpark verification logits 的 FP8 target lm_head GEMM。"
-      ],
-      "published_at": "2026-10-26",
-      "collected_at": "2026-10-27T11:00:00+08:00"
-    },
-    {
-      "event_id": "sglang-beam-model-kernel-support-github-2026-10-26",
-      "event_type": "github",
-      "title": "SGLang 增加 Beam 模型内核支持",
-      "org": "SGLang",
-      "model": "Beam",
-      "summary": "SGLang 为 Beam 模型补充专用 kernel 支持，使该架构可进入框架的加速执行路径。",
-      "key_points": [
-        "新增模型所需算子的内核接入与调度适配。",
-        "实现与现有模型执行和测试基础设施集成。",
-        "该合并扩大了 SGLang 对新模型架构的原生推理覆盖。"
-      ],
-      "importance": 2,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "SGLang 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "SGLang 于 2026-10-26 合并提交 66f79f1a，加入 Beam model kernel support。"
-      ],
-      "published_at": "2026-10-26",
-      "collected_at": "2026-10-27T11:00:00+08:00"
-    },
-    {
-      "event_id": "llama-cpp-vulkan-rmsnorm-subgroup-reduction-github-2026-10-26",
-      "event_type": "github",
-      "title": "llama.cpp Vulkan RMSNorm 改用 Subgroup Reduction",
-      "org": "ggml-org",
-      "model": "llama.cpp Vulkan backend",
-      "summary": "llama.cpp 的 Vulkan RMSNorm 内核改用 subgroup reduction，并按行宽选择不同工作组大小，以改善多类 GPU 上的归约效率。",
-      "key_points": [
-        "内核覆盖 Intel、NVIDIA 与 AMD 的 subgroup 能力。",
-        "根据 row length 选择一百二十八、二百五十六或五百一十二线程块。",
-        "优化减少 RMSNorm 归约阶段的共享内存与同步成本。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "llama.cpp 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "llama.cpp 于 2026-10-26 合并提交 70c5f263，更新 Vulkan RMSNorm 为 subgroup reduction 实现。"
-      ],
-      "published_at": "2026-10-26",
-      "collected_at": "2026-10-27T11:00:00+08:00"
-    },
-    {
-      "event_id": "llama-cpp-sycl-set-tensor-2d-loading-github-2026-10-26",
-      "event_type": "github",
-      "title": "llama.cpp SYCL 加速 Tensor-Split 权重加载",
-      "org": "ggml-org",
-      "model": "llama.cpp SYCL backend",
-      "summary": "llama.cpp 的 SYCL 后端加入二维 set_tensor 路径，将多行数据打包到 pinned staging slot，以加速 tensor-split 模型权重装载。",
-      "key_points": [
-        "新增 set_tensor_2d 传输接口。",
-        "连续多行可共用固定页暂存槽，减少小块复制与提交次数。",
-        "优化主要影响多设备 tensor split 的模型启动与加载阶段。"
-      ],
-      "importance": 2,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "llama.cpp 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "llama.cpp 于 2026-10-26 合并提交 02269b4c，加入 SYCL set_tensor_2d 和多行 pinned staging。"
-      ],
-      "published_at": "2026-10-26",
-      "collected_at": "2026-10-27T11:00:00+08:00"
-    },
-    {
-      "event_id": "llama-cpp-hexagon-mul-mat-id-row-skip-github-2026-10-26",
-      "event_type": "github",
-      "title": "llama.cpp Hexagon 优化 MUL_MAT_ID 行跳过",
-      "org": "ggml-org",
-      "model": "llama.cpp Hexagon backend",
-      "summary": "llama.cpp 优化 Hexagon 后端的 MUL_MAT_ID：将负专家编号视为跳过标记，并减少无效行扫描、清零和复制。",
-      "key_points": [
-        "内核识别无需参与专家矩阵乘的行。",
-        "只对有效 expert row 执行必要数据准备与计算。",
-        "该优化面向 MoE 路由稀疏性在 Hexagon 加速器上的利用。"
-      ],
-      "importance": 2,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "llama.cpp 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "llama.cpp 于 2026-10-26 合并提交 caa8191d，优化 MUL_MAT_ID 的 row-skipping、扫描与缓冲处理。"
-      ],
-      "published_at": "2026-10-26",
-      "collected_at": "2026-10-27T11:00:00+08:00"
     }
   ]
 }
