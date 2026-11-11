@@ -38,6 +38,39 @@ def test_index_version_change_fails_before_parsing_scores(monkeypatch, heading):
     assert "AA page version changed" in result.error_message
 
 
+def test_frontiercode_aa_renamed_heading_still_collects_scores(monkeypatch):
+    frame = (
+        '1:["$","div",null,{"initialModels":['
+        '{"slug":"unit-model","name":"Unit Model","frontierCode20":0.491}'
+        ']}]'
+    )
+    raw = (
+        "<h1>FrontierCode-AA 2.0 Benchmark</h1>"
+        "<script>self.__next_f.push("
+        + json.dumps([1, frame])
+        + ")</script>"
+    ).encode()
+    monkeypatch.setattr(
+        "collector.artificial_analysis.collector._read_url", lambda url, context: raw
+    )
+    collector = ArtificialAnalysisCollector(
+        {
+            "benchmark_id": "frontiercode_v2_0",
+            "source_type": "official_page_endpoint",
+            "endpoint": "https://example.invalid/evaluations/frontiercode-2-0",
+            "expected_page_heading": "FrontierCode-AA 2.0 Benchmark",
+            "evaluation_field": "FrontierCode 2.0: Score",
+            "release_id": "v2.0",
+        }
+    )
+    result = collector.fetch()
+    assert result.status == "success", result.error_message
+    rows = collector.normalize(collector.parse(result.payload))
+    assert len(rows) == 1
+    assert rows[0].score == 0.491
+    assert rows[0].model == "Unit Model"
+
+
 def test_public_page_metadata_reports_subset_without_counting_script_text():
     from collector.artificial_analysis.collector import _page_metadata
 
