@@ -1,8 +1,386 @@
 {
   "schemaVersion": 1,
-  "latestArchiveDate": "2026-11-10",
-  "eventCount": 247,
+  "latestArchiveDate": "2026-11-11",
+  "eventCount": 248,
   "events": [
+    {
+      "event_id": "vllm-video-keyframe-sampling-github-2026-11-11",
+      "event_type": "github",
+      "title": "vLLM 为视频输入加入关键帧感知采样",
+      "org": "vLLM",
+      "model": "vLLM",
+      "summary": "vLLM 在 PyNvVideoCodec 视频路径加入关键帧感知采样，可将均匀时间位置映射到最近且不重复的关键帧，并保持时间顺序；关键帧不足时自动回退到均匀采样。该改动有助于减少镜头切换处的信息遗漏，改善多模态请求的帧代表性，但提交未给出吞吐或精度数据。",
+      "key_points": [
+        "最近关键帧映射保持唯一与时间顺序",
+        "关键帧不足时回退均匀采样",
+        "未披露吞吐与多模态精度量化结果"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "vLLM 官方 GitHub 提交",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "项目维护者提交明确给出采样参数、映射逻辑和回退行为。"
+      ],
+      "published_at": "2026-11-11T10:02:24+08:00",
+      "collected_at": "2026-11-11T11:05:00+08:00"
+    },
+    {
+      "event_id": "vllm-kimi-k3-attnres-workspace-github-2026-11-11",
+      "event_type": "github",
+      "title": "vLLM 为 Kimi K3 AttnRes 引入持久化工作区",
+      "org": "vLLM",
+      "model": "Kimi K3",
+      "summary": "vLLM 为 Kimi K3 的 AttnRes block bank 增加持久化工作区管理，按常规与 DBO 微批槽位保存可复用缓冲区，避免每次前向过程重复申请临时内存。实现同时覆盖多微批并行场景，有望降低分配开销和显存抖动；维护者未披露端到端延迟或吞吐提升数字。",
+      "key_points": [
+        "持久化缓冲区替代逐次临时申请",
+        "工作区按普通与 DBO 微批槽位管理",
+        "未披露端到端性能增益"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "vLLM 官方 GitHub 提交",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "项目提交与代码变更确认工作区生命周期和微批槽位设计。"
+      ],
+      "published_at": "2026-11-11T09:38:10+08:00",
+      "collected_at": "2026-11-11T11:05:00+08:00"
+    },
+    {
+      "event_id": "sglang-gemma4-fa4-fp8-kv-github-2026-11-11",
+      "event_type": "github",
+      "title": "SGLang 为 Gemma 4 扩展 FA4 FP8 KV 缓存",
+      "org": "SGLang",
+      "model": "Gemma 4",
+      "summary": "SGLang 的 FlashAttention 4 SM90 后端新增 Gemma 4 所需的 256 与 512 头维度 FP8 E4M3 KV 缓存支持，并分离查询、输出及矩阵乘类型，使 BF16 输入输出可配合低精度缓存执行。该改动扩大 Hopper 部署覆盖，显存、速度和精度结果尚未披露。",
+      "key_points": [
+        "支持 256 与 512 头维度 FP8 KV 缓存",
+        "查询输出类型与矩阵乘计算类型解耦",
+        "未披露显存、性能与精度结果"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "SGLang 官方 GitHub 提交",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交确认硬件后端、头维度、数据类型和模型覆盖。"
+      ],
+      "published_at": "2026-11-11T09:27:42+08:00",
+      "collected_at": "2026-11-11T11:05:00+08:00"
+    },
+    {
+      "event_id": "vllm-mooncake-transfer-engine-reuse-github-2026-11-11",
+      "event_type": "github",
+      "title": "vLLM Mooncake Store 连接器可复用 PD 传输引擎",
+      "org": "vLLM",
+      "model": "Mooncake Connector",
+      "summary": "vLLM 为 Mooncake Store 连接器增加 PD TransferEngine 复用选项，使同一工作进程可共享已有传输引擎，而非分别初始化两套实例。配置要求 MooncakeConnector 位于连接器链首位，减少重复资源占用并简化传输状态管理；提交未提供内存节省或性能对比数据。",
+      "key_points": [
+        "同一工作进程复用 PD TransferEngine",
+        "MooncakeConnector 需位于连接器链首位",
+        "未公布资源节省及吞吐对比"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 1,
+      "sources": [
+        {
+          "name": "vLLM 官方 GitHub 提交",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "维护者提交确认新增配置、复用条件与连接器顺序约束。"
+      ],
+      "published_at": "2026-11-11T09:24:03+08:00",
+      "collected_at": "2026-11-11T11:05:00+08:00"
+    },
+    {
+      "event_id": "sglang-dspark-online-acceptance-estimator-github-2026-11-11",
+      "event_type": "github",
+      "title": "SGLang DSpark 加入在线草稿接受率估计器",
+      "org": "SGLang",
+      "model": "DSpark",
+      "summary": "SGLang 为 DSpark 投机解码加入在线接受率估计器，利用草稿行最大对数概率、位置截距和逻辑模型预测验证结果，并通过分桶统计、衰减历史及惩罚最大似然持续校准。计算状态保持在设备端，避免主机同步，可支持运行时动态选择草稿策略；提交未公布收益数字。",
+      "key_points": [
+        "逻辑模型结合概率与位置估计接受率",
+        "分桶统计、历史衰减和惩罚估计持续校准",
+        "设备端状态避免主机同步"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 3,
+      "sources": [
+        {
+          "name": "SGLang 官方 GitHub 提交",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "维护者提交与测试确认在线估计公式、状态更新和设备端实现。"
+      ],
+      "published_at": "2026-11-11T09:15:26+08:00",
+      "collected_at": "2026-11-11T11:05:00+08:00"
+    },
+    {
+      "event_id": "sglang-kimi-k3-1-direct-linker-pools-github-2026-11-11",
+      "event_type": "github",
+      "title": "SGLang Direct Linker 支持 Kimi K3.1 多类 KV 池",
+      "org": "SGLang",
+      "model": "Kimi K3.1",
+      "summary": "SGLang 扩展 Direct Linker，使 Kimi K3.1 的 DSA、MLA 草稿及 DCP 缓存池可直接建立映射，并区分张量并行复制页与 DCP 分片状态进行索引换算。该改动让不同缓存组织可进入统一链接流程，减少额外搬运路径；提交未披露延迟、吞吐或显存收益。",
+      "key_points": [
+        "支持 DSA、MLA 草稿与 DCP 缓存池",
+        "识别张量并行复制页和 DCP 分片状态",
+        "未披露性能及显存收益"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "SGLang 官方 GitHub 提交",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "维护者提交确认新增缓存池类型、分片语义与索引映射逻辑。"
+      ],
+      "published_at": "2026-11-11T06:57:04+08:00",
+      "collected_at": "2026-11-11T11:05:00+08:00"
+    },
+    {
+      "event_id": "vllm-minimax-m3-nvfp4-blhnc-kv-github-2026-11-11",
+      "event_type": "github",
+      "title": "vLLM 扩展 MiniMax M3 的 NVFP4 KV 缓存布局",
+      "org": "vLLM",
+      "model": "MiniMax M3",
+      "summary": "vLLM 为 MiniMax M3 稀疏注意力后端补充 BLHNC 布局下的 NVFP4 KV 缓存支持，使低精度缓存不再局限于原有 LBHNC 排布。内核通过页步长适配新布局，便于在既有执行路径中启用更紧凑的缓存表示；提交未披露显存节省比例、精度影响或吞吐结果。",
+      "key_points": [
+        "NVFP4 KV 缓存新增 BLHNC 布局支持",
+        "内核以页步长适配不同缓存排布",
+        "未披露显存、精度及性能数字"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "vLLM 官方 GitHub 提交",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "维护者提交确认支持范围、缓存布局与内核步长调整。"
+      ],
+      "published_at": "2026-11-11T06:45:39+08:00",
+      "collected_at": "2026-11-11T11:05:00+08:00"
+    },
+    {
+      "event_id": "sglang-amd-gptq-autoround-int4-github-2026-11-11",
+      "event_type": "github",
+      "title": "SGLang AMD 路径支持 GPTQ 与 AutoRound INT4 权重",
+      "org": "SGLang",
+      "model": "Triton W4A16",
+      "summary": "SGLang 在 AMD 推理路径加入 GPTQ 与 AutoRound INT4 检查点支持，加载时一次性将 GPTQ 的 K 主序权重重排为 ExLlama 风格布局，再由 Triton W4A16 内核执行四位权重、十六位激活计算。当前仅覆盖线性层且不支持 desc_act，性能数据未披露。",
+      "key_points": [
+        "加载阶段一次性完成 GPTQ 权重重排",
+        "Triton W4A16 执行四位权重推理",
+        "仅支持线性层且不支持 desc_act"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "SGLang 官方 GitHub 提交",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "维护者提交确认量化格式、重排方式、内核类型及限制。"
+      ],
+      "published_at": "2026-11-11T06:42:29+08:00",
+      "collected_at": "2026-11-11T11:05:00+08:00"
+    },
+    {
+      "event_id": "vllm-kimi-k3-mi355x-mono-decode-github-2026-11-11",
+      "event_type": "github",
+      "title": "vLLM 增加 Kimi K3 在 MI355X 上的单体解码路径",
+      "org": "vLLM",
+      "model": "Kimi K3",
+      "summary": "vLLM 为 Kimi K3 在 AMD MI355X 上加入 mono decode 层并接入标准解码流程，覆盖启用和不启用投机解码的测试组合。该路径面向低延迟场景整合专用执行逻辑，扩大模型在新一代 AMD 加速器上的可部署性；提交未披露相对基线的延迟或吞吐数据。",
+      "key_points": [
+        "新增 MI355X 专用 mono decode 层",
+        "同时验证投机与非投机解码组合",
+        "未提供相对基线性能数据"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "vLLM 官方 GitHub 提交",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交及测试变更确认硬件范围、解码接入和覆盖组合。"
+      ],
+      "published_at": "2026-11-11T06:25:23+08:00",
+      "collected_at": "2026-11-11T11:05:00+08:00"
+    },
+    {
+      "event_id": "sglang-nixl-heterogeneous-tp-kv-packing-github-2026-11-11",
+      "event_type": "github",
+      "title": "SGLang NIXL 支持异构张量并行间 KV 打包传输",
+      "org": "SGLang",
+      "model": "NIXL KV Transfer",
+      "summary": "SGLang 为 NIXL KV 传输加入异构张量并行打包，可在不同 TP 规模间重排并传送混合滑动窗口、NHD 多头注意力缓存。当前实现限制流水并行与 DCP 均为一，且不支持暂存路径；它为跨拓扑解耦预填充和解码铺路，提交未给出吞吐数据。",
+      "key_points": [
+        "支持不同张量并行规模间 KV 重排传输",
+        "覆盖混合滑动窗口与 NHD 多头注意力池",
+        "当前限制 PP1、DCP1 且不支持暂存"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 3,
+      "sources": [
+        {
+          "name": "SGLang 官方 GitHub 提交",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交说明打包布局、支持缓存池及当前拓扑限制。"
+      ],
+      "published_at": "2026-11-11T06:25:18+08:00",
+      "collected_at": "2026-11-11T11:05:00+08:00"
+    },
+    {
+      "event_id": "vllm-glm-5-3-mtp-eh-proj-plan-github-2026-11-11",
+      "event_type": "github",
+      "title": "vLLM 修复 GLM-5.3 MTP 的 eh_proj 低延迟 GEMM 计划",
+      "org": "vLLM",
+      "model": "GLM-5.3",
+      "summary": "vLLM 修复 GLM-5.3 多词元预测草稿模型中 eh_proj 层的低延迟 GEMM 计划生成，使该投影使用与模型结构匹配的 GLM52 规划并接入 Cute 执行方案。改动针对计划选择错误导致的专用内核路径问题，可恢复预期执行方式；提交未给出修复前后的速度差异。",
+      "key_points": [
+        "eh_proj 改用 GLM52 匹配规划",
+        "低延迟 GEMM 接入 Cute 执行方案",
+        "未披露修复前后性能差异"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "vLLM 官方 GitHub 提交",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "维护者提交明确指出受影响层、错误规划和修正后的执行计划。"
+      ],
+      "published_at": "2026-11-11T02:19:36+08:00",
+      "collected_at": "2026-11-11T11:05:00+08:00"
+    },
+    {
+      "event_id": "llama-cpp-fp8-kv-cache-github-2026-11-11",
+      "event_type": "github",
+      "title": "llama.cpp 新增 FP8 E4M3 KV 缓存类型",
+      "org": "llama.cpp",
+      "model": "llama.cpp",
+      "summary": "llama.cpp 新增 FP8 E4M3 KV 缓存类型，并补齐缓存缩放张量、类型解析与相关执行路径，使本地推理可用更低位宽保存注意力键值状态。该能力有望降低长上下文的缓存占用并提升可部署上下文长度，但提交未提供显存节省、速度变化或精度损失数据。",
+      "key_points": [
+        "新增 FP8 E4M3 KV 缓存类型",
+        "补齐缩放张量和执行路径",
+        "未披露显存、速度与精度量化结果"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "llama.cpp 官方 GitHub 提交",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "项目维护者提交确认缓存类型、缩放数据和代码路径变更。"
+      ],
+      "published_at": "2026-11-11T00:08:32+08:00",
+      "collected_at": "2026-11-11T11:05:00+08:00"
+    },
+    {
+      "event_id": "llama-cpp-kimi-k3-1-vision-github-2026-11-10",
+      "event_type": "github",
+      "title": "llama.cpp 多模态模块支持 Kimi K3.1 视觉模型",
+      "org": "llama.cpp",
+      "model": "Kimi K3.1",
+      "summary": "llama.cpp 的 mtmd 多模态模块加入 Kimi K3.1 视觉支持，将新架构映射到 kimivl，并沿用 Kimi K2.5 路径扩展投影器、张量名称及模型元数据。该改动使模型的图像输入可进入本地推理管线，扩大离线部署覆盖；提交未披露视觉基准或性能数据。",
+      "key_points": [
+        "新架构映射到 kimivl 多模态路径",
+        "新增投影器、张量和元数据适配",
+        "未披露视觉精度与运行性能"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "llama.cpp 官方 GitHub 提交",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交确认架构映射、多模态投影器及张量元数据适配。"
+      ],
+      "published_at": "2026-11-10T18:28:47+08:00",
+      "collected_at": "2026-11-11T11:05:00+08:00"
+    },
+    {
+      "event_id": "vllm-compiled-cache-d2d-seeding-github-2026-11-10",
+      "event_type": "github",
+      "title": "vLLM 快速启动支持通过设备间传输分发编译缓存",
+      "org": "vLLM",
+      "model": "vLLM Fast Start",
+      "summary": "vLLM 快速启动流程新增设备到设备的已编译缓存分发，可由源节点向其他节点与 rank 播种缓存，并让 Mooncake 预热缓存参与传输。该设计减少各实例重复编译及文件中转依赖，适合大规模多节点启动；提交未披露启动耗时缩短比例与额外传输开销。",
+      "key_points": [
+        "已编译缓存通过设备间通道跨节点分发",
+        "覆盖多 rank 与 Mooncake 预热缓存",
+        "未披露启动时间和传输开销量化结果"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "vLLM 官方 GitHub 提交",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "官方提交确认源端、镜像端和 Mooncake 缓存的分发逻辑。"
+      ],
+      "published_at": "2026-11-10T15:23:54+08:00",
+      "collected_at": "2026-11-11T11:05:00+08:00"
+    },
     {
       "event_id": "sglang-paged-experts-empty-pagein-github-2026-11-10",
       "event_type": "github",
@@ -353,6 +731,114 @@
       ],
       "published_at": "2026-11-10T02:22:08+08:00",
       "collected_at": "2026-11-10T11:05:00+08:00"
+    },
+    {
+      "event_id": "google-gemini-robotics-2-5-model-release-2026-11-10",
+      "event_type": "model_release",
+      "title": "Google DeepMind 发布 Gemini Robotics 2.5 视觉语言动作模型",
+      "org": "Google DeepMind",
+      "model": "Gemini Robotics 2.5",
+      "summary": "Gemini Robotics 2.5 是面向真实机器人控制的新一代视觉语言动作模型，可跨多种机器人形态执行两百余项操作任务。官方测试显示其成功率较基线提高三成至一倍、执行速度提升两至三成，并在 Apollo 2 试点达到九成六成功率，为通用机器人部署提供统一策略基础。",
+      "key_points": [
+        "覆盖两百余项真实操作任务",
+        "支持不同机器人形态复用同一模型能力",
+        "官方报告成功率、速度及 Apollo 2 试点结果"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 3,
+      "sources": [
+        {
+          "name": "Google DeepMind 官方发布",
+          "type": "official_blog"
+        }
+      ],
+      "evidence": [
+        "官方发布披露任务覆盖范围、基线对比和实体机器人试点数据。"
+      ],
+      "published_at": "2026-11-10T00:00:00-08:00",
+      "collected_at": "2026-11-11T11:05:00+08:00"
+    },
+    {
+      "event_id": "google-gemini-4-carbon-availability-model-release-2026-11-10",
+      "event_type": "model_release",
+      "title": "Google 发布 Gemini 4 Carbon，并开放 API 与 Agent Swarm 预览",
+      "org": "Google",
+      "model": "Gemini 4 Carbon",
+      "summary": "Gemini 4 Carbon 基于 Gemini 4 Argon，面向长时程代理、知识工作及工程科研任务，提供一百万词元上下文，并通过 API 与开发环境开放。官方披露其在三项代理基准排名第一，单任务成本低于下一外部模型；具体训练配方未公开，实际收益仍需按工作负载复测。",
+      "key_points": [
+        "一百万词元上下文面向长任务与复杂资料处理",
+        "Agent Swarm 以预览形式开放多代理并行",
+        "官方公布三项代理基准领先及任务成本优势"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 3,
+      "sources": [
+        {
+          "name": "Google 官方发布与模型卡",
+          "type": "official_blog"
+        }
+      ],
+      "evidence": [
+        "官方发布确认模型、开放渠道、上下文规模、基准结果与计费信息。"
+      ],
+      "published_at": "2026-11-10T00:00:00-08:00",
+      "collected_at": "2026-11-11T11:05:00+08:00"
+    },
+    {
+      "event_id": "figma-motiongraphicsbench-benchmark-update-2026-11-10",
+      "event_type": "benchmark_update",
+      "title": "Figma 与 Stanford 发布 MotionGraphicsBench 动效生成基准",
+      "org": "Figma、Stanford",
+      "model": "MotionGraphicsBench",
+      "summary": "MotionGraphicsBench 用一百个专家筛选的 SVG 动效任务和十七类要求评测代码生成模型，并以确定性程序和人工标注提升判定可靠性。三十二个模型中仅四个首答通过率超过五成，最高为六成七点七；数据集与代码已开放，可用于定位模型在时间、轨迹和视觉约束上的短板。",
+      "key_points": [
+        "一百个 SVG 动效任务覆盖十七类要求",
+        "三十二个模型接受统一评测且仅四个超过五成",
+        "确定性程序判定的人类一致率高于视觉模型裁判"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 3,
+      "sources": [
+        {
+          "name": "Figma 与 Stanford 官方基准发布",
+          "type": "benchmark_official"
+        }
+      ],
+      "evidence": [
+        "基准官方页披露任务构成、评测模型数量、通过率及判定一致性。"
+      ],
+      "published_at": "2026-11-10T00:00:00-08:00",
+      "collected_at": "2026-11-11T11:05:00+08:00"
+    },
+    {
+      "event_id": "huggingface-decision-models-ecosystem-2026-11-10",
+      "event_type": "ecosystem",
+      "title": "Hugging Face 提出 Decision Models 统一决策模型接口",
+      "org": "Hugging Face",
+      "model": "Decision Models",
+      "summary": "Hugging Face 提出 Decision Models 统一接口，用带类型的状态、问题和动作原语描述模型决策，将选择、评分、二元判断及结构化概率纳入同一抽象。该方案计划贯通 Transformers、llama.cpp、模型仓库与训练工具，降低不同决策模型的接入成本；性能数据尚未披露。",
+      "key_points": [
+        "以类型化接口统一状态、问题和决策原语",
+        "覆盖选择、评分、二元判断和概率输出",
+        "计划贯通推理、模型托管及训练生态"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "Hugging Face 官方技术博客",
+          "type": "official_blog"
+        }
+      ],
+      "evidence": [
+        "官方团队文章给出接口设计、支持任务和生态集成范围。"
+      ],
+      "published_at": "2026-11-10T00:00:00+00:00",
+      "collected_at": "2026-11-11T11:05:00+08:00"
     },
     {
       "event_id": "sglang-mooncake-layer-load-host-time-github-2026-11-09",
@@ -6103,33 +6589,6 @@
       "collected_at": "2026-10-29T10:55:00+08:00"
     },
     {
-      "event_id": "vllm-rl-per-update-nccl-source-ranks-github-2026-10-28",
-      "event_type": "github",
-      "title": "vLLM RL 权重传输支持逐次更新源 Rank",
-      "org": "vLLM",
-      "model": "vLLM RL / NCCL Weight Transfer",
-      "summary": "vLLM 的强化学习权重同步路径允许每次更新单独指定 NCCL 源 rank，适配训练器与推理副本映射动态变化的分布式拓扑。",
-      "key_points": [
-        "源 rank 不再被固定为初始化阶段的单一映射。",
-        "每轮权重更新可携带自己的源端布局信息。",
-        "该能力面向弹性训练、数据并行重排和多副本在线权重传输。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "vLLM 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "vLLM 于 2026-10-28 合并提交 2b678ac7，加入 per-update source ranks for NCCL weight transfer。"
-      ],
-      "published_at": "2026-10-28",
-      "collected_at": "2026-10-28T11:01:00+08:00"
-    },
-    {
       "event_id": "vllm-mrv2-dbo-spec-dcp-github-2026-10-28",
       "event_type": "github",
       "title": "vLLM MRV2 联合支持 DBO、投机解码与 DCP",
@@ -6184,60 +6643,6 @@
       "collected_at": "2026-10-29T10:55:00+08:00"
     },
     {
-      "event_id": "sglang-split-expert-mxfp4-fp4-marlin-github-2026-10-28",
-      "event_type": "github",
-      "title": "SGLang 用 FP4 Marlin 服务 Split-Expert MXFP4 MoE",
-      "org": "SGLang",
-      "model": "Compressed Tensors MXFP4 MoE",
-      "summary": "SGLang 修通 compressed-tensors 的 split-expert MXFP4 MoE 检查点，并通过 FP4 Marlin 执行专家权重。",
-      "key_points": [
-        "支持专家权重被拆分存储的 MXFP4 MoE 布局。",
-        "加载路径将检查点量化元数据映射到 FP4 Marlin 后端。",
-        "该改动扩大低精度 MoE 检查点的可服务范围。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "SGLang 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "SGLang 于 2026-10-28 合并提交 bb4bb013，支持 split-expert MXFP4 MoE via FP4 Marlin。"
-      ],
-      "published_at": "2026-10-28",
-      "collected_at": "2026-10-28T11:01:00+08:00"
-    },
-    {
-      "event_id": "sglang-moss-image-fused-qkv-github-2026-10-28",
-      "event_type": "github",
-      "title": "SGLang 融合 MOSS-Image 高质量路径 Joint-Block QKV",
-      "org": "SGLang",
-      "model": "MOSS-Image",
-      "summary": "SGLang 在 MOSS-Image 高质量生成路径中融合 joint block 的 Q、K、V 投影，减少独立矩阵乘和中间张量调度。",
-      "key_points": [
-        "融合覆盖 joint block 内的三路注意力投影。",
-        "目标是降低高质量扩散路径的 kernel launch 与内存往返。",
-        "改动不改变模型结构，聚焦执行效率。"
-      ],
-      "importance": 2,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "SGLang 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "SGLang 于 2026-10-28 合并提交 610a74d6，加入 MOSS-Image joint-block QKV projection fusion。"
-      ],
-      "published_at": "2026-10-28",
-      "collected_at": "2026-10-28T11:01:00+08:00"
-    },
-    {
       "event_id": "sglang-deepseek-v41-engram-megagate-prefill-github-2026-10-28",
       "event_type": "github",
       "title": "SGLang 扩展 DeepSeek V4.1 Engram 与 MegaGate Prefill 数据流",
@@ -6263,60 +6668,6 @@
       ],
       "published_at": "2026-10-28",
       "collected_at": "2026-10-29T10:55:00+08:00"
-    },
-    {
-      "event_id": "sglang-deepseek-v41-engram-auto-collective-github-2026-10-28",
-      "event_type": "github",
-      "title": "SGLang 自动选择 DeepSeek V4.1 Engram DP Collective",
-      "org": "SGLang",
-      "model": "DeepSeek V4.1",
-      "summary": "SGLang 为 DeepSeek V4.1 的 Engram 数据并行查表自动选择 collective 实现，依据运行配置匹配更合适的通信路径。",
-      "key_points": [
-        "自动选择作用于 Engram DP lookup。",
-        "减少用户手工指定通信实现的配置负担。",
-        "该优化面向多设备 DeepSeek V4.1 推理中的查表通信开销。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "SGLang 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "SGLang 于 2026-10-28 合并提交 e35b5bc4，加入 Engram DP lookup collective 自动选择。"
-      ],
-      "published_at": "2026-10-28",
-      "collected_at": "2026-10-28T11:01:00+08:00"
-    },
-    {
-      "event_id": "sglang-ascend-ops-moe-backend-github-2026-10-28",
-      "event_type": "github",
-      "title": "SGLang 为昇腾加入 MoE Prefill 与 Decode 后端",
-      "org": "SGLang",
-      "model": "SGLang Ascend NPU MoE",
-      "summary": "SGLang 新增基于 Ascend Ops 的 MoE 后端，覆盖预填充与解码两个阶段，扩展昇腾 NPU 上的原生专家模型执行路径。",
-      "key_points": [
-        "同一后端覆盖 prefill 和 decode 的 MoE 计算。",
-        "实现接入 SGLang 现有专家路由与运行时调度。",
-        "该能力减少昇腾部署对通用回退算子的依赖。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "SGLang 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "SGLang 于 2026-10-28 合并提交 bacf65f8，加入 Ascend Ops backend for MoE prefill and decode。"
-      ],
-      "published_at": "2026-10-28",
-      "collected_at": "2026-10-28T11:01:00+08:00"
     },
     {
       "event_id": "nvidia-nemotron-3-5-transcribe-model-release-2026-10-28",
@@ -6381,33 +6732,6 @@
       "collected_at": "2026-10-29T10:55:00+08:00"
     },
     {
-      "event_id": "llama-cpp-realtime-conversation-transcription-github-2026-10-28",
-      "event_type": "github",
-      "title": "llama.cpp Server 加入实时对话与转录接口",
-      "org": "ggml-org",
-      "model": "llama.cpp Realtime",
-      "summary": "llama.cpp Server 新增实时对话与语音转录服务路径，并修正并发会话共享上下文时采样到其他 slot logits 的问题。",
-      "key_points": [
-        "实时接口同时覆盖 conversation 和 transcription。",
-        "服务端让每个实时响应在自身 decode 后立即采样，隔离并发 slot。",
-        "示例客户端可读取模型卡提示并连接独立实时服务端口。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "llama.cpp 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "llama.cpp 于 2026-10-28 合并提交 8ca4060b，加入实时对话、转录与并发采样隔离。"
-      ],
-      "published_at": "2026-10-28",
-      "collected_at": "2026-10-28T11:01:00+08:00"
-    },
-    {
       "event_id": "llama-cpp-lfm3-video-input-github-2026-10-28",
       "event_type": "github",
       "title": "llama.cpp 为 LFM3 模型族启用视频输入",
@@ -6460,303 +6784,6 @@
       ],
       "published_at": "2026-10-28",
       "collected_at": "2026-10-29T10:55:00+08:00"
-    },
-    {
-      "event_id": "vllm-glm53-tma-moe-projection-github-2026-10-27",
-      "event_type": "github",
-      "title": "vLLM 用 TMA 加速 GLM-5.3 MoE 投影",
-      "org": "vLLM",
-      "model": "GLM-5.3",
-      "summary": "vLLM 为 GLM-5.3 的 MoE 上投影与下投影启用 TMA 数据搬运；官方提交基准报告端到端吞吐提升约百分之三点一至三点四。",
-      "key_points": [
-        "优化同时覆盖 MoE up projection 和 down projection。",
-        "实现保留指针路径并增加针对 H200 的数值一致性测试。",
-        "性能数字来自提交中的特定配置，不代表所有硬件与批量下的固定收益。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "vLLM 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "vLLM 于 2026-10-27 合并提交 c56706e8，加入 MoE 投影 TMA 路径并报告 GLM-5.3 端到端吞吐收益。"
-      ],
-      "published_at": "2026-10-27",
-      "collected_at": "2026-10-28T11:01:00+08:00"
-    },
-    {
-      "event_id": "vllm-glm53-dspark-fp8-kv-cache-github-2026-10-27",
-      "event_type": "github",
-      "title": "vLLM 为 GLM-5.3 DSpark 草稿模型启用 FP8 KV Cache",
-      "org": "vLLM",
-      "model": "GLM-5.3 / DSpark",
-      "summary": "vLLM 在 GLM-5.3 的 DSpark 投机解码草稿模型中启用 FP8 KV Cache，官方提交报告每个 rank 节省约五点三八 GB GPU 显存。",
-      "key_points": [
-        "低精度 KV Cache 应用于草稿模型而非仅目标模型。",
-        "显存节省可为更长上下文、更大批量或额外并行副本留出空间。",
-        "该改动与 GLM-5.3 的投机解码执行路径直接集成。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "vLLM 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "vLLM 于 2026-10-27 合并提交 c6f6e6a9，为 GLM-5.3 DSpark draft model 启用 FP8 KV Cache。"
-      ],
-      "published_at": "2026-10-27",
-      "collected_at": "2026-10-28T11:01:00+08:00"
-    },
-    {
-      "event_id": "vllm-best-effort-numa-binding-github-2026-10-27",
-      "event_type": "github",
-      "title": "vLLM 默认启用 Best-Effort NUMA 绑定",
-      "org": "vLLM",
-      "model": "vLLM Runtime",
-      "summary": "vLLM 核心运行时默认启用尽力而为的 NUMA 绑定，使 CPU 线程和内存更接近其服务的设备，同时在无法满足绑定时保持可运行。",
-      "key_points": [
-        "策略默认开启但采用 best-effort 语义。",
-        "目标是降低多路 CPU 与多 GPU 服务器上的跨 NUMA 内存访问。",
-        "该改动属于部署层硬件亲和性优化，不改变模型数值。"
-      ],
-      "importance": 2,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "vLLM 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "vLLM 于 2026-10-27 合并提交 4d95f222，将 best-effort NUMA binding 设为默认核心行为。"
-      ],
-      "published_at": "2026-10-27",
-      "collected_at": "2026-10-28T11:01:00+08:00"
-    },
-    {
-      "event_id": "transformers-flash-attn2-v4-xpu-github-2026-10-27",
-      "event_type": "github",
-      "title": "Transformers 升级 Flash Attention 2 内核至 v4",
-      "org": "Hugging Face",
-      "model": "Transformers / Flash Attention 2",
-      "summary": "Transformers 将 kernels-community 的 Flash Attention 2 依赖升级到 v4，修复 XPU 构建未启用提前编译及 SYCL 前向回归问题。",
-      "key_points": [
-        "v4 包含 XPU ahead-of-time compilation 修正。",
-        "同时更新导致 Flash Attention 前向回归的 SYCL 依赖版本。",
-        "官方提交说明 v3 与 v4 logits 按位一致，属于构建和后端修复。"
-      ],
-      "importance": 2,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "Transformers 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "Transformers 于 2026-10-27 合并提交 6a74bb90，将 Flash Attention 2 kernel repository 升级至 v4。"
-      ],
-      "published_at": "2026-10-27",
-      "collected_at": "2026-10-28T11:01:00+08:00"
-    },
-    {
-      "event_id": "sglang-qwen35-gdn-online-mxfp4-github-2026-10-27",
-      "event_type": "github",
-      "title": "SGLang 在线量化 Qwen3.5 GDN 投影到 MXFP4",
-      "org": "SGLang",
-      "model": "Qwen3.5 GDN",
-      "summary": "SGLang 在 AMD 路径将 Qwen3.5 的 BF16 GDN 投影在线量化为 MXFP4，以降低投影计算与带宽成本。",
-      "key_points": [
-        "量化发生在运行时的 GDN projection 路径。",
-        "输入保持 BF16，计算后端使用 MXFP4 表示。",
-        "优化面向 AMD GPU 上的 Qwen3.5 推理。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "SGLang 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "SGLang 于 2026-10-27 合并提交 3145c7ae，加入 Qwen3.5 BF16 GDN projections 的在线 MXFP4 量化。"
-      ],
-      "published_at": "2026-10-27",
-      "collected_at": "2026-10-28T11:01:00+08:00"
-    },
-    {
-      "event_id": "sglang-gfx950-mtp-verify-attention-split-github-2026-10-27",
-      "event_type": "github",
-      "title": "SGLang 将 GFX950 小批量 MTP 校验注意力铺满全部 CU",
-      "org": "SGLang",
-      "model": "MTP Verification / GFX950",
-      "summary": "SGLang 的 AMD vAttention 汇编路径把小批量 MTP 校验注意力拆分到 GFX950 的全部计算单元，提高低并发校验阶段的设备占用率。",
-      "key_points": [
-        "优化针对 small-batch MTP verify attention。",
-        "工作负载跨全部 CU 分片，而非受限于较少工作组。",
-        "该改动聚焦投机解码校验阶段的尾部延迟。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "SGLang 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "SGLang 于 2026-10-27 合并提交 2c83dc66，加入 GFX950 小批量 MTP verify attention 的全 CU 分片。"
-      ],
-      "published_at": "2026-10-27",
-      "collected_at": "2026-10-28T11:01:00+08:00"
-    },
-    {
-      "event_id": "llama-cpp-router-device-memory-margin-github-2026-10-27",
-      "event_type": "github",
-      "title": "llama.cpp Router 支持按设备显存余量动态卸载模型",
-      "org": "ggml-org",
-      "model": "llama.cpp Server Router",
-      "summary": "llama.cpp Server 为多模型路由器加入按设备显存余量约束的动态卸载，在新模型装载前估算各设备需求并释放空闲实例。",
-      "key_points": [
-        "显存限制按每个设备分别核算，不只看总内存。",
-        "加载估算通过无分配测量子进程获得，并区分测量进程与实例占用。",
-        "当余量不足且没有空闲模型可卸载时，请求进入等待而非高频失败重试。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "llama.cpp 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "llama.cpp 于 2026-10-27 合并提交 85cc432e，加入 device memory margin、动态卸载与加载等待修正。"
-      ],
-      "published_at": "2026-10-27",
-      "collected_at": "2026-10-28T11:01:00+08:00"
-    },
-    {
-      "event_id": "llama-cpp-minicpm-ocr-jev-github-2026-10-27",
-      "event_type": "github",
-      "title": "llama.cpp 支持 MiniCPM-OCR-Jev 判别模型",
-      "org": "ggml-org",
-      "model": "MiniCPM-OCR-Jev",
-      "summary": "llama.cpp 接入 MiniCPM-OCR-Jev：使用 Qwen3.5-VL 主干和末 token value head，对 OCR 文本与渲染图像的一致性进行评分。",
-      "key_points": [
-        "模型以序列分类方式输出分数，不执行文本生成。",
-        "服务端通过 System One 决策接口暴露固定任务。",
-        "转换流程保留分类输出标签，并支持更高的图像 token 预算。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "llama.cpp 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "llama.cpp 于 2026-10-27 合并提交 7eed6b76，加入 MiniCPM-OCR-Jev 架构、转换与决策服务支持。"
-      ],
-      "published_at": "2026-10-27",
-      "collected_at": "2026-10-28T11:01:00+08:00"
-    },
-    {
-      "event_id": "llama-cpp-metal-top-k-mask-github-2026-10-27",
-      "event_type": "github",
-      "title": "llama.cpp Metal 加入融合 Top-K Mask",
-      "org": "ggml-org",
-      "model": "llama.cpp Metal backend",
-      "summary": "llama.cpp 将 CUDA 的融合 Top-K Mask 思路移植到 Metal：先并行填充负无穷，再按行写回保留位置的 mask 值。",
-      "key_points": [
-        "每行使用一个 threadgroup 处理保留单元。",
-        "function constants 可裁剪图中未使用的分支。",
-        "该算子服务稀疏选择路径，减少多步 mask 构造。"
-      ],
-      "importance": 2,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "llama.cpp 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "llama.cpp 于 2026-10-27 合并提交 27637851，为 Metal 后端加入 GGML_OP_TOP_K_MASK。"
-      ],
-      "published_at": "2026-10-27",
-      "collected_at": "2026-10-28T11:01:00+08:00"
-    },
-    {
-      "event_id": "llama-cpp-liquidai-lfm3-multimodal-family-github-2026-10-27",
-      "event_type": "github",
-      "title": "llama.cpp 接入 LiquidAI LFM3 多模态模型族",
-      "org": "ggml-org",
-      "model": "LiquidAI LFM3 / d1",
-      "summary": "llama.cpp 连续接入 LiquidAI 的 LFM3 文本、视觉、音频、Omni 与 d1 模型，形成从转换、量化到推理和 TTS 的统一支持。",
-      "key_points": [
-        "覆盖 LFM3-1.7B、LFM3-VL-2B、LFM3-Audio-2B、LFM3-Omni-2B、d1-2B 与 d1-omni-2B。",
-        "音频与 Omni 路径加入语音选择，视觉路径保留关键卷积为高精度。",
-        "LFM3 运行时补充 recurrent state rollback，适配分支解码和回退。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "llama.cpp 官方合并提交",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "llama.cpp 于 2026-10-27 合并提交 19cce691、19ff817f 与 d05706b4，分阶段接入 LiquidAI LFM3 和 d1 模型族。"
-      ],
-      "published_at": "2026-10-27",
-      "collected_at": "2026-10-28T11:01:00+08:00"
-    },
-    {
-      "event_id": "google-deepmind-genie-4-model-release-2026-10-27",
-      "event_type": "model_release",
-      "title": "Google DeepMind 发布 Genie 4 世界模型",
-      "org": "Google DeepMind",
-      "model": "Genie 4",
-      "summary": "Google DeepMind 发布 Genie 4 研究预览版，可实时生成可交互、可通过文本引导的多模态世界，并原生同步生成环境声、音乐和对话。",
-      "key_points": [
-        "模型将视觉、运动、声音与交互控制统一到持续运行的模拟中。",
-        "官方说明 Gemini Omni 用于锚定现实外观与行为，其他 Gemini 模型参与连贯性推理。",
-        "当前先向受信测试者开放，后续计划通过 Project Genie 及 Gemini 开发者渠道扩大访问。"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "Google DeepMind 官方博客",
-          "type": "official"
-        }
-      ],
-      "evidence": [
-        "Google DeepMind 于 2026-10-27 在官方博客发布 Genie 4，并展示实时交互、原生音频与文本引导能力。"
-      ],
-      "published_at": "2026-10-27",
-      "collected_at": "2026-10-28T11:01:00+08:00"
     }
   ]
 }
