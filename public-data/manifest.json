@@ -13,9 +13,9 @@
     "today": {
       "path": "today/today-events.json",
       "collectorStatePath": "today/today-state.json",
-      "generatedAt": "2026-11-10T17:16:16Z",
+      "generatedAt": "2026-11-11T01:59:37Z",
       "collectorStatus": "ok",
-      "eventCount": 105
+      "eventCount": 47
     },
     "usage": {
       "path": "usage/usage-rankings.json",
