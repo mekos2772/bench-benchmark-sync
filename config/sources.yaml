@@ -1034,7 +1034,7 @@ sources:
 
 - benchmark_id: frontiercode_v2_0
   status: enabled
-  source_name: FrontierCode 2.0 official public page
+  source_name: FrontierCode-AA 2.0 official public page
   organization: Artificial Analysis
   source_type: official_page_endpoint
   official_url: https://artificialanalysis.ai/evaluations/frontiercode-2-0
@@ -1044,7 +1044,7 @@ sources:
   requires_auth: false
   evaluation_field: 'FrontierCode 2.0: Score'
   release_id: v2.0
-  expected_page_heading: FrontierCode 2.0 Benchmark
+  expected_page_heading: FrontierCode-AA 2.0 Benchmark
   evidence_url: https://artificialanalysis.ai/evaluations/frontiercode-2-0
   release_tracking: official_page_heading
   hash_required: true
