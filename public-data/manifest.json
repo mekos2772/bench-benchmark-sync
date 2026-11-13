@@ -4,30 +4,30 @@
   "datasets": {
     "benchmark": {
       "path": "benchmark/livebench-ranking.json",
-      "generatedAt": "2026-11-12T11:00:22Z",
+      "generatedAt": "2026-11-13T10:54:53Z",
       "sourceCommit": "daa34b9a7af2b9d756315cb5d19417acb0082e62",
-      "sourceRunId": "43205081302",
+      "sourceRunId": "43412578376",
       "families": 3,
       "boards": 31
     },
     "today": {
       "path": "today/today-events.json",
       "collectorStatePath": "today/today-state.json",
-      "generatedAt": "2026-11-13T00:17:27Z",
+      "generatedAt": "2026-11-13T06:51:39Z",
       "collectorStatus": "ok",
-      "eventCount": 90
+      "eventCount": 81
     },
     "usage": {
       "path": "usage/usage-rankings.json",
-      "generatedAt": "2026-11-12T08:23:18Z",
+      "generatedAt": "2026-11-13T08:03:53Z",
       "collectorStatus": "ok"
     },
     "intelligence": {
       "indexPath": "intelligence/index.json",
       "latestPath": "intelligence/latest.json",
-      "latestArchiveDate": "2026-11-12",
-      "archiveDays": 42,
-      "totalRecords": 533
+      "latestArchiveDate": "2026-11-13",
+      "archiveDays": 43,
+      "totalRecords": 551
     }
   }
 }
