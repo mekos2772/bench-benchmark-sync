@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-11-14T01:24:23Z",
-  "windowStart": "2026-11-13T01:24:23Z",
+  "generatedAt": "2026-11-14T07:41:08Z",
+  "windowStart": "2026-11-13T07:41:08Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -54,566 +54,121 @@
           "field": "canonicalId",
           "sourceUrl": "https://huggingface.co/inclusionAI/Duo-1.0-distill-quant",
           "observedAt": "2026-11-13T08:09:23Z",
-          "contentHash": "ffeb465c84ff89bdf36f0f7abeb6d305873a86627d03e507849acdea9a5e2b0a",
+          "contentHash": "a018db79abfb5e69686e6652f4a6fd523e06da5aab1e18f37a0fed7aa1f4e138",
           "sourceType": "hub_official_org"
         },
         {
           "field": "provider",
           "sourceUrl": "https://huggingface.co/inclusionAI/Duo-1.0-distill-quant",
           "observedAt": "2026-11-13T08:09:23Z",
-          "contentHash": "ffeb465c84ff89bdf36f0f7abeb6d305873a86627d03e507849acdea9a5e2b0a",
+          "contentHash": "a018db79abfb5e69686e6652f4a6fd523e06da5aab1e18f37a0fed7aa1f4e138",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelId",
           "sourceUrl": "https://huggingface.co/inclusionAI/Duo-1.0-distill-quant",
           "observedAt": "2026-11-13T08:09:23Z",
-          "contentHash": "ffeb465c84ff89bdf36f0f7abeb6d305873a86627d03e507849acdea9a5e2b0a",
+          "contentHash": "a018db79abfb5e69686e6652f4a6fd523e06da5aab1e18f37a0fed7aa1f4e138",
           "sourceType": "hub_official_org"
         },
         {
           "field": "displayName",
           "sourceUrl": "https://huggingface.co/inclusionAI/Duo-1.0-distill-quant",
           "observedAt": "2026-11-13T08:09:23Z",
-          "contentHash": "ffeb465c84ff89bdf36f0f7abeb6d305873a86627d03e507849acdea9a5e2b0a",
+          "contentHash": "a018db79abfb5e69686e6652f4a6fd523e06da5aab1e18f37a0fed7aa1f4e138",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseDate",
           "sourceUrl": "https://huggingface.co/inclusionAI/Duo-1.0-distill-quant",
           "observedAt": "2026-11-13T08:09:23Z",
-          "contentHash": "ffeb465c84ff89bdf36f0f7abeb6d305873a86627d03e507849acdea9a5e2b0a",
+          "contentHash": "a018db79abfb5e69686e6652f4a6fd523e06da5aab1e18f37a0fed7aa1f4e138",
           "sourceType": "hub_official_org"
         },
         {
           "field": "status",
           "sourceUrl": "https://huggingface.co/inclusionAI/Duo-1.0-distill-quant",
           "observedAt": "2026-11-13T08:09:23Z",
-          "contentHash": "ffeb465c84ff89bdf36f0f7abeb6d305873a86627d03e507849acdea9a5e2b0a",
+          "contentHash": "a018db79abfb5e69686e6652f4a6fd523e06da5aab1e18f37a0fed7aa1f4e138",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseType",
           "sourceUrl": "https://huggingface.co/inclusionAI/Duo-1.0-distill-quant",
           "observedAt": "2026-11-13T08:09:23Z",
-          "contentHash": "ffeb465c84ff89bdf36f0f7abeb6d305873a86627d03e507849acdea9a5e2b0a",
+          "contentHash": "a018db79abfb5e69686e6652f4a6fd523e06da5aab1e18f37a0fed7aa1f4e138",
           "sourceType": "hub_official_org"
         },
         {
           "field": "access",
           "sourceUrl": "https://huggingface.co/inclusionAI/Duo-1.0-distill-quant",
           "observedAt": "2026-11-13T08:09:23Z",
-          "contentHash": "ffeb465c84ff89bdf36f0f7abeb6d305873a86627d03e507849acdea9a5e2b0a",
+          "contentHash": "a018db79abfb5e69686e6652f4a6fd523e06da5aab1e18f37a0fed7aa1f4e138",
           "sourceType": "hub_official_org"
         },
         {
           "field": "license",
           "sourceUrl": "https://huggingface.co/inclusionAI/Duo-1.0-distill-quant",
           "observedAt": "2026-11-13T08:09:23Z",
-          "contentHash": "ffeb465c84ff89bdf36f0f7abeb6d305873a86627d03e507849acdea9a5e2b0a",
+          "contentHash": "a018db79abfb5e69686e6652f4a6fd523e06da5aab1e18f37a0fed7aa1f4e138",
           "sourceType": "hub_official_org"
         },
         {
           "field": "technicalReportUrl",
           "sourceUrl": "https://huggingface.co/inclusionAI/Duo-1.0-distill-quant",
           "observedAt": "2026-11-13T08:09:23Z",
-          "contentHash": "ffeb465c84ff89bdf36f0f7abeb6d305873a86627d03e507849acdea9a5e2b0a",
+          "contentHash": "a018db79abfb5e69686e6652f4a6fd523e06da5aab1e18f37a0fed7aa1f4e138",
           "sourceType": "hub_official_org"
         },
         {
           "field": "description",
           "sourceUrl": "https://huggingface.co/inclusionAI/Duo-1.0-distill-quant",
           "observedAt": "2026-11-13T08:09:23Z",
-          "contentHash": "ffeb465c84ff89bdf36f0f7abeb6d305873a86627d03e507849acdea9a5e2b0a",
+          "contentHash": "a018db79abfb5e69686e6652f4a6fd523e06da5aab1e18f37a0fed7aa1f4e138",
           "sourceType": "hub_official_org"
         },
         {
           "field": "officialUrl",
           "sourceUrl": "https://huggingface.co/inclusionAI/Duo-1.0-distill-quant",
           "observedAt": "2026-11-13T08:09:23Z",
-          "contentHash": "ffeb465c84ff89bdf36f0f7abeb6d305873a86627d03e507849acdea9a5e2b0a",
+          "contentHash": "a018db79abfb5e69686e6652f4a6fd523e06da5aab1e18f37a0fed7aa1f4e138",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelCardUrl",
           "sourceUrl": "https://huggingface.co/inclusionAI/Duo-1.0-distill-quant",
           "observedAt": "2026-11-13T08:09:23Z",
-          "contentHash": "ffeb465c84ff89bdf36f0f7abeb6d305873a86627d03e507849acdea9a5e2b0a",
+          "contentHash": "a018db79abfb5e69686e6652f4a6fd523e06da5aab1e18f37a0fed7aa1f4e138",
           "sourceType": "hub_official_org"
         },
         {
           "field": "hubRepo",
           "sourceUrl": "https://huggingface.co/inclusionAI/Duo-1.0-distill-quant",
           "observedAt": "2026-11-13T08:09:23Z",
-          "contentHash": "ffeb465c84ff89bdf36f0f7abeb6d305873a86627d03e507849acdea9a5e2b0a",
+          "contentHash": "a018db79abfb5e69686e6652f4a6fd523e06da5aab1e18f37a0fed7aa1f4e138",
           "sourceType": "hub_official_org"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "https://huggingface.co/inclusionAI/Duo-1.0-distill-quant",
           "observedAt": "2026-11-13T08:09:23Z",
-          "contentHash": "ffeb465c84ff89bdf36f0f7abeb6d305873a86627d03e507849acdea9a5e2b0a",
+          "contentHash": "a018db79abfb5e69686e6652f4a6fd523e06da5aab1e18f37a0fed7aa1f4e138",
           "sourceType": "hub_official_org"
         },
         {
           "field": "availability",
           "sourceUrl": "https://huggingface.co/inclusionAI/Duo-1.0-distill-quant",
           "observedAt": "2026-11-13T08:09:23Z",
-          "contentHash": "ffeb465c84ff89bdf36f0f7abeb6d305873a86627d03e507849acdea9a5e2b0a",
+          "contentHash": "a018db79abfb5e69686e6652f4a6fd523e06da5aab1e18f37a0fed7aa1f4e138",
           "sourceType": "hub_official_org"
         }
       ]
     },
-    "benchmark:Gemini 4 Argon (Medium)": {
-      "canonicalId": "benchmark:Gemini 4 Argon (Medium)",
+    "benchmark:Tencent Hy4": {
+      "canonicalId": "benchmark:Tencent Hy4",
       "provider": null,
-      "modelId": "Gemini 4 Argon (Medium)",
-      "displayName": "Gemini 4 Argon (Medium)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis MMMU-Pro official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "883ccddb59123eb671fb4bd6a9b54f417dbbfdb6f835d7f19343a576cd85e32b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "883ccddb59123eb671fb4bd6a9b54f417dbbfdb6f835d7f19343a576cd85e32b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "883ccddb59123eb671fb4bd6a9b54f417dbbfdb6f835d7f19343a576cd85e32b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "883ccddb59123eb671fb4bd6a9b54f417dbbfdb6f835d7f19343a576cd85e32b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "883ccddb59123eb671fb4bd6a9b54f417dbbfdb6f835d7f19343a576cd85e32b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "883ccddb59123eb671fb4bd6a9b54f417dbbfdb6f835d7f19343a576cd85e32b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "883ccddb59123eb671fb4bd6a9b54f417dbbfdb6f835d7f19343a576cd85e32b",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Kimi K3 (Max)": {
-      "canonicalId": "benchmark:Kimi K3 (Max)",
-      "provider": null,
-      "modelId": "Kimi K3 (Max)",
-      "displayName": "Kimi K3 (Max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis MMMU-Pro official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "5d08527351358657d48c4e33ffe9436bec9400cfbd870976706f8b44f4061fd3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "5d08527351358657d48c4e33ffe9436bec9400cfbd870976706f8b44f4061fd3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "5d08527351358657d48c4e33ffe9436bec9400cfbd870976706f8b44f4061fd3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "5d08527351358657d48c4e33ffe9436bec9400cfbd870976706f8b44f4061fd3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "5d08527351358657d48c4e33ffe9436bec9400cfbd870976706f8b44f4061fd3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "5d08527351358657d48c4e33ffe9436bec9400cfbd870976706f8b44f4061fd3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "5d08527351358657d48c4e33ffe9436bec9400cfbd870976706f8b44f4061fd3",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Qwen3.8 Max": {
-      "canonicalId": "benchmark:Qwen3.8 Max",
-      "provider": null,
-      "modelId": "Qwen3.8 Max",
-      "displayName": "Qwen3.8 Max",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis MMMU-Pro official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "b7c764fbb8acd34431116ae0f91278756bd332feaf6a9c6b3c427cc03ef2a965",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "b7c764fbb8acd34431116ae0f91278756bd332feaf6a9c6b3c427cc03ef2a965",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "b7c764fbb8acd34431116ae0f91278756bd332feaf6a9c6b3c427cc03ef2a965",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "b7c764fbb8acd34431116ae0f91278756bd332feaf6a9c6b3c427cc03ef2a965",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "b7c764fbb8acd34431116ae0f91278756bd332feaf6a9c6b3c427cc03ef2a965",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "b7c764fbb8acd34431116ae0f91278756bd332feaf6a9c6b3c427cc03ef2a965",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "b7c764fbb8acd34431116ae0f91278756bd332feaf6a9c6b3c427cc03ef2a965",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Gemini 4 Hydrogen (Xhigh)": {
-      "canonicalId": "benchmark:Gemini 4 Hydrogen (Xhigh)",
-      "provider": null,
-      "modelId": "Gemini 4 Hydrogen (Xhigh)",
-      "displayName": "Gemini 4 Hydrogen (Xhigh)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis MLCR Overall official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "ab99ad61878fdcea5fa874069a15cfd7dce1b48ffbfa6ec90969b70bcdd996ce",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "ab99ad61878fdcea5fa874069a15cfd7dce1b48ffbfa6ec90969b70bcdd996ce",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "ab99ad61878fdcea5fa874069a15cfd7dce1b48ffbfa6ec90969b70bcdd996ce",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "ab99ad61878fdcea5fa874069a15cfd7dce1b48ffbfa6ec90969b70bcdd996ce",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "ab99ad61878fdcea5fa874069a15cfd7dce1b48ffbfa6ec90969b70bcdd996ce",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "ab99ad61878fdcea5fa874069a15cfd7dce1b48ffbfa6ec90969b70bcdd996ce",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "ab99ad61878fdcea5fa874069a15cfd7dce1b48ffbfa6ec90969b70bcdd996ce",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Qwen3.8 Max (0902)": {
-      "canonicalId": "benchmark:Qwen3.8 Max (0902)",
-      "provider": null,
-      "modelId": "Qwen3.8 Max (0902)",
-      "displayName": "Qwen3.8 Max (0902)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis MLCR Overall official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "c4ac19b465a49c7492796fa672cb4f0a1b26619c1b0639a01eb9745bae7e5317",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "c4ac19b465a49c7492796fa672cb4f0a1b26619c1b0639a01eb9745bae7e5317",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "c4ac19b465a49c7492796fa672cb4f0a1b26619c1b0639a01eb9745bae7e5317",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "c4ac19b465a49c7492796fa672cb4f0a1b26619c1b0639a01eb9745bae7e5317",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "c4ac19b465a49c7492796fa672cb4f0a1b26619c1b0639a01eb9745bae7e5317",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "c4ac19b465a49c7492796fa672cb4f0a1b26619c1b0639a01eb9745bae7e5317",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-          "observedAt": "2026-11-13T21:05:59Z",
-          "contentHash": "c4ac19b465a49c7492796fa672cb4f0a1b26619c1b0639a01eb9745bae7e5317",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Claude Fable 5.1 (Max, Default Fallback)": {
-      "canonicalId": "benchmark:Claude Fable 5.1 (Max, Default Fallback)",
-      "provider": null,
-      "modelId": "Claude Fable 5.1 (Max, Default Fallback)",
-      "displayName": "Claude Fable 5.1 (Max, Default Fallback)",
+      "modelId": "Tencent Hy4",
+      "displayName": "Tencent Hy4",
       "version": null,
       "aliases": [],
       "releaseDate": null,
@@ -651,1384 +206,49 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "31ff9d7bcce82c4ae37c98193e4817309ea2991ed011fde6b38deeff42e8ea8c",
+          "contentHash": "272cc1000d9b36878c61b697cf004c8316c4ca8b2157fc3f178e1a842992c749",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "31ff9d7bcce82c4ae37c98193e4817309ea2991ed011fde6b38deeff42e8ea8c",
+          "contentHash": "272cc1000d9b36878c61b697cf004c8316c4ca8b2157fc3f178e1a842992c749",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "31ff9d7bcce82c4ae37c98193e4817309ea2991ed011fde6b38deeff42e8ea8c",
+          "contentHash": "272cc1000d9b36878c61b697cf004c8316c4ca8b2157fc3f178e1a842992c749",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "31ff9d7bcce82c4ae37c98193e4817309ea2991ed011fde6b38deeff42e8ea8c",
+          "contentHash": "272cc1000d9b36878c61b697cf004c8316c4ca8b2157fc3f178e1a842992c749",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "31ff9d7bcce82c4ae37c98193e4817309ea2991ed011fde6b38deeff42e8ea8c",
+          "contentHash": "272cc1000d9b36878c61b697cf004c8316c4ca8b2157fc3f178e1a842992c749",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "31ff9d7bcce82c4ae37c98193e4817309ea2991ed011fde6b38deeff42e8ea8c",
+          "contentHash": "272cc1000d9b36878c61b697cf004c8316c4ca8b2157fc3f178e1a842992c749",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "31ff9d7bcce82c4ae37c98193e4817309ea2991ed011fde6b38deeff42e8ea8c",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Claude Fable 5.2 (Max, Default Fallback)": {
-      "canonicalId": "benchmark:Claude Fable 5.2 (Max, Default Fallback)",
-      "provider": null,
-      "modelId": "Claude Fable 5.2 (Max, Default Fallback)",
-      "displayName": "Claude Fable 5.2 (Max, Default Fallback)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "0e33f1a72126e3ec0e102df6e0c2e588d1f1d0f57b10096564c7d7f476fd2b1d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "0e33f1a72126e3ec0e102df6e0c2e588d1f1d0f57b10096564c7d7f476fd2b1d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "0e33f1a72126e3ec0e102df6e0c2e588d1f1d0f57b10096564c7d7f476fd2b1d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "0e33f1a72126e3ec0e102df6e0c2e588d1f1d0f57b10096564c7d7f476fd2b1d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "0e33f1a72126e3ec0e102df6e0c2e588d1f1d0f57b10096564c7d7f476fd2b1d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "0e33f1a72126e3ec0e102df6e0c2e588d1f1d0f57b10096564c7d7f476fd2b1d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "0e33f1a72126e3ec0e102df6e0c2e588d1f1d0f57b10096564c7d7f476fd2b1d",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Claude Haiku 5.5 (Max)": {
-      "canonicalId": "benchmark:Claude Haiku 5.5 (Max)",
-      "provider": null,
-      "modelId": "Claude Haiku 5.5 (Max)",
-      "displayName": "Claude Haiku 5.5 (Max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "1c513ae06190fa030c4b45933e9e5eb3b4d8b78f302573175791f0c4ad9d1352",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "1c513ae06190fa030c4b45933e9e5eb3b4d8b78f302573175791f0c4ad9d1352",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "1c513ae06190fa030c4b45933e9e5eb3b4d8b78f302573175791f0c4ad9d1352",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "1c513ae06190fa030c4b45933e9e5eb3b4d8b78f302573175791f0c4ad9d1352",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "1c513ae06190fa030c4b45933e9e5eb3b4d8b78f302573175791f0c4ad9d1352",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "1c513ae06190fa030c4b45933e9e5eb3b4d8b78f302573175791f0c4ad9d1352",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "1c513ae06190fa030c4b45933e9e5eb3b4d8b78f302573175791f0c4ad9d1352",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Claude Opus 5.5 (Max, Default Fallback)": {
-      "canonicalId": "benchmark:Claude Opus 5.5 (Max, Default Fallback)",
-      "provider": null,
-      "modelId": "Claude Opus 5.5 (Max, Default Fallback)",
-      "displayName": "Claude Opus 5.5 (Max, Default Fallback)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "f686a1382a392875732d1eba47d51d601e3125ab1cd2534651fcbbb4566f97b7",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "f686a1382a392875732d1eba47d51d601e3125ab1cd2534651fcbbb4566f97b7",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "f686a1382a392875732d1eba47d51d601e3125ab1cd2534651fcbbb4566f97b7",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "f686a1382a392875732d1eba47d51d601e3125ab1cd2534651fcbbb4566f97b7",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "f686a1382a392875732d1eba47d51d601e3125ab1cd2534651fcbbb4566f97b7",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "f686a1382a392875732d1eba47d51d601e3125ab1cd2534651fcbbb4566f97b7",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "f686a1382a392875732d1eba47d51d601e3125ab1cd2534651fcbbb4566f97b7",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Claude Sonnet 5.5 (Max, Default Fallback)": {
-      "canonicalId": "benchmark:Claude Sonnet 5.5 (Max, Default Fallback)",
-      "provider": null,
-      "modelId": "Claude Sonnet 5.5 (Max, Default Fallback)",
-      "displayName": "Claude Sonnet 5.5 (Max, Default Fallback)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "299e6f4254835ac172949527ac891d98053af9a1af3fd0032832186140ab070d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "299e6f4254835ac172949527ac891d98053af9a1af3fd0032832186140ab070d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "299e6f4254835ac172949527ac891d98053af9a1af3fd0032832186140ab070d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "299e6f4254835ac172949527ac891d98053af9a1af3fd0032832186140ab070d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "299e6f4254835ac172949527ac891d98053af9a1af3fd0032832186140ab070d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "299e6f4254835ac172949527ac891d98053af9a1af3fd0032832186140ab070d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "299e6f4254835ac172949527ac891d98053af9a1af3fd0032832186140ab070d",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GLM-5.3 (Max)": {
-      "canonicalId": "benchmark:GLM-5.3 (Max)",
-      "provider": null,
-      "modelId": "GLM-5.3 (Max)",
-      "displayName": "GLM-5.3 (Max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "9528de497dca65bc7b6dd8cab562866b7efd5ae22bfbb0c2dbfb24fc99219cac",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "9528de497dca65bc7b6dd8cab562866b7efd5ae22bfbb0c2dbfb24fc99219cac",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "9528de497dca65bc7b6dd8cab562866b7efd5ae22bfbb0c2dbfb24fc99219cac",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "9528de497dca65bc7b6dd8cab562866b7efd5ae22bfbb0c2dbfb24fc99219cac",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "9528de497dca65bc7b6dd8cab562866b7efd5ae22bfbb0c2dbfb24fc99219cac",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "9528de497dca65bc7b6dd8cab562866b7efd5ae22bfbb0c2dbfb24fc99219cac",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "9528de497dca65bc7b6dd8cab562866b7efd5ae22bfbb0c2dbfb24fc99219cac",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GPT-6 Astra (Max)": {
-      "canonicalId": "benchmark:GPT-6 Astra (Max)",
-      "provider": null,
-      "modelId": "GPT-6 Astra (Max)",
-      "displayName": "GPT-6 Astra (Max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "665b7371f18842c6a35293d97f6e88b378e78fa31c2521b891a962a9474138d2",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "665b7371f18842c6a35293d97f6e88b378e78fa31c2521b891a962a9474138d2",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "665b7371f18842c6a35293d97f6e88b378e78fa31c2521b891a962a9474138d2",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "665b7371f18842c6a35293d97f6e88b378e78fa31c2521b891a962a9474138d2",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "665b7371f18842c6a35293d97f6e88b378e78fa31c2521b891a962a9474138d2",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "665b7371f18842c6a35293d97f6e88b378e78fa31c2521b891a962a9474138d2",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "665b7371f18842c6a35293d97f6e88b378e78fa31c2521b891a962a9474138d2",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GPT-6 Luna (Max)": {
-      "canonicalId": "benchmark:GPT-6 Luna (Max)",
-      "provider": null,
-      "modelId": "GPT-6 Luna (Max)",
-      "displayName": "GPT-6 Luna (Max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "2e31287478ff8b555c13a66cf49cebcb1164f6026e6a223568385a1f7d3099ac",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "2e31287478ff8b555c13a66cf49cebcb1164f6026e6a223568385a1f7d3099ac",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "2e31287478ff8b555c13a66cf49cebcb1164f6026e6a223568385a1f7d3099ac",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "2e31287478ff8b555c13a66cf49cebcb1164f6026e6a223568385a1f7d3099ac",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "2e31287478ff8b555c13a66cf49cebcb1164f6026e6a223568385a1f7d3099ac",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "2e31287478ff8b555c13a66cf49cebcb1164f6026e6a223568385a1f7d3099ac",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "2e31287478ff8b555c13a66cf49cebcb1164f6026e6a223568385a1f7d3099ac",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GPT-6.1 Sol (Max)": {
-      "canonicalId": "benchmark:GPT-6.1 Sol (Max)",
-      "provider": null,
-      "modelId": "GPT-6.1 Sol (Max)",
-      "displayName": "GPT-6.1 Sol (Max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "64d48cf6b3981ed59e082b714bf2779d443915842bd73f82bad8502a1d514567",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "64d48cf6b3981ed59e082b714bf2779d443915842bd73f82bad8502a1d514567",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "64d48cf6b3981ed59e082b714bf2779d443915842bd73f82bad8502a1d514567",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "64d48cf6b3981ed59e082b714bf2779d443915842bd73f82bad8502a1d514567",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "64d48cf6b3981ed59e082b714bf2779d443915842bd73f82bad8502a1d514567",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "64d48cf6b3981ed59e082b714bf2779d443915842bd73f82bad8502a1d514567",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "64d48cf6b3981ed59e082b714bf2779d443915842bd73f82bad8502a1d514567",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GPT-6.1 Terra (Max)": {
-      "canonicalId": "benchmark:GPT-6.1 Terra (Max)",
-      "provider": null,
-      "modelId": "GPT-6.1 Terra (Max)",
-      "displayName": "GPT-6.1 Terra (Max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "00889b3e1325de64cb402b4b2fd21131474f16f1361b45744faee671f1c973b1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "00889b3e1325de64cb402b4b2fd21131474f16f1361b45744faee671f1c973b1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "00889b3e1325de64cb402b4b2fd21131474f16f1361b45744faee671f1c973b1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "00889b3e1325de64cb402b4b2fd21131474f16f1361b45744faee671f1c973b1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "00889b3e1325de64cb402b4b2fd21131474f16f1361b45744faee671f1c973b1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "00889b3e1325de64cb402b4b2fd21131474f16f1361b45744faee671f1c973b1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "00889b3e1325de64cb402b4b2fd21131474f16f1361b45744faee671f1c973b1",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Grok 4.7 (Xhigh)": {
-      "canonicalId": "benchmark:Grok 4.7 (Xhigh)",
-      "provider": null,
-      "modelId": "Grok 4.7 (Xhigh)",
-      "displayName": "Grok 4.7 (Xhigh)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "05b355db6e7e1a418aefb329eb7c4f869a5b22841e86de761a2f0daa0808fe9e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "05b355db6e7e1a418aefb329eb7c4f869a5b22841e86de761a2f0daa0808fe9e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "05b355db6e7e1a418aefb329eb7c4f869a5b22841e86de761a2f0daa0808fe9e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "05b355db6e7e1a418aefb329eb7c4f869a5b22841e86de761a2f0daa0808fe9e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "05b355db6e7e1a418aefb329eb7c4f869a5b22841e86de761a2f0daa0808fe9e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "05b355db6e7e1a418aefb329eb7c4f869a5b22841e86de761a2f0daa0808fe9e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "05b355db6e7e1a418aefb329eb7c4f869a5b22841e86de761a2f0daa0808fe9e",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:K2 Horizon 375B A23B": {
-      "canonicalId": "benchmark:K2 Horizon 375B A23B",
-      "provider": null,
-      "modelId": "K2 Horizon 375B A23B",
-      "displayName": "K2 Horizon 375B A23B",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "bb7694820c58cbf8a99086ca64f9d31b9fca283e5b68336380cadb54e8b21fca",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "bb7694820c58cbf8a99086ca64f9d31b9fca283e5b68336380cadb54e8b21fca",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "bb7694820c58cbf8a99086ca64f9d31b9fca283e5b68336380cadb54e8b21fca",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "bb7694820c58cbf8a99086ca64f9d31b9fca283e5b68336380cadb54e8b21fca",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "bb7694820c58cbf8a99086ca64f9d31b9fca283e5b68336380cadb54e8b21fca",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "bb7694820c58cbf8a99086ca64f9d31b9fca283e5b68336380cadb54e8b21fca",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "bb7694820c58cbf8a99086ca64f9d31b9fca283e5b68336380cadb54e8b21fca",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Kimi K3.1 Pro": {
-      "canonicalId": "benchmark:Kimi K3.1 Pro",
-      "provider": null,
-      "modelId": "Kimi K3.1 Pro",
-      "displayName": "Kimi K3.1 Pro",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "ab19bd7ed614b0016b04f3dd555fafb06056edeb8c3cee8e62ae09fe190fd6ab",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "ab19bd7ed614b0016b04f3dd555fafb06056edeb8c3cee8e62ae09fe190fd6ab",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "ab19bd7ed614b0016b04f3dd555fafb06056edeb8c3cee8e62ae09fe190fd6ab",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "ab19bd7ed614b0016b04f3dd555fafb06056edeb8c3cee8e62ae09fe190fd6ab",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "ab19bd7ed614b0016b04f3dd555fafb06056edeb8c3cee8e62ae09fe190fd6ab",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "ab19bd7ed614b0016b04f3dd555fafb06056edeb8c3cee8e62ae09fe190fd6ab",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "ab19bd7ed614b0016b04f3dd555fafb06056edeb8c3cee8e62ae09fe190fd6ab",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Ling 3.1 Flash 1019": {
-      "canonicalId": "benchmark:Ling 3.1 Flash 1019",
-      "provider": null,
-      "modelId": "Ling 3.1 Flash 1019",
-      "displayName": "Ling 3.1 Flash 1019",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "bc052b30bd659bbd9ee660a90dbe86ed060afe40e94d649242ff911a3f34965d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "bc052b30bd659bbd9ee660a90dbe86ed060afe40e94d649242ff911a3f34965d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "bc052b30bd659bbd9ee660a90dbe86ed060afe40e94d649242ff911a3f34965d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "bc052b30bd659bbd9ee660a90dbe86ed060afe40e94d649242ff911a3f34965d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "bc052b30bd659bbd9ee660a90dbe86ed060afe40e94d649242ff911a3f34965d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "bc052b30bd659bbd9ee660a90dbe86ed060afe40e94d649242ff911a3f34965d",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "bc052b30bd659bbd9ee660a90dbe86ed060afe40e94d649242ff911a3f34965d",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:MiMo-V2.6-Pro": {
-      "canonicalId": "benchmark:MiMo-V2.6-Pro",
-      "provider": null,
-      "modelId": "MiMo-V2.6-Pro",
-      "displayName": "MiMo-V2.6-Pro",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "a7e05e407d3436ff6469d5c015c06d65c58276abac3f5804c2d8278e078d4527",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "a7e05e407d3436ff6469d5c015c06d65c58276abac3f5804c2d8278e078d4527",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "a7e05e407d3436ff6469d5c015c06d65c58276abac3f5804c2d8278e078d4527",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "a7e05e407d3436ff6469d5c015c06d65c58276abac3f5804c2d8278e078d4527",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "a7e05e407d3436ff6469d5c015c06d65c58276abac3f5804c2d8278e078d4527",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "a7e05e407d3436ff6469d5c015c06d65c58276abac3f5804c2d8278e078d4527",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "a7e05e407d3436ff6469d5c015c06d65c58276abac3f5804c2d8278e078d4527",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Mistral Large 4 (High)": {
-      "canonicalId": "benchmark:Mistral Large 4 (High)",
-      "provider": null,
-      "modelId": "Mistral Large 4 (High)",
-      "displayName": "Mistral Large 4 (High)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "8bbd837777a8b3597b79c7dae2520700d0d0d8fd6758561fb499f6f74b636340",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "8bbd837777a8b3597b79c7dae2520700d0d0d8fd6758561fb499f6f74b636340",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "8bbd837777a8b3597b79c7dae2520700d0d0d8fd6758561fb499f6f74b636340",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "8bbd837777a8b3597b79c7dae2520700d0d0d8fd6758561fb499f6f74b636340",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "8bbd837777a8b3597b79c7dae2520700d0d0d8fd6758561fb499f6f74b636340",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "8bbd837777a8b3597b79c7dae2520700d0d0d8fd6758561fb499f6f74b636340",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "8bbd837777a8b3597b79c7dae2520700d0d0d8fd6758561fb499f6f74b636340",
+          "contentHash": "272cc1000d9b36878c61b697cf004c8316c4ca8b2157fc3f178e1a842992c749",
           "sourceType": "official_benchmark"
         }
       ]
@@ -2075,147 +295,58 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "4422937882510ca2c82b3e4e83afd730779cbfcb0028ab4bce3a7c32586b4688",
+          "contentHash": "1bbd06e827c60a0ac2a2866b081019add479551a79f4786664d1d32466d83646",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "4422937882510ca2c82b3e4e83afd730779cbfcb0028ab4bce3a7c32586b4688",
+          "contentHash": "1bbd06e827c60a0ac2a2866b081019add479551a79f4786664d1d32466d83646",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "4422937882510ca2c82b3e4e83afd730779cbfcb0028ab4bce3a7c32586b4688",
+          "contentHash": "1bbd06e827c60a0ac2a2866b081019add479551a79f4786664d1d32466d83646",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "4422937882510ca2c82b3e4e83afd730779cbfcb0028ab4bce3a7c32586b4688",
+          "contentHash": "1bbd06e827c60a0ac2a2866b081019add479551a79f4786664d1d32466d83646",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "4422937882510ca2c82b3e4e83afd730779cbfcb0028ab4bce3a7c32586b4688",
+          "contentHash": "1bbd06e827c60a0ac2a2866b081019add479551a79f4786664d1d32466d83646",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "4422937882510ca2c82b3e4e83afd730779cbfcb0028ab4bce3a7c32586b4688",
+          "contentHash": "1bbd06e827c60a0ac2a2866b081019add479551a79f4786664d1d32466d83646",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "4422937882510ca2c82b3e4e83afd730779cbfcb0028ab4bce3a7c32586b4688",
+          "contentHash": "1bbd06e827c60a0ac2a2866b081019add479551a79f4786664d1d32466d83646",
           "sourceType": "official_benchmark"
         }
       ]
     },
-    "benchmark:Tencent Hy4": {
-      "canonicalId": "benchmark:Tencent Hy4",
+    "benchmark:Qwen3.8 Max (0902)": {
+      "canonicalId": "benchmark:Qwen3.8 Max (0902)",
       "provider": null,
-      "modelId": "Tencent Hy4",
-      "displayName": "Tencent Hy4",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "3fa2f010e516b51390a77e9e868e576ea7f308c5f96450e1836d84635e445136",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "3fa2f010e516b51390a77e9e868e576ea7f308c5f96450e1836d84635e445136",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "3fa2f010e516b51390a77e9e868e576ea7f308c5f96450e1836d84635e445136",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "3fa2f010e516b51390a77e9e868e576ea7f308c5f96450e1836d84635e445136",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "3fa2f010e516b51390a77e9e868e576ea7f308c5f96450e1836d84635e445136",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "3fa2f010e516b51390a77e9e868e576ea7f308c5f96450e1836d84635e445136",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "3fa2f010e516b51390a77e9e868e576ea7f308c5f96450e1836d84635e445136",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Claude Opus 5 (Max)": {
-      "canonicalId": "benchmark:Claude Opus 5 (Max)",
-      "provider": null,
-      "modelId": "Claude Opus 5 (Max)",
-      "displayName": "Claude Opus 5 (Max)",
+      "modelId": "Qwen3.8 Max (0902)",
+      "displayName": "Qwen3.8 Max (0902)",
       "version": null,
       "aliases": [],
       "releaseDate": null,
@@ -2253,58 +384,58 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "7c3821ca09485887f06ccd867795db831af66ae5382915e805f29bb98716fd03",
+          "contentHash": "5835bc0383744aabdbfa0a18ebcd86fdfe1801deb485c46a1efb24f103908b6e",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "7c3821ca09485887f06ccd867795db831af66ae5382915e805f29bb98716fd03",
+          "contentHash": "5835bc0383744aabdbfa0a18ebcd86fdfe1801deb485c46a1efb24f103908b6e",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "7c3821ca09485887f06ccd867795db831af66ae5382915e805f29bb98716fd03",
+          "contentHash": "5835bc0383744aabdbfa0a18ebcd86fdfe1801deb485c46a1efb24f103908b6e",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "7c3821ca09485887f06ccd867795db831af66ae5382915e805f29bb98716fd03",
+          "contentHash": "5835bc0383744aabdbfa0a18ebcd86fdfe1801deb485c46a1efb24f103908b6e",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "7c3821ca09485887f06ccd867795db831af66ae5382915e805f29bb98716fd03",
+          "contentHash": "5835bc0383744aabdbfa0a18ebcd86fdfe1801deb485c46a1efb24f103908b6e",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "7c3821ca09485887f06ccd867795db831af66ae5382915e805f29bb98716fd03",
+          "contentHash": "5835bc0383744aabdbfa0a18ebcd86fdfe1801deb485c46a1efb24f103908b6e",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "7c3821ca09485887f06ccd867795db831af66ae5382915e805f29bb98716fd03",
+          "contentHash": "5835bc0383744aabdbfa0a18ebcd86fdfe1801deb485c46a1efb24f103908b6e",
           "sourceType": "official_benchmark"
         }
       ]
     },
-    "benchmark:Grok 4.6 (Xhigh)": {
-      "canonicalId": "benchmark:Grok 4.6 (Xhigh)",
+    "benchmark:Ling 3.1 Flash 1019": {
+      "canonicalId": "benchmark:Ling 3.1 Flash 1019",
       "provider": null,
-      "modelId": "Grok 4.6 (Xhigh)",
-      "displayName": "Grok 4.6 (Xhigh)",
+      "modelId": "Ling 3.1 Flash 1019",
+      "displayName": "Ling 3.1 Flash 1019",
       "version": null,
       "aliases": [],
       "releaseDate": null,
@@ -2342,58 +473,58 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "41b96590cd915f674a7aa43fea3cf176b4d0bd2f5455fe7f4cc559b2f976352f",
+          "contentHash": "97b3221938c73b2a1eac43da0ef27e0050808a54971def1a19087ea2c55f1b3e",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "41b96590cd915f674a7aa43fea3cf176b4d0bd2f5455fe7f4cc559b2f976352f",
+          "contentHash": "97b3221938c73b2a1eac43da0ef27e0050808a54971def1a19087ea2c55f1b3e",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "41b96590cd915f674a7aa43fea3cf176b4d0bd2f5455fe7f4cc559b2f976352f",
+          "contentHash": "97b3221938c73b2a1eac43da0ef27e0050808a54971def1a19087ea2c55f1b3e",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "41b96590cd915f674a7aa43fea3cf176b4d0bd2f5455fe7f4cc559b2f976352f",
+          "contentHash": "97b3221938c73b2a1eac43da0ef27e0050808a54971def1a19087ea2c55f1b3e",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "41b96590cd915f674a7aa43fea3cf176b4d0bd2f5455fe7f4cc559b2f976352f",
+          "contentHash": "97b3221938c73b2a1eac43da0ef27e0050808a54971def1a19087ea2c55f1b3e",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "41b96590cd915f674a7aa43fea3cf176b4d0bd2f5455fe7f4cc559b2f976352f",
+          "contentHash": "97b3221938c73b2a1eac43da0ef27e0050808a54971def1a19087ea2c55f1b3e",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
           "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "41b96590cd915f674a7aa43fea3cf176b4d0bd2f5455fe7f4cc559b2f976352f",
+          "contentHash": "97b3221938c73b2a1eac43da0ef27e0050808a54971def1a19087ea2c55f1b3e",
           "sourceType": "official_benchmark"
         }
       ]
     },
-    "benchmark:Qwen3.8 27B (Xhigh)": {
-      "canonicalId": "benchmark:Qwen3.8 27B (Xhigh)",
+    "benchmark:Gemini 4 Argon (Medium)": {
+      "canonicalId": "benchmark:Gemini 4 Argon (Medium)",
       "provider": null,
-      "modelId": "Qwen3.8 27B (Xhigh)",
-      "displayName": "Qwen3.8 27B (Xhigh)",
+      "modelId": "Gemini 4 Argon (Medium)",
+      "displayName": "Gemini 4 Argon (Medium)",
       "version": null,
       "aliases": [],
       "releaseDate": null,
@@ -2425,65 +556,332 @@
       "modelCardUrl": null,
       "hubRepo": null,
       "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "sourceOwner": "Artificial Analysis MMMU-Pro official public Dataset page",
       "evidence": [
         {
           "field": "canonicalId",
           "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "ed3d83772cba6008e1b2b50b1a62a8ca6d5bcdfa32c1f8cf6b013833acbb6840",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "566a845badcab187f6e7a1737dd9592faf8597f64598be11725e67df5ced763c",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "ed3d83772cba6008e1b2b50b1a62a8ca6d5bcdfa32c1f8cf6b013833acbb6840",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "566a845badcab187f6e7a1737dd9592faf8597f64598be11725e67df5ced763c",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "ed3d83772cba6008e1b2b50b1a62a8ca6d5bcdfa32c1f8cf6b013833acbb6840",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "566a845badcab187f6e7a1737dd9592faf8597f64598be11725e67df5ced763c",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "ed3d83772cba6008e1b2b50b1a62a8ca6d5bcdfa32c1f8cf6b013833acbb6840",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "566a845badcab187f6e7a1737dd9592faf8597f64598be11725e67df5ced763c",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "ed3d83772cba6008e1b2b50b1a62a8ca6d5bcdfa32c1f8cf6b013833acbb6840",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "566a845badcab187f6e7a1737dd9592faf8597f64598be11725e67df5ced763c",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "ed3d83772cba6008e1b2b50b1a62a8ca6d5bcdfa32c1f8cf6b013833acbb6840",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "566a845badcab187f6e7a1737dd9592faf8597f64598be11725e67df5ced763c",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-          "observedAt": "2026-11-14T01:24:23Z",
-          "contentHash": "ed3d83772cba6008e1b2b50b1a62a8ca6d5bcdfa32c1f8cf6b013833acbb6840",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "566a845badcab187f6e7a1737dd9592faf8597f64598be11725e67df5ced763c",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Kimi K3 (Max)": {
+      "canonicalId": "benchmark:Kimi K3 (Max)",
+      "provider": null,
+      "modelId": "Kimi K3 (Max)",
+      "displayName": "Kimi K3 (Max)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis MMMU-Pro official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "085f4584879fdb22cf002a5f121387aab8c490c8e601b641e07420f9f8f58b7d",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "085f4584879fdb22cf002a5f121387aab8c490c8e601b641e07420f9f8f58b7d",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "085f4584879fdb22cf002a5f121387aab8c490c8e601b641e07420f9f8f58b7d",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "085f4584879fdb22cf002a5f121387aab8c490c8e601b641e07420f9f8f58b7d",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "085f4584879fdb22cf002a5f121387aab8c490c8e601b641e07420f9f8f58b7d",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "085f4584879fdb22cf002a5f121387aab8c490c8e601b641e07420f9f8f58b7d",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "085f4584879fdb22cf002a5f121387aab8c490c8e601b641e07420f9f8f58b7d",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Qwen3.8 Max": {
+      "canonicalId": "benchmark:Qwen3.8 Max",
+      "provider": null,
+      "modelId": "Qwen3.8 Max",
+      "displayName": "Qwen3.8 Max",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis MMMU-Pro official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "02787ef033c26b6ebef4d23680df6bca08f6178587863d68fadf0f039be4ab6b",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "02787ef033c26b6ebef4d23680df6bca08f6178587863d68fadf0f039be4ab6b",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "02787ef033c26b6ebef4d23680df6bca08f6178587863d68fadf0f039be4ab6b",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "02787ef033c26b6ebef4d23680df6bca08f6178587863d68fadf0f039be4ab6b",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "02787ef033c26b6ebef4d23680df6bca08f6178587863d68fadf0f039be4ab6b",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "02787ef033c26b6ebef4d23680df6bca08f6178587863d68fadf0f039be4ab6b",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "02787ef033c26b6ebef4d23680df6bca08f6178587863d68fadf0f039be4ab6b",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Gemini 4 Hydrogen (Xhigh)": {
+      "canonicalId": "benchmark:Gemini 4 Hydrogen (Xhigh)",
+      "provider": null,
+      "modelId": "Gemini 4 Hydrogen (Xhigh)",
+      "displayName": "Gemini 4 Hydrogen (Xhigh)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis MLCR Overall official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "3f8074c9b7dda7596447372a767f87f06a10eaca849e558c35f6382a3720f132",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "3f8074c9b7dda7596447372a767f87f06a10eaca849e558c35f6382a3720f132",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "3f8074c9b7dda7596447372a767f87f06a10eaca849e558c35f6382a3720f132",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "3f8074c9b7dda7596447372a767f87f06a10eaca849e558c35f6382a3720f132",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "3f8074c9b7dda7596447372a767f87f06a10eaca849e558c35f6382a3720f132",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "3f8074c9b7dda7596447372a767f87f06a10eaca849e558c35f6382a3720f132",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
+          "observedAt": "2026-11-13T21:05:59Z",
+          "contentHash": "3f8074c9b7dda7596447372a767f87f06a10eaca849e558c35f6382a3720f132",
           "sourceType": "official_benchmark"
         }
       ]
     }
   },
-  "modelCount": 27,
+  "modelCount": 9,
   "sourceSummary": {
     "official": 1,
     "catalog": 0,
-    "benchmark": 24
+    "benchmark": 26
   },
   "events": [
     {
@@ -2509,7 +907,7 @@
           "field": "modelRepository",
           "sourceUrl": "https://huggingface.co/inclusionAI/Duo-1.0-distill-quant",
           "observedAt": "2026-11-13T08:09:23Z",
-          "contentHash": "ffeb465c84ff89bdf36f0f7abeb6d305873a86627d03e507849acdea9a5e2b0a",
+          "contentHash": "a018db79abfb5e69686e6652f4a6fd523e06da5aab1e18f37a0fed7aa1f4e138",
           "sourceType": "hub_official_org"
         }
       ],
@@ -2520,7 +918,46 @@
       "eventIdentity": "open-release:inclusionAI/Duo-1.0-distill-quant",
       "provenance": {
         "sourceUrl": "https://huggingface.co/inclusionAI/Duo-1.0-distill-quant",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
+      }
+    },
+    {
+      "eventId": "584e08cc2aeb6f8f784ada199478e20a",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "FrontierCode 2.0 官方数据更新",
+      "summary": "FrontierCode 2.0 官方数据发生变化；共 28 个模型 · 数据版本 v2.0 · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（48.8%）、Claude Opus 5.5 (Max, Default Fallback)（46.4%）、GPT-6 Astra (Max)（42.4%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/frontiercode-2-0",
+      "observedAt": "2026-11-14T07:41:08Z",
+      "publishedAt": null,
+      "source": "FrontierCode-AA 2.0 official public page",
+      "benchmarkId": "aa_frontiercode_v2_0",
+      "benchmarkTitle": "FrontierCode 2.0",
+      "release": "v2.0",
+      "contentHash": "0a89cd174b26b20a860c26c23dcaafd758f162f2eb820c0d5cfb5bc0864a016d",
+      "unit": "ratio",
+      "modelCount": 28,
+      "topModels": [
+        "Claude Fable 5.2 (Max, Default Fallback)（48.8%）",
+        "Claude Opus 5.5 (Max, Default Fallback)（46.4%）",
+        "GPT-6 Astra (Max)（42.4%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/frontiercode-2-0",
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
       }
     },
     {
@@ -2543,13 +980,13 @@
       "sourceOwner": null,
       "evidence": [],
       "url": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-      "observedAt": "2026-11-13T06:51:39Z",
+      "observedAt": "2026-11-14T07:41:08Z",
       "publishedAt": null,
       "source": "AA-Briefcase v1.1 official public page",
       "benchmarkId": "aa_briefcase_v1_1",
       "benchmarkTitle": "AA-Briefcase v1.1",
       "release": "v1.1",
-      "contentHash": "1076a5eb67e40d9367ee60f77740a059dffe7aec5fae75c9fad507adf07deb70",
+      "contentHash": "4c5e7d746e79c23a2f7597bee5d76d753494d6fde91e2876dd72b0199f171de5",
       "unit": "raw",
       "modelCount": 28,
       "topModels": [
@@ -2559,85 +996,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
-      }
-    },
-    {
-      "eventId": "a69764de374688f9007ef89f474aa7f7",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "GDPval-AA Elo 官方数据更新",
-      "summary": "GDPval-AA Elo 官方数据发生变化；共 27 个模型 · 当前前列：Claude Opus 5.5 (Max, Default Fallback)（1866.27）、Kimi K3.1 Pro（1860.57）、Muse Wonder Full (Max)（1857.09）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-      "observedAt": "2026-11-13T21:05:59Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
-      "benchmarkId": "aa_gdpval_elo",
-      "benchmarkTitle": "GDPval-AA Elo",
-      "release": "page_jsonld",
-      "contentHash": "83beda1eb6393f3ed38a100bf339a04726acd7485ba8359b89031e4523b40d4c",
-      "unit": "raw",
-      "modelCount": 27,
-      "topModels": [
-        "Claude Opus 5.5 (Max, Default Fallback)（1866.27）",
-        "Kimi K3.1 Pro（1860.57）",
-        "Muse Wonder Full (Max)（1857.09）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
-      }
-    },
-    {
-      "eventId": "0b60a2eb44a5a92c7207a3bdea072340",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Artificial Analysis Intelligence Index v5.0.1 官方数据更新",
-      "summary": "Artificial Analysis Intelligence Index v5.0.1 官方数据发生变化；共 28 个模型 · 数据版本 v5.0.1 · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（64.56）、Gemini 4 Carbon (High)（60.03）、Claude Opus 5.5 (Max, Default Fallback)（59.11）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-      "observedAt": "2026-11-13T21:05:59Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis Intelligence Index v5.0.1 official public page",
-      "benchmarkId": "aa_intelligence_index_v5_0_1",
-      "benchmarkTitle": "Artificial Analysis Intelligence Index v5.0.1",
-      "release": "v5.0.1",
-      "contentHash": "a56ac504869df88c76fd12124fde4ca39203b6e360f12271b16a8e3b8e81983d",
-      "unit": "score",
-      "modelCount": 28,
-      "topModels": [
-        "Claude Fable 5.2 (Max, Default Fallback)（64.56）",
-        "Gemini 4 Carbon (High)（60.03）",
-        "Claude Opus 5.5 (Max, Default Fallback)（59.11）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
       }
     },
     {
@@ -2676,7 +1035,46 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/automationbench-aa",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
+      }
+    },
+    {
+      "eventId": "0b60a2eb44a5a92c7207a3bdea072340",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Artificial Analysis Intelligence Index v5.0.1 官方数据更新",
+      "summary": "Artificial Analysis Intelligence Index v5.0.1 官方数据发生变化；共 28 个模型 · 数据版本 v5.0.1 · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（64.56）、Gemini 4 Carbon (High)（60.03）、Claude Opus 5.5 (Max, Default Fallback)（59.11）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "observedAt": "2026-11-13T21:05:59Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Intelligence Index v5.0.1 official public page",
+      "benchmarkId": "aa_intelligence_index_v5_0_1",
+      "benchmarkTitle": "Artificial Analysis Intelligence Index v5.0.1",
+      "release": "v5.0.1",
+      "contentHash": "a56ac504869df88c76fd12124fde4ca39203b6e360f12271b16a8e3b8e81983d",
+      "unit": "score",
+      "modelCount": 28,
+      "topModels": [
+        "Claude Fable 5.2 (Max, Default Fallback)（64.56）",
+        "Gemini 4 Carbon (High)（60.03）",
+        "Claude Opus 5.5 (Max, Default Fallback)（59.11）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
       }
     },
     {
@@ -2715,46 +1113,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/hle-diamond",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
-      }
-    },
-    {
-      "eventId": "ca1fa2a0ae77234ec1160730937fadb3",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "GDP.pdf 官方数据更新",
-      "summary": "GDP.pdf 官方数据发生变化；共 28 个模型 · 数据版本 page · 当前前列：Muse Wonder Full (Max)（32.6%）、Kimi K3.1 Pro（31.4%）、GPT-6 Astra (Max)（31.0%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/gdp-pdf",
-      "observedAt": "2026-11-13T21:05:59Z",
-      "publishedAt": null,
-      "source": "GDP.pdf official public page",
-      "benchmarkId": "aa_gdp_pdf",
-      "benchmarkTitle": "GDP.pdf",
-      "release": "page",
-      "contentHash": "85d4961e9f80ac10b477ac18683ca0b56ec989c67d29c4ed63b3998138a95f75",
-      "unit": "ratio",
-      "modelCount": 28,
-      "topModels": [
-        "Muse Wonder Full (Max)（32.6%）",
-        "Kimi K3.1 Pro（31.4%）",
-        "GPT-6 Astra (Max)（31.0%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdp-pdf",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
       }
     },
     {
@@ -2793,7 +1152,85 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt-v2?critpt-subset=hard",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
+      }
+    },
+    {
+      "eventId": "ca1fa2a0ae77234ec1160730937fadb3",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "GDP.pdf 官方数据更新",
+      "summary": "GDP.pdf 官方数据发生变化；共 28 个模型 · 数据版本 page · 当前前列：Muse Wonder Full (Max)（32.6%）、Kimi K3.1 Pro（31.4%）、GPT-6 Astra (Max)（31.0%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdp-pdf",
+      "observedAt": "2026-11-13T21:05:59Z",
+      "publishedAt": null,
+      "source": "GDP.pdf official public page",
+      "benchmarkId": "aa_gdp_pdf",
+      "benchmarkTitle": "GDP.pdf",
+      "release": "page",
+      "contentHash": "85d4961e9f80ac10b477ac18683ca0b56ec989c67d29c4ed63b3998138a95f75",
+      "unit": "ratio",
+      "modelCount": 28,
+      "topModels": [
+        "Muse Wonder Full (Max)（32.6%）",
+        "Kimi K3.1 Pro（31.4%）",
+        "GPT-6 Astra (Max)（31.0%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdp-pdf",
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
+      }
+    },
+    {
+      "eventId": "2ebbdebb580f3b850b985b6d13568a3c",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Terminal-Bench-Science 0.1 官方数据更新",
+      "summary": "Terminal-Bench-Science 0.1 官方数据发生变化；共 28 个模型 · 数据版本 v0.1 · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（73.3%）、Gemini 4 Carbon (High)（64.8%）、GPT-6 Astra (Max)（63.3%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminal-bench-science",
+      "observedAt": "2026-11-14T07:41:08Z",
+      "publishedAt": null,
+      "source": "Terminal-Bench-Science 0.1 official public page",
+      "benchmarkId": "aa_terminal_bench_science_v0_1",
+      "benchmarkTitle": "Terminal-Bench-Science 0.1",
+      "release": "v0.1",
+      "contentHash": "9807cac19d93284be680b277c423c455ba2be6b7cec83102ff82ebbf544fde76",
+      "unit": "ratio",
+      "modelCount": 28,
+      "topModels": [
+        "Claude Fable 5.2 (Max, Default Fallback)（73.3%）",
+        "Gemini 4 Carbon (High)（64.8%）",
+        "GPT-6 Astra (Max)（63.3%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminal-bench-science",
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
       }
     },
     {
@@ -2832,7 +1269,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
       }
     },
     {
@@ -2871,202 +1308,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
-      }
-    },
-    {
-      "eventId": "8882786be3cc316adda8000960fbe3d7",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "AA-Omniscience v1.1 官方数据更新",
-      "summary": "AA-Omniscience v1.1 官方数据发生变化；共 28 个模型 · 数据版本 v1.1 · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（66.77）、Gemini 4 Carbon (High)（53.50）、Claude Opus 5.5 (Max, Default Fallback)（48.13）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/omniscience",
-      "observedAt": "2026-11-13T21:05:59Z",
-      "publishedAt": null,
-      "source": "AA-Omniscience v1.1 official public page",
-      "benchmarkId": "aa_omniscience_index_v1_1",
-      "benchmarkTitle": "AA-Omniscience v1.1",
-      "release": "v1.1",
-      "contentHash": "dbfcc7864cef2e5f0805f7ee768a15e047bc5d70403823cf91c9d9c1229b8649",
-      "unit": "score",
-      "modelCount": 28,
-      "topModels": [
-        "Claude Fable 5.2 (Max, Default Fallback)（66.77）",
-        "Gemini 4 Carbon (High)（53.50）",
-        "Claude Opus 5.5 (Max, Default Fallback)（48.13）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
-      }
-    },
-    {
-      "eventId": "17900dff48b32f6df584fcfd74c3763e",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "CritPt 官方数据更新",
-      "summary": "CritPt 官方数据发生变化；共 27 个模型 · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（35.4%）、Muse Wonder Full (Max)（32.9%）、GPT-5.6 Sol (Max)（32.3%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/critpt",
-      "observedAt": "2026-11-13T21:05:59Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis CritPt official public Dataset page",
-      "benchmarkId": "aa_critpt",
-      "benchmarkTitle": "CritPt",
-      "release": "page_jsonld",
-      "contentHash": "c87b9284406371807d8fc1620b758cd2ac3a477d8ca35432c654e102da79415b",
-      "unit": "ratio",
-      "modelCount": 27,
-      "topModels": [
-        "Claude Fable 5.2 (Max, Default Fallback)（35.4%）",
-        "Muse Wonder Full (Max)（32.9%）",
-        "GPT-5.6 Sol (Max)（32.3%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
-      }
-    },
-    {
-      "eventId": "dc20ee1a608920992b40cf8fd6c88477",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "AA LCR 官方数据更新",
-      "summary": "AA LCR 官方数据发生变化；共 27 个模型 · 当前前列：Kimi K3 (Max)（88.7%）、Step 5 Preview（88.3%）、Kimi K3.1 Pro（86.3%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-      "observedAt": "2026-11-13T21:05:59Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis AA LCR official public Dataset page",
-      "benchmarkId": "aa_lcr",
-      "benchmarkTitle": "AA LCR",
-      "release": "page_jsonld",
-      "contentHash": "f9748b6300e43e02b3a6c39ed0580c329c9c19a34630d17527816a5adaa71d1f",
-      "unit": "ratio",
-      "modelCount": 27,
-      "topModels": [
-        "Kimi K3 (Max)（88.7%）",
-        "Step 5 Preview（88.3%）",
-        "Kimi K3.1 Pro（86.3%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
-      }
-    },
-    {
-      "eventId": "67c2e30b49b6f59353d3b1778937e0c3",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "MMMU-Pro 官方数据更新",
-      "summary": "MMMU-Pro 官方数据发生变化；共 27 个模型 · 当前前列：Gemini 4 Carbon (Medium)（89.2%）、Gemini 4 Argon (Medium)（88.3%）、Claude Opus 5.5 (Max, Default Fallback)（87.7%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-      "observedAt": "2026-11-13T21:05:59Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis MMMU-Pro official public Dataset page",
-      "benchmarkId": "aa_mmmu_pro",
-      "benchmarkTitle": "MMMU-Pro",
-      "release": "page_jsonld",
-      "contentHash": "e1e7906dd4ade4f0f93b446213099ef35145d59ff5bf4dd4c1278872baeb563d",
-      "unit": "ratio",
-      "modelCount": 27,
-      "topModels": [
-        "Gemini 4 Carbon (Medium)（89.2%）",
-        "Gemini 4 Argon (Medium)（88.3%）",
-        "Claude Opus 5.5 (Max, Default Fallback)（87.7%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
-      }
-    },
-    {
-      "eventId": "9745645755ae989f94ca75029c440388",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "MLCR Overall 官方数据更新",
-      "summary": "MLCR Overall 官方数据发生变化；共 28 个模型 · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（43.9%）、GPT-6 Astra (Max)（41.7%）、Claude Sonnet 5.5 (Max, Default Fallback)（41.7%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-      "observedAt": "2026-11-13T21:05:59Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis MLCR Overall official public Dataset page",
-      "benchmarkId": "aa_mlcr_overall",
-      "benchmarkTitle": "MLCR Overall",
-      "release": "page_jsonld",
-      "contentHash": "07c9c5070c71751cff73642c23d25dcae6f74d508235d201cf7c0e8be38f3a66",
-      "unit": "ratio",
-      "modelCount": 28,
-      "topModels": [
-        "Claude Fable 5.2 (Max, Default Fallback)（43.9%）",
-        "GPT-6 Astra (Max)（41.7%）",
-        "Claude Sonnet 5.5 (Max, Default Fallback)（41.7%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
       }
     },
     {
@@ -3105,7 +1347,241 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/scicode",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
+      }
+    },
+    {
+      "eventId": "dc20ee1a608920992b40cf8fd6c88477",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "AA LCR 官方数据更新",
+      "summary": "AA LCR 官方数据发生变化；共 27 个模型 · 当前前列：Kimi K3 (Max)（88.7%）、Step 5 Preview（88.3%）、Kimi K3.1 Pro（86.3%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+      "observedAt": "2026-11-13T21:05:59Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis AA LCR official public Dataset page",
+      "benchmarkId": "aa_lcr",
+      "benchmarkTitle": "AA LCR",
+      "release": "page_jsonld",
+      "contentHash": "f9748b6300e43e02b3a6c39ed0580c329c9c19a34630d17527816a5adaa71d1f",
+      "unit": "ratio",
+      "modelCount": 27,
+      "topModels": [
+        "Kimi K3 (Max)（88.7%）",
+        "Step 5 Preview（88.3%）",
+        "Kimi K3.1 Pro（86.3%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
+      }
+    },
+    {
+      "eventId": "8882786be3cc316adda8000960fbe3d7",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "AA-Omniscience v1.1 官方数据更新",
+      "summary": "AA-Omniscience v1.1 官方数据发生变化；共 28 个模型 · 数据版本 v1.1 · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（66.77）、Gemini 4 Carbon (High)（53.50）、Claude Opus 5.5 (Max, Default Fallback)（48.13）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/omniscience",
+      "observedAt": "2026-11-13T21:05:59Z",
+      "publishedAt": null,
+      "source": "AA-Omniscience v1.1 official public page",
+      "benchmarkId": "aa_omniscience_index_v1_1",
+      "benchmarkTitle": "AA-Omniscience v1.1",
+      "release": "v1.1",
+      "contentHash": "dbfcc7864cef2e5f0805f7ee768a15e047bc5d70403823cf91c9d9c1229b8649",
+      "unit": "score",
+      "modelCount": 28,
+      "topModels": [
+        "Claude Fable 5.2 (Max, Default Fallback)（66.77）",
+        "Gemini 4 Carbon (High)（53.50）",
+        "Claude Opus 5.5 (Max, Default Fallback)（48.13）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
+      }
+    },
+    {
+      "eventId": "17900dff48b32f6df584fcfd74c3763e",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "CritPt 官方数据更新",
+      "summary": "CritPt 官方数据发生变化；共 27 个模型 · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（35.4%）、Muse Wonder Full (Max)（32.9%）、GPT-5.6 Sol (Max)（32.3%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/critpt",
+      "observedAt": "2026-11-13T21:05:59Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis CritPt official public Dataset page",
+      "benchmarkId": "aa_critpt",
+      "benchmarkTitle": "CritPt",
+      "release": "page_jsonld",
+      "contentHash": "c87b9284406371807d8fc1620b758cd2ac3a477d8ca35432c654e102da79415b",
+      "unit": "ratio",
+      "modelCount": 27,
+      "topModels": [
+        "Claude Fable 5.2 (Max, Default Fallback)（35.4%）",
+        "Muse Wonder Full (Max)（32.9%）",
+        "GPT-5.6 Sol (Max)（32.3%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
+      }
+    },
+    {
+      "eventId": "a69764de374688f9007ef89f474aa7f7",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "GDPval-AA Elo 官方数据更新",
+      "summary": "GDPval-AA Elo 官方数据发生变化；共 27 个模型 · 当前前列：Claude Opus 5.5 (Max, Default Fallback)（1866.27）、Kimi K3.1 Pro（1860.57）、Muse Wonder Full (Max)（1857.09）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "observedAt": "2026-11-13T21:05:59Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "benchmarkId": "aa_gdpval_elo",
+      "benchmarkTitle": "GDPval-AA Elo",
+      "release": "page_jsonld",
+      "contentHash": "83beda1eb6393f3ed38a100bf339a04726acd7485ba8359b89031e4523b40d4c",
+      "unit": "raw",
+      "modelCount": 27,
+      "topModels": [
+        "Claude Opus 5.5 (Max, Default Fallback)（1866.27）",
+        "Kimi K3.1 Pro（1860.57）",
+        "Muse Wonder Full (Max)（1857.09）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
+      }
+    },
+    {
+      "eventId": "9745645755ae989f94ca75029c440388",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "MLCR Overall 官方数据更新",
+      "summary": "MLCR Overall 官方数据发生变化；共 28 个模型 · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（43.9%）、GPT-6 Astra (Max)（41.7%）、Claude Sonnet 5.5 (Max, Default Fallback)（41.7%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/mlcr-aa",
+      "observedAt": "2026-11-13T21:05:59Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis MLCR Overall official public Dataset page",
+      "benchmarkId": "aa_mlcr_overall",
+      "benchmarkTitle": "MLCR Overall",
+      "release": "page_jsonld",
+      "contentHash": "07c9c5070c71751cff73642c23d25dcae6f74d508235d201cf7c0e8be38f3a66",
+      "unit": "ratio",
+      "modelCount": 28,
+      "topModels": [
+        "Claude Fable 5.2 (Max, Default Fallback)（43.9%）",
+        "GPT-6 Astra (Max)（41.7%）",
+        "Claude Sonnet 5.5 (Max, Default Fallback)（41.7%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
+      }
+    },
+    {
+      "eventId": "67c2e30b49b6f59353d3b1778937e0c3",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "MMMU-Pro 官方数据更新",
+      "summary": "MMMU-Pro 官方数据发生变化；共 27 个模型 · 当前前列：Gemini 4 Carbon (Medium)（89.2%）、Gemini 4 Argon (Medium)（88.3%）、Claude Opus 5.5 (Max, Default Fallback)（87.7%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+      "observedAt": "2026-11-13T21:05:59Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis MMMU-Pro official public Dataset page",
+      "benchmarkId": "aa_mmmu_pro",
+      "benchmarkTitle": "MMMU-Pro",
+      "release": "page_jsonld",
+      "contentHash": "e1e7906dd4ade4f0f93b446213099ef35145d59ff5bf4dd4c1278872baeb563d",
+      "unit": "ratio",
+      "modelCount": 27,
+      "topModels": [
+        "Gemini 4 Carbon (Medium)（89.2%）",
+        "Gemini 4 Argon (Medium)（88.3%）",
+        "Claude Opus 5.5 (Max, Default Fallback)（87.7%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
       }
     },
     {
@@ -3141,7 +1617,7 @@
       "modelIdentity": "aa_briefcase_v1_1:Tencent Hy4",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
       }
     },
     {
@@ -3178,7 +1654,7 @@
       "modelIdentity": "aa_briefcase_v1_1:Muse Ember (Max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
       }
     },
     {
@@ -3214,7 +1690,7 @@
       "modelIdentity": "aa_gdpval_elo:Qwen3.8 Max (0902)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
       }
     },
     {
@@ -3251,7 +1727,7 @@
       "modelIdentity": "aa_gdpval_elo:Ling 3.1 Flash 1019",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
       }
     },
     {
@@ -3287,7 +1763,7 @@
       "modelIdentity": "aa_mmmu_pro:Gemini 4 Argon (Medium)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
       }
     },
     {
@@ -3322,7 +1798,7 @@
       "modelIdentity": "aa_mmmu_pro:Kimi K3 (Max)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
       }
     },
     {
@@ -3359,7 +1835,7 @@
       "modelIdentity": "aa_mmmu_pro:Qwen3.8 Max",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
       }
     },
     {
@@ -3395,7 +1871,7 @@
       "modelIdentity": "aa_mlcr_overall:Gemini 4 Hydrogen (Xhigh)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
       }
     },
     {
@@ -3432,13 +1908,13 @@
       "modelIdentity": "aa_mlcr_overall:Qwen3.8 Max (0902)",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "be55b4d100915b5da5affb6b93aafc58f56f29c324b33db3b9e1f2c7cd132e27"
+        "contentHash": "2bba88d3cbda9db3a177f73eaf86e44c0171aca4671e084623a65f1bf9947ad6"
       }
     }
   ],
-  "eventCount": 25,
+  "eventCount": 27,
   "provenance": {
-    "workflowRunId": "43540378812",
+    "workflowRunId": "43572233694",
     "mainCommit": "daa34b9a7af2b9d756315cb5d19417acb0082e62"
   }
 }
