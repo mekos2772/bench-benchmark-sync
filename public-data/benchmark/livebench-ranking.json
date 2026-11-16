@@ -2,9 +2,9 @@
   "schemaVersion": 3,
   "dataSource": "benchmark-sync-static",
   "exporterVersion": "0.5.0",
-  "workflowRunId": "43705672799",
+  "workflowRunId": "43854755000",
   "mainCommit": "daa34b9a7af2b9d756315cb5d19417acb0082e62",
-  "generatedAt": "2026-11-15T10:47:47Z",
+  "generatedAt": "2026-11-16T11:08:00Z",
   "families": [
     {
       "familyId": "livebench",
@@ -70,55 +70,55 @@
           "id": "aa_intelligence_index_v5_0_1",
           "title": "Artificial Analysis Intelligence Index v5.0.1",
           "isOverall": true,
-          "modelCount": 28
+          "modelCount": 29
         },
         {
           "id": "aa_briefcase_v1_1",
           "title": "AA-Briefcase v1.1",
           "isOverall": false,
-          "modelCount": 28
+          "modelCount": 29
         },
         {
           "id": "aa_automationbench",
           "title": "AutomationBench-AA",
           "isOverall": false,
-          "modelCount": 29
+          "modelCount": 30
         },
         {
           "id": "aa_frontiercode_v2_0",
           "title": "FrontierCode 2.0",
           "isOverall": false,
-          "modelCount": 28
+          "modelCount": 29
         },
         {
           "id": "aa_gdp_pdf",
           "title": "GDP.pdf",
           "isOverall": false,
-          "modelCount": 28
+          "modelCount": 29
         },
         {
           "id": "aa_hle_diamond",
           "title": "HLE-Diamond",
           "isOverall": false,
-          "modelCount": 28
+          "modelCount": 29
         },
         {
           "id": "aa_critpt_v2_hard",
           "title": "CritPt v2 (Hard Subset)",
           "isOverall": false,
-          "modelCount": 28
+          "modelCount": 29
         },
         {
           "id": "aa_terminal_bench_science_v0_1",
           "title": "Terminal-Bench-Science 0.1",
           "isOverall": false,
-          "modelCount": 28
+          "modelCount": 29
         },
         {
           "id": "aa_terminal_bench_v4_0",
           "title": "Terminal-Bench 4.0",
           "isOverall": false,
-          "modelCount": 28
+          "modelCount": 29
         },
         {
           "id": "aa_humanitys_last_exam",
@@ -148,7 +148,7 @@
           "id": "aa_omniscience_index_v1_1",
           "title": "AA-Omniscience v1.1",
           "isOverall": false,
-          "modelCount": 28
+          "modelCount": 29
         },
         {
           "id": "aa_critpt",
@@ -228,7 +228,7 @@
       "comparisonKey": "live_bench",
       "snapshotId": "10b9f24923a0037a145f60b32802014c6ecae3c495307d416cd794a73398cf80",
       "contentHash": "10b9f24923a0037a145f60b32802014c6ecae3c495307d416cd794a73398cf80",
-      "generatedAt": "2026-11-15T10:47:32Z",
+      "generatedAt": "2026-11-16T11:07:33Z",
       "taskCount": 7,
       "source": {
         "name": "LiveBench dated official leaderboard CSV",
@@ -500,7 +500,7 @@
       "comparisonKey": "coding",
       "snapshotId": "10b9f24923a0037a145f60b32802014c6ecae3c495307d416cd794a73398cf80",
       "contentHash": "10b9f24923a0037a145f60b32802014c6ecae3c495307d416cd794a73398cf80",
-      "generatedAt": "2026-11-15T10:47:09Z",
+      "generatedAt": "2026-11-16T11:07:23Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Coding dated official leaderboard CSV",
@@ -772,7 +772,7 @@
       "comparisonKey": "reasoning",
       "snapshotId": "10b9f24923a0037a145f60b32802014c6ecae3c495307d416cd794a73398cf80",
       "contentHash": "10b9f24923a0037a145f60b32802014c6ecae3c495307d416cd794a73398cf80",
-      "generatedAt": "2026-11-15T10:47:24Z",
+      "generatedAt": "2026-11-16T11:07:37Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Reasoning dated official leaderboard CSV",
@@ -1044,7 +1044,7 @@
       "comparisonKey": "data_analysis",
       "snapshotId": "10b9f24923a0037a145f60b32802014c6ecae3c495307d416cd794a73398cf80",
       "contentHash": "10b9f24923a0037a145f60b32802014c6ecae3c495307d416cd794a73398cf80",
-      "generatedAt": "2026-11-15T10:47:20Z",
+      "generatedAt": "2026-11-16T11:07:23Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Data Analysis dated official leaderboard CSV",
@@ -1316,7 +1316,7 @@
       "comparisonKey": "long_horizon",
       "snapshotId": "10b9f24923a0037a145f60b32802014c6ecae3c495307d416cd794a73398cf80",
       "contentHash": "10b9f24923a0037a145f60b32802014c6ecae3c495307d416cd794a73398cf80",
-      "generatedAt": "2026-11-15T10:47:18Z",
+      "generatedAt": "2026-11-16T11:07:31Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Long-Horizon dated official leaderboard CSV",
@@ -1588,7 +1588,7 @@
       "comparisonKey": "browser",
       "snapshotId": "10b9f24923a0037a145f60b32802014c6ecae3c495307d416cd794a73398cf80",
       "contentHash": "10b9f24923a0037a145f60b32802014c6ecae3c495307d416cd794a73398cf80",
-      "generatedAt": "2026-11-15T10:47:10Z",
+      "generatedAt": "2026-11-16T11:07:22Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Browser dated official leaderboard CSV",
@@ -1860,7 +1860,7 @@
       "comparisonKey": "research",
       "snapshotId": "10b9f24923a0037a145f60b32802014c6ecae3c495307d416cd794a73398cf80",
       "contentHash": "10b9f24923a0037a145f60b32802014c6ecae3c495307d416cd794a73398cf80",
-      "generatedAt": "2026-11-15T10:47:20Z",
+      "generatedAt": "2026-11-16T11:07:36Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Research dated official leaderboard CSV",
@@ -2132,7 +2132,7 @@
       "comparisonKey": "design",
       "snapshotId": "10b9f24923a0037a145f60b32802014c6ecae3c495307d416cd794a73398cf80",
       "contentHash": "10b9f24923a0037a145f60b32802014c6ecae3c495307d416cd794a73398cf80",
-      "generatedAt": "2026-11-15T10:47:16Z",
+      "generatedAt": "2026-11-16T11:07:27Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Design dated official leaderboard CSV",
@@ -2402,9 +2402,9 @@
       "metric": "Artificial Analysis Intelligence Index: Score",
       "unit": "score",
       "comparisonKey": "aa_intelligence_index_v5_0_1",
-      "snapshotId": "44154c1a77b3e51f3e864ca35f49770c1658e6d2e82bdf8eeb918fa28e2ee0f3",
-      "contentHash": "44154c1a77b3e51f3e864ca35f49770c1658e6d2e82bdf8eeb918fa28e2ee0f3",
-      "generatedAt": "2026-11-15T10:46:40Z",
+      "snapshotId": "7f6b18890f153c0d4ab29cadad9ffe35415cf4b40970d5ef46c2bdd921c7dd43",
+      "contentHash": "7f6b18890f153c0d4ab29cadad9ffe35415cf4b40970d5ef46c2bdd921c7dd43",
+      "generatedAt": "2026-11-16T11:06:52Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Intelligence Index v5.0.1 official public page",
@@ -2415,9 +2415,9 @@
         "categoriesUrl": null
       },
       "coverage": {
-        "collectedModels": 28,
+        "collectedModels": 29,
         "isComplete": false,
-        "totalModels": 128
+        "totalModels": 129
       },
       "entries": [
         [
@@ -2503,6 +2503,13 @@
           43.57,
           null,
           "max"
+        ],
+        [
+          "Qwen4 Max",
+          "Qwen4 Max",
+          42.89,
+          null,
+          null
         ],
         [
           "Claude Haiku 5.5 (Max)",
@@ -2629,9 +2636,9 @@
       "metric": "AA-Briefcase Elo",
       "unit": "raw",
       "comparisonKey": "aa_briefcase_v1_1",
-      "snapshotId": "4c5e7d746e79c23a2f7597bee5d76d753494d6fde91e2876dd72b0199f171de5",
-      "contentHash": "4c5e7d746e79c23a2f7597bee5d76d753494d6fde91e2876dd72b0199f171de5",
-      "generatedAt": "2026-11-15T10:46:40Z",
+      "snapshotId": "004bf916927405a421744cda80199a357d9d6dda6685192e6c494302f828cd92",
+      "contentHash": "004bf916927405a421744cda80199a357d9d6dda6685192e6c494302f828cd92",
+      "generatedAt": "2026-11-16T11:06:50Z",
       "taskCount": null,
       "source": {
         "name": "AA-Briefcase v1.1 official public page",
@@ -2642,9 +2649,9 @@
         "categoriesUrl": null
       },
       "coverage": {
-        "collectedModels": 28,
+        "collectedModels": 29,
         "isComplete": false,
-        "totalModels": 268
+        "totalModels": 269
       },
       "entries": [
         [
@@ -2674,6 +2681,13 @@
           1729.32,
           null,
           "max"
+        ],
+        [
+          "Qwen4 Max",
+          "Qwen4 Max",
+          1686.07,
+          null,
+          null
         ],
         [
           "Kimi K3.1 Pro",
@@ -2856,9 +2870,9 @@
       "metric": "AutomationBench-AA: Score",
       "unit": "ratio",
       "comparisonKey": "aa_automationbench",
-      "snapshotId": "549a6679f0c3db6c45c41d899a27dd2333c9876801c85c4ba86005a7a379bda0",
-      "contentHash": "549a6679f0c3db6c45c41d899a27dd2333c9876801c85c4ba86005a7a379bda0",
-      "generatedAt": "2026-11-15T10:46:38Z",
+      "snapshotId": "3598ee5b4e79d1e2a3a2e8b44e74190f7379336b6a0b86153db01085cb960c00",
+      "contentHash": "3598ee5b4e79d1e2a3a2e8b44e74190f7379336b6a0b86153db01085cb960c00",
+      "generatedAt": "2026-11-16T11:06:38Z",
       "taskCount": null,
       "source": {
         "name": "AutomationBench-AA official public page",
@@ -2869,9 +2883,9 @@
         "categoriesUrl": null
       },
       "coverage": {
-        "collectedModels": 29,
+        "collectedModels": 30,
         "isComplete": false,
-        "totalModels": 263
+        "totalModels": 264
       },
       "entries": [
         [
@@ -2906,6 +2920,13 @@
           "Kimi K3.1 Pro",
           "Kimi K3.1 Pro",
           0.733,
+          null,
+          null
+        ],
+        [
+          "Qwen4 Max",
+          "Qwen4 Max",
+          0.7256,
           null,
           null
         ],
@@ -3090,9 +3111,9 @@
       "metric": "FrontierCode 2.0: Score",
       "unit": "ratio",
       "comparisonKey": "aa_frontiercode_v2_0",
-      "snapshotId": "0a89cd174b26b20a860c26c23dcaafd758f162f2eb820c0d5cfb5bc0864a016d",
-      "contentHash": "0a89cd174b26b20a860c26c23dcaafd758f162f2eb820c0d5cfb5bc0864a016d",
-      "generatedAt": "2026-11-15T10:46:52Z",
+      "snapshotId": "5fc67da6ba885e653afd34904d7420f15ebf3717f0a53e7c8b83928d654c0fe1",
+      "contentHash": "5fc67da6ba885e653afd34904d7420f15ebf3717f0a53e7c8b83928d654c0fe1",
+      "generatedAt": "2026-11-16T11:06:57Z",
       "taskCount": null,
       "source": {
         "name": "FrontierCode-AA 2.0 official public page",
@@ -3103,9 +3124,9 @@
         "categoriesUrl": null
       },
       "coverage": {
-        "collectedModels": 28,
+        "collectedModels": 29,
         "isComplete": false,
-        "totalModels": 133
+        "totalModels": 134
       },
       "entries": [
         [
@@ -3221,6 +3242,13 @@
           "max"
         ],
         [
+          "Qwen4 Max",
+          "Qwen4 Max",
+          0.2645,
+          null,
+          null
+        ],
+        [
           "Kimi K3.1 Pro",
           "Kimi K3.1 Pro",
           0.2545,
@@ -3317,9 +3345,9 @@
       "metric": "GDP.pdf: All-pass Rate",
       "unit": "ratio",
       "comparisonKey": "aa_gdp_pdf",
-      "snapshotId": "100d8cad475235a29595ac89e057674df5648e179f04acc4466a7cbb6026010e",
-      "contentHash": "100d8cad475235a29595ac89e057674df5648e179f04acc4466a7cbb6026010e",
-      "generatedAt": "2026-11-15T10:46:55Z",
+      "snapshotId": "8abb825eea5c305c812d8d24c7922c5261669564527d613b7d4704a625a79cc7",
+      "contentHash": "8abb825eea5c305c812d8d24c7922c5261669564527d613b7d4704a625a79cc7",
+      "generatedAt": "2026-11-16T11:07:06Z",
       "taskCount": null,
       "source": {
         "name": "GDP.pdf official public page",
@@ -3330,9 +3358,9 @@
         "categoriesUrl": null
       },
       "coverage": {
-        "collectedModels": 28,
+        "collectedModels": 29,
         "isComplete": false,
-        "totalModels": 261
+        "totalModels": 262
       },
       "entries": [
         [
@@ -3404,6 +3432,13 @@
           0.262,
           null,
           "max with fallback"
+        ],
+        [
+          "Qwen4 Max",
+          "Qwen4 Max",
+          0.262,
+          null,
+          null
         ],
         [
           "Claude Sonnet 5.5 (Max, Default Fallback)",
@@ -3544,9 +3579,9 @@
       "metric": "HLE-Diamond: Score",
       "unit": "ratio",
       "comparisonKey": "aa_hle_diamond",
-      "snapshotId": "53e047ac674d2532bdcfc7ac4d88291144c93f9f9719b372c15a5705a6cee85c",
-      "contentHash": "53e047ac674d2532bdcfc7ac4d88291144c93f9f9719b372c15a5705a6cee85c",
-      "generatedAt": "2026-11-15T10:47:04Z",
+      "snapshotId": "897f095b4520334b2c40b0474ece04cd785ee374c577dcbac00e4ec5cfe60883",
+      "contentHash": "897f095b4520334b2c40b0474ece04cd785ee374c577dcbac00e4ec5cfe60883",
+      "generatedAt": "2026-11-16T11:07:09Z",
       "taskCount": null,
       "source": {
         "name": "HLE-Diamond official public page",
@@ -3557,9 +3592,9 @@
         "categoriesUrl": null
       },
       "coverage": {
-        "collectedModels": 28,
+        "collectedModels": 29,
         "isComplete": false,
-        "totalModels": 169
+        "totalModels": 170
       },
       "entries": [
         [
@@ -3631,6 +3666,13 @@
           0.473,
           null,
           "max"
+        ],
+        [
+          "Qwen4 Max",
+          "Qwen4 Max",
+          0.449,
+          null,
+          null
         ],
         [
           "Muse Wonder (Max)",
@@ -3771,9 +3813,9 @@
       "metric": "CritPt v2 (Hard Subset): Score",
       "unit": "ratio",
       "comparisonKey": "aa_critpt_v2_hard",
-      "snapshotId": "79abdb3538c315ac4c632eab936de3b86ee363b295d1a8e05882c3cbac514337",
-      "contentHash": "79abdb3538c315ac4c632eab936de3b86ee363b295d1a8e05882c3cbac514337",
-      "generatedAt": "2026-11-15T10:46:55Z",
+      "snapshotId": "f4e8d1cd8db45cb8ff13f422ea33e836741e95d3997194bdd569f1c0da4f9464",
+      "contentHash": "f4e8d1cd8db45cb8ff13f422ea33e836741e95d3997194bdd569f1c0da4f9464",
+      "generatedAt": "2026-11-16T11:07:05Z",
       "taskCount": null,
       "source": {
         "name": "CritPt v2 (Hard Subset) official public page",
@@ -3784,9 +3826,9 @@
         "categoriesUrl": null
       },
       "coverage": {
-        "collectedModels": 28,
+        "collectedModels": 29,
         "isComplete": false,
-        "totalModels": 135
+        "totalModels": 136
       },
       "entries": [
         [
@@ -3879,6 +3921,13 @@
           0.435,
           null,
           "max"
+        ],
+        [
+          "Qwen4 Max",
+          "Qwen4 Max",
+          0.43,
+          null,
+          null
         ],
         [
           "GPT-6 Luna (Max)",
@@ -3998,9 +4047,9 @@
       "metric": "Terminal-Bench-Science 0.1: Score",
       "unit": "ratio",
       "comparisonKey": "aa_terminal_bench_science_v0_1",
-      "snapshotId": "9807cac19d93284be680b277c423c455ba2be6b7cec83102ff82ebbf544fde76",
-      "contentHash": "9807cac19d93284be680b277c423c455ba2be6b7cec83102ff82ebbf544fde76",
-      "generatedAt": "2026-11-15T10:47:41Z",
+      "snapshotId": "36ded00896a6d3dea383ab7cd98a4ae5f48cfca42cad1fc959c5babadfa8c2fa",
+      "contentHash": "36ded00896a6d3dea383ab7cd98a4ae5f48cfca42cad1fc959c5babadfa8c2fa",
+      "generatedAt": "2026-11-16T11:08:00Z",
       "taskCount": null,
       "source": {
         "name": "Terminal-Bench-Science 0.1 official public page",
@@ -4011,9 +4060,9 @@
         "categoriesUrl": null
       },
       "coverage": {
-        "collectedModels": 28,
+        "collectedModels": 29,
         "isComplete": false,
-        "totalModels": 144
+        "totalModels": 145
       },
       "entries": [
         [
@@ -4099,6 +4148,13 @@
           0.2571,
           null,
           "max"
+        ],
+        [
+          "Qwen4 Max",
+          "Qwen4 Max",
+          0.2333,
+          null,
+          null
         ],
         [
           "Claude Haiku 5.5 (Max)",
@@ -4225,9 +4281,9 @@
       "metric": "Terminal-Bench 4.0: Score",
       "unit": "ratio",
       "comparisonKey": "terminal_bench_v4_0",
-      "snapshotId": "9d7a40bd8ad5451bd7aa8622c89f740881f9148c71849ae412a3c69ca5a2d207",
-      "contentHash": "9d7a40bd8ad5451bd7aa8622c89f740881f9148c71849ae412a3c69ca5a2d207",
-      "generatedAt": "2026-11-15T10:47:47Z",
+      "snapshotId": "59f3488ffcf4a08962c289e811ae9d5d289dde56e989c1d398300b290617fcd5",
+      "contentHash": "59f3488ffcf4a08962c289e811ae9d5d289dde56e989c1d398300b290617fcd5",
+      "generatedAt": "2026-11-16T11:07:55Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
@@ -4238,9 +4294,9 @@
         "categoriesUrl": null
       },
       "coverage": {
-        "collectedModels": 28,
+        "collectedModels": 29,
         "isComplete": false,
-        "totalModels": 259
+        "totalModels": 260
       },
       "entries": [
         [
@@ -4326,6 +4382,13 @@
           0.5202,
           null,
           "max"
+        ],
+        [
+          "Qwen4 Max",
+          "Qwen4 Max",
+          0.4848,
+          null,
+          null
         ],
         [
           "GLM-5.3 (Max)",
@@ -4454,7 +4517,7 @@
       "comparisonKey": "humanitys_last_exam",
       "snapshotId": "18528aa0e6b3f146774b3ff89685f8484e543ca23874406f7f1cbc8791be583d",
       "contentHash": "18528aa0e6b3f146774b3ff89685f8484e543ca23874406f7f1cbc8791be583d",
-      "generatedAt": "2026-11-15T10:47:04Z",
+      "generatedAt": "2026-11-16T11:07:12Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Humanity's Last Exam official public Dataset page",
@@ -4674,7 +4737,7 @@
       "comparisonKey": "gpqa_diamond",
       "snapshotId": "93e323cbcf5fbf3536f2016284a8bc451daf9b3b3e69fa6c6fa0591ef196ac3c",
       "contentHash": "93e323cbcf5fbf3536f2016284a8bc451daf9b3b3e69fa6c6fa0591ef196ac3c",
-      "generatedAt": "2026-11-15T10:47:04Z",
+      "generatedAt": "2026-11-16T11:07:10Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis GPQA Diamond official public Dataset page",
@@ -4894,7 +4957,7 @@
       "comparisonKey": "scicode",
       "snapshotId": "513573c59791fb7337797d6646137c348be650b705a131fe6a99b2bb31ad4a43",
       "contentHash": "513573c59791fb7337797d6646137c348be650b705a131fe6a99b2bb31ad4a43",
-      "generatedAt": "2026-11-15T10:47:37Z",
+      "generatedAt": "2026-11-16T11:07:43Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis SciCode official public Dataset page",
@@ -5114,7 +5177,7 @@
       "comparisonKey": "aa_lcr",
       "snapshotId": "7fe178ae2b1638ab1e3066cb971b3bff83d06b15ad3a04614efa580e286e730c",
       "contentHash": "7fe178ae2b1638ab1e3066cb971b3bff83d06b15ad3a04614efa580e286e730c",
-      "generatedAt": "2026-11-15T10:46:40Z",
+      "generatedAt": "2026-11-16T11:06:42Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis AA LCR official public Dataset page",
@@ -5332,9 +5395,9 @@
       "metric": "AA-Omniscience Index: Score",
       "unit": "score",
       "comparisonKey": "aa_omniscience_index_v1_1",
-      "snapshotId": "d7b0463e5513aff2829155662db2a66b2d62379fc236813e846ef91c040bc8d5",
-      "contentHash": "d7b0463e5513aff2829155662db2a66b2d62379fc236813e846ef91c040bc8d5",
-      "generatedAt": "2026-11-15T10:46:38Z",
+      "snapshotId": "539c957fff8c28a480ef865a9a4c00e286fe15907d2ee0a93cb3253240f8cebe",
+      "contentHash": "539c957fff8c28a480ef865a9a4c00e286fe15907d2ee0a93cb3253240f8cebe",
+      "generatedAt": "2026-11-16T11:06:41Z",
       "taskCount": null,
       "source": {
         "name": "AA-Omniscience v1.1 official public page",
@@ -5345,9 +5408,9 @@
         "categoriesUrl": null
       },
       "coverage": {
-        "collectedModels": 28,
+        "collectedModels": 29,
         "isComplete": false,
-        "totalModels": 142
+        "totalModels": 143
       },
       "entries": [
         [
@@ -5433,6 +5496,13 @@
           29.57,
           null,
           "max"
+        ],
+        [
+          "Qwen4 Max",
+          "Qwen4 Max",
+          27.7,
+          null,
+          null
         ],
         [
           "Muse Wonder (Max)",
@@ -5561,7 +5631,7 @@
       "comparisonKey": "critpt",
       "snapshotId": "e89d59c264b58ff6daf5dfc5e6c833f26342647e3280ddcc5a1910d8d2e7d0d6",
       "contentHash": "e89d59c264b58ff6daf5dfc5e6c833f26342647e3280ddcc5a1910d8d2e7d0d6",
-      "generatedAt": "2026-11-15T10:46:49Z",
+      "generatedAt": "2026-11-16T11:06:53Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis CritPt official public Dataset page",
@@ -5779,9 +5849,9 @@
       "metric": "gdpvalAaElo",
       "unit": "raw",
       "comparisonKey": "gdpval_aa_elo",
-      "snapshotId": "18b32fadfdc12ba9e59c93edf8a38a24c5d3a390c3b74d2f875ec9b8a36ed6e3",
-      "contentHash": "18b32fadfdc12ba9e59c93edf8a38a24c5d3a390c3b74d2f875ec9b8a36ed6e3",
-      "generatedAt": "2026-11-15T10:46:55Z",
+      "snapshotId": "910d843c12c09d3c97739c2fc572e34c41709357ea19a35eb6742a2943765f46",
+      "contentHash": "910d843c12c09d3c97739c2fc572e34c41709357ea19a35eb6742a2943765f46",
+      "generatedAt": "2026-11-16T11:07:15Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis GDPval-AA Elo official public Dataset page",
@@ -5794,7 +5864,7 @@
       "coverage": {
         "collectedModels": 27,
         "isComplete": false,
-        "totalModels": 317
+        "totalModels": 318
       },
       "entries": [
         [
@@ -5831,6 +5901,13 @@
           1831.06,
           null,
           "max with fallback"
+        ],
+        [
+          "Qwen4 Max",
+          "Qwen4 Max",
+          1808.69,
+          null,
+          null
         ],
         [
           "Muse Wonder (Max)",
@@ -5894,13 +5971,6 @@
           1674.05,
           null,
           null
-        ],
-        [
-          "Grok 4.6 (Xhigh)",
-          "Grok 4.6",
-          1658.22,
-          null,
-          "xhigh"
         ],
         [
           "Ling 3.1 Flash 1019",
@@ -6001,7 +6071,7 @@
       "comparisonKey": "terminalbench_hard",
       "snapshotId": "8e016d2b797c2316bcc39120d82700bd4ffa86dc6206386d7c5c5b2e02f42f1e",
       "contentHash": "8e016d2b797c2316bcc39120d82700bd4ffa86dc6206386d7c5c5b2e02f42f1e",
-      "generatedAt": "2026-11-15T10:47:47Z",
+      "generatedAt": "2026-11-16T11:07:51Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
@@ -6221,7 +6291,7 @@
       "comparisonKey": "terminalbench_v2_1",
       "snapshotId": "5b2f989fa9fdb54c68ad3780928809f585cf0eaf70e8ae06e062ed602e1f1b91",
       "contentHash": "5b2f989fa9fdb54c68ad3780928809f585cf0eaf70e8ae06e062ed602e1f1b91",
-      "generatedAt": "2026-11-15T10:47:47Z",
+      "generatedAt": "2026-11-16T11:07:58Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
@@ -6441,7 +6511,7 @@
       "comparisonKey": "ifbench",
       "snapshotId": "91a810074bd250e5d05ccbfc4238385a3cbd326dd62c4fdb3ea483108d8b5279",
       "contentHash": "91a810074bd250e5d05ccbfc4238385a3cbd326dd62c4fdb3ea483108d8b5279",
-      "generatedAt": "2026-11-15T10:47:09Z",
+      "generatedAt": "2026-11-16T11:07:19Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis IFBench official public Dataset page",
@@ -6661,7 +6731,7 @@
       "comparisonKey": "mmmu_pro",
       "snapshotId": "e1e7906dd4ade4f0f93b446213099ef35145d59ff5bf4dd4c1278872baeb563d",
       "contentHash": "e1e7906dd4ade4f0f93b446213099ef35145d59ff5bf4dd4c1278872baeb563d",
-      "generatedAt": "2026-11-15T10:47:33Z",
+      "generatedAt": "2026-11-16T11:07:39Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis MMMU-Pro official public Dataset page",
@@ -6881,7 +6951,7 @@
       "comparisonKey": "artificial_analysis_openness_index",
       "snapshotId": "6fecf0f607ec0a35517b3cf2d10b5c64cd52bae09f6e693b5810e06927c033ce",
       "contentHash": "6fecf0f607ec0a35517b3cf2d10b5c64cd52bae09f6e693b5810e06927c033ce",
-      "generatedAt": "2026-11-15T10:46:41Z",
+      "generatedAt": "2026-11-16T11:06:41Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Artificial Analysis Openness Index official Data API",
@@ -7087,7 +7157,7 @@
       "comparisonKey": "mlcr_overall",
       "snapshotId": "1f87f0035064abc3bad8f804e0e75998611ed964bc1a74dcc09c849db9038017",
       "contentHash": "1f87f0035064abc3bad8f804e0e75998611ed964bc1a74dcc09c849db9038017",
-      "generatedAt": "2026-11-15T10:47:31Z",
+      "generatedAt": "2026-11-16T11:07:38Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis MLCR Overall official public Dataset page",
@@ -7314,7 +7384,7 @@
       "comparisonKey": "v1.1",
       "snapshotId": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019",
       "contentHash": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019",
-      "generatedAt": "2026-11-15T10:46:52Z",
+      "generatedAt": "2026-11-16T11:06:57Z",
       "taskCount": null,
       "source": {
         "name": "DeepSWE v1.1 official leaderboard JSON",
