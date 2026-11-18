@@ -2,9 +2,9 @@
   "schemaVersion": 3,
   "dataSource": "benchmark-sync-static",
   "exporterVersion": "0.5.0",
-  "workflowRunId": "44076812983",
+  "workflowRunId": "44295733377",
   "mainCommit": "daa34b9a7af2b9d756315cb5d19417acb0082e62",
-  "generatedAt": "2026-11-17T11:46:47Z",
+  "generatedAt": "2026-11-18T11:34:58Z",
   "families": [
     {
       "familyId": "livebench",
@@ -15,49 +15,49 @@
           "id": "livebench_overall",
           "title": "LiveBench Overall",
           "isOverall": true,
-          "modelCount": 36
+          "modelCount": 38
         },
         {
           "id": "livebench_coding",
           "title": "LiveBench Coding",
           "isOverall": false,
-          "modelCount": 36
+          "modelCount": 38
         },
         {
           "id": "livebench_reasoning",
           "title": "LiveBench Reasoning",
           "isOverall": false,
-          "modelCount": 36
+          "modelCount": 38
         },
         {
           "id": "livebench_data_analysis",
           "title": "LiveBench Data Analysis",
           "isOverall": false,
-          "modelCount": 36
+          "modelCount": 38
         },
         {
           "id": "livebench_long_horizon",
           "title": "LiveBench Long Agentic",
           "isOverall": false,
-          "modelCount": 36
+          "modelCount": 38
         },
         {
           "id": "livebench_browser",
           "title": "LiveBench Browser",
           "isOverall": false,
-          "modelCount": 36
+          "modelCount": 38
         },
         {
           "id": "livebench_research",
           "title": "LiveBench Research",
           "isOverall": false,
-          "modelCount": 36
+          "modelCount": 38
         },
         {
           "id": "livebench_design",
           "title": "LiveBench Design",
           "isOverall": false,
-          "modelCount": 36
+          "modelCount": 38
         }
       ]
     },
@@ -70,25 +70,25 @@
           "id": "aa_intelligence_index_v5_0_1",
           "title": "Artificial Analysis Intelligence Index v5.0.1",
           "isOverall": true,
-          "modelCount": 29
+          "modelCount": 28
         },
         {
           "id": "aa_briefcase_v1_1",
           "title": "AA-Briefcase v1.1",
           "isOverall": false,
-          "modelCount": 29
+          "modelCount": 28
         },
         {
           "id": "aa_automationbench",
           "title": "AutomationBench-AA",
           "isOverall": false,
-          "modelCount": 30
+          "modelCount": 29
         },
         {
           "id": "aa_frontiercode_v2_0",
           "title": "FrontierCode 2.0",
           "isOverall": false,
-          "modelCount": 29
+          "modelCount": 28
         },
         {
           "id": "aa_gdp_pdf",
@@ -100,7 +100,7 @@
           "id": "aa_hle_diamond",
           "title": "HLE-Diamond",
           "isOverall": false,
-          "modelCount": 29
+          "modelCount": 28
         },
         {
           "id": "aa_critpt_v2_hard",
@@ -112,13 +112,13 @@
           "id": "aa_terminal_bench_science_v0_1",
           "title": "Terminal-Bench-Science 0.1",
           "isOverall": false,
-          "modelCount": 29
+          "modelCount": 28
         },
         {
           "id": "aa_terminal_bench_v4_0",
           "title": "Terminal-Bench 4.0",
           "isOverall": false,
-          "modelCount": 29
+          "modelCount": 28
         },
         {
           "id": "aa_humanitys_last_exam",
@@ -148,7 +148,7 @@
           "id": "aa_omniscience_index_v1_1",
           "title": "AA-Omniscience v1.1",
           "isOverall": false,
-          "modelCount": 29
+          "modelCount": 28
         },
         {
           "id": "aa_critpt",
@@ -226,9 +226,9 @@
       "metric": "weighted_category_average",
       "unit": "score",
       "comparisonKey": "live_bench",
-      "snapshotId": "7d5686494b38a4bf8776fe7e48c106effc5f1463f416ed3afece413f4d21023e",
-      "contentHash": "7d5686494b38a4bf8776fe7e48c106effc5f1463f416ed3afece413f4d21023e",
-      "generatedAt": "2026-11-17T11:46:20Z",
+      "snapshotId": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
+      "contentHash": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
+      "generatedAt": "2026-11-18T11:34:28Z",
       "taskCount": 7,
       "source": {
         "name": "LiveBench dated official leaderboard CSV",
@@ -244,6 +244,13 @@
           "claude-fable-5.2",
           "claude-fable-5.2",
           84.88,
+          null,
+          null
+        ],
+        [
+          "gpt-6.2-astra",
+          "gpt-6.2-astra",
+          84.87,
           null,
           null
         ],
@@ -279,6 +286,13 @@
           "gpt-6.1-sol",
           "gpt-6.1-sol",
           81.37,
+          null,
+          null
+        ],
+        [
+          "gpt-6.2-sol",
+          "gpt-6.2-sol",
+          80.31,
           null,
           null
         ],
@@ -505,9 +519,9 @@
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "coding",
-      "snapshotId": "7d5686494b38a4bf8776fe7e48c106effc5f1463f416ed3afece413f4d21023e",
-      "contentHash": "7d5686494b38a4bf8776fe7e48c106effc5f1463f416ed3afece413f4d21023e",
-      "generatedAt": "2026-11-17T11:46:07Z",
+      "snapshotId": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
+      "contentHash": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
+      "generatedAt": "2026-11-18T11:34:30Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Coding dated official leaderboard CSV",
@@ -519,6 +533,13 @@
       },
       "coverage": null,
       "entries": [
+        [
+          "gpt-6.2-astra",
+          "gpt-6.2-astra",
+          91.9,
+          null,
+          null
+        ],
         [
           "gemini-4-carbon",
           "gemini-4-carbon",
@@ -572,6 +593,13 @@
           "gpt-5.6-terra",
           "gpt-5.6-terra",
           84.2,
+          null,
+          null
+        ],
+        [
+          "gpt-6.2-sol",
+          "gpt-6.2-sol",
+          83.7,
           null,
           null
         ],
@@ -784,9 +812,9 @@
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "reasoning",
-      "snapshotId": "7d5686494b38a4bf8776fe7e48c106effc5f1463f416ed3afece413f4d21023e",
-      "contentHash": "7d5686494b38a4bf8776fe7e48c106effc5f1463f416ed3afece413f4d21023e",
-      "generatedAt": "2026-11-17T11:46:20Z",
+      "snapshotId": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
+      "contentHash": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
+      "generatedAt": "2026-11-18T11:34:37Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Reasoning dated official leaderboard CSV",
@@ -848,6 +876,13 @@
           null
         ],
         [
+          "gpt-6.2-astra",
+          "gpt-6.2-astra",
+          91.6,
+          null,
+          null
+        ],
+        [
           "grok-4.6",
           "grok-4.6",
           91.2,
@@ -878,6 +913,13 @@
         [
           "gpt-5.6-terra",
           "gpt-5.6-terra",
+          90.6,
+          null,
+          null
+        ],
+        [
+          "gpt-6.2-sol",
+          "gpt-6.2-sol",
           90.6,
           null,
           null
@@ -1063,9 +1105,9 @@
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "data_analysis",
-      "snapshotId": "7d5686494b38a4bf8776fe7e48c106effc5f1463f416ed3afece413f4d21023e",
-      "contentHash": "7d5686494b38a4bf8776fe7e48c106effc5f1463f416ed3afece413f4d21023e",
-      "generatedAt": "2026-11-17T11:46:17Z",
+      "snapshotId": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
+      "contentHash": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
+      "generatedAt": "2026-11-18T11:34:24Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Data Analysis dated official leaderboard CSV",
@@ -1088,6 +1130,13 @@
           "gemini-4-argon",
           "gemini-4-argon",
           85.2,
+          null,
+          null
+        ],
+        [
+          "gpt-6.2-astra",
+          "gpt-6.2-astra",
+          84.1,
           null,
           null
         ],
@@ -1137,6 +1186,13 @@
           "claude-fable-5.2",
           "claude-fable-5.2",
           81.5,
+          null,
+          null
+        ],
+        [
+          "gpt-6.2-sol",
+          "gpt-6.2-sol",
+          81.1,
           null,
           null
         ],
@@ -1342,9 +1398,9 @@
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "long_horizon",
-      "snapshotId": "7d5686494b38a4bf8776fe7e48c106effc5f1463f416ed3afece413f4d21023e",
-      "contentHash": "7d5686494b38a4bf8776fe7e48c106effc5f1463f416ed3afece413f4d21023e",
-      "generatedAt": "2026-11-17T11:46:09Z",
+      "snapshotId": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
+      "contentHash": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
+      "generatedAt": "2026-11-18T11:34:22Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Long-Horizon dated official leaderboard CSV",
@@ -1392,9 +1448,23 @@
           null
         ],
         [
+          "gpt-6.2-astra",
+          "gpt-6.2-astra",
+          70.8,
+          null,
+          null
+        ],
+        [
           "gpt-6.1-sol",
           "gpt-6.1-sol",
           65.6,
+          null,
+          null
+        ],
+        [
+          "gpt-6.2-sol",
+          "gpt-6.2-sol",
+          63.6,
           null,
           null
         ],
@@ -1621,9 +1691,9 @@
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "browser",
-      "snapshotId": "7d5686494b38a4bf8776fe7e48c106effc5f1463f416ed3afece413f4d21023e",
-      "contentHash": "7d5686494b38a4bf8776fe7e48c106effc5f1463f416ed3afece413f4d21023e",
-      "generatedAt": "2026-11-17T11:46:06Z",
+      "snapshotId": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
+      "contentHash": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
+      "generatedAt": "2026-11-18T11:34:11Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Browser dated official leaderboard CSV",
@@ -1646,6 +1716,13 @@
           "gpt-6.1-terra",
           "gpt-6.1-terra",
           93.1,
+          null,
+          null
+        ],
+        [
+          "gpt-6.2-astra",
+          "gpt-6.2-astra",
+          93.0,
           null,
           null
         ],
@@ -1674,6 +1751,13 @@
           "claude-opus-5.5",
           "claude-opus-5.5",
           88.4,
+          null,
+          null
+        ],
+        [
+          "gpt-6.2-sol",
+          "gpt-6.2-sol",
+          88.2,
           null,
           null
         ],
@@ -1900,9 +1984,9 @@
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "research",
-      "snapshotId": "7d5686494b38a4bf8776fe7e48c106effc5f1463f416ed3afece413f4d21023e",
-      "contentHash": "7d5686494b38a4bf8776fe7e48c106effc5f1463f416ed3afece413f4d21023e",
-      "generatedAt": "2026-11-17T11:46:29Z",
+      "snapshotId": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
+      "contentHash": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
+      "generatedAt": "2026-11-18T11:34:38Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Research dated official leaderboard CSV",
@@ -1936,9 +2020,23 @@
           null
         ],
         [
+          "gpt-6.2-astra",
+          "gpt-6.2-astra",
+          91.5,
+          null,
+          null
+        ],
+        [
           "gpt-6-astra",
           "gpt-6-astra",
           90.6,
+          null,
+          null
+        ],
+        [
+          "gpt-6.2-sol",
+          "gpt-6.2-sol",
+          90.1,
           null,
           null
         ],
@@ -2179,9 +2277,9 @@
       "metric": "category_average",
       "unit": "score",
       "comparisonKey": "design",
-      "snapshotId": "7d5686494b38a4bf8776fe7e48c106effc5f1463f416ed3afece413f4d21023e",
-      "contentHash": "7d5686494b38a4bf8776fe7e48c106effc5f1463f416ed3afece413f4d21023e",
-      "generatedAt": "2026-11-17T11:46:11Z",
+      "snapshotId": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
+      "contentHash": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
+      "generatedAt": "2026-11-18T11:34:30Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Design dated official leaderboard CSV",
@@ -2204,6 +2302,13 @@
           "claude-opus-5.5",
           "claude-opus-5.5",
           83.3,
+          null,
+          null
+        ],
+        [
+          "gpt-6.2-astra",
+          "gpt-6.2-astra",
+          82.8,
           null,
           null
         ],
@@ -2231,6 +2336,13 @@
         [
           "gpt-6-astra",
           "gpt-6-astra",
+          80.0,
+          null,
+          null
+        ],
+        [
+          "gpt-6.2-sol",
+          "gpt-6.2-sol",
           80.0,
           null,
           null
@@ -2458,9 +2570,9 @@
       "metric": "Artificial Analysis Intelligence Index: Score",
       "unit": "score",
       "comparisonKey": "aa_intelligence_index_v5_0_1",
-      "snapshotId": "a94e923c0641d54502128f018169c0ed38efedbe9ac228145b0eaf72b263d6f8",
-      "contentHash": "a94e923c0641d54502128f018169c0ed38efedbe9ac228145b0eaf72b263d6f8",
-      "generatedAt": "2026-11-17T11:45:27Z",
+      "snapshotId": "b6158bb470b0f1dacd496a8ae8dd965ce1be58073728ea9d498e8f781bc43978",
+      "contentHash": "b6158bb470b0f1dacd496a8ae8dd965ce1be58073728ea9d498e8f781bc43978",
+      "generatedAt": "2026-11-18T11:33:38Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Intelligence Index v5.0.1 official public page",
@@ -2471,9 +2583,9 @@
         "categoriesUrl": null
       },
       "coverage": {
-        "collectedModels": 29,
+        "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 130
+        "totalModels": 151
       },
       "entries": [
         [
@@ -2482,6 +2594,13 @@
           64.56,
           null,
           "max with fallback"
+        ],
+        [
+          "GPT-6.2 Astra (Max)",
+          "GPT-6.2 Astra",
+          62.14,
+          null,
+          "max"
         ],
         [
           "Gemini 4 Carbon (High)",
@@ -2498,16 +2617,9 @@
           "max with fallback"
         ],
         [
-          "GPT-6 Astra (Max)",
-          "GPT-6 Astra",
-          56.85,
-          null,
-          "max"
-        ],
-        [
-          "GPT-6.1 Sol (Max)",
-          "GPT-6.1 Sol",
-          54.61,
+          "GPT-6.2 Sol (Max)",
+          "GPT-6.2 Sol",
+          57.26,
           null,
           "max"
         ],
@@ -2538,13 +2650,6 @@
           50.08,
           null,
           "max"
-        ],
-        [
-          "Claude Fable 5.1 (Max, Default Fallback)",
-          "Claude Fable 5.1",
-          49.16,
-          null,
-          "max with fallback"
         ],
         [
           "Kimi K3.1 Pro",
@@ -2692,9 +2797,9 @@
       "metric": "AA-Briefcase Elo",
       "unit": "raw",
       "comparisonKey": "aa_briefcase_v1_1",
-      "snapshotId": "57d182201a6c676f09bfe23ec2d15b3e9a6b3051128588a7333e8b7e5c4dc94c",
-      "contentHash": "57d182201a6c676f09bfe23ec2d15b3e9a6b3051128588a7333e8b7e5c4dc94c",
-      "generatedAt": "2026-11-17T11:45:28Z",
+      "snapshotId": "c75e841a426d142dfe305c93f7d3bdecf36b5f4f41d389787036f89d805311e7",
+      "contentHash": "c75e841a426d142dfe305c93f7d3bdecf36b5f4f41d389787036f89d805311e7",
+      "generatedAt": "2026-11-18T11:33:35Z",
       "taskCount": null,
       "source": {
         "name": "AA-Briefcase v1.1 official public page",
@@ -2705,29 +2810,29 @@
         "categoriesUrl": null
       },
       "coverage": {
-        "collectedModels": 29,
+        "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 269
+        "totalModels": 285
       },
       "entries": [
         [
           "Claude Sonnet 5.5 (Max, Default Fallback)",
           "Claude Sonnet 5.5",
-          1816.2,
+          1815.14,
           null,
           "max with fallback"
         ],
         [
           "Claude Opus 5.5 (Max, Default Fallback)",
           "Claude Opus 5.5",
-          1800.84,
+          1799.88,
           null,
           "max with fallback"
         ],
         [
           "Claude Fable 5.2 (Max, Default Fallback)",
           "Claude Fable 5.2",
-          1784.88,
+          1784.66,
           null,
           "max with fallback"
         ],
@@ -2753,16 +2858,16 @@
           null
         ],
         [
-          "Claude Fable 5.1 (Max, Default Fallback)",
-          "Claude Fable 5.1",
-          1670.55,
-          null,
-          "max with fallback"
-        ],
-        [
           "Muse Wonder (Max)",
           "Muse Wonder",
           1658.65,
+          null,
+          "max"
+        ],
+        [
+          "GPT-6.2 Astra (Max)",
+          "GPT-6.2 Astra",
+          1643.5,
           null,
           "max"
         ],
@@ -2774,6 +2879,13 @@
           "xhigh"
         ],
         [
+          "GPT-6.2 Sol (Max)",
+          "GPT-6.2 Sol",
+          1612.06,
+          null,
+          "max"
+        ],
+        [
           "Gemini 4 Carbon (High)",
           "Gemini 4 Carbon",
           1610.63,
@@ -2783,7 +2895,7 @@
         [
           "Qwen3.8 Max (0902)",
           "Qwen3.8 Max (0902)",
-          1603.95,
+          1603.97,
           null,
           null
         ],
@@ -2802,25 +2914,11 @@
           "max"
         ],
         [
-          "GPT-6 Astra (Max)",
-          "GPT-6 Astra",
-          1568.82,
-          null,
-          "max"
-        ],
-        [
           "Gemini 4 Hydrogen (Xhigh)",
           "Gemini 4 Hydrogen",
           1567.52,
           null,
           "xhigh"
-        ],
-        [
-          "GPT-6.1 Sol (Max)",
-          "GPT-6.1 Sol",
-          1554.87,
-          null,
-          "max"
         ],
         [
           "Inkling 2 Small",
@@ -2867,7 +2965,7 @@
         [
           "GPT-6.1 Terra (Max)",
           "GPT-6.1 Terra",
-          1401.3,
+          1398.61,
           null,
           "max"
         ],
@@ -2888,14 +2986,14 @@
         [
           "GPT-6 Luna (Max)",
           "GPT-6 Luna",
-          1337.44,
+          1336.35,
           null,
           "max"
         ],
         [
           "K2 Horizon 375B A23B",
           "K2 Horizon 375B A23B",
-          1292.59,
+          1292.75,
           null,
           null
         ],
@@ -2926,9 +3024,9 @@
       "metric": "AutomationBench-AA: Score",
       "unit": "ratio",
       "comparisonKey": "aa_automationbench",
-      "snapshotId": "3598ee5b4e79d1e2a3a2e8b44e74190f7379336b6a0b86153db01085cb960c00",
-      "contentHash": "3598ee5b4e79d1e2a3a2e8b44e74190f7379336b6a0b86153db01085cb960c00",
-      "generatedAt": "2026-11-17T11:45:29Z",
+      "snapshotId": "73b3997c26ddc0e5e81d4f6b46617f2539def43017c627a68aa5e1a4a75c4086",
+      "contentHash": "73b3997c26ddc0e5e81d4f6b46617f2539def43017c627a68aa5e1a4a75c4086",
+      "generatedAt": "2026-11-18T11:33:37Z",
       "taskCount": null,
       "source": {
         "name": "AutomationBench-AA official public page",
@@ -2939,9 +3037,9 @@
         "categoriesUrl": null
       },
       "coverage": {
-        "collectedModels": 30,
+        "collectedModels": 29,
         "isComplete": false,
-        "totalModels": 264
+        "totalModels": 280
       },
       "entries": [
         [
@@ -2957,6 +3055,13 @@
           0.7751,
           null,
           "high"
+        ],
+        [
+          "GPT-6.2 Astra (Max)",
+          "GPT-6.2 Astra",
+          0.7725,
+          null,
+          "max"
         ],
         [
           "Claude Fable 5.2 (Max, Default Fallback)",
@@ -3001,18 +3106,18 @@
           "max"
         ],
         [
+          "GPT-6.2 Sol (Max)",
+          "GPT-6.2 Sol",
+          0.7128,
+          null,
+          "max"
+        ],
+        [
           "Claude Opus 5.5 (Max, Default Fallback)",
           "Claude Opus 5.5",
           0.6954,
           null,
           "max with fallback"
-        ],
-        [
-          "GPT-6 Astra (Max)",
-          "GPT-6 Astra",
-          0.6849,
-          null,
-          "max"
         ],
         [
           "Muse Wonder (Max)",
@@ -3057,13 +3162,6 @@
           "xhigh"
         ],
         [
-          "GPT-6.1 Sol (Max)",
-          "GPT-6.1 Sol",
-          0.6487,
-          null,
-          "max"
-        ],
-        [
           "GLM-5.3 (Max)",
           "GLM-5.3",
           0.622,
@@ -3076,13 +3174,6 @@
           0.6017,
           null,
           "max"
-        ],
-        [
-          "Claude Fable 5.1 (Max, Default Fallback)",
-          "Claude Fable 5.1",
-          0.5938,
-          null,
-          "max with fallback"
         ],
         [
           "MiMo-V2.6-Pro",
@@ -3167,9 +3258,9 @@
       "metric": "FrontierCode 2.0: Score",
       "unit": "ratio",
       "comparisonKey": "aa_frontiercode_v2_0",
-      "snapshotId": "694ae7df5aab7f996c9d496392c10f6a60b7034c756cc1d52c8cccde4d139b6d",
-      "contentHash": "694ae7df5aab7f996c9d496392c10f6a60b7034c756cc1d52c8cccde4d139b6d",
-      "generatedAt": "2026-11-17T11:45:41Z",
+      "snapshotId": "5f86f337b145a1983e27eacb70cff44fc3a33166f433a7f188ff0a5aa54a30d0",
+      "contentHash": "5f86f337b145a1983e27eacb70cff44fc3a33166f433a7f188ff0a5aa54a30d0",
+      "generatedAt": "2026-11-18T11:33:51Z",
       "taskCount": null,
       "source": {
         "name": "FrontierCode-AA 2.0 official public page",
@@ -3180,9 +3271,9 @@
         "categoriesUrl": null
       },
       "coverage": {
-        "collectedModels": 29,
+        "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 135
+        "totalModels": 152
       },
       "entries": [
         [
@@ -3200,9 +3291,16 @@
           "max with fallback"
         ],
         [
-          "GPT-6 Astra (Max)",
-          "GPT-6 Astra",
-          0.4237,
+          "GPT-6.2 Astra (Max)",
+          "GPT-6.2 Astra",
+          0.4538,
+          null,
+          "max"
+        ],
+        [
+          "GPT-6.2 Sol (Max)",
+          "GPT-6.2 Sol",
+          0.4438,
           null,
           "max"
         ],
@@ -3219,13 +3317,6 @@
           0.417,
           null,
           "max with fallback"
-        ],
-        [
-          "GPT-6.1 Sol (Max)",
-          "GPT-6.1 Sol",
-          0.4063,
-          null,
-          "max"
         ],
         [
           "Gemini 4 Carbon (High)",
@@ -3254,13 +3345,6 @@
           0.3493,
           null,
           "max"
-        ],
-        [
-          "Claude Fable 5.1 (Max, Default Fallback)",
-          "Claude Fable 5.1",
-          0.3162,
-          null,
-          "max with fallback"
         ],
         [
           "Tencent Hy4",
@@ -3401,9 +3485,9 @@
       "metric": "GDP.pdf: All-pass Rate",
       "unit": "ratio",
       "comparisonKey": "aa_gdp_pdf",
-      "snapshotId": "59b44f3e50f90dfc00e934fc5c001cec67afb34f06fd5eb37942567c021b7baf",
-      "contentHash": "59b44f3e50f90dfc00e934fc5c001cec67afb34f06fd5eb37942567c021b7baf",
-      "generatedAt": "2026-11-17T11:45:42Z",
+      "snapshotId": "08a80d0ca5b208b294275ccc14512945c0a7db319c0376836ccf61079baffe42",
+      "contentHash": "08a80d0ca5b208b294275ccc14512945c0a7db319c0376836ccf61079baffe42",
+      "generatedAt": "2026-11-18T11:34:02Z",
       "taskCount": null,
       "source": {
         "name": "GDP.pdf official public page",
@@ -3416,7 +3500,7 @@
       "coverage": {
         "collectedModels": 29,
         "isComplete": false,
-        "totalModels": 263
+        "totalModels": 279
       },
       "entries": [
         [
@@ -3427,6 +3511,13 @@
           "max"
         ],
         [
+          "GPT-6 Astra (Xhigh)",
+          "GPT-6 Astra",
+          0.322,
+          null,
+          "xhigh"
+        ],
+        [
           "Kimi K3.1 Pro",
           "Kimi K3.1 Pro",
           0.314,
@@ -3434,23 +3525,23 @@
           null
         ],
         [
-          "GPT-6 Astra (Max)",
-          "GPT-6 Astra",
-          0.31,
-          null,
-          "max"
-        ],
-        [
-          "GPT-6.1 Sol (Max)",
-          "GPT-6.1 Sol",
-          0.31,
-          null,
-          "max"
-        ],
-        [
           "Muse Wonder (Max)",
           "Muse Wonder",
           0.306,
+          null,
+          "max"
+        ],
+        [
+          "GPT-6.2 Sol (Max)",
+          "GPT-6.2 Sol",
+          0.3,
+          null,
+          "max"
+        ],
+        [
+          "GPT-6.2 Astra (Max)",
+          "GPT-6.2 Astra",
+          0.298,
           null,
           "max"
         ],
@@ -3478,13 +3569,6 @@
         [
           "Claude Opus 5.5 (Max, Default Fallback)",
           "Claude Opus 5.5",
-          0.262,
-          null,
-          "max with fallback"
-        ],
-        [
-          "Claude Fable 5.1 (Max, Default Fallback)",
-          "Claude Fable 5.1",
           0.262,
           null,
           "max with fallback"
@@ -3635,9 +3719,9 @@
       "metric": "HLE-Diamond: Score",
       "unit": "ratio",
       "comparisonKey": "aa_hle_diamond",
-      "snapshotId": "baadaccdba74d522fe987f973ed1ec803d571fc6d1c7587982504949c3df392e",
-      "contentHash": "baadaccdba74d522fe987f973ed1ec803d571fc6d1c7587982504949c3df392e",
-      "generatedAt": "2026-11-17T11:45:56Z",
+      "snapshotId": "5f327c6ea8ae5f32a4b3ae80802dca8780ec203ef5ee7997f51c067be8c27c05",
+      "contentHash": "5f327c6ea8ae5f32a4b3ae80802dca8780ec203ef5ee7997f51c067be8c27c05",
+      "generatedAt": "2026-11-18T11:34:07Z",
       "taskCount": null,
       "source": {
         "name": "HLE-Diamond official public page",
@@ -3648,9 +3732,9 @@
         "categoriesUrl": null
       },
       "coverage": {
-        "collectedModels": 29,
+        "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 171
+        "totalModels": 192
       },
       "entries": [
         [
@@ -3659,6 +3743,13 @@
           0.802,
           null,
           "max with fallback"
+        ],
+        [
+          "GPT-6.2 Astra (Max)",
+          "GPT-6.2 Astra",
+          0.722,
+          null,
+          "max"
         ],
         [
           "Gemini 4 Carbon (High)",
@@ -3675,23 +3766,9 @@
           "max with fallback"
         ],
         [
-          "GPT-6 Astra (Max)",
-          "GPT-6 Astra",
-          0.638,
-          null,
-          "max"
-        ],
-        [
-          "Claude Fable 5.1 (Max, Default Fallback)",
-          "Claude Fable 5.1",
-          0.601,
-          null,
-          "max with fallback"
-        ],
-        [
-          "GPT-6.1 Sol (Max)",
-          "GPT-6.1 Sol",
-          0.588,
+          "GPT-6.2 Sol (Max)",
+          "GPT-6.2 Sol",
+          0.64,
           null,
           "max"
         ],
@@ -3869,9 +3946,9 @@
       "metric": "CritPt v2 (Hard Subset): Score",
       "unit": "ratio",
       "comparisonKey": "aa_critpt_v2_hard",
-      "snapshotId": "9b41516b8d16417626d810d4faa64adea3df51b9aec017259c180b19d2cba2b5",
-      "contentHash": "9b41516b8d16417626d810d4faa64adea3df51b9aec017259c180b19d2cba2b5",
-      "generatedAt": "2026-11-17T11:45:42Z",
+      "snapshotId": "79ae6944116965107d9b604efe0e016c771da1f9b5f6e9b793eb7e2b7bc4f60e",
+      "contentHash": "79ae6944116965107d9b604efe0e016c771da1f9b5f6e9b793eb7e2b7bc4f60e",
+      "generatedAt": "2026-11-18T11:33:57Z",
       "taskCount": null,
       "source": {
         "name": "CritPt v2 (Hard Subset) official public page",
@@ -3884,7 +3961,7 @@
       "coverage": {
         "collectedModels": 29,
         "isComplete": false,
-        "totalModels": 138
+        "totalModels": 155
       },
       "entries": [
         [
@@ -3895,16 +3972,16 @@
           "max with fallback"
         ],
         [
-          "GPT-6 Astra (Max)",
+          "GPT-6 Astra (Medium)",
           "GPT-6 Astra",
-          0.705,
+          0.72,
           null,
-          "max"
+          "medium"
         ],
         [
-          "GPT-6.1 Sol (Max)",
-          "GPT-6.1 Sol",
-          0.695,
+          "GPT-6.2 Astra (Max)",
+          "GPT-6.2 Astra",
+          0.715,
           null,
           "max"
         ],
@@ -3937,6 +4014,13 @@
           "xhigh"
         ],
         [
+          "GPT-6.2 Sol (Max)",
+          "GPT-6.2 Sol",
+          0.625,
+          null,
+          "max"
+        ],
+        [
           "Claude Sonnet 5.5 (Max, Default Fallback)",
           "Claude Sonnet 5.5",
           0.59,
@@ -3949,13 +4033,6 @@
           0.565,
           null,
           "max"
-        ],
-        [
-          "Claude Fable 5.1 (Max, Default Fallback)",
-          "Claude Fable 5.1",
-          0.525,
-          null,
-          "max with fallback"
         ],
         [
           "Muse Wonder (Max)",
@@ -4103,9 +4180,9 @@
       "metric": "Terminal-Bench-Science 0.1: Score",
       "unit": "ratio",
       "comparisonKey": "aa_terminal_bench_science_v0_1",
-      "snapshotId": "f03a525c1781f2e1852240b3f67a9245c96c3cacd4dea8e7f01c262ddb431906",
-      "contentHash": "f03a525c1781f2e1852240b3f67a9245c96c3cacd4dea8e7f01c262ddb431906",
-      "generatedAt": "2026-11-17T11:46:35Z",
+      "snapshotId": "11485eaa6a19ab321c7befbd380e96c25569914fff6ee05c82a61bf9770066c8",
+      "contentHash": "11485eaa6a19ab321c7befbd380e96c25569914fff6ee05c82a61bf9770066c8",
+      "generatedAt": "2026-11-18T11:34:55Z",
       "taskCount": null,
       "source": {
         "name": "Terminal-Bench-Science 0.1 official public page",
@@ -4116,17 +4193,31 @@
         "categoriesUrl": null
       },
       "coverage": {
-        "collectedModels": 29,
+        "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 146
+        "totalModels": 163
       },
       "entries": [
+        [
+          "GPT-6.2 Astra (Max)",
+          "GPT-6.2 Astra",
+          0.781,
+          null,
+          "max"
+        ],
         [
           "Claude Fable 5.2 (Max, Default Fallback)",
           "Claude Fable 5.2",
           0.7333,
           null,
           "max with fallback"
+        ],
+        [
+          "GPT-6.2 Sol (Max)",
+          "GPT-6.2 Sol",
+          0.6762,
+          null,
+          "max"
         ],
         [
           "Gemini 4 Carbon (High)",
@@ -4136,25 +4227,11 @@
           "high"
         ],
         [
-          "GPT-6 Astra (Max)",
-          "GPT-6 Astra",
-          0.6333,
-          null,
-          "max"
-        ],
-        [
           "Claude Opus 5.5 (Max, Default Fallback)",
           "Claude Opus 5.5",
           0.5905,
           null,
           "max with fallback"
-        ],
-        [
-          "GPT-6.1 Sol (Max)",
-          "GPT-6.1 Sol",
-          0.581,
-          null,
-          "max"
         ],
         [
           "GPT-6.1 Terra (Max)",
@@ -4176,13 +4253,6 @@
           0.4952,
           null,
           "xhigh"
-        ],
-        [
-          "Claude Fable 5.1 (Max, Default Fallback)",
-          "Claude Fable 5.1",
-          0.4333,
-          null,
-          "max with fallback"
         ],
         [
           "Muse Wonder Full (Max)",
@@ -4337,9 +4407,9 @@
       "metric": "Terminal-Bench 4.0: Score",
       "unit": "ratio",
       "comparisonKey": "terminal_bench_v4_0",
-      "snapshotId": "59f3488ffcf4a08962c289e811ae9d5d289dde56e989c1d398300b290617fcd5",
-      "contentHash": "59f3488ffcf4a08962c289e811ae9d5d289dde56e989c1d398300b290617fcd5",
-      "generatedAt": "2026-11-17T11:46:47Z",
+      "snapshotId": "ec04b97628a6bffe6a61a380e9c7dd712937cbad96ebd781d14356d86164baab",
+      "contentHash": "ec04b97628a6bffe6a61a380e9c7dd712937cbad96ebd781d14356d86164baab",
+      "generatedAt": "2026-11-18T11:34:52Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
@@ -4350,9 +4420,9 @@
         "categoriesUrl": null
       },
       "coverage": {
-        "collectedModels": 29,
+        "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 260
+        "totalModels": 276
       },
       "entries": [
         [
@@ -4370,11 +4440,25 @@
           "high"
         ],
         [
+          "GPT-6.2 Astra (Max)",
+          "GPT-6.2 Astra",
+          0.6414,
+          null,
+          "max"
+        ],
+        [
           "Claude Sonnet 5.5 (Max, Default Fallback)",
           "Claude Sonnet 5.5",
           0.6364,
           null,
           "max with fallback"
+        ],
+        [
+          "GPT-6.2 Sol (Max)",
+          "GPT-6.2 Sol",
+          0.601,
+          null,
+          "max"
         ],
         [
           "Claude Fable 5.2 (Max, Default Fallback)",
@@ -4391,23 +4475,9 @@
           "max with fallback"
         ],
         [
-          "GPT-6 Astra (Max)",
-          "GPT-6 Astra",
-          0.5909,
-          null,
-          "max"
-        ],
-        [
           "Muse Wonder Full (Max)",
           "Muse Wonder Full",
           0.5707,
-          null,
-          "max"
-        ],
-        [
-          "GPT-6.1 Sol (Max)",
-          "GPT-6.1 Sol",
-          0.5606,
           null,
           "max"
         ],
@@ -4424,13 +4494,6 @@
           0.5354,
           null,
           "xhigh"
-        ],
-        [
-          "Claude Fable 5.1 (Max, Default Fallback)",
-          "Claude Fable 5.1",
-          0.5202,
-          null,
-          "max with fallback"
         ],
         [
           "Muse Wonder (Max)",
@@ -4573,7 +4636,7 @@
       "comparisonKey": "humanitys_last_exam",
       "snapshotId": "18528aa0e6b3f146774b3ff89685f8484e543ca23874406f7f1cbc8791be583d",
       "contentHash": "18528aa0e6b3f146774b3ff89685f8484e543ca23874406f7f1cbc8791be583d",
-      "generatedAt": "2026-11-17T11:46:02Z",
+      "generatedAt": "2026-11-18T11:34:07Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Humanity's Last Exam official public Dataset page",
@@ -4791,9 +4854,9 @@
       "metric": "GPQA Diamond: Score",
       "unit": "ratio",
       "comparisonKey": "gpqa_diamond",
-      "snapshotId": "93e323cbcf5fbf3536f2016284a8bc451daf9b3b3e69fa6c6fa0591ef196ac3c",
-      "contentHash": "93e323cbcf5fbf3536f2016284a8bc451daf9b3b3e69fa6c6fa0591ef196ac3c",
-      "generatedAt": "2026-11-17T11:45:54Z",
+      "snapshotId": "e83bda4458042b9264c6758e9a4869f48240f0e6f0160f78bbb0ad8f1d0770f0",
+      "contentHash": "e83bda4458042b9264c6758e9a4869f48240f0e6f0160f78bbb0ad8f1d0770f0",
+      "generatedAt": "2026-11-18T11:34:05Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis GPQA Diamond official public Dataset page",
@@ -4810,11 +4873,11 @@
       },
       "entries": [
         [
-          "GPT-6 Astra (Max)",
+          "GPT-6 Astra (Xhigh)",
           "GPT-6 Astra",
-          0.9606,
+          0.9626,
           null,
-          "max"
+          "xhigh"
         ],
         [
           "Gemini 3.8 Flash (High)",
@@ -5011,9 +5074,9 @@
       "metric": "SciCode: Score",
       "unit": "ratio",
       "comparisonKey": "scicode",
-      "snapshotId": "513573c59791fb7337797d6646137c348be650b705a131fe6a99b2bb31ad4a43",
-      "contentHash": "513573c59791fb7337797d6646137c348be650b705a131fe6a99b2bb31ad4a43",
-      "generatedAt": "2026-11-17T11:46:28Z",
+      "snapshotId": "be5aa03b6c237072e3b0f0ff154891d9708697f092f7907c05f1d4974ab00022",
+      "contentHash": "be5aa03b6c237072e3b0f0ff154891d9708697f092f7907c05f1d4974ab00022",
+      "generatedAt": "2026-11-18T11:34:44Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis SciCode official public Dataset page",
@@ -5114,11 +5177,25 @@
           "xhigh"
         ],
         [
+          "Kimi K3 (Max)",
+          "Kimi K3",
+          0.5949,
+          null,
+          "max"
+        ],
+        [
           "GLM-5.3 (Max)",
           "GLM-5.3",
           0.5903,
           null,
           "max"
+        ],
+        [
+          "Step 5 Preview",
+          "Step 5 Preview",
+          0.5891,
+          null,
+          null
         ],
         [
           "Grok 4.7 (Xhigh)",
@@ -5133,13 +5210,6 @@
           0.5683,
           null,
           null
-        ],
-        [
-          "GPT-6 Astra (Max)",
-          "GPT-6 Astra",
-          0.5648,
-          null,
-          "max"
         ],
         [
           "DeepSeek V4.1 Flash 1017 (Max)",
@@ -5166,13 +5236,6 @@
           "GPT-6 Luna (Max)",
           "GPT-6 Luna",
           0.5463,
-          null,
-          "max"
-        ],
-        [
-          "GPT-6.1 Sol (Max)",
-          "GPT-6.1 Sol",
-          0.5417,
           null,
           "max"
         ],
@@ -5231,9 +5294,9 @@
       "metric": "AA-LCR v1.1",
       "unit": "ratio",
       "comparisonKey": "aa_lcr",
-      "snapshotId": "7fe178ae2b1638ab1e3066cb971b3bff83d06b15ad3a04614efa580e286e730c",
-      "contentHash": "7fe178ae2b1638ab1e3066cb971b3bff83d06b15ad3a04614efa580e286e730c",
-      "generatedAt": "2026-11-17T11:45:28Z",
+      "snapshotId": "bae6139e1c5a2f4e490ab9f7b20b21cb7b3a1b87e231ea099b10b549adf179e3",
+      "contentHash": "bae6139e1c5a2f4e490ab9f7b20b21cb7b3a1b87e231ea099b10b549adf179e3",
+      "generatedAt": "2026-11-18T11:33:39Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis AA LCR official public Dataset page",
@@ -5299,6 +5362,20 @@
           null
         ],
         [
+          "GPT-5.5 (Xhigh)",
+          "GPT-5.5",
+          0.8433,
+          null,
+          "xhigh"
+        ],
+        [
+          "GPT-6.1 Sol (Low)",
+          "GPT-6.1 Sol",
+          0.84,
+          null,
+          "low"
+        ],
+        [
           "Muse Wonder Full (Max)",
           "Muse Wonder Full",
           0.8367,
@@ -5323,13 +5400,6 @@
           "GPT-6 Luna (Max)",
           "GPT-6 Luna",
           0.8333,
-          null,
-          "max"
-        ],
-        [
-          "GPT-6.1 Sol (Max)",
-          "GPT-6.1 Sol",
-          0.83,
           null,
           "max"
         ],
@@ -5374,13 +5444,6 @@
           0.82,
           null,
           "xhigh"
-        ],
-        [
-          "GPT-6 Astra (Max)",
-          "GPT-6 Astra",
-          0.8067,
-          null,
-          "max"
         ],
         [
           "Muse Wonder (Max)",
@@ -5451,9 +5514,9 @@
       "metric": "AA-Omniscience Index: Score",
       "unit": "score",
       "comparisonKey": "aa_omniscience_index_v1_1",
-      "snapshotId": "2a1c36f409c22ab7fcfb33aaa48a6d58ae5e516fbfa0bb26693b0ddafc230f48",
-      "contentHash": "2a1c36f409c22ab7fcfb33aaa48a6d58ae5e516fbfa0bb26693b0ddafc230f48",
-      "generatedAt": "2026-11-17T11:45:28Z",
+      "snapshotId": "101623b4f52561e981239371ea2168dc1a293bed8ec345a22b8758b8eef988b1",
+      "contentHash": "101623b4f52561e981239371ea2168dc1a293bed8ec345a22b8758b8eef988b1",
+      "generatedAt": "2026-11-18T11:33:37Z",
       "taskCount": null,
       "source": {
         "name": "AA-Omniscience v1.1 official public page",
@@ -5464,9 +5527,9 @@
         "categoriesUrl": null
       },
       "coverage": {
-        "collectedModels": 29,
+        "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 145
+        "totalModels": 165
       },
       "entries": [
         [
@@ -5484,6 +5547,13 @@
           "high"
         ],
         [
+          "GPT-6.2 Astra (Max)",
+          "GPT-6.2 Astra",
+          50.0,
+          null,
+          "max"
+        ],
+        [
           "Claude Opus 5.5 (Max, Default Fallback)",
           "Claude Opus 5.5",
           48.13,
@@ -5498,23 +5568,9 @@
           "xhigh"
         ],
         [
-          "Claude Fable 5.1 (Max, Default Fallback)",
-          "Claude Fable 5.1",
-          46.27,
-          null,
-          "max with fallback"
-        ],
-        [
-          "GPT-6 Astra (Max)",
-          "GPT-6 Astra",
-          42.43,
-          null,
-          "max"
-        ],
-        [
-          "GPT-6.1 Sol (Max)",
-          "GPT-6.1 Sol",
-          42.03,
+          "GPT-6.2 Sol (Max)",
+          "GPT-6.2 Sol",
+          40.37,
           null,
           "max"
         ],
@@ -5685,9 +5741,9 @@
       "metric": "CritPt: Score",
       "unit": "ratio",
       "comparisonKey": "critpt",
-      "snapshotId": "e89d59c264b58ff6daf5dfc5e6c833f26342647e3280ddcc5a1910d8d2e7d0d6",
-      "contentHash": "e89d59c264b58ff6daf5dfc5e6c833f26342647e3280ddcc5a1910d8d2e7d0d6",
-      "generatedAt": "2026-11-17T11:45:42Z",
+      "snapshotId": "84640d50fc806a6813fcd99daaef73fc4a459ded9e50f36b073a3074ca80e685",
+      "contentHash": "84640d50fc806a6813fcd99daaef73fc4a459ded9e50f36b073a3074ca80e685",
+      "generatedAt": "2026-11-18T11:33:53Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis CritPt official public Dataset page",
@@ -5753,6 +5809,13 @@
           "max with fallback"
         ],
         [
+          "Claude Fable 5.1 (Xhigh, Default Fallback)",
+          "Claude Fable 5.1",
+          0.3114,
+          null,
+          "xhigh with fallback"
+        ],
+        [
           "GPT-6 Sol (Max)",
           "GPT-6 Sol",
           0.3086,
@@ -5772,13 +5835,6 @@
           0.3,
           null,
           "max"
-        ],
-        [
-          "Claude Fable 5.1 (Max, Default Fallback)",
-          "Claude Fable 5.1",
-          0.2971,
-          null,
-          "max with fallback"
         ],
         [
           "Muse Wonder (Max)",
@@ -5905,9 +5961,9 @@
       "metric": "gdpvalAaElo",
       "unit": "raw",
       "comparisonKey": "gdpval_aa_elo",
-      "snapshotId": "24028d638051bb186bfcac54b1fac050229d1e26d031ed43c7a2c5983105d8fd",
-      "contentHash": "24028d638051bb186bfcac54b1fac050229d1e26d031ed43c7a2c5983105d8fd",
-      "generatedAt": "2026-11-17T11:45:59Z",
+      "snapshotId": "0c98eefb0fff8ec016c74683db3331d1b5355384f4f2f0b84b36c95858d26d5f",
+      "contentHash": "0c98eefb0fff8ec016c74683db3331d1b5355384f4f2f0b84b36c95858d26d5f",
+      "generatedAt": "2026-11-18T11:33:52Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis GDPval-AA Elo official public Dataset page",
@@ -6029,6 +6085,13 @@
           null
         ],
         [
+          "Grok 4.6 (Xhigh)",
+          "Grok 4.6",
+          1658.22,
+          null,
+          "xhigh"
+        ],
+        [
           "Ling 3.1 Flash 1019",
           "Ling 3.1 Flash 1019",
           1654.99,
@@ -6043,6 +6106,13 @@
           "max"
         ],
         [
+          "GLM-5.3-Flash",
+          "GLM-5.3-Flash",
+          1648.28,
+          null,
+          null
+        ],
+        [
           "Inkling 2 Small",
           "Inkling 2 Small",
           1630.23,
@@ -6053,20 +6123,6 @@
           "Claude Haiku 5.5 (Max)",
           "Claude Haiku 5.5",
           1628.98,
-          null,
-          "max"
-        ],
-        [
-          "GPT-6.1 Sol (Max)",
-          "GPT-6.1 Sol",
-          1607.47,
-          null,
-          "max"
-        ],
-        [
-          "GPT-6 Astra (Max)",
-          "GPT-6 Astra",
-          1587.0,
           null,
           "max"
         ],
@@ -6127,7 +6183,7 @@
       "comparisonKey": "terminalbench_hard",
       "snapshotId": "8e016d2b797c2316bcc39120d82700bd4ffa86dc6206386d7c5c5b2e02f42f1e",
       "contentHash": "8e016d2b797c2316bcc39120d82700bd4ffa86dc6206386d7c5c5b2e02f42f1e",
-      "generatedAt": "2026-11-17T11:46:45Z",
+      "generatedAt": "2026-11-18T11:34:54Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
@@ -6345,9 +6401,9 @@
       "metric": "Terminal-Bench 2.1: Score",
       "unit": "ratio",
       "comparisonKey": "terminalbench_v2_1",
-      "snapshotId": "5b2f989fa9fdb54c68ad3780928809f585cf0eaf70e8ae06e062ed602e1f1b91",
-      "contentHash": "5b2f989fa9fdb54c68ad3780928809f585cf0eaf70e8ae06e062ed602e1f1b91",
-      "generatedAt": "2026-11-17T11:46:47Z",
+      "snapshotId": "4747893a6aec5c101cd5f487b8b4bd0e9776aa27d1ab38f7458452a990289190",
+      "contentHash": "4747893a6aec5c101cd5f487b8b4bd0e9776aa27d1ab38f7458452a990289190",
+      "generatedAt": "2026-11-18T11:34:58Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
@@ -6371,6 +6427,13 @@
           "max with fallback"
         ],
         [
+          "GPT-6 Astra (High)",
+          "GPT-6 Astra",
+          0.8989,
+          null,
+          "high"
+        ],
+        [
           "GPT-5.6 Sol (Xhigh)",
           "GPT-5.6 Sol",
           0.8951,
@@ -6390,13 +6453,6 @@
           0.8876,
           null,
           null
-        ],
-        [
-          "GPT-6 Astra (Max)",
-          "GPT-6 Astra",
-          0.8839,
-          null,
-          "max"
         ],
         [
           "Grok 4.6 (High)",
@@ -6567,7 +6623,7 @@
       "comparisonKey": "ifbench",
       "snapshotId": "91a810074bd250e5d05ccbfc4238385a3cbd326dd62c4fdb3ea483108d8b5279",
       "contentHash": "91a810074bd250e5d05ccbfc4238385a3cbd326dd62c4fdb3ea483108d8b5279",
-      "generatedAt": "2026-11-17T11:45:57Z",
+      "generatedAt": "2026-11-18T11:34:07Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis IFBench official public Dataset page",
@@ -6785,9 +6841,9 @@
       "metric": "MMMU-Pro: Score",
       "unit": "ratio",
       "comparisonKey": "mmmu_pro",
-      "snapshotId": "e1e7906dd4ade4f0f93b446213099ef35145d59ff5bf4dd4c1278872baeb563d",
-      "contentHash": "e1e7906dd4ade4f0f93b446213099ef35145d59ff5bf4dd4c1278872baeb563d",
-      "generatedAt": "2026-11-17T11:46:27Z",
+      "snapshotId": "67bb13c82b06f572365a88a40fa7baaf9602d3f3d177ad4156ab203b4e98fc52",
+      "contentHash": "67bb13c82b06f572365a88a40fa7baaf9602d3f3d177ad4156ab203b4e98fc52",
+      "generatedAt": "2026-11-18T11:34:42Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis MMMU-Pro official public Dataset page",
@@ -6800,9 +6856,16 @@
       "coverage": {
         "collectedModels": 27,
         "isComplete": false,
-        "totalModels": 304
+        "totalModels": 312
       },
       "entries": [
+        [
+          "GPT-6.2 Astra (Max)",
+          "GPT-6.2 Astra",
+          0.8948,
+          null,
+          "max"
+        ],
         [
           "Gemini 4 Carbon (Medium)",
           "Gemini 4 Carbon",
@@ -6972,13 +7035,6 @@
           "max"
         ],
         [
-          "Muse Spark",
-          "Muse Spark",
-          0.8052,
-          null,
-          null
-        ],
-        [
           "GPT-6 Luna (Max)",
           "GPT-6 Luna",
           0.7965,
@@ -7005,9 +7061,9 @@
       "metric": "Artificial Analysis Openness Index: Score",
       "unit": "score",
       "comparisonKey": "artificial_analysis_openness_index",
-      "snapshotId": "8a1a81b2c7b721a4b849c69e2fb3ab26bc0ff078dc8f78f4798c61f2a61d53c3",
-      "contentHash": "8a1a81b2c7b721a4b849c69e2fb3ab26bc0ff078dc8f78f4798c61f2a61d53c3",
-      "generatedAt": "2026-11-17T11:45:38Z",
+      "snapshotId": "0c94a512e1793b804108a259415dbe11a43dd9076ab4557dd9997ad0312c4aaa",
+      "contentHash": "0c94a512e1793b804108a259415dbe11a43dd9076ab4557dd9997ad0312c4aaa",
+      "generatedAt": "2026-11-18T11:33:36Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Artificial Analysis Openness Index official Data API",
@@ -7020,7 +7076,7 @@
       "coverage": {
         "collectedModels": 25,
         "isComplete": false,
-        "totalModels": 346
+        "totalModels": 348
       },
       "entries": [
         [
@@ -7211,9 +7267,9 @@
       "metric": "MLCR-AA",
       "unit": "ratio",
       "comparisonKey": "mlcr_overall",
-      "snapshotId": "470e038c12d4285844719333a018a1b84ee4a777c1cc58dd5999a0012b7b4147",
-      "contentHash": "470e038c12d4285844719333a018a1b84ee4a777c1cc58dd5999a0012b7b4147",
-      "generatedAt": "2026-11-17T11:46:21Z",
+      "snapshotId": "a0b2e99c6bd9ffc9d01190279877154be69148c91b021c24660e478e0f53d889",
+      "contentHash": "a0b2e99c6bd9ffc9d01190279877154be69148c91b021c24660e478e0f53d889",
+      "generatedAt": "2026-11-18T11:34:36Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis MLCR Overall official public Dataset page",
@@ -7226,7 +7282,7 @@
       "coverage": {
         "collectedModels": 29,
         "isComplete": false,
-        "totalModels": 184
+        "totalModels": 194
       },
       "entries": [
         [
@@ -7251,9 +7307,9 @@
           "max with fallback"
         ],
         [
-          "GPT-6.1 Sol (Max)",
-          "GPT-6.1 Sol",
-          0.3833,
+          "GPT-6.2 Astra (Max)",
+          "GPT-6.2 Astra",
+          0.3944,
           null,
           "max"
         ],
@@ -7263,6 +7319,13 @@
           0.3833,
           null,
           null
+        ],
+        [
+          "GPT-6.2 Sol (Max)",
+          "GPT-6.2 Sol",
+          0.3722,
+          null,
+          "max"
         ],
         [
           "Claude Haiku 5.5 (Max)",
@@ -7398,13 +7461,6 @@
           "max"
         ],
         [
-          "Claude Fable 5.1 (Max, Default Fallback)",
-          "Claude Fable 5.1",
-          0.1556,
-          null,
-          "max with fallback"
-        ],
-        [
           "Ling 3.1 Flash 1019",
           "Ling 3.1 Flash 1019",
           0.15,
@@ -7447,7 +7503,7 @@
       "comparisonKey": "v1.1",
       "snapshotId": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019",
       "contentHash": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019",
-      "generatedAt": "2026-11-17T11:45:43Z",
+      "generatedAt": "2026-11-18T11:33:52Z",
       "taskCount": null,
       "source": {
         "name": "DeepSWE v1.1 official leaderboard JSON",
