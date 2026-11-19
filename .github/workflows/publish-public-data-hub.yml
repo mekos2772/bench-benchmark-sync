@@ -70,10 +70,10 @@ jobs:
           printf '%s\n' "$TODAY_PRIVATE_DEPLOY_KEY" > "$RUNNER_TEMP/github-ssh/id_ed25519"
           chmod 600 "$RUNNER_TEMP/github-ssh/id_ed25519"
           trap 'rm -f "$RUNNER_TEMP/github-ssh/id_ed25519"' EXIT
-          curl --fail --silent --show-error --retry 3 https://api.github.com/meta \
-            | python -c 'import json,sys; print("\n".join("github.com " + key for key in json.load(sys.stdin)["ssh_keys"] if key.startswith("ssh-ed25519 ")))' \
-            > "$RUNNER_TEMP/github-ssh/known_hosts"
-          test -s "$RUNNER_TEMP/github-ssh/known_hosts"
+          # Pin GitHub's published Ed25519 host key rather than relying on /meta (intermittent 403).
+          # https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints
+          printf '%s\n' 'github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl' > "$RUNNER_TEMP/github-ssh/known_hosts"
+          ssh-keygen -lf "$RUNNER_TEMP/github-ssh/known_hosts" | grep -Fq 'SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU'
           export GIT_SSH_COMMAND="ssh -i $RUNNER_TEMP/github-ssh/id_ed25519 -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$RUNNER_TEMP/github-ssh/known_hosts"
           git clone --depth=1 git@github.com:mekos2772/ai-ranking-miniprogram.git \
             "$RUNNER_TEMP/private-source"
