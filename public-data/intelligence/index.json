@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "latestArchiveDate": "2026-11-18",
-  "archiveDays": 48,
-  "totalRecords": 635,
+  "latestArchiveDate": "2026-11-19",
+  "archiveDays": 49,
+  "totalRecords": 653,
   "days": [
     {
       "date": "2026-09-27",
@@ -242,6 +242,11 @@
     {
       "date": "2026-11-18",
       "path": "intelligence/2026-11-18.jsonl",
+      "count": 18
+    },
+    {
+      "date": "2026-11-19",
+      "path": "intelligence/2026-11-19.jsonl",
       "count": 18
     }
   ]

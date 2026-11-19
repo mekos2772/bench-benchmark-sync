@@ -2,9 +2,9 @@
   "schemaVersion": 3,
   "dataSource": "benchmark-sync-static",
   "exporterVersion": "0.5.0",
-  "workflowRunId": "44295733377",
+  "workflowRunId": "44515572683",
   "mainCommit": "daa34b9a7af2b9d756315cb5d19417acb0082e62",
-  "generatedAt": "2026-11-18T11:34:58Z",
+  "generatedAt": "2026-11-19T11:33:04Z",
   "families": [
     {
       "familyId": "livebench",
@@ -94,7 +94,7 @@
           "id": "aa_gdp_pdf",
           "title": "GDP.pdf",
           "isOverall": false,
-          "modelCount": 29
+          "modelCount": 28
         },
         {
           "id": "aa_hle_diamond",
@@ -228,7 +228,7 @@
       "comparisonKey": "live_bench",
       "snapshotId": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
       "contentHash": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
-      "generatedAt": "2026-11-18T11:34:28Z",
+      "generatedAt": "2026-11-19T11:32:33Z",
       "taskCount": 7,
       "source": {
         "name": "LiveBench dated official leaderboard CSV",
@@ -521,7 +521,7 @@
       "comparisonKey": "coding",
       "snapshotId": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
       "contentHash": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
-      "generatedAt": "2026-11-18T11:34:30Z",
+      "generatedAt": "2026-11-19T11:32:21Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Coding dated official leaderboard CSV",
@@ -814,7 +814,7 @@
       "comparisonKey": "reasoning",
       "snapshotId": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
       "contentHash": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
-      "generatedAt": "2026-11-18T11:34:37Z",
+      "generatedAt": "2026-11-19T11:32:37Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Reasoning dated official leaderboard CSV",
@@ -1107,7 +1107,7 @@
       "comparisonKey": "data_analysis",
       "snapshotId": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
       "contentHash": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
-      "generatedAt": "2026-11-18T11:34:24Z",
+      "generatedAt": "2026-11-19T11:32:28Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Data Analysis dated official leaderboard CSV",
@@ -1400,7 +1400,7 @@
       "comparisonKey": "long_horizon",
       "snapshotId": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
       "contentHash": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
-      "generatedAt": "2026-11-18T11:34:22Z",
+      "generatedAt": "2026-11-19T11:32:30Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Long-Horizon dated official leaderboard CSV",
@@ -1693,7 +1693,7 @@
       "comparisonKey": "browser",
       "snapshotId": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
       "contentHash": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
-      "generatedAt": "2026-11-18T11:34:11Z",
+      "generatedAt": "2026-11-19T11:32:19Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Browser dated official leaderboard CSV",
@@ -1986,7 +1986,7 @@
       "comparisonKey": "research",
       "snapshotId": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
       "contentHash": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
-      "generatedAt": "2026-11-18T11:34:38Z",
+      "generatedAt": "2026-11-19T11:32:41Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Research dated official leaderboard CSV",
@@ -2279,7 +2279,7 @@
       "comparisonKey": "design",
       "snapshotId": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
       "contentHash": "257001e6213e0a40fa3083eadcbe78395614a2b1dbf403e6a03be20f5f5cd31a",
-      "generatedAt": "2026-11-18T11:34:30Z",
+      "generatedAt": "2026-11-19T11:32:33Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Design dated official leaderboard CSV",
@@ -2570,9 +2570,9 @@
       "metric": "Artificial Analysis Intelligence Index: Score",
       "unit": "score",
       "comparisonKey": "aa_intelligence_index_v5_0_1",
-      "snapshotId": "b6158bb470b0f1dacd496a8ae8dd965ce1be58073728ea9d498e8f781bc43978",
-      "contentHash": "b6158bb470b0f1dacd496a8ae8dd965ce1be58073728ea9d498e8f781bc43978",
-      "generatedAt": "2026-11-18T11:33:38Z",
+      "snapshotId": "0ba66f898afdfd723ef22cdc02d06d7a27e5cb73963a804d831d24031f3c233a",
+      "contentHash": "0ba66f898afdfd723ef22cdc02d06d7a27e5cb73963a804d831d24031f3c233a",
+      "generatedAt": "2026-11-19T11:31:49Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Intelligence Index v5.0.1 official public page",
@@ -2585,7 +2585,7 @@
       "coverage": {
         "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 151
+        "totalModels": 156
       },
       "entries": [
         [
@@ -2601,6 +2601,13 @@
           62.14,
           null,
           "max"
+        ],
+        [
+          "Gemini 4 Neon (Xhigh)",
+          "Gemini 4 Neon",
+          61.4,
+          null,
+          "xhigh"
         ],
         [
           "Gemini 4 Carbon (High)",
@@ -2701,13 +2708,6 @@
           null
         ],
         [
-          "Qwen3.8 Max (0902)",
-          "Qwen3.8 Max (0902)",
-          33.65,
-          null,
-          null
-        ],
-        [
           "DeepSeek V4.1 Flash 1017 (Max)",
           "DeepSeek V4.1 Flash 1017",
           32.59,
@@ -2797,9 +2797,9 @@
       "metric": "AA-Briefcase Elo",
       "unit": "raw",
       "comparisonKey": "aa_briefcase_v1_1",
-      "snapshotId": "c75e841a426d142dfe305c93f7d3bdecf36b5f4f41d389787036f89d805311e7",
-      "contentHash": "c75e841a426d142dfe305c93f7d3bdecf36b5f4f41d389787036f89d805311e7",
-      "generatedAt": "2026-11-18T11:33:35Z",
+      "snapshotId": "e38e90f72e78a7f442c87870fd743f92e7cd338bff6084d17bfe47e51a44fc87",
+      "contentHash": "e38e90f72e78a7f442c87870fd743f92e7cd338bff6084d17bfe47e51a44fc87",
+      "generatedAt": "2026-11-19T11:31:49Z",
       "taskCount": null,
       "source": {
         "name": "AA-Briefcase v1.1 official public page",
@@ -2812,7 +2812,7 @@
       "coverage": {
         "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 285
+        "totalModels": 289
       },
       "entries": [
         [
@@ -2844,6 +2844,13 @@
           "max"
         ],
         [
+          "Gemini 4 Neon (Xhigh)",
+          "Gemini 4 Neon",
+          1699.17,
+          null,
+          "xhigh"
+        ],
+        [
           "Qwen4 Max",
           "Qwen4 Max",
           1686.07,
@@ -2867,7 +2874,7 @@
         [
           "GPT-6.2 Astra (Max)",
           "GPT-6.2 Astra",
-          1643.5,
+          1643.24,
           null,
           "max"
         ],
@@ -2891,13 +2898,6 @@
           1610.63,
           null,
           "high"
-        ],
-        [
-          "Qwen3.8 Max (0902)",
-          "Qwen3.8 Max (0902)",
-          1603.97,
-          null,
-          null
         ],
         [
           "Claude Haiku 5.5 (Max)",
@@ -3024,9 +3024,9 @@
       "metric": "AutomationBench-AA: Score",
       "unit": "ratio",
       "comparisonKey": "aa_automationbench",
-      "snapshotId": "73b3997c26ddc0e5e81d4f6b46617f2539def43017c627a68aa5e1a4a75c4086",
-      "contentHash": "73b3997c26ddc0e5e81d4f6b46617f2539def43017c627a68aa5e1a4a75c4086",
-      "generatedAt": "2026-11-18T11:33:37Z",
+      "snapshotId": "eb4cbc0cb169c88863fb7a06d253700e437bbc56e61c917014fa0dae351dd1b6",
+      "contentHash": "eb4cbc0cb169c88863fb7a06d253700e437bbc56e61c917014fa0dae351dd1b6",
+      "generatedAt": "2026-11-19T11:31:48Z",
       "taskCount": null,
       "source": {
         "name": "AutomationBench-AA official public page",
@@ -3039,9 +3039,16 @@
       "coverage": {
         "collectedModels": 29,
         "isComplete": false,
-        "totalModels": 280
+        "totalModels": 284
       },
       "entries": [
+        [
+          "Gemini 4 Neon (Xhigh)",
+          "Gemini 4 Neon",
+          0.7934,
+          null,
+          "xhigh"
+        ],
         [
           "Gemini 4 Carbon (High)",
           "Gemini 4 Carbon",
@@ -3190,13 +3197,6 @@
           "high"
         ],
         [
-          "Qwen3.8 Max (0902)",
-          "Qwen3.8 Max (0902)",
-          0.5619,
-          null,
-          null
-        ],
-        [
           "GPT-6 Luna (Max)",
           "GPT-6 Luna",
           0.5317,
@@ -3258,9 +3258,9 @@
       "metric": "FrontierCode 2.0: Score",
       "unit": "ratio",
       "comparisonKey": "aa_frontiercode_v2_0",
-      "snapshotId": "5f86f337b145a1983e27eacb70cff44fc3a33166f433a7f188ff0a5aa54a30d0",
-      "contentHash": "5f86f337b145a1983e27eacb70cff44fc3a33166f433a7f188ff0a5aa54a30d0",
-      "generatedAt": "2026-11-18T11:33:51Z",
+      "snapshotId": "d9dfeeeb9c2c8666261ece417f9c2cbebb318fd1ea7a70cab9c8f6a3182e929e",
+      "contentHash": "d9dfeeeb9c2c8666261ece417f9c2cbebb318fd1ea7a70cab9c8f6a3182e929e",
+      "generatedAt": "2026-11-19T11:32:06Z",
       "taskCount": null,
       "source": {
         "name": "FrontierCode-AA 2.0 official public page",
@@ -3273,7 +3273,7 @@
       "coverage": {
         "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 152
+        "totalModels": 157
       },
       "entries": [
         [
@@ -3296,6 +3296,13 @@
           0.4538,
           null,
           "max"
+        ],
+        [
+          "Gemini 4 Neon (Xhigh)",
+          "Gemini 4 Neon",
+          0.4441,
+          null,
+          "xhigh"
         ],
         [
           "GPT-6.2 Sol (Max)",
@@ -3417,13 +3424,6 @@
           null
         ],
         [
-          "Qwen3.8 Max (0902)",
-          "Qwen3.8 Max (0902)",
-          0.2342,
-          null,
-          null
-        ],
-        [
           "GLM-5.3 (Max)",
           "GLM-5.3",
           0.2159,
@@ -3485,9 +3485,9 @@
       "metric": "GDP.pdf: All-pass Rate",
       "unit": "ratio",
       "comparisonKey": "aa_gdp_pdf",
-      "snapshotId": "08a80d0ca5b208b294275ccc14512945c0a7db319c0376836ccf61079baffe42",
-      "contentHash": "08a80d0ca5b208b294275ccc14512945c0a7db319c0376836ccf61079baffe42",
-      "generatedAt": "2026-11-18T11:34:02Z",
+      "snapshotId": "918ee6b94216d1a13b4b73eb034cb553ac7967312f5161b940fd6b7964debbe4",
+      "contentHash": "918ee6b94216d1a13b4b73eb034cb553ac7967312f5161b940fd6b7964debbe4",
+      "generatedAt": "2026-11-19T11:32:03Z",
       "taskCount": null,
       "source": {
         "name": "GDP.pdf official public page",
@@ -3498,9 +3498,9 @@
         "categoriesUrl": null
       },
       "coverage": {
-        "collectedModels": 29,
+        "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 279
+        "totalModels": 283
       },
       "entries": [
         [
@@ -3509,13 +3509,6 @@
           0.326,
           null,
           "max"
-        ],
-        [
-          "GPT-6 Astra (Xhigh)",
-          "GPT-6 Astra",
-          0.322,
-          null,
-          "xhigh"
         ],
         [
           "Kimi K3.1 Pro",
@@ -3558,6 +3551,13 @@
           0.284,
           null,
           "high"
+        ],
+        [
+          "Gemini 4 Neon (Xhigh)",
+          "Gemini 4 Neon",
+          0.28,
+          null,
+          "xhigh"
         ],
         [
           "Gemini 4 Hydrogen (Xhigh)",
@@ -3607,13 +3607,6 @@
           0.228,
           null,
           "max"
-        ],
-        [
-          "Qwen3.8 Max (0902)",
-          "Qwen3.8 Max (0902)",
-          0.228,
-          null,
-          null
         ],
         [
           "GPT-6 Luna (Max)",
@@ -3719,9 +3712,9 @@
       "metric": "HLE-Diamond: Score",
       "unit": "ratio",
       "comparisonKey": "aa_hle_diamond",
-      "snapshotId": "5f327c6ea8ae5f32a4b3ae80802dca8780ec203ef5ee7997f51c067be8c27c05",
-      "contentHash": "5f327c6ea8ae5f32a4b3ae80802dca8780ec203ef5ee7997f51c067be8c27c05",
-      "generatedAt": "2026-11-18T11:34:07Z",
+      "snapshotId": "5f5a14fbf2f5094e2504197eadd51f5b3866640d71ff82089b30b1c7ac98cbf4",
+      "contentHash": "5f5a14fbf2f5094e2504197eadd51f5b3866640d71ff82089b30b1c7ac98cbf4",
+      "generatedAt": "2026-11-19T11:32:17Z",
       "taskCount": null,
       "source": {
         "name": "HLE-Diamond official public page",
@@ -3734,7 +3727,7 @@
       "coverage": {
         "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 192
+        "totalModels": 196
       },
       "entries": [
         [
@@ -3750,6 +3743,13 @@
           0.722,
           null,
           "max"
+        ],
+        [
+          "Gemini 4 Neon (Xhigh)",
+          "Gemini 4 Neon",
+          0.713,
+          null,
+          "xhigh"
         ],
         [
           "Gemini 4 Carbon (High)",
@@ -3857,13 +3857,6 @@
           "max"
         ],
         [
-          "Qwen3.8 Max (0902)",
-          "Qwen3.8 Max (0902)",
-          0.24,
-          null,
-          null
-        ],
-        [
           "Grok 4.7 (Xhigh)",
           "Grok 4.7",
           0.232,
@@ -3946,9 +3939,9 @@
       "metric": "CritPt v2 (Hard Subset): Score",
       "unit": "ratio",
       "comparisonKey": "aa_critpt_v2_hard",
-      "snapshotId": "79ae6944116965107d9b604efe0e016c771da1f9b5f6e9b793eb7e2b7bc4f60e",
-      "contentHash": "79ae6944116965107d9b604efe0e016c771da1f9b5f6e9b793eb7e2b7bc4f60e",
-      "generatedAt": "2026-11-18T11:33:57Z",
+      "snapshotId": "7763b6900d8ffa708baef3ff46f2ddab8a5b479d4b52418cf70e6926af2ce74c",
+      "contentHash": "7763b6900d8ffa708baef3ff46f2ddab8a5b479d4b52418cf70e6926af2ce74c",
+      "generatedAt": "2026-11-19T11:32:00Z",
       "taskCount": null,
       "source": {
         "name": "CritPt v2 (Hard Subset) official public page",
@@ -3961,7 +3954,7 @@
       "coverage": {
         "collectedModels": 29,
         "isComplete": false,
-        "totalModels": 155
+        "totalModels": 159
       },
       "entries": [
         [
@@ -4019,6 +4012,13 @@
           0.625,
           null,
           "max"
+        ],
+        [
+          "Gemini 4 Neon (Xhigh)",
+          "Gemini 4 Neon",
+          0.605,
+          null,
+          "xhigh"
         ],
         [
           "Claude Sonnet 5.5 (Max, Default Fallback)",
@@ -4119,13 +4119,6 @@
           "max"
         ],
         [
-          "Qwen3.8 Max (0902)",
-          "Qwen3.8 Max (0902)",
-          0.295,
-          null,
-          null
-        ],
-        [
           "Mistral Large 4 (High)",
           "Mistral Large 4",
           0.27,
@@ -4180,9 +4173,9 @@
       "metric": "Terminal-Bench-Science 0.1: Score",
       "unit": "ratio",
       "comparisonKey": "aa_terminal_bench_science_v0_1",
-      "snapshotId": "11485eaa6a19ab321c7befbd380e96c25569914fff6ee05c82a61bf9770066c8",
-      "contentHash": "11485eaa6a19ab321c7befbd380e96c25569914fff6ee05c82a61bf9770066c8",
-      "generatedAt": "2026-11-18T11:34:55Z",
+      "snapshotId": "4afdf386b75cc8d3fc8923c20f6ac9f909e5391eede11de1e23ecfe08228a808",
+      "contentHash": "4afdf386b75cc8d3fc8923c20f6ac9f909e5391eede11de1e23ecfe08228a808",
+      "generatedAt": "2026-11-19T11:32:54Z",
       "taskCount": null,
       "source": {
         "name": "Terminal-Bench-Science 0.1 official public page",
@@ -4195,7 +4188,7 @@
       "coverage": {
         "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 163
+        "totalModels": 167
       },
       "entries": [
         [
@@ -4211,6 +4204,13 @@
           0.7333,
           null,
           "max with fallback"
+        ],
+        [
+          "Gemini 4 Neon (Xhigh)",
+          "Gemini 4 Neon",
+          0.7,
+          null,
+          "xhigh"
         ],
         [
           "GPT-6.2 Sol (Max)",
@@ -4311,13 +4311,6 @@
           "max"
         ],
         [
-          "Qwen3.8 Max (0902)",
-          "Qwen3.8 Max (0902)",
-          0.119,
-          null,
-          null
-        ],
-        [
           "Grok 4.7 (Xhigh)",
           "Grok 4.7",
           0.1143,
@@ -4407,9 +4400,9 @@
       "metric": "Terminal-Bench 4.0: Score",
       "unit": "ratio",
       "comparisonKey": "terminal_bench_v4_0",
-      "snapshotId": "ec04b97628a6bffe6a61a380e9c7dd712937cbad96ebd781d14356d86164baab",
-      "contentHash": "ec04b97628a6bffe6a61a380e9c7dd712937cbad96ebd781d14356d86164baab",
-      "generatedAt": "2026-11-18T11:34:52Z",
+      "snapshotId": "2230715946f571a63441bec0e968d586b3521c9ae218a85dfe476520b8b06aa5",
+      "contentHash": "2230715946f571a63441bec0e968d586b3521c9ae218a85dfe476520b8b06aa5",
+      "generatedAt": "2026-11-19T11:33:03Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
@@ -4422,7 +4415,7 @@
       "coverage": {
         "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 276
+        "totalModels": 280
       },
       "entries": [
         [
@@ -4445,6 +4438,13 @@
           0.6414,
           null,
           "max"
+        ],
+        [
+          "Gemini 4 Neon (Xhigh)",
+          "Gemini 4 Neon",
+          0.6364,
+          null,
+          "xhigh"
         ],
         [
           "Claude Sonnet 5.5 (Max, Default Fallback)",
@@ -4522,13 +4522,6 @@
           0.4091,
           null,
           "max"
-        ],
-        [
-          "Qwen3.8 Max (0902)",
-          "Qwen3.8 Max (0902)",
-          0.3889,
-          null,
-          null
         ],
         [
           "Tencent Hy4",
@@ -4634,9 +4627,9 @@
       "metric": "Humanity's Last Exam: Score",
       "unit": "ratio",
       "comparisonKey": "humanitys_last_exam",
-      "snapshotId": "18528aa0e6b3f146774b3ff89685f8484e543ca23874406f7f1cbc8791be583d",
-      "contentHash": "18528aa0e6b3f146774b3ff89685f8484e543ca23874406f7f1cbc8791be583d",
-      "generatedAt": "2026-11-18T11:34:07Z",
+      "snapshotId": "0635d65cb96cbee737cf4ad5bd89f54f07c2b74fe28cc9f7363147815ea51fcc",
+      "contentHash": "0635d65cb96cbee737cf4ad5bd89f54f07c2b74fe28cc9f7363147815ea51fcc",
+      "generatedAt": "2026-11-19T11:32:27Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Humanity's Last Exam official public Dataset page",
@@ -4751,6 +4744,13 @@
           null
         ],
         [
+          "Muse Spark 1.3 (Max)",
+          "Muse Spark 1.3",
+          0.487,
+          null,
+          "max"
+        ],
+        [
           "GPT-6.1 Terra (Max)",
           "GPT-6.1 Terra",
           0.4625,
@@ -4791,13 +4791,6 @@
           0.4314,
           null,
           "xhigh"
-        ],
-        [
-          "Qwen3.8 Max (0902)",
-          "Qwen3.8 Max (0902)",
-          0.431,
-          null,
-          null
         ],
         [
           "GLM-5.3 (Max)",
@@ -4856,7 +4849,7 @@
       "comparisonKey": "gpqa_diamond",
       "snapshotId": "e83bda4458042b9264c6758e9a4869f48240f0e6f0160f78bbb0ad8f1d0770f0",
       "contentHash": "e83bda4458042b9264c6758e9a4869f48240f0e6f0160f78bbb0ad8f1d0770f0",
-      "generatedAt": "2026-11-18T11:34:05Z",
+      "generatedAt": "2026-11-19T11:32:11Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis GPQA Diamond official public Dataset page",
@@ -5074,9 +5067,9 @@
       "metric": "SciCode: Score",
       "unit": "ratio",
       "comparisonKey": "scicode",
-      "snapshotId": "be5aa03b6c237072e3b0f0ff154891d9708697f092f7907c05f1d4974ab00022",
-      "contentHash": "be5aa03b6c237072e3b0f0ff154891d9708697f092f7907c05f1d4974ab00022",
-      "generatedAt": "2026-11-18T11:34:44Z",
+      "snapshotId": "88a883280a7736f6db400bd69ff3ec4aa2710ca2387ebcd0da3bfb77bfcc10b7",
+      "contentHash": "88a883280a7736f6db400bd69ff3ec4aa2710ca2387ebcd0da3bfb77bfcc10b7",
+      "generatedAt": "2026-11-19T11:32:44Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis SciCode official public Dataset page",
@@ -5198,6 +5191,13 @@
           null
         ],
         [
+          "Muse Spark 1.1 (Xhigh)",
+          "Muse Spark 1.1",
+          0.588,
+          null,
+          "xhigh"
+        ],
+        [
           "Grok 4.7 (Xhigh)",
           "Grok 4.7",
           0.5741,
@@ -5247,13 +5247,6 @@
           null
         ],
         [
-          "Qwen3.8 Max (0902)",
-          "Qwen3.8 Max (0902)",
-          0.5208,
-          null,
-          null
-        ],
-        [
           "Beam 1.0",
           "Beam 1.0",
           0.485,
@@ -5294,9 +5287,9 @@
       "metric": "AA-LCR v1.1",
       "unit": "ratio",
       "comparisonKey": "aa_lcr",
-      "snapshotId": "bae6139e1c5a2f4e490ab9f7b20b21cb7b3a1b87e231ea099b10b549adf179e3",
-      "contentHash": "bae6139e1c5a2f4e490ab9f7b20b21cb7b3a1b87e231ea099b10b549adf179e3",
-      "generatedAt": "2026-11-18T11:33:39Z",
+      "snapshotId": "74cd43ec315ebd54795b9f09a205de0f76fc411c2e59fd6e9f79a4011ad59ceb",
+      "contentHash": "74cd43ec315ebd54795b9f09a205de0f76fc411c2e59fd6e9f79a4011ad59ceb",
+      "generatedAt": "2026-11-19T11:31:48Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis AA LCR official public Dataset page",
@@ -5376,6 +5369,13 @@
           "low"
         ],
         [
+          "Gemini 3.8 Flash (Medium)",
+          "Gemini 3.8 Flash",
+          0.84,
+          null,
+          "medium"
+        ],
+        [
           "Muse Wonder Full (Max)",
           "Muse Wonder Full",
           0.8367,
@@ -5453,13 +5453,6 @@
           "max"
         ],
         [
-          "Qwen3.8 Max (0902)",
-          "Qwen3.8 Max (0902)",
-          0.8033,
-          null,
-          null
-        ],
-        [
           "K2 Horizon 375B A23B",
           "K2 Horizon 375B A23B",
           0.8,
@@ -5514,9 +5507,9 @@
       "metric": "AA-Omniscience Index: Score",
       "unit": "score",
       "comparisonKey": "aa_omniscience_index_v1_1",
-      "snapshotId": "101623b4f52561e981239371ea2168dc1a293bed8ec345a22b8758b8eef988b1",
-      "contentHash": "101623b4f52561e981239371ea2168dc1a293bed8ec345a22b8758b8eef988b1",
-      "generatedAt": "2026-11-18T11:33:37Z",
+      "snapshotId": "ddb5a1983bbb2c114501b22f28b7a9e29cb7885f658e8f845f8767ddba6e4a3f",
+      "contentHash": "ddb5a1983bbb2c114501b22f28b7a9e29cb7885f658e8f845f8767ddba6e4a3f",
+      "generatedAt": "2026-11-19T11:31:49Z",
       "taskCount": null,
       "source": {
         "name": "AA-Omniscience v1.1 official public page",
@@ -5529,7 +5522,7 @@
       "coverage": {
         "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 165
+        "totalModels": 169
       },
       "entries": [
         [
@@ -5538,6 +5531,13 @@
           66.77,
           null,
           "max with fallback"
+        ],
+        [
+          "Gemini 4 Neon (Xhigh)",
+          "Gemini 4 Neon",
+          54.77,
+          null,
+          "xhigh"
         ],
         [
           "Gemini 4 Carbon (High)",
@@ -5638,13 +5638,6 @@
           "max"
         ],
         [
-          "Qwen3.8 Max (0902)",
-          "Qwen3.8 Max (0902)",
-          10.47,
-          null,
-          null
-        ],
-        [
           "Muse Ember (Max)",
           "Muse Ember",
           7.37,
@@ -5741,9 +5734,9 @@
       "metric": "CritPt: Score",
       "unit": "ratio",
       "comparisonKey": "critpt",
-      "snapshotId": "84640d50fc806a6813fcd99daaef73fc4a459ded9e50f36b073a3074ca80e685",
-      "contentHash": "84640d50fc806a6813fcd99daaef73fc4a459ded9e50f36b073a3074ca80e685",
-      "generatedAt": "2026-11-18T11:33:53Z",
+      "snapshotId": "db1ce377e7ebd27b1d3647228dbdd66517443b8d1a37cc36260f94611125aa7f",
+      "contentHash": "db1ce377e7ebd27b1d3647228dbdd66517443b8d1a37cc36260f94611125aa7f",
+      "generatedAt": "2026-11-19T11:32:00Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis CritPt official public Dataset page",
@@ -5837,6 +5830,13 @@
           "max"
         ],
         [
+          "GPT-5.4 Pro (Xhigh)",
+          "GPT-5.4 Pro",
+          0.3,
+          null,
+          "xhigh"
+        ],
+        [
           "Muse Wonder (Max)",
           "Muse Wonder",
           0.2829,
@@ -5907,13 +5907,6 @@
           "xhigh"
         ],
         [
-          "Qwen3.8 Max (0902)",
-          "Qwen3.8 Max (0902)",
-          0.1771,
-          null,
-          null
-        ],
-        [
           "Beam 1.0",
           "Beam 1.0",
           0.1314,
@@ -5963,7 +5956,7 @@
       "comparisonKey": "gdpval_aa_elo",
       "snapshotId": "0c98eefb0fff8ec016c74683db3331d1b5355384f4f2f0b84b36c95858d26d5f",
       "contentHash": "0c98eefb0fff8ec016c74683db3331d1b5355384f4f2f0b84b36c95858d26d5f",
-      "generatedAt": "2026-11-18T11:33:52Z",
+      "generatedAt": "2026-11-19T11:32:06Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis GDPval-AA Elo official public Dataset page",
@@ -6183,7 +6176,7 @@
       "comparisonKey": "terminalbench_hard",
       "snapshotId": "8e016d2b797c2316bcc39120d82700bd4ffa86dc6206386d7c5c5b2e02f42f1e",
       "contentHash": "8e016d2b797c2316bcc39120d82700bd4ffa86dc6206386d7c5c5b2e02f42f1e",
-      "generatedAt": "2026-11-18T11:34:54Z",
+      "generatedAt": "2026-11-19T11:32:56Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
@@ -6403,7 +6396,7 @@
       "comparisonKey": "terminalbench_v2_1",
       "snapshotId": "4747893a6aec5c101cd5f487b8b4bd0e9776aa27d1ab38f7458452a990289190",
       "contentHash": "4747893a6aec5c101cd5f487b8b4bd0e9776aa27d1ab38f7458452a990289190",
-      "generatedAt": "2026-11-18T11:34:58Z",
+      "generatedAt": "2026-11-19T11:33:04Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
@@ -6623,7 +6616,7 @@
       "comparisonKey": "ifbench",
       "snapshotId": "91a810074bd250e5d05ccbfc4238385a3cbd326dd62c4fdb3ea483108d8b5279",
       "contentHash": "91a810074bd250e5d05ccbfc4238385a3cbd326dd62c4fdb3ea483108d8b5279",
-      "generatedAt": "2026-11-18T11:34:07Z",
+      "generatedAt": "2026-11-19T11:32:23Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis IFBench official public Dataset page",
@@ -6843,7 +6836,7 @@
       "comparisonKey": "mmmu_pro",
       "snapshotId": "67bb13c82b06f572365a88a40fa7baaf9602d3f3d177ad4156ab203b4e98fc52",
       "contentHash": "67bb13c82b06f572365a88a40fa7baaf9602d3f3d177ad4156ab203b4e98fc52",
-      "generatedAt": "2026-11-18T11:34:42Z",
+      "generatedAt": "2026-11-19T11:32:46Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis MMMU-Pro official public Dataset page",
@@ -7061,9 +7054,9 @@
       "metric": "Artificial Analysis Openness Index: Score",
       "unit": "score",
       "comparisonKey": "artificial_analysis_openness_index",
-      "snapshotId": "0c94a512e1793b804108a259415dbe11a43dd9076ab4557dd9997ad0312c4aaa",
-      "contentHash": "0c94a512e1793b804108a259415dbe11a43dd9076ab4557dd9997ad0312c4aaa",
-      "generatedAt": "2026-11-18T11:33:36Z",
+      "snapshotId": "0c86b764656c69896fdf73bf499bdf8d8b454ca422a35d57c96c2e0dd11d5379",
+      "contentHash": "0c86b764656c69896fdf73bf499bdf8d8b454ca422a35d57c96c2e0dd11d5379",
+      "generatedAt": "2026-11-19T11:31:51Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Artificial Analysis Openness Index official Data API",
@@ -7076,7 +7069,7 @@
       "coverage": {
         "collectedModels": 25,
         "isComplete": false,
-        "totalModels": 348
+        "totalModels": 350
       },
       "entries": [
         [
@@ -7192,6 +7185,13 @@
           null
         ],
         [
+          "Granite 4.2 30B",
+          "Granite 4.2 30B",
+          72.22,
+          null,
+          null
+        ],
+        [
           "Granite 4.2 8B",
           "Granite 4.2 8B",
           72.22,
@@ -7201,13 +7201,6 @@
         [
           "Granite 4.2 3B",
           "Granite 4.2 3B",
-          72.22,
-          null,
-          null
-        ],
-        [
-          "Granite 4.2 30B",
-          "Granite 4.2 30B",
           72.22,
           null,
           null
@@ -7267,9 +7260,9 @@
       "metric": "MLCR-AA",
       "unit": "ratio",
       "comparisonKey": "mlcr_overall",
-      "snapshotId": "a0b2e99c6bd9ffc9d01190279877154be69148c91b021c24660e478e0f53d889",
-      "contentHash": "a0b2e99c6bd9ffc9d01190279877154be69148c91b021c24660e478e0f53d889",
-      "generatedAt": "2026-11-18T11:34:36Z",
+      "snapshotId": "f0982189e6d8913bda9cb6ceea57ef1f566af4ae438dc6ef0a44b5798e538f06",
+      "contentHash": "f0982189e6d8913bda9cb6ceea57ef1f566af4ae438dc6ef0a44b5798e538f06",
+      "generatedAt": "2026-11-19T11:32:41Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis MLCR Overall official public Dataset page",
@@ -7282,7 +7275,7 @@
       "coverage": {
         "collectedModels": 29,
         "isComplete": false,
-        "totalModels": 194
+        "totalModels": 203
       },
       "entries": [
         [
@@ -7340,6 +7333,13 @@
           0.3278,
           null,
           null
+        ],
+        [
+          "Gemini 4 Neon (Xhigh)",
+          "Gemini 4 Neon",
+          0.3056,
+          null,
+          "xhigh"
         ],
         [
           "GPT-6.1 Terra (Max)",
@@ -7410,13 +7410,6 @@
           0.2,
           null,
           "xhigh"
-        ],
-        [
-          "Qwen3.8 Max (0902)",
-          "Qwen3.8 Max (0902)",
-          0.2,
-          null,
-          null
         ],
         [
           "Gemini 4 Carbon (High)",
@@ -7503,7 +7496,7 @@
       "comparisonKey": "v1.1",
       "snapshotId": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019",
       "contentHash": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019",
-      "generatedAt": "2026-11-18T11:33:52Z",
+      "generatedAt": "2026-11-19T11:32:05Z",
       "taskCount": null,
       "source": {
         "name": "DeepSWE v1.1 official leaderboard JSON",
