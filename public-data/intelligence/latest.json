@@ -1,8 +1,413 @@
 {
   "schemaVersion": 1,
-  "latestArchiveDate": "2026-11-19",
+  "latestArchiveDate": "2026-11-20",
   "eventCount": 246,
   "events": [
+    {
+      "event_id": "vllm-flashinfer-xqa-ragged-mask-sync-github-2026-11-20",
+      "event_type": "github",
+      "title": "vLLM 消除 FlashInfer XQA 不规则草稿掩码的主机同步",
+      "org": "vLLM",
+      "model": "FlashInfer XQA",
+      "summary": "vLLM 重写 FlashInfer XQA 在不规则推测解码中生成草稿块掩码的路径，直接在设备张量上计算查询长度，避免逐步重建掩码时触发 GPU 与 CPU 同步。提交加入同步调试模式测试，确保 CUDA 路径出现隐式同步即失败。官方未给出吞吐增幅，但这一修复可减少每轮草稿验证的主机停顿，改善短步长推测解码延迟。",
+      "key_points": [
+        "设备端生成不规则草稿块掩码",
+        "避免每轮GPU与CPU隐式同步",
+        "新增同步调试模式回归测试"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "vLLM GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "vLLM 官方提交调整 FlashInfer 掩码生成并加入禁止隐式同步的 CUDA 回归测试。"
+      ],
+      "published_at": "2026-11-20T02:55:40Z",
+      "collected_at": "2026-11-20T11:00:08+08:00"
+    },
+    {
+      "event_id": "vllm-rdna3-w4a8-moe-decode-github-2026-11-20",
+      "event_type": "github",
+      "title": "vLLM 为 RDNA3 系列加入 W4A8 MoE 解码内核",
+      "org": "vLLM",
+      "model": "W4A8 MoE on AMD RDNA3",
+      "summary": "vLLM 在 ROCm 路径新增面向 gfx11 的 W4A8 MoE 解码内核，覆盖 RDNA3 与 RDNA3.5。实现针对小批量 token 采用激活分组量化、门控与上投影、下投影三阶段执行，不做专家排序、填充或原子累加，并加入编译守卫和数值测试。项目未公布统一性能数据，主要意义是补齐消费级 AMD GPU 的低比特 MoE 推理路径。，扩大本地部署选择",
+      "key_points": [
+        "支持gfx11系列RDNA3与RDNA3.5",
+        "采用三阶段无专家排序解码流程",
+        "加入编译守卫与数值测试"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "vLLM GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "vLLM 官方提交新增 ROCm 内核、Python 调度、构建配置和测试，注释说明三阶段执行方式。"
+      ],
+      "published_at": "2026-11-20T02:22:02Z",
+      "collected_at": "2026-11-20T11:00:08+08:00"
+    },
+    {
+      "event_id": "sglang-independent-multilabel-classification-github-2026-11-20",
+      "event_type": "api_update",
+      "title": "SGLang 分类接口支持独立多标签概率",
+      "org": "SGLang",
+      "model": "SGLang classify API",
+      "summary": "SGLang 的分类接口开始读取模型配置中的多标签任务类型：多标签模型对每个 logit 独立应用 sigmoid，返回无需归一化为总和一的概率；其余模型继续使用 softmax。为兼容旧客户端，响应中的单一 label 仍保留最高分标签，调用方可对完整概率向量自行设阈值。这使一个样本同时属于多个类别时不再被互斥概率假设限制。",
+      "key_points": [
+        "依据problem_type自动选择sigmoid",
+        "多标签概率彼此独立且无需和为一",
+        "保留最高分label兼容现有客户端"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 1,
+      "sources": [
+        {
+          "name": "SGLang GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "SGLang 官方提交修改分类响应逻辑并更新接口文档，明确多标签与普通分类的不同概率处理。"
+      ],
+      "published_at": "2026-11-20T01:46:55Z",
+      "collected_at": "2026-11-20T11:00:08+08:00"
+    },
+    {
+      "event_id": "sglang-deepseek-image-prefix-routing-github-2026-11-20",
+      "event_type": "github",
+      "title": "SGLang 路由器按前缀缓存调度 DeepSeek 图像对话",
+      "org": "SGLang",
+      "model": "DeepSeek V4/V4.1 multimodal",
+      "summary": "SGLang 的 Rust 路由器为 DeepSeek 图像对话补齐前缀缓存感知调度：格式化器同时返回文本、token 标识和图像占位信息，路由策略据此计算可复用前缀，并在多工作节点间选择缓存命中更高的实例。提交同步调整缓存树、指标和转发链路；未公布性能数据，但可减少重复视觉上下文的预填充计算与跨节点冷缓存。",
+      "key_points": [
+        "格式化器同时输出文本、token与图像引用",
+        "缓存感知策略覆盖多模态对话",
+        "同步更新缓存树、指标和转发链路"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "SGLang GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "SGLang 官方提交修改 DeepSeek 渲染、路由策略、缓存树和聊天转发等完整链路。"
+      ],
+      "published_at": "2026-11-20T01:33:28Z",
+      "collected_at": "2026-11-20T11:00:08+08:00"
+    },
+    {
+      "event_id": "sglang-ascend-glm-dsa-cache-layer-split-github-2026-11-20",
+      "event_type": "infra_hardware",
+      "title": "SGLang 在昇腾支持 GLM DSA 缓存按层拆分",
+      "org": "SGLang",
+      "model": "GLM DSA on Ascend",
+      "summary": "SGLang 将 GLM 的 DSA 缓存按层拆分能力扩展到昇腾 NPU，使用 Ascend 传输后端在上下文并行各 rank 间搬运 KV 与 indexer 状态，并适配预填充解耦、主机缓存池和 NPU 注意力后端。实现加入参数约束与单元测试，流水线并行等组合仍有限制；该更新让显存分层与分布式缓存策略可在昇腾部署中落地。",
+      "key_points": [
+        "通过Ascend后端传输KV与indexer状态",
+        "适配预填充解耦和NPU缓存池",
+        "加入配置约束与分层缓存测试"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "SGLang GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "SGLang 官方提交新增昇腾 DSA 分层缓存实现、传输连接、内存池适配及多组测试。"
+      ],
+      "published_at": "2026-11-20T01:30:06Z",
+      "collected_at": "2026-11-20T11:00:08+08:00"
+    },
+    {
+      "event_id": "sglang-kimi-k3-layernorm-sequence-parallel-github-2026-11-20",
+      "event_type": "github",
+      "title": "SGLang 为 Kimi-K3 预填充加入 LayerNorm 序列并行",
+      "org": "SGLang",
+      "model": "Kimi-K3",
+      "summary": "SGLang 为 Kimi-K3 的预填充阶段开放 LayerNorm 序列并行，将张量并行中的行并行全归约改为规约分散与全收集，使归一化在按序列切分的激活上执行，而不增加通信量。当前要求不启用注意力数据并行或上下文并行，并加入阶段内核与端到端测试；适合长上下文预填充时降低单卡激活占用。",
+      "key_points": [
+        "LayerNorm在序列切分激活上执行",
+        "用规约分散与全收集替代全归约",
+        "当前不兼容注意力数据并行或上下文并行"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "SGLang GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "SGLang 官方提交扩展 LayerNorm 序列并行架构列表、参数校验和 Kimi-K3 阶段内核测试。"
+      ],
+      "published_at": "2026-11-20T01:27:15Z",
+      "collected_at": "2026-11-20T11:00:08+08:00"
+    },
+    {
+      "event_id": "sglang-wan22-s2v-xpu-github-2026-11-20",
+      "event_type": "open_source",
+      "title": "SGLang 接入 Wan2.2-S2V-14B 语音生成视频并支持 XPU",
+      "org": "SGLang",
+      "model": "Wan2.2-S2V-14B",
+      "summary": "SGLang 多模态生成运行时加入 Wan2.2-S2V-14B 语音到视频管线及 Intel XPU 支持，覆盖 DiT 配置、音频编码器、条件注入、采样参数、权重加载、并行执行和解码阶段。实现按官方架构设置音频 token 与注入层，并补充设备放置和管线测试；项目未披露生成速度，意义在于让语音驱动视频模型进入统一服务框架。",
+      "key_points": [
+        "新增完整语音到视频运行管线",
+        "覆盖音频编码、条件注入与解码",
+        "加入Intel XPU设备放置支持"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "SGLang GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "SGLang 官方提交新增 Wan S2V 配置、模型、音频编码器、管线、XPU 放置和测试文件。"
+      ],
+      "published_at": "2026-11-20T00:55:38Z",
+      "collected_at": "2026-11-20T11:00:08+08:00"
+    },
+    {
+      "event_id": "vllm-qwen3-gdn-aiter-fusion-github-2026-11-20",
+      "event_type": "github",
+      "title": "vLLM 融合 Qwen3.8-27B 的 GDN 解码计算到 AITER 内核",
+      "org": "vLLM",
+      "model": "Qwen3.8-27B",
+      "summary": "vLLM 针对 ROCm 上的 Qwen3.8-27B 解码，将 GDN 的一维卷积、delta rule 状态更新与门控归一化融合进 AITER Gluon 内核，并按头数、状态类型和解码批量设置调度条件。提交补充多组布局与边界测试，但没有披露端到端吞吐数字；其价值在于减少中间张量和内核启动，为线性注意力解码降低调度开销。",
+      "key_points": [
+        "融合conv1d、delta rule与门控归一化",
+        "按布局和批量条件选择AITER路径",
+        "补充多头数与状态类型测试"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "vLLM GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "vLLM 官方提交修改 AITER 调用与 GDN 调度，并新增覆盖布局、头数和解码批量的测试。"
+      ],
+      "published_at": "2026-11-20T00:31:35Z",
+      "collected_at": "2026-11-20T11:00:08+08:00"
+    },
+    {
+      "event_id": "llamacpp-cuda-duplicate-expert-ids-github-2026-11-20",
+      "event_type": "github",
+      "title": "llama.cpp CUDA 后端支持重复专家标识",
+      "org": "llama.cpp",
+      "model": "CUDA MoE",
+      "summary": "llama.cpp 为 CUDA 的按专家矩阵乘路径加入重复专家标识支持，修复同一 token 多个路由槽指向同一专家时此前结果未定义的问题。实现调整线程掩码计数、专家行映射、Flash Attention 辅助路径与 top-k 处理，并扩展后端算子测试。官方未给出速度数据，但该改动提升 MoE 路由边界场景的一致性和跨后端可移植性。",
+      "key_points": [
+        "支持单个token重复选择同一专家",
+        "调整线程掩码、行映射与top-k处理",
+        "扩展CUDA后端算子测试"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "llama.cpp GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "llama.cpp 官方提交修改 CUDA 专家矩阵乘、线程掩码和 top-k 路径，并新增重复专家测试。"
+      ],
+      "published_at": "2026-11-19T22:21:24Z",
+      "collected_at": "2026-11-20T11:00:08+08:00"
+    },
+    {
+      "event_id": "llamacpp-opencl-dp4a-kq-github-2026-11-20",
+      "event_type": "github",
+      "title": "llama.cpp OpenCL 分解式 Flash Attention 引入 DP4A KQ 计算",
+      "org": "llama.cpp",
+      "model": "OpenCL Flash Attention",
+      "summary": "llama.cpp 在 OpenCL 分解式 Flash Attention 中加入 int8 KQ 矩阵乘与 DP4A 内核，覆盖头维不超过256的常规路径及头维512的专用路径，并把查询分块上限扩到96。实现新增 Q/K 量化缓冲区、比例因子和内核编译回退；官方未披露设备实测加速，主要面向支持整数点积的移动与集成 GPU 降低注意力计算成本。，扩展低功耗端侧部署空间",
+      "key_points": [
+        "新增int8 KQ与DP4A内核",
+        "覆盖头维不超过256及512专用路径",
+        "查询分块上限扩展到96"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "llama.cpp GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "llama.cpp 官方提交新增 OpenCL 量化、KQ 矩阵乘内核和运行时缓冲区管理。"
+      ],
+      "published_at": "2026-11-19T19:30:19Z",
+      "collected_at": "2026-11-20T11:00:08+08:00"
+    },
+    {
+      "event_id": "llamacpp-bf16-rope-setrows-github-2026-11-20",
+      "event_type": "github",
+      "title": "llama.cpp 在 CPU 与 CUDA 扩展 BF16 RoPE 和 SET_ROWS",
+      "org": "llama.cpp",
+      "model": "ggml BF16",
+      "summary": "llama.cpp 为 ggml 的旋转位置编码和 SET_ROWS 算子补充 BF16 支持，覆盖 CPU 与 CUDA，并允许 CUDA 将 BF16 行写入量化类型和 FP8 E4M3。RoPE 路径可把 BF16 计算直接融合进 BF16 缓存，减少额外类型转换；同时各后端显式声明不支持组合并加入算子测试。该更新有助于保持 BF16 推理图的精度与执行连续性。，也减少混合精度图中的回退机会",
+      "key_points": [
+        "CPU与CUDA支持BF16 RoPE和SET_ROWS",
+        "CUDA可写入量化类型与FP8 E4M3",
+        "BF16 RoPE可融合写入BF16缓存"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "llama.cpp GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "llama.cpp 官方提交修改 CPU、CUDA 算子与后端能力判断，并加入 BF16 回归测试。"
+      ],
+      "published_at": "2026-11-19T18:13:55Z",
+      "collected_at": "2026-11-20T11:00:08+08:00"
+    },
+    {
+      "event_id": "transformers-dory-model-support-github-2026-11-20",
+      "event_type": "ecosystem",
+      "title": "Transformers 原生支持 Dory 递归语言模型",
+      "org": "Hugging Face",
+      "model": "Dory 4B",
+      "summary": "Transformers 新增 Dory 4B 原生实现，将重复的注意力与 MLP 块折叠为标准解码层，同时通过权重映射保持已发布72块检查点兼容。递归缓存为每轮维护历史，后续循环可读取而不重复写入，并复用共享注意力、旋转位置编码和标准 DynamicCache。提交包含分块预填充与解码测试，便于直接加载研究模型评估递归计算。",
+      "key_points": [
+        "折叠递归块并保持72块检查点兼容",
+        "为各循环维护递归缓存历史",
+        "复用标准DynamicCache与共享注意力实现"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 3,
+      "sources": [
+        {
+          "name": "Hugging Face Transformers GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "Transformers 官方提交新增 Dory 配置、模型、权重映射、缓存层和完整模型测试。"
+      ],
+      "published_at": "2026-11-19T16:04:19Z",
+      "collected_at": "2026-11-20T11:00:08+08:00"
+    },
+    {
+      "event_id": "transformers-exaone-legacy-support-github-2026-11-20",
+      "event_type": "ecosystem",
+      "title": "Transformers 接入 EXAONE 3.0、3.5 与 Deep 架构",
+      "org": "Hugging Face",
+      "model": "EXAONE 3.0/3.5/Deep",
+      "summary": "Transformers 为 EXAONE 3.0、3.5 和 Deep 增加配置与自动映射。由于这些版本与 Llama 架构一致，实现直接复用 Llama 模型类，并通过属性别名和权重转换规则在 EXAONE 命名与框架内部命名间双向映射，避免复制模型代码。项目未报告性能变化，实际价值是让旧版 EXAONE 检查点进入统一加载、生成和保存流程。",
+      "key_points": [
+        "复用Llama模型实现避免重复代码",
+        "提供配置属性别名与权重双向映射",
+        "覆盖EXAONE 3.0、3.5和Deep"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 1,
+      "sources": [
+        {
+          "name": "Hugging Face Transformers GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "Transformers 官方提交新增 EXAONE 配置、自动模型映射、转换规则和文档。"
+      ],
+      "published_at": "2026-11-19T14:27:46Z",
+      "collected_at": "2026-11-20T11:00:08+08:00"
+    },
+    {
+      "event_id": "transformers-sarvam-mla-model-support-github-2026-11-20",
+      "event_type": "ecosystem",
+      "title": "Transformers 原生接入 Sarvam 105B MLA-MoE 模型",
+      "org": "Hugging Face",
+      "model": "Sarvam 105B",
+      "summary": "Transformers 新增 Sarvam 105B 的 MLA-MoE 配置与自动加载支持。模型复用 DeepSeek V3 实现，配置适配多头潜在注意力、128个路由专家和每 token 激活8个专家，并处理旋转位置参数及权重命名转换。由于架构代码直接复用既有实现，维护面更小；该更新使官方检查点可进入标准推理、量化与生态工具链。",
+      "key_points": [
+        "复用DeepSeek V3模型实现",
+        "配置128个路由专家且每token激活8个",
+        "适配旋转位置参数与权重命名"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "Hugging Face Transformers GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "Transformers 官方提交新增 SarvamMLA 配置、自动映射、转换规则和模型文档。"
+      ],
+      "published_at": "2026-11-19T14:12:19Z",
+      "collected_at": "2026-11-20T11:00:08+08:00"
+    },
+    {
+      "event_id": "transformers-static-cache-assisted-decoding-github-2026-11-20",
+      "event_type": "github",
+      "title": "Transformers 推测解码支持静态缓存与编译验证步骤",
+      "org": "Hugging Face",
+      "model": "Transformers assisted decoding",
+      "summary": "Transformers 让辅助推测解码可使用静态 KV 缓存：拒绝草稿时仅回退写入偏移，保留预分配张量地址，以满足编译和 CUDA Graph 的稳定地址要求。目标模型的定长验证步骤可走编译调用，预填充仍保持 eager；滑动窗口缓存仅在可完整保留生成状态时允许裁剪。该改动为推测解码减少动态图开销提供基础。",
+      "key_points": [
+        "静态缓存通过回退写偏移实现裁剪",
+        "保持预分配张量地址以支持编译",
+        "目标模型定长验证步骤可使用编译调用"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "Hugging Face Transformers GitHub",
+          "type": "official_github"
+        }
+      ],
+      "evidence": [
+        "Transformers 官方提交修改缓存裁剪和辅助解码路径，并增加静态缓存与编译测试。"
+      ],
+      "published_at": "2026-11-19T13:44:12Z",
+      "collected_at": "2026-11-20T11:00:08+08:00"
+    },
     {
       "event_id": "sglang-intel-xpu-epd-multimodal-github-2026-11-19",
       "event_type": "github",
@@ -218,6 +623,60 @@
       ],
       "published_at": "2026-11-19T00:36:01Z",
       "collected_at": "2026-11-19T10:59:30+08:00"
+    },
+    {
+      "event_id": "nvidia-rust-tool-calling-parsers-agent-tooling-2026-11-19",
+      "event_type": "agent_tooling",
+      "title": "NVIDIA 开源 Rust 工具调用解析器与一致性语料库",
+      "org": "NVIDIA",
+      "model": "frontend-crates",
+      "summary": "NVIDIA 开源以 Rust 编写的工具调用解析组件，采用流式事件输出，并为截断、格式错误和部分生成结果设计恢复规则。项目同时提供共享 Conformance Corpus 与黄金测试夹具，统一验证不同模型协议的解析行为；即使使用引导解码仍保留恢复检查，可降低代理框架接入多种工具调用格式时的重复实现和边界故障。",
+      "key_points": [
+        "Rust流式解析器输出结构化事件",
+        "覆盖截断与格式错误恢复",
+        "提供共享一致性语料库与黄金测试"
+      ],
+      "importance": 2,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "NVIDIA Technical Blog",
+          "type": "official_blog"
+        }
+      ],
+      "evidence": [
+        "NVIDIA 官方技术博客与开源项目说明解析器、恢复规则及一致性测试语料的设计。"
+      ],
+      "published_at": "2026-11-19T00:00:00-08:00",
+      "collected_at": "2026-11-20T11:00:08+08:00"
+    },
+    {
+      "event_id": "nvidia-dynamo-rl-rollout-serving-infra-hardware-2026-11-19",
+      "event_type": "infra_hardware",
+      "title": "NVIDIA Dynamo 面向强化学习 rollout 消除推理与权重同步瓶颈",
+      "org": "NVIDIA",
+      "model": "NVIDIA Dynamo",
+      "summary": "NVIDIA 为强化学习训练引入 Dynamo rollout 服务层，在缓存复用与请求排队之间动态平衡，并以 ModelExpress、NIXL 实现 GPU 间增量权重传输、故障恢复和会话迁移。官方案例报告权重加载最高加速15倍、单步时间下降20%；实际收益依集群与模型而变，适合减少训练端等待推理端更新的空转。，并提升长周期训练的资源利用率",
+      "key_points": [
+        "动态平衡KV缓存复用与请求排队",
+        "通过NIXL进行GPU间增量权重传输",
+        "官方案例报告权重加载最高加速15倍"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 2,
+      "sources": [
+        {
+          "name": "NVIDIA Technical Blog",
+          "type": "official_blog"
+        }
+      ],
+      "evidence": [
+        "NVIDIA 官方技术博客说明 Dynamo 的调度、增量权重传输与恢复机制，并列出合作方实测案例。"
+      ],
+      "published_at": "2026-11-19T00:00:00-08:00",
+      "collected_at": "2026-11-20T11:00:08+08:00"
     },
     {
       "event_id": "transformers-fsdp2-optimizer-reshard-github-2026-11-18",
@@ -940,6 +1399,33 @@
       ],
       "published_at": "2026-11-18T00:00:00Z",
       "collected_at": "2026-11-19T10:59:30+08:00"
+    },
+    {
+      "event_id": "openai-jagged-frontier-research-paper-2026-11-18",
+      "event_type": "paper",
+      "title": "OpenAI 量化研究智能体的“锯齿状前沿”与实验吞吐提升",
+      "org": "OpenAI",
+      "model": "OpenAI internal research agents",
+      "summary": "OpenAI 基于内部研究工作流评估智能体可独立完成的任务跨度：三月至十月间，二至四小时任务成功率由23%升至46%，四至八小时由13%升至35%。监控训练较成熟，启动训练和推理代码仍明显更难；并行智能体让实验吞吐较2025年基线提升1.68倍，但报告强调人工判断仍是核心。",
+      "key_points": [
+        "2–4小时任务成功率由23%升至46%",
+        "4–8小时任务成功率由13%升至35%",
+        "实验吞吐较2025年基线提升1.68倍"
+      ],
+      "importance": 3,
+      "confidence": "high",
+      "research_level": 3,
+      "sources": [
+        {
+          "name": "OpenAI Research",
+          "type": "official_research"
+        }
+      ],
+      "evidence": [
+        "OpenAI 官方研究报告给出任务时长、成功率和内部实验吞吐统计，并说明人工仍参与关键判断。"
+      ],
+      "published_at": "2026-11-18T00:00:00-08:00",
+      "collected_at": "2026-11-20T11:00:08+08:00"
     },
     {
       "event_id": "vllm-minimax-m3-1-output-moe-fusion-github-2026-11-17",
@@ -6100,226 +6586,6 @@
       "collected_at": "2026-11-07T11:15:00+08:00"
     },
     {
-      "event_id": "vllm-minimax-m31-dspark-drafter-monokernel-github-2026-11-06",
-      "event_type": "github",
-      "title": "vLLM 为 MiniMax M3.1 实现 DSpark 草稿模型单内核路径",
-      "org": "vLLM",
-      "model": "MiniMax M3.1",
-      "summary": "vLLM 新增 MiniMax M3.1 的 AMD DSpark drafter 单内核实现，将草稿模型的注意力、层执行、布局和调度整合为专用运行路径。",
-      "key_points": [
-        "新增 drafter 的注意力、层、布局、调度与运行器模块",
-        "更新 MiniMax M3.1 Flash 部署配方和环境开关",
-        "加入专用正确性测试与 AMD 持续集成覆盖"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "vLLM official GitHub commit",
-          "type": "official_github"
-        }
-      ],
-      "evidence": [
-        "官方提交新增完整的 MiniMax M3.1 DSpark drafter 单内核模块树、部署配方和模型测试。"
-      ],
-      "published_at": "2026-11-06",
-      "collected_at": "2026-11-06T11:15:00+08:00"
-    },
-    {
-      "event_id": "vllm-kv-block-cpu-cost-github-2026-11-06",
-      "event_type": "github",
-      "title": "vLLM 降低 KV 块分配与缓存的逐块 CPU 开销",
-      "org": "vLLM",
-      "model": "vLLM KV Cache",
-      "summary": "vLLM 重构 KV 缓存块分配、哈希和缓存路径，减少逐块 Python 与 CPU 管理成本，并补齐混合缓存组、远程预填充和卸载场景测试。",
-      "key_points": [
-        "批量处理缓存块与哈希前缀状态，减少逐块管理开销",
-        "覆盖混合滑动窗口缓存组与延迟缓存块场景",
-        "同步更新 NIXL、UMBP 与简单 KV 卸载调度器"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 2,
-      "sources": [
-        {
-          "name": "vLLM official GitHub commit",
-          "type": "official_github"
-        }
-      ],
-      "evidence": [
-        "官方提交同时修改 block pool、KV cache manager、连接器调度器，并新增前缀缓存和调度测试。"
-      ],
-      "published_at": "2026-11-06",
-      "collected_at": "2026-11-06T11:15:00+08:00"
-    },
-    {
-      "event_id": "vllm-kimi-k3-mooncake-specialized-decode-github-2026-11-06",
-      "event_type": "github",
-      "title": "vLLM 为 Kimi K3 Mooncake 消费端启用专用解码",
-      "org": "vLLM",
-      "model": "Kimi K3",
-      "summary": "vLLM 将 Kimi K3 的 AMD 专用解码路径扩展到 Mooncake RDMA KV 消费端，使分离式推理中的 Mooncake 消费者能够选择专用解码配置。",
-      "key_points": [
-        "识别 MooncakeConnector 的 KV 消费者角色与 RDMA 协议",
-        "为受支持配置选择专用解码参数",
-        "增加运行时测试覆盖支持与拒绝条件"
-      ],
-      "importance": 2,
-      "confidence": "high",
-      "research_level": 2,
-      "sources": [
-        {
-          "name": "vLLM official GitHub commit",
-          "type": "official_github"
-        }
-      ],
-      "evidence": [
-        "官方提交修改 Kimi K3 AMD 专用解码运行时，并新增 Mooncake KV 消费端的配置识别与测试。"
-      ],
-      "published_at": "2026-11-06",
-      "collected_at": "2026-11-06T11:15:00+08:00"
-    },
-    {
-      "event_id": "transformers-zero3-streamed-weight-loading-github-2026-11-06",
-      "event_type": "github",
-      "title": "Transformers 优化 ZeRO-3 权重读取与逐组转换",
-      "org": "Hugging Face",
-      "model": "Transformers ZeRO-3",
-      "summary": "Transformers 在 ZeRO-3 加载中只让 rank 0 读取权重，并将权重转换改为逐组生成与加载，减少多进程重复读取和转换峰值内存。",
-      "key_points": [
-        "仅 rank 0 从检查点读取权重",
-        "权重映射与拆分合并转换改为生成器逐组输出",
-        "每组转换完成后立即加载，避免多个转换结果同时驻留内存"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 2,
-      "sources": [
-        {
-          "name": "Transformers official GitHub commit",
-          "type": "official_github"
-        }
-      ],
-      "evidence": [
-        "官方提交修改 DeepSpeed 集成和模型加载逻辑，将转换函数改为逐组 yield，并增加分布式训练测试。"
-      ],
-      "published_at": "2026-11-06",
-      "collected_at": "2026-11-06T11:15:00+08:00"
-    },
-    {
-      "event_id": "transformers-hsdp-expert-parallel-github-2026-11-06",
-      "event_type": "github",
-      "title": "Transformers 分布式训练支持 HSDP 与专家并行组合",
-      "org": "Hugging Face",
-      "model": "Transformers Distributed",
-      "summary": "Transformers 的 DistributedConfig 新增 HSDP 数据并行副本配置，并允许 HSDP 与专家并行组合，形成节点内分片、节点间副本归约的二维训练拓扑。",
-      "key_points": [
-        "新增 dp_replicate_size 以配置 FSDP 副本数",
-        "参数在 fsdp_size 设备内分片，并在副本间执行梯度归约",
-        "专家张量使用副本与专家分片二维网格，解除此前组合限制"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "Transformers official HSDP GitHub commit",
-          "type": "official_github"
-        },
-        {
-          "name": "Transformers official expert parallel GitHub commit",
-          "type": "official_github"
-        }
-      ],
-      "evidence": [
-        "连续两次官方提交先加入 HSDP 配置与网格，再实现其与专家并行组合并扩展测试。"
-      ],
-      "published_at": "2026-11-06",
-      "collected_at": "2026-11-06T11:15:00+08:00"
-    },
-    {
-      "event_id": "sglang-xpu-mxfp8-w8a8-github-2026-11-06",
-      "event_type": "github",
-      "title": "SGLang XPU 后端支持 MXFP8 W8A8 压缩张量",
-      "org": "SGLang",
-      "model": "SGLang XPU",
-      "summary": "SGLang 为 XPU 增加 compressed-tensors 格式的 MXFP8 W8A8 线性层与量化方案，并提供专用 scaled matrix multiplication 后端。",
-      "key_points": [
-        "新增 MXFP8 W8A8 compressed-tensors 量化方案",
-        "加入 XPU scaled matrix multiplication 运行后端",
-        "增加单元测试和 XPU 端到端线性层验证"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "SGLang official GitHub commit",
-          "type": "official_github"
-        }
-      ],
-      "evidence": [
-        "官方提交扩展量化配置、压缩张量方案和 XPU 运行器，并新增 MXFP8 正确性测试。"
-      ],
-      "published_at": "2026-11-06",
-      "collected_at": "2026-11-06T11:15:00+08:00"
-    },
-    {
-      "event_id": "sglang-flashinfer-prefill-context-parallel-github-2026-11-06",
-      "event_type": "github",
-      "title": "SGLang 支持 FlashInfer 预填充上下文并行",
-      "org": "SGLang",
-      "model": "SGLang FlashInfer",
-      "summary": "SGLang 将预填充上下文并行接入 FlashInfer 注意力后端，补充上下文并行策略、KV 视图和端到端验证。",
-      "key_points": [
-        "FlashInfer 后端可识别并执行上下文并行策略",
-        "加入注意力架构和 KV 内存视图适配",
-        "增加策略单元测试与多卡端到端预填充测试"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "SGLang official GitHub commit",
-          "type": "official_github"
-        }
-      ],
-      "evidence": [
-        "官方提交修改 FlashInfer 注意力后端和上下文并行模块，并新增对应单元与端到端测试。"
-      ],
-      "published_at": "2026-11-06",
-      "collected_at": "2026-11-06T11:15:00+08:00"
-    },
-    {
-      "event_id": "sglang-cambricon-mlu-platform-github-2026-11-06",
-      "event_type": "infra_hardware",
-      "title": "SGLang 加入寒武纪 MLU 平台初始支持",
-      "org": "SGLang",
-      "model": "Cambricon MLU",
-      "summary": "SGLang 新增寒武纪 MLU 平台抽象、设备运行环境、通信与 LayerNorm 适配，并提供安装文档和持续集成测试。",
-      "key_points": [
-        "新增 MLU 平台类、运行时上下文和设备混入实现",
-        "接入通信器、融合算子与 LayerNorm 分派",
-        "加入平台接口、通信和内核测试及专用安装文档"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 2,
-      "sources": [
-        {
-          "name": "SGLang official GitHub commit",
-          "type": "official_github"
-        }
-      ],
-      "evidence": [
-        "官方提交新增 MLU 平台实现、依赖配置、硬件文档及多组内核和平台测试。"
-      ],
-      "published_at": "2026-11-06",
-      "collected_at": "2026-11-06T11:15:00+08:00"
-    },
-    {
       "event_id": "openai-biobasicsbench-benchmark-update-2026-11-06",
       "event_type": "benchmark_update",
       "title": "OpenAI 发布 BioBasicsBench 湿实验基础技能基准",
@@ -6405,33 +6671,6 @@
       "collected_at": "2026-11-07T11:15:00+08:00"
     },
     {
-      "event_id": "llama-cpp-hexagon-set-tensor-tiling-github-2026-11-06",
-      "event_type": "github",
-      "title": "llama.cpp 强化 Hexagon 张量写入与重排分块路径",
-      "org": "ggml-org",
-      "model": "llama.cpp Hexagon",
-      "summary": "llama.cpp 的 Hexagon 后端实现 set_tensor_n，并将重排与分块转移到图优化阶段，同时增强张量描述去重、零元素算子和显存边界处理。",
-      "key_points": [
-        "新增批量张量写入 set_tensor_n",
-        "在图优化阶段统一执行重排与分块",
-        "默认启用 host buffer，并拒绝超出最大虚拟内存的张量"
-      ],
-      "importance": 2,
-      "confidence": "high",
-      "research_level": 2,
-      "sources": [
-        {
-          "name": "llama.cpp official GitHub commit",
-          "type": "official_github"
-        }
-      ],
-      "evidence": [
-        "官方提交修改 Hexagon 后端、融合、内核参数和重排模块，并同步更新 Snapdragon 后端文档。"
-      ],
-      "published_at": "2026-11-06",
-      "collected_at": "2026-11-06T11:15:00+08:00"
-    },
-    {
       "event_id": "huggingface-harness-adapters-open-source-2026-11-06",
       "event_type": "agent_tooling",
       "title": "Hugging Face 开源 Harness Adapters 让强化学习直接复用编码代理",
@@ -6461,257 +6700,6 @@
       ],
       "published_at": "2026-11-06",
       "collected_at": "2026-11-07T11:15:00+08:00"
-    },
-    {
-      "event_id": "vllm-rubin-lutb-moe-mxfp8-github-2026-11-05",
-      "event_type": "github",
-      "title": "vLLM 加入 Rubin 原生 LUT-B MoE 与 MXFP8 激活路径",
-      "org": "vLLM",
-      "model": "Rubin LUT-B MoE",
-      "summary": "vLLM 为 Rubin 架构加入原生 LUT-B MoE 内核，并提供 MXFP8 激活、在线量化配置和模拟执行路径，构建条件要求 CUDA 13.4 及相应架构。",
-      "key_points": [
-        "新增面向 SM107 的 LUT-B MoE CUDA 内核",
-        "在线量化层加入 LUT-B 配置、权重处理与运行时选择",
-        "通过原生内核和模拟路径覆盖功能及数值测试"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "vLLM official GitHub commit",
-          "type": "official_github"
-        }
-      ],
-      "evidence": [
-        "官方提交新增 LUT-B MoE 内核源码、量化配置和测试，并在构建系统中限定 CUDA 13.4 与 Rubin 架构。"
-      ],
-      "published_at": "2026-11-05",
-      "collected_at": "2026-11-06T11:15:00+08:00"
-    },
-    {
-      "event_id": "vllm-gemma4-fa4-sm90-fp8-github-2026-11-05",
-      "event_type": "github",
-      "title": "vLLM 为 Gemma 4 全注意力接入 FA4 SM90 FP8 MMA",
-      "org": "vLLM",
-      "model": "Gemma 4",
-      "summary": "vLLM 在 Hopper SM90 上为 Gemma 4 全注意力接入 FlashAttention 4 的 FP8 MMA 路径，并增加后端选择、模型正确性与动态 FP8 配置测试。",
-      "key_points": [
-        "针对 SM90、FP8 KV 与 Gemma 4 全注意力选择新内核",
-        "增加 Gemma 4 31B 动态 FP8 的评测配置",
-        "扩展 FlashAttention 接口与差异 KV 后端选择逻辑"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "vLLM official GitHub commit",
-          "type": "official_github"
-        }
-      ],
-      "evidence": [
-        "官方提交修改 FlashAttention 后端及接口，并增加 SM90 FP8 MMA 选择测试和 Gemma 4 评测配置。"
-      ],
-      "published_at": "2026-11-05",
-      "collected_at": "2026-11-06T11:15:00+08:00"
-    },
-    {
-      "event_id": "transformers-lfm3-text-model-github-2026-11-05",
-      "event_type": "ecosystem",
-      "title": "Transformers 新增 LFM3 Text 模型族支持",
-      "org": "Hugging Face",
-      "model": "LFM3 Text",
-      "summary": "Transformers 接入 LFM3 Text 的配置、模型实现、自动映射和文档，并加入权重转换与通用模型测试。",
-      "key_points": [
-        "新增 LFM3 配置和模块化模型实现",
-        "注册 AutoModel 映射与权重转换规则",
-        "补充模型文档、架构测试和通用推理测试"
-      ],
-      "importance": 2,
-      "confidence": "high",
-      "research_level": 2,
-      "sources": [
-        {
-          "name": "Transformers official GitHub commit",
-          "type": "official_github"
-        }
-      ],
-      "evidence": [
-        "官方提交新增 LFM3 模型目录、配置、实现、自动映射、文档和测试。"
-      ],
-      "published_at": "2026-11-05",
-      "collected_at": "2026-11-06T11:15:00+08:00"
-    },
-    {
-      "event_id": "sglang-dsv41-deepgemm-paged-mqa-github-2026-11-05",
-      "event_type": "github",
-      "title": "SGLang 的 DeepSeek V4.1 解码切换至 DeepGEMM 分页 MQA 接口",
-      "org": "SGLang",
-      "model": "DeepSeek V4.1",
-      "summary": "SGLang 更新 DeepSeek V4.1 稀疏解码索引器，调用当前 DeepGEMM 分页可变长 MQA logits 接口，并调整分页元数据、Top-K 和稀疏表路径。",
-      "key_points": [
-        "在 SM100 BF16 路径识别当前分页可变长 DeepGEMM API",
-        "按请求索引组织查询 token 和页面元数据",
-        "更新完整 Top-K、评分和稀疏表实现及非分页回归测试"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "SGLang official GitHub commit",
-          "type": "official_github"
-        }
-      ],
-      "evidence": [
-        "官方提交修改 DeepSeek V4 后端、分页元数据与 V4.1 索引器，并明确适配当前 DeepGEMM 分页 MQA API。"
-      ],
-      "published_at": "2026-11-05",
-      "collected_at": "2026-11-06T11:15:00+08:00"
-    },
-    {
-      "event_id": "ricursive-ripple65b-runtime-support-ecosystem-2026-11-05",
-      "event_type": "ecosystem",
-      "title": "vLLM 与 llama.cpp 新增 Ripple-65B Preview 运行支持",
-      "org": "Ricursive AI",
-      "model": "Ripple-65B Preview",
-      "summary": "vLLM 和 llama.cpp 分别接入 Ripple-65B Preview：前者加入模型架构、DFlash2、推理与工具解析器，后者加入模型转换、GGUF 架构映射与本地推理实现。",
-      "key_points": [
-        "vLLM 增加模型注册、部署配方、DFlash2 与专用 reasoning 和 tool parser",
-        "llama.cpp 增加模型转换器、GGUF 张量映射和 Ricursive 架构实现",
-        "两套主流推理运行时均新增官方维护的模型测试"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "vLLM official GitHub commit",
-          "type": "official_github"
-        },
-        {
-          "name": "llama.cpp official GitHub commit",
-          "type": "official_github"
-        }
-      ],
-      "evidence": [
-        "两个项目的官方提交分别加入 Ripple-65B Preview 的完整运行支持，并包含模型映射、推理路径和测试。"
-      ],
-      "published_at": "2026-11-05",
-      "collected_at": "2026-11-06T11:15:00+08:00"
-    },
-    {
-      "event_id": "nvidia-dsx-os-gpu-cluster-infra-hardware-2026-11-05",
-      "event_type": "infra_hardware",
-      "title": "NVIDIA 开源 DSX OS GPU 集群配置、认证与运维组件",
-      "org": "NVIDIA",
-      "model": "NVIDIA DSX OS",
-      "summary": "NVIDIA 介绍 DSX OS 的三套 Apache 2.0 开源组件：AICR 生成版本锁定的集群配置，NVCRE 用通信测试和训练负载认证节点，NVSentinel 持续监控并协调隔离、修复与重新验证。",
-      "key_points": [
-        "AICR 以依赖图、固定版本和健康断言生成可供 Helm、Argo CD 或 Flux 使用的部署包",
-        "NVCRE 通过 NCCL、诊断和训练工作负载阈值发现性能退化并二分定位可疑节点",
-        "NVSentinel 可在启用后隔离、排空和修复故障节点，并在节点重新入池前触发验证"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 2,
-      "sources": [
-        {
-          "name": "NVIDIA DSX OS official technical article",
-          "type": "official_blog"
-        }
-      ],
-      "evidence": [
-        "NVIDIA 技术文章明确说明 AICR、NVCRE 与 NVSentinel 的职责、开源许可、验证流程和自动重新认证机制。"
-      ],
-      "published_at": "2026-11-05",
-      "collected_at": "2026-11-06T11:15:00+08:00"
-    },
-    {
-      "event_id": "nvidia-cosmos3-nano-simulation-model-release-2026-11-05",
-      "event_type": "model_release",
-      "title": "NVIDIA 发布四个 Cosmos 3 Nano 开放权重交互仿真模型",
-      "org": "NVIDIA",
-      "model": "Cosmos 3 Nano",
-      "summary": "NVIDIA 为 Cosmos 3 Nano 发布四个开放权重后训练检查点，覆盖多视角驾驶数据、流式相机与激光雷达观测、模拟器控制到视频以及双手机器人动作到视频。",
-      "key_points": [
-        "四个检查点均基于 Cosmos 3 Nano，具有 160 亿可训练参数",
-        "Transfer-Auto 支持最多 11 路相机视角及联合 RGB 与激光雷达生成",
-        "Sim-Auto 使用因果蒸馏和少步生成支持长时交互式流式仿真"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "NVIDIA Cosmos 3 official release article",
-          "type": "official_blog"
-        },
-        {
-          "name": "NVIDIA Cosmos 3 official model collection",
-          "type": "official_huggingface"
-        }
-      ],
-      "evidence": [
-        "NVIDIA 官方文章列出四个开放权重检查点、各自输入输出形式、参数规模、训练路线与许可信息。"
-      ],
-      "published_at": "2026-11-05",
-      "collected_at": "2026-11-06T11:15:00+08:00"
-    },
-    {
-      "event_id": "huggingface-lerobot-v070-open-source-2026-11-05",
-      "event_type": "open_source",
-      "title": "Hugging Face 发布 LeRobot v0.7.0",
-      "org": "Hugging Face",
-      "model": "LeRobot v0.7.0",
-      "summary": "LeRobot v0.7.0 重构了面向大型世界动作模型的训练栈，加入交互式语言控制、数据集免下载流式训练、远程推理以及多种世界动作模型和视觉语言动作模型。",
-      "key_points": [
-        "交互式 rollout 可在机器人运行期间切换子任务、提问或自动规划",
-        "训练栈加入 FSDP2、HSDP、分布式检查点、FP16 与指数移动平均",
-        "数据可直接从模型中心、对象存储或 LanceDB 流式训练，并支持远程 GPU 策略服务"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 3,
-      "sources": [
-        {
-          "name": "LeRobot v0.7.0 official release article",
-          "type": "official_blog"
-        }
-      ],
-      "evidence": [
-        "LeRobot 团队发布说明逐项列出语言闭环、四个世界动作模型、四个视觉语言动作模型、分布式训练与远程推理能力。"
-      ],
-      "published_at": "2026-11-05",
-      "collected_at": "2026-11-06T11:15:00+08:00"
-    },
-    {
-      "event_id": "google-gemini-omni-12-flash-model-release-2026-11-05",
-      "event_type": "model_release",
-      "title": "Google 发布 Gemini Omni 1.2 Flash 视频生成模型",
-      "org": "Google DeepMind",
-      "model": "Gemini Omni 1.2 Flash",
-      "summary": "Google 推出 Gemini Omni 1.2 Flash，并在 Gemini API 与 Google Cloud 中正式提供。新版本原生支持最长 15 秒视频、多轮对话式编辑和更强的参考素材一致性，720p 计费降至每秒 0.07 美元。",
-      "key_points": [
-        "视频长度由上一代的 10 秒提高至 15 秒，并支持 3 至 15 秒按秒指定时长",
-        "支持在同一视频上通过多轮对话修改背景、天气、画幅等属性",
-        "相对 Omni 1.1 降价 30%，并在 Gemini API 与 Google Cloud 正式可用"
-      ],
-      "importance": 3,
-      "confidence": "high",
-      "research_level": 2,
-      "sources": [
-        {
-          "name": "Google Gemini Omni 1.2 Flash official announcement",
-          "type": "official_blog"
-        }
-      ],
-      "evidence": [
-        "官方公告标注 2026 年 11 月 5 日发布，并明确列出 15 秒视频、多轮编辑、价格下降 30% 与正式可用状态。"
-      ],
-      "published_at": "2026-11-05",
-      "collected_at": "2026-11-06T11:15:00+08:00"
     }
   ]
 }
