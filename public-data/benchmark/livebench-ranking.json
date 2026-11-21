@@ -2,9 +2,9 @@
   "schemaVersion": 3,
   "dataSource": "benchmark-sync-static",
   "exporterVersion": "0.5.0",
-  "workflowRunId": "44727907592",
+  "workflowRunId": "44896615827",
   "mainCommit": "9a930017abb4e4815f4e3e5fa183b528a75d5182",
-  "generatedAt": "2026-11-20T11:30:19Z",
+  "generatedAt": "2026-11-21T10:56:58Z",
   "families": [
     {
       "familyId": "livebench",
@@ -228,7 +228,7 @@
       "comparisonKey": "live_bench",
       "snapshotId": "f18b0b60afc75906ecb80e413f9c7f36dcdc72c6642914b9122029983e4fa6e5",
       "contentHash": "f18b0b60afc75906ecb80e413f9c7f36dcdc72c6642914b9122029983e4fa6e5",
-      "generatedAt": "2026-11-20T11:29:51Z",
+      "generatedAt": "2026-11-21T10:56:33Z",
       "taskCount": 7,
       "source": {
         "name": "LiveBench dated official leaderboard CSV",
@@ -528,7 +528,7 @@
       "comparisonKey": "coding",
       "snapshotId": "f18b0b60afc75906ecb80e413f9c7f36dcdc72c6642914b9122029983e4fa6e5",
       "contentHash": "f18b0b60afc75906ecb80e413f9c7f36dcdc72c6642914b9122029983e4fa6e5",
-      "generatedAt": "2026-11-20T11:29:35Z",
+      "generatedAt": "2026-11-21T10:56:25Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Coding dated official leaderboard CSV",
@@ -828,7 +828,7 @@
       "comparisonKey": "reasoning",
       "snapshotId": "f18b0b60afc75906ecb80e413f9c7f36dcdc72c6642914b9122029983e4fa6e5",
       "contentHash": "f18b0b60afc75906ecb80e413f9c7f36dcdc72c6642914b9122029983e4fa6e5",
-      "generatedAt": "2026-11-20T11:29:48Z",
+      "generatedAt": "2026-11-21T10:56:37Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Reasoning dated official leaderboard CSV",
@@ -1128,7 +1128,7 @@
       "comparisonKey": "data_analysis",
       "snapshotId": "f18b0b60afc75906ecb80e413f9c7f36dcdc72c6642914b9122029983e4fa6e5",
       "contentHash": "f18b0b60afc75906ecb80e413f9c7f36dcdc72c6642914b9122029983e4fa6e5",
-      "generatedAt": "2026-11-20T11:29:35Z",
+      "generatedAt": "2026-11-21T10:56:24Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Data Analysis dated official leaderboard CSV",
@@ -1428,7 +1428,7 @@
       "comparisonKey": "long_horizon",
       "snapshotId": "f18b0b60afc75906ecb80e413f9c7f36dcdc72c6642914b9122029983e4fa6e5",
       "contentHash": "f18b0b60afc75906ecb80e413f9c7f36dcdc72c6642914b9122029983e4fa6e5",
-      "generatedAt": "2026-11-20T11:29:40Z",
+      "generatedAt": "2026-11-21T10:56:32Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Long-Horizon dated official leaderboard CSV",
@@ -1728,7 +1728,7 @@
       "comparisonKey": "browser",
       "snapshotId": "f18b0b60afc75906ecb80e413f9c7f36dcdc72c6642914b9122029983e4fa6e5",
       "contentHash": "f18b0b60afc75906ecb80e413f9c7f36dcdc72c6642914b9122029983e4fa6e5",
-      "generatedAt": "2026-11-20T11:29:27Z",
+      "generatedAt": "2026-11-21T10:56:21Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Browser dated official leaderboard CSV",
@@ -2028,7 +2028,7 @@
       "comparisonKey": "research",
       "snapshotId": "f18b0b60afc75906ecb80e413f9c7f36dcdc72c6642914b9122029983e4fa6e5",
       "contentHash": "f18b0b60afc75906ecb80e413f9c7f36dcdc72c6642914b9122029983e4fa6e5",
-      "generatedAt": "2026-11-20T11:29:46Z",
+      "generatedAt": "2026-11-21T10:56:36Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Research dated official leaderboard CSV",
@@ -2328,7 +2328,7 @@
       "comparisonKey": "design",
       "snapshotId": "f18b0b60afc75906ecb80e413f9c7f36dcdc72c6642914b9122029983e4fa6e5",
       "contentHash": "f18b0b60afc75906ecb80e413f9c7f36dcdc72c6642914b9122029983e4fa6e5",
-      "generatedAt": "2026-11-20T11:29:47Z",
+      "generatedAt": "2026-11-21T10:56:25Z",
       "taskCount": 1,
       "source": {
         "name": "LiveBench Design dated official leaderboard CSV",
@@ -2626,9 +2626,9 @@
       "metric": "Artificial Analysis Intelligence Index: Score",
       "unit": "score",
       "comparisonKey": "aa_intelligence_index_v5_0_1",
-      "snapshotId": "0ba66f898afdfd723ef22cdc02d06d7a27e5cb73963a804d831d24031f3c233a",
-      "contentHash": "0ba66f898afdfd723ef22cdc02d06d7a27e5cb73963a804d831d24031f3c233a",
-      "generatedAt": "2026-11-20T11:28:58Z",
+      "snapshotId": "510a2407fea86afc2013c2ba7992c2bd48449e29091de60f21c737401ade2981",
+      "contentHash": "510a2407fea86afc2013c2ba7992c2bd48449e29091de60f21c737401ade2981",
+      "generatedAt": "2026-11-21T10:55:58Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Intelligence Index v5.0.1 official public page",
@@ -2641,7 +2641,7 @@
       "coverage": {
         "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 156
+        "totalModels": 157
       },
       "entries": [
         [
@@ -2853,9 +2853,9 @@
       "metric": "AA-Briefcase Elo",
       "unit": "raw",
       "comparisonKey": "aa_briefcase_v1_1",
-      "snapshotId": "bfab060076d0235a176826f433c26244dc7df240bf118da92fd679ac0900f1be",
-      "contentHash": "bfab060076d0235a176826f433c26244dc7df240bf118da92fd679ac0900f1be",
-      "generatedAt": "2026-11-20T11:29:00Z",
+      "snapshotId": "ef94520777de88bd7ab8ca283a4dfc058e41817f94a838ccfe48944f88802b43",
+      "contentHash": "ef94520777de88bd7ab8ca283a4dfc058e41817f94a838ccfe48944f88802b43",
+      "generatedAt": "2026-11-21T10:55:49Z",
       "taskCount": null,
       "source": {
         "name": "AA-Briefcase v1.1 official public page",
@@ -2868,7 +2868,7 @@
       "coverage": {
         "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 289
+        "totalModels": 290
       },
       "entries": [
         [
@@ -2937,7 +2937,7 @@
         [
           "Grok 4.7 (Xhigh)",
           "Grok 4.7",
-          1635.7,
+          1634.49,
           null,
           "xhigh"
         ],
@@ -2986,7 +2986,7 @@
         [
           "Muse Ember (Max)",
           "Muse Ember",
-          1520.48,
+          1520.25,
           null,
           "max"
         ],
@@ -3080,9 +3080,9 @@
       "metric": "AutomationBench-AA: Score",
       "unit": "ratio",
       "comparisonKey": "aa_automationbench",
-      "snapshotId": "eb4cbc0cb169c88863fb7a06d253700e437bbc56e61c917014fa0dae351dd1b6",
-      "contentHash": "eb4cbc0cb169c88863fb7a06d253700e437bbc56e61c917014fa0dae351dd1b6",
-      "generatedAt": "2026-11-20T11:29:02Z",
+      "snapshotId": "ca1558199bc813547a7f340cc6477041bf806d05c55482d96e1c101aa0e4437b",
+      "contentHash": "ca1558199bc813547a7f340cc6477041bf806d05c55482d96e1c101aa0e4437b",
+      "generatedAt": "2026-11-21T10:55:49Z",
       "taskCount": null,
       "source": {
         "name": "AutomationBench-AA official public page",
@@ -3095,7 +3095,7 @@
       "coverage": {
         "collectedModels": 29,
         "isComplete": false,
-        "totalModels": 284
+        "totalModels": 285
       },
       "entries": [
         [
@@ -3314,9 +3314,9 @@
       "metric": "FrontierCode 2.0: Score",
       "unit": "ratio",
       "comparisonKey": "aa_frontiercode_v2_0",
-      "snapshotId": "ae8540c0a20afb9714974bb5ca6c4a50e95e6a5c8b4a9ee2ec83850a69fda260",
-      "contentHash": "ae8540c0a20afb9714974bb5ca6c4a50e95e6a5c8b4a9ee2ec83850a69fda260",
-      "generatedAt": "2026-11-20T11:29:13Z",
+      "snapshotId": "47123698140beb07c2decb57be564aafdb33bb8a94394fb9810fd03db7be8879",
+      "contentHash": "47123698140beb07c2decb57be564aafdb33bb8a94394fb9810fd03db7be8879",
+      "generatedAt": "2026-11-21T10:56:09Z",
       "taskCount": null,
       "source": {
         "name": "FrontierCode-AA 2.0 official public page",
@@ -3329,7 +3329,7 @@
       "coverage": {
         "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 158
+        "totalModels": 159
       },
       "entries": [
         [
@@ -3541,9 +3541,9 @@
       "metric": "GDP.pdf: All-pass Rate",
       "unit": "ratio",
       "comparisonKey": "aa_gdp_pdf",
-      "snapshotId": "918ee6b94216d1a13b4b73eb034cb553ac7967312f5161b940fd6b7964debbe4",
-      "contentHash": "918ee6b94216d1a13b4b73eb034cb553ac7967312f5161b940fd6b7964debbe4",
-      "generatedAt": "2026-11-20T11:29:15Z",
+      "snapshotId": "4d36e65d2f5307300da6faf2995b10099517414e329cefc3bd34adbfb49f6c0a",
+      "contentHash": "4d36e65d2f5307300da6faf2995b10099517414e329cefc3bd34adbfb49f6c0a",
+      "generatedAt": "2026-11-21T10:56:03Z",
       "taskCount": null,
       "source": {
         "name": "GDP.pdf official public page",
@@ -3556,7 +3556,7 @@
       "coverage": {
         "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 283
+        "totalModels": 285
       },
       "entries": [
         [
@@ -3768,9 +3768,9 @@
       "metric": "HLE-Diamond: Score",
       "unit": "ratio",
       "comparisonKey": "aa_hle_diamond",
-      "snapshotId": "5f5a14fbf2f5094e2504197eadd51f5b3866640d71ff82089b30b1c7ac98cbf4",
-      "contentHash": "5f5a14fbf2f5094e2504197eadd51f5b3866640d71ff82089b30b1c7ac98cbf4",
-      "generatedAt": "2026-11-20T11:29:22Z",
+      "snapshotId": "6b8a6330f7a45d5f3860110a0367147e5ea493629079cf00fe714b68e9c75580",
+      "contentHash": "6b8a6330f7a45d5f3860110a0367147e5ea493629079cf00fe714b68e9c75580",
+      "generatedAt": "2026-11-21T10:56:13Z",
       "taskCount": null,
       "source": {
         "name": "HLE-Diamond official public page",
@@ -3783,7 +3783,7 @@
       "coverage": {
         "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 196
+        "totalModels": 197
       },
       "entries": [
         [
@@ -3995,9 +3995,9 @@
       "metric": "CritPt v2 (Hard Subset): Score",
       "unit": "ratio",
       "comparisonKey": "aa_critpt_v2_hard",
-      "snapshotId": "7763b6900d8ffa708baef3ff46f2ddab8a5b479d4b52418cf70e6926af2ce74c",
-      "contentHash": "7763b6900d8ffa708baef3ff46f2ddab8a5b479d4b52418cf70e6926af2ce74c",
-      "generatedAt": "2026-11-20T11:29:11Z",
+      "snapshotId": "46236f376343955421cbe55f6d2edb23f7ef1b65f3e8e8f6f5dcb59dbf3df8aa",
+      "contentHash": "46236f376343955421cbe55f6d2edb23f7ef1b65f3e8e8f6f5dcb59dbf3df8aa",
+      "generatedAt": "2026-11-21T10:56:01Z",
       "taskCount": null,
       "source": {
         "name": "CritPt v2 (Hard Subset) official public page",
@@ -4010,7 +4010,7 @@
       "coverage": {
         "collectedModels": 29,
         "isComplete": false,
-        "totalModels": 159
+        "totalModels": 160
       },
       "entries": [
         [
@@ -4229,9 +4229,9 @@
       "metric": "Terminal-Bench-Science 0.1: Score",
       "unit": "ratio",
       "comparisonKey": "aa_terminal_bench_science_v0_1",
-      "snapshotId": "4afdf386b75cc8d3fc8923c20f6ac9f909e5391eede11de1e23ecfe08228a808",
-      "contentHash": "4afdf386b75cc8d3fc8923c20f6ac9f909e5391eede11de1e23ecfe08228a808",
-      "generatedAt": "2026-11-20T11:30:05Z",
+      "snapshotId": "ea599a69a3dce88a4901080ce1592b782dac10fced77c1710f8b23d426832538",
+      "contentHash": "ea599a69a3dce88a4901080ce1592b782dac10fced77c1710f8b23d426832538",
+      "generatedAt": "2026-11-21T10:56:52Z",
       "taskCount": null,
       "source": {
         "name": "Terminal-Bench-Science 0.1 official public page",
@@ -4244,7 +4244,7 @@
       "coverage": {
         "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 167
+        "totalModels": 170
       },
       "entries": [
         [
@@ -4456,9 +4456,9 @@
       "metric": "Terminal-Bench 4.0: Score",
       "unit": "ratio",
       "comparisonKey": "terminal_bench_v4_0",
-      "snapshotId": "75a4d2c004573a8079eccba832595216e185ed7008cd694fbf0dffd4ef38faf5",
-      "contentHash": "75a4d2c004573a8079eccba832595216e185ed7008cd694fbf0dffd4ef38faf5",
-      "generatedAt": "2026-11-20T11:30:17Z",
+      "snapshotId": "ba4ddec4c2d397863256c2d7afd468e8e73da85aa99f3fc222f47cfa884c170a",
+      "contentHash": "ba4ddec4c2d397863256c2d7afd468e8e73da85aa99f3fc222f47cfa884c170a",
+      "generatedAt": "2026-11-21T10:56:52Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
@@ -4471,7 +4471,7 @@
       "coverage": {
         "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 281
+        "totalModels": 282
       },
       "entries": [
         [
@@ -4685,7 +4685,7 @@
       "comparisonKey": "humanitys_last_exam",
       "snapshotId": "0635d65cb96cbee737cf4ad5bd89f54f07c2b74fe28cc9f7363147815ea51fcc",
       "contentHash": "0635d65cb96cbee737cf4ad5bd89f54f07c2b74fe28cc9f7363147815ea51fcc",
-      "generatedAt": "2026-11-20T11:29:32Z",
+      "generatedAt": "2026-11-21T10:56:26Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Humanity's Last Exam official public Dataset page",
@@ -4905,7 +4905,7 @@
       "comparisonKey": "gpqa_diamond",
       "snapshotId": "e83bda4458042b9264c6758e9a4869f48240f0e6f0160f78bbb0ad8f1d0770f0",
       "contentHash": "e83bda4458042b9264c6758e9a4869f48240f0e6f0160f78bbb0ad8f1d0770f0",
-      "generatedAt": "2026-11-20T11:29:24Z",
+      "generatedAt": "2026-11-21T10:56:12Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis GPQA Diamond official public Dataset page",
@@ -5125,7 +5125,7 @@
       "comparisonKey": "scicode",
       "snapshotId": "88a883280a7736f6db400bd69ff3ec4aa2710ca2387ebcd0da3bfb77bfcc10b7",
       "contentHash": "88a883280a7736f6db400bd69ff3ec4aa2710ca2387ebcd0da3bfb77bfcc10b7",
-      "generatedAt": "2026-11-20T11:30:00Z",
+      "generatedAt": "2026-11-21T10:56:51Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis SciCode official public Dataset page",
@@ -5345,7 +5345,7 @@
       "comparisonKey": "aa_lcr",
       "snapshotId": "74cd43ec315ebd54795b9f09a205de0f76fc411c2e59fd6e9f79a4011ad59ceb",
       "contentHash": "74cd43ec315ebd54795b9f09a205de0f76fc411c2e59fd6e9f79a4011ad59ceb",
-      "generatedAt": "2026-11-20T11:29:01Z",
+      "generatedAt": "2026-11-21T10:55:49Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis AA LCR official public Dataset page",
@@ -5563,9 +5563,9 @@
       "metric": "AA-Omniscience Index: Score",
       "unit": "score",
       "comparisonKey": "aa_omniscience_index_v1_1",
-      "snapshotId": "0f833901f5b1a38cdb240d537bda9776458a732ded073cd6c56cff3b2d644bdb",
-      "contentHash": "0f833901f5b1a38cdb240d537bda9776458a732ded073cd6c56cff3b2d644bdb",
-      "generatedAt": "2026-11-20T11:29:06Z",
+      "snapshotId": "98ae8ecd8770da7cbac834505a16229c5862492d876109c08b4314c244a9c00b",
+      "contentHash": "98ae8ecd8770da7cbac834505a16229c5862492d876109c08b4314c244a9c00b",
+      "generatedAt": "2026-11-21T10:55:49Z",
       "taskCount": null,
       "source": {
         "name": "AA-Omniscience v1.1 official public page",
@@ -5578,7 +5578,7 @@
       "coverage": {
         "collectedModels": 28,
         "isComplete": false,
-        "totalModels": 170
+        "totalModels": 171
       },
       "entries": [
         [
@@ -5792,7 +5792,7 @@
       "comparisonKey": "critpt",
       "snapshotId": "db1ce377e7ebd27b1d3647228dbdd66517443b8d1a37cc36260f94611125aa7f",
       "contentHash": "db1ce377e7ebd27b1d3647228dbdd66517443b8d1a37cc36260f94611125aa7f",
-      "generatedAt": "2026-11-20T11:29:12Z",
+      "generatedAt": "2026-11-21T10:56:03Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis CritPt official public Dataset page",
@@ -6010,9 +6010,9 @@
       "metric": "gdpvalAaElo",
       "unit": "raw",
       "comparisonKey": "gdpval_aa_elo",
-      "snapshotId": "0c98eefb0fff8ec016c74683db3331d1b5355384f4f2f0b84b36c95858d26d5f",
-      "contentHash": "0c98eefb0fff8ec016c74683db3331d1b5355384f4f2f0b84b36c95858d26d5f",
-      "generatedAt": "2026-11-20T11:29:21Z",
+      "snapshotId": "16785442bc2afe1578fd812a144608f1ba46737ac7373cf2eed31d7f4bf3c5f8",
+      "contentHash": "16785442bc2afe1578fd812a144608f1ba46737ac7373cf2eed31d7f4bf3c5f8",
+      "generatedAt": "2026-11-21T10:56:12Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis GDPval-AA Elo official public Dataset page",
@@ -6025,7 +6025,7 @@
       "coverage": {
         "collectedModels": 27,
         "isComplete": false,
-        "totalModels": 319
+        "totalModels": 320
       },
       "entries": [
         [
@@ -6232,7 +6232,7 @@
       "comparisonKey": "terminalbench_hard",
       "snapshotId": "8e016d2b797c2316bcc39120d82700bd4ffa86dc6206386d7c5c5b2e02f42f1e",
       "contentHash": "8e016d2b797c2316bcc39120d82700bd4ffa86dc6206386d7c5c5b2e02f42f1e",
-      "generatedAt": "2026-11-20T11:30:19Z",
+      "generatedAt": "2026-11-21T10:56:53Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench Hard official public Dataset page",
@@ -6452,7 +6452,7 @@
       "comparisonKey": "terminalbench_v2_1",
       "snapshotId": "4747893a6aec5c101cd5f487b8b4bd0e9776aa27d1ab38f7458452a990289190",
       "contentHash": "4747893a6aec5c101cd5f487b8b4bd0e9776aa27d1ab38f7458452a990289190",
-      "generatedAt": "2026-11-20T11:30:16Z",
+      "generatedAt": "2026-11-21T10:56:58Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Terminal-Bench v2.1 official public Dataset page",
@@ -6672,7 +6672,7 @@
       "comparisonKey": "ifbench",
       "snapshotId": "91a810074bd250e5d05ccbfc4238385a3cbd326dd62c4fdb3ea483108d8b5279",
       "contentHash": "91a810074bd250e5d05ccbfc4238385a3cbd326dd62c4fdb3ea483108d8b5279",
-      "generatedAt": "2026-11-20T11:29:27Z",
+      "generatedAt": "2026-11-21T10:56:18Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis IFBench official public Dataset page",
@@ -6892,7 +6892,7 @@
       "comparisonKey": "mmmu_pro",
       "snapshotId": "67bb13c82b06f572365a88a40fa7baaf9602d3f3d177ad4156ab203b4e98fc52",
       "contentHash": "67bb13c82b06f572365a88a40fa7baaf9602d3f3d177ad4156ab203b4e98fc52",
-      "generatedAt": "2026-11-20T11:29:57Z",
+      "generatedAt": "2026-11-21T10:56:40Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis MMMU-Pro official public Dataset page",
@@ -7112,7 +7112,7 @@
       "comparisonKey": "artificial_analysis_openness_index",
       "snapshotId": "0c86b764656c69896fdf73bf499bdf8d8b454ca422a35d57c96c2e0dd11d5379",
       "contentHash": "0c86b764656c69896fdf73bf499bdf8d8b454ca422a35d57c96c2e0dd11d5379",
-      "generatedAt": "2026-11-20T11:28:59Z",
+      "generatedAt": "2026-11-21T10:55:51Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis Artificial Analysis Openness Index official Data API",
@@ -7318,7 +7318,7 @@
       "comparisonKey": "mlcr_overall",
       "snapshotId": "89f947bf51bc11cdbbb4f23ef9bad1663b65e794cf03782373d4e0dd49e48340",
       "contentHash": "89f947bf51bc11cdbbb4f23ef9bad1663b65e794cf03782373d4e0dd49e48340",
-      "generatedAt": "2026-11-20T11:29:54Z",
+      "generatedAt": "2026-11-21T10:56:41Z",
       "taskCount": null,
       "source": {
         "name": "Artificial Analysis MLCR Overall official public Dataset page",
@@ -7552,7 +7552,7 @@
       "comparisonKey": "v1.1",
       "snapshotId": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019",
       "contentHash": "a7c15d66288fd249c020b9931c017b92d1a3b90e480b3ff34974b752bd030019",
-      "generatedAt": "2026-11-20T11:29:12Z",
+      "generatedAt": "2026-11-21T10:56:02Z",
       "taskCount": null,
       "source": {
         "name": "DeepSWE v1.1 official leaderboard JSON",
