@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-11-21T12:29:04Z",
-  "windowStart": "2026-11-20T12:29:04Z",
+  "generatedAt": "2026-11-21T19:38:28Z",
+  "windowStart": "2026-11-20T19:38:28Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -45,9 +45,9 @@
       "maxOutputTokens": 65536,
       "pricing": {
         "currency": "USD",
-        "inputPerMillionTokens": 0.1,
-        "outputPerMillionTokens": 0.4,
-        "cachedInputPerMillionTokens": 0.02
+        "inputPerMillionTokens": 0.075,
+        "outputPerMillionTokens": 0.3,
+        "cachedInputPerMillionTokens": 0.015
       },
       "availability": [
         "OpenRouter"
@@ -63,1633 +63,120 @@
           "field": "canonicalId",
           "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
           "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "c2e7b6839e3ebf33ce457e00ab8e4866964a1bb50de9f20ff2876c6998e8e4c4",
+          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
           "sourceType": "openrouter_catalog"
         },
         {
           "field": "provider",
           "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
           "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "c2e7b6839e3ebf33ce457e00ab8e4866964a1bb50de9f20ff2876c6998e8e4c4",
+          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
           "sourceType": "openrouter_catalog"
         },
         {
           "field": "modelId",
           "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
           "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "c2e7b6839e3ebf33ce457e00ab8e4866964a1bb50de9f20ff2876c6998e8e4c4",
+          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
           "sourceType": "openrouter_catalog"
         },
         {
           "field": "displayName",
           "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
           "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "c2e7b6839e3ebf33ce457e00ab8e4866964a1bb50de9f20ff2876c6998e8e4c4",
+          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
           "sourceType": "openrouter_catalog"
         },
         {
           "field": "releaseDate",
           "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
           "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "c2e7b6839e3ebf33ce457e00ab8e4866964a1bb50de9f20ff2876c6998e8e4c4",
+          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
           "sourceType": "openrouter_catalog"
         },
         {
           "field": "status",
           "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
           "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "c2e7b6839e3ebf33ce457e00ab8e4866964a1bb50de9f20ff2876c6998e8e4c4",
+          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
           "sourceType": "openrouter_catalog"
         },
         {
           "field": "releaseType",
           "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
           "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "c2e7b6839e3ebf33ce457e00ab8e4866964a1bb50de9f20ff2876c6998e8e4c4",
+          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
           "sourceType": "openrouter_catalog"
         },
         {
           "field": "access",
           "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
           "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "c2e7b6839e3ebf33ce457e00ab8e4866964a1bb50de9f20ff2876c6998e8e4c4",
+          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
           "sourceType": "openrouter_catalog"
         },
         {
           "field": "contextWindow",
           "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
           "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "c2e7b6839e3ebf33ce457e00ab8e4866964a1bb50de9f20ff2876c6998e8e4c4",
+          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
           "sourceType": "openrouter_catalog"
         },
         {
           "field": "maxOutputTokens",
           "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
           "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "c2e7b6839e3ebf33ce457e00ab8e4866964a1bb50de9f20ff2876c6998e8e4c4",
+          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
           "sourceType": "openrouter_catalog"
         },
         {
           "field": "modelCardUrl",
           "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
           "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "c2e7b6839e3ebf33ce457e00ab8e4866964a1bb50de9f20ff2876c6998e8e4c4",
+          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
           "sourceType": "openrouter_catalog"
         },
         {
           "field": "hubRepo",
           "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
           "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "c2e7b6839e3ebf33ce457e00ab8e4866964a1bb50de9f20ff2876c6998e8e4c4",
+          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
           "sourceType": "openrouter_catalog"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
           "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "c2e7b6839e3ebf33ce457e00ab8e4866964a1bb50de9f20ff2876c6998e8e4c4",
+          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
           "sourceType": "openrouter_catalog"
         },
         {
           "field": "capabilities",
           "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
           "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "c2e7b6839e3ebf33ce457e00ab8e4866964a1bb50de9f20ff2876c6998e8e4c4",
+          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
           "sourceType": "openrouter_catalog"
         },
         {
           "field": "availability",
           "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
           "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "c2e7b6839e3ebf33ce457e00ab8e4866964a1bb50de9f20ff2876c6998e8e4c4",
+          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
           "sourceType": "openrouter_catalog"
         },
         {
           "field": "modalities",
           "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
           "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "c2e7b6839e3ebf33ce457e00ab8e4866964a1bb50de9f20ff2876c6998e8e4c4",
+          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
           "sourceType": "openrouter_catalog"
         },
         {
           "field": "pricing",
           "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
           "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "c2e7b6839e3ebf33ce457e00ab8e4866964a1bb50de9f20ff2876c6998e8e4c4",
+          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
           "sourceType": "openrouter_catalog"
-        }
-      ]
-    },
-    "benchmark:Claude Fable 5.2 (Max, Default Fallback)": {
-      "canonicalId": "benchmark:Claude Fable 5.2 (Max, Default Fallback)",
-      "provider": null,
-      "modelId": "Claude Fable 5.2 (Max, Default Fallback)",
-      "displayName": "Claude Fable 5.2 (Max, Default Fallback)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "25cd02b51d6bafbead451d295807c0afb429639c4da4788f66869ed69eb43dd6",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "25cd02b51d6bafbead451d295807c0afb429639c4da4788f66869ed69eb43dd6",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "25cd02b51d6bafbead451d295807c0afb429639c4da4788f66869ed69eb43dd6",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "25cd02b51d6bafbead451d295807c0afb429639c4da4788f66869ed69eb43dd6",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "25cd02b51d6bafbead451d295807c0afb429639c4da4788f66869ed69eb43dd6",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "25cd02b51d6bafbead451d295807c0afb429639c4da4788f66869ed69eb43dd6",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "25cd02b51d6bafbead451d295807c0afb429639c4da4788f66869ed69eb43dd6",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Claude Haiku 5.5 (Max)": {
-      "canonicalId": "benchmark:Claude Haiku 5.5 (Max)",
-      "provider": null,
-      "modelId": "Claude Haiku 5.5 (Max)",
-      "displayName": "Claude Haiku 5.5 (Max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "790bf3c0245f568148fe28b626644a5d94708edefd46de3d31bdb2f6a35868d1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "790bf3c0245f568148fe28b626644a5d94708edefd46de3d31bdb2f6a35868d1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "790bf3c0245f568148fe28b626644a5d94708edefd46de3d31bdb2f6a35868d1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "790bf3c0245f568148fe28b626644a5d94708edefd46de3d31bdb2f6a35868d1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "790bf3c0245f568148fe28b626644a5d94708edefd46de3d31bdb2f6a35868d1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "790bf3c0245f568148fe28b626644a5d94708edefd46de3d31bdb2f6a35868d1",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "790bf3c0245f568148fe28b626644a5d94708edefd46de3d31bdb2f6a35868d1",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Claude Opus 5.5 (Max, Default Fallback)": {
-      "canonicalId": "benchmark:Claude Opus 5.5 (Max, Default Fallback)",
-      "provider": null,
-      "modelId": "Claude Opus 5.5 (Max, Default Fallback)",
-      "displayName": "Claude Opus 5.5 (Max, Default Fallback)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "0b003a1eb5db07d02d835ec073b2fa8594b1a97384eca7f6bf68907943f19bd3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "0b003a1eb5db07d02d835ec073b2fa8594b1a97384eca7f6bf68907943f19bd3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "0b003a1eb5db07d02d835ec073b2fa8594b1a97384eca7f6bf68907943f19bd3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "0b003a1eb5db07d02d835ec073b2fa8594b1a97384eca7f6bf68907943f19bd3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "0b003a1eb5db07d02d835ec073b2fa8594b1a97384eca7f6bf68907943f19bd3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "0b003a1eb5db07d02d835ec073b2fa8594b1a97384eca7f6bf68907943f19bd3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "0b003a1eb5db07d02d835ec073b2fa8594b1a97384eca7f6bf68907943f19bd3",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Claude Sonnet 5.5 (Max, Default Fallback)": {
-      "canonicalId": "benchmark:Claude Sonnet 5.5 (Max, Default Fallback)",
-      "provider": null,
-      "modelId": "Claude Sonnet 5.5 (Max, Default Fallback)",
-      "displayName": "Claude Sonnet 5.5 (Max, Default Fallback)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "e4bb3ef84ed23a4702e6d8847ae6a85cc6bef7ef50e61f5b83d89ba786f0dc64",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "e4bb3ef84ed23a4702e6d8847ae6a85cc6bef7ef50e61f5b83d89ba786f0dc64",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "e4bb3ef84ed23a4702e6d8847ae6a85cc6bef7ef50e61f5b83d89ba786f0dc64",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "e4bb3ef84ed23a4702e6d8847ae6a85cc6bef7ef50e61f5b83d89ba786f0dc64",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "e4bb3ef84ed23a4702e6d8847ae6a85cc6bef7ef50e61f5b83d89ba786f0dc64",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "e4bb3ef84ed23a4702e6d8847ae6a85cc6bef7ef50e61f5b83d89ba786f0dc64",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "e4bb3ef84ed23a4702e6d8847ae6a85cc6bef7ef50e61f5b83d89ba786f0dc64",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GLM-5.3 (Max)": {
-      "canonicalId": "benchmark:GLM-5.3 (Max)",
-      "provider": null,
-      "modelId": "GLM-5.3 (Max)",
-      "displayName": "GLM-5.3 (Max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "fb6b4a9d31b426a2e9fcd582c38d3b926b5796eb826d496d02b42c6933626f2a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "fb6b4a9d31b426a2e9fcd582c38d3b926b5796eb826d496d02b42c6933626f2a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "fb6b4a9d31b426a2e9fcd582c38d3b926b5796eb826d496d02b42c6933626f2a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "fb6b4a9d31b426a2e9fcd582c38d3b926b5796eb826d496d02b42c6933626f2a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "fb6b4a9d31b426a2e9fcd582c38d3b926b5796eb826d496d02b42c6933626f2a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "fb6b4a9d31b426a2e9fcd582c38d3b926b5796eb826d496d02b42c6933626f2a",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "fb6b4a9d31b426a2e9fcd582c38d3b926b5796eb826d496d02b42c6933626f2a",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GPT-6 Luna (Max)": {
-      "canonicalId": "benchmark:GPT-6 Luna (Max)",
-      "provider": null,
-      "modelId": "GPT-6 Luna (Max)",
-      "displayName": "GPT-6 Luna (Max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "ff3edf5095bc19fb8e0626613b12a7eb82e37250a2deb36de3efd3e49de33127",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "ff3edf5095bc19fb8e0626613b12a7eb82e37250a2deb36de3efd3e49de33127",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "ff3edf5095bc19fb8e0626613b12a7eb82e37250a2deb36de3efd3e49de33127",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "ff3edf5095bc19fb8e0626613b12a7eb82e37250a2deb36de3efd3e49de33127",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "ff3edf5095bc19fb8e0626613b12a7eb82e37250a2deb36de3efd3e49de33127",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "ff3edf5095bc19fb8e0626613b12a7eb82e37250a2deb36de3efd3e49de33127",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "ff3edf5095bc19fb8e0626613b12a7eb82e37250a2deb36de3efd3e49de33127",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GPT-6.1 Terra (Max)": {
-      "canonicalId": "benchmark:GPT-6.1 Terra (Max)",
-      "provider": null,
-      "modelId": "GPT-6.1 Terra (Max)",
-      "displayName": "GPT-6.1 Terra (Max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "2d9fd9fb4da3e5316f865bad4877c1517dc9fe4f9c8c63849b5e7cc3b4d51996",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "2d9fd9fb4da3e5316f865bad4877c1517dc9fe4f9c8c63849b5e7cc3b4d51996",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "2d9fd9fb4da3e5316f865bad4877c1517dc9fe4f9c8c63849b5e7cc3b4d51996",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "2d9fd9fb4da3e5316f865bad4877c1517dc9fe4f9c8c63849b5e7cc3b4d51996",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "2d9fd9fb4da3e5316f865bad4877c1517dc9fe4f9c8c63849b5e7cc3b4d51996",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "2d9fd9fb4da3e5316f865bad4877c1517dc9fe4f9c8c63849b5e7cc3b4d51996",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "2d9fd9fb4da3e5316f865bad4877c1517dc9fe4f9c8c63849b5e7cc3b4d51996",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GPT-6.2 Astra (Max)": {
-      "canonicalId": "benchmark:GPT-6.2 Astra (Max)",
-      "provider": null,
-      "modelId": "GPT-6.2 Astra (Max)",
-      "displayName": "GPT-6.2 Astra (Max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "66101eefc73844c866721b9305bbb6c175360432aa08b415daace419f4d96b81",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "66101eefc73844c866721b9305bbb6c175360432aa08b415daace419f4d96b81",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "66101eefc73844c866721b9305bbb6c175360432aa08b415daace419f4d96b81",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "66101eefc73844c866721b9305bbb6c175360432aa08b415daace419f4d96b81",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "66101eefc73844c866721b9305bbb6c175360432aa08b415daace419f4d96b81",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "66101eefc73844c866721b9305bbb6c175360432aa08b415daace419f4d96b81",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "66101eefc73844c866721b9305bbb6c175360432aa08b415daace419f4d96b81",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GPT-6.2 Sol (Max)": {
-      "canonicalId": "benchmark:GPT-6.2 Sol (Max)",
-      "provider": null,
-      "modelId": "GPT-6.2 Sol (Max)",
-      "displayName": "GPT-6.2 Sol (Max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "eb2b30681c160c3d5851df531655b50e95c48bf3d82cd38e31170b9232833270",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "eb2b30681c160c3d5851df531655b50e95c48bf3d82cd38e31170b9232833270",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "eb2b30681c160c3d5851df531655b50e95c48bf3d82cd38e31170b9232833270",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "eb2b30681c160c3d5851df531655b50e95c48bf3d82cd38e31170b9232833270",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "eb2b30681c160c3d5851df531655b50e95c48bf3d82cd38e31170b9232833270",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "eb2b30681c160c3d5851df531655b50e95c48bf3d82cd38e31170b9232833270",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "eb2b30681c160c3d5851df531655b50e95c48bf3d82cd38e31170b9232833270",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Gemini 4 Hydrogen (Xhigh)": {
-      "canonicalId": "benchmark:Gemini 4 Hydrogen (Xhigh)",
-      "provider": null,
-      "modelId": "Gemini 4 Hydrogen (Xhigh)",
-      "displayName": "Gemini 4 Hydrogen (Xhigh)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "1aa3454e3d35c2d649992b89da7f445fdc37b765f76f5470b15ebeb37ed86f74",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "1aa3454e3d35c2d649992b89da7f445fdc37b765f76f5470b15ebeb37ed86f74",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "1aa3454e3d35c2d649992b89da7f445fdc37b765f76f5470b15ebeb37ed86f74",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "1aa3454e3d35c2d649992b89da7f445fdc37b765f76f5470b15ebeb37ed86f74",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "1aa3454e3d35c2d649992b89da7f445fdc37b765f76f5470b15ebeb37ed86f74",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "1aa3454e3d35c2d649992b89da7f445fdc37b765f76f5470b15ebeb37ed86f74",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "1aa3454e3d35c2d649992b89da7f445fdc37b765f76f5470b15ebeb37ed86f74",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Gemini 4 Neon (Xhigh)": {
-      "canonicalId": "benchmark:Gemini 4 Neon (Xhigh)",
-      "provider": null,
-      "modelId": "Gemini 4 Neon (Xhigh)",
-      "displayName": "Gemini 4 Neon (Xhigh)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "cd4b95d870b02050a69bc61d862aa0bd123049d311ffffeec935a55ffd25509c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "cd4b95d870b02050a69bc61d862aa0bd123049d311ffffeec935a55ffd25509c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "cd4b95d870b02050a69bc61d862aa0bd123049d311ffffeec935a55ffd25509c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "cd4b95d870b02050a69bc61d862aa0bd123049d311ffffeec935a55ffd25509c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "cd4b95d870b02050a69bc61d862aa0bd123049d311ffffeec935a55ffd25509c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "cd4b95d870b02050a69bc61d862aa0bd123049d311ffffeec935a55ffd25509c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "cd4b95d870b02050a69bc61d862aa0bd123049d311ffffeec935a55ffd25509c",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Grok 4.7 (Xhigh)": {
-      "canonicalId": "benchmark:Grok 4.7 (Xhigh)",
-      "provider": null,
-      "modelId": "Grok 4.7 (Xhigh)",
-      "displayName": "Grok 4.7 (Xhigh)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "525154549d8f61ebbc08944bfdb4447baa534cd46943e5230d804c86008ef163",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "525154549d8f61ebbc08944bfdb4447baa534cd46943e5230d804c86008ef163",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "525154549d8f61ebbc08944bfdb4447baa534cd46943e5230d804c86008ef163",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "525154549d8f61ebbc08944bfdb4447baa534cd46943e5230d804c86008ef163",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "525154549d8f61ebbc08944bfdb4447baa534cd46943e5230d804c86008ef163",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "525154549d8f61ebbc08944bfdb4447baa534cd46943e5230d804c86008ef163",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "525154549d8f61ebbc08944bfdb4447baa534cd46943e5230d804c86008ef163",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:K2 Horizon 375B A23B": {
-      "canonicalId": "benchmark:K2 Horizon 375B A23B",
-      "provider": null,
-      "modelId": "K2 Horizon 375B A23B",
-      "displayName": "K2 Horizon 375B A23B",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "8e947377e15620cd95fe74473aa9fb1e796dab06ed9b04f58edabed521c21671",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "8e947377e15620cd95fe74473aa9fb1e796dab06ed9b04f58edabed521c21671",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "8e947377e15620cd95fe74473aa9fb1e796dab06ed9b04f58edabed521c21671",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "8e947377e15620cd95fe74473aa9fb1e796dab06ed9b04f58edabed521c21671",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "8e947377e15620cd95fe74473aa9fb1e796dab06ed9b04f58edabed521c21671",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "8e947377e15620cd95fe74473aa9fb1e796dab06ed9b04f58edabed521c21671",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "8e947377e15620cd95fe74473aa9fb1e796dab06ed9b04f58edabed521c21671",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Ling 3.1 Flash 1019": {
-      "canonicalId": "benchmark:Ling 3.1 Flash 1019",
-      "provider": null,
-      "modelId": "Ling 3.1 Flash 1019",
-      "displayName": "Ling 3.1 Flash 1019",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "700b94e385363054303d5a78fa3c2c1f1c5425f3d5335b26cbb64aabbca527c3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "700b94e385363054303d5a78fa3c2c1f1c5425f3d5335b26cbb64aabbca527c3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "700b94e385363054303d5a78fa3c2c1f1c5425f3d5335b26cbb64aabbca527c3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "700b94e385363054303d5a78fa3c2c1f1c5425f3d5335b26cbb64aabbca527c3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "700b94e385363054303d5a78fa3c2c1f1c5425f3d5335b26cbb64aabbca527c3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "700b94e385363054303d5a78fa3c2c1f1c5425f3d5335b26cbb64aabbca527c3",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "700b94e385363054303d5a78fa3c2c1f1c5425f3d5335b26cbb64aabbca527c3",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:MiMo-V2.6-Pro": {
-      "canonicalId": "benchmark:MiMo-V2.6-Pro",
-      "provider": null,
-      "modelId": "MiMo-V2.6-Pro",
-      "displayName": "MiMo-V2.6-Pro",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "a9736ff29fc33c54daccc673f774db0bd19c6982b06f0da519bea58eb7aa527e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "a9736ff29fc33c54daccc673f774db0bd19c6982b06f0da519bea58eb7aa527e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "a9736ff29fc33c54daccc673f774db0bd19c6982b06f0da519bea58eb7aa527e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "a9736ff29fc33c54daccc673f774db0bd19c6982b06f0da519bea58eb7aa527e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "a9736ff29fc33c54daccc673f774db0bd19c6982b06f0da519bea58eb7aa527e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "a9736ff29fc33c54daccc673f774db0bd19c6982b06f0da519bea58eb7aa527e",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "a9736ff29fc33c54daccc673f774db0bd19c6982b06f0da519bea58eb7aa527e",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Mistral Large 4 (High)": {
-      "canonicalId": "benchmark:Mistral Large 4 (High)",
-      "provider": null,
-      "modelId": "Mistral Large 4 (High)",
-      "displayName": "Mistral Large 4 (High)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "f34e07f99fa31e3ec7ed896c60e25c1aacb6eb8724ed65b291838fa8f3548d45",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "f34e07f99fa31e3ec7ed896c60e25c1aacb6eb8724ed65b291838fa8f3548d45",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "f34e07f99fa31e3ec7ed896c60e25c1aacb6eb8724ed65b291838fa8f3548d45",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "f34e07f99fa31e3ec7ed896c60e25c1aacb6eb8724ed65b291838fa8f3548d45",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "f34e07f99fa31e3ec7ed896c60e25c1aacb6eb8724ed65b291838fa8f3548d45",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "f34e07f99fa31e3ec7ed896c60e25c1aacb6eb8724ed65b291838fa8f3548d45",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "f34e07f99fa31e3ec7ed896c60e25c1aacb6eb8724ed65b291838fa8f3548d45",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Muse Ember (Max)": {
-      "canonicalId": "benchmark:Muse Ember (Max)",
-      "provider": null,
-      "modelId": "Muse Ember (Max)",
-      "displayName": "Muse Ember (Max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "3d762d0300280f4a19bb727419b6b60ad57a67fc205f056c29550efd71da8341",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "3d762d0300280f4a19bb727419b6b60ad57a67fc205f056c29550efd71da8341",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "3d762d0300280f4a19bb727419b6b60ad57a67fc205f056c29550efd71da8341",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "3d762d0300280f4a19bb727419b6b60ad57a67fc205f056c29550efd71da8341",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "3d762d0300280f4a19bb727419b6b60ad57a67fc205f056c29550efd71da8341",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "3d762d0300280f4a19bb727419b6b60ad57a67fc205f056c29550efd71da8341",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "3d762d0300280f4a19bb727419b6b60ad57a67fc205f056c29550efd71da8341",
-          "sourceType": "official_benchmark"
         }
       ]
     },
@@ -1735,55 +222,55 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "9a66191a0117f197586033def1343b387c2561990cb04ea2df4cde64327b33e0",
+          "contentHash": "a53f9ab0ab84625497d8603d3c98913f26498bea4dde11600a672002cf253e0d",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "9a66191a0117f197586033def1343b387c2561990cb04ea2df4cde64327b33e0",
+          "contentHash": "a53f9ab0ab84625497d8603d3c98913f26498bea4dde11600a672002cf253e0d",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "9a66191a0117f197586033def1343b387c2561990cb04ea2df4cde64327b33e0",
+          "contentHash": "a53f9ab0ab84625497d8603d3c98913f26498bea4dde11600a672002cf253e0d",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "9a66191a0117f197586033def1343b387c2561990cb04ea2df4cde64327b33e0",
+          "contentHash": "a53f9ab0ab84625497d8603d3c98913f26498bea4dde11600a672002cf253e0d",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "9a66191a0117f197586033def1343b387c2561990cb04ea2df4cde64327b33e0",
+          "contentHash": "a53f9ab0ab84625497d8603d3c98913f26498bea4dde11600a672002cf253e0d",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "9a66191a0117f197586033def1343b387c2561990cb04ea2df4cde64327b33e0",
+          "contentHash": "a53f9ab0ab84625497d8603d3c98913f26498bea4dde11600a672002cf253e0d",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
           "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "9a66191a0117f197586033def1343b387c2561990cb04ea2df4cde64327b33e0",
+          "contentHash": "a53f9ab0ab84625497d8603d3c98913f26498bea4dde11600a672002cf253e0d",
           "sourceType": "official_benchmark"
         }
       ]
     }
   },
-  "modelCount": 19,
+  "modelCount": 2,
   "sourceSummary": {
     "official": 0,
     "catalog": 1,
@@ -1826,7 +313,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-        "contentHash": "657a32312edbfe85713786e0092041b873c9831f905869f2de359575cb5a1c9f"
+        "contentHash": "f4f11c398b5f835769639c6b86bba551151906399b279c8c9627f3503a674b13"
       }
     },
     {
@@ -1840,7 +327,7 @@
       "isOfficial": false,
       "severity": "normal",
       "title": "Inkling 2 Mini 新增可用",
-      "summary": "Inkling 2 Mini 新增可用：上下文 1,048,576 tokens，价格 $0.1/$0.4 每百万 tokens。",
+      "summary": "Inkling 2 Mini 新增可用：上下文 1,048,576 tokens，价格 $0.075/$0.3 每百万 tokens。",
       "repoId": null,
       "repo": null,
       "modelId": "thinkingmachines/inkling-2-mini",
@@ -1852,7 +339,7 @@
           "field": "catalogEntry",
           "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
           "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "c2e7b6839e3ebf33ce457e00ab8e4866964a1bb50de9f20ff2876c6998e8e4c4",
+          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
           "sourceType": "openrouter_catalog"
         }
       ],
@@ -1863,7 +350,7 @@
       "eventIdentity": "catalog:thinkingmachines/inkling-2-mini",
       "provenance": {
         "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-        "contentHash": "657a32312edbfe85713786e0092041b873c9831f905869f2de359575cb5a1c9f"
+        "contentHash": "f4f11c398b5f835769639c6b86bba551151906399b279c8c9627f3503a674b13"
       }
     },
     {
@@ -1902,7 +389,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminal-bench-science",
-        "contentHash": "657a32312edbfe85713786e0092041b873c9831f905869f2de359575cb5a1c9f"
+        "contentHash": "f4f11c398b5f835769639c6b86bba551151906399b279c8c9627f3503a674b13"
       }
     },
     {
@@ -1941,7 +428,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
-        "contentHash": "657a32312edbfe85713786e0092041b873c9831f905869f2de359575cb5a1c9f"
+        "contentHash": "f4f11c398b5f835769639c6b86bba551151906399b279c8c9627f3503a674b13"
       }
     },
     {
@@ -1980,7 +467,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/automationbench-aa",
-        "contentHash": "657a32312edbfe85713786e0092041b873c9831f905869f2de359575cb5a1c9f"
+        "contentHash": "f4f11c398b5f835769639c6b86bba551151906399b279c8c9627f3503a674b13"
       }
     },
     {
@@ -2019,7 +506,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdp-pdf",
-        "contentHash": "657a32312edbfe85713786e0092041b873c9831f905869f2de359575cb5a1c9f"
+        "contentHash": "f4f11c398b5f835769639c6b86bba551151906399b279c8c9627f3503a674b13"
       }
     },
     {
@@ -2058,7 +545,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/hle-diamond",
-        "contentHash": "657a32312edbfe85713786e0092041b873c9831f905869f2de359575cb5a1c9f"
+        "contentHash": "f4f11c398b5f835769639c6b86bba551151906399b279c8c9627f3503a674b13"
       }
     },
     {
@@ -2097,7 +584,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt-v2?critpt-subset=hard",
-        "contentHash": "657a32312edbfe85713786e0092041b873c9831f905869f2de359575cb5a1c9f"
+        "contentHash": "f4f11c398b5f835769639c6b86bba551151906399b279c8c9627f3503a674b13"
       }
     },
     {
@@ -2136,7 +623,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
-        "contentHash": "657a32312edbfe85713786e0092041b873c9831f905869f2de359575cb5a1c9f"
+        "contentHash": "f4f11c398b5f835769639c6b86bba551151906399b279c8c9627f3503a674b13"
       }
     },
     {
@@ -2175,7 +662,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
-        "contentHash": "657a32312edbfe85713786e0092041b873c9831f905869f2de359575cb5a1c9f"
+        "contentHash": "f4f11c398b5f835769639c6b86bba551151906399b279c8c9627f3503a674b13"
       }
     },
     {
@@ -2211,13 +698,13 @@
       "modelIdentity": "aa_briefcase_v1_1:Tencent Hy4",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-        "contentHash": "657a32312edbfe85713786e0092041b873c9831f905869f2de359575cb5a1c9f"
+        "contentHash": "f4f11c398b5f835769639c6b86bba551151906399b279c8c9627f3503a674b13"
       }
     }
   ],
   "eventCount": 11,
   "provenance": {
-    "workflowRunId": "44904110852",
+    "workflowRunId": "44941982655",
     "mainCommit": "9a930017abb4e4815f4e3e5fa183b528a75d5182"
   }
 }
