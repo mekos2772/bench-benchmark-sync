@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-11-21T23:54:19Z",
-  "windowStart": "2026-11-20T23:54:19Z",
+  "generatedAt": "2026-11-22T11:54:17Z",
+  "windowStart": "2026-11-21T11:54:17Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -10,176 +10,6 @@
     "benchmark"
   ],
   "models": {
-    "openrouter:thinkingmachines/inkling-2-mini": {
-      "canonicalId": "openrouter:thinkingmachines/inkling-2-mini",
-      "provider": "Thinking Machines",
-      "modelId": "thinkingmachines/inkling-2-mini",
-      "displayName": "Inkling 2 Mini",
-      "version": null,
-      "aliases": [],
-      "releaseDate": "2026-11-21T02:19:45Z",
-      "status": "available",
-      "deprecationDate": null,
-      "releaseType": "catalog_addition",
-      "access": "open_weights",
-      "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "capabilities": [
-        "推理",
-        "结构化输出",
-        "工具调用"
-      ],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": 1048576,
-      "maxInputTokens": null,
-      "maxOutputTokens": 65536,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": 0.075,
-        "outputPerMillionTokens": 0.3,
-        "cachedInputPerMillionTokens": 0.015
-      },
-      "availability": [
-        "OpenRouter"
-      ],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-      "hubRepo": "thinkingmachines/Inkling-2-Mini",
-      "sourceType": "openrouter_catalog",
-      "sourceOwner": "Thinking Machines",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-          "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "provider",
-          "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-          "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-          "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-          "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "releaseDate",
-          "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-          "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-          "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "releaseType",
-          "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-          "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-          "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "contextWindow",
-          "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-          "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "maxOutputTokens",
-          "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-          "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "modelCardUrl",
-          "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-          "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "hubRepo",
-          "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-          "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-          "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "capabilities",
-          "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-          "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "availability",
-          "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-          "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "modalities",
-          "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-          "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "pricing",
-          "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-          "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
-          "sourceType": "openrouter_catalog"
-        }
-      ]
-    },
     "benchmark:Tencent Hy4": {
       "canonicalId": "benchmark:Tencent Hy4",
       "provider": null,
@@ -222,58 +52,58 @@
           "field": "canonicalId",
           "sourceUrl": "",
           "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "9000fdac9655ef6b32f9fb3ebdef3c878c98bd04c743543c01853ec7e5a5f77f",
+          "contentHash": "d4640110d2fd96f96e815f58be4fe749eaf1bc1672d7f6a8ccc613fbcfdad84f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
           "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "9000fdac9655ef6b32f9fb3ebdef3c878c98bd04c743543c01853ec7e5a5f77f",
+          "contentHash": "d4640110d2fd96f96e815f58be4fe749eaf1bc1672d7f6a8ccc613fbcfdad84f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
           "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "9000fdac9655ef6b32f9fb3ebdef3c878c98bd04c743543c01853ec7e5a5f77f",
+          "contentHash": "d4640110d2fd96f96e815f58be4fe749eaf1bc1672d7f6a8ccc613fbcfdad84f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
           "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "9000fdac9655ef6b32f9fb3ebdef3c878c98bd04c743543c01853ec7e5a5f77f",
+          "contentHash": "d4640110d2fd96f96e815f58be4fe749eaf1bc1672d7f6a8ccc613fbcfdad84f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
           "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "9000fdac9655ef6b32f9fb3ebdef3c878c98bd04c743543c01853ec7e5a5f77f",
+          "contentHash": "d4640110d2fd96f96e815f58be4fe749eaf1bc1672d7f6a8ccc613fbcfdad84f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
           "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "9000fdac9655ef6b32f9fb3ebdef3c878c98bd04c743543c01853ec7e5a5f77f",
+          "contentHash": "d4640110d2fd96f96e815f58be4fe749eaf1bc1672d7f6a8ccc613fbcfdad84f",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
           "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
           "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "9000fdac9655ef6b32f9fb3ebdef3c878c98bd04c743543c01853ec7e5a5f77f",
+          "contentHash": "d4640110d2fd96f96e815f58be4fe749eaf1bc1672d7f6a8ccc613fbcfdad84f",
           "sourceType": "official_benchmark"
         }
       ]
     }
   },
-  "modelCount": 2,
+  "modelCount": 1,
   "sourceSummary": {
     "official": 0,
-    "catalog": 1,
+    "catalog": 0,
     "benchmark": 2
   },
   "events": [
@@ -313,44 +143,7 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-        "contentHash": "315c906cf91ecb4f3f938facbc54f5429a532ad87420b5afb29fe2e484535f99"
-      }
-    },
-    {
-      "eventId": "472922b7297b70941ec0949437f821be",
-      "family": "model",
-      "eventType": "catalog_model_added",
-      "eventClass": "model_catalog",
-      "trustTier": "catalog",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "Inkling 2 Mini 新增可用",
-      "summary": "Inkling 2 Mini 新增可用：上下文 1,048,576 tokens，价格 $0.075/$0.3 每百万 tokens。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "thinkingmachines/inkling-2-mini",
-      "modelRef": "openrouter:thinkingmachines/inkling-2-mini",
-      "sourceType": "openrouter_catalog",
-      "sourceOwner": "Thinking Machines",
-      "evidence": [
-        {
-          "field": "catalogEntry",
-          "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-          "observedAt": "2026-11-21T02:19:45Z",
-          "contentHash": "cd6476e72c93e96f682fda80d8e4719ff9808bb732f69aef5470c6cc74c3d72c",
-          "sourceType": "openrouter_catalog"
-        }
-      ],
-      "url": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-      "observedAt": "2026-11-21T02:19:45Z",
-      "publishedAt": "2026-11-21T02:19:45Z",
-      "source": "OpenRouter · Thinking Machines",
-      "eventIdentity": "catalog:thinkingmachines/inkling-2-mini",
-      "provenance": {
-        "sourceUrl": "https://openrouter.ai/thinkingmachines/inkling-2-mini",
-        "contentHash": "315c906cf91ecb4f3f938facbc54f5429a532ad87420b5afb29fe2e484535f99"
+        "contentHash": "1ea1b56b7cebfb00e5beed84d4fc5bcb5017f9697e87a03f4371514a491639f5"
       }
     },
     {
@@ -386,13 +179,13 @@
       "modelIdentity": "aa_briefcase_v1_1:Tencent Hy4",
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-        "contentHash": "315c906cf91ecb4f3f938facbc54f5429a532ad87420b5afb29fe2e484535f99"
+        "contentHash": "1ea1b56b7cebfb00e5beed84d4fc5bcb5017f9697e87a03f4371514a491639f5"
       }
     }
   ],
-  "eventCount": 3,
+  "eventCount": 2,
   "provenance": {
-    "workflowRunId": "44964019195",
+    "workflowRunId": "45019556133",
     "mainCommit": "9a930017abb4e4815f4e3e5fa183b528a75d5182"
   }
 }
