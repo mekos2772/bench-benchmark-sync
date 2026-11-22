@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-11-22T11:54:17Z",
-  "windowStart": "2026-11-21T11:54:17Z",
+  "generatedAt": "2026-11-22T18:42:34Z",
+  "windowStart": "2026-11-21T18:42:34Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -10,28 +10,32 @@
     "benchmark"
   ],
   "models": {
-    "benchmark:Tencent Hy4": {
-      "canonicalId": "benchmark:Tencent Hy4",
-      "provider": null,
-      "modelId": "Tencent Hy4",
-      "displayName": "Tencent Hy4",
+    "hf:inclusionAI/LingSante-3.1-flash-MXFP4": {
+      "canonicalId": "hf:inclusionAI/LingSante-3.1-flash-MXFP4",
+      "provider": "InclusionAI",
+      "modelId": "inclusionAI/LingSante-3.1-flash-MXFP4",
+      "displayName": "LingSante-3.1-flash-MXFP4",
       "version": null,
       "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
+      "releaseDate": "2026-11-22T03:19:38Z",
+      "status": "available",
       "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
+      "releaseType": "open_weights_release",
+      "access": "open_weights",
       "modalities": {
-        "input": [],
-        "output": []
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
       },
       "capabilities": [],
-      "parameterCount": null,
-      "license": null,
+      "parameterCount": 294289983808,
+      "license": "mit",
       "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
+      "description": "*LingSante-3.1-flash-MXFP4** is an open-weight Mixture-of-Experts model that combines complex medical reasoning, professional healthcare communication, evidence-based deep research, and long-horizon medical tasks. Built on LingSante-3.1-flash, it has **approximately 560 billion parameters in the main model**, activates **approximately 25 billion parameters per token**, and has a configured **262,144-token context window**. Real-world medical tasks present challenges that go beyond general intelligence, including incomplete health information, substantial patient heterogeneity, and strict opera",
+      "contextWindow": 262144,
       "maxInputTokens": null,
       "maxOutputTokens": null,
       "pricing": {
@@ -40,75 +44,191 @@
         "outputPerMillionTokens": null,
         "cachedInputPerMillionTokens": null
       },
-      "availability": [],
-      "officialUrl": null,
+      "availability": [
+        "Hugging Face"
+      ],
+      "officialUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
       "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "AA-Briefcase v1.1 official public page",
+      "modelCardUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+      "hubRepo": "inclusionAI/LingSante-3.1-flash-MXFP4",
+      "sourceType": "hub_official_org",
+      "sourceOwner": "InclusionAI",
       "evidence": [
         {
           "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "d4640110d2fd96f96e815f58be4fe749eaf1bc1672d7f6a8ccc613fbcfdad84f",
-          "sourceType": "official_benchmark"
+          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+          "observedAt": "2026-11-22T03:19:38Z",
+          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "provider",
+          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+          "observedAt": "2026-11-22T03:19:38Z",
+          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "sourceType": "hub_official_org"
         },
         {
           "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "d4640110d2fd96f96e815f58be4fe749eaf1bc1672d7f6a8ccc613fbcfdad84f",
-          "sourceType": "official_benchmark"
+          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+          "observedAt": "2026-11-22T03:19:38Z",
+          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "sourceType": "hub_official_org"
         },
         {
           "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "d4640110d2fd96f96e815f58be4fe749eaf1bc1672d7f6a8ccc613fbcfdad84f",
-          "sourceType": "official_benchmark"
+          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+          "observedAt": "2026-11-22T03:19:38Z",
+          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "releaseDate",
+          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+          "observedAt": "2026-11-22T03:19:38Z",
+          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "sourceType": "hub_official_org"
         },
         {
           "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "d4640110d2fd96f96e815f58be4fe749eaf1bc1672d7f6a8ccc613fbcfdad84f",
-          "sourceType": "official_benchmark"
+          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+          "observedAt": "2026-11-22T03:19:38Z",
+          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "releaseType",
+          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+          "observedAt": "2026-11-22T03:19:38Z",
+          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "sourceType": "hub_official_org"
         },
         {
           "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "d4640110d2fd96f96e815f58be4fe749eaf1bc1672d7f6a8ccc613fbcfdad84f",
-          "sourceType": "official_benchmark"
+          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+          "observedAt": "2026-11-22T03:19:38Z",
+          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "parameterCount",
+          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+          "observedAt": "2026-11-22T03:19:38Z",
+          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "license",
+          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+          "observedAt": "2026-11-22T03:19:38Z",
+          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+          "observedAt": "2026-11-22T03:19:38Z",
+          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "contextWindow",
+          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+          "observedAt": "2026-11-22T03:19:38Z",
+          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "officialUrl",
+          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+          "observedAt": "2026-11-22T03:19:38Z",
+          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "modelCardUrl",
+          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+          "observedAt": "2026-11-22T03:19:38Z",
+          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "hubRepo",
+          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+          "observedAt": "2026-11-22T03:19:38Z",
+          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "sourceType": "hub_official_org"
         },
         {
           "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "d4640110d2fd96f96e815f58be4fe749eaf1bc1672d7f6a8ccc613fbcfdad84f",
-          "sourceType": "official_benchmark"
+          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+          "observedAt": "2026-11-22T03:19:38Z",
+          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "sourceType": "hub_official_org"
         },
         {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-          "observedAt": "2026-11-21T12:29:04Z",
-          "contentHash": "d4640110d2fd96f96e815f58be4fe749eaf1bc1672d7f6a8ccc613fbcfdad84f",
-          "sourceType": "official_benchmark"
+          "field": "availability",
+          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+          "observedAt": "2026-11-22T03:19:38Z",
+          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "modalities",
+          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+          "observedAt": "2026-11-22T03:19:38Z",
+          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "sourceType": "hub_official_org"
         }
       ]
     }
   },
   "modelCount": 1,
   "sourceSummary": {
-    "official": 0,
+    "official": 1,
     "catalog": 0,
-    "benchmark": 2
+    "benchmark": 1
   },
   "events": [
     {
-      "eventId": "5f47c420c0b3b15f141ccb6aab12c081",
+      "eventId": "52b53548f8a51f8124983af8bb9ca0b0",
+      "family": "model",
+      "eventType": "official_model_release",
+      "eventClass": "model_release",
+      "trustTier": "official",
+      "priority": "P0",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "LingSante-3.1-flash-MXFP4 开放权重发布",
+      "summary": "InclusionAI 在官方组织发布新模型：参数量 294.3B，上下文 262,144 tokens，许可 mit。",
+      "repoId": "inclusionAI/LingSante-3.1-flash-MXFP4",
+      "repo": "inclusionAI/LingSante-3.1-flash-MXFP4",
+      "modelId": "inclusionAI/LingSante-3.1-flash-MXFP4",
+      "modelRef": "hf:inclusionAI/LingSante-3.1-flash-MXFP4",
+      "sourceType": "hub_official_org",
+      "sourceOwner": "InclusionAI",
+      "evidence": [
+        {
+          "field": "modelRepository",
+          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+          "observedAt": "2026-11-22T03:19:38Z",
+          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "sourceType": "hub_official_org"
+        }
+      ],
+      "url": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+      "observedAt": "2026-11-22T03:19:38Z",
+      "publishedAt": "2026-11-22T03:19:38Z",
+      "source": "Hugging Face · InclusionAI",
+      "eventIdentity": "open-release:inclusionAI/LingSante-3.1-flash-MXFP4",
+      "provenance": {
+        "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+        "contentHash": "ae07e69c3308f864b8ceb0917235b7aba0c82373c935206b72638c3305fe2d6e"
+      }
+    },
+    {
+      "eventId": "9745645755ae989f94ca75029c440388",
       "family": "benchmark",
       "eventType": "benchmark_updated",
       "eventClass": "benchmark",
@@ -117,8 +237,8 @@
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "AA-Briefcase v1.1 官方数据更新",
-      "summary": "AA-Briefcase v1.1 官方数据发生变化；共 28 个模型 · 数据版本 v1.1 · 当前前列：Claude Sonnet 5.5 (Max, Default Fallback)（1813.08）、Claude Opus 5.5 (Max, Default Fallback)（1797.44）、Claude Fable 5.2 (Max, Default Fallback)（1783.12）。",
+      "title": "MLCR Overall 官方数据更新",
+      "summary": "MLCR Overall 官方数据发生变化；共 29 个模型 · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（43.9%）、GPT-6 Astra (Max)（41.7%）、Claude Sonnet 5.5 (Max, Default Fallback)（41.7%）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -126,66 +246,30 @@
       "sourceType": null,
       "sourceOwner": null,
       "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-      "observedAt": "2026-11-21T12:29:04Z",
+      "url": "https://artificialanalysis.ai/evaluations/mlcr-aa",
+      "observedAt": "2026-11-22T18:42:34Z",
       "publishedAt": null,
-      "source": "AA-Briefcase v1.1 official public page",
-      "benchmarkId": "aa_briefcase_v1_1",
-      "benchmarkTitle": "AA-Briefcase v1.1",
-      "release": "v1.1",
-      "contentHash": "0e6526b4919ac98cbd4685ac2599b6d0793380d48dbf2c00af92bb58a2ed5c72",
-      "unit": "raw",
-      "modelCount": 28,
+      "source": "Artificial Analysis MLCR Overall official public Dataset page",
+      "benchmarkId": "aa_mlcr_overall",
+      "benchmarkTitle": "MLCR Overall",
+      "release": "page_jsonld",
+      "contentHash": "e9e549233060dc7bc7595f0945577efda2e576ebd41759056cda3eed6d010fdc",
+      "unit": "ratio",
+      "modelCount": 29,
       "topModels": [
-        "Claude Sonnet 5.5 (Max, Default Fallback)（1813.08）",
-        "Claude Opus 5.5 (Max, Default Fallback)（1797.44）",
-        "Claude Fable 5.2 (Max, Default Fallback)（1783.12）"
+        "Claude Fable 5.2 (Max, Default Fallback)（43.9%）",
+        "GPT-6 Astra (Max)（41.7%）",
+        "Claude Sonnet 5.5 (Max, Default Fallback)（41.7%）"
       ],
       "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-        "contentHash": "1ea1b56b7cebfb00e5beed84d4fc5bcb5017f9697e87a03f4371514a491639f5"
-      }
-    },
-    {
-      "eventId": "4283a45359f92fd93eb0b1e8337257e9",
-      "family": "benchmark",
-      "eventType": "score_changed",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "normal",
-      "title": "Tencent Hy4 分数变化",
-      "summary": "AA-Briefcase v1.1 分数从 1445.72 变为 1445.2（-0.52）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "Tencent Hy4",
-      "modelRef": "benchmark:Tencent Hy4",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-      "observedAt": "2026-11-21T12:29:04Z",
-      "publishedAt": null,
-      "source": "AA-Briefcase v1.1 official public page",
-      "benchmarkId": "aa_briefcase_v1_1",
-      "benchmarkTitle": "AA-Briefcase v1.1",
-      "release": "v1.1",
-      "previousScore": 1445.72,
-      "score": 1445.2,
-      "delta": -0.5199999999999818,
-      "unit": "raw",
-      "modelIdentity": "aa_briefcase_v1_1:Tencent Hy4",
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
-        "contentHash": "1ea1b56b7cebfb00e5beed84d4fc5bcb5017f9697e87a03f4371514a491639f5"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
+        "contentHash": "ae07e69c3308f864b8ceb0917235b7aba0c82373c935206b72638c3305fe2d6e"
       }
     }
   ],
   "eventCount": 2,
   "provenance": {
-    "workflowRunId": "45019556133",
+    "workflowRunId": "45056593807",
     "mainCommit": "9a930017abb4e4815f4e3e5fa183b528a75d5182"
   }
 }
