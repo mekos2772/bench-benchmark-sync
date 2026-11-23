@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-11-22T23:50:20Z",
-  "windowStart": "2026-11-21T23:50:20Z",
+  "generatedAt": "2026-11-23T14:24:14Z",
+  "windowStart": "2026-11-22T14:24:14Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -10,31 +10,32 @@
     "benchmark"
   ],
   "models": {
-    "hf:inclusionAI/LingSante-3.1-flash-MXFP4": {
-      "canonicalId": "hf:inclusionAI/LingSante-3.1-flash-MXFP4",
-      "provider": "InclusionAI",
-      "modelId": "inclusionAI/LingSante-3.1-flash-MXFP4",
-      "displayName": "LingSante-3.1-flash-MXFP4",
+    "hf:tencent/WeMM-Ecom-35B-A3B-GPTQ": {
+      "canonicalId": "hf:tencent/WeMM-Ecom-35B-A3B-GPTQ",
+      "provider": "Tencent",
+      "modelId": "tencent/WeMM-Ecom-35B-A3B-GPTQ",
+      "displayName": "WeMM-Ecom-35B-A3B-GPTQ",
       "version": null,
       "aliases": [],
-      "releaseDate": "2026-11-22T03:19:38Z",
+      "releaseDate": "2026-11-23T06:05:01Z",
       "status": "available",
       "deprecationDate": null,
       "releaseType": "open_weights_release",
       "access": "open_weights",
       "modalities": {
         "input": [
-          "text"
+          "text",
+          "image"
         ],
         "output": [
           "text"
         ]
       },
       "capabilities": [],
-      "parameterCount": 294289983808,
-      "license": "mit",
+      "parameterCount": 5954701156,
+      "license": "apache-2.0",
       "technicalReportUrl": null,
-      "description": "*LingSante-3.1-flash-MXFP4** is an open-weight Mixture-of-Experts model that combines complex medical reasoning, professional healthcare communication, evidence-based deep research, and long-horizon medical tasks. Built on LingSante-3.1-flash, it has **approximately 560 billion parameters in the main model**, activates **approximately 25 billion parameters per token**, and has a configured **262,144-token context window**. Real-world medical tasks present challenges that go beyond general intelligence, including incomplete health information, substantial patient heterogeneity, and strict opera",
+      "description": "*WeMM-Ecom-35B-A3B-GPTQ** is the **GPTQ W4A16** quantized release of WeMM-Ecom-35B-A3B, developed by **WeChat Vision, Tencent**. It brings fine-grained e-commerce understanding, broad visual-language capabilities, and **hybrid thinking** to quantized deployment. The WeMM-Ecom family delivers leading e-commerce performance, with WeMM-Ecom-35B-A3B outperforming open-source models with hundreds of billions of parameters. Across model sizes, it also maintains general-purpose capabilities on par with state-of-the-art models of comparable size.",
       "contextWindow": 262144,
       "maxInputTokens": null,
       "maxOutputTokens": null,
@@ -47,151 +48,1644 @@
       "availability": [
         "Hugging Face"
       ],
-      "officialUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
+      "officialUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
       "documentationUrl": null,
-      "modelCardUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-      "hubRepo": "inclusionAI/LingSante-3.1-flash-MXFP4",
+      "modelCardUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+      "hubRepo": "tencent/WeMM-Ecom-35B-A3B-GPTQ",
       "sourceType": "hub_official_org",
-      "sourceOwner": "InclusionAI",
+      "sourceOwner": "Tencent",
       "evidence": [
         {
           "field": "canonicalId",
-          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-          "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+          "observedAt": "2026-11-23T06:05:01Z",
+          "contentHash": "00ce8466d6e67d5b477c24d8cb9bd77d80b471d85a9abacd8f7581a8b8a6d56d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "provider",
-          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-          "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+          "observedAt": "2026-11-23T06:05:01Z",
+          "contentHash": "00ce8466d6e67d5b477c24d8cb9bd77d80b471d85a9abacd8f7581a8b8a6d56d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelId",
-          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-          "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+          "observedAt": "2026-11-23T06:05:01Z",
+          "contentHash": "00ce8466d6e67d5b477c24d8cb9bd77d80b471d85a9abacd8f7581a8b8a6d56d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "displayName",
-          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-          "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+          "observedAt": "2026-11-23T06:05:01Z",
+          "contentHash": "00ce8466d6e67d5b477c24d8cb9bd77d80b471d85a9abacd8f7581a8b8a6d56d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseDate",
-          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-          "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+          "observedAt": "2026-11-23T06:05:01Z",
+          "contentHash": "00ce8466d6e67d5b477c24d8cb9bd77d80b471d85a9abacd8f7581a8b8a6d56d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "status",
-          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-          "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+          "observedAt": "2026-11-23T06:05:01Z",
+          "contentHash": "00ce8466d6e67d5b477c24d8cb9bd77d80b471d85a9abacd8f7581a8b8a6d56d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseType",
-          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-          "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+          "observedAt": "2026-11-23T06:05:01Z",
+          "contentHash": "00ce8466d6e67d5b477c24d8cb9bd77d80b471d85a9abacd8f7581a8b8a6d56d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "access",
-          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-          "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+          "observedAt": "2026-11-23T06:05:01Z",
+          "contentHash": "00ce8466d6e67d5b477c24d8cb9bd77d80b471d85a9abacd8f7581a8b8a6d56d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "parameterCount",
-          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-          "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+          "observedAt": "2026-11-23T06:05:01Z",
+          "contentHash": "00ce8466d6e67d5b477c24d8cb9bd77d80b471d85a9abacd8f7581a8b8a6d56d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "license",
-          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-          "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+          "observedAt": "2026-11-23T06:05:01Z",
+          "contentHash": "00ce8466d6e67d5b477c24d8cb9bd77d80b471d85a9abacd8f7581a8b8a6d56d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "description",
-          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-          "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+          "observedAt": "2026-11-23T06:05:01Z",
+          "contentHash": "00ce8466d6e67d5b477c24d8cb9bd77d80b471d85a9abacd8f7581a8b8a6d56d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "contextWindow",
-          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-          "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+          "observedAt": "2026-11-23T06:05:01Z",
+          "contentHash": "00ce8466d6e67d5b477c24d8cb9bd77d80b471d85a9abacd8f7581a8b8a6d56d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "officialUrl",
-          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-          "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+          "observedAt": "2026-11-23T06:05:01Z",
+          "contentHash": "00ce8466d6e67d5b477c24d8cb9bd77d80b471d85a9abacd8f7581a8b8a6d56d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelCardUrl",
-          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-          "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+          "observedAt": "2026-11-23T06:05:01Z",
+          "contentHash": "00ce8466d6e67d5b477c24d8cb9bd77d80b471d85a9abacd8f7581a8b8a6d56d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "hubRepo",
-          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-          "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+          "observedAt": "2026-11-23T06:05:01Z",
+          "contentHash": "00ce8466d6e67d5b477c24d8cb9bd77d80b471d85a9abacd8f7581a8b8a6d56d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "sourceOwner",
-          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-          "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+          "observedAt": "2026-11-23T06:05:01Z",
+          "contentHash": "00ce8466d6e67d5b477c24d8cb9bd77d80b471d85a9abacd8f7581a8b8a6d56d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "availability",
-          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-          "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+          "observedAt": "2026-11-23T06:05:01Z",
+          "contentHash": "00ce8466d6e67d5b477c24d8cb9bd77d80b471d85a9abacd8f7581a8b8a6d56d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modalities",
-          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-          "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+          "observedAt": "2026-11-23T06:05:01Z",
+          "contentHash": "00ce8466d6e67d5b477c24d8cb9bd77d80b471d85a9abacd8f7581a8b8a6d56d",
           "sourceType": "hub_official_org"
+        }
+      ]
+    },
+    "hf:tencent/WeMM-Ecom-9B-GPTQ": {
+      "canonicalId": "hf:tencent/WeMM-Ecom-9B-GPTQ",
+      "provider": "Tencent",
+      "modelId": "tencent/WeMM-Ecom-9B-GPTQ",
+      "displayName": "WeMM-Ecom-9B-GPTQ",
+      "version": null,
+      "aliases": [],
+      "releaseDate": "2026-11-23T06:04:47Z",
+      "status": "available",
+      "deprecationDate": null,
+      "releaseType": "open_weights_release",
+      "access": "open_weights",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [],
+      "parameterCount": 9409813744,
+      "license": "apache-2.0",
+      "technicalReportUrl": null,
+      "description": "*WeMM-Ecom-9B-GPTQ** is the **GPTQ W4A16** quantized release of WeMM-Ecom-9B, developed by **WeChat Vision, Tencent**. It brings fine-grained e-commerce understanding, broad visual-language capabilities, and **hybrid thinking** to quantized deployment. The WeMM-Ecom family delivers leading e-commerce performance, with WeMM-Ecom-35B-A3B outperforming open-source models with hundreds of billions of parameters. Across model sizes, it also maintains general-purpose capabilities on par with state-of-the-art models of comparable size.",
+      "contextWindow": 262144,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [
+        "Hugging Face"
+      ],
+      "officialUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+      "documentationUrl": null,
+      "modelCardUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+      "hubRepo": "tencent/WeMM-Ecom-9B-GPTQ",
+      "sourceType": "hub_official_org",
+      "sourceOwner": "Tencent",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+          "observedAt": "2026-11-23T06:04:47Z",
+          "contentHash": "b976737b9f448f79f8ba3331f29e8b2a81a870ec56741d65dce1a80198ebb5cb",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "provider",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+          "observedAt": "2026-11-23T06:04:47Z",
+          "contentHash": "b976737b9f448f79f8ba3331f29e8b2a81a870ec56741d65dce1a80198ebb5cb",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+          "observedAt": "2026-11-23T06:04:47Z",
+          "contentHash": "b976737b9f448f79f8ba3331f29e8b2a81a870ec56741d65dce1a80198ebb5cb",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+          "observedAt": "2026-11-23T06:04:47Z",
+          "contentHash": "b976737b9f448f79f8ba3331f29e8b2a81a870ec56741d65dce1a80198ebb5cb",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "releaseDate",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+          "observedAt": "2026-11-23T06:04:47Z",
+          "contentHash": "b976737b9f448f79f8ba3331f29e8b2a81a870ec56741d65dce1a80198ebb5cb",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+          "observedAt": "2026-11-23T06:04:47Z",
+          "contentHash": "b976737b9f448f79f8ba3331f29e8b2a81a870ec56741d65dce1a80198ebb5cb",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "releaseType",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+          "observedAt": "2026-11-23T06:04:47Z",
+          "contentHash": "b976737b9f448f79f8ba3331f29e8b2a81a870ec56741d65dce1a80198ebb5cb",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+          "observedAt": "2026-11-23T06:04:47Z",
+          "contentHash": "b976737b9f448f79f8ba3331f29e8b2a81a870ec56741d65dce1a80198ebb5cb",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "parameterCount",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+          "observedAt": "2026-11-23T06:04:47Z",
+          "contentHash": "b976737b9f448f79f8ba3331f29e8b2a81a870ec56741d65dce1a80198ebb5cb",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "license",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+          "observedAt": "2026-11-23T06:04:47Z",
+          "contentHash": "b976737b9f448f79f8ba3331f29e8b2a81a870ec56741d65dce1a80198ebb5cb",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+          "observedAt": "2026-11-23T06:04:47Z",
+          "contentHash": "b976737b9f448f79f8ba3331f29e8b2a81a870ec56741d65dce1a80198ebb5cb",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "contextWindow",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+          "observedAt": "2026-11-23T06:04:47Z",
+          "contentHash": "b976737b9f448f79f8ba3331f29e8b2a81a870ec56741d65dce1a80198ebb5cb",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "officialUrl",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+          "observedAt": "2026-11-23T06:04:47Z",
+          "contentHash": "b976737b9f448f79f8ba3331f29e8b2a81a870ec56741d65dce1a80198ebb5cb",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "modelCardUrl",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+          "observedAt": "2026-11-23T06:04:47Z",
+          "contentHash": "b976737b9f448f79f8ba3331f29e8b2a81a870ec56741d65dce1a80198ebb5cb",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "hubRepo",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+          "observedAt": "2026-11-23T06:04:47Z",
+          "contentHash": "b976737b9f448f79f8ba3331f29e8b2a81a870ec56741d65dce1a80198ebb5cb",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+          "observedAt": "2026-11-23T06:04:47Z",
+          "contentHash": "b976737b9f448f79f8ba3331f29e8b2a81a870ec56741d65dce1a80198ebb5cb",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "availability",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+          "observedAt": "2026-11-23T06:04:47Z",
+          "contentHash": "b976737b9f448f79f8ba3331f29e8b2a81a870ec56741d65dce1a80198ebb5cb",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "modalities",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+          "observedAt": "2026-11-23T06:04:47Z",
+          "contentHash": "b976737b9f448f79f8ba3331f29e8b2a81a870ec56741d65dce1a80198ebb5cb",
+          "sourceType": "hub_official_org"
+        }
+      ]
+    },
+    "hf:tencent/WeMM-Ecom-4B-GPTQ": {
+      "canonicalId": "hf:tencent/WeMM-Ecom-4B-GPTQ",
+      "provider": "Tencent",
+      "modelId": "tencent/WeMM-Ecom-4B-GPTQ",
+      "displayName": "WeMM-Ecom-4B-GPTQ",
+      "version": null,
+      "aliases": [],
+      "releaseDate": "2026-11-23T06:04:32Z",
+      "status": "available",
+      "deprecationDate": null,
+      "releaseType": "open_weights_release",
+      "access": "open_weights",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [],
+      "parameterCount": 4539265536,
+      "license": "apache-2.0",
+      "technicalReportUrl": null,
+      "description": "*WeMM-Ecom-4B-GPTQ** is the **GPTQ W4A16** quantized release of WeMM-Ecom-4B, developed by **WeChat Vision, Tencent**. It brings fine-grained e-commerce understanding, broad visual-language capabilities, and **hybrid thinking** to quantized deployment. The WeMM-Ecom family delivers leading e-commerce performance, with WeMM-Ecom-35B-A3B outperforming open-source models with hundreds of billions of parameters. Across model sizes, it also maintains general-purpose capabilities on par with state-of-the-art models of comparable size.",
+      "contextWindow": 262144,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [
+        "Hugging Face"
+      ],
+      "officialUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+      "documentationUrl": null,
+      "modelCardUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+      "hubRepo": "tencent/WeMM-Ecom-4B-GPTQ",
+      "sourceType": "hub_official_org",
+      "sourceOwner": "Tencent",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+          "observedAt": "2026-11-23T06:04:32Z",
+          "contentHash": "7d9e766d15bd34afe61e2f1a50a0f9a6b817c1282167b23488fac0997393ae7c",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "provider",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+          "observedAt": "2026-11-23T06:04:32Z",
+          "contentHash": "7d9e766d15bd34afe61e2f1a50a0f9a6b817c1282167b23488fac0997393ae7c",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+          "observedAt": "2026-11-23T06:04:32Z",
+          "contentHash": "7d9e766d15bd34afe61e2f1a50a0f9a6b817c1282167b23488fac0997393ae7c",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+          "observedAt": "2026-11-23T06:04:32Z",
+          "contentHash": "7d9e766d15bd34afe61e2f1a50a0f9a6b817c1282167b23488fac0997393ae7c",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "releaseDate",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+          "observedAt": "2026-11-23T06:04:32Z",
+          "contentHash": "7d9e766d15bd34afe61e2f1a50a0f9a6b817c1282167b23488fac0997393ae7c",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+          "observedAt": "2026-11-23T06:04:32Z",
+          "contentHash": "7d9e766d15bd34afe61e2f1a50a0f9a6b817c1282167b23488fac0997393ae7c",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "releaseType",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+          "observedAt": "2026-11-23T06:04:32Z",
+          "contentHash": "7d9e766d15bd34afe61e2f1a50a0f9a6b817c1282167b23488fac0997393ae7c",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+          "observedAt": "2026-11-23T06:04:32Z",
+          "contentHash": "7d9e766d15bd34afe61e2f1a50a0f9a6b817c1282167b23488fac0997393ae7c",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "parameterCount",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+          "observedAt": "2026-11-23T06:04:32Z",
+          "contentHash": "7d9e766d15bd34afe61e2f1a50a0f9a6b817c1282167b23488fac0997393ae7c",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "license",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+          "observedAt": "2026-11-23T06:04:32Z",
+          "contentHash": "7d9e766d15bd34afe61e2f1a50a0f9a6b817c1282167b23488fac0997393ae7c",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+          "observedAt": "2026-11-23T06:04:32Z",
+          "contentHash": "7d9e766d15bd34afe61e2f1a50a0f9a6b817c1282167b23488fac0997393ae7c",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "contextWindow",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+          "observedAt": "2026-11-23T06:04:32Z",
+          "contentHash": "7d9e766d15bd34afe61e2f1a50a0f9a6b817c1282167b23488fac0997393ae7c",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "officialUrl",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+          "observedAt": "2026-11-23T06:04:32Z",
+          "contentHash": "7d9e766d15bd34afe61e2f1a50a0f9a6b817c1282167b23488fac0997393ae7c",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "modelCardUrl",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+          "observedAt": "2026-11-23T06:04:32Z",
+          "contentHash": "7d9e766d15bd34afe61e2f1a50a0f9a6b817c1282167b23488fac0997393ae7c",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "hubRepo",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+          "observedAt": "2026-11-23T06:04:32Z",
+          "contentHash": "7d9e766d15bd34afe61e2f1a50a0f9a6b817c1282167b23488fac0997393ae7c",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+          "observedAt": "2026-11-23T06:04:32Z",
+          "contentHash": "7d9e766d15bd34afe61e2f1a50a0f9a6b817c1282167b23488fac0997393ae7c",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "availability",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+          "observedAt": "2026-11-23T06:04:32Z",
+          "contentHash": "7d9e766d15bd34afe61e2f1a50a0f9a6b817c1282167b23488fac0997393ae7c",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "modalities",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+          "observedAt": "2026-11-23T06:04:32Z",
+          "contentHash": "7d9e766d15bd34afe61e2f1a50a0f9a6b817c1282167b23488fac0997393ae7c",
+          "sourceType": "hub_official_org"
+        }
+      ]
+    },
+    "hf:tencent/WeMM-Ecom-2B-GPTQ": {
+      "canonicalId": "hf:tencent/WeMM-Ecom-2B-GPTQ",
+      "provider": "Tencent",
+      "modelId": "tencent/WeMM-Ecom-2B-GPTQ",
+      "displayName": "WeMM-Ecom-2B-GPTQ",
+      "version": null,
+      "aliases": [],
+      "releaseDate": "2026-11-23T06:04:19Z",
+      "status": "available",
+      "deprecationDate": null,
+      "releaseType": "open_weights_release",
+      "access": "open_weights",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [],
+      "parameterCount": 2213241664,
+      "license": "apache-2.0",
+      "technicalReportUrl": null,
+      "description": "*WeMM-Ecom-2B-GPTQ** is the **GPTQ W4A16** quantized release of WeMM-Ecom-2B, developed by **WeChat Vision, Tencent**. It brings fine-grained e-commerce understanding, broad visual-language capabilities, and **hybrid thinking** to quantized deployment. The WeMM-Ecom family delivers leading e-commerce performance, with WeMM-Ecom-35B-A3B outperforming open-source models with hundreds of billions of parameters. Across model sizes, it also maintains general-purpose capabilities on par with state-of-the-art models of comparable size.",
+      "contextWindow": 262144,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [
+        "Hugging Face"
+      ],
+      "officialUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+      "documentationUrl": null,
+      "modelCardUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+      "hubRepo": "tencent/WeMM-Ecom-2B-GPTQ",
+      "sourceType": "hub_official_org",
+      "sourceOwner": "Tencent",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+          "observedAt": "2026-11-23T06:04:19Z",
+          "contentHash": "4f9885f9c9acf792fd040cf9b7d48cbe91c5f854fcfb465f11c4565f656a4405",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "provider",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+          "observedAt": "2026-11-23T06:04:19Z",
+          "contentHash": "4f9885f9c9acf792fd040cf9b7d48cbe91c5f854fcfb465f11c4565f656a4405",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+          "observedAt": "2026-11-23T06:04:19Z",
+          "contentHash": "4f9885f9c9acf792fd040cf9b7d48cbe91c5f854fcfb465f11c4565f656a4405",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+          "observedAt": "2026-11-23T06:04:19Z",
+          "contentHash": "4f9885f9c9acf792fd040cf9b7d48cbe91c5f854fcfb465f11c4565f656a4405",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "releaseDate",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+          "observedAt": "2026-11-23T06:04:19Z",
+          "contentHash": "4f9885f9c9acf792fd040cf9b7d48cbe91c5f854fcfb465f11c4565f656a4405",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+          "observedAt": "2026-11-23T06:04:19Z",
+          "contentHash": "4f9885f9c9acf792fd040cf9b7d48cbe91c5f854fcfb465f11c4565f656a4405",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "releaseType",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+          "observedAt": "2026-11-23T06:04:19Z",
+          "contentHash": "4f9885f9c9acf792fd040cf9b7d48cbe91c5f854fcfb465f11c4565f656a4405",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+          "observedAt": "2026-11-23T06:04:19Z",
+          "contentHash": "4f9885f9c9acf792fd040cf9b7d48cbe91c5f854fcfb465f11c4565f656a4405",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "parameterCount",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+          "observedAt": "2026-11-23T06:04:19Z",
+          "contentHash": "4f9885f9c9acf792fd040cf9b7d48cbe91c5f854fcfb465f11c4565f656a4405",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "license",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+          "observedAt": "2026-11-23T06:04:19Z",
+          "contentHash": "4f9885f9c9acf792fd040cf9b7d48cbe91c5f854fcfb465f11c4565f656a4405",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+          "observedAt": "2026-11-23T06:04:19Z",
+          "contentHash": "4f9885f9c9acf792fd040cf9b7d48cbe91c5f854fcfb465f11c4565f656a4405",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "contextWindow",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+          "observedAt": "2026-11-23T06:04:19Z",
+          "contentHash": "4f9885f9c9acf792fd040cf9b7d48cbe91c5f854fcfb465f11c4565f656a4405",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "officialUrl",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+          "observedAt": "2026-11-23T06:04:19Z",
+          "contentHash": "4f9885f9c9acf792fd040cf9b7d48cbe91c5f854fcfb465f11c4565f656a4405",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "modelCardUrl",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+          "observedAt": "2026-11-23T06:04:19Z",
+          "contentHash": "4f9885f9c9acf792fd040cf9b7d48cbe91c5f854fcfb465f11c4565f656a4405",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "hubRepo",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+          "observedAt": "2026-11-23T06:04:19Z",
+          "contentHash": "4f9885f9c9acf792fd040cf9b7d48cbe91c5f854fcfb465f11c4565f656a4405",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+          "observedAt": "2026-11-23T06:04:19Z",
+          "contentHash": "4f9885f9c9acf792fd040cf9b7d48cbe91c5f854fcfb465f11c4565f656a4405",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "availability",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+          "observedAt": "2026-11-23T06:04:19Z",
+          "contentHash": "4f9885f9c9acf792fd040cf9b7d48cbe91c5f854fcfb465f11c4565f656a4405",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "modalities",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+          "observedAt": "2026-11-23T06:04:19Z",
+          "contentHash": "4f9885f9c9acf792fd040cf9b7d48cbe91c5f854fcfb465f11c4565f656a4405",
+          "sourceType": "hub_official_org"
+        }
+      ]
+    },
+    "hf:tencent/WeMM-Ecom-0.8B-GPTQ": {
+      "canonicalId": "hf:tencent/WeMM-Ecom-0.8B-GPTQ",
+      "provider": "Tencent",
+      "modelId": "tencent/WeMM-Ecom-0.8B-GPTQ",
+      "displayName": "WeMM-Ecom-0.8B-GPTQ",
+      "version": null,
+      "aliases": [],
+      "releaseDate": "2026-11-23T06:04:04Z",
+      "status": "available",
+      "deprecationDate": null,
+      "releaseType": "open_weights_release",
+      "access": "open_weights",
+      "modalities": {
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "capabilities": [],
+      "parameterCount": 852985920,
+      "license": "apache-2.0",
+      "technicalReportUrl": null,
+      "description": "*WeMM-Ecom-0.8B-GPTQ** is the **GPTQ W4A16** quantized release of WeMM-Ecom-0.8B, developed by **WeChat Vision, Tencent**. It brings fine-grained e-commerce understanding, broad visual-language capabilities, and **hybrid thinking** to quantized deployment. The WeMM-Ecom family delivers leading e-commerce performance, with WeMM-Ecom-35B-A3B outperforming open-source models with hundreds of billions of parameters. Across model sizes, it also maintains general-purpose capabilities on par with state-of-the-art models of comparable size.",
+      "contextWindow": 262144,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [
+        "Hugging Face"
+      ],
+      "officialUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+      "documentationUrl": null,
+      "modelCardUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+      "hubRepo": "tencent/WeMM-Ecom-0.8B-GPTQ",
+      "sourceType": "hub_official_org",
+      "sourceOwner": "Tencent",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+          "observedAt": "2026-11-23T06:04:04Z",
+          "contentHash": "85962bbad307c6f0fe3ec5758deff33d589b98bb32cd1c5702d37f409af89149",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "provider",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+          "observedAt": "2026-11-23T06:04:04Z",
+          "contentHash": "85962bbad307c6f0fe3ec5758deff33d589b98bb32cd1c5702d37f409af89149",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+          "observedAt": "2026-11-23T06:04:04Z",
+          "contentHash": "85962bbad307c6f0fe3ec5758deff33d589b98bb32cd1c5702d37f409af89149",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+          "observedAt": "2026-11-23T06:04:04Z",
+          "contentHash": "85962bbad307c6f0fe3ec5758deff33d589b98bb32cd1c5702d37f409af89149",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "releaseDate",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+          "observedAt": "2026-11-23T06:04:04Z",
+          "contentHash": "85962bbad307c6f0fe3ec5758deff33d589b98bb32cd1c5702d37f409af89149",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+          "observedAt": "2026-11-23T06:04:04Z",
+          "contentHash": "85962bbad307c6f0fe3ec5758deff33d589b98bb32cd1c5702d37f409af89149",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "releaseType",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+          "observedAt": "2026-11-23T06:04:04Z",
+          "contentHash": "85962bbad307c6f0fe3ec5758deff33d589b98bb32cd1c5702d37f409af89149",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+          "observedAt": "2026-11-23T06:04:04Z",
+          "contentHash": "85962bbad307c6f0fe3ec5758deff33d589b98bb32cd1c5702d37f409af89149",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "parameterCount",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+          "observedAt": "2026-11-23T06:04:04Z",
+          "contentHash": "85962bbad307c6f0fe3ec5758deff33d589b98bb32cd1c5702d37f409af89149",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "license",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+          "observedAt": "2026-11-23T06:04:04Z",
+          "contentHash": "85962bbad307c6f0fe3ec5758deff33d589b98bb32cd1c5702d37f409af89149",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "description",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+          "observedAt": "2026-11-23T06:04:04Z",
+          "contentHash": "85962bbad307c6f0fe3ec5758deff33d589b98bb32cd1c5702d37f409af89149",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "contextWindow",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+          "observedAt": "2026-11-23T06:04:04Z",
+          "contentHash": "85962bbad307c6f0fe3ec5758deff33d589b98bb32cd1c5702d37f409af89149",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "officialUrl",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+          "observedAt": "2026-11-23T06:04:04Z",
+          "contentHash": "85962bbad307c6f0fe3ec5758deff33d589b98bb32cd1c5702d37f409af89149",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "modelCardUrl",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+          "observedAt": "2026-11-23T06:04:04Z",
+          "contentHash": "85962bbad307c6f0fe3ec5758deff33d589b98bb32cd1c5702d37f409af89149",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "hubRepo",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+          "observedAt": "2026-11-23T06:04:04Z",
+          "contentHash": "85962bbad307c6f0fe3ec5758deff33d589b98bb32cd1c5702d37f409af89149",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+          "observedAt": "2026-11-23T06:04:04Z",
+          "contentHash": "85962bbad307c6f0fe3ec5758deff33d589b98bb32cd1c5702d37f409af89149",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "availability",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+          "observedAt": "2026-11-23T06:04:04Z",
+          "contentHash": "85962bbad307c6f0fe3ec5758deff33d589b98bb32cd1c5702d37f409af89149",
+          "sourceType": "hub_official_org"
+        },
+        {
+          "field": "modalities",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+          "observedAt": "2026-11-23T06:04:04Z",
+          "contentHash": "85962bbad307c6f0fe3ec5758deff33d589b98bb32cd1c5702d37f409af89149",
+          "sourceType": "hub_official_org"
+        }
+      ]
+    },
+    "benchmark:Kimi K3.1 Pro": {
+      "canonicalId": "benchmark:Kimi K3.1 Pro",
+      "provider": null,
+      "modelId": "Kimi K3.1 Pro",
+      "displayName": "Kimi K3.1 Pro",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "AA-Briefcase v1.1 official public page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "590c17f4291d8b1691b1dfca82012bcf3c6a83187deb187d8a7ce3e7b709cce4",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "590c17f4291d8b1691b1dfca82012bcf3c6a83187deb187d8a7ce3e7b709cce4",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "590c17f4291d8b1691b1dfca82012bcf3c6a83187deb187d8a7ce3e7b709cce4",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "590c17f4291d8b1691b1dfca82012bcf3c6a83187deb187d8a7ce3e7b709cce4",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "590c17f4291d8b1691b1dfca82012bcf3c6a83187deb187d8a7ce3e7b709cce4",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "590c17f4291d8b1691b1dfca82012bcf3c6a83187deb187d8a7ce3e7b709cce4",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "590c17f4291d8b1691b1dfca82012bcf3c6a83187deb187d8a7ce3e7b709cce4",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Qwen4 Max": {
+      "canonicalId": "benchmark:Qwen4 Max",
+      "provider": null,
+      "modelId": "Qwen4 Max",
+      "displayName": "Qwen4 Max",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "AA-Briefcase v1.1 official public page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "86a996ba22cf08aaa4b1bef5a3d7dc525953d05f6a00788c9997822e6d1d2740",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "86a996ba22cf08aaa4b1bef5a3d7dc525953d05f6a00788c9997822e6d1d2740",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "86a996ba22cf08aaa4b1bef5a3d7dc525953d05f6a00788c9997822e6d1d2740",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "86a996ba22cf08aaa4b1bef5a3d7dc525953d05f6a00788c9997822e6d1d2740",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "86a996ba22cf08aaa4b1bef5a3d7dc525953d05f6a00788c9997822e6d1d2740",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "86a996ba22cf08aaa4b1bef5a3d7dc525953d05f6a00788c9997822e6d1d2740",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "86a996ba22cf08aaa4b1bef5a3d7dc525953d05f6a00788c9997822e6d1d2740",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Claude Haiku 5.5 (Max)": {
+      "canonicalId": "benchmark:Claude Haiku 5.5 (Max)",
+      "provider": null,
+      "modelId": "Claude Haiku 5.5 (Max)",
+      "displayName": "Claude Haiku 5.5 (Max)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "e690506d248ac8d8c93929a971aa0153d11fa83eb266c5abd3b3b3ca5f8d38c0",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "e690506d248ac8d8c93929a971aa0153d11fa83eb266c5abd3b3b3ca5f8d38c0",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "e690506d248ac8d8c93929a971aa0153d11fa83eb266c5abd3b3b3ca5f8d38c0",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "e690506d248ac8d8c93929a971aa0153d11fa83eb266c5abd3b3b3ca5f8d38c0",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "e690506d248ac8d8c93929a971aa0153d11fa83eb266c5abd3b3b3ca5f8d38c0",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "e690506d248ac8d8c93929a971aa0153d11fa83eb266c5abd3b3b3ca5f8d38c0",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "e690506d248ac8d8c93929a971aa0153d11fa83eb266c5abd3b3b3ca5f8d38c0",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:GLM-5.3 (Max)": {
+      "canonicalId": "benchmark:GLM-5.3 (Max)",
+      "provider": null,
+      "modelId": "GLM-5.3 (Max)",
+      "displayName": "GLM-5.3 (Max)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "401e811351dc66a412ad34776ac330f10599ed6893a01e10a0232b6a17b93ea7",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "401e811351dc66a412ad34776ac330f10599ed6893a01e10a0232b6a17b93ea7",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "401e811351dc66a412ad34776ac330f10599ed6893a01e10a0232b6a17b93ea7",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "401e811351dc66a412ad34776ac330f10599ed6893a01e10a0232b6a17b93ea7",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "401e811351dc66a412ad34776ac330f10599ed6893a01e10a0232b6a17b93ea7",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "401e811351dc66a412ad34776ac330f10599ed6893a01e10a0232b6a17b93ea7",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "401e811351dc66a412ad34776ac330f10599ed6893a01e10a0232b6a17b93ea7",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:GPT-6 Luna (Max)": {
+      "canonicalId": "benchmark:GPT-6 Luna (Max)",
+      "provider": null,
+      "modelId": "GPT-6 Luna (Max)",
+      "displayName": "GPT-6 Luna (Max)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "2a979ca75fecffc5ebd1ed071b1220533fb10b199fc34c3c3592edc18b97bb1f",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "2a979ca75fecffc5ebd1ed071b1220533fb10b199fc34c3c3592edc18b97bb1f",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "2a979ca75fecffc5ebd1ed071b1220533fb10b199fc34c3c3592edc18b97bb1f",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "2a979ca75fecffc5ebd1ed071b1220533fb10b199fc34c3c3592edc18b97bb1f",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "2a979ca75fecffc5ebd1ed071b1220533fb10b199fc34c3c3592edc18b97bb1f",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "2a979ca75fecffc5ebd1ed071b1220533fb10b199fc34c3c3592edc18b97bb1f",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "2a979ca75fecffc5ebd1ed071b1220533fb10b199fc34c3c3592edc18b97bb1f",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:GPT-6.1 Terra (Max)": {
+      "canonicalId": "benchmark:GPT-6.1 Terra (Max)",
+      "provider": null,
+      "modelId": "GPT-6.1 Terra (Max)",
+      "displayName": "GPT-6.1 Terra (Max)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "d08e9651333bbfba55a6c00596b653c1e1bfde5661bf5928b3e9f8e223d93a81",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "d08e9651333bbfba55a6c00596b653c1e1bfde5661bf5928b3e9f8e223d93a81",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "d08e9651333bbfba55a6c00596b653c1e1bfde5661bf5928b3e9f8e223d93a81",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "d08e9651333bbfba55a6c00596b653c1e1bfde5661bf5928b3e9f8e223d93a81",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "d08e9651333bbfba55a6c00596b653c1e1bfde5661bf5928b3e9f8e223d93a81",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "d08e9651333bbfba55a6c00596b653c1e1bfde5661bf5928b3e9f8e223d93a81",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "d08e9651333bbfba55a6c00596b653c1e1bfde5661bf5928b3e9f8e223d93a81",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Grok 4.7 (Xhigh)": {
+      "canonicalId": "benchmark:Grok 4.7 (Xhigh)",
+      "provider": null,
+      "modelId": "Grok 4.7 (Xhigh)",
+      "displayName": "Grok 4.7 (Xhigh)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "5209b75c0f13f2e54ca96c6bdbaeec84e036b3f3d6dd040daa128189689da71e",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "5209b75c0f13f2e54ca96c6bdbaeec84e036b3f3d6dd040daa128189689da71e",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "5209b75c0f13f2e54ca96c6bdbaeec84e036b3f3d6dd040daa128189689da71e",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "5209b75c0f13f2e54ca96c6bdbaeec84e036b3f3d6dd040daa128189689da71e",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "5209b75c0f13f2e54ca96c6bdbaeec84e036b3f3d6dd040daa128189689da71e",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "5209b75c0f13f2e54ca96c6bdbaeec84e036b3f3d6dd040daa128189689da71e",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "5209b75c0f13f2e54ca96c6bdbaeec84e036b3f3d6dd040daa128189689da71e",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:MiMo-V2.6-Pro": {
+      "canonicalId": "benchmark:MiMo-V2.6-Pro",
+      "provider": null,
+      "modelId": "MiMo-V2.6-Pro",
+      "displayName": "MiMo-V2.6-Pro",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "5dd7d3873cd67688f1d602a3704091b929ff547bd442fccbd6dcfb6f9d61bca7",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "5dd7d3873cd67688f1d602a3704091b929ff547bd442fccbd6dcfb6f9d61bca7",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "5dd7d3873cd67688f1d602a3704091b929ff547bd442fccbd6dcfb6f9d61bca7",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "5dd7d3873cd67688f1d602a3704091b929ff547bd442fccbd6dcfb6f9d61bca7",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "5dd7d3873cd67688f1d602a3704091b929ff547bd442fccbd6dcfb6f9d61bca7",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "5dd7d3873cd67688f1d602a3704091b929ff547bd442fccbd6dcfb6f9d61bca7",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "5dd7d3873cd67688f1d602a3704091b929ff547bd442fccbd6dcfb6f9d61bca7",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:Muse Wonder Full (Max)": {
+      "canonicalId": "benchmark:Muse Wonder Full (Max)",
+      "provider": null,
+      "modelId": "Muse Wonder Full (Max)",
+      "displayName": "Muse Wonder Full (Max)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "1ebb236c5fbcb102a813407c2ace65aa0e0388c0581ea9760830a74fb1e762fa",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "1ebb236c5fbcb102a813407c2ace65aa0e0388c0581ea9760830a74fb1e762fa",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "1ebb236c5fbcb102a813407c2ace65aa0e0388c0581ea9760830a74fb1e762fa",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "1ebb236c5fbcb102a813407c2ace65aa0e0388c0581ea9760830a74fb1e762fa",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "1ebb236c5fbcb102a813407c2ace65aa0e0388c0581ea9760830a74fb1e762fa",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "1ebb236c5fbcb102a813407c2ace65aa0e0388c0581ea9760830a74fb1e762fa",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+          "observedAt": "2026-11-23T14:24:14Z",
+          "contentHash": "1ebb236c5fbcb102a813407c2ace65aa0e0388c0581ea9760830a74fb1e762fa",
+          "sourceType": "official_benchmark"
         }
       ]
     }
   },
-  "modelCount": 1,
+  "modelCount": 14,
   "sourceSummary": {
-    "official": 1,
+    "official": 5,
     "catalog": 0,
-    "benchmark": 1
+    "benchmark": 15
   },
   "events": [
     {
-      "eventId": "52b53548f8a51f8124983af8bb9ca0b0",
+      "eventId": "c6d8dbe2717b4e78e5240d9de1b4307e",
       "family": "model",
       "eventType": "official_model_release",
       "eventClass": "model_release",
@@ -200,31 +1694,608 @@
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "LingSante-3.1-flash-MXFP4 开放权重发布",
-      "summary": "InclusionAI 在官方组织发布新模型：参数量 294.3B，上下文 262,144 tokens，许可 mit。",
-      "repoId": "inclusionAI/LingSante-3.1-flash-MXFP4",
-      "repo": "inclusionAI/LingSante-3.1-flash-MXFP4",
-      "modelId": "inclusionAI/LingSante-3.1-flash-MXFP4",
-      "modelRef": "hf:inclusionAI/LingSante-3.1-flash-MXFP4",
+      "title": "WeMM-Ecom-35B-A3B-GPTQ 开放权重发布",
+      "summary": "Tencent 在官方组织发布新模型：参数量 6.0B，上下文 262,144 tokens，许可 apache-2.0。",
+      "repoId": "tencent/WeMM-Ecom-35B-A3B-GPTQ",
+      "repo": "tencent/WeMM-Ecom-35B-A3B-GPTQ",
+      "modelId": "tencent/WeMM-Ecom-35B-A3B-GPTQ",
+      "modelRef": "hf:tencent/WeMM-Ecom-35B-A3B-GPTQ",
       "sourceType": "hub_official_org",
-      "sourceOwner": "InclusionAI",
+      "sourceOwner": "Tencent",
       "evidence": [
         {
           "field": "modelRepository",
-          "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-          "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+          "observedAt": "2026-11-23T06:05:01Z",
+          "contentHash": "00ce8466d6e67d5b477c24d8cb9bd77d80b471d85a9abacd8f7581a8b8a6d56d",
           "sourceType": "hub_official_org"
         }
       ],
-      "url": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-      "observedAt": "2026-11-22T03:19:38Z",
-      "publishedAt": "2026-11-22T03:19:38Z",
-      "source": "Hugging Face · InclusionAI",
-      "eventIdentity": "open-release:inclusionAI/LingSante-3.1-flash-MXFP4",
+      "url": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+      "observedAt": "2026-11-23T06:05:01Z",
+      "publishedAt": "2026-11-23T06:05:01Z",
+      "source": "Hugging Face · Tencent",
+      "eventIdentity": "open-release:tencent/WeMM-Ecom-35B-A3B-GPTQ",
       "provenance": {
-        "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-        "contentHash": "e5634c73cf52a6df62bde5d12210c62678e459aee90afcfd731a255419edc578"
+        "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-35B-A3B-GPTQ",
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
+      }
+    },
+    {
+      "eventId": "ac88099cd59a2e710544d11783ec185a",
+      "family": "model",
+      "eventType": "official_model_release",
+      "eventClass": "model_release",
+      "trustTier": "official",
+      "priority": "P0",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "WeMM-Ecom-9B-GPTQ 开放权重发布",
+      "summary": "Tencent 在官方组织发布新模型：参数量 9.4B，上下文 262,144 tokens，许可 apache-2.0。",
+      "repoId": "tencent/WeMM-Ecom-9B-GPTQ",
+      "repo": "tencent/WeMM-Ecom-9B-GPTQ",
+      "modelId": "tencent/WeMM-Ecom-9B-GPTQ",
+      "modelRef": "hf:tencent/WeMM-Ecom-9B-GPTQ",
+      "sourceType": "hub_official_org",
+      "sourceOwner": "Tencent",
+      "evidence": [
+        {
+          "field": "modelRepository",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+          "observedAt": "2026-11-23T06:04:47Z",
+          "contentHash": "b976737b9f448f79f8ba3331f29e8b2a81a870ec56741d65dce1a80198ebb5cb",
+          "sourceType": "hub_official_org"
+        }
+      ],
+      "url": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+      "observedAt": "2026-11-23T06:04:47Z",
+      "publishedAt": "2026-11-23T06:04:47Z",
+      "source": "Hugging Face · Tencent",
+      "eventIdentity": "open-release:tencent/WeMM-Ecom-9B-GPTQ",
+      "provenance": {
+        "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-9B-GPTQ",
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
+      }
+    },
+    {
+      "eventId": "39c31238137e095a9e3f18cc08977fa3",
+      "family": "model",
+      "eventType": "official_model_release",
+      "eventClass": "model_release",
+      "trustTier": "official",
+      "priority": "P0",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "WeMM-Ecom-4B-GPTQ 开放权重发布",
+      "summary": "Tencent 在官方组织发布新模型：参数量 4.5B，上下文 262,144 tokens，许可 apache-2.0。",
+      "repoId": "tencent/WeMM-Ecom-4B-GPTQ",
+      "repo": "tencent/WeMM-Ecom-4B-GPTQ",
+      "modelId": "tencent/WeMM-Ecom-4B-GPTQ",
+      "modelRef": "hf:tencent/WeMM-Ecom-4B-GPTQ",
+      "sourceType": "hub_official_org",
+      "sourceOwner": "Tencent",
+      "evidence": [
+        {
+          "field": "modelRepository",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+          "observedAt": "2026-11-23T06:04:32Z",
+          "contentHash": "7d9e766d15bd34afe61e2f1a50a0f9a6b817c1282167b23488fac0997393ae7c",
+          "sourceType": "hub_official_org"
+        }
+      ],
+      "url": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+      "observedAt": "2026-11-23T06:04:32Z",
+      "publishedAt": "2026-11-23T06:04:32Z",
+      "source": "Hugging Face · Tencent",
+      "eventIdentity": "open-release:tencent/WeMM-Ecom-4B-GPTQ",
+      "provenance": {
+        "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-4B-GPTQ",
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
+      }
+    },
+    {
+      "eventId": "8f6c158d9e8c90cf476cd7e7dba49b65",
+      "family": "model",
+      "eventType": "official_model_release",
+      "eventClass": "model_release",
+      "trustTier": "official",
+      "priority": "P0",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "WeMM-Ecom-2B-GPTQ 开放权重发布",
+      "summary": "Tencent 在官方组织发布新模型：参数量 2.2B，上下文 262,144 tokens，许可 apache-2.0。",
+      "repoId": "tencent/WeMM-Ecom-2B-GPTQ",
+      "repo": "tencent/WeMM-Ecom-2B-GPTQ",
+      "modelId": "tencent/WeMM-Ecom-2B-GPTQ",
+      "modelRef": "hf:tencent/WeMM-Ecom-2B-GPTQ",
+      "sourceType": "hub_official_org",
+      "sourceOwner": "Tencent",
+      "evidence": [
+        {
+          "field": "modelRepository",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+          "observedAt": "2026-11-23T06:04:19Z",
+          "contentHash": "4f9885f9c9acf792fd040cf9b7d48cbe91c5f854fcfb465f11c4565f656a4405",
+          "sourceType": "hub_official_org"
+        }
+      ],
+      "url": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+      "observedAt": "2026-11-23T06:04:19Z",
+      "publishedAt": "2026-11-23T06:04:19Z",
+      "source": "Hugging Face · Tencent",
+      "eventIdentity": "open-release:tencent/WeMM-Ecom-2B-GPTQ",
+      "provenance": {
+        "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-2B-GPTQ",
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
+      }
+    },
+    {
+      "eventId": "cd9ec6c800d8f3f5320688fb5105b898",
+      "family": "model",
+      "eventType": "official_model_release",
+      "eventClass": "model_release",
+      "trustTier": "official",
+      "priority": "P0",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "WeMM-Ecom-0.8B-GPTQ 开放权重发布",
+      "summary": "Tencent 在官方组织发布新模型：参数量 853.0M，上下文 262,144 tokens，许可 apache-2.0。",
+      "repoId": "tencent/WeMM-Ecom-0.8B-GPTQ",
+      "repo": "tencent/WeMM-Ecom-0.8B-GPTQ",
+      "modelId": "tencent/WeMM-Ecom-0.8B-GPTQ",
+      "modelRef": "hf:tencent/WeMM-Ecom-0.8B-GPTQ",
+      "sourceType": "hub_official_org",
+      "sourceOwner": "Tencent",
+      "evidence": [
+        {
+          "field": "modelRepository",
+          "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+          "observedAt": "2026-11-23T06:04:04Z",
+          "contentHash": "85962bbad307c6f0fe3ec5758deff33d589b98bb32cd1c5702d37f409af89149",
+          "sourceType": "hub_official_org"
+        }
+      ],
+      "url": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+      "observedAt": "2026-11-23T06:04:04Z",
+      "publishedAt": "2026-11-23T06:04:04Z",
+      "source": "Hugging Face · Tencent",
+      "eventIdentity": "open-release:tencent/WeMM-Ecom-0.8B-GPTQ",
+      "provenance": {
+        "sourceUrl": "https://huggingface.co/tencent/WeMM-Ecom-0.8B-GPTQ",
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
+      }
+    },
+    {
+      "eventId": "0b60a2eb44a5a92c7207a3bdea072340",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Artificial Analysis Intelligence Index v5.0.1 官方数据更新",
+      "summary": "Artificial Analysis Intelligence Index v5.0.1 官方数据发生变化；共 28 个模型 · 数据版本 v5.0.1 · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（64.56）、GPT-6.2 Astra (Max)（62.14）、Gemini 4 Neon (Xhigh)（61.40）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+      "observedAt": "2026-11-23T14:24:14Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Intelligence Index v5.0.1 official public page",
+      "benchmarkId": "aa_intelligence_index_v5_0_1",
+      "benchmarkTitle": "Artificial Analysis Intelligence Index v5.0.1",
+      "release": "v5.0.1",
+      "contentHash": "9fae00e630a6ca57a58a3f1ae9b86aca78b7fc7b679899838245c9e2ff2e128e",
+      "unit": "score",
+      "modelCount": 28,
+      "topModels": [
+        "Claude Fable 5.2 (Max, Default Fallback)（64.56）",
+        "GPT-6.2 Astra (Max)（62.14）",
+        "Gemini 4 Neon (Xhigh)（61.40）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index",
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
+      }
+    },
+    {
+      "eventId": "584e08cc2aeb6f8f784ada199478e20a",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "FrontierCode 2.0 官方数据更新",
+      "summary": "FrontierCode 2.0 官方数据发生变化；共 28 个模型 · 数据版本 v2.0 · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（48.8%）、Claude Opus 5.5 (Max, Default Fallback)（46.4%）、GPT-6.2 Astra (Max)（45.4%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/frontiercode-2-0",
+      "observedAt": "2026-11-23T14:24:14Z",
+      "publishedAt": null,
+      "source": "FrontierCode-AA 2.0 official public page",
+      "benchmarkId": "aa_frontiercode_v2_0",
+      "benchmarkTitle": "FrontierCode 2.0",
+      "release": "v2.0",
+      "contentHash": "2b065f413761654d879d44bdc78a89e444723212d04d7bdb9f74eb0ab0f73f46",
+      "unit": "ratio",
+      "modelCount": 28,
+      "topModels": [
+        "Claude Fable 5.2 (Max, Default Fallback)（48.8%）",
+        "Claude Opus 5.5 (Max, Default Fallback)（46.4%）",
+        "GPT-6.2 Astra (Max)（45.4%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/frontiercode-2-0",
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
+      }
+    },
+    {
+      "eventId": "5f47c420c0b3b15f141ccb6aab12c081",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "AA-Briefcase v1.1 官方数据更新",
+      "summary": "AA-Briefcase v1.1 官方数据发生变化；共 28 个模型 · 数据版本 v1.1 · 当前前列：Claude Sonnet 5.5 (Max, Default Fallback)（1813.08）、Claude Opus 5.5 (Max, Default Fallback)（1797.44）、Claude Fable 5.2 (Max, Default Fallback)（1783.12）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/aa-briefcase",
+      "observedAt": "2026-11-23T14:24:14Z",
+      "publishedAt": null,
+      "source": "AA-Briefcase v1.1 official public page",
+      "benchmarkId": "aa_briefcase_v1_1",
+      "benchmarkTitle": "AA-Briefcase v1.1",
+      "release": "v1.1",
+      "contentHash": "58e24093c19ee3637e8d0c618742d10963dfd6611b5ecf4bc927cd1da52aed9b",
+      "unit": "raw",
+      "modelCount": 28,
+      "topModels": [
+        "Claude Sonnet 5.5 (Max, Default Fallback)（1813.08）",
+        "Claude Opus 5.5 (Max, Default Fallback)（1797.44）",
+        "Claude Fable 5.2 (Max, Default Fallback)（1783.12）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
+      }
+    },
+    {
+      "eventId": "5e7e03d5f8344dac858b50b2eb5d26b9",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "HLE-Diamond 官方数据更新",
+      "summary": "HLE-Diamond 官方数据发生变化；共 28 个模型 · 数据版本 page · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（80.2%）、GPT-6.2 Astra (Max)（72.2%）、Gemini 4 Neon (Xhigh)（71.3%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/hle-diamond",
+      "observedAt": "2026-11-23T14:24:14Z",
+      "publishedAt": null,
+      "source": "HLE-Diamond official public page",
+      "benchmarkId": "aa_hle_diamond",
+      "benchmarkTitle": "HLE-Diamond",
+      "release": "page",
+      "contentHash": "81c97952c7d7bfda5f2f3b153891d93147ffbfffef3140ac045df6ed9bfcedbd",
+      "unit": "ratio",
+      "modelCount": 28,
+      "topModels": [
+        "Claude Fable 5.2 (Max, Default Fallback)（80.2%）",
+        "GPT-6.2 Astra (Max)（72.2%）",
+        "Gemini 4 Neon (Xhigh)（71.3%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/hle-diamond",
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
+      }
+    },
+    {
+      "eventId": "4b9e9a5f80aab9a8abaaa144cea9064c",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "AutomationBench-AA 官方数据更新",
+      "summary": "AutomationBench-AA 官方数据发生变化；共 29 个模型 · 数据版本 page · 当前前列：Gemini 4 Neon (Xhigh)（79.3%）、Gemini 4 Carbon (High)（77.8%）、Gemini 4 Argon (High)（77.5%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/automationbench-aa",
+      "observedAt": "2026-11-23T14:24:14Z",
+      "publishedAt": null,
+      "source": "AutomationBench-AA official public page",
+      "benchmarkId": "aa_automationbench",
+      "benchmarkTitle": "AutomationBench-AA",
+      "release": "page",
+      "contentHash": "1e9378629f9b5f43f593d423c97228e58c16779e5fe4cba5515707c0f48a6a1a",
+      "unit": "ratio",
+      "modelCount": 29,
+      "topModels": [
+        "Gemini 4 Neon (Xhigh)（79.3%）",
+        "Gemini 4 Carbon (High)（77.8%）",
+        "Gemini 4 Argon (High)（77.5%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/automationbench-aa",
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
+      }
+    },
+    {
+      "eventId": "ca1fa2a0ae77234ec1160730937fadb3",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "GDP.pdf 官方数据更新",
+      "summary": "GDP.pdf 官方数据发生变化；共 28 个模型 · 数据版本 page · 当前前列：Muse Wonder Full (Max)（32.6%）、Kimi K3.1 Pro（31.4%）、Muse Wonder (Max)（30.6%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdp-pdf",
+      "observedAt": "2026-11-23T14:24:14Z",
+      "publishedAt": null,
+      "source": "GDP.pdf official public page",
+      "benchmarkId": "aa_gdp_pdf",
+      "benchmarkTitle": "GDP.pdf",
+      "release": "page",
+      "contentHash": "7b63e03d736515de0378cec75a784b291d00b8d0b58b3c95439a7453817bec78",
+      "unit": "ratio",
+      "modelCount": 28,
+      "topModels": [
+        "Muse Wonder Full (Max)（32.6%）",
+        "Kimi K3.1 Pro（31.4%）",
+        "Muse Wonder (Max)（30.6%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdp-pdf",
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
+      }
+    },
+    {
+      "eventId": "a83d56a28c3db0d04f42153ab91e7e34",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "CritPt v2 (Hard Subset) 官方数据更新",
+      "summary": "CritPt v2 (Hard Subset) 官方数据发生变化；共 29 个模型 · 数据版本 v2:hard · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（76.5%）、GPT-6 Astra (Medium)（72.0%）、GPT-6.2 Astra (Max)（71.5%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/critpt-v2?critpt-subset=hard",
+      "observedAt": "2026-11-23T14:24:14Z",
+      "publishedAt": null,
+      "source": "CritPt v2 (Hard Subset) official public page",
+      "benchmarkId": "aa_critpt_v2_hard",
+      "benchmarkTitle": "CritPt v2 (Hard Subset)",
+      "release": "v2:hard",
+      "contentHash": "38f558cc080d19e5093a38f3534fd08fd4b05cb7328124a52621c41f568a21c3",
+      "unit": "ratio",
+      "modelCount": 29,
+      "topModels": [
+        "Claude Fable 5.2 (Max, Default Fallback)（76.5%）",
+        "GPT-6 Astra (Medium)（72.0%）",
+        "GPT-6.2 Astra (Max)（71.5%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt-v2?critpt-subset=hard",
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
+      }
+    },
+    {
+      "eventId": "2ebbdebb580f3b850b985b6d13568a3c",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Terminal-Bench-Science 0.1 官方数据更新",
+      "summary": "Terminal-Bench-Science 0.1 官方数据发生变化；共 28 个模型 · 数据版本 v0.1 · 当前前列：GPT-6.2 Astra (Max)（78.1%）、Claude Fable 5.2 (Max, Default Fallback)（73.3%）、Gemini 4 Neon (Xhigh)（70.0%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminal-bench-science",
+      "observedAt": "2026-11-23T14:24:14Z",
+      "publishedAt": null,
+      "source": "Terminal-Bench-Science 0.1 official public page",
+      "benchmarkId": "aa_terminal_bench_science_v0_1",
+      "benchmarkTitle": "Terminal-Bench-Science 0.1",
+      "release": "v0.1",
+      "contentHash": "e353a4f78c774697eecde15e73a766205e0625ba75d2913a8bb71107801ca03c",
+      "unit": "ratio",
+      "modelCount": 28,
+      "topModels": [
+        "GPT-6.2 Astra (Max)（78.1%）",
+        "Claude Fable 5.2 (Max, Default Fallback)（73.3%）",
+        "Gemini 4 Neon (Xhigh)（70.0%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminal-bench-science",
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
+      }
+    },
+    {
+      "eventId": "67cfc5b1185c6e69926e83d2eb7aa978",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Terminal-Bench 4.0 官方数据更新",
+      "summary": "Terminal-Bench 4.0 官方数据发生变化；共 28 个模型 · 当前前列：Kimi K3.1 Pro（67.2%）、Gemini 4 Carbon (High)（65.2%）、GPT-6.2 Astra (Max)（64.1%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+      "observedAt": "2026-11-23T14:24:14Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
+      "benchmarkId": "aa_terminal_bench_v4_0",
+      "benchmarkTitle": "Terminal-Bench 4.0",
+      "release": "page_jsonld",
+      "contentHash": "cae2d0193fecb68f32ce84dfab0c5289e2aca2835cabcd0f546f90fa147a0b4c",
+      "unit": "ratio",
+      "modelCount": 28,
+      "topModels": [
+        "Kimi K3.1 Pro（67.2%）",
+        "Gemini 4 Carbon (High)（65.2%）",
+        "GPT-6.2 Astra (Max)（64.1%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
+      }
+    },
+    {
+      "eventId": "8882786be3cc316adda8000960fbe3d7",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "AA-Omniscience v1.1 官方数据更新",
+      "summary": "AA-Omniscience v1.1 官方数据发生变化；共 28 个模型 · 数据版本 v1.1 · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（66.77）、Gemini 4 Neon (Xhigh)（54.77）、Gemini 4 Carbon (High)（53.50）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/omniscience",
+      "observedAt": "2026-11-23T14:24:14Z",
+      "publishedAt": null,
+      "source": "AA-Omniscience v1.1 official public page",
+      "benchmarkId": "aa_omniscience_index_v1_1",
+      "benchmarkTitle": "AA-Omniscience v1.1",
+      "release": "v1.1",
+      "contentHash": "b78c17c23ce3661454c6739ae14f5b3edee89420d1b3b7425fb68a84fd985ab4",
+      "unit": "score",
+      "modelCount": 28,
+      "topModels": [
+        "Claude Fable 5.2 (Max, Default Fallback)（66.77）",
+        "Gemini 4 Neon (Xhigh)（54.77）",
+        "Gemini 4 Carbon (High)（53.50）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
+      }
+    },
+    {
+      "eventId": "a69764de374688f9007ef89f474aa7f7",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "GDPval-AA Elo 官方数据更新",
+      "summary": "GDPval-AA Elo 官方数据发生变化；共 27 个模型 · 当前前列：Claude Opus 5.5 (Max, Default Fallback)（1866.27）、Muse Wonder Full (Max)（1857.09）、Kimi K3.1 Pro（1855.77）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "observedAt": "2026-11-23T14:24:14Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "benchmarkId": "aa_gdpval_elo",
+      "benchmarkTitle": "GDPval-AA Elo",
+      "release": "page_jsonld",
+      "contentHash": "150134f2088b59efa61277923f79a93cc1845b30656050f1cc78b9fc95f68c42",
+      "unit": "raw",
+      "modelCount": 27,
+      "topModels": [
+        "Claude Opus 5.5 (Max, Default Fallback)（1866.27）",
+        "Muse Wonder Full (Max)（1857.09）",
+        "Kimi K3.1 Pro（1855.77）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
       }
     },
     {
@@ -263,13 +2334,122 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "e5634c73cf52a6df62bde5d12210c62678e459aee90afcfd731a255419edc578"
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
+      }
+    },
+    {
+      "eventId": "4283a45359f92fd93eb0b1e8337257e9",
+      "family": "benchmark",
+      "eventType": "score_changed",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Qwen4 Max 分数变化",
+      "summary": "AA-Briefcase v1.1 分数从 1686.07 变为 1685.07（-1）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Qwen4 Max",
+      "modelRef": "benchmark:Qwen4 Max",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/aa-briefcase",
+      "observedAt": "2026-11-23T14:24:14Z",
+      "publishedAt": null,
+      "source": "AA-Briefcase v1.1 official public page",
+      "benchmarkId": "aa_briefcase_v1_1",
+      "benchmarkTitle": "AA-Briefcase v1.1",
+      "release": "v1.1",
+      "previousScore": 1686.07,
+      "score": 1685.07,
+      "delta": -1.0,
+      "unit": "raw",
+      "modelIdentity": "aa_briefcase_v1_1:Qwen4 Max",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
+      }
+    },
+    {
+      "eventId": "5d23d9fc467c66841a32e4ccd45d0368",
+      "family": "benchmark",
+      "eventType": "score_changed",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "Qwen4 Max 分数变化",
+      "summary": "GDPval-AA Elo 分数从 1808.69 变为 1808.87（+0.18）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Qwen4 Max",
+      "modelRef": "benchmark:Qwen4 Max",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "observedAt": "2026-11-23T14:24:14Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "benchmarkId": "aa_gdpval_elo",
+      "benchmarkTitle": "GDPval-AA Elo",
+      "release": "page_jsonld",
+      "previousScore": 1808.69,
+      "score": 1808.87,
+      "delta": 0.1799999999998363,
+      "unit": "raw",
+      "modelIdentity": "aa_gdpval_elo:Qwen4 Max",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
+      }
+    },
+    {
+      "eventId": "4d7ff20484f7c183e8a1bb95261f6026",
+      "family": "benchmark",
+      "eventType": "derived_rank_changed",
+      "eventClass": "benchmark",
+      "trustTier": "derived",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "Muse Wonder Full (Max) 排名位置变化",
+      "summary": "GDPval-AA Elo 按当前分数推导的列表位置从 3 变为 2；官方 rank 未提供。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Muse Wonder Full (Max)",
+      "modelRef": "benchmark:Muse Wonder Full (Max)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "observedAt": "2026-11-23T14:24:14Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "benchmarkId": "aa_gdpval_elo",
+      "benchmarkTitle": "GDPval-AA Elo",
+      "release": "page_jsonld",
+      "previousRank": null,
+      "rank": null,
+      "previousDisplayRank": 3,
+      "displayRank": 2,
+      "rankSource": "derived",
+      "modelIdentity": "aa_gdpval_elo:Muse Wonder Full (Max)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "contentHash": "d74cb4efcb34fe213767f3515b952e8ebe6a38c6c16714a8b1e48d4801f48e2b"
       }
     }
   ],
-  "eventCount": 2,
+  "eventCount": 20,
   "provenance": {
-    "workflowRunId": "45085367741",
+    "workflowRunId": "45193788947",
     "mainCommit": "9a930017abb4e4815f4e3e5fa183b528a75d5182"
   }
 }
