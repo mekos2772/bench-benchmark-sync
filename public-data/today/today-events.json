@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-11-22T18:42:34Z",
-  "windowStart": "2026-11-21T18:42:34Z",
+  "generatedAt": "2026-11-22T23:50:20Z",
+  "windowStart": "2026-11-21T23:50:20Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -58,126 +58,126 @@
           "field": "canonicalId",
           "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
           "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "provider",
           "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
           "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelId",
           "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
           "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "displayName",
           "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
           "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseDate",
           "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
           "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "status",
           "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
           "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "releaseType",
           "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
           "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "access",
           "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
           "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "parameterCount",
           "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
           "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "license",
           "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
           "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "description",
           "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
           "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "contextWindow",
           "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
           "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "officialUrl",
           "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
           "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modelCardUrl",
           "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
           "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "hubRepo",
           "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
           "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
           "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "availability",
           "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
           "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
           "sourceType": "hub_official_org"
         },
         {
           "field": "modalities",
           "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
           "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
           "sourceType": "hub_official_org"
         }
       ]
@@ -213,7 +213,7 @@
           "field": "modelRepository",
           "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
           "observedAt": "2026-11-22T03:19:38Z",
-          "contentHash": "8b14f30bd7131104398e825ad28c19586c3885c59ec8913602ae6d8afd4bd69d",
+          "contentHash": "9e1168a08bd4a80f8af9ec5edbe3c04ddd5a5a5cab7616d95fa024f134b1ac3d",
           "sourceType": "hub_official_org"
         }
       ],
@@ -224,7 +224,7 @@
       "eventIdentity": "open-release:inclusionAI/LingSante-3.1-flash-MXFP4",
       "provenance": {
         "sourceUrl": "https://huggingface.co/inclusionAI/LingSante-3.1-flash-MXFP4",
-        "contentHash": "ae07e69c3308f864b8ceb0917235b7aba0c82373c935206b72638c3305fe2d6e"
+        "contentHash": "e5634c73cf52a6df62bde5d12210c62678e459aee90afcfd731a255419edc578"
       }
     },
     {
@@ -263,13 +263,13 @@
       ],
       "provenance": {
         "sourceUrl": "https://artificialanalysis.ai/evaluations/mlcr-aa",
-        "contentHash": "ae07e69c3308f864b8ceb0917235b7aba0c82373c935206b72638c3305fe2d6e"
+        "contentHash": "e5634c73cf52a6df62bde5d12210c62678e459aee90afcfd731a255419edc578"
       }
     }
   ],
   "eventCount": 2,
   "provenance": {
-    "workflowRunId": "45056593807",
+    "workflowRunId": "45085367741",
     "mainCommit": "9a930017abb4e4815f4e3e5fa183b528a75d5182"
   }
 }
