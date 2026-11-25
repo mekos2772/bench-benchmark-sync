@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import urllib.error
 import urllib.request
 from typing import Any
 
@@ -39,7 +40,8 @@ class DeepSWECollector(BenchmarkCollector):
                 fetch_time=context.fetch_time,
                 content_hash=None,
                 release_id=release,
-                error_message=type(exc).__name__,
+                error_message=(f"http_{exc.code}" if isinstance(exc, urllib.error.HTTPError)
+                               else type(exc).__name__),
             )
             self._last_fetch = result
             return result

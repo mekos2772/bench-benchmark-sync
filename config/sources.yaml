@@ -995,7 +995,7 @@ sources:
     models embedded in the public page; coverage is exported explicitly.
 
 - benchmark_id: artificial_analysis_intelligence_index_v5_0_2
-  status: enabled
+  status: disabled
   source_name: Artificial Analysis Intelligence Index v5.0.2 official public page
   organization: Artificial Analysis
   source_type: official_page_endpoint
@@ -1012,6 +1012,22 @@ sources:
   hash_required: true
   notes: Official heading and score label verified 2026-11-25; live payload validation required. Scores are limited to the
     models embedded in the public page; coverage is exported explicitly.
+
+- benchmark_id: artificial_analysis_intelligence_index
+  status: enabled
+  source_name: Artificial Analysis Intelligence Index official public page
+  organization: Artificial Analysis
+  source_type: official_page_endpoint
+  official_url: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
+  endpoint: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
+  fetch_method: GET
+  update_frequency: daily
+  requires_auth: false
+  evaluation_field: 'Artificial Analysis Intelligence Index: Score'
+  evidence_url: https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index
+  release_tracking: official_index_heading
+  hash_required: true
+  notes: Discover the official index release from its heading; require the verified numeric score field and preserve release identity.
 
 - benchmark_id: aa_briefcase_v1_1
   status: enabled

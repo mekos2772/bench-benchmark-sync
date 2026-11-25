@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import html
 import json
+import math
 import os
 import re
 import urllib.error
@@ -40,12 +41,16 @@ class ArtificialAnalysisCollector(BenchmarkCollector):
         try:
             raw = _read_url(self.source["endpoint"], context)
             heading, total_models = _page_metadata(raw)
+            dynamic_index = self.source.get("release_tracking") == "official_index_heading"
+            release = index_release_from_heading(heading) if dynamic_index else self.source.get("release_id")
             expected_heading = self.source.get("expected_page_heading")
             if expected_heading and heading != expected_heading:
                 raise ValueError(
                     f"AA page version changed: expected {expected_heading!r}, got {heading!r}"
                 )
             page_models = _extract_page_models(raw, str(self.source.get("evaluation_field") or ""))
+            if dynamic_index:
+                validate_index_rows(page_models, total_models)
             documents = [] if page_models else _extract_jsonld_datasets(raw)
             if not page_models and not documents:
                 raise ValueError(
@@ -72,7 +77,7 @@ class ArtificialAnalysisCollector(BenchmarkCollector):
                 payload=payload,
                 fetch_time=context.fetch_time,
                 content_hash=sha256_bytes(payload),
-                release_id=self.source.get("release_id")
+                release_id=release
                 or self.source.get("release_tracking")
                 or "page",
             )
@@ -289,7 +294,11 @@ class ArtificialAnalysisCollector(BenchmarkCollector):
                     benchmark=self.benchmark_id,
                     release=str(release) if release is not None else None,
                     metric=str(metric),
-                    comparison_key=f"{field}:{model}",
+                    comparison_key=(
+                        f"{release}:{field}:{model}"
+                        if self.source.get("release_tracking") == "official_index_heading"
+                        else f"{field}:{model}"
+                    ),
                     model=str(model),
                     provider=_optional_string(
                         extra.get("provider")
@@ -308,6 +317,34 @@ class ArtificialAnalysisCollector(BenchmarkCollector):
                 )
             )
         return normalized
+
+
+def index_release_from_heading(heading: str | None) -> str:
+    match = re.fullmatch(
+        r"Artificial Analysis Intelligence Index v(\d+\.\d+(?:\.\d+)?)", heading or ""
+    )
+    if not match:
+        raise ValueError(f"unrecognized AA Intelligence Index release heading: {heading!r}")
+    return "v" + match.group(1)
+
+
+def validate_index_rows(rows: list[dict[str, Any]], total_models: int | None) -> None:
+    if not rows:
+        raise ValueError("AA index has no structured intelligenceIndex rows")
+    names = [row.get("name") for row in rows]
+    if any(not isinstance(name, str) or not name.strip() for name in names):
+        raise ValueError("AA index has invalid model names")
+    if len(set(names)) != len(names):
+        raise ValueError("AA index has duplicate model identities")
+    scores = [row.get("intelligenceIndex") for row in rows]
+    numeric = [score for score in scores if score is not None]
+    if not numeric or any(
+        isinstance(score, bool) or not isinstance(score, (int, float))
+        or not math.isfinite(score) for score in numeric
+    ):
+        raise ValueError("AA index has no valid finite numeric scores")
+    if total_models is not None and len(rows) > total_models:
+        raise ValueError("AA index row count exceeds official coverage")
 
 
 def _page_metadata(raw: bytes) -> tuple[str | None, int | None]:

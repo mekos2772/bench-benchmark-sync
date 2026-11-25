@@ -14,7 +14,10 @@ from .registry_map import BoardMapping, select_families
 from .snapshot_loader import SnapshotLoadError, load_snapshot
 from .writers import write_static_export
 
-EXPORTER_VERSION = '0.5.0'
+EXPORTER_VERSION = '0.6.0'
+AA_INDEX = 'artificial_analysis_intelligence_index'
+AA_LEGACY_IDS = ('aa_intelligence_index_v5_0_2', 'aa_intelligence_index_v5_0_1',
+                 'aa_intelligence_index_v5_0', 'aa_intelligence_index_v4_3')
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -121,11 +124,22 @@ def _entry(mapping: BoardMapping, record: dict[str, Any], unit: str) -> list[Any
     ]
 
 
+def comparison_for(mapping: BoardMapping, release: str) -> str:
+    return f"{mapping.comparison_key}:{release}"
+
+
 def build_ranking(mapping: BoardMapping, snapshot: dict[str, Any]) -> dict[str, Any]:
     records = snapshot.get('records') or []
     if not records:
         raise ExportContractError(f'empty snapshot for {mapping.benchmark_id}')
     release = _release_for(snapshot, records)
+    dynamic_index = mapping.source.get('release_tracking') == 'official_index_heading'
+    if dynamic_index and (
+        not re.fullmatch(r'v\d+\.\d+(?:\.\d+)?', release)
+        or snapshot.get('release_id') != release
+        or any(record.get('release') != release for record in records)
+    ):
+        raise ExportContractError('AA index requires a consistent explicit official version')
     expected_release = mapping.source.get('release_id')
     if expected_release and release != expected_release:
         raise ExportContractError(
@@ -138,7 +152,7 @@ def build_ranking(mapping: BoardMapping, snapshot: dict[str, Any]) -> dict[str, 
     if not task_count:
         task_count = None
     fetched_at = str(snapshot['fetch_time'])
-    unit = unit_for([_finite_score(record.get('score')) for record in records])
+    unit = 'score' if dynamic_index else unit_for([_finite_score(record.get('score')) for record in records])
 
     entries: list[list[Any]] = []
     seen_ids: set[str] = set()
@@ -163,13 +177,14 @@ def build_ranking(mapping: BoardMapping, snapshot: dict[str, Any]) -> dict[str, 
         'rankingId': mapping.runtime_id,
         'benchmarkId': mapping.benchmark_id,
         'familyId': mapping.family_id,
-        'title': mapping.title,
+        'title': f'{mapping.title} {release}' if dynamic_index else mapping.title,
         'category': category,
         'release': release,
         'releaseId': snapshot.get('release_id') or release,
         'metric': metric,
         'unit': unit,
-        'comparisonKey': mapping.comparison_key,
+        'comparisonKey': comparison_for(mapping, release),
+        'stale': False,
         'snapshotId': snapshot['content_hash'],
         'contentHash': snapshot['content_hash'],
         'generatedAt': fetched_at,
@@ -180,6 +195,45 @@ def build_ranking(mapping: BoardMapping, snapshot: dict[str, Any]) -> dict[str, 
     }
 
 
+def _previous_ranking(mapping: BoardMapping, previous: dict[str, Any] | None):
+    if not previous:
+        return None
+    ids = (mapping.runtime_id,)
+    if mapping.benchmark_id == AA_INDEX:
+        ids += AA_LEGACY_IDS
+    for old_id in ids:
+        old = previous['rankings'].get(old_id)
+        if not old or old.get('familyId') != mapping.family_id:
+            continue
+        expected_sources = {mapping.benchmark_id}
+        if mapping.benchmark_id == AA_INDEX:
+            legacy_sources = {
+                'artificial_analysis_' + legacy.removeprefix('aa_')
+                for legacy in AA_LEGACY_IDS
+            }
+            if old_id != mapping.runtime_id:
+                expected_sources = {'artificial_analysis_' + old_id.removeprefix('aa_')}
+            elif old.get('stale') is True:
+                expected_sources.update(legacy_sources)
+        if old.get('benchmarkId') not in expected_sources:
+            continue
+        if old.get('source', {}).get('url') != mapping.source.get('official_url'):
+            continue
+        release = old['release']
+        if mapping.benchmark_id == AA_INDEX and not re.fullmatch(r'v\d+\.\d+(?:\.\d+)?', release):
+            continue
+        if mapping.source.get('release_id') and release != mapping.source['release_id']:
+            continue
+        return {
+            **old,
+            'rankingId': mapping.runtime_id,
+            'comparisonKey': comparison_for(mapping, release),
+            'stale': True,
+            'staleReason': 'current collection unavailable or failed validation',
+        }
+    return None
+
+
 def build_export(
     snapshot_root: Path,
     source_config: Path,
@@ -188,7 +242,10 @@ def build_export(
     *,
     workflow_run_id: str | None = None,
     main_commit: str | None = None,
+    previous_export: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
+    if previous_export is not None:
+        validate_export(previous_export, exporter_version=EXPORTER_VERSION)
     families = select_families(source_config, hierarchy_config, benchmark_ids)
     rankings: dict[str, Any] = {}
     family_payloads: list[dict[str, Any]] = []
@@ -196,18 +253,43 @@ def build_export(
     for family in families:
         board_summaries = []
         for mapping in family.boards:
-            snapshot = load_snapshot(snapshot_root, mapping.benchmark_id)
-            ranking = build_ranking(mapping, snapshot)
+            fallback = _previous_ranking(mapping, previous_export)
+            try:
+                snapshot = load_snapshot(snapshot_root, mapping.benchmark_id)
+                ranking = build_ranking(mapping, snapshot)
+                # Validate each board before merging so a malformed entry cannot block healthy boards.
+                validate_export({
+                    'schemaVersion': 3, 'dataSource': 'benchmark-sync-static',
+                    'generatedAt': ranking['generatedAt'],
+                    'families': [{
+                        'familyId': mapping.family_id, 'title': mapping.title,
+                        'overall': mapping.runtime_id,
+                        'boards': [{'id': mapping.runtime_id, 'isOverall': True}],
+                    }],
+                    'rankings': {mapping.runtime_id: ranking},
+                }, exporter_version=EXPORTER_VERSION)
+                if mapping.benchmark_id == AA_INDEX and fallback:
+                    def version_tuple(value):
+                        parts = tuple(int(part) for part in value[1:].split('.'))
+                        return (parts + (0, 0, 0))[:3]
+                    if version_tuple(ranking['release']) < version_tuple(fallback['release']):
+                        raise ExportContractError('AA index version regressed')
+            except (SnapshotLoadError, ExportContractError, TypeError, KeyError, ArithmeticError):
+                if fallback is None:
+                    raise
+                ranking = fallback
+                print(f"::warning::Retaining last verified data for {mapping.runtime_id}", file=sys.stderr)
             rankings[mapping.runtime_id] = ranking
             board_summaries.append(
                 {
                     'id': mapping.runtime_id,
-                    'title': mapping.title,
+                    'title': ranking['title'],
+                    'stale': ranking['stale'],
                     'isOverall': mapping.runtime_id == family.overall,
                     'modelCount': len(ranking['entries']),
                 }
             )
-            fetched_at = str(snapshot['fetch_time'])
+            fetched_at = ranking['generatedAt']
             if generated_at is None or fetched_at > generated_at:
                 generated_at = fetched_at
         family_payloads.append(
@@ -227,6 +309,7 @@ def build_export(
         'generatedAt': generated_at,
         'families': family_payloads,
         'rankings': rankings,
+        'staleBoards': [key for key, board in rankings.items() if board['stale']],
     }
     return validate_export(export, exporter_version=EXPORTER_VERSION)
 
@@ -244,6 +327,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument('--output-dir', type=Path, default=ROOT / 'artifacts' / 'static-export')
     parser.add_argument('--workflow-run-id', default=None)
     parser.add_argument('--main-commit', default=None)
+    parser.add_argument('--previous-export', type=Path)
     parser.add_argument('--check', action='store_true', help='validate without writing output')
     return parser
 
@@ -251,6 +335,14 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
     try:
+        previous = None
+        if args.previous_export and args.previous_export.is_file():
+            try:
+                previous = json.loads(args.previous_export.read_text(encoding='utf-8'))
+                validate_export(previous, exporter_version=EXPORTER_VERSION)
+            except (ValueError, OSError, TypeError, AttributeError, KeyError):
+                print('Previous export invalid; no stale fallback will be used', file=sys.stderr)
+                previous = None
         export = build_export(
             args.snapshot_root,
             args.source_config,
@@ -258,6 +350,7 @@ def main(argv: list[str] | None = None) -> int:
             args.benchmarks,
             workflow_run_id=args.workflow_run_id,
             main_commit=args.main_commit,
+            previous_export=previous,
         )
     except (SnapshotLoadError, ExportContractError, ValueError, OSError) as exc:
         print(json.dumps({'ok': False, 'error': str(exc)}, ensure_ascii=False), file=sys.stderr)
@@ -275,6 +368,7 @@ def main(argv: list[str] | None = None) -> int:
                 'check': args.check,
                 'families': [family['familyId'] for family in export['families']],
                 'boards': len(export['rankings']),
+                'staleBoards': export['staleBoards'],
             },
             ensure_ascii=False,
         )

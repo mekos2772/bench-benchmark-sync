@@ -42,12 +42,14 @@ def _record(benchmark='livebench_overall', model='model-a', score=80.12, rank=No
     return record
 
 
-def _write_snapshot(root: Path, benchmark="livebench_overall", records=None):
+def _write_snapshot(root: Path, benchmark="livebench_overall", records=None, release=None):
     store = SnapshotStore(root)
     actual_records = [_record(benchmark)] if records is None else records
     sources = yaml.safe_load(SOURCES.read_text())["sources"]
     source = next(item for item in sources if item["benchmark_id"] == benchmark)
-    release = source.get("release_id") or "2026-06-25"
+    release = release or source.get("release_id") or (
+        "v5.0.2" if benchmark == "artificial_analysis_intelligence_index" else "2026-06-25"
+    )
     actual_records = [{**record, "release": release} for record in actual_records]
     payload = json.dumps(
         {"benchmark": benchmark, "records": actual_records},
@@ -88,7 +90,7 @@ def test_export_builds_family_structure(tmp_path):
     assert board["familyId"] == "livebench"
     assert board["unit"] == "score"
     aa = export["families"][1]
-    assert aa["overall"] == "aa_intelligence_index_v5_0_2"
+    assert aa["overall"] == "aa_intelligence_index"
     assert len(aa["boards"]) == 22
     assert len(export["rankings"]) == 31
     assert "aa_intelligence_index_v4_3" not in export["rankings"]
@@ -127,7 +129,7 @@ def test_contract_rejects_zero_task_count(tmp_path):
 
 
 def test_aa_reasoning_variants_keep_the_original_model_id(tmp_path):
-    benchmark = 'artificial_analysis_intelligence_index_v5_0_2'
+    benchmark = 'artificial_analysis_intelligence_index'
     names = [
         'Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)',
         'Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)',
@@ -140,7 +142,7 @@ def test_aa_reasoning_variants_keep_the_original_model_id(tmp_path):
     ]
     _write_snapshot(tmp_path / 'store', benchmark, records)
     export = build_export(tmp_path / 'store', SOURCES, HIERARCHY, [benchmark])
-    entries = export['rankings']['aa_intelligence_index_v5_0_2']['entries']
+    entries = export['rankings']['aa_intelligence_index']['entries']
     by_id = {entry[0]: entry for entry in entries}
     assert by_id[names[0]][:2] == [names[0], 'Claude Opus 5.5']
     assert [by_id[name][4] for name in names[:3]] == [
@@ -256,25 +258,85 @@ def test_export_schema_accepts_generated_export(tmp_path):
     assert len(export['rankings']) == len(BOARDS)
 
 
-@pytest.mark.parametrize("old_release", ["v4.3", "v5.0", "v5.0.1"])
-def test_export_rejects_old_index_release_even_under_new_board_id(tmp_path, old_release):
-    benchmark = "artificial_analysis_intelligence_index_v5_0_2"
+def test_export_rejects_mixed_index_releases(tmp_path):
+    benchmark = "artificial_analysis_intelligence_index"
     root = tmp_path / "store"
     result = _write_snapshot(root, benchmark)
     path = Path(result["snapshot_path"])
     snapshot = json.loads(path.read_text())
-    snapshot["release_id"] = old_release
-    for record in snapshot["records"]:
-        record["release"] = old_release
+    snapshot["records"][0]["release"] = "v5.0.1"
     path.write_text(json.dumps(snapshot))
-    with pytest.raises(ExportContractError, match="requires release v5.0.2"):
+    with pytest.raises(ExportContractError, match="snapshot release"):
         build_export(root, SOURCES, HIERARCHY, [benchmark])
 
 
+def test_dynamic_release_keeps_stable_id_but_separates_comparisons(tmp_path):
+    benchmark = "artificial_analysis_intelligence_index"
+    root = tmp_path / "store"
+    _write_snapshot(root, benchmark, release="v5.0.2")
+    old = build_export(root, SOURCES, HIERARCHY, [benchmark])
+    _write_snapshot(root, benchmark, release="v5.0.3")
+    new = build_export(root, SOURCES, HIERARCHY, [benchmark])
+    a, b = (export["rankings"]["aa_intelligence_index"] for export in (old, new))
+    assert a["rankingId"] == b["rankingId"]
+    assert a["comparisonKey"] != b["comparisonKey"]
+    assert a["snapshotId"] != b["snapshotId"]
+    assert b["release"] == "v5.0.3"
+
+
+def test_failed_board_keeps_old_release_and_other_boards_update(tmp_path):
+    old_root, new_root = tmp_path / "old", tmp_path / "new"
+    _write_all_boards(old_root)
+    previous = build_export(old_root, SOURCES, HIERARCHY)
+    _write_all_boards(new_root)
+    (new_root / "snapshots" / "artificial_analysis_intelligence_index" / "last_successful.json").unlink()
+    _write_snapshot(new_root, "livebench_overall", [_record(score=99)])
+    result = build_export(new_root, SOURCES, HIERARCHY, previous_export=previous)
+    old_board = previous["rankings"]["aa_intelligence_index"]
+    stale = result["rankings"]["aa_intelligence_index"]
+    assert stale["stale"] is True
+    for key in ("release", "contentHash", "generatedAt", "entries", "comparisonKey"):
+        assert stale[key] == old_board[key]
+    assert result["staleBoards"] == ["aa_intelligence_index"]
+    assert result["rankings"]["livebench_overall"]["entries"][0][2] == 99
+    assert len(result["rankings"]) == 31
+
+
+def test_legacy_index_fallback_preserves_original_benchmark(tmp_path):
+    root = tmp_path / "store"
+    benchmark = "artificial_analysis_intelligence_index"
+    _write_snapshot(root, benchmark)
+    previous = build_export(root, SOURCES, HIERARCHY, [benchmark])
+    board = previous["rankings"].pop("aa_intelligence_index")
+    board.update(rankingId="aa_intelligence_index_v5_0_2", benchmarkId="artificial_analysis_intelligence_index_v5_0_2")
+    previous["rankings"]["aa_intelligence_index_v5_0_2"] = board
+    family = previous["families"][0]
+    family["overall"] = family["boards"][0]["id"] = "aa_intelligence_index_v5_0_2"
+    result = build_export(tmp_path / "missing", SOURCES, HIERARCHY, [benchmark],
+                          previous_export=previous)
+    stale = result["rankings"]["aa_intelligence_index"]
+    assert stale["benchmarkId"] == "artificial_analysis_intelligence_index_v5_0_2"
+    assert stale["release"] == "v5.0.2" and stale["stale"]
+    again = build_export(tmp_path / "missing", SOURCES, HIERARCHY, [benchmark],
+                         previous_export=result)
+    assert again["rankings"]["aa_intelligence_index"] == stale
+
+
 def test_export_preserves_public_page_coverage(tmp_path):
-    benchmark = "artificial_analysis_intelligence_index_v5_0_2"
+    benchmark = "artificial_analysis_intelligence_index"
     coverage = {"collectedModels": 28, "totalModels": 77, "isComplete": False}
     record = {**_record(benchmark), "coverage": coverage}
     _write_snapshot(tmp_path / "store", benchmark, [record])
     export = build_export(tmp_path / "store", SOURCES, HIERARCHY, [benchmark])
-    assert export["rankings"]["aa_intelligence_index_v5_0_2"]["coverage"] == coverage
+    assert export["rankings"]["aa_intelligence_index"]["coverage"] == coverage
+
+
+def test_invalid_board_entry_is_isolated(tmp_path):
+    root = tmp_path / "store"
+    _write_snapshot(root, "livebench_overall")
+    previous = build_export(root, SOURCES, HIERARCHY, ["livebench_overall"])
+    _write_snapshot(root, "livebench_overall", [_record(score=99, rank=-1)])
+    result = build_export(root, SOURCES, HIERARCHY, ["livebench_overall"],
+                          previous_export=previous)
+    assert result["rankings"]["livebench_overall"]["stale"]
+    assert result["rankings"]["livebench_overall"]["entries"][0][2] == 80.12

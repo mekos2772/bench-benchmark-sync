@@ -1,5 +1,4 @@
 import json
-import os
 import subprocess
 import sys
 from pathlib import Path
@@ -60,30 +59,12 @@ def test_cli_accepts_the_eight_failed_livebench_collectors():
     assert json.loads(result.stdout) == LIVEBENCH_IDS
 
 
-@pytest.mark.parametrize(
-    "selection", [None, "livebench_overall\nlivebench_coding livebench_overall"]
-)
-def test_retry_workflow_selects_and_normalizes_targets(tmp_path, selection):
+def test_retry_workflow_is_manual_and_uses_bounded_runner():
     workflow = yaml.safe_load((ROOT / ".github/workflows/benchmark-retry.yml").read_text())
+    triggers = workflow.get("on", workflow.get(True))
+    assert set(triggers) == {"workflow_dispatch"}
     script = next(
-        step["run"] for step in workflow["jobs"]["retry"]["steps"] if step.get("id") == "targets"
+        step["run"] for step in workflow["jobs"]["retry"]["steps"]
+        if step.get("name") == "Retry selected collectors"
     )
-    gh = tmp_path / "gh"
-    gh.write_text("#!/bin/sh\nprintf '%s\\n' livebench_coding livebench_overall\n")
-    gh.chmod(0o755)
-    output = tmp_path / "output"
-    env = {
-        **os.environ,
-        "PATH": f"{tmp_path}:{os.environ['PATH']}",
-        "INPUT_BENCHMARK": selection or "",
-        "GITHUB_OUTPUT": str(output),
-        "GITHUB_REPOSITORY": "owner/repo",
-        "SOURCE_RUN_ID": "123",
-    }
-    subprocess.run(["bash", "-c", script], cwd=ROOT, env=env, check=True)
-    expected = (
-        ["livebench_coding", "livebench_overall"]
-        if selection is None
-        else ["livebench_overall", "livebench_coding"]
-    )
-    assert output.read_text() == f"benchmarks={' '.join(expected)}\n"
+    assert '--attempts "$attempts"' in script

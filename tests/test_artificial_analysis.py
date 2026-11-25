@@ -39,14 +39,15 @@ def test_index_version_change_fails_before_parsing_scores(monkeypatch, heading):
     assert "AA page version changed" in result.error_message
 
 
-def test_current_index_version_collects_scores(monkeypatch):
+@pytest.mark.parametrize("version", ["v5.0.2", "v5.0.3", "v5.1", "v6.0"])
+def test_current_index_version_collects_scores(monkeypatch, version):
     from pathlib import Path
 
     from collector.registry import CollectorRegistry
 
     source = Path(__file__).resolve().parents[1] / "config" / "sources.yaml"
     collector = CollectorRegistry(source).create(
-        "artificial_analysis_intelligence_index_v5_0_2"
+        "artificial_analysis_intelligence_index"
     )
     frame = (
         '1:["$","div",null,{"initialModels":['
@@ -54,7 +55,7 @@ def test_current_index_version_collects_scores(monkeypatch):
         ']}]'
     )
     raw = (
-        "<h1>Artificial Analysis Intelligence Index v5.0.2</h1>"
+        f"<h1>Artificial Analysis Intelligence Index {version}</h1>"
         "<div>1 of 2 models</div>"
         "<script>self.__next_f.push("
         + json.dumps([1, frame])
@@ -65,12 +66,34 @@ def test_current_index_version_collects_scores(monkeypatch):
     )
     result = collector.fetch()
     assert result.status == "success", result.error_message
-    assert result.release_id == "v5.0.2"
+    assert result.release_id == version
     rows = collector.normalize(collector.parse(result.payload))
     assert len(rows) == 1
     assert rows[0].score == 62
-    assert rows[0].benchmark == "artificial_analysis_intelligence_index_v5_0_2"
-    assert rows[0].release == "v5.0.2"
+    assert rows[0].benchmark == "artificial_analysis_intelligence_index"
+    assert rows[0].release == version
+    assert rows[0].comparison_key.startswith(version + ":")
+
+
+@pytest.mark.parametrize("heading, field", [
+    ("Unrelated Leaderboard v5.0.3", "intelligenceIndex"),
+    ("Artificial Analysis Intelligence Index", "intelligenceIndex"),
+    ("Artificial Analysis Intelligence Index v5.0.3", "otherScore"),
+])
+def test_dynamic_index_rejects_unknown_heading_or_score_field(monkeypatch, heading, field):
+    from pathlib import Path
+    from collector.registry import CollectorRegistry
+
+    collector = CollectorRegistry(Path(__file__).resolve().parents[1] / "config/sources.yaml").create(
+        "artificial_analysis_intelligence_index"
+    )
+    frame = '1:["$","div",null,{"initialModels":' + json.dumps([{"name": "Unit", field: 62}]) + '}]'
+    raw = (f"<h1>{heading}</h1><script>self.__next_f.push("
+           + json.dumps([1, frame]) + ")</script>").encode()
+    monkeypatch.setattr("collector.artificial_analysis.collector._read_url", lambda url, context: raw)
+    result = collector.fetch()
+    assert result.status == "failed"
+    assert result.payload is None
 
 
 def test_frontiercode_aa_renamed_heading_still_collects_scores(monkeypatch):
