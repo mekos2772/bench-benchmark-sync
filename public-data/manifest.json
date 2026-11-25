@@ -13,21 +13,21 @@
     "today": {
       "path": "today/today-events.json",
       "collectorStatePath": "today/today-state.json",
-      "generatedAt": "2026-11-24T21:29:25Z",
-      "collectorStatus": "partial",
-      "eventCount": 40
+      "generatedAt": "2026-11-25T14:45:29Z",
+      "collectorStatus": "ok",
+      "eventCount": 13
     },
     "usage": {
       "path": "usage/usage-rankings.json",
-      "generatedAt": "2026-11-24T11:00:23Z",
+      "generatedAt": "2026-11-25T09:53:15Z",
       "collectorStatus": "partial"
     },
     "intelligence": {
       "indexPath": "intelligence/index.json",
       "latestPath": "intelligence/latest.json",
-      "latestArchiveDate": "2026-11-24",
-      "archiveDays": 54,
-      "totalRecords": 739
+      "latestArchiveDate": "2026-11-25",
+      "archiveDays": 55,
+      "totalRecords": 757
     }
   }
 }
