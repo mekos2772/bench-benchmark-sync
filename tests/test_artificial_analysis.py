@@ -14,7 +14,8 @@ from persistence.hash import sha256_bytes
     [
         "Artificial Analysis Intelligence Index v4.3.2",
         "Artificial Analysis Intelligence Index v5.0",
-        "Artificial Analysis Intelligence Index v5.0.2",
+        "Artificial Analysis Intelligence Index v5.0.1",
+        "Artificial Analysis Intelligence Index v5.0.3",
         "",
     ],
 )
@@ -25,17 +26,51 @@ def test_index_version_change_fails_before_parsing_scores(monkeypatch, heading):
     )
     collector = ArtificialAnalysisCollector(
         {
-            "benchmark_id": "artificial_analysis_intelligence_index_v5_0_1",
+            "benchmark_id": "artificial_analysis_intelligence_index_v5_0_2",
             "source_type": "official_page_endpoint",
             "endpoint": "https://example.invalid/",
-            "expected_page_heading": "Artificial Analysis Intelligence Index v5.0.1",
-            "release_id": "v5.0.1",
+            "expected_page_heading": "Artificial Analysis Intelligence Index v5.0.2",
+            "release_id": "v5.0.2",
         }
     )
     result = collector.fetch()
     assert result.status == "failed"
     assert result.payload is None
     assert "AA page version changed" in result.error_message
+
+
+def test_current_index_version_collects_scores(monkeypatch):
+    from pathlib import Path
+
+    from collector.registry import CollectorRegistry
+
+    source = Path(__file__).resolve().parents[1] / "config" / "sources.yaml"
+    collector = CollectorRegistry(source).create(
+        "artificial_analysis_intelligence_index_v5_0_2"
+    )
+    frame = (
+        '1:["$","div",null,{"initialModels":['
+        '{"slug":"unit-model","name":"Unit Model","intelligenceIndex":62}'
+        ']}]'
+    )
+    raw = (
+        "<h1>Artificial Analysis Intelligence Index v5.0.2</h1>"
+        "<div>1 of 2 models</div>"
+        "<script>self.__next_f.push("
+        + json.dumps([1, frame])
+        + ")</script>"
+    ).encode()
+    monkeypatch.setattr(
+        "collector.artificial_analysis.collector._read_url", lambda url, context: raw
+    )
+    result = collector.fetch()
+    assert result.status == "success", result.error_message
+    assert result.release_id == "v5.0.2"
+    rows = collector.normalize(collector.parse(result.payload))
+    assert len(rows) == 1
+    assert rows[0].score == 62
+    assert rows[0].benchmark == "artificial_analysis_intelligence_index_v5_0_2"
+    assert rows[0].release == "v5.0.2"
 
 
 def test_frontiercode_aa_renamed_heading_still_collects_scores(monkeypatch):

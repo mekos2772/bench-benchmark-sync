@@ -51,3 +51,17 @@ A separate source ID `artificial_analysis_intelligence_index_v5_0_1`, runtime ID
 `aa_intelligence_index_v5_0_1`, and release `v5.0.1` replace the active v5.0 board.
 The old source and hierarchy entries stay disabled for auditability. Exact heading
 and export release validation remain enabled; v5.0 snapshots cannot satisfy this release.
+
+
+## 2026-11-25: v5.0.2 release
+
+The official index page and the November 24 changelog confirm v5.0.2:
+https://artificialanalysis.ai/changelog . Terminal-Bench now uses v4.1 verifiers
+and FrontierCode 2.0 uses an updated trajectory scanner. The official index page
+retains its score label and reports 28 of 155 models at verification time.
+The new source and runtime IDs are `artificial_analysis_intelligence_index_v5_0_2`
+and `aa_intelligence_index_v5_0_2`. The v5.0.1 entries are disabled, not deleted.
+The existing `intelligenceIndex` parser remains guarded by the new exact heading;
+live structured payload collection must be verified by CI. The standalone
+Terminal-Bench 4.0 page still exists as a legacy evaluation and is left separate;
+no unverified v4.1 score field is configured in this repair.

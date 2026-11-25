@@ -88,12 +88,13 @@ def test_export_builds_family_structure(tmp_path):
     assert board["familyId"] == "livebench"
     assert board["unit"] == "score"
     aa = export["families"][1]
-    assert aa["overall"] == "aa_intelligence_index_v5_0_1"
+    assert aa["overall"] == "aa_intelligence_index_v5_0_2"
     assert len(aa["boards"]) == 22
     assert len(export["rankings"]) == 31
     assert "aa_intelligence_index_v4_3" not in export["rankings"]
+    assert "aa_intelligence_index_v5_0_1" not in export["rankings"]
     assert "aa_omniscience_index" not in export["rankings"]
-    assert export["rankings"][aa["overall"]]["release"] == "v5.0.1"
+    assert export["rankings"][aa["overall"]]["release"] == "v5.0.2"
 
 
 def test_task_count_without_task_scores_is_null(tmp_path):
@@ -126,7 +127,7 @@ def test_contract_rejects_zero_task_count(tmp_path):
 
 
 def test_aa_reasoning_variants_keep_the_original_model_id(tmp_path):
-    benchmark = 'artificial_analysis_intelligence_index_v5_0_1'
+    benchmark = 'artificial_analysis_intelligence_index_v5_0_2'
     names = [
         'Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)',
         'Claude Opus 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)',
@@ -139,7 +140,7 @@ def test_aa_reasoning_variants_keep_the_original_model_id(tmp_path):
     ]
     _write_snapshot(tmp_path / 'store', benchmark, records)
     export = build_export(tmp_path / 'store', SOURCES, HIERARCHY, [benchmark])
-    entries = export['rankings']['aa_intelligence_index_v5_0_1']['entries']
+    entries = export['rankings']['aa_intelligence_index_v5_0_2']['entries']
     by_id = {entry[0]: entry for entry in entries}
     assert by_id[names[0]][:2] == [names[0], 'Claude Opus 5.5']
     assert [by_id[name][4] for name in names[:3]] == [
@@ -255,9 +256,9 @@ def test_export_schema_accepts_generated_export(tmp_path):
     assert len(export['rankings']) == len(BOARDS)
 
 
-@pytest.mark.parametrize("old_release", ["v4.3", "v5.0"])
+@pytest.mark.parametrize("old_release", ["v4.3", "v5.0", "v5.0.1"])
 def test_export_rejects_old_index_release_even_under_new_board_id(tmp_path, old_release):
-    benchmark = "artificial_analysis_intelligence_index_v5_0_1"
+    benchmark = "artificial_analysis_intelligence_index_v5_0_2"
     root = tmp_path / "store"
     result = _write_snapshot(root, benchmark)
     path = Path(result["snapshot_path"])
@@ -266,14 +267,14 @@ def test_export_rejects_old_index_release_even_under_new_board_id(tmp_path, old_
     for record in snapshot["records"]:
         record["release"] = old_release
     path.write_text(json.dumps(snapshot))
-    with pytest.raises(ExportContractError, match="requires release v5.0.1"):
+    with pytest.raises(ExportContractError, match="requires release v5.0.2"):
         build_export(root, SOURCES, HIERARCHY, [benchmark])
 
 
 def test_export_preserves_public_page_coverage(tmp_path):
-    benchmark = "artificial_analysis_intelligence_index_v5_0_1"
+    benchmark = "artificial_analysis_intelligence_index_v5_0_2"
     coverage = {"collectedModels": 28, "totalModels": 77, "isComplete": False}
     record = {**_record(benchmark), "coverage": coverage}
     _write_snapshot(tmp_path / "store", benchmark, [record])
     export = build_export(tmp_path / "store", SOURCES, HIERARCHY, [benchmark])
-    assert export["rankings"]["aa_intelligence_index_v5_0_1"]["coverage"] == coverage
+    assert export["rankings"]["aa_intelligence_index_v5_0_2"]["coverage"] == coverage

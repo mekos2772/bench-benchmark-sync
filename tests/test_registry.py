@@ -22,12 +22,13 @@ def test_registry_has_explicit_statuses():
     assert registry.sources["deepswe_v1_1"]["status"] == "enabled"
     assert registry.sources["artificial_analysis_intelligence_index_v4_3"]["status"] == "disabled"
     assert registry.sources["artificial_analysis_intelligence_index_v5_0"]["status"] == "disabled"
+    assert registry.sources["artificial_analysis_intelligence_index_v5_0_1"]["status"] == "disabled"
     assert registry.sources["aa_omniscience_index"]["status"] == "disabled"
     assert registry.enabled_ids() == sorted(
         [
             "aa_lcr",
             "aa_omniscience_index_v1_1",
-            "artificial_analysis_intelligence_index_v5_0_1",
+            "artificial_analysis_intelligence_index_v5_0_2",
             "artificial_analysis_openness_index",
             "critpt",
             "deepswe_v1_1",
@@ -80,7 +81,7 @@ def test_hierarchy_is_complete_and_acyclic():
     validate_hierarchy(nodes, set(registry.source_ids()))
     ids = {node["benchmark_id"] for node in nodes}
     required = {
-        "artificial_analysis_intelligence_index_v5_0_1",
+        "artificial_analysis_intelligence_index_v5_0_2",
         "artificial_analysis_coding",
         "artificial_analysis_agents",
         "artificial_analysis_reasoning",
