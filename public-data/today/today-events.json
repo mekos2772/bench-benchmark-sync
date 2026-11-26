@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-11-25T14:45:29Z",
-  "windowStart": "2026-11-24T14:45:29Z",
+  "generatedAt": "2026-11-25T23:20:44Z",
+  "windowStart": "2026-11-24T23:20:44Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -370,335 +370,11 @@
         }
       ]
     },
-    "openrouter:upstage/solar-mini-4-5": {
-      "canonicalId": "openrouter:upstage/solar-mini-4-5",
-      "provider": "Upstage",
-      "modelId": "upstage/solar-mini-4-5",
-      "displayName": "Solar Mini 4.5 (Preview)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": "2026-11-24T23:18:24Z",
-      "status": "available",
-      "deprecationDate": null,
-      "releaseType": "catalog_addition",
-      "access": "closed_api",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "capabilities": [
-        "推理",
-        "结构化输出",
-        "工具调用"
-      ],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": 524288,
-      "maxInputTokens": null,
-      "maxOutputTokens": 131072,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": 0.01,
-        "outputPerMillionTokens": 0.04,
-        "cachedInputPerMillionTokens": 0.001
-      },
-      "availability": [
-        "OpenRouter"
-      ],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": "https://openrouter.ai/upstage/solar-mini-4-5",
-      "hubRepo": null,
-      "sourceType": "openrouter_catalog",
-      "sourceOwner": "Upstage",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-mini-4-5",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "13d6de60b550e975dc954e1c84bd3f90afd613c7ee13d7d0248bd07e5c9c3d82",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "provider",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-mini-4-5",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "13d6de60b550e975dc954e1c84bd3f90afd613c7ee13d7d0248bd07e5c9c3d82",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-mini-4-5",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "13d6de60b550e975dc954e1c84bd3f90afd613c7ee13d7d0248bd07e5c9c3d82",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-mini-4-5",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "13d6de60b550e975dc954e1c84bd3f90afd613c7ee13d7d0248bd07e5c9c3d82",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "releaseDate",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-mini-4-5",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "13d6de60b550e975dc954e1c84bd3f90afd613c7ee13d7d0248bd07e5c9c3d82",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-mini-4-5",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "13d6de60b550e975dc954e1c84bd3f90afd613c7ee13d7d0248bd07e5c9c3d82",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "releaseType",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-mini-4-5",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "13d6de60b550e975dc954e1c84bd3f90afd613c7ee13d7d0248bd07e5c9c3d82",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-mini-4-5",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "13d6de60b550e975dc954e1c84bd3f90afd613c7ee13d7d0248bd07e5c9c3d82",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "contextWindow",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-mini-4-5",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "13d6de60b550e975dc954e1c84bd3f90afd613c7ee13d7d0248bd07e5c9c3d82",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "maxOutputTokens",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-mini-4-5",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "13d6de60b550e975dc954e1c84bd3f90afd613c7ee13d7d0248bd07e5c9c3d82",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "modelCardUrl",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-mini-4-5",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "13d6de60b550e975dc954e1c84bd3f90afd613c7ee13d7d0248bd07e5c9c3d82",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-mini-4-5",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "13d6de60b550e975dc954e1c84bd3f90afd613c7ee13d7d0248bd07e5c9c3d82",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "capabilities",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-mini-4-5",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "13d6de60b550e975dc954e1c84bd3f90afd613c7ee13d7d0248bd07e5c9c3d82",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "availability",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-mini-4-5",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "13d6de60b550e975dc954e1c84bd3f90afd613c7ee13d7d0248bd07e5c9c3d82",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "modalities",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-mini-4-5",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "13d6de60b550e975dc954e1c84bd3f90afd613c7ee13d7d0248bd07e5c9c3d82",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "pricing",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-mini-4-5",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "13d6de60b550e975dc954e1c84bd3f90afd613c7ee13d7d0248bd07e5c9c3d82",
-          "sourceType": "openrouter_catalog"
-        }
-      ]
-    },
-    "openrouter:upstage/solar-pro-4-contributor": {
-      "canonicalId": "openrouter:upstage/solar-pro-4-contributor",
-      "provider": "Upstage",
-      "modelId": "upstage/solar-pro-4-contributor",
-      "displayName": "Solar Pro 4 Contributor",
-      "version": null,
-      "aliases": [],
-      "releaseDate": "2026-11-24T23:18:24Z",
-      "status": "available",
-      "deprecationDate": null,
-      "releaseType": "catalog_addition",
-      "access": "closed_api",
-      "modalities": {
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "capabilities": [
-        "推理",
-        "结构化输出",
-        "工具调用"
-      ],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": 524288,
-      "maxInputTokens": null,
-      "maxOutputTokens": 131072,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": 0.09,
-        "outputPerMillionTokens": 0.36,
-        "cachedInputPerMillionTokens": 0.018
-      },
-      "availability": [
-        "OpenRouter"
-      ],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-      "hubRepo": null,
-      "sourceType": "openrouter_catalog",
-      "sourceOwner": "Upstage",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "c90ac6ab5b0358df574c2675cf28d0d74ebdd1c11799d864c72a25d538152b16",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "provider",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "c90ac6ab5b0358df574c2675cf28d0d74ebdd1c11799d864c72a25d538152b16",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "c90ac6ab5b0358df574c2675cf28d0d74ebdd1c11799d864c72a25d538152b16",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "c90ac6ab5b0358df574c2675cf28d0d74ebdd1c11799d864c72a25d538152b16",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "releaseDate",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "c90ac6ab5b0358df574c2675cf28d0d74ebdd1c11799d864c72a25d538152b16",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "c90ac6ab5b0358df574c2675cf28d0d74ebdd1c11799d864c72a25d538152b16",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "releaseType",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "c90ac6ab5b0358df574c2675cf28d0d74ebdd1c11799d864c72a25d538152b16",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "c90ac6ab5b0358df574c2675cf28d0d74ebdd1c11799d864c72a25d538152b16",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "contextWindow",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "c90ac6ab5b0358df574c2675cf28d0d74ebdd1c11799d864c72a25d538152b16",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "maxOutputTokens",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "c90ac6ab5b0358df574c2675cf28d0d74ebdd1c11799d864c72a25d538152b16",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "modelCardUrl",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "c90ac6ab5b0358df574c2675cf28d0d74ebdd1c11799d864c72a25d538152b16",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "c90ac6ab5b0358df574c2675cf28d0d74ebdd1c11799d864c72a25d538152b16",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "capabilities",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "c90ac6ab5b0358df574c2675cf28d0d74ebdd1c11799d864c72a25d538152b16",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "availability",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "c90ac6ab5b0358df574c2675cf28d0d74ebdd1c11799d864c72a25d538152b16",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "modalities",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "c90ac6ab5b0358df574c2675cf28d0d74ebdd1c11799d864c72a25d538152b16",
-          "sourceType": "openrouter_catalog"
-        },
-        {
-          "field": "pricing",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "c90ac6ab5b0358df574c2675cf28d0d74ebdd1c11799d864c72a25d538152b16",
-          "sourceType": "openrouter_catalog"
-        }
-      ]
-    },
-    "benchmark:Tencent Hy4": {
-      "canonicalId": "benchmark:Tencent Hy4",
+    "benchmark:Claude Fable 5.2 (Max, Default Fallback)": {
+      "canonicalId": "benchmark:Claude Fable 5.2 (Max, Default Fallback)",
       "provider": null,
-      "modelId": "Tencent Hy4",
-      "displayName": "Tencent Hy4",
+      "modelId": "Claude Fable 5.2 (Max, Default Fallback)",
+      "displayName": "Claude Fable 5.2 (Max, Default Fallback)",
       "version": null,
       "aliases": [],
       "releaseDate": null,
@@ -730,421 +406,65 @@
       "modelCardUrl": null,
       "hubRepo": null,
       "sourceType": "official_benchmark",
-      "sourceOwner": "FrontierCode-AA 2.0 official public page",
+      "sourceOwner": "AA-Briefcase v1.1 official public page",
       "evidence": [
         {
           "field": "canonicalId",
           "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "d0e7ec6504dfd8e3869d804a0a7cef40a090be980a5f63957831a7227611b098",
+          "observedAt": "2026-11-25T23:20:44Z",
+          "contentHash": "123a29f2a70c98e4cd391d2d3e84b2d1917cad36ee082dba8e370962f87eb894",
           "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
           "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "d0e7ec6504dfd8e3869d804a0a7cef40a090be980a5f63957831a7227611b098",
+          "observedAt": "2026-11-25T23:20:44Z",
+          "contentHash": "123a29f2a70c98e4cd391d2d3e84b2d1917cad36ee082dba8e370962f87eb894",
           "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
           "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "d0e7ec6504dfd8e3869d804a0a7cef40a090be980a5f63957831a7227611b098",
+          "observedAt": "2026-11-25T23:20:44Z",
+          "contentHash": "123a29f2a70c98e4cd391d2d3e84b2d1917cad36ee082dba8e370962f87eb894",
           "sourceType": "official_benchmark"
         },
         {
           "field": "status",
           "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "d0e7ec6504dfd8e3869d804a0a7cef40a090be980a5f63957831a7227611b098",
+          "observedAt": "2026-11-25T23:20:44Z",
+          "contentHash": "123a29f2a70c98e4cd391d2d3e84b2d1917cad36ee082dba8e370962f87eb894",
           "sourceType": "official_benchmark"
         },
         {
           "field": "access",
           "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "d0e7ec6504dfd8e3869d804a0a7cef40a090be980a5f63957831a7227611b098",
+          "observedAt": "2026-11-25T23:20:44Z",
+          "contentHash": "123a29f2a70c98e4cd391d2d3e84b2d1917cad36ee082dba8e370962f87eb894",
           "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
           "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "d0e7ec6504dfd8e3869d804a0a7cef40a090be980a5f63957831a7227611b098",
+          "observedAt": "2026-11-25T23:20:44Z",
+          "contentHash": "123a29f2a70c98e4cd391d2d3e84b2d1917cad36ee082dba8e370962f87eb894",
           "sourceType": "official_benchmark"
         },
         {
           "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/frontiercode-2-0",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "d0e7ec6504dfd8e3869d804a0a7cef40a090be980a5f63957831a7227611b098",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:GPT-5.6 Sol (Max)": {
-      "canonicalId": "benchmark:GPT-5.6 Sol (Max)",
-      "provider": null,
-      "modelId": "GPT-5.6 Sol (Max)",
-      "displayName": "GPT-5.6 Sol (Max)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis AA LCR official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "dddad47a734a631fa8eaeeb2688832b79b5d583925cdf124e640b3010e3daa7c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "dddad47a734a631fa8eaeeb2688832b79b5d583925cdf124e640b3010e3daa7c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "dddad47a734a631fa8eaeeb2688832b79b5d583925cdf124e640b3010e3daa7c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "dddad47a734a631fa8eaeeb2688832b79b5d583925cdf124e640b3010e3daa7c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "dddad47a734a631fa8eaeeb2688832b79b5d583925cdf124e640b3010e3daa7c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "dddad47a734a631fa8eaeeb2688832b79b5d583925cdf124e640b3010e3daa7c",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "dddad47a734a631fa8eaeeb2688832b79b5d583925cdf124e640b3010e3daa7c",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Gemini 4 Carbon (High)": {
-      "canonicalId": "benchmark:Gemini 4 Carbon (High)",
-      "provider": null,
-      "modelId": "Gemini 4 Carbon (High)",
-      "displayName": "Gemini 4 Carbon (High)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis AA LCR official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "df37cda7212471e019bd0e947f96017309a08f1dc9711f208d1b492c596f3193",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "df37cda7212471e019bd0e947f96017309a08f1dc9711f208d1b492c596f3193",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "df37cda7212471e019bd0e947f96017309a08f1dc9711f208d1b492c596f3193",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "df37cda7212471e019bd0e947f96017309a08f1dc9711f208d1b492c596f3193",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "df37cda7212471e019bd0e947f96017309a08f1dc9711f208d1b492c596f3193",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "df37cda7212471e019bd0e947f96017309a08f1dc9711f208d1b492c596f3193",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "df37cda7212471e019bd0e947f96017309a08f1dc9711f208d1b492c596f3193",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Qwen3.8 27B (Xhigh)": {
-      "canonicalId": "benchmark:Qwen3.8 27B (Xhigh)",
-      "provider": null,
-      "modelId": "Qwen3.8 27B (Xhigh)",
-      "displayName": "Qwen3.8 27B (Xhigh)",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis AA LCR official public Dataset page",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "3ef6ce46b68653825e9887175ee07d37bc263952355fbe99031dddcc6046889b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "3ef6ce46b68653825e9887175ee07d37bc263952355fbe99031dddcc6046889b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "3ef6ce46b68653825e9887175ee07d37bc263952355fbe99031dddcc6046889b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "3ef6ce46b68653825e9887175ee07d37bc263952355fbe99031dddcc6046889b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "3ef6ce46b68653825e9887175ee07d37bc263952355fbe99031dddcc6046889b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "3ef6ce46b68653825e9887175ee07d37bc263952355fbe99031dddcc6046889b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "3ef6ce46b68653825e9887175ee07d37bc263952355fbe99031dddcc6046889b",
-          "sourceType": "official_benchmark"
-        }
-      ]
-    },
-    "benchmark:Nemotron 3.5 Bolt 74B-A9B": {
-      "canonicalId": "benchmark:Nemotron 3.5 Bolt 74B-A9B",
-      "provider": null,
-      "modelId": "Nemotron 3.5 Bolt 74B-A9B",
-      "displayName": "Nemotron 3.5 Bolt 74B-A9B",
-      "version": null,
-      "aliases": [],
-      "releaseDate": null,
-      "status": "unknown",
-      "deprecationDate": null,
-      "releaseType": null,
-      "access": "unknown",
-      "modalities": {
-        "input": [],
-        "output": []
-      },
-      "capabilities": [],
-      "parameterCount": null,
-      "license": null,
-      "technicalReportUrl": null,
-      "description": null,
-      "contextWindow": null,
-      "maxInputTokens": null,
-      "maxOutputTokens": null,
-      "pricing": {
-        "currency": "USD",
-        "inputPerMillionTokens": null,
-        "outputPerMillionTokens": null,
-        "cachedInputPerMillionTokens": null
-      },
-      "availability": [],
-      "officialUrl": null,
-      "documentationUrl": null,
-      "modelCardUrl": null,
-      "hubRepo": null,
-      "sourceType": "official_benchmark",
-      "sourceOwner": "Artificial Analysis Artificial Analysis Openness Index official Data API",
-      "evidence": [
-        {
-          "field": "canonicalId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "649de50e04825cbddea3689c93c057fa760943cd1439c7f662021ae87f91468b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "modelId",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "649de50e04825cbddea3689c93c057fa760943cd1439c7f662021ae87f91468b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "displayName",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "649de50e04825cbddea3689c93c057fa760943cd1439c7f662021ae87f91468b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "status",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "649de50e04825cbddea3689c93c057fa760943cd1439c7f662021ae87f91468b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "access",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "649de50e04825cbddea3689c93c057fa760943cd1439c7f662021ae87f91468b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "sourceOwner",
-          "sourceUrl": "",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "649de50e04825cbddea3689c93c057fa760943cd1439c7f662021ae87f91468b",
-          "sourceType": "official_benchmark"
-        },
-        {
-          "field": "benchmarkIdentity",
-          "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-openness-index",
-          "observedAt": "2026-11-24T21:29:25Z",
-          "contentHash": "649de50e04825cbddea3689c93c057fa760943cd1439c7f662021ae87f91468b",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
+          "observedAt": "2026-11-25T23:20:44Z",
+          "contentHash": "123a29f2a70c98e4cd391d2d3e84b2d1917cad36ee082dba8e370962f87eb894",
           "sourceType": "official_benchmark"
         }
       ]
     }
   },
-  "modelCount": 9,
+  "modelCount": 3,
   "sourceSummary": {
     "official": 2,
-    "catalog": 2,
-    "benchmark": 9
+    "catalog": 0,
+    "benchmark": 3
   },
   "events": [
     {
@@ -1181,7 +501,7 @@
       "eventIdentity": "open-release:tencent/WePocketModel1.0-4B-MLX",
       "provenance": {
         "sourceUrl": "https://huggingface.co/tencent/WePocketModel1.0-4B-MLX",
-        "contentHash": "673bcae2c7b7f532dcfd2f45065bbeca2eb28bc2edf465c9cbc7a023a87b579f"
+        "contentHash": "90c78bd29eb53138e3fabd319c884d97d4bc35ef66cc8756c968ab828909c334"
       }
     },
     {
@@ -1218,85 +538,11 @@
       "eventIdentity": "open-release:tencent/WePocketModel1.0-2B-MLX",
       "provenance": {
         "sourceUrl": "https://huggingface.co/tencent/WePocketModel1.0-2B-MLX",
-        "contentHash": "673bcae2c7b7f532dcfd2f45065bbeca2eb28bc2edf465c9cbc7a023a87b579f"
+        "contentHash": "90c78bd29eb53138e3fabd319c884d97d4bc35ef66cc8756c968ab828909c334"
       }
     },
     {
-      "eventId": "c42508d10e5f8f5da2bc4f86f7435d93",
-      "family": "model",
-      "eventType": "catalog_model_added",
-      "eventClass": "model_catalog",
-      "trustTier": "catalog",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "Solar Mini 4.5 (Preview) 新增可用",
-      "summary": "Solar Mini 4.5 (Preview) 新增可用：上下文 524,288 tokens，价格 $0.01/$0.04 每百万 tokens。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "upstage/solar-mini-4-5",
-      "modelRef": "openrouter:upstage/solar-mini-4-5",
-      "sourceType": "openrouter_catalog",
-      "sourceOwner": "Upstage",
-      "evidence": [
-        {
-          "field": "catalogEntry",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-mini-4-5",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "13d6de60b550e975dc954e1c84bd3f90afd613c7ee13d7d0248bd07e5c9c3d82",
-          "sourceType": "openrouter_catalog"
-        }
-      ],
-      "url": "https://openrouter.ai/upstage/solar-mini-4-5",
-      "observedAt": "2026-11-24T23:18:24Z",
-      "publishedAt": "2026-11-24T23:18:24Z",
-      "source": "OpenRouter · Upstage",
-      "eventIdentity": "catalog:upstage/solar-mini-4-5",
-      "provenance": {
-        "sourceUrl": "https://openrouter.ai/upstage/solar-mini-4-5",
-        "contentHash": "673bcae2c7b7f532dcfd2f45065bbeca2eb28bc2edf465c9cbc7a023a87b579f"
-      }
-    },
-    {
-      "eventId": "1bf3743836b6d4a6876351d322d07db1",
-      "family": "model",
-      "eventType": "catalog_model_added",
-      "eventClass": "model_catalog",
-      "trustTier": "catalog",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "Solar Pro 4 Contributor 新增可用",
-      "summary": "Solar Pro 4 Contributor 新增可用：上下文 524,288 tokens，价格 $0.09/$0.36 每百万 tokens。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "upstage/solar-pro-4-contributor",
-      "modelRef": "openrouter:upstage/solar-pro-4-contributor",
-      "sourceType": "openrouter_catalog",
-      "sourceOwner": "Upstage",
-      "evidence": [
-        {
-          "field": "catalogEntry",
-          "sourceUrl": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-          "observedAt": "2026-11-24T23:18:24Z",
-          "contentHash": "c90ac6ab5b0358df574c2675cf28d0d74ebdd1c11799d864c72a25d538152b16",
-          "sourceType": "openrouter_catalog"
-        }
-      ],
-      "url": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-      "observedAt": "2026-11-24T23:18:24Z",
-      "publishedAt": "2026-11-24T23:18:24Z",
-      "source": "OpenRouter · Upstage",
-      "eventIdentity": "catalog:upstage/solar-pro-4-contributor",
-      "provenance": {
-        "sourceUrl": "https://openrouter.ai/upstage/solar-pro-4-contributor",
-        "contentHash": "673bcae2c7b7f532dcfd2f45065bbeca2eb28bc2edf465c9cbc7a023a87b579f"
-      }
-    },
-    {
-      "eventId": "584e08cc2aeb6f8f784ada199478e20a",
+      "eventId": "5f47c420c0b3b15f141ccb6aab12c081",
       "family": "benchmark",
       "eventType": "benchmark_updated",
       "eventClass": "benchmark",
@@ -1305,8 +551,8 @@
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "FrontierCode 2.0 官方数据更新",
-      "summary": "FrontierCode 2.0 官方数据发生变化；共 28 个模型 · 数据版本 v2.0 · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（48.8%）、Claude Opus 5.5 (Max, Default Fallback)（46.9%）、GPT-6.2 Astra (Max)（45.4%）。",
+      "title": "AA-Briefcase v1.1 官方数据更新",
+      "summary": "AA-Briefcase v1.1 官方数据发生变化；共 28 个模型 · 数据版本 v1.1 · 当前前列：Claude Sonnet 5.5 (Max, Default Fallback)（1812.63）、Claude Opus 5.5 (Max, Default Fallback)（1797.22）、Claude Fable 5.2 (Max, Default Fallback)（1782.66）。",
       "repoId": null,
       "repo": null,
       "modelId": null,
@@ -1314,145 +560,67 @@
       "sourceType": null,
       "sourceOwner": null,
       "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/frontiercode-2-0",
-      "observedAt": "2026-11-24T21:29:25Z",
+      "url": "https://artificialanalysis.ai/evaluations/aa-briefcase",
+      "observedAt": "2026-11-25T23:20:44Z",
       "publishedAt": null,
-      "source": "FrontierCode-AA 2.0 official public page",
-      "benchmarkId": "aa_frontiercode_v2_0",
-      "benchmarkTitle": "FrontierCode 2.0",
-      "release": "v2.0",
-      "contentHash": "562d9cc7bf28b4175009dc4e8f6ea3657a183d30629feb81e4e0d4f4b55346e5",
+      "source": "AA-Briefcase v1.1 official public page",
+      "benchmarkId": "aa_briefcase_v1_1",
+      "benchmarkTitle": "AA-Briefcase v1.1",
+      "release": "v1.1",
+      "contentHash": "617d12a95b0616e81bb7a1b870d29b5222eb5c1f1536ab8e0dc5f42a4ecbb969",
+      "unit": "raw",
+      "modelCount": 28,
+      "topModels": [
+        "Claude Sonnet 5.5 (Max, Default Fallback)（1812.63）",
+        "Claude Opus 5.5 (Max, Default Fallback)（1797.22）",
+        "Claude Fable 5.2 (Max, Default Fallback)（1782.66）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
+        "contentHash": "90c78bd29eb53138e3fabd319c884d97d4bc35ef66cc8756c968ab828909c334"
+      }
+    },
+    {
+      "eventId": "67cfc5b1185c6e69926e83d2eb7aa978",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Terminal-Bench 4.0 官方数据更新",
+      "summary": "Terminal-Bench 4.0 官方数据发生变化；共 28 个模型 · 当前前列：Kimi K3.1 Pro（67.2%）、Gemini 4 Carbon (High)（65.2%）、GPT-6.2 Astra (Max)（64.1%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+      "observedAt": "2026-11-25T23:20:44Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
+      "benchmarkId": "aa_terminal_bench_v4_0",
+      "benchmarkTitle": "Terminal-Bench 4.0",
+      "release": "page_jsonld",
+      "contentHash": "d9add56fb7ede49d3f7894f0635ebcc5b931f6ed9150f8afa4902f6b4a516487",
       "unit": "ratio",
       "modelCount": 28,
       "topModels": [
-        "Claude Fable 5.2 (Max, Default Fallback)（48.8%）",
-        "Claude Opus 5.5 (Max, Default Fallback)（46.9%）",
-        "GPT-6.2 Astra (Max)（45.4%）"
+        "Kimi K3.1 Pro（67.2%）",
+        "Gemini 4 Carbon (High)（65.2%）",
+        "GPT-6.2 Astra (Max)（64.1%）"
       ],
       "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/frontiercode-2-0",
-        "contentHash": "673bcae2c7b7f532dcfd2f45065bbeca2eb28bc2edf465c9cbc7a023a87b579f"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+        "contentHash": "90c78bd29eb53138e3fabd319c884d97d4bc35ef66cc8756c968ab828909c334"
       }
     },
     {
-      "eventId": "003b89c8c09d48cdfb9b7ccfe666d1f9",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "Humanity's Last Exam 官方数据更新",
-      "summary": "Humanity's Last Exam 官方数据发生变化；共 27 个模型 · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（74.3%）、Claude Opus 5.5 (Max, Default Fallback)（61.4%）、Claude Fable 5.1 (Max, Default Fallback)（59.1%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-      "observedAt": "2026-11-24T21:29:25Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis Humanity's Last Exam official public Dataset page",
-      "benchmarkId": "aa_humanitys_last_exam",
-      "benchmarkTitle": "Humanity's Last Exam",
-      "release": "page_jsonld",
-      "contentHash": "ae8848e6cb7293a68874180c842354d9993378e8265022261d21ffbcee3451ab",
-      "unit": "ratio",
-      "modelCount": 27,
-      "topModels": [
-        "Claude Fable 5.2 (Max, Default Fallback)（74.3%）",
-        "Claude Opus 5.5 (Max, Default Fallback)（61.4%）",
-        "Claude Fable 5.1 (Max, Default Fallback)（59.1%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-        "contentHash": "673bcae2c7b7f532dcfd2f45065bbeca2eb28bc2edf465c9cbc7a023a87b579f"
-      }
-    },
-    {
-      "eventId": "dc20ee1a608920992b40cf8fd6c88477",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "AA LCR 官方数据更新",
-      "summary": "AA LCR 官方数据发生变化；共 27 个模型 · 当前前列：Kimi K3 (Max)（88.7%）、Step 5 Preview（88.3%）、Kimi K3.1 Pro（86.3%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-      "observedAt": "2026-11-24T21:29:25Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis AA LCR official public Dataset page",
-      "benchmarkId": "aa_lcr",
-      "benchmarkTitle": "AA LCR",
-      "release": "page_jsonld",
-      "contentHash": "d51776d89a867d098d4a06e20f1b230cd57f0085c806d899044ed98abf1849f1",
-      "unit": "ratio",
-      "modelCount": 27,
-      "topModels": [
-        "Kimi K3 (Max)（88.7%）",
-        "Step 5 Preview（88.3%）",
-        "Kimi K3.1 Pro（86.3%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "673bcae2c7b7f532dcfd2f45065bbeca2eb28bc2edf465c9cbc7a023a87b579f"
-      }
-    },
-    {
-      "eventId": "17900dff48b32f6df584fcfd74c3763e",
-      "family": "benchmark",
-      "eventType": "benchmark_updated",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P1",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "important",
-      "title": "CritPt 官方数据更新",
-      "summary": "CritPt 官方数据发生变化；共 27 个模型 · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（35.4%）、Muse Wonder Full (Max)（32.9%）、GPT-5.6 Sol (Max)（32.3%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": null,
-      "modelRef": null,
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/critpt",
-      "observedAt": "2026-11-24T21:29:25Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis CritPt official public Dataset page",
-      "benchmarkId": "aa_critpt",
-      "benchmarkTitle": "CritPt",
-      "release": "page_jsonld",
-      "contentHash": "e60391603e6727d3b11844c6af81dd4ee14e55e7bc48fbc2862e968214a9c319",
-      "unit": "ratio",
-      "modelCount": 27,
-      "topModels": [
-        "Claude Fable 5.2 (Max, Default Fallback)（35.4%）",
-        "Muse Wonder Full (Max)（32.9%）",
-        "GPT-5.6 Sol (Max)（32.3%）"
-      ],
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/critpt",
-        "contentHash": "673bcae2c7b7f532dcfd2f45065bbeca2eb28bc2edf465c9cbc7a023a87b579f"
-      }
-    },
-    {
-      "eventId": "b46d91cc0488543b962a2b3347fab825",
+      "eventId": "4283a45359f92fd93eb0b1e8337257e9",
       "family": "benchmark",
       "eventType": "score_changed",
       "eventClass": "benchmark",
@@ -1461,181 +629,36 @@
       "visibility": "primary",
       "isOfficial": true,
       "severity": "normal",
-      "title": "Tencent Hy4 分数变化",
-      "summary": "FrontierCode 2.0 分数从 31.4% 变为 31.2%（-0.2%）。",
+      "title": "Claude Fable 5.2 (Max, Default Fallback) 分数变化",
+      "summary": "AA-Briefcase v1.1 分数从 1782.84 变为 1782.66（-0.18）。",
       "repoId": null,
       "repo": null,
-      "modelId": "Tencent Hy4",
-      "modelRef": "benchmark:Tencent Hy4",
+      "modelId": "Claude Fable 5.2 (Max, Default Fallback)",
+      "modelRef": "benchmark:Claude Fable 5.2 (Max, Default Fallback)",
       "sourceType": null,
       "sourceOwner": null,
       "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/frontiercode-2-0",
-      "observedAt": "2026-11-24T21:29:25Z",
+      "url": "https://artificialanalysis.ai/evaluations/aa-briefcase",
+      "observedAt": "2026-11-25T23:20:44Z",
       "publishedAt": null,
-      "source": "FrontierCode-AA 2.0 official public page",
-      "benchmarkId": "aa_frontiercode_v2_0",
-      "benchmarkTitle": "FrontierCode 2.0",
-      "release": "v2.0",
-      "previousScore": 0.31447601010101,
-      "score": 0.312183838383838,
-      "delta": -0.002292171717171998,
-      "unit": "ratio",
-      "modelIdentity": "aa_frontiercode_v2_0:Tencent Hy4",
+      "source": "AA-Briefcase v1.1 official public page",
+      "benchmarkId": "aa_briefcase_v1_1",
+      "benchmarkTitle": "AA-Briefcase v1.1",
+      "release": "v1.1",
+      "previousScore": 1782.84,
+      "score": 1782.66,
+      "delta": -0.1799999999998363,
+      "unit": "raw",
+      "modelIdentity": "aa_briefcase_v1_1:Claude Fable 5.2 (Max, Default Fallback)",
       "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/frontiercode-2-0",
-        "contentHash": "673bcae2c7b7f532dcfd2f45065bbeca2eb28bc2edf465c9cbc7a023a87b579f"
-      }
-    },
-    {
-      "eventId": "ac11df094eb77ea791155aa909524a09",
-      "family": "benchmark",
-      "eventType": "model_added_to_benchmark",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "normal",
-      "title": "GPT-5.6 Sol (Max) 新上榜",
-      "summary": "GPT-5.6 Sol (Max) 进入 AA LCR，当前分数 84.0%（第 11 位）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "GPT-5.6 Sol (Max)",
-      "modelRef": "benchmark:GPT-5.6 Sol (Max)",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-      "observedAt": "2026-11-24T21:29:25Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis AA LCR official public Dataset page",
-      "benchmarkId": "aa_lcr",
-      "benchmarkTitle": "AA LCR",
-      "release": "page_jsonld",
-      "score": 0.84,
-      "rank": null,
-      "displayRank": 11,
-      "unit": "ratio",
-      "modelIdentity": "aa_lcr:GPT-5.6 Sol (Max)",
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "673bcae2c7b7f532dcfd2f45065bbeca2eb28bc2edf465c9cbc7a023a87b579f"
-      }
-    },
-    {
-      "eventId": "ec71f058d79d374b8d8ea5b5ac9e9066",
-      "family": "benchmark",
-      "eventType": "model_removed_from_benchmark",
-      "eventClass": "benchmark",
-      "trustTier": "official",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": true,
-      "severity": "normal",
-      "title": "Gemini 4 Carbon (High) 移出榜单",
-      "summary": "Gemini 4 Carbon (High) 不再出现在 AA LCR 当前官方数据中（此前分数 79.3%）。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "Gemini 4 Carbon (High)",
-      "modelRef": "benchmark:Gemini 4 Carbon (High)",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-      "observedAt": "2026-11-24T21:29:25Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis AA LCR official public Dataset page",
-      "benchmarkId": "aa_lcr",
-      "benchmarkTitle": "AA LCR",
-      "release": "page_jsonld",
-      "previousScore": 0.793333333333333,
-      "previousRank": null,
-      "unit": "ratio",
-      "modelIdentity": "aa_lcr:Gemini 4 Carbon (High)",
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "673bcae2c7b7f532dcfd2f45065bbeca2eb28bc2edf465c9cbc7a023a87b579f"
-      }
-    },
-    {
-      "eventId": "bda5d2b71bc579df394a10dc6e830912",
-      "family": "benchmark",
-      "eventType": "derived_rank_changed",
-      "eventClass": "benchmark",
-      "trustTier": "derived",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "Qwen3.8 27B (Xhigh) 排名位置变化",
-      "summary": "AA LCR 按当前分数推导的列表位置从 20 变为 21；官方 rank 未提供。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "Qwen3.8 27B (Xhigh)",
-      "modelRef": "benchmark:Qwen3.8 27B (Xhigh)",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-      "observedAt": "2026-11-24T21:29:25Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis AA LCR official public Dataset page",
-      "benchmarkId": "aa_lcr",
-      "benchmarkTitle": "AA LCR",
-      "release": "page_jsonld",
-      "previousRank": null,
-      "rank": null,
-      "previousDisplayRank": 20,
-      "displayRank": 21,
-      "rankSource": "derived",
-      "modelIdentity": "aa_lcr:Qwen3.8 27B (Xhigh)",
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning",
-        "contentHash": "673bcae2c7b7f532dcfd2f45065bbeca2eb28bc2edf465c9cbc7a023a87b579f"
-      }
-    },
-    {
-      "eventId": "0ef6bc8662266c75bce1e930befced2d",
-      "family": "benchmark",
-      "eventType": "derived_rank_changed",
-      "eventClass": "benchmark",
-      "trustTier": "derived",
-      "priority": "P2",
-      "visibility": "primary",
-      "isOfficial": false,
-      "severity": "normal",
-      "title": "Nemotron 3.5 Bolt 74B-A9B 排名位置变化",
-      "summary": "Artificial Analysis Openness Index 按当前分数推导的列表位置从 24 变为 23；官方 rank 未提供。",
-      "repoId": null,
-      "repo": null,
-      "modelId": "Nemotron 3.5 Bolt 74B-A9B",
-      "modelRef": "benchmark:Nemotron 3.5 Bolt 74B-A9B",
-      "sourceType": null,
-      "sourceOwner": null,
-      "evidence": [],
-      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-openness-index",
-      "observedAt": "2026-11-24T21:29:25Z",
-      "publishedAt": null,
-      "source": "Artificial Analysis Artificial Analysis Openness Index official Data API",
-      "benchmarkId": "aa_openness_index",
-      "benchmarkTitle": "Artificial Analysis Openness Index",
-      "release": "page_jsonld",
-      "previousRank": null,
-      "rank": null,
-      "previousDisplayRank": 24,
-      "displayRank": 23,
-      "rankSource": "derived",
-      "modelIdentity": "aa_openness_index:Nemotron 3.5 Bolt 74B-A9B",
-      "provenance": {
-        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-openness-index",
-        "contentHash": "673bcae2c7b7f532dcfd2f45065bbeca2eb28bc2edf465c9cbc7a023a87b579f"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/aa-briefcase",
+        "contentHash": "90c78bd29eb53138e3fabd319c884d97d4bc35ef66cc8756c968ab828909c334"
       }
     }
   ],
-  "eventCount": 13,
+  "eventCount": 5,
   "provenance": {
-    "workflowRunId": "45637494238",
+    "workflowRunId": "45720601955",
     "mainCommit": "6b5514a4af9bf308b3dac03a93d3622cfd6c2f46"
   }
 }
