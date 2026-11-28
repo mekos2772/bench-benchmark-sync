@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "dataSource": "today-activity-aggregator",
-  "generatedAt": "2026-09-26T14:19:45Z",
-  "windowStart": "2026-09-25T14:19:45Z",
+  "generatedAt": "2026-11-28T04:53:21Z",
+  "windowStart": "2026-11-27T04:53:21Z",
   "collectorStatus": "ok",
   "staleAfterMinutes": 360,
   "families": [
@@ -10,33 +10,28 @@
     "benchmark"
   ],
   "models": {
-    "hf:internlm/Intern-Decision-4B": {
-      "canonicalId": "hf:internlm/Intern-Decision-4B",
-      "provider": "InternLM",
-      "modelId": "internlm/Intern-Decision-4B",
-      "displayName": "Intern-Decision-4B",
+    "benchmark:GLM-5.3 (Max)": {
+      "canonicalId": "benchmark:GLM-5.3 (Max)",
+      "provider": null,
+      "modelId": "GLM-5.3 (Max)",
+      "displayName": "GLM-5.3 (Max)",
       "version": null,
       "aliases": [],
-      "releaseDate": "2026-09-26T05:36:37Z",
-      "status": "available",
+      "releaseDate": null,
+      "status": "unknown",
       "deprecationDate": null,
-      "releaseType": "open_weights_release",
-      "access": "open_weights",
+      "releaseType": null,
+      "access": "unknown",
       "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
+        "input": [],
+        "output": []
       },
       "capabilities": [],
-      "parameterCount": 4539265536,
-      "license": "apache-2.0",
+      "parameterCount": null,
+      "license": null,
       "technicalReportUrl": null,
-      "description": "Demo | Model Weights | GitHub *Intern-Decision-4B** is a multimodal structured decision model fine-tuned from It accepts a shared state, a schema of named questions, and optional images, and returns an answer distribution for every question in one model forward pass.",
-      "contextWindow": 262144,
+      "description": null,
+      "contextWindow": null,
       "maxInputTokens": null,
       "maxOutputTokens": null,
       "pricing": {
@@ -45,171 +40,87 @@
         "outputPerMillionTokens": null,
         "cachedInputPerMillionTokens": null
       },
-      "availability": [
-        "Hugging Face"
-      ],
-      "officialUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
+      "availability": [],
+      "officialUrl": null,
       "documentationUrl": null,
-      "modelCardUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-      "hubRepo": "internlm/Intern-Decision-4B",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "InternLM",
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
       "evidence": [
         {
           "field": "canonicalId",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "provider",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T15:18:47Z",
+          "contentHash": "2a287ad92ed060f99bd559a677929ba30e0aec60d45ab7b454ae9e0a9bcbfeb2",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T15:18:47Z",
+          "contentHash": "2a287ad92ed060f99bd559a677929ba30e0aec60d45ab7b454ae9e0a9bcbfeb2",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseDate",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T15:18:47Z",
+          "contentHash": "2a287ad92ed060f99bd559a677929ba30e0aec60d45ab7b454ae9e0a9bcbfeb2",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "status",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseType",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T15:18:47Z",
+          "contentHash": "2a287ad92ed060f99bd559a677929ba30e0aec60d45ab7b454ae9e0a9bcbfeb2",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "access",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "parameterCount",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "license",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "description",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "contextWindow",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "officialUrl",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modelCardUrl",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "hubRepo",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T15:18:47Z",
+          "contentHash": "2a287ad92ed060f99bd559a677929ba30e0aec60d45ab7b454ae9e0a9bcbfeb2",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T15:18:47Z",
+          "contentHash": "2a287ad92ed060f99bd559a677929ba30e0aec60d45ab7b454ae9e0a9bcbfeb2",
+          "sourceType": "official_benchmark"
         },
         {
-          "field": "availability",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modalities",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+          "observedAt": "2026-11-27T15:18:47Z",
+          "contentHash": "2a287ad92ed060f99bd559a677929ba30e0aec60d45ab7b454ae9e0a9bcbfeb2",
+          "sourceType": "official_benchmark"
         }
       ]
     },
-    "hf:internlm/Intern-Decision-2B": {
-      "canonicalId": "hf:internlm/Intern-Decision-2B",
-      "provider": "InternLM",
-      "modelId": "internlm/Intern-Decision-2B",
-      "displayName": "Intern-Decision-2B",
+    "benchmark:Qwen3.8 Max (0902)": {
+      "canonicalId": "benchmark:Qwen3.8 Max (0902)",
+      "provider": null,
+      "modelId": "Qwen3.8 Max (0902)",
+      "displayName": "Qwen3.8 Max (0902)",
       "version": null,
       "aliases": [],
-      "releaseDate": "2026-09-26T05:36:19Z",
-      "status": "available",
+      "releaseDate": null,
+      "status": "unknown",
       "deprecationDate": null,
-      "releaseType": "open_weights_release",
-      "access": "open_weights",
+      "releaseType": null,
+      "access": "unknown",
       "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
+        "input": [],
+        "output": []
       },
       "capabilities": [],
-      "parameterCount": 2213241664,
-      "license": "apache-2.0",
+      "parameterCount": null,
+      "license": null,
       "technicalReportUrl": null,
-      "description": "Demo | Model Weights | GitHub *Intern-Decision-2B** is a multimodal structured decision model fine-tuned from It accepts a shared state, a schema of named questions, and optional images, and returns an answer distribution for every question in one model forward pass.",
-      "contextWindow": 262144,
+      "description": null,
+      "contextWindow": null,
       "maxInputTokens": null,
       "maxOutputTokens": null,
       "pricing": {
@@ -218,171 +129,87 @@
         "outputPerMillionTokens": null,
         "cachedInputPerMillionTokens": null
       },
-      "availability": [
-        "Hugging Face"
-      ],
-      "officialUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
+      "availability": [],
+      "officialUrl": null,
       "documentationUrl": null,
-      "modelCardUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-      "hubRepo": "internlm/Intern-Decision-2B",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "InternLM",
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
       "evidence": [
         {
           "field": "canonicalId",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "provider",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "4c59e2c780b616a3ece372d13b96d7343b61a7e16781f72d3eee9bacee6d4740",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "4c59e2c780b616a3ece372d13b96d7343b61a7e16781f72d3eee9bacee6d4740",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseDate",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "4c59e2c780b616a3ece372d13b96d7343b61a7e16781f72d3eee9bacee6d4740",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "status",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseType",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "4c59e2c780b616a3ece372d13b96d7343b61a7e16781f72d3eee9bacee6d4740",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "access",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "parameterCount",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "license",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "description",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "contextWindow",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "officialUrl",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modelCardUrl",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "hubRepo",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "4c59e2c780b616a3ece372d13b96d7343b61a7e16781f72d3eee9bacee6d4740",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "4c59e2c780b616a3ece372d13b96d7343b61a7e16781f72d3eee9bacee6d4740",
+          "sourceType": "official_benchmark"
         },
         {
-          "field": "availability",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modalities",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "4c59e2c780b616a3ece372d13b96d7343b61a7e16781f72d3eee9bacee6d4740",
+          "sourceType": "official_benchmark"
         }
       ]
     },
-    "hf:internlm/Intern-Decision-0.8B": {
-      "canonicalId": "hf:internlm/Intern-Decision-0.8B",
-      "provider": "InternLM",
-      "modelId": "internlm/Intern-Decision-0.8B",
-      "displayName": "Intern-Decision-0.8B",
+    "benchmark:ERNIE 5.5 Flash Preview": {
+      "canonicalId": "benchmark:ERNIE 5.5 Flash Preview",
+      "provider": null,
+      "modelId": "ERNIE 5.5 Flash Preview",
+      "displayName": "ERNIE 5.5 Flash Preview",
       "version": null,
       "aliases": [],
-      "releaseDate": "2026-09-26T05:35:57Z",
-      "status": "available",
+      "releaseDate": null,
+      "status": "unknown",
       "deprecationDate": null,
-      "releaseType": "open_weights_release",
-      "access": "open_weights",
+      "releaseType": null,
+      "access": "unknown",
       "modalities": {
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ]
+        "input": [],
+        "output": []
       },
       "capabilities": [],
-      "parameterCount": 852985920,
-      "license": "apache-2.0",
+      "parameterCount": null,
+      "license": null,
       "technicalReportUrl": null,
-      "description": "Demo | Model Weights | GitHub *Intern-Decision-0.8B** is a multimodal structured decision model fine-tuned from It accepts a shared state, a schema of named questions, and optional images, and returns an answer distribution for every question in one model forward pass.",
-      "contextWindow": 262144,
+      "description": null,
+      "contextWindow": null,
       "maxInputTokens": null,
       "maxOutputTokens": null,
       "pricing": {
@@ -391,267 +218,622 @@
         "outputPerMillionTokens": null,
         "cachedInputPerMillionTokens": null
       },
-      "availability": [
-        "Hugging Face"
-      ],
-      "officialUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
+      "availability": [],
+      "officialUrl": null,
       "documentationUrl": null,
-      "modelCardUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-      "hubRepo": "internlm/Intern-Decision-0.8B",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "InternLM",
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
       "evidence": [
         {
           "field": "canonicalId",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "provider",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "421dc84c9471ee1739e63983b0bacbdaf5b76fb317c37356e059dd6b16adc48a",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "modelId",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "421dc84c9471ee1739e63983b0bacbdaf5b76fb317c37356e059dd6b16adc48a",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "displayName",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseDate",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "421dc84c9471ee1739e63983b0bacbdaf5b76fb317c37356e059dd6b16adc48a",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "status",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "releaseType",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "421dc84c9471ee1739e63983b0bacbdaf5b76fb317c37356e059dd6b16adc48a",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "access",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "parameterCount",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "license",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "description",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "contextWindow",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "officialUrl",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "modelCardUrl",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        },
-        {
-          "field": "hubRepo",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "421dc84c9471ee1739e63983b0bacbdaf5b76fb317c37356e059dd6b16adc48a",
+          "sourceType": "official_benchmark"
         },
         {
           "field": "sourceOwner",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "421dc84c9471ee1739e63983b0bacbdaf5b76fb317c37356e059dd6b16adc48a",
+          "sourceType": "official_benchmark"
         },
         {
-          "field": "availability",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "421dc84c9471ee1739e63983b0bacbdaf5b76fb317c37356e059dd6b16adc48a",
+          "sourceType": "official_benchmark"
+        }
+      ]
+    },
+    "benchmark:GLM-5.3-Flash (Max)": {
+      "canonicalId": "benchmark:GLM-5.3-Flash (Max)",
+      "provider": null,
+      "modelId": "GLM-5.3-Flash (Max)",
+      "displayName": "GLM-5.3-Flash (Max)",
+      "version": null,
+      "aliases": [],
+      "releaseDate": null,
+      "status": "unknown",
+      "deprecationDate": null,
+      "releaseType": null,
+      "access": "unknown",
+      "modalities": {
+        "input": [],
+        "output": []
+      },
+      "capabilities": [],
+      "parameterCount": null,
+      "license": null,
+      "technicalReportUrl": null,
+      "description": null,
+      "contextWindow": null,
+      "maxInputTokens": null,
+      "maxOutputTokens": null,
+      "pricing": {
+        "currency": "USD",
+        "inputPerMillionTokens": null,
+        "outputPerMillionTokens": null,
+        "cachedInputPerMillionTokens": null
+      },
+      "availability": [],
+      "officialUrl": null,
+      "documentationUrl": null,
+      "modelCardUrl": null,
+      "hubRepo": null,
+      "sourceType": "official_benchmark",
+      "sourceOwner": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "evidence": [
+        {
+          "field": "canonicalId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "56370591aa115b059cdfadae24c5eb4755da3d4898fdd556af35b4899f67a2ab",
+          "sourceType": "official_benchmark"
         },
         {
-          "field": "modalities",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
+          "field": "modelId",
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "56370591aa115b059cdfadae24c5eb4755da3d4898fdd556af35b4899f67a2ab",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "displayName",
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "56370591aa115b059cdfadae24c5eb4755da3d4898fdd556af35b4899f67a2ab",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "status",
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "56370591aa115b059cdfadae24c5eb4755da3d4898fdd556af35b4899f67a2ab",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "access",
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "56370591aa115b059cdfadae24c5eb4755da3d4898fdd556af35b4899f67a2ab",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "sourceOwner",
+          "sourceUrl": "",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "56370591aa115b059cdfadae24c5eb4755da3d4898fdd556af35b4899f67a2ab",
+          "sourceType": "official_benchmark"
+        },
+        {
+          "field": "benchmarkIdentity",
+          "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+          "observedAt": "2026-11-27T05:22:04Z",
+          "contentHash": "56370591aa115b059cdfadae24c5eb4755da3d4898fdd556af35b4899f67a2ab",
+          "sourceType": "official_benchmark"
         }
       ]
     }
   },
-  "modelCount": 3,
+  "modelCount": 4,
   "sourceSummary": {
-    "official": 3,
+    "official": 0,
     "catalog": 0,
-    "benchmark": 0
+    "benchmark": 12
   },
   "events": [
     {
-      "eventId": "53988aa400d6340cd071d338fed502bc",
-      "family": "model",
-      "eventType": "official_model_release",
-      "eventClass": "model_release",
+      "eventId": "20c162e15b9cf5acc331493fbc28ae60",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
       "trustTier": "official",
-      "priority": "P0",
+      "priority": "P1",
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "Intern-Decision-4B 开放权重发布",
-      "summary": "InternLM 在官方组织发布新模型：参数量 4.5B，上下文 262,144 tokens，许可 apache-2.0。",
-      "repoId": "internlm/Intern-Decision-4B",
-      "repo": "internlm/Intern-Decision-4B",
-      "modelId": "internlm/Intern-Decision-4B",
-      "modelRef": "hf:internlm/Intern-Decision-4B",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "InternLM",
-      "evidence": [
-        {
-          "field": "modelRepository",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-          "observedAt": "2026-09-26T05:36:37Z",
-          "contentHash": "0df5f56b196357616b8eba675421ac40117d97ec04585aa2e3a3abb60338c53f",
-          "sourceType": "hub_official_org"
-        }
+      "title": "Artificial Analysis Openness Index 官方数据更新",
+      "summary": "Artificial Analysis Openness Index 官方数据发生变化；共 25 个模型 · 当前前列：Olmo 3 7B Think（88.89）、Olmo 3.1 32B Think（88.89）、Apertus 70B Instruct（88.89）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-openness-index",
+      "observedAt": "2026-11-27T23:31:03Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Artificial Analysis Openness Index official Data API",
+      "benchmarkId": "aa_openness_index",
+      "benchmarkTitle": "Artificial Analysis Openness Index",
+      "release": "page_jsonld",
+      "contentHash": "3afd73624eb513f49bb83b0969e892c2027dfda52acd5866f28cd4cd05953ca1",
+      "unit": "score",
+      "modelCount": 25,
+      "topModels": [
+        "Olmo 3 7B Think（88.89）",
+        "Olmo 3.1 32B Think（88.89）",
+        "Apertus 70B Instruct（88.89）"
       ],
-      "url": "https://huggingface.co/internlm/Intern-Decision-4B",
-      "observedAt": "2026-09-26T05:36:37Z",
-      "publishedAt": "2026-09-26T05:36:37Z",
-      "source": "Hugging Face · InternLM",
-      "eventIdentity": "open-release:internlm/Intern-Decision-4B",
       "provenance": {
-        "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-4B",
-        "contentHash": "2e1a3f5c2c60ea42fc42099a3f42af2652cbaec53ec188131cce424946955343"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/artificial-analysis-openness-index",
+        "contentHash": "fe522be44ec3f1f2e82dfb3e40271c204fce427b83c4f668773f774d03d2427f"
       }
     },
     {
-      "eventId": "482daa410ee78cd6abb0851fed5f5c38",
-      "family": "model",
-      "eventType": "official_model_release",
-      "eventClass": "model_release",
+      "eventId": "a69764de374688f9007ef89f474aa7f7",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
       "trustTier": "official",
-      "priority": "P0",
+      "priority": "P1",
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "Intern-Decision-2B 开放权重发布",
-      "summary": "InternLM 在官方组织发布新模型：参数量 2.2B，上下文 262,144 tokens，许可 apache-2.0。",
-      "repoId": "internlm/Intern-Decision-2B",
-      "repo": "internlm/Intern-Decision-2B",
-      "modelId": "internlm/Intern-Decision-2B",
-      "modelRef": "hf:internlm/Intern-Decision-2B",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "InternLM",
-      "evidence": [
-        {
-          "field": "modelRepository",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-          "observedAt": "2026-09-26T05:36:19Z",
-          "contentHash": "da02346f90b07d85b42e8312356b8de13d33ea7e770759cc5dac05510180b9bd",
-          "sourceType": "hub_official_org"
-        }
+      "title": "GDPval-AA Elo 官方数据更新",
+      "summary": "GDPval-AA Elo 官方数据发生变化；共 27 个模型 · 当前前列：Claude Opus 5.5 (Max, Default Fallback)（1866.27）、Kimi K3.1 Pro（1858.14）、Muse Wonder Full (Max)（1857.09）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "observedAt": "2026-11-27T05:22:04Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "benchmarkId": "aa_gdpval_elo",
+      "benchmarkTitle": "GDPval-AA Elo",
+      "release": "page_jsonld",
+      "contentHash": "c4e8223dff5bead58f7e8b2c524191512b736eabbb6bb5d9a671c5ae50f63cbe",
+      "unit": "raw",
+      "modelCount": 27,
+      "topModels": [
+        "Claude Opus 5.5 (Max, Default Fallback)（1866.27）",
+        "Kimi K3.1 Pro（1858.14）",
+        "Muse Wonder Full (Max)（1857.09）"
       ],
-      "url": "https://huggingface.co/internlm/Intern-Decision-2B",
-      "observedAt": "2026-09-26T05:36:19Z",
-      "publishedAt": "2026-09-26T05:36:19Z",
-      "source": "Hugging Face · InternLM",
-      "eventIdentity": "open-release:internlm/Intern-Decision-2B",
       "provenance": {
-        "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-2B",
-        "contentHash": "2e1a3f5c2c60ea42fc42099a3f42af2652cbaec53ec188131cce424946955343"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "contentHash": "fe522be44ec3f1f2e82dfb3e40271c204fce427b83c4f668773f774d03d2427f"
       }
     },
     {
-      "eventId": "0441e061660b5ef1b31d83a07fdbdb66",
-      "family": "model",
-      "eventType": "official_model_release",
-      "eventClass": "model_release",
+      "eventId": "4b9e9a5f80aab9a8abaaa144cea9064c",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
       "trustTier": "official",
-      "priority": "P0",
+      "priority": "P1",
       "visibility": "primary",
       "isOfficial": true,
       "severity": "important",
-      "title": "Intern-Decision-0.8B 开放权重发布",
-      "summary": "InternLM 在官方组织发布新模型：参数量 853.0M，上下文 262,144 tokens，许可 apache-2.0。",
-      "repoId": "internlm/Intern-Decision-0.8B",
-      "repo": "internlm/Intern-Decision-0.8B",
-      "modelId": "internlm/Intern-Decision-0.8B",
-      "modelRef": "hf:internlm/Intern-Decision-0.8B",
-      "sourceType": "hub_official_org",
-      "sourceOwner": "InternLM",
-      "evidence": [
-        {
-          "field": "modelRepository",
-          "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-          "observedAt": "2026-09-26T05:35:57Z",
-          "contentHash": "c1d6394bb7975f49eb228e22378889e60b0087838e7a09d7195d6863ec4aada7",
-          "sourceType": "hub_official_org"
-        }
+      "title": "AutomationBench-AA 官方数据更新",
+      "summary": "AutomationBench-AA 官方数据发生变化；共 29 个模型 · 数据版本 page · 当前前列：Gemini 4 Neon (Xhigh)（79.3%）、Gemini 4 Carbon (High)（77.8%）、Gemini 4 Argon (High)（77.5%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/automationbench-aa",
+      "observedAt": "2026-11-27T05:22:04Z",
+      "publishedAt": null,
+      "source": "AutomationBench-AA official public page",
+      "benchmarkId": "aa_automationbench",
+      "benchmarkTitle": "AutomationBench-AA",
+      "release": "page",
+      "contentHash": "ff77bb4a8a6b1f0a197609318b16308236db3cddee0972ef5cbafa3b50ba634b",
+      "unit": "ratio",
+      "modelCount": 29,
+      "topModels": [
+        "Gemini 4 Neon (Xhigh)（79.3%）",
+        "Gemini 4 Carbon (High)（77.8%）",
+        "Gemini 4 Argon (High)（77.5%）"
       ],
-      "url": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-      "observedAt": "2026-09-26T05:35:57Z",
-      "publishedAt": "2026-09-26T05:35:57Z",
-      "source": "Hugging Face · InternLM",
-      "eventIdentity": "open-release:internlm/Intern-Decision-0.8B",
       "provenance": {
-        "sourceUrl": "https://huggingface.co/internlm/Intern-Decision-0.8B",
-        "contentHash": "2e1a3f5c2c60ea42fc42099a3f42af2652cbaec53ec188131cce424946955343"
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/automationbench-aa",
+        "contentHash": "fe522be44ec3f1f2e82dfb3e40271c204fce427b83c4f668773f774d03d2427f"
+      }
+    },
+    {
+      "eventId": "5e7e03d5f8344dac858b50b2eb5d26b9",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "HLE-Diamond 官方数据更新",
+      "summary": "HLE-Diamond 官方数据发生变化；共 28 个模型 · 数据版本 page · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（80.2%）、GPT-6.2 Astra (Max)（72.2%）、Gemini 4 Neon (Xhigh)（71.3%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/hle-diamond",
+      "observedAt": "2026-11-27T05:22:04Z",
+      "publishedAt": null,
+      "source": "HLE-Diamond official public page",
+      "benchmarkId": "aa_hle_diamond",
+      "benchmarkTitle": "HLE-Diamond",
+      "release": "page",
+      "contentHash": "c6a04e06ba48943ce89884ec35213de0c76a83a993601457cd61e65ccdaf7045",
+      "unit": "ratio",
+      "modelCount": 28,
+      "topModels": [
+        "Claude Fable 5.2 (Max, Default Fallback)（80.2%）",
+        "GPT-6.2 Astra (Max)（72.2%）",
+        "Gemini 4 Neon (Xhigh)（71.3%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/hle-diamond",
+        "contentHash": "fe522be44ec3f1f2e82dfb3e40271c204fce427b83c4f668773f774d03d2427f"
+      }
+    },
+    {
+      "eventId": "ca1fa2a0ae77234ec1160730937fadb3",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "GDP.pdf 官方数据更新",
+      "summary": "GDP.pdf 官方数据发生变化；共 28 个模型 · 数据版本 page · 当前前列：Muse Wonder Full (Max)（32.6%）、Kimi K3.1 Pro（31.4%）、Muse Wonder (Max)（30.6%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdp-pdf",
+      "observedAt": "2026-11-27T05:22:04Z",
+      "publishedAt": null,
+      "source": "GDP.pdf official public page",
+      "benchmarkId": "aa_gdp_pdf",
+      "benchmarkTitle": "GDP.pdf",
+      "release": "page",
+      "contentHash": "2e6c121526c6bf2d3d7afefa3a72520bf4e3498742df58c8ac90eeb9f9b3cbbf",
+      "unit": "ratio",
+      "modelCount": 28,
+      "topModels": [
+        "Muse Wonder Full (Max)（32.6%）",
+        "Kimi K3.1 Pro（31.4%）",
+        "Muse Wonder (Max)（30.6%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdp-pdf",
+        "contentHash": "fe522be44ec3f1f2e82dfb3e40271c204fce427b83c4f668773f774d03d2427f"
+      }
+    },
+    {
+      "eventId": "2ebbdebb580f3b850b985b6d13568a3c",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Terminal-Bench-Science 0.1 官方数据更新",
+      "summary": "Terminal-Bench-Science 0.1 官方数据发生变化；共 28 个模型 · 数据版本 v0.1 · 当前前列：GPT-6.2 Astra (Max)（78.1%）、Claude Fable 5.2 (Max, Default Fallback)（73.3%）、Gemini 4 Neon (Xhigh)（70.0%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminal-bench-science",
+      "observedAt": "2026-11-27T05:22:04Z",
+      "publishedAt": null,
+      "source": "Terminal-Bench-Science 0.1 official public page",
+      "benchmarkId": "aa_terminal_bench_science_v0_1",
+      "benchmarkTitle": "Terminal-Bench-Science 0.1",
+      "release": "v0.1",
+      "contentHash": "997484710cda7306e54fd6c33266eb5a675c858e78e7560a948e9877437fd528",
+      "unit": "ratio",
+      "modelCount": 28,
+      "topModels": [
+        "GPT-6.2 Astra (Max)（78.1%）",
+        "Claude Fable 5.2 (Max, Default Fallback)（73.3%）",
+        "Gemini 4 Neon (Xhigh)（70.0%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminal-bench-science",
+        "contentHash": "fe522be44ec3f1f2e82dfb3e40271c204fce427b83c4f668773f774d03d2427f"
+      }
+    },
+    {
+      "eventId": "67cfc5b1185c6e69926e83d2eb7aa978",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "Terminal-Bench 4.0 官方数据更新",
+      "summary": "Terminal-Bench 4.0 官方数据发生变化；共 28 个模型 · 当前前列：Kimi K3.1 Pro（67.2%）、Gemini 4 Carbon (High)（65.2%）、GPT-6.2 Astra (Max)（64.1%）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+      "observedAt": "2026-11-27T05:22:04Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis Terminal-Bench v4.0 official public Dataset page",
+      "benchmarkId": "aa_terminal_bench_v4_0",
+      "benchmarkTitle": "Terminal-Bench 4.0",
+      "release": "page_jsonld",
+      "contentHash": "7c68ba9968c09bd72ca44ca31a66aecc029d05cba61205b7d0906f59bfc38044",
+      "unit": "ratio",
+      "modelCount": 28,
+      "topModels": [
+        "Kimi K3.1 Pro（67.2%）",
+        "Gemini 4 Carbon (High)（65.2%）",
+        "GPT-6.2 Astra (Max)（64.1%）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/terminalbench-4-0",
+        "contentHash": "fe522be44ec3f1f2e82dfb3e40271c204fce427b83c4f668773f774d03d2427f"
+      }
+    },
+    {
+      "eventId": "8882786be3cc316adda8000960fbe3d7",
+      "family": "benchmark",
+      "eventType": "benchmark_updated",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P1",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "important",
+      "title": "AA-Omniscience v1.1 官方数据更新",
+      "summary": "AA-Omniscience v1.1 官方数据发生变化；共 28 个模型 · 数据版本 v1.1 · 当前前列：Claude Fable 5.2 (Max, Default Fallback)（66.77）、Gemini 4 Neon (Xhigh)（54.77）、Gemini 4 Carbon (High)（53.50）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": null,
+      "modelRef": null,
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/omniscience",
+      "observedAt": "2026-11-27T05:22:04Z",
+      "publishedAt": null,
+      "source": "AA-Omniscience v1.1 official public page",
+      "benchmarkId": "aa_omniscience_index_v1_1",
+      "benchmarkTitle": "AA-Omniscience v1.1",
+      "release": "v1.1",
+      "contentHash": "16194c84e8d69235231c20af88632261e5a16e650407eed659af9fd2d149212e",
+      "unit": "score",
+      "modelCount": 28,
+      "topModels": [
+        "Claude Fable 5.2 (Max, Default Fallback)（66.77）",
+        "Gemini 4 Neon (Xhigh)（54.77）",
+        "Gemini 4 Carbon (High)（53.50）"
+      ],
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/omniscience",
+        "contentHash": "fe522be44ec3f1f2e82dfb3e40271c204fce427b83c4f668773f774d03d2427f"
+      }
+    },
+    {
+      "eventId": "5d23d9fc467c66841a32e4ccd45d0368",
+      "family": "benchmark",
+      "eventType": "score_changed",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "GLM-5.3 (Max) 分数变化",
+      "summary": "GDPval-AA Elo 分数从 1654.2 变为 1654.49（+0.29）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "GLM-5.3 (Max)",
+      "modelRef": "benchmark:GLM-5.3 (Max)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "observedAt": "2026-11-27T15:18:47Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "benchmarkId": "aa_gdpval_elo",
+      "benchmarkTitle": "GDPval-AA Elo",
+      "release": "page_jsonld",
+      "previousScore": 1654.2,
+      "score": 1654.49,
+      "delta": 0.2899999999999636,
+      "unit": "raw",
+      "modelIdentity": "aa_gdpval_elo:GLM-5.3 (Max)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "contentHash": "fe522be44ec3f1f2e82dfb3e40271c204fce427b83c4f668773f774d03d2427f"
+      }
+    },
+    {
+      "eventId": "4d7ff20484f7c183e8a1bb95261f6026",
+      "family": "benchmark",
+      "eventType": "derived_rank_changed",
+      "eventClass": "benchmark",
+      "trustTier": "derived",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": false,
+      "severity": "normal",
+      "title": "Qwen3.8 Max (0902) 排名位置变化",
+      "summary": "GDPval-AA Elo 按当前分数推导的列表位置从 15 变为 16；官方 rank 未提供。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "Qwen3.8 Max (0902)",
+      "modelRef": "benchmark:Qwen3.8 Max (0902)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "observedAt": "2026-11-27T05:22:04Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "benchmarkId": "aa_gdpval_elo",
+      "benchmarkTitle": "GDPval-AA Elo",
+      "release": "page_jsonld",
+      "previousRank": null,
+      "rank": null,
+      "previousDisplayRank": 15,
+      "displayRank": 16,
+      "rankSource": "derived",
+      "modelIdentity": "aa_gdpval_elo:Qwen3.8 Max (0902)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "contentHash": "fe522be44ec3f1f2e82dfb3e40271c204fce427b83c4f668773f774d03d2427f"
+      }
+    },
+    {
+      "eventId": "340a5bdb660ce1d115e76d6134d488a6",
+      "family": "benchmark",
+      "eventType": "model_added_to_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "ERNIE 5.5 Flash Preview 新上榜",
+      "summary": "ERNIE 5.5 Flash Preview 进入 GDPval-AA Elo，当前分数 1686.92（第 14 位）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "ERNIE 5.5 Flash Preview",
+      "modelRef": "benchmark:ERNIE 5.5 Flash Preview",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "observedAt": "2026-11-27T05:22:04Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "benchmarkId": "aa_gdpval_elo",
+      "benchmarkTitle": "GDPval-AA Elo",
+      "release": "page_jsonld",
+      "score": 1686.92,
+      "rank": null,
+      "displayRank": 14,
+      "unit": "raw",
+      "modelIdentity": "aa_gdpval_elo:ERNIE 5.5 Flash Preview",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "contentHash": "fe522be44ec3f1f2e82dfb3e40271c204fce427b83c4f668773f774d03d2427f"
+      }
+    },
+    {
+      "eventId": "f29d8bf81104a0907a322cc6084e6578",
+      "family": "benchmark",
+      "eventType": "model_removed_from_benchmark",
+      "eventClass": "benchmark",
+      "trustTier": "official",
+      "priority": "P2",
+      "visibility": "primary",
+      "isOfficial": true,
+      "severity": "normal",
+      "title": "GLM-5.3-Flash (Max) 移出榜单",
+      "summary": "GLM-5.3-Flash (Max) 不再出现在 GDPval-AA Elo 当前官方数据中（此前分数 1648.59）。",
+      "repoId": null,
+      "repo": null,
+      "modelId": "GLM-5.3-Flash (Max)",
+      "modelRef": "benchmark:GLM-5.3-Flash (Max)",
+      "sourceType": null,
+      "sourceOwner": null,
+      "evidence": [],
+      "url": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+      "observedAt": "2026-11-27T05:22:04Z",
+      "publishedAt": null,
+      "source": "Artificial Analysis GDPval-AA Elo official public Dataset page",
+      "benchmarkId": "aa_gdpval_elo",
+      "benchmarkTitle": "GDPval-AA Elo",
+      "release": "page_jsonld",
+      "previousScore": 1648.59,
+      "previousRank": null,
+      "unit": "raw",
+      "modelIdentity": "aa_gdpval_elo:GLM-5.3-Flash (Max)",
+      "provenance": {
+        "sourceUrl": "https://artificialanalysis.ai/evaluations/gdpval-aa",
+        "contentHash": "fe522be44ec3f1f2e82dfb3e40271c204fce427b83c4f668773f774d03d2427f"
       }
     }
   ],
-  "eventCount": 3,
+  "eventCount": 12,
   "provenance": {
-    "workflowRunId": "36248119686",
-    "mainCommit": "e555c8a0c9d7aadc5132bbc31e31d45af89da0eb"
+    "workflowRunId": "46109580508",
+    "mainCommit": "6b5514a4af9bf308b3dac03a93d3622cfd6c2f46"
   }
 }
